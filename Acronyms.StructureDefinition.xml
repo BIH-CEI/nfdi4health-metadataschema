@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://example.org/fhir/StructureDefinition/MyExtension" />
+  <name value="Acronyms" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="ResearchStudy" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Acronym information" />
+      <definition value="Group of items providing Information about acronym(s) of the resource." />
+      <comment value="Based on ResearchStudy.label (R5), with an extension for languages." />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.4 Resource.resource_acronyms" />
+      </mapping>
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="2" />
+    </element>
+    <element id="Extension.extension:Value">
+      <path value="Extension.extension" />
+      <sliceName value="Value" />
+      <short value="Resource acronym" />
+      <definition value="If existing, acronym(s) of the resource." />
+      <min value="1" />
+      <max value="1" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.4.1 Resource.resource_acronyms.text" />
+      </mapping>
+    </element>
+    <element id="Extension.extension:Value.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="Value" />
+    </element>
+    <element id="Extension.extension:Value.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="markdown" />
+      </type>
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:Language">
+      <path value="Extension.extension" />
+      <sliceName value="Language" />
+      <min value="1" />
+      <max value="1" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://www.hl7.org/fhir/valueset-languages.html" />
+      </binding>
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.4.2 Resource.resource_acronyms.language" />
+      </mapping>
+    </element>
+    <element id="Extension.extension:Language.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="Language" />
+    </element>
+    <element id="Extension.extension:Language.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="code" />
+      </type>
+    </element>
+    <element id="Extension.extension:Type">
+      <path value="Extension.extension" />
+      <sliceName value="Type" />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:Type.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="Type" />
+    </element>
+    <element id="Extension.extension:Type.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.extension:Type.value[x].coding">
+      <path value="Extension.extension.value[x].coding" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="http://build.fhir.org/valueset-title-type.html" />
+      </binding>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="https://example.org/fhir/StructureDefinition/MyExtension" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

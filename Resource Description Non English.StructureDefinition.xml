@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://example.org/fhir/StructureDefinition/ResourceDescriptionNonEnglish" />
+  <name value="ResourceDescriptionNonEnglish" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="ResearchStudy" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Non English Description(s)" />
+      <definition value="Group of items with  description(s) of the resource written not in English." />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.6 Resource.resource_descriptions_non_english" />
+      </mapping>
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="2" />
+    </element>
+    <element id="Extension.extension:text">
+      <path value="Extension.extension" />
+      <sliceName value="text" />
+      <min value="1" />
+      <max value="1" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.6.1 Resource.resource_descriptions_non_english" />
+      </mapping>
+    </element>
+    <element id="Extension.extension:text.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="text" />
+    </element>
+    <element id="Extension.extension:text.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <short value="Non English text" />
+      <definition value="Short plain text summary of the resource other than in English." />
+      <min value="1" />
+      <type>
+        <code value="markdown" />
+      </type>
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:language">
+      <path value="Extension.extension" />
+      <sliceName value="language" />
+      <short value="Description language (other than English)" />
+      <definition value="Language of the description text." />
+      <min value="1" />
+      <max value="1" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://www.hl7.org/fhir/valueset-languages.html" />
+      </binding>
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.6.2 Resource.resource_descriptions_non_english" />
+      </mapping>
+    </element>
+    <element id="Extension.extension:language.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="language" />
+    </element>
+    <element id="Extension.extension:language.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="code" />
+      </type>
+      <fixedCode value="de, fr, es, other" />
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="https://example.org/fhir/StructureDefinition/ResourceDescriptionNonEnglish" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>
