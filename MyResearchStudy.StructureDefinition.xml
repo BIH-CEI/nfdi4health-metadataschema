@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://example.org/fhir/StructureDefinition/MyResearchStudy" />
-  <name value="MyResearchStudy" />
+  <name value="ResearchStudy" />
   <status value="draft" />
+  <publisher value="NFDI4Health" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="https://www.nfdi4health.de" />
+    </telecom>
+  </contact>
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -48,7 +55,6 @@
       <sliceName value="descriptionNonEnglish" />
       <definition value="Group of items with description(s) of the resource written not in English." />
       <min value="0" />
-      <max value="*" />
       <type>
         <code value="Extension" />
         <profile value="https://example.org/fhir/StructureDefinition/ResourceDescriptionNonEnglish" />
@@ -73,9 +79,9 @@
         <map value="1.12 Resource.ids_alternative" />
       </mapping>
     </element>
-    <element id="ResearchStudy.identifier:sliceIdentifier_NFDI4Health">
+    <element id="ResearchStudy.identifier:NFDI4Health">
       <path value="ResearchStudy.identifier" />
-      <sliceName value="sliceIdentifier_NFDI4Health" />
+      <sliceName value="NFDI4Health" />
       <definition value="Unique identifier of the resource used for identification within the NFDI4Health." />
       <min value="1" />
       <max value="1" />
@@ -84,51 +90,45 @@
         <map value="1.1 Resource.resource_identifier" />
       </mapping>
     </element>
-    <element id="ResearchStudy.identifier:sliceIdentifier_NFDI4Health.use">
+    <element id="ResearchStudy.identifier:NFDI4Health.use">
       <path value="ResearchStudy.identifier.use" />
       <min value="1" />
       <fixedCode value="official" />
     </element>
-    <element id="ResearchStudy.identifier:sliceIdentifier_NFDI4Health.system">
+    <element id="ResearchStudy.identifier:NFDI4Health.system">
       <path value="ResearchStudy.identifier.system" />
       <min value="1" />
-      <type>
-        <code value="uri" />
-        <profile value="https://www.nfdi4health.de/" />
-      </type>
+      <fixedUri value="https://www.nfdi4health.de/" />
       <mapping>
         <identity value="NFDI4Health" />
         <map value="1.1 Resource.resource_identifer" />
       </mapping>
     </element>
-    <element id="ResearchStudy.identifier:sliceIdentifier_NFDI4Health.value">
+    <element id="ResearchStudy.identifier:NFDI4Health.value">
       <path value="ResearchStudy.identifier.value" />
       <min value="1" />
     </element>
-    <element id="ResearchStudy.identifier:sliceIdentifier_DRKS">
+    <element id="ResearchStudy.identifier:DRKS">
       <path value="ResearchStudy.identifier" />
-      <sliceName value="sliceIdentifier_DRKS" />
+      <sliceName value="DRKS" />
       <definition value="Group of items providing information about identifiers (IDs) assigned to the given resource by another registering systems, e.g. a register of clinical trials or a data repository." />
       <mapping>
         <identity value="NFDI4Health" />
         <map value="1.12 Resource.ids_alternative" />
       </mapping>
     </element>
-    <element id="ResearchStudy.identifier:sliceIdentifier_DRKS.system">
+    <element id="ResearchStudy.identifier:DRKS.system">
       <path value="ResearchStudy.identifier.system" />
       <definition value="Type/name of the system where the given resource is already registered." />
       <min value="1" />
-      <type>
-        <code value="uri" />
-        <profile value="https://www.drks.de" />
-      </type>
+      <fixedUri value="https://www.drks.de" />
       <mapping>
         <identity value="NFDI4Health" />
         <map value="1.12.1 Resource.ids_alternative.type" />
         <comment value="Type = DRKS" />
       </mapping>
     </element>
-    <element id="ResearchStudy.identifier:sliceIdentifier_DRKS.value">
+    <element id="ResearchStudy.identifier:DRKS.value">
       <path value="ResearchStudy.identifier.value" />
       <definition value="Identifier (ID) assigened to the given resource by another registering system, e.g. by a register of clinical trials or a data repository." />
       <min value="1" />
@@ -137,24 +137,21 @@
         <map value="1.12.2 Resource.ids_alternative.identifier" />
       </mapping>
     </element>
-    <element id="ResearchStudy.identifier:sliceIdentifier_NCT">
+    <element id="ResearchStudy.identifier:NCT">
       <path value="ResearchStudy.identifier" />
-      <sliceName value="sliceIdentifier_NCT" />
+      <sliceName value="NCT" />
     </element>
-    <element id="ResearchStudy.identifier:sliceIdentifier_NCT.system">
+    <element id="ResearchStudy.identifier:NCT.system">
       <path value="ResearchStudy.identifier.system" />
       <min value="1" />
-      <type>
-        <code value="uri" />
-        <profile value="https://www.clinicaltrials.gov/" />
-      </type>
+      <fixedUri value="https://www.clinicaltrials.gov/" />
       <mapping>
         <identity value="NFDI4Health" />
         <map value="1.12.1 Resource.ids_alternative.type" />
         <comment value="Type = NCT" />
       </mapping>
     </element>
-    <element id="ResearchStudy.identifier:sliceIdentifier_NCT.value">
+    <element id="ResearchStudy.identifier:NCT.value">
       <path value="ResearchStudy.identifier.value" />
       <min value="1" />
       <mapping>
@@ -162,24 +159,21 @@
         <map value="1.12.2 Resource.ids_alternative.identifier" />
       </mapping>
     </element>
-    <element id="ResearchStudy.identifier:sliceIdentifier_ISRCTN">
+    <element id="ResearchStudy.identifier:ISRCTN">
       <path value="ResearchStudy.identifier" />
-      <sliceName value="sliceIdentifier_ISRCTN" />
+      <sliceName value="ISRCTN" />
     </element>
-    <element id="ResearchStudy.identifier:sliceIdentifier_ISRCTN.system">
+    <element id="ResearchStudy.identifier:ISRCTN.system">
       <path value="ResearchStudy.identifier.system" />
       <min value="1" />
-      <type>
-        <code value="uri" />
-        <profile value="https://www.isrctn.com/" />
-      </type>
+      <fixedUri value="https://www.isrctn.com/" />
       <mapping>
         <identity value="NFDI4Health" />
         <map value="1.12.1 Resource.ids_alternative.type" />
         <comment value="Type = ISRCTN" />
       </mapping>
     </element>
-    <element id="ResearchStudy.identifier:sliceIdentifier_ISRCTN.value">
+    <element id="ResearchStudy.identifier:ISRCTN.value">
       <path value="ResearchStudy.identifier.value" />
       <min value="1" />
       <mapping>
@@ -187,24 +181,21 @@
         <map value="1.12.2 Resource.ids_alternative.identifier" />
       </mapping>
     </element>
-    <element id="ResearchStudy.identifier:sliceIdentifier_EudraCT">
+    <element id="ResearchStudy.identifier:EudraCT">
       <path value="ResearchStudy.identifier" />
-      <sliceName value="sliceIdentifier_EudraCT" />
+      <sliceName value="EudraCT" />
     </element>
-    <element id="ResearchStudy.identifier:sliceIdentifier_EudraCT.system">
+    <element id="ResearchStudy.identifier:EudraCT.system">
       <path value="ResearchStudy.identifier.system" />
       <min value="1" />
-      <type>
-        <code value="uri" />
-        <profile value="https://eudract.ema.europa.eu/results-web/index.xhtml" />
-      </type>
+      <fixedUri value="https://eudract.ema.europa.eu/results-web/index.xhtml" />
       <mapping>
         <identity value="NFDI4Health" />
         <map value="1.12.1 Resource.ids_alternative.type" />
         <comment value="Type = EudraCT" />
       </mapping>
     </element>
-    <element id="ResearchStudy.identifier:sliceIdentifier_EudraCT.value">
+    <element id="ResearchStudy.identifier:EudraCT.value">
       <path value="ResearchStudy.identifier.value" />
       <min value="1" />
       <mapping>
@@ -212,11 +203,11 @@
         <map value="1.12.2 Resource.ids_alternative.identifier" />
       </mapping>
     </element>
-    <element id="ResearchStudy.identifier:sliceIdentifier_EUDAMED">
+    <element id="ResearchStudy.identifier:EUDAMED">
       <path value="ResearchStudy.identifier" />
-      <sliceName value="sliceIdentifier_EUDAMED" />
+      <sliceName value="EUDAMED" />
     </element>
-    <element id="ResearchStudy.identifier:sliceIdentifier_EUDAMED.system">
+    <element id="ResearchStudy.identifier:EUDAMED.system">
       <path value="ResearchStudy.identifier.system" />
       <min value="1" />
       <type>
@@ -229,7 +220,7 @@
         <comment value="Type = EUDAMED" />
       </mapping>
     </element>
-    <element id="ResearchStudy.identifier:sliceIdentifier_EUDAMED.value">
+    <element id="ResearchStudy.identifier:EUDAMED.value">
       <path value="ResearchStudy.identifier.value" />
       <min value="1" />
       <mapping>
@@ -330,6 +321,16 @@
         <map value="1.12.2 Resource.ids_alternative.identifier" />
       </mapping>
     </element>
+    <element id="ResearchStudy.category">
+      <path value="ResearchStudy.category" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ResearchStudyCategory" />
+        </extension>
+        <strength value="example" />
+        <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.1037--20220705210404" />
+      </binding>
+    </element>
     <element id="ResearchStudy.description">
       <path value="ResearchStudy.description" />
       <short value="English description" />
@@ -349,26 +350,18 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="1" />
+      <min value="0" />
     </element>
-    <element id="ResearchStudy.description.extension:languages">
+    <element id="ResearchStudy.description.extension:myExtension">
       <path value="ResearchStudy.description.extension" />
-      <sliceName value="languages" />
-      <min value="1" />
+      <sliceName value="myExtension" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://example.org/fhir/StructureDefinition/Languages" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/translation" />
       </type>
       <isModifier value="false" />
-      <mapping>
-        <identity value="NFDI4Health" />
-        <map value="1.5.2 Resource.resource_description_english.language" />
-      </mapping>
-    </element>
-    <element id="ResearchStudy.description.extension:languages.value[x]">
-      <path value="ResearchStudy.description.extension.value[x]" />
-      <fixedCode value="en" />
     </element>
   </differential>
 </StructureDefinition>

@@ -1,0 +1,107 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="1.2.276.0.76.11.1036--20220706232530"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+    </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+        <valuePeriod>
+            <start value="2022-07-06T23:25:30+01:00"/>
+        </valuePeriod>
+    </extension>
+    <url value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.1036--20220706232530"/>
+    <identifier>
+        <use value="official"/>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:oid:1.2.276.0.76.11.1036"/>
+    </identifier>
+    <version value="2022-07-06T23:25:30"/>
+    <name value="Study_data_source_SCT"/>
+    <title value="study_data_source_SCT"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="BIH @ Charité"/>
+    <description value="study_data_source_SCT"/>
+    <immutable value="false"/>
+    <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
+    <compose>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="119297000"/>
+                <display value="Blood specimen (specimen)"/>
+            </concept>
+            <concept>
+                <code value="258564008"/>
+                <display value="Buccal smear sample (specimen)"/>
+            </concept>
+            <concept>
+                <code value="122556008"/>
+                <display value="Cord blood specimen (specimen)"/>
+            </concept>
+            <concept>
+                <code value="119339001"/>
+                <display value="Stool specimen (specimen)"/>
+            </concept>
+            <concept>
+                <code value="119326000"/>
+                <display value="Hair specimen (specimen)"/>
+            </concept>
+            <concept>
+                <code value="119327009"/>
+                <display value="Nail specimen (specimen)"/>
+            </concept>
+            <concept>
+                <code value="119361006"/>
+                <display value="Plasma specimen (specimen)"/>
+            </concept>
+            <concept>
+                <code value="27888000"/>
+                <display value="Ribonucleic acid (substance)"/>
+            </concept>
+            <concept>
+                <code value="119342007"/>
+                <display value="Saliva specimen (specimen)"/>
+            </concept>
+            <concept>
+                <code value="16214131000119104"/>
+                <display value="Frozen tissue section sample (specimen)"/>
+            </concept>
+            <concept>
+                <code value="441652008"/>
+                <display value="Formalin-fixed paraffin-embedded tissue specimen (specimen)"/>
+            </concept>
+            <concept>
+                <code value="122575003"/>
+                <display value="Urine specimen (specimen)"/>
+            </concept>
+            <concept>
+                <code value="123038009"/>
+                <display value="Specimen (specimen)"/>
+            </concept>
+            <concept>
+                <code value="113024001"/>
+                <display value="Assessment and interpretation of higher cerebral function, cognitive testing (procedure)"/>
+            </concept>
+            <concept>
+                <code value="129465004"/>
+                <display value="Medical record, device (physical object)"/>
+            </concept>
+            <concept>
+                <code value="5491000179105"/>
+                <display value="Medical record summary (record artifact)"/>
+            </concept>
+            <concept>
+                <code value="84100007"/>
+                <display value="History taking (procedure)"/>
+            </concept>
+            <concept>
+                <code value="64777005"/>
+                <display value="Physiologic measurement (procedure)"/>
+            </concept>
+            <concept>
+                <code value="74964007"/>
+                <display value="Other (qualifier value)"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

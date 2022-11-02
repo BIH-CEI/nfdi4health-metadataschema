@@ -1,0 +1,190 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="1.2.276.0.76.11.1037--20220705210404"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+    </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+        <valuePeriod>
+            <start value="2022-07-05T21:04:04+01:00"/>
+        </valuePeriod>
+    </extension>
+    <url value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.1037--20220705210404"/>
+    <identifier>
+        <use value="official"/>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:oid:1.2.276.0.76.11.1037"/>
+    </identifier>
+    <version value="2022-07-05T21:04:04"/>
+    <name value="Study_data_source_UMLS"/>
+    <title value="study_data_source_UMLS"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="BIH @ Charité"/>
+    <description value="study_data_source_UMLS"/>
+    <immutable value="false"/>
+    <compose>
+        <include>
+            <system value="urn:oid:2.16.840.1.113883.6.86"/>
+            <concept>
+                <code value="C0005767"/>
+                <display value="Blood (Body Substance)"/>
+            </concept>
+            <concept>
+                <code value="C5419552"/>
+                <display value="Buccal Cell Sample (Cell)"/>
+            </concept>
+            <concept>
+                <code value="C0162371"/>
+                <display value="Umbilical Cord Blood (Body Substance)"/>
+            </concept>
+            <concept>
+                <code value="C0012854"/>
+                <display value="DNA (Nucleic Acid, Nucleoside, or Nucleotide · Biologically Active Substance)"/>
+            </concept>
+            <concept>
+                <code value="C0015733"/>
+                <display value="Feces (Body Substance)"/>
+            </concept>
+            <concept>
+                <code value="C0444095"/>
+                <display value="Hair Specimen (Body Substance)"/>
+            </concept>
+            <concept>
+                <code value="C0178708"/>
+                <display value="immortalized cell (Cell)"/>
+            </concept>
+            <concept>
+                <code value="C0444077"/>
+                <display value="Nail Specimen (Body Substance)"/>
+            </concept>
+            <concept>
+                <code value="C1609077"/>
+                <display value="Plasma - SpecimenType (Body Substance)"/>
+            </concept>
+            <concept>
+                <code value="C0032105"/>
+                <display value="Plasma (Body Substance)"/>
+            </concept>
+            <concept>
+                <code value="C0035668"/>
+                <display value="RNA (Nucleic Acid, Nucleoside, or Nucleotide)"/>
+            </concept>
+            <concept>
+                <code value="C0438730"/>
+                <display value="Saliva specimen (Body Substance)"/>
+            </concept>
+            <concept>
+                <code value="C0036087"/>
+                <display value="Saliva (Body Substance)"/>
+            </concept>
+            <concept>
+                <code value="C1550100"/>
+                <display value="Specimen Type - Serum (Body Substance)"/>
+            </concept>
+            <concept>
+                <code value="C0229671"/>
+                <display value="Serum (Body Substance)"/>
+            </concept>
+            <concept>
+                <code value="C4764221"/>
+                <display value="Frozen Tissue (Tissue)"/>
+            </concept>
+            <concept>
+                <code value="C2711483"/>
+                <display value="Formalin-fixed paraffin-embedded tissue specimen (Tissue)"/>
+            </concept>
+            <concept>
+                <code value="C5419553"/>
+                <display value="Formalin-Fixed Paraffin-Embedded Tissue Sample (Tissue)"/>
+            </concept>
+            <concept>
+                <code value="C1610733"/>
+                <display value="Urine - SpecimenType (Body Substance)"/>
+            </concept>
+            <concept>
+                <code value="C0042036"/>
+                <display value="Urine (Body Substance)"/>
+            </concept>
+            <concept>
+                <code value="C0242356"/>
+                <display value="Databases (Intellectual Product)"/>
+            </concept>
+            <concept>
+                <code value="C2237115"/>
+                <display value="Assessment of cognitive functions (Health Care Activity)"/>
+            </concept>
+            <concept>
+                <code value="C3887754"/>
+                <display value="Ultrasonogram (Manufactured Object)"/>
+            </concept>
+            <concept>
+                <code value="C5392999"/>
+                <display value="Magnetic Resonance Image (Intellectual Product)"/>
+            </concept>
+            <concept>
+                <code value="C3890166"/>
+                <display value="Magnetic Resonance Imaging Study File (Intellectual Product)"/>
+            </concept>
+            <concept>
+                <code value="C1306645"/>
+                <display value="Plain x-ray (Diagnostic Procedure)"/>
+            </concept>
+            <concept>
+                <code value="C3891450"/>
+                <display value="Radiography Study File (Intellectual Product)"/>
+            </concept>
+            <concept>
+                <code value="C1522465"/>
+                <display value="Tomogram (Manufactured Object)"/>
+            </concept>
+            <concept>
+                <code value="C3888140"/>
+                <display value="Computed Tomography Study File (Intellectual Product)"/>
+            </concept>
+            <concept>
+                <code value="C2015796"/>
+                <display value="other imaging studies (Diagnostic Procedure)"/>
+            </concept>
+            <concept>
+                <code value="C0025102"/>
+                <display value="Medical Records (Intellectual Product)"/>
+            </concept>
+            <concept>
+                <code value="C0021822"/>
+                <display value="Interview (Activity)"/>
+            </concept>
+            <concept>
+                <code value="C0034394"/>
+                <display value="Questionnaires (Intellectual Product)"/>
+            </concept>
+            <concept>
+                <code value="C0242485"/>
+                <display value="Measurement (Functional Concept)"/>
+            </concept>
+            <concept>
+                <code value="C0887950"/>
+                <display value="Genomics (Biomedical Occupation or Discipline)"/>
+            </concept>
+            <concept>
+                <code value="C1328813"/>
+                <display value="Metabolomics (Biomedical Occupation or Discipline)"/>
+            </concept>
+            <concept>
+                <code value="C4727081"/>
+                <display value="Transcriptomics (Biomedical Occupation or Discipline)"/>
+            </concept>
+            <concept>
+                <code value="C0872252"/>
+                <display value="Proteomics (Biomedical Occupation or Discipline)"/>
+            </concept>
+            <concept>
+                <code value="C0205394"/>
+                <display value="Other (Qualitative Concept)"/>
+            </concept>
+            <concept>
+                <code value="C1556044"/>
+                <display value="Other - No Information (Idea or Concept)"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

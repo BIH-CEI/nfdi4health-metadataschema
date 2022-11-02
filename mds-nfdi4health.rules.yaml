@@ -1,0 +1,4 @@
+- name: publisher-and-contact
+  action: predicate
+  predicate: publisher.exists() and contact.telecom.where(system='url').exists() and contact.telecom.value.exists()
+  error: This resource does not have a publisher and a contact

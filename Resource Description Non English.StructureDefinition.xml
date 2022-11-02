@@ -8,7 +8,7 @@
   <abstract value="false" />
   <context>
     <type value="element" />
-    <expression value="ResearchStudy" />
+    <expression value="ResearchStudy.description" />
   </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
@@ -86,7 +86,6 @@
       <type>
         <code value="code" />
       </type>
-      <fixedCode value="de, fr, es, other" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
