@@ -6,7 +6,7 @@
   "title": "NFDI4Health VS MDS Study Centers [SNOMED CT, local]",
   "description": "Value set defining codes to specify the number of study center(s).",
   "version": "0.9",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-time-units-ucum",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-centers-snomedct-local",
   "experimental": true,
   "publisher": "NFDI4Health",
   "contact": [
