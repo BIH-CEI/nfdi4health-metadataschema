@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="nfdi4health-pr-mds-study" />
+  <url value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study" />
+  <version value="0.9" />
+  <name value="NFDI4Health_PR_MDS_Study" />
+  <title value="NFDI4Health PR MDS Study" />
+  <status value="draft" />
+  <publisher value="NFDI4Health" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="https://www.nfdi4health.de" />
+    </telecom>
+  </contact>
+  <description value="Resource covering metadata of a study." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="ResearchStudy" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ResearchStudy" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="ResearchStudy.extension">
+      <path value="ResearchStudy.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="ResearchStudy.extension:label">
+      <path value="ResearchStudy.extension" />
+      <sliceName value="label" />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-label" />
+      </type>
+      <isModifier value="false" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.4 Resource.resource_acronyms" />
+      </mapping>
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.3 Resource.resource_titles" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.extension:label.extension">
+      <path value="ResearchStudy.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="2" />
+    </element>
+    <element id="ResearchStudy.extension:label.extension:value">
+      <path value="ResearchStudy.extension.extension" />
+      <sliceName value="value" />
+      <min value="1" />
+    </element>
+    <element id="ResearchStudy.extension:label.extension:value.value[x]">
+      <path value="ResearchStudy.extension.extension.value[x]" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.3.1 Resource.resource_titles.text" />
+        <comment value="To be used when the content is in the same language than the base language of the resource" />
+      </mapping>
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.4.1 Resource.resource_acronyms.text" />
+        <comment value="When in the base language of the resource" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.extension:label.extension:value.value[x].extension">
+      <path value="ResearchStudy.extension.extension.value[x].extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="ResearchStudy.extension:label.extension:value.value[x].extension:translation">
+      <path value="ResearchStudy.extension.extension.value[x].extension" />
+      <sliceName value="translation" />
+      <min value="0" />
+    </element>
+    <element id="ResearchStudy.extension:label.extension:value.value[x].extension:translation.extension">
+      <path value="ResearchStudy.extension.extension.value[x].extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="2" />
+    </element>
+    <element id="ResearchStudy.extension:label.extension:value.value[x].extension:translation.extension:lang">
+      <path value="ResearchStudy.extension.extension.value[x].extension.extension" />
+      <sliceName value="lang" />
+      <min value="1" />
+    </element>
+    <element id="ResearchStudy.extension:label.extension:value.value[x].extension:translation.extension:lang.value[x]">
+      <path value="ResearchStudy.extension.extension.value[x].extension.extension.value[x]" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.3.2 Resource.resource_titles.language" />
+        <comment value="To be used when the language is different from the base language of the resource" />
+      </mapping>
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.4.2 Resource.resource_acronyms.language" />
+        <comment value="To be used when the language is different from the base language of the resource" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.extension:label.extension:value.value[x].extension:translation.extension:content">
+      <path value="ResearchStudy.extension.extension.value[x].extension.extension" />
+      <sliceName value="content" />
+      <min value="1" />
+    </element>
+    <element id="ResearchStudy.extension:label.extension:value.value[x].extension:translation.extension:content.value[x]">
+      <path value="ResearchStudy.extension.extension.value[x].extension.extension.value[x]" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.3.2 Resource.resource_titles.text" />
+        <comment value="To be used when the language is different from the base language of the resource" />
+      </mapping>
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.4.2 Resource.resource_acronyms.text" />
+        <comment value="To be used when the language is different from the base language of the resource" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.extension:execution-language">
+      <path value="ResearchStudy.extension" />
+      <sliceName value="execution-language" />
+      <definition value="Language(s) in which a study/substudy is conducted, or a language in which a study document is composed." />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-execution-language" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="ResearchStudy.extension:execution-language.value[x]">
+      <path value="ResearchStudy.extension.value[x]" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.8 Resource.resource_languages" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.extension:associated-party">
+      <path value="ResearchStudy.extension" />
+      <sliceName value="associated-party" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://www.nfdi4health.de/fhir/StructureDefinition/nfdi4health-ex-mds-associated-party" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="ResearchStudy.identifier">
+      <path value="ResearchStudy.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.1 Resource.resource_identifier" />
+      </mapping>
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.12 Resource.ids_alternative" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.identifier:NFDI4Health">
+      <path value="ResearchStudy.identifier" />
+      <sliceName value="NFDI4Health" />
+      <definition value="Unique identifier of the resource used for identification within the NFDI4Health." />
+      <min value="1" />
+      <max value="1" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.1 Resource.resource_identifier" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.identifier:NFDI4Health.use">
+      <path value="ResearchStudy.identifier.use" />
+      <min value="1" />
+      <fixedCode value="official" />
+    </element>
+    <element id="ResearchStudy.identifier:NFDI4Health.system">
+      <path value="ResearchStudy.identifier.system" />
+      <min value="1" />
+      <fixedUri value="https://www.nfdi4health.de/" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.1 Resource.resource_identifer" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.identifier:NFDI4Health.value">
+      <path value="ResearchStudy.identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="ResearchStudy.identifier:DRKS">
+      <path value="ResearchStudy.identifier" />
+      <sliceName value="DRKS" />
+      <definition value="Group of items providing information about identifiers (IDs) assigned to the given resource by another registering systems, e.g. a register of clinical trials or a data repository." />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.12 Resource.ids_alternative" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.identifier:DRKS.system">
+      <path value="ResearchStudy.identifier.system" />
+      <definition value="Name of the system where the given resource is already registered. Fixed to DRKS." />
+      <min value="1" />
+      <fixedUri value="https://www.drks.de" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.12.1 Resource.ids_alternative.type" />
+        <comment value="Type = DRKS" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.identifier:DRKS.value">
+      <path value="ResearchStudy.identifier.value" />
+      <definition value="Identifier (ID) assigned to the given resource by DRKS." />
+      <min value="1" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.12.2 Resource.ids_alternative.identifier" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.identifier:NCT">
+      <path value="ResearchStudy.identifier" />
+      <sliceName value="NCT" />
+    </element>
+    <element id="ResearchStudy.identifier:NCT.system">
+      <path value="ResearchStudy.identifier.system" />
+      <definition value="Name of the system where the given resource is already registered. Fixed to NCT (CT.gov)." />
+      <min value="1" />
+      <fixedUri value="https://www.clinicaltrials.gov/" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.12.1 Resource.ids_alternative.type" />
+        <comment value="Type = NCT" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.identifier:NCT.value">
+      <path value="ResearchStudy.identifier.value" />
+      <definition value="Identifier (ID) assigned to the given resource by ClinicalTrials.gov." />
+      <min value="1" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.12.2 Resource.ids_alternative.identifier" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.identifier:ISRCTN">
+      <path value="ResearchStudy.identifier" />
+      <sliceName value="ISRCTN" />
+    </element>
+    <element id="ResearchStudy.identifier:ISRCTN.system">
+      <path value="ResearchStudy.identifier.system" />
+      <definition value="Name of the system where the given resource is already registered. Fixed to ISRCTN." />
+      <min value="1" />
+      <fixedUri value="https://www.isrctn.com/" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.12.1 Resource.ids_alternative.type" />
+        <comment value="Type = ISRCTN" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.identifier:ISRCTN.value">
+      <path value="ResearchStudy.identifier.value" />
+      <definition value="Identifier (ID) assigned to the given resource by ISRCTN." />
+      <min value="1" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.12.2 Resource.ids_alternative.identifier" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.identifier:EudraCT">
+      <path value="ResearchStudy.identifier" />
+      <sliceName value="EudraCT" />
+    </element>
+    <element id="ResearchStudy.identifier:EudraCT.system">
+      <path value="ResearchStudy.identifier.system" />
+      <definition value="Name of the system where the given resource is already registered. Fixed to EudraCT." />
+      <min value="1" />
+      <fixedUri value="https://eudract.ema.europa.eu/results-web/index.xhtml" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.12.1 Resource.ids_alternative.type" />
+        <comment value="Type = EudraCT" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.identifier:EudraCT.value">
+      <path value="ResearchStudy.identifier.value" />
+      <min value="1" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.12.2 Resource.ids_alternative.identifier" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.identifier:EUDAMED">
+      <path value="ResearchStudy.identifier" />
+      <sliceName value="EUDAMED" />
+    </element>
+    <element id="ResearchStudy.identifier:EUDAMED.system">
+      <path value="ResearchStudy.identifier.system" />
+      <definition value="Name of the system where the given resource is already registered. Fixed to EUDAMED." />
+      <min value="1" />
+      <fixedUri value="https://ec.europa.eu/tools/eudamed/#/screen/home" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.12.1 Resource.ids_alternative.type" />
+        <comment value="Type = EUDAMED" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.identifier:EUDAMED.value">
+      <path value="ResearchStudy.identifier.value" />
+      <definition value="Identifier (ID) assigned to the given resource by EUDAMED." />
+      <min value="1" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.12.2 Resource.ids_alternative.identifier" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.identifier:UTN">
+      <path value="ResearchStudy.identifier" />
+      <sliceName value="UTN" />
+    </element>
+    <element id="ResearchStudy.identifier:UTN.system">
+      <path value="ResearchStudy.identifier.system" />
+      <definition value="Name of the system where the given resource is already registered. Fixed to UTN (WHO)." />
+      <min value="1" />
+      <fixedUri value="http://www.who.int/ictrp/unam-" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.12.1 Resource.ids_alternative.type" />
+        <comment value="Type = UTN" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.identifier:UTN.value">
+      <path value="ResearchStudy.identifier.value" />
+      <min value="1" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.12.2 Resource.ids_alternative.identifier" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.identifier:KonsortSWD">
+      <path value="ResearchStudy.identifier" />
+      <sliceName value="KonsortSWD" />
+    </element>
+    <element id="ResearchStudy.identifier:KonsortSWD.system">
+      <path value="ResearchStudy.identifier.system" />
+      <definition value="Name of the system where the given resource is already registered. Fixed to KonsortSWD." />
+      <min value="1" />
+      <fixedUri value="https://www.konsortswd.de/" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.12.1 Resource.ids_alternative.type" />
+        <comment value="Type = KonsortSWD" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.identifier:KonsortSWD.value">
+      <path value="ResearchStudy.identifier.value" />
+      <definition value="Identifier (ID) assigned to the given resource by KonsortSWD." />
+      <min value="1" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.12.2 Resource.ids_alternative.identifier" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.identifier:MDMPortal">
+      <path value="ResearchStudy.identifier" />
+      <sliceName value="MDMPortal" />
+    </element>
+    <element id="ResearchStudy.identifier:MDMPortal.system">
+      <path value="ResearchStudy.identifier.system" />
+      <definition value="Name of the system where the given resource is already registered. Fixed to MDM Portal." />
+      <min value="1" />
+      <fixedUri value="https://www.mdm-portal.de/" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.12.1 Resource.ids_alternative.type" />
+        <comment value="Type = MDM Portal" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.identifier:MDMPortal.value">
+      <path value="ResearchStudy.identifier.value" />
+      <definition value="Identifier (ID) assigned to the given resource by MDM Portal." />
+      <min value="1" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.12.2 Resource.ids_alternative.identifier" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.identifier:Other">
+      <path value="ResearchStudy.identifier" />
+      <sliceName value="Other" />
+    </element>
+    <element id="ResearchStudy.identifier:Other.system">
+      <path value="ResearchStudy.identifier.system" />
+      <definition value="Type/name of the system where the given resource is already registered." />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.12.1 Resource.ids_alternative.type" />
+        <comment value="Type = Other" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.identifier:Other.value">
+      <path value="ResearchStudy.identifier.value" />
+      <definition value="Identifier (ID) assigned to the given resource by another registering system, e.g. by a register of clinical trials or a data repository." />
+      <min value="1" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.12.2 Resource.ids_alternative.identifier" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.title">
+      <path value="ResearchStudy.title" />
+      <short value="Scientific unabbreviated title or name of the resource." />
+      <definition value="Scientific unabbreviated title or name of the resource." />
+      <min value="1" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.3.1 Resource.resource_titles.text" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.title.extension">
+      <path value="ResearchStudy.title.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="ResearchStudy.title.extension:translation">
+      <path value="ResearchStudy.title.extension" />
+      <sliceName value="translation" />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/translation" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="ResearchStudy.title.extension:translation.extension">
+      <path value="ResearchStudy.title.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="2" />
+    </element>
+    <element id="ResearchStudy.title.extension:translation.extension:lang">
+      <path value="ResearchStudy.title.extension.extension" />
+      <sliceName value="lang" />
+      <min value="1" />
+    </element>
+    <element id="ResearchStudy.title.extension:translation.extension:lang.value[x]">
+      <path value="ResearchStudy.title.extension.extension.value[x]" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
+          <valueCanonical value="http://hl7.org/fhir/ValueSet/all-languages" />
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="Language" />
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+          <valueBoolean value="true" />
+        </extension>
+        <strength value="required" />
+      </binding>
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.3.2 Resource.resource_titles.language" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.title.extension:translation.extension:content">
+      <path value="ResearchStudy.title.extension.extension" />
+      <sliceName value="content" />
+      <short value="Title in other Language" />
+      <definition value="Title in other Language." />
+      <min value="1" />
+    </element>
+    <element id="ResearchStudy.title.extension:translation.extension:content.value[x]">
+      <path value="ResearchStudy.title.extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ResearchStudy.status">
+      <path value="ResearchStudy.status" />
+      <comment value="The item does not exist in NFDI4Health' MDS. Fixed to &quot;active&quot; for all studies." />
+      <fixedCode value="active" />
+    </element>
+    <element id="ResearchStudy.category">
+      <path value="ResearchStudy.category" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ResearchStudyCategory" />
+        </extension>
+        <strength value="example" />
+        <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.1037--20220705210404" />
+      </binding>
+    </element>
+    <element id="ResearchStudy.relatedArtifact">
+      <path value="ResearchStudy.relatedArtifact" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="ResearchStudy.relatedArtifact:webpage">
+      <path value="ResearchStudy.relatedArtifact" />
+      <sliceName value="webpage" />
+      <max value="1" />
+    </element>
+    <element id="ResearchStudy.relatedArtifact:webpage.type">
+      <path value="ResearchStudy.relatedArtifact.type" />
+      <fixedCode value="documentation" />
+    </element>
+    <element id="ResearchStudy.relatedArtifact:webpage.url">
+      <path value="ResearchStudy.relatedArtifact.url" />
+      <short value="Link to a web page." />
+      <definition value="If existing, a link to the web page directly relevant to the resource." />
+      <min value="1" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.9 Resource.resource_web_page" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.keyword">
+      <path value="ResearchStudy.keyword" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.7 Resource.resource_keywords" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.keyword.coding">
+      <path value="ResearchStudy.keyword.coding" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.7.2 Resource.resource_keywords_label_code" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.keyword.text">
+      <path value="ResearchStudy.keyword.text" />
+      <min value="1" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.7.1 Resource.resource_keywords_label" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.description">
+      <path value="ResearchStudy.description" />
+      <short value="English description" />
+      <definition value="A short plain text summary describing the resource in English." />
+      <min value="1" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.5.1 Resource.resource_description_english" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.description.extension">
+      <path value="ResearchStudy.description.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="ResearchStudy.description.extension:translation">
+      <path value="ResearchStudy.description.extension" />
+      <sliceName value="translation" />
+      <short value="Descriptions that are not in English" />
+      <definition value="Group of items with description(s) of the resource written not in English." />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/translation" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="ResearchStudy.description.extension:translation.extension">
+      <path value="ResearchStudy.description.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="2" />
+    </element>
+    <element id="ResearchStudy.description.extension:translation.extension:content">
+      <path value="ResearchStudy.description.extension.extension" />
+      <sliceName value="content" />
+      <short value="Description (not in English)" />
+      <definition value="Short plain text summary of the resource other than in English." />
+      <min value="1" />
+    </element>
+  </differential>
+</StructureDefinition>

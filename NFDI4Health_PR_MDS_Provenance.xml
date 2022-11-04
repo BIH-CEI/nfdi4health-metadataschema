@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="nfdi4health-pr-mds-provenance" />
+  <url value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-provenance" />
+  <version value="0.9" />
+  <name value="NFDI4Health_PR_MDS_Provenance" />
+  <title value="NFDI4Health PR MDS Provenance" />
+  <status value="draft" />
+  <publisher value="NFDI4Health" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="https://www.nfdi4health.de" />
+    </telecom>
+  </contact>
+  <description value="Resource covering information about the provenance of a resource." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Provenance" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Provenance" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Provenance.extension">
+      <path value="Provenance.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Provenance.extension:data-source">
+      <path value="Provenance.extension" />
+      <sliceName value="data-source" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-provenance-data-source" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="Provenance.target">
+      <path value="Provenance.target" />
+      <definition value="The Reference(s) that were generated or updated by the activity described in this resource. A provenance can point to more than one target if multiple resources were created/updated by the same activity." />
+    </element>
+    <element id="Provenance.target.type">
+      <path value="Provenance.target.type" />
+      <short value="Type the reference refers to (in NFDI4Health: ResearchStudy, DocumentReference or Questionnaire)" />
+      <type>
+        <code value="uri" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-document" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire" />
+      </type>
+    </element>
+    <element id="Provenance.recorded">
+      <path value="Provenance.recorded" />
+      <short value="When the activity was verified / posted / submitted / updated" />
+    </element>
+    <element id="Provenance.agent">
+      <path value="Provenance.agent" />
+      <short value="User who submitted, published, updated or verified the resource." />
+      <definition value="An actor taking a role in an activity for which it can be assigned some degree of responsibility for the activity taking place." />
+    </element>
+    <element id="Provenance.agent.who.type">
+      <path value="Provenance.agent.who.type" />
+      <min value="1" />
+      <type>
+        <code value="uri" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner-role" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization" />
+      </type>
+    </element>
+    <element id="Provenance.entity.agent">
+      <path value="Provenance.entity.agent" />
+      <contentReference value="http://hl7.org/fhir/StructureDefinition/Provenance#Provenance.agent" />
+    </element>
+  </differential>
+</StructureDefinition>

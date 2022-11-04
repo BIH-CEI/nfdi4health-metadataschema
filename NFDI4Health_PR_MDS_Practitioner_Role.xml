@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="nfdi4health-pr-mds-practitioner-role" />
+  <url value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner-role" />
+  <version value="0.9" />
+  <name value="NFDI4Health_PR_MDS_Practitioner_Role" />
+  <title value="NFDI4Health PR MDS Practitioner Role" />
+  <status value="draft" />
+  <contact>
+    <name value="NFDI4Health" />
+    <telecom>
+      <system value="url" />
+      <value value="https://www.nfdi4health.de" />
+    </telecom>
+  </contact>
+  <description value="Resource covering metadata of roles from individuals." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="PractitionerRole" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/PractitionerRole" />
+  <derivation value="constraint" />
+</StructureDefinition>
