@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="nfdi4health-ex-mds-associated-party" />
-  <url value="https://www.nfdi4health.de/fhir/StructureDefinition/nfdi4health-ex-mds-associated-party" />
+  <url value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-associated-party" />
   <version value="0.9" />
   <name value="NFDI4Health_EX_MDS_Associated_Party" />
   <title value="NFDI4Health EX MDS Associated Party" />
@@ -159,7 +159,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://www.nfdi4health.de/fhir/StructureDefinition/nfdi4health-ex-mds-associated-party" />
+      <fixedUri value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-associated-party" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
