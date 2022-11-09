@@ -2,7 +2,8 @@
 fsh-generated
 _genonce.bat
 _genonce.sh
-_updatePublisher.bat_updatePublisher.sh
+_updatePublisher.bat
+_updatePublisher.sh
 ig.ini
 
 .DS_Store

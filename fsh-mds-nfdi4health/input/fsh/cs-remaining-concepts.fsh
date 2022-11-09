@@ -1,7 +1,7 @@
 CodeSystem: NFDI4Health_CS_MDS_Remaing_Concepts
 Id: nfdi4health-cs-mds-remaining-concepts
 Title: "NFDI4Health CS MDS Remaining Concepts"
-Description: "Code system defining remaining concepts without mapping to concepts from internation terminologies, ontologies, classifications, etc.."
+Description: "Code system defining remaining concepts without mapping to concepts from international terminologies, ontologies, classifications, etc.."
 * ^url = "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts"
 * ^status = #draft
 * ^version = "0.9"

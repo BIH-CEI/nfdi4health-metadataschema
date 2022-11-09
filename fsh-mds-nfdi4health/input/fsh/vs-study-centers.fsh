@@ -11,4 +11,4 @@ Description: "Value set defining codes to specify the number of study center(s).
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 
 * $Remaining#002 "Monocentric"
-* SNOMED_CT#255206009 "Multicentric (qualifier value)"
+* $SCT#255206009 "Multicentric (qualifier value)"
