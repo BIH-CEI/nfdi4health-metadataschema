@@ -10,6 +10,6 @@ Description: "Value set used to respond to questions that can be answered Yes, N
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 
-* SNOMED_CT#373066001 "Yes (qualifier value)"
-* SNOMED_CT#373067005 "No (qualifier value)"
-* SNOMED_CT#385432009 "Not applicable (qualifier value)"
+* $SCT#373066001 "Yes (qualifier value)"
+* $SCT#373067005 "No (qualifier value)"
+* $SCT#385432009 "Not applicable (qualifier value)"
