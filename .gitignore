@@ -8,7 +8,7 @@ ig.ini
 
 .DS_Store
 Thumbs.db
-/input-cache
+/input-caches
 /output
 /temp
 /template
