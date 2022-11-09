@@ -1,2 +1,13 @@
 .simplifier
-fsh-mds-nfdi4health
+fsh-generated
+_genonce.bat
+_genonce.sh
+_updatePublisher.bat_updatePublisher.sh
+ig.ini
+
+.DS_Store
+Thumbs.db
+/input-cache
+/output
+/temp
+/template
