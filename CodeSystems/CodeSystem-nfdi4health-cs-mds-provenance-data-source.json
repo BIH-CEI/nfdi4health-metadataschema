@@ -5,7 +5,7 @@
   "name": "NFDI4Health_CS_MDS_Provenance_Data_Source",
   "id": "nfdi4health-cs-mds-provenance-data-source",
   "title": "NFDI4Health CS MDS Provenance Data Source",
-  "description": "Code system defining data sources in a provenance resource.",
+  "description": "Code system defining data sources in a Provenance resource.",
   "version": "0.9",
   "url": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-mds-provenance-data-source",
   "concept": [

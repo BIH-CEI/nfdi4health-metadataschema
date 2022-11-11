@@ -1,7 +1,7 @@
 CodeSystem: NFDI4Health_CS_MDS_Provenance_Data_Source
 Id: nfdi4health-cs-mds-provenance-data-source
 Title: "NFDI4Health CS MDS Provenance Data Source"
-Description: "Code system defining data sources in a provenance resource."
+Description: "Code system defining data sources in a Provenance resource."
 * ^url = "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-mds-provenance-data-source"
 * ^status = #draft
 * ^version = "0.9"
