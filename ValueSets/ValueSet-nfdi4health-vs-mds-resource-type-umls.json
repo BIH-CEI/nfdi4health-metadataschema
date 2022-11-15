@@ -1,0 +1,83 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "NFDI4Health_VS_MDS_Resource_Type_UMLS",
+  "id": "nfdi4health-vs-mds-resource-type-umls",
+  "title": "NFDI4Health VS MDS Resource Type [UMLS]",
+  "description": "Value set defining codes to specify the terminology/classification used for type of the resource.",
+  "version": "0.9",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-resource-language-snomedct",
+  "experimental": true,
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.6.86",
+        "concept": [
+          {
+            "code": "C0947630",
+            "display": "Scientific Study (Research Activity)"
+          },
+          {
+            "code": "C0010995",
+            "display": "Data Collection (Research Activity)"
+          },
+          {
+            "code": "C0150098",
+            "display": "Data Set (Intellectual Product)"
+          },
+          {
+            "code": "C2985594",
+            "display": "Study Protocol Document (Intellectual Product)"
+          },
+          {
+            "code": "C4321383",
+            "display": "Protocol Amendment (Intellectual Product)"
+          },
+          {
+            "code": "C0009797",
+            "display": "Consent Forms (Intellectual Product)"
+          },
+          {
+            "code": "C5552264",
+            "display": "Resource information for patient (Intellectual Product)"
+          },
+          {
+            "code": "C3889288",
+            "display": "Standard Operating Procedure List (Intellectual Product)"
+          },
+          {
+            "code": "C3889277",
+            "display": "Statistical Analysis Plan (Intellectual Product)"
+          },
+          {
+            "code": "C3899449",
+            "display": "Data Management Plan (Intellectual Product)"
+          },
+          {
+            "code": "C1516308",
+            "display": "Case Report Form (Intellectual Product)"
+          },
+          {
+            "code": "C0034394",
+            "display": "Questionnaires (Intellectual Product)"
+          },
+          {
+            "code": "C020539",
+            "display": "Other (Qualitative Concept)"
+          }
+        ]
+      }
+    ]
+  }
+}
