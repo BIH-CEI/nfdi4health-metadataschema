@@ -1,0 +1,10 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "NFDI4Health_VS_MDS_Role_Name_Type_UMLS",
+  "id": "nfdi4health-vs-mds-role-name-type-umls",
+  "title": "NFDI4Health VS MDS Role Name Type [UMLS]",
+  "description": "role_name_type UMLS",
+  "version": "1.0",
+  "url": "http://www.nfdi4health.de/fhir//ValueSet/nfdi4health-vs-mds-role-name-type-umls"
+}
