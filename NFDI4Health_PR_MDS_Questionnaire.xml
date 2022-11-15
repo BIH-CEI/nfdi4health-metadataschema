@@ -21,6 +21,84 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Questionnaire" />
   <derivation value="constraint" />
   <differential>
+    <element id="Questionnaire.identifier">
+      <path value="Questionnaire.identifier" />
+      <min value="1" />
+      <max value="1" />
+      <mapping>
+        <identity value="1.1" />
+        <map value="resource_identifier" />
+        <comment value="Unique identifier of the resource used for identification within the NFDI4Health." />
+      </mapping>
+    </element>
+    <element id="Questionnaire.identifier.use">
+      <path value="Questionnaire.identifier.use" />
+      <max value="0" />
+    </element>
+    <element id="Questionnaire.identifier.type">
+      <path value="Questionnaire.identifier.type" />
+      <max value="0" />
+    </element>
+    <element id="Questionnaire.identifier.period">
+      <path value="Questionnaire.identifier.period" />
+      <max value="0" />
+    </element>
+    <element id="Questionnaire.identifier.assigner">
+      <path value="Questionnaire.identifier.assigner" />
+      <max value="0" />
+    </element>
+    <element id="Questionnaire.version">
+      <path value="Questionnaire.version" />
+      <mapping>
+        <identity value="1.10.1" />
+        <map value="resource_version" />
+      </mapping>
+    </element>
+    <element id="Questionnaire.title">
+      <path value="Questionnaire.title" />
+      <min value="1" />
+      <mapping>
+        <identity value="1.3.1" />
+        <map value="resource_titles" />
+      </mapping>
+    </element>
+    <element id="Questionnaire.title.extension">
+      <path value="Questionnaire.title.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="Questionnaire.title.extension:myExtension">
+      <path value="Questionnaire.title.extension" />
+      <sliceName value="myExtension" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/translation" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="Questionnaire.description">
+      <path value="Questionnaire.description" />
+      <min value="1" />
+      <mapping>
+        <identity value="1.5.1" />
+        <map value="resource_description_english" />
+      </mapping>
+    </element>
+    <element id="Questionnaire.copyright">
+      <path value="Questionnaire.copyright" />
+      <mapping>
+        <identity value="1.10.3.2" />
+        <map value="resource_use_rights_description" />
+      </mapping>
+    </element>
     <element id="Questionnaire.item.item">
       <path value="Questionnaire.item.item" />
       <contentReference value="http://hl7.org/fhir/StructureDefinition/Questionnaire#Questionnaire.item" />
