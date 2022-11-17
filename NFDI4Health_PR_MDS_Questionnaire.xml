@@ -39,6 +39,25 @@
       <path value="Questionnaire.identifier.type" />
       <max value="0" />
     </element>
+    <element id="Questionnaire.identifier.system">
+      <path value="Questionnaire.identifier.system" />
+      <min value="1" />
+      <fixedUri value="NFDI4Health" />
+      <mapping>
+        <identity value="1.1" />
+        <map value="resource_identifier" />
+        <comment value="The namespace for the identifier value" />
+      </mapping>
+    </element>
+    <element id="Questionnaire.identifier.value">
+      <path value="Questionnaire.identifier.value" />
+      <min value="1" />
+      <mapping>
+        <identity value="1.1" />
+        <map value="resource_identifier" />
+        <comment value="The value that is unique" />
+      </mapping>
+    </element>
     <element id="Questionnaire.identifier.period">
       <path value="Questionnaire.identifier.period" />
       <max value="0" />
@@ -71,12 +90,12 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="0" />
+      <min value="1" />
     </element>
-    <element id="Questionnaire.title.extension:myExtension">
+    <element id="Questionnaire.title.extension:title_language">
       <path value="Questionnaire.title.extension" />
-      <sliceName value="myExtension" />
-      <min value="0" />
+      <sliceName value="title_language" />
+      <min value="1" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -84,12 +103,113 @@
       </type>
       <isModifier value="false" />
     </element>
+    <element id="Questionnaire.title.extension:title_language.extension">
+      <path value="Questionnaire.title.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="2" />
+    </element>
+    <element id="Questionnaire.title.extension:title_language.extension:content">
+      <path value="Questionnaire.title.extension.extension" />
+      <sliceName value="content" />
+      <min value="1" />
+    </element>
+    <element id="Questionnaire.title.extension:title_language.extension:content.value[x]">
+      <path value="Questionnaire.title.extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <description value="Value set defining codes to specify the terminology/classification used for choice of language." />
+        <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-language-snomedct" />
+      </binding>
+      <mapping>
+        <identity value="1.3.2" />
+        <map value="language" />
+        <comment value="Language of the title/name." />
+      </mapping>
+    </element>
     <element id="Questionnaire.description">
       <path value="Questionnaire.description" />
       <min value="1" />
       <mapping>
         <identity value="1.5.1" />
+        <language value="English" />
         <map value="resource_description_english" />
+        <comment value="A short plain text summary describing the resource in English." />
+      </mapping>
+    </element>
+    <element id="Questionnaire.description.extension">
+      <path value="Questionnaire.description.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="Questionnaire.description.extension:myExtension">
+      <path value="Questionnaire.description.extension" />
+      <sliceName value="myExtension" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/translation" />
+      </type>
+      <isModifier value="false" />
+      <mapping>
+        <identity value="1.6" />
+        <map value="resource_descriptions_non_english" />
+        <comment value="Group of items with  description(s) of the resource written not in English." />
+      </mapping>
+    </element>
+    <element id="Questionnaire.description.extension:myExtension.extension">
+      <path value="Questionnaire.description.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="2" />
+    </element>
+    <element id="Questionnaire.description.extension:myExtension.extension:lang">
+      <path value="Questionnaire.description.extension.extension" />
+      <sliceName value="lang" />
+      <min value="1" />
+    </element>
+    <element id="Questionnaire.description.extension:myExtension.extension:lang.value[x]">
+      <path value="Questionnaire.description.extension.extension.value[x]" />
+      <mapping>
+        <identity value="1.6.2" />
+        <map value="resource_descriptions_non_english" />
+        <comment value="Language of the description text." />
+      </mapping>
+    </element>
+    <element id="Questionnaire.description.extension:myExtension.extension:content">
+      <path value="Questionnaire.description.extension.extension" />
+      <sliceName value="content" />
+      <min value="1" />
+    </element>
+    <element id="Questionnaire.description.extension:myExtension.extension:content.value[x]">
+      <path value="Questionnaire.description.extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+      <mapping>
+        <identity value="1.6.1" />
+        <map value="resource_descriptions_non_english" />
+        <comment value="Short plain text summary of the resource other than in English." />
       </mapping>
     </element>
     <element id="Questionnaire.copyright">
