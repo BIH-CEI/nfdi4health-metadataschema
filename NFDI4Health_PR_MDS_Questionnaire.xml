@@ -21,6 +21,34 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Questionnaire" />
   <derivation value="constraint" />
   <differential>
+    <element id="Questionnaire.extension">
+      <path value="Questionnaire.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="Questionnaire.extension:keywords">
+      <path value="Questionnaire.extension" />
+      <sliceName value="keywords" />
+      <short value="Group of items providing  Information about keywords describing the resource." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/variable" />
+      </type>
+      <isModifier value="false" />
+      <mapping>
+        <identity value="1.7" />
+        <map value="resource_keywords" />
+        <comment value="Group of items providing  Information about keywords describing the resource." />
+      </mapping>
+    </element>
     <element id="Questionnaire.identifier">
       <path value="Questionnaire.identifier" />
       <min value="1" />
@@ -71,6 +99,7 @@
       <mapping>
         <identity value="1.10.1" />
         <map value="resource_version" />
+        <comment value="The identifier that is used to identify this version of the questionnaire when it is referenced in a specification, model, design or instance. This is an arbitrary value managed by the questionnaire author and is not expected to be globally unique. For example, it might be a timestamp (e.g. yyyymmdd) if a managed version is not available. There is also no expectation that versions can be placed in a lexicographical sequence." />
       </mapping>
     </element>
     <element id="Questionnaire.title">
@@ -190,6 +219,20 @@
     </element>
     <element id="Questionnaire.description.extension:myExtension.extension:lang.value[x]">
       <path value="Questionnaire.description.extension.extension.value[x]" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
+          <valueCanonical value="http://hl7.org/fhir/ValueSet/all-languages" />
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="Language" />
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+          <valueBoolean value="true" />
+        </extension>
+        <strength value="required" />
+        <description value="Language of the description text." />
+        <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-language-no-english-snomedct" />
+      </binding>
       <mapping>
         <identity value="1.6.2" />
         <map value="resource_descriptions_non_english" />
