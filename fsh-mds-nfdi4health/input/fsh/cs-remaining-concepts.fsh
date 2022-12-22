@@ -1,4 +1,4 @@
-CodeSystem: NFDI4Health_CS_MDS_Remaing_Concepts
+CodeSystem: NFDI4Health_CS_MDS_Remaining_Concepts
 Id: nfdi4health-cs-mds-remaining-concepts
 Title: "NFDI4Health CS MDS Remaining Concepts"
 Description: "Code system defining remaining concepts without mapping to concepts from international terminologies, ontologies, classifications, etc.."
@@ -21,3 +21,6 @@ Description: "Code system defining remaining concepts without mapping to concept
 * #010 "Analytic code" "Code on which analyses are based on."
 * #011 "Codebook"
 * #012 "Outcomes assessor" "Person who measures the outcomes in a study."
+* #013 "All rights reserved"
+* #014 "Intervention ongoing"
+* #015 "Intervention completed, follow-up ongoing"

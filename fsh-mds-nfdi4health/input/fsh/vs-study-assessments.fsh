@@ -10,6 +10,7 @@ Description: "Value set defining codes to specify the role of a study arm in a R
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 
+* $UMLS#C1511900 "Diet and nutrition (Research Activity)"
 * $SCT#398636004 "Physical activity assessment (procedure) "
 * $SCT#711013002 "Assessment of tobacco use (procedure)"
 * $SCT#713127001 "Assessment of alcohol use (procedure)"
