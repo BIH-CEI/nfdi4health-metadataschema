@@ -16,4 +16,3 @@ Description: "Value set defining codes to specify the type of an interventional 
 * $UMLS#C2826344 "Factorial Study (Research Study)"
 * $UMLS#C0205394 "Other (Qualitative Concept)"
 * $UMLS#C0439673 "Unknown (Qualitative Concept)"
-#* $UMLS#C4553402 "Group Sequential Design (Research Activity)"

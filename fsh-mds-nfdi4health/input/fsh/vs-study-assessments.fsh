@@ -1,7 +1,7 @@
 ValueSet: NFDI4Health_VS_MDS_Study_Assessments_SNOMEDCT_UMLS
 Id: nfdi4health-vs-mds-study-assessments-snomedct-umls
 Title: "NFDI4Health VS MDS Study Assessments [SNOMED CT, UMLS]"
-Description: "Value set defining codes to specify the role of a study arm in a ResearchStudy resource."
+Description: "Value set defining codes to specify an assessment in a ResearchStudy resource."
 * ^url = "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-assessments-snomedct-umls"
 * ^status = #draft
 * ^version = "0.9"

@@ -1,7 +1,7 @@
 ValueSet: NFDI4Health_VS_MDS_Study_Arm_Group_Type_UMLS
 Id: nfdi4health-vs-mds-study-arm-group-type-umls
 Title: "NFDI4Health VS MDS Study Arm Group Type [UMLS]"
-Description: "Value set defining codes to specify the role of a study arm in a ResearchStudy resource."
+Description: "Value set defining codes to specify the role of a study arm or group in a ResearchStudy resource."
 * ^url = "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-arm-group-type-umls"
 * ^status = #draft
 * ^version = "0.9"

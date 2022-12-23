@@ -4,7 +4,7 @@
   "name": "NFDI4Health_VS_MDS_Study_Assessments_SNOMEDCT_UMLS",
   "id": "nfdi4health-vs-mds-study-assessments-snomedct-umls",
   "title": "NFDI4Health VS MDS Study Assessments [SNOMED CT, UMLS]",
-  "description": "Value set defining codes to specify the role of a study arm in a ResearchStudy resource.",
+  "description": "Value set defining codes to specify an assessment in a ResearchStudy resource.",
   "version": "0.9",
   "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-assessments-snomedct-umls",
   "experimental": true,
@@ -21,6 +21,19 @@
   ],
   "compose": {
     "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/umls",
+        "concept": [
+          {
+            "code": "C1511900",
+            "display": "Diet and nutrition (Research Activity)"
+          },
+          {
+            "code": "C5544537",
+            "display": "Sociodemographic Factors (Idea or Concept)"
+          }
+        ]
+      },
       {
         "system": "http://snomed.info/sct",
         "concept": [
@@ -55,15 +68,6 @@
           {
             "code": "1230136007",
             "display": "Method for determining body fat percentage (observable entity)"
-          }
-        ]
-      },
-      {
-        "system": "http://terminology.hl7.org/CodeSystem/umls",
-        "concept": [
-          {
-            "code": "C5544537",
-            "display": "Sociodemographic Factors (Idea or Concept)"
           }
         ]
       }

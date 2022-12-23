@@ -13,9 +13,11 @@ Description: "NFDI4Health LogicalModel General Metadataschema"
 * Resource.identifier ^comment = "The identifier is assigned automatically."
 * Resource.classification 1..1 BackboneElement "Classification of the resource within the predefined categories" "Group of items providing Information about classification of the resource within the predefined categories."
 * Resource.classification.resourceType 1..1 CodeableConcept "Type of the resource" "A term describing the resource."
+* Resource.classification.resourceType from NFDI4Health_VS_MDS_Resource_Type_UMLS_Local (required)
 * Resource.classification.resourceType ^comment = "Additional Information: The selected value determines which type of information needs to be provided. / Short Input Help: You can register a study, a study protocoll, a questionnaire, etc."
 * Resource.classification.resourceType obeys eocd1
 * Resource.classification.resourceTypeGeneral 1..1 CodeableConcept "A more general type of the resource" "A more general term describing the resource which forms a pair with the property 'Type of the resource' (e.g. 'Questionnaire'/'Text')."
+* Resource.classification.resourceTypeGeneral from NFDI4Health_VS_MDS_Resource_Type_General_NCI_UMLS_Local (required)
 * Resource.classification.resourceTypeGeneral ^comment = "Cardinality: 1..1, if Resource.classification.resourceType != ('Study' OR 'Substudy/Data collection event' OR 'Dataset') / Short Input Help: You can select 'Text' for most of the study documents, e.g. for questionnaires, informed consent forms, case report forms, etc."
 * Resource.titles 1..* BackboneElement "Title(s)/name(s) of the [RESOURCE]"	"Group of items providing Information about title(s)/name(s) of the resource."
 * Resource.titles.text 1..1 string "Title/name"	"Scientific unabbreviated title or name of the resource."
@@ -77,6 +79,7 @@ Description: "NFDI4Health LogicalModel General Metadataschema"
 * Resource.roles.organisational 1..1 BackboneElement "Details about the organisation/institution/group/etc." "Group of items providing information about group(s) of persons, institution(s) or organisation(s) contributing to the resource."
 * Resource.roles.organisational ^comment = "Additional Information: Group of items applicable to organisational/group names. / Short Input Help: Organisational name can be used to denote a research group or an institution."
 * Resource.roles.organisational.type 1..1 CodeableConcept "Type of the role" "Type of the role an organisation, institution or group fulllfils. For example, this can be a sponsor of the study or a group of authors of the document."
+* Resource.roles.organisational.type from NFDI4Health_VS_MDS_Organisational_Roles_NCI_Local (required)
 * Resource.roles.organisational.type ^comment = "Short Input Help: Which role does the organisation/institution/group/etc. fulllfil? Select one value from the list."
 * Resource.roles.organisational.fundingId 0..* string "Funding identifier" "Identifier assigned by a funder to the resource."
 * Resource.roles.organisational.fundingId ^comment = "Cardinality: 0..*, if Resource.roles.organisational.type == ('Funder (public)' OR 'Funder (private)'); otherwise 0..0 / Short Input Help: If available, you can enter a funding identifier"
@@ -84,11 +87,12 @@ Description: "NFDI4Health LogicalModel General Metadataschema"
 * Resource.roles.personal 1..1 BackboneElement "Details about the person" "Group of items providing information about person(s) contributing to the resource."
 * Resource.roles.personal ^comment = "Additional Information: Group of items applicable to personal names."
 * Resource.roles.personal.type 1..1 CodeableConcept "Type of the role" "Type of the role a person fulllfils. For example, this can be a principal investigator of a study or an author of a document."
+* Resource.roles.personal.type from NFDI4Health_VS_MDS_Personal_Roles_NCI_UMLS_Local (required)
 * Resource.roles.personal.type ^comment = "Short Input Help: Which role does the person fulllfil? Select one value from the list."
 * Resource.roles.personal.given 1..1 string "Given name of the person" "Given name of the person"
 * Resource.roles.personal.family 1..1 string "Family name of the person" "Family name of the person"
 * Resource.roles.personal.title 1..1 CodeableConcept "Title of the person" "Title of the person"
-* Resource.roles.personal.title from NFDI4Health_VS_MDS_Role_Name_Personal_Title_NCI_UMLS (required)
+* Resource.roles.personal.title from NFDI4Health_VS_MDS_Role_Name_Personal_Title_NCI (required)
 * Resource.roles.personal.identifiers 0..* BackboneElement "Digital identifier(s) of the person" "Group of items providing information about digital identifiers of the person."
 * Resource.roles.personal.identifiers.identifier 1..1 string "Identifier" "Digital identifier of the person according to a definite scheme."
 * Resource.roles.personal.identifiers.identifier ^comment = "Short Input Help: Preferably, provide an ORCID (https://orcid.org/)."
@@ -136,10 +140,12 @@ Description: "NFDI4Health LogicalModel General Metadataschema"
 * Resource.ids.date 0..1 date "Date of ID assignment" "Date when the identifier of the related resource was assigned."
 * Resource.ids.date ^comment = "Additional Information: Preferred date format: DD.MM.YYYY"
 * Resource.ids.relationType 1..1 CodeableConcept "Relationship between this [RESOURCE] (A) and the related resource (B)?" "Relationship between the resource being registered (A) and the related resource (B)."
+* Resource.ids.relationType from NFDI4Health_VS_MDS_Relation_Type_Ids_Local_HL7V3 (required)
 * Resource.ids.relationType ^comment = "Short Input Help: Select one value from the list."
 * Resource.ids.relationType ^example.label = "General"
 * Resource.ids.relationType ^example.valueCodeableConcept.text = "A is part of B"
 * Resource.ids.resourceTypeGeneral 0..1 CodeableConcept "Type of the related resource" "Type of the related resource, e.g. journal article, dataset, text, etc."
+* Resource.ids.resourceTypeGeneral from NFDI4Health_VS_MDS_Resource_Type_General_NCI_UMLS_Local (required)
 * Resource.ids.resourceTypeGeneral ^comment = "Short Input Help: Select one value from the list.  For example,. a journal article, dataset, text, etc."
 * Resource.ids.resourceTypeGeneral ^example.label = "General"
 * Resource.ids.resourceTypeGeneral ^example.valueCodeableConcept.text = "Text"
@@ -149,12 +155,11 @@ Description: "NFDI4Health LogicalModel General Metadataschema"
 * Resource.idsNfdi4health.identifier ^example.label = "General"
 * Resource.idsNfdi4health.identifier ^example.valueString = "39"
 * Resource.idsNfdi4health.relationType 0..1 CodeableConcept "Relationship between this [RESOURCE] (A) and the related resource (B)?" "Relationship between the resource being registered (A) and the related resource (B)."
+* Resource.idsNfdi4health.relationType from NFDI4Health_VS_MDS_Relation_Type_Ids_Nfdi_Local_HL7V3 (required)
 * Resource.nutritionalData 1..1 boolean "Nutritional data collected?" "Indication whether nutritional data was collected by the resource."
-* Resource.nutritionalData from http://terminology.hl7.org/ValueSet/v2-0136 (required)
 * Resource.nutritionalData ^comment = "Cardinality: 1..1, if Resource.classification.resourceType == ('Study' OR 'Substudy/Data collection') AND Resource.provenance.dataSource != 'Manually collected'; otherwise 0..0"
 * Resource.nutritionalData obeys ne1
 * Resource.chronicDiseases 1..1 boolean "Chronic diseases included?" "Indication whether chronic diseases were addressed by the resource."
-* Resource.chronicDiseases from http://terminology.hl7.org/ValueSet/v2-0136 (required)
 * Resource.chronicDiseases obeys eocd1
 * Resource.studyDesign 1..1 BackboneElement "Characteristics of the [RESOURCE]" "Group of items providing information about the characteristics of a study or a substudy."
 * Resource.studyDesign ^comment = "Additional Information: Group of items applicable only to studies and substudies."
@@ -163,7 +168,7 @@ Description: "NFDI4Health LogicalModel General Metadataschema"
 * Resource.studyDesign.primaryDesign ^comment = "Select between non-interventional and interventional study design."
 * Resource.studyDesign.studyType 1..1 BackboneElement "Specification of study type" "Group of items providing information about the study type."
 * Resource.studyDesign.studyType.interventional 1..* CodeableConcept "Specification of study type" "The strategy for assigning interventions to participants."
-* Resource.studyDesign.studyType.international from NFDI4Health_VS_MDS_Study_Type_Interventional_UMLS (required)
+* Resource.studyDesign.studyType.interventional from NFDI4Health_VS_MDS_Study_Type_Interventional_UMLS (required)
 * Resource.studyDesign.studyType.interventional ^comment = "Cardinality: 1..*, if Resource.studyDesign.primaryDesign == 'Interventional'; otherwise 0..0/ Short Input Help: Select all that apply. If 'Other' is selected, you can specify the study type in the field 'Additional information about the study'."
 * Resource.studyDesign.studyType.nonInterventional 1..* CodeableConcept "Specification of study type" "The primary strategy for participant identification and follow-up."
 * Resource.studyDesign.studyType.nonInterventional from NFDI4Health_VS_MDS_Study_Type_Non_Interventional_UMLS_Local (required)
@@ -193,6 +198,7 @@ Description: "NFDI4Health LogicalModel General Metadataschema"
 * Resource.studyDesign.mortalityData from NFDI4Health_VS_MDS_Mortality_Data_NCI_SNOMEDCT (required)
 * Resource.studyDesign.mortalityData ^comment = "Cardinality: 0..1, if Resource.studyDesign.studyType.nonInterventional == ('Longitudinal' OR 'Cohort' OR 'Case-cohort' OR 'Birth cohort' OR 'Trend' OR 'Panel'); otherwise 0..0"
 * Resource.studyDesign.ethicsCommiteeApproval 0..1 CodeableConcept "Status of the ethics committee approval" "Status of the study approval from the (leading) ethics committee."
+* Resource.studyDesign.ethicsCommiteeApproval from NFDI4Health_VS_MDS_Study_Ethics_Committee_Approval_UMLS_Local (required)
 * Resource.studyDesign.status 1..1 CodeableConcept "Overall study status" "Overall study status"
 * Resource.studyDesign.status ^comment = "Additional Information: If at least one study site in a multicenter study has the status 'Ongoing' then the overall status for the study must be 'Ongoing'. / Short Input Help: Select one value from the list."
 * Resource.studyDesign.statusWhenIntervention 0..1 CodeableConcept "Do participants receive an intervention?" "Specification whether study participants receive intervention or have completed it but are still being followed according to the primary objective of the study."
@@ -204,8 +210,9 @@ Description: "NFDI4Health LogicalModel General Metadataschema"
 * Resource.studyDesign.reasonStopped ^comment = "Cardinality: 0..1, if Resource.studyDesign.status == ('Suspended: Recruitment, data collection, or data quality management, halted, but potentially will resume' OR 'Terminated: Recruitment, data collection, data and quality management halted prematurely and will not resume'); otherwise 0..0 / Short Input Help: E.g., accrual goal met / closed due to toxicity / closed due to lack of study progress / temporarily-closed per study design /etc."
 * Resource.studyDesign.statusEnrollingByInvitation 0..1 CodeableConcept "Are participants enrolled by invitation?" "Specification whether study participants have been selected from a predetermined population or enrolled by invitation."
 * Resource.studyDesign.statusEnrollingByInvitation from NFDI4Health_VS_MDS_Yes_No_Not_Applicable_SNOMEDCT (required)
-* Resource.studyDesign.statusRegister 0..1 CodeableConcept "Overall recruitment status of the study from the register of clinical trials" "Overall recruitment status of the study as indicated in the corresponding register of clinical trials."
-* Resource.studyDesign.statusRegister ^comment = "Additional Information: The item applies only to studies automatically uploaded from the registers of clinical trials."
+* Resource.studyDesign.recruitmentStatusRegister 0..1 CodeableConcept "Overall recruitment status of the study from the register of clinical trials" "Overall recruitment status of the study as indicated in the corresponding register of clinical trials."
+* Resource.studyDesign.recruitmentStatusRegister from NFDI4Health_VS_MDS_Study_Recruitment_Status_Register_UMLS_Local (required)
+* Resource.studyDesign.recruitmentStatusRegister ^comment = "Additional Information: The item applies only to studies automatically uploaded from the registers of clinical trials."
 * Resource.studyDesign.studyStartDate 0..1 date "Start date of data collection for the study" "Start date of data collection for the study."
 * Resource.studyDesign.studyStartDate ^comment = "Additional Information: Preferred date format: DD.MM.YYYY. / Short Input Information: In case of a planned study, it is the intended start date; in case of an ongoing study — the actual start date."
 * Resource.studyDesign.studyEndDate 0..1 date "End date of data collection for the study" "In case of studies with patients or other participants, it is the date when the last participant is examined or receives an intervention, or the date of the last participant's last visit."
@@ -224,18 +231,23 @@ Description: "NFDI4Health LogicalModel General Metadataschema"
 * Resource.studyDesign.sampling 0..1 BackboneElement "Sampling method" "Group of items providing information about the applied sampling method."
 * Resource.studyDesign.sampling ^comment = "Short Input Help: Select one value from the list."
 * Resource.studyDesign.sampling.method 1..1 CodeableConcept "Applied sampling method" "Type of the sampling method applied for the selection of study participants."
+* Resource.studyDesign.sampling.method from NFDI4Health_VS_MDS_Study_Sampling_Method_Non_Probability_NCI_Local (required)
 * Resource.studyDesign.sampling.method ^comment = "Short Input Help: Select one value from the list."
 * Resource.studyDesign.sampling.probabilityMethod 0..1 CodeableConcept "Specific type of probability sampling" "Specific type of the probability sampling method applied for the selection of study participants."
+* Resource.studyDesign.sampling.probabilityMethod from NFDI4Health_VS_MDS_Study_Sampling_Probability_Method_NCI (required)
 * Resource.studyDesign.sampling.probabilityMethod ^comment = "Short Input Help: If known, select one value from the list."
 * Resource.studyDesign.sampling.nonProbabilityMethod 0..1 CodeableConcept "Specific type of non-probability sampling" "Specific type of the probability sampling method applied for the selection of study participants."
 * Resource.studyDesign.sampling.nonProbabilityMethod from NFDI4Health_VS_MDS_Study_Sampling_Method_Non_Probability_NCI_Local (required)
 * Resource.studyDesign.sampling.nonProbabilityMethod ^comment = "Short Input Help: If known, select one value from the list."
 * Resource.studyDesign.dataSource 0..1 BackboneElement "Data sources from which study data are generated or extracted." "Group of items providing information about data sources from which study data are generated or extracted."
 * Resource.studyDesign.dataSource.general 0..* CodeableConcept "Data sources for the study (e.g. biosamples, registries, questionnaires, etc.)" "Different types of data sources from which study data are generated or extracted."
+* Resource.studyDesign.dataSource.general from NFDI4Health_VS_MDS_Study_Data_Sources_General_UMLS_Local (required)
 * Resource.studyDesign.dataSource.general ^comment = "Short Input Help: Select all that apply."
 * Resource.studyDesign.dataSource.biosamples 0..* CodeableConcept "Biosamples collected in the study" "Specification of biosamples collected in the study."
+* Resource.studyDesign.dataSource.biosamples from NFDI4Health_VS_MDS_Study_DS_Biosamples_SNOMEDCT_NCI_UMLS (required)
 * Resource.studyDesign.dataSource.biosamples ^comment = "Cardinality: 0..*, if Resource.studyDesign.dataSource.general == 'Biological samples'; otherwise 0..0"
 * Resource.studyDesign.dataSource.imaging 0..* CodeableConcept "Imaging data collected in the study" "Specification of imaging data collected in the study."
+* Resource.studyDesign.dataSource.imaging from NFDI4Health_VS_MDS_Study_Data_Sources_Imaging_NCI (required)
 * Resource.studyDesign.dataSource.imaging ^comment = "Cardinality: 0..*, if Resource.studyDesign.dataSource.general == 'Imaging data'; otherwise 0..0"
 * Resource.studyDesign.dataSource.omics 0..* CodeableConcept "Omics technology used in the study" "Specification of omics technology applied in the study."
 * Resource.studyDesign.dataSource.omics from NFDI4Health_VS_MDS_Study_Data_Sources_Omics_NCI_UMLS (required)
@@ -334,7 +346,7 @@ Description: "NFDI4Health LogicalModel General Metadataschema"
 * Resource.studyDesign.interventional 0..1 BackboneElement "Information about specific aspects of interventional studies/substudies" "Group of items providing information about specific aspects of interventional studies or substudies."
 * Resource.studyDesign.interventional ^comment = "Cardinality: 0..1, if Resource.studyDesign.primaryDesign =='Interventional'; otherwise 0..0 / Short Input Help: Group of items applicable only to interventional studies and substudies."
 * Resource.studyDesign.interventional.phase 0..1 CodeableConcept "Numerical phase of the study" "If applicable, numerical phase of the study."
-* Resource.studyDesign.interventional.phase from NFDI4Health_VS_MDS_Study_Phase_UMLS (required)
+* Resource.studyDesign.interventional.phase from NFDI4Health_VS_MDS_Study_Phase_NCI (required)
 * Resource.studyDesign.interventional.phase ^comment = "Short Input Help: Select one value from the list."
 * Resource.studyDesign.interventional.masking 0..1 BackboneElement "Information about masking of intervention(s) assignment" "Group of items providing information about the masking of intervention(s) assignment."
 * Resource.studyDesign.interventional.masking.general 0..1 boolean "Is masking of intervention(s) assignment implemented?" "Indication, whether a masking (or blinding) of intervention(s) assignment is implemented (i.e., whether someone is prevented from having knowledge of the interventions assigned to individual participants)."
@@ -372,7 +384,7 @@ Expression: "Resource.studyDesign.interventional.masking.general = false implies
 
 
 Mapping: NFDI4Health_V3.0_Internal_Numbering
-Id: NFDI4Health_V3.0_Internal_Numbering
+Id: NFDI4Health-V3.0-Internal-Numbering
 Title: "NFDI4Health General Metadataschema Version 3.0 Mapping to internal numbering"
 Source: NFDI4Health_LM_Metadataschema_General_V3.0
 * Resource -> "1"
@@ -464,7 +476,7 @@ Source: NFDI4Health_LM_Metadataschema_General_V3.0
 * Resource.studyDesign.stageStopped -> "1.17.9"
 * Resource.studyDesign.reasonStopped -> "1.17.10"
 * Resource.studyDesign.statusEnrollingByInvitation -> "1.17.11"
-* Resource.studyDesign.statusRegister -> "1.17.12"
+* Resource.studyDesign.recruitmentStatusRegister -> "1.17.12"
 * Resource.studyDesign.studyStartDate -> "1.17.13"
 * Resource.studyDesign.studyEndDate -> "1.17.14"
 * Resource.studyDesign.countries -> "1.17.15"
@@ -484,24 +496,24 @@ Source: NFDI4Health_LM_Metadataschema_General_V3.0
 * Resource.studyDesign.dataSource -> "1.17.21.5"
 * Resource.studyDesign.primaryPurpose -> "1.17.22"
 * Resource.studyDesign.eligibilityCriteria -> "1.17.23"
-* Resource.studyDesign.eligibilityCriteria.aggeMin -> "1.17.23.1"
+* Resource.studyDesign.eligibilityCriteria.ageMin -> "1.17.23.1"
 * Resource.studyDesign.eligibilityCriteria.ageMin.number -> "1.17.23.1.1"
 * Resource.studyDesign.eligibilityCriteria.ageMin.timeUnit -> "1.17.23.1.2"
 * Resource.studyDesign.eligibilityCriteria.ageMax -> "1.17.23.2"
 * Resource.studyDesign.eligibilityCriteria.ageMax.number -> "1.17.23.2.1"
 * Resource.studyDesign.eligibilityCriteria.ageMax.timeUnit -> "1.17.23.2.2"
 * Resource.studyDesign.eligibilityCriteria.genders -> "1.17.23.3"
-* Resource.studyDesign.eligibilityCriteria.studyEligibilityInclusionCriteria -> "1.17.23.4"
-* Resource.studyDesign.eligibilityCriteria.studyEligibilityExclusionCriteria -> "1.17.23.5"
-* Resource.studyDesign.studyPopulation -> "1.17.24"
-* Resource.studyDesign.studyTargetSampleSize -> "1.17.25"
-* Resource.studyDesign.studyObtainedSampleSize -> "1.17.26"
-* Resource.studyDesign.studyAgeMinExamined -> "1.17.27"
-* Resource.studyDesign.studyAgeMinExamined.number -> "1.17.27.1"
-* Resource.studyDesign.studyAgeMinExamined.timeUnit -> "1.17.27.2"
-* Resource.studyDesign.studyAgeMaxExamined -> "1.17.28"
-* Resource.studyDesign.studyAgeMaxExamined.number -> "1.17.28.1"
-* Resource.studyDesign.studyAgeMaxExamined.timeUnit -> "1.17.28.2"
+* Resource.studyDesign.eligibilityCriteria.inclusionCriteria -> "1.17.23.4"
+* Resource.studyDesign.eligibilityCriteria.exclusionCriteria -> "1.17.23.5"
+* Resource.studyDesign.population -> "1.17.24"
+* Resource.studyDesign.targetSampleSize -> "1.17.25"
+* Resource.studyDesign.obtainedSampleSize -> "1.17.26"
+* Resource.studyDesign.ageMinExamined -> "1.17.27"
+* Resource.studyDesign.ageMinExamined.number -> "1.17.27.1"
+* Resource.studyDesign.ageMinExamined.timeUnit -> "1.17.27.2"
+* Resource.studyDesign.ageMaxExamined -> "1.17.28"
+* Resource.studyDesign.ageMaxExamined.number -> "1.17.28.1"
+* Resource.studyDesign.ageMaxExamined.timeUnit -> "1.17.28.2"
 * Resource.studyDesign.hypothesis -> "1.17.29"
 * Resource.studyDesign.armsGroups -> "1.17.30"
 * Resource.studyDesign.armsGroups.label -> "1.17.30.1"
@@ -554,7 +566,7 @@ Source: NFDI4Health_LM_Metadataschema_General_V3.0
 * Resource.provenance.resourceVersion -> "1.18.12"
 
 Mapping: NFDI4Health_V2.1
-Id: NFDI4Health_V2.1
+Id: NFDI4Health-V2.1
 Title: "NFDI4Health General Metadataschema Version 3.0 Mapping to internal numbering of Metadataschema Version 2.1"
 Source: NFDI4Health_LM_Metadataschema_General_V3.0
 * Resource -> "1"
@@ -646,7 +658,7 @@ Source: NFDI4Health_LM_Metadataschema_General_V3.0
 * Resource.studyDesign.stageStopped -> "1.15.6.2"
 * Resource.studyDesign.reasonStopped -> "1.15.6.3"
 * Resource.studyDesign.statusEnrollingByInvitation -> "1.15.6.4"
-* Resource.studyDesign.statusRegister -> "1.15.7"
+* Resource.studyDesign.recruitmentStatusRegister -> "1.15.7"
 * Resource.studyDesign.studyStartDate -> "1.15.8"
 * Resource.studyDesign.studyEndDate -> "1.15.9"
 * Resource.studyDesign.countries -> "1.15.10"
@@ -741,7 +753,7 @@ Parent: Element
 Id: nfdi4health-lm-metadataschema-ne-v3.0
 Title: "NFDI4Health LM Nutritional Epidemiology Metadataschema (UC 5.1) V3.0"
 Description: "NFDI4Health LogicalModel Nutritional Epidemiology Metadataschema (Use Case 5.1) V3.0"
-* ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-nutritional-epidemiology-v3.0"
+* ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-ne-v3.0"
 * ^publisher = "NFDI4Health"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
@@ -777,7 +789,7 @@ Description: "NFDI4Health LogicalModel Nutritional Epidemiology Metadataschema (
 * DietAssessment.dietarySupplements 1..1 boolean "Dietary supplements inquired?" "Does the dietary assessment instrument inquire information about dietary supplements?"
 
 Mapping: NFDI4Health_NE_Metadataschema_V3.0_Internal_Numbering
-Id: NFDI4Health_NE_Metadataschema_V3.0_Internal_Numbering
+Id: NFDI4Health-NE-Metadataschema-V3.0-Internal-Numbering
 Title: "NFDI4Health Nutritional Epidemiology Metadataschema Version 3.0 Mapping to internal numbering of Metadataschema Version 3.0"
 Source: NFDI4Health_LM_Metadataschema_NE_V3.0
 * DietAssessment -> "NE1"
@@ -827,7 +839,7 @@ Parent: Element
 Id: nfdi4health-lm-metadataschema-eocd-v3.0
 Title: "NFDI4Health LM Epidemiology of Chronic Diseases Metadataschema (UC 5.2) V3.0"
 Description: "NFDI4Health LogicalModel Epidemiology of Chronic Diseases Metadataschema (Use Case 5.2) V3.0"
-* ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-epidemiology-of-chronic-diseases-v3.0"
+* ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-eocd-v3.0"
 * ^publisher = "NFDI4Health"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
@@ -842,7 +854,7 @@ Description: "NFDI4Health LogicalModel Epidemiology of Chronic Diseases Metadata
 * ChronicDiseasesEpidemiology.informationSources ^comment = "Additional Information: Treat prevalent and incident diseases separately (selected values should be specific for prevalent diseases and then separately incident diseases) / Short Input Help: Select all that apply."
 
 Mapping: NFDI4Health_EOCD_V3.0
-Id: NFDI4Health_EOCD_V3.0
+Id: NFDI4Health-EOCD-V3.0
 Title: "NFDI4Health Epidemiology of Chronic Diseases Metadataschema Version 3.0 Mapping to internal numbering of Metadataschema Version 3.0"
 Source: NFDI4Health_LM_Metadataschema_EOCD_V3.0
 

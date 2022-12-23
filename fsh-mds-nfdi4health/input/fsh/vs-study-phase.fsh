@@ -1,8 +1,8 @@
-ValueSet: NFDI4Health_VS_MDS_Study_Phase_UMLS
-Id: nfdi4health-vs-mds-study-phase-umls
-Title: "NFDI4Health VS MDS Study Phase [UMLS]"
+ValueSet: NFDI4Health_VS_MDS_Study_Phase_NCI
+Id: nfdi4health-vs-mds-study-phase-nci
+Title: "NFDI4Health VS MDS Study Phase [NCI]"
 Description: "Value set defining codes to specify the phase of a study in a ResearchStudy resource."
-* ^url = "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-phase-umls"
+* ^url = "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-phase-nci"
 * ^status = #draft
 * ^version = "0.9"
 * ^experimental = true
@@ -10,16 +10,16 @@ Description: "Value set defining codes to specify the phase of a study in a Rese
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de" 
 
-* $UMLS#C1882358 "Phase 0 Trial (Research Activity)"
-* $UMLS#C0920321 "Phase I Clinical Trials (Research Activity)"
-* $UMLS#C1519043 "Phase I/II Trial (Research Activity)"
-* $UMLS#C0282460 "Phase 2 Clinical Trials (Research Activity)"
-* $UMLS#C1706446 "Trial Phase 2A (Research Activity)"
-* $UMLS#C1706096 "Phase II B Trial (Research Activity)"
-* $UMLS#C1519042 "Phase II/III Trial (Research Activity)"
-* $UMLS#C0282461 "Phase 3 Clinical Trials (Research Activity)"
-* $UMLS#C1706447 "Trial Phase 3A (Research Activity)"
-* $UMLS#C1706097 "Trial Phase 3B (Research Activity)"
-* $UMLS#C0282462 "Phase 4 Clinical Trials (Research Activity)"
-* $UMLS#C0205394 "Other (Qualitative Concept)"
-* $UMLS#C1272460 "Not Applicable (Qualitative Concept)"
+* $NCI#C54721 "Phase 0 Trial (Research Activity)"
+* $NCI#C15600 "Phase I Trial (Research Activity)"
+* $NCI#C15693 "Phase I/II Trial (Research Activity)"
+* $NCI#C15601 "Phase II Trial (Research Activity)"
+* $NCI#C49686 "Phase IIa Trial (Research Activity)"
+* $NCI#C49688 "Phase II b Trial (Research Activity)"
+* $NCI#C15694 "Phase II/III Trial (Research Activity)"
+* $NCI#C15602 "Phase III Trial (Research Activity)"
+* $NCI#C49687 "Phase IIIa Trial (Research Activity)"
+* $NCI#C49689 "Phase IIIb Trial (Research Activity)"
+* $NCI#C15603 "Phase IV Trial (Research Activity)"
+* $NCI#C17649 "Other (Qualitative Concept)"
+* $NCI#C48660 "Not Applicable (Qualitative Concept)"

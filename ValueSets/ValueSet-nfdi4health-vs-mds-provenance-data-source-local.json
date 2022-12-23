@@ -4,7 +4,7 @@
   "name": "NFDI4Health_VS_MDS_Provenance_Data_Source_Local",
   "id": "nfdi4health-vs-mds-provenance-data-source-local",
   "title": "NFDI4Health VS MDS Provenance Data Source [local]",
-  "description": "Value set created by NFDI4Health defining codes for data sources in a Provenance Resource.",
+  "description": "Value set created by NFDI4Health defining codes for data sources in a Provenance resource.",
   "version": "0.9",
   "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-provenance-data-source-local",
   "experimental": true,

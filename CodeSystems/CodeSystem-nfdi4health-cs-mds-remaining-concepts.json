@@ -1,0 +1,353 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "NFDI4Health_CS_MDS_Remaining_Concepts",
+  "id": "nfdi4health-cs-mds-remaining-concepts",
+  "title": "NFDI4Health CS MDS Remaining Concepts",
+  "description": "Code system defining remaining concepts without mapping to concepts from international terminologies, ontologies, classifications, etc..",
+  "version": "0.9",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+  "concept": [
+    {
+      "code": "001",
+      "display": "weeks of gestation",
+      "definition": "Time unit concept to capture the number of week(s) of gestation."
+    },
+    {
+      "code": "002",
+      "display": "Monocentric",
+      "definition": "Having / In one center"
+    },
+    {
+      "code": "003",
+      "display": "Case-only studies",
+      "definition": "Type of studies that only uses cases as subjects to estimate/test hypotheses but does not include a comparison group."
+    },
+    {
+      "code": "004",
+      "display": "Case-cohort studies",
+      "definition": "Type of cohort studies in which a subcohort, a random sample composed of cases and controls, is selected from a parent cohort; the subcohort and the cases outside of the subcohort constitute the case-cohort sample."
+    },
+    {
+      "code": "005",
+      "display": "Trend studies",
+      "definition": "Type of studies in which different samples from a defined population are surveyed at different points of time."
+    },
+    {
+      "code": "006",
+      "display": "Cross-section ad-hoc follow-up studies",
+      "definition": "Data collected at one point in time to complete information collected in a previous cross-sectional study; the decision to collect follow-up data is not included in the study design. (Definition from DDI)"
+    },
+    {
+      "code": "007",
+      "display": "Quality control studies",
+      "definition": "Type of studies with a focus on quality control."
+    },
+    {
+      "code": "008",
+      "display": "Respondent-driven sampling",
+      "definition": "Variant of snowball sampling that can be applied to hard-to-reach populations, and uses additionally a mathematical model."
+    },
+    {
+      "code": "009",
+      "display": "Data dictionary",
+      "definition": "Data dictionaries store and communicate metadata about data in a database, a system, or data used by applications. (Definition from USGS)"
+    },
+    {
+      "code": "010",
+      "display": "Analytic code",
+      "definition": "Code on which analyses are based on."
+    },
+    {
+      "code": "011",
+      "display": "Codebook"
+    },
+    {
+      "code": "012",
+      "display": "Outcomes assessor",
+      "definition": "Person who measures the outcomes in a study."
+    },
+    {
+      "code": "013",
+      "display": "All rights reserved"
+    },
+    {
+      "code": "014",
+      "display": "Intervention ongoing"
+    },
+    {
+      "code": "015",
+      "display": "Intervention completed, follow-up ongoing"
+    },
+    {
+      "code": "016",
+      "display": "Interview schema and themes"
+    },
+    {
+      "code": "017",
+      "display": "Observation guide"
+    },
+    {
+      "code": "018",
+      "display": "Discussion guide"
+    },
+    {
+      "code": "019",
+      "display": "Participant tasks"
+    },
+    {
+      "code": "020",
+      "display": "Other data collection instrument"
+    },
+    {
+      "code": "021",
+      "display": "Other study document"
+    },
+    {
+      "code": "022",
+      "display": "Not yet recruiting"
+    },
+    {
+      "code": "023",
+      "display": "Enrolling by invitation"
+    },
+    {
+      "code": "024",
+      "display": "Active, not recruiting"
+    },
+    {
+      "code": "025",
+      "display": "Withdrawn"
+    },
+    {
+      "code": "026",
+      "display": "Request for approval not yet submitted"
+    },
+    {
+      "code": "027",
+      "display": "Study withdrawn prior to decision on approval"
+    },
+    {
+      "code": "028",
+      "display": "Administrative databases"
+    },
+    {
+      "code": "029",
+      "display": "Cognitive measurements"
+    },
+    {
+      "code": "030",
+      "display": "Genealogical records"
+    },
+    {
+      "code": "031",
+      "display": "Imaging data"
+    },
+    {
+      "code": "032",
+      "display": "Physiological/Biochemical measurements"
+    },
+    {
+      "code": "033",
+      "display": "Omics technology"
+    },
+    {
+      "code": "034",
+      "display": "Probability Sampling Method"
+    },
+    {
+      "code": "035",
+      "display": "Mixed Probability and Non-Probability Sampling Method"
+    },
+    {
+      "code": "036",
+      "display": "Total universe/Complete enumeration"
+    },
+    {
+      "code": "037",
+      "display": "Primary Sponsor"
+    },
+    {
+      "code": "038",
+      "display": "Data Collector"
+    },
+    {
+      "code": "039",
+      "display": "Data Curator"
+    },
+    {
+      "code": "040",
+      "display": "Project Leader"
+    },
+    {
+      "code": "041",
+      "display": "Project Manager"
+    },
+    {
+      "code": "042",
+      "display": "Project Member"
+    },
+    {
+      "code": "043",
+      "display": "Related Person"
+    },
+    {
+      "code": "044",
+      "display": "Rights Holder"
+    },
+    {
+      "code": "045",
+      "display": "Work Packager Leader"
+    },
+    {
+      "code": "046",
+      "display": "Public Funder"
+    },
+    {
+      "code": "047",
+      "display": "Private Funder"
+    },
+    {
+      "code": "048",
+      "display": "Research Group"
+    },
+    {
+      "code": "049",
+      "display": "Hosting Institution"
+    },
+    {
+      "code": "050",
+      "display": "Registration Agency"
+    },
+    {
+      "code": "051",
+      "display": "Computational Notebook"
+    },
+    {
+      "code": "052",
+      "display": "Data Paper"
+    },
+    {
+      "code": "053",
+      "display": "Interactive Resource"
+    },
+    {
+      "code": "054",
+      "display": "Output Management Plan"
+    },
+    {
+      "code": "055",
+      "display": "A is cited by B"
+    },
+    {
+      "code": "056",
+      "display": "A cites B"
+    },
+    {
+      "code": "057",
+      "display": "A is supplemented by B"
+    },
+    {
+      "code": "058",
+      "display": "A is continued by B"
+    },
+    {
+      "code": "059",
+      "display": "A is described by B"
+    },
+    {
+      "code": "060",
+      "display": "A describes B"
+    },
+    {
+      "code": "061",
+      "display": "A is metadata for B"
+    },
+    {
+      "code": "062",
+      "display": "A has version B"
+    },
+    {
+      "code": "063",
+      "display": "A is version of B"
+    },
+    {
+      "code": "064",
+      "display": "A is previous version of B"
+    },
+    {
+      "code": "065",
+      "display": "A is part of B"
+    },
+    {
+      "code": "066",
+      "display": "A is referenced by B"
+    },
+    {
+      "code": "067",
+      "display": "A is documented by B"
+    },
+    {
+      "code": "068",
+      "display": "A is compiled by B"
+    },
+    {
+      "code": "069",
+      "display": "A compiles B"
+    },
+    {
+      "code": "070",
+      "display": "A is variant form of B"
+    },
+    {
+      "code": "071",
+      "display": "A is original form of B"
+    },
+    {
+      "code": "072",
+      "display": "A is identical to B"
+    },
+    {
+      "code": "073",
+      "display": "A is reviewed by B"
+    },
+    {
+      "code": "074",
+      "display": "A reviews B"
+    },
+    {
+      "code": "075",
+      "display": "A is source of B"
+    },
+    {
+      "code": "076",
+      "display": "A is required by B"
+    },
+    {
+      "code": "077",
+      "display": "A requires B"
+    },
+    {
+      "code": "078",
+      "display": "A is obsoleted by B"
+    },
+    {
+      "code": "079",
+      "display": "A obsoletes B"
+    }
+  ],
+  "experimental": true,
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "count": 79
+}
