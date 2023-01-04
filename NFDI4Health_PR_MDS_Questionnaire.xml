@@ -51,6 +51,7 @@
     <element id="Questionnaire.extension:acronym">
       <path value="Questionnaire.extension" />
       <sliceName value="acronym" />
+      <short value="Group of items providing  Information about acronym(s) of the resource." />
       <min value="0" />
       <max value="1" />
       <type>
@@ -58,10 +59,45 @@
         <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-label" />
       </type>
       <isModifier value="false" />
+      <mapping>
+        <identity value="1.4" />
+        <map value="resource_acronyms" />
+      </mapping>
+    </element>
+    <element id="Questionnaire.extension:acronym.extension">
+      <path value="Questionnaire.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="2" />
+    </element>
+    <element id="Questionnaire.extension:acronym.extension:value">
+      <path value="Questionnaire.extension.extension" />
+      <sliceName value="value" />
+      <min value="1" />
+      <mapping>
+        <identity value="1.4.1" />
+        <map value="text" />
+      </mapping>
+    </element>
+    <element id="Questionnaire.extension:acronym.extension:type">
+      <path value="Questionnaire.extension.extension" />
+      <sliceName value="type" />
+      <short value="Language of the acronym." />
+      <min value="1" />
+      <mapping>
+        <identity value="1.4.2" />
+        <map value="language" />
+      </mapping>
     </element>
     <element id="Questionnaire.extension:resource_languages">
       <path value="Questionnaire.extension" />
       <sliceName value="resource_languages" />
+      <short value="Language(s) in which a study/substudy is conducted, or a language in which a study document is composed." />
       <min value="0" />
       <max value="*" />
       <type>
@@ -69,6 +105,10 @@
         <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-execution-language" />
       </type>
       <isModifier value="false" />
+      <mapping>
+        <identity value="1.8" />
+        <map value="resource_languages" />
+      </mapping>
     </element>
     <element id="Questionnaire.extension:webpage">
       <path value="Questionnaire.extension" />
@@ -85,6 +125,22 @@
         <identity value="1.9" />
         <map value="resource_web_page" />
         <comment value="Other web pages related to the resource can additionally be entered in the section &quot;Related resources&quot;." />
+      </mapping>
+    </element>
+    <element id="Questionnaire.extension:format">
+      <path value="Questionnaire.extension" />
+      <sliceName value="format" />
+      <short value="Technical format of the resource." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-format" />
+      </type>
+      <isModifier value="false" />
+      <mapping>
+        <identity value="1.10.2" />
+        <map value="resource_format" />
       </mapping>
     </element>
     <element id="Questionnaire.identifier">
@@ -134,6 +190,7 @@
     </element>
     <element id="Questionnaire.version">
       <path value="Questionnaire.version" />
+      <short value="If existing, the version number of the resource." />
       <mapping>
         <identity value="1.10.1" />
         <map value="resource_version" />
