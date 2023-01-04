@@ -37,7 +37,6 @@
       <sliceName value="keywords" />
       <short value="Group of items providing  Information about keywords describing the resource." />
       <min value="0" />
-      <max value="*" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/variable" />
@@ -47,6 +46,45 @@
         <identity value="1.7" />
         <map value="resource_keywords" />
         <comment value="Group of items providing  Information about keywords describing the resource." />
+      </mapping>
+    </element>
+    <element id="Questionnaire.extension:acronym">
+      <path value="Questionnaire.extension" />
+      <sliceName value="acronym" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-label" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="Questionnaire.extension:resource_languages">
+      <path value="Questionnaire.extension" />
+      <sliceName value="resource_languages" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-execution-language" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="Questionnaire.extension:webpage">
+      <path value="Questionnaire.extension" />
+      <sliceName value="webpage" />
+      <short value="If existing, a link to the web page directly relevant to the resource." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-webpage" />
+      </type>
+      <isModifier value="false" />
+      <mapping>
+        <identity value="1.9" />
+        <map value="resource_web_page" />
+        <comment value="Other web pages related to the resource can additionally be entered in the section &quot;Related resources&quot;." />
       </mapping>
     </element>
     <element id="Questionnaire.identifier">
@@ -150,17 +188,14 @@
     </element>
     <element id="Questionnaire.title.extension:title_language.extension:content.value[x]">
       <path value="Questionnaire.title.extension.extension.value[x]" />
-      <type>
-        <code value="string" />
-      </type>
       <binding>
         <strength value="required" />
         <description value="Value set defining codes to specify the terminology/classification used for choice of language." />
         <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-language-snomedct" />
       </binding>
       <mapping>
-        <identity value="1.3.2" />
-        <map value="language" />
+        <identity value="NFDI4Health" />
+        <map value="1.3.2.resource_title.language" />
         <comment value="Language of the title/name." />
       </mapping>
     </element>
@@ -189,7 +224,6 @@
       <path value="Questionnaire.description.extension" />
       <sliceName value="myExtension" />
       <min value="0" />
-      <max value="*" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/translation" />
@@ -261,6 +295,27 @@
         <identity value="1.10.3.2" />
         <map value="resource_use_rights_description" />
       </mapping>
+    </element>
+    <element id="Questionnaire.copyright.extension">
+      <path value="Questionnaire.copyright.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Questionnaire.copyright.extension:Copyright_Label">
+      <path value="Questionnaire.copyright.extension" />
+      <sliceName value="Copyright_Label" />
+      <min value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-copyright-label" />
+      </type>
+      <isModifier value="false" />
     </element>
     <element id="Questionnaire.item.item">
       <path value="Questionnaire.item.item" />
