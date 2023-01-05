@@ -391,7 +391,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="1" />
+      <min value="2" />
     </element>
     <element id="Questionnaire.copyright.extension:Copyright_Label">
       <path value="Questionnaire.copyright.extension" />
@@ -405,6 +405,68 @@
       <mapping>
         <identity value="1.10.3.1" />
         <map value="resource_use_rights_label" />
+      </mapping>
+    </element>
+    <element id="Questionnaire.copyright.extension:useRightsConfimations">
+      <path value="Questionnaire.copyright.extension" />
+      <sliceName value="useRightsConfimations" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-use_rights" />
+      </type>
+      <isModifier value="false" />
+      <mapping>
+        <identity value="1.10.3.2" />
+        <map value="resource_use_rights_confirmations" />
+      </mapping>
+    </element>
+    <element id="Questionnaire.copyright.extension:useRightsConfimations.extension">
+      <path value="Questionnaire.copyright.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="4" />
+    </element>
+    <element id="Questionnaire.copyright.extension:useRightsConfimations.extension:authorsConfirmationOne">
+      <path value="Questionnaire.copyright.extension.extension" />
+      <sliceName value="authorsConfirmationOne" />
+      <min value="1" />
+      <mapping>
+        <identity value="1.10.3.2.1" />
+        <map value="resource_use_rights_confirmation_authority" />
+      </mapping>
+    </element>
+    <element id="Questionnaire.copyright.extension:useRightsConfimations.extension:authorsConfirmationTwo">
+      <path value="Questionnaire.copyright.extension.extension" />
+      <sliceName value="authorsConfirmationTwo" />
+      <min value="1" />
+      <mapping>
+        <identity value="1.10.3.2.2" />
+        <map value="Item renamed to resource_use_rights_confirmation_terms" />
+      </mapping>
+    </element>
+    <element id="Questionnaire.copyright.extension:useRightsConfimations.extension:authorsConfirmationThree">
+      <path value="Questionnaire.copyright.extension.extension" />
+      <sliceName value="authorsConfirmationThree" />
+      <min value="1" />
+      <mapping>
+        <identity value="1.10.3.2.3" />
+        <map value="Item renamed to resource_use_rights_confirmation_irrevocability" />
+      </mapping>
+    </element>
+    <element id="Questionnaire.copyright.extension:useRightsConfimations.extension:supportByLicensing">
+      <path value="Questionnaire.copyright.extension.extension" />
+      <sliceName value="supportByLicensing" />
+      <min value="1" />
+      <mapping>
+        <identity value="1.10.3.2.4" />
+        <map value="resource_use_rights_support_by_licencing" />
       </mapping>
     </element>
     <element id="Questionnaire.item.item">
