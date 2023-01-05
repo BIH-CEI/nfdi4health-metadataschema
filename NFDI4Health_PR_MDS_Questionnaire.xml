@@ -32,22 +32,6 @@
       </slicing>
       <min value="0" />
     </element>
-    <element id="Questionnaire.extension:keywords">
-      <path value="Questionnaire.extension" />
-      <sliceName value="keywords" />
-      <short value="Group of items providing  Information about keywords describing the resource." />
-      <min value="0" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/variable" />
-      </type>
-      <isModifier value="false" />
-      <mapping>
-        <identity value="1.7" />
-        <map value="resource_keywords" />
-        <comment value="Group of items providing  Information about keywords describing the resource." />
-      </mapping>
-    </element>
     <element id="Questionnaire.extension:acronym">
       <path value="Questionnaire.extension" />
       <sliceName value="acronym" />
@@ -141,6 +125,51 @@
       <mapping>
         <identity value="1.10.2" />
         <map value="resource_format" />
+      </mapping>
+    </element>
+    <element id="Questionnaire.extension:keywords">
+      <path value="Questionnaire.extension" />
+      <sliceName value="keywords" />
+      <short value="Group of items providing  Information about keywords describing the resource." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://example.org/fhir/StructureDefinition/NFDI4Health%20EX%20MDS%20Keyword" />
+      </type>
+      <isModifier value="false" />
+      <mapping>
+        <identity value="1.7" />
+        <map value="resource_keywords" />
+      </mapping>
+    </element>
+    <element id="Questionnaire.extension:keywords.value[x]">
+      <path value="Questionnaire.extension.value[x]" />
+      <short value="Keyword(s) describing the resource." />
+      <mapping>
+        <identity value="1.7.1" />
+        <map value="resource_keywords_label" />
+      </mapping>
+    </element>
+    <element id="Questionnaire.extension:keywords.value[x].extension">
+      <path value="Questionnaire.extension.value[x].extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="Questionnaire.extension:keywords.value[x].extension:myExtension">
+      <path value="Questionnaire.extension.value[x].extension" />
+      <sliceName value="myExtension" />
+      <short value="If known, the code of the keyword in a classification/vocabulary." />
+      <min value="0" />
+      <mapping>
+        <identity value="1.7.2" />
+        <map value="resource_keywords_label_code" />
       </mapping>
     </element>
     <element id="Questionnaire.identifier">
@@ -373,6 +402,10 @@
         <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-copyright-label" />
       </type>
       <isModifier value="false" />
+      <mapping>
+        <identity value="1.10.3.1" />
+        <map value="resource_use_rights_label" />
+      </mapping>
     </element>
     <element id="Questionnaire.item.item">
       <path value="Questionnaire.item.item" />
