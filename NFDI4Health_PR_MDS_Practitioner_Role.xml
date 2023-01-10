@@ -20,4 +20,69 @@
   <type value="PractitionerRole" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/PractitionerRole" />
   <derivation value="constraint" />
+  <differential>
+    <element id="PractitionerRole.code">
+      <path value="PractitionerRole.code" />
+      <definition value="Type of the role a person fulllfils. For example, this can be a principal investigator of a study or an author of a document." />
+      <min value="1" />
+      <max value="1" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="PractitionerRole" />
+        </extension>
+        <strength value="required" />
+        <description value="Value set defining codes for personal roles." />
+        <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-personal-roles-nci-umls-local" />
+      </binding>
+      <mapping>
+        <identity value="1.11.3.1" />
+        <map value="role_name_personal_type" />
+      </mapping>
+    </element>
+    <element id="PractitionerRole.telecom">
+      <path value="PractitionerRole.telecom" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="system" />
+        </discriminator>
+        <description value="Email and phone" />
+        <rules value="open" />
+      </slicing>
+      <definition value="Email and phone of the  person, group of persons or institution/organisation." />
+      <min value="1" />
+    </element>
+    <element id="PractitionerRole.telecom:role_email">
+      <path value="PractitionerRole.telecom" />
+      <sliceName value="role_email" />
+      <definition value="Email address of the  person, group of persons." />
+      <max value="1" />
+      <fixedContactPoint>
+        <use value="home" />
+      </fixedContactPoint>
+      <mapping>
+        <identity value="1.11.4" />
+        <map value="role_email" />
+      </mapping>
+    </element>
+    <element id="PractitionerRole.telecom:role_email.system">
+      <path value="PractitionerRole.telecom.system" />
+      <fixedCode value="email" />
+    </element>
+    <element id="PractitionerRole.telecom:role_phone">
+      <path value="PractitionerRole.telecom" />
+      <sliceName value="role_phone" />
+      <short value="Phone number" />
+      <definition value="Phone number of the  person, group of persons" />
+      <max value="1" />
+      <mapping>
+        <identity value="1.11.5" />
+        <map value="role_phone" />
+      </mapping>
+    </element>
+    <element id="PractitionerRole.telecom:role_phone.system">
+      <path value="PractitionerRole.telecom.system" />
+      <fixedCode value="phone" />
+    </element>
+  </differential>
 </StructureDefinition>
