@@ -21,6 +21,20 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/PractitionerRole" />
   <derivation value="constraint" />
   <differential>
+    <element id="PractitionerRole.organization">
+      <path value="PractitionerRole.organization" />
+      <mapping>
+        <identity value="1.11.6" />
+        <map value="role_affiliations" />
+      </mapping>
+    </element>
+    <element id="PractitionerRole.organization.reference">
+      <path value="PractitionerRole.organization.reference" />
+      <type>
+        <code value="string" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization-practitionerrole" />
+      </type>
+    </element>
     <element id="PractitionerRole.code">
       <path value="PractitionerRole.code" />
       <definition value="Type of the role a person fulllfils. For example, this can be a principal investigator of a study or an author of a document." />
@@ -43,7 +57,7 @@
       <path value="PractitionerRole.telecom" />
       <slicing>
         <discriminator>
-          <type value="type" />
+          <type value="value" />
           <path value="system" />
         </discriminator>
         <description value="Email and phone" />

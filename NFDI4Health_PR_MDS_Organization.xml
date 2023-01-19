@@ -50,5 +50,41 @@
         <map value="role_name_organisational_group_name" />
       </mapping>
     </element>
+    <element id="Organization.telecom">
+      <path value="Organization.telecom" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Organization.telecom:role_email">
+      <path value="Organization.telecom" />
+      <sliceName value="role_email" />
+      <max value="1" />
+      <mapping>
+        <identity value="1.11.4" />
+        <map value="role_email" />
+      </mapping>
+    </element>
+    <element id="Organization.telecom:role_email.system">
+      <path value="Organization.telecom.system" />
+      <fixedCode value="email" />
+    </element>
+    <element id="Organization.telecom:role_phone">
+      <path value="Organization.telecom" />
+      <sliceName value="role_phone" />
+      <max value="1" />
+      <mapping>
+        <identity value="1.11.5" />
+        <map value="role_phone" />
+      </mapping>
+    </element>
+    <element id="Organization.telecom:role_phone.system">
+      <path value="Organization.telecom.system" />
+      <fixedCode value="phone" />
+    </element>
   </differential>
 </StructureDefinition>
