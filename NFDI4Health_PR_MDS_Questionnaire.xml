@@ -30,7 +30,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="0" />
+      <min value="1" />
     </element>
     <element id="Questionnaire.extension:acronym">
       <path value="Questionnaire.extension" />
@@ -247,19 +247,15 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <short value="ID of the [RESOURCE]" />
+      <definition value="Unique identifier of the resource used for identification within the NFDI4Health." />
+      <min value="1" />
+      <max value="1" />
       <mapping>
         <identity value="1.1" />
         <map value="resource_identifier" />
         <comment value="Unique identifier of the resource used for identification within the NFDI4Health." />
       </mapping>
-    </element>
-    <element id="Questionnaire.identifier.use">
-      <path value="Questionnaire.identifier.use" />
-      <max value="0" />
-    </element>
-    <element id="Questionnaire.identifier.type">
-      <path value="Questionnaire.identifier.type" />
-      <max value="0" />
     </element>
     <element id="Questionnaire.identifier.system">
       <path value="Questionnaire.identifier.system" />
@@ -279,14 +275,6 @@
         <map value="resource_identifier" />
         <comment value="The value that is unique" />
       </mapping>
-    </element>
-    <element id="Questionnaire.identifier.period">
-      <path value="Questionnaire.identifier.period" />
-      <max value="0" />
-    </element>
-    <element id="Questionnaire.identifier.assigner">
-      <path value="Questionnaire.identifier.assigner" />
-      <max value="0" />
     </element>
     <element id="Questionnaire.identifier:alternative_ids">
       <path value="Questionnaire.identifier" />
@@ -321,6 +309,8 @@
     </element>
     <element id="Questionnaire.title">
       <path value="Questionnaire.title" />
+      <short value="Title/name" />
+      <definition value="Scientific unabbreviated title or name of the resource." />
       <min value="1" />
       <mapping>
         <identity value="1.3.1" />
@@ -359,6 +349,28 @@
         <rules value="open" />
       </slicing>
       <min value="2" />
+    </element>
+    <element id="Questionnaire.title.extension:title_language.extension:lang">
+      <path value="Questionnaire.title.extension.extension" />
+      <sliceName value="lang" />
+      <min value="1" />
+    </element>
+    <element id="Questionnaire.title.extension:title_language.extension:lang.value[x]">
+      <path value="Questionnaire.title.extension.extension.value[x]" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
+          <valueCanonical value="http://hl7.org/fhir/ValueSet/all-languages" />
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="Language" />
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+          <valueBoolean value="true" />
+        </extension>
+        <strength value="required" />
+        <description value="Value set defining codes to specify the language of a resource." />
+        <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-language-snomedct" />
+      </binding>
     </element>
     <element id="Questionnaire.title.extension:title_language.extension:content">
       <path value="Questionnaire.title.extension.extension" />
