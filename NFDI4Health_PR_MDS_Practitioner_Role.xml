@@ -23,17 +23,15 @@
   <differential>
     <element id="PractitionerRole.organization">
       <path value="PractitionerRole.organization" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+        <targetProfile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization-practitionerrole" />
+      </type>
       <mapping>
         <identity value="1.11.6" />
         <map value="role_affiliations" />
       </mapping>
-    </element>
-    <element id="PractitionerRole.organization.reference">
-      <path value="PractitionerRole.organization.reference" />
-      <type>
-        <code value="string" />
-        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization-practitionerrole" />
-      </type>
     </element>
     <element id="PractitionerRole.code">
       <path value="PractitionerRole.code" />

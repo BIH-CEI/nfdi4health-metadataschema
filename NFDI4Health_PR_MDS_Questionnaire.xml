@@ -168,8 +168,13 @@
     </element>
     <element id="Questionnaire.identifier">
       <path value="Questionnaire.identifier" />
-      <min value="1" />
-      <max value="1" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="assigner.identifier.system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
       <mapping>
         <identity value="1.1" />
         <map value="resource_identifier" />
@@ -210,6 +215,28 @@
     <element id="Questionnaire.identifier.assigner">
       <path value="Questionnaire.identifier.assigner" />
       <max value="0" />
+    </element>
+    <element id="Questionnaire.identifier:alternative_ids">
+      <path value="Questionnaire.identifier" />
+      <sliceName value="alternative_ids" />
+      <mapping>
+        <identity value="1.12" />
+        <map value="ids_alternative" />
+      </mapping>
+    </element>
+    <element id="Questionnaire.identifier:alternative_ids.system">
+      <path value="Questionnaire.identifier.system" />
+      <mapping>
+        <identity value="1.12.1" />
+        <map value="type" />
+      </mapping>
+    </element>
+    <element id="Questionnaire.identifier:alternative_ids.value">
+      <path value="Questionnaire.identifier.value" />
+      <mapping>
+        <identity value="1.12.2" />
+        <map value="identifier" />
+      </mapping>
     </element>
     <element id="Questionnaire.version">
       <path value="Questionnaire.version" />
