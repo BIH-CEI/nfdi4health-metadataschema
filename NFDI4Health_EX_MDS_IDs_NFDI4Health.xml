@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://example.org/fhir/StructureDefinition/NFDI4Health_EX_MDS_IDs_NFDI4Health" />
+  <name value="NFDI4Health_EX_MDS_IDs_NFDI4Health" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Questionnaire" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:identifier">
+      <path value="Extension.extension" />
+      <sliceName value="identifier" />
+      <short value="Identifier of the related resource" />
+      <definition value="Identifier (ID) of the related resource assigned on this portal." />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:identifier.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="identifier" />
+    </element>
+    <element id="Extension.extension:identifier.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:relation_type">
+      <path value="Extension.extension" />
+      <sliceName value="relation_type" />
+      <short value="Relationship between this [RESOURCE] (A) and the related resource (B)?" />
+      <definition value="Relationship between the resource being registered (A) and the related resource (B)." />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:relation_type.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="relation_type" />
+    </element>
+    <element id="Extension.extension:relation_type.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <description value="Value set defining codes to specify the relationship between two resources (both registered in NFDI4Health)." />
+        <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-relation-type-ids-nfdi-local-hl7v3" />
+      </binding>
+    </element>
+    <element id="Extension.extension:relation_type.value[x].text">
+      <path value="Extension.extension.value[x].text" />
+      <max value="0" />
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="https://example.org/fhir/StructureDefinition/NFDI4Health_EX_MDS_IDs_NFDI4Health" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

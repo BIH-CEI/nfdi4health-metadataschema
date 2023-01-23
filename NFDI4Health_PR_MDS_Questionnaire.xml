@@ -166,6 +166,78 @@
         <map value="resource_keywords_label_code" />
       </mapping>
     </element>
+    <element id="Questionnaire.extension:related">
+      <path value="Questionnaire.extension" />
+      <sliceName value="related" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://example.org/fhir/StructureDefinition/NFDI4Health_EX_MDS_Related" />
+      </type>
+      <isModifier value="false" />
+      <mapping>
+        <identity value="1.13" />
+        <map value="ids" />
+      </mapping>
+    </element>
+    <element id="Questionnaire.extension:IDs_nfdi4Health">
+      <path value="Questionnaire.extension" />
+      <sliceName value="IDs_nfdi4Health" />
+      <short value="Related (sub-)studies, study documents, etc. registered on this portal" />
+      <definition value="Group of items providing information about related resources registered on this portal." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://example.org/fhir/StructureDefinition/NFDI4Health_EX_MDS_IDs_NFDI4Health" />
+      </type>
+      <isModifier value="false" />
+      <mapping>
+        <identity value="1.14" />
+        <map value="ids_nfdi4health" />
+      </mapping>
+    </element>
+    <element id="Questionnaire.extension:IDs_nfdi4Health.extension">
+      <path value="Questionnaire.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Questionnaire.extension:IDs_nfdi4Health.extension:identifier">
+      <path value="Questionnaire.extension.extension" />
+      <sliceName value="identifier" />
+      <min value="1" />
+      <mapping>
+        <identity value="1.14.1" />
+        <map value="identifier" />
+      </mapping>
+    </element>
+    <element id="Questionnaire.extension:IDs_nfdi4Health.extension:relation_type">
+      <path value="Questionnaire.extension.extension" />
+      <sliceName value="relation_type" />
+      <min value="0" />
+      <mapping>
+        <identity value="1.14.2" />
+        <map value="relation_type" />
+      </mapping>
+    </element>
+    <element id="Questionnaire.extension:provenance">
+      <path value="Questionnaire.extension" />
+      <sliceName value="provenance" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-provenance" />
+      </type>
+      <isModifier value="false" />
+    </element>
     <element id="Questionnaire.identifier">
       <path value="Questionnaire.identifier" />
       <slicing>
@@ -305,6 +377,10 @@
         <map value="1.3.2.resource_title.language" />
         <comment value="Language of the title/name." />
       </mapping>
+    </element>
+    <element id="Questionnaire.status">
+      <path value="Questionnaire.status" />
+      <fixedCode value="unknown" />
     </element>
     <element id="Questionnaire.description">
       <path value="Questionnaire.description" />
