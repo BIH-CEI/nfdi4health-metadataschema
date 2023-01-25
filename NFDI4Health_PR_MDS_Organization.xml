@@ -112,6 +112,8 @@
     <element id="Organization.telecom:role_phone">
       <path value="Organization.telecom" />
       <sliceName value="role_phone" />
+      <short value="Phone number" />
+      <definition value="Phone number of the  person, group of persons or institution/organisation." />
       <max value="1" />
       <mapping>
         <identity value="1.11.5" />
