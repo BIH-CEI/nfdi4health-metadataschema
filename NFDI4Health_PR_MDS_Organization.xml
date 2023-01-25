@@ -97,6 +97,8 @@
     <element id="Organization.telecom:role_email">
       <path value="Organization.telecom" />
       <sliceName value="role_email" />
+      <short value="Email address" />
+      <definition value="Email address of the  person, group of persons or institution/organisation." />
       <max value="1" />
       <mapping>
         <identity value="1.11.4" />

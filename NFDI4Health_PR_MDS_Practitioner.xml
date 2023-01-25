@@ -30,12 +30,25 @@
         <map value="role_name_identifiers" />
       </mapping>
     </element>
-    <element id="Practitioner.identifier.system">
-      <path value="Practitioner.identifier.system" />
+    <element id="Practitioner.identifier.type">
+      <path value="Practitioner.identifier.type" />
+      <short value="Which type of identifer is reported?" />
+      <definition value="Type of the identifier scheme." />
+      <min value="1" />
       <mapping>
-        <identity value="1.11.1.2.6.1" />
+        <identity value="1.11.3.5.1" />
         <map value="scheme" />
       </mapping>
+    </element>
+    <element id="Practitioner.identifier.type.coding">
+      <path value="Practitioner.identifier.type.coding" />
+      <min value="1" />
+      <max value="1" />
+      <binding>
+        <strength value="required" />
+        <description value="Value set defining codes to specify the identifier scheme." />
+        <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-role-name-identifier-scheme" />
+      </binding>
     </element>
     <element id="Practitioner.identifier.value">
       <path value="Practitioner.identifier.value" />

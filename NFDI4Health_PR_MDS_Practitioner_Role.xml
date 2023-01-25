@@ -68,7 +68,8 @@
     <element id="PractitionerRole.telecom:role_email">
       <path value="PractitionerRole.telecom" />
       <sliceName value="role_email" />
-      <definition value="Email address of the  person, group of persons." />
+      <short value="Email address" />
+      <definition value="Email address of the  person, group of persons or institution/organisation." />
       <max value="1" />
       <fixedContactPoint>
         <use value="home" />

@@ -44,6 +44,8 @@
     </element>
     <element id="Organization.name">
       <path value="Organization.name" />
+      <short value="Name of the organisation" />
+      <definition value="Name of the organisation associated with the role." />
       <min value="1" />
       <mapping>
         <identity value="1.11.6.1" />
@@ -52,6 +54,8 @@
     </element>
     <element id="Organization.telecom">
       <path value="Organization.telecom" />
+      <short value="Web page of the organisation" />
+      <definition value="Web page of the organisation associated with the role." />
       <max value="1" />
       <mapping>
         <identity value="1.11.6.3" />
@@ -60,7 +64,7 @@
     </element>
     <element id="Organization.telecom.system">
       <path value="Organization.telecom.system" />
-      <fixedCode value="email" />
+      <fixedCode value="url" />
     </element>
     <element id="Organization.address.text">
       <path value="Organization.address.text" />
