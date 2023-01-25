@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="nfdi4health-ex-mds-provenance-data-source" />
+  <url value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-keywords2" />
+  <version value="0.9" />
+  <name value="NFDI4Health_EX_MDS_Keywords2" />
+  <title value="NFDI4Health EX MDS Keyword2" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Questionnaire" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Key terms to aid in searching for or filtering the study." />
+      <mapping>
+        <identity value="1.7.2" />
+        <map value="resource_keywords_label_code" />
+      </mapping>
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="Extension.extension:label">
+      <path value="Extension.extension" />
+      <sliceName value="label" />
+      <short value="Keyword" />
+      <definition value="Keyword(s) describing the resource." />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:label.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="label" />
+    </element>
+    <element id="Extension.extension:label.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:code">
+      <path value="Extension.extension" />
+      <sliceName value="code" />
+      <short value="Code of the keyword" />
+      <definition value="If known, the code of the keyword in a classification/vocabulary." />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:code.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="code" />
+    </element>
+    <element id="Extension.extension:code.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="uri" />
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-keywords2" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+      <type>
+        <code value="base64Binary" />
+      </type>
+      <type>
+        <code value="boolean" />
+      </type>
+      <type>
+        <code value="canonical" />
+      </type>
+      <type>
+        <code value="code" />
+      </type>
+      <type>
+        <code value="date" />
+      </type>
+      <type>
+        <code value="dateTime" />
+      </type>
+      <type>
+        <code value="decimal" />
+      </type>
+      <type>
+        <code value="id" />
+      </type>
+      <type>
+        <code value="instant" />
+      </type>
+      <type>
+        <code value="integer" />
+      </type>
+      <type>
+        <code value="markdown" />
+      </type>
+      <type>
+        <code value="oid" />
+      </type>
+      <type>
+        <code value="positiveInt" />
+      </type>
+      <type>
+        <code value="string" />
+      </type>
+      <type>
+        <code value="time" />
+      </type>
+      <type>
+        <code value="unsignedInt" />
+      </type>
+      <type>
+        <code value="uri" />
+      </type>
+      <type>
+        <code value="url" />
+      </type>
+      <type>
+        <code value="uuid" />
+      </type>
+      <type>
+        <code value="Address" />
+      </type>
+      <type>
+        <code value="Age" />
+      </type>
+      <type>
+        <code value="Annotation" />
+      </type>
+      <type>
+        <code value="Attachment" />
+      </type>
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <type>
+        <code value="Coding" />
+      </type>
+      <type>
+        <code value="ContactPoint" />
+      </type>
+      <type>
+        <code value="Count" />
+      </type>
+      <type>
+        <code value="Distance" />
+      </type>
+      <type>
+        <code value="Duration" />
+      </type>
+      <type>
+        <code value="HumanName" />
+      </type>
+      <type>
+        <code value="Identifier" />
+      </type>
+      <type>
+        <code value="Money" />
+      </type>
+      <type>
+        <code value="Period" />
+      </type>
+      <type>
+        <code value="Quantity" />
+      </type>
+      <type>
+        <code value="Range" />
+      </type>
+      <type>
+        <code value="Ratio" />
+      </type>
+      <type>
+        <code value="Reference" />
+      </type>
+      <type>
+        <code value="SampledData" />
+      </type>
+      <type>
+        <code value="Signature" />
+      </type>
+      <type>
+        <code value="Timing" />
+      </type>
+      <type>
+        <code value="ContactDetail" />
+      </type>
+      <type>
+        <code value="Contributor" />
+      </type>
+      <type>
+        <code value="DataRequirement" />
+      </type>
+      <type>
+        <code value="Expression" />
+      </type>
+      <type>
+        <code value="ParameterDefinition" />
+      </type>
+      <type>
+        <code value="RelatedArtifact" />
+      </type>
+      <type>
+        <code value="TriggerDefinition" />
+      </type>
+      <type>
+        <code value="UsageContext" />
+      </type>
+      <type>
+        <code value="Dosage" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
