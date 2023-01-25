@@ -11,7 +11,7 @@
   <abstract value="false" />
   <context>
     <type value="element" />
-    <expression value="Questionnaire" />
+    <expression value="Organization" />
   </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
@@ -22,7 +22,7 @@
       <short value="Funding identifier" />
       <definition value="Identifier assigned by a funder to the resource." />
       <mapping>
-        <identity value="1.11.1.1.2.1" />
+        <identity value="1.11.2.2" />
         <map value="role_name_organisational_group_type_funding_id" />
       </mapping>
     </element>

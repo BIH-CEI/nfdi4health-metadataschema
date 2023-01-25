@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="nfdi4health-ex-mds-provenance-data-source" />
-  <url value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-associatedParty" />
+  <url value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-associatedPartyQu" />
   <version value="0.9" />
-  <name value="NFDI4Health_EX_MDS_Associated_Party" />
-  <title value="NFDI4Health EX MDS Associated Party" />
+  <name value="NFDI4Health_EX_MDS_Associated_Party_Qu" />
+  <title value="NFDI4Health EX MDS Associated Party Qu" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
@@ -19,6 +19,8 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
+      <short value="Role(s)" />
+      <definition value="Group of items providing information about person(s), group(s) of persons or institution(s)/organisation(s) contributing to the resource." />
       <min value="1" />
     </element>
     <element id="Extension.extension">
@@ -70,156 +72,24 @@
     <element id="Extension.extension:role_name_type.value[x]">
       <path value="Extension.extension.value[x]" />
       <type>
-        <code value="base64Binary" />
-      </type>
-      <type>
-        <code value="boolean" />
-      </type>
-      <type>
-        <code value="canonical" />
-      </type>
-      <type>
-        <code value="code" />
-      </type>
-      <type>
-        <code value="date" />
-      </type>
-      <type>
-        <code value="dateTime" />
-      </type>
-      <type>
-        <code value="decimal" />
-      </type>
-      <type>
-        <code value="id" />
-      </type>
-      <type>
-        <code value="instant" />
-      </type>
-      <type>
-        <code value="integer" />
-      </type>
-      <type>
-        <code value="markdown" />
-      </type>
-      <type>
-        <code value="oid" />
-      </type>
-      <type>
-        <code value="positiveInt" />
-      </type>
-      <type>
-        <code value="string" />
-      </type>
-      <type>
-        <code value="time" />
-      </type>
-      <type>
-        <code value="unsignedInt" />
-      </type>
-      <type>
-        <code value="uri" />
-      </type>
-      <type>
-        <code value="url" />
-      </type>
-      <type>
-        <code value="uuid" />
-      </type>
-      <type>
-        <code value="Address" />
-      </type>
-      <type>
-        <code value="Age" />
-      </type>
-      <type>
-        <code value="Annotation" />
-      </type>
-      <type>
-        <code value="Attachment" />
-      </type>
-      <type>
         <code value="CodeableConcept" />
       </type>
-      <type>
-        <code value="Coding" />
-      </type>
-      <type>
-        <code value="ContactPoint" />
-      </type>
-      <type>
-        <code value="Count" />
-      </type>
-      <type>
-        <code value="Distance" />
-      </type>
-      <type>
-        <code value="Duration" />
-      </type>
-      <type>
-        <code value="HumanName" />
-      </type>
-      <type>
-        <code value="Identifier" />
-      </type>
-      <type>
-        <code value="Money" />
-      </type>
-      <type>
-        <code value="Period" />
-      </type>
-      <type>
-        <code value="Quantity" />
-      </type>
-      <type>
-        <code value="Range" />
-      </type>
-      <type>
-        <code value="Ratio" />
-      </type>
-      <type>
-        <code value="Reference" />
-      </type>
-      <type>
-        <code value="SampledData" />
-      </type>
-      <type>
-        <code value="Signature" />
-      </type>
-      <type>
-        <code value="Timing" />
-      </type>
-      <type>
-        <code value="ContactDetail" />
-      </type>
-      <type>
-        <code value="Contributor" />
-      </type>
-      <type>
-        <code value="DataRequirement" />
-      </type>
-      <type>
-        <code value="Expression" />
-      </type>
-      <type>
-        <code value="ParameterDefinition" />
-      </type>
-      <type>
-        <code value="RelatedArtifact" />
-      </type>
-      <type>
-        <code value="TriggerDefinition" />
-      </type>
-      <type>
-        <code value="UsageContext" />
-      </type>
-      <type>
-        <code value="Dosage" />
-      </type>
+    </element>
+    <element id="Extension.extension:role_name_type.value[x].coding">
+      <path value="Extension.extension.value[x].coding" />
+      <binding>
+        <strength value="required" />
+        <description value="Value set defining codes to specify role types." />
+        <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-role-name-type-umls" />
+      </binding>
+    </element>
+    <element id="Extension.extension:role_name_type.value[x].text">
+      <path value="Extension.extension.value[x].text" />
+      <max value="0" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-associatedParty" />
+      <fixedUri value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-associatedPartyQu" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

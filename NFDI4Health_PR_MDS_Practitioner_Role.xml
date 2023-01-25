@@ -35,6 +35,7 @@
     </element>
     <element id="PractitionerRole.code">
       <path value="PractitionerRole.code" />
+      <short value="Type of the role" />
       <definition value="Type of the role a person fulllfils. For example, this can be a principal investigator of a study or an author of a document." />
       <min value="1" />
       <max value="1" />
