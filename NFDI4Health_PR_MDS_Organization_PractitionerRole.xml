@@ -14,6 +14,8 @@
   <differential>
     <element id="Organization.identifier">
       <path value="Organization.identifier" />
+      <short value="Digital identifier(s) of the organisation" />
+      <definition value="Group of items providing information about identifiers of the organisation." />
       <mapping>
         <identity value="1.11.6.4" />
         <map value="role_affiliation_identifiers" />
