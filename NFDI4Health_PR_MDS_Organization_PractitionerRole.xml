@@ -38,7 +38,9 @@
     </element>
     <element id="Organization.identifier.value">
       <path value="Organization.identifier.value" />
+      <definition value="Digital identifier of the organisation according to a definite scheme." />
       <min value="1" />
+      <fixedString value="Identifier" />
       <mapping>
         <identity value="1.11.6.4.1" />
         <map value="identifier" />

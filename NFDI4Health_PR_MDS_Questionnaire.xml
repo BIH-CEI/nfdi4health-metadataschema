@@ -78,10 +78,6 @@
         <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-format" />
       </type>
       <isModifier value="false" />
-      <mapping>
-        <identity value="1.10.2" />
-        <map value="resource_format" />
-      </mapping>
     </element>
     <element id="Questionnaire.extension:related">
       <path value="Questionnaire.extension" />
@@ -253,7 +249,6 @@
       <short value="Keyword(s) describing the  [RESOURCE]" />
       <definition value="Group of items providing  Information about keywords describing the resource." />
       <min value="0" />
-      <max value="*" />
       <type>
         <code value="Extension" />
         <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-keywords2" />
@@ -296,10 +291,7 @@
     <element id="Questionnaire.extension:associatedParty">
       <path value="Questionnaire.extension" />
       <sliceName value="associatedParty" />
-      <short value="Role(s)" />
-      <definition value="Group of items providing information about person(s), group(s) of persons or institution(s)/organisation(s) contributing to the resource." />
       <min value="1" />
-      <max value="*" />
       <type>
         <code value="Extension" />
         <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-associatedPartyQu" />
@@ -332,15 +324,6 @@
       <mapping>
         <identity value="1.11.3" />
         <map value="role_name_personal" />
-      </mapping>
-    </element>
-    <element id="Questionnaire.extension:associatedParty.extension:role_name_type">
-      <path value="Questionnaire.extension.extension" />
-      <sliceName value="role_name_type" />
-      <min value="1" />
-      <mapping>
-        <identity value="1.11.1" />
-        <map value="role_name_type" />
       </mapping>
     </element>
     <element id="Questionnaire.identifier">
@@ -384,6 +367,7 @@
     <element id="Questionnaire.identifier:alternative_ids">
       <path value="Questionnaire.identifier" />
       <sliceName value="alternative_ids" />
+      <definition value="Group of items providing information about identifiers (IDs) assigned to the given resource by another registering systems, e.g. a register of clinical trials or a data repository." />
       <mapping>
         <identity value="1.12" />
         <map value="ids_alternative" />

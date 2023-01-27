@@ -35,19 +35,12 @@
     <element id="Organization.extension:fundingID">
       <path value="Organization.extension" />
       <sliceName value="fundingID" />
-      <short value="Funding identifier" />
-      <definition value="Identifier assigned by a funder to the resource." />
       <min value="0" />
-      <max value="*" />
       <type>
         <code value="Extension" />
         <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-fundingID" />
       </type>
       <isModifier value="false" />
-      <mapping>
-        <identity value="1.11.2.2" />
-        <map value="role_name_organisational_group_type_funding_id" />
-      </mapping>
     </element>
     <element id="Organization.extension:fundingID.value[x]">
       <path value="Organization.extension.value[x]" />
