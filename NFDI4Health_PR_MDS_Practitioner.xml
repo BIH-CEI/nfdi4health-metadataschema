@@ -20,4 +20,82 @@
   <type value="Practitioner" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
   <derivation value="constraint" />
+  <differential>
+    <element id="Practitioner.identifier">
+      <path value="Practitioner.identifier" />
+      <short value="Digital identifier(s) of the person" />
+      <definition value="Group of items providing information about digital identifiers of the person." />
+      <mapping>
+        <identity value="1.11.3.5" />
+        <map value="role_name_identifiers" />
+      </mapping>
+    </element>
+    <element id="Practitioner.identifier.type">
+      <path value="Practitioner.identifier.type" />
+      <short value="Which type of identifer is reported?" />
+      <definition value="Type of the identifier scheme." />
+      <min value="1" />
+      <mapping>
+        <identity value="1.11.3.5.1" />
+        <map value="scheme" />
+      </mapping>
+    </element>
+    <element id="Practitioner.identifier.type.coding">
+      <path value="Practitioner.identifier.type.coding" />
+      <min value="1" />
+      <max value="1" />
+      <binding>
+        <strength value="required" />
+        <description value="Value set defining codes to specify the identifier scheme." />
+        <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-role-name-identifier-scheme" />
+      </binding>
+    </element>
+    <element id="Practitioner.identifier.value">
+      <path value="Practitioner.identifier.value" />
+      <short value="Identifier" />
+      <definition value="Digital identifier of the person according to a definite scheme." />
+      <min value="1" />
+      <mapping>
+        <identity value="1.11.3.5" />
+        <map value="identifier" />
+      </mapping>
+    </element>
+    <element id="Practitioner.name.family">
+      <path value="Practitioner.name.family" />
+      <short value="Family name of the person" />
+      <definition value="Family name of the person" />
+      <min value="1" />
+      <mapping>
+        <identity value="1.11.3.3" />
+        <map value="role_name_personal_family_name" />
+      </mapping>
+    </element>
+    <element id="Practitioner.name.given">
+      <path value="Practitioner.name.given" />
+      <short value="Given name of the person" />
+      <definition value="Given name of the person." />
+      <min value="1" />
+      <max value="1" />
+      <mapping>
+        <identity value="1.11.3.2" />
+        <map value="role_name_personal_given_name" />
+      </mapping>
+    </element>
+    <element id="Practitioner.name.prefix">
+      <path value="Practitioner.name.prefix" />
+      <short value="Title of the person" />
+      <definition value="Title of the person." />
+      <min value="1" />
+      <max value="1" />
+      <binding>
+        <strength value="required" />
+        <description value="Value set defining codes to specify personal titles" />
+        <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-role-name-personal-title-nci" />
+      </binding>
+      <mapping>
+        <identity value="1.11.3.4" />
+        <map value="role_name_personal_title" />
+      </mapping>
+    </element>
+  </differential>
 </StructureDefinition>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-fundingID" />
+  <version value="0.9" />
+  <name value="NFDI4Health_EX_MDS_FundingID" />
+  <title value="NFDI4Health EX MDS FundingID" />
+  <status value="draft" />
+  <description value="Identifier assigned by a funder to the resource." />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Organization" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Funding identifier" />
+      <definition value="Identifier assigned by a funder to the resource." />
+      <mapping>
+        <identity value="1.11.2.2" />
+        <map value="role_name_organisational_group_type_funding_id" />
+      </mapping>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-fundingID" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <type>
+        <code value="id" />
+      </type>
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

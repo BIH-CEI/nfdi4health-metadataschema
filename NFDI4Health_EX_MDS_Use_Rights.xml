@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="nfdi4health-ex-mds-provenance-data-source" />
+  <url value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-use_rights" />
+  <version value="0.9" />
+  <name value="NFDI4Health_EX_MDS_Use_Rights" />
+  <title value="NFDI4Health EX MDS Use Rights Confirmations" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Questionnaire.copyright" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Important nformation about licensing, if a Creative Commons liesense is selected." />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="4" />
+    </element>
+    <element id="Extension.extension:authorsConfirmationOne">
+      <path value="Extension.extension" />
+      <sliceName value="authorsConfirmationOne" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:authorsConfirmationOne.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="authorsConfirmationOne" />
+    </element>
+    <element id="Extension.extension:authorsConfirmationOne.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="boolean" />
+      </type>
+    </element>
+    <element id="Extension.extension:authorsConfirmationTwo">
+      <path value="Extension.extension" />
+      <sliceName value="authorsConfirmationTwo" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:authorsConfirmationTwo.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="authorsConfirmationTwo" />
+    </element>
+    <element id="Extension.extension:authorsConfirmationTwo.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="boolean" />
+      </type>
+    </element>
+    <element id="Extension.extension:authorsConfirmationThree">
+      <path value="Extension.extension" />
+      <sliceName value="authorsConfirmationThree" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:authorsConfirmationThree.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="authorsConfirmationThree" />
+    </element>
+    <element id="Extension.extension:authorsConfirmationThree.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="boolean" />
+      </type>
+    </element>
+    <element id="Extension.extension:supportByLicensing">
+      <path value="Extension.extension" />
+      <sliceName value="supportByLicensing" />
+      <short value="Do you confirm that the authors allow NFDI4Health to license the document?" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:supportByLicensing.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="supportByLicensing" />
+    </element>
+    <element id="Extension.extension:supportByLicensing.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="boolean" />
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-use_rights" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

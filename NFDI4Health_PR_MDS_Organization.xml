@@ -20,4 +20,102 @@
   <type value="Organization" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Organization" />
   <derivation value="constraint" />
+  <differential>
+    <element id="Organization.extension">
+      <path value="Organization.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="Organization.extension:fundingID">
+      <path value="Organization.extension" />
+      <sliceName value="fundingID" />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-fundingID" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="Organization.extension:fundingID.value[x]">
+      <path value="Organization.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Organization.type">
+      <path value="Organization.type" />
+      <short value="Type of the role" />
+      <definition value="Type of the role an organisation, institution or group fulllfils. For example, this can be a sponsor of the study or a group of authors of the document." />
+      <min value="1" />
+      <max value="1" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="OrganizationType" />
+        </extension>
+        <strength value="required" />
+        <description value="Value set defining codes for organisational roles." />
+        <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-organisational-roles-nci-local" />
+      </binding>
+      <mapping>
+        <identity value="1.11.2.1" />
+        <map value="role_name_organisational_group_type" />
+      </mapping>
+    </element>
+    <element id="Organization.name">
+      <path value="Organization.name" />
+      <short value="Name of the organisation/institution/group" />
+      <definition value="Name of the organisation, institution or group." />
+      <min value="1" />
+      <mapping>
+        <identity value="1.11.2.3" />
+        <map value="role_name_organisational_group_name" />
+      </mapping>
+    </element>
+    <element id="Organization.telecom">
+      <path value="Organization.telecom" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Organization.telecom:role_email">
+      <path value="Organization.telecom" />
+      <sliceName value="role_email" />
+      <short value="Email address" />
+      <definition value="Email address of the  person, group of persons or institution/organisation." />
+      <max value="1" />
+      <mapping>
+        <identity value="1.11.4" />
+        <map value="role_email" />
+      </mapping>
+    </element>
+    <element id="Organization.telecom:role_email.system">
+      <path value="Organization.telecom.system" />
+      <fixedCode value="email" />
+    </element>
+    <element id="Organization.telecom:role_phone">
+      <path value="Organization.telecom" />
+      <sliceName value="role_phone" />
+      <short value="Phone number" />
+      <definition value="Phone number of the  person, group of persons or institution/organisation." />
+      <max value="1" />
+      <mapping>
+        <identity value="1.11.5" />
+        <map value="role_phone" />
+      </mapping>
+    </element>
+    <element id="Organization.telecom:role_phone.system">
+      <path value="Organization.telecom.system" />
+      <fixedCode value="phone" />
+    </element>
+  </differential>
 </StructureDefinition>

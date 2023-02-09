@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="nfdi4health-ex-mds-provenance-data-source" />
+  <url value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-provenance" />
+  <version value="0.9" />
+  <name value="NFDI4Health_EX_MDS_Provenance" />
+  <status value="draft" />
+  <description value="Group of items providing information about provenance aspects of the data entry on the portal." />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Questionnaire" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Information about provenance aspects of the data entry" />
+      <definition value="Group of items providing information about provenance aspects of the data entry on the portal." />
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:data_source">
+      <path value="Extension.extension" />
+      <sliceName value="data_source" />
+      <short value="Source of information about the [RESOURCE]" />
+      <definition value="Source of information about the resource and the way it was uploaded/collected." />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:data_source.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="data_source" />
+    </element>
+    <element id="Extension.extension:data_source.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.extension:verification_date">
+      <path value="Extension.extension" />
+      <sliceName value="verification_date" />
+      <short value="Verfication date" />
+      <definition value="Date on which the responsible party last verified the information about the resource, even if no additional or updated information is being submitted." />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:verification_date.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="verification_date" />
+    </element>
+    <element id="Extension.extension:verification_date.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="date" />
+      </type>
+    </element>
+    <element id="Extension.extension:verification_date_user">
+      <path value="Extension.extension" />
+      <sliceName value="verification_date_user" />
+      <short value="User who last verified the [RESOURCE]" />
+      <definition value="User who last verified the information about the resource." />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:verification_date_user.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="verification_date_user" />
+    </element>
+    <element id="Extension.extension:verification_date_user.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.extension:resource_first_submitted_date">
+      <path value="Extension.extension" />
+      <sliceName value="resource_first_submitted_date" />
+      <short value="Date when the [RESOURCE] was first submitted for publication" />
+      <definition value="Date when the resource was first submitted for publication." />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:resource_first_submitted_date.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="resource_first_submitted_date" />
+    </element>
+    <element id="Extension.extension:resource_first_submitted_date.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="date" />
+      </type>
+    </element>
+    <element id="Extension.extension:resource_first_submitted_user">
+      <path value="Extension.extension" />
+      <sliceName value="resource_first_submitted_user" />
+      <short value="User who first submitted the [RESOURCE] for publication" />
+      <definition value="User who first submitted the [RESOURCE] for publication" />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:resource_first_submitted_user.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="resource_first_submitted_user" />
+    </element>
+    <element id="Extension.extension:resource_first_submitted_user.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.extension:resource_first_posted_date">
+      <path value="Extension.extension" />
+      <sliceName value="resource_first_posted_date" />
+      <short value="Date when the [RESOURCE] was first posted/published" />
+      <definition value="Date when the resource was first posted/published." />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:resource_first_posted_date.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="resource_first_posted_date" />
+    </element>
+    <element id="Extension.extension:resource_first_posted_date.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="date" />
+      </type>
+    </element>
+    <element id="Extension.extension:resource_first_posted_user">
+      <path value="Extension.extension" />
+      <sliceName value="resource_first_posted_user" />
+      <short value="User who first posted/published the [RESOURCE]" />
+      <definition value="User who first posted/published the [RESOURCE]" />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:resource_first_posted_user.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="resource_first_posted_user" />
+    </element>
+    <element id="Extension.extension:resource_first_posted_user.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.extension:last_update_submitted_date">
+      <path value="Extension.extension" />
+      <sliceName value="last_update_submitted_date" />
+      <short value="Date when the last update of the [RESOURCE] was submitted for publication" />
+      <definition value="Date when the last update of the [RESOURCE] was submitted for publication" />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:last_update_submitted_date.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="last_update_submitted_date" />
+    </element>
+    <element id="Extension.extension:last_update_submitted_date.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="date" />
+      </type>
+    </element>
+    <element id="Extension.extension:last_update_submitted_user">
+      <path value="Extension.extension" />
+      <sliceName value="last_update_submitted_user" />
+      <short value="User who submitted the last update of the [RESOURCE]" />
+      <definition value="User who submitted the last update of the [RESOURCE]" />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:last_update_submitted_user.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="last_update_submitted_user" />
+    </element>
+    <element id="Extension.extension:last_update_submitted_user.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.extension:last_update_posted_date">
+      <path value="Extension.extension" />
+      <sliceName value="last_update_posted_date" />
+      <short value="Date when the last update of the resource was posted/published." />
+      <definition value="Date when the last update of the resource was posted/published." />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:last_update_posted_date.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="last_update_posted_date" />
+    </element>
+    <element id="Extension.extension:last_update_posted_date.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="date" />
+      </type>
+    </element>
+    <element id="Extension.extension:last_update_posted_user">
+      <path value="Extension.extension" />
+      <sliceName value="last_update_posted_user" />
+      <short value="User who posted/published the last update" />
+      <definition value="User who posted/published the last update" />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:last_update_posted_user.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="last_update_posted_user" />
+    </element>
+    <element id="Extension.extension:last_update_posted_user.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.extension:resource_version">
+      <path value="Extension.extension" />
+      <sliceName value="resource_version" />
+      <short value="Version number of the resource within the portal/system" />
+      <definition value="Version number of the resource within the portal/system" />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:resource_version.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="resource_version" />
+    </element>
+    <element id="Extension.extension:resource_version.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-provenance" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

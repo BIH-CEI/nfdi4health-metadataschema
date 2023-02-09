@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="nfdi4health-ex-mds-provenance-data-source" />
+  <url value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization-practitionerrole" />
+  <version value="0.9" />
+  <name value="NFDI4Health_PR_MDS_Organization_PractitionerRole" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Organization" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Organization" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Organization.identifier">
+      <path value="Organization.identifier" />
+      <short value="Digital identifier(s) of the organisation" />
+      <definition value="Group of items providing information about identifiers of the organisation." />
+      <mapping>
+        <identity value="1.11.6.4" />
+        <map value="role_affiliation_identifiers" />
+      </mapping>
+    </element>
+    <element id="Organization.identifier.type">
+      <path value="Organization.identifier.type" />
+      <min value="1" />
+      <mapping>
+        <identity value="1.11.6.4.2" />
+        <map value="scheme" />
+      </mapping>
+    </element>
+    <element id="Organization.identifier.type.coding">
+      <path value="Organization.identifier.type.coding" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://hl7.org/fhir/valueset-identifier-type.html" />
+      </binding>
+    </element>
+    <element id="Organization.identifier.value">
+      <path value="Organization.identifier.value" />
+      <definition value="Digital identifier of the organisation according to a definite scheme." />
+      <min value="1" />
+      <fixedString value="Identifier" />
+      <mapping>
+        <identity value="1.11.6.4.1" />
+        <map value="identifier" />
+      </mapping>
+    </element>
+    <element id="Organization.name">
+      <path value="Organization.name" />
+      <short value="Name of the organisation" />
+      <definition value="Name of the organisation associated with the role." />
+      <min value="1" />
+      <mapping>
+        <identity value="1.11.6.1" />
+        <map value="role_affiliation_name" />
+      </mapping>
+    </element>
+    <element id="Organization.telecom">
+      <path value="Organization.telecom" />
+      <short value="Web page of the organisation" />
+      <definition value="Web page of the organisation associated with the role." />
+      <max value="1" />
+      <mapping>
+        <identity value="1.11.6.3" />
+        <map value="role_affiliation_web_page" />
+      </mapping>
+    </element>
+    <element id="Organization.telecom.system">
+      <path value="Organization.telecom.system" />
+      <fixedCode value="url" />
+    </element>
+    <element id="Organization.address.text">
+      <path value="Organization.address.text" />
+      <mapping>
+        <identity value="1.11.6.2" />
+        <map value="role_affiliation_address" />
+      </mapping>
+    </element>
+  </differential>
+</StructureDefinition>

@@ -30,27 +30,313 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="2" />
+    </element>
+    <element id="Questionnaire.extension:resource_languages">
+      <path value="Questionnaire.extension" />
+      <sliceName value="resource_languages" />
+      <short value="Language(s) of the [RESOURCE]" />
+      <definition value="Language(s) in which a study/substudy is conducted, or a language in which a study document is composed." />
       <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-execution-language" />
+      </type>
+      <isModifier value="false" />
+      <mapping>
+        <identity value="1.8" />
+        <map value="resource_languages" />
+      </mapping>
+    </element>
+    <element id="Questionnaire.extension:webpage">
+      <path value="Questionnaire.extension" />
+      <sliceName value="webpage" />
+      <short value="Web page of the [RESOURCE]" />
+      <definition value="If existing, a link to the web page directly relevant to the resource." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-webpage" />
+      </type>
+      <isModifier value="false" />
+      <mapping>
+        <identity value="1.9" />
+        <map value="resource_web_page" />
+        <comment value="Other web pages related to the resource can additionally be entered in the section &quot;Related resources&quot;." />
+      </mapping>
+    </element>
+    <element id="Questionnaire.extension:format">
+      <path value="Questionnaire.extension" />
+      <sliceName value="format" />
+      <short value="Format of the [RESOURCE]" />
+      <definition value="Technical format of the resource." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-format" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="Questionnaire.extension:related">
+      <path value="Questionnaire.extension" />
+      <sliceName value="related" />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://example.org/fhir/StructureDefinition/NFDI4Health_EX_MDS_Related" />
+      </type>
+      <isModifier value="false" />
+      <mapping>
+        <identity value="1.13" />
+        <map value="ids" />
+      </mapping>
+    </element>
+    <element id="Questionnaire.extension:IDs_nfdi4Health">
+      <path value="Questionnaire.extension" />
+      <sliceName value="IDs_nfdi4Health" />
+      <short value="Related (sub-)studies, study documents, etc. registered on this portal" />
+      <definition value="Group of items providing information about related resources registered on this portal." />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://example.org/fhir/StructureDefinition/NFDI4Health_EX_MDS_IDs_NFDI4Health" />
+      </type>
+      <isModifier value="false" />
+      <mapping>
+        <identity value="1.14" />
+        <map value="ids_nfdi4health" />
+      </mapping>
+    </element>
+    <element id="Questionnaire.extension:IDs_nfdi4Health.extension">
+      <path value="Questionnaire.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Questionnaire.extension:IDs_nfdi4Health.extension:identifier">
+      <path value="Questionnaire.extension.extension" />
+      <sliceName value="identifier" />
+      <min value="1" />
+      <mapping>
+        <identity value="1.14.1" />
+        <map value="identifier" />
+      </mapping>
+    </element>
+    <element id="Questionnaire.extension:IDs_nfdi4Health.extension:relation_type">
+      <path value="Questionnaire.extension.extension" />
+      <sliceName value="relation_type" />
+      <min value="0" />
+      <mapping>
+        <identity value="1.14.2" />
+        <map value="relation_type" />
+      </mapping>
+    </element>
+    <element id="Questionnaire.extension:provenance">
+      <path value="Questionnaire.extension" />
+      <sliceName value="provenance" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-provenance" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="Questionnaire.extension:acronym">
+      <path value="Questionnaire.extension" />
+      <sliceName value="acronym" />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-acronym-questionnaire" />
+      </type>
+      <isModifier value="false" />
+      <mapping>
+        <identity value="1.4" />
+        <map value="resource_acronyms" />
+      </mapping>
+    </element>
+    <element id="Questionnaire.extension:acronym.extension">
+      <path value="Questionnaire.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="2" />
+    </element>
+    <element id="Questionnaire.extension:acronym.extension:text">
+      <path value="Questionnaire.extension.extension" />
+      <sliceName value="text" />
+      <min value="1" />
+      <mapping>
+        <identity value="1.4.1" />
+        <map value="text" />
+      </mapping>
+    </element>
+    <element id="Questionnaire.extension:acronym.extension:language">
+      <path value="Questionnaire.extension.extension" />
+      <sliceName value="language" />
+      <min value="1" />
+      <mapping>
+        <identity value="1.4.2" />
+        <map value="language" />
+      </mapping>
+    </element>
+    <element id="Questionnaire.extension:descriptions_non_english">
+      <path value="Questionnaire.extension" />
+      <sliceName value="descriptions_non_english" />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-description-non-english" />
+      </type>
+      <isModifier value="false" />
+      <mapping>
+        <identity value="1.6" />
+        <map value="resource_descriptions_non_english" />
+      </mapping>
+    </element>
+    <element id="Questionnaire.extension:descriptions_non_english.extension">
+      <path value="Questionnaire.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="2" />
+    </element>
+    <element id="Questionnaire.extension:descriptions_non_english.extension:text">
+      <path value="Questionnaire.extension.extension" />
+      <sliceName value="text" />
+      <min value="1" />
+      <mapping>
+        <identity value="1.6.1" />
+        <map value="text" />
+      </mapping>
+    </element>
+    <element id="Questionnaire.extension:descriptions_non_english.extension:language">
+      <path value="Questionnaire.extension.extension" />
+      <sliceName value="language" />
+      <min value="1" />
+      <mapping>
+        <identity value="1.6.2" />
+        <map value="language" />
+      </mapping>
+    </element>
+    <element id="Questionnaire.extension:descriptions_non_english.extension:language.value[x]">
+      <path value="Questionnaire.extension.extension.value[x]" />
+      <binding>
+        <strength value="required" />
+        <description value="Value set defining codes to specify a language other than English." />
+        <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-language-no-english-snomedct" />
+      </binding>
     </element>
     <element id="Questionnaire.extension:keywords">
       <path value="Questionnaire.extension" />
       <sliceName value="keywords" />
-      <short value="Group of items providing  Information about keywords describing the resource." />
+      <short value="Keyword(s) describing the  [RESOURCE]" />
+      <definition value="Group of items providing  Information about keywords describing the resource." />
       <min value="0" />
-      <max value="*" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/variable" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-keywords2" />
       </type>
       <isModifier value="false" />
       <mapping>
         <identity value="1.7" />
         <map value="resource_keywords" />
-        <comment value="Group of items providing  Information about keywords describing the resource." />
+      </mapping>
+    </element>
+    <element id="Questionnaire.extension:keywords.extension">
+      <path value="Questionnaire.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Questionnaire.extension:keywords.extension:label">
+      <path value="Questionnaire.extension.extension" />
+      <sliceName value="label" />
+      <min value="1" />
+      <mapping>
+        <identity value="1.7.1" />
+        <map value="resource_keywords_label" />
+      </mapping>
+    </element>
+    <element id="Questionnaire.extension:keywords.extension:code">
+      <path value="Questionnaire.extension.extension" />
+      <sliceName value="code" />
+      <min value="0" />
+      <mapping>
+        <identity value="1.7.2" />
+        <map value="resource_keywords_label_code" />
+      </mapping>
+    </element>
+    <element id="Questionnaire.extension:associatedParty">
+      <path value="Questionnaire.extension" />
+      <sliceName value="associatedParty" />
+      <min value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-associatedPartyQu" />
+      </type>
+      <isModifier value="false" />
+      <mapping>
+        <identity value="1.1" />
+        <map value="roles" />
+      </mapping>
+    </element>
+    <element id="Questionnaire.extension:associatedParty.extension">
+      <path value="Questionnaire.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Questionnaire.extension:associatedParty.extension:party">
+      <path value="Questionnaire.extension.extension" />
+      <sliceName value="party" />
+      <min value="0" />
+      <mapping>
+        <identity value="1.11.2" />
+        <map value="role_name_organisational_group" />
+      </mapping>
+      <mapping>
+        <identity value="1.11.3" />
+        <map value="role_name_personal" />
       </mapping>
     </element>
     <element id="Questionnaire.identifier">
       <path value="Questionnaire.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="assigner.identifier.system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <short value="ID of the [RESOURCE]" />
+      <definition value="Unique identifier of the resource used for identification within the NFDI4Health." />
       <min value="1" />
       <max value="1" />
       <mapping>
@@ -58,14 +344,6 @@
         <map value="resource_identifier" />
         <comment value="Unique identifier of the resource used for identification within the NFDI4Health." />
       </mapping>
-    </element>
-    <element id="Questionnaire.identifier.use">
-      <path value="Questionnaire.identifier.use" />
-      <max value="0" />
-    </element>
-    <element id="Questionnaire.identifier.type">
-      <path value="Questionnaire.identifier.type" />
-      <max value="0" />
     </element>
     <element id="Questionnaire.identifier.system">
       <path value="Questionnaire.identifier.system" />
@@ -86,16 +364,33 @@
         <comment value="The value that is unique" />
       </mapping>
     </element>
-    <element id="Questionnaire.identifier.period">
-      <path value="Questionnaire.identifier.period" />
-      <max value="0" />
+    <element id="Questionnaire.identifier:alternative_ids">
+      <path value="Questionnaire.identifier" />
+      <sliceName value="alternative_ids" />
+      <definition value="Group of items providing information about identifiers (IDs) assigned to the given resource by another registering systems, e.g. a register of clinical trials or a data repository." />
+      <mapping>
+        <identity value="1.12" />
+        <map value="ids_alternative" />
+      </mapping>
     </element>
-    <element id="Questionnaire.identifier.assigner">
-      <path value="Questionnaire.identifier.assigner" />
-      <max value="0" />
+    <element id="Questionnaire.identifier:alternative_ids.system">
+      <path value="Questionnaire.identifier.system" />
+      <mapping>
+        <identity value="1.12.1" />
+        <map value="type" />
+      </mapping>
+    </element>
+    <element id="Questionnaire.identifier:alternative_ids.value">
+      <path value="Questionnaire.identifier.value" />
+      <mapping>
+        <identity value="1.12.2" />
+        <map value="identifier" />
+      </mapping>
     </element>
     <element id="Questionnaire.version">
       <path value="Questionnaire.version" />
+      <short value="Version of the [RESOURCE]" />
+      <definition value="If existing, the version number of the resource." />
       <mapping>
         <identity value="1.10.1" />
         <map value="resource_version" />
@@ -104,6 +399,8 @@
     </element>
     <element id="Questionnaire.title">
       <path value="Questionnaire.title" />
+      <short value="Title/name" />
+      <definition value="Scientific unabbreviated title or name of the resource." />
       <min value="1" />
       <mapping>
         <identity value="1.3.1" />
@@ -121,51 +418,37 @@
       </slicing>
       <min value="1" />
     </element>
-    <element id="Questionnaire.title.extension:title_language">
+    <element id="Questionnaire.title.extension:language">
       <path value="Questionnaire.title.extension" />
-      <sliceName value="title_language" />
+      <sliceName value="language" />
       <min value="1" />
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/translation" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding" />
       </type>
       <isModifier value="false" />
-    </element>
-    <element id="Questionnaire.title.extension:title_language.extension">
-      <path value="Questionnaire.title.extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="2" />
-    </element>
-    <element id="Questionnaire.title.extension:title_language.extension:content">
-      <path value="Questionnaire.title.extension.extension" />
-      <sliceName value="content" />
-      <min value="1" />
-    </element>
-    <element id="Questionnaire.title.extension:title_language.extension:content.value[x]">
-      <path value="Questionnaire.title.extension.extension.value[x]" />
-      <type>
-        <code value="string" />
-      </type>
-      <binding>
-        <strength value="required" />
-        <description value="Value set defining codes to specify the terminology/classification used for choice of language." />
-        <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-language-snomedct" />
-      </binding>
       <mapping>
         <identity value="1.3.2" />
         <map value="language" />
-        <comment value="Language of the title/name." />
       </mapping>
+    </element>
+    <element id="Questionnaire.title.extension:language.value[x].code">
+      <path value="Questionnaire.title.extension.value[x].code" />
+      <binding>
+        <strength value="required" />
+        <description value="Value set defining codes to specify the language of a resource." />
+        <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-language-snomedct" />
+      </binding>
+    </element>
+    <element id="Questionnaire.status">
+      <path value="Questionnaire.status" />
+      <fixedCode value="unknown" />
     </element>
     <element id="Questionnaire.description">
       <path value="Questionnaire.description" />
+      <short value="A short plain text summary describing the resource in English." />
+      <definition value="A short plain text summary describing the resource in English." />
       <min value="1" />
       <mapping>
         <identity value="1.5.1" />
@@ -174,35 +457,17 @@
         <comment value="A short plain text summary describing the resource in English." />
       </mapping>
     </element>
-    <element id="Questionnaire.description.extension">
-      <path value="Questionnaire.description.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
-    <element id="Questionnaire.description.extension:myExtension">
-      <path value="Questionnaire.description.extension" />
-      <sliceName value="myExtension" />
-      <min value="0" />
-      <max value="*" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/translation" />
-      </type>
-      <isModifier value="false" />
+    <element id="Questionnaire.copyright">
+      <path value="Questionnaire.copyright" />
+      <short value="Additional information about use rights" />
+      <definition value="Any additional descriptive information explaining terms and conditions to (re-)use the resource." />
       <mapping>
-        <identity value="1.6" />
-        <map value="resource_descriptions_non_english" />
-        <comment value="Group of items with  description(s) of the resource written not in English." />
+        <identity value="1.10.3.3" />
+        <map value="resource_use_rights_description" />
       </mapping>
     </element>
-    <element id="Questionnaire.description.extension:myExtension.extension">
-      <path value="Questionnaire.description.extension.extension" />
+    <element id="Questionnaire.copyright.extension">
+      <path value="Questionnaire.copyright.extension" />
       <slicing>
         <discriminator>
           <type value="value" />
@@ -212,54 +477,93 @@
       </slicing>
       <min value="2" />
     </element>
-    <element id="Questionnaire.description.extension:myExtension.extension:lang">
-      <path value="Questionnaire.description.extension.extension" />
-      <sliceName value="lang" />
+    <element id="Questionnaire.copyright.extension:label">
+      <path value="Questionnaire.copyright.extension" />
+      <sliceName value="label" />
+      <short value="License" />
+      <definition value="License defining the rights to (re-)use the resource." />
       <min value="1" />
-    </element>
-    <element id="Questionnaire.description.extension:myExtension.extension:lang.value[x]">
-      <path value="Questionnaire.description.extension.extension.value[x]" />
-      <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
-          <valueCanonical value="http://hl7.org/fhir/ValueSet/all-languages" />
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="Language" />
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true" />
-        </extension>
-        <strength value="required" />
-        <description value="Language of the description text." />
-        <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-language-no-english-snomedct" />
-      </binding>
-      <mapping>
-        <identity value="1.6.2" />
-        <map value="resource_descriptions_non_english" />
-        <comment value="Language of the description text." />
-      </mapping>
-    </element>
-    <element id="Questionnaire.description.extension:myExtension.extension:content">
-      <path value="Questionnaire.description.extension.extension" />
-      <sliceName value="content" />
-      <min value="1" />
-    </element>
-    <element id="Questionnaire.description.extension:myExtension.extension:content.value[x]">
-      <path value="Questionnaire.description.extension.extension.value[x]" />
       <type>
-        <code value="string" />
+        <code value="Extension" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-copyright-label" />
       </type>
+      <isModifier value="false" />
       <mapping>
-        <identity value="1.6.1" />
-        <map value="resource_descriptions_non_english" />
-        <comment value="Short plain text summary of the resource other than in English." />
+        <identity value="1.10.3.1" />
+        <map value="resource_use_rights_label" />
       </mapping>
     </element>
-    <element id="Questionnaire.copyright">
-      <path value="Questionnaire.copyright" />
+    <element id="Questionnaire.copyright.extension:label.value[x]">
+      <path value="Questionnaire.copyright.extension.value[x]" />
+      <binding>
+        <strength value="required" />
+        <description value="Value set used to indicate the use rights of a resource." />
+        <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-yes-no-not-applicable-snomedct" />
+      </binding>
+    </element>
+    <element id="Questionnaire.copyright.extension:label.value[x].text">
+      <path value="Questionnaire.copyright.extension.value[x].text" />
+      <max value="0" />
+    </element>
+    <element id="Questionnaire.copyright.extension:useRightsConfimations">
+      <path value="Questionnaire.copyright.extension" />
+      <sliceName value="useRightsConfimations" />
+      <min value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-use_rights" />
+      </type>
+      <isModifier value="false" />
       <mapping>
         <identity value="1.10.3.2" />
-        <map value="resource_use_rights_description" />
+        <map value="resource_use_rights_confirmations" />
+      </mapping>
+    </element>
+    <element id="Questionnaire.copyright.extension:useRightsConfimations.extension">
+      <path value="Questionnaire.copyright.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="4" />
+    </element>
+    <element id="Questionnaire.copyright.extension:useRightsConfimations.extension:authorsConfirmationOne">
+      <path value="Questionnaire.copyright.extension.extension" />
+      <sliceName value="authorsConfirmationOne" />
+      <min value="1" />
+      <mapping>
+        <identity value="1.10.3.2.1" />
+        <map value="resource_use_rights_confirmation_authority" />
+      </mapping>
+    </element>
+    <element id="Questionnaire.copyright.extension:useRightsConfimations.extension:authorsConfirmationTwo">
+      <path value="Questionnaire.copyright.extension.extension" />
+      <sliceName value="authorsConfirmationTwo" />
+      <min value="1" />
+      <mapping>
+        <identity value="1.10.3.2.2" />
+        <map value="Item renamed to resource_use_rights_confirmation_terms" />
+      </mapping>
+    </element>
+    <element id="Questionnaire.copyright.extension:useRightsConfimations.extension:authorsConfirmationThree">
+      <path value="Questionnaire.copyright.extension.extension" />
+      <sliceName value="authorsConfirmationThree" />
+      <min value="1" />
+      <mapping>
+        <identity value="1.10.3.2.3" />
+        <map value="Item renamed to resource_use_rights_confirmation_irrevocability" />
+      </mapping>
+    </element>
+    <element id="Questionnaire.copyright.extension:useRightsConfimations.extension:supportByLicensing">
+      <path value="Questionnaire.copyright.extension.extension" />
+      <sliceName value="supportByLicensing" />
+      <min value="1" />
+      <mapping>
+        <identity value="1.10.3.2.4" />
+        <map value="resource_use_rights_support_by_licencing" />
       </mapping>
     </element>
     <element id="Questionnaire.item.item">
