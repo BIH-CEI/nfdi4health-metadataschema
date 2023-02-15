@@ -149,49 +149,6 @@
       </type>
       <isModifier value="false" />
     </element>
-    <element id="Questionnaire.extension:acronym">
-      <path value="Questionnaire.extension" />
-      <sliceName value="acronym" />
-      <min value="0" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-acronym-questionnaire" />
-      </type>
-      <isModifier value="false" />
-      <mapping>
-        <identity value="1.4" />
-        <map value="resource_acronyms" />
-      </mapping>
-    </element>
-    <element id="Questionnaire.extension:acronym.extension">
-      <path value="Questionnaire.extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="2" />
-    </element>
-    <element id="Questionnaire.extension:acronym.extension:text">
-      <path value="Questionnaire.extension.extension" />
-      <sliceName value="text" />
-      <min value="1" />
-      <mapping>
-        <identity value="1.4.1" />
-        <map value="text" />
-      </mapping>
-    </element>
-    <element id="Questionnaire.extension:acronym.extension:language">
-      <path value="Questionnaire.extension.extension" />
-      <sliceName value="language" />
-      <min value="1" />
-      <mapping>
-        <identity value="1.4.2" />
-        <map value="language" />
-      </mapping>
-    </element>
     <element id="Questionnaire.extension:descriptions_non_english">
       <path value="Questionnaire.extension" />
       <sliceName value="descriptions_non_english" />
@@ -325,6 +282,17 @@
         <identity value="1.11.3" />
         <map value="role_name_personal" />
       </mapping>
+    </element>
+    <element id="Questionnaire.extension:myExtension">
+      <path value="Questionnaire.extension" />
+      <sliceName value="myExtension" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-label" />
+      </type>
+      <isModifier value="false" />
     </element>
     <element id="Questionnaire.identifier">
       <path value="Questionnaire.identifier" />

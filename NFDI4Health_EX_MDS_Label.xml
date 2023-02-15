@@ -35,8 +35,8 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="Information about titles and acronyms" />
-      <definition value="Group of items providing Information about additional title(s), additional name(s) of the resource, and acronym(s) of the resource." />
+      <short value="test" />
+      <definition value="test" />
       <comment value="Based on ResearchStudy.label (R5), with an extension for translation." />
     </element>
     <element id="Extension.extension">
@@ -86,7 +86,6 @@
       <short value="Language translation of the additional title/additional name/acronym" />
       <definition value="Language of the additional title/additional name/acronym if it is not the base language of the resource." />
       <min value="0" />
-      <max value="*" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/translation" />
