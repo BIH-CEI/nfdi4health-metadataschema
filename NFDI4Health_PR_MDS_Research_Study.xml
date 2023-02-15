@@ -35,6 +35,7 @@
     <element id="ResearchStudy.extension:label">
       <path value="ResearchStudy.extension" />
       <sliceName value="label" />
+      <short value="Information about titles/names and acronyms" />
       <min value="0" />
       <type>
         <code value="Extension" />
@@ -43,11 +44,12 @@
       <isModifier value="false" />
       <mapping>
         <identity value="NFDI4Health" />
-        <map value="1.4 Resource.resource_acronyms" />
+        <map value="1.4 Resource.acronyms" />
       </mapping>
       <mapping>
         <identity value="NFDI4Health" />
-        <map value="1.3 Resource.resource_titles" />
+        <map value="1.3 Resource.titles" />
+        <comment value="For additional title(s) or name(s) of a resource." />
       </mapping>
     </element>
     <element id="ResearchStudy.extension:label.extension">
@@ -64,20 +66,26 @@
     <element id="ResearchStudy.extension:label.extension:value">
       <path value="ResearchStudy.extension.extension" />
       <sliceName value="value" />
+      <short value="Additional title(s), additional name(s), and acronym(s) of the resource" />
+      <definition value="If existing, additional title(s), additional name(s), and acronym(s) of the resource." />
+      <comment value="For acronyms: This property refers primarily to studies which often have an acronym. For other types of resources, a short title (preferably up to 5 words) can be provided, e.g. &quot;NAKO-COVID Questionnaire&quot;." />
       <min value="1" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.3.1 Resource.titles.text" />
+        <comment value="For additional title(s) or name(s) of a resource." />
+      </mapping>
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.4.1 Resource.acronyms.text" />
+      </mapping>
     </element>
     <element id="ResearchStudy.extension:label.extension:value.value[x]">
       <path value="ResearchStudy.extension.extension.value[x]" />
-      <mapping>
-        <identity value="NFDI4Health" />
-        <map value="1.3.1 Resource.resource_titles.text" />
-        <comment value="To be used when the content is in the same language than the base language of the resource" />
-      </mapping>
-      <mapping>
-        <identity value="NFDI4Health" />
-        <map value="1.4.1 Resource.resource_acronyms.text" />
-        <comment value="When in the base language of the resource" />
-      </mapping>
+      <example>
+        <label value="Acronym" />
+        <valueString value="NAKO" />
+      </example>
     </element>
     <element id="ResearchStudy.extension:label.extension:value.value[x].extension">
       <path value="ResearchStudy.extension.extension.value[x].extension" />
@@ -93,6 +101,8 @@
     <element id="ResearchStudy.extension:label.extension:value.value[x].extension:translation">
       <path value="ResearchStudy.extension.extension.value[x].extension" />
       <sliceName value="translation" />
+      <short value="Language of the additional title(s)/additional name(s)/acronym(s)" />
+      <definition value="Language of the additional title(s)/additional name(s)/acronym(s) if it is not the base language of the resource." />
       <min value="0" />
     </element>
     <element id="ResearchStudy.extension:label.extension:value.value[x].extension:translation.extension">
@@ -110,6 +120,16 @@
       <path value="ResearchStudy.extension.extension.value[x].extension.extension" />
       <sliceName value="lang" />
       <min value="1" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.3.2 Resource.titles.language" />
+        <comment value="Translation language different than the base language of a resource." />
+      </mapping>
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.4.2 Resource.acronyms.language" />
+        <comment value="Translation language different than the base language of a resource." />
+      </mapping>
     </element>
     <element id="ResearchStudy.extension:label.extension:value.value[x].extension:translation.extension:lang.value[x]">
       <path value="ResearchStudy.extension.extension.value[x].extension.extension.value[x]" />
@@ -128,6 +148,16 @@
       <path value="ResearchStudy.extension.extension.value[x].extension.extension" />
       <sliceName value="content" />
       <min value="1" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.3.1 Resource.titles.text" />
+        <comment value="For additional title(s) or name(s) of a resource if in another language than the base language of a resource." />
+      </mapping>
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.4.1 Resource.acronyms.text" />
+        <comment value="For acronym(s) of a resource if in another language than the base language of a resource." />
+      </mapping>
     </element>
     <element id="ResearchStudy.extension:label.extension:value.value[x].extension:translation.extension:content.value[x]">
       <path value="ResearchStudy.extension.extension.value[x].extension.extension.value[x]" />
@@ -145,7 +175,9 @@
     <element id="ResearchStudy.extension:execution-language">
       <path value="ResearchStudy.extension" />
       <sliceName value="execution-language" />
+      <short value="Execution language(s) of the [RESOURCE]" />
       <definition value="Language(s) in which a study/substudy is conducted, or a language in which a study document is composed." />
+      <comment value="Select all that apply." />
       <min value="0" />
       <type>
         <code value="Extension" />
@@ -157,12 +189,13 @@
       <path value="ResearchStudy.extension.value[x]" />
       <mapping>
         <identity value="NFDI4Health" />
-        <map value="1.8 Resource.resource_languages" />
+        <map value="1.8 Resource.languages" />
       </mapping>
     </element>
     <element id="ResearchStudy.extension:associated-party">
       <path value="ResearchStudy.extension" />
       <sliceName value="associated-party" />
+      <short value="Role(s)" />
       <min value="0" />
       <max value="1" />
       <type>
@@ -170,6 +203,27 @@
         <profile value="https://www.nfdi4health.de/fhir/StructureDefinition/nfdi4health-ex-mds-associated-party" />
       </type>
       <isModifier value="false" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.11 Resource.roles" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.extension:mortality-data">
+      <path value="ResearchStudy.extension" />
+      <sliceName value="mortality-data" />
+      <short value="Were mortality data collected?" />
+      <definition value="Mortality data." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-mortality-data" />
+      </type>
+      <isModifier value="false" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.17.5 Resource.studyDesign.mortalityData" />
+      </mapping>
     </element>
     <element id="ResearchStudy.identifier">
       <path value="ResearchStudy.identifier" />
@@ -193,11 +247,12 @@
       <path value="ResearchStudy.identifier" />
       <sliceName value="NFDI4Health" />
       <definition value="Unique identifier of the resource used for identification within the NFDI4Health." />
+      <comment value="The identifier is assigned automatically." />
       <min value="1" />
       <max value="1" />
       <mapping>
         <identity value="NFDI4Health" />
-        <map value="1.1 Resource.resource_identifier" />
+        <map value="1.1 Resource.identifier" />
       </mapping>
     </element>
     <element id="ResearchStudy.identifier:NFDI4Health.use">
@@ -437,12 +492,13 @@
     </element>
     <element id="ResearchStudy.title">
       <path value="ResearchStudy.title" />
-      <short value="Scientific unabbreviated title or name of the resource." />
+      <short value="Title(s)/name(s) of the [RESOURCE]" />
       <definition value="Scientific unabbreviated title or name of the resource." />
+      <comment value="If no official title/name has been defined yet, please provide a title/name that is suitable for public display. | Please provide at least one title/name of the resource. If the original title is not in English, please also provide an English translation of the original title." />
       <min value="1" />
       <mapping>
         <identity value="NFDI4Health" />
-        <map value="1.3.1 Resource.resource_titles.text" />
+        <map value="1.3.1 Resource.titles.text" />
       </mapping>
     </element>
     <element id="ResearchStudy.title.extension">
@@ -459,6 +515,8 @@
     <element id="ResearchStudy.title.extension:translation">
       <path value="ResearchStudy.title.extension" />
       <sliceName value="translation" />
+      <short value="Language translation of the title" />
+      <definition value="Language of the title if it is not the base language of the resource." />
       <min value="0" />
       <type>
         <code value="Extension" />
@@ -480,20 +538,18 @@
     <element id="ResearchStudy.title.extension:translation.extension:lang">
       <path value="ResearchStudy.title.extension.extension" />
       <sliceName value="lang" />
+      <short value="Language of the title/name" />
+      <definition value="Language of the title/name." />
       <min value="1" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.3.2 Resource.titles.language" />
+        <comment value="Language if it differs from the base language of the resource." />
+      </mapping>
     </element>
     <element id="ResearchStudy.title.extension:translation.extension:lang.value[x]">
       <path value="ResearchStudy.title.extension.extension.value[x]" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
-          <valueCanonical value="http://hl7.org/fhir/ValueSet/all-languages" />
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="Language" />
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true" />
-        </extension>
         <strength value="required" />
       </binding>
       <mapping>
@@ -504,9 +560,14 @@
     <element id="ResearchStudy.title.extension:translation.extension:content">
       <path value="ResearchStudy.title.extension.extension" />
       <sliceName value="content" />
-      <short value="Title in other Language" />
-      <definition value="Title in other Language." />
+      <short value="Title in another language" />
+      <definition value="Title in another language than the base language of the resource." />
       <min value="1" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.3.1 Resource.titles.text" />
+        <comment value="Titles that are not in the base language of the resource." />
+      </mapping>
     </element>
     <element id="ResearchStudy.title.extension:translation.extension:content.value[x]">
       <path value="ResearchStudy.title.extension.extension.value[x]" />
@@ -522,12 +583,73 @@
     <element id="ResearchStudy.category">
       <path value="ResearchStudy.category" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="ResearchStudyCategory" />
-        </extension>
         <strength value="example" />
         <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.1037--20220705210404" />
       </binding>
+    </element>
+    <element id="ResearchStudy.condition">
+      <path value="ResearchStudy.condition" />
+      <short value="Primary health condition(s), disease(s) or focus of the study" />
+      <definition value="Group of items providing information about primary health condition(s) or disease(s) considered in the study, or the focus of the study (e.g. medication, food, therapy, device, etc.)." />
+      <min value="1" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.17.3 Resource.studyDesign.studyConditions" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.condition.extension">
+      <path value="ResearchStudy.condition.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="ResearchStudy.condition.extension:study-groups-of-diseases">
+      <path value="ResearchStudy.condition.extension" />
+      <sliceName value="study-groups-of-diseases" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-groups-of-diseases" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="ResearchStudy.condition.coding.code">
+      <path value="ResearchStudy.condition.coding.code" />
+      <short value="Code" />
+      <definition value="Code of the health condition,  disease, focus in the terminology/classification used." />
+      <comment value="If found, the code from the terminology/classification used." />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.17.3.3 Resource.studyDesign.studyConditions.code" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.condition.coding.display">
+      <path value="ResearchStudy.condition.coding.display" />
+      <short value="Name of the primary health condition, disease or focus of the study" />
+      <definition value="Name of primary health condition or disease considered in the study, or the focus of the study (e.g. medication, food, therapy, device, etc.)." />
+      <comment value="The use of terms from established terminologies/classifications (e.g. SNOMED CT, ICD, etc.) is preferred. However, also self-assigned terms are allowed. | Preferably, use terms from SNOMED CT (https://browser.ihtsdotools.org)." />
+      <min value="1" />
+    </element>
+    <element id="ResearchStudy.condition.text">
+      <path value="ResearchStudy.condition.text" />
+      <short value="Name of the primary health condition, disease or focus of the study" />
+      <definition value="Name of primary health condition or disease considered in the study, or the focus of the study (e.g. medication, food, therapy, device, etc.)." />
+      <comment value="The use of terms from established terminologies/classifications (e.g. SNOMED CT, ICD, etc.) is preferred. However, also self-assigned terms are allowed. | Preferably, use terms from SNOMED CT (https://browser.ihtsdotools.org)." />
+      <min value="1" />
+      <example>
+        <label value="Name of a Condition" />
+        <valueString value="SARS-CoV-2" />
+      </example>
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.17.3.1 Resource.studyDesign.studyConditions.label" />
+      </mapping>
     </element>
     <element id="ResearchStudy.relatedArtifact">
       <path value="ResearchStudy.relatedArtifact" />
@@ -542,7 +664,14 @@
     <element id="ResearchStudy.relatedArtifact:webpage">
       <path value="ResearchStudy.relatedArtifact" />
       <sliceName value="webpage" />
+      <short value="Web page of the [RESOURCE]" />
+      <definition value="If existing, a link to the web page directly relevant to the resource." />
+      <comment value="Other web pages related to the resource can additionally be entered in the section &quot;Related resources&quot;." />
       <max value="1" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.9 Resource.webpage" />
+      </mapping>
     </element>
     <element id="ResearchStudy.relatedArtifact:webpage.type">
       <path value="ResearchStudy.relatedArtifact.type" />
@@ -550,8 +679,9 @@
     </element>
     <element id="ResearchStudy.relatedArtifact:webpage.url">
       <path value="ResearchStudy.relatedArtifact.url" />
-      <short value="Link to a web page." />
+      <short value="Web page of the [RESOURCE]" />
       <definition value="If existing, a link to the web page directly relevant to the resource." />
+      <comment value="Other web pages related to the resource can additionally be entered in the section &quot;Related resources&quot;." />
       <min value="1" />
       <mapping>
         <identity value="NFDI4Health" />
@@ -560,34 +690,59 @@
     </element>
     <element id="ResearchStudy.keyword">
       <path value="ResearchStudy.keyword" />
+      <short value="Keyword(s) describing the [RESOURCE]" />
+      <definition value="Group of items providing information about keywords describing the resource." />
+      <comment value="The findability of the resource can be significantly increased if proper keywords are stated." />
       <mapping>
         <identity value="NFDI4Health" />
-        <map value="1.7 Resource.resource_keywords" />
+        <map value="1.7 Resource.keywords" />
       </mapping>
     </element>
     <element id="ResearchStudy.keyword.coding">
       <path value="ResearchStudy.keyword.coding" />
+      <short value="Code of the keyword" />
+      <definition value="If known, the code of the keyword in a classification/vocabulary." />
+      <comment value="If found, the code from the classification/vocabulary used." />
+      <max value="1" />
+    </element>
+    <element id="ResearchStudy.keyword.coding.code">
+      <path value="ResearchStudy.keyword.coding.code" />
+      <short value="Code of the keyword" />
+      <definition value="If known, the code of the keyword in a classification/vocabulary." />
+      <comment value="If found, the code from the classification/vocabulary used." />
+      <example>
+        <label value="Keyword URI" />
+        <valueCode value="http://id.nlm.nih.gov/mesh/D000086402" />
+      </example>
       <mapping>
         <identity value="NFDI4Health" />
-        <map value="1.7.2 Resource.resource_keywords_label_code" />
+        <map value="1.7.2 Resource.keywords.code" />
       </mapping>
     </element>
     <element id="ResearchStudy.keyword.text">
       <path value="ResearchStudy.keyword.text" />
+      <short value="Keyword" />
+      <definition value="Keyword(s) describing the resource." />
+      <comment value="The use of terms from established classifications/vocabularies (e.g. MeSH, UMLS, SNOMED CT) is preferred. However, also self-assigned keywords are allowed. | Preferably, use terms from MeSH (https://meshb.nlm.nih.gov/search) or UMLS (https://uts.nlm.nih.gov/uts/umls/home)." />
       <min value="1" />
+      <example>
+        <label value="Keyword label" />
+        <valueString value="SARS-CoV-2" />
+      </example>
       <mapping>
         <identity value="NFDI4Health" />
-        <map value="1.7.1 Resource.resource_keywords_label" />
+        <map value="1.7.1 Resource.keywords.label" />
       </mapping>
     </element>
     <element id="ResearchStudy.description">
       <path value="ResearchStudy.description" />
-      <short value="English description" />
+      <short value="English description of the [RESOURCE]" />
       <definition value="A short plain text summary describing the resource in English." />
+      <comment value="An English description is mandatory to facilitate the search. | The provided information should be understandable by scientific audience." />
       <min value="1" />
       <mapping>
         <identity value="NFDI4Health" />
-        <map value="1.5.1 Resource.resource_description_english" />
+        <map value="1.5.1 Resource.descriptionEnglish.text" />
       </mapping>
     </element>
     <element id="ResearchStudy.description.extension">
@@ -604,14 +759,19 @@
     <element id="ResearchStudy.description.extension:translation">
       <path value="ResearchStudy.description.extension" />
       <sliceName value="translation" />
-      <short value="Descriptions that are not in English" />
+      <short value="Additional description(s) of the [RESOURCE]" />
       <definition value="Group of items with description(s) of the resource written not in English." />
+      <comment value="Additional descriptions of the resource are optional. &#xD;&#xA;The provided information should be understandable by scientific audience." />
       <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/translation" />
       </type>
       <isModifier value="false" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.6 Resource.descriptionNonEnglish" />
+      </mapping>
     </element>
     <element id="ResearchStudy.description.extension:translation.extension">
       <path value="ResearchStudy.description.extension.extension" />
@@ -624,12 +784,34 @@
       </slicing>
       <min value="2" />
     </element>
+    <element id="ResearchStudy.description.extension:translation.extension:lang">
+      <path value="ResearchStudy.description.extension.extension" />
+      <sliceName value="lang" />
+      <short value="Language of the description text." />
+      <definition value="Language other than English of the description text." />
+      <min value="1" />
+    </element>
+    <element id="ResearchStudy.description.extension:translation.extension:lang.value[x]">
+      <path value="ResearchStudy.description.extension.extension.value[x]" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.6.2 Resource.descriptionNonEnglish.language" />
+      </mapping>
+    </element>
     <element id="ResearchStudy.description.extension:translation.extension:content">
       <path value="ResearchStudy.description.extension.extension" />
       <sliceName value="content" />
       <short value="Description (not in English)" />
       <definition value="Short plain text summary of the resource other than in English." />
+      <comment value="Additional descriptions of the resource are optional. The provided information should be understandable by scientific audience." />
       <min value="1" />
+    </element>
+    <element id="ResearchStudy.description.extension:translation.extension:content.value[x]">
+      <path value="ResearchStudy.description.extension.extension.value[x]" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.6.1 Resource.descriptionNonEnglish.text" />
+      </mapping>
     </element>
   </differential>
 </StructureDefinition>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="nfdi4health-ex-mds-study-groups-of-diseases" />
+  <url value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-groups-of-diseases" />
+  <version value="0.9" />
+  <name value="NFDI4Health_EX_MDS_Study_Groups_Of_Diseases" />
+  <title value="NFDI4Health EX MDS Study Groups Of Diseases" />
+  <status value="draft" />
+  <publisher value="NFDI4Health" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="https://www.nfdi4health.de" />
+    </telecom>
+  </contact>
+  <description value="Extension covering information about groups of diseases or conditions on which the data were collected in the study." />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="ResearchStudy.condition" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Which groups of diseases or conditions were the data collected on?" />
+      <definition value="Group of items providing information about groups of diseases or conditions on which the data were collected in the study." />
+      <min value="1" />
+      <max value="1" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.17.4 Resource.studyDesign.studyGroupsOfDiseases" />
+      </mapping>
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:generally">
+      <path value="Extension.extension" />
+      <sliceName value="generally" />
+      <short value="Which groups of diseases or conditions were the data collected on?" />
+      <definition value="Groups of diseases or conditions on which the data were collected in the study." />
+      <comment value="The values originate from the WHO's International Statistical Classification of Diseases and Related Health Problems, 11th Revision (ICD-11). | Select all that apply. For more information about the groups of diseases/conditions, visit the WHO's ICD-11 homepage: https://icd.who.int/en." />
+      <min value="1" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.17.4.1 Resource.studyDesign.studyGroupsOfDiseases.generally" />
+      </mapping>
+    </element>
+    <element id="Extension.extension:generally.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="generally" />
+    </element>
+    <element id="Extension.extension:generally.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.extension:conditions">
+      <path value="Extension.extension" />
+      <sliceName value="conditions" />
+      <short value="On which other diseases or conditions were the data collected?" />
+      <definition value="Other diseases or conditions on which the data were collected in the study." />
+      <comment value="The values originate from the WHO's International Statistical Classification of Diseases and Related Health Problems, 11th Revision (ICD-11). | For more information about the groups of diseases/conditions, visit the WHO's ICD-11 homepage: https://icd.who.int/en." />
+      <min value="0" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.17.4.2 Resource.studyDesign.studyGroupsOfDiseases.conditions" />
+      </mapping>
+    </element>
+    <element id="Extension.extension:conditions.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="conditions" />
+    </element>
+    <element id="Extension.extension:conditions.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-groups-of-diseases" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

@@ -21,6 +21,15 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Provenance" />
   <derivation value="constraint" />
   <differential>
+    <element id="Provenance">
+      <path value="Provenance" />
+      <short value="Information about provenance aspects of the data entry" />
+      <definition value="Group of items providing information about provenance aspects of the data entry on the portal" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.18 Resource.provenance" />
+      </mapping>
+    </element>
     <element id="Provenance.extension">
       <path value="Provenance.extension" />
       <slicing>
@@ -35,27 +44,53 @@
     <element id="Provenance.extension:data-source">
       <path value="Provenance.extension" />
       <sliceName value="data-source" />
+      <short value="Source of information about the [RESOURCE]" />
+      <definition value="Source of information about the resource and the way it was uploaded/collected." />
       <min value="1" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-provenance-data-source" />
       </type>
       <isModifier value="false" />
     </element>
+    <element id="Provenance.extension:data-source.value[x].coding.code">
+      <path value="Provenance.extension.value[x].coding.code" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-provenance-data-source-local" />
+      </binding>
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.18.1 Resource.provenance.dataSource" />
+      </mapping>
+    </element>
     <element id="Provenance.target">
       <path value="Provenance.target" />
       <definition value="The Reference(s) that were generated or updated by the activity described in this resource. A provenance can point to more than one target if multiple resources were created/updated by the same activity." />
-    </element>
-    <element id="Provenance.target.type">
-      <path value="Provenance.target.type" />
-      <short value="Type the reference refers to (in NFDI4Health: ResearchStudy, DocumentReference or Questionnaire)" />
       <type>
-        <code value="uri" />
+        <code value="Reference" />
         <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study" />
-        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-document" />
-        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire" />
       </type>
+    </element>
+    <element id="Provenance.target.identifier">
+      <path value="Provenance.target.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Provenance.target.relatedArtifact">
+      <path value="Provenance.target.relatedArtifact" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
     </element>
     <element id="Provenance.recorded">
       <path value="Provenance.recorded" />
@@ -75,10 +110,6 @@
         <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner-role" />
         <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization" />
       </type>
-    </element>
-    <element id="Provenance.entity.agent">
-      <path value="Provenance.entity.agent" />
-      <contentReference value="http://hl7.org/fhir/StructureDefinition/Provenance#Provenance.agent" />
     </element>
   </differential>
 </StructureDefinition>

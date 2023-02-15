@@ -26,8 +26,8 @@
       <short value="Digital identifier(s) of the person" />
       <definition value="Group of items providing information about digital identifiers of the person." />
       <mapping>
-        <identity value="1.11.3.5" />
-        <map value="role_name_identifiers" />
+        <identity value="NFDI4Health" />
+        <map value="1.11.3.5 Resource.roles.personal.identifiers" />
       </mapping>
     </element>
     <element id="Practitioner.identifier.type">
@@ -60,14 +60,19 @@
         <map value="identifier" />
       </mapping>
     </element>
+    <element id="Practitioner.name">
+      <path value="Practitioner.name" />
+      <min value="1" />
+      <max value="1" />
+    </element>
     <element id="Practitioner.name.family">
       <path value="Practitioner.name.family" />
       <short value="Family name of the person" />
       <definition value="Family name of the person" />
       <min value="1" />
       <mapping>
-        <identity value="1.11.3.3" />
-        <map value="role_name_personal_family_name" />
+        <identity value="NFDI4Health" />
+        <map value="1.11.3.3 Resource.roles.personal.familyName" />
       </mapping>
     </element>
     <element id="Practitioner.name.given">
@@ -77,8 +82,8 @@
       <min value="1" />
       <max value="1" />
       <mapping>
-        <identity value="1.11.3.2" />
-        <map value="role_name_personal_given_name" />
+        <identity value="NFDI4Health" />
+        <map value="1.11.3.2 Resource.roles.personal.givenName" />
       </mapping>
     </element>
     <element id="Practitioner.name.prefix">
@@ -89,12 +94,12 @@
       <max value="1" />
       <binding>
         <strength value="required" />
-        <description value="Value set defining codes to specify personal titles" />
+        <description value="Value set defining codes to specify personal titles." />
         <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-role-name-personal-title-nci" />
       </binding>
       <mapping>
-        <identity value="1.11.3.4" />
-        <map value="role_name_personal_title" />
+        <identity value="NFDI4Health" />
+        <map value="1.11.3.4 Resource.roles.personal.title" />
       </mapping>
     </element>
   </differential>
