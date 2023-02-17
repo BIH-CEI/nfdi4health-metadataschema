@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="nfdi4health-ex-mds-provenance-data-source" />
+  <id value="nfdi4health-ex-mds-webpage" />
   <url value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-webpage" />
   <version value="0.9" />
   <name value="NFDI4Health_EX_MDS_Webpage" />
   <title value="NFDI4Health EX MDS Webpage" />
   <status value="draft" />
+  <publisher value="NFDI4Health" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="https://www.nfdi4health.de" />
+    </telecom>
+  </contact>
   <description value="If existing, a link to the web page directly relevant to the resource." />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />

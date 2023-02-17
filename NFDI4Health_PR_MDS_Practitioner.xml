@@ -35,9 +35,14 @@
       <short value="Which type of identifer is reported?" />
       <definition value="Type of the identifier scheme." />
       <min value="1" />
+      <binding>
+        <strength value="required" />
+        <description value="Value set defining codes to specify the identifier scheme of a personal identifier." />
+        <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-role-name-identifier-scheme" />
+      </binding>
       <mapping>
-        <identity value="1.11.3.5.1" />
-        <map value="scheme" />
+        <identity value="NFDI4Health" />
+        <map value="1.11.3.5.2 Resource.roles.personal.identifiers.scheme" />
       </mapping>
     </element>
     <element id="Practitioner.identifier.type.coding">
@@ -46,7 +51,7 @@
       <max value="1" />
       <binding>
         <strength value="required" />
-        <description value="Value set defining codes to specify the identifier scheme." />
+        <description value="Value set defining codes to specify the identifier scheme of a personal identifier." />
         <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-role-name-identifier-scheme" />
       </binding>
     </element>

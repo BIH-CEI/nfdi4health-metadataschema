@@ -335,6 +335,22 @@
     {
       "code": "079",
       "display": "A obsoletes B"
+    },
+    {
+      "code": "080",
+      "display": "ORCID"
+    },
+    {
+      "code": "081",
+      "display": "ROR"
+    },
+    {
+      "code": "082",
+      "display": "GRID"
+    },
+    {
+      "code": "083",
+      "display": "ISNI"
     }
   ],
   "experimental": true,
@@ -349,5 +365,5 @@
       ]
     }
   ],
-  "count": 79
+  "count": 83
 }

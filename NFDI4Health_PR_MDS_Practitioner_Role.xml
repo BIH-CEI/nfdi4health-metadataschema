@@ -40,9 +40,6 @@
       <min value="1" />
       <max value="1" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="PractitionerRole" />
-        </extension>
         <strength value="required" />
         <description value="Value set defining codes for personal roles." />
         <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-personal-roles-nci-umls-local" />

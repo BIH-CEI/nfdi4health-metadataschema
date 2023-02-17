@@ -87,6 +87,11 @@
           <text value="ROR" />
         </valueCodeableConcept>
       </example>
+      <binding>
+        <strength value="required" />
+        <description value="Value set defining codes to specify the identifier scheme of an affiliation identifier." />
+        <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-role-affiliation-identifier-scheme" />
+      </binding>
       <mapping>
         <identity value="NFDI4Health" />
         <map value="1.11.6.4.2 Resource.roles.affiliation.identifiers.scheme" />

@@ -88,3 +88,7 @@ Description: "Code system defining remaining concepts without mapping to concept
 * #077 "A requires B"
 * #078 "A is obsoleted by B"
 * #079 "A obsoletes B"
+* #080 "ORCID"
+* #081 "ROR"
+* #082 "GRID"
+* #083 "ISNI"

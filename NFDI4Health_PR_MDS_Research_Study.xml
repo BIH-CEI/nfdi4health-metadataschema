@@ -30,147 +30,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="0" />
-    </element>
-    <element id="ResearchStudy.extension:label">
-      <path value="ResearchStudy.extension" />
-      <sliceName value="label" />
-      <short value="Information about titles/names and acronyms" />
-      <min value="0" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-label" />
-      </type>
-      <isModifier value="false" />
-      <mapping>
-        <identity value="NFDI4Health" />
-        <map value="1.4 Resource.acronyms" />
-      </mapping>
-      <mapping>
-        <identity value="NFDI4Health" />
-        <map value="1.3 Resource.titles" />
-        <comment value="For additional title(s) or name(s) of a resource." />
-      </mapping>
-    </element>
-    <element id="ResearchStudy.extension:label.extension">
-      <path value="ResearchStudy.extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="2" />
-    </element>
-    <element id="ResearchStudy.extension:label.extension:value">
-      <path value="ResearchStudy.extension.extension" />
-      <sliceName value="value" />
-      <short value="Additional title(s), additional name(s), and acronym(s) of the resource" />
-      <definition value="If existing, additional title(s), additional name(s), and acronym(s) of the resource." />
-      <comment value="For acronyms: This property refers primarily to studies which often have an acronym. For other types of resources, a short title (preferably up to 5 words) can be provided, e.g. &quot;NAKO-COVID Questionnaire&quot;." />
       <min value="1" />
-      <mapping>
-        <identity value="NFDI4Health" />
-        <map value="1.3.1 Resource.titles.text" />
-        <comment value="For additional title(s) or name(s) of a resource." />
-      </mapping>
-      <mapping>
-        <identity value="NFDI4Health" />
-        <map value="1.4.1 Resource.acronyms.text" />
-      </mapping>
-    </element>
-    <element id="ResearchStudy.extension:label.extension:value.value[x]">
-      <path value="ResearchStudy.extension.extension.value[x]" />
-      <example>
-        <label value="Acronym" />
-        <valueString value="NAKO" />
-      </example>
-    </element>
-    <element id="ResearchStudy.extension:label.extension:value.value[x].extension">
-      <path value="ResearchStudy.extension.extension.value[x].extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
-    <element id="ResearchStudy.extension:label.extension:value.value[x].extension:translation">
-      <path value="ResearchStudy.extension.extension.value[x].extension" />
-      <sliceName value="translation" />
-      <short value="Language of the additional title(s)/additional name(s)/acronym(s)" />
-      <definition value="Language of the additional title(s)/additional name(s)/acronym(s) if it is not the base language of the resource." />
-      <min value="0" />
-    </element>
-    <element id="ResearchStudy.extension:label.extension:value.value[x].extension:translation.extension">
-      <path value="ResearchStudy.extension.extension.value[x].extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="2" />
-    </element>
-    <element id="ResearchStudy.extension:label.extension:value.value[x].extension:translation.extension:lang">
-      <path value="ResearchStudy.extension.extension.value[x].extension.extension" />
-      <sliceName value="lang" />
-      <min value="1" />
-      <mapping>
-        <identity value="NFDI4Health" />
-        <map value="1.3.2 Resource.titles.language" />
-        <comment value="Translation language different than the base language of a resource." />
-      </mapping>
-      <mapping>
-        <identity value="NFDI4Health" />
-        <map value="1.4.2 Resource.acronyms.language" />
-        <comment value="Translation language different than the base language of a resource." />
-      </mapping>
-    </element>
-    <element id="ResearchStudy.extension:label.extension:value.value[x].extension:translation.extension:lang.value[x]">
-      <path value="ResearchStudy.extension.extension.value[x].extension.extension.value[x]" />
-      <mapping>
-        <identity value="NFDI4Health" />
-        <map value="1.3.2 Resource.resource_titles.language" />
-        <comment value="To be used when the language is different from the base language of the resource" />
-      </mapping>
-      <mapping>
-        <identity value="NFDI4Health" />
-        <map value="1.4.2 Resource.resource_acronyms.language" />
-        <comment value="To be used when the language is different from the base language of the resource" />
-      </mapping>
-    </element>
-    <element id="ResearchStudy.extension:label.extension:value.value[x].extension:translation.extension:content">
-      <path value="ResearchStudy.extension.extension.value[x].extension.extension" />
-      <sliceName value="content" />
-      <min value="1" />
-      <mapping>
-        <identity value="NFDI4Health" />
-        <map value="1.3.1 Resource.titles.text" />
-        <comment value="For additional title(s) or name(s) of a resource if in another language than the base language of a resource." />
-      </mapping>
-      <mapping>
-        <identity value="NFDI4Health" />
-        <map value="1.4.1 Resource.acronyms.text" />
-        <comment value="For acronym(s) of a resource if in another language than the base language of a resource." />
-      </mapping>
-    </element>
-    <element id="ResearchStudy.extension:label.extension:value.value[x].extension:translation.extension:content.value[x]">
-      <path value="ResearchStudy.extension.extension.value[x].extension.extension.value[x]" />
-      <mapping>
-        <identity value="NFDI4Health" />
-        <map value="1.3.2 Resource.resource_titles.text" />
-        <comment value="To be used when the language is different from the base language of the resource" />
-      </mapping>
-      <mapping>
-        <identity value="NFDI4Health" />
-        <map value="1.4.2 Resource.resource_acronyms.text" />
-        <comment value="To be used when the language is different from the base language of the resource" />
-      </mapping>
     </element>
     <element id="ResearchStudy.extension:execution-language">
       <path value="ResearchStudy.extension" />
@@ -192,38 +52,80 @@
         <map value="1.8 Resource.languages" />
       </mapping>
     </element>
-    <element id="ResearchStudy.extension:associated-party">
-      <path value="ResearchStudy.extension" />
-      <sliceName value="associated-party" />
-      <short value="Role(s)" />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://www.nfdi4health.de/fhir/StructureDefinition/nfdi4health-ex-mds-associated-party" />
-      </type>
-      <isModifier value="false" />
-      <mapping>
-        <identity value="NFDI4Health" />
-        <map value="1.11 Resource.roles" />
-      </mapping>
-    </element>
     <element id="ResearchStudy.extension:mortality-data">
       <path value="ResearchStudy.extension" />
       <sliceName value="mortality-data" />
-      <short value="Were mortality data collected?" />
-      <definition value="Mortality data." />
       <min value="0" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-mortality-data" />
       </type>
       <isModifier value="false" />
+    </element>
+    <element id="ResearchStudy.extension:roles">
+      <path value="ResearchStudy.extension" />
+      <sliceName value="roles" />
+      <min value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-associated-party" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="ResearchStudy.extension:label">
+      <path value="ResearchStudy.extension" />
+      <sliceName value="label" />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-label" />
+      </type>
+      <isModifier value="false" />
       <mapping>
         <identity value="NFDI4Health" />
-        <map value="1.17.5 Resource.studyDesign.mortalityData" />
+        <map value="1.3 Resource.titles" />
+        <comment value="For additional title(s)/name(s)" />
       </mapping>
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.4 Resource.acronyms" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.extension:label.extension">
+      <path value="ResearchStudy.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="3" />
+    </element>
+    <element id="ResearchStudy.extension:label.extension:value">
+      <path value="ResearchStudy.extension.extension" />
+      <sliceName value="value" />
+      <min value="1" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.3.1 Resource.titles.text" />
+        <comment value="For additional title(s)/name(s)" />
+      </mapping>
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.4.1 Resource.acronyms.text" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.extension:study-ethics-committee-approval">
+      <path value="ResearchStudy.extension" />
+      <sliceName value="study-ethics-committee-approval" />
+      <definition value="Status of the study approval from the (leading) ethics committee." />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-ethics-committee-approval" />
+      </type>
+      <isModifier value="false" />
     </element>
     <element id="ResearchStudy.identifier">
       <path value="ResearchStudy.identifier" />
@@ -510,7 +412,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="0" />
+      <min value="1" />
     </element>
     <element id="ResearchStudy.title.extension:translation">
       <path value="ResearchStudy.title.extension" />
@@ -544,7 +446,7 @@
       <mapping>
         <identity value="NFDI4Health" />
         <map value="1.3.2 Resource.titles.language" />
-        <comment value="Language if it differs from the base language of the resource." />
+        <comment value="Translation language of the title" />
       </mapping>
     </element>
     <element id="ResearchStudy.title.extension:translation.extension:lang.value[x]">
@@ -566,7 +468,7 @@
       <mapping>
         <identity value="NFDI4Health" />
         <map value="1.3.1 Resource.titles.text" />
-        <comment value="Titles that are not in the base language of the resource." />
+        <comment value="Translated title" />
       </mapping>
     </element>
     <element id="ResearchStudy.title.extension:translation.extension:content.value[x]">
@@ -575,10 +477,47 @@
         <code value="string" />
       </type>
     </element>
+    <element id="ResearchStudy.title.extension:language">
+      <path value="ResearchStudy.title.extension" />
+      <sliceName value="language" />
+      <short value="Language of the title/name" />
+      <definition value="Language of the title/name" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language" />
+      </type>
+      <isModifier value="false" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.3.2 Resource.titles.language" />
+      </mapping>
+    </element>
     <element id="ResearchStudy.status">
       <path value="ResearchStudy.status" />
       <comment value="The item does not exist in NFDI4Health' MDS. Fixed to &quot;active&quot; for all studies." />
       <fixedCode value="active" />
+    </element>
+    <element id="ResearchStudy.primaryPurposeType">
+      <path value="ResearchStudy.primaryPurposeType" />
+      <short value="Primary purpose of the study" />
+      <definition value="Specification of the main purpose of the study." />
+      <comment value="The field is defined foremost for interventional studies. For non-interventional studies, this field may be not appplicable as diverse purposes may be pursued without being able to specify a primary one. In this case, the option &quot;Not applicable&quot; can be selected. | Foremost for interventional studies, please specify the primary purpose why the study was conducted.&#xD;&#xA;For non-interventional  studies, this field may be &quot;Not appplicable&quot; as multiple purposes may be defined as primary ones." />
+      <binding>
+        <strength value="required" />
+        <description value="Value set defining codes to specify the primary purpose of a study in a ResearchStudy resource." />
+        <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-primary-purpose-umls-nci" />
+      </binding>
+    </element>
+    <element id="ResearchStudy.primaryPurposeType.coding">
+      <path value="ResearchStudy.primaryPurposeType.coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="ResearchStudy.primaryPurposeType.coding.code">
+      <path value="ResearchStudy.primaryPurposeType.coding.code" />
+      <min value="1" />
     </element>
     <element id="ResearchStudy.category">
       <path value="ResearchStudy.category" />
@@ -612,7 +551,6 @@
       <path value="ResearchStudy.condition.extension" />
       <sliceName value="study-groups-of-diseases" />
       <min value="1" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-groups-of-diseases" />
@@ -734,6 +672,21 @@
         <map value="1.7.1 Resource.keywords.label" />
       </mapping>
     </element>
+    <element id="ResearchStudy.location">
+      <path value="ResearchStudy.location" />
+      <short value="Country(ies) where the study takes place" />
+      <definition value="Country(ies) where the study takes place" />
+      <comment value="Select all that apply." />
+      <min value="1" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.17.15 Resource.studyDesign.countries" />
+      </mapping>
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.17.16 Resource.studyDesign.region" />
+      </mapping>
+    </element>
     <element id="ResearchStudy.description">
       <path value="ResearchStudy.description" />
       <short value="English description of the [RESOURCE]" />
@@ -811,6 +764,37 @@
       <mapping>
         <identity value="NFDI4Health" />
         <map value="1.6.1 Resource.descriptionNonEnglish.text" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.period.start">
+      <path value="ResearchStudy.period.start" />
+      <short value="Start date of data collection for the study" />
+      <definition value="Start date of data collection for the study." />
+      <comment value="Preferred date format: DD.MM.YYYY. | In case of a planned study, it is the intended start date; in case of an ongoing study — the actual start date." />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.17.13 Resource.studyDesign.studyStartDate" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.period.end">
+      <path value="ResearchStudy.period.end" />
+      <short value="End date of data collection for the study" />
+      <definition value="In case of studies with patients or other participants, it is the date when the last participant is examined or receives an intervention, or the date of the last participant’s last visit." />
+      <comment value="Preferred date format: DD.MM.YYYY. | In case of a planned or ongoing study, it is the intended end date; in case of a completed study — the actual end date." />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.17.14 Resource.studyDesign.studyEndDate" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.reasonStopped.text">
+      <path value="ResearchStudy.reasonStopped.text" />
+      <short value="Reason why the study was stopped" />
+      <definition value="If the study was stopped prematurely, specification of the reason(s) why it was halted." />
+      <comment value="E.g., accrual goal met / closed due to toxicity / closed due to lack of study progress / temporarily-closed per study design /etc." />
+      <min value="1" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.17.10 Resource.studyDesign.reasonStopped" />
       </mapping>
     </element>
   </differential>

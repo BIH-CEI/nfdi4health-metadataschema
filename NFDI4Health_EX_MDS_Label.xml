@@ -35,9 +35,9 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="test" />
-      <definition value="test" />
-      <comment value="Based on ResearchStudy.label (R5), with an extension for translation." />
+      <short value="Additional title(s)/name(s) or acronym(s) of the [RESOURCE]" />
+      <definition value="Group of items providing information about additional title(s)/name(s) or acronym(s) of the resource." />
+      <comment value="Based on ResearchStudy.label (R5), with an extension for translation and language." />
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
@@ -48,7 +48,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="2" />
+      <min value="3" />
     </element>
     <element id="Extension.extension:value">
       <path value="Extension.extension" />
@@ -92,6 +92,47 @@
       </type>
       <isModifier value="false" />
     </element>
+    <element id="Extension.extension:value.value[x].extension:translation.extension">
+      <path value="Extension.extension.value[x].extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="2" />
+    </element>
+    <element id="Extension.extension:value.value[x].extension:translation.extension:lang">
+      <path value="Extension.extension.value[x].extension.extension" />
+      <sliceName value="lang" />
+      <min value="1" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.3.2 Resource.titles.language" />
+        <comment value="Translation language of a title/name" />
+      </mapping>
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.4.2 Resource.acronyms.language" />
+        <comment value="Translation language of an acronym" />
+      </mapping>
+    </element>
+    <element id="Extension.extension:value.value[x].extension:translation.extension:content">
+      <path value="Extension.extension.value[x].extension.extension" />
+      <sliceName value="content" />
+      <min value="1" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.3.1 Resource.titles.text" />
+        <comment value="Translated title/name" />
+      </mapping>
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.3.2 Resource.acronyms.text" />
+        <comment value="Translated acronym" />
+      </mapping>
+    </element>
     <element id="Extension.extension:type">
       <path value="Extension.extension" />
       <sliceName value="type" />
@@ -115,6 +156,43 @@
       <path value="Extension.extension.value[x].coding" />
       <min value="1" />
       <max value="1" />
+    </element>
+    <element id="Extension.extension:language">
+      <path value="Extension.extension" />
+      <sliceName value="language" />
+      <short value="Language of the additional title(s)/name(s) or acronym(s)" />
+      <definition value="Language of the additional title(s)/name(s) or acronym(s)" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language" />
+      </type>
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.3.2 Resource.titles.language" />
+        <comment value="For additional title(s)/name(s)" />
+      </mapping>
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.4.2 Resource.acronyms.language" />
+      </mapping>
+    </element>
+    <element id="Extension.extension:language.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="language" />
+    </element>
+    <element id="Extension.extension:language.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="code" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <description value="A human language." />
+        <valueSet value="http://hl7.org/fhir/ValueSet/languages" />
+      </binding>
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />

@@ -1,7 +1,7 @@
 ValueSet: NFDI4Health_VS_MDS_Yes_No_Not_Applicable_SNOMEDCT
 Id: nfdi4health-vs-mds-yes-no-not-applicable-snomedct
 Title: "NFDI4Health VS MDS Yes, No, Not Applicable [SNOMED CT]"
-Description: "Value set used to respond to questions that can be answered Yes, No, or Not Applicable"
+Description: "Value set used to respond to questions that can be answered Yes, No, or Not Applicable."
 * ^url = "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-yes-no-not-applicable-snomedct"
 * ^status = #draft
 * ^version = "0.9"

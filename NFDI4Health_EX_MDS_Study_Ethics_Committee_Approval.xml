@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="nfdi4health-ex-mds-mortality-data" />
-  <url value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-mortality-data" />
+  <id value="nfdi4health-ex-mds-study-ethics-committee-approval" />
+  <url value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-ethics-committee-approval" />
   <version value="0.9" />
-  <name value="NFDI4Health_EX_MDS_Mortality_Data" />
-  <title value="NFDI4Health EX MDS Mortality Data" />
+  <name value="NFDI4Health_EX_MDS_Study_Ethics_Committee_Approval" />
+  <title value="NFDI4Health EX MDS Study Ethics Committee Approval" />
   <status value="draft" />
   <publisher value="NFDI4Health" />
   <contact>
@@ -13,7 +13,7 @@
       <value value="https://www.nfdi4health.de" />
     </telecom>
   </contact>
-  <description value="Extension covering information about the collection of mortality data" />
+  <description value="Extension informing about the status of the study approval from the (leading) ethics committee" />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -27,17 +27,17 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="Were mortality data collected?" />
-      <definition value="Mortality data." />
+      <short value="Status of the ethics committee approval" />
+      <definition value="Status of the study approval from the (leading) ethics committee" />
       <max value="1" />
       <mapping>
         <identity value="NFDI4Health" />
-        <map value="1.17.5 Resource.studyDesign.mortalityData" />
+        <map value="1.17.6 Resource.studyDesign.ethicsCommiteeApproval" />
       </mapping>
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-mortality-data" />
+      <fixedUri value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-ethics-committee-approval" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
@@ -47,8 +47,8 @@
       </type>
       <binding>
         <strength value="required" />
-        <description value="Value set defining codes to specify if mortality data were collected in a study." />
-        <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-mortality-data-nci-snomedct" />
+        <description value="Value set defining codes to specify the status of the study ethics committee approval." />
+        <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-ethics-committee-approval-umls-local" />
       </binding>
     </element>
     <element id="Extension.value[x].code">

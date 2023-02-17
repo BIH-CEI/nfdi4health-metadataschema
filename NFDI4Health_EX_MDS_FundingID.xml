@@ -22,8 +22,8 @@
       <short value="Funding identifier" />
       <definition value="Identifier assigned by a funder to the resource." />
       <mapping>
-        <identity value="1.11.2.2" />
-        <map value="role_name_organisational_group_type_funding_id" />
+        <identity value="NFDI4Health" />
+        <map value="1.11.2.2 Resource.roles.organisational.fundingId" />
       </mapping>
     </element>
     <element id="Extension.url">
@@ -32,12 +32,14 @@
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
+      <min value="1" />
       <type>
-        <code value="id" />
+        <code value="Identifier" />
       </type>
-      <type>
-        <code value="string" />
-      </type>
+    </element>
+    <element id="Extension.value[x].value">
+      <path value="Extension.value[x].value" />
+      <min value="1" />
     </element>
   </differential>
 </StructureDefinition>

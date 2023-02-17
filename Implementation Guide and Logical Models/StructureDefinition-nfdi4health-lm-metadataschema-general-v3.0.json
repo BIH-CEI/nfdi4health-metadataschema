@@ -1072,8 +1072,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.personal.given",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.personal.given",
+        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.personal.givenName",
+        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.personal.givenName",
         "short": "Given name of the person",
         "definition": "Given name of the person",
         "min": 1,
@@ -1095,8 +1095,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.personal.family",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.personal.family",
+        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.personal.familyName",
+        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.personal.familyName",
         "short": "Family name of the person",
         "definition": "Family name of the person",
         "min": 1,
@@ -1217,6 +1217,10 @@
             }
           }
         ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-role-name-identifier-scheme"
+        },
         "mapping": [
           {
             "identity": "NFDI4Health-V3.0-Internal-Numbering",
@@ -1448,6 +1452,10 @@
             }
           }
         ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-role-affiliation-identifier-scheme"
+        },
         "mapping": [
           {
             "identity": "NFDI4Health-V3.0-Internal-Numbering",
@@ -2086,8 +2094,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.studyConditions.classificationCode",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.studyConditions.classificationCode",
+        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.studyConditions.code",
+        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.studyConditions.code",
         "short": "Code ---- If known, code of the health condition, disease or focus in the terminology/classification used",
         "definition": "Code of the health condition,  disease, focus in the terminology/classification used.",
         "comment": "Short Input Help: If found, the code from the terminology/classification used.",
@@ -2260,6 +2268,10 @@
             "code": "CodeableConcept"
           }
         ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-overall-status-umls-local"
+        },
         "mapping": [
           {
             "identity": "NFDI4Health-V3.0-Internal-Numbering",
@@ -2312,6 +2324,10 @@
             "code": "CodeableConcept"
           }
         ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-status-halted-stage-local"
+        },
         "mapping": [
           {
             "identity": "NFDI4Health-V3.0-Internal-Numbering",
