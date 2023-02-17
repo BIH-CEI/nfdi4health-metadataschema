@@ -22,7 +22,7 @@ Description: "Extension informing about the stage when at what a study was halte
 * value[x] from $nfdi4health-vs-mds-study-status-halted-stage-local (required)
 * value[x] ^binding.description = "Value set defining codes to specify the status of a study when it was halted."
 
-Mapping: NFDI4Health Study Status Halted Stage to FHIR
+Mapping: NFDI4Health-Study-Status-Halted-Stage-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Study_Status_Halted_Stage

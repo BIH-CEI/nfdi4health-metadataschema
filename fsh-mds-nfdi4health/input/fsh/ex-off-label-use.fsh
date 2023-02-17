@@ -23,7 +23,7 @@ Description: "Extension informing the unapproved (off-label) use of a drug produ
 * value[x] from $nfdi4health-vs-mds-yes-no-not-applicable-snomedct (required)
 * value[x] ^binding.description = "Value set used to respond to questions that can be answered Yes, No, or Not Applicable."
 
-Mapping: NFDI4Health Off Label Use to FHIR
+Mapping: NFDI4Health-Off-Label-Use-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Off_Label_Use

@@ -34,7 +34,7 @@ Description: "Extension informing about the number of study centers."
 * extension[centers-number].value[x] 1..1
 * extension[centers-number].value[x] only integer
 
-Mapping: NFDI4Health Study Centers to FHIR
+Mapping: NFDI4Health-Study-Centers-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Study_Centers

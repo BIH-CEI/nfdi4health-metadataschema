@@ -62,7 +62,7 @@ Description: "Extension informing about the status of a study."
 * extension[status-enrolling-by-invitation].value[x] from $nfdi4health-vs-mds-yes-no-not-applicable-snomedct (required)
 * extension[status-enrolling-by-invitation].value[x] ^binding.description = "Value set used to respond to questions that can be answered Yes, No, or Not Applicable."
 
-Mapping: NFDI4Health Study Status to FHIR
+Mapping: NFDI4Health-Study-Status-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Study_Status

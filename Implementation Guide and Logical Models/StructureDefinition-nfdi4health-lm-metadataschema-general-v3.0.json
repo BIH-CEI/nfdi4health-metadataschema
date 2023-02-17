@@ -2722,10 +2722,6 @@
             "map": "1.17.21"
           },
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
-            "map": "1.17.21.5"
-          },
-          {
             "identity": "NFDI4Health-V2.1",
             "map": "1.15.15"
           }
@@ -2857,6 +2853,10 @@
           }
         ],
         "mapping": [
+          {
+            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "map": "1.17.21.5"
+          },
           {
             "identity": "NFDI4Health-V2.1",
             "map": "1.15.16.1.3"
@@ -3978,8 +3978,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.nonInterventional.timePerspective",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.nonInterventional.timePerspective",
+        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.nonInterventional.timePerspectives",
+        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.nonInterventional.timePerspectives",
         "short": "Temporal design of the study",
         "definition": "Temporal design of the study, i.e. the  relationship of observation period to time of participant enrollment.",
         "comment": "Short Input Help: Is it a retrospective, prospective or cross-sectional study?",

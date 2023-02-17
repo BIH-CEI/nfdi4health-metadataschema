@@ -23,7 +23,7 @@ Description: "Extension informing about the subject of a study."
 * value[x] from $nfdi4health-vs-mds-study-subject-snomedct (required)
 * value[x] ^binding.description = "Value set defining codes for study sujects in a ResearchStudy resource."
 
-Mapping: NFDI4Health Study Subject to FHIR
+Mapping: NFDI4Health-Study-Subject-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Study_Subject
