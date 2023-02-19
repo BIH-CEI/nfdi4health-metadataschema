@@ -7,7 +7,6 @@ Description: "NFDI4Health LogicalModel General Metadataschema"
 * ^publisher = "NFDI4Health"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
-
 * Resource 1..1 BackboneElement "Resource" "Group of items providing Information about a resource. Resources can be, for example, files or parts of them (e.g. datasets or study documents such as study protocols or questionnaires) or also abstractions (e.g. studies or substudies/data collection events)."
 * Resource.identifier 1..1 string "ID of the [Resource]" "Unique identifier of the resource used for identification within the NFDI4Health."
 * Resource.identifier ^comment = "The identifier is assigned automatically."
@@ -761,7 +760,6 @@ Description: "NFDI4Health LogicalModel Nutritional Epidemiology Metadataschema (
 * ^publisher = "NFDI4Health"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
-
 * DietAssessment 1..* BackboneElement "Diet assessment" "Group of items providing information on diet assessment."
 * DietAssessment ^comment = "Cardinality: 1..*, if Resource.nutritionalData == 'Yes'; otherwise 0.. 0 / Additional Information: Filtering condition to decide if all following questions will be asked."
 * DietAssessment.instrument 1..1 CodeableConcept "Dietary assessment instrument used" "Which dietary assessment instrument is used in the study/data collection event?"
@@ -847,7 +845,6 @@ Description: "NFDI4Health LogicalModel Epidemiology of Chronic Diseases Metadata
 * ^publisher = "NFDI4Health"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
-
 * ChronicDiseasesEpidemiology 1..* BackboneElement "Chronic disease data collection" "Group of items providing information on chronic disease data collection."
 * ChronicDiseasesEpidemiology ^comment = "Cardinality: 1..*, if Resource.chronicDiseases == 'Yes' AND Resource.classification.resourceType == ('Study protocol' OR 'Protocol amendment' OR 'Informed consent form' OR 'Patient information sheet' OR 'Manual of operations (SOPs)' OR 'Statistical analysis plan' OR 'Data management plan' OR 'Case report form' OR 'Interview scheme and themes' OR 'Observation guide' OR 'Discussion guide' OR 'Participant tasks' OR 'Other study document' OR 'Other'); otherwise 0.. 0"
 * ChronicDiseasesEpidemiology.commonChronicDiseaseName 1..1 CodeableConcept "On which of the following common chronic diseases were data collected?" "Common chronic diseases on which data were collected in the study/"
@@ -861,7 +858,6 @@ Mapping: NFDI4Health_EOCD_V3.0
 Id: NFDI4Health-EOCD-V3.0
 Title: "NFDI4Health Epidemiology of Chronic Diseases Metadataschema Version 3.0 Mapping to internal numbering of Metadataschema Version 3.0"
 Source: NFDI4Health_LM_Metadataschema_EOCD_V3.0
-
 * ChronicDiseasesEpidemiology -> "CD1"
 * ChronicDiseasesEpidemiology.commonChronicDiseaseName -> "CD1.1"
 * ChronicDiseasesEpidemiology.dataCollected -> "CD1.2"
