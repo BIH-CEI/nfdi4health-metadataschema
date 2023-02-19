@@ -1,6 +1,6 @@
 Logical: NFDI4Health_LM_Metadataschema_General_V3
 Parent: Element
-Id: nfdi4health-lm-metadataschema-general-v3.0
+Id: nfdi4health-lm-metadataschema-general-v3
 Title: "NFDI4Health LM General Metadataschema V3.0"
 Description: "NFDI4Health LogicalModel General Metadataschema"
 * ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-general-v3.0"
