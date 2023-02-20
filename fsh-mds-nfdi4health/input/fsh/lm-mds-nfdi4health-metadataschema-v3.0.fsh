@@ -571,7 +571,7 @@ Source: NFDI4Health_LM_Metadataschema_General_V3
 Mapping: NFDI4Health_V2.1
 Id: NFDI4Health-V2.1
 Title: "NFDI4Health General Metadataschema Version 3.0 Mapping to internal numbering of Metadataschema Version 2.1"
-Source: NFDI4Health_LM_Metadataschema_General_V3.0
+Source: NFDI4Health_LM_Metadataschema_General_V3
 * Resource -> "1"
 * Resource.identifier -> "1.1"
 * Resource.classification -> "1.2"
