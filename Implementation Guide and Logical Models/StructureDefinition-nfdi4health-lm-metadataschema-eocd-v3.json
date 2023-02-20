@@ -1,10 +1,10 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "nfdi4health-lm-metadataschema-eocd-v3.0",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-eocd-v3.0",
+  "id": "nfdi4health-lm-metadataschema-eocd-v3",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-eocd-v3",
   "version": "1.0",
-  "name": "NFDI4Health_LM_Metadataschema_EOCD_V3.0",
-  "title": "NFDI4Health LM Epidemiology of Chronic Diseases Metadataschema (UC 5.2) V3.0",
+  "name": "NFDI4Health_LM_Metadataschema_EOCD_V3",
+  "title": "NFDI4Health LM Epidemiology of Chronic Diseases Metadataschema (UC 5.2) V3",
   "status": "active",
   "publisher": "NFDI4Health",
   "contact": [
@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "description": "NFDI4Health LogicalModel Epidemiology of Chronic Diseases Metadataschema (Use Case 5.2) V3.0",
+  "description": "NFDI4Health LogicalModel Epidemiology of Chronic Diseases Metadataschema (Use Case 5.2) V3",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -26,26 +26,26 @@
       "name": "RIM Mapping"
     },
     {
-      "identity": "NFDI4Health-EOCD-V3.0",
-      "name": "NFDI4Health Epidemiology of Chronic Diseases Metadataschema Version 3.0 Mapping to internal numbering of Metadataschema Version 3.0"
+      "identity": "NFDI4Health-EOCD-V3",
+      "name": "NFDI4Health Epidemiology of Chronic Diseases Metadataschema Version 3 Mapping to internal numbering of Metadataschema Version 3"
     }
   ],
   "kind": "logical",
   "abstract": false,
-  "type": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-eocd-v3.0",
+  "type": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-eocd-v3",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
   "derivation": "specialization",
   "differential": {
     "element": [
       {
-        "id": "nfdi4health-lm-metadataschema-eocd-v3.0",
-        "path": "nfdi4health-lm-metadataschema-eocd-v3.0",
-        "short": "NFDI4Health LM Epidemiology of Chronic Diseases Metadataschema (UC 5.2) V3.0",
-        "definition": "NFDI4Health LogicalModel Epidemiology of Chronic Diseases Metadataschema (Use Case 5.2) V3.0"
+        "id": "nfdi4health-lm-metadataschema-eocd-v3",
+        "path": "nfdi4health-lm-metadataschema-eocd-v3",
+        "short": "NFDI4Health LM Epidemiology of Chronic Diseases Metadataschema (UC 5.2) V3",
+        "definition": "NFDI4Health LogicalModel Epidemiology of Chronic Diseases Metadataschema (Use Case 5.2) V3"
       },
       {
-        "id": "nfdi4health-lm-metadataschema-eocd-v3.0.ChronicDiseasesEpidemiology",
-        "path": "nfdi4health-lm-metadataschema-eocd-v3.0.ChronicDiseasesEpidemiology",
+        "id": "nfdi4health-lm-metadataschema-eocd-v3.ChronicDiseasesEpidemiology",
+        "path": "nfdi4health-lm-metadataschema-eocd-v3.ChronicDiseasesEpidemiology",
         "short": "Chronic disease data collection",
         "definition": "Group of items providing information on chronic disease data collection.",
         "comment": "Cardinality: 1..*, if Resource.chronicDiseases == 'Yes' AND Resource.classification.resourceType == ('Study protocol' OR 'Protocol amendment' OR 'Informed consent form' OR 'Patient information sheet' OR 'Manual of operations (SOPs)' OR 'Statistical analysis plan' OR 'Data management plan' OR 'Case report form' OR 'Interview scheme and themes' OR 'Observation guide' OR 'Discussion guide' OR 'Participant tasks' OR 'Other study document' OR 'Other'); otherwise 0.. 0",
@@ -58,14 +58,14 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-EOCD-V3.0",
+            "identity": "NFDI4Health-EOCD-V3",
             "map": "CD1"
           }
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-eocd-v3.0.ChronicDiseasesEpidemiology.commonChronicDiseaseName",
-        "path": "nfdi4health-lm-metadataschema-eocd-v3.0.ChronicDiseasesEpidemiology.commonChronicDiseaseName",
+        "id": "nfdi4health-lm-metadataschema-eocd-v3.ChronicDiseasesEpidemiology.commonChronicDiseaseName",
+        "path": "nfdi4health-lm-metadataschema-eocd-v3.ChronicDiseasesEpidemiology.commonChronicDiseaseName",
         "short": "On which of the following common chronic diseases were data collected?",
         "definition": "Common chronic diseases on which data were collected in the study/",
         "comment": "Additional Information: The values originate from the following sources: 1) 10 types of cancer with the highest incidence in Germany, by gender, based on 2017/2018 German cancer registry data (RKI, Zentrum für Krebsregisterdaten, https://www.krebsdaten.de/); 2) 10 cardiovascular diseases with highest mortality in Germany in 2020 (www.destatis.de). All values follow the classifiction system ICD-11 (WHO's International Statistical Classification of Diseases and Related Health Problems, 11th Revision (ICD-11), https://icd.who.int/en). / Short Input Help: Select one value from the list.",
@@ -78,14 +78,14 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-EOCD-V3.0",
+            "identity": "NFDI4Health-EOCD-V3",
             "map": "CD1.1"
           }
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-eocd-v3.0.ChronicDiseasesEpidemiology.dataCollected",
-        "path": "nfdi4health-lm-metadataschema-eocd-v3.0.ChronicDiseasesEpidemiology.dataCollected",
+        "id": "nfdi4health-lm-metadataschema-eocd-v3.ChronicDiseasesEpidemiology.dataCollected",
+        "path": "nfdi4health-lm-metadataschema-eocd-v3.ChronicDiseasesEpidemiology.dataCollected",
         "short": "Type of data collected",
         "definition": "Type of data collected",
         "comment": "Short Input Help: Select one value from the list.",
@@ -98,14 +98,14 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-EOCD-V3.0",
+            "identity": "NFDI4Health-EOCD-V3",
             "map": "CD1.2"
           }
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-eocd-v3.0.ChronicDiseasesEpidemiology.informationSources",
-        "path": "nfdi4health-lm-metadataschema-eocd-v3.0.ChronicDiseasesEpidemiology.informationSources",
+        "id": "nfdi4health-lm-metadataschema-eocd-v3.ChronicDiseasesEpidemiology.informationSources",
+        "path": "nfdi4health-lm-metadataschema-eocd-v3.ChronicDiseasesEpidemiology.informationSources",
         "short": "From which source(s) are the data generated/extracted?",
         "definition": "Source(s) from which information is generated/extracted.",
         "comment": "Additional Information: Treat prevalent and incident diseases separately (selected values should be specific for prevalent diseases and then separately incident diseases) / Short Input Help: Select all that apply.",
@@ -118,7 +118,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-EOCD-V3.0",
+            "identity": "NFDI4Health-EOCD-V3",
             "map": "CD1.3"
           }
         ]

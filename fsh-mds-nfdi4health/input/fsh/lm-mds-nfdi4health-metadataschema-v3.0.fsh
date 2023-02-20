@@ -1,9 +1,9 @@
 Logical: NFDI4Health_LM_Metadataschema_General_V3
 Parent: Element
 Id: nfdi4health-lm-metadataschema-general-v3
-Title: "NFDI4Health LM General Metadataschema V3.0"
+Title: "NFDI4Health LM General Metadataschema V3"
 Description: "NFDI4Health LogicalModel General Metadataschema"
-* ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-general-v3.0"
+* ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-general-v3"
 * ^publisher = "NFDI4Health"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
@@ -386,9 +386,9 @@ Severity: #error
 Expression: "Resource.studyDesign.interventional.masking.general = false implies  Resource.studyDesign.interventional.masking.roles.exists().not()"
 
 
-Mapping: NFDI4Health_V3.0_Internal_Numbering
-Id: NFDI4Health-V3.0-Internal-Numbering
-Title: "NFDI4Health General Metadataschema Version 3.0 Mapping to internal numbering"
+Mapping: NFDI4Health_V3_Internal_Numbering
+Id: NFDI4Health-V3-Internal-Numbering
+Title: "NFDI4Health General Metadataschema Version 3 Mapping to internal numbering"
 Source: NFDI4Health_LM_Metadataschema_General_V3
 * Resource -> "1"
 * Resource.identifier -> "1.1"
@@ -570,7 +570,7 @@ Source: NFDI4Health_LM_Metadataschema_General_V3
 
 Mapping: NFDI4Health_V2.1
 Id: NFDI4Health-V2.1
-Title: "NFDI4Health General Metadataschema Version 3.0 Mapping to internal numbering of Metadataschema Version 2.1"
+Title: "NFDI4Health General Metadataschema Version 3 Mapping to internal numbering of Metadataschema Version 2.1"
 Source: NFDI4Health_LM_Metadataschema_General_V3
 * Resource -> "1"
 * Resource.identifier -> "1.1"
@@ -751,12 +751,12 @@ Source: NFDI4Health_LM_Metadataschema_General_V3
 * Resource.provenance.resourceVersion -> "1.16.12"
 
 
-Logical: NFDI4Health_LM_Metadataschema_NE_V3.0
+Logical: NFDI4Health_LM_Metadataschema_NE_V3
 Parent: Element
-Id: nfdi4health-lm-metadataschema-ne-v3.0
-Title: "NFDI4Health LM Nutritional Epidemiology Metadataschema (UC 5.1) V3.0"
-Description: "NFDI4Health LogicalModel Nutritional Epidemiology Metadataschema (Use Case 5.1) V3.0"
-* ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-ne-v3.0"
+Id: nfdi4health-lm-metadataschema-ne-v3
+Title: "NFDI4Health LM Nutritional Epidemiology Metadataschema (UC 5.1) V3"
+Description: "NFDI4Health LogicalModel Nutritional Epidemiology Metadataschema (Use Case 5.1) V3"
+* ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-ne-v3"
 * ^publisher = "NFDI4Health"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
@@ -790,10 +790,10 @@ Description: "NFDI4Health LogicalModel Nutritional Epidemiology Metadataschema (
 * DietAssessment.reliabilityReference ^comment = "Cardinality: 1..1, if DietAssessment.reliability == 'Yes'; otherwise 0.. 0"
 * DietAssessment.dietarySupplements 1..1 boolean "Dietary supplements inquired?" "Does the dietary assessment instrument inquire information about dietary supplements?"
 
-Mapping: NFDI4Health_NE_Metadataschema_V3.0_Internal_Numbering
-Id: NFDI4Health-NE-Metadataschema-V3.0-Internal-Numbering
-Title: "NFDI4Health Nutritional Epidemiology Metadataschema Version 3.0 Mapping to internal numbering of Metadataschema Version 3.0"
-Source: NFDI4Health_LM_Metadataschema_NE_V3.0
+Mapping: NFDI4Health_NE_Metadataschema_V3_Internal_Numbering
+Id: NFDI4Health-NE-Metadataschema-V3-Internal-Numbering
+Title: "NFDI4Health Nutritional Epidemiology Metadataschema Version 3 Mapping to internal numbering of Metadataschema Version 3"
+Source: NFDI4Health_LM_Metadataschema_NE_V3
 * DietAssessment -> "NE1"
 * DietAssessment.instrument -> "NE1.1"
 * DietAssessment.ffqItemsNumber -> "NE1.2"
@@ -836,12 +836,12 @@ Severity: #error
 Expression: "DietAssessment.reliability = false implies DietAssessment.reliabilityReference.exists().not()"
 
 
-Logical: NFDI4Health_LM_Metadataschema_EOCD_V3.0
+Logical: NFDI4Health_LM_Metadataschema_EOCD_V3
 Parent: Element
-Id: nfdi4health-lm-metadataschema-eocd-v3.0
-Title: "NFDI4Health LM Epidemiology of Chronic Diseases Metadataschema (UC 5.2) V3.0"
-Description: "NFDI4Health LogicalModel Epidemiology of Chronic Diseases Metadataschema (Use Case 5.2) V3.0"
-* ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-eocd-v3.0"
+Id: nfdi4health-lm-metadataschema-eocd-v3
+Title: "NFDI4Health LM Epidemiology of Chronic Diseases Metadataschema (UC 5.2) V3"
+Description: "NFDI4Health LogicalModel Epidemiology of Chronic Diseases Metadataschema (Use Case 5.2) V3"
+* ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-eocd-v3"
 * ^publisher = "NFDI4Health"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
@@ -854,10 +854,10 @@ Description: "NFDI4Health LogicalModel Epidemiology of Chronic Diseases Metadata
 * ChronicDiseasesEpidemiology.informationSources 1..* CodeableConcept "From which source(s) are the data generated/extracted?" "Source(s) from which information is generated/extracted."
 * ChronicDiseasesEpidemiology.informationSources ^comment = "Additional Information: Treat prevalent and incident diseases separately (selected values should be specific for prevalent diseases and then separately incident diseases) / Short Input Help: Select all that apply."
 
-Mapping: NFDI4Health_EOCD_V3.0
-Id: NFDI4Health-EOCD-V3.0
-Title: "NFDI4Health Epidemiology of Chronic Diseases Metadataschema Version 3.0 Mapping to internal numbering of Metadataschema Version 3.0"
-Source: NFDI4Health_LM_Metadataschema_EOCD_V3.0
+Mapping: NFDI4Health_EOCD_V3
+Id: NFDI4Health-EOCD-V3
+Title: "NFDI4Health Epidemiology of Chronic Diseases Metadataschema Version 3 Mapping to internal numbering of Metadataschema Version 3"
+Source: NFDI4Health_LM_Metadataschema_EOCD_V3
 * ChronicDiseasesEpidemiology -> "CD1"
 * ChronicDiseasesEpidemiology.commonChronicDiseaseName -> "CD1.1"
 * ChronicDiseasesEpidemiology.dataCollected -> "CD1.2"

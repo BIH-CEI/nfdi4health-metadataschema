@@ -1,10 +1,10 @@
 {
   "resourceType": "StructureDefinition",
   "id": "nfdi4health-lm-metadataschema-general-v3",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-general-v3.0",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-general-v3",
   "version": "1.0",
   "name": "NFDI4Health_LM_Metadataschema_General_V3",
-  "title": "NFDI4Health LM General Metadataschema V3.0",
+  "title": "NFDI4Health LM General Metadataschema V3",
   "status": "active",
   "publisher": "NFDI4Health",
   "contact": [
@@ -26,30 +26,30 @@
       "name": "RIM Mapping"
     },
     {
-      "identity": "NFDI4Health-V3.0-Internal-Numbering",
-      "name": "NFDI4Health General Metadataschema Version 3.0 Mapping to internal numbering"
+      "identity": "NFDI4Health-V3-Internal-Numbering",
+      "name": "NFDI4Health General Metadataschema Version 3 Mapping to internal numbering"
     },
     {
       "identity": "NFDI4Health-V2.1",
-      "name": "NFDI4Health General Metadataschema Version 3.0 Mapping to internal numbering of Metadataschema Version 2.1"
+      "name": "NFDI4Health General Metadataschema Version 3 Mapping to internal numbering of Metadataschema Version 2.1"
     }
   ],
   "kind": "logical",
   "abstract": false,
-  "type": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-general-v3.0",
+  "type": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-general-v3",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
   "derivation": "specialization",
   "differential": {
     "element": [
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0",
-        "short": "NFDI4Health LM General Metadataschema V3.0",
+        "id": "nfdi4health-lm-metadataschema-general-v3",
+        "path": "nfdi4health-lm-metadataschema-general-v3",
+        "short": "NFDI4Health LM General Metadataschema V3",
         "definition": "NFDI4Health LogicalModel General Metadataschema"
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource",
         "short": "Resource",
         "definition": "Group of items providing Information about a resource. Resources can be, for example, files or parts of them (e.g. datasets or study documents such as study protocols or questionnaires) or also abstractions (e.g. studies or substudies/data collection events).",
         "min": 1,
@@ -61,7 +61,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1"
           },
           {
@@ -71,8 +71,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.identifier",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.identifier",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.identifier",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.identifier",
         "short": "ID of the [Resource]",
         "definition": "Unique identifier of the resource used for identification within the NFDI4Health.",
         "comment": "The identifier is assigned automatically.",
@@ -85,7 +85,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.1"
           },
           {
@@ -95,8 +95,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.classification",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.classification",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.classification",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.classification",
         "short": "Classification of the resource within the predefined categories",
         "definition": "Group of items providing Information about classification of the resource within the predefined categories.",
         "min": 1,
@@ -108,7 +108,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.2"
           },
           {
@@ -118,8 +118,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.classification.resourceType",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.classification.resourceType",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.classification.resourceType",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.classification.resourceType",
         "short": "Type of the resource",
         "definition": "A term describing the resource.",
         "comment": "Additional Information: The selected value determines which type of information needs to be provided. / Short Input Help: You can register a study, a study protocoll, a questionnaire, etc.",
@@ -136,7 +136,7 @@
             "severity": "error",
             "human": "Cardinality: 1..*, if Resource.chronicDiseases == 'Yes' AND Resource.classification.resourceType == ('Study protocol' OR 'Protocol amendment' OR 'Informed consent form' OR 'Patient information sheet' OR 'Manual of operations (SOPs)' OR 'Statistical analysis plan' OR 'Data management plan' OR 'Case report form' OR 'Interview scheme and themes' OR 'Observation guide' OR 'Discussion guide' OR 'Participant tasks' OR 'Other study document' OR 'Other'); otherwise 0.. 0",
             "expression": "Resource.chronicDiseases = false OR Resource.classification.resourceType.exists(Study) OR Resource.classification.resourceType.exists(Substudy/Data collection event) OR Resource.classification.resourceType.exists(Dataset) OR Resource.classification.resourceType.exists(Data dictionary) OR Resource.classification.resourceType.exists(Code book) OR Resource.classification.resourceType.exists(Questionnaire) OR Resource.classification.resourceType.exists(Other data collection instrument implies ChronicDiseasesEpidemiology.exists().not()",
-            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-general-v3.0"
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-general-v3"
           }
         ],
         "binding": {
@@ -145,7 +145,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.2.1"
           },
           {
@@ -155,8 +155,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.classification.resourceTypeGeneral",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.classification.resourceTypeGeneral",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.classification.resourceTypeGeneral",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.classification.resourceTypeGeneral",
         "short": "A more general type of the resource",
         "definition": "A more general term describing the resource which forms a pair with the property 'Type of the resource' (e.g. 'Questionnaire'/'Text').",
         "comment": "Cardinality: 1..1, if Resource.classification.resourceType != ('Study' OR 'Substudy/Data collection event' OR 'Dataset') / Short Input Help: You can select 'Text' for most of the study documents, e.g. for questionnaires, informed consent forms, case report forms, etc.",
@@ -173,7 +173,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.2.2"
           },
           {
@@ -183,8 +183,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.titles",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.titles",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.titles",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.titles",
         "short": "Title(s)/name(s) of the [RESOURCE]",
         "definition": "Group of items providing Information about title(s)/name(s) of the resource.",
         "min": 1,
@@ -196,7 +196,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.3"
           },
           {
@@ -206,8 +206,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.titles.text",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.titles.text",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.titles.text",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.titles.text",
         "short": "Title/name",
         "definition": "Scientific unabbreviated title or name of the resource.",
         "comment": "Additional Information: If no official title/name has been defined yet, please provide a title/name that is suitable for public display. / Short Input Help: Please provide at least one title/name of the resource. If the original title is not in English, please also provide an English translation of the original title.",
@@ -220,7 +220,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.3.1"
           },
           {
@@ -230,8 +230,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.titles.language",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.titles.language",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.titles.language",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.titles.language",
         "short": "Language of the title/name",
         "definition": "Language of the title/name.",
         "min": 1,
@@ -243,7 +243,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.3.2"
           },
           {
@@ -253,8 +253,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.acronyms",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.acronyms",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.acronyms",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.acronyms",
         "short": "Acronym(s) of the [RESOURCE]",
         "definition": "Group of items providing  Information about acronym(s) of the resource.",
         "min": 0,
@@ -266,7 +266,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.4"
           },
           {
@@ -276,8 +276,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.acronyms.text",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.acronyms.text",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.acronyms.text",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.acronyms.text",
         "short": "Acronym",
         "definition": "If existing, acronym(s) of the resource.",
         "comment": "Short Input Help: The property refers primarily to studies which often have an acronym. For other types of resources, a short title (preferably up to 5 words) can be provided, e.g. 'NAKO-COVID Questionnaire'.",
@@ -296,7 +296,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.4.1"
           },
           {
@@ -306,8 +306,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.acronyms.language",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.acronyms.language",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.acronyms.language",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.acronyms.language",
         "short": "Language of the acronym",
         "definition": "Language of the acronym.",
         "min": 1,
@@ -319,7 +319,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.4.2"
           },
           {
@@ -329,8 +329,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.descriptionEnglish",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.descriptionEnglish",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.descriptionEnglish",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.descriptionEnglish",
         "short": "English description of the [RESOURCE]",
         "definition": "Group of items with an English description of the resource.",
         "min": 1,
@@ -342,7 +342,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.5"
           },
           {
@@ -352,8 +352,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.descriptionEnglish.text",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.descriptionEnglish.text",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.descriptionEnglish.text",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.descriptionEnglish.text",
         "short": "English description of the [RESOURCE]",
         "definition": "A short plain text summary describing the resource in English.",
         "comment": "Additional Information: An English description is mandatory to facilitate the search. / Short Input Help: The provided information should be understandable by scientific audience.",
@@ -366,7 +366,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.5.1"
           },
           {
@@ -376,8 +376,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.descriptionEnglish.language",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.descriptionEnglish.language",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.descriptionEnglish.language",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.descriptionEnglish.language",
         "short": "Language of the description",
         "definition": "Language of the description text.",
         "comment": "English is a default value.",
@@ -390,7 +390,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.5.2"
           },
           {
@@ -400,8 +400,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.descriptionNonEnglish",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.descriptionNonEnglish",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.descriptionNonEnglish",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.descriptionNonEnglish",
         "short": "Additional description(s) of the [RESOURCE]",
         "definition": "Group of items with  description(s) of the resource written not in English.",
         "min": 0,
@@ -413,7 +413,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.6"
           },
           {
@@ -423,8 +423,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.descriptionNonEnglish.text",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.descriptionNonEnglish.text",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.descriptionNonEnglish.text",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.descriptionNonEnglish.text",
         "short": "Description",
         "definition": "Short plain text summary of the resource other than in English.",
         "comment": "Short Input Help: Additional descriptions of the resource are optional. The provided information should be understandable by scientific audience.",
@@ -437,7 +437,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.6.1"
           },
           {
@@ -447,8 +447,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.descriptionNonEnglish.language",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.descriptionNonEnglish.language",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.descriptionNonEnglish.language",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.descriptionNonEnglish.language",
         "short": "Language of the description",
         "definition": "Language of the description text.",
         "min": 1,
@@ -460,7 +460,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.6.2"
           },
           {
@@ -470,8 +470,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.keywords",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.keywords",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.keywords",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.keywords",
         "short": "Keyword(s) describing the [RESOURCE]",
         "definition": "Group of items providing Information about keywords describing the resource.",
         "comment": "Additional Information: The findability of the resource can be significantly increased if proper keywords are stated.",
@@ -484,7 +484,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.7"
           },
           {
@@ -494,8 +494,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.keywords.label",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.keywords.label",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.keywords.label",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.keywords.label",
         "short": "Keyword",
         "definition": "Keyword(s) describing the resource.",
         "comment": "Additional Information: The use of terms from established classifications/vocabularies (e.g. MeSH, UMLS, SNOMED CT) is preferred. However, also self-assigned keywords are allowed. / Short Input Help: Preferably, use terms from MeSH (https://meshb.nlm.nih.gov/search) or UMLS (https://uts.nlm.nih.gov/uts/umls/home).",
@@ -514,7 +514,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.7.1"
           },
           {
@@ -524,8 +524,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.keywords.code",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.keywords.code",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.keywords.code",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.keywords.code",
         "short": "Code of the keyword",
         "definition": "If known, the code of the keyword in a classification/vocabulary.",
         "comment": "Short Input Help: If found, the code from the classification/vocabulary used.",
@@ -544,7 +544,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.7.2"
           },
           {
@@ -554,8 +554,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.languages",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.languages",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.languages",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.languages",
         "short": "Language(s) of the [RESOURCE]",
         "definition": "Language(s) in which a study/substudy is conducted, or a language in which a study document is composed.",
         "comment": "Short Input Help: Select all that apply.",
@@ -572,7 +572,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.8"
           },
           {
@@ -582,8 +582,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.webpage",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.webpage",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.webpage",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.webpage",
         "short": "Web page of the [RESOURCE]",
         "definition": "If existing, a link to the web page directly relevant to the resource.",
         "comment": "Other web pages related to the resource can additionally be entered in the section 'Related resources'.",
@@ -596,7 +596,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.9"
           },
           {
@@ -606,8 +606,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.nonStudyDetails",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.nonStudyDetails",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.nonStudyDetails",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.nonStudyDetails",
         "short": "Detailed information about the [RESOURCE]",
         "definition": "Group of items applicable only to the resources which are not a study/substudy.",
         "comment": "Cardinality: 1..1, if Resource.classification.resourceType != ('Study' OR 'Substudy/Data collection event'); otherwise 0..0",
@@ -620,7 +620,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.10"
           },
           {
@@ -630,8 +630,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.nonStudyDetails.version",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.nonStudyDetails.version",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.nonStudyDetails.version",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.nonStudyDetails.version",
         "short": "Version of the [RESOURCE]",
         "definition": "If existing, the version number of the resource.",
         "min": 0,
@@ -643,7 +643,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.10.1"
           },
           {
@@ -653,8 +653,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.nonStudyDetails.format",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.nonStudyDetails.format",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.nonStudyDetails.format",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.nonStudyDetails.format",
         "short": "Format of the [RESOURCE]",
         "definition": "Technical format of the resource.",
         "comment": "Short Input Help: E.g., XML, PDF, XLSX, etc.",
@@ -667,7 +667,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.10.2"
           },
           {
@@ -677,8 +677,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.nonStudyDetails.useRights",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.nonStudyDetails.useRights",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.nonStudyDetails.useRights",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.nonStudyDetails.useRights",
         "short": "Information about the rights to (re-)use the [RESOURCE]",
         "definition": "Group of items providing Information about the rights to (re-)use the resource.",
         "min": 0,
@@ -690,7 +690,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.10.3"
           },
           {
@@ -700,8 +700,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.nonStudyDetails.useRights.label",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.nonStudyDetails.useRights.label",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.nonStudyDetails.useRights.label",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.nonStudyDetails.useRights.label",
         "short": "License",
         "definition": "License defining the rights to (re-)use the resource.",
         "comment": "Short Input Help: Select one value from the list. If 'Other' is selected, an explanation of the (re-)use terms and conditions can be provided in the property 'Additional information about use rights'.",
@@ -718,7 +718,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.10.3.1"
           },
           {
@@ -728,8 +728,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.nonStudyDetails.useRights.confirmations",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.nonStudyDetails.useRights.confirmations",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.nonStudyDetails.useRights.confirmations",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.nonStudyDetails.useRights.confirmations",
         "short": "Important nformation about licensing, if a Creative Commons liesense is selected.",
         "definition": "Group of items applicable if a Creative Commons liesense is selected.",
         "comment": "Cardinality: 1..1, if Resource.nonStudyDetails.useRights.label != ('CC0 1.0 (Creative Commons Zero v1.0 Universal)' OR 'All rights reserved' OR 'Other' OR 'Not applicable'); otherwise 0..0",
@@ -742,7 +742,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.10.3.2"
           },
           {
@@ -752,8 +752,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.nonStudyDetails.useRights.confirmations.authority",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.nonStudyDetails.useRights.confirmations.authority",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.nonStudyDetails.useRights.confirmations.authority",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.nonStudyDetails.useRights.confirmations.authority",
         "short": "Do you confirm that the authors have authority to license the [RESOURCE]?",
         "definition": "Confirmation that the authors have authority to license the resource.",
         "min": 1,
@@ -765,7 +765,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.10.3.2.1"
           },
           {
@@ -775,8 +775,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.nonStudyDetails.useRights.confirmations.terms",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.nonStudyDetails.useRights.confirmations.terms",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.nonStudyDetails.useRights.confirmations.terms",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.nonStudyDetails.useRights.confirmations.terms",
         "short": "Do you confirm that the authors have read and understood the terms of the chosen license?",
         "definition": "Confirmation that the authors have read and understand the terms of the chosen license.",
         "min": 1,
@@ -788,7 +788,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.10.3.2.2"
           },
           {
@@ -798,8 +798,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.nonStudyDetails.useRights.confirmations.irrevocability",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.nonStudyDetails.useRights.confirmations.irrevocability",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.nonStudyDetails.useRights.confirmations.irrevocability",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.nonStudyDetails.useRights.confirmations.irrevocability",
         "short": "Do you confirm that the authors understand that Creative Commons (CC) licensing is irrevocable?",
         "definition": "Confirmation that the authors understand that Creative Commons (CC) licensing is not revocable.",
         "comment": "Additional Information: The resource can be licensed using a CC-license only if it is free of the third-party rights.",
@@ -812,7 +812,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.10.3.2.3"
           },
           {
@@ -822,8 +822,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.nonStudyDetails.useRights.confirmations.supportByLicencing",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.nonStudyDetails.useRights.confirmations.supportByLicencing",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.nonStudyDetails.useRights.confirmations.supportByLicencing",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.nonStudyDetails.useRights.confirmations.supportByLicencing",
         "short": "Do you confirm that the authors allow NFDI4Health to license the document?",
         "definition": "Confirmation that NFDI4Health is allowed to licence the document, i.e. to mark the resource with the licence information.",
         "min": 1,
@@ -835,7 +835,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.10.3.2.4"
           },
           {
@@ -845,8 +845,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.nonStudyDetails.useRights.description",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.nonStudyDetails.useRights.description",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.nonStudyDetails.useRights.description",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.nonStudyDetails.useRights.description",
         "short": "Additional information about use rights",
         "definition": "Any additional descriptive information explaining terms and conditions to (re-)use the resource.",
         "comment": "Short Input Help: If 'Other' is selected in the property 'License', the preferred license or terms and conditions for (re-)use can be specified here.",
@@ -859,7 +859,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.10.3.3"
           },
           {
@@ -869,8 +869,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.roles",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.roles",
         "short": "Roles",
         "definition": "Group of items providing information about person(s), group(s) of persons or institution(s)/organisation(s) contributing to the resource.",
         "comment": "Additional Information: For each resource, there may be multiple roles, but at least one person, group of persons or institution/organisation must be specified.",
@@ -883,7 +883,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.11"
           },
           {
@@ -893,8 +893,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.nameType",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.nameType",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.roles.nameType",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.roles.nameType",
         "short": "Type of the name",
         "definition": "Personal or organisational/group type of the name.",
         "comment": "Short Input Help: Personal or organisational/group name?",
@@ -911,7 +911,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.11.1"
           },
           {
@@ -921,8 +921,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.organisational",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.organisational",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.roles.organisational",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.roles.organisational",
         "short": "Details about the organisation/institution/group/etc.",
         "definition": "Group of items providing information about group(s) of persons, institution(s) or organisation(s) contributing to the resource.",
         "comment": "Additional Information: Group of items applicable to organisational/group names. / Short Input Help: Organisational name can be used to denote a research group or an institution.",
@@ -935,7 +935,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.11.2"
           },
           {
@@ -945,8 +945,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.organisational.type",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.organisational.type",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.roles.organisational.type",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.roles.organisational.type",
         "short": "Type of the role",
         "definition": "Type of the role an organisation, institution or group fulllfils. For example, this can be a sponsor of the study or a group of authors of the document.",
         "comment": "Short Input Help: Which role does the organisation/institution/group/etc. fulllfil? Select one value from the list.",
@@ -963,7 +963,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.11.2.1"
           },
           {
@@ -973,8 +973,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.organisational.fundingId",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.organisational.fundingId",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.roles.organisational.fundingId",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.roles.organisational.fundingId",
         "short": "Funding identifier",
         "definition": "Identifier assigned by a funder to the resource.",
         "comment": "Cardinality: 0..*, if Resource.roles.organisational.type == ('Funder (public)' OR 'Funder (private)'); otherwise 0..0 / Short Input Help: If available, you can enter a funding identifier",
@@ -987,7 +987,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.11.2.2"
           },
           {
@@ -997,8 +997,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.organisational.name",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.organisational.name",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.roles.organisational.name",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.roles.organisational.name",
         "short": "Name of the organisation/institution/group",
         "definition": "Name of the organisation, institution or group.",
         "min": 1,
@@ -1010,7 +1010,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.11.2.3"
           },
           {
@@ -1020,8 +1020,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.personal",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.personal",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.roles.personal",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.roles.personal",
         "short": "Details about the person",
         "definition": "Group of items providing information about person(s) contributing to the resource.",
         "comment": "Additional Information: Group of items applicable to personal names.",
@@ -1034,7 +1034,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.11.3"
           },
           {
@@ -1044,8 +1044,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.personal.type",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.personal.type",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.roles.personal.type",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.roles.personal.type",
         "short": "Type of the role",
         "definition": "Type of the role a person fulllfils. For example, this can be a principal investigator of a study or an author of a document.",
         "comment": "Short Input Help: Which role does the person fulllfil? Select one value from the list.",
@@ -1062,7 +1062,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.11.3.1"
           },
           {
@@ -1072,8 +1072,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.personal.givenName",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.personal.givenName",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.roles.personal.givenName",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.roles.personal.givenName",
         "short": "Given name of the person",
         "definition": "Given name of the person",
         "min": 1,
@@ -1085,7 +1085,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.11.3.2"
           },
           {
@@ -1095,8 +1095,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.personal.familyName",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.personal.familyName",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.roles.personal.familyName",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.roles.personal.familyName",
         "short": "Family name of the person",
         "definition": "Family name of the person",
         "min": 1,
@@ -1108,7 +1108,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.11.3.3"
           },
           {
@@ -1118,8 +1118,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.personal.title",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.personal.title",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.roles.personal.title",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.roles.personal.title",
         "short": "Title of the person",
         "definition": "Title of the person",
         "min": 1,
@@ -1135,7 +1135,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.11.3.4"
           },
           {
@@ -1145,8 +1145,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.personal.identifiers",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.personal.identifiers",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.roles.personal.identifiers",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.roles.personal.identifiers",
         "short": "Digital identifier(s) of the person",
         "definition": "Group of items providing information about digital identifiers of the person.",
         "min": 0,
@@ -1158,7 +1158,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.11.3.5"
           },
           {
@@ -1168,8 +1168,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.personal.identifiers.identifier",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.personal.identifiers.identifier",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.roles.personal.identifiers.identifier",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.roles.personal.identifiers.identifier",
         "short": "Identifier",
         "definition": "Digital identifier of the person according to a definite scheme.",
         "comment": "Short Input Help: Preferably, provide an ORCID (https://orcid.org/).",
@@ -1188,7 +1188,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.11.3.5.1"
           },
           {
@@ -1198,8 +1198,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.personal.identifiers.scheme",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.personal.identifiers.scheme",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.roles.personal.identifiers.scheme",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.roles.personal.identifiers.scheme",
         "short": "Which type of identifer is reported?",
         "definition": "Type of the identifier scheme.",
         "min": 1,
@@ -1223,7 +1223,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.11.3.5.2"
           },
           {
@@ -1233,8 +1233,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.email",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.email",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.roles.email",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.roles.email",
         "short": "Email address",
         "definition": "Email address of the person, group of persons or institution/organisation.",
         "min": 0,
@@ -1246,7 +1246,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.11.4"
           },
           {
@@ -1256,8 +1256,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.phone",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.phone",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.roles.phone",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.roles.phone",
         "short": "Phone number",
         "definition": "Phone number of the  person, group of persons or institution/organisation.",
         "comment": "Additional Information: Please, use the International ITU-T E.164-number structure for geographic areas, e.g. +49 (0)153 1112233.",
@@ -1276,7 +1276,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.11.5"
           },
           {
@@ -1286,8 +1286,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.affiliation",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.affiliation",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.roles.affiliation",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.roles.affiliation",
         "short": "Further information about organisation(s) associated with the role",
         "definition": "Group of items providing further information about the organisation(s) associated with the role.",
         "min": 0,
@@ -1299,7 +1299,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.11.6"
           },
           {
@@ -1309,8 +1309,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.affiliation.name",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.affiliation.name",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.roles.affiliation.name",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.roles.affiliation.name",
         "short": "Name of the organisation",
         "definition": "Name of the organisation associated with the role.",
         "comment": "Short Input Help: If you are have already entered the name of the organistion in the property 'Name of the organisation/institution/group', please repeat it here.",
@@ -1323,7 +1323,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.11.6.1"
           },
           {
@@ -1333,8 +1333,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.affiliation.address",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.affiliation.address",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.roles.affiliation.address",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.roles.affiliation.address",
         "short": "Address of the organisation",
         "definition": "Address of the organisation associated with the role.",
         "min": 0,
@@ -1346,7 +1346,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.11.6.2"
           },
           {
@@ -1356,8 +1356,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.affiliation.webpage",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.affiliation.webpage",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.roles.affiliation.webpage",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.roles.affiliation.webpage",
         "short": "Web page of the organisation",
         "definition": "Web page of the organisation associated with the role.",
         "min": 0,
@@ -1369,7 +1369,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.11.6.3"
           },
           {
@@ -1379,8 +1379,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.affiliation.identifiers",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.affiliation.identifiers",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.roles.affiliation.identifiers",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.roles.affiliation.identifiers",
         "short": "Digital identifier(s) of the organisation",
         "definition": "Group of items providing information about identifiers of the organisation.",
         "min": 0,
@@ -1392,7 +1392,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.11.6.4"
           },
           {
@@ -1402,8 +1402,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.affiliation.identifiers.identifier",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.affiliation.identifiers.identifier",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.roles.affiliation.identifiers.identifier",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.roles.affiliation.identifiers.identifier",
         "short": "Identifier",
         "definition": "Digital identifier of the organisation according to a definite scheme.",
         "comment": "Short Input Help: Preferably, provide an identifier from ROR (https://ror.org/search).",
@@ -1422,7 +1422,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.11.6.4.1"
           },
           {
@@ -1432,8 +1432,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.affiliation.identifiers.scheme",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.roles.affiliation.identifiers.scheme",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.roles.affiliation.identifiers.scheme",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.roles.affiliation.identifiers.scheme",
         "short": "Identifier scheme",
         "definition": "Type of the identifier scheme.",
         "comment": "Short Input Help: Which type of identifer is reported?",
@@ -1458,7 +1458,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.11.6.4.2"
           },
           {
@@ -1468,8 +1468,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.idsAlternative",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.idsAlternative",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.idsAlternative",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.idsAlternative",
         "short": "Alternative identifiers",
         "definition": "Group of items providing information about identifiers (IDs) assigned to the given resource by another registering systems, e.g. a register of clinical trials or a data repository.",
         "comment": "Short Input Help: If the [RESOURCE] is registered in other systems (e.g. a register of clinical trials or a data repository), you can provide corresponding identifier(s) here.",
@@ -1482,7 +1482,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.12"
           },
           {
@@ -1492,8 +1492,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.idsAlternative.scheme",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.idsAlternative.scheme",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.idsAlternative.scheme",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.idsAlternative.scheme",
         "short": "Type of the register",
         "definition": "Type/name of the system where the given resource is already registered.",
         "min": 1,
@@ -1513,7 +1513,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.12.1"
           },
           {
@@ -1523,8 +1523,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.idsAlternative.identifier",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.idsAlternative.identifier",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.idsAlternative.identifier",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.idsAlternative.identifier",
         "short": "Identifier",
         "definition": "Identifier (ID) assigned to the given resource by another registering system, e.g. by a register of clinical trials or a data repository.",
         "comment": "Short Input Help: E. g., DRKS00021273, NCT04327505, etc.",
@@ -1537,7 +1537,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.12.2"
           },
           {
@@ -1547,8 +1547,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.ids",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.ids",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.ids",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.ids",
         "short": "Related publications, datasets, study documents, web pages, etc.",
         "definition": "Group of items providing information about identifiers (IDs) of the resources related to the given resource, e.g. DOIs of publications, datasets, study documents or links to web pages.",
         "comment": "Short Input Help: If existing, you can specify identifier(s) of any related resources, e.g. DOIs of publications, datasets, study documents, links to web pages, etc.",
@@ -1561,7 +1561,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.13"
           },
           {
@@ -1571,8 +1571,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.ids.identifier",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.ids.identifier",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.ids.identifier",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.ids.identifier",
         "short": "Identifier of the related resource",
         "definition": "Identifier (ID) related to, or associated with, the resource being registered. These can be IDs of related publications, datasets, study documents, web pages, etc.",
         "comment": "Short Input Help: a) Publications like journal articles usually have a DOI, e.g. 10.3238/arztebl.2020.0861. b) A link (URL) starting with 'http(s)://' to a web page with any additional information can also be provided here.",
@@ -1591,7 +1591,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.13.1"
           },
           {
@@ -1601,8 +1601,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.ids.scheme",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.ids.scheme",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.ids.scheme",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.ids.scheme",
         "short": "Type of the identifier",
         "definition": "Type of the identifier of the related resource.",
         "comment": "Short Input Help: Select one value from the list.",
@@ -1623,7 +1623,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.13.2"
           },
           {
@@ -1633,8 +1633,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.ids.date",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.ids.date",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.ids.date",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.ids.date",
         "short": "Date of ID assignment",
         "definition": "Date when the identifier of the related resource was assigned.",
         "comment": "Additional Information: Preferred date format: DD.MM.YYYY",
@@ -1647,7 +1647,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.13.3"
           },
           {
@@ -1657,8 +1657,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.ids.relationType",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.ids.relationType",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.ids.relationType",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.ids.relationType",
         "short": "Relationship between this [RESOURCE] (A) and the related resource (B)?",
         "definition": "Relationship between the resource being registered (A) and the related resource (B).",
         "comment": "Short Input Help: Select one value from the list.",
@@ -1683,7 +1683,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.13.4"
           },
           {
@@ -1693,8 +1693,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.ids.resourceTypeGeneral",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.ids.resourceTypeGeneral",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.ids.resourceTypeGeneral",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.ids.resourceTypeGeneral",
         "short": "Type of the related resource",
         "definition": "Type of the related resource, e.g. journal article, dataset, text, etc.",
         "comment": "Short Input Help: Select one value from the list.  For example,. a journal article, dataset, text, etc.",
@@ -1719,7 +1719,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.13.5"
           },
           {
@@ -1729,8 +1729,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.idsNfdi4health",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.idsNfdi4health",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.idsNfdi4health",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.idsNfdi4health",
         "short": "Related (sub-)studies, study documents, etc. registered on this portal",
         "definition": "Group of items providing information about related resources registered on this portal.",
         "comment": "Short Input Help: Does the [RESOURCE] have any related resources registered on this portal?",
@@ -1743,7 +1743,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.14"
           },
           {
@@ -1753,8 +1753,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.idsNfdi4health.identifier",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.idsNfdi4health.identifier",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.idsNfdi4health.identifier",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.idsNfdi4health.identifier",
         "short": "Identifier of the related resource",
         "definition": "Identifier (ID) of the related resource assigned on this portal.",
         "min": 1,
@@ -1772,7 +1772,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.14.1"
           },
           {
@@ -1782,8 +1782,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.idsNfdi4health.relationType",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.idsNfdi4health.relationType",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.idsNfdi4health.relationType",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.idsNfdi4health.relationType",
         "short": "Relationship between this [RESOURCE] (A) and the related resource (B)?",
         "definition": "Relationship between the resource being registered (A) and the related resource (B).",
         "min": 0,
@@ -1799,7 +1799,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.14.2"
           },
           {
@@ -1809,8 +1809,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.nutritionalData",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.nutritionalData",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.nutritionalData",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.nutritionalData",
         "short": "Nutritional data collected?",
         "definition": "Indication whether nutritional data was collected by the resource.",
         "comment": "Cardinality: 1..1, if Resource.classification.resourceType == ('Study' OR 'Substudy/Data collection') AND Resource.provenance.dataSource != 'Manually collected'; otherwise 0..0",
@@ -1827,12 +1827,12 @@
             "severity": "error",
             "human": "Cardinality: 1..*, if Resource.nutritionalData == 'Yes'; otherwise 0.. 0 / Additional Information: Filtering condition to decide if all following questions will be asked.",
             "expression": "Resource.nutritionalData = false implies DietAssessment.exists().not()",
-            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-general-v3.0"
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-general-v3"
           }
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.15"
           },
           {
@@ -1842,8 +1842,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.chronicDiseases",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.chronicDiseases",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.chronicDiseases",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.chronicDiseases",
         "short": "Chronic diseases included?",
         "definition": "Indication whether chronic diseases were addressed by the resource.",
         "min": 1,
@@ -1859,12 +1859,12 @@
             "severity": "error",
             "human": "Cardinality: 1..*, if Resource.chronicDiseases == 'Yes' AND Resource.classification.resourceType == ('Study protocol' OR 'Protocol amendment' OR 'Informed consent form' OR 'Patient information sheet' OR 'Manual of operations (SOPs)' OR 'Statistical analysis plan' OR 'Data management plan' OR 'Case report form' OR 'Interview scheme and themes' OR 'Observation guide' OR 'Discussion guide' OR 'Participant tasks' OR 'Other study document' OR 'Other'); otherwise 0.. 0",
             "expression": "Resource.chronicDiseases = false OR Resource.classification.resourceType.exists(Study) OR Resource.classification.resourceType.exists(Substudy/Data collection event) OR Resource.classification.resourceType.exists(Dataset) OR Resource.classification.resourceType.exists(Data dictionary) OR Resource.classification.resourceType.exists(Code book) OR Resource.classification.resourceType.exists(Questionnaire) OR Resource.classification.resourceType.exists(Other data collection instrument implies ChronicDiseasesEpidemiology.exists().not()",
-            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-general-v3.0"
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-general-v3"
           }
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.16"
           },
           {
@@ -1874,8 +1874,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign",
         "short": "Characteristics of the [RESOURCE]",
         "definition": "Group of items providing information about the characteristics of a study or a substudy.",
         "comment": "Additional Information: Group of items applicable only to studies and substudies.",
@@ -1888,7 +1888,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17"
           },
           {
@@ -1898,8 +1898,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.primaryDesign",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.primaryDesign",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.primaryDesign",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.primaryDesign",
         "short": "Is it an interventional or non-interventional study?",
         "definition": "Non-interventional study design refers to a study that does not aim to alter study outcomes of interest. Interventional study design refers to a study that aims to alter study outcomes of interest.",
         "comment": "Select between non-interventional and interventional study design.",
@@ -1916,7 +1916,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.1"
           },
           {
@@ -1926,8 +1926,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.studyType",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.studyType",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.studyType",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.studyType",
         "short": "Specification of study type",
         "definition": "Group of items providing information about the study type.",
         "min": 1,
@@ -1939,7 +1939,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.2"
           },
           {
@@ -1949,8 +1949,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.studyType.interventional",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.studyType.interventional",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.studyType.interventional",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.studyType.interventional",
         "short": "Specification of study type",
         "definition": "The strategy for assigning interventions to participants.",
         "comment": "Cardinality: 1..*, if Resource.studyDesign.primaryDesign == 'Interventional'; otherwise 0..0/ Short Input Help: Select all that apply. If 'Other' is selected, you can specify the study type in the field 'Additional information about the study'.",
@@ -1967,7 +1967,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.2.1"
           },
           {
@@ -1977,8 +1977,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.studyType.nonInterventional",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.studyType.nonInterventional",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.studyType.nonInterventional",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.studyType.nonInterventional",
         "short": "Specification of study type",
         "definition": "The primary strategy for participant identification and follow-up.",
         "comment": "Cardinality: 1..*, if Resource.studyDesign.primaryDesign == 'Non-interventional'; otherwise 0..0 / Short Input Help: Select all that apply. If 'Other' is selected, you can specify the study type in the field 'Additional information about the study'.",
@@ -1995,7 +1995,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.2.2"
           },
           {
@@ -2005,8 +2005,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.studyConditions",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.studyConditions",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.studyConditions",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.studyConditions",
         "short": "Primary health condition(s),  disease(s) or focus of the study",
         "definition": "Group of items providing information about primary health condition(s) or disease(s) considered in the study, or the focus of the study (e.g. medication, food, therapy, device, etc.).",
         "min": 0,
@@ -2018,7 +2018,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.3"
           },
           {
@@ -2028,8 +2028,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.studyConditions.label",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.studyConditions.label",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.studyConditions.label",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.studyConditions.label",
         "short": "Name of the primary health condition, disease or focus of the study",
         "definition": "Name of primary health condition or disease considered in the study, or the focus of the study (e.g. medication, food, therapy, device, etc.).",
         "comment": "Additional Information: The use of terms from established terminologies/classifications (e.g. SNOMED CT, ICD, etc.) is preferred. However, also self-assigned terms are allowed. / Short Input Help: The use of terms from established terminologies/classifications (e.g. SNOMED CT, ICD, etc.) is preferred. However, also self-assigned terms are allowed.",
@@ -2048,7 +2048,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.3.1"
           },
           {
@@ -2058,8 +2058,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.studyConditions.classification",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.studyConditions.classification",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.studyConditions.classification",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.studyConditions.classification",
         "short": "Terminology/classification",
         "definition": "Terminology/classification used for the health condition, diesease or focus.",
         "comment": "Short Input Help: If used, name of the terminology/classification.",
@@ -2084,7 +2084,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.3.2"
           },
           {
@@ -2094,8 +2094,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.studyConditions.code",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.studyConditions.code",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.studyConditions.code",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.studyConditions.code",
         "short": "Code ---- If known, code of the health condition, disease or focus in the terminology/classification used",
         "definition": "Code of the health condition,  disease, focus in the terminology/classification used.",
         "comment": "Short Input Help: If found, the code from the terminology/classification used.",
@@ -2114,7 +2114,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.3.3"
           },
           {
@@ -2124,8 +2124,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.studyGroupsOfDiseases",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.studyGroupsOfDiseases",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.studyGroupsOfDiseases",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.studyGroupsOfDiseases",
         "short": "Which groups of diseases or conditions were the data collected on?",
         "definition": "Group of items providing information about groups of diseases or conditions on which the data were collected in the study.",
         "min": 1,
@@ -2137,7 +2137,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.4"
           },
           {
@@ -2147,8 +2147,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.studyGroupsOfDiseases.generally",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.studyGroupsOfDiseases.generally",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.studyGroupsOfDiseases.generally",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.studyGroupsOfDiseases.generally",
         "short": "Which groups of diseases or conditions were the data collected on?",
         "definition": "Groups of diseases or conditions on which the data were collected in the study.",
         "comment": "Additional Information: The values originate from the WHO's International Statistical Classification of Diseases and Related Health Problems, 11th Revision (ICD-11)./ Short Input Help: Select all that apply. For more information about the groups of diseases/conditions, visit the WHO's ICD-11 homepage: https://icd.who.int/en.",
@@ -2161,7 +2161,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.4.1"
           },
           {
@@ -2171,8 +2171,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.studyGroupsOfDiseases.conditions",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.studyGroupsOfDiseases.conditions",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.studyGroupsOfDiseases.conditions",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.studyGroupsOfDiseases.conditions",
         "short": "On which other diseases or conditions were the data collected?",
         "definition": "Other diseases or conditions on which the data were collected in the study.",
         "comment": "Additional Information: The values originate from the WHO's International Statistical Classification of Diseases and Related Health Problems, 11th Revision (ICD-11). / Short Input Help: For more information about the groups of diseases/conditions, visit the WHO's ICD-11 homepage: https://icd.who.int/en.",
@@ -2191,7 +2191,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.4.2"
           },
           {
@@ -2201,8 +2201,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.mortalityData",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.mortalityData",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.mortalityData",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.mortalityData",
         "short": "Were mortality data collected?",
         "definition": "Mortality data.",
         "comment": "Cardinality: 0..1, if Resource.studyDesign.studyType.nonInterventional == ('Longitudinal' OR 'Cohort' OR 'Case-cohort' OR 'Birth cohort' OR 'Trend' OR 'Panel'); otherwise 0..0",
@@ -2219,7 +2219,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.5"
           },
           {
@@ -2229,8 +2229,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.ethicsCommiteeApproval",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.ethicsCommiteeApproval",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.ethicsCommiteeApproval",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.ethicsCommiteeApproval",
         "short": "Status of the ethics committee approval",
         "definition": "Status of the study approval from the (leading) ethics committee.",
         "min": 0,
@@ -2246,7 +2246,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.6"
           },
           {
@@ -2256,8 +2256,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.status",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.status",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.status",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.status",
         "short": "Overall study status",
         "definition": "Overall study status",
         "comment": "Additional Information: If at least one study site in a multicenter study has the status 'Ongoing' then the overall status for the study must be 'Ongoing'. / Short Input Help: Select one value from the list.",
@@ -2274,7 +2274,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.7"
           },
           {
@@ -2284,8 +2284,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.statusWhenIntervention",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.statusWhenIntervention",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.statusWhenIntervention",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.statusWhenIntervention",
         "short": "Do participants receive an intervention?",
         "definition": "Specification whether study participants receive intervention or have completed it but are still being followed according to the primary objective of the study.",
         "comment": "Cardinality: '0..1, if Resource.studyDesign.primaryDesign == 'Interventional' AND Resource.studyDesign.status == ('At the planning stage' OR 'Ongoing (I): Recruitment ongoing, but data collection not yet started' OR 'Ongoing (II): Recruitment and data collection ongoing' OR 'Ongoing (III): Recruitment completed, but data collection ongoing' OR 'Ongoing (IV): Recruitment and data collection completed, but data quality management ongoing'); otherwise 0..0 / Short Input Help: Select one value from the list.",
@@ -2302,7 +2302,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.8"
           },
           {
@@ -2312,8 +2312,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.stageStopped",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.stageStopped",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.stageStopped",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.stageStopped",
         "short": "At what stage was the study stopped?",
         "definition": "If the study was stopped prematurely, specification of the stage at what it was halted.",
         "comment": "Cardinality: 0..1, if Resource.studyDesign.status == ('Suspended: Recruitment, data collection, or data quality management, halted, but potentially will resume' OR 'Terminated: Recruitment, data collection, data and quality management halted prematurely and will not resume'); otherwise 0..0 / Short Input Help: Select one value from the list.",
@@ -2330,7 +2330,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.9"
           },
           {
@@ -2340,8 +2340,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.reasonStopped",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.reasonStopped",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.reasonStopped",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.reasonStopped",
         "short": "Reason why the study was stopped",
         "definition": "If the study was stopped prematurely, specification of the reason(s) why it was halted.",
         "comment": "Cardinality: 0..1, if Resource.studyDesign.status == ('Suspended: Recruitment, data collection, or data quality management, halted, but potentially will resume' OR 'Terminated: Recruitment, data collection, data and quality management halted prematurely and will not resume'); otherwise 0..0 / Short Input Help: E.g., accrual goal met / closed due to toxicity / closed due to lack of study progress / temporarily-closed per study design /etc.",
@@ -2354,7 +2354,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.10"
           },
           {
@@ -2364,8 +2364,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.statusEnrollingByInvitation",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.statusEnrollingByInvitation",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.statusEnrollingByInvitation",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.statusEnrollingByInvitation",
         "short": "Are participants enrolled by invitation?",
         "definition": "Specification whether study participants have been selected from a predetermined population or enrolled by invitation.",
         "min": 0,
@@ -2381,7 +2381,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.11"
           },
           {
@@ -2391,8 +2391,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.recruitmentStatusRegister",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.recruitmentStatusRegister",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.recruitmentStatusRegister",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.recruitmentStatusRegister",
         "short": "Overall recruitment status of the study from the register of clinical trials",
         "definition": "Overall recruitment status of the study as indicated in the corresponding register of clinical trials.",
         "comment": "Additional Information: The item applies only to studies automatically uploaded from the registers of clinical trials.",
@@ -2409,7 +2409,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.12"
           },
           {
@@ -2419,8 +2419,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.studyStartDate",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.studyStartDate",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.studyStartDate",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.studyStartDate",
         "short": "Start date of data collection for the study",
         "definition": "Start date of data collection for the study.",
         "comment": "Additional Information: Preferred date format: DD.MM.YYYY. / Short Input Information: In case of a planned study, it is the intended start date; in case of an ongoing study — the actual start date.",
@@ -2433,7 +2433,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.13"
           },
           {
@@ -2443,8 +2443,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.studyEndDate",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.studyEndDate",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.studyEndDate",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.studyEndDate",
         "short": "End date of data collection for the study",
         "definition": "In case of studies with patients or other participants, it is the date when the last participant is examined or receives an intervention, or the date of the last participant's last visit.",
         "comment": "Additional Information: Preferred date format: DD.MM.YYYY. / Short Input Information: In case of a planned or ongoing study, it is the intended end date; in case of a completed study — the actual end date.",
@@ -2457,7 +2457,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.14"
           },
           {
@@ -2467,8 +2467,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.countries",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.countries",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.countries",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.countries",
         "short": "Country(ies) where the study takes place",
         "definition": "Country or countries where the study takes place.",
         "comment": "Short Input Help: Select all that apply.",
@@ -2485,7 +2485,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.15"
           },
           {
@@ -2495,8 +2495,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.region",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.region",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.region",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.region",
         "short": "Regions and/or cities within a country where the study takes place",
         "definition": "If applicable, region(s) and/or city(ies) within a country where the study takes place.",
         "min": 0,
@@ -2508,7 +2508,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.16"
           },
           {
@@ -2518,8 +2518,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.centers",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.centers",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.centers",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.centers",
         "short": "Is it a mono- or multicentric study?",
         "definition": "Specification whether a study is conducted at one study center or at more than one study center.",
         "min": 0,
@@ -2535,7 +2535,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.17"
           },
           {
@@ -2545,8 +2545,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.centersNumber",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.centersNumber",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.centersNumber",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.centersNumber",
         "short": "Number of study centers",
         "definition": "Number of centers involved in the study.",
         "comment": "Cardinality: 0..1, if Resource.studyDesign.centers == 'Multicentric'; otherwise 0..0",
@@ -2559,7 +2559,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.18"
           },
           {
@@ -2569,8 +2569,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.subject",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.subject",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.subject",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.subject",
         "short": "Primary study subject",
         "definition": "Primary study subject, i.e. a person, an animal or some other type of the subject.",
         "comment": "Short Input Help: Select one value from the list.",
@@ -2587,7 +2587,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.19"
           },
           {
@@ -2597,8 +2597,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.sampling",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.sampling",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.sampling",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.sampling",
         "short": "Sampling method",
         "definition": "Group of items providing information about the applied sampling method.",
         "comment": "Short Input Help: Select one value from the list.",
@@ -2611,7 +2611,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.20"
           },
           {
@@ -2621,8 +2621,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.sampling.method",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.sampling.method",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.sampling.method",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.sampling.method",
         "short": "Applied sampling method",
         "definition": "Type of the sampling method applied for the selection of study participants.",
         "comment": "Short Input Help: Select one value from the list.",
@@ -2639,7 +2639,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.20.1"
           },
           {
@@ -2649,8 +2649,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.sampling.probabilityMethod",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.sampling.probabilityMethod",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.sampling.probabilityMethod",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.sampling.probabilityMethod",
         "short": "Specific type of probability sampling",
         "definition": "Specific type of the probability sampling method applied for the selection of study participants.",
         "comment": "Short Input Help: If known, select one value from the list.",
@@ -2667,7 +2667,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.20.2"
           },
           {
@@ -2677,8 +2677,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.sampling.nonProbabilityMethod",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.sampling.nonProbabilityMethod",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.sampling.nonProbabilityMethod",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.sampling.nonProbabilityMethod",
         "short": "Specific type of non-probability sampling",
         "definition": "Specific type of the probability sampling method applied for the selection of study participants.",
         "comment": "Short Input Help: If known, select one value from the list.",
@@ -2695,7 +2695,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.20.3"
           },
           {
@@ -2705,8 +2705,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.dataSource",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.dataSource",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.dataSource",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.dataSource",
         "short": "Data sources from which study data are generated or extracted.",
         "definition": "Group of items providing information about data sources from which study data are generated or extracted.",
         "min": 0,
@@ -2718,7 +2718,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.21"
           },
           {
@@ -2728,8 +2728,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.dataSource.general",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.dataSource.general",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.dataSource.general",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.dataSource.general",
         "short": "Data sources for the study (e.g. biosamples, registries, questionnaires, etc.)",
         "definition": "Different types of data sources from which study data are generated or extracted.",
         "comment": "Short Input Help: Select all that apply.",
@@ -2746,7 +2746,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.21.1"
           },
           {
@@ -2756,8 +2756,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.dataSource.biosamples",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.dataSource.biosamples",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.dataSource.biosamples",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.dataSource.biosamples",
         "short": "Biosamples collected in the study",
         "definition": "Specification of biosamples collected in the study.",
         "comment": "Cardinality: 0..*, if Resource.studyDesign.dataSource.general == 'Biological samples'; otherwise 0..0",
@@ -2774,7 +2774,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.21.2"
           },
           {
@@ -2784,8 +2784,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.dataSource.imaging",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.dataSource.imaging",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.dataSource.imaging",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.dataSource.imaging",
         "short": "Imaging data collected in the study",
         "definition": "Specification of imaging data collected in the study.",
         "comment": "Cardinality: 0..*, if Resource.studyDesign.dataSource.general == 'Imaging data'; otherwise 0..0",
@@ -2802,7 +2802,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.21.3"
           },
           {
@@ -2812,8 +2812,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.dataSource.omics",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.dataSource.omics",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.dataSource.omics",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.dataSource.omics",
         "short": "Omics technology used in the study",
         "definition": "Specification of omics technology applied in the study.",
         "comment": "Cardinality: 0..*, if Resource.studyDesign.dataSource.general == 'Omics technology'; otherwise 0..0",
@@ -2830,7 +2830,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.21.4"
           },
           {
@@ -2840,8 +2840,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.dataSource.description",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.dataSource.description",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.dataSource.description",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.dataSource.description",
         "short": "Additional information about data sources",
         "definition": "If needed, additional descriptive information about study data sources, e.g. indication of the data source(s) not listed in the property 'Data sources for the study' or more detailed description of the selected data sources.",
         "comment": "Short Input Help: E.g., indication of the data source(s) not listed in the field 'Data sources for the study' or more detailed description of the selected data sources.",
@@ -2854,7 +2854,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.21.5"
           },
           {
@@ -2864,8 +2864,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.primaryPurpose",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.primaryPurpose",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.primaryPurpose",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.primaryPurpose",
         "short": "Primary purpose of the study",
         "definition": "Specification of the main purpose of the study.",
         "comment": "Additional Information: The field is defined foremost for interventional studies. For non-interventional  studies, this field may be not appplicable as diverse purposes may be pursued without being able to specify a primary one. In this case, the option 'Not applicable' can be selected. / Short Input Help: Foremost for interventional studies, please specify the primary purpose why the study was conducted. For non-interventional  studies, this field may be 'Not appplicable' as multiple purposes may be defined as primary ones.",
@@ -2882,7 +2882,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.22"
           },
           {
@@ -2892,8 +2892,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.eligibilityCriteria",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.eligibilityCriteria",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.eligibilityCriteria",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.eligibilityCriteria",
         "short": "Eligibility criteria for study participants",
         "definition": "Group of items providing information about eligibility criteria for study participants.",
         "min": 0,
@@ -2905,7 +2905,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.23"
           },
           {
@@ -2915,8 +2915,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.eligibilityCriteria.ageMin",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.eligibilityCriteria.ageMin",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.eligibilityCriteria.ageMin",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.eligibilityCriteria.ageMin",
         "short": "Eligibility criteria: Minimum age",
         "definition": "Group of items providing information about the minimum eligible age of study participants.",
         "min": 0,
@@ -2928,7 +2928,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.23.1"
           },
           {
@@ -2938,8 +2938,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.eligibilityCriteria.ageMin.number",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.eligibilityCriteria.ageMin.number",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.eligibilityCriteria.ageMin.number",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.eligibilityCriteria.ageMin.number",
         "short": "Minimum eligible age",
         "definition": "Numerical value of the minimum age of potential participants eligible to participate in the study.",
         "min": 1,
@@ -2951,7 +2951,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.23.1.1"
           },
           {
@@ -2961,8 +2961,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.eligibilityCriteria.ageMin.timeUnit",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.eligibilityCriteria.ageMin.timeUnit",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.eligibilityCriteria.ageMin.timeUnit",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.eligibilityCriteria.ageMin.timeUnit",
         "short": "Unit of time.",
         "definition": "Unit of time.",
         "min": 1,
@@ -2978,7 +2978,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.23.1.2"
           },
           {
@@ -2988,8 +2988,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.eligibilityCriteria.ageMax",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.eligibilityCriteria.ageMax",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.eligibilityCriteria.ageMax",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.eligibilityCriteria.ageMax",
         "short": "Eligibility criteria: Maximum age",
         "definition": "Group of items providing information about the maximum eligible age of study participants.",
         "min": 0,
@@ -3001,7 +3001,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.23.2"
           },
           {
@@ -3011,8 +3011,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.eligibilityCriteria.ageMax.number",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.eligibilityCriteria.ageMax.number",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.eligibilityCriteria.ageMax.number",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.eligibilityCriteria.ageMax.number",
         "short": "Maximum eligible age",
         "definition": "Numerical value of the maximum age of potential participants eligible to participate in the study.",
         "min": 1,
@@ -3024,7 +3024,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.23.2.1"
           },
           {
@@ -3034,8 +3034,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.eligibilityCriteria.ageMax.timeUnit",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.eligibilityCriteria.ageMax.timeUnit",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.eligibilityCriteria.ageMax.timeUnit",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.eligibilityCriteria.ageMax.timeUnit",
         "short": "Unit of time.",
         "definition": "Unit of time.",
         "min": 1,
@@ -3051,7 +3051,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.23.2.2"
           },
           {
@@ -3061,8 +3061,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.eligibilityCriteria.genders",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.eligibilityCriteria.genders",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.eligibilityCriteria.genders",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.eligibilityCriteria.genders",
         "short": "Eligible gender",
         "definition": "Gender of potential participants eligible to participate in the study.",
         "comment": "Short Input Help: Select all that apply.",
@@ -3075,7 +3075,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.23.3"
           },
           {
@@ -3085,8 +3085,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.eligibilityCriteria.inclusionCriteria",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.eligibilityCriteria.inclusionCriteria",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.eligibilityCriteria.inclusionCriteria",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.eligibilityCriteria.inclusionCriteria",
         "short": "Inclusion criteria",
         "definition": "Inclusion criteria for participation in the study.",
         "comment": "Short Input Help: If possible, use an enumerated or bulleted list for each criterion.",
@@ -3099,7 +3099,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.23.4"
           },
           {
@@ -3109,8 +3109,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.eligibilityCriteria.exclusionCriteria",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.eligibilityCriteria.exclusionCriteria",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.eligibilityCriteria.exclusionCriteria",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.eligibilityCriteria.exclusionCriteria",
         "short": "Exclusion criteria",
         "definition": "Exclusion criteria for participation in the study.",
         "comment": "Short Input Help: If possible, use an enumerated or bulleted list for each criterion.",
@@ -3123,7 +3123,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.23.5"
           },
           {
@@ -3133,8 +3133,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.population",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.population",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.population",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.population",
         "short": "Description of study population",
         "definition": "Additional descriptive information providing more details about study population.",
         "comment": "Short Input Help: Any information important for the given study population can be specified here.",
@@ -3147,7 +3147,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.24"
           },
           {
@@ -3157,8 +3157,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.targetSampleSize",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.targetSampleSize",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.targetSampleSize",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.targetSampleSize",
         "short": "Target sample size",
         "definition": "Intended number of observational units for the whole study (e.g. intended number of study participants at all study sites).",
         "comment": "Short Input Help: Enter '-1' if target sample size was not set or is unknown.",
@@ -3171,7 +3171,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.25"
           },
           {
@@ -3181,8 +3181,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.obtainedSampleSize",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.obtainedSampleSize",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.obtainedSampleSize",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.obtainedSampleSize",
         "short": "Obtained sample size",
         "definition": "Obtained number of observational units for the whole study (e.g. obtained number of study participants at all study sites). The value is only available after the end of recruitment.",
         "comment": "Short Input Help: Enter '-1' if obtained sample size was not set or is unknown.",
@@ -3195,7 +3195,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.26"
           },
           {
@@ -3205,8 +3205,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.ageMinExamined",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.ageMinExamined",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.ageMinExamined",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.ageMinExamined",
         "short": "Actual minimum age of participants",
         "definition": "Group of items providing information about the actual minimum age of study participants at the time of examination.",
         "min": 0,
@@ -3218,7 +3218,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.27"
           },
           {
@@ -3228,8 +3228,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.ageMinExamined.number",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.ageMinExamined.number",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.ageMinExamined.number",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.ageMinExamined.number",
         "short": "Actual minimum age of participants",
         "definition": "Numerical value of the minimum age of study participants at the time of examination.",
         "min": 1,
@@ -3241,7 +3241,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.27.1"
           },
           {
@@ -3251,8 +3251,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.ageMinExamined.timeUnit",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.ageMinExamined.timeUnit",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.ageMinExamined.timeUnit",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.ageMinExamined.timeUnit",
         "short": "Unit of time",
         "definition": "Unit of time",
         "min": 1,
@@ -3268,7 +3268,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.27.2"
           },
           {
@@ -3278,8 +3278,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.ageMaxExamined",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.ageMaxExamined",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.ageMaxExamined",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.ageMaxExamined",
         "short": "Actual maximum age of participants",
         "definition": "Group of items providing information about the actual maximum age of study participants at the time of examination.",
         "min": 0,
@@ -3291,7 +3291,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.28"
           },
           {
@@ -3301,8 +3301,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.ageMaxExamined.number",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.ageMaxExamined.number",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.ageMaxExamined.number",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.ageMaxExamined.number",
         "short": "Actual maximum age of participants",
         "definition": "Numerical value of the maximum age of study participants at the time of examination.",
         "min": 1,
@@ -3314,7 +3314,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.28.1"
           },
           {
@@ -3324,8 +3324,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.ageMaxExamined.timeUnit",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.ageMaxExamined.timeUnit",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.ageMaxExamined.timeUnit",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.ageMaxExamined.timeUnit",
         "short": "Unit of time",
         "definition": "Unit of time",
         "min": 1,
@@ -3341,7 +3341,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.28.2"
           },
           {
@@ -3351,8 +3351,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.hypothesis",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.hypothesis",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.hypothesis",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.hypothesis",
         "short": "Research questions and/or hypothesis underlying the study",
         "definition": "Statement of the research questions and/or hypotheses underlying the study.",
         "min": 0,
@@ -3364,7 +3364,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.29"
           },
           {
@@ -3374,8 +3374,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.armsGroups",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.armsGroups",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.armsGroups",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.armsGroups",
         "short": "Arms or groups/cohorts of the study",
         "definition": "Group of items providing information about arms or groups/cohorts of the study.",
         "min": 0,
@@ -3387,7 +3387,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.30"
           },
           {
@@ -3397,8 +3397,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.armsGroups.label",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.armsGroups.label",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.armsGroups.label",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.armsGroups.label",
         "short": "Name of the arm/group",
         "definition": "Short name used to identify the arm/group.",
         "comment": "Additional Information: For interventional studies: 'Arm' means a pre-specified group or subgroup of participant(s) in a clinical trial assigned to receive specific intervention(s) (or no intervention) according to a protocol. For non-interventional studies: 'Group' means a predefined group (cohort) of participants to be studied.",
@@ -3411,7 +3411,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.30.1"
           },
           {
@@ -3421,8 +3421,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.armsGroups.type",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.armsGroups.type",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.armsGroups.type",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.armsGroups.type",
         "short": "Role of the arm",
         "definition": "Role of the given arm in the study.",
         "comment": "Cardinality: 1..1, if Resource.studyDesign.primaryDesign =='Interventional'; otherwise 0..0 / Short Input Help: Select one value from the list.",
@@ -3439,7 +3439,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.30.2"
           },
           {
@@ -3449,8 +3449,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.armsGroups.description",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.armsGroups.description",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.armsGroups.description",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.armsGroups.description",
         "short": "Additional information about the arm/group",
         "definition": "Additional descriptive information about the given arm/group.",
         "comment": "Short Input Help: For interventional studies: If needed, additional descriptive information (including which interventions are administered in each arm) to differentiate each arm from other arms in the clinical trial. For non-interventional studies: Explanation of the nature of the study group (for example, those with a condition and those without a condition; those with an exposure and those without an exposure).",
@@ -3463,7 +3463,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.30.3"
           },
           {
@@ -3473,8 +3473,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.interventions",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.interventions",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.interventions",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.interventions",
         "short": "Interventions/exposures of the study",
         "definition": "Group of items providing information about study interventions or exposures.",
         "comment": "Additional Information: The items may be not applicable for non-interventional studies.",
@@ -3487,7 +3487,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.31"
           },
           {
@@ -3497,8 +3497,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.interventions.name",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.interventions.name",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.interventions.name",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.interventions.name",
         "short": "Name of the intervention/exposure",
         "definition": "A short descriptive name of the intervention/exposure.",
         "comment": "Additional Information: Please specify the intervention(s)/exposure associated with each arm/group.  / Short Input Help: If the same intervention/exposure is associated with more than one arm or group, provide the information once and use the field 'Name of the associated study arm/group' to associate it with more than one arm/group.",
@@ -3511,7 +3511,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.31.1"
           },
           {
@@ -3521,8 +3521,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.interventions.type",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.interventions.type",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.interventions.type",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.interventions.type",
         "short": "Type of the intervention/exposure",
         "definition": "General type of the given intervention/exposure.",
         "min": 0,
@@ -3534,7 +3534,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.31.2"
           },
           {
@@ -3544,8 +3544,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.interventions.description",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.interventions.description",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.interventions.description",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.interventions.description",
         "short": "Additional information about the intervention/exposure",
         "definition": "If needed, additional descriptive information about the given intervention/exposure.",
         "min": 0,
@@ -3557,7 +3557,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.31.3"
           },
           {
@@ -3567,8 +3567,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.interventions.armsGroupsLabel",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.interventions.armsGroupsLabel",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.interventions.armsGroupsLabel",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.interventions.armsGroupsLabel",
         "short": "Name of the arm/group associated with the given intervention",
         "definition": "Name of the study arm associated with the given intervention. ",
         "min": 0,
@@ -3580,7 +3580,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.31.4"
           },
           {
@@ -3590,8 +3590,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.studyOutcomes",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.studyOutcomes",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.studyOutcomes",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.studyOutcomes",
         "short": "Outcome measure(s)",
         "definition": "Group of items providing information about outcome measure(s).",
         "comment": "Short Input Help: The items are optional for non-interventional studies.",
@@ -3604,7 +3604,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.32"
           },
           {
@@ -3614,8 +3614,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.studyOutcomes.type",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.studyOutcomes.type",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.studyOutcomes.type",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.studyOutcomes.type",
         "short": "Type of the outcome measure",
         "definition": "Type of the outcome measure.",
         "comment": "Cardinality: 1..1, if (Resource.studyDesign.studyOutcomes.title != Null OR Resource.studyDesign.studyOutcomes.description != Null); otherwise 0..0/ Short Input Help: Primary or secondary outcome measure?",
@@ -3632,7 +3632,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.32.1"
           },
           {
@@ -3642,8 +3642,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.studyOutcomes.title",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.studyOutcomes.title",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.studyOutcomes.title",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.studyOutcomes.title",
         "short": "Name of the outcome measure",
         "definition": "Name of the outcome measure. For non-interventional studies, this can be the name of specific measurement(s) or observation(s) used to describe patterns of diseases or traits or associations with exposures, risk factors or treatment.",
         "comment": "Short Input Help: For non-interventional studies, this can be specific measurement(s) or observation(s) used to describe patterns of diseases or traits or associations with exposures, risk factors or treatment.",
@@ -3656,8 +3656,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.studyOutcomes.description",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.studyOutcomes.description",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.studyOutcomes.description",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.studyOutcomes.description",
         "short": "Description of the outcome measure",
         "definition": "Additional descriptive information about the given outcome",
         "min": 0,
@@ -3669,7 +3669,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.32.3"
           },
           {
@@ -3679,8 +3679,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.studyOutcomes.timeFrame",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.studyOutcomes.timeFrame",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.studyOutcomes.timeFrame",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.studyOutcomes.timeFrame",
         "short": "Time point(s) of assessment",
         "definition": "Description of the time point(s) at which the measurement for the outcome is assessed, e.g. the specific duration of time over which each participant is assessed.",
         "min": 0,
@@ -3692,7 +3692,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.32.4"
           },
           {
@@ -3702,8 +3702,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.comment",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.comment",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.comment",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.comment",
         "short": "Any additional information about the study",
         "definition": "Any additional information about specific aspects of the study that cannot be captured by other properties.",
         "comment": "Short Input Help: Any additional information about specific aspects of the study that cannot be captured by other properties.",
@@ -3716,7 +3716,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.33"
           },
           {
@@ -3726,8 +3726,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.assessments",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.assessments",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.assessments",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.assessments",
         "short": "Further assessments/measurements included in the study",
         "definition": "Assessments/measurements included in the study",
         "min": 0,
@@ -3743,7 +3743,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.34"
           },
           {
@@ -3753,8 +3753,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.dataSharingPlan",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.dataSharingPlan",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.dataSharingPlan",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.dataSharingPlan",
         "short": "Information about data sharing",
         "definition": "Group of items providing information about the data sharing strategy of the study.",
         "min": 1,
@@ -3766,7 +3766,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.35"
           },
           {
@@ -3776,8 +3776,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.dataSharingPlan.generally",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.dataSharingPlan.generally",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.dataSharingPlan.generally",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.dataSharingPlan.generally",
         "short": "Is it planned to share the data?",
         "definition": "Indication whether there is a plan to make data collected in the study available. In case of studies with patients or other individuals, this refers to individual participant data (IPD).",
         "comment": "Short Input Help: Select one value from the list.",
@@ -3794,7 +3794,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.35.1"
           },
           {
@@ -3804,8 +3804,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.dataSharingPlan.supportingInformation",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.dataSharingPlan.supportingInformation",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.dataSharingPlan.supportingInformation",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.dataSharingPlan.supportingInformation",
         "short": "Supporting documents available in addition to the data",
         "definition": "Supporting information/documents which will be made available in addition to the study data.",
         "comment": "Cardinality: 0..*, if Resource.studyDesign.dataSharingPlan.generally == 'Yes, there is a plan to make data available'; otherwise 0..0 / Short Input Help: Select all that apply.",
@@ -3822,7 +3822,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.35.2"
           },
           {
@@ -3832,8 +3832,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.dataSharingPlan.timeFrame",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.dataSharingPlan.timeFrame",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.dataSharingPlan.timeFrame",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.dataSharingPlan.timeFrame",
         "short": "When and for how long will the data be available?",
         "definition": "Indication when the data and, if applicable, supporting documents will become available and for how long.",
         "comment": "Cardinality: 0..1, if Resource.studyDesign.dataSharingPlan.generally == 'Yes, there is a plan to make data available'; otherwise 0..0",
@@ -3846,7 +3846,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.35.3"
           },
           {
@@ -3856,8 +3856,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.dataSharingPlan.accessCriteria",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.dataSharingPlan.accessCriteria",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.dataSharingPlan.accessCriteria",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.dataSharingPlan.accessCriteria",
         "short": "Criteria for the data access",
         "definition": "Indication by what access criteria data will be shared, including: a) with whom, b) for what types of analyses, and c) by what mechanism.",
         "comment": "Cardinality: 0..1, if Resource.studyDesign.dataSharingPlan.generally == 'Yes, there is a plan to make data available'; otherwise 0..0 / Short Input Help: E.g., with whom, for what types of analyses and by what mechanism the data will be shared.",
@@ -3870,7 +3870,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.35.4"
           },
           {
@@ -3880,8 +3880,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.dataSharingPlan.description",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.dataSharingPlan.description",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.dataSharingPlan.description",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.dataSharingPlan.description",
         "short": "Additional information about data sharing",
         "definition": "Additional descriptive information providing more details about the data sharing, e.g. indication what data in particular will be shared or why the data will not be shared or why it is not yet decided.",
         "comment": "Short Input Help: E.g., indication what data in particular will be shared or why the data will not be shared or why it is not yet decided",
@@ -3894,7 +3894,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.35.5"
           },
           {
@@ -3904,8 +3904,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.dataSharingPlan.datashield",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.dataSharingPlan.datashield",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.dataSharingPlan.datashield",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.dataSharingPlan.datashield",
         "short": "Is the DataSHIELD/Opal infrastructure available?",
         "definition": "Indication, whether the DataSHIELD/Opal infrastructure is available.",
         "min": 0,
@@ -3921,7 +3921,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.35.6"
           },
           {
@@ -3931,8 +3931,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.dataSharingPlan.url",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.dataSharingPlan.url",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.dataSharingPlan.url",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.dataSharingPlan.url",
         "short": "Web page with additional information about data sharing",
         "definition": "If existing, a link to the web page where additional information about data sharing can be found.",
         "min": 0,
@@ -3944,7 +3944,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.35.7"
           },
           {
@@ -3954,8 +3954,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.nonInterventional",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.nonInterventional",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.nonInterventional",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.nonInterventional",
         "short": "Information about specific aspects of non-interventional studies/substudies",
         "definition": "Group of items providing information about specific aspects of interventional studies or substudies.",
         "comment": "Cardinality: 0..1, if Resource.studyDesign.primaryDesign =='Non-interventional'; otherwise 0..0/ Additional Information: Group of items applicable only to non-interventional studies and substudies.",
@@ -3968,7 +3968,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.36"
           },
           {
@@ -3978,8 +3978,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.nonInterventional.timePerspectives",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.nonInterventional.timePerspectives",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.nonInterventional.timePerspectives",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.nonInterventional.timePerspectives",
         "short": "Temporal design of the study",
         "definition": "Temporal design of the study, i.e. the  relationship of observation period to time of participant enrollment.",
         "comment": "Short Input Help: Is it a retrospective, prospective or cross-sectional study?",
@@ -3996,7 +3996,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.36.1"
           },
           {
@@ -4006,8 +4006,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.nonInterventional.targetFollowUpDuration",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.nonInterventional.targetFollowUpDuration",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.nonInterventional.targetFollowUpDuration",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.nonInterventional.targetFollowUpDuration",
         "short": "Target follow-up duration",
         "definition": "If applicable, anticipated time period over which each participant is to be followed, provided in years.",
         "comment": "Short Input Help: The value must be provided in years.",
@@ -4020,7 +4020,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.36.2"
           },
           {
@@ -4030,8 +4030,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.nonInterventional.biospecimenRetention",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.nonInterventional.biospecimenRetention",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.nonInterventional.biospecimenRetention",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.nonInterventional.biospecimenRetention",
         "short": "Which biosamples are retained in a biorepository?",
         "definition": "Indication whether samples of biomaterial from study participants are retained in a biorepository.",
         "comment": "Short Input Help: Select all that apply.",
@@ -4048,7 +4048,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.36.3"
           },
           {
@@ -4058,8 +4058,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.nonInterventional.biospecimenDescription",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.nonInterventional.biospecimenDescription",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.nonInterventional.biospecimenDescription",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.nonInterventional.biospecimenDescription",
         "short": "Specific types of retained biosamples",
         "definition": "Additional information about biosamples to be retained, i.e. which specific types of biospecimens will be retained (e.g. blood, serum, urine, etc.).",
         "comment": "Cardinality: 0..1, if Resource.studyDesign.nonInterventional.biospecimenRetention != 'None retained'; otherwise 0..0 / Short Input Help: Which specific types of biosamples will be retained (e.g. blood, serum, urine, etc.)?",
@@ -4072,7 +4072,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.36.4"
           },
           {
@@ -4082,8 +4082,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.interventional",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.interventional",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.interventional",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.interventional",
         "short": "Information about specific aspects of interventional studies/substudies",
         "definition": "Group of items providing information about specific aspects of interventional studies or substudies.",
         "comment": "Cardinality: 0..1, if Resource.studyDesign.primaryDesign =='Interventional'; otherwise 0..0 / Short Input Help: Group of items applicable only to interventional studies and substudies.",
@@ -4096,7 +4096,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.37"
           },
           {
@@ -4106,8 +4106,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.interventional.phase",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.interventional.phase",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.interventional.phase",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.interventional.phase",
         "short": "Numerical phase of the study",
         "definition": "If applicable, numerical phase of the study.",
         "comment": "Short Input Help: Select one value from the list.",
@@ -4124,7 +4124,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.37.1"
           },
           {
@@ -4134,8 +4134,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.interventional.masking",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.interventional.masking",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.interventional.masking",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.interventional.masking",
         "short": "Information about masking of intervention(s) assignment",
         "definition": "Group of items providing information about the masking of intervention(s) assignment.",
         "min": 0,
@@ -4147,7 +4147,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.37.2"
           },
           {
@@ -4157,8 +4157,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.interventional.masking.general",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.interventional.masking.general",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.interventional.masking.general",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.interventional.masking.general",
         "short": "Is masking of intervention(s) assignment implemented?",
         "definition": "Indication, whether a masking (or blinding) of intervention(s) assignment is implemented (i.e., whether someone is prevented from having knowledge of the interventions assigned to individual participants).",
         "min": 0,
@@ -4174,12 +4174,12 @@
             "severity": "error",
             "human": "Cardinality: 0..*, if Resource.studyDesign.interventional.masking.general == true; otherwise 0..0",
             "expression": "Resource.studyDesign.interventional.masking.general = false implies  Resource.studyDesign.interventional.masking.roles.exists().not()",
-            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-general-v3.0"
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-general-v3"
           }
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.37.2.1"
           },
           {
@@ -4189,8 +4189,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.interventional.masking.roles",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.interventional.masking.roles",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.interventional.masking.roles",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.interventional.masking.roles",
         "short": "Who is masked?",
         "definition": "If masking is implemented, the party(ies) who are masked.",
         "comment": "Cardinality: 0..*, if Resource.studyDesign.interventional.masking.general == true; otherwise 0..0 / Short Input Help: Select all that apply.",
@@ -4207,7 +4207,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.37.2.2"
           },
           {
@@ -4217,8 +4217,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.interventional.masking.description",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.interventional.masking.description",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.interventional.masking.description",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.interventional.masking.description",
         "short": "Additional information about masking",
         "definition": "If needed, additional descriptive information about masking (e.g. information about other parties who may be masked).",
         "comment": "Cardinality: 0..1, if Resource.studyDesign.interventional.masking.general == true; otherwise 0..0 / Short Input Help: If needed, additional information about masking, e.g. other parties who may be masked.",
@@ -4231,7 +4231,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.37.2.3"
           },
           {
@@ -4241,8 +4241,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.interventional.allocation",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.interventional.allocation",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.interventional.allocation",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.interventional.allocation",
         "short": "Type of allocation of participants to an arm",
         "definition": "Type of allocation/assignment of individual study participants to an arm.",
         "comment": "Short Input Help: Select one value from the list.",
@@ -4259,7 +4259,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.37.3"
           },
           {
@@ -4269,8 +4269,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.interventional.offLabelUse",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.studyDesign.interventional.offLabelUse",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.interventional.offLabelUse",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.studyDesign.interventional.offLabelUse",
         "short": "Off-label use of a drug product",
         "definition": "Unapproved (off-label) use of a drug product. ",
         "comment": "Short Input Help: Select 'Yes' or 'No' only for drug studies and 'Not applicable' for all other studies.",
@@ -4287,7 +4287,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.17.37.4"
           },
           {
@@ -4297,8 +4297,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.provenance",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.provenance",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.provenance",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.provenance",
         "short": "Information about provenance aspects of the data entry",
         "definition": "Group of items providing information about provenance aspects of the data entry on the portal.",
         "min": 1,
@@ -4310,7 +4310,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.18"
           },
           {
@@ -4320,8 +4320,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.provenance.dataSource",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.provenance.dataSource",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.provenance.dataSource",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.provenance.dataSource",
         "short": "Source of information about the [RESOURCE]",
         "definition": "Source of information about the resource and the way it was uploaded/collected.",
         "min": 1,
@@ -4337,7 +4337,7 @@
         },
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.18.1"
           },
           {
@@ -4347,8 +4347,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.provenance.verificationDate",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.provenance.verificationDate",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.provenance.verificationDate",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.provenance.verificationDate",
         "short": "Verification date",
         "definition": "Date on which the responsible party last verified the information about the resource, even if no additional or updated information is being submitted.",
         "min": 0,
@@ -4360,7 +4360,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.18.2"
           },
           {
@@ -4370,8 +4370,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.provenance.verificationUser",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.provenance.verificationUser",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.provenance.verificationUser",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.provenance.verificationUser",
         "short": "User who last verified the [RESOURCE]",
         "definition": "User who last verified the information about the resource.",
         "min": 0,
@@ -4383,7 +4383,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.18.3"
           },
           {
@@ -4393,8 +4393,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.provenance.firstSubmittedDate",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.provenance.firstSubmittedDate",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.provenance.firstSubmittedDate",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.provenance.firstSubmittedDate",
         "short": "Date when the [RESOURCE] was first submitted for publication",
         "definition": "Date when the resource was first submitted for publication.",
         "min": 0,
@@ -4406,7 +4406,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.18.4"
           },
           {
@@ -4416,8 +4416,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.provenance.firstSubmittedUser",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.provenance.firstSubmittedUser",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.provenance.firstSubmittedUser",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.provenance.firstSubmittedUser",
         "short": "User who first submitted the [RESOURCE] for publication",
         "definition": "User who first submitted the [RESOURCE] for publication.",
         "min": 0,
@@ -4429,7 +4429,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.18.5"
           },
           {
@@ -4439,8 +4439,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.provenance.firstPostedDate",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.provenance.firstPostedDate",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.provenance.firstPostedDate",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.provenance.firstPostedDate",
         "short": "Date when the [RESOURCE] was first posted/published",
         "definition": "Date when the resource was first posted/published.",
         "min": 0,
@@ -4452,7 +4452,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.18.6"
           },
           {
@@ -4462,8 +4462,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.provenance.firstPostedUser",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.provenance.firstPostedUser",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.provenance.firstPostedUser",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.provenance.firstPostedUser",
         "short": "User who first posted/published the [RESOURCE]",
         "definition": "User who first posted/published the resource.",
         "min": 0,
@@ -4475,7 +4475,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.18.7"
           },
           {
@@ -4485,8 +4485,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.provenance.lastUpdateSubmittedDate",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.provenance.lastUpdateSubmittedDate",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.provenance.lastUpdateSubmittedDate",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.provenance.lastUpdateSubmittedDate",
         "short": "Date when the last update of the [RESOURCE] was submitted for publication",
         "definition": "Date when the last update of the resource was submitted for publication.",
         "min": 0,
@@ -4498,7 +4498,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.18.8"
           },
           {
@@ -4508,8 +4508,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.provenance.lastUpdateSubmittedUser",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.provenance.lastUpdateSubmittedUser",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.provenance.lastUpdateSubmittedUser",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.provenance.lastUpdateSubmittedUser",
         "short": "User who submitted the last update of the [RESOURCE]",
         "definition": "User who submitted the last update of the resource.",
         "min": 0,
@@ -4521,7 +4521,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.18.9"
           },
           {
@@ -4531,8 +4531,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.provenance.lastUpdatePostedDate",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.provenance.lastUpdatePostedDate",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.provenance.lastUpdatePostedDate",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.provenance.lastUpdatePostedDate",
         "short": "Date when the last update of the [RESOURCE] was posted/published",
         "definition": "Date when the last update of the resource was posted/published.",
         "min": 0,
@@ -4544,7 +4544,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.18.10"
           },
           {
@@ -4554,8 +4554,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.provenance.lastUpdatePostedUser",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.provenance.lastUpdatePostedUser",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.provenance.lastUpdatePostedUser",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.provenance.lastUpdatePostedUser",
         "short": "User who posted/published the last update",
         "definition": "User who posted/published the last update.",
         "min": 0,
@@ -4567,7 +4567,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.18.11"
           },
           {
@@ -4577,8 +4577,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-general-v3.0.Resource.provenance.resourceVersion",
-        "path": "nfdi4health-lm-metadataschema-general-v3.0.Resource.provenance.resourceVersion",
+        "id": "nfdi4health-lm-metadataschema-general-v3.Resource.provenance.resourceVersion",
+        "path": "nfdi4health-lm-metadataschema-general-v3.Resource.provenance.resourceVersion",
         "short": "Version number of the resource within the portal/system",
         "definition": "Version number of the resource within the portal/system.",
         "min": 0,
@@ -4590,7 +4590,7 @@
         ],
         "mapping": [
           {
-            "identity": "NFDI4Health-V3.0-Internal-Numbering",
+            "identity": "NFDI4Health-V3-Internal-Numbering",
             "map": "1.18.12"
           },
           {
