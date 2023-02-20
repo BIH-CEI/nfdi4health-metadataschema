@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "nfdi4health-lm-metadataschema-general-v3.0",
+  "id": "nfdi4health-lm-metadataschema-general-v3",
   "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-general-v3.0",
   "version": "1.0",
-  "name": "NFDI4Health_LM_Metadataschema_General_V3.0",
+  "name": "NFDI4Health_LM_Metadataschema_General_V3",
   "title": "NFDI4Health LM General Metadataschema V3.0",
   "status": "active",
   "publisher": "NFDI4Health",
