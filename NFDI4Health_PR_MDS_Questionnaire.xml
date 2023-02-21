@@ -298,7 +298,6 @@
       <path value="Questionnaire.extension" />
       <sliceName value="label" />
       <min value="0" />
-      <max value="*" />
       <type>
         <code value="Extension" />
         <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-label" />
@@ -416,7 +415,6 @@
       <path value="Questionnaire.title.extension" />
       <sliceName value="translation" />
       <min value="0" />
-      <max value="*" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/translation" />

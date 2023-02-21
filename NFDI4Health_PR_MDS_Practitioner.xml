@@ -36,6 +36,12 @@
       <definition value="Type of the identifier scheme." />
       <min value="1" />
       <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="IdentifierType" />
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+          <valueBoolean value="true" />
+        </extension>
         <strength value="required" />
         <description value="Value set defining codes to specify the identifier scheme of a personal identifier." />
         <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-role-name-identifier-scheme" />
@@ -89,22 +95,6 @@
       <mapping>
         <identity value="NFDI4Health" />
         <map value="1.11.3.2 Resource.roles.personal.givenName" />
-      </mapping>
-    </element>
-    <element id="Practitioner.name.prefix">
-      <path value="Practitioner.name.prefix" />
-      <short value="Title of the person" />
-      <definition value="Title of the person." />
-      <min value="1" />
-      <max value="1" />
-      <binding>
-        <strength value="required" />
-        <description value="Value set defining codes to specify personal titles." />
-        <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-role-name-personal-title-nci" />
-      </binding>
-      <mapping>
-        <identity value="NFDI4Health" />
-        <map value="1.11.3.4 Resource.roles.personal.title" />
       </mapping>
     </element>
   </differential>
