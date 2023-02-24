@@ -48,7 +48,7 @@
         "path": "nfdi4health-lm-metadataschema-ne-v3.DietAssessment",
         "short": "Diet assessment",
         "definition": "Group of items providing information on diet assessment.",
-        "comment": "Cardinality: 1..*, if Resource.nutritionalData == 'Yes'; otherwise 0.. 0 / Additional Information: Filtering condition to decide if all following questions will be asked.",
+        "comment": "Cardinality: 1..*, if Resource.nutritionalData == 'Yes'; otherwise 0.. 0 / Additional Information: Filtering condition to decide if all following questions will be asked. / Display information? (Data capturing): yes / Display information? (Data visualization): no / Source of the property and/or allowed values: NFDI4Health UC 5.1 requirements",
         "min": 1,
         "max": "*",
         "type": [
@@ -68,12 +68,12 @@
         "path": "nfdi4health-lm-metadataschema-ne-v3.DietAssessment.instrument",
         "short": "Dietary assessment instrument used",
         "definition": "Which dietary assessment instrument is used in the study/data collection event?",
-        "comment": "Short Input Help: Select one value from the list.",
+        "comment": "Short Input Help: Select one value from the list. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.1 requirements",
         "min": 1,
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "Coding"
           }
         ],
         "constraint": [
@@ -97,7 +97,7 @@
         "path": "nfdi4health-lm-metadataschema-ne-v3.DietAssessment.ffqItemsNumber",
         "short": "Number of items in FFQ",
         "definition": "How many items were inquired with the FFQ?",
-        "comment": "Cardinality: 1..1, if DietAssessment.instrument == 'Food frequency questionnaire'; otherwise 0.. 0",
+        "comment": "Cardinality: 1..1, if DietAssessment.instrument == 'Food frequency questionnaire'; otherwise 0.. 0 / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.1 requirements",
         "min": 1,
         "max": "1",
         "type": [
@@ -117,12 +117,12 @@
         "path": "nfdi4health-lm-metadataschema-ne-v3.DietAssessment.mode",
         "short": "Mode used to apply the dietary assessment instrument to study participants",
         "definition": "How was the dietary assessment instrument applied to the study participants?",
-        "comment": "Short Input Help: Select all that apply.",
+        "comment": "Short Input Help: Select all that apply. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.1 requirements",
         "min": 1,
         "max": "*",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "Coding"
           }
         ],
         "mapping": [
@@ -137,12 +137,12 @@
         "path": "nfdi4health-lm-metadataschema-ne-v3.DietAssessment.device",
         "short": "Device used to apply the dietary assessment instrument to study participants",
         "definition": "Which device was used to apply the dietary assessment instrument to the study participants?",
-        "comment": "Short Input Help: Select all that apply.",
+        "comment": "Short Input Help: Select all that apply. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.1 requirements",
         "min": 1,
         "max": "*",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "Coding"
           }
         ],
         "mapping": [
@@ -157,12 +157,12 @@
         "path": "nfdi4health-lm-metadataschema-ne-v3.DietAssessment.portionSizeEstimation",
         "short": "Portion size estimated by:",
         "definition": "How is the portion size inquired in the dietary assessment instrument?",
-        "comment": "Short Input Help: Select all that apply.",
+        "comment": "Short Input Help: Select all that apply. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.1 requirements",
         "min": 1,
         "max": "*",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "Coding"
           }
         ],
         "mapping": [
@@ -177,12 +177,12 @@
         "path": "nfdi4health-lm-metadataschema-ne-v3.DietAssessment.referencePeriodUnit",
         "short": "Reference period unit",
         "definition": "Which reference period is the dietary assessment instrument referring to, e.g. 24-h recall is referring to the previous day.",
-        "comment": "Short Input Help: Select all that apply.",
+        "comment": "Short Input Help: Select all that apply. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.1 requirements",
         "min": 1,
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "Coding"
           }
         ],
         "mapping": [
@@ -197,6 +197,7 @@
         "path": "nfdi4health-lm-metadataschema-ne-v3.DietAssessment.referencePeriodNumber",
         "short": "Numerical value of reference period units",
         "definition": "How many of the reference period units were assessed?",
+        "comment": "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.1 requirements",
         "min": 1,
         "max": "1",
         "type": [
@@ -216,6 +217,7 @@
         "path": "nfdi4health-lm-metadataschema-ne-v3.DietAssessment.repeat",
         "short": "Was this instrument applied repeatedly?",
         "definition": "Was the same instrument applied repeatedly?",
+        "comment": "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.1 requirements",
         "min": 1,
         "max": "1",
         "type": [
@@ -244,7 +246,7 @@
         "path": "nfdi4health-lm-metadataschema-ne-v3.DietAssessment.repeatFrequency",
         "short": "Frequency of applying the dietary assessment instrument",
         "definition": "How often was the dietary assessment instrument repeatedly applied?",
-        "comment": "Cardinality: 1..1, if DietAssessment.repeat == 'Yes'; otherwise 0.. 0",
+        "comment": "Cardinality: 1..1, if DietAssessment.repeat == 'Yes'; otherwise 0..0 / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.1 requirements",
         "min": 1,
         "max": "1",
         "type": [
@@ -264,6 +266,7 @@
         "path": "nfdi4health-lm-metadataschema-ne-v3.DietAssessment.validity",
         "short": "Was this instrument validated?",
         "definition": "Was the dietary assessment instrument validated?",
+        "comment": "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.1 requirements",
         "min": 1,
         "max": "1",
         "type": [
@@ -292,7 +295,7 @@
         "path": "nfdi4health-lm-metadataschema-ne-v3.DietAssessment.validityReference",
         "short": "Please provide a reference describing the validation.",
         "definition": "Reference describing the validation.",
-        "comment": "Cardinality: 1..1, if DietAssessment.validity == 'Yes'; otherwise 0.. 0",
+        "comment": "Cardinality: 1..1, if DietAssessment.validity == 'Yes'; otherwise 0..0 / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.1 requirements",
         "min": 1,
         "max": "1",
         "type": [
@@ -312,6 +315,7 @@
         "path": "nfdi4health-lm-metadataschema-ne-v3.DietAssessment.reliability",
         "short": "Instrument described according to reliablity?",
         "definition": "Was the dietary assessment instrument described according to its reliability?",
+        "comment": "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.1 requirements",
         "min": 1,
         "max": "1",
         "type": [
@@ -340,7 +344,7 @@
         "path": "nfdi4health-lm-metadataschema-ne-v3.DietAssessment.reliabilityReference",
         "short": "Please provide a reference describing the reliability measures.",
         "definition": "Reference describing the reliability measures.",
-        "comment": "Cardinality: 1..1, if DietAssessment.reliability == 'Yes'; otherwise 0.. 0",
+        "comment": "Cardinality: 1..1, if DietAssessment.reliability == 'Yes'; otherwise 0..0 / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.1 requirements",
         "min": 1,
         "max": "1",
         "type": [
@@ -360,6 +364,7 @@
         "path": "nfdi4health-lm-metadataschema-ne-v3.DietAssessment.dietarySupplements",
         "short": "Dietary supplements inquired?",
         "definition": "Does the dietary assessment instrument inquire information about dietary supplements?",
+        "comment": "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.1 requirements",
         "min": 1,
         "max": "1",
         "type": [
