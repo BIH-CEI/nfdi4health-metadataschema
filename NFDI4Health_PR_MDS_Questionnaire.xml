@@ -298,6 +298,7 @@
       <path value="Questionnaire.extension" />
       <sliceName value="label" />
       <min value="0" />
+      <max value="*" />
       <type>
         <code value="Extension" />
         <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-label" />
@@ -394,7 +395,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="0" />
+      <min value="1" />
     </element>
     <element id="Questionnaire.title.extension:translation">
       <path value="Questionnaire.title.extension" />
