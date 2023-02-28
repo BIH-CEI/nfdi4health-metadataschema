@@ -63,95 +63,6 @@
       </type>
       <isModifier value="false" />
     </element>
-    <element id="Questionnaire.extension:descriptions_non_english">
-      <path value="Questionnaire.extension" />
-      <sliceName value="descriptions_non_english" />
-      <min value="0" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-description-non-english" />
-      </type>
-      <isModifier value="false" />
-      <mapping>
-        <identity value="1.6" />
-        <map value="resource_descriptions_non_english" />
-      </mapping>
-    </element>
-    <element id="Questionnaire.extension:descriptions_non_english.extension">
-      <path value="Questionnaire.extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="2" />
-    </element>
-    <element id="Questionnaire.extension:descriptions_non_english.extension:text">
-      <path value="Questionnaire.extension.extension" />
-      <sliceName value="text" />
-      <min value="1" />
-      <mapping>
-        <identity value="1.6.1" />
-        <map value="text" />
-      </mapping>
-    </element>
-    <element id="Questionnaire.extension:descriptions_non_english.extension:language">
-      <path value="Questionnaire.extension.extension" />
-      <sliceName value="language" />
-      <min value="1" />
-      <mapping>
-        <identity value="1.6.2" />
-        <map value="language" />
-      </mapping>
-    </element>
-    <element id="Questionnaire.extension:descriptions_non_english.extension:language.value[x]">
-      <path value="Questionnaire.extension.extension.value[x]" />
-      <binding>
-        <strength value="required" />
-        <description value="Value set defining codes to specify a language other than English." />
-        <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-language-no-english-snomedct" />
-      </binding>
-    </element>
-    <element id="Questionnaire.extension:associatedParty">
-      <path value="Questionnaire.extension" />
-      <sliceName value="associatedParty" />
-      <min value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-associatedPartyQu" />
-      </type>
-      <isModifier value="false" />
-      <mapping>
-        <identity value="1.1" />
-        <map value="roles" />
-      </mapping>
-    </element>
-    <element id="Questionnaire.extension:associatedParty.extension">
-      <path value="Questionnaire.extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="Questionnaire.extension:associatedParty.extension:party">
-      <path value="Questionnaire.extension.extension" />
-      <sliceName value="party" />
-      <min value="0" />
-      <mapping>
-        <identity value="1.11.2" />
-        <map value="role_name_organisational_group" />
-      </mapping>
-      <mapping>
-        <identity value="1.11.3" />
-        <map value="role_name_personal" />
-      </mapping>
-    </element>
     <element id="Questionnaire.extension:label">
       <path value="Questionnaire.extension" />
       <sliceName value="label" />
@@ -218,6 +129,17 @@
       <type>
         <code value="Extension" />
         <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-keywords2" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="Questionnaire.extension:associatedParty">
+      <path value="Questionnaire.extension" />
+      <sliceName value="associatedParty" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-associatedPartyQu" />
       </type>
       <isModifier value="false" />
     </element>
@@ -379,6 +301,81 @@
         <language value="English" />
         <map value="resource_description_english" />
         <comment value="A short plain text summary describing the resource in English." />
+      </mapping>
+    </element>
+    <element id="Questionnaire.description.extension">
+      <path value="Questionnaire.description.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="Questionnaire.description.extension:translation">
+      <path value="Questionnaire.description.extension" />
+      <sliceName value="translation" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/translation" />
+      </type>
+      <isModifier value="false" />
+      <mapping>
+        <identity value="1.6" />
+        <map value="Resource.resource_descriptions_non_english" />
+      </mapping>
+    </element>
+    <element id="Questionnaire.description.extension:translation.extension">
+      <path value="Questionnaire.description.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="2" />
+    </element>
+    <element id="Questionnaire.description.extension:translation.extension:lang">
+      <path value="Questionnaire.description.extension.extension" />
+      <sliceName value="lang" />
+      <min value="1" />
+    </element>
+    <element id="Questionnaire.description.extension:translation.extension:lang.value[x]">
+      <path value="Questionnaire.description.extension.extension.value[x]" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
+          <valueCanonical value="http://hl7.org/fhir/ValueSet/all-languages" />
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="Language" />
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+          <valueBoolean value="true" />
+        </extension>
+        <strength value="required" />
+        <description value="Value set defining codes to specify a language other than English." />
+        <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-language-no-english-snomedct" />
+      </binding>
+      <mapping>
+        <identity value="1.6.2" />
+        <map value="resource_descriptions_non_english.language" />
+      </mapping>
+    </element>
+    <element id="Questionnaire.description.extension:translation.extension:content">
+      <path value="Questionnaire.description.extension.extension" />
+      <sliceName value="content" />
+      <min value="1" />
+    </element>
+    <element id="Questionnaire.description.extension:translation.extension:content.value[x]">
+      <path value="Questionnaire.description.extension.extension.value[x]" />
+      <mapping>
+        <identity value="1.6.1" />
+        <map value="resource_descriptions_non_english.text" />
       </mapping>
     </element>
     <element id="Questionnaire.copyright">
