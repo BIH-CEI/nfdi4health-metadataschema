@@ -57,6 +57,10 @@
       <type>
         <code value="string" />
       </type>
+      <mapping>
+        <identity value="1.7.1" />
+        <map value="resource_keywords.resource_keywords_label" />
+      </mapping>
     </element>
     <element id="Extension.extension:code">
       <path value="Extension.extension" />
@@ -75,6 +79,10 @@
       <type>
         <code value="uri" />
       </type>
+      <mapping>
+        <identity value="1.7.2" />
+        <map value="resource_keywords.resource_keywords_label_code" />
+      </mapping>
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />

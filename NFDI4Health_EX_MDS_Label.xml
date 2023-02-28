@@ -27,7 +27,7 @@
   </context>
   <context>
     <type value="element" />
-    <expression value="DocumentReference" />
+    <expression value="Document" />
   </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
@@ -181,18 +181,6 @@
     <element id="Extension.extension:language.url">
       <path value="Extension.extension.url" />
       <fixedUri value="language" />
-    </element>
-    <element id="Extension.extension:language.value[x]">
-      <path value="Extension.extension.value[x]" />
-      <min value="1" />
-      <type>
-        <code value="code" />
-      </type>
-      <binding>
-        <strength value="required" />
-        <description value="A human language." />
-        <valueSet value="http://hl7.org/fhir/ValueSet/languages" />
-      </binding>
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />

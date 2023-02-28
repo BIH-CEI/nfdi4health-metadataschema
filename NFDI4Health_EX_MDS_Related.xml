@@ -26,6 +26,13 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <mapping>
+        <identity value="1.13" />
+        <map value="Resource.ids" />
+      </mapping>
+    </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
       <slicing>
@@ -35,15 +42,19 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="3" />
+      <min value="2" />
     </element>
     <element id="Extension.extension:identifier">
       <path value="Extension.extension" />
       <sliceName value="identifier" />
       <short value="Identifier of the related resource" />
       <definition value="Identifier (ID) related to, or associated with, the resource being registered. These can be IDs of related publications, datasets, study documents, web pages, etc." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
+      <mapping>
+        <identity value="1.14" />
+        <map value="Resource.ids_nfdi4health" />
+      </mapping>
     </element>
     <element id="Extension.extension:identifier.url">
       <path value="Extension.extension.url" />
@@ -54,31 +65,39 @@
       <short value="Identifier of the related resource" />
       <definition value="Identifier (ID) related to, or associated with, the resource being registered. These can be IDs of related publications, datasets, study documents, web pages, etc." />
       <type>
-        <code value="string" />
+        <code value="Identifier" />
       </type>
       <mapping>
         <identity value="1.13.1" />
-        <map value="identifier" />
+        <map value="identifier.string" />
       </mapping>
     </element>
-    <element id="Extension.extension:type">
-      <path value="Extension.extension" />
-      <sliceName value="type" />
-      <short value="Type of the identifier" />
-      <definition value="Type of the identifier of the related resource." />
+    <element id="Extension.extension:identifier.value[x].system">
+      <path value="Extension.extension.value[x].system" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
       <min value="1" />
-      <max value="1" />
+      <mapping>
+        <identity value="1.13.1" />
+        <map value="ids.type" />
+      </mapping>
     </element>
-    <element id="Extension.extension:type.url">
-      <path value="Extension.extension.url" />
-      <fixedUri value="type" />
-    </element>
-    <element id="Extension.extension:type.value[x]">
-      <path value="Extension.extension.value[x]" />
+    <element id="Extension.extension:identifier.value[x].value">
+      <path value="Extension.extension.value[x].value" />
       <min value="1" />
-      <type>
-        <code value="CodeableConcept" />
-      </type>
+      <mapping>
+        <identity value="1.13.1" />
+        <map value="ids.identifier" />
+      </mapping>
+      <mapping>
+        <identity value="1.14.1" />
+        <map value="ids_nfdi4health.identifier" />
+      </mapping>
     </element>
     <element id="Extension.extension:date">
       <path value="Extension.extension" />
@@ -86,6 +105,7 @@
       <short value="Date of ID assignment" />
       <definition value="Date when the identifier of the related resource was assigned." />
       <min value="0" />
+      <max value="1" />
       <mapping>
         <identity value="1.13.3" />
         <map value="date" />
