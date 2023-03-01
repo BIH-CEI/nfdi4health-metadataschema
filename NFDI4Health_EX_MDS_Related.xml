@@ -42,7 +42,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="2" />
+      <min value="1" />
     </element>
     <element id="Extension.extension:identifier">
       <path value="Extension.extension" />
@@ -82,6 +82,11 @@
         <rules value="open" />
       </slicing>
       <min value="1" />
+      <binding>
+        <strength value="required" />
+        <description value="Value set defining codes to specify the ID Type of the related resource." />
+        <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-id-type-umls" />
+      </binding>
       <mapping>
         <identity value="1.13.1" />
         <map value="ids.type" />
