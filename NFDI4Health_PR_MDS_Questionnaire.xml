@@ -139,7 +139,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-associatedPartyQu" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-associated-party" />
       </type>
       <isModifier value="false" />
     </element>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="nfdi4health-ex-mds-provenance-data-source" />
+  <id value="nfdi4health-ex-mds-keywords2" />
   <url value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-keywords2" />
   <version value="0.9" />
-  <name value="NFDI4Health_EX_MDS_Keywords2" />
+  <name value="NFDI4Health_EX_MDS_Keywords2_URI" />
   <title value="NFDI4Health EX MDS Keyword2" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
