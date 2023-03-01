@@ -83,6 +83,27 @@
       </type>
       <isModifier value="false" />
     </element>
+    <element id="Questionnaire.extension:keywords">
+      <path value="Questionnaire.extension" />
+      <sliceName value="keywords" />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-keywords2" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="Questionnaire.extension:associatedParty">
+      <path value="Questionnaire.extension" />
+      <sliceName value="associatedParty" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-associated-party" />
+      </type>
+      <isModifier value="false" />
+    </element>
     <element id="Questionnaire.extension:related">
       <path value="Questionnaire.extension" />
       <sliceName value="related" />
@@ -94,7 +115,7 @@
       </type>
       <isModifier value="false" />
     </element>
-    <element id="Questionnaire.extension:related.extension">
+    <element id="Questionnaire.extension:myExtension.extension">
       <path value="Questionnaire.extension.extension" />
       <slicing>
         <discriminator>
@@ -103,7 +124,6 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="1" />
     </element>
     <element id="Questionnaire.extension:related.extension:identifier">
       <path value="Questionnaire.extension.extension" />
@@ -120,28 +140,6 @@
         <rules value="open" />
       </slicing>
       <min value="1" />
-    </element>
-    <element id="Questionnaire.extension:keywords">
-      <path value="Questionnaire.extension" />
-      <sliceName value="keywords" />
-      <min value="0" />
-      <max value="*" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-keywords2" />
-      </type>
-      <isModifier value="false" />
-    </element>
-    <element id="Questionnaire.extension:associatedParty">
-      <path value="Questionnaire.extension" />
-      <sliceName value="associatedParty" />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-associated-party" />
-      </type>
-      <isModifier value="false" />
     </element>
     <element id="Questionnaire.identifier">
       <path value="Questionnaire.identifier" />
