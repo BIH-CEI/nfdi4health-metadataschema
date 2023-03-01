@@ -9,3 +9,4 @@ Alias: $UseRights = https://www.hl7.org/fhir/R4/codesystem-spdx-license.html
 Alias: $Remaining = https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts
 Alias: $HL7V3ActRelationType = http://terminology.hl7.org/CodeSystem/v3-ActRelationshipType
 Alias: $StudyStatus = https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-mds-study-status
+Alias: $HL7TitleType = http://hl7.org/fhir/title-type
