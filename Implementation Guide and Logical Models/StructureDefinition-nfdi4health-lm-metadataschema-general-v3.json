@@ -3030,7 +3030,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-time-units-ucum"
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-time-units-ucum-umls"
         },
         "mapping": [
           {
@@ -3106,7 +3106,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-time-units-ucum"
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-time-units-ucum-umls"
         },
         "mapping": [
           {
@@ -3326,7 +3326,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-time-units-ucum"
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-time-units-ucum-umls"
         },
         "mapping": [
           {
@@ -3402,7 +3402,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-time-units-ucum"
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-time-units-ucum-umls"
         },
         "mapping": [
           {

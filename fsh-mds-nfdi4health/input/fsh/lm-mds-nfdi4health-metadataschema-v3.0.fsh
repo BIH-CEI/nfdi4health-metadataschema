@@ -307,14 +307,14 @@ Description: "NFDI4Health LogicalModel General Metadataschema"
 * Resource.studyDesign.eligibilityCriteria.ageMin.number 1..1 integer "Minimum eligible age" "Numerical value of the minimum age of potential participants eligible to participate in the study."
 * Resource.studyDesign.eligibilityCriteria.ageMin.number ^comment = "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2], DRKS [3]"
 * Resource.studyDesign.eligibilityCriteria.ageMin.timeUnit 1..1 Coding "Unit of time." "Unit of time."
-* Resource.studyDesign.eligibilityCriteria.ageMin.timeUnit from NFDI4Health_VS_MDS_Time_Units_UCUM (required)
+* Resource.studyDesign.eligibilityCriteria.ageMin.timeUnit from NFDI4Health_VS_MDS_Time_Units_UCUM_UMLS (required)
 * Resource.studyDesign.eligibilityCriteria.ageMin.timeUnit ^comment = "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2], DRKS [3]"
 * Resource.studyDesign.eligibilityCriteria.ageMax 0..1 BackboneElement "Eligibility criteria: Maximum age" "Group of items providing information about the maximum eligible age of study participants."
 * Resource.studyDesign.eligibilityCriteria.ageMax ^comment = "Display information? (Data capturing): no / Display information? (Data visualization): no / Source of the property and/or allowed values: NFDI4Health"
 * Resource.studyDesign.eligibilityCriteria.ageMax.number 1..1 integer "Maximum eligible age" "Numerical value of the maximum age of potential participants eligible to participate in the study."
 * Resource.studyDesign.eligibilityCriteria.ageMax.number ^comment = "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2], DRKS [3]"
 * Resource.studyDesign.eligibilityCriteria.ageMax.timeUnit 1..1 Coding "Unit of time." "Unit of time."
-* Resource.studyDesign.eligibilityCriteria.ageMax.timeUnit from NFDI4Health_VS_MDS_Time_Units_UCUM (required)
+* Resource.studyDesign.eligibilityCriteria.ageMax.timeUnit from NFDI4Health_VS_MDS_Time_Units_UCUM_UMLS (required)
 * Resource.studyDesign.eligibilityCriteria.ageMax.timeUnit ^comment = "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2], DRKS [3]"
 * Resource.studyDesign.eligibilityCriteria.genders 0..* Coding "Eligible gender" "Gender of potential participants eligible to participate in the study."
 * Resource.studyDesign.eligibilityCriteria.genders ^comment = "Short Input Help: Select all that apply. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health, CT.gov [2], DRKS [3]"
@@ -333,14 +333,14 @@ Description: "NFDI4Health LogicalModel General Metadataschema"
 * Resource.studyDesign.ageMinExamined.number 1..1 integer "Actual minimum age of participants" "Numerical value of the minimum age of study participants at the time of examination."
 * Resource.studyDesign.ageMinExamined.number ^comment = "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health"
 * Resource.studyDesign.ageMinExamined.timeUnit 1..1 Coding "Unit of time" "Unit of time"
-* Resource.studyDesign.ageMinExamined.timeUnit from NFDI4Health_VS_MDS_Time_Units_UCUM (required)
+* Resource.studyDesign.ageMinExamined.timeUnit from NFDI4Health_VS_MDS_Time_Units_UCUM_UMLS (required)
 * Resource.studyDesign.ageMinExamined.timeUnit ^comment = "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health"
 * Resource.studyDesign.ageMaxExamined 0..1 BackboneElement "Actual maximum age of participants" "Group of items providing information about the actual maximum age of study participants at the time of examination."
 * Resource.studyDesign.ageMaxExamined ^comment = "Display information? (Data capturing): no / Display information? (Data visualization): no / Source of the property and/or allowed values: NFDI4Health"
 * Resource.studyDesign.ageMaxExamined.number 1..1 integer "Actual maximum age of participants" "Numerical value of the maximum age of study participants at the time of examination."
 * Resource.studyDesign.ageMaxExamined.number ^comment = "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health"
 * Resource.studyDesign.ageMaxExamined.timeUnit 1..1 Coding "Unit of time" "Unit of time"
-* Resource.studyDesign.ageMaxExamined.timeUnit from NFDI4Health_VS_MDS_Time_Units_UCUM (required)
+* Resource.studyDesign.ageMaxExamined.timeUnit from NFDI4Health_VS_MDS_Time_Units_UCUM_UMLS (required)
 * Resource.studyDesign.ageMaxExamined.timeUnit ^comment = "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health"
 * Resource.studyDesign.hypothesis 0..1 string "Research questions and/or hypothesis underlying the study" "Statement of the research questions and/or hypotheses underlying the study."
 * Resource.studyDesign.hypothesis ^comment = "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health, ISRCTN [21]"
