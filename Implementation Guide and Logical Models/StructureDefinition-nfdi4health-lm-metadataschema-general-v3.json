@@ -3600,6 +3600,10 @@
             "code": "Coding"
           }
         ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-intervention-type-nci-umls"
+        },
         "mapping": [
           {
             "identity": "NFDI4Health-V3-Internal-Numbering",

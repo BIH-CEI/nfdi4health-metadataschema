@@ -19,27 +19,27 @@ Description: "Extension indicating whether samples of biomaterial from study par
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
 * extension contains
-    biospecimen-retention 0..* and
-    biospecimen-description 0..1 
+    retention 0..* and
+    description 0..1 
 
-* extension[biospecimen-retention] ^short = "Which biosamples are retained in a biorepository?"
-* extension[biospecimen-retention] ^definition = "Indication whether samples of biomaterial from study participants are retained in a biorepository."
-* extension[biospecimen-retention] ^comment = "Select all that apply."
-* extension[biospecimen-retention].value[x] 1..1
-* extension[biospecimen-retention].value[x] only Coding
-* extension[biospecimen-retention].value[x].code 1..1
-* extension[biospecimen-retention].value[x].system 1..1
-* extension[biospecimen-retention].value[x] from $nfdi4health-vs-mds-study-biospecimen-retention-umls (required)
-* extension[biospecimen-retention].value[x] ^binding.description = "Value set defining codes to specify which biosamples are retained in a biorepository."
-* extension[biospecimen-description] ^short = "Specific types of retained biosamples"
-* extension[biospecimen-description] ^definition = "Additional information about biosamples to be retained, i.e. which specific types of biospecimens will be retained (e.g. blood, serum, urine, etc.)."
-* extension[biospecimen-description] ^comment = "Which specific types of biosamples will be retained (e.g. blood, serum, urine, etc.)?"
-* extension[biospecimen-description].value[x] 1..1
-* extension[biospecimen-description].value[x] only string
+* extension[retention] ^short = "Which biosamples are retained in a biorepository?"
+* extension[retention] ^definition = "Indication whether samples of biomaterial from study participants are retained in a biorepository."
+* extension[retention] ^comment = "Select all that apply."
+* extension[retention].value[x] 1..1
+* extension[retention].value[x] only Coding
+* extension[retention].value[x].code 1..1
+* extension[retention].value[x].system 1..1
+* extension[retention].value[x] from $nfdi4health-vs-mds-study-biospecimen-retention-umls (required)
+* extension[retention].value[x] ^binding.description = "Value set defining codes to specify which biosamples are retained in a biorepository."
+* extension[description] ^short = "Specific types of retained biosamples"
+* extension[description] ^definition = "Additional information about biosamples to be retained, i.e. which specific types of biospecimens will be retained (e.g. blood, serum, urine, etc.)."
+* extension[description] ^comment = "Which specific types of biosamples will be retained (e.g. blood, serum, urine, etc.)?"
+* extension[description].value[x] 1..1
+* extension[description].value[x] only string
 
 Mapping: NFDI4Health-Study-Biospecimen-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Study_Biospecimen
-* extension[biospecimen-retention] -> "1.17.36.3 Resource.studyDesign.nonInterventional.biospecimenRetention"
-* extension[biospecimen-description] -> "1.17.36.4 Resource.studyDesign.nonInterventional.biospecimenDescription"
+* extension[retention] -> "1.17.36.3 Resource.studyDesign.nonInterventional.biospecimenRetention"
+* extension[description] -> "1.17.36.4 Resource.studyDesign.nonInterventional.biospecimenDescription"
