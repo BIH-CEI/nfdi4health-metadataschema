@@ -45,9 +45,9 @@
             <path value="Extension.extension"/>
             <min value="1"/>
         </element>
-        <element id="Extension.extension:overall-status">
+        <element id="Extension.extension:overallStatus">
             <path value="Extension.extension"/>
-            <sliceName value="overall-status"/>
+            <sliceName value="overallStatus"/>
             <short value="Overall study status"/>
             <definition value="Overall status of the study."/>
             <comment value="If at least one study site in a multicenter study has the status 'Ongoing', then the overall status for the study must be 'Ongoing'. | Select one value from the list."/>
@@ -58,15 +58,15 @@
                 <map value="1.17.7 Resource.studyDesign.status"/>
             </mapping>
         </element>
-        <element id="Extension.extension:overall-status.extension">
+        <element id="Extension.extension:overallStatus.extension">
             <path value="Extension.extension.extension"/>
             <max value="0"/>
         </element>
-        <element id="Extension.extension:overall-status.url">
+        <element id="Extension.extension:overallStatus.url">
             <path value="Extension.extension.url"/>
-            <fixedUri value="overall-status"/>
+            <fixedUri value="overallStatus"/>
         </element>
-        <element id="Extension.extension:overall-status.value[x]">
+        <element id="Extension.extension:overallStatus.value[x]">
             <path value="Extension.extension.value[x]"/>
             <min value="1"/>
             <type>
@@ -78,17 +78,17 @@
                 <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-overall-status-umls-local"/>
             </binding>
         </element>
-        <element id="Extension.extension:overall-status.value[x].system">
+        <element id="Extension.extension:overallStatus.value[x].system">
             <path value="Extension.extension.value[x].system"/>
             <min value="1"/>
         </element>
-        <element id="Extension.extension:overall-status.value[x].code">
+        <element id="Extension.extension:overallStatus.value[x].code">
             <path value="Extension.extension.value[x].code"/>
             <min value="1"/>
         </element>
-        <element id="Extension.extension:status-when-intervention">
+        <element id="Extension.extension:statusWhenIntervention">
             <path value="Extension.extension"/>
-            <sliceName value="status-when-intervention"/>
+            <sliceName value="statusWhenIntervention"/>
             <short value="Do participants receive an intervention?"/>
             <definition value="Specification whether study participants receive intervention or have completed it but are still being followed according to the primary objective of the study."/>
             <comment value="Select one value from the list."/>
@@ -99,15 +99,15 @@
                 <map value="1.17.8 Resource.studyDesign.statusWhenIntervention"/>
             </mapping>
         </element>
-        <element id="Extension.extension:status-when-intervention.extension">
+        <element id="Extension.extension:statusWhenIntervention.extension">
             <path value="Extension.extension.extension"/>
             <max value="0"/>
         </element>
-        <element id="Extension.extension:status-when-intervention.url">
+        <element id="Extension.extension:statusWhenIntervention.url">
             <path value="Extension.extension.url"/>
-            <fixedUri value="status-when-intervention"/>
+            <fixedUri value="statusWhenIntervention"/>
         </element>
-        <element id="Extension.extension:status-when-intervention.value[x]">
+        <element id="Extension.extension:statusWhenIntervention.value[x]">
             <path value="Extension.extension.value[x]"/>
             <min value="1"/>
             <type>
@@ -119,17 +119,17 @@
                 <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-status-when-intervention-local"/>
             </binding>
         </element>
-        <element id="Extension.extension:status-when-intervention.value[x].system">
+        <element id="Extension.extension:statusWhenIntervention.value[x].system">
             <path value="Extension.extension.value[x].system"/>
             <min value="1"/>
         </element>
-        <element id="Extension.extension:status-when-intervention.value[x].code">
+        <element id="Extension.extension:statusWhenIntervention.value[x].code">
             <path value="Extension.extension.value[x].code"/>
             <min value="1"/>
         </element>
-        <element id="Extension.extension:recruitment-status-register">
+        <element id="Extension.extension:recruitmentStatusRegister">
             <path value="Extension.extension"/>
-            <sliceName value="recruitment-status-register"/>
+            <sliceName value="recruitmentStatusRegister"/>
             <short value="Overall recruitment status of the study from the register of clinical trials"/>
             <definition value="Overall recruitment status of the study as indicated in the corresponding register of clinical trials."/>
             <comment value="The item applies only to studies automatically uploaded from the registers of clinical trials."/>
@@ -140,15 +140,15 @@
                 <map value="1.17.12 Resource.studyDesign.recruitmentStatusRegister"/>
             </mapping>
         </element>
-        <element id="Extension.extension:recruitment-status-register.extension">
+        <element id="Extension.extension:recruitmentStatusRegister.extension">
             <path value="Extension.extension.extension"/>
             <max value="0"/>
         </element>
-        <element id="Extension.extension:recruitment-status-register.url">
+        <element id="Extension.extension:recruitmentStatusRegister.url">
             <path value="Extension.extension.url"/>
-            <fixedUri value="recruitment-status-register"/>
+            <fixedUri value="recruitmentStatusRegister"/>
         </element>
-        <element id="Extension.extension:recruitment-status-register.value[x]">
+        <element id="Extension.extension:recruitmentStatusRegister.value[x]">
             <path value="Extension.extension.value[x]"/>
             <min value="1"/>
             <type>
@@ -160,17 +160,17 @@
                 <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-recruitment-status-register-umls-local"/>
             </binding>
         </element>
-        <element id="Extension.extension:recruitment-status-register.value[x].system">
+        <element id="Extension.extension:recruitmentStatusRegister.value[x].system">
             <path value="Extension.extension.value[x].system"/>
             <min value="1"/>
         </element>
-        <element id="Extension.extension:recruitment-status-register.value[x].code">
+        <element id="Extension.extension:recruitmentStatusRegister.value[x].code">
             <path value="Extension.extension.value[x].code"/>
             <min value="1"/>
         </element>
-        <element id="Extension.extension:status-enrolling-by-invitation">
+        <element id="Extension.extension:statusEnrollingByInvitation">
             <path value="Extension.extension"/>
-            <sliceName value="status-enrolling-by-invitation"/>
+            <sliceName value="statusEnrollingByInvitation"/>
             <short value="Are participants enrolled by invitation?"/>
             <definition value="Specification whether study participants have been selected from a predetermined population or enrolled by invitation."/>
             <min value="0"/>
@@ -180,15 +180,15 @@
                 <map value="1.17.11 Resource.studyDesign.statusEnrollingByInvitation"/>
             </mapping>
         </element>
-        <element id="Extension.extension:status-enrolling-by-invitation.extension">
+        <element id="Extension.extension:statusEnrollingByInvitation.extension">
             <path value="Extension.extension.extension"/>
             <max value="0"/>
         </element>
-        <element id="Extension.extension:status-enrolling-by-invitation.url">
+        <element id="Extension.extension:statusEnrollingByInvitation.url">
             <path value="Extension.extension.url"/>
-            <fixedUri value="status-enrolling-by-invitation"/>
+            <fixedUri value="statusEnrollingByInvitation"/>
         </element>
-        <element id="Extension.extension:status-enrolling-by-invitation.value[x]">
+        <element id="Extension.extension:statusEnrollingByInvitation.value[x]">
             <path value="Extension.extension.value[x]"/>
             <min value="1"/>
             <type>
@@ -200,11 +200,11 @@
                 <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-yes-no-not-applicable-snomedct"/>
             </binding>
         </element>
-        <element id="Extension.extension:status-enrolling-by-invitation.value[x].system">
+        <element id="Extension.extension:statusEnrollingByInvitation.value[x].system">
             <path value="Extension.extension.value[x].system"/>
             <min value="1"/>
         </element>
-        <element id="Extension.extension:status-enrolling-by-invitation.value[x].code">
+        <element id="Extension.extension:statusEnrollingByInvitation.value[x].code">
             <path value="Extension.extension.value[x].code"/>
             <min value="1"/>
         </element>

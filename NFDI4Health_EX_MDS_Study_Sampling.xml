@@ -49,9 +49,9 @@
             <path value="Extension.extension"/>
             <min value="1"/>
         </element>
-        <element id="Extension.extension:sampling-method">
+        <element id="Extension.extension:method">
             <path value="Extension.extension"/>
-            <sliceName value="sampling-method"/>
+            <sliceName value="method"/>
             <short value="Applied sampling method"/>
             <definition value="Type of the sampling method applied for the selection of study participants."/>
             <comment value="Select one value from the list."/>
@@ -62,15 +62,15 @@
                 <map value="1.17.20.1 Resource.studyDesign.sampling.method "/>
             </mapping>
         </element>
-        <element id="Extension.extension:sampling-method.extension">
+        <element id="Extension.extension:method.extension">
             <path value="Extension.extension.extension"/>
             <max value="0"/>
         </element>
-        <element id="Extension.extension:sampling-method.url">
+        <element id="Extension.extension:method.url">
             <path value="Extension.extension.url"/>
-            <fixedUri value="sampling-method"/>
+            <fixedUri value="method"/>
         </element>
-        <element id="Extension.extension:sampling-method.value[x]">
+        <element id="Extension.extension:method.value[x]">
             <path value="Extension.extension.value[x]"/>
             <min value="1"/>
             <type>
@@ -82,17 +82,17 @@
                 <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-sampling-method-nci-local"/>
             </binding>
         </element>
-        <element id="Extension.extension:sampling-method.value[x].system">
+        <element id="Extension.extension:method.value[x].system">
             <path value="Extension.extension.value[x].system"/>
             <min value="1"/>
         </element>
-        <element id="Extension.extension:sampling-method.value[x].code">
+        <element id="Extension.extension:method.value[x].code">
             <path value="Extension.extension.value[x].code"/>
             <min value="1"/>
         </element>
-        <element id="Extension.extension:sampling-method-probability">
+        <element id="Extension.extension:methodProbability">
             <path value="Extension.extension"/>
-            <sliceName value="sampling-method-probability"/>
+            <sliceName value="methodProbability"/>
             <short value="Specific type of probability sampling"/>
             <definition value="Specific type of the probability sampling method applied for the selection of study participants."/>
             <comment value="If known, select one value from the list."/>
@@ -103,15 +103,15 @@
                 <map value="1.17.20.2 Resource.studyDesign.sampling.probabilityMethod"/>
             </mapping>
         </element>
-        <element id="Extension.extension:sampling-method-probability.extension">
+        <element id="Extension.extension:methodProbability.extension">
             <path value="Extension.extension.extension"/>
             <max value="0"/>
         </element>
-        <element id="Extension.extension:sampling-method-probability.url">
+        <element id="Extension.extension:methodProbability.url">
             <path value="Extension.extension.url"/>
-            <fixedUri value="sampling-method-probability"/>
+            <fixedUri value="methodProbability"/>
         </element>
-        <element id="Extension.extension:sampling-method-probability.value[x]">
+        <element id="Extension.extension:methodProbability.value[x]">
             <path value="Extension.extension.value[x]"/>
             <min value="1"/>
             <type>
@@ -123,17 +123,17 @@
                 <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-sampling-prob-method-nci"/>
             </binding>
         </element>
-        <element id="Extension.extension:sampling-method-probability.value[x].system">
+        <element id="Extension.extension:methodProbability.value[x].system">
             <path value="Extension.extension.value[x].system"/>
             <min value="1"/>
         </element>
-        <element id="Extension.extension:sampling-method-probability.value[x].code">
+        <element id="Extension.extension:methodProbability.value[x].code">
             <path value="Extension.extension.value[x].code"/>
             <min value="1"/>
         </element>
-        <element id="Extension.extension:sampling-method-non-probability">
+        <element id="Extension.extension:methodNonProbability">
             <path value="Extension.extension"/>
-            <sliceName value="sampling-method-non-probability"/>
+            <sliceName value="methodNonProbability"/>
             <short value="Specific type of non-probability sampling"/>
             <definition value="Specific type of the probability sampling method applied for the selection of study participants."/>
             <comment value="If known, select one value from the list."/>
@@ -144,15 +144,15 @@
                 <map value="1.17.20.3 Resource.studyDesign.sampling.nonProbabilityMethod"/>
             </mapping>
         </element>
-        <element id="Extension.extension:sampling-method-non-probability.extension">
+        <element id="Extension.extension:methodNonProbability.extension">
             <path value="Extension.extension.extension"/>
             <max value="0"/>
         </element>
-        <element id="Extension.extension:sampling-method-non-probability.url">
+        <element id="Extension.extension:methodNonProbability.url">
             <path value="Extension.extension.url"/>
-            <fixedUri value="sampling-method-non-probability"/>
+            <fixedUri value="methodNonProbability"/>
         </element>
-        <element id="Extension.extension:sampling-method-non-probability.value[x]">
+        <element id="Extension.extension:methodNonProbability.value[x]">
             <path value="Extension.extension.value[x]"/>
             <min value="1"/>
             <type>
@@ -164,11 +164,11 @@
                 <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-sampling-method-non-prob-nci-local"/>
             </binding>
         </element>
-        <element id="Extension.extension:sampling-method-non-probability.value[x].system">
+        <element id="Extension.extension:methodNonProbability.value[x].system">
             <path value="Extension.extension.value[x].system"/>
             <min value="1"/>
         </element>
-        <element id="Extension.extension:sampling-method-non-probability.value[x].code">
+        <element id="Extension.extension:methodNonProbability.value[x].code">
             <path value="Extension.extension.value[x].code"/>
             <min value="1"/>
         </element>

@@ -40,9 +40,9 @@
             <definition value="Group of items indicating whether samples of biomaterial from study participants are retained in a biorepository, and providing additional information on these biosamples."/>
             <max value="1"/>
         </element>
-        <element id="Extension.extension:biospecimen-retention">
+        <element id="Extension.extension:retention">
             <path value="Extension.extension"/>
-            <sliceName value="biospecimen-retention"/>
+            <sliceName value="retention"/>
             <short value="Which biosamples are retained in a biorepository?"/>
             <definition value="Indication whether samples of biomaterial from study participants are retained in a biorepository."/>
             <comment value="Select all that apply."/>
@@ -53,15 +53,15 @@
                 <map value="1.17.36.3 Resource.studyDesign.nonInterventional.biospecimenRetention"/>
             </mapping>
         </element>
-        <element id="Extension.extension:biospecimen-retention.extension">
+        <element id="Extension.extension:retention.extension">
             <path value="Extension.extension.extension"/>
             <max value="0"/>
         </element>
-        <element id="Extension.extension:biospecimen-retention.url">
+        <element id="Extension.extension:retention.url">
             <path value="Extension.extension.url"/>
-            <fixedUri value="biospecimen-retention"/>
+            <fixedUri value="retention"/>
         </element>
-        <element id="Extension.extension:biospecimen-retention.value[x]">
+        <element id="Extension.extension:retention.value[x]">
             <path value="Extension.extension.value[x]"/>
             <min value="1"/>
             <type>
@@ -73,17 +73,17 @@
                 <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-biospecimen-retention-umls"/>
             </binding>
         </element>
-        <element id="Extension.extension:biospecimen-retention.value[x].system">
+        <element id="Extension.extension:retention.value[x].system">
             <path value="Extension.extension.value[x].system"/>
             <min value="1"/>
         </element>
-        <element id="Extension.extension:biospecimen-retention.value[x].code">
+        <element id="Extension.extension:retention.value[x].code">
             <path value="Extension.extension.value[x].code"/>
             <min value="1"/>
         </element>
-        <element id="Extension.extension:biospecimen-description">
+        <element id="Extension.extension:description">
             <path value="Extension.extension"/>
-            <sliceName value="biospecimen-description"/>
+            <sliceName value="description"/>
             <short value="Specific types of retained biosamples"/>
             <definition value="Additional information about biosamples to be retained, i.e. which specific types of biospecimens will be retained (e.g. blood, serum, urine, etc.)."/>
             <comment value="Which specific types of biosamples will be retained (e.g. blood, serum, urine, etc.)?"/>
@@ -94,15 +94,15 @@
                 <map value="1.17.36.4 Resource.studyDesign.nonInterventional.biospecimenDescription"/>
             </mapping>
         </element>
-        <element id="Extension.extension:biospecimen-description.extension">
+        <element id="Extension.extension:description.extension">
             <path value="Extension.extension.extension"/>
             <max value="0"/>
         </element>
-        <element id="Extension.extension:biospecimen-description.url">
+        <element id="Extension.extension:description.url">
             <path value="Extension.extension.url"/>
-            <fixedUri value="biospecimen-description"/>
+            <fixedUri value="description"/>
         </element>
-        <element id="Extension.extension:biospecimen-description.value[x]">
+        <element id="Extension.extension:description.value[x]">
             <path value="Extension.extension.value[x]"/>
             <min value="1"/>
             <type>

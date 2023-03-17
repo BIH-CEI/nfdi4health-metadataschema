@@ -44,9 +44,9 @@
                 <map value="1.17.21 Resource.studyDesign.dataSource"/>
             </mapping>
         </element>
-        <element id="Extension.extension:data-sources-general">
+        <element id="Extension.extension:general">
             <path value="Extension.extension"/>
-            <sliceName value="data-sources-general"/>
+            <sliceName value="general"/>
             <short value="Data sources for the study (e.g. biosamples, registries, questionnaires, etc.)"/>
             <definition value="Different types of data sources from which study data are generated or extracted."/>
             <comment value="Select all that apply."/>
@@ -57,15 +57,15 @@
                 <map value="1.17.21.1 Resource.studyDesign.dataSource.general"/>
             </mapping>
         </element>
-        <element id="Extension.extension:data-sources-general.extension">
+        <element id="Extension.extension:general.extension">
             <path value="Extension.extension.extension"/>
             <max value="0"/>
         </element>
-        <element id="Extension.extension:data-sources-general.url">
+        <element id="Extension.extension:general.url">
             <path value="Extension.extension.url"/>
-            <fixedUri value="data-sources-general"/>
+            <fixedUri value="general"/>
         </element>
-        <element id="Extension.extension:data-sources-general.value[x]">
+        <element id="Extension.extension:general.value[x]">
             <path value="Extension.extension.value[x]"/>
             <min value="1"/>
             <type>
@@ -77,17 +77,17 @@
                 <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sources-general-umls-local"/>
             </binding>
         </element>
-        <element id="Extension.extension:data-sources-general.value[x].system">
+        <element id="Extension.extension:general.value[x].system">
             <path value="Extension.extension.value[x].system"/>
             <min value="1"/>
         </element>
-        <element id="Extension.extension:data-sources-general.value[x].code">
+        <element id="Extension.extension:general.value[x].code">
             <path value="Extension.extension.value[x].code"/>
             <min value="1"/>
         </element>
-        <element id="Extension.extension:data-sources-biosamples">
+        <element id="Extension.extension:biosamples">
             <path value="Extension.extension"/>
-            <sliceName value="data-sources-biosamples"/>
+            <sliceName value="biosamples"/>
             <short value="Biosamples collected in the study"/>
             <definition value="Specification of biosamples collected in the study."/>
             <min value="0"/>
@@ -97,15 +97,15 @@
                 <map value="1.17.21.2 Resource.studyDesign.dataSource.biosamples"/>
             </mapping>
         </element>
-        <element id="Extension.extension:data-sources-biosamples.extension">
+        <element id="Extension.extension:biosamples.extension">
             <path value="Extension.extension.extension"/>
             <max value="0"/>
         </element>
-        <element id="Extension.extension:data-sources-biosamples.url">
+        <element id="Extension.extension:biosamples.url">
             <path value="Extension.extension.url"/>
-            <fixedUri value="data-sources-biosamples"/>
+            <fixedUri value="biosamples"/>
         </element>
-        <element id="Extension.extension:data-sources-biosamples.value[x]">
+        <element id="Extension.extension:biosamples.value[x]">
             <path value="Extension.extension.value[x]"/>
             <min value="1"/>
             <type>
@@ -117,17 +117,17 @@
                 <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-ds-biosamples-snomedct-nci-umls"/>
             </binding>
         </element>
-        <element id="Extension.extension:data-sources-biosamples.value[x].system">
+        <element id="Extension.extension:biosamples.value[x].system">
             <path value="Extension.extension.value[x].system"/>
             <min value="1"/>
         </element>
-        <element id="Extension.extension:data-sources-biosamples.value[x].code">
+        <element id="Extension.extension:biosamples.value[x].code">
             <path value="Extension.extension.value[x].code"/>
             <min value="1"/>
         </element>
-        <element id="Extension.extension:data-sources-imaging">
+        <element id="Extension.extension:imaging">
             <path value="Extension.extension"/>
-            <sliceName value="data-sources-imaging"/>
+            <sliceName value="imaging"/>
             <short value="Imaging data collected in the study"/>
             <definition value="Specification of imaging data collected in the study."/>
             <min value="0"/>
@@ -140,15 +140,15 @@
                 <map value="1.17.21.3 Resource.studyDesign.dataSource.imaging"/>
             </mapping>
         </element>
-        <element id="Extension.extension:data-sources-imaging.extension">
+        <element id="Extension.extension:imaging.extension">
             <path value="Extension.extension.extension"/>
             <max value="0"/>
         </element>
-        <element id="Extension.extension:data-sources-imaging.url">
+        <element id="Extension.extension:imaging.url">
             <path value="Extension.extension.url"/>
-            <fixedUri value="data-sources-imaging"/>
+            <fixedUri value="imaging"/>
         </element>
-        <element id="Extension.extension:data-sources-imaging.value[x]">
+        <element id="Extension.extension:imaging.value[x]">
             <path value="Extension.extension.value[x]"/>
             <min value="1"/>
             <type>
@@ -159,17 +159,17 @@
                 <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sources-imaging-nci"/>
             </binding>
         </element>
-        <element id="Extension.extension:data-sources-imaging.value[x].system">
+        <element id="Extension.extension:imaging.value[x].system">
             <path value="Extension.extension.value[x].system"/>
             <min value="1"/>
         </element>
-        <element id="Extension.extension:data-sources-imaging.value[x].code">
+        <element id="Extension.extension:imaging.value[x].code">
             <path value="Extension.extension.value[x].code"/>
             <min value="1"/>
         </element>
-        <element id="Extension.extension:data-sources-omics">
+        <element id="Extension.extension:omics">
             <path value="Extension.extension"/>
-            <sliceName value="data-sources-omics"/>
+            <sliceName value="omics"/>
             <short value="Omics technology used in the study"/>
             <definition value="Specification of omics technology applied in the study."/>
             <min value="0"/>
@@ -182,15 +182,15 @@
                 <map value="1.17.21.4 Resource.studyDesign.dataSource.omics"/>
             </mapping>
         </element>
-        <element id="Extension.extension:data-sources-omics.extension">
+        <element id="Extension.extension:omics.extension">
             <path value="Extension.extension.extension"/>
             <max value="0"/>
         </element>
-        <element id="Extension.extension:data-sources-omics.url">
+        <element id="Extension.extension:omics.url">
             <path value="Extension.extension.url"/>
-            <fixedUri value="data-sources-omics"/>
+            <fixedUri value="omics"/>
         </element>
-        <element id="Extension.extension:data-sources-omics.value[x]">
+        <element id="Extension.extension:omics.value[x]">
             <path value="Extension.extension.value[x]"/>
             <min value="1"/>
             <type>
@@ -201,17 +201,17 @@
                 <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sources-omics-nci-umls"/>
             </binding>
         </element>
-        <element id="Extension.extension:data-sources-omics.value[x].system">
+        <element id="Extension.extension:omics.value[x].system">
             <path value="Extension.extension.value[x].system"/>
             <min value="1"/>
         </element>
-        <element id="Extension.extension:data-sources-omics.value[x].code">
+        <element id="Extension.extension:omics.value[x].code">
             <path value="Extension.extension.value[x].code"/>
             <min value="1"/>
         </element>
-        <element id="Extension.extension:data-source-description">
+        <element id="Extension.extension:description">
             <path value="Extension.extension"/>
-            <sliceName value="data-source-description"/>
+            <sliceName value="description"/>
             <short value="Additional information about data sources"/>
             <definition value="If needed, additional descriptive information about study data sources, e.g. indication of the data source(s) not listed in the property 'Data sources for the study' or more detailed description of the selected data sources."/>
             <min value="0"/>
@@ -221,15 +221,15 @@
                 <map value="1.17.21.5 Resource.studyDesign.dataSource.description"/>
             </mapping>
         </element>
-        <element id="Extension.extension:data-source-description.extension">
+        <element id="Extension.extension:description.extension">
             <path value="Extension.extension.extension"/>
             <max value="0"/>
         </element>
-        <element id="Extension.extension:data-source-description.url">
+        <element id="Extension.extension:description.url">
             <path value="Extension.extension.url"/>
-            <fixedUri value="data-source-description"/>
+            <fixedUri value="description"/>
         </element>
-        <element id="Extension.extension:data-source-description.value[x]">
+        <element id="Extension.extension:description.value[x]">
             <path value="Extension.extension.value[x]"/>
             <type>
                 <code value="string"/>

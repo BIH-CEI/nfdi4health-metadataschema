@@ -40,9 +40,9 @@
             <definition value="Group of items providing information about the number of study centers."/>
             <max value="1"/>
         </element>
-        <element id="Extension.extension:centers">
+        <element id="Extension.extension:monoOrMulti">
             <path value="Extension.extension"/>
-            <sliceName value="centers"/>
+            <sliceName value="monoOrMulti"/>
             <short value="Is it a mono- or multicentric study?"/>
             <definition value="Specification whether a study is conducted at one study center or at more than one study center."/>
             <min value="0"/>
@@ -52,15 +52,15 @@
                 <map value="1.17.17 Resource.studyDesign.centers"/>
             </mapping>
         </element>
-        <element id="Extension.extension:centers.extension">
+        <element id="Extension.extension:monoOrMulti.extension">
             <path value="Extension.extension.extension"/>
             <max value="0"/>
         </element>
-        <element id="Extension.extension:centers.url">
+        <element id="Extension.extension:monoOrMulti.url">
             <path value="Extension.extension.url"/>
-            <fixedUri value="centers"/>
+            <fixedUri value="monoOrMulti"/>
         </element>
-        <element id="Extension.extension:centers.value[x]">
+        <element id="Extension.extension:monoOrMulti.value[x]">
             <path value="Extension.extension.value[x]"/>
             <min value="1"/>
             <type>
@@ -72,17 +72,17 @@
                 <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-centers-snomedct-local"/>
             </binding>
         </element>
-        <element id="Extension.extension:centers.value[x].system">
+        <element id="Extension.extension:monoOrMulti.value[x].system">
             <path value="Extension.extension.value[x].system"/>
             <min value="1"/>
         </element>
-        <element id="Extension.extension:centers.value[x].code">
+        <element id="Extension.extension:monoOrMulti.value[x].code">
             <path value="Extension.extension.value[x].code"/>
             <min value="1"/>
         </element>
-        <element id="Extension.extension:centers-number">
+        <element id="Extension.extension:number">
             <path value="Extension.extension"/>
-            <sliceName value="centers-number"/>
+            <sliceName value="number"/>
             <short value="Number of study centers"/>
             <definition value="Number of centers involved in the study."/>
             <min value="0"/>
@@ -92,15 +92,15 @@
                 <map value="1.17.18 Resource.studyDesign.centersNumber"/>
             </mapping>
         </element>
-        <element id="Extension.extension:centers-number.extension">
+        <element id="Extension.extension:number.extension">
             <path value="Extension.extension.extension"/>
             <max value="0"/>
         </element>
-        <element id="Extension.extension:centers-number.url">
+        <element id="Extension.extension:number.url">
             <path value="Extension.extension.url"/>
-            <fixedUri value="centers-number"/>
+            <fixedUri value="number"/>
         </element>
-        <element id="Extension.extension:centers-number.value[x]">
+        <element id="Extension.extension:number.value[x]">
             <path value="Extension.extension.value[x]"/>
             <min value="1"/>
             <type>
