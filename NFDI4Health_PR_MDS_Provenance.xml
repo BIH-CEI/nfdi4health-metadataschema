@@ -30,38 +30,16 @@
         <map value="1.18 Resource.provenance" />
       </mapping>
     </element>
-    <element id="Provenance.extension">
-      <path value="Provenance.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
+    <element id="Provenance.meta">
+      <path value="Provenance.meta" />
     </element>
-    <element id="Provenance.extension:data-source">
-      <path value="Provenance.extension" />
-      <sliceName value="data-source" />
-      <short value="Source of information about the [RESOURCE]" />
-      <definition value="Source of information about the resource and the way it was uploaded/collected." />
-      <min value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-provenance-data-source" />
-      </type>
-      <isModifier value="false" />
-    </element>
-    <element id="Provenance.extension:data-source.value[x].coding.code">
-      <path value="Provenance.extension.value[x].coding.code" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-provenance-data-source-local" />
-      </binding>
+    <element id="Provenance.meta.versionId">
+      <path value="Provenance.meta.versionId" />
+      <short value="Version number of the resource within the portal/system" />
+      <definition value="Version number of the resource within the portal/system" />
       <mapping>
         <identity value="NFDI4Health" />
-        <map value="1.18.1 Resource.provenance.dataSource" />
+        <map value="1.18.12 Resource.provenance.resourceVersion" />
       </mapping>
     </element>
     <element id="Provenance.target">
@@ -69,37 +47,59 @@
       <definition value="The Reference(s) that were generated or updated by the activity described in this resource. A provenance can point to more than one target if multiple resources were created/updated by the same activity." />
       <type>
         <code value="Reference" />
-        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
+        <targetProfile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study" />
       </type>
-    </element>
-    <element id="Provenance.target.identifier">
-      <path value="Provenance.target.identifier" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Provenance.target.relatedArtifact">
-      <path value="Provenance.target.relatedArtifact" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
     </element>
     <element id="Provenance.recorded">
       <path value="Provenance.recorded" />
-      <short value="When the activity was verified / posted / submitted / updated" />
+      <short value="Verfication date / Date when the [RESOURCE] was first submitted for publication / Date when the [RESOURCE] was first posted/published / Date when the last update of the [RESOURCE] was submitted for publication / Date when the last update of the [RESOURCE] was posted/published." />
+      <definition value="For verification date: Date on which the responsible party last verified the information about the resource, even if no additional or updated information is being submitted.&#xD;&#xA;&#xD;&#xA;For first submission date: Date when the resource was first submitted for publication.&#xD;&#xA;&#xD;&#xA;For first posted date: Date when the resource was first posted/published.&#xD;&#xA;&#xD;&#xA;For last update date: Date when the last update of the resource was submitted for publication.&#xD;&#xA;&#xD;&#xA;For last posted date: Date when the last update of the resource was posted/published.&#xD;&#xA;For" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.18.2 Resource.provenance.verificationDate" />
+      </mapping>
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.18.4 Resource.provenance.firstSubmittedDate" />
+      </mapping>
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.18.6 Resource.provenance.firstPostedDate" />
+      </mapping>
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.18.8 Resource.provenance.lastUpdateSubmittedDate" />
+      </mapping>
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.18.10 Resource.provenance.lastUpdatePostedDate" />
+      </mapping>
     </element>
     <element id="Provenance.agent">
       <path value="Provenance.agent" />
       <short value="User who submitted, published, updated or verified the resource." />
       <definition value="An actor taking a role in an activity for which it can be assigned some degree of responsibility for the activity taking place." />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.18.3 Resource.provenance.verificationUser" />
+      </mapping>
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.18.5 Resource.provenance.firstSubmittedUser" />
+      </mapping>
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.18.7 Resource.provenance.firstPostedUser" />
+      </mapping>
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.18.9 Resource.provenance.lastUpdateSubmittedUser" />
+      </mapping>
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.18.11 Resource.provenance.lastUpdatePostedUser" />
+      </mapping>
     </element>
     <element id="Provenance.agent.who.type">
       <path value="Provenance.agent.who.type" />
