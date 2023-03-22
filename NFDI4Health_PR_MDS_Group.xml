@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="nfdi4health-pr-mds-study" />
-  <url value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-group" />
+  <id value="nfdi4health-pr-mds-group-intended" />
+  <url value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-group-intended" />
   <version value="0.9" />
-  <name value="NFDI4Health_PR_MDS_Group" />
-  <title value="NFDI4Health PR MDS Group" />
+  <name value="NFDI4Health_PR_MDS_Group_Intended" />
+  <title value="NFDI4Health PR MDS Group Intended" />
   <status value="draft" />
   <publisher value="NFDI4Health" />
   <contact>
@@ -29,17 +29,18 @@
         <map value="1.17.23 Resource.studyDesign.eligibilityCriteria" />
       </mapping>
     </element>
+    <element id="Group.actual">
+      <path value="Group.actual" />
+      <fixedBoolean value="true" />
+    </element>
     <element id="Group.quantity">
       <path value="Group.quantity" />
-      <short value="Target or obtained sample size" />
-      <definition value="Intended or obtained number of observational units for the whole study (e.g. intended or obtained number of study participants at all study sites). The obtained number is only available after the end of recruitment." />
+      <short value="Target sample size" />
+      <definition value="Intended number of observational units for the whole study (e.g. intended number of study participants at all study sites)." />
+      <comment value="Short Input Help: Enter “-1” if target sample size was not set or is unknown." />
       <mapping>
         <identity value="NFDI4Health" />
         <map value="1.17.25 Resource.studyDesign.targetSampleSize" />
-      </mapping>
-      <mapping>
-        <identity value="NFDI4Health" />
-        <map value="1.17.26 Resource.studyDesign.obtainedSampleSize" />
       </mapping>
     </element>
     <element id="Group.characteristic">
@@ -47,10 +48,17 @@
       <slicing>
         <discriminator>
           <type value="value" />
-          <path value="code.coding" />
+          <path value="code" />
         </discriminator>
         <rules value="open" />
       </slicing>
+      <short value="Eligibility criteria for study participants" />
+      <definition value="Group of items providing information about eligibility criteria for study participants." />
+      <max value="1" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.17.23 Resource.studyDesign.eligibilityCriteria" />
+      </mapping>
     </element>
     <element id="Group.characteristic:eligibleMinimumAge">
       <path value="Group.characteristic" />
@@ -141,6 +149,10 @@
     <element id="Group.characteristic:eligibleMaximumAge.value[x].unit">
       <path value="Group.characteristic.value[x].unit" />
       <min value="1" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-time-units-ucum-umls" />
+      </binding>
       <mapping>
         <identity value="NFDI4Health" />
         <map value="1.17.23.2.2 Resource.studyDesign.eligibilityCriteria.ageMax.timeUnit" />
@@ -176,78 +188,6 @@
         <description value="The gender of a person used for administrative purposes." />
         <valueSet value="http://hl7.org/fhir/administrative-gender" />
       </binding>
-    </element>
-    <element id="Group.characteristic:examinedMinimumAge">
-      <path value="Group.characteristic" />
-      <sliceName value="examinedMinimumAge" />
-      <short value="Actual minimum age of participants" />
-      <definition value="Group of items providing information about the actual minimum age of study participants at the time of examination." />
-      <max value="1" />
-      <mapping>
-        <identity value="NFDI4Health" />
-        <map value="1.17.27 Resource.studyDesign.ageMinExamined" />
-      </mapping>
-    </element>
-    <element id="Group.characteristic:examinedMinimumAge.value[x]">
-      <path value="Group.characteristic.value[x]" />
-      <short value="Actual minimum age of participants" />
-      <definition value="Numerical value of the minimum age of study participants at the time of examination." />
-      <type>
-        <code value="Quantity" />
-      </type>
-    </element>
-    <element id="Group.characteristic:examinedMinimumAge.value[x].value">
-      <path value="Group.characteristic.value[x].value" />
-      <short value="Actual minimum age of participants" />
-      <definition value="Numerical value of the minimum age of study participants at the time of examination." />
-      <min value="1" />
-      <mapping>
-        <identity value="NFDI4Health" />
-        <map value="1.17.27.1 Resource.studyDesign.ageMinExamined.number" />
-      </mapping>
-    </element>
-    <element id="Group.characteristic:examinedMinimumAge.value[x].unit">
-      <path value="Group.characteristic.value[x].unit" />
-      <min value="1" />
-      <mapping>
-        <identity value="NFDI4Health" />
-        <map value="1.17.27.2 Resource.studyDesign.ageMinExamined.timeUnit" />
-      </mapping>
-    </element>
-    <element id="Group.characteristic:examinedMaximumAge">
-      <path value="Group.characteristic" />
-      <sliceName value="examinedMaximumAge" />
-      <short value="Actual maximum age of participants" />
-      <definition value="Group of items providing information about the actual maximum age of study participants at the time of examination." />
-      <max value="1" />
-      <mapping>
-        <identity value="NFDI4Health" />
-        <map value="1.17.28 Resource.studyDesign.ageMaxExamined" />
-      </mapping>
-    </element>
-    <element id="Group.characteristic:examinedMaximumAge.value[x]">
-      <path value="Group.characteristic.value[x]" />
-      <short value="Actual maximum age of participants" />
-      <definition value="Numerical value of the maximum age of study participants at the time of examination." />
-      <type>
-        <code value="Quantity" />
-      </type>
-    </element>
-    <element id="Group.characteristic:examinedMaximumAge.value[x].value">
-      <path value="Group.characteristic.value[x].value" />
-      <min value="1" />
-      <mapping>
-        <identity value="NFDI4Health" />
-        <map value="1.17.28.1 Resource.studyDesign.ageMaxExamined.number" />
-      </mapping>
-    </element>
-    <element id="Group.characteristic:examinedMaximumAge.value[x].unit">
-      <path value="Group.characteristic.value[x].unit" />
-      <min value="1" />
-      <mapping>
-        <identity value="NFDI4Health" />
-        <map value="1.17.28.2 Resource.studyDesign.ageMaxExamined.timeUnit" />
-      </mapping>
     </element>
   </differential>
 </StructureDefinition>

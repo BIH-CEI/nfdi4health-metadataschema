@@ -1,0 +1,36 @@
+ValueSet: NFDI4Health_VS_MDS_Study_Groups_Of_Diseases_Generally_ICD10_UMLS
+Id: nfdi4health-vs-mds-study-groups-of-diseases-generally-icd10-umls
+Title: "NFDI4Health VS MDS Study Groups Of Diseases Generally [ICD 10, UMLS]"
+Description: "Value set defining codes to specify groups of diseases or conditions on which the data were collected in the study."
+* ^url = "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-groups-of-diseases-generally-icd10-umls"
+* ^status = #draft
+* ^version = "0.9"
+* ^experimental = true
+* ^publisher = "NFDI4Health"
+* ^contact.telecom.system = #url
+* ^contact.telecom.value = "https://www.nfdi4health.de" 
+
+* $ICD10#I "Certain infectious and parasitic diseases (A00-B99)"
+* $ICD10#II "Neoplasms (C00-D48)"
+* $ICD10#III "Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism (D50-D89)"
+* $ICD10#IV "Endocrine, nutritional and metabolic diseases (E00-E90)"
+* $ICD10#V "Mental and behavioural disorders (F00-F99)"
+* $ICD10#VI "Diseases of the nervous system (G00-G99)"
+* $ICD10#VII "Diseases of the eye and adnexa (H00-H59)"
+* $ICD10#VIII "Diseases of the ear and mastoid process (H60-H95)"
+* $ICD10#IX "Diseases of the circulatory system (I00-I99)"
+* $ICD10#X "Diseases of the respiratory system (J00-J99)"
+* $ICD10#XI "Diseases of the digestive system (K00-K93)"
+* $ICD10#XII "Diseases of the skin and subcutaneous tissue (L00-L99)"
+* $ICD10#XIII "Diseases of the musculoskeletal system and connective tissue (M00-M99)"
+* $ICD10#XIV "Diseases of the genitourinary system (N00-N99)"
+* $ICD10#XV "Pregnancy, childbirth and the puerperium (O00-O99)"
+* $ICD10#XVI "Certain conditions originating in the perinatal period (P00-P96)"
+* $ICD10#XVII "Congenital malformations, deformations and chromosomal abnormalities (Q00-Q99)"
+* $ICD10#XVIII "Symptoms, signs and abnormal clinical and laboratory findings, not elsewhere classified (R00-R99)"
+* $ICD10#XIX "Injury, poisoning and certain other consequences of external causes (S00-T98)"
+* $ICD10#XX "External causes of morbidity and mortality (V01-Y98)"
+* $ICD10#XXI "Factors influencing health status and contact with health services (Z00-Z99)"
+* $UMLS#C0205394 "Other (Qualitative Concept)"
+* $UMLS#C1272460 "Not Applicable (Qualitative Concept)"
+* $UMLS#C0439673 "Unknown (Qualitative Concept)"
