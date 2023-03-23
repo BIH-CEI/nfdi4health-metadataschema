@@ -25,7 +25,7 @@
         "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
         "concept": [
           {
-            "code": "002",
+            "code": "084",
             "display": "Monocentric"
           }
         ]

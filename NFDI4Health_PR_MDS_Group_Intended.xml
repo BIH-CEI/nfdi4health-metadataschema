@@ -56,6 +56,17 @@
         <map value="1.17.27 Resource.studyDesign.ageMinExamined" />
       </mapping>
     </element>
+    <element id="Group.characteristic:examinedMinimumAge.code">
+      <path value="Group.characteristic.code" />
+      <fixedCodeableConcept>
+        <coding>
+          <system value="https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts" />
+          <version value="0.9" />
+          <code value="001" />
+          <display value="Minimum age of examined subjects" />
+        </coding>
+      </fixedCodeableConcept>
+    </element>
     <element id="Group.characteristic:examinedMinimumAge.value[x]">
       <path value="Group.characteristic.value[x]" />
       <short value="Actual minimum age of participants" />
@@ -72,14 +83,6 @@
       <mapping>
         <identity value="NFDI4Health" />
         <map value="1.17.27.1 Resource.studyDesign.ageMinExamined.number" />
-      </mapping>
-    </element>
-    <element id="Group.characteristic:examinedMinimumAge.value[x].unit">
-      <path value="Group.characteristic.value[x].unit" />
-      <short value="Unit of time" />
-      <mapping>
-        <identity value="NFDI4Health" />
-        <map value="1.17.27.2 Resource.studyDesign.ageMinExamined.timeUnit" />
       </mapping>
     </element>
     <element id="Group.characteristic:examinedMinimumAge.value[x].code">
@@ -105,6 +108,17 @@
         <map value="1.17.28 Resource.studyDesign.ageMaxExamined" />
       </mapping>
     </element>
+    <element id="Group.characteristic:examinedMaximumAge.code">
+      <path value="Group.characteristic.code" />
+      <fixedCodeableConcept>
+        <coding>
+          <system value="https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts" />
+          <version value="0.9" />
+          <code value="002" />
+          <display value="Maximum age of examined subjects" />
+        </coding>
+      </fixedCodeableConcept>
+    </element>
     <element id="Group.characteristic:examinedMaximumAge.value[x]">
       <path value="Group.characteristic.value[x]" />
       <type>
@@ -121,8 +135,8 @@
         <map value="1.17.28.1 Resource.studyDesign.ageMaxExamined.number" />
       </mapping>
     </element>
-    <element id="Group.characteristic:examinedMaximumAge.value[x].unit">
-      <path value="Group.characteristic.value[x].unit" />
+    <element id="Group.characteristic:examinedMaximumAge.value[x].code">
+      <path value="Group.characteristic.value[x].code" />
       <short value="Unit of time" />
       <min value="1" />
       <binding>

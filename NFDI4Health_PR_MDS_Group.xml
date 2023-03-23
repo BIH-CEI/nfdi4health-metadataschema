@@ -97,8 +97,9 @@
         <map value="1.17.23.1.1 Resource.studyDesign.eligibilityCriteria.ageMin.number" />
       </mapping>
     </element>
-    <element id="Group.characteristic:eligibleMinimumAge.value[x].unit">
-      <path value="Group.characteristic.value[x].unit" />
+    <element id="Group.characteristic:eligibleMinimumAge.value[x].code">
+      <path value="Group.characteristic.value[x].code" />
+      <short value="Unit of time" />
       <min value="1" />
       <binding>
         <strength value="required" />
@@ -146,8 +147,9 @@
         <map value="1.17.23.2.1 Resource.studyDesign.eligibilityCriteria.ageMax.number" />
       </mapping>
     </element>
-    <element id="Group.characteristic:eligibleMaximumAge.value[x].unit">
-      <path value="Group.characteristic.value[x].unit" />
+    <element id="Group.characteristic:eligibleMaximumAge.value[x].code">
+      <path value="Group.characteristic.value[x].code" />
+      <short value="Unit of time" />
       <min value="1" />
       <binding>
         <strength value="required" />
