@@ -138,11 +138,11 @@
       </slicing>
       <mapping>
         <identity value="NFDI4Health" />
-        <map value="1.1 Resource.resource_identifier" />
+        <map value="1.1 Resource.identifier" />
       </mapping>
       <mapping>
         <identity value="NFDI4Health" />
-        <map value="1.12 Resource.ids_alternative" />
+        <map value="1.12 Resource.idsAlternative" />
       </mapping>
     </element>
     <element id="ResearchStudy.identifier:NFDI4Health">
@@ -166,10 +166,6 @@
       <path value="ResearchStudy.identifier.system" />
       <min value="1" />
       <fixedUri value="https://www.nfdi4health.de/" />
-      <mapping>
-        <identity value="NFDI4Health" />
-        <map value="1.1 Resource.resource_identifer" />
-      </mapping>
     </element>
     <element id="ResearchStudy.identifier:NFDI4Health.value">
       <path value="ResearchStudy.identifier.value" />
@@ -181,7 +177,7 @@
       <definition value="Group of items providing information about identifiers (IDs) assigned to the given resource by another registering systems, e.g. a register of clinical trials or a data repository." />
       <mapping>
         <identity value="NFDI4Health" />
-        <map value="1.12 Resource.ids_alternative" />
+        <map value="1.12 Resource.idsAlternative" />
       </mapping>
     </element>
     <element id="ResearchStudy.identifier:DRKS.system">
@@ -191,7 +187,7 @@
       <fixedUri value="https://www.drks.de" />
       <mapping>
         <identity value="NFDI4Health" />
-        <map value="1.12.1 Resource.ids_alternative.type" />
+        <map value="1.12.1 Resource.idsAlternative.scheme" />
         <comment value="Type = DRKS" />
       </mapping>
     </element>
@@ -201,12 +197,16 @@
       <min value="1" />
       <mapping>
         <identity value="NFDI4Health" />
-        <map value="1.12.2 Resource.ids_alternative.identifier" />
+        <map value="1.12.2 Resource.idsAlternative.identifier" />
       </mapping>
     </element>
     <element id="ResearchStudy.identifier:NCT">
       <path value="ResearchStudy.identifier" />
       <sliceName value="NCT" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.12 Resource.idsAlternative" />
+      </mapping>
     </element>
     <element id="ResearchStudy.identifier:NCT.system">
       <path value="ResearchStudy.identifier.system" />
@@ -215,7 +215,7 @@
       <fixedUri value="https://www.clinicaltrials.gov/" />
       <mapping>
         <identity value="NFDI4Health" />
-        <map value="1.12.1 Resource.ids_alternative.type" />
+        <map value="1.12.1 Resource.idsAlternative.scheme" />
         <comment value="Type = NCT" />
       </mapping>
     </element>
@@ -231,6 +231,10 @@
     <element id="ResearchStudy.identifier:ISRCTN">
       <path value="ResearchStudy.identifier" />
       <sliceName value="ISRCTN" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.12 Resource.idsAlternative" />
+      </mapping>
     </element>
     <element id="ResearchStudy.identifier:ISRCTN.system">
       <path value="ResearchStudy.identifier.system" />
@@ -239,7 +243,7 @@
       <fixedUri value="https://www.isrctn.com/" />
       <mapping>
         <identity value="NFDI4Health" />
-        <map value="1.12.1 Resource.ids_alternative.type" />
+        <map value="1.12.1 Resource.idsAlternative.scheme" />
         <comment value="Type = ISRCTN" />
       </mapping>
     </element>
@@ -249,12 +253,16 @@
       <min value="1" />
       <mapping>
         <identity value="NFDI4Health" />
-        <map value="1.12.2 Resource.ids_alternative.identifier" />
+        <map value="1.12.2 Resource.idsAlternative.identifier" />
       </mapping>
     </element>
     <element id="ResearchStudy.identifier:EudraCT">
       <path value="ResearchStudy.identifier" />
       <sliceName value="EudraCT" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.12 Resource.idsAlternative" />
+      </mapping>
     </element>
     <element id="ResearchStudy.identifier:EudraCT.system">
       <path value="ResearchStudy.identifier.system" />
@@ -263,7 +271,7 @@
       <fixedUri value="https://eudract.ema.europa.eu/results-web/index.xhtml" />
       <mapping>
         <identity value="NFDI4Health" />
-        <map value="1.12.1 Resource.ids_alternative.type" />
+        <map value="1.12.1 Resource.idsAlternative.scheme" />
         <comment value="Type = EudraCT" />
       </mapping>
     </element>
@@ -278,6 +286,10 @@
     <element id="ResearchStudy.identifier:EUDAMED">
       <path value="ResearchStudy.identifier" />
       <sliceName value="EUDAMED" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.12 Resource.idsAlternative" />
+      </mapping>
     </element>
     <element id="ResearchStudy.identifier:EUDAMED.system">
       <path value="ResearchStudy.identifier.system" />
@@ -286,7 +298,7 @@
       <fixedUri value="https://ec.europa.eu/tools/eudamed/#/screen/home" />
       <mapping>
         <identity value="NFDI4Health" />
-        <map value="1.12.1 Resource.ids_alternative.type" />
+        <map value="1.12.1 Resource.idsAlternative.scheme" />
         <comment value="Type = EUDAMED" />
       </mapping>
     </element>
@@ -302,6 +314,10 @@
     <element id="ResearchStudy.identifier:UTN">
       <path value="ResearchStudy.identifier" />
       <sliceName value="UTN" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.12 Resource.idsAlternative" />
+      </mapping>
     </element>
     <element id="ResearchStudy.identifier:UTN.system">
       <path value="ResearchStudy.identifier.system" />
@@ -310,7 +326,7 @@
       <fixedUri value="http://www.who.int/ictrp/unam-" />
       <mapping>
         <identity value="NFDI4Health" />
-        <map value="1.12.1 Resource.ids_alternative.type" />
+        <map value="1.12.1 Resource.idsAlternative.scheme" />
         <comment value="Type = UTN" />
       </mapping>
     </element>
@@ -325,6 +341,10 @@
     <element id="ResearchStudy.identifier:KonsortSWD">
       <path value="ResearchStudy.identifier" />
       <sliceName value="KonsortSWD" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.12 Resource.idsAlternative" />
+      </mapping>
     </element>
     <element id="ResearchStudy.identifier:KonsortSWD.system">
       <path value="ResearchStudy.identifier.system" />
@@ -349,6 +369,10 @@
     <element id="ResearchStudy.identifier:MDMPortal">
       <path value="ResearchStudy.identifier" />
       <sliceName value="MDMPortal" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.12 Resource.idsAlternative" />
+      </mapping>
     </element>
     <element id="ResearchStudy.identifier:MDMPortal.system">
       <path value="ResearchStudy.identifier.system" />
@@ -357,7 +381,7 @@
       <fixedUri value="https://www.mdm-portal.de/" />
       <mapping>
         <identity value="NFDI4Health" />
-        <map value="1.12.1 Resource.ids_alternative.type" />
+        <map value="1.12.1 Resource.idsAlternative.scheme" />
         <comment value="Type = MDM Portal" />
       </mapping>
     </element>
@@ -373,6 +397,20 @@
     <element id="ResearchStudy.identifier:Other">
       <path value="ResearchStudy.identifier" />
       <sliceName value="Other" />
+      <short value="Identifier" />
+      <definition value="Identifier (ID) assigned to the given resource by another registering system, e.g. by a register of clinical trials or a data repository." />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.12 Resource.idsAlternative" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.identifier:Other.type">
+      <path value="ResearchStudy.identifier.type" />
+      <min value="1" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.12.1 Resource.idsAlternative.scheme" />
+      </mapping>
     </element>
     <element id="ResearchStudy.identifier:Other.system">
       <path value="ResearchStudy.identifier.system" />
@@ -387,9 +425,17 @@
       <path value="ResearchStudy.identifier.value" />
       <definition value="Identifier (ID) assigned to the given resource by another registering system, e.g. by a register of clinical trials or a data repository." />
       <min value="1" />
+      <example>
+        <label value="DRKS Identifier" />
+        <valueString value="DRKS00021273" />
+      </example>
+      <example>
+        <label value="NCT Identifier" />
+        <valueString value="NCT04327505" />
+      </example>
       <mapping>
         <identity value="NFDI4Health" />
-        <map value="1.12.2 Resource.ids_alternative.identifier" />
+        <map value="1.12.2 Resource.idsAlternative.identifier" />
       </mapping>
     </element>
     <element id="ResearchStudy.title">
