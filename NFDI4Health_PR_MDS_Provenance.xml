@@ -96,6 +96,11 @@
     <element id="Provenance.target">
       <path value="Provenance.target" />
       <definition value="The Reference(s) that were generated or updated by the activity described in this resource. A provenance can point to more than one target if multiple resources were created/updated by the same activity." />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
+        <targetProfile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study" />
+      </type>
     </element>
     <element id="Provenance.recorded">
       <path value="Provenance.recorded" />
@@ -122,6 +127,26 @@
         <map value="1.18.10 Resource.provenance.lastUpdatePostedDate" />
       </mapping>
     </element>
+    <element id="Provenance.activity">
+      <path value="Provenance.activity" />
+      <min value="1" />
+    </element>
+    <element id="Provenance.activity.coding">
+      <path value="Provenance.activity.coding" />
+      <binding>
+        <strength value="required" />
+        <description value="Value set defining codes for activity types." />
+        <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-provenance-activitiy-hl7-local" />
+      </binding>
+    </element>
+    <element id="Provenance.activity.coding.system">
+      <path value="Provenance.activity.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Provenance.activity.coding.code">
+      <path value="Provenance.activity.coding.code" />
+      <min value="1" />
+    </element>
     <element id="Provenance.agent">
       <path value="Provenance.agent" />
       <short value="User who submitted, published, updated or verified the resource." />
@@ -147,9 +172,15 @@
         <map value="1.18.11 Resource.provenance.lastUpdatePostedUser" />
       </mapping>
     </element>
-    <element id="Provenance.agent.who.type">
-      <path value="Provenance.agent.who.type" />
-      <min value="1" />
+    <element id="Provenance.agent.who">
+      <path value="Provenance.agent.who" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner" />
+        <targetProfile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner-role" />
+        <targetProfile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization" />
+        <targetProfile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-device" />
+      </type>
     </element>
   </differential>
 </StructureDefinition>

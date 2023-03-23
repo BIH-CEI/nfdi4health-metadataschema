@@ -53,7 +53,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="1" />
+      <min value="2" />
     </element>
     <element id="Extension.extension:party">
       <path value="Extension.extension" />
@@ -61,7 +61,6 @@
       <short value="Individual or organisation associated with the [RESOURCE]" />
       <definition value="Individual or organisation associated with the [RESOURCE] (use practitionerRole to specify their organisation)." />
       <min value="1" />
-      <max value="1" />
     </element>
     <element id="Extension.extension:party.url">
       <path value="Extension.extension.url" />
@@ -80,11 +79,15 @@
     <element id="Extension.extension:role-personal">
       <path value="Extension.extension" />
       <sliceName value="role-personal" />
-      <short value="Role type" />
-      <definition value="Type of the role a person fulllfils, e.g. a principal investigator of a study or an author of a document?" />
-      <comment value="Select one value from the list." />
+      <short value="Type of the role" />
+      <definition value="Type of the role a person fulllfils. For example, this can be a principal investigator of a study or an author of a document." />
+      <comment value="Short input help: Which role does the person fulllfil? Select one value from the list." />
       <min value="0" />
       <max value="1" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.11.3.1 Resource.roles.personal.type" />
+      </mapping>
     </element>
     <element id="Extension.extension:role-personal.url">
       <path value="Extension.extension.url" />
@@ -97,31 +100,34 @@
       <comment value="Select one value from the list." />
       <min value="1" />
       <type>
-        <code value="CodeableConcept" />
+        <code value="Coding" />
       </type>
       <binding>
         <strength value="required" />
         <description value="Value set defining codes for personal roles." />
         <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-personal-roles-nci-umls-local" />
       </binding>
-      <mapping>
-        <identity value="NFDI4Health" />
-        <map value="1.11.3.1 Resource.roles.personal.type" />
-      </mapping>
     </element>
-    <element id="Extension.extension:role-personal.value[x].coding">
-      <path value="Extension.extension.value[x].coding" />
+    <element id="Extension.extension:role-personal.value[x].system">
+      <path value="Extension.extension.value[x].system" />
       <min value="1" />
-      <max value="1" />
+    </element>
+    <element id="Extension.extension:role-personal.value[x].code">
+      <path value="Extension.extension.value[x].code" />
+      <min value="1" />
     </element>
     <element id="Extension.extension:role-organisational">
       <path value="Extension.extension" />
       <sliceName value="role-organisational" />
       <short value="Type of the role" />
       <definition value="Type of the role an organisation, institution or group fulllfils. For example, this can be a sponsor of the study or a group of authors of the document." />
-      <comment value="Which role does the organisation/institution/group/etc. fulllfil? Select one value from the list." />
+      <comment value="Short input help: Which role does the organisation/institution/group/etc. fulllfil? Select one value from the list." />
       <min value="0" />
       <max value="1" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.11.2.1 Resource.roles.organisational.type" />
+      </mapping>
     </element>
     <element id="Extension.extension:role-organisational.url">
       <path value="Extension.extension.url" />
@@ -134,29 +140,33 @@
       <comment value="Which role does the organisation/institution/group/etc. fulllfil? Select one value from the list." />
       <min value="1" />
       <type>
-        <code value="CodeableConcept" />
+        <code value="Coding" />
       </type>
       <binding>
         <strength value="required" />
         <description value="Value set defining codes for organisational roles." />
         <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-organisational-roles-nci-local" />
       </binding>
-      <mapping>
-        <identity value="NFDI4Health" />
-        <map value="1.11.2.1 Resource.roles.organisational" />
-      </mapping>
     </element>
-    <element id="Extension.extension:role-organisational.value[x].coding">
-      <path value="Extension.extension.value[x].coding" />
+    <element id="Extension.extension:role-organisational.value[x].system">
+      <path value="Extension.extension.value[x].system" />
       <min value="1" />
-      <max value="1" />
+    </element>
+    <element id="Extension.extension:role-organisational.value[x].code">
+      <path value="Extension.extension.value[x].code" />
+      <min value="1" />
     </element>
     <element id="Extension.extension:name-type">
       <path value="Extension.extension" />
       <sliceName value="name-type" />
       <short value="Type of the name" />
       <definition value="Personal or organisational/group type of the name." />
-      <min value="0" />
+      <min value="1" />
+      <max value="1" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.11.1 Resource.roles.nameType" />
+      </mapping>
     </element>
     <element id="Extension.extension:name-type.url">
       <path value="Extension.extension.url" />
@@ -168,17 +178,13 @@
       <definition value="Personal or organisational/group type of the name." />
       <min value="1" />
       <type>
-        <code value="code" />
+        <code value="Coding" />
       </type>
       <binding>
         <strength value="required" />
         <description value="Value set defining codes to specify role types." />
         <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-role-name-type-umls" />
       </binding>
-      <mapping>
-        <identity value="NFDI4Health" />
-        <map value="1.11.1 Resource.roles.nameType" />
-      </mapping>
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />

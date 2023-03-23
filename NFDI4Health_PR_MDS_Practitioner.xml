@@ -21,6 +21,16 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
   <derivation value="constraint" />
   <differential>
+    <element id="Practitioner">
+      <path value="Practitioner" />
+      <short value="Details about the person" />
+      <definition value="Group of items providing information about person(s) contributing to the resource." />
+      <comment value="Additional information: Group of items applicable to personal names." />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.11.3 Resource.roles.personal" />
+      </mapping>
+    </element>
     <element id="Practitioner.identifier">
       <path value="Practitioner.identifier" />
       <short value="Digital identifier(s) of the person" />
@@ -35,13 +45,13 @@
       <short value="Which type of identifer is reported?" />
       <definition value="Type of the identifier scheme." />
       <min value="1" />
+      <example>
+        <label value="Example of identifier scheme" />
+        <valueCodeableConcept>
+          <text value="ORCID" />
+        </valueCodeableConcept>
+      </example>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="IdentifierType" />
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true" />
-        </extension>
         <strength value="required" />
         <description value="Value set defining codes to specify the identifier scheme of a personal identifier." />
         <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-role-name-identifier-scheme" />
@@ -65,7 +75,12 @@
       <path value="Practitioner.identifier.value" />
       <short value="Identifier" />
       <definition value="Digital identifier of the person according to a definite scheme." />
+      <comment value="Short input help: Preferably, provide an ORCID (https://orcid.org/)." />
       <min value="1" />
+      <example>
+        <label value="Example of ORCID" />
+        <valueString value="0000-0003-1379-7023" />
+      </example>
       <mapping>
         <identity value="1.11.3.5" />
         <map value="identifier" />
@@ -95,6 +110,22 @@
       <mapping>
         <identity value="NFDI4Health" />
         <map value="1.11.3.2 Resource.roles.personal.givenName" />
+      </mapping>
+    </element>
+    <element id="Practitioner.name.prefix">
+      <path value="Practitioner.name.prefix" />
+      <short value="Title of the person" />
+      <definition value="Title of the person." />
+      <min value="1" />
+      <max value="1" />
+      <binding>
+        <strength value="required" />
+        <description value="Value set defining codes to specify personal titles." />
+        <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-role-name-personal-title-nci" />
+      </binding>
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.11.3.4 Resource.roles.personal.title" />
       </mapping>
     </element>
   </differential>
