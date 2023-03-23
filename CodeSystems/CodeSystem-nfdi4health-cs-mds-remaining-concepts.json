@@ -11,13 +11,13 @@
   "concept": [
     {
       "code": "001",
-      "display": "weeks of gestation",
-      "definition": "Time unit concept to capture the number of week(s) of gestation."
+      "display": "Minimum age of examined subjects",
+      "definition": "The actual minimum age of the subjects examined in a clinical trial."
     },
     {
       "code": "002",
-      "display": "Monocentric",
-      "definition": "Having / In one center"
+      "display": "Maximum age of examined subjects",
+      "definition": "The actual maximum age of the subjects examined in a clinical trial."
     },
     {
       "code": "003",
@@ -351,6 +351,27 @@
     {
       "code": "083",
       "display": "ISNI"
+    },
+    {
+      "code": "084",
+      "display": "Monocentric",
+      "definition": "Having / In one center"
+    },
+    {
+      "code": "085",
+      "display": "First submitted"
+    },
+    {
+      "code": "086",
+      "display": "First posted"
+    },
+    {
+      "code": "087",
+      "display": "Last update submitted"
+    },
+    {
+      "code": "088",
+      "display": "Last update posted"
     }
   ],
   "experimental": true,
@@ -365,5 +386,5 @@
       ]
     }
   ],
-  "count": 83
+  "count": 88
 }
