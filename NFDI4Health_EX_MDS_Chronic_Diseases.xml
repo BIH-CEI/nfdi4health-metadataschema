@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="nfdi4health-ex-mds-language" />
-  <url value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language" />
+  <id value="nfdi4health-ex-mds-chronic-diseases" />
+  <url value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-chronic-diseases" />
   <version value="0.9" />
-  <name value="NFDI4Health_EX_MDS_Language" />
-  <title value="NFDI4Health EX MDS Language" />
+  <name value="NFDI4Health_EX_MDS_Chronic_Diseases" />
+  <title value="NFDI4Health EX MDS Chronic Diseases" />
   <status value="draft" />
   <publisher value="NFDI4Health" />
   <contact>
@@ -13,21 +13,13 @@
       <value value="https://www.nfdi4health.de" />
     </telecom>
   </contact>
-  <description value="Language of an element." />
+  <description value="Extension asking if information about chronic diseases was collected" />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
   <context>
     <type value="element" />
-    <expression value="Extension" />
-  </context>
-  <context>
-    <type value="element" />
-    <expression value="string" />
-  </context>
-  <context>
-    <type value="element" />
-    <expression value="markdown" />
+    <expression value="ResearchStudy" />
   </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
@@ -35,24 +27,23 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="Language of an element." />
-      <definition value="Language of an element." />
+      <min value="1" />
+      <max value="1" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.16 Resource.chronicDiseases" />
+      </mapping>
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language" />
+      <fixedUri value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-chronic-diseases" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
       <min value="1" />
       <type>
-        <code value="code" />
+        <code value="boolean" />
       </type>
-      <binding>
-        <strength value="required" />
-        <description value="A human language." />
-        <valueSet value="http://hl7.org/fhir/ValueSet/languages" />
-      </binding>
     </element>
   </differential>
 </StructureDefinition>

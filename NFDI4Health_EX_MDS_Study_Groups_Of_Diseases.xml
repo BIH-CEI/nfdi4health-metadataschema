@@ -19,7 +19,7 @@
   <abstract value="false" />
   <context>
     <type value="element" />
-    <expression value="ResearchStudy.condition" />
+    <expression value="ResearchStudy" />
   </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
@@ -88,6 +88,7 @@
     </element>
     <element id="Extension.extension:conditions.value[x]">
       <path value="Extension.extension.value[x]" />
+      <min value="1" />
       <type>
         <code value="string" />
       </type>

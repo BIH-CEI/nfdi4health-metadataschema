@@ -32,6 +32,10 @@
       <path value="Extension" />
       <short value="Execution language of a resource" />
       <definition value="Extension capturing the language(s) in which a study/substudy is conducted, or a language in which a study document is composed." />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.8 Resource.languages" />
+      </mapping>
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />

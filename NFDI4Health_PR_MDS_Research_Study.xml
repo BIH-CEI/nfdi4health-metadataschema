@@ -21,6 +21,10 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ResearchStudy" />
   <derivation value="constraint" />
   <differential>
+    <element id="ResearchStudy.language">
+      <path value="ResearchStudy.language" />
+      <min value="1" />
+    </element>
     <element id="ResearchStudy.extension">
       <path value="ResearchStudy.extension" />
       <slicing>
@@ -30,45 +34,18 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="1" />
+      <min value="5" />
     </element>
-    <element id="ResearchStudy.extension:execution-language">
+    <element id="ResearchStudy.extension:executionLanguage">
       <path value="ResearchStudy.extension" />
-      <sliceName value="execution-language" />
+      <sliceName value="executionLanguage" />
       <short value="Execution language(s) of the [RESOURCE]" />
       <definition value="Language(s) in which a study/substudy is conducted, or a language in which a study document is composed." />
-      <comment value="Select all that apply." />
+      <comment value="Short input help: Select all that apply." />
       <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-execution-language" />
-      </type>
-      <isModifier value="false" />
-    </element>
-    <element id="ResearchStudy.extension:execution-language.value[x]">
-      <path value="ResearchStudy.extension.value[x]" />
-      <mapping>
-        <identity value="NFDI4Health" />
-        <map value="1.8 Resource.languages" />
-      </mapping>
-    </element>
-    <element id="ResearchStudy.extension:mortality-data">
-      <path value="ResearchStudy.extension" />
-      <sliceName value="mortality-data" />
-      <min value="0" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-mortality-data" />
-      </type>
-      <isModifier value="false" />
-    </element>
-    <element id="ResearchStudy.extension:roles">
-      <path value="ResearchStudy.extension" />
-      <sliceName value="roles" />
-      <min value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-associated-party" />
       </type>
       <isModifier value="false" />
     </element>
@@ -81,17 +58,19 @@
         <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-label" />
       </type>
       <isModifier value="false" />
-      <mapping>
-        <identity value="NFDI4Health" />
-        <map value="1.3 Resource.titles" />
-        <comment value="For additional title(s)/name(s)" />
-      </mapping>
-      <mapping>
-        <identity value="NFDI4Health" />
-        <map value="1.4 Resource.acronyms" />
-      </mapping>
     </element>
-    <element id="ResearchStudy.extension:label.extension">
+    <element id="ResearchStudy.extension:roles">
+      <path value="ResearchStudy.extension" />
+      <sliceName value="roles" />
+      <comment value="Additional information: For each resource, there may be multiple roles, but at least one person, group of persons or institution/organisation must be specified." />
+      <min value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-associated-party" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="ResearchStudy.extension:roles.extension">
       <path value="ResearchStudy.extension.extension" />
       <slicing>
         <discriminator>
@@ -100,25 +79,142 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="3" />
+      <min value="4" />
     </element>
-    <element id="ResearchStudy.extension:label.extension:value">
+    <element id="ResearchStudy.extension:roles.extension:role-personal">
       <path value="ResearchStudy.extension.extension" />
-      <sliceName value="value" />
+      <sliceName value="role-personal" />
       <min value="1" />
+    </element>
+    <element id="ResearchStudy.extension:roles.extension:role-organisational">
+      <path value="ResearchStudy.extension.extension" />
+      <sliceName value="role-organisational" />
+      <min value="1" />
+    </element>
+    <element id="ResearchStudy.extension:roles.extension:name-type">
+      <path value="ResearchStudy.extension.extension" />
+      <sliceName value="name-type" />
+      <min value="1" />
+    </element>
+    <element id="ResearchStudy.extension:roles.extension:name-type.value[x].system">
+      <path value="ResearchStudy.extension.extension.value[x].system" />
+      <min value="1" />
+    </element>
+    <element id="ResearchStudy.extension:roles.extension:name-type.value[x].code">
+      <path value="ResearchStudy.extension.extension.value[x].code" />
+      <min value="1" />
+    </element>
+    <element id="ResearchStudy.extension:nutritionalData">
+      <path value="ResearchStudy.extension" />
+      <sliceName value="nutritionalData" />
+      <short value="Nutritional data collected?" />
+      <definition value="Indication whether nutritional data was collected by the resource." />
+      <min value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-nutritional-data" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="ResearchStudy.extension:chronicDiseases">
+      <path value="ResearchStudy.extension" />
+      <sliceName value="chronicDiseases" />
+      <short value="Chronic diseases included?" />
+      <definition value="Indication whether chronic diseases were addressed by the resource." />
+      <min value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-chronic-diseases" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="ResearchStudy.extension:studyGroupsOfDiseases">
+      <path value="ResearchStudy.extension" />
+      <sliceName value="studyGroupsOfDiseases" />
+      <short value="Which groups of diseases or conditions were the data collected on?" />
+      <definition value="Group of items providing information about groups of diseases or conditions on which the data were collected in the study." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-groups-of-diseases" />
+      </type>
+      <isModifier value="false" />
       <mapping>
         <identity value="NFDI4Health" />
-        <map value="1.3.1 Resource.titles.text" />
-        <comment value="For additional title(s)/name(s)" />
-      </mapping>
-      <mapping>
-        <identity value="NFDI4Health" />
-        <map value="1.4.1 Resource.acronyms.text" />
+        <map value="1.17.4 Resource.studyDesign.studyGroupsOfDiseases" />
       </mapping>
     </element>
-    <element id="ResearchStudy.extension:study-ethics-committee-approval">
+    <element id="ResearchStudy.extension:studyGroupsOfDiseases.extension">
+      <path value="ResearchStudy.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="ResearchStudy.extension:studyGroupsOfDiseases.extension:generally">
+      <path value="ResearchStudy.extension.extension" />
+      <sliceName value="generally" />
+      <comment value="Additional information: The values originate from the WHO's International Statistical Classification of Diseases and Related Health Problems, 11th Revision (ICD-11). | Short input help: Select all that apply. For more information about the groups of diseases/conditions, visit the WHO's ICD-11 homepage: https://icd.who.int/en." />
+      <min value="1" />
+      <binding>
+        <strength value="required" />
+        <description value="Value set defining codes to specify groups of diseases or conditions on which the data were collected in the study." />
+        <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-groups-of-diseases-generally-icd11-umls" />
+      </binding>
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.17.4.1 Resource.studyDesign.studyGroupsOfDiseases.generally" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.extension:studyGroupsOfDiseases.extension:generally.value[x].coding.system">
+      <path value="ResearchStudy.extension.extension.value[x].coding.system" />
+      <min value="1" />
+    </element>
+    <element id="ResearchStudy.extension:studyGroupsOfDiseases.extension:generally.value[x].coding.code">
+      <path value="ResearchStudy.extension.extension.value[x].coding.code" />
+      <min value="1" />
+    </element>
+    <element id="ResearchStudy.extension:studyGroupsOfDiseases.extension:conditions">
+      <path value="ResearchStudy.extension.extension" />
+      <sliceName value="conditions" />
+      <comment value="Additional information: The values originate from the WHO's International Statistical Classification of Diseases and Related Health Problems, 11th Revision (ICD-11). | Short input help: For more information about the groups of diseases/conditions, visit the WHO's ICD-11 homepage: https://icd.who.int/en." />
+      <min value="0" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.17.4.2 Resource.studyDesign.studyGroupsOfDiseases.conditions" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.extension:studyGroupsOfDiseases.extension:conditions.value[x]">
+      <path value="ResearchStudy.extension.extension.value[x]" />
+      <min value="1" />
+    </element>
+    <element id="ResearchStudy.extension:mortalityData">
       <path value="ResearchStudy.extension" />
-      <sliceName value="study-ethics-committee-approval" />
+      <sliceName value="mortalityData" />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-mortality-data" />
+      </type>
+      <isModifier value="false" />
+      <binding>
+        <strength value="required" />
+        <description value="Value set defining codes to specify if mortality data were collected in a study." />
+        <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-mortality-data-nci-snomedct" />
+      </binding>
+    </element>
+    <element id="ResearchStudy.extension:mortalityData.value[x].system">
+      <path value="ResearchStudy.extension.value[x].system" />
+      <min value="1" />
+    </element>
+    <element id="ResearchStudy.extension:studyEthicsCommitteeApproval">
+      <path value="ResearchStudy.extension" />
+      <sliceName value="studyEthicsCommitteeApproval" />
       <definition value="Status of the study approval from the (leading) ethics committee." />
       <min value="0" />
       <type>
@@ -126,6 +222,68 @@
         <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-ethics-committee-approval" />
       </type>
       <isModifier value="false" />
+    </element>
+    <element id="ResearchStudy.extension:studyEthicsCommitteeApproval.value[x].system">
+      <path value="ResearchStudy.extension.value[x].system" />
+      <min value="1" />
+    </element>
+    <element id="ResearchStudy.extension:offLabelUse">
+      <path value="ResearchStudy.extension" />
+      <sliceName value="offLabelUse" />
+      <short value="Off-label use of a drug product" />
+      <definition value="Unapproved (off-label) use of a drug product." />
+      <comment value="Short input help: Select &quot;Yes&quot; or &quot;No&quot; only for drug studies and &quot;Not applicable” for all other studies." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-off-label-use" />
+      </type>
+      <isModifier value="false" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.17.37.4 Resource.studyDesign.interventional.offLabelUse" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.extension:studyStatus">
+      <path value="ResearchStudy.extension" />
+      <sliceName value="studyStatus" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-status" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="ResearchStudy.extension:studyStatus.extension">
+      <path value="ResearchStudy.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="ResearchStudy.extension:studyStatus.extension:overallStatus">
+      <path value="ResearchStudy.extension.extension" />
+      <sliceName value="overallStatus" />
+      <comment value="Additional information: If at least one study site in a multicenter study has the status 'Ongoing', then the overall status for the study must be 'Ongoing'. | Short input help: Select one value from the list." />
+      <min value="1" />
+    </element>
+    <element id="ResearchStudy.extension:studyStatus.extension:statusWhenIntervention">
+      <path value="ResearchStudy.extension.extension" />
+      <sliceName value="statusWhenIntervention" />
+      <comment value="Short input help: Select one value from the list." />
+      <min value="0" />
+    </element>
+    <element id="ResearchStudy.extension:studyStatus.extension:recruitmentStatusRegister">
+      <path value="ResearchStudy.extension.extension" />
+      <sliceName value="recruitmentStatusRegister" />
+      <comment value="Additional information: The item applies only to studies automatically uploaded from the registers of clinical trials." />
+      <min value="0" />
     </element>
     <element id="ResearchStudy.identifier">
       <path value="ResearchStudy.identifier" />
@@ -136,6 +294,8 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="1" />
+      <max value="1" />
       <mapping>
         <identity value="NFDI4Health" />
         <map value="1.1 Resource.identifier" />
@@ -440,9 +600,9 @@
     </element>
     <element id="ResearchStudy.title">
       <path value="ResearchStudy.title" />
-      <short value="Title(s)/name(s) of the [RESOURCE]" />
+      <short value="Title/name" />
       <definition value="Scientific unabbreviated title or name of the resource." />
-      <comment value="If no official title/name has been defined yet, please provide a title/name that is suitable for public display. | Please provide at least one title/name of the resource. If the original title is not in English, please also provide an English translation of the original title." />
+      <comment value="Additional information: If no official title/name has been defined yet, please provide a title/name that is suitable for public display. | Short input help: Please provide at least one title/name of the resource. If the original title is not in English, please also provide an English translation of the original title." />
       <min value="1" />
       <mapping>
         <identity value="NFDI4Health" />
@@ -499,6 +659,7 @@
       <path value="ResearchStudy.title.extension.extension.value[x]" />
       <binding>
         <strength value="required" />
+        <description value="This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)" />
       </binding>
       <mapping>
         <identity value="NFDI4Health" />
@@ -535,6 +696,11 @@
         <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language" />
       </type>
       <isModifier value="false" />
+      <binding>
+        <strength value="required" />
+        <description value="This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/languages" />
+      </binding>
       <mapping>
         <identity value="NFDI4Health" />
         <map value="1.3.2 Resource.titles.language" />
@@ -545,45 +711,145 @@
       <comment value="The item does not exist in NFDI4Health' MDS. Fixed to &quot;active&quot; for all studies." />
       <fixedCode value="active" />
     </element>
-    <element id="ResearchStudy.primaryPurposeType">
-      <path value="ResearchStudy.primaryPurposeType" />
-      <short value="Primary purpose of the study" />
-      <definition value="Specification of the main purpose of the study." />
-      <comment value="The field is defined foremost for interventional studies. For non-interventional studies, this field may be not appplicable as diverse purposes may be pursued without being able to specify a primary one. In this case, the option &quot;Not applicable&quot; can be selected. | Foremost for interventional studies, please specify the primary purpose why the study was conducted.&#xD;&#xA;For non-interventional  studies, this field may be &quot;Not appplicable&quot; as multiple purposes may be defined as primary ones." />
+    <element id="ResearchStudy.phase">
+      <path value="ResearchStudy.phase" />
+      <short value="Numerical phase of the study" />
+      <definition value="If applicable, numerical phase of the study." />
+      <comment value="Short input help: Select one value from the list." />
       <binding>
         <strength value="required" />
-        <description value="Value set defining codes to specify the primary purpose of a study in a ResearchStudy resource." />
-        <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-primary-purpose-umls-nci" />
+        <description value="Value set defining codes to specify the phase of a study in a ResearchStudy resource." />
+        <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-phase-nci" />
       </binding>
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.17.37.1 Resource.studyDesign.interventional.phase" />
+      </mapping>
     </element>
-    <element id="ResearchStudy.primaryPurposeType.coding">
-      <path value="ResearchStudy.primaryPurposeType.coding" />
+    <element id="ResearchStudy.phase.coding.system">
+      <path value="ResearchStudy.phase.coding.system" />
       <min value="1" />
-      <max value="1" />
     </element>
-    <element id="ResearchStudy.primaryPurposeType.coding.code">
-      <path value="ResearchStudy.primaryPurposeType.coding.code" />
+    <element id="ResearchStudy.phase.coding.code">
+      <path value="ResearchStudy.phase.coding.code" />
       <min value="1" />
     </element>
     <element id="ResearchStudy.category">
       <path value="ResearchStudy.category" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="coding" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
       <binding>
         <strength value="example" />
         <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.1037--20220705210404" />
       </binding>
     </element>
+    <element id="ResearchStudy.category:primaryDesign">
+      <path value="ResearchStudy.category" />
+      <sliceName value="primaryDesign" />
+      <short value="Is it an interventional or non-interventional study?" />
+      <definition value="Non-interventional study design refers to a study that does not aim to alter study outcomes of interest.&#xD;&#xA;Interventional study design refers to a study that aims to alter study outcomes of interest." />
+      <comment value="Short input help: Select between non-interventional and interventional study design." />
+      <min value="1" />
+      <max value="1" />
+      <binding>
+        <strength value="required" />
+        <description value="Value set defining codes for primary designs of studies in a ResearchStudy resource." />
+        <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-primary-design-umls" />
+      </binding>
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.17.1 Resource.studyDesign.primaryDesign" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.category:primaryDesign.coding">
+      <path value="ResearchStudy.category.coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="ResearchStudy.category:primaryDesign.coding.system">
+      <path value="ResearchStudy.category.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="ResearchStudy.category:primaryDesign.coding.code">
+      <path value="ResearchStudy.category.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="ResearchStudy.category:studyTypeInterventional">
+      <path value="ResearchStudy.category" />
+      <sliceName value="studyTypeInterventional" />
+      <short value="Specification of study type" />
+      <definition value="The strategy for assigning interventions to participants." />
+      <comment value="Short input help: Select all that apply.&#xD;&#xA;If &quot;Other&quot; is selected, you can specify the study type in the field &quot;Additional information about the study&quot;." />
+      <min value="1" />
+      <binding>
+        <strength value="required" />
+        <description value="Value set defining codes to specify the type of an interventional study in a ResearchStudy resource." />
+        <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-type-interventional-umls" />
+      </binding>
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.17.2.1 Resource.studyDesign.studyType.interventional" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.category:studyTypeInterventional.coding">
+      <path value="ResearchStudy.category.coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="ResearchStudy.category:studyTypeInterventional.coding.system">
+      <path value="ResearchStudy.category.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="ResearchStudy.category:studyTypeInterventional.coding.code">
+      <path value="ResearchStudy.category.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="ResearchStudy.category:studyTypeNonInterventional">
+      <path value="ResearchStudy.category" />
+      <sliceName value="studyTypeNonInterventional" />
+      <short value="Specification of study type" />
+      <definition value="The primary strategy for participant identification and follow-up." />
+      <comment value="Select all that apply.&#xD;&#xA;If &quot;Other&quot; is selected, you can specify the study type in the field &quot;Additional information about the study&quot;." />
+      <min value="1" />
+      <binding>
+        <strength value="required" />
+        <description value="Value set defining codes to specify the type of a non interventional study in a ResearchStudy resource." />
+        <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-type-non-interventional-umls-local" />
+      </binding>
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.17.2.2 Resource.studyDesign.studyType.nonInterventional" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.category:studyTypeNonInterventional.coding">
+      <path value="ResearchStudy.category.coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="ResearchStudy.category:studyTypeNonInterventional.coding.system">
+      <path value="ResearchStudy.category.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="ResearchStudy.category:studyTypeNonInterventional.coding.code">
+      <path value="ResearchStudy.category.coding.code" />
+      <min value="1" />
+    </element>
     <element id="ResearchStudy.condition">
       <path value="ResearchStudy.condition" />
       <short value="Primary health condition(s), disease(s) or focus of the study" />
       <definition value="Group of items providing information about primary health condition(s) or disease(s) considered in the study, or the focus of the study (e.g. medication, food, therapy, device, etc.)." />
-      <min value="1" />
       <mapping>
         <identity value="NFDI4Health" />
         <map value="1.17.3 Resource.studyDesign.studyConditions" />
       </mapping>
     </element>
-    <element id="ResearchStudy.condition.extension">
-      <path value="ResearchStudy.condition.extension" />
+    <element id="ResearchStudy.condition.coding.extension">
+      <path value="ResearchStudy.condition.coding.extension" />
       <slicing>
         <discriminator>
           <type value="value" />
@@ -591,17 +857,36 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="1" />
+      <min value="0" />
     </element>
-    <element id="ResearchStudy.condition.extension:study-groups-of-diseases">
-      <path value="ResearchStudy.condition.extension" />
-      <sliceName value="study-groups-of-diseases" />
-      <min value="1" />
+    <element id="ResearchStudy.condition.coding.extension:uri">
+      <path value="ResearchStudy.condition.coding.extension" />
+      <sliceName value="uri" />
+      <short value="Code ---- If known, code of the health condition, disease or focus in the terminology/classification used" />
+      <definition value="Code of the health condition,  disease, focus in the terminology/classification used." />
+      <comment value="Short input help: If found, the code from the terminology/classification used." />
+      <min value="0" />
+      <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-groups-of-diseases" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-uri" />
       </type>
       <isModifier value="false" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.17.3.3 Resource.studyDesign.studyConditions.code" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.condition.coding.system">
+      <path value="ResearchStudy.condition.coding.system" />
+      <short value="Terminology/classification" />
+      <definition value="Terminology/classification used for the health condition, diesease or focus." />
+      <comment value="If used, name of the terminology/classification." />
+      <min value="1" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.17.3.2 Resource.studyDesign.studyConditions.classification" />
+      </mapping>
     </element>
     <element id="ResearchStudy.condition.coding.code">
       <path value="ResearchStudy.condition.coding.code" />
@@ -619,12 +904,16 @@
       <definition value="Name of primary health condition or disease considered in the study, or the focus of the study (e.g. medication, food, therapy, device, etc.)." />
       <comment value="The use of terms from established terminologies/classifications (e.g. SNOMED CT, ICD, etc.) is preferred. However, also self-assigned terms are allowed. | Preferably, use terms from SNOMED CT (https://browser.ihtsdotools.org)." />
       <min value="1" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.17.3.1 Resource.studyDesign.studyConditions.label" />
+      </mapping>
     </element>
     <element id="ResearchStudy.condition.text">
       <path value="ResearchStudy.condition.text" />
       <short value="Name of the primary health condition, disease or focus of the study" />
       <definition value="Name of primary health condition or disease considered in the study, or the focus of the study (e.g. medication, food, therapy, device, etc.)." />
-      <comment value="The use of terms from established terminologies/classifications (e.g. SNOMED CT, ICD, etc.) is preferred. However, also self-assigned terms are allowed. | Preferably, use terms from SNOMED CT (https://browser.ihtsdotools.org)." />
+      <comment value="Additional information: The use of terms from established terminologies/classifications (e.g. SNOMED CT, ICD, etc.) is preferred. However, also self-assigned terms are allowed. |  Short input help: Preferably, use terms from SNOMED CT (https://browser.ihtsdotools.org)." />
       <min value="1" />
       <example>
         <label value="Name of a Condition" />
@@ -650,7 +939,7 @@
       <sliceName value="webpage" />
       <short value="Web page of the [RESOURCE]" />
       <definition value="If existing, a link to the web page directly relevant to the resource." />
-      <comment value="Other web pages related to the resource can additionally be entered in the section &quot;Related resources&quot;." />
+      <comment value="Additional information: Other web pages related to the resource can additionally be entered in the section &quot;Related resources&quot;." />
       <max value="1" />
       <mapping>
         <identity value="NFDI4Health" />
@@ -663,20 +952,13 @@
     </element>
     <element id="ResearchStudy.relatedArtifact:webpage.url">
       <path value="ResearchStudy.relatedArtifact.url" />
-      <short value="Web page of the [RESOURCE]" />
-      <definition value="If existing, a link to the web page directly relevant to the resource." />
-      <comment value="Other web pages related to the resource can additionally be entered in the section &quot;Related resources&quot;." />
       <min value="1" />
-      <mapping>
-        <identity value="NFDI4Health" />
-        <map value="1.9 Resource.resource_web_page" />
-      </mapping>
     </element>
     <element id="ResearchStudy.keyword">
       <path value="ResearchStudy.keyword" />
       <short value="Keyword(s) describing the [RESOURCE]" />
       <definition value="Group of items providing information about keywords describing the resource." />
-      <comment value="The findability of the resource can be significantly increased if proper keywords are stated." />
+      <comment value="Additional information: The findability of the resource can be significantly increased if proper keywords are stated." />
       <mapping>
         <identity value="NFDI4Health" />
         <map value="1.7 Resource.keywords" />
@@ -689,11 +971,40 @@
       <comment value="If found, the code from the classification/vocabulary used." />
       <max value="1" />
     </element>
+    <element id="ResearchStudy.keyword.coding.extension">
+      <path value="ResearchStudy.keyword.coding.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="ResearchStudy.keyword.coding.extension:URI">
+      <path value="ResearchStudy.keyword.coding.extension" />
+      <sliceName value="URI" />
+      <short value="Code of the keyword" />
+      <definition value="If known, the code of the keyword in a classification/vocabulary." />
+      <comment value="Short input help: If found, the code from the classification/vocabulary used." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-uri" />
+      </type>
+      <isModifier value="false" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.7.2 Resource.keywords.code" />
+      </mapping>
+    </element>
     <element id="ResearchStudy.keyword.coding.code">
       <path value="ResearchStudy.keyword.coding.code" />
       <short value="Code of the keyword" />
       <definition value="If known, the code of the keyword in a classification/vocabulary." />
-      <comment value="If found, the code from the classification/vocabulary used." />
+      <comment value="Short input help: If found, the code from the classification/vocabulary used." />
       <example>
         <label value="Keyword URI" />
         <valueCode value="http://id.nlm.nih.gov/mesh/D000086402" />
@@ -707,7 +1018,7 @@
       <path value="ResearchStudy.keyword.text" />
       <short value="Keyword" />
       <definition value="Keyword(s) describing the resource." />
-      <comment value="The use of terms from established classifications/vocabularies (e.g. MeSH, UMLS, SNOMED CT) is preferred. However, also self-assigned keywords are allowed. | Preferably, use terms from MeSH (https://meshb.nlm.nih.gov/search) or UMLS (https://uts.nlm.nih.gov/uts/umls/home)." />
+      <comment value="Additional information: The use of terms from established classifications/vocabularies (e.g. MeSH, UMLS, SNOMED CT) is preferred. However, also self-assigned keywords are allowed. | Short input help: Preferably, use terms from MeSH (https://meshb.nlm.nih.gov/search) or UMLS (https://uts.nlm.nih.gov/uts/umls/home)." />
       <min value="1" />
       <example>
         <label value="Keyword label" />
@@ -753,7 +1064,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="0" />
+      <min value="1" />
     </element>
     <element id="ResearchStudy.description.extension:translation">
       <path value="ResearchStudy.description.extension" />
@@ -789,9 +1100,6 @@
       <short value="Language of the description text." />
       <definition value="Language other than English of the description text." />
       <min value="1" />
-    </element>
-    <element id="ResearchStudy.description.extension:translation.extension:lang.value[x]">
-      <path value="ResearchStudy.description.extension.extension.value[x]" />
       <mapping>
         <identity value="NFDI4Health" />
         <map value="1.6.2 Resource.descriptionNonEnglish.language" />
@@ -802,15 +1110,34 @@
       <sliceName value="content" />
       <short value="Description (not in English)" />
       <definition value="Short plain text summary of the resource other than in English." />
-      <comment value="Additional descriptions of the resource are optional. The provided information should be understandable by scientific audience." />
+      <comment value="Additional information: Additional descriptions of the resource are optional. The provided information should be understandable by scientific audience." />
       <min value="1" />
-    </element>
-    <element id="ResearchStudy.description.extension:translation.extension:content.value[x]">
-      <path value="ResearchStudy.description.extension.extension.value[x]" />
       <mapping>
         <identity value="NFDI4Health" />
         <map value="1.6.1 Resource.descriptionNonEnglish.text" />
       </mapping>
+    </element>
+    <element id="ResearchStudy.description.extension:language">
+      <path value="ResearchStudy.description.extension" />
+      <sliceName value="language" />
+      <short value="Language of the description" />
+      <definition value="Language of the description text." />
+      <comment value="Additional information: English is a default value." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language" />
+      </type>
+      <isModifier value="false" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.5.2 Resource.descriptionEnglish.language" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.description.extension:language.value[x]">
+      <path value="ResearchStudy.description.extension.value[x]" />
+      <fixedCode value="en" />
     </element>
     <element id="ResearchStudy.period.start">
       <path value="ResearchStudy.period.start" />
@@ -832,12 +1159,46 @@
         <map value="1.17.14 Resource.studyDesign.studyEndDate" />
       </mapping>
     </element>
+    <element id="ResearchStudy.reasonStopped">
+      <path value="ResearchStudy.reasonStopped" />
+      <short value="Reason why the study was stopped" />
+      <definition value="If the study was stopped prematurely, specification of the reason(s) why it was halted." />
+      <comment value="Short input help: E.g., accrual goal met / closed due to toxicity / closed due to lack of study progress / temporarily-closed per study design /etc." />
+    </element>
+    <element id="ResearchStudy.reasonStopped.extension">
+      <path value="ResearchStudy.reasonStopped.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="ResearchStudy.reasonStopped.extension:haltedStage">
+      <path value="ResearchStudy.reasonStopped.extension" />
+      <sliceName value="haltedStage" />
+      <short value="At what stage was the study stopped?" />
+      <definition value="If the study was stopped prematurely, specification of the stage at what it was halted." />
+      <comment value="Short input help: Select one value from the list." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-status-halted-stage" />
+      </type>
+      <isModifier value="false" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.17.9 Resource.studyDesign.stageStopped" />
+      </mapping>
+    </element>
     <element id="ResearchStudy.reasonStopped.text">
       <path value="ResearchStudy.reasonStopped.text" />
       <short value="Reason why the study was stopped" />
       <definition value="If the study was stopped prematurely, specification of the reason(s) why it was halted." />
-      <comment value="E.g., accrual goal met / closed due to toxicity / closed due to lack of study progress / temporarily-closed per study design /etc." />
-      <min value="1" />
+      <comment value="Short input help: E.g., accrual goal met / closed due to toxicity / closed due to lack of study progress / temporarily-closed per study design /etc." />
       <mapping>
         <identity value="NFDI4Health" />
         <map value="1.17.10 Resource.studyDesign.reasonStopped" />

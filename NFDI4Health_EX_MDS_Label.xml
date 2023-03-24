@@ -38,6 +38,14 @@
       <short value="Additional title(s)/name(s) or acronym(s) of the [RESOURCE]" />
       <definition value="Group of items providing information about additional title(s)/name(s) or acronym(s) of the resource." />
       <comment value="Based on ResearchStudy.label (R5), with an extension for translation and language." />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.3 Resource.titles" />
+      </mapping>
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.4 Resource.acronyms" />
+      </mapping>
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
@@ -68,6 +76,14 @@
       <type>
         <code value="string" />
       </type>
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.3.1 Resource.titles.text" />
+      </mapping>
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.3.2 Resource.acronyms.text" />
+      </mapping>
     </element>
     <element id="Extension.extension:value.value[x].extension">
       <path value="Extension.extension.value[x].extension" />
@@ -149,13 +165,8 @@
       <path value="Extension.extension.value[x]" />
       <min value="1" />
       <type>
-        <code value="CodeableConcept" />
+        <code value="Coding" />
       </type>
-    </element>
-    <element id="Extension.extension:type.value[x].coding">
-      <path value="Extension.extension.value[x].coding" />
-      <min value="1" />
-      <max value="1" />
     </element>
     <element id="Extension.extension:language">
       <path value="Extension.extension" />
