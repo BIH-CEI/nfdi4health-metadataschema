@@ -36,7 +36,6 @@
       <path value="DocumentReference.extension" />
       <sliceName value="label" />
       <min value="0" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-label" />
@@ -47,7 +46,6 @@
       <path value="DocumentReference.extension" />
       <sliceName value="descriptions_non_english" />
       <min value="0" />
-      <max value="*" />
       <type>
         <code value="Extension" />
         <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-description-non-english" />
@@ -84,6 +82,17 @@
       <type>
         <code value="Extension" />
         <profile value="https://example.org/fhir/StructureDefinition/NFDI4Health_EX_MDS_Related" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="DocumentReference.extension:copyright">
+      <path value="DocumentReference.extension" />
+      <sliceName value="copyright" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://example.org/fhir/StructureDefinition/NFDI4Health_EX_MDS_Document_Copyright" />
       </type>
       <isModifier value="false" />
     </element>
@@ -148,6 +157,32 @@
         <map value="resource_description_english" />
         <comment value="A short plain text summary describing the resource in English." />
       </mapping>
+    </element>
+    <element id="DocumentReference.content.extension">
+      <path value="DocumentReference.content.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="DocumentReference.content.extension:version">
+      <path value="DocumentReference.content.extension" />
+      <sliceName value="version" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="DocumentReference.content.extension:version.value[x]">
+      <path value="DocumentReference.content.extension.value[x]" />
+      <min value="1" />
     </element>
     <element id="DocumentReference.content.attachment.title">
       <path value="DocumentReference.content.attachment.title" />
