@@ -56,20 +56,6 @@
         <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-fundingID" />
       </type>
       <isModifier value="false" />
-      <mapping>
-        <identity value="NFDI4Health" />
-        <map value="1.11.2.2 Resource.roles.organisational.fundingId" />
-      </mapping>
-    </element>
-    <element id="Organization.extension:fundingID.value[x]">
-      <path value="Organization.extension.value[x]" />
-      <type>
-        <code value="Identifier" />
-      </type>
-    </element>
-    <element id="Organization.extension:fundingID.value[x].value">
-      <path value="Organization.extension.value[x].value" />
-      <min value="1" />
     </element>
     <element id="Organization.identifier">
       <path value="Organization.identifier" />
