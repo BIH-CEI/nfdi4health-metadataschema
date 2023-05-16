@@ -67,7 +67,8 @@ Description: "NFDI4Health LogicalModel General Metadataschema"
 * Resource.webpage ^comment = "Additional Information: Other web pages related to the resource can additionally be entered in the section 'Related resources'. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: DataCite [1], CT.gov [2], DRKS [3]"
 * Resource.nonStudyDetails 1..1 BackboneElement "Detailed information about the [RESOURCE]" "Group of items applicable only to the resources which are not a study/substudy."
 * Resource.nonStudyDetails ^comment = "Cardinality: 1..1, if Resource.classification.resourceType != ('Study' OR 'Substudy/Data collection event'); otherwise 0..0 / Display information? (Data capturing): no / Display information? (Data visualization): no / Source of the property and/or allowed values: NFDI4Health"
-* Resource.nonStudyDetails.version 0..1 string "Version of the [RESOURCE]" "If existing, the version number of the resource. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: DataCite [1]"
+* Resource.nonStudyDetails.version 0..1 string "Version of the [RESOURCE]" "If existing, the version number of the resource."
+* Resource.nonStudyDetails.version ^comment = "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: DataCite [1]"
 * Resource.nonStudyDetails.format 0..1 string "Format of the [RESOURCE]" "Technical format of the resource."
 * Resource.nonStudyDetails.format ^comment = "Short Input Help: E.g., XML, PDF, XLSX, etc. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health"
 * Resource.nonStudyDetails.useRights 0..1 BackboneElement "Information about the rights to (re-)use the [RESOURCE]" "Group of items providing Information about the rights to (re-)use the resource."
@@ -464,12 +465,12 @@ Description: "NFDI4Health LogicalModel General Metadataschema"
 Invariant: smg
 Description: "Cardinality: 0..*, if Resource.studyDesign.interventional.masking.general == true; otherwise 0..0"
 Severity: #error
-Expression: "Resource.studyDesign.interventional.masking.general = false implies  Resource.studyDesign.interventional.masking.roles.exists().not()"
+Expression: "Resource.studyDesign.interventional.masking.general = false implies Resource.studyDesign.interventional.masking.roles.exists().not()"
 
 
 Mapping: NFDI4Health_V3_Internal_Numbering
 Id: NFDI4Health-V3-Internal-Numbering
-Title: "NFDI4Health General Metadataschema Version 3 Mapping to internal numbering"
+Title: "NFDI4Health General Metadataschema Version 3 Mapping to internal numbering of Metadataschema V3.0"
 Source: NFDI4Health_LM_Metadataschema_General_V3
 * Resource -> "1"
 * Resource.identifier -> "1.1"
@@ -610,6 +611,7 @@ Source: NFDI4Health_LM_Metadataschema_General_V3
 * Resource.studyDesign.interventions.armsGroupsLabel -> "1.17.31.4"
 * Resource.studyDesign.studyOutcomes -> "1.17.32"
 * Resource.studyDesign.studyOutcomes.type -> "1.17.32.1"
+* Resource.studyDesign.studyOutcomes.title -> "1.17.32.2"
 * Resource.studyDesign.studyOutcomes.description -> "1.17.32.3"
 * Resource.studyDesign.studyOutcomes.timeFrame -> "1.17.32.4"
 * Resource.studyDesign.comment -> "1.17.33"
@@ -792,6 +794,7 @@ Source: NFDI4Health_LM_Metadataschema_General_V3
 * Resource.studyDesign.interventions.armsGroupsLabel -> "1.15.26.4"
 * Resource.studyDesign.studyOutcomes -> "1.15.27"
 * Resource.studyDesign.studyOutcomes.type -> "1.15.27.1"
+* Resource.studyDesign.studyOutcomes.title -> "1.15.27.2"
 * Resource.studyDesign.studyOutcomes.description -> "1.15.27.3"
 * Resource.studyDesign.studyOutcomes.timeFrame -> "1.15.27.4"
 * Resource.studyDesign.comment -> "1.15.28"

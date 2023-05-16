@@ -27,7 +27,7 @@
     },
     {
       "identity": "NFDI4Health-V3-Internal-Numbering",
-      "name": "NFDI4Health General Metadataschema Version 3 Mapping to internal numbering"
+      "name": "NFDI4Health General Metadataschema Version 3 Mapping to internal numbering of Metadataschema V3.0"
     },
     {
       "identity": "NFDI4Health-V2.1",
@@ -658,7 +658,8 @@
         "id": "nfdi4health-lm-metadataschema-general-v3.Resource.nonStudyDetails.version",
         "path": "nfdi4health-lm-metadataschema-general-v3.Resource.nonStudyDetails.version",
         "short": "Version of the [RESOURCE]",
-        "definition": "If existing, the version number of the resource. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: DataCite [1]",
+        "definition": "If existing, the version number of the resource.",
+        "comment": "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: DataCite [1]",
         "min": 0,
         "max": "1",
         "type": [
@@ -3731,6 +3732,16 @@
           {
             "code": "string"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-V3-Internal-Numbering",
+            "map": "1.17.32.2"
+          },
+          {
+            "identity": "NFDI4Health-V2.1",
+            "map": "1.15.27.2"
+          }
         ]
       },
       {
@@ -4259,7 +4270,7 @@
             "key": "smg",
             "severity": "error",
             "human": "Cardinality: 0..*, if Resource.studyDesign.interventional.masking.general == true; otherwise 0..0",
-            "expression": "Resource.studyDesign.interventional.masking.general = false implies  Resource.studyDesign.interventional.masking.roles.exists().not()",
+            "expression": "Resource.studyDesign.interventional.masking.general = false implies Resource.studyDesign.interventional.masking.roles.exists().not()",
             "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-general-v3"
           }
         ],
