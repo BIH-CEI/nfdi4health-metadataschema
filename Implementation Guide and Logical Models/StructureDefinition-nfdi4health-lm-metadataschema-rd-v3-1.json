@@ -1,0 +1,2696 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "nfdi4health-lm-metadataschema-rd-v3-1",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-rd-v3-1",
+  "version": "1.0",
+  "name": "NFDI4Health_LM_Metadataschema_RD_V3_1",
+  "title": "NFDI4Health LM Resource Design Metadataschema V3.1",
+  "status": "active",
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "description": "NFDI4Health LogicalModel Resource Design Metadataschema V3.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+      "name": "NFDI4Health Resource Design Metadataschema Version 3.1 Mapping to internal numbering of Metadataschema V3.1"
+    },
+    {
+      "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+      "name": "NFDI4Health Resource Design Metadataschema Version 3.1 Mapping to internal numbering of Metadataschema Version 3.0"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-rd-v3-1",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1",
+        "short": "NFDI4Health LM Resource Design Metadataschema V3.1",
+        "definition": "NFDI4Health LogicalModel Resource Design Metadataschema V3.1"
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign",
+        "short": "Characteristics of the [RESOURCE]",
+        "definition": "Group of items providing information about the characteristics of a [RESOURCE].",
+        "comment": "Cardinality: 1..1, if Resource.classification.type == ('Study' OR 'Substudy/Data collection event' OR 'Registry' OR 'Secondary data source'); otherwise 0..0 / Additional Information: Group of items applicable only to studies, substudies, datasets, registries and secondary data sources. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.primaryDesign",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.primaryDesign",
+        "short": "Is it an interventional or non-interventional [RESOURCE]?",
+        "definition": "Non-interventional [RESOURCE] design refers to a [RESOURCE] that does not aim to alter [RESOURCE] outcomes of interest. Interventional [RESOURCE] design refers to a [RESOURCE] that aims to alter [RESOURCE] outcomes of interest.",
+        "comment": "Cardinality: 1..1, if Resource.classification.type == ('Study' OR 'Substudy/Data collection event'); otherwise 0..0 / Short Input Help: Select between non-interventional and interventional [RESOURCE] design. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-primary-design-umls"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.1"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.1"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.studyType",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.studyType",
+        "short": "Specification of [RESOURCE] type",
+        "definition": "Group of items providing information about the [RESOURCE] type.",
+        "comment": "Cardinality: 1..1,  if Resource.classification.type == ('Study' OR 'Substudy/Data collection event'); otherwise 0..0 / Display information? (Data capturing): no / Display information? (Data visualization): no / Source of the property and/or allowed values: CT.gov [2], DRKS [3], DDI [9], MIABIS [8]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.2"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.2"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.studyType.interventional",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.studyType.interventional",
+        "short": "[RESOURCE] type",
+        "definition": "The strategy for assigning interventions to participants.",
+        "comment": "Cardinality: 1..*, if Resource.resourceDesign.primaryDesign == 'Interventional'; otherwise 0..0 / Short Input Help: Select all that apply. If 'Other' is selected, please specify the [RESOURCE] type in the field 'Additional information about the [RESOURCE]'. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-type-interventional-umls"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.2.1"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.2.1"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.studyType.nonInterventional",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.studyType.nonInterventional",
+        "short": "[RESOURCE] type",
+        "definition": "The primary strategy for participant identification and follow-up.",
+        "comment": "Cardinality: 1..*, if Resource.resourceDesign.primaryDesign == 'Non-interventional'; otherwise 0..0 / Short Input Help: Select all that apply. If 'Other' is selected, you can specify the [RESOURCE] type in the field 'Additional information about the [RESOURCE]'. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2], DRKS [3], DDI [9], MIABIS [8]",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-type-non-interventional-umls-local"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.2.2"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.2.2"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.conditions",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.conditions",
+        "short": "Primary health condition(s), disease(s) or focus of the [RESOURCE]",
+        "definition": "Group of items providing information about primary health condition(s) or disease(s) considered in the [RESOURCE], or the focus of the [RESOURCE] (e.g. medication, food, therapy, device, etc.).",
+        "comment": "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.3"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.3"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.conditions.label",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.conditions.label",
+        "short": "Name of the primary health condition, disease or focus of the [RESOURCE]",
+        "definition": "Name of primary health condition or disease considered in the [RESOURCE], or the focus of the [RESOURCE] (e.g. medication, food, therapy, device, etc.).",
+        "comment": "Additional Information: The use of terms from established terminologies/classifications (e.g. SNOMED CT, ICD, etc.) is preferred. However, also self-assigned terms are allowed. / Short Input Help: Preferably, use terms from SNOMED CT (https://browser.ihtsdotools.org). / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "example": [
+          {
+            "label": "General",
+            "valueString": "SARS-CoV-2"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.3.1"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.3.1"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.conditions.classification",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.conditions.classification",
+        "short": "Terminology/classification",
+        "definition": "Terminology/classification used for the health condition, diesease or focus.",
+        "comment": "Short Input Help: If used, name of the terminology/classification. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: DRKS [3], DataCite [1]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "example": [
+          {
+            "label": "General",
+            "valueCoding": {
+              "display": "SNOMED CT"
+            }
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-conditions-classification-umls"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.3.2"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.3.2"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.conditions.code",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.conditions.code",
+        "short": "Code ---- If known, code of the health condition, disease or focus in the terminology/classification used",
+        "definition": "Code of the health condition, disease, focus in the terminology/classification used.",
+        "comment": "Short Input Help: If found, the code from the terminology/classification used. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: DataCite [1]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "example": [
+          {
+            "label": "General",
+            "valueUri": "http://snomed.info/id/840533007"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.3.3"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.3.3"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.groupsOfDiseases",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.groupsOfDiseases",
+        "short": "Which groups of diseases or conditions were the data collected on?",
+        "definition": "Group of items providing information about groups of diseases or conditions on which the data were collected in the [RESOURCE].",
+        "comment": "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.4"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.4"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.groupsOfDiseases.generally",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.groupsOfDiseases.generally",
+        "short": "Which groups of diseases or conditions were the data collected on?",
+        "definition": "Groups of diseases or conditions on which the data were collected in the [RESOURCE].",
+        "comment": "Additional Information: The values originate from the WHO's International Statistical Classification of Diseases and Related Health Problems, 10th Revision (ICD-10)./ Short Input Help: Select all that apply. For more information about the groups of diseases/conditions, visit the WHO's ICD-10 homepage: https://icd.who.int/en. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: ICD-10 [20]",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-groups-of-diseases-generally-icd11-umls"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.4.1"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.4.1"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.groupsOfDiseases.conditions",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.groupsOfDiseases.conditions",
+        "short": "On which other diseases or conditions were the data collected?",
+        "definition": "Other diseases or conditions on which the data were collected in the [RESOURCE].",
+        "comment": "Additional Information: The values originate from the WHO's International Statistical Classification of Diseases and Related Health Problems, 10th Revision (ICD-10). / Short Input Help: Select all that apply. For more information about the groups of diseases/conditions, visit the WHO's ICD-10 homepage: https://icd.who.int/en. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: ICD-11 [20] (NFDI4Health UC 5.2 requirement)",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "example": [
+          {
+            "label": "General",
+            "valueString": "Values are based on lower level ICD-11"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.4.2"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.4.2"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.mortalityData",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.mortalityData",
+        "short": "Were mortality data collected?",
+        "definition": "Mortality data.",
+        "comment": "Cardinality: 0..1, if (Resource.classification.type == ('Study' OR 'Substudy/Data collection event') AND Resource.resourceDesign.studyType.nonInterventional == ('Longitudinal' OR 'Cohort' OR 'Case-cohort' OR 'Birth cohort' OR 'Trend' OR 'Panel')) OR Resource.classification.type == ('Registry' OR 'Secondary data source'); otherwise 0..0 / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.2 requirements",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-mortality-data-nci-snomedct"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.5"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.5"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.ethicsCommiteeApproval",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.ethicsCommiteeApproval",
+        "short": "Status of the ethics committee approval",
+        "definition": "Status of the [RESOURCE] approval from the (leading) ethics committee.",
+        "comment": "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-ethics-committee-approval-umls-local"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.6"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.6"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.status",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.status",
+        "short": "Overall [RESOURCE] status",
+        "definition": "Overall study status of the [RESOURCE].",
+        "comment": "Cardinality: 1..1, if Resource.classification.type == ('Study' OR 'Substudy/Data collection event'); otherwise 0..0/ Additional Information: If at least one [RESOURCE] site in a multicenter [RESOURCE] has the status 'Ongoing,' then the overall status for the [RESOURCE] must be 'Ongoing'. / Short Input Help: Select one value from the list. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health, CT.gov [2], DRKS [3]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-overall-status-umls-local"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.7"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.7"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.statusWhenIntervention",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.statusWhenIntervention",
+        "short": "Do participants receive an intervention?",
+        "definition": "Specification whether [RESOURCE] participants receive intervention or have completed it but are still being followed according to the primary objective of the [RESOURCE].",
+        "comment": "Cardinality: 0..1, if Resource.classification.type == ('Study' OR 'Substudy/Data collection event') AND Resource.resourceDesign.primaryDesign == 'Interventional' AND Resource.resourceDesign.status == ('At the planning stage' OR 'Ongoing (I): Recruitment ongoing, but data collection not yet started' OR 'Ongoing (II): Recruitment and data collection ongoing' OR 'Ongoing (III): Recruitment completed, but data collection ongoing' OR 'Ongoing (IV): Recruitment and data collection completed, but data quality management ongoing'); otherwise 0..0 / Short Input Help: Select one value from the list. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health, CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-status-when-intervention-local"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.8"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.8"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.stageStopped",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.stageStopped",
+        "short": "At what stage was the [RESOURCE] stopped?",
+        "definition": "If the [study] was stopped prematurely, specification of the stage at what it was halted.",
+        "comment": "Cardinality: 0..1, if Resource.classification.type == ('Study' OR 'Substudy/Data collection event') AND Resource.resourceDesign.status == ('Suspended: Recruitment, data collection, or data quality management, halted, but potentially will resume' OR 'Terminated: Recruitment, data collection, data and quality management halted prematurely and will not resume'); otherwise 0..0 / Short Input Help: Select one value from the list. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health, CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-status-halted-stage-local"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.9"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.9"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.reasonStopped",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.reasonStopped",
+        "short": "Reason why the [RESOURCE] was stopped",
+        "definition": "If the [RESOURCE] was stopped prematurely, specification of the reason(s) why it was halted.",
+        "comment": "Cardinality: 0..1, if Resource.classification.type == ('Study' OR 'Substudy/Data collection event') AND Resource.resourceDesign.status == ('Suspended: Recruitment, data collection, or data quality management, halted, but potentially will resume' OR 'Terminated: Recruitment, data collection, data and quality management halted prematurely and will not resume'); otherwise 0..0 / Short Input Help: E.g., accrual goal met / closed due to toxicity / closed due to lack of [RESOURCE] progress / temporarily-closed per [RESOURCE] design /etc. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.10"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.10"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.statusEnrollingByInvitation",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.statusEnrollingByInvitation",
+        "short": "Are participants enrolled by invitation?",
+        "definition": "Specification whether [RESOURCE] participants have been selected from a predetermined population or enrolled by invitation.",
+        "comment": "Cardinality: 0..1, if Resource.classification.type == ('Study' OR 'Substudy/Data collection event'); otherwise 0..0 / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health, CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-yes-no-not-applicable-snomedct"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.11"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.11"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.recruitmentStatusRegister",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.recruitmentStatusRegister",
+        "short": "Overall recruitment status of the [RESOURCE] from the register of clinical trials",
+        "definition": "Overall recruitment status of the [RESOURCE] as indicated in the corresponding register of clinical trials.",
+        "comment": "Cardinality: 0..1, if Resource.classification.type == ('Study' OR 'Substudy/Data collection event'); otherwise 0..0 / Additional Information: The item applies only to studies automatically uploaded from the registers of clinical trials. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-recruitment-status-register-umls-local"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.12"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.12"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.startDate",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.startDate",
+        "short": "Start date of data collection for the [RESOURCE]",
+        "definition": "Start date of data collection for the [RESOURCE].",
+        "comment": "Additional Information: Preferred date format: DD.MM.YYYY. / Short Input Information: In case of a planned [RESOURCE], it is the intended start date; in case of an ongoing [RESOURCE] — the actual start date. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health, CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.13"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.13"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.endDate",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.endDate",
+        "short": "End date of data collection for the [RESOURCE]",
+        "definition": "In case of a [RESOURCE] with patients or other participants, it is the date when the last participant is examined or receives an intervention, or the date of the last participant’s last visit.",
+        "comment": "Additional Information: Preferred date format: DD.MM.YYYY. / Short Input Information: In case of a planned or ongoing [RESOURCE], it is the intended end date; in case of a completed [RESOURCE] — the actual end date. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health, CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.14"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.14"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.countries",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.countries",
+        "short": "Country(ies) where the [RESOURCE] takes place",
+        "definition": "Country or countries where the 8RESOURCE takes place.",
+        "comment": "Short Input Help: Select all that apply. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.hl7.org/fhir/valueset-country.html"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.15"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.15"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.region",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.region",
+        "short": "Regions and/or cities within a country where the [RESOURCE] takes place",
+        "definition": "If applicable, region(s) and/or city(ies) within a country where the [RESOURCE] takes place.",
+        "comment": "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.16"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.16"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.centers",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.centers",
+        "short": "Is it a mono- or multicentric [RESOURCE]?",
+        "definition": "Specification whether a [RESOURCE] is conducted at one [RESOURCE] center or at more than one [RESOURCE] center.",
+        "comment": "Cardinality: 0..1, if Resource.classification.type == ('Study' OR 'Substudy/Data collection event'); otherwise 0..0 / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-centers-snomedct-local"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.17"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.17"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.centersNumber",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.centersNumber",
+        "short": "Number of [RESOURCE] centers",
+        "definition": "Number of centers involved in the [RESOURCE].",
+        "comment": "Cardinality: 0..1, if Resource.classification.type == ('Study' OR 'Substudy/Data collection event') AND Resource.resourceDesign.centers == 'Multicentric'; otherwise 0..0 / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health, CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.18"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.18"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.dataProviders",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.dataProviders",
+        "short": "Is this [RESOURCE] occurring from one or more data providers?",
+        "definition": "Specification whether this [RESOURCE] is occuring from one data provider or at more than one data provider.",
+        "comment": "Cardinality: 0..1, if Resource.classification.type == ('Registry' OR 'Secondary data source'); otherwise 0..0 / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.3 requirements",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.19"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "NA"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.dataProvidersNumber",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.dataProvidersNumber",
+        "short": "Number of [RESOURCE] data providers",
+        "definition": "Number of data providers involved in the [RESOURCE].",
+        "comment": "Cardinality: 0..1, if Resource.classification.type == ('Registry' OR 'Secondary data source') AND Resource.resourceDesign.dataProviders == 'Several data providers'; otherwise 0..0 / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.3 requirements",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.20"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "NA"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.subject",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.subject",
+        "short": "Primary [RESOURCE] subject",
+        "definition": "Primary [RESOURCE] subject, i.e. a person, an animal or some other type of the subject.",
+        "comment": "Short Input Help: Select one value from the list. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health, DDI [5]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-subject-snomedct"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.21"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.19"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.sampling",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.sampling",
+        "short": "Sampling method",
+        "definition": "Group of items providing information about the applied sampling method.",
+        "comment": "Cardinality: 0..1, if Resource.classification.type == ('Study' OR 'Substudy/Data collection event'); otherwise 0..0 / Short Input Help: Select one value from the list. / Display information? (Data capturing): no / Display information? (Data visualization): no / Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.22"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.20"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.sampling.method",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.sampling.method",
+        "short": "Applied sampling method",
+        "definition": "Type of the sampling method applied for the selection of [RESOURCE] participants.",
+        "comment": "Short Input Help: Select one value from the list. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health, CT.gov [2], DDI [15]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-sampling-method-non-prob-nci-local"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.22.1"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.20.1"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.sampling.probabilityMethod",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.sampling.probabilityMethod",
+        "short": "Specific type of probability sampling",
+        "definition": "Specific type of the probability sampling method applied for the selection of [RESOURCE] participants.",
+        "comment": "Cardinality: 0..1, if Resource.resourceDesign.sampling.method == 'Probability'; otherwise 0..0 / Short Input Help: If known, select one value from the list. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health, DDI [15]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-sampling-prob-method-nci"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.22.2"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.20.2"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.sampling.nonProbabilityMethod",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.sampling.nonProbabilityMethod",
+        "short": "Specific type of non-probability sampling",
+        "definition": "Specific type of the probability sampling method applied for the selection of [RESOURCE] participants.",
+        "comment": "Cardinality: 0..1, if Resource.resourceDesign.sampling.method == 'Non-probability'; otherwise 0..0 / Short Input Help: If known, select one value from the list. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health, DDI [15]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-sampling-method-non-prob-nci-local"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.22.3"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.20.3"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.dataSource",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.dataSource",
+        "short": "Data sources from which [RESOURCE] data are generated or extracted.",
+        "definition": "Group of items providing information about data sources from which [RESOURCE] data are generated or extracted.",
+        "comment": "Display information? (Data capturing): no / Display information? (Data visualization): no / Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.23"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.21"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.dataSource.general",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.dataSource.general",
+        "short": "Data sources for the [RESOURCE] (e.g. biosamples, registries, questionnaires, etc.)",
+        "definition": "Different types of data sources from which [RESOURCE] data are generated or extracted.",
+        "comment": "Short Input Help: Select all that apply. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health, Maelstrom [10], MIABIS [8]",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sources-general-umls-local"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.23.1"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.21.1"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.dataSource.biosamples",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.dataSource.biosamples",
+        "short": "Biosamples collected in the [RESOURCE]",
+        "definition": "Specification of biosamples collected in the [RESOURCE].",
+        "comment": "Cardinality: 0..*, if Resource.resourceDesign.dataSource.general == 'Biological samples'; otherwise 0..0 / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health, Maelstrom [10], MIABIS [8]",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-ds-biosamples-snomedct-nci-umls"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.23.2"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.21.2"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.dataSource.imaging",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.dataSource.imaging",
+        "short": "Imaging data collected in the [RESOURCE]",
+        "definition": "Specification of imaging data collected in the [RESOURCE].",
+        "comment": "Cardinality: 0..*, if Resource.resourceDesign.dataSource.general == 'Imaging data'; otherwise 0..0 / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health, Maelstrom [10], MIABIS [8]",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sources-imaging-nci"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.23.3"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.21.3"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.dataSource.omics",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.dataSource.omics",
+        "short": "Omics technology used in the [RESOURCE]",
+        "definition": "Specification of omics technology applied in the [RESOURCE].",
+        "comment": "Cardinality: 0..*, if Resource.resourceDesign.dataSource.general == 'Omics technology'; otherwise 0..0 / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health, Maelstrom [10], MIABIS [8]",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sources-omics-nci-umls"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.23.4"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.21.4"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.dataSource.description",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.dataSource.description",
+        "short": "Additional information about data sources",
+        "definition": "If needed, additional descriptive information about [RESOURCE] data sources, e.g. indication of the data source(s) not listed in the property „Data sources for the [RESOURCE]” or more detailed description of the selected data sources.",
+        "comment": "Short Input Help: E.g., indication of the data source(s) not listed in the field 'Data sources for the [RESOURCE]' or more detailed description of the selected data sources. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.23.5"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.21.5"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.primaryPurpose",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.primaryPurpose",
+        "short": "Primary purpose of the [RESOURCE]",
+        "definition": "Specification of the main purpose of the [RESOURCE].",
+        "comment": "Cardinality: 0..1, if Resource.classification.type == ('Study' OR 'Substudy/Data collection event'); otherwise 0..0 / Additional Information: The field is defined foremost for interventional studies. For non-interventional  studies, this field may not be appplicable as diverse purposes may be pursued without being able to specify a primary one. In this case, the option 'Not applicable' can be selected. / Short Input Help: Foremost for interventional studies, please specify the primary purpose why the [RESOURCE] was conducted. For non-interventional  studies, this field may be 'Not appplicable' as multiple purposes may be defined as primary ones. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-primary-purpose-umls-nci"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.24"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.22"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.eligibilityCriteria",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.eligibilityCriteria",
+        "short": "Eligibility criteria for [RESOURCE] participants",
+        "definition": "Group of items providing information about eligibility criteria for [ESOURCE] participants.",
+        "comment": "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.25"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.23"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.eligibilityCriteria.ageMin",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.eligibilityCriteria.ageMin",
+        "short": "Eligibility criteria: Minimum age",
+        "definition": "Group of items providing information about the minimum eligible age of [RESOURCE] participants.",
+        "comment": "Display information? (Data capturing): no / Display information? (Data visualization): no / Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.25.1"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.23.1"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.eligibilityCriteria.ageMin.number",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.eligibilityCriteria.ageMin.number",
+        "short": "Minimum eligible age",
+        "definition": "Numerical value of the minimum age of potential participants eligible to participate in the [RESOURCE].",
+        "comment": "Additional information: In case of cohort studies, further participant ages can be indicated in the fields inclusion or exclusion criteria for participation in the [RESOURCE]. / Short Input Help: If age is less than 1 year, please indicate a value in months, weeks, days, hours, minutes, or weeks of gestation. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.25.1.1"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.23.1.1"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.eligibilityCriteria.ageMin.timeUnit",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.eligibilityCriteria.ageMin.timeUnit",
+        "short": "Unit of age.",
+        "definition": "Unit of measurement used to describe the minimum eligible age.",
+        "comment": "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-time-units-ucum-umls"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.25.1.2"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.23.1.2"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.eligibilityCriteria.ageMax",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.eligibilityCriteria.ageMax",
+        "short": "Eligibility criteria: Maximum age",
+        "definition": "Group of items providing information about the maximum eligible age of [RESOURCE] participants.",
+        "comment": "Display information? (Data capturing): no / Display information? (Data visualization): no / Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.25.2"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.23.2"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.eligibilityCriteria.ageMax.number",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.eligibilityCriteria.ageMax.number",
+        "short": "Maximum eligible age",
+        "definition": "Numerical value of the maximum age of potential participants eligible to participate in the [RESOURCE].",
+        "comment": "Additional Information: In case of cohort studies, further participant ages can be indicated in the fields inclusion or exclusion criteria for participation in the [RESOURCE]. / Short Input Help: If age is less than 1 year, please indicate a value in months, weeks, days, hours, minutes, or weeks of gestation. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.25.2.1"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.23.2.1"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.eligibilityCriteria.ageMax.timeUnit",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.eligibilityCriteria.ageMax.timeUnit",
+        "short": "Unit of age.",
+        "definition": "Unit of measurement used to describe the maximum eligible age.",
+        "comment": "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-time-units-ucum-umls"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.25.2.2"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.23.2.2"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.eligibilityCriteria.genders",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.eligibilityCriteria.genders",
+        "short": "Eligible gender",
+        "definition": "Gender of potential participants eligible to participate in the [RESOURCE].",
+        "comment": "Short Input Help: Select all that apply. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health, CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.25.3"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.23.3"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.eligibilityCriteria.inclusionCriteria",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.eligibilityCriteria.inclusionCriteria",
+        "short": "Inclusion criteria",
+        "definition": "Inclusion criteria for participation in the [RESOURCE].",
+        "comment": "Short Input Help: If possible, use an enumerated or bulleted list for each criterion. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.25.4"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.23.4"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.eligibilityCriteria.exclusionCriteria",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.eligibilityCriteria.exclusionCriteria",
+        "short": "Exclusion criteria",
+        "definition": "Exclusion criteria for participation in the [RESOURCE].",
+        "comment": "Short Input Help: If possible, use an enumerated or bulleted list for each criterion. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.25.5"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.23.5"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.population",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.population",
+        "short": "Description of [RESOURCE] population",
+        "definition": "Additional descriptive information providing more details about [RESOURCE] population.",
+        "comment": "Short Input Help: Any information important for the given [RESOURCE] population can be specified here. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2], Maelstrom [10]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.26"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.24"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.targetSampleSize",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.targetSampleSize",
+        "short": "Target sample size",
+        "definition": "Intended number of observational units for the whole [RESOURCE] (e.g. intended number of [RESOURCE] participants at all [RESOURCE] sites).",
+        "comment": "Cardinality: 0..1, if Resource.classification.type == ('Study' OR 'Substudy/Data collection event'); otherwise 0..0 / Short Input Help: Enter '-1' if target sample size was not set or is unknown. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.27"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.25"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.obtainedSampleSize",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.obtainedSampleSize",
+        "short": "Obtained sample size",
+        "definition": "Obtained number of observational units for the whole [RESOURCE] (e.g. obtained number of [RESOURCE] participants at all [RESOURCE] sites). The value is only available after the end of recruitment.",
+        "comment": "Short Input Help: Enter '-1' if obtained sample size was not set or is unknown. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.28"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.26"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.hypothesis",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.hypothesis",
+        "short": "Research questions and/or hypothesis underlying the [RESOURCE]",
+        "definition": "Statement of the research questions and/or hypotheses underlying the [RESOURCE].",
+        "comment": "Cardinality: 0..1, if Resource.classification.type == ('Study' OR 'Substudy/Data collection event'); otherwise 0..0 / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health, ISRCTN [21]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.29"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.29"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.arms",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.arms",
+        "short": "Arms of the [RESOURCE]",
+        "definition": "Group of items providing information about arms of the [RESOURCE].",
+        "comment": "Cardinality: 0..*,  if Resource.classification.type == ('Study' OR 'Substudy/Data collection event') AND Resource.resourceDesign.primaryDesign == 'Interventional'; otherwise 0..0 / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.30"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.30"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.arms.label",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.arms.label",
+        "short": "Name of the arm",
+        "definition": "Short name used to identify the arm.",
+        "comment": "Additional Information: 'Arm' means a pre-specified group or subgroup of participant(s) in a clinical trial assigned to receive specific intervention(s) (or no intervention) according to a protocol. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.30.1"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.30.1"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.arms.type",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.arms.type",
+        "short": "Role of the arm",
+        "definition": "Role of the given arm in the [RESOURCE].",
+        "comment": "Short Input Help: Select one value from the list. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-arm-group-type-umls"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.30.2"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.30.2"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.arms.description",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.arms.description",
+        "short": "Additional information about the arm",
+        "definition": "Additional descriptive information about the given arm.",
+        "comment": "Additional Information: If needed, additional descriptive information (including which interventions are administered in each arm) to differentiate each arm from other arms in the clinical trial. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.30.3"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.30.3"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.groups",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.groups",
+        "short": "Groups/cohorts of the [RESOURCE]",
+        "definition": "Group of items providing information about groups/cohorts of the [RESOURCE].",
+        "comment": "Cardinality: 0..*, if Resource.classification.type == ('Study' OR 'Substudy/Data collection event') AND Resource.resourceDesign.primaryDesign == 'Non-interventional'; otherwise 0..0 / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.31"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "NA"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.groups.label",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.groups.label",
+        "short": "Name of the group",
+        "definition": "Short name used to identify the group.",
+        "comment": "Additional information: 'Group' means a predefined group (cohort) of participants to be studied. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.31.1"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "NA"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.groups.description",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.groups.description",
+        "short": "Additional information about the group",
+        "definition": "Additional descriptive information about the given group.",
+        "comment": "Additional Information: Explanation of the nature of the [RESOURCE] group (for example, those with a condition and those without a condition; those with an exposure and those without an exposure). / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.31.2"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "NA"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.interventions",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.interventions",
+        "short": "Interventions of the [RESOURCE]",
+        "definition": "Group of items providing information about [RESOURCE] interventions.",
+        "comment": "Cardinality: 0..*,  if Resource.classification.type == ('Study' OR 'Substudy/Data collection event') AND Resource.resourceDesign.primaryDesign == 'Interventional'; otherwise 0..0 / Additional Information: The items may be not applicable for non-interventional studies. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.32"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.31"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.interventions.name",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.interventions.name",
+        "short": "Name of the intervention",
+        "definition": "A short descriptive name of the intervention.",
+        "comment": "Additional Information: Please specify the intervention(s) associated with each arm. / Short Input Help: If the same intervention is associated with more than one arm, provide the information once and use the field 'Name of the arm associated with the given intervention' to associate it with more than one arm. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.32.1"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.31.1"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.interventions.type",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.interventions.type",
+        "short": "Type of the intervention",
+        "definition": "General type of the given intervention.",
+        "comment": "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-intervention-type-nci-umls"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.32.2"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.31.2"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.interventions.description",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.interventions.description",
+        "short": "Additional information about the intervention",
+        "definition": "If needed, additional descriptive information about the given intervention.",
+        "comment": "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.32.3"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.31.3"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.interventions.armsLabel",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.interventions.armsLabel",
+        "short": "Name of the arm(s) associated with the given intervention",
+        "definition": "Name of the [ESOURCE] arm(s) associated with the given intervention. ",
+        "comment": "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2]",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.31.4"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.31.4"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.exposures",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.exposures",
+        "short": "Exposures of the [RESOURCE]",
+        "definition": "Group of items providing information about [RESOURCE] exposures.",
+        "comment": "Cardinality: 0..*, if (Resource.classification.type == ('Study' OR 'Substudy/Data collection event') AND Resource.resourceDesign.primaryDesign == 'Non-interventional') OR Resource.classification.type == ('Registry' OR 'Secondary data source'); otherwise 0..0 / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.33"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "NA"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.exposures.name",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.exposures.name",
+        "short": "Name of the exposure",
+        "definition": "A short descriptive name of the exposure",
+        "comment": "Cardinality: 1..1, if Resource.classification.type == ('Study' OR 'Substudy/Data collection event'); otherwise 0..0 / Additional Information: Please specify the exposure(s) associated with each group. / Short Input Help: If the same exposure is associated with more than one group, provide the information once and use the field 'Name of the group associated with the given exposure' to associate it with more than one group. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.33.1"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "NA"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.exposures.type",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.exposures.type",
+        "short": "Type of the exposure",
+        "definition": "General type of the given exposure",
+        "comment": "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-intervention-type-nci-umls"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.33.2"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "NA"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.exposures.description",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.exposures.description",
+        "short": "Additional information about the exposure",
+        "definition": "If needed, additional descriptive information about the given exposure.",
+        "comment": "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.33.3"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "NA"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.exposures.groupsLabel",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.exposures.groupsLabel",
+        "short": "Name of the group(s) associated with the given exposure.",
+        "definition": "Name of the [RESOURCE] group(s) associated with the given exposure.",
+        "comment": "Cardinality: 0..*, if Resource.classification.type == ('Study' OR 'Substudy/Data collection event'); otherwise 0..0 / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2]",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.33.4"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "NA"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.outcomes",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.outcomes",
+        "short": "Outcome measure(s)",
+        "definition": "Group of items providing information about outcome measure(s).",
+        "comment": "Additional Information: The items are optional for non-interventional studies. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.34"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.32"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.outcomes.title",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.outcomes.title",
+        "short": "Name of the outcome measure",
+        "definition": "Name of the outcome measure. For non-interventional studies, this can be the name of specific measurement(s) or observation(s) used to describe patterns of diseases or traits or associations with exposures, risk factors or treatment.",
+        "comment": "Short Input Help: For a non-interventional studies, this can be specific measurement(s) or observation(s) used to describe patterns of diseases or traits or associations with exposures, risk factors or treatment. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.34.1"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.32.2"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.outcomes.description",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.outcomes.description",
+        "short": "Description of the outcome measure",
+        "definition": "Additional descriptive information about the given outcome",
+        "comment": "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.34.2"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.32.3"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.outcomes.type",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.outcomes.type",
+        "short": "Type of the outcome measure",
+        "definition": "Type of the outcome measure.",
+        "comment": "Cardinality: 1..1, if (Resource.resourceDesign.outcomes.title != Null OR Resource.resourceDesign.outcomes.description != Null); otherwise 0..0 / Short Input Help: Primary or secondary outcome measure? / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health, CT.gov [2], DRKS [3]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-outcome-type-umls"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.34.3"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.34.3"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.outcomes.timeFrame",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.outcomes.timeFrame",
+        "short": "Time point(s) of assessment",
+        "definition": "Description of the time point(s) at which the measurement for the outcome is assessed, e.g. the specific duration of time over which each participant is assessed.",
+        "comment": "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.34.4"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.34.4"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.comment",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.comment",
+        "short": "Any additional information about the [RESOURCE]",
+        "definition": "Any additional information about specific aspects of the [RESOURCE] that cannot be captured by other fields.",
+        "comment": "Short Input Help: AAny additional information about specific aspects of the [RESOURCE] that cannot be captured by other fields. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.35"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.33"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.assessments",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.assessments",
+        "short": "Further assessments/measurements included in the [RESOURCE]",
+        "definition": "Assessments/measurements included in the [RESOURCE]",
+        "comment": "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health, ENPADASI [22]",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-assessments-snomedct-umls"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.36"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.34"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.dataSharingPlan",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.dataSharingPlan",
+        "short": "Information about data sharing",
+        "definition": "Group of items providing information about the data sharing strategy of the [RESOURCE].",
+        "comment": "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.37"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.35"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.dataSharingPlan.generally",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.dataSharingPlan.generally",
+        "short": "Is it planned to share the data?",
+        "definition": "Indication whether there is a plan to make data collected in the [RESOURCE] available. In case of a [RESOURCE] with patients or other individuals, this refers to individual participant data (IPD).",
+        "comment": "Short Input Help: Select one value from the list. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: Taichman DB, et al. [7], CT.gov [2], DRKS [3]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-yes-no-undecided-snomedct-nci"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.37.1"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.35.1"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.dataSharingPlan.supportingInformation",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.dataSharingPlan.supportingInformation",
+        "short": "Supporting documents available in addition to the data",
+        "definition": "Supporting information/documents which will be made available in addition to the [RESOURCE] data.",
+        "comment": "Cardinality: 0..*, if Resource.resourceDesign.dataSharingPlan.generally == 'Yes, there is a plan to make data available'; otherwise 0..0 / Short Input Help: Select all that apply. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: Taichman DB, et al. [7], CT.gov [2]",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sharing-plan-sup-inf-umls-local"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.37.2"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.35.2"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.dataSharingPlan.timeFrame",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.dataSharingPlan.timeFrame",
+        "short": "When and for how long will the data be available?",
+        "definition": "Indication when the data and, if applicable, supporting documents will become available and for how long.",
+        "comment": "Cardinality: 0..1, if Resource.resourceDesign.dataSharingPlan.generally == 'Yes, there is a plan to make data available'; otherwise 0..0 / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: Taichman DB, et al. [7], CT.gov [2]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.37.3"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.35.3"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.dataSharingPlan.accessCriteria",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.dataSharingPlan.accessCriteria",
+        "short": "Criteria for the data access",
+        "definition": "Indication by what access criteria data will be shared, including: a) with whom, b) for what types of analyses, and c) by what mechanism.",
+        "comment": "Cardinality: 0..1, if Resource.resourceDesign.dataSharingPlan.generally == 'Yes, there is a plan to make data available'; otherwise 0..0 / Short Input Help: E.g., with whom, for what types of analyses and by what mechanism the data will be shared. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: Taichman DB, et al. [7], CT.gov [2]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.37.4"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.35.4"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.dataSharingPlan.description",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.dataSharingPlan.description",
+        "short": "Additional information about data sharing",
+        "definition": "Additional descriptive information providing more details about the data sharing, e.g. indication what data in particular will be shared or why the data will not be shared or why it is not yet decided.",
+        "comment": "Short Input Help: E.g., indication what data in particular will be shared or why the data will not be shared or why it is not yet decided / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: Taichman DB, et al. [7], CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.37.5"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.35.5"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.dataSharingPlan.datashield",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.dataSharingPlan.datashield",
+        "short": "Is the DataSHIELD/Opal infrastructure available?",
+        "definition": "Indication, whether the DataSHIELD/Opal infrastructure is available.",
+        "comment": "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sharing-plan-ds-snomedct-umls"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.37.6"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.35.6"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.dataSharingPlan.url",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.dataSharingPlan.url",
+        "short": "Web page with additional information about data sharing",
+        "definition": "If existing, a link to the web page where additional information about data sharing can be found.",
+        "comment": "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: Taichman DB, et al. [7], CT.gov [2]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "url"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.37.7"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.35.7"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.dataSharingPlan.recordLinkage",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.dataSharingPlan.recordLinkage",
+        "short": "Is record linkage with other data sources possible?",
+        "definition": "Indication if record linkage is possible.",
+        "comment": "Cardinality: 1..1, if Resource.provenance.dataSource == 'Manually collected'; otherwise 0..0 / Additional Information: Record linkage refers to the merging of data on the same person from different databases. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.37.8"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "NA"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.nonInterventional",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.nonInterventional",
+        "short": "Information about specific aspects of non-interventional [RESOURCE]",
+        "definition": "Group of items providing information about specific aspects of a non-interventional [RESOURCE].",
+        "comment": "Cardinality: 0..1, if (Resource.classification.type == ('Study' OR 'Substudy/Data collection event') AND Resource.resourceDesign.primaryDesign == 'Non-interventional') OR Resource.classification.type == ('Registry' OR 'Secondary data source'); otherwise 0..0 / Additional Information: Group of items applicable only to a non-interventional [RESOURCE]. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.38"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.36"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.nonInterventional.timePerspectives",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.nonInterventional.timePerspectives",
+        "short": "Temporal design of the [RESOURCE]",
+        "definition": "Temporal design of the [RESOURCE], i.e. the  relationship of observation period to time of participant enrollment.",
+        "comment": "Cardinality: 0..*, if Resource.classification.type == ('Study' OR 'Substudy/Data collection event'); otherwise 0..0 / Short Input Help: Is it a retrospective, prospective or cross-sectional [RESOURCE]? / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2]",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-time-perspectives-umls"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.38.1"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.36.1"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.nonInterventional.targetFollowUpDuration",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.nonInterventional.targetFollowUpDuration",
+        "short": "Target follow-up duration of the [RESOURCE]",
+        "definition": "If applicable, anticipated time period over which each participant was followed.",
+        "comment": "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.38.2"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.36.2"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.nonInterventional.targetFollowUpDuration.number",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.nonInterventional.targetFollowUpDuration.number",
+        "short": "Target follow-up duration",
+        "definition": "Numerical value of the target follow-up duration.",
+        "comment": "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.38.2.1"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "NA"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.nonInterventional.targetFollowUpDuration.timeUnit",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.nonInterventional.targetFollowUpDuration.timeUnit",
+        "short": "Unit of time",
+        "definition": "Unit of time.",
+        "comment": "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.38.2.2"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "NA"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.nonInterventional.targetFollowUpDuration.frequency",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.nonInterventional.targetFollowUpDuration.frequency",
+        "short": "How many follow-ups were conducted?",
+        "definition": "The number of follow-ups conducted within the specified duration.",
+        "comment": "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.nonInterventional.biospecimenRetention",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.nonInterventional.biospecimenRetention",
+        "short": "Which biosamples are retained in a biorepository?",
+        "definition": "Indication whether samples of biomaterial from [RESOURCE] participants are retained in a biorepository.",
+        "comment": "Short Input Help: Select all that apply. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2]",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-biospecimen-retention-umls"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.38.3"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.36.3"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.nonInterventional.biospecimenDescription",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.nonInterventional.biospecimenDescription",
+        "short": "Specific types of retained biosamples",
+        "definition": "Additional information about biosamples to be retained, i.e. which specific types of biospecimens will be retained (e.g. blood, serum, urine, etc.).",
+        "comment": "Cardinality: 0..1, if Resource.resourceDesign.nonInterventional.biospecimenRetention != 'None retained'; otherwise 0..0 / Short Input Help: Which specific types of biosamples will be retained (e.g. blood, serum, urine, etc.)? / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.38.4"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.36.4"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.interventional",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.interventional",
+        "short": "Information about specific aspects of an interventional [RESOURCE]",
+        "definition": "Group of items providing information about specific aspects of an interventional [RESOURCE].",
+        "comment": "Cardinality: 0..1, if Resource.classification.type == ('Study' OR 'Substudy/Data collection event') AND Resource.resourceDesign.primaryDesign =='Interventional'; otherwise 0..0 / Short Input Help: Group of items applicable only to an interventional [RESOURCE]. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.39"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.37"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.interventional.phase",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.interventional.phase",
+        "short": "Numerical phase of the [RESOURCE]",
+        "definition": "If applicable, numerical phase of the [RESOURCE].",
+        "comment": "Short Input Help: Select one value from the list. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-phase-nci"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.39.1"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.37.1"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.interventional.masking",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.interventional.masking",
+        "short": "Information about masking of intervention(s) assignment",
+        "definition": "Group of items providing information about the masking of intervention(s) assignment.",
+        "comment": "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.39.2"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.37.2"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.interventional.masking.general",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.interventional.masking.general",
+        "short": "Is masking of intervention(s) assignment implemented?",
+        "definition": "Indication, whether a masking (or blinding) of intervention(s) assignment is implemented (i.e., whether someone is prevented from having knowledge of the interventions assigned to individual participants).",
+        "comment": "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health, CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.39.2.1"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.37.2.1"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.interventional.masking.roles",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.interventional.masking.roles",
+        "short": "Who is masked?",
+        "definition": "If masking is implemented, the party(ies) who are masked.",
+        "comment": "Cardinality: 0..*, if Resource.resourceDesign.interventional.masking.general == true; otherwise 0..0 / Short Input Help: Select all that apply. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-masking-roles-nci-local"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.39.2.2"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.37.2.2"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.interventional.masking.description",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.interventional.masking.description",
+        "short": "Additional information about masking",
+        "definition": "If needed, additional descriptive information about masking (e.g. information about other parties who may be masked).",
+        "comment": "Cardinality: 0..1, if Resource.resourceDesign.interventional.masking.general == true; otherwise 0..0 / Short Input Help: If needed, additional information about masking, e.g. other parties who may be masked. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.39.2.3"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.37.2.3"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.interventional.allocation",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.interventional.allocation",
+        "short": "Type of allocation of participants to an arm",
+        "definition": "Type of allocation/assignment of individual [RESOURCE] participants to an arm.",
+        "comment": "Short Input Help: Select one value from the list. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-allocation-umls"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.39.3"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.37.3"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.interventional.offLabelUse",
+        "path": "nfdi4health-lm-metadataschema-rd-v3-1.ResourceDesign.interventional.offLabelUse",
+        "short": "Off-label use of a drug product",
+        "definition": "Unapproved (off-label) use of a drug product. ",
+        "comment": "Short Input Help: Select 'Yes' or 'No' only for drug [RESOURCE] and 'Not applicable' for all other [RESOURCE]. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: DRKS [3]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-yes-no-not-applicable-snomedct"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-Internal-Numbering",
+            "map": "1.17.39.4"
+          },
+          {
+            "identity": "NFDI4Health-RD-Metadataschema-V3-1-To-RD-V3",
+            "map": "1.17.37.4"
+          }
+        ]
+      }
+    ]
+  }
+}

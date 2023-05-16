@@ -1,0 +1,228 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "nfdi4health-lm-metadataschema-rl-v3-1",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-rl-v3-1",
+  "version": "1.0",
+  "name": "NFDI4Health_LM_Metadataschema_RL_V3_1",
+  "title": "NFDI4Health LM Record Linkage Metadataschema (UC 5.3) V3.1",
+  "status": "active",
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "description": "NFDI4Health LogicalModel Record Linkage Metadataschema (Use Case 5.3) V3.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "NFDI4Health-RL-Metadataschema-V3-1-Internal-Numbering",
+      "name": "NFDI4Health Record Linkage Metadataschema Version 3.1 Mapping to internal numbering of Metadataschema Version 3.1"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-rl-v3-1",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "nfdi4health-lm-metadataschema-rl-v3-1",
+        "path": "nfdi4health-lm-metadataschema-rl-v3-1",
+        "short": "NFDI4Health LM Record Linkage Metadataschema (UC 5.3) V3.1",
+        "definition": "NFDI4Health LogicalModel Record Linkage Metadataschema (Use Case 5.3) V3.1"
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rl-v3-1.RecordLinkage",
+        "path": "nfdi4health-lm-metadataschema-rl-v3-1.RecordLinkage",
+        "short": "Information about record linkage",
+        "definition": "Group of items providing information on record linkage",
+        "comment": "Cardinality: 1..*, if Resource.resourceDesign.dataSharingPlan.recordLinkage == 'Yes'; otherwise 0.. 0 / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.3 requirements",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RL-Metadataschema-V3-1-Internal-Numbering",
+            "map": "RL1"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rl-v3-1.RecordLinkage.legalBasis",
+        "path": "nfdi4health-lm-metadataschema-rl-v3-1.RecordLinkage.legalBasis",
+        "short": "Is there a specific legal regulation/permission for record linkage?",
+        "definition": "Indication whether there is a specific regulations/permission for record linkage.",
+        "comment": "Additional Information: Whether any specific legal regulations/permissions exist (e.g. as for social data, as for cancer registry data or hospital data). / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.3 requirements",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RL-Metadataschema-V3-1-Internal-Numbering",
+            "map": "RL1.1"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rl-v3-1.RecordLinkage.legalBasisDetails",
+        "path": "nfdi4health-lm-metadataschema-rl-v3-1.RecordLinkage.legalBasisDetails",
+        "short": "Please indicate which specific legal basis allows for record linkage",
+        "definition": "Information specifying which specific legal basis allows for record linkage.",
+        "comment": "Cardinality: 1..1, if RecordLinkage.legalBasis == 'Yes'; otherwise 0..0 / Additional Information: If existing, any specific legal regulations/permissions (e.g. as for social data, as for cancer registry data or hospital data) / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.3 requirements",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RL-Metadataschema-V3-1-Internal-Numbering",
+            "map": "RL1.2"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rl-v3-1.RecordLinkage.informedConsent",
+        "path": "nfdi4health-lm-metadataschema-rl-v3-1.RecordLinkage.informedConsent",
+        "short": "Has an informed consent been obtained to allow the linkage?",
+        "definition": "Indication whether an informed consent that allows record linkage has been obtained.",
+        "comment": "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.3 requirements",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RL-Metadataschema-V3-1-Internal-Numbering",
+            "map": "RL1.3"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rl-v3-1.RecordLinkage.responsibleInstitutions",
+        "path": "nfdi4health-lm-metadataschema-rl-v3-1.RecordLinkage.responsibleInstitutions",
+        "short": "Who are the responsible institutions and authorities who must agree to the record linkage?",
+        "definition": "Institutions and authorities that must agree to the record linkage.",
+        "comment": "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.3 requirements",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RL-Metadataschema-V3-1-Internal-Numbering",
+            "map": "RL1.4"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rl-v3-1.RecordLinkage.additionalCosts",
+        "path": "nfdi4health-lm-metadataschema-rl-v3-1.RecordLinkage.additionalCosts",
+        "short": "Are there additional costs for record linkage?",
+        "definition": "Indication whether there are additional costs for record linkage.",
+        "comment": "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.3 requirements",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RL-Metadataschema-V3-1-Internal-Numbering",
+            "map": "RL1.5"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rl-v3-1.RecordLinkage.identifiers",
+        "path": "nfdi4health-lm-metadataschema-rl-v3-1.RecordLinkage.identifiers",
+        "short": "Which identifiers can be used for record linkage?",
+        "definition": "Identifiers that can be used for record linkage (e.g. names, date of birth, zip code, insurance number or control number as in cancer registries).",
+        "comment": "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.3 requirements",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RL-Metadataschema-V3-1-Internal-Numbering",
+            "map": "RL1.6"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rl-v3-1.RecordLinkage.furtherDetails",
+        "path": "nfdi4health-lm-metadataschema-rl-v3-1.RecordLinkage.furtherDetails",
+        "short": "Please indicate any further details possibly important for conducting the record linkage",
+        "definition": "Further important details for conducting the record linkage",
+        "comment": "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.3 requirements",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RL-Metadataschema-V3-1-Internal-Numbering",
+            "map": "RL1.7"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-rl-v3-1.RecordLinkage.exampleResources",
+        "path": "nfdi4health-lm-metadataschema-rl-v3-1.RecordLinkage.exampleResources",
+        "short": "Please indicate additional related resouces specific to record linkage",
+        "definition": "DOIs of record linkage example resources (e.g., publications).",
+        "comment": "Additional Information: Please do not repeat those already entered in the section 'Related resources'/ Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.3 requirements",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-RL-Metadataschema-V3-1-Internal-Numbering",
+            "map": "RL1.8"
+          }
+        ]
+      }
+    ]
+  }
+}
