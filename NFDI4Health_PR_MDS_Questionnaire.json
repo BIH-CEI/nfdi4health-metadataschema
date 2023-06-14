@@ -1,0 +1,658 @@
+{
+	"resourceType": "StructureDefinition",
+	"id": "nfdi4health-pr-mds-questionnaire",
+	"url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire",
+	"version": "0.9",
+	"name": "NFDI4Health_PR_MDS_Questionnaire",
+	"title": "NFDI4Health PR MDS Questionnaire",
+	"status": "draft",
+	"publisher": "NFDI4Health",
+	"contact": [
+		{
+			"telecom": [
+				{
+					"system": "url",
+					"value": "https://www.nfdi4health.de"
+				}
+			]
+		}
+	],
+	"description": "Resource covering metadata of a questionnaire.",
+	"fhirVersion": "4.0.1",
+	"kind": "resource",
+	"abstract": false,
+	"type": "Questionnaire",
+	"baseDefinition": "http://hl7.org/fhir/StructureDefinition/Questionnaire",
+	"derivation": "constraint",
+	"differential": {
+		"element": [
+			{
+				"id": "Questionnaire.extension",
+				"path": "Questionnaire.extension",
+				"slicing": {
+					"discriminator": [
+						{
+							"type": "value",
+							"path": "url"
+						}
+					],
+					"rules": "open"
+				},
+				"min": 1
+			},
+			{
+				"id": "Questionnaire.extension:webpage",
+				"path": "Questionnaire.extension",
+				"sliceName": "webpage",
+				"short": "Web page of the [RESOURCE]",
+				"definition": "If existing, a link to the web page directly relevant to the resource.",
+				"min": 0,
+				"max": "1",
+				"type": [
+					{
+						"code": "Extension",
+						"profile": [
+							"https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-webpage"
+						]
+					}
+				],
+				"isModifier": false,
+				"mapping": [
+					{
+						"identity": "1.9",
+						"map": "resource_web_page",
+						"comment": "Other web pages related to the resource can additionally be entered in the section \"Related resources\"."
+					}
+				]
+			},
+			{
+				"id": "Questionnaire.extension:format",
+				"path": "Questionnaire.extension",
+				"sliceName": "format",
+				"short": "Format of the [RESOURCE]",
+				"definition": "Technical format of the resource.",
+				"min": 0,
+				"max": "1",
+				"type": [
+					{
+						"code": "Extension",
+						"profile": [
+							"https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-format"
+						]
+					}
+				],
+				"isModifier": false
+			},
+			{
+				"id": "Questionnaire.extension:label",
+				"path": "Questionnaire.extension",
+				"sliceName": "label",
+				"min": 0,
+				"type": [
+					{
+						"code": "Extension",
+						"profile": [
+							"https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-label"
+						]
+					}
+				],
+				"isModifier": false
+			},
+			{
+				"id": "Questionnaire.extension:execution-language",
+				"path": "Questionnaire.extension",
+				"sliceName": "execution-language",
+				"min": 0,
+				"type": [
+					{
+						"code": "Extension",
+						"profile": [
+							"https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-execution-language"
+						]
+					}
+				],
+				"isModifier": false
+			},
+			{
+				"id": "Questionnaire.extension:keywords",
+				"path": "Questionnaire.extension",
+				"sliceName": "keywords",
+				"min": 0,
+				"type": [
+					{
+						"code": "Extension",
+						"profile": [
+							"https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-keywords2"
+						]
+					}
+				],
+				"isModifier": false
+			},
+			{
+				"id": "Questionnaire.extension:associatedParty",
+				"path": "Questionnaire.extension",
+				"sliceName": "associatedParty",
+				"min": 1,
+				"max": "1",
+				"type": [
+					{
+						"code": "Extension",
+						"profile": [
+							"https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-associated-party"
+						]
+					}
+				],
+				"isModifier": false
+			},
+			{
+				"id": "Questionnaire.extension:related",
+				"path": "Questionnaire.extension",
+				"sliceName": "related",
+				"min": 0,
+				"max": "1",
+				"type": [
+					{
+						"code": "Extension",
+						"profile": [
+							"https://example.org/fhir/StructureDefinition/NFDI4Health_EX_MDS_Related"
+						]
+					}
+				],
+				"isModifier": false
+			},
+			{
+				"id": "Questionnaire.extension:myExtension.extension",
+				"path": "Questionnaire.extension.extension",
+				"slicing": {
+					"discriminator": [
+						{
+							"type": "value",
+							"path": "url"
+						}
+					],
+					"rules": "open"
+				}
+			},
+			{
+				"id": "Questionnaire.extension:related.extension:identifier",
+				"path": "Questionnaire.extension.extension",
+				"sliceName": "identifier",
+				"min": 0
+			},
+			{
+				"id": "Questionnaire.extension:related.extension:identifier.value[x].system",
+				"path": "Questionnaire.extension.extension.value[x].system",
+				"slicing": {
+					"discriminator": [
+						{
+							"type": "type",
+							"path": "$this"
+						}
+					],
+					"rules": "open"
+				},
+				"min": 1
+			},
+			{
+				"id": "Questionnaire.identifier",
+				"path": "Questionnaire.identifier",
+				"slicing": {
+					"discriminator": [
+						{
+							"type": "value",
+							"path": "assigner.identifier.system"
+						}
+					],
+					"rules": "open"
+				},
+				"short": "ID of the [RESOURCE]",
+				"definition": "Unique identifier of the resource used for identification within the NFDI4Health.",
+				"min": 1,
+				"max": "1",
+				"mapping": [
+					{
+						"identity": "1.1",
+						"map": "resource_identifier",
+						"comment": "Unique identifier of the resource used for identification within the NFDI4Health."
+					}
+				]
+			},
+			{
+				"id": "Questionnaire.identifier.system",
+				"path": "Questionnaire.identifier.system",
+				"min": 1,
+				"fixedUri": "NFDI4Health",
+				"mapping": [
+					{
+						"identity": "1.1",
+						"map": "resource_identifier",
+						"comment": "The namespace for the identifier value"
+					}
+				]
+			},
+			{
+				"id": "Questionnaire.identifier.value",
+				"path": "Questionnaire.identifier.value",
+				"min": 1,
+				"mapping": [
+					{
+						"identity": "1.1",
+						"map": "resource_identifier",
+						"comment": "The value that is unique"
+					}
+				]
+			},
+			{
+				"id": "Questionnaire.identifier:alternative_ids",
+				"path": "Questionnaire.identifier",
+				"sliceName": "alternative_ids",
+				"definition": "Group of items providing information about identifiers (IDs) assigned to the given resource by another registering systems, e.g. a register of clinical trials or a data repository.",
+				"mapping": [
+					{
+						"identity": "1.12",
+						"map": "ids_alternative"
+					}
+				]
+			},
+			{
+				"id": "Questionnaire.identifier:alternative_ids.system",
+				"path": "Questionnaire.identifier.system",
+				"mapping": [
+					{
+						"identity": "1.12.1",
+						"map": "type"
+					}
+				]
+			},
+			{
+				"id": "Questionnaire.identifier:alternative_ids.value",
+				"path": "Questionnaire.identifier.value",
+				"mapping": [
+					{
+						"identity": "1.12.2",
+						"map": "identifier"
+					}
+				]
+			},
+			{
+				"id": "Questionnaire.version",
+				"path": "Questionnaire.version",
+				"short": "Version of the [RESOURCE]",
+				"definition": "If existing, the version number of the resource.",
+				"mapping": [
+					{
+						"identity": "1.10.1",
+						"map": "resource_version",
+						"comment": "The identifier that is used to identify this version of the questionnaire when it is referenced in a specification, model, design or instance. This is an arbitrary value managed by the questionnaire author and is not expected to be globally unique. For example, it might be a timestamp (e.g. yyyymmdd) if a managed version is not available. There is also no expectation that versions can be placed in a lexicographical sequence."
+					}
+				]
+			},
+			{
+				"id": "Questionnaire.title",
+				"path": "Questionnaire.title",
+				"short": "Title/name",
+				"definition": "Scientific unabbreviated title or name of the resource.",
+				"min": 1,
+				"mapping": [
+					{
+						"identity": "NFDI4Health",
+						"map": "1.3.1 Resource.titles.text"
+					}
+				]
+			},
+			{
+				"id": "Questionnaire.title.extension",
+				"path": "Questionnaire.title.extension",
+				"slicing": {
+					"discriminator": [
+						{
+							"type": "value",
+							"path": "url"
+						}
+					],
+					"rules": "open"
+				},
+				"min": 1
+			},
+			{
+				"id": "Questionnaire.title.extension:translation",
+				"path": "Questionnaire.title.extension",
+				"sliceName": "translation",
+				"min": 0,
+				"type": [
+					{
+						"code": "Extension",
+						"profile": [
+							"http://hl7.org/fhir/StructureDefinition/translation"
+						]
+					}
+				],
+				"isModifier": false
+			},
+			{
+				"id": "Questionnaire.title.extension:translation.extension",
+				"path": "Questionnaire.title.extension.extension",
+				"slicing": {
+					"discriminator": [
+						{
+							"type": "value",
+							"path": "url"
+						}
+					],
+					"rules": "open"
+				},
+				"min": 2
+			},
+			{
+				"id": "Questionnaire.title.extension:translation.extension:lang",
+				"path": "Questionnaire.title.extension.extension",
+				"sliceName": "lang",
+				"min": 1
+			},
+			{
+				"id": "Questionnaire.title.extension:translation.extension:lang.value[x]",
+				"path": "Questionnaire.title.extension.extension.value[x]",
+				"binding": {
+					"extension": [
+						{
+							"url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet",
+							"valueCanonical": "http://hl7.org/fhir/ValueSet/all-languages"
+						},
+						{
+							"url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+							"valueString": "Language"
+						},
+						{
+							"url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
+							"valueBoolean": true
+						}
+					],
+					"strength": "required"
+				}
+			},
+			{
+				"id": "Questionnaire.title.extension:language",
+				"path": "Questionnaire.title.extension",
+				"sliceName": "language",
+				"min": 1,
+				"max": "1",
+				"type": [
+					{
+						"code": "Extension",
+						"profile": [
+							"https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language"
+						]
+					}
+				],
+				"isModifier": false
+			},
+			{
+				"id": "Questionnaire.status",
+				"path": "Questionnaire.status",
+				"fixedCode": "unknown"
+			},
+			{
+				"id": "Questionnaire.description",
+				"path": "Questionnaire.description",
+				"short": "A short plain text summary describing the resource in English.",
+				"definition": "A short plain text summary describing the resource in English.",
+				"min": 1,
+				"mapping": [
+					{
+						"identity": "1.5.1",
+						"language": "English",
+						"map": "resource_description_english",
+						"comment": "A short plain text summary describing the resource in English."
+					}
+				]
+			},
+			{
+				"id": "Questionnaire.description.extension",
+				"path": "Questionnaire.description.extension",
+				"slicing": {
+					"discriminator": [
+						{
+							"type": "value",
+							"path": "url"
+						}
+					],
+					"rules": "open"
+				},
+				"min": 0
+			},
+			{
+				"id": "Questionnaire.description.extension:translation",
+				"path": "Questionnaire.description.extension",
+				"sliceName": "translation",
+				"min": 0,
+				"max": "1",
+				"type": [
+					{
+						"code": "Extension",
+						"profile": [
+							"http://hl7.org/fhir/StructureDefinition/translation"
+						]
+					}
+				],
+				"isModifier": false,
+				"mapping": [
+					{
+						"identity": "1.6",
+						"map": "Resource.resource_descriptions_non_english"
+					}
+				]
+			},
+			{
+				"id": "Questionnaire.description.extension:translation.extension",
+				"path": "Questionnaire.description.extension.extension",
+				"slicing": {
+					"discriminator": [
+						{
+							"type": "value",
+							"path": "url"
+						}
+					],
+					"rules": "open"
+				},
+				"min": 2
+			},
+			{
+				"id": "Questionnaire.description.extension:translation.extension:lang",
+				"path": "Questionnaire.description.extension.extension",
+				"sliceName": "lang",
+				"min": 1
+			},
+			{
+				"id": "Questionnaire.description.extension:translation.extension:lang.value[x]",
+				"path": "Questionnaire.description.extension.extension.value[x]",
+				"binding": {
+					"extension": [
+						{
+							"url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet",
+							"valueCanonical": "http://hl7.org/fhir/ValueSet/all-languages"
+						},
+						{
+							"url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+							"valueString": "Language"
+						},
+						{
+							"url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
+							"valueBoolean": true
+						}
+					],
+					"strength": "required",
+					"description": "Value set defining codes to specify a language other than English.",
+					"valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-language-no-english-snomedct"
+				},
+				"mapping": [
+					{
+						"identity": "1.6.2",
+						"map": "resource_descriptions_non_english.language"
+					}
+				]
+			},
+			{
+				"id": "Questionnaire.description.extension:translation.extension:content",
+				"path": "Questionnaire.description.extension.extension",
+				"sliceName": "content",
+				"min": 1
+			},
+			{
+				"id": "Questionnaire.description.extension:translation.extension:content.value[x]",
+				"path": "Questionnaire.description.extension.extension.value[x]",
+				"mapping": [
+					{
+						"identity": "1.6.1",
+						"map": "resource_descriptions_non_english.text"
+					}
+				]
+			},
+			{
+				"id": "Questionnaire.copyright",
+				"path": "Questionnaire.copyright",
+				"short": "Additional information about use rights",
+				"definition": "Any additional descriptive information explaining terms and conditions to (re-)use the resource.",
+				"mapping": [
+					{
+						"identity": "1.10.3.3",
+						"map": "resource_use_rights_description"
+					}
+				]
+			},
+			{
+				"id": "Questionnaire.copyright.extension",
+				"path": "Questionnaire.copyright.extension",
+				"slicing": {
+					"discriminator": [
+						{
+							"type": "value",
+							"path": "url"
+						}
+					],
+					"rules": "open"
+				},
+				"min": 2
+			},
+			{
+				"id": "Questionnaire.copyright.extension:label",
+				"path": "Questionnaire.copyright.extension",
+				"sliceName": "label",
+				"short": "License",
+				"definition": "License defining the rights to (re-)use the resource.",
+				"min": 1,
+				"type": [
+					{
+						"code": "Extension",
+						"profile": [
+							"https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-copyright-label"
+						]
+					}
+				],
+				"isModifier": false,
+				"mapping": [
+					{
+						"identity": "1.10.3.1",
+						"map": "resource_use_rights_label"
+					}
+				]
+			},
+			{
+				"id": "Questionnaire.copyright.extension:label.value[x]",
+				"path": "Questionnaire.copyright.extension.value[x]",
+				"binding": {
+					"strength": "required",
+					"description": "Value set used to indicate the use rights of a resource.",
+					"valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-yes-no-not-applicable-snomedct"
+				}
+			},
+			{
+				"id": "Questionnaire.copyright.extension:label.value[x].text",
+				"path": "Questionnaire.copyright.extension.value[x].text",
+				"max": "0"
+			},
+			{
+				"id": "Questionnaire.copyright.extension:useRightsConfimations",
+				"path": "Questionnaire.copyright.extension",
+				"sliceName": "useRightsConfimations",
+				"min": 1,
+				"type": [
+					{
+						"code": "Extension",
+						"profile": [
+							"https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-use_rights"
+						]
+					}
+				],
+				"isModifier": false,
+				"mapping": [
+					{
+						"identity": "1.10.3.2",
+						"map": "resource_use_rights_confirmations"
+					}
+				]
+			},
+			{
+				"id": "Questionnaire.copyright.extension:useRightsConfimations.extension",
+				"path": "Questionnaire.copyright.extension.extension",
+				"slicing": {
+					"discriminator": [
+						{
+							"type": "value",
+							"path": "url"
+						}
+					],
+					"rules": "open"
+				},
+				"min": 4
+			},
+			{
+				"id": "Questionnaire.copyright.extension:useRightsConfimations.extension:authorsConfirmationOne",
+				"path": "Questionnaire.copyright.extension.extension",
+				"sliceName": "authorsConfirmationOne",
+				"min": 1,
+				"mapping": [
+					{
+						"identity": "1.10.3.2.1",
+						"map": "resource_use_rights_confirmation_authority"
+					}
+				]
+			},
+			{
+				"id": "Questionnaire.copyright.extension:useRightsConfimations.extension:authorsConfirmationTwo",
+				"path": "Questionnaire.copyright.extension.extension",
+				"sliceName": "authorsConfirmationTwo",
+				"min": 1,
+				"mapping": [
+					{
+						"identity": "1.10.3.2.2",
+						"map": "Item renamed to resource_use_rights_confirmation_terms"
+					}
+				]
+			},
+			{
+				"id": "Questionnaire.copyright.extension:useRightsConfimations.extension:authorsConfirmationThree",
+				"path": "Questionnaire.copyright.extension.extension",
+				"sliceName": "authorsConfirmationThree",
+				"min": 1,
+				"mapping": [
+					{
+						"identity": "1.10.3.2.3",
+						"map": "Item renamed to resource_use_rights_confirmation_irrevocability"
+					}
+				]
+			},
+			{
+				"id": "Questionnaire.copyright.extension:useRightsConfimations.extension:supportByLicensing",
+				"path": "Questionnaire.copyright.extension.extension",
+				"sliceName": "supportByLicensing",
+				"min": 1,
+				"mapping": [
+					{
+						"identity": "1.10.3.2.4",
+						"map": "resource_use_rights_support_by_licencing"
+					}
+				]
+			}
+		]
+	}
+}
