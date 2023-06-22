@@ -372,6 +372,42 @@
     {
       "code": "088",
       "display": "Last update posted"
+    },
+    {
+      "code": "089",
+      "display": "arXiv"
+    },
+    {
+      "code": "090",
+      "display": "EAN13"
+    },
+    {
+      "code": "091",
+      "display": "EISSN"
+    },
+    {
+      "code": "092",
+      "display": "ISBN"
+    },
+    {
+      "code": "093",
+      "display": "ISSN"
+    },
+    {
+      "code": "094",
+      "display": "ISTC"
+    },
+    {
+      "code": "095",
+      "display": "LISSN"
+    },
+    {
+      "code": "096",
+      "display": "PURL"
+    },
+    {
+      "code": "097",
+      "display": "w3id"
     }
   ],
   "experimental": true,
@@ -386,5 +422,5 @@
       ]
     }
   ],
-  "count": 88
+  "count": 97
 }

@@ -93,7 +93,7 @@
         <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-time-units-ucum-umls" />
       </binding>
       <mapping>
-        <identity value="NDI4Health" />
+        <identity value="NFDI4Health" />
         <map value="1.17.27.2 Resource.studyDesign.ageMinExamined.timeUnit" />
       </mapping>
     </element>

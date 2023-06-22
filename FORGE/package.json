@@ -1,0 +1,13 @@
+{
+  "name": "FORGE",
+  "version": "0.1.0",
+  "description": "Put a description here",
+  "dependencies": {
+    "hl7.fhir.r4.core": "4.0.1",
+    "hl7.fhir.r4.elements": "4.0.1",
+    "hl7.fhir.r4.expansions": "4.0.1"
+  },
+  "fhirVersions": [
+    "4.0.1"
+  ]
+}

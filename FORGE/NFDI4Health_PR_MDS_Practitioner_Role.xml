@@ -38,24 +38,8 @@
         <targetProfile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization" />
       </type>
       <mapping>
-        <identity value="1.11.6" />
-        <map value="role_affiliations" />
-      </mapping>
-    </element>
-    <element id="PractitionerRole.code">
-      <path value="PractitionerRole.code" />
-      <short value="Type of the role" />
-      <definition value="Type of the role a person fulllfils. For example, this can be a principal investigator of a study or an author of a document." />
-      <min value="1" />
-      <max value="1" />
-      <binding>
-        <strength value="required" />
-        <description value="Value set defining codes for personal roles." />
-        <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-personal-roles-nci-umls-local" />
-      </binding>
-      <mapping>
-        <identity value="1.11.3.1" />
-        <map value="role_name_personal_type" />
+        <identity value="NFDI4Health" />
+        <map value="1.11.1.5 Resource.roles.affiliation" />
       </mapping>
     </element>
     <element id="PractitionerRole.telecom">

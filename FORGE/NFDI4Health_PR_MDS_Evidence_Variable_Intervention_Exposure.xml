@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="nfdi4health-pr-mds-evidence-variable-intervention-exposure" />
+  <url value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-evidence-variable-intervention-exposure" />
+  <version value="0.9" />
+  <name value="NFDI4Health_PR_MDS_Evidence_Variable_Intervention_Exposure" />
+  <title value="NFDI4Health PR MDS Evidence Variable Intervention Exposure" />
+  <status value="draft" />
+  <publisher value="NFDI4Health" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="https://www.nfdi4health.de" />
+    </telecom>
+  </contact>
+  <description value="Resource covering information about a study intervention or exposure." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="EvidenceVariable" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/EvidenceVariable" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="EvidenceVariable">
+      <path value="EvidenceVariable" />
+      <short value="Interventions/exposures of the study" />
+      <definition value="Group of items providing information about study interventions or exposures." />
+      <comment value="Additional information: The items may be not applicable for non-interventional studies." />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.17.31 Resource.studyDesign.interventions" />
+      </mapping>
+    </element>
+    <element id="EvidenceVariable.title">
+      <path value="EvidenceVariable.title" />
+      <short value="Name of the intervention/exposure" />
+      <definition value="A short descriptive name of the intervention/exposure." />
+      <comment value="Additional information: Please specify the intervention(s)/exposure associated with each arm/group. | Short input help: If the same intervention/exposure is associated with more than one arm or group, provide the information once and use the field &quot;Name of the associated study arm/group&quot; to associate it with more than one arm/group." />
+      <min value="1" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.17.31.1 Resource.studyDesign.interventions.name" />
+      </mapping>
+    </element>
+    <element id="EvidenceVariable.description">
+      <path value="EvidenceVariable.description" />
+      <short value="Additional information about the intervention/exposure" />
+      <definition value="If needed, additional descriptive information about the given intervention/exposure." />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.17.31.3 Resource.studyDesign.interventions.description" />
+      </mapping>
+    </element>
+    <element id="EvidenceVariable.topic">
+      <path value="EvidenceVariable.topic" />
+      <short value="Type of the intervention/exposure" />
+      <definition value="General type of the given intervention/exposure." />
+      <max value="1" />
+      <binding>
+        <strength value="required" />
+        <description value="Value set defining codes to specify the general type of the given intervention/exposure in the study." />
+        <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-intervention-type-nci-umls" />
+      </binding>
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.17.31.2 Resource.studyDesign.interventions.type" />
+      </mapping>
+    </element>
+    <element id="EvidenceVariable.topic.coding">
+      <path value="EvidenceVariable.topic.coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="EvidenceVariable.topic.coding.system">
+      <path value="EvidenceVariable.topic.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="EvidenceVariable.topic.coding.code">
+      <path value="EvidenceVariable.topic.coding.code" />
+      <min value="1" />
+    </element>
+  </differential>
+</StructureDefinition>

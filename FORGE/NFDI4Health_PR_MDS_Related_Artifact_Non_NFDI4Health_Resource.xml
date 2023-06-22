@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <id value="nfdi4health-pr-mds-related-artifact-non-ndfi4health-resource"/>
+    <url value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-related-artifact-non-ndfi4health-resource"/>
+    <version value="0.9"/>
+    <name value="NFDI4Health_PR_MDS_Related_Artifact_Non_NFDI4Health_Resource"/>
+    <title value="NFDI4Health PR MDS Related Artifact Non NFDI4Health Resource"/>
+    <status value="draft"/>
+    <publisher value="NFDI4Health"/>
+    <contact>
+        <telecom>
+            <system value="url"/>
+            <value value="https://www.nfdi4health.de"/>
+        </telecom>
+    </contact>
+    <description value="Profile of a RelatedArtifact intended to capture information about related non NFDI4Health resources."/>
+    <fhirVersion value="4.0.1"/>
+    <mapping>
+        <identity value="rim"/>
+        <uri value="http://hl7.org/v3"/>
+        <name value="RIM Mapping"/>
+    </mapping>
+    <mapping>
+        <identity value="NFDI4Health"/>
+        <name value="NFDI4Health to FHIR Mapping"/>
+    </mapping>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="RelatedArtifact"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/RelatedArtifact"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="RelatedArtifact">
+            <path value="RelatedArtifact"/>
+            <short value="Related publications, datasets, study documents, web pages, etc."/>
+            <definition value="Group of items providing information about identifiers (IDs) of the resources related to the given resource, e.g. DOIs of publications, datasets, study documents or links to web pages."/>
+            <comment value="Short input help: If existing, you can specify identifier(s) of any related resources, e.g. DOIs of publications, datasets, study documents, links to web pages, etc."/>
+            <mapping>
+                <identity value="NFDI4Health"/>
+                <map value="1.13 Resource.ids"/>
+            </mapping>
+        </element>
+        <element id="RelatedArtifact.extension">
+            <path value="RelatedArtifact.extension"/>
+            <min value="2"/>
+        </element>
+        <element id="RelatedArtifact.extension:identifier">
+            <path value="RelatedArtifact.extension"/>
+            <sliceName value="identifier"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier"/>
+            </type>
+        </element>
+        <element id="RelatedArtifact.extension:identifier.valueIdentifier">
+            <path value="RelatedArtifact.extension.valueIdentifier"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="RelatedArtifact.extension:identifier.valueIdentifier.type">
+            <path value="RelatedArtifact.extension.valueIdentifier.type"/>
+            <binding>
+                <strength value="required"/>
+                <description value="Value set defining codes to specify the ID Type of the related resource."/>
+                <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-identifier-type-related-artifact-umls-local"/>
+            </binding>
+            <mapping>
+                <identity value="NFDI4Health"/>
+                <map value="1.13.2 Resource.ids.scheme"/>
+            </mapping>
+        </element>
+        <element id="RelatedArtifact.extension:identifier.valueIdentifier.value">
+            <path value="RelatedArtifact.extension.valueIdentifier.value"/>
+            <mapping>
+                <identity value="NFDI4Health"/>
+                <map value="1.13.1 Resource.ids.identifier"/>
+            </mapping>
+        </element>
+        <element id="RelatedArtifact.extension:identifierAssignmentDate">
+            <path value="RelatedArtifact.extension"/>
+            <sliceName value="identifierAssignmentDate"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-identifier-assignment-date"/>
+            </type>
+            <mapping>
+                <identity value="NFDI4Health"/>
+                <map value="1.13.3 Resource.ids.date"/>
+            </mapping>
+        </element>
+        <element id="RelatedArtifact.extension:relationType">
+            <path value="RelatedArtifact.extension"/>
+            <sliceName value="relationType"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related-artifact-reltype-non-nfdi-resource"/>
+            </type>
+            <mapping>
+                <identity value="NFDI4Health"/>
+                <map value="1.13.4 Resource.ids.relationType"/>
+            </mapping>
+        </element>
+        <element id="RelatedArtifact.extension:resourceTypeGeneral">
+            <path value="RelatedArtifact.extension"/>
+            <sliceName value="resourceTypeGeneral"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-resource-type-general"/>
+            </type>
+            <mapping>
+                <identity value="NFDI4Health"/>
+                <map value="1.13.5 Resource.ids.resourceTypeGeneral"/>
+            </mapping>
+        </element>
+    </differential>
+</StructureDefinition>

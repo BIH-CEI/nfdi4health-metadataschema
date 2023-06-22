@@ -1,0 +1,231 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "example-lm-temperature-as-kelvin",
+  "url": "https://www.nfdi4health.de/fhir/StructureDefinition/LogicalModel/example-lm-temperature-as-kelvin",
+  "version": "1.0",
+  "name": "Example_LM_Temperature_as_Kelvin",
+  "title": "Example LM Temperature as Kelvin",
+  "status": "active",
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "description": "Example LogicalModel defining that the temperature is measured in Kelvin",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "example-lm-temperature-as-kelvin-internal-numbering",
+      "name": "Example Temperature as Kelvin mapped to internal numbering"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "https://www.nfdi4health.de/fhir/StructureDefinition/LogicalModel/example-lm-temperature-as-kelvin",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "example-lm-temperature-as-kelvin",
+        "path": "example-lm-temperature-as-kelvin",
+        "short": "Example LM Temperature as Kelvin",
+        "definition": "Example LogicalModel defining that the temperature is measured in Kelvin"
+      },
+      {
+        "id": "example-lm-temperature-as-kelvin.PatientTemperature",
+        "path": "example-lm-temperature-as-kelvin.PatientTemperature",
+        "short": "Patient temperature in Kelvin",
+        "definition": "Group of items used to store a measured patient temperature in Kelvin.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "example-lm-temperature-as-kelvin-internal-numbering",
+            "map": "t_d"
+          }
+        ]
+      },
+      {
+        "id": "example-lm-temperature-as-kelvin.PatientTemperature.category",
+        "path": "example-lm-temperature-as-kelvin.PatientTemperature.category",
+        "short": "Classification of type of observation",
+        "definition": "Classification of type of observation",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "fixedCode": "vital-signs",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      },
+      {
+        "id": "example-lm-temperature-as-kelvin.PatientTemperature.code",
+        "path": "example-lm-temperature-as-kelvin.PatientTemperature.code",
+        "short": "Type of temperature observation",
+        "definition": "Type of temperature observation",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "fixedCode": "8310-5",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://loinc.org"
+        }
+      },
+      {
+        "id": "example-lm-temperature-as-kelvin.PatientTemperature.subject",
+        "path": "example-lm-temperature-as-kelvin.PatientTemperature.subject",
+        "short": "Type of subject",
+        "definition": "Type of subject",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "example-lm-temperature-as-kelvin.PatientTemperature.effective",
+        "path": "example-lm-temperature-as-kelvin.PatientTemperature.effective",
+        "short": "Clinically relevant time/time-period for the temperature observation",
+        "definition": "Clinically relevant time/time-period for the temperature observation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "example-lm-temperature-as-kelvin.PatientTemperature.method",
+        "path": "example-lm-temperature-as-kelvin.PatientTemperature.method",
+        "short": "How the temperature was measured",
+        "definition": "How the temperature was measured",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "example-lm-temperature-as-kelvin.PatientTemperature.value",
+        "path": "example-lm-temperature-as-kelvin.PatientTemperature.value",
+        "short": "Actual temperature",
+        "definition": "Actual temperature",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "example-lm-temperature-as-kelvin.PatientTemperature.value.value",
+        "path": "example-lm-temperature-as-kelvin.PatientTemperature.value.value",
+        "short": "Numerical temperature value",
+        "definition": "Numerical temperature value",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ]
+      },
+      {
+        "id": "example-lm-temperature-as-kelvin.PatientTemperature.value.unit",
+        "path": "example-lm-temperature-as-kelvin.PatientTemperature.value.unit",
+        "short": "Unit",
+        "definition": "Unit",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "kelvin"
+      },
+      {
+        "id": "example-lm-temperature-as-kelvin.PatientTemperature.value.system",
+        "path": "example-lm-temperature-as-kelvin.PatientTemperature.value.system",
+        "short": "System that defines coded unit form",
+        "definition": "System that defines coded unit form",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "example-lm-temperature-as-kelvin.PatientTemperature.value.code",
+        "path": "example-lm-temperature-as-kelvin.PatientTemperature.value.code",
+        "short": "Coded form of the unit",
+        "definition": "Coded form of the unit",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "fixedCode": "K"
+      },
+      {
+        "id": "example-lm-temperature-as-kelvin.PatientTemperature.dataAbsentReason",
+        "path": "example-lm-temperature-as-kelvin.PatientTemperature.dataAbsentReason",
+        "short": "Reason why the result is missing",
+        "definition": "Reason why the result is missing",
+        "comment": "A smaller value set might need to be created to only ask for the values 'asked-declined' (-9) and 'error' (-99).",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/data-absent-reason"
+        }
+      }
+    ]
+  }
+}

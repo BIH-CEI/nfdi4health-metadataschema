@@ -81,10 +81,6 @@
         <label value="Example of ORCID" />
         <valueString value="0000-0003-1379-7023" />
       </example>
-      <mapping>
-        <identity value="1.11.3.5" />
-        <map value="identifier" />
-      </mapping>
     </element>
     <element id="Practitioner.name">
       <path value="Practitioner.name" />
