@@ -53,10 +53,6 @@
       <type>
         <code value="string" />
       </type>
-      <mapping>
-        <identity value="NFDI4Health" />
-        <map value="1.7.1 resource_keywords_label" />
-      </mapping>
     </element>
     <element id="Extension.extension:code">
       <path value="Extension.extension" />

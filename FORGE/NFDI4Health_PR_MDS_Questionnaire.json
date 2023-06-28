@@ -179,8 +179,8 @@
         "max": "1",
         "mapping": [
           {
-            "identity": "1.1",
-            "map": "resource_identifier",
+            "identity": "NFDI4Health",
+            "map": "1.1 resource_identifier",
             "comment": "Unique identifier of the resource used for identification within the NFDI4Health."
           }
         ]
