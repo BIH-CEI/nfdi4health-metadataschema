@@ -2,9 +2,9 @@ Alias: $nfdi4health-ex-mds-webpage = https://www.nfdi4health.de/fhir/metadatasch
 Alias: $nfdi4health-ex-mds-format = https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-format
 Alias: $nfdi4health-ex-mds-label = https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-label
 Alias: $nfdi4health-ex-mds-execution-language = https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-execution-language
-Alias: $nfdi4health-ex-mds-keywords2 = https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-keywords2
 Alias: $nfdi4health-ex-mds-associated-party = https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-associated-party
 Alias: $NFDI4Health_EX_MDS_Related = https://example.org/fhir/StructureDefinition/NFDI4Health_EX_MDS_Related
+Alias: $nfdi4health-ex-mds-keywords2 = https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-keywords2
 Alias: $nfdi4health-ex-mds-language = https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language
 Alias: $nfdi4health-ex-mds-copyright-label = https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-copyright-label
 Alias: $nfdi4health-ex-mds-use_rights = https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-use_rights
@@ -16,7 +16,6 @@ Parent: Questionnaire
 Id: nfdi4health-pr-mds-questionnaire
 Title: "NFDI4Health PR MDS Questionnaire"
 Description: "Resource covering metadata of a questionnaire."
-* ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire"
 * ^version = "0.9"
 * ^status = #draft
 * ^publisher = "NFDI4Health"
@@ -30,9 +29,9 @@ Description: "Resource covering metadata of a questionnaire."
     $nfdi4health-ex-mds-format named format 0..1 and
     $nfdi4health-ex-mds-label named label 0..* and
     $nfdi4health-ex-mds-execution-language named execution-language 0..* and
-    $nfdi4health-ex-mds-keywords2 named keywords 0..* and
     $nfdi4health-ex-mds-associated-party named associatedParty 1..1 and
-    $NFDI4Health_EX_MDS_Related named related 0..1
+    $NFDI4Health_EX_MDS_Related named related 0..1 and
+    $nfdi4health-ex-mds-keywords2 named keywords 0..*
 * extension[webpage] ^short = "Web page of the [RESOURCE]"
 * extension[webpage] ^definition = "If existing, a link to the web page directly relevant to the resource."
 * extension[webpage] ^isModifier = false
@@ -43,19 +42,9 @@ Description: "Resource covering metadata of a questionnaire."
 * extension[label] ^isModifier = false
 * extension[execution-language] ^min = 0
 * extension[execution-language] ^isModifier = false
-* extension[keywords] ^min = 0
-* extension[keywords] ^isModifier = false
 * extension[associatedParty] ^isModifier = false
 * extension[related] ^isModifier = false
-* extension[myExtension].extension ^slicing.discriminator.type = #value
-* extension[myExtension].extension ^slicing.discriminator.path = "url"
-* extension[myExtension].extension ^slicing.rules = #open
-* extension[related].extension[identifier] ^sliceName = "identifier"
-* extension[related].extension[identifier] ^min = 0
-* extension[related].extension[identifier].value[x].system 1..
-* extension[related].extension[identifier].value[x].system ^slicing.discriminator.type = #type
-* extension[related].extension[identifier].value[x].system ^slicing.discriminator.path = "$this"
-* extension[related].extension[identifier].value[x].system ^slicing.rules = #open
+* extension[keywords] ^isModifier = false
 * identifier 1..1
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "assigner.identifier.system"
@@ -84,12 +73,6 @@ Description: "Resource covering metadata of a questionnaire."
 * title.extension[translation].extension ^slicing.discriminator.path = "url"
 * title.extension[translation].extension ^slicing.rules = #open
 * title.extension[translation].extension[lang] ^sliceName = "lang"
-* title.extension[translation].extension[lang].value[x] ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet"
-* title.extension[translation].extension[lang].value[x] ^binding.extension[=].valueCanonical = "http://hl7.org/fhir/ValueSet/all-languages"
-* title.extension[translation].extension[lang].value[x] ^binding.extension[+].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
-* title.extension[translation].extension[lang].value[x] ^binding.extension[=].valueString = "Language"
-* title.extension[translation].extension[lang].value[x] ^binding.extension[+].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"
-* title.extension[translation].extension[lang].value[x] ^binding.extension[=].valueBoolean = true
 * title.extension[translation].extension[lang].value[x] ^binding.strength = #required
 * title.extension contains $nfdi4health-ex-mds-language named language 1..1
 * title.extension[language] ^isModifier = false
@@ -108,12 +91,6 @@ Description: "Resource covering metadata of a questionnaire."
 * description.extension[translation].extension ^slicing.rules = #open
 * description.extension[translation].extension[lang] ^sliceName = "lang"
 * description.extension[translation].extension[lang].value[x] from $nfdi4health-vs-mds-language-no-english-snomedct (required)
-* description.extension[translation].extension[lang].value[x] ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet"
-* description.extension[translation].extension[lang].value[x] ^binding.extension[=].valueCanonical = "http://hl7.org/fhir/ValueSet/all-languages"
-* description.extension[translation].extension[lang].value[x] ^binding.extension[+].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
-* description.extension[translation].extension[lang].value[x] ^binding.extension[=].valueString = "Language"
-* description.extension[translation].extension[lang].value[x] ^binding.extension[+].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"
-* description.extension[translation].extension[lang].value[x] ^binding.extension[=].valueBoolean = true
 * description.extension[translation].extension[lang].value[x] ^binding.description = "Value set defining codes to specify a language other than English."
 * description.extension[translation].extension[content] ^sliceName = "content"
 * copyright ^short = "Additional information about use rights"
@@ -149,12 +126,20 @@ Source: NFDI4Health_PR_MDS_Questionnaire
 * extension[webpage] -> "resource_web_page" "Other web pages related to the resource can additionally be entered in the section \"Related resources\"."
 
 // WARNING: The following Mapping may be incomplete since the original NFDI4Health_PR_MDS_Questionnaire
+// StructureDefinition was missing the mapping entry for NFDI4Health.
+// Please review this and add the following properties as necessary: Target, Title, Description
+Mapping: NFDI4Health
+Id: NFDI4Health
+Source: NFDI4Health_PR_MDS_Questionnaire
+* identifier -> "1.1 resource_identifier" "Unique identifier of the resource used for identification within the NFDI4Health."
+* title -> "1.3.1 Resource.titles.text"
+
+// WARNING: The following Mapping may be incomplete since the original NFDI4Health_PR_MDS_Questionnaire
 // StructureDefinition was missing the mapping entry for 1.1.
 // Please review this and add the following properties as necessary: Target, Title, Description
 Mapping: 1.1
 Id: 1.1
 Source: NFDI4Health_PR_MDS_Questionnaire
-* identifier -> "resource_identifier" "Unique identifier of the resource used for identification within the NFDI4Health."
 * identifier.system -> "resource_identifier" "The namespace for the identifier value"
 * identifier.value -> "resource_identifier" "The value that is unique"
 
@@ -189,14 +174,6 @@ Mapping: 1.10.1
 Id: 1.10.1
 Source: NFDI4Health_PR_MDS_Questionnaire
 * version -> "resource_version" "The identifier that is used to identify this version of the questionnaire when it is referenced in a specification, model, design or instance. This is an arbitrary value managed by the questionnaire author and is not expected to be globally unique. For example, it might be a timestamp (e.g. yyyymmdd) if a managed version is not available. There is also no expectation that versions can be placed in a lexicographical sequence."
-
-// WARNING: The following Mapping may be incomplete since the original NFDI4Health_PR_MDS_Questionnaire
-// StructureDefinition was missing the mapping entry for NFDI4Health.
-// Please review this and add the following properties as necessary: Target, Title, Description
-Mapping: NFDI4Health
-Id: NFDI4Health
-Source: NFDI4Health_PR_MDS_Questionnaire
-* title -> "1.3.1 Resource.titles.text"
 
 // WARNING: The following Mapping may be incomplete since the original NFDI4Health_PR_MDS_Questionnaire
 // StructureDefinition was missing the mapping entry for 1.5.1.
