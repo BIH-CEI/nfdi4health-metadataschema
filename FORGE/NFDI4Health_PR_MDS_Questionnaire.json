@@ -526,7 +526,7 @@
         "binding": {
           "strength": "required",
           "description": "Value set used to indicate the use rights of a resource.",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-yes-no-not-applicable-snomedct"
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-use-rights-label-spdx-umls-local"
         }
       },
       {
