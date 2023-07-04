@@ -39,10 +39,11 @@ Generally, the CRISIS questionnaires include the following domains:
 * extension[format].value[x] = "PDF"
 * version = "V0.3"
 * copyright.extension[label].value[x] = #UseRights#CC-BY-SA-4.0
-* copyright.extension[useRightsConfimations].extension[authorsConfirmationOne].value[x] = 0 // how to deal with boolean? 
-* copyright.extension[useRightsConfimations].extension[authorsConfirmationTwo].value[x] = 0
-* copyright.extension[useRightsConfimations].extension[authorsConfirmationThree].value[x] = 0
-* copyright.extension[useRightsConfimations].extension[supportByLicensing].value[x] = 0
+* copyright.extension[useRightsConfimations].extension[authorsConfirmationOne].value[x] = false
+* copyright.extension[useRightsConfimations].extension[authorsConfirmationTwo].value[x] = false
+* copyright.extension[useRightsConfimations].extension[authorsConfirmationThree].value[x] = false
+* copyright.extension[useRightsConfimations].extension[supportByLicensing].value[x] = false
 * copyright = "For reuse purposes, copies of all forms, their translations and scoring information can be found on the download page of the CRISIS project."
-* extension[associatedParty].extension[party].value[x] = "NFDI4Health PR MDS Organization" // repeating item for personal
+* extension[associatedParty][0].extension[party]. // Backboneelement ??
+* extension[associatedParty].extension[party].value[x] = "NFDI4Health PR MDS Organization" // repeating item for personal instance
 * extension[associatedParty].extension[name-type].value[x] = #C0220885 
