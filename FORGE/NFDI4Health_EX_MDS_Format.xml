@@ -20,8 +20,8 @@
     <element id="Extension">
       <path value="Extension" />
       <mapping>
-        <identity value="1.10.2" />
-        <map value="resource_format" />
+        <identity value="NFDI4Health" />
+        <map value="1.10.2 Resource.nonStudyDetails.format" />
       </mapping>
     </element>
     <element id="Extension.url">

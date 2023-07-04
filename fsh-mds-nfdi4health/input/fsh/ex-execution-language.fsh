@@ -1,0 +1,31 @@
+Alias: $valueset-languages.html = https://www.hl7.org/fhir/valueset-languages.html
+
+Extension: NFDI4Health_EX_MDS_Execution_Language
+Id: nfdi4health-ex-mds-execution-language
+Title: "NFDI4Health EX MDS Execution Language"
+* ^version = "0.9"
+* ^status = #draft
+* ^publisher = "NFDI4Health"
+* ^contact.telecom.system = #url
+* ^contact.telecom.value = "https://www.nfdi4health.de"
+* ^context[0].type = #element
+* ^context[=].expression = "ResearchStudy"
+* ^context[+].type = #element
+* ^context[=].expression = "Questionnaire"
+* . ^short = "Execution language of a resource"
+* . ^definition = "Extension capturing the language(s) in which a study/substudy is conducted, or a language in which a study document is composed."
+* value[x] 1..
+* value[x] only code
+* value[x] from $valueset-languages.html (required)
+* value[x] ^short = "A human language."
+* value[x] ^definition = "A human language."
+* value[x] ^binding.description = "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)"
+
+// WARNING: The following Mapping may be incomplete since the original NFDI4Health_EX_MDS_Execution_Language
+// StructureDefinition was missing the mapping entry for NFDI4Health.
+// Please review this and add the following properties as necessary: Target, Title, Description
+Mapping: NFDI4Health-Execution-Language-to-FHIR
+Id: NFDI4Health
+Title: "NFDI4Health to FHIR Mapping"
+Source: NFDI4Health_EX_MDS_Execution_Language
+* -> "1.8 Resource.languages"
