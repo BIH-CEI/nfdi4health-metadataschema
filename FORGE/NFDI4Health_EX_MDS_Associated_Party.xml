@@ -75,9 +75,9 @@
         <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization" />
       </type>
     </element>
-    <element id="Extension.extension:role-personal">
+    <element id="Extension.extension:rolePersonal">
       <path value="Extension.extension" />
-      <sliceName value="role-personal" />
+      <sliceName value="rolePersonal" />
       <short value="Type of the role" />
       <definition value="Type of the role a person fulllfils. For example, this can be a principal investigator of a study or an author of a document." />
       <comment value="Short input help: Which role does the person fulllfil? Select one value from the list." />
@@ -88,11 +88,11 @@
         <map value="1.11.3.1 Resource.roles.personal.type" />
       </mapping>
     </element>
-    <element id="Extension.extension:role-personal.url">
+    <element id="Extension.extension:rolePersonal.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="role-personal" />
+      <fixedUri value="rolePersonal" />
     </element>
-    <element id="Extension.extension:role-personal.value[x]">
+    <element id="Extension.extension:rolePersonal.value[x]">
       <path value="Extension.extension.value[x]" />
       <short value="Role type" />
       <definition value="Type of the role a person fulllfils, e.g. a principal investigator of a study or an author of a document?" />
@@ -107,17 +107,17 @@
         <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-personal-roles-nci-umls-local" />
       </binding>
     </element>
-    <element id="Extension.extension:role-personal.value[x].system">
+    <element id="Extension.extension:rolePersonal.value[x].system">
       <path value="Extension.extension.value[x].system" />
       <min value="1" />
     </element>
-    <element id="Extension.extension:role-personal.value[x].code">
+    <element id="Extension.extension:rolePersonal.value[x].code">
       <path value="Extension.extension.value[x].code" />
       <min value="1" />
     </element>
-    <element id="Extension.extension:role-organisational">
+    <element id="Extension.extension:roleOrganisational">
       <path value="Extension.extension" />
-      <sliceName value="role-organisational" />
+      <sliceName value="roleOrganisational" />
       <short value="Type of the role" />
       <definition value="Type of the role an organisation, institution or group fulllfils. For example, this can be a sponsor of the study or a group of authors of the document." />
       <comment value="Short input help: Which role does the organisation/institution/group/etc. fulllfil? Select one value from the list." />
@@ -128,11 +128,11 @@
         <map value="1.11.2.1 Resource.roles.organisational.type" />
       </mapping>
     </element>
-    <element id="Extension.extension:role-organisational.url">
+    <element id="Extension.extension:roleOrganisational.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="role-organisational" />
+      <fixedUri value="roleOrganisational" />
     </element>
-    <element id="Extension.extension:role-organisational.value[x]">
+    <element id="Extension.extension:roleOrganisational.value[x]">
       <path value="Extension.extension.value[x]" />
       <short value="Type of the role" />
       <definition value="Type of the role an organisation, institution or group fulllfils. For example, this can be a sponsor of the study or a group of authors of the document." />
@@ -147,17 +147,17 @@
         <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-organisational-roles-nci-local" />
       </binding>
     </element>
-    <element id="Extension.extension:role-organisational.value[x].system">
+    <element id="Extension.extension:roleOrganisational.value[x].system">
       <path value="Extension.extension.value[x].system" />
       <min value="1" />
     </element>
-    <element id="Extension.extension:role-organisational.value[x].code">
+    <element id="Extension.extension:roleOrganisational.value[x].code">
       <path value="Extension.extension.value[x].code" />
       <min value="1" />
     </element>
-    <element id="Extension.extension:name-type">
+    <element id="Extension.extension:nameType">
       <path value="Extension.extension" />
-      <sliceName value="name-type" />
+      <sliceName value="nameType" />
       <short value="Type of the name" />
       <definition value="Personal or organisational/group type of the name." />
       <min value="1" />
@@ -167,11 +167,11 @@
         <map value="1.11.1 Resource.roles.nameType" />
       </mapping>
     </element>
-    <element id="Extension.extension:name-type.url">
+    <element id="Extension.extension:nameType.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="name-type" />
+      <fixedUri value="nameType" />
     </element>
-    <element id="Extension.extension:name-type.value[x]">
+    <element id="Extension.extension:nameType.value[x]">
       <path value="Extension.extension.value[x]" />
       <short value="Type of the name" />
       <definition value="Personal or organisational/group type of the name." />
