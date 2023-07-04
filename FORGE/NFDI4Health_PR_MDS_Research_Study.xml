@@ -444,10 +444,7 @@
     <element id="ResearchStudy.extension:targetFollowupDuration.value[x].system">
       <path value="ResearchStudy.extension.value[x].system" />
       <min value="1" />
-      <type>
-        <code value="uri" />
-        <profile value="http://unitsofmeasure.org" />
-      </type>
+      <fixedUri value="http://unitsofmeasure.org" />
     </element>
     <element id="ResearchStudy.extension:targetFollowupDuration.value[x].code">
       <path value="ResearchStudy.extension.value[x].code" />
@@ -1297,17 +1294,10 @@
     <element id="ResearchStudy.relatedArtifact:nonNFDI4HealthResource">
       <path value="ResearchStudy.relatedArtifact" />
       <sliceName value="nonNFDI4HealthResource" />
-      <short value="Related publications, datasets, study documents, web pages, etc." />
-      <definition value="Group of items providing information about identifiers (IDs) of the resources related to the given resource, e.g. DOIs of publications, datasets, study documents or links to web pages." />
-      <comment value="Short input help: If existing, you can specify identifier(s) of any related resources, e.g. DOIs of publications, datasets, study documents, links to web pages, etc." />
       <type>
         <code value="RelatedArtifact" />
         <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-related-artifact-non-ndfi4health-resource" />
       </type>
-      <mapping>
-        <identity value="NFDI4Health" />
-        <map value="1.13 Resource.ids" />
-      </mapping>
     </element>
     <element id="ResearchStudy.relatedArtifact:NFDI4HealthResource">
       <path value="ResearchStudy.relatedArtifact" />
@@ -1319,10 +1309,6 @@
         <code value="RelatedArtifact" />
         <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-related-artifact-ndfi4health-resource" />
       </type>
-      <mapping>
-        <identity value="NFDI4Health" />
-        <map value="1.14 Resource.idsNfdi4health" />
-      </mapping>
     </element>
     <element id="ResearchStudy.keyword">
       <path value="ResearchStudy.keyword" />
