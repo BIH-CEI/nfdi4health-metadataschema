@@ -99,30 +99,6 @@
         "isModifier": false
       },
       {
-        "id": "Questionnaire.extension:label.extension",
-        "path": "Questionnaire.extension.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "rules": "open"
-        },
-        "min": 3
-      },
-      {
-        "id": "Questionnaire.extension:label.extension:type",
-        "path": "Questionnaire.extension.extension",
-        "sliceName": "type",
-        "min": 1,
-        "binding": {
-          "strength": "extensible",
-          "valueSet": "http://hl7.org/fhir/ValueSet/title-type"
-        }
-      },
-      {
         "id": "Questionnaire.extension:execution-language",
         "path": "Questionnaire.extension",
         "sliceName": "execution-language",
