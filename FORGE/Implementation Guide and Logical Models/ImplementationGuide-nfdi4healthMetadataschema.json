@@ -1,7 +1,7 @@
 {
   "resourceType": "ImplementationGuide",
   "id": "nfdi4healthMetadataschema",
-  "url": "http://www.nfdi4health.de/fhir//ImplementationGuide/nfdi4healthMetadataschema",
+  "url": "https://www.nfdi4health.de/fhir//ImplementationGuide/nfdi4healthMetadataschema",
   "version": "1.0",
   "name": "NFDI4HealthMetadataschema",
   "status": "draft",
