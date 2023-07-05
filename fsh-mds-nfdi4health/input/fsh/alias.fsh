@@ -12,3 +12,17 @@ Alias: $HL7V3ActRelationType = http://terminology.hl7.org/CodeSystem/v3-ActRelat
 Alias: $StudyStatus = https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-mds-study-status
 Alias: $HL7TitleType = http://hl7.org/fhir/title-type
 Alias: $HL7ParticipationType = http://terminology.hl7.org/CodeSystem/v3-ParticipationType
+Alias: $codesystem-spdx-license.html = https://www.hl7.org/fhir/R4/codesystem-spdx-license.html
+Alias: $elementdefinition-identifier = http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier
+Alias: $administrative-gender = http://hl7.org/fhir/administrative-gender
+Alias: $nfdi4health-vs-mds-use-rights-label-spdx-umls-local = https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-use-rights-label-spdx-umls-local
+Alias: $valueset-languages.html = https://www.hl7.org/fhir/valueset-languages.html
+Alias: $translation = http://hl7.org/fhir/StructureDefinition/translation
+
+//Alias: $umls = http://terminology.hl7.org/CodeSystem/umls
+//Alias: $title-type = http://hl7.org/fhir/title-type
+//Alias: $ncimeta = http://ncimeta.nci.nih.gov
+//Alias: $v3-ParticipationType = http://terminology.hl7.org/CodeSystem/v3-ParticipationType
+//Alias: $v3-ActRelationshipType = http://terminology.hl7.org/CodeSystem/v3-ActRelationshipType
+//Alias: $icd-10 = http://hl7.org/fhir/sid/icd-10
+//Alias: $unitsofmeasure = http://unitsofmeasure.org

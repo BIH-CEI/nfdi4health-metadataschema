@@ -1,4 +1,4 @@
-Instance: Mlstr_area
+Instance: Mlstr-area
 InstanceOf: CodeSystem
 Title: "Areas of information"
 Description: "Information classification developed by Maelstrom Research"

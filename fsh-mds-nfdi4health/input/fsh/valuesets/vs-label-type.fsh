@@ -3,7 +3,7 @@ Alias: $HL7titleType = http://hl7.org/fhir/title-type
 ValueSet: NFDI4Health_VS_MDS_Label_Type_HL7
 Id: nfdi4health-vs-mds-label-type-hl7
 Title: "NFDI4Health VS MDS Label Type [HL7]"
-Description: "Value set used to express the reason and specific aspect for the variant title, such as language and specific language."
+Description: "Value set used to express the reason and specific aspect for the variant title, such as language and specific language. Comment : Build based on HL7 Value Set specified in FHIR R5"
 * ^url = "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-label-type-hl7"
 * ^status = #draft
 * ^version = "0.9"
@@ -11,7 +11,6 @@ Description: "Value set used to express the reason and specific aspect for the v
 * ^publisher = "NFDI4Health"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
-* ^comment = "Build based on HL7 Value Set specified in FHIR R5"
 
 * $HL7titleType#primary "Primary title"
 * $HL7titleType#official "Official title"

@@ -1,4 +1,4 @@
-Instance: Mlstr_additional
+Instance: Mlstr-additional
 InstanceOf: CodeSystem
 Title: "Additional information"
 Description: "Additional information about the collected variable"
