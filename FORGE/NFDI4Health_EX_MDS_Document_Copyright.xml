@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://example.org/fhir/StructureDefinition/NFDI4Health_EX_MDS_Document_Copyright" />
+  <id value="nfdi4health-ex-mds-document-copyright" />
+  <url value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-document-copyright" />
+  <version value="0.9" />
   <name value="NFDI4Health_EX_MDS_Document_Copyright" />
+  <title value="NFDI4Health EX MDS Document Copyright" />
   <status value="draft" />
+  <publisher value="NFDI4Health" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="https://www.nfdi4health.de" />
+    </telecom>
+  </contact>
+  <description value="Extension providing information about the copyright of a document." />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -44,10 +55,7 @@
     <element id="Extension.extension:useRightsConfimations">
       <path value="Extension.extension" />
       <sliceName value="useRightsConfimations" />
-      <short value="Important nformation about licensing, if a Creative Commons liesense is selected." />
-      <definition value="Optional Extension Element - found in all resources." />
       <min value="1" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-use_rights" />
@@ -59,7 +67,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://example.org/fhir/StructureDefinition/NFDI4Health_EX_MDS_Document_Copyright" />
+      <fixedUri value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-document-copyright" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

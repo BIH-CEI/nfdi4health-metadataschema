@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="nfdi4health-ex-mds-provenance-data-source" />
-  <url value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-use_rights" />
+  <id value="nfdi4health-ex-mds-use-rights" />
+  <url value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-use-rights" />
   <version value="0.9" />
   <name value="NFDI4Health_EX_MDS_Use_Rights" />
-  <title value="NFDI4Health EX MDS Use Rights Confirmations" />
+  <title value="NFDI4Health EX MDS Use Rights" />
   <status value="draft" />
+  <publisher value="NFDI4Health" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="https://www.nfdi4health.de" />
+    </telecom>
+  </contact>
+  <description value="Extension providing information about the use rights to (re-)use a resource." />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -19,9 +27,14 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="Important nformation about licensing, if a Creative Commons liesense is selected." />
+      <short value="Information about the rights to (re-)use the [RESOURCE]" />
+      <definition value="Group of items providing  Information about the rights to (re-)use the resource." />
       <min value="1" />
       <max value="1" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.10.3 Resource.nonStudyDetails.useRights" />
+      </mapping>
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
@@ -34,49 +47,68 @@
       </slicing>
       <min value="4" />
     </element>
-    <element id="Extension.extension:authorsConfirmationOne">
+    <element id="Extension.extension:confirmationAuthority">
       <path value="Extension.extension" />
-      <sliceName value="authorsConfirmationOne" />
+      <sliceName value="confirmationAuthority" />
+      <short value="Do you confirm that the authors have authority to license the [RESOURCE]?" />
+      <definition value="Confirmation that the authors have authority to license the resource." />
       <min value="1" />
       <max value="1" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.10.3.2.1 Resource.nonStudyDetails.useRights.confirmations.authority" />
+      </mapping>
     </element>
-    <element id="Extension.extension:authorsConfirmationOne.url">
+    <element id="Extension.extension:confirmationAuthority.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="authorsConfirmationOne" />
+      <fixedUri value="confirmationAuthority" />
     </element>
-    <element id="Extension.extension:authorsConfirmationOne.value[x]">
+    <element id="Extension.extension:confirmationAuthority.value[x]">
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="boolean" />
       </type>
     </element>
-    <element id="Extension.extension:authorsConfirmationTwo">
+    <element id="Extension.extension:confirmationTerms">
       <path value="Extension.extension" />
-      <sliceName value="authorsConfirmationTwo" />
+      <sliceName value="confirmationTerms" />
+      <short value="Do you confirm that the authors have read and understood the terms of the chosen license?" />
+      <definition value="Confirmation that the authors have read and understand the terms of the chosen license." />
       <min value="1" />
       <max value="1" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.10.3.2.2 Resource.nonStudyDetails.useRights.confirmations.terms" />
+      </mapping>
     </element>
-    <element id="Extension.extension:authorsConfirmationTwo.url">
+    <element id="Extension.extension:confirmationTerms.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="authorsConfirmationTwo" />
+      <fixedUri value="confirmationTerms" />
     </element>
-    <element id="Extension.extension:authorsConfirmationTwo.value[x]">
+    <element id="Extension.extension:confirmationTerms.value[x]">
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="boolean" />
       </type>
     </element>
-    <element id="Extension.extension:authorsConfirmationThree">
+    <element id="Extension.extension:confirmationIrrevocability">
       <path value="Extension.extension" />
-      <sliceName value="authorsConfirmationThree" />
+      <sliceName value="confirmationIrrevocability" />
+      <short value="Do you confirm that the authors understand that Creative Commons (CC) licensing is irrevocable?" />
+      <definition value="Confirmation that the authors understand that Creative Commons (CC) licensing is not revocable." />
+      <comment value="Additional information : The resource can be licensed using a CC-license only if it is free of the third-party rights." />
       <min value="1" />
       <max value="1" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.10.3.2.3 Resource.nonStudyDetails.useRights.confirmations.irrevocability" />
+      </mapping>
     </element>
-    <element id="Extension.extension:authorsConfirmationThree.url">
+    <element id="Extension.extension:confirmationIrrevocability.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="authorsConfirmationThree" />
+      <fixedUri value="confirmationIrrevocability" />
     </element>
-    <element id="Extension.extension:authorsConfirmationThree.value[x]">
+    <element id="Extension.extension:confirmationIrrevocability.value[x]">
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="boolean" />
@@ -88,6 +120,10 @@
       <short value="Do you confirm that the authors allow NFDI4Health to license the document?" />
       <min value="1" />
       <max value="1" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.10.3.2.4 Resource.nonStudyDetails.useRights.confirmations.supportByLicencing" />
+      </mapping>
     </element>
     <element id="Extension.extension:supportByLicensing.url">
       <path value="Extension.extension.url" />
@@ -101,7 +137,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-use_rights" />
+      <fixedUri value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-use-rights" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

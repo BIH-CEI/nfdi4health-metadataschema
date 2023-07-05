@@ -30,11 +30,12 @@ Usage: #example
 //* item[=] ^definition = "Group of items providing  Information about a resource. Resources can be, for example,  files or parts of them (e.g. datasets or study documents such as study protocols or questionnaires) or also abstractions (e.g. studies or substudies/data collection events)."
 
 // Resource.identifier
-* item[=].item[+] ^label = "Resource.identifier"
-* item[=].item[+] ^definition = "Unique identifier of the resource used for identification within the NFDI4Health."
-* item[=].item[+] ^comment = "Additional information: The identifier is assigned automatically."
+//* item[=].item[+] ^label = "Resource.identifier"
+//* item[=].item[+] ^definition = "Unique identifier of the resource used for identification within the NFDI4Health."
+//* item[=].item[+] ^comment = "Additional information: The identifier is assigned automatically."
 * item[=].item[+].linkId = "1.1"
 * item[=].item[=].text = "ID of the [RESOURCE]"
+* item[=].item[=].definition = Test_Element_Definition
 * item[=].item[=].type = #string
 * item[=].item[=].repeats = false
 

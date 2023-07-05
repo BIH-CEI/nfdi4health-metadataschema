@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://example.org/fhir/StructureDefinition/NFDI4Health_EX_MDS_Related" />
+  <id value="nfdi4health-ex-mds-related" />
+  <url value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related" />
   <version value="0.9" />
   <name value="NFDI4Health_EX_MDS_Related" />
   <title value="NFDI4Health_EX_MDS_Related" />
   <status value="draft" />
-  <description value="Group of items providing information about identifiers (IDs) of the resources related to the given resource, e.g. DOIs of publications, datasets, study documents or links to web pages." />
+  <publisher value="NFDI4Health" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="https://www.nfdi4health.de" />
+    </telecom>
+  </contact>
+  <description value="Extension providing information about identifiers (IDs) of the resources related to the given resource, e.g. DOIs of publications, datasets, study documents or links to web pages - registered on this portal or not." />
   <fhirVersion value="4.0.1" />
-  <mapping>
-    <identity value="1.13" />
-    <name value="ids" />
-    <comment value="Related publications, datasets, study documents, web pages, etc." />
-  </mapping>
   <kind value="complex-type" />
   <abstract value="false" />
   <context>
@@ -29,8 +32,12 @@
     <element id="Extension">
       <path value="Extension" />
       <mapping>
-        <identity value="1.13" />
-        <map value="Resource.ids" />
+        <identity value="NFDI4Health" />
+        <map value="1.13 Resource.ids" />
+      </mapping>
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.14 Resource.idsNfdi4health" />
       </mapping>
     </element>
     <element id="Extension.extension">
@@ -51,10 +58,6 @@
       <definition value="Identifier (ID) related to, or associated with, the resource being registered. These can be IDs of related publications, datasets, study documents, web pages, etc." />
       <min value="0" />
       <max value="1" />
-      <mapping>
-        <identity value="1.14" />
-        <map value="Resource.ids_nfdi4health" />
-      </mapping>
     </element>
     <element id="Extension.extension:identifier.url">
       <path value="Extension.extension.url" />
@@ -88,20 +91,20 @@
         <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-id-type-umls" />
       </binding>
       <mapping>
-        <identity value="1.13.1" />
-        <map value="ids.type" />
+        <identity value="NFDI4Health" />
+        <map value="1.13.2 Resource.ids.scheme" />
       </mapping>
     </element>
     <element id="Extension.extension:identifier.value[x].value">
       <path value="Extension.extension.value[x].value" />
       <min value="1" />
       <mapping>
-        <identity value="1.13.1" />
-        <map value="ids.identifier" />
+        <identity value="NFDI4Health" />
+        <map value="1.13.1 Resource.ids.identifier" />
       </mapping>
       <mapping>
-        <identity value="1.14.1" />
-        <map value="ids_nfdi4health.identifier" />
+        <identity value="NFDI4Health" />
+        <map value="1.14.1 Resource.idsNfdi4health.identifier" />
       </mapping>
     </element>
     <element id="Extension.extension:date">
@@ -112,8 +115,8 @@
       <min value="0" />
       <max value="1" />
       <mapping>
-        <identity value="1.13.3" />
-        <map value="date" />
+        <identity value="NFDI4Health" />
+        <map value="1.13.3 Resource.ids.date" />
       </mapping>
     </element>
     <element id="Extension.extension:date.url">
@@ -126,23 +129,27 @@
         <code value="date" />
       </type>
     </element>
-    <element id="Extension.extension:relation_type">
+    <element id="Extension.extension:relationType">
       <path value="Extension.extension" />
-      <sliceName value="relation_type" />
+      <sliceName value="relationType" />
       <short value="Relationship between this [RESOURCE] (A) and the related resource (B)?" />
       <definition value="Relationship between the resource being registered (A) and the related resource (B)." />
       <min value="1" />
       <max value="1" />
       <mapping>
-        <identity value="1.13.4" />
-        <map value="relation_type" />
+        <identity value="NFDI4Health" />
+        <map value="1.13.4 Resource.ids.relationType" />
+      </mapping>
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.14.2 Resource.idsNfdi4health.relationType" />
       </mapping>
     </element>
-    <element id="Extension.extension:relation_type.url">
+    <element id="Extension.extension:relationType.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="relation_type" />
+      <fixedUri value="relationType" />
     </element>
-    <element id="Extension.extension:relation_type.value[x]">
+    <element id="Extension.extension:relationType.value[x]">
       <path value="Extension.extension.value[x]" />
       <min value="1" />
       <type>
@@ -154,23 +161,23 @@
         <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-relation-type-ids-local-hl7v3" />
       </binding>
     </element>
-    <element id="Extension.extension:resource_type_general">
+    <element id="Extension.extension:resourceTypeGeneral">
       <path value="Extension.extension" />
-      <sliceName value="resource_type_general" />
+      <sliceName value="resourceTypeGeneral" />
       <short value="Type of the related resource" />
       <definition value="Type of the related resource, e.g. journal article, dataset, text, etc." />
       <min value="0" />
       <max value="1" />
       <mapping>
-        <identity value="1.13.5" />
-        <map value="resource_type_general" />
+        <identity value="NFDI4Health" />
+        <map value="1.13.5 Resource.ids.resourceTypeGeneral" />
       </mapping>
     </element>
-    <element id="Extension.extension:resource_type_general.url">
+    <element id="Extension.extension:resourceTypeGeneral.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="resource_type_general" />
+      <fixedUri value="resourceTypeGeneral" />
     </element>
-    <element id="Extension.extension:resource_type_general.value[x]">
+    <element id="Extension.extension:resourceTypeGeneral.value[x]">
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="CodeableConcept" />
@@ -181,13 +188,13 @@
         <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-resource-type-general-nci-umls-local" />
       </binding>
     </element>
-    <element id="Extension.extension:resource_type_general.value[x].text">
+    <element id="Extension.extension:resourceTypeGeneral.value[x].text">
       <path value="Extension.extension.value[x].text" />
       <max value="0" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://example.org/fhir/StructureDefinition/NFDI4Health_EX_MDS_Related" />
+      <fixedUri value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

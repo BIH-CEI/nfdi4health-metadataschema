@@ -10,7 +10,7 @@ Description: "Group of items providing information about the masking of interven
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 * ^context.type = #element
-* ^context.expression = "ResearchStudy.category"
+* ^context.expression = "ResearchStudy"
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open

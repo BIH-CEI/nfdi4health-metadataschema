@@ -25,7 +25,7 @@
       <path value="Organization" />
       <short value="Details about the organisation/institution/group/etc." />
       <definition value="For &quot;1.11.2 Resource.roles.organisational&quot;: Group of items providing information about group(s) of persons, institution(s) or organisation(s) contributing to the resource. | For &quot;1.11.6 Resource.roles.affiliation&quot;: Group of items providing further information about the organisation(s) associated with the role." />
-      <comment value="Additional information: Group of items applicable to organisational/group names or providing further information about the organisation(s) associated with the role. | Short input help: Organisational name can be used to denote a research group or an institution." />
+      <comment value="For &quot;1.11.2 Resource.roles.organisational&quot;: &#xD;&#xA;Additional information: Group of items applicable to organisational/group names or providing further information about the organisation(s) associated with the role. | Short input help: Organisational name can be used to denote a research group or an institution." />
       <mapping>
         <identity value="NFDI4Health" />
         <map value="1.11.2 Resource.roles.organisational" />
@@ -107,11 +107,6 @@
         <identity value="NFDI4Health" />
         <map value="1.11.6.4.1 Resource.roles.affiliation.identifiers.identifier" />
       </mapping>
-    </element>
-    <element id="Organization.type">
-      <path value="Organization.type" />
-      <short value="Type of the role" />
-      <definition value="Type of the role an organisation, institution or group fulllfils. For example, this can be a sponsor of the study or a group of authors of the document." />
     </element>
     <element id="Organization.name">
       <path value="Organization.name" />

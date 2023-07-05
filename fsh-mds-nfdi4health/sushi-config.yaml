@@ -4,7 +4,7 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: nfdi4healthMetadataschema
-canonical: http://www.nfdi4health.de/fhir/
+canonical: https://www.nfdi4health.de/fhir/metadataschema
 name: NFDI4Health Metadataschema
 # title: Example Title
 # description: Example Implementation Guide for getting started with SUSHI
