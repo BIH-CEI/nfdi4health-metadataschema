@@ -70,40 +70,6 @@
       </type>
       <isModifier value="false" />
     </element>
-    <element id="ResearchStudy.extension:roles.extension">
-      <path value="ResearchStudy.extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="4" />
-    </element>
-    <element id="ResearchStudy.extension:roles.extension:role-personal">
-      <path value="ResearchStudy.extension.extension" />
-      <sliceName value="role-personal" />
-      <min value="1" />
-    </element>
-    <element id="ResearchStudy.extension:roles.extension:role-organisational">
-      <path value="ResearchStudy.extension.extension" />
-      <sliceName value="role-organisational" />
-      <min value="1" />
-    </element>
-    <element id="ResearchStudy.extension:roles.extension:name-type">
-      <path value="ResearchStudy.extension.extension" />
-      <sliceName value="name-type" />
-      <min value="1" />
-    </element>
-    <element id="ResearchStudy.extension:roles.extension:name-type.value[x].system">
-      <path value="ResearchStudy.extension.extension.value[x].system" />
-      <min value="1" />
-    </element>
-    <element id="ResearchStudy.extension:roles.extension:name-type.value[x].code">
-      <path value="ResearchStudy.extension.extension.value[x].code" />
-      <min value="1" />
-    </element>
     <element id="ResearchStudy.extension:nutritionalData">
       <path value="ResearchStudy.extension" />
       <sliceName value="nutritionalData" />
@@ -477,6 +443,48 @@
         <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-off-label-use" />
       </type>
       <isModifier value="false" />
+    </element>
+    <element id="ResearchStudy.extension:masking">
+      <path value="ResearchStudy.extension" />
+      <sliceName value="masking" />
+      <short value="Information about masking of intervention(s) assignment" />
+      <definition value="Group of items providing information about the masking of intervention(s) assignment." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-masking" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="ResearchStudy.extension:masking.extension">
+      <path value="ResearchStudy.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="ResearchStudy.extension:masking.extension:roles">
+      <path value="ResearchStudy.extension.extension" />
+      <sliceName value="roles" />
+      <min value="0" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.17.37.2.2 Resource.studyDesign.interventional.masking.roles" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.extension:masking.extension:description">
+      <path value="ResearchStudy.extension.extension" />
+      <sliceName value="description" />
+      <min value="0" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.17.37.2.3 Resource.studyDesign.interventional.masking.description" />
+      </mapping>
     </element>
     <element id="ResearchStudy.identifier">
       <path value="ResearchStudy.identifier" />
@@ -959,78 +967,11 @@
       <slicing>
         <discriminator>
           <type value="value" />
-          <path value="coding" />
+          <path value="$this" />
         </discriminator>
         <rules value="open" />
       </slicing>
       <min value="1" />
-      <binding>
-        <strength value="example" />
-        <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.1037--20220705210404" />
-      </binding>
-    </element>
-    <element id="ResearchStudy.category.extension">
-      <path value="ResearchStudy.category.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
-    <element id="ResearchStudy.category.extension:sampling">
-      <path value="ResearchStudy.category.extension" />
-      <sliceName value="sampling" />
-      <min value="0" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-sampling" />
-      </type>
-      <isModifier value="false" />
-    </element>
-    <element id="ResearchStudy.category.extension:sampling.extension">
-      <path value="ResearchStudy.category.extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="ResearchStudy.category.extension:sampling.extension:method">
-      <path value="ResearchStudy.category.extension.extension" />
-      <sliceName value="method" />
-      <comment value="Short input help: Select one value from the list." />
-      <min value="1" />
-    </element>
-    <element id="ResearchStudy.category.extension:sampling.extension:methodProbability">
-      <path value="ResearchStudy.category.extension.extension" />
-      <sliceName value="methodProbability" />
-      <comment value="Short input help: If known, select one value from the list." />
-      <min value="0" />
-    </element>
-    <element id="ResearchStudy.category.extension:sampling.extension:methodNonProbability">
-      <path value="ResearchStudy.category.extension.extension" />
-      <sliceName value="methodNonProbability" />
-      <comment value="Short input help: If known, select one value from the list." />
-      <min value="0" />
-    </element>
-    <element id="ResearchStudy.category.extension:masking">
-      <path value="ResearchStudy.category.extension" />
-      <sliceName value="masking" />
-      <short value="Information about masking of intervention(s) assignment" />
-      <definition value="Group of items providing information about the masking of intervention(s) assignment." />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-masking" />
-      </type>
-      <isModifier value="false" />
     </element>
     <element id="ResearchStudy.category:primaryDesign">
       <path value="ResearchStudy.category" />
@@ -1176,6 +1117,97 @@
       <min value="1" />
     </element>
     <element id="ResearchStudy.category:allocation.coding.code">
+      <path value="ResearchStudy.category.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="ResearchStudy.category:samplingMethod">
+      <path value="ResearchStudy.category" />
+      <sliceName value="samplingMethod" />
+      <short value="Applied sampling method" />
+      <definition value="Type of the sampling method applied for the selection of study participants." />
+      <comment value="Short Input Help: Select one value from the list." />
+      <min value="1" />
+      <max value="1" />
+      <binding>
+        <strength value="required" />
+        <description value="Value set defining codes to specify types of sampling methods." />
+        <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-sampling-method-nci-local" />
+      </binding>
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.17.20.1 Resource.studyDesign.sampling.method" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.category:samplingMethod.coding">
+      <path value="ResearchStudy.category.coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="ResearchStudy.category:samplingMethod.coding.system">
+      <path value="ResearchStudy.category.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="ResearchStudy.category:samplingMethod.coding.code">
+      <path value="ResearchStudy.category.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="ResearchStudy.category:samplingMethodProbability">
+      <path value="ResearchStudy.category" />
+      <sliceName value="samplingMethodProbability" />
+      <short value="Specific type of probability sampling" />
+      <definition value="Specific type of the probability sampling method applied for the selection of study participants." />
+      <comment value="Short Input Help: If known, select one value from the list." />
+      <max value="1" />
+      <binding>
+        <strength value="required" />
+        <description value="Value set defining codes to specify types of probability sampling methods." />
+        <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-sampling-prob-method-nci" />
+      </binding>
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.17.20.2 Resource.studyDesign.sampling.probabilityMethod" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.category:samplingMethodProbability.coding">
+      <path value="ResearchStudy.category.coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="ResearchStudy.category:samplingMethodProbability.coding.system">
+      <path value="ResearchStudy.category.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="ResearchStudy.category:samplingMethodProbability.coding.code">
+      <path value="ResearchStudy.category.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="ResearchStudy.category:samplingMethodNonProbability">
+      <path value="ResearchStudy.category" />
+      <sliceName value="samplingMethodNonProbability" />
+      <short value="Specific type of non-probability sampling" />
+      <definition value="Specific type of the probability sampling method applied for the selection of study participants." />
+      <comment value="Short Input Help: If known, select one value from the list." />
+      <max value="1" />
+      <binding>
+        <strength value="required" />
+        <description value="Value set defining codes to specify types of non-probability sampling methods." />
+        <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-sampling-method-non-prob-nci-local" />
+      </binding>
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.17.20.3 Resource.studyDesign.sampling.nonProbabilityMethod" />
+      </mapping>
+    </element>
+    <element id="ResearchStudy.category:samplingMethodNonProbability.coding">
+      <path value="ResearchStudy.category.coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="ResearchStudy.category:samplingMethodNonProbability.coding.system">
+      <path value="ResearchStudy.category.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="ResearchStudy.category:samplingMethodNonProbability.coding.code">
       <path value="ResearchStudy.category.coding.code" />
       <min value="1" />
     </element>

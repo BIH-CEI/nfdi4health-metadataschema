@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="nfdi4health-ex-mds-study-masking" />
+  <url value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-masking" />
+  <name value="NFDI4Health_EX_MDS_Study_Masking" />
+  <title value="NFDI4Health EX MDS Study Masking" />
+  <status value="draft" />
+  <publisher value="NFDI4Health" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="https://www.nfdi4health.de" />
+    </telecom>
+  </contact>
+  <description value="Group of items providing information about the masking of intervention(s) assignment" />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="NFDI4Health" />
+    <name value="NFDI4Health to FHIR Mapping" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="ResearchStudy" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="NFDI4Health EX MDS Study Masking" />
+      <definition value="Group of items providing information about the masking of intervention(s) assignment" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.17.37.2 Resource.studyDesign.interventional.masking" />
+      </mapping>
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="Extension.extension:general">
+      <path value="Extension.extension" />
+      <sliceName value="general" />
+      <short value="Is masking of intervention(s) assignment implemented?" />
+      <definition value="Indication, whether a masking (or blinding) of intervention(s) assignment is implemented (i.e., whether someone is prevented from having knowledge of the interventions assigned to individual participants)." />
+      <min value="0" />
+      <max value="1" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.17.37.2.1 Resource.studyDesign.interventional.masking.general" />
+      </mapping>
+    </element>
+    <element id="Extension.extension:general.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="general" />
+    </element>
+    <element id="Extension.extension:general.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="boolean" />
+      </type>
+    </element>
+    <element id="Extension.extension:roles">
+      <path value="Extension.extension" />
+      <sliceName value="roles" />
+      <short value="Who is masked?" />
+      <definition value="If masking is implemented, the party(ies) who are masked." />
+      <comment value="Short Input Help: Select all that apply." />
+      <min value="0" />
+    </element>
+    <element id="Extension.extension:roles.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="roles" />
+    </element>
+    <element id="Extension.extension:roles.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="Coding" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <description value="Value set defining codes to specify the party(ies) who are masked if masking is implemented." />
+        <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-masking-roles-nci-local" />
+      </binding>
+    </element>
+    <element id="Extension.extension:roles.value[x].system">
+      <path value="Extension.extension.value[x].system" />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:roles.value[x].code">
+      <path value="Extension.extension.value[x].code" />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:description">
+      <path value="Extension.extension" />
+      <sliceName value="description" />
+      <short value="Additional information about masking" />
+      <definition value="If needed, additional descriptive information about masking (e.g. information about other parties who may be masked)." />
+      <comment value="Short Input Help: If needed, additional information about masking, e.g. other parties who may be masked." />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:description.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="description" />
+    </element>
+    <element id="Extension.extension:description.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-masking" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

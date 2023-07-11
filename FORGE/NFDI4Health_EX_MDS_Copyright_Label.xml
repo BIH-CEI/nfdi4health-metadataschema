@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="nfdi4health-ex-mds-provenance-data-source" />
+  <id value="nfdi4health-ex-mds-copyright-label" />
   <url value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-copyright-label" />
   <version value="0.9" />
   <name value="NFDI4Health_EX_MDS_Copyright_Label" />
   <title value="NFDI4Health EX MDS Copyright Label" />
   <status value="draft" />
   <publisher value="NFDI4Health" />
-  <description value="License defining the rights to (re-)use the resource." />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="https://www.nfdi4health.de" />
+    </telecom>
+  </contact>
+  <description value="Extension providing information about the license applying to the resource." />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -21,6 +27,9 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
+      <short value="License" />
+      <definition value="License defining the rights to (re-)use the resource." />
+      <comment value="Short input help: Select one value from the list.&#xD;&#xA;If “Other” is selected, an explanation of the (re-)use terms and conditions can be provided in the property “Additional information about use rights”." />
       <min value="1" />
       <max value="1" />
       <mapping>

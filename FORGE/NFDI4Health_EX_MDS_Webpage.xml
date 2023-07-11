@@ -13,7 +13,7 @@
       <value value="https://www.nfdi4health.de" />
     </telecom>
   </contact>
-  <description value="If existing, a link to the web page directly relevant to the resource." />
+  <description value="Extension providing information about the webpage of a resource." />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -25,6 +25,16 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Web page of the [RESOURCE]" />
+      <definition value="If existing, a link to the web page directly relevant to the resource." />
+      <comment value="Additional information: Other web pages related to the resource can additionally be entered in the section &quot;Related resources&quot;." />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.9 Resource.webpage" />
+      </mapping>
+    </element>
     <element id="Extension.url">
       <path value="Extension.url" />
       <fixedUri value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-webpage" />

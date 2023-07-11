@@ -7,7 +7,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="not-classified" />
   </extension>
-  <url value="http://www.nfdi4health.de/fhir//StructureDefinition/nfdi4health-pr-mds-provenance" />
+  <url value="https://www.nfdi4health.de/fhir//StructureDefinition/nfdi4health-pr-mds-provenance" />
   <version value="0.9" />
   <name value="NFDI4Health_PR_MDS_Provenance" />
   <title value="NFDI4Health PR MDS Provenance" />

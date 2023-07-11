@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="nfdi4health-ex-mds-provenance-data-source" />
+  <id value="nfdi4health-ex-mds-description-non-english" />
   <url value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-description-non-english" />
   <version value="0.9" />
   <name value="NFDI4Health_EX_MDS_Description_Non_English" />
   <title value="NFDI4Health EX MDS Description Non English" />
   <status value="draft" />
-  <description value="Group of items with  description(s) of the resource written not in English." />
+  <publisher value="NFDI4Health" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="https://www.nfdi4health.de" />
+    </telecom>
+  </contact>
+  <description value="Extension providing description(s) of the resource written not in English." />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />

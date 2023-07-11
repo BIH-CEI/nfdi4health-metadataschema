@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="nfdi4health-ex-mds-provenance-data-source" />
+  <id value="nfdi4health-ex-mds-resourceID" />
   <url value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-resourceID" />
   <version value="0.9" />
-  <name value="NFDI4Health_EX_MDS_Resource_ID" />
+  <name value="NFDI4Health_EX_MDS_ResourceID" />
+  <title value="NFDI4Health EX MDS ResourceID" />
   <status value="draft" />
-  <description value="Group of items providing information about identifiers (IDs) of the resources related to the given resource, e.g. DOIs of publications, datasets, study documents or links to web pages." />
+  <publisher value="NFDI4Health" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="https://www.nfdi4health.de" />
+    </telecom>
+  </contact>
+  <description value="Extension providing information about identifiers (IDs) of the resources related to the given resource, e.g. DOIs of publications, datasets, study documents or links to web pages." />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -28,15 +36,15 @@
       </slicing>
       <min value="0" />
     </element>
-    <element id="Extension.extension:ResourceID">
+    <element id="Extension.extension:resourceID">
       <path value="Extension.extension" />
-      <sliceName value="ResourceID" />
+      <sliceName value="resourceID" />
       <min value="0" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:ResourceID.url">
+    <element id="Extension.extension:resourceID.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="ResourceID" />
+      <fixedUri value="resourceID" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />

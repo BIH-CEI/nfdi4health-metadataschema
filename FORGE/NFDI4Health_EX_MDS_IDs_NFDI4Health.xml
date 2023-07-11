@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://example.org/fhir/StructureDefinition/NFDI4Health_EX_MDS_IDs_NFDI4Health" />
+  <id value="nfdi4health-ex-mds-ids-nfdi4health" />
+  <url value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-ids-nfdi4health" />
+  <version value="0.9" />
   <name value="NFDI4Health_EX_MDS_IDs_NFDI4Health" />
+  <title value="NFDI4Health EX MDS IDs NFDI4Health" />
   <status value="draft" />
+  <publisher value="NFDI4Health" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="https://www.nfdi4health.de" />
+    </telecom>
+  </contact>
+  <description value="Extension storing identifiers assigned by NFDI4Health." />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -14,6 +25,16 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Related (sub-)studies, study documents, etc. registered on this portal" />
+      <definition value="Group of items providing information about related resources registered on this portal." />
+      <comment value="Short input help : Does the [RESOURCE] have any related resources registered on this portal?" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.14 Resource.idsNfdi4health" />
+      </mapping>
+    </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
       <slicing>
@@ -32,6 +53,10 @@
       <definition value="Identifier (ID) of the related resource assigned on this portal." />
       <min value="1" />
       <max value="1" />
+      <mapping>
+        <identity value="NFDi4Health" />
+        <map value="1.14.1 Resource.idsNfdi4health.identifier" />
+      </mapping>
     </element>
     <element id="Extension.extension:identifier.url">
       <path value="Extension.extension.url" />
@@ -43,19 +68,23 @@
         <code value="string" />
       </type>
     </element>
-    <element id="Extension.extension:relation_type">
+    <element id="Extension.extension:relationType">
       <path value="Extension.extension" />
-      <sliceName value="relation_type" />
+      <sliceName value="relationType" />
       <short value="Relationship between this [RESOURCE] (A) and the related resource (B)?" />
       <definition value="Relationship between the resource being registered (A) and the related resource (B)." />
       <min value="0" />
       <max value="1" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.14.2 Resource.idsNfdi4health.relationType" />
+      </mapping>
     </element>
-    <element id="Extension.extension:relation_type.url">
+    <element id="Extension.extension:relationType.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="relation_type" />
+      <fixedUri value="relationType" />
     </element>
-    <element id="Extension.extension:relation_type.value[x]">
+    <element id="Extension.extension:relationType.value[x]">
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="CodeableConcept" />
@@ -66,13 +95,13 @@
         <valueSet value="https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-relation-type-ids-nfdi-local-hl7v3" />
       </binding>
     </element>
-    <element id="Extension.extension:relation_type.value[x].text">
+    <element id="Extension.extension:relationType.value[x].text">
       <path value="Extension.extension.value[x].text" />
       <max value="0" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://example.org/fhir/StructureDefinition/NFDI4Health_EX_MDS_IDs_NFDI4Health" />
+      <fixedUri value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-ids-nfdi4health" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

@@ -3,9 +3,17 @@
   <id value="nfdi4health-ex-mds-keywords2" />
   <url value="https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-keywords2" />
   <version value="0.9" />
-  <name value="NFDI4Health_EX_MDS_Keywords2_URI" />
+  <name value="NFDI4Health_EX_MDS_Keywords2" />
   <title value="NFDI4Health EX MDS Keyword2" />
   <status value="draft" />
+  <publisher value="NFDI4Health" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="https://www.nfdi4health.de" />
+    </telecom>
+  </contact>
+  <description value="Extension storing keyword(s) describing a resource." />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -23,7 +31,13 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="Key terms to aid in searching for or filtering the study." />
+      <short value="Keyword(s) describing the  [RESOURCE]" />
+      <definition value="Group of items providing  Information about keywords describing the resource." />
+      <comment value="Additional information : The findability of the resource can be significantly increased if proper keywords are stated." />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.7 Resource.keywords" />
+      </mapping>
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
@@ -41,8 +55,13 @@
       <sliceName value="label" />
       <short value="Keyword" />
       <definition value="Keyword(s) describing the resource." />
+      <comment value="Additional information : The use of terms from established classifications/vocabularies (e.g. MeSH, UMLS, SNOMED CT) is preferred. However, also self-assigned keywords are allowed.&#xD;&#xA;Short input help : Preferably, use terms from MeSH (https://meshb.nlm.nih.gov/search) or UMLS (https://uts.nlm.nih.gov/uts/umls/home)." />
       <min value="1" />
       <max value="1" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.7.1 Resource.keywords.label" />
+      </mapping>
     </element>
     <element id="Extension.extension:label.url">
       <path value="Extension.extension.url" />
@@ -59,8 +78,13 @@
       <sliceName value="code" />
       <short value="Code of the keyword" />
       <definition value="If known, the code of the keyword in a classification/vocabulary." />
+      <comment value="Short input help : If found, the code from the classification/vocabulary used." />
       <min value="0" />
       <max value="1" />
+      <mapping>
+        <identity value="NFDI4Health" />
+        <map value="1.7.2 Resource.keywords.code" />
+      </mapping>
     </element>
     <element id="Extension.extension:code.url">
       <path value="Extension.extension.url" />
