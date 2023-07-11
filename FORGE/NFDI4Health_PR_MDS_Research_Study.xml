@@ -444,7 +444,10 @@
     <element id="ResearchStudy.extension:targetFollowupDuration.value[x].system">
       <path value="ResearchStudy.extension.value[x].system" />
       <min value="1" />
-      <fixedUri value="http://unitsofmeasure.org" />
+      <type>
+        <code value="uri" />
+        <profile value="http://unitsofmeasure.org" />
+      </type>
     </element>
     <element id="ResearchStudy.extension:targetFollowupDuration.value[x].code">
       <path value="ResearchStudy.extension.value[x].code" />
