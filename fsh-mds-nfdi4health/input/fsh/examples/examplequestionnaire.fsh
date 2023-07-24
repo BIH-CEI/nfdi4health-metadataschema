@@ -18,8 +18,11 @@ Generally, the CRISIS questionnaires include the following domains:
 * identifier.value = "96"
 * title = "CRISIS Questionnaire - Youth Self-Report Baseline Form: Current Form"
 * title.extension[translation].extension[lang].valueCode = #297487008 // SNOMED CODE angeben? 
+* identifier.value = "96"
+* title ="CRISIS Questionnaire - Youth Self-Report Baseline Form: Current Form"
+* title.extension[translation].extension[lang].value[x] = #297487008 
 * extension[label].extension[value].value[x] = "CRISIS Youth Baseline Current Form"
-* extension[label].extension[type].value[x].code = #acronym //?
+* extension[label].extension[type].value[x].code = #acronym
 * extension[label].extension[langugae].value[x] = #EN
 * extension[keywords].extension[label].value[x] = "COVID-19"
 * extension[keywords].extension[code].value[x] = "https://id.nlm.nih.gov/mesh/D000086382.html"
@@ -36,4 +39,4 @@ Generally, the CRISIS questionnaires include the following domains:
 * copyright = "For reuse purposes, copies of all forms, their translations and scoring information can be found on the download page of the CRISIS project."
 * extension[associatedParty][0].extension[party]. // Backboneelement ??
 * extension[associatedParty].extension[party].value[x] = "NFDI4Health PR MDS Organization" // repeating item for personal instance
-* extension[associatedParty].extension[name-type].value[x] = #C0220885 
+* extension[associatedParty].extension[name-type].value[x] = #C0220885
