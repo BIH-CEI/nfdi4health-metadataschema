@@ -1,8 +1,8 @@
 //Example
 
-Instance: Test
+Instance: PractitionerExample1
 InstanceOf: NFDI4Health_PR_MDS_Practitioner
-Title:"CRISIS Test"
+Title:"Example of the NFDI4Health PR MDS Practitioner"
 Usage:#example
 * name.family = "Merikangas"
 * name.given = "Kathleen"
