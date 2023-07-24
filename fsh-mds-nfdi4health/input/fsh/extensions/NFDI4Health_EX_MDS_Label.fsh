@@ -39,7 +39,7 @@ Description: "Extension covering information about additional title(s), name(s) 
 * extension[type] ^definition = "Kind of name."
 * extension[type].value[x] 1..
 * extension[type].value[x] only Coding
-* extension[type] from NFDI4Health_VS_MDS_Label_Type_HL7 (required)
+* extension[type].value[x] from NFDI4Health_VS_MDS_Label_Type_HL7 (required)
 * extension[type] ^binding.description = "Value set used to express the reason and specific aspect for the variant title, such as language and specific language."
 * extension[language] ^short = "Language of the additional title(s)/name(s) or acronym(s)"
 * extension[language] ^definition = "Language of the additional title(s)/name(s) or acronym(s)"
@@ -53,9 +53,5 @@ Source: NFDI4Health_EX_MDS_Label
 * -> "1.4 Resource.acronyms"
 * extension[value].value[x] -> "1.3.1 Resource.titles.text"
 * extension[value].value[x] -> "1.3.2 Resource.acronyms.text"
-* extension[value].value[x].extension[translation].extension[lang] -> "1.3.2 Resource.titles.language" "Translation language of a title/name"
-* extension[value].value[x].extension[translation].extension[lang] -> "1.4.2 Resource.acronyms.language" "Translation language of an acronym"
-* extension[value].value[x].extension[translation].extension[content] -> "1.3.1 Resource.titles.text" "Translated title/name"
-* extension[value].value[x].extension[translation].extension[content] -> "1.3.2 Resource.acronyms.text" "Translated acronym"
 * extension[language] -> "1.3.2 Resource.titles.language" "For additional title(s)/name(s)"
 * extension[language] -> "1.4.2 Resource.acronyms.language"

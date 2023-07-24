@@ -17,7 +17,7 @@ Description: "Resource covering metadata of a questionnaire."
     NFDI4Health_EX_MDS_Format named format 0..1 and
     NFDI4Health_EX_MDS_Label named label 0.. and
     NFDI4Health_EX_MDS_Execution_Language named executionlLanguage 0.. and
-    NFDI4Health_EX_MDS_Associated_Party named associatedParty 1..1 and
+    NFDI4Health_EX_MDS_Associated_Party named associatedParty 1.. and
     NFDI4Health_EX_MDS_Related named related 0..1 and
     NFDI4Health_EX_MDS_Keywords2 named keywords 0..
 * identifier 1..1
@@ -62,5 +62,5 @@ Description: "Resource covering metadata of a questionnaire."
 * copyright.extension ^slicing.discriminator.type = #value
 * copyright.extension ^slicing.discriminator.path = "url"
 * copyright.extension ^slicing.rules = #open
-* copyright.extension contains NFDI4Health_EX_MDS_Copyright_Label named label 0..
-* copyright.extension contains NFDI4Health_EX_MDS_Use_Rights named useRightsConfimations
+* copyright.extension contains NFDI4Health_EX_MDS_Copyright_Label named label 1..1
+* copyright.extension contains NFDI4Health_EX_MDS_Use_Rights named useRightsConfimations 1..  

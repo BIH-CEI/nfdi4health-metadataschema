@@ -23,9 +23,10 @@ Description: "Extension providing description(s) of the resource written not in 
 * extension[text] ^short = "Description"
 * extension[text] ^definition = "Short plain text summary of the resource other than in English."
 * extension[text].value[x] only string
-* extension[language] from NFDI4Health_VS_MDS_Language_NO_ENGLISH_SNOMEDCT (required)
+* extension[language].value[x] 0..
+* extension[language].value[x] only Coding 
+* extension[language].value[x] from NFDI4Health_VS_MDS_Language_NO_ENGLISH_SNOMEDCT (required)
 * extension[language] ^short = "Language of the description"
 * extension[language] ^definition = "Language of the description"
 * extension[language] ^binding.description = "Value set defining codes to specify a language other than English."
-* extension[language].value[x] only CodeableConcept
 * url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-description-non-english" (exactly)

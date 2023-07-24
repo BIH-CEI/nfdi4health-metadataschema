@@ -14,8 +14,7 @@ Description: "Extension providing information about the identifier assigned by a
 * . ^definition = "Identifier assigned by a funder to the resource."
 * url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-fundingID" (exactly)
 * value[x] 1..
-* value[x] only Identifier
-* value[x].value 1..
+* value[x] only string
 
 Mapping: NFDI4Health-FundingID-to-FHIR
 Id: NFDI4Health
