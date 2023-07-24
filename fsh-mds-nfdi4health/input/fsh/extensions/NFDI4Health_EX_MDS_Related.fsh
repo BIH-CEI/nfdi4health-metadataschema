@@ -23,15 +23,15 @@ Description: "Extension providing information about identifiers (IDs) of the res
 * extension[identifier] ^short = "Identifier of the related resource"
 * extension[identifier] ^definition = "Identifier (ID) related to, or associated with, the resource being registered. These can be IDs of related publications, datasets, study documents, web pages, etc."
 * extension[identifier].value[x] only Identifier
-* extension[identifier].value[x] ^short = "Identifier of the related resource"
-* extension[identifier].value[x] ^definition = "Identifier (ID) related to, or associated with, the resource being registered. These can be IDs of related publications, datasets, study documents, web pages, etc."
-* extension[identifier].value[x].system 1..
-* extension[identifier].value[x].system from NFDI4Health_VS_MDS_ID_TYPE_UMLS (required)
-* extension[identifier].value[x].system ^slicing.discriminator.type = #type
-* extension[identifier].value[x].system ^slicing.discriminator.path = "$this"
-* extension[identifier].value[x].system ^slicing.rules = #open
-* extension[identifier].value[x].system ^binding.description = "Value set defining codes to specify the ID Type of the related resource."
-* extension[identifier].value[x].value 1..
+* extension[identifier].valueIdentifier ^short = "Identifier of the related resource"
+* extension[identifier].valueIdentifier ^definition = "Identifier (ID) related to, or associated with, the resource being registered. These can be IDs of related publications, datasets, study documents, web pages, etc."
+* extension[identifier].valueIdentifier.system 1..
+* extension[identifier].valueIdentifier.system from NFDI4Health_VS_MDS_ID_TYPE_UMLS (required)
+* extension[identifier].valueIdentifier.system ^slicing.discriminator.type = #type
+* extension[identifier].valueIdentifier.system ^slicing.discriminator.path = "$this"
+* extension[identifier].valueIdentifier.system ^slicing.rules = #open
+* extension[identifier].valueIdentifier.system ^binding.description = "Value set defining codes to specify the ID Type of the related resource."
+* extension[identifier].valueIdentifier.value 1..
 * extension[date] ^short = "Date of ID assignment"
 * extension[date] ^definition = "Date when the identifier of the related resource was assigned."
 * extension[date].value[x] only date
@@ -39,14 +39,14 @@ Description: "Extension providing information about identifiers (IDs) of the res
 * extension[relationType] ^definition = "Relationship between the resource being registered (A) and the related resource (B)."
 * extension[relationType].value[x] 1..
 * extension[relationType].value[x] only CodeableConcept
-* extension[relationType].value[x] from NFDI4Health_VS_MDS_Relation_Type_Ids_Local_HL7V3 (required)
-* extension[relationType].value[x] ^binding.description = "NFDI4Health_VS_MDS_Relation_Type_Ids_Local_HL7V3"
+* extension[relationType].valueCodeableConcept from NFDI4Health_VS_MDS_Relation_Type_Ids_Local_HL7V3 (required)
+* extension[relationType].valueCodeableConcept ^binding.description = "NFDI4Health_VS_MDS_Relation_Type_Ids_Local_HL7V3"
 * extension[resourceTypeGeneral] ^short = "Type of the related resource"
 * extension[resourceTypeGeneral] ^definition = "Type of the related resource, e.g. journal article, dataset, text, etc."
 * extension[resourceTypeGeneral].value[x] only CodeableConcept
-* extension[resourceTypeGeneral].value[x] from NFDI4Health_VS_MDS_Resource_Type_General_NCI_UMLS_Local (required)
-* extension[resourceTypeGeneral].value[x] ^binding.description = "Value set defining codes to specify the the general resource type"
-* extension[resourceTypeGeneral].value[x].text ..0
+* extension[resourceTypeGeneral].valueCodeableConcept from NFDI4Health_VS_MDS_Resource_Type_General_NCI_UMLS_Local (required)
+* extension[resourceTypeGeneral].valueCodeableConcept ^binding.description = "Value set defining codes to specify the the general resource type"
+* extension[resourceTypeGeneral].valueCodeableConcept.text ..0
 * url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related" (exactly)
 
 Mapping: NFDI4Health-Related-to-FHIR

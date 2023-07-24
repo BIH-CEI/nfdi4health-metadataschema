@@ -1,9 +1,9 @@
 Instance: ProvenanceExample
 InstanceOf: NFDI4Health_PR_MDS_Provenance
-Title:"Example of the NFDI4Health PR MDS Provenance profil"
-Usage:#example
+Title: "Example of the NFDI4Health PR MDS Provenance profil"
+Usage: #example
 
-* extension[dataSource].valueCoding = #01 "Automatically uploaded: ClinicalTrials.gov" "The resource has been automatically uploaded from ClinicalTrials.gov"
+* extension[dataSource].valueCoding = #01
 * target = Reference(ISARIC_COVID-19_CORE_Case_Report_Form)
 * recorded = 2000-01-01
 * activity = #LA
