@@ -12,12 +12,14 @@ Description: "Extension provinding information about the language in which a stu
 * ^context[=].expression = "ResearchStudy"
 * ^context[+].type = #element
 * ^context[=].expression = "Questionnaire"
-* . ^short = "Execution language of a resource"
-* . ^definition = "Extension capturing the language(s) in which a study/substudy is conducted, or a language in which a study document is composed."
+* . 0..*
+* . ^short = "Execution language(s) of the [RESOURCE]"
+* . ^definition = "Language(s) in which a study/substudy is conducted, or a language in which a study document is composed."
+* . ^comment = "Short input help: Select all that apply."
 * url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-execution-language" (exactly)
 * value[x] 1..
 * value[x] only code
-* value[x] from $valueset-languages.html (required)
-* value[x] ^short = "A human language."
-* value[x] ^definition = "A human language."
-* value[x] ^binding.description = "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)"
+* valueCode from $valueset-languages.html (required)
+* valueCode ^binding.description = "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)"
+* valueCode ^short = "A human language."
+* valueCode ^definition = "A human language."

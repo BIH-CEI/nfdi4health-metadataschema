@@ -62,7 +62,7 @@
         "sliceName": "general",
         "short": "Data sources for the study (e.g. biosamples, registries, questionnaires, etc.)",
         "definition": "Different types of data sources from which study data are generated or extracted.",
-        "comment": "Select all that apply.",
+        "comment": "Short input help: Select all that apply.",
         "min": 0,
         "max": "*",
         "mapping": [
@@ -165,9 +165,6 @@
         "definition": "Specification of imaging data collected in the study.",
         "min": 0,
         "max": "*",
-        "binding": {
-          "description": "Value set defining codes to specify an imaging data source."
-        },
         "mapping": [
           {
             "identity": "NFDI4Health",
@@ -196,7 +193,8 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sources-imaging-nci"
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sources-imaging-nci",
+          "description": "Value set defining codes to specify an imaging data source."
         }
       },
       {
@@ -217,9 +215,6 @@
         "definition": "Specification of omics technology applied in the study.",
         "min": 0,
         "max": "*",
-        "binding": {
-          "description": "NFDI4Health VS MDS Study Data Sources Omics [NCI, UMLS]"
-        },
         "mapping": [
           {
             "identity": "NFDI4Health",
@@ -248,7 +243,8 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sources-omics-nci-umls"
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sources-omics-nci-umls",
+          "description": "NFDI4Health VS MDS Study Data Sources Omics [NCI, UMLS]"
         }
       },
       {
@@ -267,6 +263,7 @@
         "sliceName": "description",
         "short": "Additional information about data sources",
         "definition": "If needed, additional descriptive information about study data sources, e.g. indication of the data source(s) not listed in the property 'Data sources for the study' or more detailed description of the selected data sources.",
+        "comment": "Short input help: E.g., indication of the data source(s) not listed in the field „Data sources for the study” or more detailed description of the selected data sources.",
         "min": 0,
         "max": "1",
         "mapping": [

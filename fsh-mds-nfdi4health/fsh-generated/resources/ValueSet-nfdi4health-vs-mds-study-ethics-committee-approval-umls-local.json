@@ -5,8 +5,8 @@
   "id": "nfdi4health-vs-mds-study-ethics-committee-approval-umls-local",
   "title": "NFDI4Health VS MDS Study Ethics Commitee Approval [UMLS, local]",
   "description": "Value set defining codes to specify the status of the study ethics committee approval.",
-  "version": "0.9",
   "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-ethics-committee-approval-umls-local",
+  "version": "0.9",
   "experimental": true,
   "publisher": "NFDI4Health",
   "contact": [

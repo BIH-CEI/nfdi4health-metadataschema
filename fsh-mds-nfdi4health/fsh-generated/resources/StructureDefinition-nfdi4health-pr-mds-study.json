@@ -1,16 +1,6 @@
 {
   "resourceType": "StructureDefinition",
   "id": "nfdi4health-pr-mds-study",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Specialized.Public Health &amp; Research"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
-      "valueCode": "business"
-    }
-  ],
   "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study",
   "version": "0.9",
   "name": "NFDI4Health_PR_MDS_Study",
@@ -90,9 +80,6 @@
         "id": "ResearchStudy.extension:executionLanguage",
         "path": "ResearchStudy.extension",
         "sliceName": "executionLanguage",
-        "short": "Execution language(s) of the [RESOURCE]",
-        "definition": "Language(s) in which a study/substudy is conducted, or a language in which a study document is composed.",
-        "comment": "Short input help: Select all that apply.",
         "min": 0,
         "max": "*",
         "type": [
@@ -123,7 +110,6 @@
         "id": "ResearchStudy.extension:roles",
         "path": "ResearchStudy.extension",
         "sliceName": "roles",
-        "comment": "Additional information: For each resource, there may be multiple roles, but at least one person, group of persons or institution/organisation must be specified.",
         "min": 1,
         "max": "*",
         "type": [
@@ -139,10 +125,8 @@
         "id": "ResearchStudy.extension:nutritionalData",
         "path": "ResearchStudy.extension",
         "sliceName": "nutritionalData",
-        "short": "Nutritional data collected?",
-        "definition": "Indication whether nutritional data was collected by the resource.",
         "min": 1,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "Extension",
@@ -156,10 +140,8 @@
         "id": "ResearchStudy.extension:chronicDiseases",
         "path": "ResearchStudy.extension",
         "sliceName": "chronicDiseases",
-        "short": "Chronic diseases included?",
-        "definition": "Indication whether chronic diseases were addressed by the resource.",
         "min": 1,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "Extension",
@@ -174,7 +156,7 @@
         "path": "ResearchStudy.extension",
         "sliceName": "studyGroupsOfDiseases",
         "min": 1,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "Extension",
@@ -185,36 +167,11 @@
         ]
       },
       {
-        "id": "ResearchStudy.extension:studyGroupsOfDiseases.extension:generally",
-        "path": "ResearchStudy.extension.extension",
-        "sliceName": "generally",
-        "comment": "Additional information: The values originate from the WHO's International Statistical Classification of Diseases and Related Health Problems, 11th Revision (ICD-11). | Short input help: Select all that apply. For more information about the groups of diseases/conditions, visit the WHO's ICD-11 homepage: https://icd.who.int/en.",
-        "binding": {
-          "description": "Value set defining codes to specify groups of diseases or conditions on which the data were collected in the study."
-        }
-      },
-      {
-        "id": "ResearchStudy.extension:studyGroupsOfDiseases.extension:generally.value[x].coding.system",
-        "path": "ResearchStudy.extension.extension.value[x].coding.system",
-        "min": 1
-      },
-      {
-        "id": "ResearchStudy.extension:studyGroupsOfDiseases.extension:generally.value[x].coding.code",
-        "path": "ResearchStudy.extension.extension.value[x].coding.code",
-        "min": 1
-      },
-      {
-        "id": "ResearchStudy.extension:studyGroupsOfDiseases.extension:conditions",
-        "path": "ResearchStudy.extension.extension",
-        "sliceName": "conditions",
-        "comment": "Additional information: The values originate from the WHO's International Statistical Classification of Diseases and Related Health Problems, 11th Revision (ICD-11). | Short input help: For more information about the groups of diseases/conditions, visit the WHO's ICD-11 homepage: https://icd.who.int/en."
-      },
-      {
         "id": "ResearchStudy.extension:mortalityData",
         "path": "ResearchStudy.extension",
         "sliceName": "mortalityData",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "Extension",
@@ -222,23 +179,14 @@
               "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-mortality-data"
             ]
           }
-        ],
-        "binding": {
-          "description": "Value set defining codes to specify if mortality data were collected in a study."
-        }
-      },
-      {
-        "id": "ResearchStudy.extension:mortalityData.value[x].system",
-        "path": "ResearchStudy.extension.value[x].system",
-        "min": 1
+        ]
       },
       {
         "id": "ResearchStudy.extension:studyEthicsCommitteeApproval",
         "path": "ResearchStudy.extension",
         "sliceName": "studyEthicsCommitteeApproval",
-        "definition": "Status of the study approval from the (leading) ethics committee.",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "Extension",
@@ -249,16 +197,11 @@
         ]
       },
       {
-        "id": "ResearchStudy.extension:studyEthicsCommitteeApproval.value[x].system",
-        "path": "ResearchStudy.extension.value[x].system",
-        "min": 1
-      },
-      {
         "id": "ResearchStudy.extension:studyStatus",
         "path": "ResearchStudy.extension",
         "sliceName": "studyStatus",
         "min": 1,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "Extension",
@@ -269,30 +212,11 @@
         ]
       },
       {
-        "id": "ResearchStudy.extension:studyStatus.extension:overallStatus",
-        "path": "ResearchStudy.extension.extension",
-        "sliceName": "overallStatus",
-        "comment": "Additional information: If at least one study site in a multicenter study has the status 'Ongoing', then the overall status for the study must be 'Ongoing'. | Short input help: Select one value from the list."
-      },
-      {
-        "id": "ResearchStudy.extension:studyStatus.extension:statusWhenIntervention",
-        "path": "ResearchStudy.extension.extension",
-        "sliceName": "statusWhenIntervention",
-        "comment": "Short input help: Select one value from the list."
-      },
-      {
-        "id": "ResearchStudy.extension:studyStatus.extension:recruitmentStatusRegister",
-        "path": "ResearchStudy.extension.extension",
-        "sliceName": "recruitmentStatusRegister",
-        "comment": "Additional information: The item applies only to studies automatically uploaded from the registers of clinical trials."
-      },
-      {
         "id": "ResearchStudy.extension:subject",
         "path": "ResearchStudy.extension",
         "sliceName": "subject",
-        "comment": "Short input help: Select one value from the list.",
         "min": 1,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "Extension",
@@ -307,7 +231,7 @@
         "path": "ResearchStudy.extension",
         "sliceName": "dataSource",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "Extension",
@@ -318,24 +242,11 @@
         ]
       },
       {
-        "id": "ResearchStudy.extension:dataSource.extension:general",
-        "path": "ResearchStudy.extension.extension",
-        "sliceName": "general",
-        "comment": "Short input help: Select all that apply."
-      },
-      {
-        "id": "ResearchStudy.extension:dataSource.extension:description",
-        "path": "ResearchStudy.extension.extension",
-        "sliceName": "description",
-        "comment": "Short input help: E.g., indication of the data source(s) not listed in the field „Data sources for the study” or more detailed description of the selected data sources."
-      },
-      {
         "id": "ResearchStudy.extension:inclusionCriteria",
         "path": "ResearchStudy.extension",
         "sliceName": "inclusionCriteria",
-        "comment": "Short input help: If possible, use an enumerated or bulleted list for each criterion.",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "Extension",
@@ -349,9 +260,8 @@
         "id": "ResearchStudy.extension:exclusionCriteria",
         "path": "ResearchStudy.extension",
         "sliceName": "exclusionCriteria",
-        "comment": "Short input help: If possible, use an enumerated or bulleted list for each criterion.",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "Extension",
@@ -365,9 +275,6 @@
         "id": "ResearchStudy.extension:comparisonGroup",
         "path": "ResearchStudy.extension",
         "sliceName": "comparisonGroup",
-        "short": "Additional information about the arm/group",
-        "definition": "Additional descriptive information about the given arm/group.",
-        "comment": "Additional information:\r\nFor interventional studies: If needed, additional descriptive information (including which interventions are administered in each arm) to differentiate each arm from other arms in the clinical trial.\r\nFor non-interventional studies: Explanation of the nature of the study group (for example, those with a condition and those without a condition; those with an exposure and those without an exposure).\r\n\r\nExtension based on R5",
         "min": 0,
         "max": "*",
         "type": [
@@ -380,27 +287,9 @@
         ]
       },
       {
-        "id": "ResearchStudy.extension:comparisonGroup.extension:intendedExposure",
-        "path": "ResearchStudy.extension.extension",
-        "sliceName": "intendedExposure"
-      },
-      {
-        "id": "ResearchStudy.extension:comparisonGroup.extension:intendedExposure.value[x]",
-        "path": "ResearchStudy.extension.extension.value[x]",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-evidence-variable-intervention-exposure"
-            ]
-          }
-        ]
-      },
-      {
         "id": "ResearchStudy.extension:outcomes",
         "path": "ResearchStudy.extension",
         "sliceName": "outcomes",
-        "comment": "Additional information: The items are optional for non-interventional studies.\r\n\r\nExtension based on R5",
         "min": 0,
         "max": "*",
         "type": [
@@ -411,36 +300,6 @@
             ]
           }
         ]
-      },
-      {
-        "id": "ResearchStudy.extension:outcomes.extension:name",
-        "path": "ResearchStudy.extension.extension",
-        "sliceName": "name"
-      },
-      {
-        "id": "ResearchStudy.extension:outcomes.extension:name.value[x]",
-        "path": "ResearchStudy.extension.extension.value[x]",
-        "min": 1
-      },
-      {
-        "id": "ResearchStudy.extension:outcomes.extension:description",
-        "path": "ResearchStudy.extension.extension",
-        "sliceName": "description"
-      },
-      {
-        "id": "ResearchStudy.extension:outcomes.extension:description.value[x]",
-        "path": "ResearchStudy.extension.extension.value[x]",
-        "min": 1
-      },
-      {
-        "id": "ResearchStudy.extension:outcomes.extension:timeFrame",
-        "path": "ResearchStudy.extension.extension",
-        "sliceName": "timeFrame"
-      },
-      {
-        "id": "ResearchStudy.extension:outcomes.extension:timeFrame.value[x]",
-        "path": "ResearchStudy.extension.extension.value[x]",
-        "min": 1
       },
       {
         "id": "ResearchStudy.extension:assessments",
@@ -461,9 +320,8 @@
         "id": "ResearchStudy.extension:population",
         "path": "ResearchStudy.extension",
         "sliceName": "population",
-        "comment": "Short input help: Any information important for the given study population can be specified here.",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "Extension",
@@ -478,7 +336,7 @@
         "path": "ResearchStudy.extension",
         "sliceName": "dataSharingPlan",
         "min": 1,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "Extension",
@@ -492,7 +350,6 @@
         "id": "ResearchStudy.extension:targetFollowupDuration",
         "path": "ResearchStudy.extension",
         "sliceName": "targetFollowupDuration",
-        "comment": "Short input help: The value must be provided in years.",
         "min": 0,
         "max": "1",
         "type": [
@@ -505,24 +362,11 @@
         ]
       },
       {
-        "id": "ResearchStudy.extension:targetFollowupDuration.value[x].system",
-        "path": "ResearchStudy.extension.value[x].system",
-        "min": 1,
-        "fixedUri": "http://unitsofmeasure.org"
-      },
-      {
-        "id": "ResearchStudy.extension:targetFollowupDuration.value[x].code",
-        "path": "ResearchStudy.extension.value[x].code",
-        "binding": {
-          "description": "a"
-        }
-      },
-      {
         "id": "ResearchStudy.extension:biospecimen",
         "path": "ResearchStudy.extension",
         "sliceName": "biospecimen",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "Extension",
@@ -536,9 +380,8 @@
         "id": "ResearchStudy.extension:offLabelUse",
         "path": "ResearchStudy.extension",
         "sliceName": "offLabelUse",
-        "comment": "Short input help: Select \"Yes\" or \"No\" only for drug studies and \"Not applicable” for all other studies.",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "Extension",
@@ -552,8 +395,6 @@
         "id": "ResearchStudy.extension:masking",
         "path": "ResearchStudy.extension",
         "sliceName": "masking",
-        "short": "Information about masking of intervention(s) assignment",
-        "definition": "Group of items providing information about the masking of intervention(s) assignment.",
         "min": 0,
         "max": "1",
         "type": [
@@ -568,24 +409,12 @@
       {
         "id": "ResearchStudy.extension:masking.extension:roles",
         "path": "ResearchStudy.extension.extension",
-        "sliceName": "roles",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "1.17.37.2.2 Resource.studyDesign.interventional.masking.roles"
-          }
-        ]
+        "sliceName": "roles"
       },
       {
         "id": "ResearchStudy.extension:masking.extension:description",
         "path": "ResearchStudy.extension.extension",
-        "sliceName": "description",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "1.17.37.2.3 Resource.studyDesign.interventional.masking.description"
-          }
-        ]
+        "sliceName": "description"
       },
       {
         "id": "ResearchStudy.identifier",
@@ -616,7 +445,7 @@
         "path": "ResearchStudy.identifier",
         "sliceName": "NFDI4Health",
         "definition": "Unique identifier of the resource used for identification within the NFDI4Health.",
-        "comment": "The identifier is assigned automatically.",
+        "comment": "Additional information: The identifier is assigned automatically.",
         "min": 1,
         "max": "1",
         "mapping": [
@@ -676,6 +505,12 @@
         "path": "ResearchStudy.identifier.value",
         "definition": "Identifier (ID) assigned to the given resource by DRKS.",
         "min": 1,
+        "example": [
+          {
+            "label": "DRKS Identifier",
+            "valueString": "DRKS00021273"
+          }
+        ],
         "mapping": [
           {
             "identity": "NFDI4Health",
@@ -715,6 +550,12 @@
         "path": "ResearchStudy.identifier.value",
         "definition": "Identifier (ID) assigned to the given resource by ClinicalTrials.gov.",
         "min": 1,
+        "example": [
+          {
+            "label": "NCT Identifier",
+            "valueString": "NCT04327505"
+          }
+        ],
         "mapping": [
           {
             "identity": "NFDI4Health",
@@ -997,16 +838,6 @@
         "path": "ResearchStudy.identifier.value",
         "definition": "Identifier (ID) assigned to the given resource by another registering system, e.g. by a register of clinical trials or a data repository.",
         "min": 1,
-        "example": [
-          {
-            "label": "DRKS Identifier",
-            "valueString": "DRKS00021273"
-          },
-          {
-            "label": "NCT Identifier",
-            "valueString": "NCT04327505"
-          }
-        ],
         "mapping": [
           {
             "identity": "NFDI4Health",
@@ -1043,6 +874,89 @@
         "min": 1
       },
       {
+        "id": "ResearchStudy.title.extension:translation",
+        "path": "ResearchStudy.title.extension",
+        "sliceName": "translation",
+        "short": "Language translation of the title",
+        "definition": "Language of the title if it is not the base language of the resource.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/translation"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ResearchStudy.title.extension:translation.extension:lang",
+        "path": "ResearchStudy.title.extension.extension",
+        "sliceName": "lang",
+        "short": "Language of the title/name",
+        "definition": "Language of the title/name.",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.3.2 Resource.titles.language",
+            "comment": "Translation language of the title"
+          }
+        ]
+      },
+      {
+        "id": "ResearchStudy.title.extension:translation.extension:lang.value[x]",
+        "path": "ResearchStudy.title.extension.extension.value[x]",
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet",
+              "valueCanonical": "http://hl7.org/fhir/ValueSet/all-languages"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "Language"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
+              "valueBoolean": true
+            }
+          ],
+          "strength": "required",
+          "description": "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)",
+          "valueSet": "http://hl7.org/fhir/ValueSet/languages"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.3.2 Resource.resource_titles.language"
+          }
+        ]
+      },
+      {
+        "id": "ResearchStudy.title.extension:translation.extension:content",
+        "path": "ResearchStudy.title.extension.extension",
+        "sliceName": "content",
+        "short": "Title in another language",
+        "definition": "Title in another language than the base language of the resource.",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.3.1 Resource.titles.text",
+            "comment": "Translated title"
+          }
+        ]
+      },
+      {
+        "id": "ResearchStudy.title.extension:translation.extension:content.value[x]",
+        "path": "ResearchStudy.title.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
         "id": "ResearchStudy.title.extension:language",
         "path": "ResearchStudy.title.extension",
         "sliceName": "language",
@@ -1058,9 +972,6 @@
             ]
           }
         ],
-        "binding": {
-          "description": "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)"
-        },
         "mapping": [
           {
             "identity": "NFDI4Health",
@@ -1069,9 +980,18 @@
         ]
       },
       {
+        "id": "ResearchStudy.title.extension:language.value[x]",
+        "path": "ResearchStudy.title.extension.value[x]",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/languages",
+          "description": "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)"
+        }
+      },
+      {
         "id": "ResearchStudy.status",
         "path": "ResearchStudy.status",
-        "comment": "The item does not exist in NFDI4Health' MDS. Fixed to \"active\" for all studies.",
+        "comment": "The item does not exist in NFDI4Health' MDS. Fixed to 'active' for all studies.",
         "fixedCode": "active"
       },
       {
@@ -1230,7 +1150,7 @@
         "sliceName": "studyTypeNonInterventional",
         "short": "Specification of study type",
         "definition": "The primary strategy for participant identification and follow-up.",
-        "comment": "Select all that apply.\r\nIf \"Other\" is selected, you can specify the study type in the field \"Additional information about the study\".",
+        "comment": "Short input help: Select all that apply.\r\nIf \"Other\" is selected, you can specify the study type in the field \"Additional information about the study\".",
         "min": 1,
         "max": "*",
         "binding": {
@@ -1484,7 +1404,7 @@
         "path": "ResearchStudy.condition.coding.system",
         "short": "Terminology/classification",
         "definition": "Terminology/classification used for the health condition, diesease or focus.",
-        "comment": "If used, name of the terminology/classification.",
+        "comment": "Short input help: If used, name of the terminology/classification.",
         "min": 1,
         "mapping": [
           {
@@ -1498,7 +1418,7 @@
         "path": "ResearchStudy.condition.coding.code",
         "short": "Code",
         "definition": "Code of the health condition,  disease, focus in the terminology/classification used.",
-        "comment": "If found, the code from the terminology/classification used.",
+        "comment": "Short input help: If found, the code from the terminology/classification used.",
         "mapping": [
           {
             "identity": "NFDI4Health",
@@ -1511,7 +1431,7 @@
         "path": "ResearchStudy.condition.coding.display",
         "short": "Name of the primary health condition, disease or focus of the study",
         "definition": "Name of primary health condition or disease considered in the study, or the focus of the study (e.g. medication, food, therapy, device, etc.).",
-        "comment": "The use of terms from established terminologies/classifications (e.g. SNOMED CT, ICD, etc.) is preferred. However, also self-assigned terms are allowed. | Preferably, use terms from SNOMED CT (https://browser.ihtsdotools.org).",
+        "comment": "Additional information: The use of terms from established terminologies/classifications (e.g. SNOMED CT, ICD, etc.) is preferred. However, also self-assigned terms are allowed. | Short input help: Preferably, use terms from SNOMED CT (https://browser.ihtsdotools.org).",
         "min": 1,
         "mapping": [
           {
@@ -1630,7 +1550,7 @@
         "path": "ResearchStudy.keyword.coding",
         "short": "Code of the keyword",
         "definition": "If known, the code of the keyword in a classification/vocabulary.",
-        "comment": "If found, the code from the classification/vocabulary used.",
+        "comment": "Short input help: If found, the code from the classification/vocabulary used.",
         "max": "1"
       },
       {
@@ -1713,7 +1633,7 @@
           ],
           "rules": "open"
         },
-        "comment": "Select all that apply.",
+        "comment": "Short input help: Select all that apply.",
         "min": 1
       },
       {
@@ -1788,6 +1708,57 @@
         "min": 1
       },
       {
+        "id": "ResearchStudy.description.extension:translation",
+        "path": "ResearchStudy.description.extension",
+        "sliceName": "translation",
+        "short": "Additional description(s) of the [RESOURCE]",
+        "definition": "Group of items with description(s) of the resource written not in English.",
+        "comment": "Additional descriptions of the resource are optional. \r\nThe provided information should be understandable by scientific audience.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/translation"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.6 Resource.descriptionNonEnglish"
+          }
+        ]
+      },
+      {
+        "id": "ResearchStudy.description.extension:translation.extension:lang",
+        "path": "ResearchStudy.description.extension.extension",
+        "sliceName": "lang",
+        "short": "Language of the description text.",
+        "definition": "Language other than English of the description text.",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.6.2 Resource.descriptionNonEnglish.language"
+          }
+        ]
+      },
+      {
+        "id": "ResearchStudy.description.extension:translation.extension:content",
+        "path": "ResearchStudy.description.extension.extension",
+        "sliceName": "content",
+        "short": "Description (not in English)",
+        "definition": "Short plain text summary of the resource other than in English.",
+        "comment": "Additional information: Additional descriptions of the resource are optional. The provided information should be understandable by scientific audience.",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.6.1 Resource.descriptionNonEnglish.text"
+          }
+        ]
+      },
+      {
         "id": "ResearchStudy.description.extension:language",
         "path": "ResearchStudy.description.extension",
         "sliceName": "language",
@@ -1821,6 +1792,15 @@
         "path": "ResearchStudy.enrollment",
         "short": "Eligibility criteria for study participants",
         "definition": "Group of items providing information about eligibility criteria for study participants.",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-group-intended",
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-group-actual"
+            ]
+          }
+        ],
         "mapping": [
           {
             "identity": "NFDI4Health",
@@ -1860,11 +1840,41 @@
         "max": "1"
       },
       {
+        "id": "ResearchStudy.site.extension:centers",
+        "path": "ResearchStudy.site.extension",
+        "sliceName": "centers",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-centers"
+            ]
+          }
+        ]
+      },
+      {
         "id": "ResearchStudy.reasonStopped",
         "path": "ResearchStudy.reasonStopped",
         "short": "Reason why the study was stopped",
         "definition": "If the study was stopped prematurely, specification of the reason(s) why it was halted.",
         "comment": "Short input help: E.g., accrual goal met / closed due to toxicity / closed due to lack of study progress / temporarily-closed per study design /etc."
+      },
+      {
+        "id": "ResearchStudy.reasonStopped.extension:haltedStage",
+        "path": "ResearchStudy.reasonStopped.extension",
+        "sliceName": "haltedStage",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-status-halted-stage"
+            ]
+          }
+        ]
       },
       {
         "id": "ResearchStudy.reasonStopped.text",
@@ -1904,21 +1914,6 @@
         "id": "ResearchStudy.arm",
         "path": "ResearchStudy.arm",
         "max": "0"
-      },
-      {
-        "id": "ResearchStudy.arm.name",
-        "path": "ResearchStudy.arm.name",
-        "comment": "Additional information: \r\nFor interventional studies: \"Arm\" means a pre-specified group or subgroup of participant(s) in a clinical trial assigned to receive specific intervention(s) (or no intervention) according to a protocol.\r\nFor non-interventional studies: \"Group\" means a predefined group (cohort) of participants to be studied."
-      },
-      {
-        "id": "ResearchStudy.arm.type.coding",
-        "path": "ResearchStudy.arm.type.coding",
-        "max": "1"
-      },
-      {
-        "id": "ResearchStudy.arm.description",
-        "path": "ResearchStudy.arm.description",
-        "comment": "Additional information : \r\nFor interventional studies: If needed, additional descriptive information (including which interventions are administered in each arm) to differentiate each arm from other arms in the clinical trial.\r\nFor non-interventional studies: Explanation of the nature of the study group (for example, those with a condition and those without a condition; those with an exposure and those without an exposure)."
       },
       {
         "id": "ResearchStudy.objective",

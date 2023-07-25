@@ -1,16 +1,6 @@
 {
   "resourceType": "StructureDefinition",
   "id": "nfdi4health-pr-mds-document",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Foundation.Documents"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
-      "valueCode": "not-classified"
-    }
-  ],
   "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-document",
   "version": "0.9",
   "name": "NFDI4Health_PR_MDS_Document",

@@ -14,10 +14,10 @@ Description: "Group of items providing information about person(s), group(s) of 
 * ^context[=].expression = "DocumentReference"
 * ^context[+].type = #element
 * ^context[=].expression = "Questionnaire"
-* . 1..
+* . 1..*
 * . ^short = "Role(s)"
 * . ^definition = "Group of items providing information about person(s), group(s) of persons or institution(s)/organisation(s) contributing to the resource."
-* . ^comment = "For each resource, there may be multiple roles, but at least one person, group of persons or institution/organisation must be specified.\r\nBased on ResearchStudy.associatedParty (R5)."
+* . ^comment = "Additional information: For each resource, there may be multiple roles, but at least one person, group of persons or institution/organisation must be specified. [Extension based on ResearchStudy.associatedParty (R5).]"
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
@@ -38,7 +38,7 @@ Description: "Group of items providing information about person(s), group(s) of 
 * extension[rolePersonal].value[x] from NFDI4Health_VS_MDS_Personal_Roles_NCI_UMLS_Local (required)
 * extension[rolePersonal].value[x] ^short = "Role type"
 * extension[rolePersonal].value[x] ^definition = "Type of the role a person fulllfils, e.g. a principal investigator of a study or an author of a document?"
-* extension[rolePersonal].value[x] ^comment = "Select one value from the list."
+* extension[rolePersonal].value[x] ^comment = "Short input help: Select one value from the list."
 * extension[rolePersonal].value[x] ^binding.description = "Value set defining codes for personal roles."
 * extension[rolePersonal].value[x].system 1..
 * extension[rolePersonal].value[x].code 1..

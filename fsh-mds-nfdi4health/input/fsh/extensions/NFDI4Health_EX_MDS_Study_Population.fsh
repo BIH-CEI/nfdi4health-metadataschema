@@ -13,7 +13,7 @@ Description: "Extension providing a description of the study population."
 * . 0..1
 * . ^short = "Description of study population"
 * . ^definition = "Additional descriptive information providing more details about study population."
-* . ^comment = "Any information important for the given study population can be specified here."
+* . ^comment = "Short input help: Any information important for the given study population can be specified here."
 * value[x] 1..1
 * value[x] only string
 

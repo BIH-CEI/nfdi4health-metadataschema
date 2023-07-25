@@ -12,9 +12,10 @@ Description: "Extension providing information about the arm(s)/group(s)/cohort(s
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 * ^context.type = #element
 * ^context.expression = "ResearchStudy"
-* . 0..1
-* . ^short = "Defined path through the study for a subject"
-* . ^definition = "Describes an expected event or sequence of events for one of the subjects of a study. E.g. for a living subject: exposure to drug A, wash-out, exposure to drug B, wash-out, follow-up. E.g. for a stability study: {store sample from lot A at 25 degrees for 1 month}, {store sample from lot A at 40 degrees for 1 month}."
+* . 0..*
+* . ^short = "Arms or groups/cohorts of the study"
+* . ^definition = "Group of items providing information about arms or groups/cohorts of the study."
+* . ^comment = "[Extension based on ResearchStudy.comparisonGroup (R5).]"
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
@@ -33,10 +34,10 @@ Description: "Extension providing information about the arm(s)/group(s)/cohort(s
 * extension[type] ^comment = "Short input help: Select one value from the list."
 * extension[type].value[x] 1..1
 * extension[type].value[x] only Coding
-* extension[type].value[x].code 1..1
-* extension[type].value[x].system 1..1
-* extension[type].value[x] from $nfdi4health-vs-mds-study-arm-group-type-umls (required)
-* extension[type].value[x] ^binding.description = "Value set defining codes to specify the role of a study arm or group in a ResearchStudy resource."
+* extension[type].valueCoding.code 1..1
+* extension[type].valueCoding.system 1..1
+* extension[type].valueCoding from $nfdi4health-vs-mds-study-arm-group-type-umls (required)
+* extension[type].valueCoding ^binding.description = "Value set defining codes to specify the role of a study arm or group in a ResearchStudy resource."
 * extension[description] ^short = "Additional information about the arm/group"
 * extension[description] ^definition = "Additional descriptive information about the given arm/group."
 * extension[description] ^comment = "Additional information: For interventional studies: If needed, additional descriptive information (including which interventions are administered in each arm) to differentiate each arm from other arms in the clinical trial. For non-interventional studies: Explanation of the nature of the study group (for example, those with a condition and those without a condition; those with an exposure and those without an exposure)."
@@ -44,7 +45,7 @@ Description: "Extension providing information about the arm(s)/group(s)/cohort(s
 * extension[description].value[x] only string
 * extension[intendedExposure] ^short = "Interventions/exposures of the study"
 * extension[intendedExposure] ^definition = "Group of items providing information about study interventions or exposures."
-* extension[intendedExposure] ^comment = "The items may be not applicable for non-interventional studies."
+* extension[intendedExposure] ^comment = "Additional information: The items may be not applicable for non-interventional studies."
 * extension[intendedExposure].value[x] 1..1
 * extension[intendedExposure].value[x] only Reference(EvidenceVariable)
 

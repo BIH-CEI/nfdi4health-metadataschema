@@ -48,7 +48,7 @@
         "path": "Extension",
         "short": "Description of study population",
         "definition": "Additional descriptive information providing more details about study population.",
-        "comment": "Any information important for the given study population can be specified here.",
+        "comment": "Short input help: Any information important for the given study population can be specified here.",
         "max": "1",
         "mapping": [
           {

@@ -17,150 +17,25 @@ Description: "Resource covering metadata of a study."
     NFDI4Health_EX_MDS_Execution_Language named executionLanguage 0..* and
     NFDI4Health_EX_MDS_Label named label 0..* and
     NFDI4Health_EX_MDS_Associated_Party named roles 1..* and
-    NFDI4Health_EX_MDS_Nutritional_Data named nutritionalData 1..* and
-    NFDI4Health_EX_MDS_Chronic_Diseases named chronicDiseases 1..* and
-    NFDI4Health_EX_MDS_Study_Groups_Of_Diseases named studyGroupsOfDiseases 1..* and
-    NFDI4Health_EX_MDS_Mortality_Data named mortalityData 0..* and
-    NFDI4Health_EX_MDS_Study_Ethics_Committee_Approval named studyEthicsCommitteeApproval 0..* and
-    NFDI4Health_EX_MDS_Study_Status named studyStatus 1..* and
-    NFDI4Health_EX_MDS_Study_Subject named subject 1..* and
-    NFDI4Health_EX_MDS_Study_Data_Source named dataSource 0..* and
-    NFDI4Health_EX_MDS_Study_Eligibility_Criteria_Inclusion_Criteria named inclusionCriteria 0..* and
-    NFDI4Health_EX_MDS_Study_Eligibility_Criteria_Exclusion_Criteria named exclusionCriteria 0..* and
+    NFDI4Health_EX_MDS_Nutritional_Data named nutritionalData 1..1 and
+    NFDI4Health_EX_MDS_Chronic_Diseases named chronicDiseases 1..1 and
+    NFDI4Health_EX_MDS_Study_Groups_Of_Diseases named studyGroupsOfDiseases 1..1 and
+    NFDI4Health_EX_MDS_Mortality_Data named mortalityData 0..1 and
+    NFDI4Health_EX_MDS_Study_Ethics_Committee_Approval named studyEthicsCommitteeApproval 0..1 and
+    NFDI4Health_EX_MDS_Study_Status named studyStatus 1..1 and
+    NFDI4Health_EX_MDS_Study_Subject named subject 1..1 and
+    NFDI4Health_EX_MDS_Study_Data_Source named dataSource 0..1 and
+    NFDI4Health_EX_MDS_Study_Eligibility_Criteria_Inclusion_Criteria named inclusionCriteria 0..1 and
+    NFDI4Health_EX_MDS_Study_Eligibility_Criteria_Exclusion_Criteria named exclusionCriteria 0..1 and
     NFDI4Health_EX_MDS_Study_Comparison_Group named comparisonGroup 0..* and
     NFDI4Health_EX_MDS_Study_Outcomes named outcomes 0..* and
     NFDI4Health_EX_MDS_Study_Assessments named assessments 0..* and
-    NFDI4Health_EX_MDS_Study_Population named population 0..* and
-    NFDI4Health_EX_MDS_Study_Data_Sharing_Plan named dataSharingPlan 1..* and
+    NFDI4Health_EX_MDS_Study_Population named population 0..1 and
+    NFDI4Health_EX_MDS_Study_Data_Sharing_Plan named dataSharingPlan 1..1 and
     NFDI4Health_EX_MDS_Study_Target_Followup_Duration named targetFollowupDuration 0..1 and
-    NFDI4Health_EX_MDS_Study_Biospecimen named biospecimen 0..* and
-    NFDI4Health_EX_MDS_Off_Label_Use named offLabelUse 0..* and
+    NFDI4Health_EX_MDS_Study_Biospecimen named biospecimen 0..1 and
+    NFDI4Health_EX_MDS_Off_Label_Use named offLabelUse 0..1 and
     NFDI4Health_EX_MDS_Study_Masking named masking 0..1
-* extension[executionLanguage] ^short = "Execution language(s) of the [RESOURCE]"
-* extension[executionLanguage] ^definition = "Language(s) in which a study/substudy is conducted, or a language in which a study document is composed."
-* extension[executionLanguage] ^comment = "Short input help: Select all that apply."
-* extension[executionLanguage] ^min = 0
-* extension[executionLanguage] ^isModifier = false
-* extension[label] ^min = 0
-* extension[label] ^isModifier = false
-* extension[roles] ^comment = "Additional information: For each resource, there may be multiple roles, but at least one person, group of persons or institution/organisation must be specified."
-* extension[roles] ^isModifier = false
-* extension[nutritionalData] ^short = "Nutritional data collected?"
-* extension[nutritionalData] ^definition = "Indication whether nutritional data was collected by the resource."
-* extension[nutritionalData] ^isModifier = false
-* extension[chronicDiseases] ^short = "Chronic diseases included?"
-* extension[chronicDiseases] ^definition = "Indication whether chronic diseases were addressed by the resource."
-* extension[chronicDiseases] ^isModifier = false
-* extension[studyGroupsOfDiseases] ^isModifier = false
-* extension[studyGroupsOfDiseases].extension 1..
-* extension[studyGroupsOfDiseases].extension ^slicing.discriminator.type = #value
-* extension[studyGroupsOfDiseases].extension ^slicing.discriminator.path = "url"
-* extension[studyGroupsOfDiseases].extension ^slicing.rules = #open
-* extension[studyGroupsOfDiseases].extension[generally] from NFDI4Health_VS_MDS_Study_Groups_Of_Diseases_Generally_ICD11_UMLS (required)
-* extension[studyGroupsOfDiseases].extension[generally] ^sliceName = "generally"
-* extension[studyGroupsOfDiseases].extension[generally] ^comment = "Additional information: The values originate from the WHO's International Statistical Classification of Diseases and Related Health Problems, 11th Revision (ICD-11). | Short input help: Select all that apply. For more information about the groups of diseases/conditions, visit the WHO's ICD-11 homepage: https://icd.who.int/en."
-* extension[studyGroupsOfDiseases].extension[generally] ^binding.description = "Value set defining codes to specify groups of diseases or conditions on which the data were collected in the study."
-* extension[studyGroupsOfDiseases].extension[generally].value[x].coding.system 1..
-* extension[studyGroupsOfDiseases].extension[generally].value[x].coding.code 1..
-* extension[studyGroupsOfDiseases].extension[conditions] ^sliceName = "conditions"
-* extension[studyGroupsOfDiseases].extension[conditions] ^comment = "Additional information: The values originate from the WHO's International Statistical Classification of Diseases and Related Health Problems, 11th Revision (ICD-11). | Short input help: For more information about the groups of diseases/conditions, visit the WHO's ICD-11 homepage: https://icd.who.int/en."
-* extension[studyGroupsOfDiseases].extension[conditions] ^min = 0
-* extension[mortalityData] from NFDI4Health_VS_MDS_Mortality_Data_NCI_SNOMEDCT (required)
-* extension[mortalityData] ^min = 0
-* extension[mortalityData] ^isModifier = false
-* extension[mortalityData] ^binding.description = "Value set defining codes to specify if mortality data were collected in a study."
-* extension[mortalityData].value[x].system 1..
-* extension[studyEthicsCommitteeApproval] ^definition = "Status of the study approval from the (leading) ethics committee."
-* extension[studyEthicsCommitteeApproval] ^min = 0
-* extension[studyEthicsCommitteeApproval] ^isModifier = false
-* extension[studyEthicsCommitteeApproval].value[x].system 1..
-* extension[studyStatus] ^isModifier = false
-* extension[studyStatus].extension 1..
-* extension[studyStatus].extension ^slicing.discriminator.type = #value
-* extension[studyStatus].extension ^slicing.discriminator.path = "url"
-* extension[studyStatus].extension ^slicing.rules = #open
-* extension[studyStatus].extension[overallStatus] ^sliceName = "overallStatus"
-* extension[studyStatus].extension[overallStatus] ^comment = "Additional information: If at least one study site in a multicenter study has the status 'Ongoing', then the overall status for the study must be 'Ongoing'. | Short input help: Select one value from the list."
-* extension[studyStatus].extension[statusWhenIntervention] ^sliceName = "statusWhenIntervention"
-* extension[studyStatus].extension[statusWhenIntervention] ^comment = "Short input help: Select one value from the list."
-* extension[studyStatus].extension[statusWhenIntervention] ^min = 0
-* extension[studyStatus].extension[recruitmentStatusRegister] ^sliceName = "recruitmentStatusRegister"
-* extension[studyStatus].extension[recruitmentStatusRegister] ^comment = "Additional information: The item applies only to studies automatically uploaded from the registers of clinical trials."
-* extension[studyStatus].extension[recruitmentStatusRegister] ^min = 0
-* extension[subject] ^comment = "Short input help: Select one value from the list."
-* extension[subject] ^isModifier = false
-* extension[dataSource] ^min = 0
-* extension[dataSource] ^isModifier = false
-* extension[dataSource].extension ^slicing.discriminator.type = #value
-* extension[dataSource].extension ^slicing.discriminator.path = "url"
-* extension[dataSource].extension ^slicing.rules = #open
-* extension[dataSource].extension ^min = 0
-* extension[dataSource].extension[general] ^sliceName = "general"
-* extension[dataSource].extension[general] ^comment = "Short input help: Select all that apply."
-* extension[dataSource].extension[general] ^min = 0
-* extension[dataSource].extension[description] ^sliceName = "description"
-* extension[dataSource].extension[description] ^comment = "Short input help: E.g., indication of the data source(s) not listed in the field „Data sources for the study” or more detailed description of the selected data sources."
-* extension[dataSource].extension[description] ^min = 0
-* extension[inclusionCriteria] ^comment = "Short input help: If possible, use an enumerated or bulleted list for each criterion."
-* extension[inclusionCriteria] ^min = 0
-* extension[inclusionCriteria] ^isModifier = false
-* extension[exclusionCriteria] ^comment = "Short input help: If possible, use an enumerated or bulleted list for each criterion."
-* extension[exclusionCriteria] ^min = 0
-* extension[exclusionCriteria] ^isModifier = false
-* extension[comparisonGroup] ^short = "Additional information about the arm/group"
-* extension[comparisonGroup] ^definition = "Additional descriptive information about the given arm/group."
-* extension[comparisonGroup] ^comment = "Additional information:\r\nFor interventional studies: If needed, additional descriptive information (including which interventions are administered in each arm) to differentiate each arm from other arms in the clinical trial.\r\nFor non-interventional studies: Explanation of the nature of the study group (for example, those with a condition and those without a condition; those with an exposure and those without an exposure).\r\n\r\nExtension based on R5"
-* extension[comparisonGroup] ^min = 0
-* extension[comparisonGroup] ^isModifier = false
-* extension[comparisonGroup].extension ^slicing.discriminator.type = #value
-* extension[comparisonGroup].extension ^slicing.discriminator.path = "url"
-* extension[comparisonGroup].extension ^slicing.rules = #open
-* extension[comparisonGroup].extension[intendedExposure] ^sliceName = "intendedExposure"
-* extension[comparisonGroup].extension[intendedExposure] ^min = 0
-* extension[comparisonGroup].extension[intendedExposure].value[x] only Reference(NFDI4Health_PR_MDS_Evidence_Variable_Intervention_Exposure)
-* extension[outcomes] ^comment = "Additional information: The items are optional for non-interventional studies.\r\n\r\nExtension based on R5"
-* extension[outcomes] ^min = 0
-* extension[outcomes] ^isModifier = false
-* extension[outcomes].extension 1..
-* extension[outcomes].extension ^slicing.discriminator.type = #value
-* extension[outcomes].extension ^slicing.discriminator.path = "url"
-* extension[outcomes].extension ^slicing.rules = #open
-* extension[outcomes].extension[name] ^sliceName = "name"
-* extension[outcomes].extension[name] ^min = 0
-* extension[outcomes].extension[name].value[x] 1..
-* extension[outcomes].extension[description] ^sliceName = "description"
-* extension[outcomes].extension[description] ^min = 0
-* extension[outcomes].extension[description].value[x] 1..
-* extension[outcomes].extension[timeFrame] ^sliceName = "timeFrame"
-* extension[outcomes].extension[timeFrame] ^min = 0
-* extension[outcomes].extension[timeFrame].value[x] 1..
-* extension[assessments] ^min = 0
-* extension[assessments] ^isModifier = false
-* extension[population] ^comment = "Short input help: Any information important for the given study population can be specified here."
-* extension[population] ^min = 0
-* extension[population] ^isModifier = false
-* extension[dataSharingPlan] ^isModifier = false
-* extension[targetFollowupDuration] ^comment = "Short input help: The value must be provided in years."
-* extension[targetFollowupDuration] ^isModifier = false
-* extension[targetFollowupDuration].value[x].system 1..
-* extension[targetFollowupDuration].value[x].system = "http://unitsofmeasure.org" (exactly)
-* extension[targetFollowupDuration].value[x].code ^binding.description = "a"
-* extension[biospecimen] ^min = 0
-* extension[biospecimen] ^isModifier = false
-* extension[offLabelUse] ^comment = "Short input help: Select \"Yes\" or \"No\" only for drug studies and \"Not applicable” for all other studies."
-* extension[offLabelUse] ^min = 0
-* extension[offLabelUse] ^isModifier = false
-* extension[masking] ^short = "Information about masking of intervention(s) assignment"
-* extension[masking] ^definition = "Group of items providing information about the masking of intervention(s) assignment."
-* extension[masking] ^isModifier = false
-* extension[masking].extension ^slicing.discriminator.type = #value
-* extension[masking].extension ^slicing.discriminator.path = "url"
-* extension[masking].extension ^slicing.rules = #open
-* extension[masking].extension ^min = 0
-* extension[masking].extension[roles] ^sliceName = "roles"
-* extension[masking].extension[roles] ^min = 0
-* extension[masking].extension[description] ^sliceName = "description"
-* extension[masking].extension[description] ^min = 0
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
@@ -176,7 +51,7 @@ Description: "Resource covering metadata of a study."
     MDMPortal 0..* and
     Other 0..*
 * identifier[NFDI4Health] ^definition = "Unique identifier of the resource used for identification within the NFDI4Health."
-* identifier[NFDI4Health] ^comment = "The identifier is assigned automatically."
+* identifier[NFDI4Health] ^comment = "Additional information: The identifier is assigned automatically."
 * identifier[NFDI4Health].use 1..
 * identifier[NFDI4Health].use = #official (exactly)
 * identifier[NFDI4Health].system 1..
@@ -188,11 +63,15 @@ Description: "Resource covering metadata of a study."
 * identifier[DRKS].system ^definition = "Name of the system where the given resource is already registered. Fixed to DRKS."
 * identifier[DRKS].value 1..
 * identifier[DRKS].value ^definition = "Identifier (ID) assigned to the given resource by DRKS."
+* identifier[DRKS].value ^example[0].label = "DRKS Identifier"
+* identifier[DRKS].value ^example[=].valueString = "DRKS00021273"
 * identifier[NCT].system 1..
 * identifier[NCT].system = "https://www.clinicaltrials.gov/" (exactly)
 * identifier[NCT].system ^definition = "Name of the system where the given resource is already registered. Fixed to NCT (CT.gov)."
 * identifier[NCT].value 1..
 * identifier[NCT].value ^definition = "Identifier (ID) assigned to the given resource by ClinicalTrials.gov."
+* identifier[NCT].value ^example[0].label = "NCT Identifier"
+* identifier[NCT].value ^example[=].valueString = "NCT04327505"
 * identifier[ISRCTN].system 1..
 * identifier[ISRCTN].system = "https://www.isrctn.com/" (exactly)
 * identifier[ISRCTN].system ^definition = "Name of the system where the given resource is already registered. Fixed to ISRCTN."
@@ -227,10 +106,6 @@ Description: "Resource covering metadata of a study."
 * identifier[Other].system ^definition = "Type/name of the system where the given resource is already registered."
 * identifier[Other].value 1..
 * identifier[Other].value ^definition = "Identifier (ID) assigned to the given resource by another registering system, e.g. by a register of clinical trials or a data repository."
-* identifier[Other].value ^example[0].label = "DRKS Identifier"
-* identifier[Other].value ^example[=].valueString = "DRKS00021273"
-* identifier[Other].value ^example[+].label = "NCT Identifier"
-* identifier[Other].value ^example[=].valueString = "NCT04327505"
 * title 1..
 * title ^short = "Title/name"
 * title ^definition = "Scientific unabbreviated title or name of the resource."
@@ -238,32 +113,26 @@ Description: "Resource covering metadata of a study."
 * title.extension ^slicing.discriminator.type = #value
 * title.extension ^slicing.discriminator.path = "url"
 * title.extension ^slicing.rules = #open
-* title.extension[translation] only Translation
-* title.extension[translation] ^sliceName = "translation"
+* title.extension contains $translation named translation 0..*
 * title.extension[translation] ^short = "Language translation of the title"
 * title.extension[translation] ^definition = "Language of the title if it is not the base language of the resource."
-* title.extension[translation] ^min = 0
-* title.extension[translation] ^isModifier = false
 * title.extension[translation].extension ^slicing.discriminator.type = #value
 * title.extension[translation].extension ^slicing.discriminator.path = "url"
 * title.extension[translation].extension ^slicing.rules = #open
-* title.extension[translation].extension[lang] ^sliceName = "lang"
 * title.extension[translation].extension[lang] ^short = "Language of the title/name"
 * title.extension[translation].extension[lang] ^definition = "Language of the title/name."
 * title.extension[translation].extension[lang].value[x] ^binding.strength = #required
 * title.extension[translation].extension[lang].value[x] ^binding.description = "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)"
-* title.extension[translation].extension[content] ^sliceName = "content"
 * title.extension[translation].extension[content] ^short = "Title in another language"
 * title.extension[translation].extension[content] ^definition = "Title in another language than the base language of the resource."
 * title.extension[translation].extension[content].value[x] only string
 * title.extension contains NFDI4Health_EX_MDS_Language named language 1..1
-* title.extension[language] from CommonLanguages (required)
 * title.extension[language] ^short = "Language of the title/name"
 * title.extension[language] ^definition = "Language of the title/name"
-* title.extension[language] ^isModifier = false
-* title.extension[language] ^binding.description = "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)"
+* title.extension[language].valueCode from CommonLanguages (required)
+* title.extension[language].valueCode ^binding.description = "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)"
 * status = #active (exactly)
-* status ^comment = "The item does not exist in NFDI4Health' MDS. Fixed to \"active\" for all studies."
+* status ^comment = "The item does not exist in NFDI4Health' MDS. Fixed to 'active' for all studies."
 * primaryPurposeType from NFDI4Health_VS_MDS_Study_Primary_Purpose_UMLS_NCI (required)
 * primaryPurposeType ^short = "Primary purpose of the study"
 * primaryPurposeType ^definition = "Specification of the main purpose of the study."
@@ -311,7 +180,7 @@ Description: "Resource covering metadata of a study."
 * category[studyTypeNonInterventional] from NFDI4Health_VS_MDS_Study_Type_Non_Interventional_UMLS_Local (required)
 * category[studyTypeNonInterventional] ^short = "Specification of study type"
 * category[studyTypeNonInterventional] ^definition = "The primary strategy for participant identification and follow-up."
-* category[studyTypeNonInterventional] ^comment = "Select all that apply.\r\nIf \"Other\" is selected, you can specify the study type in the field \"Additional information about the study\"."
+* category[studyTypeNonInterventional] ^comment = "Short input help: Select all that apply.\r\nIf \"Other\" is selected, you can specify the study type in the field \"Additional information about the study\"."
 * category[studyTypeNonInterventional] ^binding.description = "Value set defining codes to specify the type of a non interventional study in a ResearchStudy resource."
 * category[studyTypeNonInterventional].coding 1..1
 * category[studyTypeNonInterventional].coding.system 1..
@@ -358,23 +227,21 @@ Description: "Resource covering metadata of a study."
 * condition.coding.extension ^slicing.discriminator.type = #value
 * condition.coding.extension ^slicing.discriminator.path = "url"
 * condition.coding.extension ^slicing.rules = #open
-* condition.coding.extension ^min = 0
 * condition.coding.extension contains NFDI4Health_EX_MDS_URI named uri 0..1
 * condition.coding.extension[uri] ^short = "Code ---- If known, code of the health condition, disease or focus in the terminology/classification used"
 * condition.coding.extension[uri] ^definition = "Code of the health condition,  disease, focus in the terminology/classification used."
 * condition.coding.extension[uri] ^comment = "Short input help: If found, the code from the terminology/classification used."
-* condition.coding.extension[uri] ^isModifier = false
 * condition.coding.system 1..
 * condition.coding.system ^short = "Terminology/classification"
 * condition.coding.system ^definition = "Terminology/classification used for the health condition, diesease or focus."
-* condition.coding.system ^comment = "If used, name of the terminology/classification."
+* condition.coding.system ^comment = "Short input help: If used, name of the terminology/classification."
 * condition.coding.code ^short = "Code"
 * condition.coding.code ^definition = "Code of the health condition,  disease, focus in the terminology/classification used."
-* condition.coding.code ^comment = "If found, the code from the terminology/classification used."
+* condition.coding.code ^comment = "Short input help: If found, the code from the terminology/classification used."
 * condition.coding.display 1..
 * condition.coding.display ^short = "Name of the primary health condition, disease or focus of the study"
 * condition.coding.display ^definition = "Name of primary health condition or disease considered in the study, or the focus of the study (e.g. medication, food, therapy, device, etc.)."
-* condition.coding.display ^comment = "The use of terms from established terminologies/classifications (e.g. SNOMED CT, ICD, etc.) is preferred. However, also self-assigned terms are allowed. | Preferably, use terms from SNOMED CT (https://browser.ihtsdotools.org)."
+* condition.coding.display ^comment = "Additional information: The use of terms from established terminologies/classifications (e.g. SNOMED CT, ICD, etc.) is preferred. However, also self-assigned terms are allowed. | Short input help: Preferably, use terms from SNOMED CT (https://browser.ihtsdotools.org)."
 * condition.text 1..
 * condition.text ^short = "Name of the primary health condition, disease or focus of the study"
 * condition.text ^definition = "Name of primary health condition or disease considered in the study, or the focus of the study (e.g. medication, food, therapy, device, etc.)."
@@ -404,7 +271,7 @@ Description: "Resource covering metadata of a study."
 * keyword.coding ..1
 * keyword.coding ^short = "Code of the keyword"
 * keyword.coding ^definition = "If known, the code of the keyword in a classification/vocabulary."
-* keyword.coding ^comment = "If found, the code from the classification/vocabulary used."
+* keyword.coding ^comment = "Short input help: If found, the code from the classification/vocabulary used."
 * keyword.coding.extension ^slicing.discriminator.type = #value
 * keyword.coding.extension ^slicing.discriminator.path = "url"
 * keyword.coding.extension ^slicing.rules = #open
@@ -412,7 +279,6 @@ Description: "Resource covering metadata of a study."
 * keyword.coding.extension[URI] ^short = "Code of the keyword"
 * keyword.coding.extension[URI] ^definition = "If known, the code of the keyword in a classification/vocabulary."
 * keyword.coding.extension[URI] ^comment = "Short input help: If found, the code from the classification/vocabulary used."
-* keyword.coding.extension[URI] ^isModifier = false
 * keyword.coding.code ^short = "Code of the keyword"
 * keyword.coding.code ^definition = "If known, the code of the keyword in a classification/vocabulary."
 * keyword.coding.code ^comment = "Short input help: If found, the code from the classification/vocabulary used."
@@ -427,7 +293,7 @@ Description: "Resource covering metadata of a study."
 * location ^slicing.discriminator.type = #value
 * location ^slicing.discriminator.path = "coding"
 * location ^slicing.rules = #open
-* location ^comment = "Select all that apply."
+* location ^comment = "Short input help: Select all that apply."
 * location contains
     countries 1..* and
     regions 0..1
@@ -445,13 +311,11 @@ Description: "Resource covering metadata of a study."
 * description.extension ^slicing.discriminator.type = #value
 * description.extension ^slicing.discriminator.path = "url"
 * description.extension ^slicing.rules = #open
-* description.extension[translation] only Translation
-* description.extension[translation] ^sliceName = "translation"
+* description.extension contains $translation named translation 0..*
 * description.extension[translation] ^short = "Additional description(s) of the [RESOURCE]"
 * description.extension[translation] ^definition = "Group of items with description(s) of the resource written not in English."
 * description.extension[translation] ^comment = "Additional descriptions of the resource are optional. \r\nThe provided information should be understandable by scientific audience."
 * description.extension[translation] ^min = 0
-* description.extension[translation] ^isModifier = false
 * description.extension[translation].extension ^slicing.discriminator.type = #value
 * description.extension[translation].extension ^slicing.discriminator.path = "url"
 * description.extension[translation].extension ^slicing.rules = #open
@@ -466,9 +330,8 @@ Description: "Resource covering metadata of a study."
 * description.extension[language] ^short = "Language of the description"
 * description.extension[language] ^definition = "Language of the description text."
 * description.extension[language] ^comment = "Additional information: English is a default value."
-* description.extension[language] ^isModifier = false
 * description.extension[language].value[x] = #en (exactly)
-* enrollment only Reference(NFDI4Health_PR_MDS_Group_Intended or ttps://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-group-actual)
+* enrollment only Reference(NFDI4Health_PR_MDS_Group_Intended or NFDI4Health_PR_MDS_Group_Actual)
 * enrollment ^short = "Eligibility criteria for study participants"
 * enrollment ^definition = "Group of items providing information about eligibility criteria for study participants."
 * period.start ^short = "Start date of data collection for the study"
@@ -481,11 +344,7 @@ Description: "Resource covering metadata of a study."
 * site.extension ^slicing.discriminator.type = #value
 * site.extension ^slicing.discriminator.path = "url"
 * site.extension ^slicing.rules = #open
-* site.extension ^min = 0
-* site.extension[centers] only NFDI4Health_EX_MDS_Study_Centers
-* site.extension[centers] ^sliceName = "centers"
-* site.extension[centers] ^min = 0
-* site.extension[centers] ^isModifier = false
+* site.extension contains NFDI4Health_EX_MDS_Study_Centers named centers 0..1
 * reasonStopped ^short = "Reason why the study was stopped"
 * reasonStopped ^definition = "If the study was stopped prematurely, specification of the reason(s) why it was halted."
 * reasonStopped ^comment = "Short input help: E.g., accrual goal met / closed due to toxicity / closed due to lack of study progress / temporarily-closed per study design /etc."
@@ -493,11 +352,7 @@ Description: "Resource covering metadata of a study."
 * reasonStopped.extension ^slicing.discriminator.path = "url"
 * reasonStopped.extension ^slicing.rules = #open
 * reasonStopped.extension ^min = 0
-* reasonStopped.extension[haltedStage] only NFDI4Health_EX_MDS_Study_Status_Halted_Stage
-* reasonStopped.extension[haltedStage] ^sliceName = "haltedStage"
-* reasonStopped.extension[haltedStage] ^comment = "Short input help: Select one value from the list."
-* reasonStopped.extension[haltedStage] ^min = 0
-* reasonStopped.extension[haltedStage] ^isModifier = false
+* reasonStopped.extension contains NFDI4Health_EX_MDS_Study_Status_Halted_Stage named haltedStage 0..1
 * reasonStopped.text ^short = "Reason why the study was stopped"
 * reasonStopped.text ^definition = "If the study was stopped prematurely, specification of the reason(s) why it was halted."
 * reasonStopped.text ^comment = "Short input help: E.g., accrual goal met / closed due to toxicity / closed due to lack of study progress / temporarily-closed per study design /etc."
@@ -509,9 +364,6 @@ Description: "Resource covering metadata of a study."
 * note.text ^definition = "Any additional information about specific aspects of the study that cannot be captured by other properties."
 * note.text ^comment = "Short input help: Any additional information about specific aspects of the study that cannot be captured by other properties."
 * arm ..0
-* arm.name ^comment = "Additional information: \r\nFor interventional studies: \"Arm\" means a pre-specified group or subgroup of participant(s) in a clinical trial assigned to receive specific intervention(s) (or no intervention) according to a protocol.\r\nFor non-interventional studies: \"Group\" means a predefined group (cohort) of participants to be studied."
-* arm.type.coding ..1
-* arm.description ^comment = "Additional information : \r\nFor interventional studies: If needed, additional descriptive information (including which interventions are administered in each arm) to differentiate each arm from other arms in the clinical trial.\r\nFor non-interventional studies: Explanation of the nature of the study group (for example, those with a condition and those without a condition; those with an exposure and those without an exposure)."
 * objective ..1
 * objective.name 1..
 * objective.name ^short = "Research questions and/or hypothesis underlying the study"

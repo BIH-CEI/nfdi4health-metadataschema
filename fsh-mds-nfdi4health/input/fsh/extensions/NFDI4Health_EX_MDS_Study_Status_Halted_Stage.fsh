@@ -15,12 +15,13 @@ Description: "Extension informing about the stage when at what a study was halte
 * . 0..1
 * . ^short = "At what stage was the study stopped?"
 * . ^definition = "If the study was stopped prematurely, specification of the stage at what it was halted."
+* . ^comment = "Select one value from the list."
 * value[x] 1..1
 * value[x] only Coding
-* value[x].code 1..1
-* value[x].system 1..1
-* value[x] from $nfdi4health-vs-mds-study-status-halted-stage-local (required)
-* value[x] ^binding.description = "Value set defining codes to specify the status of a study when it was halted."
+* valueCoding.code 1..1
+* valueCoding.system 1..1
+* valueCoding from $nfdi4health-vs-mds-study-status-halted-stage-local (required)
+* valueCoding ^binding.description = "Value set defining codes to specify the status of a study when it was halted."
 
 Mapping: NFDI4Health-Study-Status-Halted-Stage-to-FHIR
 Id: NFDI4Health

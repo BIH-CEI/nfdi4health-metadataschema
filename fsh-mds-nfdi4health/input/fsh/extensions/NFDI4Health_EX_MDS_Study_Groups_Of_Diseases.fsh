@@ -21,12 +21,14 @@ Description: "Extension covering information about groups of diseases or conditi
     conditions 0..*
 * extension[generally] ^short = "Which groups of diseases or conditions were the data collected on?"
 * extension[generally] ^definition = "Groups of diseases or conditions on which the data were collected in the study."
-* extension[generally] ^comment = "The values originate from the WHO's International Statistical Classification of Diseases and Related Health Problems, 11th Revision (ICD-11). | Select all that apply. For more information about the groups of diseases/conditions, visit the WHO's ICD-11 homepage: https://icd.who.int/en."
+* extension[generally] ^comment = "Additional information: The values originate from the WHO's International Statistical Classification of Diseases and Related Health Problems, 11th Revision (ICD-11). | Short input help: Select all that apply. For more information about the groups of diseases/conditions, visit the WHO's ICD-11 homepage: https://icd.who.int/en."
 * extension[generally].value[x] 1..
-* extension[generally].value[x] only CodeableConcept
+* extension[generally].value[x] only Coding
+* extension[generally].valueCoding.system 1..
+* extension[generally].valueCoding.code 1..
 * extension[conditions] ^short = "On which other diseases or conditions were the data collected?"
 * extension[conditions] ^definition = "Other diseases or conditions on which the data were collected in the study."
-* extension[conditions] ^comment = "The values originate from the WHO's International Statistical Classification of Diseases and Related Health Problems, 11th Revision (ICD-11). | For more information about the groups of diseases/conditions, visit the WHO's ICD-11 homepage: https://icd.who.int/en."
+* extension[conditions] ^comment = "Additional information: The values originate from the WHO's International Statistical Classification of Diseases and Related Health Problems, 11th Revision (ICD-11). | Short input help: For more information about the groups of diseases/conditions, visit the WHO's ICD-11 homepage: https://icd.who.int/en."
 * extension[conditions] ^min = 0
 * extension[conditions].value[x] 1..
 * extension[conditions].value[x] only string

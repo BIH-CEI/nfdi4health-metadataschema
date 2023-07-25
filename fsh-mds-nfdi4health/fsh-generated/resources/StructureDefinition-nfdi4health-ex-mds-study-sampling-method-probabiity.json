@@ -48,7 +48,7 @@
         "path": "Extension",
         "short": "Specific type of probability sampling",
         "definition": "Specific type of the probability sampling method applied for the selection of study participants.",
-        "comment": "Short Input Help: If known, select one value from the list.",
+        "comment": "Short input help: If known, select one value from the list.",
         "max": "1",
         "mapping": [
           {
@@ -58,9 +58,39 @@
         ]
       },
       {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
         "id": "Extension.url",
         "path": "Extension.url",
         "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-sampling-method-probability"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-sampling-prob-method-nci",
+          "description": "Value set defining codes to specify types of probability sampling methods."
+        }
+      },
+      {
+        "id": "Extension.value[x].system",
+        "path": "Extension.value[x].system",
+        "min": 1
+      },
+      {
+        "id": "Extension.value[x].code",
+        "path": "Extension.value[x].code",
+        "min": 1
       }
     ]
   }

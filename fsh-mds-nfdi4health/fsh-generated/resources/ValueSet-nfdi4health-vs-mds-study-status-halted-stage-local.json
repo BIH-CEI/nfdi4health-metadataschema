@@ -5,8 +5,8 @@
   "id": "nfdi4health-vs-mds-study-status-halted-stage-local",
   "title": "NFDI4Health VS MDS Study Status Halted Stage [Local]",
   "description": "Value set defining codes to specify the status of a study when it was halted.",
-  "version": "0.9",
   "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-status-halted-stage-local",
+  "version": "0.9",
   "experimental": true,
   "publisher": "NFDI4Health",
   "contact": [

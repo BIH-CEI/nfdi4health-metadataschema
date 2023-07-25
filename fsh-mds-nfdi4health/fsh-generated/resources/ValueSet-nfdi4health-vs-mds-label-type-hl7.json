@@ -5,8 +5,8 @@
   "id": "nfdi4health-vs-mds-label-type-hl7",
   "title": "NFDI4Health VS MDS Label Type [HL7]",
   "description": "Value set used to express the reason and specific aspect for the variant title, such as language and specific language. Comment : Build based on HL7 Value Set specified in FHIR R5",
-  "version": "0.9",
   "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-label-type-hl7",
+  "version": "0.9",
   "experimental": true,
   "publisher": "NFDI4Health",
   "contact": [

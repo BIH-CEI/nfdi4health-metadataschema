@@ -10,15 +10,18 @@ Description: "Extension informing about the target follow-up duration of a study
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 * ^context.type = #element
 * ^context.expression = "ResearchStudy"
+* . 0..1
 * . ^short = "Target follow-up duration"
 * . ^definition = "If applicable, anticipated time period over which each participant is to be followed, provided in years."
 * . ^comment = "Short input help : The value must be provided in years."
 * url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-target-followup-duration" (exactly)
 * value[x] 1..
 * value[x] only Quantity
-* value[x].value 1..
-* value[x].code 1..
-* value[x].code ^code = $UCUM#a "year"
+* valueQuantity.value 1..
+* valueQuantity.code 1..
+* valueQuantity.code ^code = $UCUM#a "year"
+* valueQuantity.system 1..
+* valueQuantity.system = "http://unitsofmeasure.org" (exactly)
 
 Mapping: NFDI4Health-Study-Target-Followup-Duration-to-FHIR
 Id: NFDI4Health

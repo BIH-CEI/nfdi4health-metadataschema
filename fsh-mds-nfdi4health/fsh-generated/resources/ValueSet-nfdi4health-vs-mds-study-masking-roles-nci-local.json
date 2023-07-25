@@ -5,8 +5,8 @@
   "id": "nfdi4health-vs-mds-study-masking-roles-nci-local",
   "title": "NFDI4Health VS MDS Study Masking Roles [NCI, local]",
   "description": "Value set defining codes to specify the party(ies) who are masked if masking is implemented.",
-  "version": "0.9",
   "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-masking-roles-nci-local",
+  "version": "0.9",
   "experimental": true,
   "publisher": "NFDI4Health",
   "contact": [

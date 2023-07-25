@@ -17,10 +17,10 @@ Description: "Extension providing information about assessments/measurements inc
 * . ^definition = "Assessments/measurements included in the study"
 * value[x] 1..1
 * value[x] only Coding
-* value[x].code 1..1
-* value[x].system 1..1
-* value[x] from $nfdi4health-vs-mds-study-assessments-snomedct-umls (required)
-* value[x] ^binding.description = "Value set defining codes to specify an assessment in a ResearchStudy resource."
+* valueCoding.code 1..1
+* valueCoding.system 1..1
+* valueCoding from $nfdi4health-vs-mds-study-assessments-snomedct-umls (required)
+* valueCoding ^binding.description = "Value set defining codes to specify an assessment in a ResearchStudy resource."
 
 Mapping: NFDI4Health-Study-Assessments-to-FHIR
 Id: NFDI4Health

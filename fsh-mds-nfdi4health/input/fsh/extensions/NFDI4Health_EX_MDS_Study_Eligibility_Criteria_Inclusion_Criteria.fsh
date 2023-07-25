@@ -13,7 +13,7 @@ Description: "Extension informing about the inclusion criteria."
 * . 0..1
 * . ^short = "Inclusion criteria"
 * . ^definition = "Inclusion criteria for participation in the study."
-* . ^comment = "If possible, use an enumerated or bulleted list for each criterion."
+* . ^comment = "Short input help: If possible, use an enumerated or bulleted list for each criterion."
 * value[x] 1..1
 * value[x] only string
 

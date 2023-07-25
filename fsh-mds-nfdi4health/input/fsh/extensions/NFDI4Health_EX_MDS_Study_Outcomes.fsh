@@ -15,7 +15,7 @@ Description: "Extension providing information about outcome measure(s)."
 * . 0..*
 * . ^short = "Outcome measure(s)"
 * . ^definition = "Group of items providing information about outcome measure(s)."
-* . ^comment = "The items are optional for non-interventional studies. / Extension based on FHIR R5 ResearchStudy.outcomeMeasure"
+* . ^comment = "Additional information: The items are optional for non-interventional studies. [Extension based on ResearchStudy.outcomeMeasure (R5)]"
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
@@ -26,17 +26,17 @@ Description: "Extension providing information about outcome measure(s)."
     timeFrame 0..1 
 * extension[name] ^short = "Name of the outcome measure"
 * extension[name] ^definition = "Name of the outcome measure. For non-interventional studies, this can be the name of specific measurement(s) or observation(s) used to describe patterns of diseases or traits or associations with exposures, risk factors or treatment."
-* extension[name] ^comment = "For non-interventional studies, this can be specific measurement(s) or observation(s) used to describe patterns of diseases or traits or associations with exposures, risk factors or treatment."
+* extension[name] ^comment = "Short input help: For non-interventional studies, this can be specific measurement(s) or observation(s) used to describe patterns of diseases or traits or associations with exposures, risk factors or treatment."
 * extension[name].value[x] only string
 * extension[type] ^short = "Type of the outcome measure"
 * extension[type] ^definition = "Type of the outcome measure."
-* extension[type] ^comment = "Primary or secondary outcome measure?"
+* extension[type] ^comment = "Short input help: Primary or secondary outcome measure?"
 * extension[type].value[x] 1..1
 * extension[type].value[x] only Coding
-* extension[type].value[x].code 1..1
-* extension[type].value[x].system 1..1
-* extension[type].value[x] from $nfdi4health-vs-mds-study-outcome-type-umls (required)
-* extension[type].value[x] ^binding.description = "Value set defining codes to specify the type of outcome measure."
+* extension[type].valueCoding.code 1..1
+* extension[type].valueCoding.system 1..1
+* extension[type].valueCoding from $nfdi4health-vs-mds-study-outcome-type-umls (required)
+* extension[type].valueCoding ^binding.description = "Value set defining codes to specify the type of outcome measure."
 * extension[description] ^short = "Description of the outcome measure"
 * extension[description] ^definition = "Additional descriptive information about the given outcome"
 * extension[description].value[x] only string

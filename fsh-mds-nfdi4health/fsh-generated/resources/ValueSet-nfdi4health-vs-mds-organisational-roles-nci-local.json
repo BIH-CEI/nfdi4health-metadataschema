@@ -5,8 +5,8 @@
   "id": "nfdi4health-vs-mds-organisational-roles-nci-local",
   "title": "NFDI4Health VS MDS Organisational Roles [NCI, local]",
   "description": "Value set defining codes for organisational roles.",
-  "version": "0.9",
   "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-organisational-roles-nci-local",
+  "version": "0.9",
   "experimental": true,
   "publisher": "NFDI4Health",
   "contact": [

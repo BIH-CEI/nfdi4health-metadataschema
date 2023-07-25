@@ -48,6 +48,7 @@
         "path": "Extension",
         "short": "At what stage was the study stopped?",
         "definition": "If the study was stopped prematurely, specification of the stage at what it was halted.",
+        "comment": "Select one value from the list.",
         "max": "1",
         "mapping": [
           {

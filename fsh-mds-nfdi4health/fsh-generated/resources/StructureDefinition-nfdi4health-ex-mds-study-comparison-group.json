@@ -46,9 +46,9 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Defined path through the study for a subject",
-        "definition": "Describes an expected event or sequence of events for one of the subjects of a study. E.g. for a living subject: exposure to drug A, wash-out, exposure to drug B, wash-out, follow-up. E.g. for a stability study: {store sample from lot A at 25 degrees for 1 month}, {store sample from lot A at 40 degrees for 1 month}.",
-        "max": "1",
+        "short": "Arms or groups/cohorts of the study",
+        "definition": "Group of items providing information about arms or groups/cohorts of the study.",
+        "comment": "[Extension based on ResearchStudy.comparisonGroup (R5).]",
         "mapping": [
           {
             "identity": "NFDI4Health",
@@ -189,7 +189,7 @@
         "sliceName": "intendedExposure",
         "short": "Interventions/exposures of the study",
         "definition": "Group of items providing information about study interventions or exposures.",
-        "comment": "The items may be not applicable for non-interventional studies.",
+        "comment": "Additional information: The items may be not applicable for non-interventional studies.",
         "min": 0,
         "max": "*",
         "mapping": [

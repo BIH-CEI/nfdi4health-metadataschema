@@ -10,15 +10,16 @@ Description: "Extension informing about the status of the study approval from th
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 * ^context.type = #element
 * ^context.expression = "ResearchStudy"
-* . ..1
+* . 0..1
 * . ^short = "Status of the ethics committee approval"
 * . ^definition = "Status of the study approval from the (leading) ethics committee"
 * url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-ethics-committee-approval" (exactly)
 * value[x] 1..
 * value[x] only Coding
-* value[x] from NFDI4Health_VS_MDS_Study_Ethics_Committee_Approval_UMLS_Local (required)
-* value[x] ^binding.description = "Value set defining codes to specify the status of the study ethics committee approval."
-* value[x].code 1..
+* valueCoding from NFDI4Health_VS_MDS_Study_Ethics_Committee_Approval_UMLS_Local (required)
+* valueCoding ^binding.description = "Value set defining codes to specify the status of the study ethics committee approval."
+* valueCoding.code 1..
+* valueCoding.system 1..
 
 Mapping: NFDI4Health-Study-Ethics-Committee-Approval-to-FHIR
 Id: NFDI4Health
