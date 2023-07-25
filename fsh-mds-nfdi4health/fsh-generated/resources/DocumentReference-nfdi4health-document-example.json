@@ -13,7 +13,11 @@
         {
           "url": "party",
           "valueReference": {
+<<<<<<< HEAD
             "reference": "Practitioner/123"
+=======
+            "reference": "PractitionerRole/PractitionerRoleExample1"
+>>>>>>> 5ec0ca0b314861fc328a1c7aa8fb46403d72e37b
           }
         },
         {
@@ -64,10 +68,20 @@
       "extension": [
         {
           "url": "text",
+<<<<<<< HEAD
           "valueString": "Die ISARIC-WHO Case Report Forms (CRFs) sollen dazu verwendet werden, standartisierte klinische Daten von Individuen mit verdacht auf oder bestätigter COVID-19 Infektion zu sammeln, um die Versorgung des Patienten und die Informationsübermittlung zu verbessern. Es gibt 2 CRFs zwischen denen gewählt werden kann: Das CORE Formular und das RAPID Formular.\r\nDas CORE CRF ist ein umfassenderes Formular mit mehr Variablen, um das Spektrum der Krankheit und des Managements zu verstehen, insbesondere in Bezug auf Erregertests, Interventionen in der Intensivpflege und Medikamente. Es kann verwendet werden, wenn die Ressourcen die Erfassung von mehr Daten erlauben."
         },
         {
           "url": "language"
+=======
+          "valueString": "Die ISARIC-WHO Case Report Forms (CRFs) sollen dazu verwendet werden, standartisierte klinische Daten von Individuen mit verdacht auf oder bestätigter COVID-19 Infektion zu sammeln, um die Versorgung des Patienten und die Informationsübermittlung zu verbessern. Es gibt 2 CRFs zwischen denen gewählt werden kann: Das CORE Formular und das RAPID Formular.\nDas CORE CRF ist ein umfassenderes Formular mit mehr Variablen, um das Spektrum der Krankheit und des Managements zu verstehen, insbesondere in Bezug auf Erregertests, Interventionen in der Intensivpflege und Medikamente. Es kann verwendet werden, wenn die Ressourcen die Erfassung von mehr Daten erlauben."
+        },
+        {
+          "url": "language",
+          "valueCoding": {
+            "code": "DE(Deutsch)"
+          }
+>>>>>>> 5ec0ca0b314861fc328a1c7aa8fb46403d72e37b
         }
       ],
       "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-description-non-english"
@@ -108,6 +122,33 @@
         }
       ],
       "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related"
+<<<<<<< HEAD
+=======
+    },
+    {
+      "extension": [
+        {
+          "url": "identifier",
+          "valueIdentifier": {
+            "system": "https://www.medrxiv.org/",
+            "value": "https://doi.org/10.1101/2020.07.17.20155218"
+          }
+        },
+        {
+          "url": "relationType",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "057",
+                "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+                "display": "A is supplemented by B"
+              }
+            ]
+          }
+        }
+      ],
+      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related"
+>>>>>>> 5ec0ca0b314861fc328a1c7aa8fb46403d72e37b
     }
   ],
   "masterIdentifier": {
@@ -142,5 +183,9 @@
     }
   ],
   "status": "current",
+<<<<<<< HEAD
   "description": "The ISARIC-WHO Case Report Forms (CRFs) should be used to collect standardised clinical data on individuals presenting with suspected or confirmed COVID-19 to improve patient care and inform the public health response. There are 2 forms available to choose from: the CORE form and the RAPID form.\r\nThe CORE CRF is a more comprehensive form with more variables to understand the spectrum of disease and management, especially on pathogen testing, critical care interventions, and medications. It can be used where resources allow the collection of more data."
+=======
+  "description": "The ISARIC-WHO Case Report Forms (CRFs) should be used to collect standardised clinical data on individuals presenting with suspected or confirmed COVID-19 to improve patient care and inform the public health response. There are 2 forms available to choose from: the CORE form and the RAPID form.\nThe CORE CRF is a more comprehensive form with more variables to understand the spectrum of disease and management, especially on pathogen testing, critical care interventions, and medications. It can be used where resources allow the collection of more data."
+>>>>>>> 5ec0ca0b314861fc328a1c7aa8fb46403d72e37b
 }

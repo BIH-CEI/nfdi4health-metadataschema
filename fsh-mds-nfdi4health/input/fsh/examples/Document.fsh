@@ -16,12 +16,12 @@ The CORE CRF is a more comprehensive form with more variables to understand the 
 * extension[label].extension[language].valueCode = #en-US
 * extension[descriptions_non_english].extension[text].valueString = "Die ISARIC-WHO Case Report Forms (CRFs) sollen dazu verwendet werden, standartisierte klinische Daten von Individuen mit verdacht auf oder bestätigter COVID-19 Infektion zu sammeln, um die Versorgung des Patienten und die Informationsübermittlung zu verbessern. Es gibt 2 CRFs zwischen denen gewählt werden kann: Das CORE Formular und das RAPID Formular.
 Das CORE CRF ist ein umfassenderes Formular mit mehr Variablen, um das Spektrum der Krankheit und des Managements zu verstehen, insbesondere in Bezug auf Erregertests, Interventionen in der Intensivpflege und Medikamente. Es kann verwendet werden, wenn die Ressourcen die Erfassung von mehr Daten erlauben." //Extension "NFDI4Health_EX_MDS_Description_Non_English" hat die ID "nfdi4health-ex-mds-provenance-data-source"??
-* extension[descriptions_non_english].extension[language].valueCodeableConcept = #DE(Deutsch)
+* extension[descriptions_non_english].extension[language].valueCoding = #DE(Deutsch)
 * extension[keywords].extension[label].valueString = "COVID-19"
 * extension[keywords].extension[code].valueUri = "https://id.nlm.nih.gov/mesh/D000086382.html"
 * extension[keywords].extension[label].valueString = "Questionnaire"
 * extension[keywords].extension[code].valueUri = "https://id.nlm.nih.gov/mesh/T000997092.html"
-* extension[associatedParty].extension[party].valueReference = Reference(Practitioner/123)
+* extension[associatedParty].extension[party].valueReference = Reference(PractitionerRoleExample1)
 * extension[associatedParty].extension[nameType].valueCoding = #C1519021
 * extension[related][0].extension[identifier].valueIdentifier.system = "https://csh.nfdi4health.de/"
 * extension[related][0].extension[identifier].valueIdentifier.value = "118"

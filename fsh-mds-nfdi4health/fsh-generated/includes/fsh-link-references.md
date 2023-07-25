@@ -42,9 +42,18 @@
 [NFDI4Health_EX_MDS_Study_Eligibility_Criteria_Inclusion_Criteria]: StructureDefinition-nfdi4health-ex-mds-study-eligibility-criteria-inclusion-criteria.html
 [NFDI4Health_EX_MDS_Study_Ethics_Committee_Approval]: StructureDefinition-nfdi4health-ex-mds-study-ethics-committee-approval.html
 [NFDI4Health_EX_MDS_Study_Groups_Of_Diseases]: StructureDefinition-nfdi4health-ex-mds-study-groups-of-diseases.html
+<<<<<<< HEAD
 [NFDI4Health_EX_MDS_Study_Masking]: StructureDefinition-nfdi4health-ex-mds-study-masking.html
 [NFDI4Health_EX_MDS_Study_Outcomes]: StructureDefinition-nfdi4health-ex-mds-study-outcomes.html
 [NFDI4Health_EX_MDS_Study_Population]: StructureDefinition-nfdi4health-ex-mds-study-population.html
+=======
+[NFDI4Health_EX_MDS_Study_Interventions]: StructureDefinition-nfdi4health-ex-mds-study-interventions.html
+[NFDI4Health_EX_MDS_Study_Masking]: StructureDefinition-nfdi4health-ex-mds-study-masking.html
+[NFDI4Health_EX_MDS_Study_Outcomes]: StructureDefinition-nfdi4health-ex-mds-study-outcomes.html
+[NFDI4Health_EX_MDS_Study_Population]: StructureDefinition-nfdi4health-ex-mds-study-population.html
+[NFDI4Health_EX_MDS_Study_Sampling_Method]: StructureDefinition-nfdi4health-ex-mds-study-sampling-method.html
+[NFDI4Health_EX_MDS_Study_Sampling_Method_Non_Probability]: StructureDefinition-nfdi4health-ex-mds-study-sampling-method-non-probability.html
+>>>>>>> 5ec0ca0b314861fc328a1c7aa8fb46403d72e37b
 [NFDI4Health_EX_MDS_Study_Sampling_Method_Probability]: StructureDefinition-nfdi4health-ex-mds-study-sampling-method-probabiity.html
 [NFDI4Health_EX_MDS_Study_Status]: StructureDefinition-nfdi4health-ex-mds-study-status.html
 [NFDI4Health_EX_MDS_Study_Status_Halted_Stage]: StructureDefinition-nfdi4health-ex-mds-study-status-halted-stage.html
