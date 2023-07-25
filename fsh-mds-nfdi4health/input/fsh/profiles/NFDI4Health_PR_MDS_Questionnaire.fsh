@@ -64,3 +64,10 @@ Description: "Resource covering metadata of a questionnaire."
 * copyright.extension ^slicing.rules = #open
 * copyright.extension contains NFDI4Health_EX_MDS_Copyright_Label named label 1..1
 * copyright.extension contains NFDI4Health_EX_MDS_Use_Rights named useRightsConfimations 1..  
+
+
+Mapping: NFDI4Health-Study-to-FHIR
+Id: NFDI4Health
+Title: "NFDI4Health to FHIR Mapping"
+Source: NFDI4Health_PR_MDS_Questionnaire
+* copyright -> "1.10.3.3 resource_use_rights_description"
