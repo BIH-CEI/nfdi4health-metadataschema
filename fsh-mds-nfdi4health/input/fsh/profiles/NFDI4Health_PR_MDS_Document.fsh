@@ -17,7 +17,7 @@ Description: "Resource covering metadata of a document."
     NFDI4Health_EX_MDS_Description_Non_English named descriptions_non_english 0..* and
     NFDI4Health_EX_MDS_Keywords2 named keywords 0..1 and
     NFDI4Health_EX_MDS_Associated_Party named associatedParty 1..1 and
-    NFDI4Health_EX_MDS_Related named related 0..1 and
+    NFDI4Health_EX_MDS_Related named related 0..* and
     NFDI4Health_EX_MDS_Document_Copyright named copyright 0..1
 * extension[label] ^min = 0
 * extension[label] ^isModifier = false
