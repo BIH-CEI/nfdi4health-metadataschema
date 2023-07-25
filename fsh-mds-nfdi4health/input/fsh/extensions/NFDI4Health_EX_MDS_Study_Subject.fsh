@@ -15,13 +15,13 @@ Description: "Extension informing about the subject of a study."
 * . 1..1
 * . ^short = "Primary study subject "
 * . ^definition = "Primary study subject, i.e. a person, an animal or some other type of the subject."
-* . ^comment = "Select one value from the list."
+* . ^comment = "Short input help: Select one value from the list."
 * value[x] 1..1
 * value[x] only Coding
-* value[x].code 1..1
-* value[x].system 1..1
-* value[x] from $nfdi4health-vs-mds-study-subject-snomedct (required)
-* value[x] ^binding.description = "Value set defining codes for study sujects in a ResearchStudy resource."
+* valueCoding.code 1..1
+* valueCoding.system 1..1
+* valueCoding from $nfdi4health-vs-mds-study-subject-snomedct (required)
+* valueCoding ^binding.description = "Value set defining codes for study sujects in a ResearchStudy resource."
 
 Mapping: NFDI4Health-Study-Subject-to-FHIR
 Id: NFDI4Health

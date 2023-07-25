@@ -5,8 +5,8 @@
   "id": "nfdi4health-vs-mds-personal-roles-nci-umls-local",
   "title": "NFDI4Health VS MDS Personal Roles [NCI, UMLS, local]",
   "description": "Value set defining codes for personal roles.",
-  "version": "0.9",
   "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-personal-roles-nci-umls-local",
+  "version": "0.9",
   "experimental": true,
   "publisher": "NFDI4Health",
   "contact": [

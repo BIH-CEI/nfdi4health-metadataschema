@@ -49,6 +49,7 @@
         "short": "Target follow-up duration",
         "definition": "If applicable, anticipated time period over which each participant is to be followed, provided in years.",
         "comment": "Short input help : The value must be provided in years.",
+        "max": "1",
         "mapping": [
           {
             "identity": "NFDI4Health",
@@ -80,6 +81,12 @@
         "id": "Extension.value[x].value",
         "path": "Extension.value[x].value",
         "min": 1
+      },
+      {
+        "id": "Extension.value[x].system",
+        "path": "Extension.value[x].system",
+        "min": 1,
+        "fixedUri": "http://unitsofmeasure.org"
       },
       {
         "id": "Extension.value[x].code",

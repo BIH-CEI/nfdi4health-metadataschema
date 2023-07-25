@@ -25,10 +25,10 @@ Description: "Extension informing about the number of study centers."
 * extension[monoOrMulti] ^definition = "Specification whether a study is conducted at one study center or at more than one study center."
 * extension[monoOrMulti].value[x] 1..1
 * extension[monoOrMulti].value[x] only Coding
-* extension[monoOrMulti].value[x].code 1..1
-* extension[monoOrMulti].value[x].system 1..1
-* extension[monoOrMulti].value[x] from $nfdi4health-vs-mds-study-centers-snomedct-local (required)
-* extension[monoOrMulti].value[x] ^binding.description = "Value set defining codes to specify the number of study center(s) in a ResearchStudy resource."
+* extension[monoOrMulti].valueCoding.code 1..1
+* extension[monoOrMulti].valueCoding.system 1..1
+* extension[monoOrMulti].valueCoding from $nfdi4health-vs-mds-study-centers-snomedct-local (required)
+* extension[monoOrMulti].valueCoding ^binding.description = "Value set defining codes to specify the number of study center(s) in a ResearchStudy resource."
 * extension[number] ^short = "Number of study centers"
 * extension[number] ^definition = "Number of centers involved in the study."
 * extension[number].value[x] 1..1

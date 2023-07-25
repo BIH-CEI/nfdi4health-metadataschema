@@ -5,8 +5,8 @@
   "id": "nfdi4health-vs-mds-title-type-hl7",
   "title": "NFDI4Health VS MDS Title Type [HL7]",
   "description": "Value set defining codes to specify the Title Type as of ResearchStudy HL7 FHIR R5.",
-  "version": "0.9",
   "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-title-type-hl7",
+  "version": "0.9",
   "experimental": true,
   "publisher": "NFDI4Health",
   "contact": [

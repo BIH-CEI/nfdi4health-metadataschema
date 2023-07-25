@@ -5,8 +5,8 @@
   "id": "nfdi4health-vs-mds-study-group-characteristics-nci",
   "title": "NFDI4Health VS MDS Study Group Characteristics [NCI]",
   "description": "Value set defining codes that identify the kind of trait being asserted in a study group.",
-  "version": "0.9",
   "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-group-characteristics-nci",
+  "version": "0.9",
   "experimental": true,
   "publisher": "NFDI4Health",
   "contact": [

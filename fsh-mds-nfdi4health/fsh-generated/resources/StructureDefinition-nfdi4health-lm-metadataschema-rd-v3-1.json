@@ -2,10 +2,9 @@
   "resourceType": "StructureDefinition",
   "id": "nfdi4health-lm-metadataschema-rd-v3-1",
   "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-rd-v3-1",
-  "version": "1.0",
   "name": "NFDI4Health_LM_Metadataschema_RD_V3_1",
   "title": "NFDI4Health LM Resource Design Metadataschema V3.1",
-  "status": "active",
+  "status": "draft",
   "publisher": "NFDI4Health",
   "contact": [
     {

@@ -21,19 +21,18 @@ Description: "Extension indicating whether samples of biomaterial from study par
 * extension contains
     retention 0..* and
     description 0..1 
-
 * extension[retention] ^short = "Which biosamples are retained in a biorepository?"
 * extension[retention] ^definition = "Indication whether samples of biomaterial from study participants are retained in a biorepository."
-* extension[retention] ^comment = "Select all that apply."
+* extension[retention] ^comment = "Short input help: Select all that apply."
 * extension[retention].value[x] 1..1
 * extension[retention].value[x] only Coding
-* extension[retention].value[x].code 1..1
-* extension[retention].value[x].system 1..1
-* extension[retention].value[x] from $nfdi4health-vs-mds-study-biospecimen-retention-umls (required)
-* extension[retention].value[x] ^binding.description = "Value set defining codes to specify which biosamples are retained in a biorepository."
+* extension[retention].valueCoding.code 1..1
+* extension[retention].valueCoding.system 1..1
+* extension[retention].valueCoding from $nfdi4health-vs-mds-study-biospecimen-retention-umls (required)
+* extension[retention].valueCoding ^binding.description = "Value set defining codes to specify which biosamples are retained in a biorepository."
 * extension[description] ^short = "Specific types of retained biosamples"
 * extension[description] ^definition = "Additional information about biosamples to be retained, i.e. which specific types of biospecimens will be retained (e.g. blood, serum, urine, etc.)."
-* extension[description] ^comment = "Which specific types of biosamples will be retained (e.g. blood, serum, urine, etc.)?"
+* extension[description] ^comment = "Short input help: Which specific types of biosamples will be retained (e.g. blood, serum, urine, etc.)?"
 * extension[description].value[x] 1..1
 * extension[description].value[x] only string
 

@@ -68,7 +68,7 @@
         "sliceName": "generally",
         "short": "Is it planned to share the data?",
         "definition": "Indication whether there is a plan to make data collected in the study available. In case of studies with patients or other individuals, this refers to individual participant data (IPD).",
-        "comment": "Select one value from the list.",
+        "comment": "Short input help: Select one value from the list.",
         "min": 1,
         "max": "1",
         "mapping": [
@@ -119,7 +119,7 @@
         "sliceName": "supportingInformation",
         "short": "Supporting documents available in addition to the data",
         "definition": "Supporting information/documents which will be made available in addition to the study data.",
-        "comment": "Select all that apply.",
+        "comment": "Short input help: Select all that apply.",
         "min": 0,
         "max": "*",
         "mapping": [
@@ -204,7 +204,7 @@
         "sliceName": "accessCriteria",
         "short": "Criteria for the data access",
         "definition": "Indication by what access criteria data will be shared, including: a) with whom, b) for what types of analyses, and c) by what mechanism.",
-        "comment": "E.g., with whom, for what types of analyses and by what mechanism the data will be shared.",
+        "comment": "Short input help: E.g., with whom, for what types of analyses and by what mechanism the data will be shared.",
         "min": 0,
         "max": "1",
         "mapping": [
@@ -239,7 +239,7 @@
         "sliceName": "description",
         "short": "Additional information about data sharing",
         "definition": "Additional descriptive information providing more details about the data sharing, e.g. indication what data in particular will be shared or why the data will not be shared or why it is not yet decided.",
-        "comment": "E.g., indication what data in particular will be shared or why the data will not be shared or why it is not yet decided",
+        "comment": "Short input help: E.g., indication what data in particular will be shared or why the data will not be shared or why it is not yet decided",
         "min": 0,
         "max": "1",
         "mapping": [

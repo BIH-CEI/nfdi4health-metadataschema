@@ -15,13 +15,13 @@ Description: "Extension informing about the type of applied probability sampling
 * . 0..1
 * . ^short = "Specific type of probability sampling"
 * . ^definition = "Specific type of the probability sampling method applied for the selection of study participants."
-* . ^comment = "Short Input Help: If known, select one value from the list."
-value[x] 1..1
-value[x] only Coding
-value[x].code 1..1
-value[x].system 1..1
-value[x] from $nfdi4health-vs-mds-study-sampling-prob-method-nci (required)
-value[x] ^binding.description = "Value set defining codes to specify types of probability sampling methods."
+* . ^comment = "Short input help: If known, select one value from the list."
+* value[x] 1..1
+* value[x] only Coding
+* valueCoding.code 1..1
+* valueCoding.system 1..1
+* valueCoding from $nfdi4health-vs-mds-study-sampling-prob-method-nci (required)
+* valueCoding ^binding.description = "Value set defining codes to specify types of probability sampling methods."
 
 Mapping: NFDI4Health-Study-Sampling-Method-Probability-to-FHIR
 Id: NFDI4Health

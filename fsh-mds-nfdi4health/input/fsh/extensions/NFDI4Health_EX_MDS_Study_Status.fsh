@@ -28,39 +28,39 @@ Description: "Extension informing about the status of a study."
     statusEnrollingByInvitation 0..1
 * extension[overallStatus] ^short = "Overall study status"
 * extension[overallStatus] ^definition = "Overall status of the study."
-* extension[overallStatus] ^comment = "If at least one study site in a multicenter study has the status 'Ongoing', then the overall status for the study must be 'Ongoing'. | Select one value from the list."
+* extension[overallStatus] ^comment = "Additional information: If at least one study site in a multicenter study has the status 'Ongoing', then the overall status for the study must be 'Ongoing'. | Short input help: Select one value from the list."
 * extension[overallStatus].value[x] 1..1
 * extension[overallStatus].value[x] only Coding
-* extension[overallStatus].value[x].code 1..1
-* extension[overallStatus].value[x].system 1..1
-* extension[overallStatus].value[x] from $nfdi4health-vs-mds-study-overall-status-umls-local (required)
-* extension[overallStatus].value[x] ^binding.description = "Value set defining codes to specify the overall status of a study."
+* extension[overallStatus].valueCoding.code 1..1
+* extension[overallStatus].valueCoding.system 1..1
+* extension[overallStatus].valueCoding from $nfdi4health-vs-mds-study-overall-status-umls-local (required)
+* extension[overallStatus].valueCoding ^binding.description = "Value set defining codes to specify the overall status of a study."
 * extension[statusWhenIntervention] ^short = "Do participants receive an intervention?"
 * extension[statusWhenIntervention] ^definition = "Specification whether study participants receive intervention or have completed it but are still being followed according to the primary objective of the study."
-* extension[statusWhenIntervention] ^comment = "Select one value from the list."
+* extension[statusWhenIntervention] ^comment = "Short input help: Select one value from the list."
 * extension[statusWhenIntervention].value[x] 1..1
 * extension[statusWhenIntervention].value[x] only Coding
-* extension[statusWhenIntervention].value[x].code 1..1
-* extension[statusWhenIntervention].value[x].system 1..1
-* extension[statusWhenIntervention].value[x] from $nfdi4health-vs-mds-study-status-when-intervention-local (required)
-* extension[statusWhenIntervention].value[x] ^binding.description = "Value set defining codes to specify the status of a study when it was halted."
+* extension[statusWhenIntervention].valueCoding.code 1..1
+* extension[statusWhenIntervention].valueCoding.system 1..1
+* extension[statusWhenIntervention].valueCoding from $nfdi4health-vs-mds-study-status-when-intervention-local (required)
+* extension[statusWhenIntervention].valueCoding ^binding.description = "Value set defining codes to specify the status of a study when it was halted."
 * extension[recruitmentStatusRegister] ^short = "Overall recruitment status of the study from the register of clinical trials"
 * extension[recruitmentStatusRegister] ^definition = "Overall recruitment status of the study as indicated in the corresponding register of clinical trials."
-* extension[recruitmentStatusRegister] ^comment = "The item applies only to studies automatically uploaded from the registers of clinical trials."
+* extension[recruitmentStatusRegister] ^comment = "Additional information: The item applies only to studies automatically uploaded from the registers of clinical trials."
 * extension[recruitmentStatusRegister].value[x] 1..1
 * extension[recruitmentStatusRegister].value[x] only Coding
-* extension[recruitmentStatusRegister].value[x].code 1..1
-* extension[recruitmentStatusRegister].value[x].system 1..1
-* extension[recruitmentStatusRegister].value[x] from $nfdi4health-vs-mds-study-recruitment-status-register-umls-local (required)
-* extension[recruitmentStatusRegister].value[x] ^binding.description = "Value set defining codes to specify the study recruitment status (from a register) in a ResearchStudy resource."
+* extension[recruitmentStatusRegister].valueCoding.code 1..1
+* extension[recruitmentStatusRegister].valueCoding.system 1..1
+* extension[recruitmentStatusRegister].valueCoding from $nfdi4health-vs-mds-study-recruitment-status-register-umls-local (required)
+* extension[recruitmentStatusRegister].valueCoding ^binding.description = "Value set defining codes to specify the study recruitment status (from a register) in a ResearchStudy resource."
 * extension[statusEnrollingByInvitation] ^short = "Are participants enrolled by invitation?"
 * extension[statusEnrollingByInvitation] ^definition = "Specification whether study participants have been selected from a predetermined population or enrolled by invitation."
 * extension[statusEnrollingByInvitation].value[x] 1..1
 * extension[statusEnrollingByInvitation].value[x] only Coding
-* extension[statusEnrollingByInvitation].value[x].code 1..1
-* extension[statusEnrollingByInvitation].value[x].system 1..1
-* extension[statusEnrollingByInvitation].value[x] from $nfdi4health-vs-mds-yes-no-not-applicable-snomedct (required)
-* extension[statusEnrollingByInvitation].value[x] ^binding.description = "Value set used to respond to questions that can be answered Yes, No, or Not Applicable."
+* extension[statusEnrollingByInvitation].valueCoding.code 1..1
+* extension[statusEnrollingByInvitation].valueCoding.system 1..1
+* extension[statusEnrollingByInvitation].valueCoding from $nfdi4health-vs-mds-yes-no-not-applicable-snomedct (required)
+* extension[statusEnrollingByInvitation].valueCoding ^binding.description = "Value set used to respond to questions that can be answered Yes, No, or Not Applicable."
 
 Mapping: NFDI4Health-Study-Status-to-FHIR
 Id: NFDI4Health

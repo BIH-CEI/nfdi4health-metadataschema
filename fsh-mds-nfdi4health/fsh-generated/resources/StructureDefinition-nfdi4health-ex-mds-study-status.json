@@ -62,7 +62,7 @@
         "sliceName": "overallStatus",
         "short": "Overall study status",
         "definition": "Overall status of the study.",
-        "comment": "If at least one study site in a multicenter study has the status 'Ongoing', then the overall status for the study must be 'Ongoing'. | Select one value from the list.",
+        "comment": "Additional information: If at least one study site in a multicenter study has the status 'Ongoing', then the overall status for the study must be 'Ongoing'. | Short input help: Select one value from the list.",
         "min": 1,
         "max": "1",
         "mapping": [
@@ -113,7 +113,7 @@
         "sliceName": "statusWhenIntervention",
         "short": "Do participants receive an intervention?",
         "definition": "Specification whether study participants receive intervention or have completed it but are still being followed according to the primary objective of the study.",
-        "comment": "Select one value from the list.",
+        "comment": "Short input help: Select one value from the list.",
         "min": 0,
         "max": "1",
         "mapping": [
@@ -164,7 +164,7 @@
         "sliceName": "recruitmentStatusRegister",
         "short": "Overall recruitment status of the study from the register of clinical trials",
         "definition": "Overall recruitment status of the study as indicated in the corresponding register of clinical trials.",
-        "comment": "The item applies only to studies automatically uploaded from the registers of clinical trials.",
+        "comment": "Additional information: The item applies only to studies automatically uploaded from the registers of clinical trials.",
         "min": 0,
         "max": "1",
         "mapping": [

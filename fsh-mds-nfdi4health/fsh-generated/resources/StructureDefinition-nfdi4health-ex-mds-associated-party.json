@@ -56,7 +56,7 @@
         "path": "Extension",
         "short": "Role(s)",
         "definition": "Group of items providing information about person(s), group(s) of persons or institution(s)/organisation(s) contributing to the resource.",
-        "comment": "For each resource, there may be multiple roles, but at least one person, group of persons or institution/organisation must be specified.\r\nBased on ResearchStudy.associatedParty (R5).",
+        "comment": "Additional information: For each resource, there may be multiple roles, but at least one person, group of persons or institution/organisation must be specified. [Extension based on ResearchStudy.associatedParty (R5).]",
         "min": 1,
         "mapping": [
           {
@@ -134,7 +134,7 @@
         "path": "Extension.extension.value[x]",
         "short": "Role type",
         "definition": "Type of the role a person fulllfils, e.g. a principal investigator of a study or an author of a document?",
-        "comment": "Select one value from the list.",
+        "comment": "Short input help: Select one value from the list.",
         "min": 1,
         "type": [
           {

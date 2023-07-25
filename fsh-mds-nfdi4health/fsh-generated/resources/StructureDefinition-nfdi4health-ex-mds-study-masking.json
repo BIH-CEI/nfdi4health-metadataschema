@@ -2,7 +2,6 @@
   "resourceType": "StructureDefinition",
   "id": "nfdi4health-ex-mds-study-masking",
   "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-masking",
-  "version": "1.0",
   "name": "NFDI4Health_EX_MDS_Study_Masking",
   "title": "NFDI4Health EX MDS Study Masking",
   "status": "draft",
@@ -46,8 +45,9 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "NFDI4Health EX MDS Study Masking",
+        "short": "Information about masking of intervention(s) assignment",
         "definition": "Group of items providing information about the masking of intervention(s) assignment",
+        "max": "1",
         "mapping": [
           {
             "identity": "NFDI4Health",

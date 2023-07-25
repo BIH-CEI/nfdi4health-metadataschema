@@ -1,0 +1,146 @@
+{
+  "resourceType": "DocumentReference",
+  "id": "nfdi4health-document-example",
+  "meta": {
+    "profile": [
+      "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-document"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-associated-party",
+      "extension": [
+        {
+          "url": "party",
+          "valueReference": {
+            "reference": "Practitioner/123"
+          }
+        },
+        {
+          "url": "nameType",
+          "valueCoding": {
+            "code": "C1519021"
+          }
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "value",
+          "_valueString": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en-US"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "ISARIC COVID-19 CORE CRF"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          }
+        },
+        {
+          "url": "type",
+          "valueCoding": {
+            "display": "Acronym",
+            "code": "acronym"
+          }
+        },
+        {
+          "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language",
+          "valueCode": "en-US"
+        }
+      ],
+      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-label"
+    },
+    {
+      "extension": [
+        {
+          "url": "text",
+          "valueString": "Die ISARIC-WHO Case Report Forms (CRFs) sollen dazu verwendet werden, standartisierte klinische Daten von Individuen mit verdacht auf oder bestätigter COVID-19 Infektion zu sammeln, um die Versorgung des Patienten und die Informationsübermittlung zu verbessern. Es gibt 2 CRFs zwischen denen gewählt werden kann: Das CORE Formular und das RAPID Formular.\r\nDas CORE CRF ist ein umfassenderes Formular mit mehr Variablen, um das Spektrum der Krankheit und des Managements zu verstehen, insbesondere in Bezug auf Erregertests, Interventionen in der Intensivpflege und Medikamente. Es kann verwendet werden, wenn die Ressourcen die Erfassung von mehr Daten erlauben."
+        },
+        {
+          "url": "language"
+        }
+      ],
+      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-description-non-english"
+    },
+    {
+      "extension": [
+        {
+          "url": "label",
+          "valueString": "Questionnaire"
+        },
+        {
+          "url": "code",
+          "valueUri": "https://id.nlm.nih.gov/mesh/T000997092.html"
+        }
+      ],
+      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-keywords2"
+    },
+    {
+      "extension": [
+        {
+          "url": "identifier",
+          "valueIdentifier": {
+            "system": "https://csh.nfdi4health.de/",
+            "value": "118"
+          }
+        },
+        {
+          "url": "relationType",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "075",
+                "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+                "display": "A is source of B"
+              }
+            ]
+          }
+        }
+      ],
+      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related"
+    }
+  ],
+  "masterIdentifier": {
+    "system": "NFDI4Health",
+    "value": "98"
+  },
+  "content": [
+    {
+      "attachment": {
+        "_title": {
+          "extension": [
+            {
+              "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language",
+              "valueCode": "EN(English)"
+            },
+            {
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "ISARIC COVID-19 CORE Case Report Form"
+                }
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "status": "current",
+  "description": "The ISARIC-WHO Case Report Forms (CRFs) should be used to collect standardised clinical data on individuals presenting with suspected or confirmed COVID-19 to improve patient care and inform the public health response. There are 2 forms available to choose from: the CORE form and the RAPID form.\r\nThe CORE CRF is a more comprehensive form with more variables to understand the spectrum of disease and management, especially on pathogen testing, critical care interventions, and medications. It can be used where resources allow the collection of more data."
+}

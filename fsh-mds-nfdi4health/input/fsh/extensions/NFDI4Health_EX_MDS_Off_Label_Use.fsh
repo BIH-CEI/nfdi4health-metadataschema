@@ -15,13 +15,13 @@ Description: "Extension informing the unapproved (off-label) use of a drug produ
 * . 0..1
 * . ^short = "Off-label use of a drug product"
 * . ^definition = "Unapproved (off-label) use of a drug product."
-* . ^comment = "Select 'Yes' or 'No' only for drug studies and 'Not applicableÄ' for all other studies."
+* . ^comment = "Short input help: Select 'Yes' or 'No' only for drug studies and 'Not applicable' for all other studies."
 * value[x] 1..1
 * value[x] only Coding
-* value[x].code 1..1
-* value[x].system 1..1
-* value[x] from $nfdi4health-vs-mds-yes-no-not-applicable-snomedct (required)
-* value[x] ^binding.description = "Value set used to respond to questions that can be answered Yes, No, or Not Applicable."
+* valueCoding.code 1..1
+* valueCoding.system 1..1
+* valueCoding from $nfdi4health-vs-mds-yes-no-not-applicable-snomedct (required)
+* valueCoding ^binding.description = "Value set used to respond to questions that can be answered Yes, No, or Not Applicable."
 
 Mapping: NFDI4Health-Off-Label-Use-to-FHIR
 Id: NFDI4Health

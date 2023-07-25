@@ -2,10 +2,9 @@
   "resourceType": "StructureDefinition",
   "id": "nfdi4health-lm-metadataschema-eocd-v3-1",
   "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-eocd-v3-1",
-  "version": "1.0",
   "name": "NFDI4Health_LM_Metadataschema_EOCD_V3_1",
   "title": "NFDI4Health LM Epidemiology of Chronic Diseases Metadataschema (UC 5.2) V3.1",
-  "status": "active",
+  "status": "draft",
   "publisher": "NFDI4Health",
   "contact": [
     {

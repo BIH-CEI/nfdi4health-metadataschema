@@ -11,6 +11,8 @@ Description: "Extension asking if information about chronic diseases was collect
 * ^context.type = #element
 * ^context.expression = "ResearchStudy"
 * . 1..1
+* . ^short = "Chronic diseases included?"
+* . ^definition = "Indication whether chronic diseases were addressed by the resource."
 * url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-chronic-diseases" (exactly)
 * value[x] 1..
 * value[x] only boolean

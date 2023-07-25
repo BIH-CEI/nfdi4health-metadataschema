@@ -48,7 +48,7 @@
         "path": "Extension",
         "short": "Off-label use of a drug product",
         "definition": "Unapproved (off-label) use of a drug product.",
-        "comment": "Select 'Yes' or 'No' only for drug studies and 'Not applicableÄ' for all other studies.",
+        "comment": "Short input help: Select 'Yes' or 'No' only for drug studies and 'Not applicable' for all other studies.",
         "max": "1",
         "mapping": [
           {

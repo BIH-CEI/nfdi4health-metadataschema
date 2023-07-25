@@ -56,7 +56,7 @@
         "sliceName": "retention",
         "short": "Which biosamples are retained in a biorepository?",
         "definition": "Indication whether samples of biomaterial from study participants are retained in a biorepository.",
-        "comment": "Select all that apply.",
+        "comment": "Short input help: Select all that apply.",
         "min": 0,
         "max": "*",
         "mapping": [
@@ -107,7 +107,7 @@
         "sliceName": "description",
         "short": "Specific types of retained biosamples",
         "definition": "Additional information about biosamples to be retained, i.e. which specific types of biospecimens will be retained (e.g. blood, serum, urine, etc.).",
-        "comment": "Which specific types of biosamples will be retained (e.g. blood, serum, urine, etc.)?",
+        "comment": "Short input help: Which specific types of biosamples will be retained (e.g. blood, serum, urine, etc.)?",
         "min": 0,
         "max": "1",
         "mapping": [

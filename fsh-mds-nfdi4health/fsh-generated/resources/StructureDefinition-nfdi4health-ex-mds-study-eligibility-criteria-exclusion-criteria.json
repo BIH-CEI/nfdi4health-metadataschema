@@ -48,7 +48,7 @@
         "path": "Extension",
         "short": "Exclusion criteria",
         "definition": "Exclusion criteria for participation in the study.",
-        "comment": "If possible, use an enumerated or bulleted list for each criterion.",
+        "comment": "Short input help: If possible, use an enumerated or bulleted list for each criterion.",
         "max": "1",
         "mapping": [
           {

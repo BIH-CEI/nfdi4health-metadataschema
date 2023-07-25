@@ -68,7 +68,7 @@
         "sliceName": "generally",
         "short": "Which groups of diseases or conditions were the data collected on?",
         "definition": "Groups of diseases or conditions on which the data were collected in the study.",
-        "comment": "The values originate from the WHO's International Statistical Classification of Diseases and Related Health Problems, 11th Revision (ICD-11). | Select all that apply. For more information about the groups of diseases/conditions, visit the WHO's ICD-11 homepage: https://icd.who.int/en.",
+        "comment": "Additional information: The values originate from the WHO's International Statistical Classification of Diseases and Related Health Problems, 11th Revision (ICD-11). | Short input help: Select all that apply. For more information about the groups of diseases/conditions, visit the WHO's ICD-11 homepage: https://icd.who.int/en.",
         "min": 1,
         "max": "*",
         "mapping": [
@@ -94,9 +94,19 @@
         "min": 1,
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "Coding"
           }
         ]
+      },
+      {
+        "id": "Extension.extension:generally.value[x].system",
+        "path": "Extension.extension.value[x].system",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:generally.value[x].code",
+        "path": "Extension.extension.value[x].code",
+        "min": 1
       },
       {
         "id": "Extension.extension:conditions",
@@ -104,7 +114,7 @@
         "sliceName": "conditions",
         "short": "On which other diseases or conditions were the data collected?",
         "definition": "Other diseases or conditions on which the data were collected in the study.",
-        "comment": "The values originate from the WHO's International Statistical Classification of Diseases and Related Health Problems, 11th Revision (ICD-11). | For more information about the groups of diseases/conditions, visit the WHO's ICD-11 homepage: https://icd.who.int/en.",
+        "comment": "Additional information: The values originate from the WHO's International Statistical Classification of Diseases and Related Health Problems, 11th Revision (ICD-11). | Short input help: For more information about the groups of diseases/conditions, visit the WHO's ICD-11 homepage: https://icd.who.int/en.",
         "min": 0,
         "max": "*",
         "mapping": [

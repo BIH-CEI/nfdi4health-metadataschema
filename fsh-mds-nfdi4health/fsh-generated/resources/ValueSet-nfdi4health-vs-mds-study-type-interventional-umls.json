@@ -5,8 +5,8 @@
   "id": "nfdi4health-vs-mds-study-type-interventional-umls",
   "title": "NFDI4Health VS MDS Study Type Interventional [UMLS]",
   "description": "Value set defining codes to specify the type of an interventional study in a ResearchStudy resource.",
-  "version": "0.9",
   "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-type-interventional-umls",
+  "version": "0.9",
   "experimental": true,
   "publisher": "NFDI4Health",
   "contact": [

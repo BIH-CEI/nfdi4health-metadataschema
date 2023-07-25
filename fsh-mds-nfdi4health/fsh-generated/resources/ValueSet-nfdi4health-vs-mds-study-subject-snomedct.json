@@ -5,8 +5,8 @@
   "id": "nfdi4health-vs-mds-study-subject-snomedct",
   "title": "NFDI4Health VS MDS Study Subject [SNOMED CT]",
   "description": "Value set defining codes for study sujects in a ResearchStudy resource.",
-  "version": "0.9",
   "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-subject-snomedct",
+  "version": "0.9",
   "experimental": true,
   "publisher": "NFDI4Health",
   "contact": [
