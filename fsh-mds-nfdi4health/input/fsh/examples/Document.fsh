@@ -30,4 +30,3 @@ Das CORE CRF ist ein umfassenderes Formular mit mehr Variablen, um das Spektrum 
 * extension[related][1].extension[identifier].valueIdentifier.system = "https://www.medrxiv.org/"
 * extension[related][1].extension[identifier].valueIdentifier.value = "https://doi.org/10.1101/2020.07.17.20155218"
 * extension[related][1].extension[relationType].valueCodeableConcept = $Remaining#057 "A is supplemented by B"
-//copyright freigelassen, Klärungsbedarf
