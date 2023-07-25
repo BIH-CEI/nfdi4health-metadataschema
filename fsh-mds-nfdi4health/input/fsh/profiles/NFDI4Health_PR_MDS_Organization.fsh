@@ -16,7 +16,7 @@ Description: "Resource covering metadata of an organization."
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
 * extension ^min = 0
-* extension contains NFDI4Health_EX_MDS_FundingID named fundingID 0..*
+* extension contains NFDI4Health_EX_MDS_FundingID named fundingID 0..* 
 * extension[fundingID] ^comment = "Short input help: If available, you can enter a funding identifier"
 * extension[fundingID] ^min = 0
 * extension[fundingID] ^isModifier = false
@@ -85,6 +85,14 @@ Description: "Resource covering metadata of an organization."
 * address.text 1..
 * address.text ^short = "Address of the organisation"
 * address.text ^definition = "Address of the organisation associated with the role."
+
+
+Invariant: org-1
+Description: "extension assoc. Party name type ist organisational und exension associated party roleOrganisational ist private oder public funder."
+Severity: #error
+Expression: "extension(where url = https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-associated-party) where url = roleOrganisational.valueCoding= (Public Funder or Private Funder)not() and where url = nameType.valueCoding = organisational implies resolve Questionnaire extension where url = https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-associated-party.extension.where(url=party.valueReference. where (resolve()is Organization)) and Organization.extension where url = https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-fundingID exists().not
+  organization"
+
 
 Mapping: NFDI4Health-Organization-to-FHIR
 Id: NFDI4Health

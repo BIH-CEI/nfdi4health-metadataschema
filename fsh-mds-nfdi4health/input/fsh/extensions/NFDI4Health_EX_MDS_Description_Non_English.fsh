@@ -24,7 +24,7 @@ Description: "Extension providing description(s) of the resource written not in 
 * extension[text] ^definition = "Short plain text summary of the resource other than in English."
 * extension[text].value[x] only string
 * extension[language].value[x] 0..
-* extension[language].value[x] only Coding 
+* extension[language].value[x] only Coding
 * extension[language].value[x] from NFDI4Health_VS_MDS_Language_NO_ENGLISH_SNOMEDCT (required)
 * extension[language] ^short = "Language of the description"
 * extension[language] ^definition = "Language of the description"

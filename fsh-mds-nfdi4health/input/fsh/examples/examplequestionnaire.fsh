@@ -38,5 +38,6 @@ Generally, the CRISIS questionnaires include the following domains:
 * copyright = "For reuse purposes, copies of all forms, their translations and scoring information can be found on the download page of the CRISIS project."
 * extension[associatedParty][0].extension[party].valueReference = Reference(OrganizationExample1) 
 * extension[associatedParty][0].extension[nameType].valueCoding = $UMLS#C0220885 "Organizational (Qualitative Concept)"
+* extension[associatedParty][0].extension[roleOrganisational].valueCoding = $Remaining#046 "Public Funder"
 * extension[associatedParty][1].extension[party].valueReference = Reference(PractitionerRoleExample1)
 * extension[associatedParty][1].extension[nameType].valueCoding = $UMLS#C1519021 "Personal Attribute (Organism Attribute)"
