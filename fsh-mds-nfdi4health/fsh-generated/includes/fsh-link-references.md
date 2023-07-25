@@ -42,18 +42,9 @@
 [NFDI4Health_EX_MDS_Study_Eligibility_Criteria_Inclusion_Criteria]: StructureDefinition-nfdi4health-ex-mds-study-eligibility-criteria-inclusion-criteria.html
 [NFDI4Health_EX_MDS_Study_Ethics_Committee_Approval]: StructureDefinition-nfdi4health-ex-mds-study-ethics-committee-approval.html
 [NFDI4Health_EX_MDS_Study_Groups_Of_Diseases]: StructureDefinition-nfdi4health-ex-mds-study-groups-of-diseases.html
-<<<<<<< HEAD
 [NFDI4Health_EX_MDS_Study_Masking]: StructureDefinition-nfdi4health-ex-mds-study-masking.html
 [NFDI4Health_EX_MDS_Study_Outcomes]: StructureDefinition-nfdi4health-ex-mds-study-outcomes.html
 [NFDI4Health_EX_MDS_Study_Population]: StructureDefinition-nfdi4health-ex-mds-study-population.html
-=======
-[NFDI4Health_EX_MDS_Study_Interventions]: StructureDefinition-nfdi4health-ex-mds-study-interventions.html
-[NFDI4Health_EX_MDS_Study_Masking]: StructureDefinition-nfdi4health-ex-mds-study-masking.html
-[NFDI4Health_EX_MDS_Study_Outcomes]: StructureDefinition-nfdi4health-ex-mds-study-outcomes.html
-[NFDI4Health_EX_MDS_Study_Population]: StructureDefinition-nfdi4health-ex-mds-study-population.html
-[NFDI4Health_EX_MDS_Study_Sampling_Method]: StructureDefinition-nfdi4health-ex-mds-study-sampling-method.html
-[NFDI4Health_EX_MDS_Study_Sampling_Method_Non_Probability]: StructureDefinition-nfdi4health-ex-mds-study-sampling-method-non-probability.html
->>>>>>> 5ec0ca0b314861fc328a1c7aa8fb46403d72e37b
 [NFDI4Health_EX_MDS_Study_Sampling_Method_Probability]: StructureDefinition-nfdi4health-ex-mds-study-sampling-method-probabiity.html
 [NFDI4Health_EX_MDS_Study_Status]: StructureDefinition-nfdi4health-ex-mds-study-status.html
 [NFDI4Health_EX_MDS_Study_Status_Halted_Stage]: StructureDefinition-nfdi4health-ex-mds-study-status-halted-stage.html
@@ -65,13 +56,8 @@
 [NFDI4Health_EX_MDS_Version]: StructureDefinition-nfdi4health-ex-mds-version.html
 [NFDI4Health_EX_MDS_Webpage]: StructureDefinition-nfdi4health-ex-mds-webpage.html
 [NFDI4Health_LM_Metadataschema_EOCD_V3]: StructureDefinition-nfdi4health-lm-metadataschema-eocd-v3.html
-[NFDI4Health_LM_Metadataschema_EOCD_V3_1]: StructureDefinition-nfdi4health-lm-metadataschema-eocd-v3-1.html
 [NFDI4Health_LM_Metadataschema_General_V3]: StructureDefinition-nfdi4health-lm-metadataschema-general-v3.html
-[NFDI4Health_LM_Metadataschema_General_V3_1]: StructureDefinition-nfdi4health-lm-metadataschema-general-v3-1.html
 [NFDI4Health_LM_Metadataschema_NE_V3]: StructureDefinition-nfdi4health-lm-metadataschema-ne-v3.html
-[NFDI4Health_LM_Metadataschema_NE_V3_1]: StructureDefinition-nfdi4health-lm-metadataschema-ne-v3-1.html
-[NFDI4Health_LM_Metadataschema_RL_V3_1]: StructureDefinition-nfdi4health-lm-metadataschema-rl-v3-1.html
-[NFDI4Health_LM_Metadataschema_RD_V3_1]: StructureDefinition-nfdi4health-lm-metadataschema-rd-v3-1.html
 [NFDI4Health_PR_MDS_Document]: StructureDefinition-nfdi4health-pr-mds-document.html
 [NFDI4Health_PR_MDS_Evidence_Variable_Intervention_Exposure]: StructureDefinition-nfdi4health-pr-mds-evidence-variable-intervention-exposure.html
 [NFDI4Health_PR_MDS_Group_Actual]: StructureDefinition-nfdi4health-pr-mds-group-actual.html

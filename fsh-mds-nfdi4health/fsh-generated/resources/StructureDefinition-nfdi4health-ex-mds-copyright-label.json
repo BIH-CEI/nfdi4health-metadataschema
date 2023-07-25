@@ -54,7 +54,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "10.3.1.1 resource_use_rights resource_use_rights_label"
+            "map": "1.10.3.1 Resource.nonStudyDetails.useRights.label"
           }
         ]
       },

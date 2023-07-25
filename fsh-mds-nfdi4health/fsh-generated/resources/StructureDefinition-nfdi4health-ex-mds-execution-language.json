@@ -24,6 +24,10 @@
       "identity": "rim",
       "uri": "http://hl7.org/v3",
       "name": "RIM Mapping"
+    },
+    {
+      "identity": "NFDI4Health",
+      "name": "NFDI4Health to FHIR Mapping"
     }
   ],
   "kind": "complex-type",
@@ -48,7 +52,13 @@
         "path": "Extension",
         "short": "Execution language(s) of the [RESOURCE]",
         "definition": "Language(s) in which a study/substudy is conducted, or a language in which a study document is composed.",
-        "comment": "Short input help: Select all that apply."
+        "comment": "Short input help: Select all that apply.",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.8 -> Resource.languages"
+          }
+        ]
       },
       {
         "id": "Extension.extension",

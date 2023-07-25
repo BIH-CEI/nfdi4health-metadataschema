@@ -22,4 +22,4 @@ Mapping: NFDI4Health-Copyright-Label-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Copyright_Label
-* -> "10.3.1.1 resource_use_rights resource_use_rights_label"
+* -> "1.10.3.1 Resource.nonStudyDetails.useRights.label"

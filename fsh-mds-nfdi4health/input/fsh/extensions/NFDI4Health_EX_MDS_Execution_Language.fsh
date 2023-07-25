@@ -23,3 +23,9 @@ Description: "Extension provinding information about the language in which a stu
 * valueCode ^binding.description = "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)"
 * valueCode ^short = "A human language."
 * valueCode ^definition = "A human language."
+
+Mapping: NFDI4Health-Execution-Language-to-FHIR
+Id: NFDI4Health
+Title: "NFDI4Health to FHIR Mapping"
+Source: NFDI4Health_EX_MDS_Execution_Language
+* -> "1.8 -> Resource.languages"

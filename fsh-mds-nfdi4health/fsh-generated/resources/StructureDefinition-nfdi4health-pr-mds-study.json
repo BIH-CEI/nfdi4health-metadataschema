@@ -559,7 +559,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12.2 Resource.ids_alternative.identifier"
+            "map": "1.12.2 Resource.idsAlternative.identifier"
           }
         ]
       },
@@ -636,7 +636,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12.2 Resource.ids_alternative.identifier"
+            "map": "1.12.2 Resource.idsAlternative.identifier"
           }
         ]
       },
@@ -675,7 +675,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12.2 Resource.ids_alternative.identifier"
+            "map": "1.12.2 Resource.idsAlternative.identifier"
           }
         ]
       },
@@ -713,7 +713,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12.2 Resource.ids_alternative.identifier"
+            "map": "1.12.2 Resource.idsAlternative.identifier"
           }
         ]
       },
@@ -739,7 +739,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12.1 Resource.ids_alternative.type",
+            "map": "1.12.1 Resource.idsAlternative.scheme",
             "comment": "Type = KonsortSWD"
           }
         ]
@@ -752,7 +752,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12.2 Resource.ids_alternative.identifier"
+            "map": "1.12.2 Resource.idsAlternative.identifier"
           }
         ]
       },
@@ -791,7 +791,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12.2 Resource.ids_alternative.identifier"
+            "map": "1.12.2 Resource.idsAlternative.identifier"
           }
         ]
       },
@@ -811,24 +811,14 @@
         ]
       },
       {
-        "id": "ResearchStudy.identifier:Other.type",
-        "path": "ResearchStudy.identifier.type",
+        "id": "ResearchStudy.identifier:Other.system",
+        "path": "ResearchStudy.identifier.system",
+        "definition": "Type/name of the system where the given resource is already registered.",
         "min": 1,
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12.1 Resource.idsAlternative.scheme"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.identifier:Other.system",
-        "path": "ResearchStudy.identifier.system",
-        "definition": "Type/name of the system where the given resource is already registered.",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "1.12.1 Resource.ids_alternative.type",
+            "map": "1.12.1 Resource.idsAlternative.scheme",
             "comment": "Type = Other"
           }
         ]

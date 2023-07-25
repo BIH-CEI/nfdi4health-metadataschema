@@ -490,14 +490,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nfdi4health-lm-metadataschema-eocd-v3-1"
-        },
-        "name": "NFDI4Health LM Epidemiology of Chronic Diseases Metadataschema (UC 5.2) V3.1",
-        "description": "NFDI4Health LogicalModel Epidemiology of Chronic Diseases Metadataschema (Use Case 5.2) V3.1",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/nfdi4health-lm-metadataschema-general-v3"
         },
         "name": "NFDI4Health LM General Metadataschema V3",
@@ -506,42 +498,10 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nfdi4health-lm-metadataschema-general-v3-1"
-        },
-        "name": "NFDI4Health LM General Metadataschema V3.1",
-        "description": "NFDI4Health LogicalModel General Metadataschema V3.1",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/nfdi4health-lm-metadataschema-ne-v3"
         },
         "name": "NFDI4Health LM Nutritional Epidemiology Metadataschema (UC 5.1) V3",
         "description": "NFDI4Health LogicalModel Nutritional Epidemiology Metadataschema (Use Case 5.1) V3",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/nfdi4health-lm-metadataschema-ne-v3-1"
-        },
-        "name": "NFDI4Health LM Nutritional Epidemiology Metadataschema (UC 5.1) V3.1",
-        "description": "NFDI4Health LogicalModel Nutritional Epidemiology Metadataschema (Use Case 5.1) V3.1",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/nfdi4health-lm-metadataschema-rl-v3-1"
-        },
-        "name": "NFDI4Health LM Record Linkage Metadataschema (UC 5.3) V3.1",
-        "description": "NFDI4Health LogicalModel Record Linkage Metadataschema (Use Case 5.3) V3.1",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/nfdi4health-lm-metadataschema-rd-v3-1"
-        },
-        "name": "NFDI4Health LM Resource Design Metadataschema V3.1",
-        "description": "NFDI4Health LogicalModel Resource Design Metadataschema V3.1",
         "exampleBoolean": false
       },
       {
