@@ -1,0 +1,268 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "nfdi4health-ex-mds-associated-party",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-associated-party",
+  "version": "0.9",
+  "name": "NFDI4Health_EX_MDS_Associated_Party",
+  "title": "NFDI4Health EX MDS Associated Party",
+  "status": "draft",
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "description": "Group of items providing information about person(s), group(s) of persons or institution(s)/organisation(s) contributing to the resource.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "NFDI4Health",
+      "name": "NFDI4Health to FHIR Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ResearchStudy"
+    },
+    {
+      "type": "element",
+      "expression": "DocumentReference"
+    },
+    {
+      "type": "element",
+      "expression": "Questionnaire"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Role(s)",
+        "definition": "Group of items providing information about person(s), group(s) of persons or institution(s)/organisation(s) contributing to the resource.",
+        "comment": "For each resource, there may be multiple roles, but at least one person, group of persons or institution/organisation must be specified.\r\nBased on ResearchStudy.associatedParty (R5).",
+        "min": 1,
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.11 Resource.roles"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "min": 2
+      },
+      {
+        "id": "Extension.extension:party",
+        "path": "Extension.extension",
+        "sliceName": "party",
+        "short": "Individual or organisation associated with the [RESOURCE]",
+        "definition": "Individual or organisation associated with the [RESOURCE] (use practitionerRole to specify their organisation).",
+        "min": 1,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:party.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:party.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "party"
+      },
+      {
+        "id": "Extension.extension:party.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner-role",
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:rolePersonal",
+        "path": "Extension.extension",
+        "sliceName": "rolePersonal",
+        "short": "Type of the role",
+        "definition": "Type of the role a person fulllfils. For example, this can be a principal investigator of a study or an author of a document.",
+        "comment": "Short input help: Which role does the person fulllfil? Select one value from the list.",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.11.3.1 Resource.roles.personal.type"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:rolePersonal.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:rolePersonal.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "rolePersonal"
+      },
+      {
+        "id": "Extension.extension:rolePersonal.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Role type",
+        "definition": "Type of the role a person fulllfils, e.g. a principal investigator of a study or an author of a document?",
+        "comment": "Select one value from the list.",
+        "min": 1,
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-personal-roles-nci-umls-local",
+          "description": "Value set defining codes for personal roles."
+        }
+      },
+      {
+        "id": "Extension.extension:rolePersonal.value[x].system",
+        "path": "Extension.extension.value[x].system",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:rolePersonal.value[x].code",
+        "path": "Extension.extension.value[x].code",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:roleOrganisational",
+        "path": "Extension.extension",
+        "sliceName": "roleOrganisational",
+        "short": "Type of the role",
+        "definition": "Type of the role an organisation, institution or group fulllfils. For example, this can be a sponsor of the study or a group of authors of the document.",
+        "comment": "Short input help: Which role does the organisation/institution/group/etc. fulllfil? Select one value from the list.",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.11.2.1 Resource.roles.organisational.type"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:roleOrganisational.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:roleOrganisational.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "roleOrganisational"
+      },
+      {
+        "id": "Extension.extension:roleOrganisational.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Type of the role",
+        "definition": "Type of the role an organisation, institution or group fulllfils. For example, this can be a sponsor of the study or a group of authors of the document.",
+        "comment": "Which role does the organisation/institution/group/etc. fulllfil? Select one value from the list.",
+        "min": 1,
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-organisational-roles-nci-local",
+          "description": "Value set defining codes for organisational roles."
+        }
+      },
+      {
+        "id": "Extension.extension:roleOrganisational.value[x].system",
+        "path": "Extension.extension.value[x].system",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:roleOrganisational.value[x].code",
+        "path": "Extension.extension.value[x].code",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:nameType",
+        "path": "Extension.extension",
+        "sliceName": "nameType",
+        "short": "Type of the name",
+        "definition": "Personal or organisational/group type of the name.",
+        "min": 1,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.11.1 Resource.roles.nameType"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:nameType.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:nameType.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "nameType"
+      },
+      {
+        "id": "Extension.extension:nameType.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Type of the name",
+        "definition": "Personal or organisational/group type of the name.",
+        "min": 1,
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-role-name-type-umls",
+          "description": "Value set defining codes to specify role types."
+        }
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-associated-party"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

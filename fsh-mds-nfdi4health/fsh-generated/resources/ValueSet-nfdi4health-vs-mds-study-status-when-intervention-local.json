@@ -1,0 +1,39 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "NFDI4Health_VS_MDS_Study_Status_When_Intervention_Local",
+  "id": "nfdi4health-vs-mds-study-status-when-intervention-local",
+  "title": "NFDI4Health VS MDS Study Status When Intervention [Local]",
+  "description": "Value set defining codes to specify the status of a study in case of an intervention in a ResearchStudy resource.",
+  "version": "0.9",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-status-when-intervention-local",
+  "experimental": true,
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+        "concept": [
+          {
+            "code": "014",
+            "display": "Intervention ongoing"
+          },
+          {
+            "code": "015",
+            "display": "Intervention completed, follow-up ongoing"
+          }
+        ]
+      }
+    ]
+  }
+}

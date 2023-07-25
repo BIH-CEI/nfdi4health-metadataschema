@@ -1,0 +1,169 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "nfdi4health-pr-mds-related-artifact-non-ndfi4health-resource",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-related-artifact-non-ndfi4health-resource",
+  "version": "0.9",
+  "name": "NFDI4Health_PR_MDS_Related_Artifact_Non_NFDI4Health_Resource",
+  "title": "NFDI4Health PR MDS Related Artifact Non NFDI4Health Resource",
+  "status": "draft",
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "description": "Profile of a RelatedArtifact intended to capture information about related non NFDI4Health resources.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "NFDI4Health",
+      "name": "NFDI4Health to FHIR Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "type": "RelatedArtifact",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/RelatedArtifact",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "RelatedArtifact",
+        "path": "RelatedArtifact",
+        "short": "Related publications, datasets, study documents, web pages, etc.",
+        "definition": "Group of items providing information about identifiers (IDs) of the resources related to the given resource, e.g. DOIs of publications, datasets, study documents or links to web pages.",
+        "comment": "Short input help: If existing, you can specify identifier(s) of any related resources, e.g. DOIs of publications, datasets, study documents, links to web pages, etc.",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.13 Resource.ids"
+          }
+        ]
+      },
+      {
+        "id": "RelatedArtifact.extension",
+        "path": "RelatedArtifact.extension",
+        "min": 2
+      },
+      {
+        "id": "RelatedArtifact.extension:identifier",
+        "path": "RelatedArtifact.extension",
+        "sliceName": "identifier",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "RelatedArtifact.extension:identifier.valueIdentifier",
+        "path": "RelatedArtifact.extension.valueIdentifier",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "RelatedArtifact.extension:identifier.valueIdentifier.type",
+        "path": "RelatedArtifact.extension.valueIdentifier.type",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-identifier-type-related-artifact-umls-local",
+          "description": "Value set defining codes to specify the ID Type of the related resource."
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.13.2 Resource.ids.scheme"
+          }
+        ]
+      },
+      {
+        "id": "RelatedArtifact.extension:identifier.valueIdentifier.value",
+        "path": "RelatedArtifact.extension.valueIdentifier.value",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.13.1 Resource.ids.identifier"
+          }
+        ]
+      },
+      {
+        "id": "RelatedArtifact.extension:identifierAssignmentDate",
+        "path": "RelatedArtifact.extension",
+        "sliceName": "identifierAssignmentDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-identifier-assignment-date"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.13.3 Resource.ids.date"
+          }
+        ]
+      },
+      {
+        "id": "RelatedArtifact.extension:relationType",
+        "path": "RelatedArtifact.extension",
+        "sliceName": "relationType",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related-artifact-reltype-non-nfdi-resource"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.13.4 Resource.ids.relationType"
+          }
+        ]
+      },
+      {
+        "id": "RelatedArtifact.extension:resourceTypeGeneral",
+        "path": "RelatedArtifact.extension",
+        "sliceName": "resourceTypeGeneral",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-resource-type-general"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.13.5 Resource.ids.resourceTypeGeneral"
+          }
+        ]
+      }
+    ]
+  }
+}

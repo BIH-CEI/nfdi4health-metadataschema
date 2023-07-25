@@ -1,0 +1,340 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "nfdi4health-ex-mds-related",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related",
+  "version": "0.9",
+  "name": "NFDI4Health_EX_MDS_Related",
+  "title": "NFDI4Health_EX_MDS_Related",
+  "status": "draft",
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "description": "Extension providing information about identifiers (IDs) of the resources related to the given resource, e.g. DOIs of publications, datasets, study documents or links to web pages - registered on this portal or not.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "NFDI4Health",
+      "name": "NFDI4Health to FHIR Mapping"
+    },
+    {
+      "identity": "1.13.1"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Questionnaire"
+    },
+    {
+      "type": "element",
+      "expression": "DocumentReference"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "NFDI4Health_EX_MDS_Related",
+        "definition": "Extension providing information about identifiers (IDs) of the resources related to the given resource, e.g. DOIs of publications, datasets, study documents or links to web pages - registered on this portal or not.",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.13 Resource.ids"
+          },
+          {
+            "identity": "NFDI4Health",
+            "map": "1.14 Resource.idsNfdi4health"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:identifier",
+        "path": "Extension.extension",
+        "sliceName": "identifier",
+        "short": "Identifier of the related resource",
+        "definition": "Identifier (ID) related to, or associated with, the resource being registered. These can be IDs of related publications, datasets, study documents, web pages, etc.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:identifier.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:identifier.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "identifier"
+      },
+      {
+        "id": "Extension.extension:identifier.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "1.13.1",
+            "map": "identifier.string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:identifier.value[x].system",
+        "path": "Extension.extension.value[x].system",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.13.2 Resource.ids.scheme"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:identifier.value[x].value",
+        "path": "Extension.extension.value[x].value",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.13.1 Resource.ids.identifier"
+          },
+          {
+            "identity": "NFDI4Health",
+            "map": "1.14.1 Resource.idsNfdi4health.identifier"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:identifier.valueIdentifier",
+        "path": "Extension.extension.valueIdentifier",
+        "short": "Identifier of the related resource",
+        "definition": "Identifier (ID) related to, or associated with, the resource being registered. These can be IDs of related publications, datasets, study documents, web pages, etc.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:identifier.valueIdentifier.system",
+        "path": "Extension.extension.valueIdentifier.system",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-id-type-umls",
+          "description": "Value set defining codes to specify the ID Type of the related resource."
+        }
+      },
+      {
+        "id": "Extension.extension:identifier.valueIdentifier.value",
+        "path": "Extension.extension.valueIdentifier.value",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:date",
+        "path": "Extension.extension",
+        "sliceName": "date",
+        "short": "Date of ID assignment",
+        "definition": "Date when the identifier of the related resource was assigned.",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.13.3 Resource.ids.date"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:date.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:date.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "date"
+      },
+      {
+        "id": "Extension.extension:date.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:relationType",
+        "path": "Extension.extension",
+        "sliceName": "relationType",
+        "short": "Relationship between this [RESOURCE] (A) and the related resource (B)?",
+        "definition": "Relationship between the resource being registered (A) and the related resource (B).",
+        "min": 1,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.13.4 Resource.ids.relationType"
+          },
+          {
+            "identity": "NFDI4Health",
+            "map": "1.14.2 Resource.idsNfdi4health.relationType"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:relationType.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:relationType.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "relationType"
+      },
+      {
+        "id": "Extension.extension:relationType.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:relationType.valueCodeableConcept",
+        "path": "Extension.extension.valueCodeableConcept",
+        "min": 1,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-relation-type-ids-local-hl7v3",
+          "description": "NFDI4Health_VS_MDS_Relation_Type_Ids_Local_HL7V3"
+        }
+      },
+      {
+        "id": "Extension.extension:resourceTypeGeneral",
+        "path": "Extension.extension",
+        "sliceName": "resourceTypeGeneral",
+        "short": "Type of the related resource",
+        "definition": "Type of the related resource, e.g. journal article, dataset, text, etc.",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.13.5 Resource.ids.resourceTypeGeneral"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:resourceTypeGeneral.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:resourceTypeGeneral.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "resourceTypeGeneral"
+      },
+      {
+        "id": "Extension.extension:resourceTypeGeneral.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:resourceTypeGeneral.valueCodeableConcept",
+        "path": "Extension.extension.valueCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-resource-type-general-nci-umls-local",
+          "description": "Value set defining codes to specify the the general resource type"
+        }
+      },
+      {
+        "id": "Extension.extension:resourceTypeGeneral.valueCodeableConcept.text",
+        "path": "Extension.extension.valueCodeableConcept.text",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

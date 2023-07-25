@@ -1,0 +1,237 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "nfdi4health-ex-mds-study-comparison-group",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-comparison-group",
+  "version": "0.9",
+  "name": "NFDI4Health_EX_MDS_Study_Comparison_Group",
+  "title": "NFDI4Health EX MDS Study Comparison Group",
+  "status": "draft",
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "description": "Extension providing information about the arm(s)/group(s)/cohort(s) and intervention(s)/exposure(s) in a study.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "NFDI4Health",
+      "name": "NFDI4Health to FHIR Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ResearchStudy"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Defined path through the study for a subject",
+        "definition": "Describes an expected event or sequence of events for one of the subjects of a study. E.g. for a living subject: exposure to drug A, wash-out, exposure to drug B, wash-out, follow-up. E.g. for a stability study: {store sample from lot A at 25 degrees for 1 month}, {store sample from lot A at 40 degrees for 1 month}.",
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.30 Resource.studyDesign.armsGroups"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "min": 2
+      },
+      {
+        "id": "Extension.extension:name",
+        "path": "Extension.extension",
+        "sliceName": "name",
+        "short": "Name of the arm/group",
+        "definition": "Short name used to identify the arm/group.",
+        "comment": "Additional information: For interventional studies: 'Arm' means a pre-specified group or subgroup of participant(s) in a clinical trial assigned to receive specific intervention(s) (or no intervention) according to a protocol. For non-interventional studies: 'Group' means a predefined group (cohort) of participants to be studied.",
+        "min": 1,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.30.1 Resource.studyDesign.armsGroups.label"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:name.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:name.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "name"
+      },
+      {
+        "id": "Extension.extension:name.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension",
+        "sliceName": "type",
+        "short": "Role of the arm",
+        "definition": "Role of the given arm in the study.",
+        "comment": "Short input help: Select one value from the list.",
+        "min": 1,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.30.2 Resource.studyDesign.armsGroups.type"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:type.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:type.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:type.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-arm-group-type-umls",
+          "description": "Value set defining codes to specify the role of a study arm or group in a ResearchStudy resource."
+        }
+      },
+      {
+        "id": "Extension.extension:type.value[x].system",
+        "path": "Extension.extension.value[x].system",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:type.value[x].code",
+        "path": "Extension.extension.value[x].code",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:description",
+        "path": "Extension.extension",
+        "sliceName": "description",
+        "short": "Additional information about the arm/group",
+        "definition": "Additional descriptive information about the given arm/group.",
+        "comment": "Additional information: For interventional studies: If needed, additional descriptive information (including which interventions are administered in each arm) to differentiate each arm from other arms in the clinical trial. For non-interventional studies: Explanation of the nature of the study group (for example, those with a condition and those without a condition; those with an exposure and those without an exposure).",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.30.3 1.17.30.2 Resource.studyDesign.armsGroups.description"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:description.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:description.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "description"
+      },
+      {
+        "id": "Extension.extension:description.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:intendedExposure",
+        "path": "Extension.extension",
+        "sliceName": "intendedExposure",
+        "short": "Interventions/exposures of the study",
+        "definition": "Group of items providing information about study interventions or exposures.",
+        "comment": "The items may be not applicable for non-interventional studies.",
+        "min": 0,
+        "max": "*",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.31 Resource.studyDesign.interventions"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:intendedExposure.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:intendedExposure.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "intendedExposure"
+      },
+      {
+        "id": "Extension.extension:intendedExposure.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/EvidenceVariable"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-comparison-group"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

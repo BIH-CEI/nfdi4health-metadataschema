@@ -1,0 +1,83 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "nfdi4health-ex-mds-copyright-label",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-copyright-label",
+  "version": "0.9",
+  "name": "NFDI4Health_EX_MDS_Copyright_Label",
+  "title": "NFDI4Health EX MDS Copyright Label",
+  "status": "draft",
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "description": "Extension providing information about the license applying to the resource.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "NFDI4Health",
+      "name": "NFDI4Health to FHIR Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Questionnaire.copyright"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "License",
+        "definition": "License defining the rights to (re-)use the resource.",
+        "comment": "Short input help: Select one value from the list.\r\nIf “Other” is selected, an explanation of the (re-)use terms and conditions can be provided in the property “Additional information about use rights”.",
+        "min": 1,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "10.3.1.1 resource_use_rights resource_use_rights_label"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-copyright-label"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      }
+    ]
+  }
+}

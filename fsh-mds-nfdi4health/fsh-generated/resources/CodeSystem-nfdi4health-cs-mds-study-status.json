@@ -1,0 +1,58 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "NFDI4Health_CS_MDS_Study_Status",
+  "id": "nfdi4health-cs-mds-study-status",
+  "title": "NFDI4Health CS MDS Study Status",
+  "description": "Code system defining concepts about different status of a study.",
+  "version": "0.9",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-mds-study-status",
+  "concept": [
+    {
+      "code": "01",
+      "display": "At the planning stage"
+    },
+    {
+      "code": "02",
+      "display": "Ongoing (I): Recruitment ongoing, but data collection not yet started"
+    },
+    {
+      "code": "03",
+      "display": "Ongoing (II): Recruitment and data collection ongoing"
+    },
+    {
+      "code": "04",
+      "display": "Ongoing (III): Recruitment completed, but data collection ongoing"
+    },
+    {
+      "code": "05",
+      "display": "Ongoing (IV): Recruitment and data collection completed, but data quality management ongoing"
+    },
+    {
+      "code": "06",
+      "display": "Suspended: Recruitment, data collection, or data quality management, halted, but potentially will resume"
+    },
+    {
+      "code": "07",
+      "display": "Terminated: Recruitment, data collection, data and quality management halted prematurely and will not resume"
+    },
+    {
+      "code": "08",
+      "display": "Completed: Recruitment, data collection, and data quality management completed normally"
+    }
+  ],
+  "experimental": true,
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "count": 8
+}

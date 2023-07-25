@@ -1,0 +1,37 @@
+{
+  "resourceType": "Provenance",
+  "id": "ProvenanceExample",
+  "meta": {
+    "profile": [
+      "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-provenance"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-provenance-data-source",
+      "valueCoding": {
+        "code": "01"
+      }
+    }
+  ],
+  "target": [
+    {
+      "reference": "ISARIC_COVID-19_CORE_Case_Report_Form"
+    }
+  ],
+  "activity": {
+    "coding": [
+      {
+        "code": "085",
+        "system": "https://www.nfdi4health.de"
+      }
+    ]
+  },
+  "agent": [
+    {
+      "who": {
+        "reference": "NFDI4Health_Practitioner"
+      }
+    }
+  ]
+}

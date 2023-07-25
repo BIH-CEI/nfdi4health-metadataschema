@@ -1,0 +1,64 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "NFDI4Health_VS_MDS_Study_Sampling_Method_NCI_Local",
+  "id": "nfdi4health-vs-mds-study-sampling-method-nci-local",
+  "title": "NFDI4Health VS MDS Study Sampling Method [NCI, local]",
+  "description": "Value set defining codes to specify types of sampling methods.",
+  "version": "0.9",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-sampling-method-nci-local",
+  "experimental": true,
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+        "concept": [
+          {
+            "code": "034",
+            "display": "Probability Sampling Method"
+          },
+          {
+            "code": "035",
+            "display": "Mixed Probability and Non-Probability Sampling Method"
+          },
+          {
+            "code": "036",
+            "display": "Total universe/Complete enumeration"
+          }
+        ]
+      },
+      {
+        "system": "http://ncimeta.nci.nih.gov",
+        "concept": [
+          {
+            "code": "C127781",
+            "display": "Non-Probability Sampling Method (Activity)"
+          },
+          {
+            "code": "C17649",
+            "display": "Other (Qualitative Concept)"
+          },
+          {
+            "code": "C17998",
+            "display": "Unknown (Idea or Concept)"
+          },
+          {
+            "code": "C48660",
+            "display": "Not Applicable (Qualitative Concept)"
+          }
+        ]
+      }
+    ]
+  }
+}

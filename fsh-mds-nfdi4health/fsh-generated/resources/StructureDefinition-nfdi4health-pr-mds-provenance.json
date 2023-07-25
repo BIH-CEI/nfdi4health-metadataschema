@@ -1,0 +1,233 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "nfdi4health-pr-mds-provenance",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Foundation.Security"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "not-classified"
+    }
+  ],
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-provenance",
+  "version": "0.9",
+  "name": "NFDI4Health_PR_MDS_Provenance",
+  "title": "NFDI4Health PR MDS Provenance",
+  "status": "draft",
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "description": "Resource covering information about the provenance of a resource.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w3c.prov",
+      "uri": "http://www.w3.org/ns/prov",
+      "name": "W3C PROV"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "fhirauditevent",
+      "uri": "http://hl7.org/fhir/auditevent",
+      "name": "FHIR AuditEvent Mapping"
+    },
+    {
+      "identity": "NFDI4Health",
+      "name": "NFDI4Health to FHIR Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Provenance",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Provenance",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Provenance",
+        "path": "Provenance",
+        "short": "Information about provenance aspects of the data entry",
+        "definition": "Group of items providing information about provenance aspects of the data entry on the portal",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.18 Resource.provenance"
+          }
+        ]
+      },
+      {
+        "id": "Provenance.meta.versionId",
+        "path": "Provenance.meta.versionId",
+        "short": "Version number of the resource within the portal/system",
+        "definition": "Version number of the resource within the portal/system",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.18.12 Resource.provenance.resourceVersion"
+          }
+        ]
+      },
+      {
+        "id": "Provenance.extension",
+        "path": "Provenance.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Provenance.extension:dataSource",
+        "path": "Provenance.extension",
+        "sliceName": "dataSource",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-provenance-data-source"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Provenance.target",
+        "path": "Provenance.target",
+        "definition": "The Reference(s) that were generated or updated by the activity described in this resource. A provenance can point to more than one target if multiple resources were created/updated by the same activity.",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Resource",
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Provenance.recorded",
+        "path": "Provenance.recorded",
+        "short": "Verfication date / Date when the [RESOURCE] was first submitted for publication / Date when the [RESOURCE] was first posted/published / Date when the last update of the [RESOURCE] was submitted for publication / Date when the last update of the [RESOURCE] was posted/published.",
+        "definition": "For verification date: Date on which the responsible party last verified the information about the resource, even if no additional or updated information is being submitted.\r\n\r\nFor first submission date: Date when the resource was first submitted for publication.\r\n\r\nFor first posted date: Date when the resource was first posted/published.\r\n\r\nFor last update date: Date when the last update of the resource was submitted for publication.\r\n\r\nFor last posted date: Date when the last update of the resource was posted/published.\r\nFor",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.18.2 Resource.provenance.verificationDate"
+          },
+          {
+            "identity": "NFDI4Health",
+            "map": "1.18.4 Resource.provenance.firstSubmittedDate"
+          },
+          {
+            "identity": "NFDI4Health",
+            "map": "1.18.6 Resource.provenance.firstPostedDate"
+          },
+          {
+            "identity": "NFDI4Health",
+            "map": "1.18.8 Resource.provenance.lastUpdateSubmittedDate"
+          },
+          {
+            "identity": "NFDI4Health",
+            "map": "1.18.10 Resource.provenance.lastUpdatePostedDate"
+          }
+        ]
+      },
+      {
+        "id": "Provenance.activity",
+        "path": "Provenance.activity",
+        "min": 1
+      },
+      {
+        "id": "Provenance.activity.coding",
+        "path": "Provenance.activity.coding",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-provenance-activitiy-hl7-local",
+          "description": "Value set defining codes for activity types."
+        }
+      },
+      {
+        "id": "Provenance.activity.coding.system",
+        "path": "Provenance.activity.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Provenance.activity.coding.code",
+        "path": "Provenance.activity.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Provenance.agent",
+        "path": "Provenance.agent",
+        "short": "User who submitted, published, updated or verified the resource.",
+        "definition": "An actor taking a role in an activity for which it can be assigned some degree of responsibility for the activity taking place.",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.18.3 Resource.provenance.verificationUser"
+          },
+          {
+            "identity": "NFDI4Health",
+            "map": "1.18.5 Resource.provenance.firstSubmittedUser"
+          },
+          {
+            "identity": "NFDI4Health",
+            "map": "1.18.7 Resource.provenance.firstPostedUser"
+          },
+          {
+            "identity": "NFDI4Health",
+            "map": "1.18.9 Resource.provenance.lastUpdateSubmittedUser"
+          },
+          {
+            "identity": "NFDI4Health",
+            "map": "1.18.11 Resource.provenance.lastUpdatePostedUser"
+          }
+        ]
+      },
+      {
+        "id": "Provenance.agent.who",
+        "path": "Provenance.agent.who",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner",
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner-role",
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

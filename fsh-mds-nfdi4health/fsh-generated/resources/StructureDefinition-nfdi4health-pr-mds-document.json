@@ -1,0 +1,368 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "nfdi4health-pr-mds-document",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Foundation.Documents"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "not-classified"
+    }
+  ],
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-document",
+  "version": "0.9",
+  "name": "NFDI4Health_PR_MDS_Document",
+  "title": "NFDI4Health PR MDS Document",
+  "status": "draft",
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "description": "Resource covering metadata of a document.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "fhircomposition",
+      "uri": "http://hl7.org/fhir/composition",
+      "name": "FHIR Composition"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "cda",
+      "uri": "http://hl7.org/v3/cda",
+      "name": "CDA (R2)"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "xds",
+      "uri": "http://ihe.net/xds",
+      "name": "XDS metadata equivalent"
+    },
+    {
+      "identity": "1.1"
+    },
+    {
+      "identity": "1.12"
+    },
+    {
+      "identity": "1.12.1"
+    },
+    {
+      "identity": "1.12.2"
+    },
+    {
+      "identity": "1.3.1"
+    },
+    {
+      "identity": "1.5.1"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "DocumentReference",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DocumentReference",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "DocumentReference.extension",
+        "path": "DocumentReference.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "DocumentReference.extension:label",
+        "path": "DocumentReference.extension",
+        "sliceName": "label",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-label"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.extension:descriptions_non_english",
+        "path": "DocumentReference.extension",
+        "sliceName": "descriptions_non_english",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-description-non-english"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.extension:keywords",
+        "path": "DocumentReference.extension",
+        "sliceName": "keywords",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-keywords2"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.extension:associatedParty",
+        "path": "DocumentReference.extension",
+        "sliceName": "associatedParty",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-associated-party"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.extension:related",
+        "path": "DocumentReference.extension",
+        "sliceName": "related",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.extension:copyright",
+        "path": "DocumentReference.extension",
+        "sliceName": "copyright",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-document-copyright"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.masterIdentifier",
+        "path": "DocumentReference.masterIdentifier",
+        "short": "ID of the [RESOURCE]",
+        "definition": "Unique identifier of the resource used for identification within the NFDI4Health.",
+        "min": 1,
+        "mapping": [
+          {
+            "identity": "1.1",
+            "map": "resource_identifier",
+            "comment": "Unique identifier of the resource used for identification within the NFDI4Health."
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.masterIdentifier.system",
+        "path": "DocumentReference.masterIdentifier.system",
+        "min": 1,
+        "fixedUri": "NFDI4Health",
+        "mapping": [
+          {
+            "identity": "1.1",
+            "map": "resource_identifier"
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.masterIdentifier.value",
+        "path": "DocumentReference.masterIdentifier.value",
+        "min": 1,
+        "mapping": [
+          {
+            "identity": "1.1",
+            "map": "resource_identifier"
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.identifier",
+        "path": "DocumentReference.identifier",
+        "short": "Alternative identifiers",
+        "definition": "Group of items providing information about identifiers (IDs) assigned to the given resource by another registering systems, e.g. a register of clinical trials or a data repository.",
+        "mapping": [
+          {
+            "identity": "1.12",
+            "map": "ids_alternative"
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.identifier.system",
+        "path": "DocumentReference.identifier.system",
+        "mapping": [
+          {
+            "identity": "1.12.1",
+            "map": "type"
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.identifier.value",
+        "path": "DocumentReference.identifier.value",
+        "mapping": [
+          {
+            "identity": "1.12.2",
+            "map": "identifier"
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.description",
+        "path": "DocumentReference.description",
+        "short": "English description of the  [RESOURCE]",
+        "definition": "A short plain text summary describing the resource in English.",
+        "min": 1,
+        "mapping": [
+          {
+            "identity": "1.5.1",
+            "map": "resource_description_english",
+            "comment": "A short plain text summary describing the resource in English."
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.content.extension",
+        "path": "DocumentReference.content.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "DocumentReference.content.extension:version",
+        "path": "DocumentReference.content.extension",
+        "sliceName": "version",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-version"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.content.attachment.title",
+        "path": "DocumentReference.content.attachment.title",
+        "short": "Title/name",
+        "definition": "Scientific unabbreviated title or name of the resource.",
+        "min": 1,
+        "mapping": [
+          {
+            "identity": "1.3.1",
+            "map": "resource_titles"
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.content.attachment.title.extension",
+        "path": "DocumentReference.content.attachment.title.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "DocumentReference.content.attachment.title.extension:translation",
+        "path": "DocumentReference.content.attachment.title.extension",
+        "sliceName": "translation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/translation"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.content.attachment.title.extension:language",
+        "path": "DocumentReference.content.attachment.title.extension",
+        "sliceName": "language",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

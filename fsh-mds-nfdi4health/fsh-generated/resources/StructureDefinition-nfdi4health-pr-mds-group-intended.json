@@ -1,0 +1,264 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "nfdi4health-pr-mds-group-intended",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Base.Individuals"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "business"
+    }
+  ],
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-group-intended",
+  "version": "0.9",
+  "name": "NFDI4Health_PR_MDS_Group_Intended",
+  "title": "NFDI4Health PR MDS Group Intended",
+  "status": "draft",
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "NFDI4Health",
+      "name": "NFDI4Health to FHIR Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Group",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Group",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Group",
+        "path": "Group",
+        "short": "Eligibility criteria for study participants",
+        "definition": "Group of items providing information about eligibility criteria for study participants."
+      },
+      {
+        "id": "Group.actual",
+        "path": "Group.actual",
+        "fixedBoolean": false
+      },
+      {
+        "id": "Group.quantity",
+        "path": "Group.quantity",
+        "short": "Target sample size",
+        "definition": "Intended number of observational units for the whole study (e.g. intended number of study participants at all study sites).",
+        "comment": "Short Input Help: Enter “-1” if target sample size was not set or is unknown."
+      },
+      {
+        "id": "Group.characteristic",
+        "path": "Group.characteristic",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        },
+        "short": "Eligibility criteria for study participants",
+        "definition": "Group of items providing information about eligibility criteria for study participants.",
+        "max": "1"
+      },
+      {
+        "id": "Group.characteristic:eligibleMinimumAge",
+        "path": "Group.characteristic",
+        "sliceName": "eligibleMinimumAge",
+        "short": "Eligibility criteria: Minimum age",
+        "definition": "Group of items providing information about the minimum eligible age of study participants.",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.23.1 Resource.studyDesign.eligibilityCriteria.ageMin"
+          }
+        ]
+      },
+      {
+        "id": "Group.characteristic:eligibleMinimumAge.code",
+        "path": "Group.characteristic.code",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "code": "C49693",
+              "system": "http://ncimeta.nci.nih.gov",
+              "display": "Planned Minimum Age of Subjects (Group Attribute)"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Group.characteristic:eligibleMinimumAge.value[x]",
+        "path": "Group.characteristic.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Group.characteristic:eligibleMinimumAge.value[x].value",
+        "path": "Group.characteristic.value[x].value",
+        "short": "Minimum eligible age",
+        "definition": "Numerical value of the minimum age of potential participants eligible to participate in the study.",
+        "min": 1,
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.23.1.1 Resource.studyDesign.eligibilityCriteria.ageMin.number"
+          }
+        ]
+      },
+      {
+        "id": "Group.characteristic:eligibleMinimumAge.value[x].code",
+        "path": "Group.characteristic.value[x].code",
+        "short": "Unit of time",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-time-units-ucum-umls"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.23.1.2 Resource.studyDesign.eligibilityCriteria.ageMin.timeUnit"
+          }
+        ]
+      },
+      {
+        "id": "Group.characteristic:eligibleMaximumAge",
+        "path": "Group.characteristic",
+        "sliceName": "eligibleMaximumAge",
+        "short": "Eligibility criteria: Maximum age",
+        "definition": "Group of items providing information about the maximum eligible age of study participants.",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.23.2 Resource.studyDesign.eligibilityCriteria.ageMax"
+          }
+        ]
+      },
+      {
+        "id": "Group.characteristic:eligibleMaximumAge.code",
+        "path": "Group.characteristic.code",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "code": "C49694",
+              "system": "http://ncimeta.nci.nih.gov",
+              "display": "Planned Maximum Age of Subjects (Group Attribute)"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Group.characteristic:eligibleMaximumAge.value[x]",
+        "path": "Group.characteristic.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Group.characteristic:eligibleMaximumAge.value[x].value",
+        "path": "Group.characteristic.value[x].value",
+        "short": "Maximum eligible age",
+        "definition": "Numerical value of the maximum age of potential participants eligible to participate in the study.",
+        "min": 1,
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.23.2.1 Resource.studyDesign.eligibilityCriteria.ageMax.number"
+          }
+        ]
+      },
+      {
+        "id": "Group.characteristic:eligibleMaximumAge.value[x].code",
+        "path": "Group.characteristic.value[x].code",
+        "short": "Unit of time",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-time-units-ucum-umls"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.23.2.2 Resource.studyDesign.eligibilityCriteria.ageMax.timeUnit"
+          }
+        ]
+      },
+      {
+        "id": "Group.characteristic:gender",
+        "path": "Group.characteristic",
+        "sliceName": "gender",
+        "short": "Eligible gender",
+        "definition": "Gender of potential participants eligible to participate in the study.",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.23.3 Resource.studyDesign.eligibilityCriteria.genders"
+          }
+        ]
+      },
+      {
+        "id": "Group.characteristic:gender.code",
+        "path": "Group.characteristic.code",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "code": "C17357",
+              "system": "http://ncimeta.nci.nih.gov",
+              "display": "Gender (Organism Attribute)"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Group.characteristic:gender.value[x]",
+        "path": "Group.characteristic.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/administrative-gender",
+          "description": "The gender of a person used for administrative purposes."
+        }
+      }
+    ]
+  }
+}

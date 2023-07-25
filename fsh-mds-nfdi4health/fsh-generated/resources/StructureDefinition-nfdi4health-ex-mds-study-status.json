@@ -1,0 +1,274 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "nfdi4health-ex-mds-study-status",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-status",
+  "version": "0.9",
+  "name": "NFDI4Health_EX_MDS_Study_Status",
+  "title": "NFDI4Health EX MDS Study Status",
+  "status": "draft",
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "description": "Extension informing about the status of a study.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "NFDI4Health",
+      "name": "NFDI4Health to FHIR Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ResearchStudy"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Status",
+        "definition": "Group of items providing information about different status of a study (overall status, status of an interventional study, recruitment status, enrolling by invitation status).",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:overallStatus",
+        "path": "Extension.extension",
+        "sliceName": "overallStatus",
+        "short": "Overall study status",
+        "definition": "Overall status of the study.",
+        "comment": "If at least one study site in a multicenter study has the status 'Ongoing', then the overall status for the study must be 'Ongoing'. | Select one value from the list.",
+        "min": 1,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.7 Resource.studyDesign.status"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:overallStatus.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:overallStatus.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "overallStatus"
+      },
+      {
+        "id": "Extension.extension:overallStatus.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-overall-status-umls-local",
+          "description": "Value set defining codes to specify the overall status of a study."
+        }
+      },
+      {
+        "id": "Extension.extension:overallStatus.value[x].system",
+        "path": "Extension.extension.value[x].system",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:overallStatus.value[x].code",
+        "path": "Extension.extension.value[x].code",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:statusWhenIntervention",
+        "path": "Extension.extension",
+        "sliceName": "statusWhenIntervention",
+        "short": "Do participants receive an intervention?",
+        "definition": "Specification whether study participants receive intervention or have completed it but are still being followed according to the primary objective of the study.",
+        "comment": "Select one value from the list.",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.8 Resource.studyDesign.statusWhenIntervention"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:statusWhenIntervention.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:statusWhenIntervention.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "statusWhenIntervention"
+      },
+      {
+        "id": "Extension.extension:statusWhenIntervention.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-status-when-intervention-local",
+          "description": "Value set defining codes to specify the status of a study when it was halted."
+        }
+      },
+      {
+        "id": "Extension.extension:statusWhenIntervention.value[x].system",
+        "path": "Extension.extension.value[x].system",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:statusWhenIntervention.value[x].code",
+        "path": "Extension.extension.value[x].code",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:recruitmentStatusRegister",
+        "path": "Extension.extension",
+        "sliceName": "recruitmentStatusRegister",
+        "short": "Overall recruitment status of the study from the register of clinical trials",
+        "definition": "Overall recruitment status of the study as indicated in the corresponding register of clinical trials.",
+        "comment": "The item applies only to studies automatically uploaded from the registers of clinical trials.",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.12 Resource.studyDesign.recruitmentStatusRegister"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:recruitmentStatusRegister.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:recruitmentStatusRegister.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "recruitmentStatusRegister"
+      },
+      {
+        "id": "Extension.extension:recruitmentStatusRegister.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-recruitment-status-register-umls-local",
+          "description": "Value set defining codes to specify the study recruitment status (from a register) in a ResearchStudy resource."
+        }
+      },
+      {
+        "id": "Extension.extension:recruitmentStatusRegister.value[x].system",
+        "path": "Extension.extension.value[x].system",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:recruitmentStatusRegister.value[x].code",
+        "path": "Extension.extension.value[x].code",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:statusEnrollingByInvitation",
+        "path": "Extension.extension",
+        "sliceName": "statusEnrollingByInvitation",
+        "short": "Are participants enrolled by invitation?",
+        "definition": "Specification whether study participants have been selected from a predetermined population or enrolled by invitation.",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.11 Resource.studyDesign.statusEnrollingByInvitation"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:statusEnrollingByInvitation.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:statusEnrollingByInvitation.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "statusEnrollingByInvitation"
+      },
+      {
+        "id": "Extension.extension:statusEnrollingByInvitation.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-yes-no-not-applicable-snomedct",
+          "description": "Value set used to respond to questions that can be answered Yes, No, or Not Applicable."
+        }
+      },
+      {
+        "id": "Extension.extension:statusEnrollingByInvitation.value[x].system",
+        "path": "Extension.extension.value[x].system",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:statusEnrollingByInvitation.value[x].code",
+        "path": "Extension.extension.value[x].code",
+        "min": 1
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-status"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

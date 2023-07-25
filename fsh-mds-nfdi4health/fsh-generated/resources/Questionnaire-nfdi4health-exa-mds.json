@@ -1,0 +1,67 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "nfdi4health-exa-mds",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-exa-mds",
+  "version": "3.0",
+  "status": "draft",
+  "identifier": [
+    {
+      "value": "10.4126/FRL01-006439110",
+      "system": "https://www.doi.org/"
+    }
+  ],
+  "title": "Metadata schema of the NFDI4Health and the NFDI4Health Task Force COVID-19 (V3_0)",
+  "language": "en",
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "copyright": "CC BY 4.0",
+  "code": [
+    {
+      "display": "Epidemiology"
+    },
+    {
+      "display": "COVID-19"
+    },
+    {
+      "display": "Standard"
+    },
+    {
+      "display": "Clinical trials"
+    },
+    {
+      "display": "Metadata"
+    },
+    {
+      "display": "FAIR principles"
+    },
+    {
+      "display": "Public Health"
+    },
+    {
+      "display": "Metadata model"
+    }
+  ],
+  "item": [
+    {
+      "linkId": "1",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "1.1",
+          "text": "ID of the [RESOURCE]",
+          "type": "string",
+          "repeats": false
+        }
+      ]
+    }
+  ]
+}

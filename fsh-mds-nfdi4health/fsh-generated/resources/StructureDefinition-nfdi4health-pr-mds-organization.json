@@ -1,0 +1,335 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "nfdi4health-pr-mds-organization",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Base.Entities"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "business"
+    }
+  ],
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization",
+  "version": "0.9",
+  "name": "NFDI4Health_PR_MDS_Organization",
+  "title": "NFDI4Health PR MDS Organization",
+  "status": "draft",
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "description": "Resource covering metadata of an organization.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "servd",
+      "uri": "http://www.omg.org/spec/ServD/1.0/",
+      "name": "ServD"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "NFDI4Health",
+      "name": "NFDI4Health to FHIR Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Organization",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Organization",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Organization",
+        "path": "Organization",
+        "short": "Details about the organisation/institution/group/etc.",
+        "definition": "For \"1.11.2 Resource.roles.organisational\": Group of items providing information about group(s) of persons, institution(s) or organisation(s) contributing to the resource. | For \"1.11.6 Resource.roles.affiliation\": Group of items providing further information about the organisation(s) associated with the role.",
+        "comment": "For \"1.11.2 Resource.roles.organisational\": \r\nAdditional information: Group of items applicable to organisational/group names or providing further information about the organisation(s) associated with the role. | Short input help: Organisational name can be used to denote a research group or an institution.",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.11.2 Resource.roles.organisational"
+          },
+          {
+            "identity": "NFDI4Health",
+            "map": "1.11.6 Resource.roles.affiliation"
+          }
+        ]
+      },
+      {
+        "id": "Organization.extension",
+        "path": "Organization.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Organization.extension:fundingID",
+        "path": "Organization.extension",
+        "sliceName": "fundingID",
+        "comment": "Short input help: If available, you can enter a funding identifier",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-fundingID"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Organization.identifier",
+        "path": "Organization.identifier",
+        "short": "Digital identifier(s) of the organisation",
+        "definition": "Group of items providing information about identifiers of the organisation.",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.11.6.4 Resource.roles.affiliation.identifiers"
+          }
+        ]
+      },
+      {
+        "id": "Organization.identifier.type",
+        "path": "Organization.identifier.type",
+        "short": "Identifier scheme",
+        "definition": "Type of the identifier scheme.",
+        "comment": "Which type of identifer is reported?",
+        "min": 1,
+        "example": [
+          {
+            "label": "Identifier type",
+            "valueCodeableConcept": {
+              "text": "ROR"
+            }
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-role-affiliation-identifier-scheme",
+          "description": "Value set defining codes to specify the identifier scheme of an affiliation identifier."
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.11.6.4.2 Resource.roles.affiliation.identifiers.scheme"
+          }
+        ]
+      },
+      {
+        "id": "Organization.identifier.type.coding",
+        "path": "Organization.identifier.type.coding",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Organization.identifier.value",
+        "path": "Organization.identifier.value",
+        "short": "Identifier",
+        "definition": "Digital identifier of the organisation according to a definite scheme.",
+        "comment": "Short input help: Preferably, provide an identifier from ROR (https://ror.org/search).",
+        "min": 1,
+        "example": [
+          {
+            "label": "ROR Identifier",
+            "valueString": "0259fwx54"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.11.6.4.1 Resource.roles.affiliation.identifiers.identifier"
+          }
+        ]
+      },
+      {
+        "id": "Organization.name",
+        "path": "Organization.name",
+        "short": "Name of the organisation/institution/group",
+        "definition": "For \"1.11.2.3 Resource.roles.organisational.name\": Name of the organisation, institution or group. / For \"1.11.6.1 Resource.roles.affiliation\": Name of the organisation associated with the role.",
+        "comment": "Short input help: If you are have already entered the name of the organistion in the property \"Name of the organisation/institution/group\", please repeat it here.",
+        "min": 1,
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.11.2.3 Resource.roles.organisational.name"
+          },
+          {
+            "identity": "NFDI4Health",
+            "map": "1.11.6.1 Resource.roles.affiliation.name"
+          }
+        ]
+      },
+      {
+        "id": "Organization.telecom",
+        "path": "Organization.telecom",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "max": "1"
+      },
+      {
+        "id": "Organization.telecom:email",
+        "path": "Organization.telecom",
+        "sliceName": "email",
+        "short": "Email address",
+        "definition": "Email address of the institution/organisation.",
+        "min": 0,
+        "max": "1",
+        "fixedContactPoint": {
+          "system": "email",
+          "use": "work"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.11.4 Resource.roles.email"
+          }
+        ]
+      },
+      {
+        "id": "Organization.telecom:email.system",
+        "path": "Organization.telecom.system",
+        "min": 1,
+        "fixedCode": "email"
+      },
+      {
+        "id": "Organization.telecom:email.value",
+        "path": "Organization.telecom.value",
+        "min": 1
+      },
+      {
+        "id": "Organization.telecom:phone",
+        "path": "Organization.telecom",
+        "sliceName": "phone",
+        "short": "Phone number",
+        "definition": "Phone number of the institution/organisation.",
+        "comment": "Please, use the International ITU-T E.164-number structure for geographic areas, e.g. +49 (0)153 1112233.",
+        "min": 0,
+        "max": "1",
+        "fixedContactPoint": {
+          "system": "phone",
+          "use": "work"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.11.5 Resource.roles.phone"
+          }
+        ]
+      },
+      {
+        "id": "Organization.telecom:phone.system",
+        "path": "Organization.telecom.system",
+        "min": 1,
+        "fixedCode": "phone"
+      },
+      {
+        "id": "Organization.telecom:phone.value",
+        "path": "Organization.telecom.value",
+        "short": "Phone number",
+        "definition": "Phone number of the  person, group of persons or institution/organisation.",
+        "comment": "Please, use the International ITU-T E.164-number structure for geographic areas, e.g. +49 (0)153 1112233.",
+        "min": 1,
+        "example": [
+          {
+            "label": "Phone",
+            "valueString": "+49 (0)153 1112233"
+          }
+        ]
+      },
+      {
+        "id": "Organization.telecom:webpage",
+        "path": "Organization.telecom",
+        "sliceName": "webpage",
+        "short": "Web page of the organisation",
+        "definition": "Web page of the organisation associated with the role.",
+        "min": 0,
+        "max": "1",
+        "fixedContactPoint": {
+          "system": "url",
+          "use": "work"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.11.6.3 Resource.roles.affiliation.webpage"
+          }
+        ]
+      },
+      {
+        "id": "Organization.telecom:webpage.system",
+        "path": "Organization.telecom.system",
+        "min": 1,
+        "fixedCode": "url"
+      },
+      {
+        "id": "Organization.telecom:webpage.value",
+        "path": "Organization.telecom.value",
+        "short": "Web page of the organisation",
+        "definition": "Web page of the organisation associated with the role.",
+        "min": 1
+      },
+      {
+        "id": "Organization.address",
+        "path": "Organization.address",
+        "short": "Address of the organisation",
+        "definition": "Address of the organisation associated with the role.",
+        "max": "1",
+        "fixedAddress": {
+          "use": "work"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.11.6.2 Resource.roles.affiliation.address"
+          }
+        ]
+      },
+      {
+        "id": "Organization.address.text",
+        "path": "Organization.address.text",
+        "short": "Address of the organisation",
+        "definition": "Address of the organisation associated with the role.",
+        "min": 1
+      }
+    ]
+  }
+}
