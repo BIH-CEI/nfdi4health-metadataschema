@@ -1,6 +1,6 @@
-Profile: Test-Element-Definition
+Profile: Test_Element_Definition
 Parent: ElementDefinition
-Id: Test_Element_Definition
+Id: Test-Element-Definition
 Title: "Test Element Definition"
 Description: "Element Definition for a MDS item"
 * label = "Resource.identifier"

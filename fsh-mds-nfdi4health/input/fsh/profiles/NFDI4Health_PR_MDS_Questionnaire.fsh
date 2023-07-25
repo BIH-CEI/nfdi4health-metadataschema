@@ -15,21 +15,11 @@ Description: "Resource covering metadata of a questionnaire."
 * extension contains
     NFDI4Health_EX_MDS_Webpage named webpage 0..1 and
     NFDI4Health_EX_MDS_Format named format 0..1 and
-    NFDI4Health_EX_MDS_Label named label 0..* and
-    NFDI4Health_EX_MDS_Execution_Language named executionlLanguage 0..* and
-    NFDI4Health_EX_MDS_Associated_Party named associatedParty 1..1 and
+    NFDI4Health_EX_MDS_Label named label 0.. and
+    NFDI4Health_EX_MDS_Execution_Language named executionlLanguage 0.. and
+    NFDI4Health_EX_MDS_Associated_Party named associatedParty 1.. and
     NFDI4Health_EX_MDS_Related named related 0..1 and
-    NFDI4Health_EX_MDS_Keywords2 named keywords 0..*
-* extension[webpage] ^isModifier = false
-* extension[format] ^isModifier = false
-* extension[label] ^min = 0
-* extension[label] ^isModifier = false
-* extension[executionlLanguage] ^min = 0
-* extension[executionlLanguage] ^isModifier = false
-* extension[associatedParty] ^isModifier = false
-* extension[related] ^isModifier = false
-* extension[keywords] ^min = 0
-* extension[keywords] ^isModifier = false
+    NFDI4Health_EX_MDS_Keywords2 named keywords 0..
 * identifier 1..1
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "assigner.identifier.system"
@@ -49,18 +39,7 @@ Description: "Resource covering metadata of a questionnaire."
 * title.extension ^slicing.discriminator.type = #value
 * title.extension ^slicing.discriminator.path = "url"
 * title.extension ^slicing.rules = #open
-* title.extension[translation] only Translation
-* title.extension[translation] ^sliceName = "translation"
-* title.extension[translation] ^min = 0
-* title.extension[translation] ^isModifier = false
-* title.extension[translation].extension 2..
-* title.extension[translation].extension ^slicing.discriminator.type = #value
-* title.extension[translation].extension ^slicing.discriminator.path = "url"
-* title.extension[translation].extension ^slicing.rules = #open
-* title.extension[translation].extension[lang] ^sliceName = "lang"
-* title.extension[translation].extension[lang].value[x] ^binding.strength = #required
-* title.extension contains NFDI4Health_EX_MDS_Language named language 1..1
-* title.extension[language] ^isModifier = false
+* title.extension contains $translation named translation 0..1
 * status = #unknown (exactly)
 * description 1..
 * description ^short = "A short plain text summary describing the resource in English."
@@ -83,19 +62,5 @@ Description: "Resource covering metadata of a questionnaire."
 * copyright.extension ^slicing.discriminator.type = #value
 * copyright.extension ^slicing.discriminator.path = "url"
 * copyright.extension ^slicing.rules = #open
-* copyright.extension[label] only NFDI4Health_EX_MDS_Copyright_Label
-* copyright.extension[label] ^sliceName = "label"
-* copyright.extension[label] ^isModifier = false
-* copyright.extension[label].value[x] from $nfdi4health-vs-mds-use-rights-label-spdx-umls-local (required)
-* copyright.extension[label].value[x] ^binding.description = "Value set used to indicate the use rights of a resource."
-* copyright.extension[label].value[x].text ..0
-* copyright.extension[useRightsConfimations] only NFDI4Health_EX_MDS_Use_Rights
-* copyright.extension[useRightsConfimations] ^sliceName = "useRightsConfimations"
-* copyright.extension[useRightsConfimations] ^isModifier = false
-* copyright.extension[useRightsConfimations].extension ^slicing.discriminator.type = #value
-* copyright.extension[useRightsConfimations].extension ^slicing.discriminator.path = "url"
-* copyright.extension[useRightsConfimations].extension ^slicing.rules = #open
-* copyright.extension[useRightsConfimations].extension[authorsConfirmationOne] ^sliceName = "authorsConfirmationOne"
-* copyright.extension[useRightsConfimations].extension[authorsConfirmationTwo] ^sliceName = "authorsConfirmationTwo"
-* copyright.extension[useRightsConfimations].extension[authorsConfirmationThree] ^sliceName = "authorsConfirmationThree"
-* copyright.extension[useRightsConfimations].extension[supportByLicensing] ^sliceName = "supportByLicensing"
+* copyright.extension contains NFDI4Health_EX_MDS_Copyright_Label named label 1..1
+* copyright.extension contains NFDI4Health_EX_MDS_Use_Rights named useRightsConfimations 1..  
