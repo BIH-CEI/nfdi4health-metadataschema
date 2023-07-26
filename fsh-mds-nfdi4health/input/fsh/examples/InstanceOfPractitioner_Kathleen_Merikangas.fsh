@@ -1,6 +1,4 @@
-//Example
-
-Instance: PractitionerExample1
+Instance: InstanceOfPractitioner_Kathleen_Merikangas
 InstanceOf: NFDI4Health_PR_MDS_Practitioner
 Title: "Example of the NFDI4Health PR MDS Practitioner"
 Usage: #example
