@@ -5,8 +5,8 @@
   "id": "nfdi4health-vs-mds-language-snomedct",
   "title": "NFDI4Health VS MDS Language [SNOMED CT]",
   "description": "Value set defining codes to specify the language of a resource.",
-  "version": "0.9",
   "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-language-snomedct",
+  "version": "0.9",
   "experimental": true,
   "publisher": "NFDI4Health",
   "contact": [

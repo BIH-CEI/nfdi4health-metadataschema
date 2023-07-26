@@ -5,8 +5,8 @@
   "id": "nfdi4health-vs-mds-role-name-identifier-scheme",
   "title": "NFDI4Health VS MDS Role Name Identifier Scheme",
   "description": "Value set defining codes to specify the identifier scheme of a personal identifier.",
-  "version": "0.9",
   "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-role-name-identifier-scheme",
+  "version": "0.9",
   "experimental": true,
   "publisher": "NFDI4Health",
   "contact": [

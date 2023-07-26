@@ -5,8 +5,8 @@
   "id": "nfdi4health-vs-mds-provenance-activitiy-hl7-local",
   "title": "NFDI4Health VS MDS Provenance Activity [HL7, local]",
   "description": "Value set defining codes for activity types.",
-  "version": "0.9",
   "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-provenance-activitiy-hl7-local",
+  "version": "0.9",
   "experimental": true,
   "publisher": "NFDI4Health",
   "contact": [

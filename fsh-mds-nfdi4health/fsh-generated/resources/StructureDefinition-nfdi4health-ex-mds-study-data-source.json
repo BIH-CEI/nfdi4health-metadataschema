@@ -85,28 +85,12 @@
       {
         "id": "Extension.extension:general.value[x]",
         "path": "Extension.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
         "min": 1,
         "type": [
           {
             "code": "Coding"
           }
-        ]
-      },
-      {
-        "id": "Extension.extension:general.valueCoding",
-        "path": "Extension.extension.valueCoding",
-        "min": 1,
-        "max": "1",
+        ],
         "binding": {
           "strength": "required",
           "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sources-general-umls-local",
@@ -114,13 +98,13 @@
         }
       },
       {
-        "id": "Extension.extension:general.valueCoding.system",
-        "path": "Extension.extension.valueCoding.system",
+        "id": "Extension.extension:general.value[x].system",
+        "path": "Extension.extension.value[x].system",
         "min": 1
       },
       {
-        "id": "Extension.extension:general.valueCoding.code",
-        "path": "Extension.extension.valueCoding.code",
+        "id": "Extension.extension:general.value[x].code",
+        "path": "Extension.extension.value[x].code",
         "min": 1
       },
       {
@@ -151,28 +135,12 @@
       {
         "id": "Extension.extension:biosamples.value[x]",
         "path": "Extension.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
         "min": 1,
         "type": [
           {
             "code": "Coding"
           }
-        ]
-      },
-      {
-        "id": "Extension.extension:biosamples.valueCoding",
-        "path": "Extension.extension.valueCoding",
-        "min": 1,
-        "max": "1",
+        ],
         "binding": {
           "strength": "required",
           "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-ds-biosamples-snomedct-nci-umls",
@@ -180,13 +148,13 @@
         }
       },
       {
-        "id": "Extension.extension:biosamples.valueCoding.system",
-        "path": "Extension.extension.valueCoding.system",
+        "id": "Extension.extension:biosamples.value[x].system",
+        "path": "Extension.extension.value[x].system",
         "min": 1
       },
       {
-        "id": "Extension.extension:biosamples.valueCoding.code",
-        "path": "Extension.extension.valueCoding.code",
+        "id": "Extension.extension:biosamples.value[x].code",
+        "path": "Extension.extension.value[x].code",
         "min": 1
       },
       {
@@ -217,28 +185,12 @@
       {
         "id": "Extension.extension:imaging.value[x]",
         "path": "Extension.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
         "min": 1,
         "type": [
           {
             "code": "Coding"
           }
-        ]
-      },
-      {
-        "id": "Extension.extension:imaging.valueCoding",
-        "path": "Extension.extension.valueCoding",
-        "min": 1,
-        "max": "1",
+        ],
         "binding": {
           "strength": "required",
           "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sources-imaging-nci",
@@ -246,13 +198,13 @@
         }
       },
       {
-        "id": "Extension.extension:imaging.valueCoding.system",
-        "path": "Extension.extension.valueCoding.system",
+        "id": "Extension.extension:imaging.value[x].system",
+        "path": "Extension.extension.value[x].system",
         "min": 1
       },
       {
-        "id": "Extension.extension:imaging.valueCoding.code",
-        "path": "Extension.extension.valueCoding.code",
+        "id": "Extension.extension:imaging.value[x].code",
+        "path": "Extension.extension.value[x].code",
         "min": 1
       },
       {
@@ -283,28 +235,12 @@
       {
         "id": "Extension.extension:omics.value[x]",
         "path": "Extension.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
         "min": 1,
         "type": [
           {
             "code": "Coding"
           }
-        ]
-      },
-      {
-        "id": "Extension.extension:omics.valueCoding",
-        "path": "Extension.extension.valueCoding",
-        "min": 1,
-        "max": "1",
+        ],
         "binding": {
           "strength": "required",
           "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sources-omics-nci-umls",
@@ -312,13 +248,13 @@
         }
       },
       {
-        "id": "Extension.extension:omics.valueCoding.system",
-        "path": "Extension.extension.valueCoding.system",
+        "id": "Extension.extension:omics.value[x].system",
+        "path": "Extension.extension.value[x].system",
         "min": 1
       },
       {
-        "id": "Extension.extension:omics.valueCoding.code",
-        "path": "Extension.extension.valueCoding.code",
+        "id": "Extension.extension:omics.value[x].code",
+        "path": "Extension.extension.value[x].code",
         "min": 1
       },
       {

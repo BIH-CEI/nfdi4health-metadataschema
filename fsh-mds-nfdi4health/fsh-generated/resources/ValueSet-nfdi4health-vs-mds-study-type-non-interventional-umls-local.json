@@ -5,8 +5,8 @@
   "id": "nfdi4health-vs-mds-study-type-non-interventional-umls-local",
   "title": "NFDI4Health VS MDS Study Type Non Interventional [UMLS, local]",
   "description": "Value set defining codes to specify the type of a non interventional study in a ResearchStudy resource.",
-  "version": "0.9",
   "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-type-non-interventional-umls-local",
+  "version": "0.9",
   "experimental": true,
   "publisher": "NFDI4Health",
   "contact": [

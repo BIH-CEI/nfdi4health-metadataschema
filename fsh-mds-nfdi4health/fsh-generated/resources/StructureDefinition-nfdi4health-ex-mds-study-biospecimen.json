@@ -79,28 +79,12 @@
       {
         "id": "Extension.extension:retention.value[x]",
         "path": "Extension.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
         "min": 1,
         "type": [
           {
             "code": "Coding"
           }
-        ]
-      },
-      {
-        "id": "Extension.extension:retention.valueCoding",
-        "path": "Extension.extension.valueCoding",
-        "min": 1,
-        "max": "1",
+        ],
         "binding": {
           "strength": "required",
           "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-biospecimen-retention-umls",
@@ -108,13 +92,13 @@
         }
       },
       {
-        "id": "Extension.extension:retention.valueCoding.system",
-        "path": "Extension.extension.valueCoding.system",
+        "id": "Extension.extension:retention.value[x].system",
+        "path": "Extension.extension.value[x].system",
         "min": 1
       },
       {
-        "id": "Extension.extension:retention.valueCoding.code",
-        "path": "Extension.extension.valueCoding.code",
+        "id": "Extension.extension:retention.value[x].code",
+        "path": "Extension.extension.value[x].code",
         "min": 1
       },
       {

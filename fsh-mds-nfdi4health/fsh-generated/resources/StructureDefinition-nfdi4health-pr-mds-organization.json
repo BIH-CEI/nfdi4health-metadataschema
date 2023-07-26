@@ -1,16 +1,6 @@
 {
   "resourceType": "StructureDefinition",
   "id": "nfdi4health-pr-mds-organization",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Base.Entities"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
-      "valueCode": "business"
-    }
-  ],
   "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization",
   "version": "0.9",
   "name": "NFDI4Health_PR_MDS_Organization",
