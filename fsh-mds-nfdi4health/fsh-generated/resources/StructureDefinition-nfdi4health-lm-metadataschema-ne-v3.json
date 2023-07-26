@@ -2,9 +2,10 @@
   "resourceType": "StructureDefinition",
   "id": "nfdi4health-lm-metadataschema-ne-v3",
   "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-ne-v3",
+  "version": "1.0",
   "name": "NFDI4Health_LM_Metadataschema_NE_V3",
   "title": "NFDI4Health LM Nutritional Epidemiology Metadataschema (UC 5.1) V3",
-  "status": "draft",
+  "status": "active",
   "publisher": "NFDI4Health",
   "contact": [
     {

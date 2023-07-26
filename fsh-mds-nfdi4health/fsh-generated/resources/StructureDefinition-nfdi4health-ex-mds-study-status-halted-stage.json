@@ -70,12 +70,28 @@
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "min": 1,
         "type": [
           {
             "code": "Coding"
           }
-        ],
+        ]
+      },
+      {
+        "id": "Extension.valueCoding",
+        "path": "Extension.valueCoding",
+        "min": 1,
+        "max": "1",
         "binding": {
           "strength": "required",
           "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-status-halted-stage-local",
@@ -83,13 +99,13 @@
         }
       },
       {
-        "id": "Extension.value[x].system",
-        "path": "Extension.value[x].system",
+        "id": "Extension.valueCoding.system",
+        "path": "Extension.valueCoding.system",
         "min": 1
       },
       {
-        "id": "Extension.value[x].code",
-        "path": "Extension.value[x].code",
+        "id": "Extension.valueCoding.code",
+        "path": "Extension.valueCoding.code",
         "min": 1
       }
     ]

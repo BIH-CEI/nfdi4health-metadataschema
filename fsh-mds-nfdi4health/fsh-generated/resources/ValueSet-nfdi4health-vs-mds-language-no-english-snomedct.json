@@ -5,8 +5,8 @@
   "id": "nfdi4health-vs-mds-language-no-english-snomedct",
   "title": "NFDI4Health VS MDS Language no english [SNOMED CT]",
   "description": "Value set defining codes to specify a language other than English.",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-language-no-english-snomedct",
   "version": "0.9",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-language-no-english-snomedct",
   "experimental": true,
   "publisher": "NFDI4Health",
   "contact": [

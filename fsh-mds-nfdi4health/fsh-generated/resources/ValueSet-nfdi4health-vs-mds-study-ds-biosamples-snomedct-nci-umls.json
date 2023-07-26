@@ -5,8 +5,8 @@
   "id": "nfdi4health-vs-mds-study-ds-biosamples-snomedct-nci-umls",
   "title": "NFDI4Health VS MDS Study Data Sources Biosamples [SNOMED CT, NCI, UMLS]",
   "description": "Value set defining codes to specify a biosample data source.",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-ds-biosamples-snomedct-nci-umls",
   "version": "0.9",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-ds-biosamples-snomedct-nci-umls",
   "experimental": true,
   "publisher": "NFDI4Health",
   "contact": [

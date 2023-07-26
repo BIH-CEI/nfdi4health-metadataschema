@@ -85,12 +85,28 @@
       {
         "id": "Extension.extension:overallStatus.value[x]",
         "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "min": 1,
         "type": [
           {
             "code": "Coding"
           }
-        ],
+        ]
+      },
+      {
+        "id": "Extension.extension:overallStatus.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "min": 1,
+        "max": "1",
         "binding": {
           "strength": "required",
           "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-overall-status-umls-local",
@@ -98,13 +114,13 @@
         }
       },
       {
-        "id": "Extension.extension:overallStatus.value[x].system",
-        "path": "Extension.extension.value[x].system",
+        "id": "Extension.extension:overallStatus.valueCoding.system",
+        "path": "Extension.extension.valueCoding.system",
         "min": 1
       },
       {
-        "id": "Extension.extension:overallStatus.value[x].code",
-        "path": "Extension.extension.value[x].code",
+        "id": "Extension.extension:overallStatus.valueCoding.code",
+        "path": "Extension.extension.valueCoding.code",
         "min": 1
       },
       {
@@ -136,12 +152,28 @@
       {
         "id": "Extension.extension:statusWhenIntervention.value[x]",
         "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "min": 1,
         "type": [
           {
             "code": "Coding"
           }
-        ],
+        ]
+      },
+      {
+        "id": "Extension.extension:statusWhenIntervention.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "min": 1,
+        "max": "1",
         "binding": {
           "strength": "required",
           "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-status-when-intervention-local",
@@ -149,13 +181,13 @@
         }
       },
       {
-        "id": "Extension.extension:statusWhenIntervention.value[x].system",
-        "path": "Extension.extension.value[x].system",
+        "id": "Extension.extension:statusWhenIntervention.valueCoding.system",
+        "path": "Extension.extension.valueCoding.system",
         "min": 1
       },
       {
-        "id": "Extension.extension:statusWhenIntervention.value[x].code",
-        "path": "Extension.extension.value[x].code",
+        "id": "Extension.extension:statusWhenIntervention.valueCoding.code",
+        "path": "Extension.extension.valueCoding.code",
         "min": 1
       },
       {
@@ -187,12 +219,28 @@
       {
         "id": "Extension.extension:recruitmentStatusRegister.value[x]",
         "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "min": 1,
         "type": [
           {
             "code": "Coding"
           }
-        ],
+        ]
+      },
+      {
+        "id": "Extension.extension:recruitmentStatusRegister.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "min": 1,
+        "max": "1",
         "binding": {
           "strength": "required",
           "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-recruitment-status-register-umls-local",
@@ -200,13 +248,13 @@
         }
       },
       {
-        "id": "Extension.extension:recruitmentStatusRegister.value[x].system",
-        "path": "Extension.extension.value[x].system",
+        "id": "Extension.extension:recruitmentStatusRegister.valueCoding.system",
+        "path": "Extension.extension.valueCoding.system",
         "min": 1
       },
       {
-        "id": "Extension.extension:recruitmentStatusRegister.value[x].code",
-        "path": "Extension.extension.value[x].code",
+        "id": "Extension.extension:recruitmentStatusRegister.valueCoding.code",
+        "path": "Extension.extension.valueCoding.code",
         "min": 1
       },
       {
@@ -237,12 +285,28 @@
       {
         "id": "Extension.extension:statusEnrollingByInvitation.value[x]",
         "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "min": 1,
         "type": [
           {
             "code": "Coding"
           }
-        ],
+        ]
+      },
+      {
+        "id": "Extension.extension:statusEnrollingByInvitation.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "min": 1,
+        "max": "1",
         "binding": {
           "strength": "required",
           "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-yes-no-not-applicable-snomedct",
@@ -250,13 +314,13 @@
         }
       },
       {
-        "id": "Extension.extension:statusEnrollingByInvitation.value[x].system",
-        "path": "Extension.extension.value[x].system",
+        "id": "Extension.extension:statusEnrollingByInvitation.valueCoding.system",
+        "path": "Extension.extension.valueCoding.system",
         "min": 1
       },
       {
-        "id": "Extension.extension:statusEnrollingByInvitation.value[x].code",
-        "path": "Extension.extension.value[x].code",
+        "id": "Extension.extension:statusEnrollingByInvitation.valueCoding.code",
+        "path": "Extension.extension.valueCoding.code",
         "min": 1
       },
       {

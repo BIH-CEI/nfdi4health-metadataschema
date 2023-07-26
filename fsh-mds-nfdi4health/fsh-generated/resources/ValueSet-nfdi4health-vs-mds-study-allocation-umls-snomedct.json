@@ -5,8 +5,8 @@
   "id": "nfdi4health-vs-mds-study-allocation-umls-snomedct",
   "title": "NFDI4Health VS MDS Study Allocation [UMLS, SNOMED CT]",
   "description": "Value set defining codes to specify the subject allocation in a study.",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-allocation-umls",
   "version": "0.9",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-allocation-umls",
   "experimental": true,
   "publisher": "NFDI4Health",
   "contact": [

@@ -5,8 +5,8 @@
   "id": "nfdi4health-vs-mds-study-data-sources-omics-nci-umls",
   "title": "NFDI4Health VS MDS Study Data Sources Omics [NCI, UMLS]",
   "description": "Value set defining codes to specify the primary purpose of a study in a ResearchStudy resource.",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sources-omics-nci-umls",
   "version": "0.9",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sources-omics-nci-umls",
   "experimental": true,
   "publisher": "NFDI4Health",
   "contact": [

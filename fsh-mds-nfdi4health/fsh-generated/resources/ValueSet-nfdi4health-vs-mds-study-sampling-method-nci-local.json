@@ -5,8 +5,8 @@
   "id": "nfdi4health-vs-mds-study-sampling-method-nci-local",
   "title": "NFDI4Health VS MDS Study Sampling Method [NCI, local]",
   "description": "Value set defining codes to specify types of sampling methods.",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-sampling-method-nci-local",
   "version": "0.9",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-sampling-method-nci-local",
   "experimental": true,
   "publisher": "NFDI4Health",
   "contact": [

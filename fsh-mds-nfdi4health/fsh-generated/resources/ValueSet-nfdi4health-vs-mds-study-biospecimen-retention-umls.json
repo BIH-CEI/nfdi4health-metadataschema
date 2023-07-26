@@ -5,8 +5,8 @@
   "id": "nfdi4health-vs-mds-study-biospecimen-retention-umls",
   "title": "NFDI4Health VS MDS Study Biospecimen Retention [UMLS]",
   "description": "Value set defining codes to specify which biosamples are retained in a biorepository.",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-biospecimen-retention-umls",
   "version": "0.9",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-biospecimen-retention-umls",
   "experimental": true,
   "publisher": "NFDI4Health",
   "contact": [

@@ -5,8 +5,8 @@
   "id": "nfdi4health-vs-mds-study-assessments-snomedct-umls",
   "title": "NFDI4Health VS MDS Study Assessments [SNOMED CT, UMLS]",
   "description": "Value set defining codes to specify an assessment in a ResearchStudy resource.",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-assessments-snomedct-umls",
   "version": "0.9",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-assessments-snomedct-umls",
   "experimental": true,
   "publisher": "NFDI4Health",
   "contact": [

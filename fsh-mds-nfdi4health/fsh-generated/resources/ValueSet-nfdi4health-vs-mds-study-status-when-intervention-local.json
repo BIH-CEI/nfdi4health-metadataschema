@@ -5,8 +5,8 @@
   "id": "nfdi4health-vs-mds-study-status-when-intervention-local",
   "title": "NFDI4Health VS MDS Study Status When Intervention [Local]",
   "description": "Value set defining codes to specify the status of a study in case of an intervention in a ResearchStudy resource.",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-status-when-intervention-local",
   "version": "0.9",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-status-when-intervention-local",
   "experimental": true,
   "publisher": "NFDI4Health",
   "contact": [

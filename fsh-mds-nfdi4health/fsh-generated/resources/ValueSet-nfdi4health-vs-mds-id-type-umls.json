@@ -5,8 +5,8 @@
   "id": "nfdi4health-vs-mds-id-type-umls",
   "title": "NFDI4Health VS MDS ID Type [UMLS]",
   "description": "Value set defining codes to specify the ID Type of the related resource.",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-id-type-umls",
   "version": "0.9",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-id-type-umls",
   "experimental": true,
   "publisher": "NFDI4Health",
   "contact": [

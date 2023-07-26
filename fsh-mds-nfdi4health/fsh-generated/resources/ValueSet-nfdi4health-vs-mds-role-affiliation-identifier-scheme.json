@@ -5,8 +5,8 @@
   "id": "nfdi4health-vs-mds-role-affiliation-identifier-scheme",
   "title": "NFDI4Health VS MDS Role Affiliation Identifier Scheme",
   "description": "Value set defining codes to specify the identifier scheme of an affiliation identifier.",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-role-affiliation-identifier-scheme",
   "version": "0.9",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-role-affiliation-identifier-scheme",
   "experimental": true,
   "publisher": "NFDI4Health",
   "contact": [

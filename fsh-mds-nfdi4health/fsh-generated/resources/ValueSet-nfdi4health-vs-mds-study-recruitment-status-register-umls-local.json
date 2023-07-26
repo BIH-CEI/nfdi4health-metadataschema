@@ -5,8 +5,8 @@
   "id": "nfdi4health-vs-mds-study-recruitment-status-register-umls-local",
   "title": "NFDI4Health VS MDS Study Recruitment Status Register [UMLS, Local]",
   "description": "Value set defining codes to specify the study recruitment status (from a register) in a ResearchStudy resource.",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-recruitment-status-register-umls-local",
   "version": "0.9",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-recruitment-status-register-umls-local",
   "experimental": true,
   "publisher": "NFDI4Health",
   "contact": [

@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "nfdi4health-ex-mds-study-masking",
   "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-masking",
+  "version": "1.0",
   "name": "NFDI4Health_EX_MDS_Study_Masking",
   "title": "NFDI4Health EX MDS Study Masking",
   "status": "draft",
@@ -118,12 +119,28 @@
       {
         "id": "Extension.extension:roles.value[x]",
         "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "min": 1,
         "type": [
           {
             "code": "Coding"
           }
-        ],
+        ]
+      },
+      {
+        "id": "Extension.extension:roles.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "min": 1,
+        "max": "1",
         "binding": {
           "strength": "required",
           "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-masking-roles-nci-local",
@@ -131,13 +148,13 @@
         }
       },
       {
-        "id": "Extension.extension:roles.value[x].system",
-        "path": "Extension.extension.value[x].system",
+        "id": "Extension.extension:roles.valueCoding.system",
+        "path": "Extension.extension.valueCoding.system",
         "min": 1
       },
       {
-        "id": "Extension.extension:roles.value[x].code",
-        "path": "Extension.extension.value[x].code",
+        "id": "Extension.extension:roles.valueCoding.code",
+        "path": "Extension.extension.valueCoding.code",
         "min": 1
       },
       {

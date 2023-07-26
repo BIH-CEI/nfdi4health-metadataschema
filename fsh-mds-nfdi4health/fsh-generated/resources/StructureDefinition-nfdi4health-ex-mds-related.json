@@ -93,8 +93,16 @@
       {
         "id": "Extension.extension:identifier.value[x]",
         "path": "Extension.extension.value[x]",
-        "short": "Identifier of the related resource",
-        "definition": "Identifier (ID) related to, or associated with, the resource being registered. These can be IDs of related publications, datasets, study documents, web pages, etc.",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "type": [
           {
             "code": "Identifier"
@@ -110,6 +118,38 @@
       {
         "id": "Extension.extension:identifier.value[x].system",
         "path": "Extension.extension.value[x].system",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.13.2 Resource.ids.scheme"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:identifier.value[x].value",
+        "path": "Extension.extension.value[x].value",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.13.1 Resource.ids.identifier"
+          },
+          {
+            "identity": "NFDI4Health",
+            "map": "1.14.1 Resource.idsNfdi4health.identifier"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:identifier.valueIdentifier",
+        "path": "Extension.extension.valueIdentifier",
+        "short": "Identifier of the related resource",
+        "definition": "Identifier (ID) related to, or associated with, the resource being registered. These can be IDs of related publications, datasets, study documents, web pages, etc.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:identifier.valueIdentifier.system",
+        "path": "Extension.extension.valueIdentifier.system",
         "slicing": {
           "discriminator": [
             {
@@ -124,28 +164,12 @@
           "strength": "required",
           "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-id-type-umls",
           "description": "Value set defining codes to specify the ID Type of the related resource."
-        },
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "1.13.2 Resource.ids.scheme"
-          }
-        ]
+        }
       },
       {
-        "id": "Extension.extension:identifier.value[x].value",
-        "path": "Extension.extension.value[x].value",
-        "min": 1,
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "1.13.1 Resource.ids.identifier"
-          },
-          {
-            "identity": "NFDI4Health",
-            "map": "1.14.1 Resource.idsNfdi4health.identifier"
-          }
-        ]
+        "id": "Extension.extension:identifier.valueIdentifier.value",
+        "path": "Extension.extension.valueIdentifier.value",
+        "min": 1
       },
       {
         "id": "Extension.extension:date",
@@ -213,12 +237,28 @@
       {
         "id": "Extension.extension:relationType.value[x]",
         "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "min": 1,
         "type": [
           {
             "code": "CodeableConcept"
           }
-        ],
+        ]
+      },
+      {
+        "id": "Extension.extension:relationType.valueCodeableConcept",
+        "path": "Extension.extension.valueCodeableConcept",
+        "min": 1,
+        "max": "1",
         "binding": {
           "strength": "required",
           "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-relation-type-ids-local-hl7v3",
@@ -253,11 +293,27 @@
       {
         "id": "Extension.extension:resourceTypeGeneral.value[x]",
         "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "type": [
           {
             "code": "CodeableConcept"
           }
-        ],
+        ]
+      },
+      {
+        "id": "Extension.extension:resourceTypeGeneral.valueCodeableConcept",
+        "path": "Extension.extension.valueCodeableConcept",
+        "min": 0,
+        "max": "1",
         "binding": {
           "strength": "required",
           "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-resource-type-general-nci-umls-local",
@@ -265,8 +321,8 @@
         }
       },
       {
-        "id": "Extension.extension:resourceTypeGeneral.value[x].text",
-        "path": "Extension.extension.value[x].text",
+        "id": "Extension.extension:resourceTypeGeneral.valueCodeableConcept.text",
+        "path": "Extension.extension.valueCodeableConcept.text",
         "max": "0"
       },
       {

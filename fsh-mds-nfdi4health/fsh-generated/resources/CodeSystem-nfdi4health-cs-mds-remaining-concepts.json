@@ -6,6 +6,7 @@
   "id": "nfdi4health-cs-mds-remaining-concepts",
   "title": "NFDI4Health CS MDS Remaining Concepts",
   "description": "Code system defining remaining concepts without mapping to concepts from international terminologies, ontologies, classifications, etc..",
+  "version": "0.9",
   "url": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
   "concept": [
     {
@@ -409,7 +410,6 @@
       "display": "w3id"
     }
   ],
-  "version": "0.9",
   "experimental": true,
   "publisher": "NFDI4Health",
   "contact": [

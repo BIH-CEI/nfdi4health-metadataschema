@@ -5,8 +5,8 @@
   "id": "nfdi4health-vs-mds-resource-type-umls-local",
   "title": "NFDI4Health VS MDS Resource Type [UMLS, Local]",
   "description": "Value set defining codes to specify type of the resource.",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-resource-type-umls-local",
   "version": "0.9",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-resource-type-umls-local",
   "experimental": true,
   "publisher": "NFDI4Health",
   "contact": [

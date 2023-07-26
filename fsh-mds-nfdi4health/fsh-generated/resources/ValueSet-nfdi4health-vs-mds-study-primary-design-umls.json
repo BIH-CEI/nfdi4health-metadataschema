@@ -5,8 +5,8 @@
   "id": "nfdi4health-vs-mds-study-primary-design-umls",
   "title": "NFDI4Health VS MDS Study Primary Design [UMLS]",
   "description": "Value set defining codes for primary designs of studies in a ResearchStudy resource.",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-primary-design-umls",
   "version": "0.9",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-primary-design-umls",
   "experimental": true,
   "publisher": "NFDI4Health",
   "contact": [

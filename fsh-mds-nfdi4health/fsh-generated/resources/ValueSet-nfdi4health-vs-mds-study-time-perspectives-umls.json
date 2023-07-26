@@ -5,8 +5,8 @@
   "id": "nfdi4health-vs-mds-study-time-perspectives-umls",
   "title": "NFDI4Health VS MDS Study Time Perspectives [UMLS]",
   "description": "Value set defining codes to specify the time perspective of a study in a ResearchStudy resource.",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-time-perspectives-umls",
   "version": "0.9",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-time-perspectives-umls",
   "experimental": true,
   "publisher": "NFDI4Health",
   "contact": [

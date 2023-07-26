@@ -5,8 +5,8 @@
   "id": "nfdi4health-vs-mds-use-rights-label-spdx-umls-local",
   "title": "NFDI4Health VS MDS Use Rights Label [SPDX, UMLS, Local]",
   "description": "Value set used to indicate the use rights related to a resource.",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-use-rights-label-spdx-umls-local",
   "version": "0.9",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-use-rights-label-spdx-umls-local",
   "experimental": true,
   "publisher": "NFDI4Health",
   "contact": [

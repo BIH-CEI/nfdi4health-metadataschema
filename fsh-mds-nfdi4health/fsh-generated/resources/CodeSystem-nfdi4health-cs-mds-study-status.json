@@ -6,6 +6,7 @@
   "id": "nfdi4health-cs-mds-study-status",
   "title": "NFDI4Health CS MDS Study Status",
   "description": "Code system defining concepts about different status of a study.",
+  "version": "0.9",
   "url": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-mds-study-status",
   "concept": [
     {
@@ -41,7 +42,6 @@
       "display": "Completed: Recruitment, data collection, and data quality management completed normally"
     }
   ],
-  "version": "0.9",
   "experimental": true,
   "publisher": "NFDI4Health",
   "contact": [

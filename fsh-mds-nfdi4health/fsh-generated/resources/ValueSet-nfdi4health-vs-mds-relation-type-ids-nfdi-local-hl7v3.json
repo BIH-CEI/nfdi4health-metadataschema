@@ -5,8 +5,8 @@
   "id": "nfdi4health-vs-mds-relation-type-ids-nfdi-local-hl7v3",
   "title": "NFDI4Health VS MDS Relation Type Ids NFDI [local, HL7 V3]",
   "description": "Value set defining codes to specify the relationship between two resources (both registered in NFDI4Health).",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-relation-type-ids-nfdi-local-hl7v3",
   "version": "0.9",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-relation-type-ids-nfdi-local-hl7v3",
   "experimental": true,
   "publisher": "NFDI4Health",
   "contact": [

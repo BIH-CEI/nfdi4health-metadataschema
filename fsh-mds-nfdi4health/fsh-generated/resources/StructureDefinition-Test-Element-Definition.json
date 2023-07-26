@@ -2,9 +2,10 @@
   "resourceType": "StructureDefinition",
   "id": "Test-Element-Definition",
   "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/Test-Element-Definition",
+  "version": "1.0",
   "name": "Test_Element_Definition",
   "title": "Test Element Definition",
-  "status": "draft",
+  "status": "active",
   "description": "Element Definition for a MDS item",
   "fhirVersion": "4.0.1",
   "mapping": [

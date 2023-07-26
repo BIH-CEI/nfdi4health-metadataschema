@@ -91,6 +91,16 @@
       {
         "id": "Extension.extension:generally.value[x]",
         "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "min": 1,
         "type": [
           {
@@ -99,13 +109,19 @@
         ]
       },
       {
-        "id": "Extension.extension:generally.value[x].system",
-        "path": "Extension.extension.value[x].system",
+        "id": "Extension.extension:generally.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:generally.valueCoding.system",
+        "path": "Extension.extension.valueCoding.system",
         "min": 1
       },
       {
-        "id": "Extension.extension:generally.value[x].code",
-        "path": "Extension.extension.value[x].code",
+        "id": "Extension.extension:generally.valueCoding.code",
+        "path": "Extension.extension.valueCoding.code",
         "min": 1
       },
       {

@@ -5,8 +5,8 @@
   "id": "nfdi4health-vs-mds-yes-no-undecided-snomedct-nci",
   "title": "NFDI4Health VS MDS Yes, No, Undecided [SNOMED CT, NCI]",
   "description": "Value set used to respond to questions that can be answered Yes, No, or Undecided",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-yes-no-undecided-snomedct-nci",
   "version": "0.9",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-yes-no-undecided-snomedct-nci",
   "experimental": true,
   "publisher": "NFDI4Health",
   "contact": [

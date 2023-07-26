@@ -1,6 +1,16 @@
 {
   "resourceType": "StructureDefinition",
   "id": "nfdi4health-pr-mds-questionnaire",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Specialized.Definitional Artifacts"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "business"
+    }
+  ],
   "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire",
   "version": "0.9",
   "name": "NFDI4Health_PR_MDS_Questionnaire",
@@ -46,58 +56,8 @@
       "name": "HL7 v2 Mapping"
     },
     {
-      "identity": "1.1"
-    },
-    {
-      "identity": "1.10.1"
-    },
-    {
-      "identity": "1.10.3.1"
-    },
-    {
-      "identity": "1.10.3.2.1"
-    },
-    {
-      "identity": "1.10.3.2.2"
-    },
-    {
-      "identity": "1.10.3.2.3"
-    },
-    {
-      "identity": "1.10.3.2.4"
-    },
-    {
-      "identity": "1.10.3.2"
-    },
-    {
-      "identity": "1.10.3.3"
-    },
-    {
-      "identity": "1.12"
-    },
-    {
-      "identity": "1.12.1"
-    },
-    {
-      "identity": "1.12.2"
-    },
-    {
-      "identity": "1.5.1"
-    },
-    {
-      "identity": "1.6.1"
-    },
-    {
-      "identity": "1.6.2"
-    },
-    {
-      "identity": "1.6"
-    },
-    {
-      "identity": "1.9"
-    },
-    {
-      "identity": "NFDI4Health"
+      "identity": "NFDI4Health",
+      "name": "NFDI4Health to FHIR Mapping"
     }
   ],
   "kind": "resource",
@@ -137,8 +97,8 @@
         ],
         "mapping": [
           {
-            "identity": "1.9",
-            "map": "resource_web_page",
+            "identity": "NFDI4Health",
+            "map": "1.9 resource_web_page",
             "comment": "Other web pages related to the resource can additionally be entered in the section \"Related resources\"."
           }
         ]
@@ -261,14 +221,7 @@
         "id": "Questionnaire.identifier.system",
         "path": "Questionnaire.identifier.system",
         "min": 1,
-        "fixedUri": "NFDI4Health",
-        "mapping": [
-          {
-            "identity": "1.1",
-            "map": "resource_identifier",
-            "comment": "The namespace for the identifier value"
-          }
-        ]
+        "fixedUri": "NFDI4Health"
       },
       {
         "id": "Questionnaire.identifier.value",
@@ -276,8 +229,8 @@
         "min": 1,
         "mapping": [
           {
-            "identity": "1.1",
-            "map": "resource_identifier",
+            "identity": "NFDI4Health",
+            "map": "1.1 resource_identifier",
             "comment": "The value that is unique"
           }
         ]
@@ -291,8 +244,8 @@
         "max": "1",
         "mapping": [
           {
-            "identity": "1.12",
-            "map": "ids_alternative"
+            "identity": "NFDI4Health",
+            "map": "1.12 ids_alternative"
           }
         ]
       },
@@ -301,8 +254,8 @@
         "path": "Questionnaire.identifier.system",
         "mapping": [
           {
-            "identity": "1.12.1",
-            "map": "type"
+            "identity": "NFDI4Health",
+            "map": "1.12.1 type"
           }
         ]
       },
@@ -311,8 +264,8 @@
         "path": "Questionnaire.identifier.value",
         "mapping": [
           {
-            "identity": "1.12.2",
-            "map": "identifier"
+            "identity": "NFDI4Health",
+            "map": "1.12.2 identifier"
           }
         ]
       },
@@ -323,8 +276,8 @@
         "definition": "If existing, the version number of the resource.",
         "mapping": [
           {
-            "identity": "1.10.1",
-            "map": "resource_version",
+            "identity": "NFDI4Health",
+            "map": "1.10.1 resource_version",
             "comment": "The identifier that is used to identify this version of the questionnaire when it is referenced in a specification, model, design or instance. This is an arbitrary value managed by the questionnaire author and is not expected to be globally unique. For example, it might be a timestamp (e.g. yyyymmdd) if a managed version is not available. There is also no expectation that versions can be placed in a lexicographical sequence."
           }
         ]
@@ -383,8 +336,8 @@
         "min": 1,
         "mapping": [
           {
-            "identity": "1.5.1",
-            "map": "resource_description_english",
+            "identity": "NFDI4Health",
+            "map": "1.5.1 resource_description_english",
             "comment": "A short plain text summary describing the resource in English.",
             "language": "English"
           }
@@ -419,8 +372,8 @@
         ],
         "mapping": [
           {
-            "identity": "1.6",
-            "map": "Resource.resource_descriptions_non_english"
+            "identity": "NFDI4Health",
+            "map": "1.6 Resource.resource_descriptions_non_english"
           }
         ]
       },
@@ -439,8 +392,8 @@
         },
         "mapping": [
           {
-            "identity": "1.6.2",
-            "map": "resource_descriptions_non_english.language"
+            "identity": "NFDI4Health",
+            "map": "1.6.2 resource_descriptions_non_english.language"
           }
         ]
       },
@@ -454,8 +407,8 @@
         "path": "Questionnaire.description.extension.extension.value[x]",
         "mapping": [
           {
-            "identity": "1.6.1",
-            "map": "resource_descriptions_non_english.text"
+            "identity": "NFDI4Health",
+            "map": "1.6.1 resource_descriptions_non_english.text"
           }
         ]
       },
@@ -466,8 +419,8 @@
         "definition": "Any additional descriptive information explaining terms and conditions to (re-)use the resource.",
         "mapping": [
           {
-            "identity": "1.10.3.3",
-            "map": "resource_use_rights_description"
+            "identity": "NFDI4Health",
+            "map": "1.10.3.3 resource_use_rights_description"
           }
         ]
       },
@@ -498,12 +451,6 @@
               "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-copyright-label"
             ]
           }
-        ],
-        "mapping": [
-          {
-            "identity": "1.10.3.1",
-            "map": "resource_use_rights_label"
-          }
         ]
       },
       {
@@ -522,19 +469,8 @@
         ],
         "mapping": [
           {
-            "identity": "1.10.3.2",
+            "identity": "NFDI4Health",
             "map": "resource_use_rights_confirmations"
-          }
-        ]
-      },
-      {
-        "id": "Questionnaire.copyright.extension:useRightsConfimations.extension:supportByLicensing",
-        "path": "Questionnaire.copyright.extension.extension",
-        "sliceName": "supportByLicensing",
-        "mapping": [
-          {
-            "identity": "1.10.3.2.4",
-            "map": "resource_use_rights_support_by_licencing"
           }
         ]
       }

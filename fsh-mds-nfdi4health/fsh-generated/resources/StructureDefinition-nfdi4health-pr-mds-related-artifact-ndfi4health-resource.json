@@ -76,8 +76,14 @@
         ]
       },
       {
-        "id": "RelatedArtifact.extension:identifier.value[x].system",
-        "path": "RelatedArtifact.extension.value[x].system",
+        "id": "RelatedArtifact.extension:identifier.valueIdentifier",
+        "path": "RelatedArtifact.extension.valueIdentifier",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "RelatedArtifact.extension:identifier.valueIdentifier.system",
+        "path": "RelatedArtifact.extension.valueIdentifier.system",
         "patternUri": "https://www.nfdihealth.de"
       },
       {

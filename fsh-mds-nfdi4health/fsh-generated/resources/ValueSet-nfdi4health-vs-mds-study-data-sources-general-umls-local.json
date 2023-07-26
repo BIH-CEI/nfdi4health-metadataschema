@@ -5,8 +5,8 @@
   "id": "nfdi4health-vs-mds-study-data-sources-general-umls-local",
   "title": "NFDI4Health VS MDS Study Data Sources General [UMLS, local]",
   "description": "Value set defining codes to specify the general study data sources.",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sources-general-umls-local",
   "version": "0.9",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sources-general-umls-local",
   "experimental": true,
   "publisher": "NFDI4Health",
   "contact": [

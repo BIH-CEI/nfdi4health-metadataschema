@@ -5,8 +5,8 @@
   "id": "nfdi4health-vs-mds-study-groups-of-diseases-icd10",
   "title": "NFDI4Health VS MDS Study Groups Of Diseases [ICD 10]",
   "description": "Value set defining codes to specify other diseases or conditions on which the data were collected in the study.",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-groups-of-diseases-icd10",
   "version": "0.9",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-groups-of-diseases-icd10",
   "experimental": true,
   "publisher": "NFDI4Health",
   "contact": [
