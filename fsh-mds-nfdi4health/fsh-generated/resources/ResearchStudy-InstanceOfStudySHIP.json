@@ -1,6 +1,6 @@
 {
   "resourceType": "ResearchStudy",
-  "id": "InstanceOfStudy",
+  "id": "InstanceOfStudySHIP",
   "meta": {
     "profile": [
       "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"

@@ -162,7 +162,7 @@
         "path": "Provenance.activity.coding",
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-provenance-activitiy-hl7-local",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-provenance-activity-hl7-local",
           "description": "Value set defining codes for activity types."
         }
       },

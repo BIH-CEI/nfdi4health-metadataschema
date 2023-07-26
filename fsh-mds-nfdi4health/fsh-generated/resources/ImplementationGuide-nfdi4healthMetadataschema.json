@@ -86,7 +86,7 @@
       },
       {
         "reference": {
-          "reference": "Practitioner/PractitionerExample1"
+          "reference": "Practitioner/InstanceOfPractitioner_Kathleen_Merikangas"
         },
         "name": "Example of the NFDI4Health PR MDS Practitioner",
         "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner"
@@ -103,6 +103,20 @@
           "reference": "Provenance/ProvenanceExample"
         },
         "name": "Example of the NFDI4Health PR MDS Provenance profil",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-provenance"
+      },
+      {
+        "reference": {
+          "reference": "Provenance/InstanceOfProvenance_Automatically_Uploaded_From_CTgov"
+        },
+        "name": "Example of the NFDI4Health PR MDS Provenance profile for a resource automatically uploaded from CT.gov",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-provenance"
+      },
+      {
+        "reference": {
+          "reference": "Provenance/InstanceOfProvenance_Manually_Collected"
+        },
+        "name": "Example of the NFDI4Health PR MDS Provenance profile for a resource manually collected",
         "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-provenance"
       },
       {
@@ -680,7 +694,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/nfdi4health-vs-mds-provenance-activitiy-hl7-local"
+          "reference": "ValueSet/nfdi4health-vs-mds-provenance-activity-hl7-local"
         },
         "name": "NFDI4Health VS MDS Provenance Activity [HL7, local]",
         "description": "Value set defining codes for activity types.",
@@ -1087,7 +1101,7 @@
       },
       {
         "reference": {
-          "reference": "ResearchStudy/InstanceOfStudy"
+          "reference": "ResearchStudy/InstanceOfStudySHIP"
         },
         "name": "SHIP Trend study",
         "description": "Example data from the SHIP Trend study - Study of Health in Pomerania Trend",

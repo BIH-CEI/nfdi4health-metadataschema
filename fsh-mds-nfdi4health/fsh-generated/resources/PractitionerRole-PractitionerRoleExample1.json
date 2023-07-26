@@ -16,6 +16,6 @@
     }
   ],
   "practitioner": {
-    "reference": "Practitioner/PractitionerExample1"
+    "reference": "PractitionerExample1"
   }
 }

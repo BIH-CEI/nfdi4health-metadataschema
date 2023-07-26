@@ -5,9 +5,11 @@
 [InstanceOfGroupIntended]: Group-InstanceOfGroupIntended.html
 [OrganizationExample1]: Organization-OrganizationExample1.html
 [OrganizationPublicExample]: Organization-OrganizationPublicExample.html
-[PractitionerExample1]: Practitioner-PractitionerExample1.html
+[InstanceOfPractitioner_Kathleen_Merikangas]: Practitioner-InstanceOfPractitioner_Kathleen_Merikangas.html
 [PractitionerRoleExample1]: PractitionerRole-PractitionerRoleExample1.html
 [ProvenanceExample]: Provenance-ProvenanceExample.html
+[InstanceOfProvenance_Automatically_Uploaded_From_CTgov]: Provenance-InstanceOfProvenance_Automatically_Uploaded_From_CTgov.html
+[InstanceOfProvenance_Manually_Collected]: Provenance-InstanceOfProvenance_Manually_Collected.html
 [QuestionnaireExample]: Questionnaire-QuestionnaireExample.html
 [NFDI4Health_CS_MDS_Provenance_Data_Source]: CodeSystem-nfdi4health-cs-mds-provenance-data-source.html
 [NFDI4Health_CS_MDS_Remaining_Concepts]: CodeSystem-nfdi4health-cs-mds-remaining-concepts.html
@@ -80,7 +82,7 @@
 [NFDI4Health_VS_MDS_Mortality_Data_NCI_SNOMEDCT]: ValueSet-nfdi4health-vs-mds-mortality-data-nci-snomedct.html
 [NFDI4Health_VS_MDS_Organisational_Roles_NCI_Local]: ValueSet-nfdi4health-vs-mds-organisational-roles-nci-local.html
 [NFDI4Health_VS_MDS_Personal_Roles_NCI_UMLS_Local]: ValueSet-nfdi4health-vs-mds-personal-roles-nci-umls-local.html
-[NFDI4Health_VS_MDS_Provenance_Actity_HL7_Local]: ValueSet-nfdi4health-vs-mds-provenance-activitiy-hl7-local.html
+[NFDI4Health_VS_MDS_Provenance_Activity_HL7_Local]: ValueSet-nfdi4health-vs-mds-provenance-activity-hl7-local.html
 [NFDI4Health_VS_MDS_Provenance_Data_Source_Local]: ValueSet-nfdi4health-vs-mds-provenance-data-source-local.html
 [NFDI4Health_VS_MDS_Time_Units_UCUM_UMLS]: ValueSet-nfdi4health-vs-mds-time-units-ucum-umls.html
 [NFDI4Health_VS_MDS_Relation_Type_Ids_Nfdi_Local_HL7V3]: ValueSet-nfdi4health-vs-mds-relation-type-ids-nfdi-local-hl7v3.html
@@ -131,5 +133,5 @@
 [NFDI4Health_VS_MDS_Yes_No_Undecided_SNOMEDCT_NCI]: ValueSet-nfdi4health-vs-mds-yes-no-undecided-snomedct-nci.html
 [nfdi4health-exa-mds]: Questionnaire-nfdi4health-exa-mds.html
 [NFDI4Health_EX_MDS_Related]: StructureDefinition-nfdi4health-ex-mds-related.html
-[InstanceOfStudy]: ResearchStudy-InstanceOfStudy.html
+[InstanceOfStudySHIP]: ResearchStudy-InstanceOfStudySHIP.html
 [Test_Element_Definition]: StructureDefinition-Test-Element-Definition.html

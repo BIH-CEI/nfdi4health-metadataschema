@@ -1,4 +1,4 @@
-Instance: InstanceOfProvenance_Automatically_Uploaded_From_CTgov
+Instance: InstanceOfProvenanceAutomaticallyUploadedFromCTgov
 InstanceOf: NFDI4Health_PR_MDS_Provenance
 Title: "Example of the NFDI4Health PR MDS Provenance profile for a resource automatically uploaded from CT.gov"
 Usage: #example
