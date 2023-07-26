@@ -1,7 +1,7 @@
 Instance: InstanceOfGroupActual
 InstanceOf: NFDI4Health_PR_MDS_Group_Actual
 Usage: #example
-Title: "Actual group of study participants in SHIP Trend study"
+Title: "Instance Of Group Actual"
 Description: "Example data about actual study participants in the SHIP Trend study - Study of Health in Pomerania Trend"
 * type = #person
 * actual = true

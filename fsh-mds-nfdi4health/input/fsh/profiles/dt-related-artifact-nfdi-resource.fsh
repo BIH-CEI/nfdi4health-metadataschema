@@ -21,7 +21,9 @@ Description: "Profile of a RelatedArtifact intended to capture information about
 * extension contains 
     $ElementIdentifier named identifier 1..1 and
     $NFDI4HealthRelType named relationType 0..1
-* extension[identifier].valueIdentifier.system = "https://www.nfdihealth.de"
+* extension[identifier].valueIdentifier.value 1..1
+* extension[identifier].valueIdentifier.system 1..1
+* extension[identifier].valueIdentifier.system = "https://www.nfdihealth.de" (exactly)
 
 Mapping: NFDI4Health-Related-Artifact-NFDI4Health-Resource-to-FHIR
 Id: NFDI4Health

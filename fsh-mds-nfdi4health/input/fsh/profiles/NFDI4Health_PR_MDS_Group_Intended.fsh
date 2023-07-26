@@ -23,7 +23,7 @@ Title: "NFDI4Health PR MDS Group Intended"
 * characteristic contains
     eligibleMinimumAge 0..1 and
     eligibleMaximumAge 0..1 and
-    gender 0..1
+    gender 0..*
 * characteristic[eligibleMinimumAge] ^short = "Eligibility criteria: Minimum age"
 * characteristic[eligibleMinimumAge] ^definition = "Group of items providing information about the minimum eligible age of study participants."
 * characteristic[eligibleMinimumAge].code = $NCI#C49693 "Planned Minimum Age of Subjects (Group Attribute)" (exactly)

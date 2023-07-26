@@ -1,11 +1,13 @@
 Instance: InstanceOfStudySHIP
 InstanceOf: NFDI4Health_PR_MDS_Study
-Title: "SHIP Trend study"
+Title: "Instance of Study SHIP"
 Description: "Example data from the SHIP Trend study - Study of Health in Pomerania Trend"
 Usage: #example
 
 //General information
+* identifier[NFDI4Health].value = "NFDI123456789" //made up, as not displayed in CSH
 * title = "Study of Health in Pomerania - TREND"
+* title.extension[language].valueCode = #en "English"
 ///English description of the Study
 * description = "SHIP-TREND is a population-based cohort study. It has two main objectives: To assess prevalence and incidence of common risk factors, subclinical disorders and clinical diseases and to investigate the complex associations among risk factors, subclinical disorders and clinical diseases. A particular characteristic of SHIP-TREND is that it does not focus on a selected disease; it rather attempts to describe health-related conditions with the widest focus possible. Important medical areas of investigation include cardiovascular diseases, diabetes mellitus, liver and biliary tract diseases, neurological diseases, thyroid diseases, dental diseases, lung diseases, addiction and risk behaviour, among others. SHIP-TREND is part of the SHIP project with two other independent cohorts, SHIP-START and SHIP-NEXT."
 * description.extension[language].valueCode = #en "English"
@@ -25,8 +27,8 @@ Usage: #example
 * period.start = 2008-09-22 //original format needed to be converted
 /// Study Design Details
 * category[primaryDesign].coding = $UMLS#C4684718 "Non-Interventional Study (Research Activity)"
-* category[studyTypeNonInterventional].coding[0] = $UMLS#C0009247 "Cohort Studies (Quantitative Concept)"
-* category[studyTypeNonInterventional].coding[+] = $UMLS#C0023981 "Longitudinal Studies (Research Activity)"
+* category[studyTypeNonInterventional][0].coding = $UMLS#C0009247 "Cohort Studies (Quantitative Concept)"
+* category[studyTypeNonInterventional][1].coding = $UMLS#C0023981 "Longitudinal Studies (Research Activity)"
 * extension[subject].valueCoding = $SCT#125676002 "Person (person)"
 * extension[studyGroupsOfDiseases].extension[generally][0].valueCoding = $ICD11#01 "Certain infectious or parasitic diseases"
 * extension[studyGroupsOfDiseases].extension[generally][+].valueCoding = $ICD11#03 "Diseases of the blood or blood-forming organs"
@@ -86,6 +88,8 @@ Usage: #example
 * category[timePerspectives].coding = $UMLS#C0033522 "Prospective Studies (Research Activty)"
 * extension[biospecimen].extension[retention].valueCoding = $UMLS#C4288286 "Retained Specimens Contain DNA (Conceptual Entity)"
 * extension[biospecimen].extension[description].valueString = "Whole blood; Saliva"
+* extension[nutritionalData].valueBoolean = false //made up, as no information in CSH
+* extension[chronicDiseases].valueBoolean = false //made up, as no information in CSH
 /// Information about data sharing
 * extension[dataSharingPlan].extension[generally].valueCoding = $SCT#373066001 "Yes (qualifier value)"
 * extension[dataSharingPlan].extension[description].valueString = "SHIP also shares biomaterials."
@@ -98,21 +102,34 @@ Usage: #example
 /// Primary health condition(s), disease(s) or focus of the study - modelling must be changed because not possible to have "other vocabulary" or "freetext" as system
 
 /// Eligibility criteria for study participants
-////* enrollment.valueReference = NFDI4Health_PR_MDS_Group_Intended
 * enrollment[0] = Reference(InstanceOfGroupIntended)
 * extension[inclusionCriteria].valueString = "-meeting the age range -first place of residence in the target region Pomerania (Vorpommern / West Pomerania)"
 * extension[exclusionCriteria].valueString = "-persons not being able to understand German"
 /// Study Population
-//// countries
-//// regions cities
+* location[countries] = $iso3166#DE "Germany"
+* location[regions] = $iso3166-2#DE-MV "Mecklenburg-Vorpommern"
 * site.extension[centers].extension[monoOrMulti].valueCoding = $Remaining#084 "Monocentric"
-//// description study pop
+* extension[population].valueString = "Adults from the general population meeting the criteria stated above."
 * enrollment[+] = Reference(InstanceOfGroupActual)
-//// obtained sample size
-//// actual minimum
 
 // Roles
-
-
+* extension[roles].extension[party].valueReference = Reference(InstanceOfOrganizationResearchGroup) 
+* extension[roles].extension[nameType].valueCoding = $UMLS#C0220885 "Organizational (Qualitative Concept)"
+* extension[roles].extension[roleOrganisational].valueCoding = $Remaining#048 "Research Group"
 // Related resources
-
+* relatedArtifact[NFDI4HealthResource][0].extension[identifier].valueIdentifier.value = "e2ddee95749b4bcfac3152d9a35115c9"
+* relatedArtifact[NFDI4HealthResource][=].extension[relationType].valueCoding = $HL7V3ActRelationType#COMP "has component"
+* relatedArtifact[NFDI4HealthResource][=].type = #documentation // per default as the VS is required in FHIR
+* relatedArtifact[NFDI4HealthResource][+].extension[identifier].valueIdentifier.value = "ea31c8a1199849378ea0604004efd7a2"
+* relatedArtifact[NFDI4HealthResource][=].extension[relationType].valueCoding = $HL7V3ActRelationType#COMP "has component"
+* relatedArtifact[NFDI4HealthResource][=].type = #documentation // per default as the VS is required in FHIR
+* relatedArtifact[nonNFDI4HealthResource][0].extension[identifier].valueIdentifier.value = "10.1093/ije/dyac034"
+* relatedArtifact[nonNFDI4HealthResource][=].extension[identifier].valueIdentifier.type = $UMLS#C2348291 "Digital Object Identifier (Intellectual Product)"
+* relatedArtifact[nonNFDI4HealthResource][=].extension[relationType].valueCoding = $Remaining#059 "A is described by B"
+* relatedArtifact[nonNFDI4HealthResource][=].extension[resourceTypeGeneral].valueCoding = $UMLS#C0282420 "Journal Article (Intellectual Product)"
+* relatedArtifact[nonNFDI4HealthResource][=].type = #documentation // per default as the VS is required in FHIR
+* relatedArtifact[nonNFDI4HealthResource][+].extension[identifier].valueIdentifier.value = "10.1093/ije/dyp394"
+* relatedArtifact[nonNFDI4HealthResource][=].extension[identifier].valueIdentifier.type = $UMLS#C2348291 "Digital Object Identifier (Intellectual Product)"
+* relatedArtifact[nonNFDI4HealthResource][=].extension[relationType].valueCoding = $Remaining#059 "A is described by B"
+* relatedArtifact[nonNFDI4HealthResource][=].extension[resourceTypeGeneral].valueCoding = $UMLS#C0282420 "Journal Article (Intellectual Product)"
+* relatedArtifact[nonNFDI4HealthResource][=].type = #documentation // per default as the VS is required in FHIR

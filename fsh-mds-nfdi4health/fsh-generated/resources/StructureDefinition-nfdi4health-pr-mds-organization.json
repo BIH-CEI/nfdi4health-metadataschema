@@ -319,6 +319,16 @@
         "short": "Address of the organisation",
         "definition": "Address of the organisation associated with the role.",
         "min": 1
+      },
+      {
+        "id": "Organization.partOf",
+        "path": "Organization.partOf",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.11.6 Resources.roles.affiliation"
+          }
+        ]
       }
     ]
   }

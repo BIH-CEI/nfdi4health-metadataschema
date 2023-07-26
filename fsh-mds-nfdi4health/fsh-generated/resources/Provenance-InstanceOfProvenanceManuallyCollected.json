@@ -1,6 +1,6 @@
 {
   "resourceType": "Provenance",
-  "id": "InstanceOfProvenance_Manually_Collected",
+  "id": "InstanceOfProvenanceManuallyCollected",
   "meta": {
     "profile": [
       "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-provenance"
@@ -34,7 +34,7 @@
   "agent": [
     {
       "who": {
-        "reference": "Practitioner/InstanceOfPractitioner_Kathleen_Merikangas"
+        "reference": "Practitioner/InstanceOfPractitionerKathleenMerikangas"
       }
     }
   ]

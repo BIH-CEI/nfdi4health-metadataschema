@@ -1,7 +1,7 @@
 Instance: InstanceOfGroupIntended
 InstanceOf: NFDI4Health_PR_MDS_Group_Intended
 Usage: #example
-Title: "Eligibility information from SHIP Trend study"
+Title: "Instance Of Group Intended"
 Description: "Example data of eligibility information from the SHIP Trend study - Study of Health in Pomerania Trend"
 * type = #person
 * actual = false

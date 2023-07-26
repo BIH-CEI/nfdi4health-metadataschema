@@ -73,6 +73,7 @@
       {
         "id": "RelatedArtifact.extension:identifier.value[x].type",
         "path": "RelatedArtifact.extension.value[x].type",
+        "min": 1,
         "binding": {
           "strength": "required",
           "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-identifier-type-related-artifact-umls-local",
@@ -88,6 +89,7 @@
       {
         "id": "RelatedArtifact.extension:identifier.value[x].value",
         "path": "RelatedArtifact.extension.value[x].value",
+        "min": 1,
         "mapping": [
           {
             "identity": "NFDI4Health",

@@ -17,10 +17,10 @@ Description: "Extension providing information about the relation type of this re
 * . ^definition = "Relationship between the resource being registered (A) and the related resource (B)."
 * value[x] 1..1
 * value[x] only Coding
-* value[x].code 1..1
-* value[x].system 1..1
-* value[x] from $nfdi4health-vs-mds-relation-type-ids-nfdi-local-hl7v3 (required)
-* value[x] ^binding.description = "Value set defining codes to specify the relationship between two resources (both registered in NFDI4Health)."
+* valueCoding.code 1..1
+* valueCoding.system 1..1
+* valueCoding from $nfdi4health-vs-mds-relation-type-ids-nfdi-local-hl7v3 (required)
+* valueCoding ^binding.description = "Value set defining codes to specify the relationship between two resources (both registered in NFDI4Health)."
 
 Mapping: NFDI4Health-Related-Artifact-Relation-Type-NFDI4Health-Resource-to-FHIR
 Id: NFDI4Health

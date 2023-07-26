@@ -129,7 +129,7 @@ Description: "Resource covering metadata of a study."
 * title.extension contains NFDI4Health_EX_MDS_Language named language 1..1
 * title.extension[language] ^short = "Language of the title/name"
 * title.extension[language] ^definition = "Language of the title/name"
-* title.extension[language].valueCode from CommonLanguages (required)
+* title.extension[language].valueCode from $CommonLanguages (required)
 * title.extension[language].valueCode ^binding.description = "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)"
 * status = #active (exactly)
 * status ^comment = "The item does not exist in NFDI4Health' MDS. Fixed to 'active' for all studies."

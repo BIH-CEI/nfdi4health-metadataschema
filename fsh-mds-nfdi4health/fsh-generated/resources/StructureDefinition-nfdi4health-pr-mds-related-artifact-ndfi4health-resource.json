@@ -78,7 +78,13 @@
       {
         "id": "RelatedArtifact.extension:identifier.value[x].system",
         "path": "RelatedArtifact.extension.value[x].system",
-        "patternUri": "https://www.nfdihealth.de"
+        "min": 1,
+        "fixedUri": "https://www.nfdihealth.de"
+      },
+      {
+        "id": "RelatedArtifact.extension:identifier.value[x].value",
+        "path": "RelatedArtifact.extension.value[x].value",
+        "min": 1
       },
       {
         "id": "RelatedArtifact.extension:relationType",

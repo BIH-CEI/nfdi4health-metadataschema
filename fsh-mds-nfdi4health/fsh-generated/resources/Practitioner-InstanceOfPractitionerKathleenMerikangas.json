@@ -1,6 +1,6 @@
 {
   "resourceType": "Practitioner",
-  "id": "InstanceOfPractitioner_Kathleen_Merikangas",
+  "id": "InstanceOfPractitionerKathleenMerikangas",
   "meta": {
     "profile": [
       "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner"

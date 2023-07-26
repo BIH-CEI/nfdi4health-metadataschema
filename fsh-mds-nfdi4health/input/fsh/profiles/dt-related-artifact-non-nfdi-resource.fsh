@@ -28,6 +28,8 @@ Description: "Profile of a RelatedArtifact intended to capture information about
     $NonNFDI4HealthRelType named relationType 1..1 and
     $ResourceTypeGeneral named resourceTypeGeneral 0..1 
 
+* extension[identifier].valueIdentifier.value 1..1
+* extension[identifier].valueIdentifier.type 1..1
 * extension[identifier].valueIdentifier.type from $nfdi4health-vs-mds-identifier-type-related-artifact-umls-local (required)
 * extension[identifier].valueIdentifier.type ^binding.description = "Value set defining codes to specify the ID Type of the related resource."
 

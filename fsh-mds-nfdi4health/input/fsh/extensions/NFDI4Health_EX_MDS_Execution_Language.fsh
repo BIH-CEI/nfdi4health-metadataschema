@@ -19,7 +19,7 @@ Description: "Extension provinding information about the language in which a stu
 * url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-execution-language" (exactly)
 * value[x] 1..
 * value[x] only code
-* valueCode from $valueset-languages.html (required)
+* valueCode from $CommonLanguages (required)
 * valueCode ^binding.description = "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)"
 * valueCode ^short = "A human language."
 * valueCode ^definition = "A human language."

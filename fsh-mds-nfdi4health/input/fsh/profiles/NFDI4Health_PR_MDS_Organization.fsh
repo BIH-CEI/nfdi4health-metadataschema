@@ -115,3 +115,4 @@ Source: NFDI4Health_PR_MDS_Organization
 * telecom[phone] -> "1.11.5 Resource.roles.phone"
 * telecom[webpage] -> "1.11.6.3 Resource.roles.affiliation.webpage"
 * address -> "1.11.6.2 Resource.roles.affiliation.address"
+* partOf -> "1.11.6 Resources.roles.affiliation"

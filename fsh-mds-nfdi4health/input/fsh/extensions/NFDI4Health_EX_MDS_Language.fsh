@@ -18,5 +18,5 @@ Description: "Language of an element."
 * . ^definition = "Language of an element."
 * value[x] 1..
 * value[x] only code
-* value[x] from CommonLanguages (required)
+* value[x] from $CommonLanguages (required)
 * value[x] ^binding.description = "A human language."

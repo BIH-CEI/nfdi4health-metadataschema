@@ -969,7 +969,7 @@
         "path": "ResearchStudy.title.extension.value[x]",
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/ValueSet/languages",
+          "valueSet": "http://hl7.org/fhir/ValueSet/all-languages",
           "description": "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)"
         }
       },

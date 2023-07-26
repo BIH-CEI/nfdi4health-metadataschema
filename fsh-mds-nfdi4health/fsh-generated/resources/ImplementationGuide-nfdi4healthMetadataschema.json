@@ -33,14 +33,6 @@
     "resource": [
       {
         "reference": {
-          "reference": "Group/InstanceOfGroupActual"
-        },
-        "name": "Actual group of study participants in SHIP Trend study",
-        "description": "Example data about actual study participants in the SHIP Trend study - Study of Health in Pomerania Trend",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-group-actual"
-      },
-      {
-        "reference": {
           "reference": "CodeSystem/Mlstr-additional"
         },
         "name": "Additional information",
@@ -64,14 +56,6 @@
       },
       {
         "reference": {
-          "reference": "Group/InstanceOfGroupIntended"
-        },
-        "name": "Eligibility information from SHIP Trend study",
-        "description": "Example data of eligibility information from the SHIP Trend study - Study of Health in Pomerania Trend",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-group-intended"
-      },
-      {
-        "reference": {
           "reference": "Organization/OrganizationExample1"
         },
         "name": "Example of the NFDI4Health PR MDS Organization",
@@ -83,13 +67,6 @@
         },
         "name": "Example of the NFDI4Health PR MDS Organization Public",
         "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
-      },
-      {
-        "reference": {
-          "reference": "Practitioner/InstanceOfPractitioner_Kathleen_Merikangas"
-        },
-        "name": "Example of the NFDI4Health PR MDS Practitioner",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner"
       },
       {
         "reference": {
@@ -107,24 +84,74 @@
       },
       {
         "reference": {
-          "reference": "Provenance/InstanceOfProvenance_Automatically_Uploaded_From_CTgov"
-        },
-        "name": "Example of the NFDI4Health PR MDS Provenance profile for a resource automatically uploaded from CT.gov",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-provenance"
-      },
-      {
-        "reference": {
-          "reference": "Provenance/InstanceOfProvenance_Manually_Collected"
-        },
-        "name": "Example of the NFDI4Health PR MDS Provenance profile for a resource manually collected",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-provenance"
-      },
-      {
-        "reference": {
           "reference": "Questionnaire/QuestionnaireExample"
         },
         "name": "Example of the NFDI4Health PR MDS Questionnaire",
         "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire"
+      },
+      {
+        "reference": {
+          "reference": "Group/InstanceOfGroupActual"
+        },
+        "name": "Instance Of Group Actual",
+        "description": "Example data about actual study participants in the SHIP Trend study - Study of Health in Pomerania Trend",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-group-actual"
+      },
+      {
+        "reference": {
+          "reference": "Group/InstanceOfGroupIntended"
+        },
+        "name": "Instance Of Group Intended",
+        "description": "Example data of eligibility information from the SHIP Trend study - Study of Health in Pomerania Trend",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-group-intended"
+      },
+      {
+        "reference": {
+          "reference": "Organization/InstanceOfOrganizationResearchGroup"
+        },
+        "name": "Instance Of Organization Research Group",
+        "description": "Example data representing the research group 'Research Netwerk Community Medicine'",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+      },
+      {
+        "reference": {
+          "reference": "Organization/InstanceOfOrganizationUMG"
+        },
+        "name": "Instance Of Organization UMG",
+        "description": "Example data representing an university",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/InstanceOfPractitionerKathleenMerikangas"
+        },
+        "name": "Instance Of Practitioner Kathleen Merikangas",
+        "description": "Example of the NFDI4Health PR MDS Practitioner",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner"
+      },
+      {
+        "reference": {
+          "reference": "Provenance/InstanceOfProvenanceAutomaticallyUploadedFromCTgov"
+        },
+        "name": "Instance Of Provenance Automatically Uploaded From CTgov",
+        "description": "Example of the NFDI4Health PR MDS Provenance profile for a resource automatically uploaded from CT.gov",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-provenance"
+      },
+      {
+        "reference": {
+          "reference": "Provenance/InstanceOfProvenanceManuallyCollected"
+        },
+        "name": "Instance Of Provenance Manually Collected",
+        "description": "Example of the NFDI4Health PR MDS Provenance profile for a resource manually collected",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-provenance"
+      },
+      {
+        "reference": {
+          "reference": "ResearchStudy/InstanceOfStudySHIP"
+        },
+        "name": "Instance of Study SHIP",
+        "description": "Example data from the SHIP Trend study - Study of Health in Pomerania Trend",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
       },
       {
         "reference": {
@@ -1098,14 +1125,6 @@
         "name": "NFDI4Health_EX_MDS_Related",
         "description": "Extension providing information about identifiers (IDs) of the resources related to the given resource, e.g. DOIs of publications, datasets, study documents or links to web pages - registered on this portal or not.",
         "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ResearchStudy/InstanceOfStudySHIP"
-        },
-        "name": "SHIP Trend study",
-        "description": "Example data from the SHIP Trend study - Study of Health in Pomerania Trend",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
       },
       {
         "reference": {
