@@ -5,8 +5,8 @@
   "id": "nfdi4health-vs-mds-study-intervention-type-nci-umls",
   "title": "NFDI4Health VS MDS Study Intervention Type [NCI, UMLS]",
   "description": "Value set defining codes to specify the general type of the given intervention/exposure in the study.",
-  "version": "0.9",
   "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-intervention-type-nci-umls",
+  "version": "0.9",
   "experimental": true,
   "publisher": "NFDI4Health",
   "contact": [

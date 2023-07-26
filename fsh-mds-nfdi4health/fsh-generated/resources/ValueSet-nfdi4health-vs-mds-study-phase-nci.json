@@ -5,8 +5,8 @@
   "id": "nfdi4health-vs-mds-study-phase-nci",
   "title": "NFDI4Health VS MDS Study Phase [NCI]",
   "description": "Value set defining codes to specify the phase of a study in a ResearchStudy resource.",
-  "version": "0.9",
   "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-phase-nci",
+  "version": "0.9",
   "experimental": true,
   "publisher": "NFDI4Health",
   "contact": [

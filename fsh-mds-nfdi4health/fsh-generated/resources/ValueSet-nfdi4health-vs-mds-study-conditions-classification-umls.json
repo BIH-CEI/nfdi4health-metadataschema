@@ -5,8 +5,8 @@
   "id": "nfdi4health-vs-mds-study-conditions-classification-umls",
   "title": "NFDI4Health VS MDS Study Conditions Classification [UMLS]",
   "description": "Value set defining codes to specify the terminology/classification used for the health condition, disease or focus.",
-  "version": "0.9",
   "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-conditions-classification-umls",
+  "version": "0.9",
   "experimental": true,
   "publisher": "NFDI4Health",
   "contact": [

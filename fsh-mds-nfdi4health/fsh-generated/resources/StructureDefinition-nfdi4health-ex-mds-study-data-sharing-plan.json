@@ -91,28 +91,12 @@
       {
         "id": "Extension.extension:generally.value[x]",
         "path": "Extension.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
         "min": 1,
         "type": [
           {
             "code": "Coding"
           }
-        ]
-      },
-      {
-        "id": "Extension.extension:generally.valueCoding",
-        "path": "Extension.extension.valueCoding",
-        "min": 1,
-        "max": "1",
+        ],
         "binding": {
           "strength": "required",
           "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-yes-no-undecided-snomedct-nci",
@@ -120,13 +104,13 @@
         }
       },
       {
-        "id": "Extension.extension:generally.valueCoding.system",
-        "path": "Extension.extension.valueCoding.system",
+        "id": "Extension.extension:generally.value[x].system",
+        "path": "Extension.extension.value[x].system",
         "min": 1
       },
       {
-        "id": "Extension.extension:generally.valueCoding.code",
-        "path": "Extension.extension.valueCoding.code",
+        "id": "Extension.extension:generally.value[x].code",
+        "path": "Extension.extension.value[x].code",
         "min": 1
       },
       {
@@ -158,28 +142,12 @@
       {
         "id": "Extension.extension:supportingInformation.value[x]",
         "path": "Extension.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
         "min": 1,
         "type": [
           {
             "code": "Coding"
           }
-        ]
-      },
-      {
-        "id": "Extension.extension:supportingInformation.valueCoding",
-        "path": "Extension.extension.valueCoding",
-        "min": 1,
-        "max": "1",
+        ],
         "binding": {
           "strength": "required",
           "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sharing-plan-sup-inf-umls-local",
@@ -187,13 +155,13 @@
         }
       },
       {
-        "id": "Extension.extension:supportingInformation.valueCoding.system",
-        "path": "Extension.extension.valueCoding.system",
+        "id": "Extension.extension:supportingInformation.value[x].system",
+        "path": "Extension.extension.value[x].system",
         "min": 1
       },
       {
-        "id": "Extension.extension:supportingInformation.valueCoding.code",
-        "path": "Extension.extension.valueCoding.code",
+        "id": "Extension.extension:supportingInformation.value[x].code",
+        "path": "Extension.extension.value[x].code",
         "min": 1
       },
       {
@@ -328,28 +296,12 @@
       {
         "id": "Extension.extension:datashield.value[x]",
         "path": "Extension.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
         "min": 1,
         "type": [
           {
             "code": "Coding"
           }
-        ]
-      },
-      {
-        "id": "Extension.extension:datashield.valueCoding",
-        "path": "Extension.extension.valueCoding",
-        "min": 1,
-        "max": "1",
+        ],
         "binding": {
           "strength": "required",
           "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sharing-plan-ds-snomedct-umls",
@@ -357,13 +309,13 @@
         }
       },
       {
-        "id": "Extension.extension:datashield.valueCoding.system",
-        "path": "Extension.extension.valueCoding.system",
+        "id": "Extension.extension:datashield.value[x].system",
+        "path": "Extension.extension.value[x].system",
         "min": 1
       },
       {
-        "id": "Extension.extension:datashield.valueCoding.code",
-        "path": "Extension.extension.valueCoding.code",
+        "id": "Extension.extension:datashield.value[x].code",
+        "path": "Extension.extension.value[x].code",
         "min": 1
       },
       {

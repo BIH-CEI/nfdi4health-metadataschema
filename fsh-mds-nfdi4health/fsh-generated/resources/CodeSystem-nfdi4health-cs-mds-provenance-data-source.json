@@ -6,7 +6,6 @@
   "id": "nfdi4health-cs-mds-provenance-data-source",
   "title": "NFDI4Health CS MDS Provenance Data Source",
   "description": "Code system defining data sources in a Provenance resource.",
-  "version": "0.9",
   "url": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-mds-provenance-data-source",
   "concept": [
     {
@@ -40,6 +39,7 @@
       "definition": "The resource has been manually collected"
     }
   ],
+  "version": "0.9",
   "experimental": true,
   "publisher": "NFDI4Health",
   "contact": [

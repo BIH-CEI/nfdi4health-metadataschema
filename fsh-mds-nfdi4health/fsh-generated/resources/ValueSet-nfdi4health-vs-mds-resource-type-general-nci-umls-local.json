@@ -5,8 +5,8 @@
   "id": "nfdi4health-vs-mds-resource-type-general-nci-umls-local",
   "title": "NFDI4Health VS MDS Resource Type General [NCI, UMLS, local]",
   "description": "Value set defining codes to specify the the general resource type.",
-  "version": "0.9",
   "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-resource-type-general-nci-umls-local",
+  "version": "0.9",
   "experimental": true,
   "publisher": "NFDI4Health",
   "contact": [

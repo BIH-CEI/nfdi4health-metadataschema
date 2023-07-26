@@ -5,8 +5,8 @@
   "id": "nfdi4health-vs-mds-study-overall-status-umls-local",
   "title": "NFDI4Health VS MDS Study Overall Status [UMLS, Local]",
   "description": "Value set defining codes to specify the overall status of a study.",
-  "version": "0.9",
   "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-overall-status-umls-local",
+  "version": "0.9",
   "experimental": true,
   "publisher": "NFDI4Health",
   "contact": [

@@ -5,8 +5,8 @@
   "id": "nfdi4health-vs-mds-mortality-data-nci-snomedct",
   "title": "NFDI4Health VS MDS Mortality Data [NCI, SNOMED CT]",
   "description": "Value set defining codes to specify if mortality data were collected in a study.",
-  "version": "0.9",
   "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-mortality-data-nci-snomedct",
+  "version": "0.9",
   "experimental": true,
   "publisher": "NFDI4Health",
   "contact": [

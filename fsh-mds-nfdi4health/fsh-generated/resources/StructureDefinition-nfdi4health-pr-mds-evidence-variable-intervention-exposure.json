@@ -1,16 +1,6 @@
 {
   "resourceType": "StructureDefinition",
   "id": "nfdi4health-pr-mds-evidence-variable-intervention-exposure",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Specialized.Evidence-Based Medicine"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
-      "valueCode": "business"
-    }
-  ],
   "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-evidence-variable-intervention-exposure",
   "version": "0.9",
   "name": "NFDI4Health_PR_MDS_Evidence_Variable_Intervention_Exposure",

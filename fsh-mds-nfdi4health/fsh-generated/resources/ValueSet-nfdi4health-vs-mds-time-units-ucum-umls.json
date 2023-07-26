@@ -5,8 +5,8 @@
   "id": "nfdi4health-vs-mds-time-units-ucum-umls",
   "title": "NFDI4Health VS MDS Provenance Time Units [UCUM, UMLS]",
   "description": "Value set defining codes for time units from UCUM and UMLS.",
-  "version": "0.9",
   "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-time-units-ucum-umls",
+  "version": "0.9",
   "experimental": true,
   "publisher": "NFDI4Health",
   "contact": [
