@@ -16,7 +16,6 @@ Description: "Language of an element."
 * ^context[=].expression = "markdown"
 * . ^short = "Language of an element."
 * . ^definition = "Language of an element."
-* url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language" (exactly)
 * value[x] 1..
 * value[x] only code
 * value[x] from CommonLanguages (required)

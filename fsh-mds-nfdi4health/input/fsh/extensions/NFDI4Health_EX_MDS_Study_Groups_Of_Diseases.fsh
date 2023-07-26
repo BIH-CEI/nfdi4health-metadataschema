@@ -1,3 +1,5 @@
+Alias: $nfdi4health-vs-mds-study-groups-of-diseases-generally-icd11-umls = https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-groups-of-diseases-generally-icd11-umls
+
 Extension: NFDI4Health_EX_MDS_Study_Groups_Of_Diseases
 Id: nfdi4health-ex-mds-study-groups-of-diseases
 Title: "NFDI4Health EX MDS Study Groups Of Diseases"
@@ -24,6 +26,8 @@ Description: "Extension covering information about groups of diseases or conditi
 * extension[generally] ^comment = "Additional information: The values originate from the WHO's International Statistical Classification of Diseases and Related Health Problems, 11th Revision (ICD-11). | Short input help: Select all that apply. For more information about the groups of diseases/conditions, visit the WHO's ICD-11 homepage: https://icd.who.int/en."
 * extension[generally].value[x] 1..
 * extension[generally].value[x] only Coding
+* extension[generally].valueCoding from $nfdi4health-vs-mds-study-groups-of-diseases-generally-icd11-umls (required)
+* extension[generally].valueCoding ^binding.description = "Value set defining codes from ICD-11 to specify groups of diseases or conditions on which the data were collected in the study."
 * extension[generally].valueCoding.system 1..
 * extension[generally].valueCoding.code 1..
 * extension[conditions] ^short = "On which other diseases or conditions were the data collected?"
@@ -32,7 +36,6 @@ Description: "Extension covering information about groups of diseases or conditi
 * extension[conditions] ^min = 0
 * extension[conditions].value[x] 1..
 * extension[conditions].value[x] only string
-* url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-groups-of-diseases" (exactly)
 
 Mapping: NFDI4Health-Study-Groups-Of-Diseases-to-FHIR
 Id: NFDI4Health

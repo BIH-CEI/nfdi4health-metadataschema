@@ -64,3 +64,23 @@ Description: "Resource covering metadata of a questionnaire."
 * copyright.extension ^slicing.rules = #open
 * copyright.extension contains NFDI4Health_EX_MDS_Copyright_Label named label 1..1
 * copyright.extension contains NFDI4Health_EX_MDS_Use_Rights named useRightsConfimations 1..  
+
+
+Mapping: NFDI4Health-Questionnaire-to-FHIR
+Id: NFDI4Health
+Title: "NFDI4Health Questionnaire to FHIR Mapping"
+Source: NFDI4Health_PR_MDS_Questionnaire
+* copyright -> "1.10.3.3 resource_use_rights_description"
+* identifier[alternative_ids] -> "1.12 ids_alternative"
+* identifier[alternative_ids].system -> "1.12.1 type"
+* identifier[alternative_ids].value -> "1.12.2 identifier"
+* identifier -> "1.1 resource_identifier" "Unique identifier of the resource used for identification within the NFDI4Health."
+* title -> "1.3.1 Resource.titles.text"
+* copyright.extension[useRightsConfimations] -> "resource_use_rights_confirmations"
+* identifier.value -> "1.1 resource_identifier" "The value that is unique"
+* description -> "1.5.1 resource_description_english" "A short plain text summary describing the resource in English." #English
+* description.extension[translation].extension[content].value[x] -> "1.6.1 resource_descriptions_non_english.text"
+* description.extension[translation].extension[lang].value[x] -> "1.6.2 resource_descriptions_non_english.language"
+* description.extension[translation] -> "1.6 Resource.resource_descriptions_non_english"
+* extension[webpage] -> "1.9 resource_web_page" "Other web pages related to the resource can additionally be entered in the section \"Related resources\"."
+* version -> "1.10.1 resource_version" "The identifier that is used to identify this version of the questionnaire when it is referenced in a specification, model, design or instance. This is an arbitrary value managed by the questionnaire author and is not expected to be globally unique. For example, it might be a timestamp (e.g. yyyymmdd) if a managed version is not available. There is also no expectation that versions can be placed in a lexicographical sequence."

@@ -21,7 +21,7 @@ Description: "Resource covering information about the provenance of a resource."
 * recorded ^short = "Verfication date / Date when the [RESOURCE] was first submitted for publication / Date when the [RESOURCE] was first posted/published / Date when the last update of the [RESOURCE] was submitted for publication / Date when the last update of the [RESOURCE] was posted/published."
 * recorded ^definition = "For verification date: Date on which the responsible party last verified the information about the resource, even if no additional or updated information is being submitted.\r\n\r\nFor first submission date: Date when the resource was first submitted for publication.\r\n\r\nFor first posted date: Date when the resource was first posted/published.\r\n\r\nFor last update date: Date when the last update of the resource was submitted for publication.\r\n\r\nFor last posted date: Date when the last update of the resource was posted/published.\r\nFor"
 * activity 1..
-* activity.coding from NFDI4Health_VS_MDS_Provenance_Actity_HL7_Local (required)
+* activity.coding from NFDI4Health_VS_MDS_Provenance_Activity_HL7_Local (required)
 * activity.coding ^binding.description = "Value set defining codes for activity types."
 * activity.coding.system 1..
 * activity.coding.code 1..

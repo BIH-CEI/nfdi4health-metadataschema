@@ -1,6 +1,8 @@
+[InstanceOfGroupActual]: Group-InstanceOfGroupActual.html
 [Mlstr-additional]: CodeSystem-Mlstr-additional.html
 [Mlstr-area]: CodeSystem-Mlstr-area.html
 [nfdi4health-document-example]: DocumentReference-nfdi4health-document-example.html
+[InstanceOfGroupIntended]: Group-InstanceOfGroupIntended.html
 [OrganizationExample1]: Organization-OrganizationExample1.html
 [OrganizationPublicExample]: Organization-OrganizationPublicExample.html
 [PractitionerExample1]: Practitioner-PractitionerExample1.html
@@ -129,4 +131,5 @@
 [NFDI4Health_VS_MDS_Yes_No_Undecided_SNOMEDCT_NCI]: ValueSet-nfdi4health-vs-mds-yes-no-undecided-snomedct-nci.html
 [nfdi4health-exa-mds]: Questionnaire-nfdi4health-exa-mds.html
 [NFDI4Health_EX_MDS_Related]: StructureDefinition-nfdi4health-ex-mds-related.html
+[InstanceOfStudy]: ResearchStudy-InstanceOfStudy.html
 [Test_Element_Definition]: StructureDefinition-Test-Element-Definition.html

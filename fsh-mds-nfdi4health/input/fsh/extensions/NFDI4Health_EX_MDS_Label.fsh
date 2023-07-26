@@ -43,7 +43,6 @@ Description: "Extension covering information about additional title(s), name(s) 
 * extension[type] ^binding.description = "Value set used to express the reason and specific aspect for the variant title, such as language and specific language."
 * extension[language] ^short = "Language of the additional title(s)/name(s) or acronym(s)"
 * extension[language] ^definition = "Language of the additional title(s)/name(s) or acronym(s)"
-* url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-label" (exactly)
 
 Mapping: NFDI4Health-for-NFDI4Health_EX_MDS_Label
 Id: NFDI4Health

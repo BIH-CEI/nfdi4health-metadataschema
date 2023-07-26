@@ -28,28 +28,28 @@ Title: "NFDI4Health PR MDS Group Intended"
 * characteristic[eligibleMinimumAge] ^definition = "Group of items providing information about the minimum eligible age of study participants."
 * characteristic[eligibleMinimumAge].code = $NCI#C49693 "Planned Minimum Age of Subjects (Group Attribute)" (exactly)
 * characteristic[eligibleMinimumAge].value[x] only Quantity
-* characteristic[eligibleMinimumAge].value[x].value 1..
-* characteristic[eligibleMinimumAge].value[x].value ^short = "Minimum eligible age"
-* characteristic[eligibleMinimumAge].value[x].value ^definition = "Numerical value of the minimum age of potential participants eligible to participate in the study."
-* characteristic[eligibleMinimumAge].value[x].code 1..
-* characteristic[eligibleMinimumAge].value[x].code from NFDI4Health_VS_MDS_Time_Units_UCUM_UMLS (required)
-* characteristic[eligibleMinimumAge].value[x].code ^short = "Unit of time"
+* characteristic[eligibleMinimumAge].valueQuantity.value 1..
+* characteristic[eligibleMinimumAge].valueQuantity.value ^short = "Minimum eligible age"
+* characteristic[eligibleMinimumAge].valueQuantity.value ^definition = "Numerical value of the minimum age of potential participants eligible to participate in the study."
+* characteristic[eligibleMinimumAge].valueQuantity.code 1..
+* characteristic[eligibleMinimumAge].valueQuantity.code from NFDI4Health_VS_MDS_Time_Units_UCUM_UMLS (required)
+* characteristic[eligibleMinimumAge].valueQuantity.code ^short = "Unit of time"
 * characteristic[eligibleMaximumAge] ^short = "Eligibility criteria: Maximum age"
 * characteristic[eligibleMaximumAge] ^definition = "Group of items providing information about the maximum eligible age of study participants."
 * characteristic[eligibleMaximumAge].code = $NCI#C49694 "Planned Maximum Age of Subjects (Group Attribute)" (exactly)
 * characteristic[eligibleMaximumAge].value[x] only Quantity
-* characteristic[eligibleMaximumAge].value[x].value 1..
-* characteristic[eligibleMaximumAge].value[x].value ^short = "Maximum eligible age"
-* characteristic[eligibleMaximumAge].value[x].value ^definition = "Numerical value of the maximum age of potential participants eligible to participate in the study."
-* characteristic[eligibleMaximumAge].value[x].code 1..
-* characteristic[eligibleMaximumAge].value[x].code from NFDI4Health_VS_MDS_Time_Units_UCUM_UMLS (required)
-* characteristic[eligibleMaximumAge].value[x].code ^short = "Unit of time"
+* characteristic[eligibleMaximumAge].valueQuantity.value 1..
+* characteristic[eligibleMaximumAge].valueQuantity.value ^short = "Maximum eligible age"
+* characteristic[eligibleMaximumAge].valueQuantity.value ^definition = "Numerical value of the maximum age of potential participants eligible to participate in the study."
+* characteristic[eligibleMaximumAge].valueQuantity.code 1..
+* characteristic[eligibleMaximumAge].valueQuantity.code from NFDI4Health_VS_MDS_Time_Units_UCUM_UMLS (required)
+* characteristic[eligibleMaximumAge].valueQuantity.code ^short = "Unit of time"
 * characteristic[gender] ^short = "Eligible gender"
 * characteristic[gender] ^definition = "Gender of potential participants eligible to participate in the study."
 * characteristic[gender].code = $NCI#C17357 "Gender (Organism Attribute)" (exactly)
 * characteristic[gender].value[x] only CodeableConcept
-* characteristic[gender].value[x] from $administrative-gender (required)
-* characteristic[gender].value[x] ^binding.description = "The gender of a person used for administrative purposes."
+* characteristic[gender].valueCodeableConcept from $administrative-gender (required)
+* characteristic[gender].valueCodeableConcept ^binding.description = "The gender of a person used for administrative purposes."
 
 Mapping: NFDI4Health-Group-Intended-to-FHIR
 Id: NFDI4Health

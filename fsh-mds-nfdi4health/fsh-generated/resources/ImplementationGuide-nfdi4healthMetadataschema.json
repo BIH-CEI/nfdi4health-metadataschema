@@ -33,6 +33,14 @@
     "resource": [
       {
         "reference": {
+          "reference": "Group/InstanceOfGroupActual"
+        },
+        "name": "Actual group of study participants in SHIP Trend study",
+        "description": "Example data about actual study participants in the SHIP Trend study - Study of Health in Pomerania Trend",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-group-actual"
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/Mlstr-additional"
         },
         "name": "Additional information",
@@ -53,6 +61,14 @@
         },
         "name": "Document Example",
         "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-document"
+      },
+      {
+        "reference": {
+          "reference": "Group/InstanceOfGroupIntended"
+        },
+        "name": "Eligibility information from SHIP Trend study",
+        "description": "Example data of eligibility information from the SHIP Trend study - Study of Health in Pomerania Trend",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-group-intended"
       },
       {
         "reference": {
@@ -867,7 +883,7 @@
           "reference": "ValueSet/nfdi4health-vs-mds-study-groups-of-diseases-generally-icd10-umls"
         },
         "name": "NFDI4Health VS MDS Study Groups Of Diseases Generally [ICD 10, UMLS]",
-        "description": "Value set defining codes to specify groups of diseases or conditions on which the data were collected in the study.",
+        "description": "Value set defining codes from ICD-10 to specify groups of diseases or conditions on which the data were collected in the study.",
         "exampleBoolean": false
       },
       {
@@ -875,7 +891,7 @@
           "reference": "ValueSet/nfdi4health-vs-mds-study-groups-of-diseases-generally-icd11-umls"
         },
         "name": "NFDI4Health VS MDS Study Groups Of Diseases Generally [ICD 11, UMLS]",
-        "description": "Value set defining codes to specify groups of diseases or conditions on which the data were collected in the study.",
+        "description": "Value set defining codes from ICD-11 to specify groups of diseases or conditions on which the data were collected in the study.",
         "exampleBoolean": false
       },
       {
@@ -1068,6 +1084,14 @@
         "name": "NFDI4Health_EX_MDS_Related",
         "description": "Extension providing information about identifiers (IDs) of the resources related to the given resource, e.g. DOIs of publications, datasets, study documents or links to web pages - registered on this portal or not.",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ResearchStudy/InstanceOfStudy"
+        },
+        "name": "SHIP Trend study",
+        "description": "Example data from the SHIP Trend study - Study of Health in Pomerania Trend",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
       },
       {
         "reference": {

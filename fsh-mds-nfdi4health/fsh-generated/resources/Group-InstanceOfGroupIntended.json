@@ -1,0 +1,70 @@
+{
+  "resourceType": "Group",
+  "id": "InstanceOfGroupIntended",
+  "meta": {
+    "profile": [
+      "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-group-intended"
+    ]
+  },
+  "actual": false,
+  "characteristic": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "C49693",
+            "system": "http://ncimeta.nci.nih.gov",
+            "display": "Planned Minimum Age of Subjects (Group Attribute)"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "code": "a",
+        "system": "http://unitsofmeasure.org",
+        "unit": "year",
+        "value": 20
+      },
+      "exclude": false
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "C49694",
+            "system": "http://ncimeta.nci.nih.gov",
+            "display": "Planned Maximum Age of Subjects (Group Attribute)"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "code": "a",
+        "system": "http://unitsofmeasure.org",
+        "unit": "year",
+        "value": 79
+      },
+      "exclude": false
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "C17357",
+            "system": "http://ncimeta.nci.nih.gov",
+            "display": "Gender (Organism Attribute)"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "male",
+            "system": "http://hl7.org/fhir/administrative-gender",
+            "display": "Male"
+          }
+        ]
+      },
+      "exclude": false
+    }
+  ],
+  "type": "person"
+}

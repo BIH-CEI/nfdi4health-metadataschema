@@ -1,7 +1,7 @@
 ValueSet: NFDI4Health_VS_MDS_Study_Groups_Of_Diseases_Generally_ICD11_UMLS
 Id: nfdi4health-vs-mds-study-groups-of-diseases-generally-icd11-umls
 Title: "NFDI4Health VS MDS Study Groups Of Diseases Generally [ICD 11, UMLS]"
-Description: "Value set defining codes to specify groups of diseases or conditions on which the data were collected in the study."
+Description: "Value set defining codes from ICD-11 to specify groups of diseases or conditions on which the data were collected in the study."
 * ^url = "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-groups-of-diseases-generally-icd11-umls"
 * ^status = #draft
 * ^version = "0.9"

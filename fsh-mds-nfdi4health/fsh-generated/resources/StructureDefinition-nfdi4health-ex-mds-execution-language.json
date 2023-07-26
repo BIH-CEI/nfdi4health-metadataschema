@@ -83,7 +83,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.hl7.org/fhir/valueset-languages.html",
+          "valueSet": "http://hl7.org/fhir/ValueSet/languages",
           "description": "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)"
         }
       }

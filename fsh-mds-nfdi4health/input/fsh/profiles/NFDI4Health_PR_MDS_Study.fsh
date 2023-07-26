@@ -9,7 +9,7 @@ Description: "Resource covering metadata of a study."
 * ^publisher = "NFDI4Health"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
-* language 1..
+//* language 1..
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
@@ -233,7 +233,7 @@ Description: "Resource covering metadata of a study."
 * condition.coding.extension[uri] ^comment = "Short input help: If found, the code from the terminology/classification used."
 * condition.coding.system 1..
 * condition.coding.system ^short = "Terminology/classification"
-* condition.coding.system ^definition = "Terminology/classification used for the health condition, diesease or focus."
+* condition.coding.system ^definition = "Terminology/classification used for the health condition, disease or focus."
 * condition.coding.system ^comment = "Short input help: If used, name of the terminology/classification."
 * condition.coding.code ^short = "Code"
 * condition.coding.code ^definition = "Code of the health condition,  disease, focus in the terminology/classification used."
@@ -290,20 +290,24 @@ Description: "Resource covering metadata of a study."
 * keyword.text ^comment = "Additional information: The use of terms from established classifications/vocabularies (e.g. MeSH, UMLS, SNOMED CT) is preferred. However, also self-assigned keywords are allowed. | Short input help: Preferably, use terms from MeSH (https://meshb.nlm.nih.gov/search) or UMLS (https://uts.nlm.nih.gov/uts/umls/home)."
 * keyword.text ^example[0].label = "Keyword label"
 * keyword.text ^example[=].valueString = "SARS-CoV-2"
-* location ^slicing.discriminator.type = #value
-* location ^slicing.discriminator.path = "coding"
+* location ^slicing.discriminator.type = #pattern
+* location ^slicing.discriminator.path = "coding.system"
 * location ^slicing.rules = #open
 * location ^comment = "Short input help: Select all that apply."
 * location contains
     countries 1..* and
-    regions 0..1
+    regions 0..* 
 * location[countries] ^short = "Country(ies) where the study takes place"
 * location[countries] ^definition = "Country or countries where the study takes place."
 * location[countries] ^comment = "Additional information: Select all that apply."
 * location[countries].coding 1..1
+* location[countries].coding.system 1..1
+* location[countries].coding.system = $iso3166
 * location[regions] ^short = "Regions and/or cities within a country where the study takes place"
 * location[regions] ^definition = "If applicable, region(s) and/or city(ies) within a country where the study takes place."
 * location[regions].coding 1..1
+* location[regions].coding.system 1..1
+* location[regions].coding.system = $iso3166-2
 * description 1..
 * description ^short = "English description of the [RESOURCE]"
 * description ^definition = "A short plain text summary describing the resource in English."

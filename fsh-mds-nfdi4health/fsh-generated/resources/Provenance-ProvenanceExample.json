@@ -10,7 +10,8 @@
     {
       "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-provenance-data-source",
       "valueCoding": {
-        "code": "01"
+        "code": "01",
+        "system": "https://www.nfdi4health.de"
       }
     }
   ],
@@ -19,6 +20,7 @@
       "reference": "ISARIC_COVID-19_CORE_Case_Report_Form"
     }
   ],
+  "recorded": "2000-01-01T00:00:00Z",
   "activity": {
     "coding": [
       {
