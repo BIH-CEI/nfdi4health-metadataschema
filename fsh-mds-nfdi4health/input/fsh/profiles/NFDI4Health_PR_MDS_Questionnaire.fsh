@@ -70,7 +70,7 @@ Mapping: NFDI4Health-Questionnaire-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health Questionnaire to FHIR Mapping"
 Source: NFDI4Health_PR_MDS_Questionnaire
-* copyright -> "1.10.3.3 resource_use_rights_description"
+* copyright -> "1.10.3.3 resource.userights.description"
 * identifier[alternative_ids] -> "1.12 ids_alternative"
 * identifier[alternative_ids].system -> "1.12.1 type"
 * identifier[alternative_ids].value -> "1.12.2 identifier"
