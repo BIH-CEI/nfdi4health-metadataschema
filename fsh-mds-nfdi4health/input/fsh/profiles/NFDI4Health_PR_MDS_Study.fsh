@@ -328,18 +328,22 @@ Description: "Resource covering metadata of a study."
 * location[regions].coding 1..1
 * location[regions].coding.system 1..1
 * location[regions].coding.system = $iso3166-2
-* description 1..
+* description 1..1
 * description ^short = "English description of the [RESOURCE]"
 * description ^definition = "A short plain text summary describing the resource in English."
 * description ^comment = "Additional information: An English description is mandatory to facilitate the search. | Short input help: The provided information should be understandable by scientific audience."
 * description.extension ^slicing.discriminator.type = #value
 * description.extension ^slicing.discriminator.path = "url"
 * description.extension ^slicing.rules = #open
+* description.extension contains NFDI4Health_EX_MDS_Language named language 1..1
+* description.extension[language] ^short = "Language of the description"
+* description.extension[language] ^definition = "Language of the description text."
+* description.extension[language] ^comment = "Additional information: English is a default value."
+* description.extension[language].value[x] = #en (exactly)
 * description.extension contains $translation named translation 0..*
 * description.extension[translation] ^short = "Additional description(s) of the [RESOURCE]"
 * description.extension[translation] ^definition = "Group of items with description(s) of the resource written not in English."
-* description.extension[translation] ^comment = "Additional descriptions of the resource are optional. \r\nThe provided information should be understandable by scientific audience."
-* description.extension[translation] ^min = 0
+* description.extension[translation] ^comment = "Additional descriptions of the resource are optional. The provided information should be understandable by scientific audience."
 * description.extension[translation].extension ^slicing.discriminator.type = #value
 * description.extension[translation].extension ^slicing.discriminator.path = "url"
 * description.extension[translation].extension ^slicing.rules = #open
@@ -350,11 +354,6 @@ Description: "Resource covering metadata of a study."
 * description.extension[translation].extension[content] ^short = "Description (not in English)"
 * description.extension[translation].extension[content] ^definition = "Short plain text summary of the resource other than in English."
 * description.extension[translation].extension[content] ^comment = "Additional information: Additional descriptions of the resource are optional. The provided information should be understandable by scientific audience."
-* description.extension contains NFDI4Health_EX_MDS_Language named language 1..1
-* description.extension[language] ^short = "Language of the description"
-* description.extension[language] ^definition = "Language of the description text."
-* description.extension[language] ^comment = "Additional information: English is a default value."
-* description.extension[language].value[x] = #en (exactly)
 * enrollment only Reference(NFDI4Health_PR_MDS_Group_Intended or NFDI4Health_PR_MDS_Group_Actual)
 * enrollment ^short = "Eligibility criteria for study participants"
 * enrollment ^definition = "Group of items providing information about eligibility criteria for study participants."
@@ -404,34 +403,42 @@ Source: NFDI4Health_PR_MDS_Study
 * identifier[NFDI4Health] -> "1.1 Resource.identifier"
 * identifier[DRKS] -> "1.12 Resource.idsAlternative"
 * identifier[DRKS].system -> "1.12.1 Resource.idsAlternative.scheme" "Type = DRKS"
+* identifier[DRKS].type -> "1.12.1 Resource.idsAlternative.scheme" "Type = DRKS"
 * identifier[DRKS].value -> "1.12.2 Resource.idsAlternative.identifier"
 * identifier[NCT] -> "1.12 Resource.idsAlternative"
 * identifier[NCT].system -> "1.12.1 Resource.idsAlternative.scheme" "Type = NCT"
+* identifier[NCT].type -> "1.12.1 Resource.idsAlternative.scheme" "Type = NCT"
 * identifier[NCT].value -> "1.12.2 Resource.idsAlternative.identifier"
 * identifier[ISRCTN] -> "1.12 Resource.idsAlternative"
 * identifier[ISRCTN].system -> "1.12.1 Resource.idsAlternative.scheme" "Type = ISRCTN"
+* identifier[ISRCTN].type -> "1.12.1 Resource.idsAlternative.scheme" "Type = ISRCTN"
 * identifier[ISRCTN].value -> "1.12.2 Resource.idsAlternative.identifier"
 * identifier[EudraCT] -> "1.12 Resource.idsAlternative"
 * identifier[EudraCT].system -> "1.12.1 Resource.idsAlternative.scheme" "Type = EudraCT"
+* identifier[EudraCT].type -> "1.12.1 Resource.idsAlternative.scheme" "Type = EudraCT"
 * identifier[EudraCT].value -> "1.12.2 Resource.idsAlternative.identifier"
 * identifier[EUDAMED] -> "1.12 Resource.idsAlternative"
 * identifier[EUDAMED].system -> "1.12.1 Resource.idsAlternative.scheme" "Type = EUDAMED"
+* identifier[EUDAMED].type -> "1.12.1 Resource.idsAlternative.scheme" "Type = EUDAMED"
 * identifier[EUDAMED].value -> "1.12.2 Resource.idsAlternative.identifier"
 * identifier[UTN] -> "1.12 Resource.idsAlternative"
 * identifier[UTN].system -> "1.12.1 Resource.idsAlternative.scheme" "Type = UTN"
+* identifier[UTN].type -> "1.12.1 Resource.idsAlternative.scheme" "Type = UTN"
 * identifier[UTN].value -> "1.12.2 Resource.idsAlternative.identifier"
 * identifier[KonsortSWD] -> "1.12 Resource.idsAlternative"
 * identifier[KonsortSWD].system -> "1.12.1 Resource.idsAlternative.scheme" "Type = KonsortSWD"
+* identifier[KonsortSWD].type -> "1.12.1 Resource.idsAlternative.scheme" "Type = KonsortSWD"
 * identifier[KonsortSWD].value -> "1.12.2 Resource.idsAlternative.identifier"
 * identifier[MDMPortal] -> "1.12 Resource.idsAlternative"
 * identifier[MDMPortal].system -> "1.12.1 Resource.idsAlternative.scheme" "Type = MDM Portal"
+* identifier[MDMPortal].type -> "1.12.1 Resource.idsAlternative.scheme" "Type = MDM Portal"
 * identifier[MDMPortal].value -> "1.12.2 Resource.idsAlternative.identifier"
 * identifier[Other] -> "1.12 Resource.idsAlternative"
 * identifier[Other].system -> "1.12.1 Resource.idsAlternative.scheme" "Type = Other"
+* identifier[Other].type -> "1.12.1 Resource.idsAlternative.scheme" "Type = Other"
 * identifier[Other].value -> "1.12.2 Resource.idsAlternative.identifier"
 * title -> "1.3.1 Resource.titles.text"
 * title.extension[translation].extension[lang] -> "1.3.2 Resource.titles.language" "Translation language of the title"
-* title.extension[translation].extension[lang].value[x] -> "1.3.2 Resource.resource_titles.language"
 * title.extension[translation].extension[content] -> "1.3.1 Resource.titles.text" "Translated title"
 * title.extension[language] -> "1.3.2 Resource.titles.language"
 * primaryPurposeType -> "1.17.22 Resource.studyDesign.primaryPurpose"

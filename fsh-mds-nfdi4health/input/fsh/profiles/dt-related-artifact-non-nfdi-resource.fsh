@@ -26,10 +26,18 @@ Description: "Profile of a RelatedArtifact intended to capture information about
     $AssignmentDate named identifierAssignmentDate 0..1 and
     $NonNFDI4HealthRelType named relationType 1..1 and
     $ResourceTypeGeneral named resourceTypeGeneral 0..1 
+* extension[identifier].valueIdentifier.value ^short = "Identifier of the related resource"
+* extension[identifier].valueIdentifier.value ^definition = "Identifier (ID) related to, or associated with, the resource being registered. These can be IDs of related publications, datasets, study documents, web pages, etc."
+* extension[identifier].valueIdentifier.value ^comment = "Short input help: a) Publications like journal articles usually have a DOI, e.g. 10.3238/arztebl.2020.0861. b) A link (URL) starting with 'http(s)://' to a web page with any additional information can also be provided here."
+* extension[identifier].valueIdentifier.value ^example.label = "Example of an identifier of a non NFDI4Health resource"
+* extension[identifier].valueIdentifier.value ^example.valueString = "10.4126/FRL01-006431467"
 * extension[identifier].valueIdentifier.value 1..1
 * extension[identifier].valueIdentifier.type 1..1
 * extension[identifier].valueIdentifier.type from $nfdi4health-vs-mds-identifier-type-related-artifact-umls-local (required)
 * extension[identifier].valueIdentifier.type ^binding.description = "Value set defining codes to specify the ID Type of the related resource."
+* extension[identifier].valueIdentifier.type ^short = "Type of the identifier"
+* extension[identifier].valueIdentifier.type ^definition = "Type of the identifier of the related resource."
+* extension[identifier].valueIdentifier.type ^comment = "Short input help: Select one value from the list."
 
 Mapping: NFDI4Health-Related-Artifact-Non-NFDI4Health-Resource-to-FHIR
 Id: NFDI4Health

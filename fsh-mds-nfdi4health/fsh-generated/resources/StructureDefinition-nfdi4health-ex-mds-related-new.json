@@ -1,0 +1,138 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "nfdi4health-ex-mds-related-new",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related-new",
+  "version": "0.9",
+  "name": "NFDI4Health_EX_MDS_Related_NEW",
+  "title": "NFDI4Health_EX_MDS_Related_New",
+  "status": "draft",
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "description": "Extension providing information about related publications, datasets, study documents, web pages, etc.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "NFDI4Health",
+      "name": "NFDI4Health to FHIR Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Questionnaire"
+    },
+    {
+      "type": "element",
+      "expression": "DocumentReference"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "NFDI4Health_EX_MDS_Related_New",
+        "definition": "Extension providing information about related publications, datasets, study documents, web pages, etc."
+      },
+      {
+        "id": "Extension.extension:relatedArtifactNFDI4Health",
+        "path": "Extension.extension",
+        "sliceName": "relatedArtifactNFDI4Health",
+        "min": 0,
+        "max": "*",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.14 Resource.idsNfdi4health"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:relatedArtifactNFDI4Health.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:relatedArtifactNFDI4Health.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "relatedArtifactNFDI4Health"
+      },
+      {
+        "id": "Extension.extension:relatedArtifactNFDI4Health.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "RelatedArtifact",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-related-artifact-ndfi4health-resource"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:relatedArtifactNonNFDI4Health",
+        "path": "Extension.extension",
+        "sliceName": "relatedArtifactNonNFDI4Health",
+        "min": 0,
+        "max": "*",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.13 Resource.ids"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:relatedArtifactNonNFDI4Health.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:relatedArtifactNonNFDI4Health.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "relatedArtifactNonNFDI4Health"
+      },
+      {
+        "id": "Extension.extension:relatedArtifactNonNFDI4Health.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "RelatedArtifact",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-related-artifact-non-ndfi4health-resource"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related-new"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

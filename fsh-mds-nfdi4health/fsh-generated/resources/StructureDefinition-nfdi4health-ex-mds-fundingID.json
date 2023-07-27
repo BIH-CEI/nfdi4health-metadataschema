@@ -48,6 +48,7 @@
         "path": "Extension",
         "short": "Funding identifier",
         "definition": "Identifier assigned by a funder to the resource.",
+        "comment": "Short input help: If available, you can enter a funding identifier",
         "mapping": [
           {
             "identity": "NFDI4Health",

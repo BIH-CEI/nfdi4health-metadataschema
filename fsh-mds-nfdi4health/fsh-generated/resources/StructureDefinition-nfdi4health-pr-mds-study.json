@@ -514,7 +514,14 @@
               "display": "DRKS"
             }
           ]
-        }
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.12.1 Resource.idsAlternative.scheme",
+            "comment": "Type = DRKS"
+          }
+        ]
       },
       {
         "id": "ResearchStudy.identifier:DRKS.system",
@@ -573,7 +580,14 @@
               "display": "Clinicaltrials.gov Identifier"
             }
           ]
-        }
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.12.1 Resource.idsAlternative.scheme",
+            "comment": "Type = NCT"
+          }
+        ]
       },
       {
         "id": "ResearchStudy.identifier:NCT.system",
@@ -632,7 +646,14 @@
               "display": "ISRCTN"
             }
           ]
-        }
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.12.1 Resource.idsAlternative.scheme",
+            "comment": "Type = ISRCTN"
+          }
+        ]
       },
       {
         "id": "ResearchStudy.identifier:ISRCTN.system",
@@ -685,7 +706,14 @@
               "display": "European Union Drug Regulating Authorities Clinical Trials Database (Intellectual Product)"
             }
           ]
-        }
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.12.1 Resource.idsAlternative.scheme",
+            "comment": "Type = EudraCT"
+          }
+        ]
       },
       {
         "id": "ResearchStudy.identifier:EudraCT.system",
@@ -737,7 +765,14 @@
               "display": "EUDAMED"
             }
           ]
-        }
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.12.1 Resource.idsAlternative.scheme",
+            "comment": "Type = EUDAMED"
+          }
+        ]
       },
       {
         "id": "ResearchStudy.identifier:EUDAMED.system",
@@ -790,7 +825,14 @@
               "display": "UTN"
             }
           ]
-        }
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.12.1 Resource.idsAlternative.scheme",
+            "comment": "Type = UTN"
+          }
+        ]
       },
       {
         "id": "ResearchStudy.identifier:UTN.system",
@@ -842,7 +884,14 @@
               "display": "KonsortSWD"
             }
           ]
-        }
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.12.1 Resource.idsAlternative.scheme",
+            "comment": "Type = KonsortSWD"
+          }
+        ]
       },
       {
         "id": "ResearchStudy.identifier:KonsortSWD.system",
@@ -895,7 +944,14 @@
               "display": "MDM Portal"
             }
           ]
-        }
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.12.1 Resource.idsAlternative.scheme",
+            "comment": "Type = MDM Portal"
+          }
+        ]
       },
       {
         "id": "ResearchStudy.identifier:MDMPortal.system",
@@ -949,7 +1005,14 @@
               "display": "Other (Qualitative Concept)"
             }
           ]
-        }
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.12.1 Resource.idsAlternative.scheme",
+            "comment": "Type = Other"
+          }
+        ]
       },
       {
         "id": "ResearchStudy.identifier:Other.system",
@@ -1056,13 +1119,7 @@
           "strength": "required",
           "description": "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)",
           "valueSet": "http://hl7.org/fhir/ValueSet/languages"
-        },
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "1.3.2 Resource.resource_titles.language"
-          }
-        ]
+        }
       },
       {
         "id": "ResearchStudy.title.extension:translation.extension:content",
@@ -1851,12 +1908,41 @@
         "min": 1
       },
       {
+        "id": "ResearchStudy.description.extension:language",
+        "path": "ResearchStudy.description.extension",
+        "sliceName": "language",
+        "short": "Language of the description",
+        "definition": "Language of the description text.",
+        "comment": "Additional information: English is a default value.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.5.2 Resource.descriptionEnglish.language"
+          }
+        ]
+      },
+      {
+        "id": "ResearchStudy.description.extension:language.value[x]",
+        "path": "ResearchStudy.description.extension.value[x]",
+        "fixedCode": "en"
+      },
+      {
         "id": "ResearchStudy.description.extension:translation",
         "path": "ResearchStudy.description.extension",
         "sliceName": "translation",
         "short": "Additional description(s) of the [RESOURCE]",
         "definition": "Group of items with description(s) of the resource written not in English.",
-        "comment": "Additional descriptions of the resource are optional. \r\nThe provided information should be understandable by scientific audience.",
+        "comment": "Additional descriptions of the resource are optional. The provided information should be understandable by scientific audience.",
         "min": 0,
         "max": "*",
         "type": [
@@ -1900,35 +1986,6 @@
             "map": "1.6.1 Resource.descriptionNonEnglish.text"
           }
         ]
-      },
-      {
-        "id": "ResearchStudy.description.extension:language",
-        "path": "ResearchStudy.description.extension",
-        "sliceName": "language",
-        "short": "Language of the description",
-        "definition": "Language of the description text.",
-        "comment": "Additional information: English is a default value.",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language"
-            ]
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "1.5.2 Resource.descriptionEnglish.language"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.description.extension:language.value[x]",
-        "path": "ResearchStudy.description.extension.value[x]",
-        "fixedCode": "en"
       },
       {
         "id": "ResearchStudy.enrollment",

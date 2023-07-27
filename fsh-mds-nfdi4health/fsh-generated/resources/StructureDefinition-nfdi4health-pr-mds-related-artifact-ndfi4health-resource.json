@@ -40,8 +40,9 @@
       {
         "id": "RelatedArtifact",
         "path": "RelatedArtifact",
-        "short": "NFDI4Health Registered Related artifact",
-        "definition": "Information about a related artifact registered on the NFDI4Health portal",
+        "short": "Related (sub-)studies, study documents, etc. registered on this portal",
+        "definition": "Group of items providing information about related resources registered on this portal.",
+        "comment": "Short input help: Does the [RESOURCE] have any related resources registered on this portal?",
         "mapping": [
           {
             "identity": "NFDI4Health",
@@ -76,6 +77,23 @@
         ]
       },
       {
+        "id": "RelatedArtifact.extension:identifier.value[x].type",
+        "path": "RelatedArtifact.extension.value[x].type",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "code": "104",
+              "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+              "display": "NFDI4Health"
+            }
+          ]
+        },
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-id-type-umls-local"
+        }
+      },
+      {
         "id": "RelatedArtifact.extension:identifier.value[x].system",
         "path": "RelatedArtifact.extension.value[x].system",
         "min": 1,
@@ -84,6 +102,8 @@
       {
         "id": "RelatedArtifact.extension:identifier.value[x].value",
         "path": "RelatedArtifact.extension.value[x].value",
+        "short": "Identifier of the related resource",
+        "definition": "Identifier (ID) of the related resource assigned on this portal.",
         "min": 1
       },
       {

@@ -30,11 +30,11 @@ Generally, the CRISIS questionnaires include the following domains:
 * extension[webpage].valueUrl = "http://www.crisissurvey.org/download/"
 * extension[format].valueString = "PDF"
 * version = "V0.3"
-* copyright.extension[label].valueCodeableConcept = #UseRights#CC-BY-SA-4.0
-* copyright.extension[useRightsConfimations].extension[confirmationAuthority].valueBoolean = false
-* copyright.extension[useRightsConfimations].extension[confirmationTerms].valueBoolean = false
-* copyright.extension[useRightsConfimations].extension[confirmationIrrevocability].valueBoolean = false
-* copyright.extension[useRightsConfimations].extension[supportByLicensing].valueBoolean = false
+* copyright.extension[copyrightLabel].valueCoding = #UseRights#CC-BY-SA-4.0
+* copyright.extension[useRightsConfirmations].extension[confirmationAuthority].valueBoolean = false
+* copyright.extension[useRightsConfirmations].extension[confirmationTerms].valueBoolean = false
+* copyright.extension[useRightsConfirmations].extension[confirmationIrrevocability].valueBoolean = false
+* copyright.extension[useRightsConfirmations].extension[supportByLicensing].valueBoolean = false
 * copyright = "For reuse purposes, copies of all forms, their translations and scoring information can be found on the download page of the CRISIS project."
 * extension[roles][0].extension[party].valueReference = Reference(OrganizationExample1) 
 * extension[roles][0].extension[nameType].valueCoding = $UMLS#C0220885 "Organizational (Qualitative Concept)"

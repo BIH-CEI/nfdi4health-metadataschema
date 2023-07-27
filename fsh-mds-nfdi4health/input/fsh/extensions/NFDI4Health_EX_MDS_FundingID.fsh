@@ -12,6 +12,7 @@ Description: "Extension providing information about the identifier assigned by a
 * ^context.expression = "Organization"
 * . ^short = "Funding identifier"
 * . ^definition = "Identifier assigned by a funder to the resource."
+* . ^comment = "Short input help: If available, you can enter a funding identifier"
 * value[x] 1..
 * value[x] only string
 

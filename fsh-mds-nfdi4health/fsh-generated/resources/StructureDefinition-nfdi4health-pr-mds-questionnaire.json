@@ -410,7 +410,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.10.3.3 resource_use_rights_description"
+            "map": "1.10.3.3 resource.userights.description"
           }
         ]
       },
@@ -429,9 +429,9 @@
         "min": 2
       },
       {
-        "id": "Questionnaire.copyright.extension:label",
+        "id": "Questionnaire.copyright.extension:copyrightLabel",
         "path": "Questionnaire.copyright.extension",
-        "sliceName": "label",
+        "sliceName": "copyrightLabel",
         "min": 1,
         "max": "1",
         "type": [
@@ -444,16 +444,16 @@
         ]
       },
       {
-        "id": "Questionnaire.copyright.extension:useRightsConfimations",
+        "id": "Questionnaire.copyright.extension:useRightsConfirmations",
         "path": "Questionnaire.copyright.extension",
-        "sliceName": "useRightsConfimations",
+        "sliceName": "useRightsConfirmations",
         "min": 1,
         "max": "*",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-use-rights"
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-use-rights-confirmations"
             ]
           }
         ],

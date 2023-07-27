@@ -8,14 +8,17 @@ Description: "Extension providing information about the license applying to the 
 * ^publisher = "NFDI4Health"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
-* ^context.type = #element
-* ^context.expression = "Questionnaire.copyright"
+* ^context[0].type = #element
+* ^context[=].expression = "Questionnaire.copyright"
+* ^context[+].type = #element
+* ^context[=].expression = "Extension"
 * . 1..1
 * . ^short = "License"
 * . ^definition = "License defining the rights to (re-)use the resource."
 * . ^comment = "Short input help: Select one value from the list. If 'Other' is selected, an explanation of the (re-)use terms and conditions can be provided in the property “Additional information about use rights”."
 * value[x] 1..
-* value[x] only CodeableConcept
+* value[x] only Coding
+* valueCoding from $nfdi4health-vs-mds-use-rights-label-spdx-umls-local (required)
 
 Mapping: NFDI4Health-Copyright-Label-to-FHIR
 Id: NFDI4Health

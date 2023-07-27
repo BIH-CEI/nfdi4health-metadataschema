@@ -15,6 +15,7 @@ Description: "Extension storing keyword(s) describing a resource."
 * . ^short = "Keyword(s) describing the  [RESOURCE]"
 * . ^definition = "Group of items providing  Information about keywords describing the resource."
 * . ^comment = "Additional information : The findability of the resource can be significantly increased if proper keywords are stated."
+* . 0..*
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open

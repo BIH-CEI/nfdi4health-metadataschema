@@ -1,10 +1,10 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "nfdi4health-ex-mds-use-rights",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-use-rights",
+  "id": "nfdi4health-ex-mds-use-rights-confirmations",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-use-rights-confirmations",
   "version": "0.9",
-  "name": "NFDI4Health_EX_MDS_Use_Rights",
-  "title": "NFDI4Health EX MDS Use Rights",
+  "name": "NFDI4Health_EX_MDS_Use_Rights_Confirmations",
+  "title": "NFDI4Health EX MDS Use Rights Confirmations",
   "status": "draft",
   "publisher": "NFDI4Health",
   "contact": [
@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "description": "Extension providing information about the use rights to (re-)use a resource.",
+  "description": "Extension providing information about licensing, if a Creative Commons liesense is selected.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -36,6 +36,10 @@
     {
       "type": "element",
       "expression": "Questionnaire.copyright"
+    },
+    {
+      "type": "element",
+      "expression": "Extension"
     }
   ],
   "type": "Extension",
@@ -46,8 +50,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Information about the rights to (re-)use the [RESOURCE]",
-        "definition": "Group of items providing  Information about the rights to (re-)use the resource.",
+        "short": "Important information about licensing, if a Creative Commons liesense is selected.",
+        "definition": "Group of items applicable if a Creative Commons liesense is selected.",
         "min": 1,
         "max": "1",
         "mapping": [
@@ -136,7 +140,7 @@
         "sliceName": "confirmationIrrevocability",
         "short": "Do you confirm that the authors understand that Creative Commons (CC) licensing is irrevocable?",
         "definition": "Confirmation that the authors understand that Creative Commons (CC) licensing is not revocable.",
-        "comment": "Additional information : The resource can be licensed using a CC-license only if it is free of the third-party rights.",
+        "comment": "Additional information: The resource can be licensed using a CC-license only if it is free of the third-party rights.",
         "min": 1,
         "max": "1",
         "mapping": [
@@ -201,7 +205,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-use-rights"
+        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-use-rights-confirmations"
       },
       {
         "id": "Extension.value[x]",

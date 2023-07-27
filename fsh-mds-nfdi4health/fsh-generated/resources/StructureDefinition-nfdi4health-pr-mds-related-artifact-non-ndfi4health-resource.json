@@ -73,6 +73,9 @@
       {
         "id": "RelatedArtifact.extension:identifier.value[x].type",
         "path": "RelatedArtifact.extension.value[x].type",
+        "short": "Type of the identifier",
+        "definition": "Type of the identifier of the related resource.",
+        "comment": "Short input help: Select one value from the list.",
         "min": 1,
         "binding": {
           "strength": "required",
@@ -89,7 +92,16 @@
       {
         "id": "RelatedArtifact.extension:identifier.value[x].value",
         "path": "RelatedArtifact.extension.value[x].value",
+        "short": "Identifier of the related resource",
+        "definition": "Identifier (ID) related to, or associated with, the resource being registered. These can be IDs of related publications, datasets, study documents, web pages, etc.",
+        "comment": "Short input help: a) Publications like journal articles usually have a DOI, e.g. 10.3238/arztebl.2020.0861. b) A link (URL) starting with 'http(s)://' to a web page with any additional information can also be provided here.",
         "min": 1,
+        "example": [
+          {
+            "label": "Example of an identifier of a non NFDI4Health resource",
+            "valueString": "10.4126/FRL01-006431467"
+          }
+        ],
         "mapping": [
           {
             "identity": "NFDI4Health",

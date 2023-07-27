@@ -56,8 +56,8 @@
         "id": "Organization",
         "path": "Organization",
         "short": "Details about the organisation/institution/group/etc.",
-        "definition": "For \"1.11.2 Resource.roles.organisational\": Group of items providing information about group(s) of persons, institution(s) or organisation(s) contributing to the resource. | For \"1.11.6 Resource.roles.affiliation\": Group of items providing further information about the organisation(s) associated with the role.",
-        "comment": "For \"1.11.2 Resource.roles.organisational\": \r\nAdditional information: Group of items applicable to organisational/group names or providing further information about the organisation(s) associated with the role. | Short input help: Organisational name can be used to denote a research group or an institution.",
+        "definition": "For 1.11.2 Resource.roles.organisational: Group of items providing information about group(s) of persons, institution(s) or organisation(s) contributing to the resource. | For 1.11.6 Resource.roles.affiliation: Group of items providing further information about the organisation(s) associated with the role.",
+        "comment": "For 1.11.2 Resource.roles.organisational: Additional information: Group of items applicable to organisational/group names or providing further information about the organisation(s) associated with the role. | Short input help: Organisational name can be used to denote a research group or an institution.",
         "mapping": [
           {
             "identity": "NFDI4Health",
@@ -86,7 +86,6 @@
         "id": "Organization.extension:fundingID",
         "path": "Organization.extension",
         "sliceName": "fundingID",
-        "comment": "Short input help: If available, you can enter a funding identifier",
         "min": 0,
         "max": "*",
         "type": [

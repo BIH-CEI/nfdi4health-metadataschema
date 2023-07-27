@@ -15,12 +15,10 @@ Description: "Resource covering metadata of an individual."
 * identifier ^short = "Digital identifier(s) of the person"
 * identifier ^definition = "Group of items providing information about digital identifiers of the person."
 * identifier.type 1..
-* identifier.type from NFDI4Health_VS_MDS_Role_Name_Identifier_Scheme (required)
 * identifier.type ^short = "Which type of identifer is reported?"
 * identifier.type ^definition = "Type of the identifier scheme."
 * identifier.type ^example.label = "Example of identifier scheme"
 * identifier.type ^example.valueCodeableConcept.text = "ORCID"
-* identifier.type ^binding.description = "Value set defining codes to specify the identifier scheme of a personal identifier."
 * identifier.type.coding 1..1
 * identifier.type.coding from NFDI4Health_VS_MDS_Role_Name_Identifier_Scheme (required)
 * identifier.type.coding ^binding.description = "Value set defining codes to specify the identifier scheme of a personal identifier."

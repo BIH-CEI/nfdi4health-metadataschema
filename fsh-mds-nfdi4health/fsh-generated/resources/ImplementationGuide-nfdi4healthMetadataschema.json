@@ -211,10 +211,10 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nfdi4health-ex-mds-document-copyright"
+          "reference": "StructureDefinition/nfdi4health-ex-mds-document-use-rights"
         },
-        "name": "NFDI4Health EX MDS Document Copyright",
-        "description": "Extension providing information about the copyright of a document.",
+        "name": "NFDI4Health EX MDS Document Use Rights",
+        "description": "Extension providing information about the rights to (re-)use the [RESOURCE].",
         "exampleBoolean": false
       },
       {
@@ -515,10 +515,10 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nfdi4health-ex-mds-use-rights"
+          "reference": "StructureDefinition/nfdi4health-ex-mds-use-rights-confirmations"
         },
-        "name": "NFDI4Health EX MDS Use Rights",
-        "description": "Extension providing information about the use rights to (re-)use a resource.",
+        "name": "NFDI4Health EX MDS Use Rights Confirmations",
+        "description": "Extension providing information about licensing, if a Creative Commons liesense is selected.",
         "exampleBoolean": false
       },
       {
@@ -566,6 +566,14 @@
           "reference": "StructureDefinition/nfdi4health-pr-mds-document"
         },
         "name": "NFDI4Health PR MDS Document",
+        "description": "Resource covering metadata of a document.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-pr-mds-document-sl"
+        },
+        "name": "NFDI4Health PR MDS Document SK",
         "description": "Resource covering metadata of a document.",
         "exampleBoolean": false
       },
@@ -1132,6 +1140,14 @@
         },
         "name": "NFDI4Health_EX_MDS_Related",
         "description": "Extension providing information about identifiers (IDs) of the resources related to the given resource, e.g. DOIs of publications, datasets, study documents or links to web pages - registered on this portal or not.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-related-new"
+        },
+        "name": "NFDI4Health_EX_MDS_Related_New",
+        "description": "Extension providing information about related publications, datasets, study documents, web pages, etc.",
         "exampleBoolean": false
       },
       {

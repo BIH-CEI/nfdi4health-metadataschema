@@ -21,7 +21,7 @@
 [NFDI4Health_EX_MDS_Chronic_Diseases]: StructureDefinition-nfdi4health-ex-mds-chronic-diseases.html
 [NFDI4Health_EX_MDS_Copyright_Label]: StructureDefinition-nfdi4health-ex-mds-copyright-label.html
 [NFDI4Health_EX_MDS_Description_Non_English]: StructureDefinition-nfdi4health-ex-mds-description-non-english.html
-[NFDI4Health_EX_MDS_Document_Copyright]: StructureDefinition-nfdi4health-ex-mds-document-copyright.html
+[NFDI4Health_EX_MDS_Document_Use_Rights]: StructureDefinition-nfdi4health-ex-mds-document-use-rights.html
 [NFDI4Health_EX_MDS_Execution_Language]: StructureDefinition-nfdi4health-ex-mds-execution-language.html
 [NFDI4Health_EX_MDS_Format]: StructureDefinition-nfdi4health-ex-mds-format.html
 [NFDI4Health_EX_MDS_FundingID]: StructureDefinition-nfdi4health-ex-mds-fundingID.html
@@ -59,13 +59,14 @@
 [NFDI4Health_EX_MDS_Study_Target_Followup_Duration]: StructureDefinition-nfdi4health-ex-mds-study-target-followup-duration.html
 [NFDI4Health_EX_MDS_Study_Time_Perspectives]: StructureDefinition-nfdi4health-ex-mds-study-time-perspectives.html
 [NFDI4Health_EX_MDS_URI]: StructureDefinition-nfdi4health-ex-mds-uri.html
-[NFDI4Health_EX_MDS_Use_Rights]: StructureDefinition-nfdi4health-ex-mds-use-rights.html
+[NFDI4Health_EX_MDS_Use_Rights_Confirmations]: StructureDefinition-nfdi4health-ex-mds-use-rights-confirmations.html
 [NFDI4Health_EX_MDS_Version]: StructureDefinition-nfdi4health-ex-mds-version.html
 [NFDI4Health_EX_MDS_Webpage]: StructureDefinition-nfdi4health-ex-mds-webpage.html
 [NFDI4Health_LM_Metadataschema_EOCD_V3]: StructureDefinition-nfdi4health-lm-metadataschema-eocd-v3.html
 [NFDI4Health_LM_Metadataschema_General_V3]: StructureDefinition-nfdi4health-lm-metadataschema-general-v3.html
 [NFDI4Health_LM_Metadataschema_NE_V3]: StructureDefinition-nfdi4health-lm-metadataschema-ne-v3.html
 [NFDI4Health_PR_MDS_Document]: StructureDefinition-nfdi4health-pr-mds-document.html
+[NFDI4Health_PR_MDS_Document_SK]: StructureDefinition-nfdi4health-pr-mds-document-sl.html
 [NFDI4Health_PR_MDS_Evidence_Variable_Intervention_Exposure]: StructureDefinition-nfdi4health-pr-mds-evidence-variable-intervention-exposure.html
 [NFDI4Health_PR_MDS_Group_Actual]: StructureDefinition-nfdi4health-pr-mds-group-actual.html
 [NFDI4Health_PR_MDS_Group_Intended]: StructureDefinition-nfdi4health-pr-mds-group-intended.html
@@ -137,4 +138,5 @@
 [NFDI4Health_VS_MDS_Yes_No_Undecided_SNOMEDCT_NCI]: ValueSet-nfdi4health-vs-mds-yes-no-undecided-snomedct-nci.html
 [nfdi4health-exa-mds]: Questionnaire-nfdi4health-exa-mds.html
 [NFDI4Health_EX_MDS_Related]: StructureDefinition-nfdi4health-ex-mds-related.html
+[NFDI4Health_EX_MDS_Related_NEW]: StructureDefinition-nfdi4health-ex-mds-related-new.html
 [Test_Element_Definition]: StructureDefinition-Test-Element-Definition.html

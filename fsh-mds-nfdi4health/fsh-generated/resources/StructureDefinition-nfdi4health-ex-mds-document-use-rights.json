@@ -1,0 +1,147 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "nfdi4health-ex-mds-document-use-rights",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-document-use-rights",
+  "version": "0.9",
+  "name": "NFDI4Health_EX_MDS_Document_Use_Rights",
+  "title": "NFDI4Health EX MDS Document Use Rights",
+  "status": "draft",
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "description": "Extension providing information about the rights to (re-)use the [RESOURCE].",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "NFDI4Health",
+      "name": "NFDI4Health to FHIR Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "DocumentReference"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "NFDI4Health EX MDS Document Use Rights",
+        "definition": "Extension providing information about the rights to (re-)use the [RESOURCE].",
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "min": 2
+      },
+      {
+        "id": "Extension.extension:copyrightLabel",
+        "path": "Extension.extension",
+        "sliceName": "copyrightLabel",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-copyright-label"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.10.3.1 Resource.nonStudyDetails.useRights.label"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:useRightsConfirmations",
+        "path": "Extension.extension",
+        "sliceName": "useRightsConfirmations",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-use-rights-confirmations"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.10.3.2 Resource.nonStudyDetails.useRights.confirmations"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:useRightsDescription",
+        "path": "Extension.extension",
+        "sliceName": "useRightsDescription",
+        "short": "Additional information about use rights",
+        "definition": "Any additional descriptive information explaining terms and conditions to (re-)use the resource.",
+        "comment": "If 'Other' is selected in the property 'License', the preferred license or terms and conditions for (re-)use can be specified here.",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.10.3.3 Resource.nonStudyDetails.useRights.description"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:useRightsDescription.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:useRightsDescription.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "useRightsDescription"
+      },
+      {
+        "id": "Extension.extension:useRightsDescription.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-document-use-rights"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

@@ -62,8 +62,8 @@ Description: "Resource covering metadata of a questionnaire."
 * copyright.extension ^slicing.discriminator.type = #value
 * copyright.extension ^slicing.discriminator.path = "url"
 * copyright.extension ^slicing.rules = #open
-* copyright.extension contains NFDI4Health_EX_MDS_Copyright_Label named label 1..1
-* copyright.extension contains NFDI4Health_EX_MDS_Use_Rights named useRightsConfimations 1..  
+* copyright.extension contains NFDI4Health_EX_MDS_Copyright_Label named copyrightLabel 1..1
+* copyright.extension contains NFDI4Health_EX_MDS_Use_Rights_Confirmations named useRightsConfirmations 1..  
 
 
 Mapping: NFDI4Health-Questionnaire-to-FHIR
@@ -76,7 +76,7 @@ Source: NFDI4Health_PR_MDS_Questionnaire
 * identifier[alternative_ids].value -> "1.12.2 identifier"
 * identifier -> "1.1 resource_identifier" "Unique identifier of the resource used for identification within the NFDI4Health."
 * title -> "1.3.1 Resource.titles.text"
-* copyright.extension[useRightsConfimations] -> "resource_use_rights_confirmations"
+* copyright.extension[useRightsConfirmations] -> "resource_use_rights_confirmations"
 * identifier.value -> "1.1 resource_identifier" "The value that is unique"
 * description -> "1.5.1 resource_description_english" "A short plain text summary describing the resource in English." #English
 * description.extension[translation].extension[content].value[x] -> "1.6.1 resource_descriptions_non_english.text"

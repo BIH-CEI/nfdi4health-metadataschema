@@ -10,25 +10,22 @@ Description: "Resource covering metadata of an organization."
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 * . ^short = "Details about the organisation/institution/group/etc."
-* . ^definition = "For \"1.11.2 Resource.roles.organisational\": Group of items providing information about group(s) of persons, institution(s) or organisation(s) contributing to the resource. | For \"1.11.6 Resource.roles.affiliation\": Group of items providing further information about the organisation(s) associated with the role."
-* . ^comment = "For \"1.11.2 Resource.roles.organisational\": \r\nAdditional information: Group of items applicable to organisational/group names or providing further information about the organisation(s) associated with the role. | Short input help: Organisational name can be used to denote a research group or an institution."
+* . ^definition = "For 1.11.2 Resource.roles.organisational: Group of items providing information about group(s) of persons, institution(s) or organisation(s) contributing to the resource. | For 1.11.6 Resource.roles.affiliation: Group of items providing further information about the organisation(s) associated with the role."
+* . ^comment = "For 1.11.2 Resource.roles.organisational: Additional information: Group of items applicable to organisational/group names or providing further information about the organisation(s) associated with the role. | Short input help: Organisational name can be used to denote a research group or an institution."
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
 * extension ^min = 0
 * extension contains NFDI4Health_EX_MDS_FundingID named fundingID 0..* 
-* extension[fundingID] ^comment = "Short input help: If available, you can enter a funding identifier"
-* extension[fundingID] ^min = 0
-* extension[fundingID] ^isModifier = false
 * identifier ^short = "Digital identifier(s) of the organisation"
 * identifier ^definition = "Group of items providing information about identifiers of the organisation."
 * identifier.type 1..
-* identifier.type from NFDI4Health_VS_MDS_Role_Affiliation_Identifier_Scheme (required)
 * identifier.type ^short = "Identifier scheme"
 * identifier.type ^definition = "Type of the identifier scheme."
 * identifier.type ^comment = "Which type of identifer is reported?"
 * identifier.type ^example.label = "Identifier type"
 * identifier.type ^example.valueCodeableConcept.text = "ROR"
+* identifier.type from NFDI4Health_VS_MDS_Role_Affiliation_Identifier_Scheme (required)
 * identifier.type ^binding.description = "Value set defining codes to specify the identifier scheme of an affiliation identifier."
 * identifier.type.coding 1..1
 * identifier.value 1..

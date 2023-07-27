@@ -102,7 +102,7 @@
       "value": "96"
     }
   ],
-  "description": "There are four versions of the CRISIS questionnaires: Baseline, Baseline Current, Follow Up, and Follow Up Current Forms. \nThe Baseline Current Form is a shorter version of the Baseline Form that includes: a) Background section that obtains some basic demographic information; and b) Past two-week assessment of the survey domains. In contrast to the Baseline Form, it excludes the past three-month assessment of the survey domains.\nGenerally, the CRISIS questionnaires include the following domains:\n- Background (e.g., Demographics, Health, Family/living situation);\n- Coronavirus/covid-19 health/exposure status;\n- Life changes due to coronavirus/covid-19 crisis;\n- Daily behaviors (e.g., sleep, physical activity, time outdoors);\n- Emotions/worries (e.g., mood circumplex);\n- Media use (e.g., mobile devices, media, etc.);\n- Substance use (e.g., tobacco, alcohol, other drugs).",
+  "description": "There are four versions of the CRISIS questionnaires: Baseline, Baseline Current, Follow Up, and Follow Up Current Forms. \r\nThe Baseline Current Form is a shorter version of the Baseline Form that includes: a) Background section that obtains some basic demographic information; and b) Past two-week assessment of the survey domains. In contrast to the Baseline Form, it excludes the past three-month assessment of the survey domains.\r\nGenerally, the CRISIS questionnaires include the following domains:\r\n- Background (e.g., Demographics, Health, Family/living situation);\r\n- Coronavirus/covid-19 health/exposure status;\r\n- Life changes due to coronavirus/covid-19 crisis;\r\n- Daily behaviors (e.g., sleep, physical activity, time outdoors);\r\n- Emotions/worries (e.g., mood circumplex);\r\n- Media use (e.g., mobile devices, media, etc.);\r\n- Substance use (e.g., tobacco, alcohol, other drugs).",
   "title": "CRISIS Questionnaire - Youth Self-Report Baseline Form: Current Form",
   "_title": {
     "extension": [
@@ -127,16 +127,12 @@
     "extension": [
       {
         "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-copyright-label",
-        "valueCodeableConcept": {
-          "coding": [
-            {
-              "code": "UseRights#CC-BY-SA-4.0"
-            }
-          ]
+        "valueCoding": {
+          "code": "UseRights#CC-BY-SA-4.0"
         }
       },
       {
-        "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-use-rights",
+        "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-use-rights-confirmations",
         "extension": [
           {
             "url": "confirmationAuthority",

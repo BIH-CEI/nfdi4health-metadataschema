@@ -36,6 +36,10 @@
     {
       "type": "element",
       "expression": "Questionnaire.copyright"
+    },
+    {
+      "type": "element",
+      "expression": "Extension"
     }
   ],
   "type": "Extension",
@@ -48,7 +52,7 @@
         "path": "Extension",
         "short": "License",
         "definition": "License defining the rights to (re-)use the resource.",
-        "comment": "Short input help: Select one value from the list.\r\nIf “Other” is selected, an explanation of the (re-)use terms and conditions can be provided in the property “Additional information about use rights”.",
+        "comment": "Short input help: Select one value from the list. If 'Other' is selected, an explanation of the (re-)use terms and conditions can be provided in the property “Additional information about use rights”.",
         "min": 1,
         "max": "1",
         "mapping": [
@@ -74,9 +78,13 @@
         "min": 1,
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "Coding"
           }
-        ]
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-use-rights-label-spdx-umls-local"
+        }
       }
     ]
   }
