@@ -56,3 +56,17 @@ Description: "Resource covering metadata of a document."
     NFDI4Health_EX_MDS_Language named language 1..1
 * content.attachment.title.extension[translation] ^isModifier = false
 * content.attachment.title.extension[language] ^isModifier = false
+
+
+Mapping: NFDI4Health-Document-to-FHIR
+Id: NFDI4Health
+Title: "NFDI4Health Document to FHIR Mapping"
+Source: NFDI4Health_PR_MDS_Document
+* masterIdentifier -> "resource_identifier" "Unique identifier of the resource used for identification within the NFDI4Health."
+* masterIdentifier.system -> "resource_identifier"
+* masterIdentifier.value -> "resource_identifier"
+* content.attachment.title -> "resource_titles"
+* description -> "resource_description_english" "A short plain text summary describing the resource in English."
+* identifier -> "ids_alternative"
+* identifier.system -> "type"
+* identifier.value -> "identifier"
