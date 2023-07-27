@@ -14,7 +14,7 @@ Title: "NFDI4Health PR MDS Group Intended"
 * quantity ^short = "Target sample size"
 * quantity ^definition = "Intended number of observational units for the whole study (e.g. intended number of study participants at all study sites)."
 * quantity ^comment = "Short Input Help: Enter “-1” if target sample size was not set or is unknown."
-* characteristic ..1
+* characteristic ..*
 * characteristic ^slicing.discriminator.type = #value
 * characteristic ^slicing.discriminator.path = "code"
 * characteristic ^slicing.rules = #open

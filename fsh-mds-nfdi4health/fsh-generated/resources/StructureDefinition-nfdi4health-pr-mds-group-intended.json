@@ -72,8 +72,7 @@
           "rules": "open"
         },
         "short": "Eligibility criteria for study participants",
-        "definition": "Group of items providing information about eligibility criteria for study participants.",
-        "max": "1"
+        "definition": "Group of items providing information about eligibility criteria for study participants."
       },
       {
         "id": "Group.characteristic:eligibleMinimumAge",
@@ -214,7 +213,7 @@
         "short": "Eligible gender",
         "definition": "Gender of potential participants eligible to participate in the study.",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "mapping": [
           {
             "identity": "NFDI4Health",

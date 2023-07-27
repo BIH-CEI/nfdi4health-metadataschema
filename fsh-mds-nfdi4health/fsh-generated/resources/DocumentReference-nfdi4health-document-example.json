@@ -86,7 +86,7 @@
           "valueUri": "https://id.nlm.nih.gov/mesh/T000997092.html"
         }
       ],
-      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-keywords2"
+      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-keywords"
     },
     {
       "extension": [

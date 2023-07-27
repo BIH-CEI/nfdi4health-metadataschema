@@ -17,7 +17,6 @@ Description: "Profile of a RelatedArtifact intended to capture information about
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
-
 * extension contains 
     $ElementIdentifier named identifier 1..1 and
     $NFDI4HealthRelType named relationType 0..1

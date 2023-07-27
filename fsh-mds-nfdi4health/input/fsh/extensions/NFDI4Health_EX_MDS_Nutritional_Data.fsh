@@ -13,7 +13,6 @@ Description: "Extension asking if nutritional data was collected"
 * . 1..1
 * . ^short = "Nutritional data collected?"
 * . ^definition = "Indication whether nutritional data was collected by the resource."
-* url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-nutritional-data" (exactly)
 * value[x] 1..
 * value[x] only boolean
 

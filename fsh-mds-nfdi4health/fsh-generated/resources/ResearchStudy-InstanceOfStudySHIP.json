@@ -592,6 +592,15 @@
   "identifier": [
     {
       "use": "official",
+      "type": {
+        "coding": [
+          {
+            "code": "104",
+            "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+            "display": "NFDI4Health"
+          }
+        ]
+      },
       "system": "https://www.nfdi4health.de/",
       "value": "NFDI123456789"
     }

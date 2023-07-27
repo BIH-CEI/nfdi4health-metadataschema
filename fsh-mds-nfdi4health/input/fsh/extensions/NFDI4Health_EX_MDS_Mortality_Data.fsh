@@ -13,7 +13,6 @@ Description: "Extension covering information about the collection of mortality d
 * . 0..1
 * . ^short = "Were mortality data collected?"
 * . ^definition = "Mortality data."
-* url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-mortality-data" (exactly)
 * value[x] 1..
 * value[x] only Coding
 * valueCoding from NFDI4Health_VS_MDS_Mortality_Data_NCI_SNOMEDCT (required)

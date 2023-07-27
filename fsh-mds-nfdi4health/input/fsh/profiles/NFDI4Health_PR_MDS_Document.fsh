@@ -15,18 +15,10 @@ Description: "Resource covering metadata of a document."
 * extension contains
     NFDI4Health_EX_MDS_Label named label 0..* and
     NFDI4Health_EX_MDS_Description_Non_English named descriptions_non_english 0..* and
-    NFDI4Health_EX_MDS_Keywords2 named keywords 0..1 and
-    NFDI4Health_EX_MDS_Associated_Party named associatedParty 1..1 and
+    NFDI4Health_EX_MDS_Keywords named keywords 0..1 and
+    NFDI4Health_EX_MDS_Associated_Party named roles 1..1 and
     NFDI4Health_EX_MDS_Related named related 0..* and
     NFDI4Health_EX_MDS_Document_Copyright named copyright 0..1
-* extension[label] ^min = 0
-* extension[label] ^isModifier = false
-* extension[descriptions_non_english] ^min = 0
-* extension[descriptions_non_english] ^isModifier = false
-* extension[keywords] ^isModifier = false
-* extension[associatedParty] ^isModifier = false
-* extension[related] ^isModifier = false
-* extension[copyright] ^isModifier = false
 * masterIdentifier 1..
 * masterIdentifier ^short = "ID of the [RESOURCE]"
 * masterIdentifier ^definition = "Unique identifier of the resource used for identification within the NFDI4Health."
@@ -43,7 +35,6 @@ Description: "Resource covering metadata of a document."
 * content.extension ^slicing.rules = #open
 * content.extension ^min = 0
 * content.extension contains NFDI4Health_EX_MDS_Version named version 0..1
-* content.extension[version] ^isModifier = false
 * content.extension[version].value[x] 1..
 * content.attachment.title 1..
 * content.attachment.title ^short = "Title/name"
@@ -52,7 +43,5 @@ Description: "Resource covering metadata of a document."
 * content.attachment.title.extension ^slicing.discriminator.path = "url"
 * content.attachment.title.extension ^slicing.rules = #open
 * content.attachment.title.extension contains
-    Translation named translation 0..1 and
+    $translation named translation 0..1 and
     NFDI4Health_EX_MDS_Language named language 1..1
-* content.attachment.title.extension[translation] ^isModifier = false
-* content.attachment.title.extension[language] ^isModifier = false

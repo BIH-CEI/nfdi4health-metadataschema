@@ -259,9 +259,9 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nfdi4health-ex-mds-keywords2"
+          "reference": "StructureDefinition/nfdi4health-ex-mds-keywords"
         },
-        "name": "NFDI4Health EX MDS Keyword2",
+        "name": "NFDI4Health EX MDS Keyword",
         "description": "Extension storing keyword(s) describing a resource.",
         "exampleBoolean": false
       },
@@ -653,6 +653,14 @@
         },
         "name": "NFDI4Health PR MDS Study",
         "description": "Resource covering metadata of a study.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-id-type-umls-local"
+        },
+        "name": "NFDI4Health VS MDS ID Type [UMLS, local]",
+        "description": "Value set defining codes to specify the type of a resource identifier.",
         "exampleBoolean": false
       },
       {

@@ -27,7 +27,7 @@
 [NFDI4Health_EX_MDS_FundingID]: StructureDefinition-nfdi4health-ex-mds-fundingID.html
 [NFDI4Health_EX_MDS_Identifier_Assignment_Date]: StructureDefinition-nfdi4health-ex-mds-identifier-assignment-date.html
 [NFDI4Health_EX_MDS_IDs_NFDI4Health]: StructureDefinition-nfdi4health-ex-mds-ids-nfdi4health.html
-[NFDI4Health_EX_MDS_Keywords2]: StructureDefinition-nfdi4health-ex-mds-keywords2.html
+[NFDI4Health_EX_MDS_Keywords]: StructureDefinition-nfdi4health-ex-mds-keywords.html
 [NFDI4Health_EX_MDS_Label]: StructureDefinition-nfdi4health-ex-mds-label.html
 [NFDI4Health_EX_MDS_Language]: StructureDefinition-nfdi4health-ex-mds-language.html
 [NFDI4Health_EX_MDS_Mortality_Data]: StructureDefinition-nfdi4health-ex-mds-mortality-data.html
@@ -77,6 +77,7 @@
 [NFDI4Health_PR_MDS_Related_Artifact_NFDI4Health_Resource]: StructureDefinition-nfdi4health-pr-mds-related-artifact-ndfi4health-resource.html
 [NFDI4Health_PR_MDS_Related_Artifact_Non_NFDI4Health_Resource]: StructureDefinition-nfdi4health-pr-mds-related-artifact-non-ndfi4health-resource.html
 [NFDI4Health_PR_MDS_Study]: StructureDefinition-nfdi4health-pr-mds-study.html
+[NFDI4Health_VS_MDS_ID_TYPE_UMLS_Local]: ValueSet-nfdi4health-vs-mds-id-type-umls-local.html
 [NFDI4Health_VS_MDS_ID_TYPE_UMLS]: ValueSet-nfdi4health-vs-mds-id-type-umls.html
 [NFDI4Health_VS_MDS_Identifier_Type_Related_Artifact_UMLS_Local]: ValueSet-nfdi4health-vs-mds-identifier-type-related-artifact-umls-local.html
 [NFDI4Health_VS_MDS_Label_Type_HL7]: ValueSet-nfdi4health-vs-mds-label-type-hl7.html

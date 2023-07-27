@@ -37,7 +37,7 @@ Description: "Resource covering metadata of a study."
     NFDI4Health_EX_MDS_Off_Label_Use named offLabelUse 0..1 and
     NFDI4Health_EX_MDS_Study_Masking named masking 0..1
 * identifier ^slicing.discriminator.type = #value
-* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.discriminator.path = "type"
 * identifier ^slicing.rules = #open
 * identifier contains
     NFDI4Health 1..1 and
@@ -50,14 +50,18 @@ Description: "Resource covering metadata of a study."
     KonsortSWD 0..* and
     MDMPortal 0..* and
     Other 0..*
+* identifier.type 1..1
+* identifier.type from NFDI4Health_VS_MDS_ID_TYPE_UMLS_Local (required)
 * identifier[NFDI4Health] ^definition = "Unique identifier of the resource used for identification within the NFDI4Health."
 * identifier[NFDI4Health] ^comment = "Additional information: The identifier is assigned automatically."
+* identifier[NFDI4Health].type = $Remaining#104 "NFDI4Health" (exactly)
 * identifier[NFDI4Health].use 1..
 * identifier[NFDI4Health].use = #official (exactly)
 * identifier[NFDI4Health].system 1..
 * identifier[NFDI4Health].system = "https://www.nfdi4health.de/" (exactly)
 * identifier[NFDI4Health].value 1..
 * identifier[DRKS] ^definition = "Group of items providing information about identifiers (IDs) assigned to the given resource by another registering systems, e.g. a register of clinical trials or a data repository."
+* identifier[DRKS].type = $Remaining#098 "DRKS" (exactly)
 * identifier[DRKS].system 1..
 * identifier[DRKS].system = "https://www.drks.de" (exactly)
 * identifier[DRKS].system ^definition = "Name of the system where the given resource is already registered. Fixed to DRKS."
@@ -65,36 +69,51 @@ Description: "Resource covering metadata of a study."
 * identifier[DRKS].value ^definition = "Identifier (ID) assigned to the given resource by DRKS."
 * identifier[DRKS].value ^example[0].label = "DRKS Identifier"
 * identifier[DRKS].value ^example[=].valueString = "DRKS00021273"
+* identifier[NCT] ^definition = "Group of items providing information about identifiers (IDs) assigned to the given resource by another registering systems, e.g. a register of clinical trials or a data repository."
+* identifier[NCT].type = $UMLS#C5419532 "Clinicaltrials.gov Identifier" (exactly)
 * identifier[NCT].system 1..
 * identifier[NCT].system = "https://www.clinicaltrials.gov/" (exactly)
 * identifier[NCT].system ^definition = "Name of the system where the given resource is already registered. Fixed to NCT (CT.gov)."
+* identifier[NCT].type
 * identifier[NCT].value 1..
 * identifier[NCT].value ^definition = "Identifier (ID) assigned to the given resource by ClinicalTrials.gov."
 * identifier[NCT].value ^example[0].label = "NCT Identifier"
 * identifier[NCT].value ^example[=].valueString = "NCT04327505"
+* identifier[ISRCTN] ^definition = "Group of items providing information about identifiers (IDs) assigned to the given resource by another registering systems, e.g. a register of clinical trials or a data repository."
+* identifier[ISRCTN].type = $Remaining#099 "ISRCTN" (exactly)
 * identifier[ISRCTN].system 1..
 * identifier[ISRCTN].system = "https://www.isrctn.com/" (exactly)
 * identifier[ISRCTN].system ^definition = "Name of the system where the given resource is already registered. Fixed to ISRCTN."
 * identifier[ISRCTN].value 1..
 * identifier[ISRCTN].value ^definition = "Identifier (ID) assigned to the given resource by ISRCTN."
+* identifier[EudraCT] ^definition = "Group of items providing information about identifiers (IDs) assigned to the given resource by another registering systems, e.g. a register of clinical trials or a data repository."
+* identifier[EudraCT].type = $UMLS#C4329800 "European Union Drug Regulating Authorities Clinical Trials Database (Intellectual Product)" (exactly)
 * identifier[EudraCT].system 1..
 * identifier[EudraCT].system = "https://eudract.ema.europa.eu/results-web/index.xhtml" (exactly)
 * identifier[EudraCT].system ^definition = "Name of the system where the given resource is already registered. Fixed to EudraCT."
 * identifier[EudraCT].value 1..
+* identifier[EUDAMED] ^definition = "Group of items providing information about identifiers (IDs) assigned to the given resource by another registering systems, e.g. a register of clinical trials or a data repository."
+* identifier[EUDAMED].type = $Remaining#100 "EUDAMED" (exactly)
 * identifier[EUDAMED].system 1..
 * identifier[EUDAMED].system = "https://ec.europa.eu/tools/eudamed/#/screen/home" (exactly)
 * identifier[EUDAMED].system ^definition = "Name of the system where the given resource is already registered. Fixed to EUDAMED."
 * identifier[EUDAMED].value 1..
 * identifier[EUDAMED].value ^definition = "Identifier (ID) assigned to the given resource by EUDAMED."
+* identifier[UTN] ^definition = "Group of items providing information about identifiers (IDs) assigned to the given resource by another registering systems, e.g. a register of clinical trials or a data repository."
+* identifier[UTN].type = $Remaining#101 "UTN" (exactly)
 * identifier[UTN].system 1..
 * identifier[UTN].system = "http://www.who.int/ictrp/unam-" (exactly)
 * identifier[UTN].system ^definition = "Name of the system where the given resource is already registered. Fixed to UTN (WHO)."
 * identifier[UTN].value 1..
+* identifier[KonsortSWD] ^definition = "Group of items providing information about identifiers (IDs) assigned to the given resource by another registering systems, e.g. a register of clinical trials or a data repository."
+* identifier[KonsortSWD].type = $Remaining#102 "KonsortSWD" (exactly)
 * identifier[KonsortSWD].system 1..
 * identifier[KonsortSWD].system = "https://www.konsortswd.de/" (exactly)
 * identifier[KonsortSWD].system ^definition = "Name of the system where the given resource is already registered. Fixed to KonsortSWD."
 * identifier[KonsortSWD].value 1..
 * identifier[KonsortSWD].value ^definition = "Identifier (ID) assigned to the given resource by KonsortSWD."
+* identifier[MDMPortal] ^definition = "Group of items providing information about identifiers (IDs) assigned to the given resource by another registering systems, e.g. a register of clinical trials or a data repository."
+* identifier[MDMPortal].type = $Remaining#103 "MDM Portal" (exactly)
 * identifier[MDMPortal].system 1..
 * identifier[MDMPortal].system = "https://www.mdm-portal.de/" (exactly)
 * identifier[MDMPortal].system ^definition = "Name of the system where the given resource is already registered. Fixed to MDM Portal."
@@ -102,6 +121,7 @@ Description: "Resource covering metadata of a study."
 * identifier[MDMPortal].value ^definition = "Identifier (ID) assigned to the given resource by MDM Portal."
 * identifier[Other] ^short = "Identifier"
 * identifier[Other] ^definition = "Identifier (ID) assigned to the given resource by another registering system, e.g. by a register of clinical trials or a data repository."
+* identifier[Other].type = $UMLS#C0205394 "Other (Qualitative Concept)" (exactly)
 * identifier[Other].system 1..
 * identifier[Other].system ^definition = "Type/name of the system where the given resource is already registered."
 * identifier[Other].value 1..
