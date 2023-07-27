@@ -21,13 +21,11 @@ Description: "Profile of a RelatedArtifact intended to capture information about
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
-
 * extension contains 
     $ElementIdentifier named identifier 1..1 and
     $AssignmentDate named identifierAssignmentDate 0..1 and
     $NonNFDI4HealthRelType named relationType 1..1 and
     $ResourceTypeGeneral named resourceTypeGeneral 0..1 
-
 * extension[identifier].valueIdentifier.value 1..1
 * extension[identifier].valueIdentifier.type 1..1
 * extension[identifier].valueIdentifier.type from $nfdi4health-vs-mds-identifier-type-related-artifact-umls-local (required)

@@ -17,9 +17,9 @@ Description: "Resource covering metadata of a questionnaire."
     NFDI4Health_EX_MDS_Format named format 0..1 and
     NFDI4Health_EX_MDS_Label named label 0.. and
     NFDI4Health_EX_MDS_Execution_Language named executionlLanguage 0.. and
-    NFDI4Health_EX_MDS_Associated_Party named associatedParty 1.. and
+    NFDI4Health_EX_MDS_Associated_Party named roles 1.. and
     NFDI4Health_EX_MDS_Related named related 0..1 and
-    NFDI4Health_EX_MDS_Keywords2 named keywords 0..
+    NFDI4Health_EX_MDS_Keywords named keywords 0..
 * identifier 1..1
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "assigner.identifier.system"
@@ -48,7 +48,7 @@ Description: "Resource covering metadata of a questionnaire."
 * description.extension ^slicing.discriminator.path = "url"
 * description.extension ^slicing.rules = #open
 * description.extension ^min = 0
-* description.extension contains Translation named translation 0..1
+* description.extension contains $translation named translation 0..1
 * description.extension[translation] ^isModifier = false
 * description.extension[translation].extension ^slicing.discriminator.type = #value
 * description.extension[translation].extension ^slicing.discriminator.path = "url"

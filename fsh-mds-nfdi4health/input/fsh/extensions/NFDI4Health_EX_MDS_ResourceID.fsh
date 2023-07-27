@@ -15,4 +15,3 @@ Description: "Extension providing information about identifiers (IDs) of the res
 * extension ^slicing.rules = #open
 * extension ^min = 0
 * extension contains resourceID 0..1
-* url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-resourceID" (exactly)

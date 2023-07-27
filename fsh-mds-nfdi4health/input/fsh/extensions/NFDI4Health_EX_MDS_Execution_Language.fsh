@@ -16,7 +16,6 @@ Description: "Extension provinding information about the language in which a stu
 * . ^short = "Execution language(s) of the [RESOURCE]"
 * . ^definition = "Language(s) in which a study/substudy is conducted, or a language in which a study document is composed."
 * . ^comment = "Short input help: Select all that apply."
-* url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-execution-language" (exactly)
 * value[x] 1..
 * value[x] only code
 * valueCode from $CommonLanguages (required)

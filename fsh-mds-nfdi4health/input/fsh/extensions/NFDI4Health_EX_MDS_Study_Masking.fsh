@@ -36,7 +36,6 @@ Description: "Group of items providing information about the masking of interven
 * extension[description] ^comment = "Short Input Help: If needed, additional information about masking, e.g. other parties who may be masked."
 * extension[description].value[x] 1..
 * extension[description].value[x] only string
-* url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-masking" (exactly)
 
 Mapping: NFDI4Health-Study-Masking-to-FHIR
 Id: NFDI4Health

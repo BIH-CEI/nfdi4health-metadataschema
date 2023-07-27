@@ -139,9 +139,9 @@
         ]
       },
       {
-        "id": "Questionnaire.extension:associatedParty",
+        "id": "Questionnaire.extension:roles",
         "path": "Questionnaire.extension",
-        "sliceName": "associatedParty",
+        "sliceName": "roles",
         "min": 1,
         "max": "*",
         "type": [
@@ -178,7 +178,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-keywords2"
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-keywords"
             ]
           }
         ]

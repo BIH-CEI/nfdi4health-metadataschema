@@ -28,7 +28,6 @@ Description: "Extension storing identifiers assigned by NFDI4Health."
 * extension[relationType].value[x] from NFDI4Health_VS_MDS_Relation_Type_Ids_Nfdi_Local_HL7V3 (required)
 * extension[relationType].value[x] ^binding.description = "Value set defining codes to specify the relationship between two resources (both registered in NFDI4Health)."
 * extension[relationType].value[x].text ..0
-* url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-ids-nfdi4health" (exactly)
 
 Mapping: NFDI4Health-IDs-NFDI4Health-to-FHIR
 Id: NFDI4Health

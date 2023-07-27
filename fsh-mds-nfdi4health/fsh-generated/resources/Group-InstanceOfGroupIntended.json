@@ -64,6 +64,48 @@
         ]
       },
       "exclude": false
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "C17357",
+            "system": "http://ncimeta.nci.nih.gov",
+            "display": "Gender (Organism Attribute)"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "female",
+            "system": "http://hl7.org/fhir/administrative-gender",
+            "display": "Female"
+          }
+        ]
+      },
+      "exclude": false
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "C17357",
+            "system": "http://ncimeta.nci.nih.gov",
+            "display": "Gender (Organism Attribute)"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "other",
+            "system": "http://hl7.org/fhir/administrative-gender",
+            "display": "Other"
+          }
+        ]
+      },
+      "exclude": false
     }
   ],
   "type": "person"

@@ -21,8 +21,8 @@ Das CORE CRF ist ein umfassenderes Formular mit mehr Variablen, um das Spektrum 
 * extension[keywords].extension[code].valueUri = "https://id.nlm.nih.gov/mesh/D000086382.html"
 * extension[keywords].extension[label].valueString = "Questionnaire"
 * extension[keywords].extension[code].valueUri = "https://id.nlm.nih.gov/mesh/T000997092.html"
-* extension[associatedParty].extension[party].valueReference = Reference(PractitionerRoleExample1)
-* extension[associatedParty].extension[nameType].valueCoding = #C1519021
+* extension[roles].extension[party].valueReference = Reference(PractitionerRoleExample1)
+* extension[roles].extension[nameType].valueCoding = #C1519021
 * extension[related][0].extension[identifier].valueIdentifier.system = "https://csh.nfdi4health.de/"
 * extension[related][0].extension[identifier].valueIdentifier.value = "118"
 * extension[related][0].extension[relationType].valueCodeableConcept = $Remaining#075 "A is source of B"

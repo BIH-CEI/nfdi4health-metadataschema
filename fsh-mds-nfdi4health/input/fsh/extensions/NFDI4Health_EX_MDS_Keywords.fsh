@@ -1,8 +1,8 @@
-Extension: NFDI4Health_EX_MDS_Keywords2
-Id: nfdi4health-ex-mds-keywords2
-Title: "NFDI4Health EX MDS Keyword2"
+Extension: NFDI4Health_EX_MDS_Keywords
+Id: nfdi4health-ex-mds-keywords
+Title: "NFDI4Health EX MDS Keyword"
 Description: "Extension storing keyword(s) describing a resource."
-* ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-keywords2"
+* ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-keywords"
 * ^version = "0.9"
 * ^status = #draft
 * ^publisher = "NFDI4Health"
@@ -29,13 +29,11 @@ Description: "Extension storing keyword(s) describing a resource."
 * extension[code] ^definition = "If known, the code of the keyword in a classification/vocabulary."
 * extension[code] ^comment = "Short input help : If found, the code from the classification/vocabulary used."
 * extension[code].value[x] only uri
-* url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-keywords2" (exactly)
 
-
-Mapping: NFDI4Health-Keywords2-to-FHIR
+Mapping: NFDI4Health-Keywords-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
-Source: NFDI4Health_EX_MDS_Keywords2
+Source: NFDI4Health_EX_MDS_Keywords
 * -> "1.7 Resource.keywords"
 * extension[label] -> "1.7.1 Resource.keywords.label"
 * extension[code] -> "1.7.2 Resource.keywords.code"

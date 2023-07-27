@@ -29,4 +29,3 @@ Description: "Extension providing description(s) of the resource written not in 
 * extension[language] ^short = "Language of the description"
 * extension[language] ^definition = "Language of the description"
 * extension[language] ^binding.description = "Value set defining codes to specify a language other than English."
-* url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-description-non-english" (exactly)

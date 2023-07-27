@@ -407,6 +407,34 @@
     {
       "code": "097",
       "display": "w3id"
+    },
+    {
+      "code": "098",
+      "display": "DRKS"
+    },
+    {
+      "code": "099",
+      "display": "ISRCTN"
+    },
+    {
+      "code": "100",
+      "display": "EUDAMED"
+    },
+    {
+      "code": "101",
+      "display": "UTN"
+    },
+    {
+      "code": "102",
+      "display": "KonsortSWD"
+    },
+    {
+      "code": "103",
+      "display": "MDM Portal"
+    },
+    {
+      "code": "104",
+      "display": "NFDI4Health"
     }
   ],
   "version": "0.9",
@@ -422,5 +450,5 @@
       ]
     }
   ],
-  "count": 97
+  "count": 104
 }

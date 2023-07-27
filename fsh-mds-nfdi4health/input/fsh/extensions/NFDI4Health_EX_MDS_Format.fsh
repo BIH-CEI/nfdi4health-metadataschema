@@ -13,7 +13,6 @@ Description: "Extension providing information about the format of a resource."
 * . ^short = "Format of the [RESOURCE]"
 * . ^definition = "Technical format of the resource."
 * . ^comment = "Short input help : E.g., XML, PDF, XLSX, etc."
-* url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-format" (exactly)
 * value[x] only string
 
 Mapping: NFDI4Health-Format-to-FHIR

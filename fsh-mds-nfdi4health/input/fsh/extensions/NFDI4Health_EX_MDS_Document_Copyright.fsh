@@ -18,4 +18,3 @@ Description: "Extension providing information about the copyright of a document.
     NFDI4Health_EX_MDS_Use_Rights named useRightsConfirmations 1..*
 * extension[label] ^short = "License"
 * extension[label] ^definition = "License defining the rights to (re-)use the resource."
-* url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-document-copyright" (exactly)

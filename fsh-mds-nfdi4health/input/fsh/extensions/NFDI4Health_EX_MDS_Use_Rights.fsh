@@ -33,7 +33,6 @@ Description: "Extension providing information about the use rights to (re-)use a
 * extension[confirmationIrrevocability].value[x] only boolean
 * extension[supportByLicensing] ^short = "Do you confirm that the authors allow NFDI4Health to license the document?"
 * extension[supportByLicensing].value[x] only boolean
-* url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-use-rights" (exactly)
 
 Mapping: NFDI4Health-Use-Rights-to-FHIR
 Id: NFDI4Health

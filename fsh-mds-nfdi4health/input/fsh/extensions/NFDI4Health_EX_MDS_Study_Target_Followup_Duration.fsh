@@ -14,7 +14,6 @@ Description: "Extension informing about the target follow-up duration of a study
 * . ^short = "Target follow-up duration"
 * . ^definition = "If applicable, anticipated time period over which each participant is to be followed, provided in years."
 * . ^comment = "Short input help : The value must be provided in years."
-* url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-target-followup-duration" (exactly)
 * value[x] 1..
 * value[x] only Quantity
 * valueQuantity.value 1..

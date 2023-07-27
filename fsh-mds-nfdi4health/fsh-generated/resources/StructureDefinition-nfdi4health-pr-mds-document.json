@@ -139,15 +139,15 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-keywords2"
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-keywords"
             ]
           }
         ]
       },
       {
-        "id": "DocumentReference.extension:associatedParty",
+        "id": "DocumentReference.extension:roles",
         "path": "DocumentReference.extension",
-        "sliceName": "associatedParty",
+        "sliceName": "roles",
         "min": 1,
         "max": "1",
         "type": [

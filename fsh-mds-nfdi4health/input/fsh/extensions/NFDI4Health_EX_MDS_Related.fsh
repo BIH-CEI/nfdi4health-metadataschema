@@ -47,7 +47,6 @@ Description: "Extension providing information about identifiers (IDs) of the res
 * extension[resourceTypeGeneral].valueCodeableConcept from NFDI4Health_VS_MDS_Resource_Type_General_NCI_UMLS_Local (required)
 * extension[resourceTypeGeneral].valueCodeableConcept ^binding.description = "Value set defining codes to specify the the general resource type"
 * extension[resourceTypeGeneral].valueCodeableConcept.text ..0
-* url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related" (exactly)
 
 Mapping: NFDI4Health-Related-to-FHIR
 Id: NFDI4Health
