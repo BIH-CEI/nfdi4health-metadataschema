@@ -402,16 +402,6 @@
         ]
       },
       {
-        "id": "ResearchStudy.extension:masking.extension:roles",
-        "path": "ResearchStudy.extension.extension",
-        "sliceName": "roles"
-      },
-      {
-        "id": "ResearchStudy.extension:masking.extension:description",
-        "path": "ResearchStudy.extension.extension",
-        "sliceName": "description"
-      },
-      {
         "id": "ResearchStudy.identifier",
         "path": "ResearchStudy.identifier",
         "slicing": {

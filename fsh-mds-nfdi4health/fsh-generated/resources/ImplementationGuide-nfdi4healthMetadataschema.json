@@ -459,14 +459,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nfdi4health-ex-mds-study-sampling-method-probabiity"
-        },
-        "name": "NFDI4Health EX MDS Study Sampling Method Probability",
-        "description": "Extension informing about the type of applied probability sampling in a study.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/nfdi4health-ex-mds-study-status"
         },
         "name": "NFDI4Health EX MDS Study Status",
@@ -634,6 +626,14 @@
       {
         "reference": {
           "reference": "StructureDefinition/nfdi4health-pr-mds-questionnaire"
+        },
+        "name": "NFDI4Health PR MDS Questionnaire",
+        "description": "Resource covering metadata of a questionnaire.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-pr-mds-questionnaire-sk"
         },
         "name": "NFDI4Health PR MDS Questionnaire",
         "description": "Resource covering metadata of a questionnaire.",

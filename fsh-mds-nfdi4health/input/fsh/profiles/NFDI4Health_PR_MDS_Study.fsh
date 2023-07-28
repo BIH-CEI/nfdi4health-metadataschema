@@ -396,8 +396,6 @@ Mapping: NFDI4Health-Study-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_PR_MDS_Study
-* extension[masking].extension[roles] -> "1.17.37.2.2 Resource.studyDesign.interventional.masking.roles"
-* extension[masking].extension[description] -> "1.17.37.2.3 Resource.studyDesign.interventional.masking.description"
 * identifier -> "1.1 Resource.identifier"
 * identifier -> "1.12 Resource.idsAlternative"
 * identifier[NFDI4Health] -> "1.1 Resource.identifier"

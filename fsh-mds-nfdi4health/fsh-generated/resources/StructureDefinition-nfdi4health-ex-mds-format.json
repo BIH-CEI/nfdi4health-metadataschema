@@ -49,6 +49,20 @@
         "short": "Format of the [RESOURCE]",
         "definition": "Technical format of the resource.",
         "comment": "Short input help : E.g., XML, PDF, XLSX, etc.",
+        "example": [
+          {
+            "label": "Example of format",
+            "valueString": "XML"
+          },
+          {
+            "label": "Example of format",
+            "valueString": "PDF"
+          },
+          {
+            "label": "Example of format",
+            "valueString": "XLSX"
+          }
+        ],
         "mapping": [
           {
             "identity": "NFDI4Health",

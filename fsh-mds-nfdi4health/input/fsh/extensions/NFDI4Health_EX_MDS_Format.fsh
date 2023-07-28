@@ -13,6 +13,12 @@ Description: "Extension providing information about the format of a resource."
 * . ^short = "Format of the [RESOURCE]"
 * . ^definition = "Technical format of the resource."
 * . ^comment = "Short input help : E.g., XML, PDF, XLSX, etc."
+* . ^example[0].label = "Example of format"
+* . ^example[=].valueString = "XML"
+* . ^example[+].label = "Example of format"
+* . ^example[=].valueString = "PDF"
+* . ^example[+].label = "Example of format"
+* . ^example[=].valueString = "XLSX"
 * value[x] only string
 
 Mapping: NFDI4Health-Format-to-FHIR

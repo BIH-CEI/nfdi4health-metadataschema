@@ -52,7 +52,6 @@
 [NFDI4Health_EX_MDS_Study_Masking]: StructureDefinition-nfdi4health-ex-mds-study-masking.html
 [NFDI4Health_EX_MDS_Study_Outcomes]: StructureDefinition-nfdi4health-ex-mds-study-outcomes.html
 [NFDI4Health_EX_MDS_Study_Population]: StructureDefinition-nfdi4health-ex-mds-study-population.html
-[NFDI4Health_EX_MDS_Study_Sampling_Method_Probability]: StructureDefinition-nfdi4health-ex-mds-study-sampling-method-probabiity.html
 [NFDI4Health_EX_MDS_Study_Status]: StructureDefinition-nfdi4health-ex-mds-study-status.html
 [NFDI4Health_EX_MDS_Study_Status_Halted_Stage]: StructureDefinition-nfdi4health-ex-mds-study-status-halted-stage.html
 [NFDI4Health_EX_MDS_Study_Subject]: StructureDefinition-nfdi4health-ex-mds-study-subject.html
@@ -75,6 +74,7 @@
 [NFDI4Health_PR_MDS_Practitioner_Role]: StructureDefinition-nfdi4health-pr-mds-practitioner-role.html
 [NFDI4Health_PR_MDS_Provenance]: StructureDefinition-nfdi4health-pr-mds-provenance.html
 [NFDI4Health_PR_MDS_Questionnaire]: StructureDefinition-nfdi4health-pr-mds-questionnaire.html
+[NFDI4Health_PR_MDS_Questionnaire_SK]: StructureDefinition-nfdi4health-pr-mds-questionnaire-sk.html
 [NFDI4Health_PR_MDS_Related_Artifact_NFDI4Health_Resource]: StructureDefinition-nfdi4health-pr-mds-related-artifact-ndfi4health-resource.html
 [NFDI4Health_PR_MDS_Related_Artifact_Non_NFDI4Health_Resource]: StructureDefinition-nfdi4health-pr-mds-related-artifact-non-ndfi4health-resource.html
 [NFDI4Health_PR_MDS_Study]: StructureDefinition-nfdi4health-pr-mds-study.html
