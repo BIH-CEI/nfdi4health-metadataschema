@@ -1,4 +1,4 @@
-Instance: InstanceOfOrganizationResearchGroup
+Instance: InstanceOfOrganizationResearchGroupRNCM
 InstanceOf: NFDI4Health_PR_MDS_Organization
 Usage: #example
 Title: "Instance Of Organization Research Group"

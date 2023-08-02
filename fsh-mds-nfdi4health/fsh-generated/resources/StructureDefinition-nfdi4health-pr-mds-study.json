@@ -1404,7 +1404,7 @@
         "max": "1",
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-allocation-umls",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-allocation-nci",
           "description": "Value set defining codes to specify the subject allocation in a study."
         },
         "mapping": [
@@ -1624,7 +1624,6 @@
         "short": "Name of the primary health condition, disease or focus of the study",
         "definition": "Name of primary health condition or disease considered in the study, or the focus of the study (e.g. medication, food, therapy, device, etc.).",
         "comment": "Additional information: The use of terms from established terminologies/classifications (e.g. SNOMED CT, ICD, etc.) is preferred. However, also self-assigned terms are allowed. |  Short input help: Preferably, use terms from SNOMED CT (https://browser.ihtsdotools.org).",
-        "min": 1,
         "example": [
           {
             "label": "Name of a Condition",
@@ -1785,7 +1784,6 @@
         "short": "Keyword",
         "definition": "Keyword(s) describing the resource.",
         "comment": "Additional information: The use of terms from established classifications/vocabularies (e.g. MeSH, UMLS, SNOMED CT) is preferred. However, also self-assigned keywords are allowed. | Short input help: Preferably, use terms from MeSH (https://meshb.nlm.nih.gov/search) or UMLS (https://uts.nlm.nih.gov/uts/umls/home).",
-        "min": 1,
         "example": [
           {
             "label": "Keyword label",

@@ -1,0 +1,50 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "ConceptMap-SNOMEDCT-Yes-No-NotApplicable-to-NFDI4Health",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ConceptMap/SNOMEDCT-Yes-No-NotApplicable-to-NFDI4Health",
+  "name": "ConceptMap-VS-MDS-Yes-No-NotApplicatble-SNOMEDCT-NFDI4Health-Mapping",
+  "title": "ConceptMap - Value Set Yes-No-Not Applicable from SNOMED CT to NFDI4Health",
+  "status": "active",
+  "experimental": false,
+  "date": "2023-07-28",
+  "publisher": "NFDI4Health",
+  "description": "Mapping of Value Set Yes-No-Not Applicable from SNOMED CT to NFDI4Health",
+  "sourceCanonical": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-yes-no-not-applicable-snomedct",
+  "group": [
+    {
+      "source": "http://snomed.info/sct",
+      "element": [
+        {
+          "code": "373066001",
+          "display": "Yes (qualifier value)",
+          "target": [
+            {
+              "display": "Yes",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "373067005",
+          "display": "No (qualifier value)",
+          "target": [
+            {
+              "display": "No",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "385432009",
+          "display": "Not applicable (qualifier value)",
+          "target": [
+            {
+              "display": "Not applicable",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

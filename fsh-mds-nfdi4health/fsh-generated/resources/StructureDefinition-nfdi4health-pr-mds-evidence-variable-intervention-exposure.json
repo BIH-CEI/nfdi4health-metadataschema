@@ -92,11 +92,32 @@
         ]
       },
       {
-        "id": "EvidenceVariable.topic",
-        "path": "EvidenceVariable.topic",
+        "id": "EvidenceVariable.characteristic.definition[x]",
+        "path": "EvidenceVariable.characteristic.definition[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "EvidenceVariable.characteristic.definition[x]:definitionCodeableConcept",
+        "path": "EvidenceVariable.characteristic.definition[x]",
+        "sliceName": "definitionCodeableConcept",
         "short": "Type of the intervention/exposure",
         "definition": "General type of the given intervention/exposure.",
+        "min": 1,
         "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
         "binding": {
           "strength": "required",
           "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-intervention-type-nci-umls",
@@ -108,22 +129,6 @@
             "map": "1.17.31.2 Resource.studyDesign.interventions.type"
           }
         ]
-      },
-      {
-        "id": "EvidenceVariable.topic.coding",
-        "path": "EvidenceVariable.topic.coding",
-        "min": 1,
-        "max": "1"
-      },
-      {
-        "id": "EvidenceVariable.topic.coding.system",
-        "path": "EvidenceVariable.topic.coding.system",
-        "min": 1
-      },
-      {
-        "id": "EvidenceVariable.topic.coding.code",
-        "path": "EvidenceVariable.topic.coding.code",
-        "min": 1
       }
     ]
   }

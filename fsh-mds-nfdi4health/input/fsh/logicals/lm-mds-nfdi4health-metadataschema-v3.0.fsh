@@ -232,8 +232,9 @@ Description: "NFDI4Health LogicalModel General Metadataschema"
 * Resource.studyDesign.studyGroupsOfDiseases.conditions ^comment = "Additional Information: The values originate from the WHO's International Statistical Classification of Diseases and Related Health Problems, 11th Revision (ICD-11). / Short Input Help: For more information about the groups of diseases/conditions, visit the WHO's ICD-11 homepage: https://icd.who.int/en. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: ICD-11 [20] (NFDI4Health UC 5.2 requirement)"
 * Resource.studyDesign.studyGroupsOfDiseases.conditions ^example.label = "General"
 * Resource.studyDesign.studyGroupsOfDiseases.conditions ^example.valueString = "Values are based on lower level ICD-11"
+* Resource.studyDesign.studyGroupsOfDiseases.conditions from NFDI4Health_VS_MDS_Study_Groups_Of_Diseases_ICD11 (required)
 * Resource.studyDesign.mortalityData 0..1 Coding "Were mortality data collected?" "Mortality data."
-* Resource.studyDesign.mortalityData from NFDI4Health_VS_MDS_Mortality_Data_NCI_SNOMEDCT (required)
+* Resource.studyDesign.mortalityData from NFDI4Health_VS_MDS_Mortality_Data_NCI (required)
 * Resource.studyDesign.mortalityData ^comment = "Cardinality: 0..1, if Resource.studyDesign.studyType.nonInterventional == ('Longitudinal' OR 'Cohort' OR 'Case-cohort' OR 'Birth cohort' OR 'Trend' OR 'Panel'); otherwise 0..0 / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.2 requirements"
 * Resource.studyDesign.ethicsCommiteeApproval 0..1 Coding "Status of the ethics committee approval" "Status of the study approval from the (leading) ethics committee."
 * Resource.studyDesign.ethicsCommiteeApproval from NFDI4Health_VS_MDS_Study_Ethics_Committee_Approval_UMLS_Local (required)
@@ -429,7 +430,7 @@ Description: "NFDI4Health LogicalModel General Metadataschema"
 * Resource.studyDesign.interventional.masking.description 0..1 string "Additional information about masking" "If needed, additional descriptive information about masking (e.g. information about other parties who may be masked)."
 * Resource.studyDesign.interventional.masking.description ^comment = "Cardinality: 0..1, if Resource.studyDesign.interventional.masking.general == true; otherwise 0..0 / Short Input Help: If needed, additional information about masking, e.g. other parties who may be masked. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2]"
 * Resource.studyDesign.interventional.allocation 0..1 Coding "Type of allocation of participants to an arm" "Type of allocation/assignment of individual study participants to an arm."
-* Resource.studyDesign.interventional.allocation from NFDI4Health_VS_MDS_Study_Allocation_UMLS_SNOMEDCT (required)
+* Resource.studyDesign.interventional.allocation from NFDI4Health_VS_MDS_Study_Allocation_NCI (required)
 * Resource.studyDesign.interventional.allocation ^comment = "Short Input Help: Select one value from the list. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2], DRKS [3]"
 * Resource.studyDesign.interventional.offLabelUse 0..1 Coding "Off-label use of a drug product" "Unapproved (off-label) use of a drug product. "
 * Resource.studyDesign.interventional.offLabelUse from NFDI4Health_VS_MDS_Yes_No_Not_Applicable_SNOMEDCT (required)

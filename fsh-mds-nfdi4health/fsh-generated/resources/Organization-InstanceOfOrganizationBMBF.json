@@ -1,0 +1,37 @@
+{
+  "resourceType": "Organization",
+  "id": "InstanceOfOrganizationBMBF",
+  "meta": {
+    "profile": [
+      "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+    ]
+  },
+  "telecom": [
+    {
+      "system": "url",
+      "use": "work",
+      "value": "https://www.bmbf.de/bmbf/de/home/home_node.html"
+    }
+  ],
+  "address": [
+    {
+      "use": "work",
+      "text": "Kapelle-Ufer 1, 10117, Berlin, Germany"
+    }
+  ],
+  "name": "Bundesministerium für Bildung und Forschung",
+  "identifier": [
+    {
+      "value": "ROR: 04pz7b180",
+      "type": {
+        "coding": [
+          {
+            "code": "081",
+            "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+            "display": "ROR"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "resourceType": "Organization",
+  "id": "InstanceOfOrganizationIMIBE",
+  "meta": {
+    "profile": [
+      "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+    ]
+  },
+  "telecom": [
+    {
+      "system": "url",
+      "use": "work",
+      "value": "https://imibe.uk-essen.de/"
+    }
+  ],
+  "address": [
+    {
+      "use": "work",
+      "text": "Hufelandstr. 55, 45147, Essen, Germany"
+    }
+  ],
+  "name": "Institut für Medizinische Informatik, Biometrie und Epidemiologie",
+  "partOf": {
+    "reference": "Organization/InstanceOfOrganizationUniklinikumEssen"
+  },
+  "identifier": [
+    {
+      "value": "ROR: 02na8dn90",
+      "type": {
+        "coding": [
+          {
+            "code": "081",
+            "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+            "display": "ROR"
+          }
+        ]
+      }
+    }
+  ]
+}

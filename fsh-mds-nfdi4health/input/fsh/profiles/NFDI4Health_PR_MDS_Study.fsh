@@ -210,7 +210,7 @@ Description: "Resource covering metadata of a study."
 * category[timePerspectives].coding 1..1
 * category[timePerspectives].coding.system 1..
 * category[timePerspectives].coding.code 1..
-* category[allocation] from NFDI4Health_VS_MDS_Study_Allocation_UMLS_SNOMEDCT (required)
+* category[allocation] from NFDI4Health_VS_MDS_Study_Allocation_NCI (required)
 * category[allocation] ^short = "Type of allocation of participants to an arm"
 * category[allocation] ^definition = "Type of allocation/assignment of individual study participants to an arm."
 * category[allocation] ^comment = "Short input help: Select one value from the list."
@@ -262,7 +262,6 @@ Description: "Resource covering metadata of a study."
 * condition.coding.display ^short = "Name of the primary health condition, disease or focus of the study"
 * condition.coding.display ^definition = "Name of primary health condition or disease considered in the study, or the focus of the study (e.g. medication, food, therapy, device, etc.)."
 * condition.coding.display ^comment = "Additional information: The use of terms from established terminologies/classifications (e.g. SNOMED CT, ICD, etc.) is preferred. However, also self-assigned terms are allowed. | Short input help: Preferably, use terms from SNOMED CT (https://browser.ihtsdotools.org)."
-* condition.text 1..
 * condition.text ^short = "Name of the primary health condition, disease or focus of the study"
 * condition.text ^definition = "Name of primary health condition or disease considered in the study, or the focus of the study (e.g. medication, food, therapy, device, etc.)."
 * condition.text ^comment = "Additional information: The use of terms from established terminologies/classifications (e.g. SNOMED CT, ICD, etc.) is preferred. However, also self-assigned terms are allowed. |  Short input help: Preferably, use terms from SNOMED CT (https://browser.ihtsdotools.org)."
@@ -304,7 +303,6 @@ Description: "Resource covering metadata of a study."
 * keyword.coding.code ^comment = "Short input help: If found, the code from the classification/vocabulary used."
 * keyword.coding.code ^example[0].label = "Keyword URI"
 * keyword.coding.code ^example[=].valueCode = #http://id.nlm.nih.gov/mesh/D000086402
-* keyword.text 1..
 * keyword.text ^short = "Keyword"
 * keyword.text ^definition = "Keyword(s) describing the resource."
 * keyword.text ^comment = "Additional information: The use of terms from established classifications/vocabularies (e.g. MeSH, UMLS, SNOMED CT) is preferred. However, also self-assigned keywords are allowed. | Short input help: Preferably, use terms from MeSH (https://meshb.nlm.nih.gov/search) or UMLS (https://uts.nlm.nih.gov/uts/umls/home)."

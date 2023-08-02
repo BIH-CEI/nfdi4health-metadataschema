@@ -15,7 +15,7 @@ Description: "Extension covering information about the collection of mortality d
 * . ^definition = "Mortality data."
 * value[x] 1..
 * value[x] only Coding
-* valueCoding from NFDI4Health_VS_MDS_Mortality_Data_NCI_SNOMEDCT (required)
+* valueCoding from NFDI4Health_VS_MDS_Mortality_Data_NCI (required)
 * valueCoding ^binding.description = "Value set defining codes to specify if mortality data were collected in a study."
 * valueCoding.code 1..
 * valueCoding.system 1..

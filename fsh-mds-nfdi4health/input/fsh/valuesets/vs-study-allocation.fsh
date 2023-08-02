@@ -1,8 +1,8 @@
-ValueSet: NFDI4Health_VS_MDS_Study_Allocation_UMLS_SNOMEDCT
-Id: nfdi4health-vs-mds-study-allocation-umls-snomedct
-Title: "NFDI4Health VS MDS Study Allocation [UMLS, SNOMED CT]"
+ValueSet: NFDI4Health_VS_MDS_Study_Allocation_NCI
+Id: nfdi4health-vs-mds-study-allocation-nci
+Title: "NFDI4Health VS MDS Study Allocation [NCI]"
 Description: "Value set defining codes to specify the subject allocation in a study."
-* ^url = "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-allocation-umls"
+* ^url = "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-allocation-nci"
 * ^status = #draft
 * ^version = "0.9"
 * ^experimental = true
@@ -10,6 +10,6 @@ Description: "Value set defining codes to specify the subject allocation in a st
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 
-* $UMLS#C0206034 "Clinical Trials, Randomized (Research Activity)"
-* $UMLS#C0150104 "NONRANDOMIZED CONTROL TRIALS (Research Activity)"
-* $SCT#385432009 "Not applicable (qualifier value)"
+* $NCI#C0034656 "Randomization (Health Care Activity)"
+* $NCI#C93043 "Nonrandomized Clinical Trial (Research Activity)"
+* $NCI#C48660 "Not Applicable (Qualitative Concept)"

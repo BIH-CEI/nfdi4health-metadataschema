@@ -1,0 +1,95 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "ConceptMap-UCUM-UMLS-Time-Units-to-NFDI4Health",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ConceptMap/UCUM-UMLS-Time-Units-to-NFDI4Health",
+  "name": "ConceptMap-VS-MDS-Time-Units-UCUM-UMLS-NFDI4Health-Mapping",
+  "title": "ConceptMap - Value Set Time Units from UCUM and UMLS to NFDI4Health",
+  "status": "active",
+  "experimental": false,
+  "date": "2023-07-28",
+  "publisher": "NFDI4Health",
+  "description": "Mapping of Value Set Time Units from UCUM and UMLS to NFDI4Health",
+  "sourceCanonical": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-time-units-ucum-umls",
+  "group": [
+    {
+      "source": "http://unitsofmeasure.org",
+      "element": [
+        {
+          "code": "a",
+          "display": "Year",
+          "target": [
+            {
+              "display": "Years",
+              "equivalence": "equal"
+            }
+          ]
+        },
+        {
+          "code": "mo",
+          "display": "month",
+          "target": [
+            {
+              "display": "Months",
+              "equivalence": "equal"
+            }
+          ]
+        },
+        {
+          "code": "we",
+          "display": "week",
+          "target": [
+            {
+              "display": "Weeks",
+              "equivalence": "equal"
+            }
+          ]
+        },
+        {
+          "code": "d",
+          "display": "day",
+          "target": [
+            {
+              "display": "Days",
+              "equivalence": "equal"
+            }
+          ]
+        },
+        {
+          "code": "h",
+          "display": "hour",
+          "target": [
+            {
+              "display": "Hours",
+              "equivalence": "equal"
+            }
+          ]
+        },
+        {
+          "code": "min",
+          "display": "minute",
+          "target": [
+            {
+              "display": "Minutes",
+              "equivalence": "equal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/umls",
+      "element": [
+        {
+          "code": "C1135241",
+          "display": "Weeks pregnant (Finding)",
+          "target": [
+            {
+              "display": "Weeks of gestation",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

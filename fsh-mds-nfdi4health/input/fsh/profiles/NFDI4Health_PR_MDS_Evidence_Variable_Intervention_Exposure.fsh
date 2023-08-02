@@ -18,14 +18,11 @@ Description: "Resource covering information about a study intervention or exposu
 * title ^comment = "Additional information: Please specify the intervention(s)/exposure associated with each arm/group. | Short input help: If the same intervention/exposure is associated with more than one arm or group, provide the information once and use the field \"Name of the associated study arm/group\" to associate it with more than one arm/group."
 * description ^short = "Additional information about the intervention/exposure"
 * description ^definition = "If needed, additional descriptive information about the given intervention/exposure."
-* topic ..1
-* topic from NFDI4Health_VS_MDS_Study_Intervention_Type_NCI_UMLS (required)
-* topic ^short = "Type of the intervention/exposure"
-* topic ^definition = "General type of the given intervention/exposure."
-* topic ^binding.description = "Value set defining codes to specify the general type of the given intervention/exposure in the study."
-* topic.coding 1..1
-* topic.coding.system 1..
-* topic.coding.code 1..
+* characteristic.definitionCodeableConcept 1..1
+* characteristic.definitionCodeableConcept from NFDI4Health_VS_MDS_Study_Intervention_Type_NCI_UMLS (required)
+* characteristic.definitionCodeableConcept ^short = "Type of the intervention/exposure"
+* characteristic.definitionCodeableConcept ^definition = "General type of the given intervention/exposure."
+* characteristic.definitionCodeableConcept ^binding.description = "Value set defining codes to specify the general type of the given intervention/exposure in the study."
 
 Mapping: NFDI4Health-Evidence-Variable-Intervention-Exposure-to-FHIR
 Id: NFDI4Health
@@ -34,4 +31,4 @@ Source: NFDI4Health_PR_MDS_Evidence_Variable_Intervention_Exposure
 * -> "1.17.31 Resource.studyDesign.interventions"
 * title -> "1.17.31.1 Resource.studyDesign.interventions.name"
 * description -> "1.17.31.3 Resource.studyDesign.interventions.description"
-* topic -> "1.17.31.2 Resource.studyDesign.interventions.type"
+* characteristic.definitionCodeableConcept -> "1.17.31.2 Resource.studyDesign.interventions.type"

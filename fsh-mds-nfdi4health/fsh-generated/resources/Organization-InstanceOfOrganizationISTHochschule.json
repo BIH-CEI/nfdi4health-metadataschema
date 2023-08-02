@@ -1,0 +1,37 @@
+{
+  "resourceType": "Organization",
+  "id": "InstanceOfOrganizationISTHochschule",
+  "meta": {
+    "profile": [
+      "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+    ]
+  },
+  "telecom": [
+    {
+      "system": "url",
+      "use": "work",
+      "value": "https://www.ist.de/studieninstitut-hochschule"
+    }
+  ],
+  "address": [
+    {
+      "use": "work",
+      "text": "Erkrather Str. 220 a-c, 40233, Düsseldorf, Germany"
+    }
+  ],
+  "name": "IST - Hochschule für Management GmbH",
+  "identifier": [
+    {
+      "value": "ROR: 03d0yjb51",
+      "type": {
+        "coding": [
+          {
+            "code": "081",
+            "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+            "display": "ROR"
+          }
+        ]
+      }
+    }
+  ]
+}

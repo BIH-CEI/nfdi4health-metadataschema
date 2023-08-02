@@ -14,7 +14,7 @@
         {
           "url": "party",
           "valueReference": {
-            "reference": "Organization/InstanceOfOrganizationResearchGroup"
+            "reference": "Organization/InstanceOfOrganizationResearchGroupRNCM"
           }
         },
         {
@@ -602,7 +602,7 @@
         ]
       },
       "system": "https://www.nfdi4health.de/",
-      "value": "NFDI123456789"
+      "value": "81"
     }
   ],
   "location": [
@@ -860,10 +860,10 @@
   ],
   "enrollment": [
     {
-      "reference": "Group/InstanceOfGroupIntended"
+      "reference": "Group/InstanceOfGroupIntendedSHIP"
     },
     {
-      "reference": "Group/InstanceOfGroupActual"
+      "reference": "Group/InstanceOfGroupActualSHIP"
     }
   ]
 }

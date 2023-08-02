@@ -21,6 +21,8 @@ Alias: $CommonLanguages = http://hl7.org/fhir/ValueSet/all-languages
 Alias: $translation = http://hl7.org/fhir/StructureDefinition/translation
 Alias: $iso3166 = urn:iso:std:iso:3166
 Alias: $iso3166-2 = urn:iso:std:iso:3166:-2
+Alias: $mesh = https://www.nlm.nih.gov/mesh
+Alias: $study-prim-purp-type = http://terminology.hl7.org/CodeSystem/research-study-prim-purp-type
 
 //Alias: $umls = http://terminology.hl7.org/CodeSystem/umls
 //Alias: $title-type = http://hl7.org/fhir/title-type

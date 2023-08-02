@@ -1,4 +1,4 @@
-Instance: InstanceOfGroupActual
+Instance: InstanceOfGroupActualSHIP
 InstanceOf: NFDI4Health_PR_MDS_Group_Actual
 Usage: #example
 Title: "Instance Of Group Actual"

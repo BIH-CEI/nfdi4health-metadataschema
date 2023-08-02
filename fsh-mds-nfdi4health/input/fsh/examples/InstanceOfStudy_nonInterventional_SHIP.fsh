@@ -1,11 +1,11 @@
 Instance: InstanceOfStudySHIP
 InstanceOf: NFDI4Health_PR_MDS_Study
-Title: "Instance of Study SHIP"
+Title: "Instance of Study SHIP TREND"
 Description: "Example data from the SHIP Trend study - Study of Health in Pomerania Trend"
 Usage: #example
 
 //General information
-* identifier[NFDI4Health].value = "NFDI123456789" //made up, as not displayed in CSH
+* identifier[NFDI4Health].value = "81"
 * title = "Study of Health in Pomerania - TREND"
 * title.extension[language].valueCode = #en "English"
 ///English description of the Study
@@ -102,7 +102,7 @@ Usage: #example
 /// Primary health condition(s), disease(s) or focus of the study - modelling must be changed because not possible to have "other vocabulary" or "freetext" as system
 
 /// Eligibility criteria for study participants
-* enrollment[0] = Reference(InstanceOfGroupIntended)
+* enrollment[0] = Reference(InstanceOfGroupIntendedSHIP)
 * extension[inclusionCriteria].valueString = "-meeting the age range -first place of residence in the target region Pomerania (Vorpommern / West Pomerania)"
 * extension[exclusionCriteria].valueString = "-persons not being able to understand German"
 /// Study Population
@@ -110,10 +110,10 @@ Usage: #example
 * location[regions] = $iso3166-2#DE-MV "Mecklenburg-Vorpommern"
 * site.extension[centers].extension[monoOrMulti].valueCoding = $Remaining#084 "Monocentric"
 * extension[population].valueString = "Adults from the general population meeting the criteria stated above."
-* enrollment[+] = Reference(InstanceOfGroupActual)
+* enrollment[+] = Reference(InstanceOfGroupActualSHIP)
 
 // Roles
-* extension[roles].extension[party].valueReference = Reference(InstanceOfOrganizationResearchGroup) 
+* extension[roles].extension[party].valueReference = Reference(InstanceOfOrganizationResearchGroupRNCM) 
 * extension[roles].extension[nameType].valueCoding = $UMLS#C0220885 "Organizational (Qualitative Concept)"
 * extension[roles].extension[roleOrganisational].valueCoding = $Remaining#048 "Research Group"
 // Related resources

@@ -15,7 +15,7 @@ Description: "Resource covering metadata of a document."
 * extension contains
     NFDI4Health_EX_MDS_Keywords named keywords 0..* and
     NFDI4Health_EX_MDS_Associated_Party named roles 1..* and
-    NFDI4Health_EX_MDS_Related_NEW named related 0..* and
+    NFDI4Health_EX_MDS_Label named label 0..* and
     NFDI4Health_EX_MDS_Document_Use_Rights named useRights 0..1 and 
     NFDI4Health_EX_MDS_Related_NEW named relatedResources 0..1
 * masterIdentifier 1..

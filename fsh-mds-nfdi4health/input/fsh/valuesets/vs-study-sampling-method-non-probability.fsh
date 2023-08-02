@@ -11,6 +11,6 @@ Description: "Value set defining codes to specify types of non-probability sampl
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 
 * $NCI#C53204 "Convenience Sampling"
-* $NCI#C71505 "Matched Sampling"
+* $NCI#C71505 "Matched Sampling" //purposive
 * $NCI#C71504 "Quota Sampling"
 * $Remaining#008 "Respondent-driven sampling"
