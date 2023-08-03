@@ -77,17 +77,10 @@
       },
       {
         "reference": {
-          "reference": "DocumentReference/nfdi4health-document-example"
-        },
-        "name": "Document Example",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-document"
-      },
-      {
-        "reference": {
           "reference": "DocumentReference/InstanceOfDocumentHouseholdTransmissionInvestigationForC19"
         },
         "name": "Example of the NFDI4Health PR MDS Document - Household Transmission Investigation Protocol for Coronavirus Disease 2019 (COVID-19)",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-document-sk"
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-document"
       },
       {
         "reference": {
@@ -126,13 +119,6 @@
       },
       {
         "reference": {
-          "reference": "PractitionerRole/PractitionerRoleExample1"
-        },
-        "name": "Example of the NFDI4Health PR MDS Practitioner Role",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner-role"
-      },
-      {
-        "reference": {
           "reference": "Provenance/ProvenanceExample"
         },
         "name": "Example of the NFDI4Health PR MDS Provenance profil",
@@ -143,14 +129,14 @@
           "reference": "Questionnaire/InstanceOfQuestionnaireCRISISBaselineForm"
         },
         "name": "Example of the NFDI4Health PR MDS Questionnaire - CRISIS Questionnaire - Youth Self-Report Baseline Form: Current Form",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire-sk"
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire"
       },
       {
         "reference": {
           "reference": "Questionnaire/InstanceOfQuestionnaireGermanCovid19MentalHealthQuestionnaire"
         },
         "name": "Example of the NFDI4Health PR MDS Questionnaire - German Covid-19 Mental Health Questionnaire",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire-sk"
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire"
       },
       {
         "reference": {
@@ -386,14 +372,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nfdi4health-ex-mds-description-non-english"
-        },
-        "name": "NFDI4Health EX MDS Description Non English",
-        "description": "Extension providing description(s) of the resource written not in English.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/nfdi4health-ex-mds-document-use-rights"
         },
         "name": "NFDI4Health EX MDS Document Use Rights",
@@ -430,14 +408,6 @@
         },
         "name": "NFDI4Health EX MDS Identifier Assignment Date",
         "description": "Extension to store the date when an identifier was assigned.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/nfdi4health-ex-mds-ids-nfdi4health"
-        },
-        "name": "NFDI4Health EX MDS IDs NFDI4Health",
-        "description": "Extension storing identifiers assigned by NFDI4Health.",
         "exampleBoolean": false
       },
       {
@@ -526,14 +496,6 @@
         },
         "name": "NFDI4Health EX MDS Resource Type General",
         "description": "Extension providing information about the general resource type.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/nfdi4health-ex-mds-resourceID"
-        },
-        "name": "NFDI4Health EX MDS ResourceID",
-        "description": "Extension providing information about identifiers (IDs) of the resources related to the given resource, e.g. DOIs of publications, datasets, study documents or links to web pages.",
         "exampleBoolean": false
       },
       {
@@ -746,14 +708,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nfdi4health-pr-mds-document-sl"
-        },
-        "name": "NFDI4Health PR MDS Document SK",
-        "description": "Resource covering metadata of a document.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/nfdi4health-pr-mds-evidence-variable-intervention-exposure"
         },
         "name": "NFDI4Health PR MDS Evidence Variable Intervention Exposure",
@@ -816,14 +770,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nfdi4health-pr-mds-questionnaire-sk"
-        },
-        "name": "NFDI4Health PR MDS Questionnaire",
-        "description": "Resource covering metadata of a questionnaire.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/nfdi4health-pr-mds-related-artifact-ndfi4health-resource"
         },
         "name": "NFDI4Health PR MDS Related Artifact NFDI4Health Resource",
@@ -856,14 +802,6 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/nfdi4health-vs-mds-id-type-umls"
-        },
-        "name": "NFDI4Health VS MDS ID Type [UMLS]",
-        "description": "Value set defining codes to specify the ID Type of the related resource.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "ValueSet/nfdi4health-vs-mds-identifier-type-related-artifact-umls-local"
         },
         "name": "NFDI4Health VS MDS Identifier Type Related Artifact [UMLS, local]",
@@ -876,22 +814,6 @@
         },
         "name": "NFDI4Health VS MDS Label Type [HL7]",
         "description": "Value set used to express the reason and specific aspect for the variant title, such as language and specific language. Comment : Build based on HL7 Value Set specified in FHIR R5",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/nfdi4health-vs-mds-language-no-english-snomedct"
-        },
-        "name": "NFDI4Health VS MDS Language no english [SNOMED CT]",
-        "description": "Value set defining codes to specify a language other than English.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/nfdi4health-vs-mds-language-snomedct"
-        },
-        "name": "NFDI4Health VS MDS Language [SNOMED CT]",
-        "description": "Value set defining codes to specify the language of a resource.",
         "exampleBoolean": false
       },
       {
@@ -1322,14 +1244,6 @@
           "reference": "StructureDefinition/nfdi4health-ex-mds-related"
         },
         "name": "NFDI4Health_EX_MDS_Related",
-        "description": "Extension providing information about identifiers (IDs) of the resources related to the given resource, e.g. DOIs of publications, datasets, study documents or links to web pages - registered on this portal or not.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/nfdi4health-ex-mds-related-new"
-        },
-        "name": "NFDI4Health_EX_MDS_Related_New",
         "description": "Extension providing information about related publications, datasets, study documents, web pages, etc.",
         "exampleBoolean": false
       },

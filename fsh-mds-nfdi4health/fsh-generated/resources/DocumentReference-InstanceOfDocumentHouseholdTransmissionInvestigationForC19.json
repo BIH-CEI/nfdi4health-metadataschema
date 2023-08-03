@@ -3,7 +3,7 @@
   "id": "InstanceOfDocumentHouseholdTransmissionInvestigationForC19",
   "meta": {
     "profile": [
-      "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-document-sk"
+      "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-document"
     ]
   },
   "extension": [
@@ -170,7 +170,7 @@
           "url": "relatedArtifactNonNFDI4Health"
         }
       ],
-      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related-new"
+      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related"
     }
   ],
   "masterIdentifier": {

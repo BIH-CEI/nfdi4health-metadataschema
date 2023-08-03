@@ -47,7 +47,7 @@
     },
     {
       "identity": "NFDI4Health",
-      "name": "NFDI4Health Questionnaire to FHIR Mapping"
+      "name": "NFDI4Health to FHIR Mapping"
     }
   ],
   "kind": "resource",
@@ -83,13 +83,6 @@
             "profile": [
               "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-webpage"
             ]
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "1.9 resource_web_page",
-            "comment": "Other web pages related to the resource can additionally be entered in the section \"Related resources\"."
           }
         ]
       },
@@ -154,9 +147,9 @@
         ]
       },
       {
-        "id": "Questionnaire.extension:related",
+        "id": "Questionnaire.extension:relatedResources",
         "path": "Questionnaire.extension",
-        "sliceName": "related",
+        "sliceName": "relatedResources",
         "min": 0,
         "max": "1",
         "type": [
@@ -190,72 +183,624 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "assigner.identifier.system"
+              "path": "type"
             }
           ],
           "rules": "open"
         },
-        "short": "ID of the [RESOURCE]",
+        "min": 1,
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.1 Resource.identifier"
+          },
+          {
+            "identity": "NFDI4Health",
+            "map": "1.12 Resource.idsAlternative"
+          }
+        ]
+      },
+      {
+        "id": "Questionnaire.identifier.type",
+        "path": "Questionnaire.identifier.type",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-id-type-umls-local"
+        }
+      },
+      {
+        "id": "Questionnaire.identifier:NFDI4Health",
+        "path": "Questionnaire.identifier",
+        "sliceName": "NFDI4Health",
         "definition": "Unique identifier of the resource used for identification within the NFDI4Health.",
+        "comment": "Additional information: The identifier is assigned automatically.",
         "min": 1,
         "max": "1",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.1 resource_identifier",
-            "comment": "Unique identifier of the resource used for identification within the NFDI4Health."
+            "map": "1.1 Resource.identifier"
           }
         ]
       },
       {
-        "id": "Questionnaire.identifier.system",
+        "id": "Questionnaire.identifier:NFDI4Health.use",
+        "path": "Questionnaire.identifier.use",
+        "min": 1,
+        "fixedCode": "official"
+      },
+      {
+        "id": "Questionnaire.identifier:NFDI4Health.type",
+        "path": "Questionnaire.identifier.type",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "code": "104",
+              "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+              "display": "NFDI4Health"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Questionnaire.identifier:NFDI4Health.system",
         "path": "Questionnaire.identifier.system",
         "min": 1,
-        "fixedUri": "NFDI4Health"
+        "fixedUri": "https://csh.nfdi4health.de/resource/"
       },
       {
-        "id": "Questionnaire.identifier.value",
+        "id": "Questionnaire.identifier:NFDI4Health.value",
         "path": "Questionnaire.identifier.value",
-        "min": 1,
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "1.1 resource_identifier",
-            "comment": "The value that is unique"
-          }
-        ]
+        "min": 1
       },
       {
-        "id": "Questionnaire.identifier:alternative_ids",
+        "id": "Questionnaire.identifier:DRKS",
         "path": "Questionnaire.identifier",
-        "sliceName": "alternative_ids",
+        "sliceName": "DRKS",
         "definition": "Group of items providing information about identifiers (IDs) assigned to the given resource by another registering systems, e.g. a register of clinical trials or a data repository.",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12 ids_alternative"
+            "map": "1.12 Resource.idsAlternative"
           }
         ]
       },
       {
-        "id": "Questionnaire.identifier:alternative_ids.system",
+        "id": "Questionnaire.identifier:DRKS.type",
+        "path": "Questionnaire.identifier.type",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "code": "098",
+              "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+              "display": "DRKS"
+            }
+          ]
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.12.1 Resource.idsAlternative.scheme",
+            "comment": "Type = DRKS"
+          }
+        ]
+      },
+      {
+        "id": "Questionnaire.identifier:DRKS.system",
         "path": "Questionnaire.identifier.system",
+        "definition": "Name of the system where the given resource is already registered. Fixed to DRKS.",
+        "min": 1,
+        "fixedUri": "https://www.drks.de",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12.1 type"
+            "map": "1.12.1 Resource.idsAlternative.scheme",
+            "comment": "Type = DRKS"
           }
         ]
       },
       {
-        "id": "Questionnaire.identifier:alternative_ids.value",
+        "id": "Questionnaire.identifier:DRKS.value",
         "path": "Questionnaire.identifier.value",
+        "definition": "Identifier (ID) assigned to the given resource by DRKS.",
+        "min": 1,
+        "example": [
+          {
+            "label": "DRKS Identifier",
+            "valueString": "DRKS00021273"
+          }
+        ],
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12.2 identifier"
+            "map": "1.12.2 Resource.idsAlternative.identifier"
+          }
+        ]
+      },
+      {
+        "id": "Questionnaire.identifier:NCT",
+        "path": "Questionnaire.identifier",
+        "sliceName": "NCT",
+        "definition": "Group of items providing information about identifiers (IDs) assigned to the given resource by another registering systems, e.g. a register of clinical trials or a data repository.",
+        "min": 0,
+        "max": "*",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.12 Resource.idsAlternative"
+          }
+        ]
+      },
+      {
+        "id": "Questionnaire.identifier:NCT.type",
+        "path": "Questionnaire.identifier.type",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "code": "C5419532",
+              "system": "http://terminology.hl7.org/CodeSystem/umls",
+              "display": "Clinicaltrials.gov Identifier"
+            }
+          ]
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.12.1 Resource.idsAlternative.scheme",
+            "comment": "Type = NCT"
+          }
+        ]
+      },
+      {
+        "id": "Questionnaire.identifier:NCT.system",
+        "path": "Questionnaire.identifier.system",
+        "definition": "Name of the system where the given resource is already registered. Fixed to NCT (CT.gov).",
+        "min": 1,
+        "fixedUri": "https://www.clinicaltrials.gov/",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.12.1 Resource.idsAlternative.scheme",
+            "comment": "Type = NCT"
+          }
+        ]
+      },
+      {
+        "id": "Questionnaire.identifier:NCT.value",
+        "path": "Questionnaire.identifier.value",
+        "definition": "Identifier (ID) assigned to the given resource by ClinicalTrials.gov.",
+        "min": 1,
+        "example": [
+          {
+            "label": "NCT Identifier",
+            "valueString": "NCT04327505"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.12.2 Resource.idsAlternative.identifier"
+          }
+        ]
+      },
+      {
+        "id": "Questionnaire.identifier:ISRCTN",
+        "path": "Questionnaire.identifier",
+        "sliceName": "ISRCTN",
+        "definition": "Group of items providing information about identifiers (IDs) assigned to the given resource by another registering systems, e.g. a register of clinical trials or a data repository.",
+        "min": 0,
+        "max": "*",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.12 Resource.idsAlternative"
+          }
+        ]
+      },
+      {
+        "id": "Questionnaire.identifier:ISRCTN.type",
+        "path": "Questionnaire.identifier.type",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "code": "099",
+              "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+              "display": "ISRCTN"
+            }
+          ]
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.12.1 Resource.idsAlternative.scheme",
+            "comment": "Type = ISRCTN"
+          }
+        ]
+      },
+      {
+        "id": "Questionnaire.identifier:ISRCTN.system",
+        "path": "Questionnaire.identifier.system",
+        "definition": "Name of the system where the given resource is already registered. Fixed to ISRCTN.",
+        "min": 1,
+        "fixedUri": "https://www.isrctn.com/",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.12.1 Resource.idsAlternative.scheme",
+            "comment": "Type = ISRCTN"
+          }
+        ]
+      },
+      {
+        "id": "Questionnaire.identifier:ISRCTN.value",
+        "path": "Questionnaire.identifier.value",
+        "definition": "Identifier (ID) assigned to the given resource by ISRCTN.",
+        "min": 1,
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.12.2 Resource.idsAlternative.identifier"
+          }
+        ]
+      },
+      {
+        "id": "Questionnaire.identifier:EudraCT",
+        "path": "Questionnaire.identifier",
+        "sliceName": "EudraCT",
+        "definition": "Group of items providing information about identifiers (IDs) assigned to the given resource by another registering systems, e.g. a register of clinical trials or a data repository.",
+        "min": 0,
+        "max": "*",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.12 Resource.idsAlternative"
+          }
+        ]
+      },
+      {
+        "id": "Questionnaire.identifier:EudraCT.type",
+        "path": "Questionnaire.identifier.type",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "code": "C4329800",
+              "system": "http://terminology.hl7.org/CodeSystem/umls",
+              "display": "European Union Drug Regulating Authorities Clinical Trials Database (Intellectual Product)"
+            }
+          ]
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.12.1 Resource.idsAlternative.scheme",
+            "comment": "Type = EudraCT"
+          }
+        ]
+      },
+      {
+        "id": "Questionnaire.identifier:EudraCT.system",
+        "path": "Questionnaire.identifier.system",
+        "definition": "Name of the system where the given resource is already registered. Fixed to EudraCT.",
+        "min": 1,
+        "fixedUri": "https://eudract.ema.europa.eu/results-web/index.xhtml",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.12.1 Resource.idsAlternative.scheme",
+            "comment": "Type = EudraCT"
+          }
+        ]
+      },
+      {
+        "id": "Questionnaire.identifier:EudraCT.value",
+        "path": "Questionnaire.identifier.value",
+        "min": 1,
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.12.2 Resource.idsAlternative.identifier"
+          }
+        ]
+      },
+      {
+        "id": "Questionnaire.identifier:EUDAMED",
+        "path": "Questionnaire.identifier",
+        "sliceName": "EUDAMED",
+        "definition": "Group of items providing information about identifiers (IDs) assigned to the given resource by another registering systems, e.g. a register of clinical trials or a data repository.",
+        "min": 0,
+        "max": "*",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.12 Resource.idsAlternative"
+          }
+        ]
+      },
+      {
+        "id": "Questionnaire.identifier:EUDAMED.type",
+        "path": "Questionnaire.identifier.type",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "code": "100",
+              "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+              "display": "EUDAMED"
+            }
+          ]
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.12.1 Resource.idsAlternative.scheme",
+            "comment": "Type = EUDAMED"
+          }
+        ]
+      },
+      {
+        "id": "Questionnaire.identifier:EUDAMED.system",
+        "path": "Questionnaire.identifier.system",
+        "definition": "Name of the system where the given resource is already registered. Fixed to EUDAMED.",
+        "min": 1,
+        "fixedUri": "https://ec.europa.eu/tools/eudamed/#/screen/home",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.12.1 Resource.idsAlternative.scheme",
+            "comment": "Type = EUDAMED"
+          }
+        ]
+      },
+      {
+        "id": "Questionnaire.identifier:EUDAMED.value",
+        "path": "Questionnaire.identifier.value",
+        "definition": "Identifier (ID) assigned to the given resource by EUDAMED.",
+        "min": 1,
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.12.2 Resource.idsAlternative.identifier"
+          }
+        ]
+      },
+      {
+        "id": "Questionnaire.identifier:UTN",
+        "path": "Questionnaire.identifier",
+        "sliceName": "UTN",
+        "definition": "Group of items providing information about identifiers (IDs) assigned to the given resource by another registering systems, e.g. a register of clinical trials or a data repository.",
+        "min": 0,
+        "max": "*",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.12 Resource.idsAlternative"
+          }
+        ]
+      },
+      {
+        "id": "Questionnaire.identifier:UTN.type",
+        "path": "Questionnaire.identifier.type",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "code": "101",
+              "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+              "display": "UTN"
+            }
+          ]
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.12.1 Resource.idsAlternative.scheme",
+            "comment": "Type = UTN"
+          }
+        ]
+      },
+      {
+        "id": "Questionnaire.identifier:UTN.system",
+        "path": "Questionnaire.identifier.system",
+        "definition": "Name of the system where the given resource is already registered. Fixed to UTN (WHO).",
+        "min": 1,
+        "fixedUri": "http://www.who.int/ictrp/unam-",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.12.1 Resource.idsAlternative.scheme",
+            "comment": "Type = UTN"
+          }
+        ]
+      },
+      {
+        "id": "Questionnaire.identifier:UTN.value",
+        "path": "Questionnaire.identifier.value",
+        "min": 1,
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.12.2 Resource.idsAlternative.identifier"
+          }
+        ]
+      },
+      {
+        "id": "Questionnaire.identifier:KonsortSWD",
+        "path": "Questionnaire.identifier",
+        "sliceName": "KonsortSWD",
+        "definition": "Group of items providing information about identifiers (IDs) assigned to the given resource by another registering systems, e.g. a register of clinical trials or a data repository.",
+        "min": 0,
+        "max": "*",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.12 Resource.idsAlternative"
+          }
+        ]
+      },
+      {
+        "id": "Questionnaire.identifier:KonsortSWD.type",
+        "path": "Questionnaire.identifier.type",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "code": "102",
+              "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+              "display": "KonsortSWD"
+            }
+          ]
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.12.1 Resource.idsAlternative.scheme",
+            "comment": "Type = KonsortSWD"
+          }
+        ]
+      },
+      {
+        "id": "Questionnaire.identifier:KonsortSWD.system",
+        "path": "Questionnaire.identifier.system",
+        "definition": "Name of the system where the given resource is already registered. Fixed to KonsortSWD.",
+        "min": 1,
+        "fixedUri": "https://www.konsortswd.de/",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.12.1 Resource.idsAlternative.scheme",
+            "comment": "Type = KonsortSWD"
+          }
+        ]
+      },
+      {
+        "id": "Questionnaire.identifier:KonsortSWD.value",
+        "path": "Questionnaire.identifier.value",
+        "definition": "Identifier (ID) assigned to the given resource by KonsortSWD.",
+        "min": 1,
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.12.2 Resource.idsAlternative.identifier"
+          }
+        ]
+      },
+      {
+        "id": "Questionnaire.identifier:MDMPortal",
+        "path": "Questionnaire.identifier",
+        "sliceName": "MDMPortal",
+        "definition": "Group of items providing information about identifiers (IDs) assigned to the given resource by another registering systems, e.g. a register of clinical trials or a data repository.",
+        "min": 0,
+        "max": "*",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.12 Resource.idsAlternative"
+          }
+        ]
+      },
+      {
+        "id": "Questionnaire.identifier:MDMPortal.type",
+        "path": "Questionnaire.identifier.type",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "code": "103",
+              "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+              "display": "MDM Portal"
+            }
+          ]
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.12.1 Resource.idsAlternative.scheme",
+            "comment": "Type = MDM Portal"
+          }
+        ]
+      },
+      {
+        "id": "Questionnaire.identifier:MDMPortal.system",
+        "path": "Questionnaire.identifier.system",
+        "definition": "Name of the system where the given resource is already registered. Fixed to MDM Portal.",
+        "min": 1,
+        "fixedUri": "https://www.mdm-portal.de/",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.12.1 Resource.idsAlternative.scheme",
+            "comment": "Type = MDM Portal"
+          }
+        ]
+      },
+      {
+        "id": "Questionnaire.identifier:MDMPortal.value",
+        "path": "Questionnaire.identifier.value",
+        "definition": "Identifier (ID) assigned to the given resource by MDM Portal.",
+        "min": 1,
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.12.2 Resource.idsAlternative.identifier"
+          }
+        ]
+      },
+      {
+        "id": "Questionnaire.identifier:Other",
+        "path": "Questionnaire.identifier",
+        "sliceName": "Other",
+        "short": "Identifier",
+        "definition": "Identifier (ID) assigned to the given resource by another registering system, e.g. by a register of clinical trials or a data repository.",
+        "min": 0,
+        "max": "*",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.12 Resource.idsAlternative"
+          }
+        ]
+      },
+      {
+        "id": "Questionnaire.identifier:Other.type",
+        "path": "Questionnaire.identifier.type",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "code": "C0205394",
+              "system": "http://terminology.hl7.org/CodeSystem/umls",
+              "display": "Other (Qualitative Concept)"
+            }
+          ]
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.12.1 Resource.idsAlternative.scheme",
+            "comment": "Type = Other"
+          }
+        ]
+      },
+      {
+        "id": "Questionnaire.identifier:Other.system",
+        "path": "Questionnaire.identifier.system",
+        "definition": "Type/name of the system where the given resource is already registered.",
+        "min": 1,
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.12.1 Resource.idsAlternative.scheme",
+            "comment": "Type = Other"
+          }
+        ]
+      },
+      {
+        "id": "Questionnaire.identifier:Other.value",
+        "path": "Questionnaire.identifier.value",
+        "definition": "Identifier (ID) assigned to the given resource by another registering system, e.g. by a register of clinical trials or a data repository.",
+        "min": 1,
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.12.2 Resource.idsAlternative.identifier"
           }
         ]
       },
@@ -267,8 +812,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.10.1 resource_version",
-            "comment": "The identifier that is used to identify this version of the questionnaire when it is referenced in a specification, model, design or instance. This is an arbitrary value managed by the questionnaire author and is not expected to be globally unique. For example, it might be a timestamp (e.g. yyyymmdd) if a managed version is not available. There is also no expectation that versions can be placed in a lexicographical sequence."
+            "map": "1.10.1 Resource.nonStudyDetails.version"
           }
         ]
       },
@@ -277,6 +821,7 @@
         "path": "Questionnaire.title",
         "short": "Title/name",
         "definition": "Scientific unabbreviated title or name of the resource.",
+        "comment": "Additional information: If no official title/name has been defined yet, please provide a title/name that is suitable for public display. | Short input help: Please provide at least one title/name of the resource. If the original title is not in English, please also provide an English translation of the original title.",
         "min": 1,
         "mapping": [
           {
@@ -296,14 +841,17 @@
             }
           ],
           "rules": "open"
-        }
+        },
+        "min": 1
       },
       {
         "id": "Questionnaire.title.extension:translation",
         "path": "Questionnaire.title.extension",
         "sliceName": "translation",
+        "short": "Language translation of the title",
+        "definition": "Language of the title if it is not the base language of the resource.",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "type": [
           {
             "code": "Extension",
@@ -314,22 +862,114 @@
         ]
       },
       {
+        "id": "Questionnaire.title.extension:translation.extension:lang",
+        "path": "Questionnaire.title.extension.extension",
+        "sliceName": "lang",
+        "short": "Language of the title/name",
+        "definition": "Language of the title/name.",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.3.2 Resource.titles.language",
+            "comment": "Translation language of the title"
+          }
+        ]
+      },
+      {
+        "id": "Questionnaire.title.extension:translation.extension:lang.value[x]",
+        "path": "Questionnaire.title.extension.extension.value[x]",
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet",
+              "valueCanonical": "http://hl7.org/fhir/ValueSet/all-languages"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "Language"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
+              "valueBoolean": true
+            }
+          ],
+          "strength": "required",
+          "description": "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)",
+          "valueSet": "http://hl7.org/fhir/ValueSet/languages"
+        }
+      },
+      {
+        "id": "Questionnaire.title.extension:translation.extension:content",
+        "path": "Questionnaire.title.extension.extension",
+        "sliceName": "content",
+        "short": "Title in another language",
+        "definition": "Title in another language than the base language of the resource.",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.3.1 Resource.titles.text",
+            "comment": "Translated title"
+          }
+        ]
+      },
+      {
+        "id": "Questionnaire.title.extension:translation.extension:content.value[x]",
+        "path": "Questionnaire.title.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Questionnaire.title.extension:language",
+        "path": "Questionnaire.title.extension",
+        "sliceName": "language",
+        "short": "Language of the title/name",
+        "definition": "Language of the title/name",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.3.2 Resource.titles.language"
+          }
+        ]
+      },
+      {
+        "id": "Questionnaire.title.extension:language.value[x]",
+        "path": "Questionnaire.title.extension.value[x]",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/all-languages",
+          "description": "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)"
+        }
+      },
+      {
         "id": "Questionnaire.status",
         "path": "Questionnaire.status",
-        "fixedCode": "unknown"
+        "comment": "The item does not exist in NFDI4Health' MDS. Fixed to 'active' for all studies.",
+        "fixedCode": "active"
       },
       {
         "id": "Questionnaire.description",
         "path": "Questionnaire.description",
-        "short": "A short plain text summary describing the resource in English.",
+        "short": "English description of the [RESOURCE]",
         "definition": "A short plain text summary describing the resource in English.",
+        "comment": "Additional information: An English description is mandatory to facilitate the search. | Short input help: The provided information should be understandable by scientific audience.",
         "min": 1,
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.5.1 resource_description_english",
-            "comment": "A short plain text summary describing the resource in English.",
-            "language": "English"
+            "map": "1.5.1 Resource.descriptionEnglish.text"
           }
         ]
       },
@@ -344,14 +984,47 @@
             }
           ],
           "rules": "open"
-        }
+        },
+        "min": 1
+      },
+      {
+        "id": "Questionnaire.description.extension:language",
+        "path": "Questionnaire.description.extension",
+        "sliceName": "language",
+        "short": "Language of the description",
+        "definition": "Language of the description text.",
+        "comment": "Additional information: English is a default value.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.5.2 Resource.descriptionEnglish.language"
+          }
+        ]
+      },
+      {
+        "id": "Questionnaire.description.extension:language.value[x]",
+        "path": "Questionnaire.description.extension.value[x]",
+        "fixedCode": "en"
       },
       {
         "id": "Questionnaire.description.extension:translation",
         "path": "Questionnaire.description.extension",
         "sliceName": "translation",
+        "short": "Additional description(s) of the [RESOURCE]",
+        "definition": "Group of items with description(s) of the resource written not in English.",
+        "comment": "Additional descriptions of the resource are optional. The provided information should be understandable by scientific audience.",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "type": [
           {
             "code": "Extension",
@@ -363,42 +1036,34 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.6 Resource.resource_descriptions_non_english"
+            "map": "1.6 Resource.descriptionNonEnglish"
           }
         ]
       },
       {
         "id": "Questionnaire.description.extension:translation.extension:lang",
         "path": "Questionnaire.description.extension.extension",
-        "sliceName": "lang"
-      },
-      {
-        "id": "Questionnaire.description.extension:translation.extension:lang.value[x]",
-        "path": "Questionnaire.description.extension.extension.value[x]",
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-language-no-english-snomedct",
-          "description": "Value set defining codes to specify a language other than English."
-        },
+        "sliceName": "lang",
+        "short": "Language of the description text.",
+        "definition": "Language other than English of the description text.",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.6.2 resource_descriptions_non_english.language"
+            "map": "1.6.2 Resource.descriptionNonEnglish.language"
           }
         ]
       },
       {
         "id": "Questionnaire.description.extension:translation.extension:content",
         "path": "Questionnaire.description.extension.extension",
-        "sliceName": "content"
-      },
-      {
-        "id": "Questionnaire.description.extension:translation.extension:content.value[x]",
-        "path": "Questionnaire.description.extension.extension.value[x]",
+        "sliceName": "content",
+        "short": "Description (not in English)",
+        "definition": "Short plain text summary of the resource other than in English.",
+        "comment": "Additional information: Additional descriptions of the resource are optional. The provided information should be understandable by scientific audience.",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.6.1 resource_descriptions_non_english.text"
+            "map": "1.6.1 Resource.descriptionNonEnglish.text"
           }
         ]
       },
@@ -407,10 +1072,11 @@
         "path": "Questionnaire.copyright",
         "short": "Additional information about use rights",
         "definition": "Any additional descriptive information explaining terms and conditions to (re-)use the resource.",
+        "comment": "Short input help: If “Other” is selected in the property 'License', the preferred license or terms and conditions for (re-)use can be specified here.",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.10.3.3 resource.userights.description"
+            "map": "1.10.3.3 Resource.nonStudyDetails.useRights.description"
           }
         ]
       },
@@ -448,19 +1114,13 @@
         "path": "Questionnaire.copyright.extension",
         "sliceName": "useRightsConfirmations",
         "min": 1,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
               "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-use-rights-confirmations"
             ]
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "resource_use_rights_confirmations"
           }
         ]
       }

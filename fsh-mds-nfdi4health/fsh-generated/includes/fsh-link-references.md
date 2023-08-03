@@ -4,14 +4,12 @@
 [ConceptMap-SNOMEDCT-NCI-Yes-No-Undecided-to-NFDI4Health]: ConceptMap-ConceptMap-SNOMEDCT-NCI-Yes-No-Undecided-to-NFDI4Health.html
 [ConceptMap-SNOMEDCT-Yes-No-NotApplicable-to-NFDI4Health]: ConceptMap-ConceptMap-SNOMEDCT-Yes-No-NotApplicable-to-NFDI4Health.html
 [ConceptMap-UCUM-UMLS-Time-Units-to-NFDI4Health]: ConceptMap-ConceptMap-UCUM-UMLS-Time-Units-to-NFDI4Health.html
-[nfdi4health-document-example]: DocumentReference-nfdi4health-document-example.html
 [InstanceOfDocumentHouseholdTransmissionInvestigationForC19]: DocumentReference-InstanceOfDocumentHouseholdTransmissionInvestigationForC19.html
 [InstanceOfOrganizationCreatorCMI]: Organization-InstanceOfOrganizationCreatorCMI.html
 [InstanceOfOrganizationCreatorCRISIS]: Organization-InstanceOfOrganizationCreatorCRISIS.html
 [InstanceOfOrganizationCreatorIRM]: Organization-InstanceOfOrganizationCreatorIRM.html
 [InstanceOfOrganizationCreatorNIMH]: Organization-InstanceOfOrganizationCreatorNIMH.html
 [OrganizationPublicExample]: Organization-OrganizationPublicExample.html
-[PractitionerRoleExample1]: PractitionerRole-PractitionerRoleExample1.html
 [ProvenanceExample]: Provenance-ProvenanceExample.html
 [InstanceOfQuestionnaireCRISISBaselineForm]: Questionnaire-InstanceOfQuestionnaireCRISISBaselineForm.html
 [InstanceOfQuestionnaireGermanCovid19MentalHealthQuestionnaire]: Questionnaire-InstanceOfQuestionnaireGermanCovid19MentalHealthQuestionnaire.html
@@ -44,13 +42,11 @@
 [NFDI4Health_EX_MDS_Associated_Party]: StructureDefinition-nfdi4health-ex-mds-associated-party.html
 [NFDI4Health_EX_MDS_Chronic_Diseases]: StructureDefinition-nfdi4health-ex-mds-chronic-diseases.html
 [NFDI4Health_EX_MDS_Copyright_Label]: StructureDefinition-nfdi4health-ex-mds-copyright-label.html
-[NFDI4Health_EX_MDS_Description_Non_English]: StructureDefinition-nfdi4health-ex-mds-description-non-english.html
 [NFDI4Health_EX_MDS_Document_Use_Rights]: StructureDefinition-nfdi4health-ex-mds-document-use-rights.html
 [NFDI4Health_EX_MDS_Execution_Language]: StructureDefinition-nfdi4health-ex-mds-execution-language.html
 [NFDI4Health_EX_MDS_Format]: StructureDefinition-nfdi4health-ex-mds-format.html
 [NFDI4Health_EX_MDS_FundingID]: StructureDefinition-nfdi4health-ex-mds-fundingID.html
 [NFDI4Health_EX_MDS_Identifier_Assignment_Date]: StructureDefinition-nfdi4health-ex-mds-identifier-assignment-date.html
-[NFDI4Health_EX_MDS_IDs_NFDI4Health]: StructureDefinition-nfdi4health-ex-mds-ids-nfdi4health.html
 [NFDI4Health_EX_MDS_Keywords]: StructureDefinition-nfdi4health-ex-mds-keywords.html
 [NFDI4Health_EX_MDS_Label]: StructureDefinition-nfdi4health-ex-mds-label.html
 [NFDI4Health_EX_MDS_Language]: StructureDefinition-nfdi4health-ex-mds-language.html
@@ -62,7 +58,6 @@
 [NFDI4Health_EX_MDS_Related_Artifact_Rel_Type_NFDI4_Resource]: StructureDefinition-nfdi4health-ex-mds-related-artifact-reltype-nfdi-resource.html
 [NFDI4Health_EX_MDS_Related_Artifact_Rel_Type_Non_NFDI_Resource]: StructureDefinition-nfdi4health-ex-mds-related-artifact-reltype-non-nfdi-resource.html
 [NFDI4Health_EX_MDS_Resource_Type_General]: StructureDefinition-nfdi4health-ex-mds-resource-type-general.html
-[NFDI4Health_EX_MDS_ResourceID]: StructureDefinition-nfdi4health-ex-mds-resourceID.html
 [NFDI4Health_EX_MDS_Study_Assessments]: StructureDefinition-nfdi4health-ex-mds-study-assessments.html
 [NFDI4Health_EX_MDS_Study_Biospecimen]: StructureDefinition-nfdi4health-ex-mds-study-biospecimen.html
 [NFDI4Health_EX_MDS_Study_Centers]: StructureDefinition-nfdi4health-ex-mds-study-centers.html
@@ -89,7 +84,6 @@
 [NFDI4Health_LM_Metadataschema_General_V3]: StructureDefinition-nfdi4health-lm-metadataschema-general-v3.html
 [NFDI4Health_LM_Metadataschema_NE_V3]: StructureDefinition-nfdi4health-lm-metadataschema-ne-v3.html
 [NFDI4Health_PR_MDS_Document]: StructureDefinition-nfdi4health-pr-mds-document.html
-[NFDI4Health_PR_MDS_Document_SK]: StructureDefinition-nfdi4health-pr-mds-document-sl.html
 [NFDI4Health_PR_MDS_Evidence_Variable_Intervention_Exposure]: StructureDefinition-nfdi4health-pr-mds-evidence-variable-intervention-exposure.html
 [NFDI4Health_PR_MDS_Group_Actual]: StructureDefinition-nfdi4health-pr-mds-group-actual.html
 [NFDI4Health_PR_MDS_Group_Intended]: StructureDefinition-nfdi4health-pr-mds-group-intended.html
@@ -98,16 +92,12 @@
 [NFDI4Health_PR_MDS_Practitioner_Role]: StructureDefinition-nfdi4health-pr-mds-practitioner-role.html
 [NFDI4Health_PR_MDS_Provenance]: StructureDefinition-nfdi4health-pr-mds-provenance.html
 [NFDI4Health_PR_MDS_Questionnaire]: StructureDefinition-nfdi4health-pr-mds-questionnaire.html
-[NFDI4Health_PR_MDS_Questionnaire_SK]: StructureDefinition-nfdi4health-pr-mds-questionnaire-sk.html
 [NFDI4Health_PR_MDS_Related_Artifact_NFDI4Health_Resource]: StructureDefinition-nfdi4health-pr-mds-related-artifact-ndfi4health-resource.html
 [NFDI4Health_PR_MDS_Related_Artifact_Non_NFDI4Health_Resource]: StructureDefinition-nfdi4health-pr-mds-related-artifact-non-ndfi4health-resource.html
 [NFDI4Health_PR_MDS_Study]: StructureDefinition-nfdi4health-pr-mds-study.html
 [NFDI4Health_VS_MDS_ID_TYPE_UMLS_Local]: ValueSet-nfdi4health-vs-mds-id-type-umls-local.html
-[NFDI4Health_VS_MDS_ID_TYPE_UMLS]: ValueSet-nfdi4health-vs-mds-id-type-umls.html
 [NFDI4Health_VS_MDS_Identifier_Type_Related_Artifact_UMLS_Local]: ValueSet-nfdi4health-vs-mds-identifier-type-related-artifact-umls-local.html
 [NFDI4Health_VS_MDS_Label_Type_HL7]: ValueSet-nfdi4health-vs-mds-label-type-hl7.html
-[NFDI4Health_VS_MDS_Language_NO_ENGLISH_SNOMEDCT]: ValueSet-nfdi4health-vs-mds-language-no-english-snomedct.html
-[NFDI4Health_VS_MDS_Language_SNOMEDCT]: ValueSet-nfdi4health-vs-mds-language-snomedct.html
 [NFDI4Health_VS_MDS_Mortality_Data_NCI]: ValueSet-nfdi4health-vs-mds-mortality-data-nci.html
 [NFDI4Health_VS_MDS_Organisational_Roles_NCI_Local]: ValueSet-nfdi4health-vs-mds-organisational-roles-nci-local.html
 [NFDI4Health_VS_MDS_Personal_Roles_NCI_UMLS_Local]: ValueSet-nfdi4health-vs-mds-personal-roles-nci-umls-local.html
@@ -162,5 +152,4 @@
 [NFDI4Health_VS_MDS_Yes_No_Undecided_SNOMEDCT_NCI]: ValueSet-nfdi4health-vs-mds-yes-no-undecided-snomedct-nci.html
 [nfdi4health-exa-mds]: Questionnaire-nfdi4health-exa-mds.html
 [NFDI4Health_EX_MDS_Related]: StructureDefinition-nfdi4health-ex-mds-related.html
-[NFDI4Health_EX_MDS_Related_NEW]: StructureDefinition-nfdi4health-ex-mds-related-new.html
 [Test_Element_Definition]: StructureDefinition-Test-Element-Definition.html

@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "description": "Extension providing information about identifiers (IDs) of the resources related to the given resource, e.g. DOIs of publications, datasets, study documents or links to web pages - registered on this portal or not.",
+  "description": "Extension providing information about related publications, datasets, study documents, web pages, etc.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -28,9 +28,6 @@
     {
       "identity": "NFDI4Health",
       "name": "NFDI4Health to FHIR Mapping"
-    },
-    {
-      "identity": "1.13.1"
     }
   ],
   "kind": "complex-type",
@@ -54,12 +51,15 @@
         "id": "Extension",
         "path": "Extension",
         "short": "NFDI4Health_EX_MDS_Related",
-        "definition": "Extension providing information about identifiers (IDs) of the resources related to the given resource, e.g. DOIs of publications, datasets, study documents or links to web pages - registered on this portal or not.",
+        "definition": "Extension providing information about related publications, datasets, study documents, web pages, etc."
+      },
+      {
+        "id": "Extension.extension:relatedArtifactNFDI4Health",
+        "path": "Extension.extension",
+        "sliceName": "relatedArtifactNFDI4Health",
+        "min": 0,
+        "max": "*",
         "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "1.13 Resource.ids"
-          },
           {
             "identity": "NFDI4Health",
             "map": "1.14 Resource.idsNfdi4health"
@@ -67,207 +67,61 @@
         ]
       },
       {
-        "id": "Extension.extension",
-        "path": "Extension.extension",
-        "min": 1
+        "id": "Extension.extension:relatedArtifactNFDI4Health.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
       },
       {
-        "id": "Extension.extension:identifier",
+        "id": "Extension.extension:relatedArtifactNFDI4Health.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "relatedArtifactNFDI4Health"
+      },
+      {
+        "id": "Extension.extension:relatedArtifactNFDI4Health.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "RelatedArtifact",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-related-artifact-ndfi4health-resource"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:relatedArtifactNonNFDI4Health",
         "path": "Extension.extension",
-        "sliceName": "identifier",
-        "short": "Identifier of the related resource",
-        "definition": "Identifier (ID) related to, or associated with, the resource being registered. These can be IDs of related publications, datasets, study documents, web pages, etc.",
+        "sliceName": "relatedArtifactNonNFDI4Health",
         "min": 0,
-        "max": "1"
+        "max": "*",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.13 Resource.ids"
+          }
+        ]
       },
       {
-        "id": "Extension.extension:identifier.extension",
+        "id": "Extension.extension:relatedArtifactNonNFDI4Health.extension",
         "path": "Extension.extension.extension",
         "max": "0"
       },
       {
-        "id": "Extension.extension:identifier.url",
+        "id": "Extension.extension:relatedArtifactNonNFDI4Health.url",
         "path": "Extension.extension.url",
-        "fixedUri": "identifier"
+        "fixedUri": "relatedArtifactNonNFDI4Health"
       },
       {
-        "id": "Extension.extension:identifier.value[x]",
-        "path": "Extension.extension.value[x]",
-        "short": "Identifier of the related resource",
-        "definition": "Identifier (ID) related to, or associated with, the resource being registered. These can be IDs of related publications, datasets, study documents, web pages, etc.",
-        "type": [
-          {
-            "code": "Identifier"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "1.13.1",
-            "map": "identifier.string"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:identifier.value[x].system",
-        "path": "Extension.extension.value[x].system",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "rules": "open"
-        },
-        "min": 1,
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-id-type-umls",
-          "description": "Value set defining codes to specify the ID Type of the related resource."
-        },
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "1.13.2 Resource.ids.scheme"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:identifier.value[x].value",
-        "path": "Extension.extension.value[x].value",
-        "min": 1,
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "1.13.1 Resource.ids.identifier"
-          },
-          {
-            "identity": "NFDI4Health",
-            "map": "1.14.1 Resource.idsNfdi4health.identifier"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:date",
-        "path": "Extension.extension",
-        "sliceName": "date",
-        "short": "Date of ID assignment",
-        "definition": "Date when the identifier of the related resource was assigned.",
-        "min": 0,
-        "max": "1",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "1.13.3 Resource.ids.date"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:date.extension",
-        "path": "Extension.extension.extension",
-        "max": "0"
-      },
-      {
-        "id": "Extension.extension:date.url",
-        "path": "Extension.extension.url",
-        "fixedUri": "date"
-      },
-      {
-        "id": "Extension.extension:date.value[x]",
+        "id": "Extension.extension:relatedArtifactNonNFDI4Health.value[x]",
         "path": "Extension.extension.value[x]",
         "type": [
           {
-            "code": "date"
+            "code": "RelatedArtifact",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-related-artifact-non-ndfi4health-resource"
+            ]
           }
         ]
-      },
-      {
-        "id": "Extension.extension:relationType",
-        "path": "Extension.extension",
-        "sliceName": "relationType",
-        "short": "Relationship between this [RESOURCE] (A) and the related resource (B)?",
-        "definition": "Relationship between the resource being registered (A) and the related resource (B).",
-        "min": 1,
-        "max": "1",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "1.13.4 Resource.ids.relationType"
-          },
-          {
-            "identity": "NFDI4Health",
-            "map": "1.14.2 Resource.idsNfdi4health.relationType"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:relationType.extension",
-        "path": "Extension.extension.extension",
-        "max": "0"
-      },
-      {
-        "id": "Extension.extension:relationType.url",
-        "path": "Extension.extension.url",
-        "fixedUri": "relationType"
-      },
-      {
-        "id": "Extension.extension:relationType.value[x]",
-        "path": "Extension.extension.value[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-relation-type-ids-local-hl7v3",
-          "description": "NFDI4Health_VS_MDS_Relation_Type_Ids_Local_HL7V3"
-        }
-      },
-      {
-        "id": "Extension.extension:resourceTypeGeneral",
-        "path": "Extension.extension",
-        "sliceName": "resourceTypeGeneral",
-        "short": "Type of the related resource",
-        "definition": "Type of the related resource, e.g. journal article, dataset, text, etc.",
-        "min": 0,
-        "max": "1",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "1.13.5 Resource.ids.resourceTypeGeneral"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:resourceTypeGeneral.extension",
-        "path": "Extension.extension.extension",
-        "max": "0"
-      },
-      {
-        "id": "Extension.extension:resourceTypeGeneral.url",
-        "path": "Extension.extension.url",
-        "fixedUri": "resourceTypeGeneral"
-      },
-      {
-        "id": "Extension.extension:resourceTypeGeneral.value[x]",
-        "path": "Extension.extension.value[x]",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-resource-type-general-nci-umls-local",
-          "description": "Value set defining codes to specify the the general resource type"
-        }
-      },
-      {
-        "id": "Extension.extension:resourceTypeGeneral.value[x].text",
-        "path": "Extension.extension.value[x].text",
-        "max": "0"
       },
       {
         "id": "Extension.url",

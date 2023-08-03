@@ -3,7 +3,7 @@
   "id": "InstanceOfQuestionnaireCRISISBaselineForm",
   "meta": {
     "profile": [
-      "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire-sk"
+      "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire"
     ]
   },
   "status": "active",
@@ -196,7 +196,7 @@
           "url": "relatedArtifactNFDI4Health"
         }
       ],
-      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related-new"
+      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related"
     }
   ],
   "identifier": [
