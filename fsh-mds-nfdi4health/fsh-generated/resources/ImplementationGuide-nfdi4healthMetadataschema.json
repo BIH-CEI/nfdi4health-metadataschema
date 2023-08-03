@@ -84,9 +84,37 @@
       },
       {
         "reference": {
-          "reference": "Organization/OrganizationExample1"
+          "reference": "DocumentReference/InstanceOfDocumentHouseholdTransmissionInvestigationForC19"
         },
-        "name": "Example of the NFDI4Health PR MDS Organization",
+        "name": "Example of the NFDI4Health PR MDS Document - Household Transmission Investigation Protocol for Coronavirus Disease 2019 (COVID-19)",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-document-sk"
+      },
+      {
+        "reference": {
+          "reference": "Organization/InstanceOfOrganizationCreatorCMI"
+        },
+        "name": "Example of the NFDI4Health PR MDS Organization - Child Mind Institute; New York State Nathan S. Kline Institute for Psychiatric Research",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+      },
+      {
+        "reference": {
+          "reference": "Organization/InstanceOfOrganizationCreatorCRISIS"
+        },
+        "name": "Example of the NFDI4Health PR MDS Organization - CRISIS research team",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+      },
+      {
+        "reference": {
+          "reference": "Organization/InstanceOfOrganizationCreatorIRM"
+        },
+        "name": "Example of the NFDI4Health PR MDS Organization - Intramural Research Program",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+      },
+      {
+        "reference": {
+          "reference": "Organization/InstanceOfOrganizationCreatorNIMH"
+        },
+        "name": "Example of the NFDI4Health PR MDS Organization - National Institute of Mental Health; Child Mind Institute; New York State Nathan S. Kline Institute for Psychiatric Research",
         "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
       },
       {
@@ -112,10 +140,17 @@
       },
       {
         "reference": {
-          "reference": "Questionnaire/QuestionnaireExample"
+          "reference": "Questionnaire/InstanceOfQuestionnaireCRISISBaselineForm"
         },
-        "name": "Example of the NFDI4Health PR MDS Questionnaire",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire"
+        "name": "Example of the NFDI4Health PR MDS Questionnaire - CRISIS Questionnaire - Youth Self-Report Baseline Form: Current Form",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire-sk"
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/InstanceOfQuestionnaireGermanCovid19MentalHealthQuestionnaire"
+        },
+        "name": "Example of the NFDI4Health PR MDS Questionnaire - German Covid-19 Mental Health Questionnaire",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire-sk"
       },
       {
         "reference": {
@@ -151,6 +186,30 @@
       },
       {
         "reference": {
+          "reference": "Practitioner/InstanceOfPractitionerNinaKirchhof"
+        },
+        "name": "Instance Of NFDI4Health_PR_MDS_Practitioner for Nina Kirchhof",
+        "description": "Example data representing the practitioner Nina Kirchhof",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner"
+      },
+      {
+        "reference": {
+          "reference": "PractitionerRole/InstanceOfPractitionerRoleKathleenMerikangas"
+        },
+        "name": "Instance Of NFDI4Health_PR_MDS_Practitioner_Role for Kathleen Merikangas",
+        "description": "Example data representing the practitioner role of Kathleen Merikangas",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner-role"
+      },
+      {
+        "reference": {
+          "reference": "PractitionerRole/InstanceOfPractitionerRoleNinaKirchhof"
+        },
+        "name": "Instance Of NFDI4Health_PR_MDS_Practitioner_Role for Nina Kirchhof",
+        "description": "Example data representing the practitioner role of Nina Kirchhof",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner-role"
+      },
+      {
+        "reference": {
           "reference": "Organization/InstanceOfOrganizationBMBF"
         },
         "name": "Instance Of Organization Bundesministerium für Bildung und Forschung",
@@ -171,6 +230,14 @@
         },
         "name": "Instance Of Organization IST Hochschule für Management GmbH",
         "description": "Example data representing the IST Hochschule für Management GmbH",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+      },
+      {
+        "reference": {
+          "reference": "Organization/InstanceOfOrganizationMHH"
+        },
+        "name": "Instance Of Organization Medizinische Hochschule Hannover",
+        "description": "Example data representing the Medizinische Hochschule Hannover",
         "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
       },
       {
@@ -215,6 +282,22 @@
       },
       {
         "reference": {
+          "reference": "Organization/InstanceOfOrganizationContactWHO"
+        },
+        "name": "Instance Of Organization World Health Organization (WHO) as contact",
+        "description": "Example data representing the World Health Organization (WHO) as contact",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+      },
+      {
+        "reference": {
+          "reference": "Organization/InstanceOfOrganizationCreatorWHO"
+        },
+        "name": "Instance Of Organization World Health Organization (WHO) as creator",
+        "description": "Example data representing the World Health Organization (WHO) as creator",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+      },
+      {
+        "reference": {
           "reference": "Practitioner/InstanceOfPractitionerKathleenMerikangas"
         },
         "name": "Instance Of Practitioner Kathleen Merikangas",
@@ -231,10 +314,10 @@
       },
       {
         "reference": {
-          "reference": "Provenance/InstanceOfProvenanceManuallyCollected"
+          "reference": "Provenance/InstanceOfProvenanceManuallyCollectedSHIPTrend"
         },
-        "name": "Instance Of Provenance Manually Collected",
-        "description": "Example of the NFDI4Health PR MDS Provenance profile for a resource manually collected",
+        "name": "Instance Of Provenance Manually Collected (SHIP Trend)",
+        "description": "Example of the NFDI4Health PR MDS Provenance profile for a resource manually collected - in this case: SHIP Trend",
         "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-provenance"
       },
       {
@@ -1201,14 +1284,6 @@
         },
         "name": "NFDI4Health VS MDS Study Type Non Interventional [UMLS, local]",
         "description": "Value set defining codes to specify the type of a non interventional study in a ResearchStudy resource.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/nfdi4health-vs-mds-title-type-hl7"
-        },
-        "name": "NFDI4Health VS MDS Title Type [HL7]",
-        "description": "Value set defining codes to specify the Title Type as of ResearchStudy HL7 FHIR R5.",
         "exampleBoolean": false
       },
       {

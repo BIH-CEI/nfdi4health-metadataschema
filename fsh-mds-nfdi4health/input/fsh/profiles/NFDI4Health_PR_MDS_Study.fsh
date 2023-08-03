@@ -58,7 +58,7 @@ Description: "Resource covering metadata of a study."
 * identifier[NFDI4Health].use 1..
 * identifier[NFDI4Health].use = #official (exactly)
 * identifier[NFDI4Health].system 1..
-* identifier[NFDI4Health].system = "https://www.nfdi4health.de/" (exactly)
+* identifier[NFDI4Health].system = "https://csh.nfdi4health.de/resource/" (exactly)
 * identifier[NFDI4Health].value 1..
 * identifier[DRKS] ^definition = "Group of items providing information about identifiers (IDs) assigned to the given resource by another registering systems, e.g. a register of clinical trials or a data repository."
 * identifier[DRKS].type = $Remaining#098 "DRKS" (exactly)

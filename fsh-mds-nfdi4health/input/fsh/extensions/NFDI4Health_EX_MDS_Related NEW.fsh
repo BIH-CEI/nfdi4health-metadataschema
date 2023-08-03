@@ -1,8 +1,8 @@
-Extension: NFDI4Health_EX_MDS_Related_NEW
-Id: nfdi4health-ex-mds-related-new
-Title: "NFDI4Health_EX_MDS_Related_New"
+Extension: NFDI4Health_EX_MDS_Related
+Id: nfdi4health-ex-mds-related
+Title: "NFDI4Health_EX_MDS_Related"
 Description: "Extension providing information about related publications, datasets, study documents, web pages, etc."
-* ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related-new"
+* ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related"
 * ^version = "0.9"
 * ^status = #draft
 * ^publisher = "NFDI4Health"
@@ -23,9 +23,9 @@ Description: "Extension providing information about related publications, datase
 * extension[relatedArtifactNonNFDI4Health].value[x] only RelatedArtifact
 * extension[relatedArtifactNonNFDI4Health].valueRelatedArtifact only NFDI4Health_PR_MDS_Related_Artifact_Non_NFDI4Health_Resource
 
-Mapping: NFDI4Health-Related-New-to-FHIR
+Mapping: NFDI4Health-Related-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
-Source: NFDI4Health_EX_MDS_Related_NEW
+Source: NFDI4Health_EX_MDS_Related
 * extension[relatedArtifactNonNFDI4Health] -> "1.13 Resource.ids"
 * extension[relatedArtifactNFDI4Health] -> "1.14 Resource.idsNfdi4health"

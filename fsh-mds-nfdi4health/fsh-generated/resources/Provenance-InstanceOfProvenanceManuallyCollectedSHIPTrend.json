@@ -1,6 +1,6 @@
 {
   "resourceType": "Provenance",
-  "id": "InstanceOfProvenanceManuallyCollected",
+  "id": "InstanceOfProvenanceManuallyCollectedSHIPTrend",
   "meta": {
     "profile": [
       "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-provenance"

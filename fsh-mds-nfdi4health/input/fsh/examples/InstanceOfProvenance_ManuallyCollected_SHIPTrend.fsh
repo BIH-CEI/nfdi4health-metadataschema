@@ -1,7 +1,7 @@
-Instance: InstanceOfProvenanceManuallyCollected
+Instance: InstanceOfProvenanceManuallyCollectedSHIPTrend
 InstanceOf: NFDI4Health_PR_MDS_Provenance
-Title: "Instance Of Provenance Manually Collected"
-Description: "Example of the NFDI4Health PR MDS Provenance profile for a resource manually collected"
+Title: "Instance Of Provenance Manually Collected (SHIP Trend)"
+Description: "Example of the NFDI4Health PR MDS Provenance profile for a resource manually collected - in this case: SHIP Trend"
 Usage: #example
 
 * extension[dataSource].valueCoding = $ProvenanceDataSource#06 "Manually collected"

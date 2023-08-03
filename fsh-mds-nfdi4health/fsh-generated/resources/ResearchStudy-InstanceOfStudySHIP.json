@@ -601,7 +601,7 @@
           }
         ]
       },
-      "system": "https://www.nfdi4health.de/",
+      "system": "https://csh.nfdi4health.de/resource/",
       "value": "81"
     }
   ],
@@ -634,7 +634,7 @@
       "extension": [
         {
           "valueIdentifier": {
-            "system": "https://www.nfdihealth.de",
+            "system": "https://csh.nfdi4health.de/resource/",
             "value": "e2ddee95749b4bcfac3152d9a35115c9"
           },
           "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier"
@@ -654,7 +654,7 @@
       "extension": [
         {
           "valueIdentifier": {
-            "system": "https://www.nfdihealth.de",
+            "system": "https://csh.nfdi4health.de/resource/",
             "value": "ea31c8a1199849378ea0604004efd7a2"
           },
           "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier"

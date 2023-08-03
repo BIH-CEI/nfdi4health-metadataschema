@@ -472,7 +472,7 @@
         "id": "ResearchStudy.identifier:NFDI4Health.system",
         "path": "ResearchStudy.identifier.system",
         "min": 1,
-        "fixedUri": "https://www.nfdi4health.de/"
+        "fixedUri": "https://csh.nfdi4health.de/resource/"
       },
       {
         "id": "ResearchStudy.identifier:NFDI4Health.value",

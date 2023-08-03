@@ -25,7 +25,7 @@ Description: "Profile of a RelatedArtifact intended to capture information about
 * extension[identifier].valueIdentifier.value ^short = "Identifier of the related resource"
 * extension[identifier].valueIdentifier.value ^definition = "Identifier (ID) of the related resource assigned on this portal."
 * extension[identifier].valueIdentifier.system 1..1
-* extension[identifier].valueIdentifier.system = "https://www.nfdihealth.de" (exactly)
+* extension[identifier].valueIdentifier.system = "https://csh.nfdi4health.de/resource/" (exactly)
 * extension[identifier].valueIdentifier.type from NFDI4Health_VS_MDS_ID_TYPE_UMLS_Local (required)
 * extension[identifier].valueIdentifier.type = $Remaining#104 "NFDI4Health" (exactly)
 

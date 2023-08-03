@@ -112,21 +112,6 @@
         ]
       },
       {
-        "id": "DocumentReference.extension:label",
-        "path": "DocumentReference.extension",
-        "sliceName": "label",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-label"
-            ]
-          }
-        ]
-      },
-      {
         "id": "DocumentReference.extension:useRights",
         "path": "DocumentReference.extension",
         "sliceName": "useRights",
@@ -193,7 +178,7 @@
         "id": "DocumentReference.masterIdentifier.system",
         "path": "DocumentReference.masterIdentifier.system",
         "min": 1,
-        "fixedUri": "https://www.nfdi4health.de/"
+        "fixedUri": "https://csh.nfdi4health.de/resource/"
       },
       {
         "id": "DocumentReference.masterIdentifier.value",

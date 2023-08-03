@@ -7,5 +7,5 @@ Description: "Example data representing the Institut für Medizinische Informati
 * telecom[webpage].value = "https://imibe.uk-essen.de/"
 * address.text = "Hufelandstr. 55, 45147, Essen, Germany"
 * partOf = Reference(InstanceOfOrganizationUniklinikumEssen)
-* identifier.value = "ROR: 02na8dn90" //ROR id of Uniklinikum Essen
+* identifier.value = "02na8dn90" //ROR id of Uniklinikum Essen
 * identifier.type = $Remaining#081 "ROR"

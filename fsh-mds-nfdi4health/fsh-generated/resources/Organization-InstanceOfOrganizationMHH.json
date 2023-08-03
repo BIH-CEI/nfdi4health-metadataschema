@@ -1,6 +1,6 @@
 {
   "resourceType": "Organization",
-  "id": "InstanceOfOrganizationBMBF",
+  "id": "InstanceOfOrganizationMHH",
   "meta": {
     "profile": [
       "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
@@ -10,25 +10,37 @@
     {
       "system": "url",
       "use": "work",
-      "value": "https://www.bmbf.de/bmbf/de/home/home_node.html"
+      "value": "https://www.mhh.de/"
     }
   ],
   "address": [
     {
       "use": "work",
-      "text": "Kapelle-Ufer 1, 10117, Berlin, Germany"
+      "text": "Carl-Neuberg-Str. 1, 30625, Hannover, Germany"
     }
   ],
-  "name": "Bundesministerium für Bildung und Forschung",
+  "name": "Medizinische Hochschule Hannover",
   "identifier": [
     {
-      "value": "04pz7b180",
+      "value": "00f2yqf98",
       "type": {
         "coding": [
           {
             "code": "081",
             "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
             "display": "ROR"
+          }
+        ]
+      }
+    },
+    {
+      "value": "grid.10423.34",
+      "type": {
+        "coding": [
+          {
+            "code": "082",
+            "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+            "display": "GRID"
           }
         ]
       }

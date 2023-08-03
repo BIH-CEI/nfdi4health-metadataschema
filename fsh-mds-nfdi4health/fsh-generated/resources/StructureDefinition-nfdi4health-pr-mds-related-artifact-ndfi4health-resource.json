@@ -97,7 +97,7 @@
         "id": "RelatedArtifact.extension:identifier.value[x].system",
         "path": "RelatedArtifact.extension.value[x].system",
         "min": 1,
-        "fixedUri": "https://www.nfdihealth.de"
+        "fixedUri": "https://csh.nfdi4health.de/resource/"
       },
       {
         "id": "RelatedArtifact.extension:identifier.value[x].value",

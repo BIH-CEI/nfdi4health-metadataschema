@@ -1,0 +1,27 @@
+{
+  "resourceType": "PractitionerRole",
+  "id": "InstanceOfPractitionerRoleKathleenMerikangas",
+  "meta": {
+    "profile": [
+      "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner-role"
+    ]
+  },
+  "telecom": [
+    {
+      "system": "email",
+      "use": "work",
+      "value": "merikank@mail.nih.gov"
+    },
+    {
+      "system": "phone",
+      "use": "work",
+      "value": "+1 (0)301 4961172"
+    }
+  ],
+  "practitioner": {
+    "reference": "Practitioner/InstanceOfPractitionerKathleenMerikangas"
+  },
+  "organization": {
+    "reference": "Organization/InstanceOfOrganizationCreatorIRM"
+  }
+}

@@ -23,3 +23,5 @@ Description: "Value set defining codes to specify the phase of a study in a Rese
 * $NCI#C15603 "Phase IV Trial (Research Activity)"
 * $NCI#C17649 "Other (Qualitative Concept)"
 * $NCI#C48660 "Not Applicable (Qualitative Concept)"
+
+// Code System in FHIR: http://terminology.hl7.org/CodeSystem/research-study-phase covers not all values

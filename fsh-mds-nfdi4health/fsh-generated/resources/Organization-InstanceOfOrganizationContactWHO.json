@@ -1,6 +1,6 @@
 {
   "resourceType": "Organization",
-  "id": "InstanceOfOrganizationBMBF",
+  "id": "InstanceOfOrganizationContactWHO",
   "meta": {
     "profile": [
       "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
@@ -10,25 +10,36 @@
     {
       "system": "url",
       "use": "work",
-      "value": "https://www.bmbf.de/bmbf/de/home/home_node.html"
-    }
-  ],
-  "address": [
+      "value": "https://www.who.int/"
+    },
     {
+      "system": "email",
       "use": "work",
-      "text": "Kapelle-Ufer 1, 10117, Berlin, Germany"
+      "value": "EarlyInvestigations-2019-nCoV@who.int"
     }
   ],
-  "name": "Bundesministerium für Bildung und Forschung",
+  "name": "World Health Organization (WHO)",
   "identifier": [
     {
-      "value": "04pz7b180",
+      "value": "01f80g185",
       "type": {
         "coding": [
           {
             "code": "081",
             "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
             "display": "ROR"
+          }
+        ]
+      }
+    },
+    {
+      "value": "grid.3575.4",
+      "type": {
+        "coding": [
+          {
+            "code": "082",
+            "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+            "display": "GRID"
           }
         ]
       }
