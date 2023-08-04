@@ -107,7 +107,7 @@
         "reference": {
           "reference": "Organization/InstanceOfOrganizationCreatorNIMH"
         },
-        "name": "Example of the NFDI4Health PR MDS Organization - National Institute of Mental Health; Child Mind Institute; New York State Nathan S. Kline Institute for Psychiatric Research",
+        "name": "Example of the NFDI4Health PR MDS Organization - National Institute of Mental Health",
         "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
       },
       {
@@ -140,7 +140,7 @@
       },
       {
         "reference": {
-          "reference": "EvidenceVariable/InstanceOfGroupActualSPOVID"
+          "reference": "EvidenceVariable/InstanceOfEvidenceVariableSPOVID"
         },
         "name": "Instance Of an Intervention Evidence Variable for SPOVID",
         "description": "Example data representing an intervention in the SPOVID study - Sport & Long-COVID-Syndrome",

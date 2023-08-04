@@ -13,7 +13,7 @@
 [ProvenanceExample]: Provenance-ProvenanceExample.html
 [InstanceOfQuestionnaireCRISISBaselineForm]: Questionnaire-InstanceOfQuestionnaireCRISISBaselineForm.html
 [InstanceOfQuestionnaireGermanCovid19MentalHealthQuestionnaire]: Questionnaire-InstanceOfQuestionnaireGermanCovid19MentalHealthQuestionnaire.html
-[InstanceOfGroupActualSPOVID]: EvidenceVariable-InstanceOfGroupActualSPOVID.html
+[InstanceOfEvidenceVariableSPOVID]: EvidenceVariable-InstanceOfEvidenceVariableSPOVID.html
 [InstanceOfGroupActualSHIP]: Group-InstanceOfGroupActualSHIP.html
 [InstanceOfGroupIntendedSHIP]: Group-InstanceOfGroupIntendedSHIP.html
 [InstanceOfGroupIntendedSPOVID]: Group-InstanceOfGroupIntendedSPOVID.html

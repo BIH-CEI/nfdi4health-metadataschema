@@ -1,6 +1,6 @@
 {
   "resourceType": "EvidenceVariable",
-  "id": "InstanceOfGroupActualSPOVID",
+  "id": "InstanceOfEvidenceVariableSPOVID",
   "meta": {
     "profile": [
       "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-evidence-variable-intervention-exposure"

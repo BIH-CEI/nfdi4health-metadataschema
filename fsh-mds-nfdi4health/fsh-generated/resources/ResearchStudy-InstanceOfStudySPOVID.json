@@ -185,7 +185,7 @@
         {
           "url": "intendedExposure",
           "valueReference": {
-            "reference": "EvidenceVariable/InstanceOfGroupActualSPOVID"
+            "reference": "EvidenceVariable/InstanceOfEvidenceVariableSPOVID"
           }
         }
       ],

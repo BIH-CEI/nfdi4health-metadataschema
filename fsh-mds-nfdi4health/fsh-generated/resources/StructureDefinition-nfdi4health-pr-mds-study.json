@@ -1695,9 +1695,6 @@
         "id": "ResearchStudy.relatedArtifact:NFDI4HealthResource",
         "path": "ResearchStudy.relatedArtifact",
         "sliceName": "NFDI4HealthResource",
-        "short": "Related (sub-)studies, study documents, etc. registered on this portal",
-        "definition": "Group of items providing information about related resources registered on this portal.",
-        "comment": "Short input help: Does the [RESOURCE] have any related resources registered on this portal?",
         "min": 0,
         "max": "*",
         "type": [
