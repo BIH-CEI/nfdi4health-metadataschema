@@ -18,7 +18,7 @@
   ],
   "target": [
     {
-      "reference": "ISARIC_COVID-19_CORE_Case_Report_Form"
+      "reference": "DocumentReference/InstanceOfDocumentHouseholdTransmissionInvestigationForC19"
     }
   ],
   "recorded": "2022-03-07T17:31:17.239+02:00",

@@ -3,6 +3,7 @@ Parent: Provenance
 Id: nfdi4health-pr-mds-provenance
 Title: "NFDI4Health PR MDS Provenance"
 Description: "Resource covering information about the provenance of a resource."
+* ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-provenance"
 * ^version = "0.9"
 * ^status = #draft
 * ^publisher = "NFDI4Health"
