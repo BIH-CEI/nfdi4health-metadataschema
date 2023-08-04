@@ -281,9 +281,6 @@ Description: "Resource covering metadata of a study."
 * relatedArtifact[webpage].url 1..
 * relatedArtifact[nonNFDI4HealthResource] only NFDI4Health_PR_MDS_Related_Artifact_Non_NFDI4Health_Resource
 * relatedArtifact[NFDI4HealthResource] only NFDI4Health_PR_MDS_Related_Artifact_NFDI4Health_Resource
-* relatedArtifact[NFDI4HealthResource] ^short = "Related (sub-)studies, study documents, etc. registered on this portal"
-* relatedArtifact[NFDI4HealthResource] ^definition = "Group of items providing information about related resources registered on this portal."
-* relatedArtifact[NFDI4HealthResource] ^comment = "Short input help: Does the [RESOURCE] have any related resources registered on this portal?"
 * keyword ^short = "Keyword(s) describing the [RESOURCE]"
 * keyword ^definition = "Group of items providing information about keywords describing the resource."
 * keyword ^comment = "Additional information: The findability of the resource can be significantly increased if proper keywords are stated."

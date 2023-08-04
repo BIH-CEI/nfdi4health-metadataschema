@@ -87,7 +87,7 @@ Usage: #example
 * extension[comparisonGroup][0].extension[name].valueString = "Physical training group"
 * extension[comparisonGroup][=].extension[type].valueCoding = $UMLS#C2347177 "Active Comparator (Conceptual Entity)"
 * extension[comparisonGroup][=].extension[description].valueString = "Patients receive an individually tailored training program to improve physical endurance safely and effectively."
-* extension[comparisonGroup][=].extension[intendedExposure].valueReference = Reference(InstanceOfGroupActualSPOVID)
+* extension[comparisonGroup][=].extension[intendedExposure].valueReference = Reference(InstanceOfEvidenceVariableSPOVID)
 * extension[comparisonGroup][+].extension[name].valueString = "Control group"
 * extension[comparisonGroup][=].extension[type].valueCoding = $UMLS#C5420679 "No Intervention Arm (Research Activity)"
 

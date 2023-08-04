@@ -1,4 +1,4 @@
-Instance: InstanceOfGroupActualSPOVID
+Instance: InstanceOfEvidenceVariableSPOVID
 InstanceOf: NFDI4Health_PR_MDS_Evidence_Variable_Intervention_Exposure
 Usage: #example
 Title: "Instance Of an Intervention Evidence Variable for SPOVID"
