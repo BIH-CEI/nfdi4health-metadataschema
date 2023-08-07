@@ -102,7 +102,7 @@ Description: "Resource covering metadata of a study."
 * identifier[UTN] ^definition = "Group of items providing information about identifiers (IDs) assigned to the given resource by another registering systems, e.g. a register of clinical trials or a data repository."
 * identifier[UTN].type = $Remaining#101 "UTN" (exactly)
 * identifier[UTN].system 1..
-* identifier[UTN].system = "http://www.who.int/ictrp/unam-" (exactly)
+* identifier[UTN].system = "https://trialsearch.who.int/utn.aspx" (exactly)
 * identifier[UTN].system ^definition = "Name of the system where the given resource is already registered. Fixed to UTN (WHO)."
 * identifier[UTN].value 1..
 * identifier[KonsortSWD] ^definition = "Group of items providing information about identifiers (IDs) assigned to the given resource by another registering systems, e.g. a register of clinical trials or a data repository."
@@ -122,7 +122,6 @@ Description: "Resource covering metadata of a study."
 * identifier[Other] ^short = "Identifier"
 * identifier[Other] ^definition = "Identifier (ID) assigned to the given resource by another registering system, e.g. by a register of clinical trials or a data repository."
 * identifier[Other].type = $UMLS#C0205394 "Other (Qualitative Concept)" (exactly)
-* identifier[Other].system 1..
 * identifier[Other].system ^definition = "Type/name of the system where the given resource is already registered."
 * identifier[Other].value 1..
 * identifier[Other].value ^definition = "Identifier (ID) assigned to the given resource by another registering system, e.g. by a register of clinical trials or a data repository."
