@@ -39,8 +39,8 @@ Description: "Extension covering information about additional title(s), name(s) 
 * extension[type] ^definition = "Kind of name."
 * extension[type].value[x] 1..
 * extension[type].value[x] only Coding
-* extension[type].value[x] from NFDI4Health_VS_MDS_Label_Type_HL7 (required)
-* extension[type] ^binding.description = "Value set used to express the reason and specific aspect for the variant title, such as language and specific language."
+* extension[type].valueCoding from NFDI4Health_VS_MDS_Label_Type_HL7 (required)
+* extension[type].valueCoding ^binding.description = "Value set used to express the reason and specific aspect for the variant title, such as language and specific language."
 * extension[language] ^short = "Language of the additional title(s)/name(s) or acronym(s)"
 * extension[language] ^definition = "Language of the additional title(s)/name(s) or acronym(s)"
 
