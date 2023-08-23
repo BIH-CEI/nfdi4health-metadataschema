@@ -57,11 +57,6 @@
         ]
       },
       {
-        "id": "Extension.extension",
-        "path": "Extension.extension",
-        "min": 1
-      },
-      {
         "id": "Extension.extension:name",
         "path": "Extension.extension",
         "sliceName": "name",
@@ -103,7 +98,7 @@
         "short": "Type of the outcome measure",
         "definition": "Type of the outcome measure.",
         "comment": "Short input help: Primary or secondary outcome measure?",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "mapping": [
           {

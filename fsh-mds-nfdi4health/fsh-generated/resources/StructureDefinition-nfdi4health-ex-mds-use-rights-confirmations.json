@@ -52,7 +52,6 @@
         "path": "Extension",
         "short": "Important information about licensing, if a Creative Commons liesense is selected.",
         "definition": "Group of items applicable if a Creative Commons liesense is selected.",
-        "min": 1,
         "max": "1",
         "mapping": [
           {

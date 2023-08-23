@@ -1140,7 +1140,7 @@
           ],
           "rules": "open"
         },
-        "min": 2
+        "min": 1
       },
       {
         "id": "Questionnaire.copyright.extension:copyrightLabel",
@@ -1170,7 +1170,7 @@
         "id": "Questionnaire.copyright.extension:useRightsConfirmations",
         "path": "Questionnaire.copyright.extension",
         "sliceName": "useRightsConfirmations",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "type": [
           {

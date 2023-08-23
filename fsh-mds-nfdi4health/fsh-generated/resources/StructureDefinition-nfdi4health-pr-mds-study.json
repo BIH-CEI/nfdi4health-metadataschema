@@ -69,7 +69,7 @@
           ],
           "rules": "open"
         },
-        "min": 7
+        "min": 5
       },
       {
         "id": "ResearchStudy.extension:executionLanguage",
@@ -169,7 +169,7 @@
         "id": "ResearchStudy.extension:nutritionalData",
         "path": "ResearchStudy.extension",
         "sliceName": "nutritionalData",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -184,7 +184,7 @@
         "id": "ResearchStudy.extension:chronicDiseases",
         "path": "ResearchStudy.extension",
         "sliceName": "chronicDiseases",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -1434,7 +1434,7 @@
           ],
           "rules": "open"
         },
-        "min": 4
+        "min": 2
       },
       {
         "id": "ResearchStudy.category:primaryDesign",
@@ -1559,7 +1559,7 @@
         "short": "Specification of study type",
         "definition": "The strategy for assigning interventions to participants.",
         "comment": "Short input help: Select all that apply.\r\nIf \"Other\" is selected, you can specify the study type in the field \"Additional information about the study\".",
-        "min": 1,
+        "min": 0,
         "max": "*",
         "binding": {
           "strength": "required",
@@ -1596,7 +1596,7 @@
         "short": "Specification of study type",
         "definition": "The primary strategy for participant identification and follow-up.",
         "comment": "Short input help: Select all that apply.\r\nIf \"Other\" is selected, you can specify the study type in the field \"Additional information about the study\".",
-        "min": 1,
+        "min": 0,
         "max": "*",
         "constraint": [
           {

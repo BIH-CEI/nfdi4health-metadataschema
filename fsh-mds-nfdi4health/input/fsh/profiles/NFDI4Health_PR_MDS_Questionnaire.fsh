@@ -171,7 +171,7 @@ Description: "Resource covering metadata of a questionnaire."
 * copyright.extension ^slicing.discriminator.path = "url"
 * copyright.extension ^slicing.rules = #open
 * copyright.extension contains NFDI4Health_EX_MDS_Copyright_Label named copyrightLabel 1..1
-* copyright.extension contains NFDI4Health_EX_MDS_Use_Rights_Confirmations named useRightsConfirmations 1..1  
+* copyright.extension contains NFDI4Health_EX_MDS_Use_Rights_Confirmations named useRightsConfirmations 0..1  
 * copyright.extension[copyrightLabel] obeys core2
 * extension[roles].extension[nameType] obeys core5
 * extension[roles].extension[nameType] obeys core8

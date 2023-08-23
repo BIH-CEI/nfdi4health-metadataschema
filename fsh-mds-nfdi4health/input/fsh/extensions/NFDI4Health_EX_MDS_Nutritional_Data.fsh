@@ -10,7 +10,7 @@ Description: "Extension asking if nutritional data was collected"
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 * ^context.type = #element
 * ^context.expression = "ResearchStudy"
-* . 1..1
+* . 0..1
 * . ^short = "Nutritional data collected?"
 * . ^definition = "Indication whether nutritional data was collected by the resource."
 * value[x] 1..

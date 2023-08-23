@@ -21,7 +21,7 @@ Description: "Extension providing information about outcome measure(s)."
 * extension ^slicing.rules = #open
 * extension contains
     name 0..1 and
-    type 1..1 and
+    type 0..1 and
     description 0..1 and
     timeFrame 0..1 
 * extension[name] ^short = "Name of the outcome measure"

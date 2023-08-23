@@ -53,7 +53,7 @@
       {
         "id": "Extension.extension",
         "path": "Extension.extension",
-        "min": 2
+        "min": 1
       },
       {
         "id": "Extension.extension:copyrightLabel",
@@ -80,7 +80,7 @@
         "id": "Extension.extension:useRightsConfirmations",
         "path": "Extension.extension",
         "sliceName": "useRightsConfirmations",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "type": [
           {

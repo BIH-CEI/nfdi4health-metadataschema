@@ -16,7 +16,7 @@ Description: "Extension providing information about the rights to (re-)use the [
 * extension ^slicing.rules = #open
 * extension contains
     NFDI4Health_EX_MDS_Copyright_Label named copyrightLabel 1..1 and
-    NFDI4Health_EX_MDS_Use_Rights_Confirmations named useRightsConfirmations 1..1 and
+    NFDI4Health_EX_MDS_Use_Rights_Confirmations named useRightsConfirmations 0..1 and
     useRightsDescription 0..1
 * extension[useRightsDescription] ^short = "Additional information about use rights"
 * extension[useRightsDescription] ^definition = "Any additional descriptive information explaining terms and conditions to (re-)use the resource."

@@ -17,8 +17,8 @@ Description: "Resource covering metadata of a study."
     NFDI4Health_EX_MDS_Execution_Language named executionLanguage 0..* and
     NFDI4Health_EX_MDS_Label named label 0..* and
     NFDI4Health_EX_MDS_Associated_Party named roles 1..* and
-    NFDI4Health_EX_MDS_Nutritional_Data named nutritionalData 1..1 and
-    NFDI4Health_EX_MDS_Chronic_Diseases named chronicDiseases 1..1 and
+    NFDI4Health_EX_MDS_Nutritional_Data named nutritionalData 0..1 and
+    NFDI4Health_EX_MDS_Chronic_Diseases named chronicDiseases 0..1 and
     NFDI4Health_EX_MDS_Study_Groups_Of_Diseases named studyGroupsOfDiseases 1..1 and
     NFDI4Health_EX_MDS_Mortality_Data named mortalityData 0..1 and
     NFDI4Health_EX_MDS_Study_Ethics_Committee_Approval named studyEthicsCommitteeApproval 0..1 and
@@ -173,8 +173,8 @@ Description: "Resource covering metadata of a study."
 * category ^slicing.rules = #open
 * category contains
     primaryDesign 1..1 and
-    studyTypeInterventional 1..* and
-    studyTypeNonInterventional 1..* and
+    studyTypeInterventional 0..* and
+    studyTypeNonInterventional 0..* and
     timePerspectives 0..* and
     allocation 0..1 and
     samplingMethod 1..1 and
