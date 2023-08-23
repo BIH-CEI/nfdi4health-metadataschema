@@ -108,6 +108,22 @@
               "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-provenance-data-source"
             ]
           }
+        ],
+        "constraint": [
+          {
+            "key": "core18",
+            "severity": "error",
+            "human": "Cardinality: 1..1, if Resource.classification.resourceType == ('Study' OR 'Substudy/Data collection') AND Resource.provenance.dataSource != 'Manually collected'; otherwise 0..0",
+            "expression": "Provenance.extension[dataSource].exists('Manually collected') implies ResearchStudy.extension[nutritionalData].exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-provenance"
+          },
+          {
+            "key": "core19",
+            "severity": "error",
+            "human": "Cardinality: 1..1, if Resource.provenance.dataSource != 'Manually collected'; otherwise 0..0",
+            "expression": "Provenance.extension[dataSource].exists('Manually collected') implies ResearchStudy.extension[chronicDiseases].exists().not() \t",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-provenance"
+          }
         ]
       },
       {

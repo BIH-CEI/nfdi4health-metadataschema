@@ -17,6 +17,8 @@ Description: "Resource covering information about the provenance of a resource."
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
 * extension contains NFDI4Health_EX_MDS_Provenance_Data_Source named dataSource 1..*
+* extension[dataSource] obeys core18
+* extension[dataSource] obeys core19
 * target only Reference(NFDI4Health_PR_MDS_Questionnaire or NFDI4Health_PR_MDS_Document or NFDI4Health_PR_MDS_Study)
 * target ^definition = "The Reference(s) that were generated or updated by the activity described in this resource. A provenance can point to more than one target if multiple resources were created/updated by the same activity."
 * recorded ^short = "Verfication date / Date when the [RESOURCE] was first submitted for publication / Date when the [RESOURCE] was first posted/published / Date when the last update of the [RESOURCE] was submitted for publication / Date when the last update of the [RESOURCE] was posted/published."
@@ -46,3 +48,15 @@ Source: NFDI4Health_PR_MDS_Provenance
 * agent -> "1.18.7 Resource.provenance.firstPostedUser"
 * agent -> "1.18.9 Resource.provenance.lastUpdateSubmittedUser"
 * agent -> "1.18.11 Resource.provenance.lastUpdatePostedUser"
+
+
+Invariant: core18
+Description: "Cardinality: 1..1, if Resource.classification.resourceType == ('Study' OR 'Substudy/Data collection') AND Resource.provenance.dataSource != 'Manually collected'; otherwise 0..0"
+Severity: #error
+Expression: "Provenance.extension[dataSource].exists('Manually collected') implies ResearchStudy.extension[nutritionalData].exists().not()"
+
+Invariant: core19
+Description: "Cardinality: 1..1, if Resource.provenance.dataSource != 'Manually collected'; otherwise 0..0"
+Severity: #error
+Expression: "Provenance.extension[dataSource].exists('Manually collected') implies ResearchStudy.extension[chronicDiseases].exists().not() 	"
+

@@ -4,7 +4,7 @@
   "name": "NFDI4Health_VS_MDS_Study_Data_Sharing_Plan_Supporting_Information_UMLS_Local",
   "id": "nfdi4health-vs-mds-study-data-sharing-plan-sup-inf-umls-local",
   "title": "NFDI4Health VS MDS Study Data Sharing Plan Supporting Information [UMLS, local]",
-  "description": "Value set defining codes to specify if the DataSHIELD/Opal infrastructure is available.",
+  "description": "Value set defining codes to specify which supporting information/documents will be made available in addition to the study data.",
   "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sharing-plan-sup-inf-umls-local",
   "version": "0.9",
   "experimental": true,

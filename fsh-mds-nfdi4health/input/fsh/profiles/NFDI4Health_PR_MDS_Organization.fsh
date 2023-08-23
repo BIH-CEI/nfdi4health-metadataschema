@@ -83,19 +83,19 @@ Description: "Resource covering metadata of an organization."
 * address.text ^short = "Address of the organisation"
 * address.text ^definition = "Address of the organisation associated with the role."
 
-// FHIR Paths
-Invariant: org-1
-Description: "Within the extension associatedParty, when extension.nameType is 	Organizational (Qualitative Concept) and extension.roleOrganisational is 'Public Funder' or 'Private Funder', then extension FundingID within Organization is 0.*."
-Severity: #error
-Expression: "extension(where url = https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-associated-party) where url = roleOrganisational.valueCoding= (Public Funder or Private Funder)not() and where url = nameType.valueCoding = organisational implies resolve Questionnaire extension where url = https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-associated-party.extension.where(url=party.valueReference. where (resolve()is Organization)) and Organization.extension where url = https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-fundingID exists().not
-  organization"
-
-  //tested
-Invariant: org-1a
-Description: "Within the extension associatedParty, when extension.nameType is 	Organizational (Qualitative Concept) and extension.roleOrganisational is 'Public Funder' or 'Private Funder', then extension FundingID within Organization is 0.*."
-Severity: #error
-Expression: "extension.where(url='https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-associated-party').where(url='roleOrganisational.valueCoding'='Public Funder'or'Private Funder').where(url='nameType.valueCoding'='Organizational (Qualitative Concept)').exists()"
-//last part gives result false
+//// FHIR Paths
+//Invariant: org-1
+//Description: "Within the extension associatedParty, when extension.nameType is 	Organizational (Qualitative Concept) and extension.roleOrganisational is 'Public Funder' or 'Private Funder', then extension FundingID within Organization is 0.*."
+//Severity: #error
+//Expression: "extension(where url = https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-associated-party) where url = roleOrganisational.valueCoding= (Public Funder or Private Funder)not() and where url = nameType.valueCoding = organisational implies resolve Questionnaire extension where url = https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-associated-party.extension.where(url=party.valueReference. where (resolve()is Organization)) and Organization.extension where url = https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-fundingID exists().not
+//  organization"
+//
+//  //tested
+//Invariant: org-1a
+//Description: "Within the extension associatedParty, when extension.nameType is 	Organizational (Qualitative Concept) and extension.roleOrganisational is 'Public Funder' or 'Private Funder', then extension FundingID within Organization is 0.*."
+//Severity: #error
+//Expression: "extension.where(url='https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-associated-party').where(url='roleOrganisational.valueCoding'='Public Funder'or'Private Funder').where(url='nameType.valueCoding'='Organizational (Qualitative Concept)').exists()"
+////last part gives result false
 
 Mapping: NFDI4Health-Organization-to-FHIR
 Id: NFDI4Health

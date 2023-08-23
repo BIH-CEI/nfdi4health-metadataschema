@@ -149,10 +149,7 @@
         "short": "Kind of name.",
         "definition": "Kind of name.",
         "min": 1,
-        "max": "1",
-        "binding": {
-          "description": "Value set used to express the reason and specific aspect for the variant title, such as language and specific language."
-        }
+        "max": "1"
       },
       {
         "id": "Extension.extension:type.extension",
@@ -175,7 +172,8 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-label-type-hl7"
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-label-type-hl7",
+          "description": "Value set used to express the reason and specific aspect for the variant title, such as language and specific language."
         }
       },
       {

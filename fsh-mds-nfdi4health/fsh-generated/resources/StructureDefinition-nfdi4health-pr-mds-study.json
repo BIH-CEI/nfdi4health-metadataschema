@@ -117,6 +117,55 @@
         ]
       },
       {
+        "id": "ResearchStudy.extension:roles.extension:roleOrganisational",
+        "path": "ResearchStudy.extension.extension",
+        "sliceName": "roleOrganisational",
+        "constraint": [
+          {
+            "key": "core9",
+            "severity": "error",
+            "human": "Cardinality: 0..*, if Resource.roles.organisational.type == ('Funder (public)' OR 'Funder (private)'); otherwise 0..0",
+            "expression": "ResearchStudy.extension[roles].extension[roleOrganisational].exists('Public Funder' or 'Private Funder').not() implies ResearchStudy.extension[roles].extension[party].valueReference.where(reference=Organization).extension[fundingID].exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          }
+        ]
+      },
+      {
+        "id": "ResearchStudy.extension:roles.extension:nameType",
+        "path": "ResearchStudy.extension.extension",
+        "sliceName": "nameType",
+        "constraint": [
+          {
+            "key": "core3",
+            "severity": "error",
+            "human": "Cardinality: 1..1, if Resource.roles.nameType == 'Organisational'; otherwise 0..0",
+            "expression": "ResearchStudy.extension[roles].extension[nameType].exists('Organizational (Qualitative Concept)') implies ResearchStudy.extension[roles].extension[party].where(resolve() is Organization)",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "core6",
+            "severity": "error",
+            "human": "Cardinality: 1..1, if Resource.roles.nameType =='Organisational'; otherwise 0..0",
+            "expression": "ResearchStudy.extension[roles].extension[nameType].exists('Organizational (Qualitative Concept)') implies ResearchStudy.extension[roles].extension[roleOrganisational].exists()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "core12",
+            "severity": "error",
+            "human": "Cardinality: 1..1, if Resource.roles.nameType =='Personal'; otherwise 0..0",
+            "expression": "ResearchStudy.extension[roles].extension[nameType].exists('Personal Attribute (Organism Attribute)') implies ResearchStudy.extension[roles].extension[party].where(resolve() is PractitionerRole)",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "core15",
+            "severity": "error",
+            "human": "Cardinality: 1..1, if Resource.roles.nameType =='Personal'; otherwise 0..0",
+            "expression": "ResearchStudy.extension[roles].extension[nameType].exists('Personal Attribute (Organism Attribute)') implies ResearchStudy.extension[roles].extension[rolePersonal].exists()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          }
+        ]
+      },
+      {
         "id": "ResearchStudy.extension:nutritionalData",
         "path": "ResearchStudy.extension",
         "sliceName": "nutritionalData",
@@ -207,6 +256,27 @@
         ]
       },
       {
+        "id": "ResearchStudy.extension:studyStatus.extension:overallStatus",
+        "path": "ResearchStudy.extension.extension",
+        "sliceName": "overallStatus",
+        "constraint": [
+          {
+            "key": "core23",
+            "severity": "error",
+            "human": "Cardinality: 0..1, if Resource.studyDesign.primaryDesign == 'Interventional' AND Resource.studyDesign.status == ('At the planning stage' OR 'Ongoing (I): Recruitment ongoing, but data collection not yet started' OR 'Ongoing (II): Recruitment and data collection ongoing' OR 'Ongoing (III): Recruitment completed, but data collection ongoing' OR 'Ongoing (IV): Recruitment and data collection completed, but data quality management ongoing'); otherwise 0..0",
+            "expression": "ResearchStudy.category[primaryDesign].exists('Interventional Study (Research Study)').not() AND (ResearchStudy.extension[studyStatus].extension[overallStatus].exists('Suspended: Recruitment, data collection, or data quality management, halted, but potentially will resume') OR ResearchStudy.extension[studyStatus].extension[overallStatus].exists('Terminated: Recruitment, data collection, data and quality management halted prematurely and will not resume') OR ResearchStudy.extension[studyStatus].extension[overallStatus].exists('Completed: Recruitment, data collection, and data quality management completed normally') OR ResearchStudy.extension[studyStatus].extension[overallStatus].exists('Other (Qualitative Concept)')) implies ResearchStudy.extension[studyStatus].extension[statusWhenIntervention].exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "core24",
+            "severity": "error",
+            "human": "Cardinality: 0..1, if Resource.studyDesign.status == ('Suspended: Recruitment, data collection, or data quality management, halted, but potentially will resume' OR 'Terminated: Recruitment, data collection, data and quality management halted prematurely and will not resume'); otherwise 0..0",
+            "expression": "ResearchStudy.extension[studyStatus].extension[overallStatus].exists('At the planning stage') OR ResearchStudy.extension[studyStatus].extension[overallStatus].exists('Ongoing (I): Recruitment ongoing, but data collection not yet started') OR ResearchStudy.extension[studyStatus].extension[overallStatus].exists('Ongoing (II): Recruitment and data collection ongoing') OR ResearchStudy.extension[studyStatus].extension[overallStatus].exists('Ongoing (III): Recruitment completed, but data collection ongoing') OR ResearchStudy.extension[studyStatus].extension[overallStatus].exists('Ongoing (IV): Recruitment and data collection completed, but data quality management ongoing') OR ResearchStudy.extension[studyStatus].extension[overallStatus].exists('Completed: Recruitment, data collection, and data quality management completed normally') OR ResearchStudy.extension[studyStatus].extension[overallStatus].exists('Other (Qualitative Concept)') implies ResearchStudy.reasonStopped.exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          }
+        ]
+      },
+      {
         "id": "ResearchStudy.extension:subject",
         "path": "ResearchStudy.extension",
         "sliceName": "subject",
@@ -233,6 +303,34 @@
             "profile": [
               "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-data-source"
             ]
+          }
+        ]
+      },
+      {
+        "id": "ResearchStudy.extension:dataSource.extension:general",
+        "path": "ResearchStudy.extension.extension",
+        "sliceName": "general",
+        "constraint": [
+          {
+            "key": "core28",
+            "severity": "error",
+            "human": "Cardinality: 0..*, if Resource.studyDesign.dataSource.general == 'Biological samples'; otherwise 0..0",
+            "expression": "ResearchStudy.extension[dataSource].extension[general].exists('Biospecimen (Body Substance)').not() implies ResearchStudy.extension[dataSource].extension[biosamples].exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "core29",
+            "severity": "error",
+            "human": "Cardinality: 0..*, if Resource.studyDesign.dataSource.general == 'Imaging data'; otherwise 0..0",
+            "expression": "ResearchStudy.extension[dataSource].extension[general].exists('Imaging data').not() implies ResearchStudy.extension[dataSource].extension[imaging].exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "core30",
+            "severity": "error",
+            "human": "Cardinality: 0..*, if Resource.studyDesign.dataSource.general == 'Omics technology'; otherwise 0..0",
+            "expression": "ResearchStudy.extension[dataSource].extension[general].exists('Omics technology').not() implies ResearchStudy.extension[dataSource].extension[omics].exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
           }
         ]
       },
@@ -297,6 +395,34 @@
         ]
       },
       {
+        "id": "ResearchStudy.extension:outcomes.extension:name",
+        "path": "ResearchStudy.extension.extension",
+        "sliceName": "name",
+        "constraint": [
+          {
+            "key": "core32",
+            "severity": "error",
+            "human": "Cardinality: 1..1, if (Resource.studyDesign.studyOutcomes.title != Null OR Resource.studyDesign.studyOutcomes.description != Null); otherwise 0..0",
+            "expression": "ResearchStudy.extension[outcomes].extension[titles].exists().not() OR ResearchStudy.extension[outcomes].extension[description].exists().not() implies ResearchStudy.extension[outcomes].extension[type].exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          }
+        ]
+      },
+      {
+        "id": "ResearchStudy.extension:outcomes.extension:description",
+        "path": "ResearchStudy.extension.extension",
+        "sliceName": "description",
+        "constraint": [
+          {
+            "key": "core32",
+            "severity": "error",
+            "human": "Cardinality: 1..1, if (Resource.studyDesign.studyOutcomes.title != Null OR Resource.studyDesign.studyOutcomes.description != Null); otherwise 0..0",
+            "expression": "ResearchStudy.extension[outcomes].extension[titles].exists().not() OR ResearchStudy.extension[outcomes].extension[description].exists().not() implies ResearchStudy.extension[outcomes].extension[type].exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          }
+        ]
+      },
+      {
         "id": "ResearchStudy.extension:assessments",
         "path": "ResearchStudy.extension",
         "sliceName": "assessments",
@@ -342,6 +468,34 @@
         ]
       },
       {
+        "id": "ResearchStudy.extension:dataSharingPlan.extension:generally",
+        "path": "ResearchStudy.extension.extension",
+        "sliceName": "generally",
+        "constraint": [
+          {
+            "key": "core33",
+            "severity": "error",
+            "human": "Cardinality: 0..*, if Resource.studyDesign.dataSharingPlan.generally == 'Yes, there is a plan to make data available'; otherwise 0..0",
+            "expression": "ResearchStudy.extension[dataSharingPlan].extension[generally].exists('No (qualifier value)') OR ResearchStudy.extension[dataSharingPlan].extension[generally].exists('Undecided (Intellectual Product)') implies ResearchStudy.extension[dataSharingPlan].extension[supportingInformation].exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "core34",
+            "severity": "error",
+            "human": "Cardinality: 0..*, if Resource.studyDesign.dataSharingPlan.generally == 'Yes, there is a plan to make data available'; otherwise 0..0",
+            "expression": "ResearchStudy.extension[dataSharingPlan].extension[generally].exists('No (qualifier value)') OR ResearchStudy.extension[dataSharingPlan].extension[generally].exists('Undecided (Intellectual Product)') implies ResearchStudy.extension[dataSharingPlan].extension[timeFrame].exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "core35",
+            "severity": "error",
+            "human": "Cardinality: 0..*, if Resource.studyDesign.dataSharingPlan.generally == 'Yes, there is a plan to make data available'; otherwise 0..0",
+            "expression": "ResearchStudy.extension[dataSharingPlan].extension[generally].exists('No (qualifier value)') OR ResearchStudy.extension[dataSharingPlan].extension[generally].exists('Undecided (Intellectual Product)') implies ResearchStudy.extension[dataSharingPlan].extension[accessCriteria].exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          }
+        ]
+      },
+      {
         "id": "ResearchStudy.extension:targetFollowupDuration",
         "path": "ResearchStudy.extension",
         "sliceName": "targetFollowupDuration",
@@ -372,6 +526,20 @@
         ]
       },
       {
+        "id": "ResearchStudy.extension:biospecimen.extension:retention",
+        "path": "ResearchStudy.extension.extension",
+        "sliceName": "retention",
+        "constraint": [
+          {
+            "key": "core39",
+            "severity": "error",
+            "human": "Cardinality: 0..1, if Resource.studyDesign.nonInterventional.biospecimenRetention != 'None retained'; otherwise 0..0",
+            "expression": "ResearchStudy.extension[biospecimen].extension[retention].exists('Biospecimens Not Retained (Conceptual Entity)') implies ResearchStudy.extension[biospecimen].extension[description].exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          }
+        ]
+      },
+      {
         "id": "ResearchStudy.extension:offLabelUse",
         "path": "ResearchStudy.extension",
         "sliceName": "offLabelUse",
@@ -398,6 +566,27 @@
             "profile": [
               "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-masking"
             ]
+          }
+        ]
+      },
+      {
+        "id": "ResearchStudy.extension:masking.extension:general",
+        "path": "ResearchStudy.extension.extension",
+        "sliceName": "general",
+        "constraint": [
+          {
+            "key": "core44",
+            "severity": "error",
+            "human": "Cardinality: 0..*, if Resource.studyDesign.interventional.masking.general == true; otherwise 0..0",
+            "expression": "ResearchStudy.extension[masking].extension[general] = false implies ResearchStudy.extension[masking].extension[roles].exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "core45",
+            "severity": "error",
+            "human": "Cardinality: 0..1, if Resource.studyDesign.interventional.masking.general == true; otherwise 0..0",
+            "expression": "ResearchStudy.extension[masking].extension[general] = false implies ResearchStudy.extension[masking].extension[description].exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
           }
         ]
       },
@@ -829,7 +1018,7 @@
         "path": "ResearchStudy.identifier.system",
         "definition": "Name of the system where the given resource is already registered. Fixed to UTN (WHO).",
         "min": 1,
-        "fixedUri": "http://www.who.int/ictrp/unam-",
+        "fixedUri": "https://trialsearch.who.int/utn.aspx",
         "mapping": [
           {
             "identity": "NFDI4Health",
@@ -1008,7 +1197,6 @@
         "id": "ResearchStudy.identifier:Other.system",
         "path": "ResearchStudy.identifier.system",
         "definition": "Type/name of the system where the given resource is already registered.",
-        "min": 1,
         "mapping": [
           {
             "identity": "NFDI4Health",
@@ -1162,7 +1350,7 @@
         "path": "ResearchStudy.title.extension.value[x]",
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/ValueSet/all-languages",
+          "valueSet": "http://hl7.org/fhir/ValueSet/languages",
           "description": "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)"
         }
       },
@@ -1257,6 +1445,85 @@
         "comment": "Short input help: Select between non-interventional and interventional study design.",
         "min": 1,
         "max": "1",
+        "constraint": [
+          {
+            "key": "core20",
+            "severity": "error",
+            "human": "Cardinality: 1..*, if Resource.studyDesign.primaryDesign == 'Interventional'; otherwise 0..0",
+            "expression": "ResearchStudy.category[primaryDesign].exists('Interventional Study (Research Study)').not() implies ResearchStudy.category[studyTypeInterventional].exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "core21",
+            "severity": "error",
+            "human": "Cardinality: 1..*, if Resource.studyDesign.primaryDesign == 'Non-interventional'; otherwise 0..0",
+            "expression": "ResearchStudy.category[primaryDesign].exists('Non-Interventional Study (Research Activity)').not() implies ResearchStudy.category[studyTypeNonInterventional].exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "core23",
+            "severity": "error",
+            "human": "Cardinality: 0..1, if Resource.studyDesign.primaryDesign == 'Interventional' AND Resource.studyDesign.status == ('At the planning stage' OR 'Ongoing (I): Recruitment ongoing, but data collection not yet started' OR 'Ongoing (II): Recruitment and data collection ongoing' OR 'Ongoing (III): Recruitment completed, but data collection ongoing' OR 'Ongoing (IV): Recruitment and data collection completed, but data quality management ongoing'); otherwise 0..0",
+            "expression": "ResearchStudy.category[primaryDesign].exists('Interventional Study (Research Study)').not() AND (ResearchStudy.extension[studyStatus].extension[overallStatus].exists('Suspended: Recruitment, data collection, or data quality management, halted, but potentially will resume') OR ResearchStudy.extension[studyStatus].extension[overallStatus].exists('Terminated: Recruitment, data collection, data and quality management halted prematurely and will not resume') OR ResearchStudy.extension[studyStatus].extension[overallStatus].exists('Completed: Recruitment, data collection, and data quality management completed normally') OR ResearchStudy.extension[studyStatus].extension[overallStatus].exists('Other (Qualitative Concept)')) implies ResearchStudy.extension[studyStatus].extension[statusWhenIntervention].exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "core31",
+            "severity": "error",
+            "human": "Cardinality: 1..1, if study_primary_design =='Interventional'; otherwise 0..0",
+            "expression": "ResearchStudy.category[primaryDesign].exists('Non-Interventional Study (Research Activity)') implies ResearchStudy.extension[comparisonGroup].extension[type].exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "core36",
+            "severity": "error",
+            "human": "Cardinality: 0..1, if Resource.studyDesign.primaryDesign =='Non-interventional'; otherwise 0..0",
+            "expression": "ResearchStudy.category[primaryDesign].exists('Interventional Study (Research Study)') implies ResearchStudy.category[timePerspectives].exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "core37",
+            "severity": "error",
+            "human": "Cardinality: 0..1, if Resource.studyDesign.primaryDesign =='Non-interventional'; otherwise 0..0",
+            "expression": "ResearchStudy.category[primaryDesign].exists('Interventional Study (Research Study)') implies ResearchStudy.extension[targetFollowupDuration].exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "core38",
+            "severity": "error",
+            "human": "Cardinality: 0..1, if Resource.studyDesign.primaryDesign =='Non-interventional'; otherwise 0..0",
+            "expression": "ResearchStudy.category[primaryDesign].exists('Interventional Study (Research Study)') implies ResearchStudy.extension[biospecimen].exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "core40",
+            "severity": "error",
+            "human": "Cardinality: 0..1, if Resource.studyDesign.primaryDesign =='Interventional'; otherwise 0..0",
+            "expression": "ResearchStudy.category[primaryDesign].exists('Non-Interventional Study (Research Activity)') implies ResearchStudy.phase.exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "core41",
+            "severity": "error",
+            "human": "Cardinality: 0..1, if Resource.studyDesign.primaryDesign =='Interventional'; otherwise 0..0",
+            "expression": "ResearchStudy.category[primaryDesign].exists('Non-Interventional Study (Research Activity)') implies ResearchStudy.extension[masking].exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "core42",
+            "severity": "error",
+            "human": "Cardinality: 0..1, if Resource.studyDesign.primaryDesign =='Interventional'; otherwise 0..0",
+            "expression": "ResearchStudy.category[primaryDesign].exists('Non-Interventional Study (Research Activity)') implies ResearchStudy.category[allocation].exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "core43",
+            "severity": "error",
+            "human": "Cardinality: 0..1, if Resource.studyDesign.primaryDesign =='Interventional'; otherwise 0..0",
+            "expression": "ResearchStudy.category[primaryDesign].exists('Non-Interventional Study (Research Activity)') implies ResearchStudy.extension[offLabelUse].exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          }
+        ],
         "binding": {
           "strength": "required",
           "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-primary-design-umls",
@@ -1331,6 +1598,15 @@
         "comment": "Short input help: Select all that apply.\r\nIf \"Other\" is selected, you can specify the study type in the field \"Additional information about the study\".",
         "min": 1,
         "max": "*",
+        "constraint": [
+          {
+            "key": "core22",
+            "severity": "error",
+            "human": "Cardinality: 0..1, if Resource.studyDesign.studyType.nonInterventional == ('Longitudinal' OR 'Cohort' OR 'Case-cohort' OR 'Birth cohort' OR 'Trend' OR 'Panel'); otherwise 0..0",
+            "expression": "ResearchStudy.category[studyTypeNonInterventional].exists('Case-Control Studies (Research Activity)') OR ResearchStudy.category[studyTypeNonInterventional].exists('Nested Case-Control Studies (Research Activity)') OR ResearchStudy.category[studyTypeNonInterventional].exists('Case-only studies') OR ResearchStudy.category[studyTypeNonInterventional].exists('Observational Case-Crossover Study (Research Activity)') OR ResearchStudy.category[studyTypeNonInterventional].exists('Ecologic or Community Based Study (Research Activity)') OR ResearchStudy.category[studyTypeNonInterventional].exists('Family Study (Diagnostic Procedure)') OR ResearchStudy.category[studyTypeNonInterventional].exists('Twin Studies as Topic (Research Activity)') OR ResearchStudy.category[studyTypeNonInterventional].exists('Cross-Sectional Studies (Research Activity)') OR ResearchStudy.category[studyTypeNonInterventional].exists('Cross-section ad-hoc follow-up studies') OR ResearchStudy.category[studyTypeNonInterventional].exists() OR ResearchStudy.category[studyTypeNonInterventional].exists('time series study (Research Activity)') OR ResearchStudy.category[studyTypeNonInterventional].exists('Quality control studies') OR ResearchStudy.category[studyTypeNonInterventional].exists('Patient Registry Study (Research Activity)') OR ResearchStudy.category[studyTypeNonInterventional].exists('Other (Qualitative Concept)') OR ResearchStudy.category[studyTypeNonInterventional].exists('Unknown (Qualitative Concept)') implies ResearchStudy.extension[mortalityData].exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          }
+        ],
         "binding": {
           "strength": "required",
           "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-type-non-interventional-umls-local",
@@ -1439,6 +1715,22 @@
         "comment": "Short Input Help: Select one value from the list.",
         "min": 1,
         "max": "1",
+        "constraint": [
+          {
+            "key": "core26",
+            "severity": "error",
+            "human": "Cardinality: 0..1, if Resource.studyDesign.sampling.method == 'Probability'; otherwise 0..0",
+            "expression": "ResearchCategory.category[samplingMethod].exists('Non-Probability Sampling Method (Activity)') OR ResearchCategory.category[samplingMethod].exists('Mixed Probability and Non-Probability Sampling Method') OR ResearchCategory.category[samplingMethod].exists('Mixed Probability and Non-Probability Sampling Method') OR ResearchCategory.category[samplingMethod].exists('Total universe/Complete enumeration') OR ResearchCategory.category[samplingMethod].exists('Other (Qualitative Concept)') OR ResearchCategory.category[samplingMethod].exists('Unknown (Idea or Concept)') OR ResearchCategory.category[samplingMethod].exists('Not Applicable (Qualitative Concept)') implies ResearchCategory.category[samplingMethodProbability].exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "core27",
+            "severity": "error",
+            "human": "Cardinality: 0..1, if Resource.studyDesign.sampling.method == 'Non-probability'; otherwise 0..0",
+            "expression": "ResearchCategory.category[samplingMethod].exists('Probability Sampling Method') OR ResearchCategory.category[samplingMethod].exists('Mixed Probability and Non-Probability Sampling Method') OR ResearchCategory.category[samplingMethod].exists('Mixed Probability and Non-Probability Sampling Method') OR ResearchCategory.category[samplingMethod].exists('Total universe/Complete enumeration') OR ResearchCategory.category[samplingMethod].exists('Other (Qualitative Concept)') OR ResearchCategory.category[samplingMethod].exists('Unknown (Idea or Concept)') OR ResearchCategory.category[samplingMethod].exists('Not Applicable (Qualitative Concept)') implies ResearchCategory.category[samplingMethodNonProbability].exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          }
+        ],
         "binding": {
           "strength": "required",
           "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-sampling-method-nci-local",
@@ -2036,6 +2328,20 @@
             "profile": [
               "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-centers"
             ]
+          }
+        ]
+      },
+      {
+        "id": "ResearchStudy.site.extension:centers.extension:monoOrMulti",
+        "path": "ResearchStudy.site.extension.extension",
+        "sliceName": "monoOrMulti",
+        "constraint": [
+          {
+            "key": "core25",
+            "severity": "error",
+            "human": "Cardinality: 0..1, if Resource.studyDesign.centers == 'Multicentric'; otherwise 0..0",
+            "expression": "ResearchStudy.site.extension[centers].extension[monoOrMulti].exists('Monocentric') implies ResearchStudy.site.extension[centers].extension[number].exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
           }
         ]
       },

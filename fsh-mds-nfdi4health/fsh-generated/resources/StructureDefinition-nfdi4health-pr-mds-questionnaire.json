@@ -147,6 +147,55 @@
         ]
       },
       {
+        "id": "Questionnaire.extension:roles.extension:roleOrganisational",
+        "path": "Questionnaire.extension.extension",
+        "sliceName": "roleOrganisational",
+        "constraint": [
+          {
+            "key": "core11",
+            "severity": "error",
+            "human": "Cardinality: 0..*, if Resource.roles.organisational.type == ('Funder (public)' OR 'Funder (private)'); otherwise 0..0",
+            "expression": "Questionnaire.extension[roles].extension[roleOrganisational].exists('Public Funder' or 'Private Funder').not() implies ResearchStudy.extension[roles].extension[party].valueReference.where(reference=Organization).extension[fundingID].exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire"
+          }
+        ]
+      },
+      {
+        "id": "Questionnaire.extension:roles.extension:nameType",
+        "path": "Questionnaire.extension.extension",
+        "sliceName": "nameType",
+        "constraint": [
+          {
+            "key": "core5",
+            "severity": "error",
+            "human": "Cardinality: 1..1, if Resource.roles.nameType =='Organisational'; otherwise 0..0",
+            "expression": "Questionnaire.extension[roles].extension[nameType].exists('Organizational (Qualitative Concept)') implies Questionnaire.extension[roles].extension[party].where(resolve() is Organization)",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire"
+          },
+          {
+            "key": "core8",
+            "severity": "error",
+            "human": "Cardinality: 1..1, if Resource.roles.nameType =='Organisational'; otherwise 0..0",
+            "expression": "Questionnaire.extension[roles].extension[nameType].exists('Organizational (Qualitative Concept)') implies Questionnaire.extension[roles].extension[roleOrganisational].exists()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire"
+          },
+          {
+            "key": "core14",
+            "severity": "error",
+            "human": "Cardinality: 1..1, if Resource.roles.nameType =='Personal'; otherwise 0..0",
+            "expression": "Questionnaire.extension[roles].extension[nameType].exists('Personal Attribute (Organism Attribute)') implies Questionnaire.extension[roles].extension[party].where(resolve() is PractitionerRole)",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire"
+          },
+          {
+            "key": "core17",
+            "severity": "error",
+            "human": "Cardinality: 1..1, if Resource.roles.nameType =='Personal'; otherwise 0..0",
+            "expression": "Questionnaire.extension[roles].extension[nameType].exists('Personal Attribute (Organism Attribute)') implies Questionnaire.extension[roles].extension[rolePersonal].exists()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire"
+          }
+        ]
+      },
+      {
         "id": "Questionnaire.extension:relatedResources",
         "path": "Questionnaire.extension",
         "sliceName": "relatedResources",
@@ -604,7 +653,7 @@
         "path": "Questionnaire.identifier.system",
         "definition": "Name of the system where the given resource is already registered. Fixed to UTN (WHO).",
         "min": 1,
-        "fixedUri": "http://www.who.int/ictrp/unam-",
+        "fixedUri": "https://trialsearch.who.int/utn.aspx",
         "mapping": [
           {
             "identity": "NFDI4Health",
@@ -783,7 +832,6 @@
         "id": "Questionnaire.identifier:Other.system",
         "path": "Questionnaire.identifier.system",
         "definition": "Type/name of the system where the given resource is already registered.",
-        "min": 1,
         "mapping": [
           {
             "identity": "NFDI4Health",
@@ -949,7 +997,7 @@
         "path": "Questionnaire.title.extension.value[x]",
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/ValueSet/all-languages",
+          "valueSet": "http://hl7.org/fhir/ValueSet/languages",
           "description": "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)"
         }
       },
@@ -1106,6 +1154,15 @@
             "profile": [
               "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-copyright-label"
             ]
+          }
+        ],
+        "constraint": [
+          {
+            "key": "core2",
+            "severity": "error",
+            "human": "Cardinality: 1..1, if Resource.nonStudyDetails.useRights.label != ('CC0 1.0 (Creative Commons Zero v1.0 Universal)' OR 'All rights reserved' OR 'Other' OR 'Not applicable'); otherwise 0..0",
+            "expression": "Questionnaire.copyright.extension[copyrightLabel].exists(Creative Commons Zero v1.0 Universal) OR Questionnaire.copyright.extension[copyrightLabel].exists(All rights reserved) OR Questionnaire.copyright.extension[copyrightLabel].exists('Other (Qualitative Concept)') OR Questionnaire.copyright.extension[copyrightLabel].exists('Not Applicable (Qualitative Concept)') implies Questionnaire.copyright.extension[useRightsConfirmations].exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire"
           }
         ]
       },

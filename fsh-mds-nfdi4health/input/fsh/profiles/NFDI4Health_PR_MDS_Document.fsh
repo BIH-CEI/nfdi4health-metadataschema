@@ -185,7 +185,12 @@ Description: "Resource covering metadata of a document."
 * content.format ^example[+].label = "Example of a Document format"
 * content.format ^example[=].valueString = "XLSX"
 
-
+* extension[useRights] obeys core1
+* extension[roles].extension[nameType] obeys core4
+* extension[roles].extension[nameType] obeys core7
+* extension[roles].extension[nameType] obeys core13
+* extension[roles].extension[nameType] obeys core16
+* extension[roles].extension[roleOrganisational] obeys core10
 
 Mapping: NFDI4Health-Document-to-FHIR
 Id: NFDI4Health
@@ -242,3 +247,33 @@ Source: NFDI4Health_PR_MDS_Document
 * content.attachment.url -> "1.9 Resource.webpage"
 * content.format -> "1.10.2 Resource.nonStudyDetails.format"
 
+
+Invariant: core1
+Description: "Cardinality: 1..1, if Resource.nonStudyDetails.useRights.label != ('CC0 1.0 (Creative Commons Zero v1.0 Universal)' OR 'All rights reserved' OR 'Other' OR 'Not applicable'); otherwise 0..0"
+Severity: #error
+Expression: "DocumentReference.extension[useRights].extension[copyrightLabel].exists(Creative Commons Zero v1.0 Universal) OR DocumentReference.extension[useRights].extension[copyrightLabel].exists(All rights reserved) OR DocumentReference.extension[useRights].extension[copyrightLabel].exists('Other (Qualitative Concept)') OR DocumentReference.extension[useRights].extension[copyrightLabel].exists('Not Applicable (Qualitative Concept)') implies DocumentReference.extension[useRights].extension[useRightsConfirmations].exists().not()"
+
+Invariant: core4
+Description: "Cardinality: 1..1, if Resource.roles.nameType =='Organisational'; otherwise 0..0"
+Severity: #error
+Expression: "DocumentReference.extension[roles].extension[nameType].exists('Organizational (Qualitative Concept)') implies DocumentReference.extension[roles].extension[party].where(resolve() is Organization)"
+
+Invariant: core7
+Description: "Cardinality: 1..1, if Resource.roles.nameType =='Organisational'; otherwise 0..0"
+Severity: #error
+Expression: "DocumentReference.extension[roles].extension[nameType].exists('Organizational (Qualitative Concept)') implies DocumentReference.extension[roles].extension[roleOrganisational].exists()"
+
+Invariant: core10
+Description: "Cardinality: 0..*, if Resource.roles.organisational.type == ('Funder (public)' OR 'Funder (private)'); otherwise 0..0"
+Severity: #error
+Expression: "DocumentReference.extension[roles].extension[roleOrganisational].exists('Public Funder' or 'Private Funder').not() implies ResearchStudy.extension[roles].extension[party].valueReference.where(reference=Organization).extension[fundingID].exists().not()"
+
+Invariant: core13
+Description: "Cardinality: 1..1, if Resource.roles.nameType =='Personal'; otherwise 0..0"
+Severity: #error
+Expression: "DocumentReference.extension[roles].extension[nameType].exists('Personal Attribute (Organism Attribute)') implies DocumentReference.extension[roles].extension[party].where(resolve() is PractitionerRole)"
+
+Invariant: core16
+Description: " 	Cardinality: 1..1, if Resource.roles.nameType =='Personal'; otherwise 0..0"
+Severity: #error
+Expression: "DocumentReference.extension[roles].extension[nameType].exists('Personal Attribute (Organism Attribute)') implies DocumentReference.extension[roles].extension[rolePersonal].exists()"

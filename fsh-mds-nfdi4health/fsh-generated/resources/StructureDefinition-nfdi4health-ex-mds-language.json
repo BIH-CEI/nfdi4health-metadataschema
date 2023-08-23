@@ -74,7 +74,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/ValueSet/all-languages",
+          "valueSet": "http://hl7.org/fhir/ValueSet/languages",
           "description": "A human language."
         }
       }
