@@ -560,7 +560,7 @@
         "path": "DocumentReference.identifier.system",
         "definition": "Name of the system where the given resource is already registered. Fixed to UTN (WHO).",
         "min": 1,
-        "fixedUri": "http://www.who.int/ictrp/unam-",
+        "fixedUri": "https://trialsearch.who.int/utn.aspx",
         "mapping": [
           {
             "identity": "NFDI4Health",
@@ -737,7 +737,6 @@
         "id": "DocumentReference.identifier:Other.system",
         "path": "DocumentReference.identifier.system",
         "definition": "Type/name of the system where the given resource is already registered.",
-        "min": 1,
         "mapping": [
           {
             "identity": "NFDI4Health",
@@ -977,7 +976,7 @@
         "path": "DocumentReference.content.attachment.title.extension.value[x]",
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/ValueSet/all-languages",
+          "valueSet": "http://hl7.org/fhir/ValueSet/languages",
           "description": "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)"
         }
       },
