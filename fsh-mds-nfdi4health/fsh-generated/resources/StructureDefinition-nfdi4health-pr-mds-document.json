@@ -112,6 +112,55 @@
         ]
       },
       {
+        "id": "DocumentReference.extension:roles.extension:roleOrganisational",
+        "path": "DocumentReference.extension.extension",
+        "sliceName": "roleOrganisational",
+        "constraint": [
+          {
+            "key": "core10",
+            "severity": "error",
+            "human": "Cardinality: 0..*, if Resource.roles.organisational.type == ('Funder (public)' OR 'Funder (private)'); otherwise 0..0",
+            "expression": "DocumentReference.extension[roles].extension[roleOrganisational].exists('Public Funder' or 'Private Funder').not() implies ResearchStudy.extension[roles].extension[party].valueReference.where(reference=Organization).extension[fundingID].exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-document"
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.extension:roles.extension:nameType",
+        "path": "DocumentReference.extension.extension",
+        "sliceName": "nameType",
+        "constraint": [
+          {
+            "key": "core4",
+            "severity": "error",
+            "human": "Cardinality: 1..1, if Resource.roles.nameType =='Organisational'; otherwise 0..0",
+            "expression": "DocumentReference.extension[roles].extension[nameType].exists('Organizational (Qualitative Concept)') implies DocumentReference.extension[roles].extension[party].where(resolve() is Organization)",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-document"
+          },
+          {
+            "key": "core7",
+            "severity": "error",
+            "human": "Cardinality: 1..1, if Resource.roles.nameType =='Organisational'; otherwise 0..0",
+            "expression": "DocumentReference.extension[roles].extension[nameType].exists('Organizational (Qualitative Concept)') implies DocumentReference.extension[roles].extension[roleOrganisational].exists()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-document"
+          },
+          {
+            "key": "core13",
+            "severity": "error",
+            "human": "Cardinality: 1..1, if Resource.roles.nameType =='Personal'; otherwise 0..0",
+            "expression": "DocumentReference.extension[roles].extension[nameType].exists('Personal Attribute (Organism Attribute)') implies DocumentReference.extension[roles].extension[party].where(resolve() is PractitionerRole)",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-document"
+          },
+          {
+            "key": "core16",
+            "severity": "error",
+            "human": " \tCardinality: 1..1, if Resource.roles.nameType =='Personal'; otherwise 0..0",
+            "expression": "DocumentReference.extension[roles].extension[nameType].exists('Personal Attribute (Organism Attribute)') implies DocumentReference.extension[roles].extension[rolePersonal].exists()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-document"
+          }
+        ]
+      },
+      {
         "id": "DocumentReference.extension:useRights",
         "path": "DocumentReference.extension",
         "sliceName": "useRights",
@@ -123,6 +172,15 @@
             "profile": [
               "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-document-use-rights"
             ]
+          }
+        ],
+        "constraint": [
+          {
+            "key": "core1",
+            "severity": "error",
+            "human": "Cardinality: 1..1, if Resource.nonStudyDetails.useRights.label != ('CC0 1.0 (Creative Commons Zero v1.0 Universal)' OR 'All rights reserved' OR 'Other' OR 'Not applicable'); otherwise 0..0",
+            "expression": "DocumentReference.extension[useRights].extension[copyrightLabel].exists(Creative Commons Zero v1.0 Universal) OR DocumentReference.extension[useRights].extension[copyrightLabel].exists(All rights reserved) OR DocumentReference.extension[useRights].extension[copyrightLabel].exists('Other (Qualitative Concept)') OR DocumentReference.extension[useRights].extension[copyrightLabel].exists('Not Applicable (Qualitative Concept)') implies DocumentReference.extension[useRights].extension[useRightsConfirmations].exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-document"
           }
         ]
       },

@@ -171,7 +171,14 @@ Description: "Resource covering metadata of a questionnaire."
 * copyright.extension ^slicing.discriminator.path = "url"
 * copyright.extension ^slicing.rules = #open
 * copyright.extension contains NFDI4Health_EX_MDS_Copyright_Label named copyrightLabel 1..1
-* copyright.extension contains NFDI4Health_EX_MDS_Use_Rights_Confirmations named useRightsConfirmations 1..1  
+* copyright.extension contains NFDI4Health_EX_MDS_Use_Rights_Confirmations named useRightsConfirmations 0..1  
+* copyright.extension[copyrightLabel] obeys core2
+* extension[roles].extension[nameType] obeys core5
+* extension[roles].extension[nameType] obeys core8
+* extension[roles].extension[nameType] obeys core14
+* extension[roles].extension[nameType] obeys core17
+* extension[roles].extension[roleOrganisational] obeys core11
+
 
 Mapping: NFDI4Health-Questionnaire-to-FHIR
 Id: NFDI4Health
@@ -227,3 +234,34 @@ Source: NFDI4Health_PR_MDS_Questionnaire
 * description.extension[translation].extension[content] -> "1.6.1 Resource.descriptionNonEnglish.text"
 * description.extension[language] -> "1.5.2 Resource.descriptionEnglish.language"
 * copyright -> "1.10.3.3 Resource.nonStudyDetails.useRights.description"
+
+Invariant: core2
+Description: "Cardinality: 1..1, if Resource.nonStudyDetails.useRights.label != ('CC0 1.0 (Creative Commons Zero v1.0 Universal)' OR 'All rights reserved' OR 'Other' OR 'Not applicable'); otherwise 0..0"
+Severity: #error
+Expression: "Questionnaire.copyright.extension[copyrightLabel].exists(Creative Commons Zero v1.0 Universal) OR Questionnaire.copyright.extension[copyrightLabel].exists(All rights reserved) OR Questionnaire.copyright.extension[copyrightLabel].exists('Other (Qualitative Concept)') OR Questionnaire.copyright.extension[copyrightLabel].exists('Not Applicable (Qualitative Concept)') implies Questionnaire.copyright.extension[useRightsConfirmations].exists().not()"
+
+Invariant: core5
+Description: "Cardinality: 1..1, if Resource.roles.nameType =='Organisational'; otherwise 0..0"
+Severity: #error
+Expression: "Questionnaire.extension[roles].extension[nameType].exists('Organizational (Qualitative Concept)') implies Questionnaire.extension[roles].extension[party].where(resolve() is Organization)"
+
+Invariant: core8
+Description: "Cardinality: 1..1, if Resource.roles.nameType =='Organisational'; otherwise 0..0"
+Severity: #error
+Expression: "Questionnaire.extension[roles].extension[nameType].exists('Organizational (Qualitative Concept)') implies Questionnaire.extension[roles].extension[roleOrganisational].exists()"
+
+Invariant: core11
+Description: "Cardinality: 0..*, if Resource.roles.organisational.type == ('Funder (public)' OR 'Funder (private)'); otherwise 0..0"
+Severity: #error
+Expression: "Questionnaire.extension[roles].extension[roleOrganisational].exists('Public Funder' or 'Private Funder').not() implies ResearchStudy.extension[roles].extension[party].valueReference.where(reference=Organization).extension[fundingID].exists().not()"
+
+Invariant: core14
+Description: "Cardinality: 1..1, if Resource.roles.nameType =='Personal'; otherwise 0..0"
+Severity: #error
+Expression: "Questionnaire.extension[roles].extension[nameType].exists('Personal Attribute (Organism Attribute)') implies Questionnaire.extension[roles].extension[party].where(resolve() is PractitionerRole)"
+
+Invariant: core17
+Description: "Cardinality: 1..1, if Resource.roles.nameType =='Personal'; otherwise 0..0"
+Severity: #error
+Expression: "Questionnaire.extension[roles].extension[nameType].exists('Personal Attribute (Organism Attribute)') implies Questionnaire.extension[roles].extension[rolePersonal].exists()"
+

@@ -36,14 +36,6 @@
       ]
     },
     {
-      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-nutritional-data",
-      "valueBoolean": false
-    },
-    {
-      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-chronic-diseases",
-      "valueBoolean": false
-    },
-    {
       "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-groups-of-diseases",
       "extension": [
         {
@@ -159,6 +151,14 @@
         "system": "http://snomed.info/sct",
         "display": "Not applicable (qualifier value)"
       }
+    },
+    {
+      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-nutritional-data",
+      "valueBoolean": false
+    },
+    {
+      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-chronic-diseases",
+      "valueBoolean": false
     },
     {
       "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-population",

@@ -36,14 +36,6 @@
       ]
     },
     {
-      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-nutritional-data",
-      "valueBoolean": false
-    },
-    {
-      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-chronic-diseases",
-      "valueBoolean": false
-    },
-    {
       "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-groups-of-diseases",
       "extension": [
         {
@@ -575,6 +567,14 @@
         }
       ],
       "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-biospecimen"
+    },
+    {
+      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-nutritional-data",
+      "valueBoolean": false
+    },
+    {
+      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-chronic-diseases",
+      "valueBoolean": false
     },
     {
       "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-eligibility-criteria-inclusion-criteria",

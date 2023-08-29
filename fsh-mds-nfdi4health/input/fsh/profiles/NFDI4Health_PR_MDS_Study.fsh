@@ -17,8 +17,8 @@ Description: "Resource covering metadata of a study."
     NFDI4Health_EX_MDS_Execution_Language named executionLanguage 0..* and
     NFDI4Health_EX_MDS_Label named label 0..* and
     NFDI4Health_EX_MDS_Associated_Party named roles 1..* and
-    NFDI4Health_EX_MDS_Nutritional_Data named nutritionalData 1..1 and
-    NFDI4Health_EX_MDS_Chronic_Diseases named chronicDiseases 1..1 and
+    NFDI4Health_EX_MDS_Nutritional_Data named nutritionalData 0..1 and
+    NFDI4Health_EX_MDS_Chronic_Diseases named chronicDiseases 0..1 and
     NFDI4Health_EX_MDS_Study_Groups_Of_Diseases named studyGroupsOfDiseases 1..1 and
     NFDI4Health_EX_MDS_Mortality_Data named mortalityData 0..1 and
     NFDI4Health_EX_MDS_Study_Ethics_Committee_Approval named studyEthicsCommitteeApproval 0..1 and
@@ -173,8 +173,8 @@ Description: "Resource covering metadata of a study."
 * category ^slicing.rules = #open
 * category contains
     primaryDesign 1..1 and
-    studyTypeInterventional 1..* and
-    studyTypeNonInterventional 1..* and
+    studyTypeInterventional 0..* and
+    studyTypeNonInterventional 0..* and
     timePerspectives 0..* and
     allocation 0..1 and
     samplingMethod 1..1 and
@@ -188,6 +188,17 @@ Description: "Resource covering metadata of a study."
 * category[primaryDesign].coding 1..1
 * category[primaryDesign].coding.system 1..
 * category[primaryDesign].coding.code 1..
+* category[primaryDesign] obeys core20
+* category[primaryDesign] obeys core21
+* category[primaryDesign] obeys core23
+* category[primaryDesign] obeys core31
+* category[primaryDesign] obeys core36
+* category[primaryDesign] obeys core37
+* category[primaryDesign] obeys core38
+* category[primaryDesign] obeys core40
+* category[primaryDesign] obeys core41
+* category[primaryDesign] obeys core42
+* category[primaryDesign] obeys core43
 * category[studyTypeInterventional] from NFDI4Health_VS_MDS_Study_Type_Interventional_UMLS (required)
 * category[studyTypeInterventional] ^short = "Specification of study type"
 * category[studyTypeInterventional] ^definition = "The strategy for assigning interventions to participants."
@@ -204,6 +215,7 @@ Description: "Resource covering metadata of a study."
 * category[studyTypeNonInterventional].coding 1..1
 * category[studyTypeNonInterventional].coding.system 1..
 * category[studyTypeNonInterventional].coding.code 1..
+* category[studyTypeNonInterventional] obeys core22
 * category[timePerspectives] from NFDI4Health_VS_MDS_Study_Time_Perspectives_UMLS (required)
 * category[timePerspectives] ^binding.description = "Value set defining codes to specify the time perspective of a study in a ResearchStudy resource."
 * category[timePerspectives].coding 1..1
@@ -225,6 +237,8 @@ Description: "Resource covering metadata of a study."
 * category[samplingMethod].coding 1..1
 * category[samplingMethod].coding.system 1..
 * category[samplingMethod].coding.code 1..
+* category[samplingMethod] obeys core26
+* category[samplingMethod] obeys core27
 * category[samplingMethodProbability] from NFDI4Health_VS_MDS_Study_Sampling_Probability_Method_NCI (required)
 * category[samplingMethodProbability] ^short = "Specific type of probability sampling"
 * category[samplingMethodProbability] ^definition = "Specific type of the probability sampling method applied for the selection of study participants."
@@ -362,6 +376,7 @@ Description: "Resource covering metadata of a study."
 * site.extension ^slicing.discriminator.path = "url"
 * site.extension ^slicing.rules = #open
 * site.extension contains NFDI4Health_EX_MDS_Study_Centers named centers 0..1
+* site.extension[centers].extension[monoOrMulti] obeys core25
 * reasonStopped ^short = "Reason why the study was stopped"
 * reasonStopped ^definition = "If the study was stopped prematurely, specification of the reason(s) why it was halted."
 * reasonStopped ^comment = "Short input help: E.g., accrual goal met / closed due to toxicity / closed due to lack of study progress / temporarily-closed per study design /etc."
@@ -385,6 +400,24 @@ Description: "Resource covering metadata of a study."
 * objective.name 1..
 * objective.name ^short = "Research questions and/or hypothesis underlying the study"
 * objective.name ^definition = "Statement of the research questions and/or hypotheses underlying the study."
+* extension[roles].extension[nameType] obeys core3
+* extension[roles].extension[nameType] obeys core6
+* extension[roles].extension[nameType] obeys core12
+* extension[roles].extension[nameType] obeys core15
+* extension[roles].extension[roleOrganisational] obeys core9
+* extension[studyStatus].extension[overallStatus] obeys core23
+* extension[studyStatus].extension[overallStatus] obeys core24
+* extension[dataSource].extension[general] obeys core28
+* extension[dataSource].extension[general] obeys core29
+* extension[dataSource].extension[general] obeys core30
+* extension[outcomes].extension[name] obeys core32
+* extension[outcomes].extension[description] obeys core32
+* extension[dataSharingPlan].extension[generally] obeys core33
+* extension[dataSharingPlan].extension[generally] obeys core34
+* extension[dataSharingPlan].extension[generally] obeys core35
+* extension[biospecimen].extension[retention] obeys core39
+* extension[masking].extension[general] obeys core44
+* extension[masking].extension[general] obeys core45
 
 Mapping: NFDI4Health-Study-to-FHIR
 Id: NFDI4Health
@@ -467,3 +500,159 @@ Source: NFDI4Health_PR_MDS_Study
 * reasonStopped.text -> "1.17.10 Resource.studyDesign.reasonStopped"
 * note.text -> "1.17.33 Resource.studyDesign.comment"
 * objective.name -> "1.17.29 Resource.studyDesign.hypothesis"
+
+Invariant: core3
+Description: "Cardinality: 1..1, if Resource.roles.nameType == 'Organisational'; otherwise 0..0"
+Severity: #error
+Expression: "ResearchStudy.extension[roles].extension[nameType].exists('Organizational (Qualitative Concept)') implies ResearchStudy.extension[roles].extension[party].where(resolve() is Organization)"
+
+Invariant: core6
+Description: "Cardinality: 1..1, if Resource.roles.nameType =='Organisational'; otherwise 0..0"
+Severity: #error
+Expression: "ResearchStudy.extension[roles].extension[nameType].exists('Organizational (Qualitative Concept)') implies ResearchStudy.extension[roles].extension[roleOrganisational].exists()"
+
+Invariant: core9
+Description: "Cardinality: 0..*, if Resource.roles.organisational.type == ('Funder (public)' OR 'Funder (private)'); otherwise 0..0"
+Severity: #error
+Expression: "ResearchStudy.extension[roles].extension[roleOrganisational].exists('Public Funder' or 'Private Funder').not() implies ResearchStudy.extension[roles].extension[party].valueReference.where(reference=Organization).extension[fundingID].exists().not()"
+
+Invariant: core12
+Description: "Cardinality: 1..1, if Resource.roles.nameType =='Personal'; otherwise 0..0"
+Severity: #error
+Expression: "ResearchStudy.extension[roles].extension[nameType].exists('Personal Attribute (Organism Attribute)') implies ResearchStudy.extension[roles].extension[party].where(resolve() is PractitionerRole)"
+
+Invariant: core15
+Description: "Cardinality: 1..1, if Resource.roles.nameType =='Personal'; otherwise 0..0"
+Severity: #error
+Expression: "ResearchStudy.extension[roles].extension[nameType].exists('Personal Attribute (Organism Attribute)') implies ResearchStudy.extension[roles].extension[rolePersonal].exists()"
+
+Invariant: core20
+Description: "Cardinality: 1..*, if Resource.studyDesign.primaryDesign == 'Interventional'; otherwise 0..0"
+Severity: #error
+Expression: "ResearchStudy.category[primaryDesign].exists('Interventional Study (Research Study)').not() implies ResearchStudy.category[studyTypeInterventional].exists().not()"
+
+Invariant: core21
+Description: "Cardinality: 1..*, if Resource.studyDesign.primaryDesign == 'Non-interventional'; otherwise 0..0"
+Severity: #error
+Expression: "ResearchStudy.category[primaryDesign].exists('Non-Interventional Study (Research Activity)').not() implies ResearchStudy.category[studyTypeNonInterventional].exists().not()"
+
+Invariant: core22
+Description: "Cardinality: 0..1, if Resource.studyDesign.studyType.nonInterventional == ('Longitudinal' OR 'Cohort' OR 'Case-cohort' OR 'Birth cohort' OR 'Trend' OR 'Panel'); otherwise 0..0"
+Severity: #error
+Expression: "ResearchStudy.category[studyTypeNonInterventional].exists('Case-Control Studies (Research Activity)') OR ResearchStudy.category[studyTypeNonInterventional].exists('Nested Case-Control Studies (Research Activity)') OR ResearchStudy.category[studyTypeNonInterventional].exists('Case-only studies') OR ResearchStudy.category[studyTypeNonInterventional].exists('Observational Case-Crossover Study (Research Activity)') OR ResearchStudy.category[studyTypeNonInterventional].exists('Ecologic or Community Based Study (Research Activity)') OR ResearchStudy.category[studyTypeNonInterventional].exists('Family Study (Diagnostic Procedure)') OR ResearchStudy.category[studyTypeNonInterventional].exists('Twin Studies as Topic (Research Activity)') OR ResearchStudy.category[studyTypeNonInterventional].exists('Cross-Sectional Studies (Research Activity)') OR ResearchStudy.category[studyTypeNonInterventional].exists('Cross-section ad-hoc follow-up studies') OR ResearchStudy.category[studyTypeNonInterventional].exists() OR ResearchStudy.category[studyTypeNonInterventional].exists('time series study (Research Activity)') OR ResearchStudy.category[studyTypeNonInterventional].exists('Quality control studies') OR ResearchStudy.category[studyTypeNonInterventional].exists('Patient Registry Study (Research Activity)') OR ResearchStudy.category[studyTypeNonInterventional].exists('Other (Qualitative Concept)') OR ResearchStudy.category[studyTypeNonInterventional].exists('Unknown (Qualitative Concept)') implies ResearchStudy.extension[mortalityData].exists().not()"
+
+Invariant: core23
+Description: "Cardinality: 0..1, if Resource.studyDesign.primaryDesign == 'Interventional' AND Resource.studyDesign.status == ('At the planning stage' OR 'Ongoing (I): Recruitment ongoing, but data collection not yet started' OR 'Ongoing (II): Recruitment and data collection ongoing' OR 'Ongoing (III): Recruitment completed, but data collection ongoing' OR 'Ongoing (IV): Recruitment and data collection completed, but data quality management ongoing'); otherwise 0..0"
+Severity: #error
+Expression: "ResearchStudy.category[primaryDesign].exists('Interventional Study (Research Study)').not() AND (ResearchStudy.extension[studyStatus].extension[overallStatus].exists('Suspended: Recruitment, data collection, or data quality management, halted, but potentially will resume') OR ResearchStudy.extension[studyStatus].extension[overallStatus].exists('Terminated: Recruitment, data collection, data and quality management halted prematurely and will not resume') OR ResearchStudy.extension[studyStatus].extension[overallStatus].exists('Completed: Recruitment, data collection, and data quality management completed normally') OR ResearchStudy.extension[studyStatus].extension[overallStatus].exists('Other (Qualitative Concept)')) implies ResearchStudy.extension[studyStatus].extension[statusWhenIntervention].exists().not()"
+
+Invariant: core24
+Description: "Cardinality: 0..1, if Resource.studyDesign.status == ('Suspended: Recruitment, data collection, or data quality management, halted, but potentially will resume' OR 'Terminated: Recruitment, data collection, data and quality management halted prematurely and will not resume'); otherwise 0..0"
+Severity: #error
+Expression: "ResearchStudy.extension[studyStatus].extension[overallStatus].exists('At the planning stage') OR ResearchStudy.extension[studyStatus].extension[overallStatus].exists('Ongoing (I): Recruitment ongoing, but data collection not yet started') OR ResearchStudy.extension[studyStatus].extension[overallStatus].exists('Ongoing (II): Recruitment and data collection ongoing') OR ResearchStudy.extension[studyStatus].extension[overallStatus].exists('Ongoing (III): Recruitment completed, but data collection ongoing') OR ResearchStudy.extension[studyStatus].extension[overallStatus].exists('Ongoing (IV): Recruitment and data collection completed, but data quality management ongoing') OR ResearchStudy.extension[studyStatus].extension[overallStatus].exists('Completed: Recruitment, data collection, and data quality management completed normally') OR ResearchStudy.extension[studyStatus].extension[overallStatus].exists('Other (Qualitative Concept)') implies ResearchStudy.reasonStopped.exists().not()"
+
+Invariant: core25
+Description: "Cardinality: 0..1, if Resource.studyDesign.centers == 'Multicentric'; otherwise 0..0"
+Severity: #error
+Expression: "ResearchStudy.site.extension[centers].extension[monoOrMulti].exists('Monocentric') implies ResearchStudy.site.extension[centers].extension[number].exists().not()"
+
+Invariant: core26
+Description: "Cardinality: 0..1, if Resource.studyDesign.sampling.method == 'Probability'; otherwise 0..0"
+Severity: #error
+Expression: "ResearchCategory.category[samplingMethod].exists('Non-Probability Sampling Method (Activity)') OR ResearchCategory.category[samplingMethod].exists('Mixed Probability and Non-Probability Sampling Method') OR ResearchCategory.category[samplingMethod].exists('Mixed Probability and Non-Probability Sampling Method') OR ResearchCategory.category[samplingMethod].exists('Total universe/Complete enumeration') OR ResearchCategory.category[samplingMethod].exists('Other (Qualitative Concept)') OR ResearchCategory.category[samplingMethod].exists('Unknown (Idea or Concept)') OR ResearchCategory.category[samplingMethod].exists('Not Applicable (Qualitative Concept)') implies ResearchCategory.category[samplingMethodProbability].exists().not()"
+
+Invariant: core27
+Description: "Cardinality: 0..1, if Resource.studyDesign.sampling.method == 'Non-probability'; otherwise 0..0"
+Severity: #error
+Expression: "ResearchCategory.category[samplingMethod].exists('Probability Sampling Method') OR ResearchCategory.category[samplingMethod].exists('Mixed Probability and Non-Probability Sampling Method') OR ResearchCategory.category[samplingMethod].exists('Mixed Probability and Non-Probability Sampling Method') OR ResearchCategory.category[samplingMethod].exists('Total universe/Complete enumeration') OR ResearchCategory.category[samplingMethod].exists('Other (Qualitative Concept)') OR ResearchCategory.category[samplingMethod].exists('Unknown (Idea or Concept)') OR ResearchCategory.category[samplingMethod].exists('Not Applicable (Qualitative Concept)') implies ResearchCategory.category[samplingMethodNonProbability].exists().not()"
+
+Invariant: core28
+Description: "Cardinality: 0..*, if Resource.studyDesign.dataSource.general == 'Biological samples'; otherwise 0..0"
+Severity: #error
+Expression: "ResearchStudy.extension[dataSource].extension[general].exists('Biospecimen (Body Substance)').not() implies ResearchStudy.extension[dataSource].extension[biosamples].exists().not()"
+
+Invariant: core29
+Description: "Cardinality: 0..*, if Resource.studyDesign.dataSource.general == 'Imaging data'; otherwise 0..0"
+Severity: #error
+Expression: "ResearchStudy.extension[dataSource].extension[general].exists('Imaging data').not() implies ResearchStudy.extension[dataSource].extension[imaging].exists().not()"
+
+Invariant: core30
+Description: "Cardinality: 0..*, if Resource.studyDesign.dataSource.general == 'Omics technology'; otherwise 0..0"
+Severity: #error
+Expression: "ResearchStudy.extension[dataSource].extension[general].exists('Omics technology').not() implies ResearchStudy.extension[dataSource].extension[omics].exists().not()"
+
+Invariant: core31
+Description: "Cardinality: 1..1, if study_primary_design =='Interventional'; otherwise 0..0"
+Severity: #error
+Expression: "ResearchStudy.category[primaryDesign].exists('Non-Interventional Study (Research Activity)') implies ResearchStudy.extension[comparisonGroup].extension[type].exists().not()"
+
+Invariant: core32
+Description: "Cardinality: 1..1, if (Resource.studyDesign.studyOutcomes.title != Null OR Resource.studyDesign.studyOutcomes.description != Null); otherwise 0..0"
+Severity: #error
+Expression: "ResearchStudy.extension[outcomes].extension[titles].exists().not() OR ResearchStudy.extension[outcomes].extension[description].exists().not() implies ResearchStudy.extension[outcomes].extension[type].exists().not()"
+
+Invariant: core33
+Description: "Cardinality: 0..*, if Resource.studyDesign.dataSharingPlan.generally == 'Yes, there is a plan to make data available'; otherwise 0..0"
+Severity: #error
+Expression: "ResearchStudy.extension[dataSharingPlan].extension[generally].exists('No (qualifier value)') OR ResearchStudy.extension[dataSharingPlan].extension[generally].exists('Undecided (Intellectual Product)') implies ResearchStudy.extension[dataSharingPlan].extension[supportingInformation].exists().not()"
+
+Invariant: core34
+Description: "Cardinality: 0..*, if Resource.studyDesign.dataSharingPlan.generally == 'Yes, there is a plan to make data available'; otherwise 0..0"
+Severity: #error
+Expression: "ResearchStudy.extension[dataSharingPlan].extension[generally].exists('No (qualifier value)') OR ResearchStudy.extension[dataSharingPlan].extension[generally].exists('Undecided (Intellectual Product)') implies ResearchStudy.extension[dataSharingPlan].extension[timeFrame].exists().not()"
+
+Invariant: core35
+Description: "Cardinality: 0..*, if Resource.studyDesign.dataSharingPlan.generally == 'Yes, there is a plan to make data available'; otherwise 0..0"
+Severity: #error
+Expression: "ResearchStudy.extension[dataSharingPlan].extension[generally].exists('No (qualifier value)') OR ResearchStudy.extension[dataSharingPlan].extension[generally].exists('Undecided (Intellectual Product)') implies ResearchStudy.extension[dataSharingPlan].extension[accessCriteria].exists().not()"
+
+Invariant: core36
+Description: "Cardinality: 0..1, if Resource.studyDesign.primaryDesign =='Non-interventional'; otherwise 0..0"
+Severity: #error
+Expression: "ResearchStudy.category[primaryDesign].exists('Interventional Study (Research Study)') implies ResearchStudy.category[timePerspectives].exists().not()"
+
+Invariant: core37
+Description: "Cardinality: 0..1, if Resource.studyDesign.primaryDesign =='Non-interventional'; otherwise 0..0"
+Severity: #error
+Expression: "ResearchStudy.category[primaryDesign].exists('Interventional Study (Research Study)') implies ResearchStudy.extension[targetFollowupDuration].exists().not()"
+
+Invariant: core38
+Description: "Cardinality: 0..1, if Resource.studyDesign.primaryDesign =='Non-interventional'; otherwise 0..0"
+Severity: #error
+Expression: "ResearchStudy.category[primaryDesign].exists('Interventional Study (Research Study)') implies ResearchStudy.extension[biospecimen].exists().not()"
+
+Invariant: core39
+Description: "Cardinality: 0..1, if Resource.studyDesign.nonInterventional.biospecimenRetention != 'None retained'; otherwise 0..0"
+Severity: #error
+Expression: "ResearchStudy.extension[biospecimen].extension[retention].exists('Biospecimens Not Retained (Conceptual Entity)') implies ResearchStudy.extension[biospecimen].extension[description].exists().not()"
+
+Invariant: core40
+Description: "Cardinality: 0..1, if Resource.studyDesign.primaryDesign =='Interventional'; otherwise 0..0"
+Severity: #error
+Expression: "ResearchStudy.category[primaryDesign].exists('Non-Interventional Study (Research Activity)') implies ResearchStudy.phase.exists().not()"
+
+Invariant: core41
+Description: "Cardinality: 0..1, if Resource.studyDesign.primaryDesign =='Interventional'; otherwise 0..0"
+Severity: #error
+Expression: "ResearchStudy.category[primaryDesign].exists('Non-Interventional Study (Research Activity)') implies ResearchStudy.extension[masking].exists().not()"
+
+Invariant: core42
+Description: "Cardinality: 0..1, if Resource.studyDesign.primaryDesign =='Interventional'; otherwise 0..0"
+Severity: #error
+Expression: "ResearchStudy.category[primaryDesign].exists('Non-Interventional Study (Research Activity)') implies ResearchStudy.category[allocation].exists().not()"
+
+Invariant: core43
+Description: "Cardinality: 0..1, if Resource.studyDesign.primaryDesign =='Interventional'; otherwise 0..0"
+Severity: #error
+Expression: "ResearchStudy.category[primaryDesign].exists('Non-Interventional Study (Research Activity)') implies ResearchStudy.extension[offLabelUse].exists().not()"
+
+Invariant: core44
+Description: "Cardinality: 0..*, if Resource.studyDesign.interventional.masking.general == true; otherwise 0..0"
+Severity: #error
+Expression: "ResearchStudy.extension[masking].extension[general] = false implies ResearchStudy.extension[masking].extension[roles].exists().not()"
+
+Invariant: core45
+Description: "Cardinality: 0..1, if Resource.studyDesign.interventional.masking.general == true; otherwise 0..0"
+Severity: #error
+Expression: "ResearchStudy.extension[masking].extension[general] = false implies ResearchStudy.extension[masking].extension[description].exists().not()"
+

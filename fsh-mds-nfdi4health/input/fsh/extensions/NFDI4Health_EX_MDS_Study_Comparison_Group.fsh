@@ -21,7 +21,7 @@ Description: "Extension providing information about the arm(s)/group(s)/cohort(s
 * extension ^slicing.rules = #open
 * extension contains
     name 1..1 and
-    type 1..1 and
+    type 0..1 and
     description 0..1 and
     intendedExposure 0..*
 * extension[name] ^short = "Name of the arm/group"

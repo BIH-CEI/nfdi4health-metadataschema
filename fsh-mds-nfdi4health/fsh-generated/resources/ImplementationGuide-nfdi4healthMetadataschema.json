@@ -1234,25 +1234,10 @@
       },
       {
         "reference": {
-          "reference": "Questionnaire/nfdi4health-exa-mds"
-        },
-        "name": "nfdi4health-exa-mds",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/nfdi4health-ex-mds-related"
         },
         "name": "NFDI4Health_EX_MDS_Related",
         "description": "Extension providing information about related publications, datasets, study documents, web pages, etc.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/Test-Element-Definition"
-        },
-        "name": "Test Element Definition",
-        "description": "Element Definition for a MDS item",
         "exampleBoolean": false
       }
     ],

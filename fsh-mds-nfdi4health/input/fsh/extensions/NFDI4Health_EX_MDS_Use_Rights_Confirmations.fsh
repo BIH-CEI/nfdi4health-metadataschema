@@ -12,7 +12,7 @@ Description: "Extension providing information about licensing, if a Creative Com
 * ^context[=].expression = "Questionnaire.copyright"
 * ^context[+].type = #element
 * ^context[=].expression = "Extension"
-* . 1..1
+* . 0..1
 * . ^short = "Important information about licensing, if a Creative Commons liesense is selected."
 * . ^definition = "Group of items applicable if a Creative Commons liesense is selected."
 * extension ^slicing.discriminator.type = #value
