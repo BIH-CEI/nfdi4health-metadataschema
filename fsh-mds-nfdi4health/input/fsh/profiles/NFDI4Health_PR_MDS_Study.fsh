@@ -464,6 +464,8 @@ Source: NFDI4Health_PR_MDS_Study
 * identifier[Other].system -> "1.12.1 Resource.idsAlternative.scheme" "Type = Other"
 * identifier[Other].type -> "1.12.1 Resource.idsAlternative.scheme" "Type = Other"
 * identifier[Other].value -> "1.12.2 Resource.idsAlternative.identifier"
+* extension[resourceType] -> "1.2.1 Resource.classification.resourceType"
+* extension[resourceTypeGeneral] -> "1.2.2 Resource.classification.resourceTypeGeneral"
 * title -> "1.3.1 Resource.titles.text"
 * title.extension[translation].extension[lang] -> "1.3.2 Resource.titles.language" "Translation language of the title"
 * title.extension[translation].extension[content] -> "1.3.1 Resource.titles.text" "Translated title"

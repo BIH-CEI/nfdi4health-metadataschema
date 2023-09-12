@@ -186,7 +186,6 @@ Description: "Resource covering metadata of a document."
 * content.format ^example[=].valueString = "PDF"
 * content.format ^example[+].label = "Example of a Document format"
 * content.format ^example[=].valueString = "XLSX"
-
 * extension[useRights] obeys core1
 * extension[roles].extension[nameType] obeys core4
 * extension[roles].extension[nameType] obeys core7
@@ -236,6 +235,8 @@ Source: NFDI4Health_PR_MDS_Document
 * identifier[Other].system -> "1.12.1 Resource.idsAlternative.scheme" "Type = Other"
 * identifier[Other].type -> "1.12.1 Resource.idsAlternative.scheme" "Type = Other"
 * identifier[Other].value -> "1.12.2 Resource.idsAlternative.identifier"
+* extension[resourceType] -> "1.2.1 Resource.classification.resourceType"
+* extension[resourceTypeGeneral] -> "1.2.2 Resource.classification.resourceTypeGeneral"
 * description -> "1.5.1 Resource.descriptionEnglish.text"
 * description.extension[translation] -> "1.6 Resource.descriptionNonEnglish"
 * description.extension[translation].extension[lang] -> "1.6.2 Resource.descriptionNonEnglish.language"
