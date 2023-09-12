@@ -13,6 +13,8 @@ Description: "Resource covering metadata of a questionnaire."
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
 * extension contains
+    NFDI4Health_EX_MDS_Resource_Type named resourceType 1..1 and
+    NFDI4Health_EX_MDS_Resource_Type_General named resourceTypeGeneral 0..1 and
     NFDI4Health_EX_MDS_Webpage named webpage 0..1 and
     NFDI4Health_EX_MDS_Format named format 0..1 and
     NFDI4Health_EX_MDS_Label named label 0..* and

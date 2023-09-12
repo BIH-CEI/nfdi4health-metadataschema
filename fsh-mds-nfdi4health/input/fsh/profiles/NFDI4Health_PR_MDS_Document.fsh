@@ -13,6 +13,8 @@ Description: "Resource covering metadata of a document."
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
 * extension contains
+    NFDI4Health_EX_MDS_Resource_Type named resourceType 1..1 and
+    NFDI4Health_EX_MDS_Resource_Type_General named resourceTypeGeneral 0..1 and
     NFDI4Health_EX_MDS_Keywords named keywords 0..* and
     NFDI4Health_EX_MDS_Associated_Party named roles 1..* and
     NFDI4Health_EX_MDS_Document_Use_Rights named useRights 0..1 and 

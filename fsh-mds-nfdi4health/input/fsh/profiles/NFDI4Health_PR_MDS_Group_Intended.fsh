@@ -48,8 +48,8 @@ Title: "NFDI4Health PR MDS Group Intended"
 * characteristic[gender] ^definition = "Gender of potential participants eligible to participate in the study."
 * characteristic[gender].code = $NCI#C17357 "Gender (Organism Attribute)" (exactly)
 * characteristic[gender].value[x] only CodeableConcept
-* characteristic[gender].valueCodeableConcept from $administrative-gender (required)
-* characteristic[gender].valueCodeableConcept ^binding.description = "The gender of a person used for administrative purposes."
+* characteristic[gender].valueCodeableConcept from NFDI4Health_VS_MDS_Study_Eligibility_Criteria_Genders_Local (required)
+* characteristic[gender].valueCodeableConcept ^binding.description = "The gender of potential participants eligible to participate in the study."
 
 Mapping: NFDI4Health-Group-Intended-to-FHIR
 Id: NFDI4Health
