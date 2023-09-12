@@ -11,7 +11,7 @@ Description: "Value set defining codes to specify the study recruitment status (
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 
 * $Remaining#022 "Not yet recruiting"
-* $UMLS#C0814875 "recruiting and enrolling subjects (Research Activity)"
+* $UMLS#C2949735 "Recruitment (Activity)"
 * $Remaining#023 "Enrolling by invitation"
 * $Remaining#024 "Active, not recruiting"
 * $UMLS#C1556116 "completed - ActStatus (Idea or Concept)"

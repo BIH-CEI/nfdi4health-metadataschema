@@ -276,7 +276,7 @@ Description: "NFDI4Health LogicalModel General Metadataschema"
 * Resource.studyDesign.sampling 0..1 BackboneElement "Sampling method" "Group of items providing information about the applied sampling method."
 * Resource.studyDesign.sampling ^comment = "Short Input Help: Select one value from the list. / Display information? (Data capturing): no / Display information? (Data visualization): no / Source of the property and/or allowed values: NFDI4Health"
 * Resource.studyDesign.sampling.method 1..1 Coding "Applied sampling method" "Type of the sampling method applied for the selection of study participants."
-* Resource.studyDesign.sampling.method from NFDI4Health_VS_MDS_Study_Sampling_Method_Non_Probability_NCI_Local (required)
+* Resource.studyDesign.sampling.method from NFDI4Health_VS_MDS_Study_Sampling_Method_NCI_Local (required)
 * Resource.studyDesign.sampling.method ^comment = "Short Input Help: Select one value from the list. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health, CT.gov [2], DDI [15]"
 * Resource.studyDesign.sampling.probabilityMethod 0..1 Coding "Specific type of probability sampling" "Specific type of the probability sampling method applied for the selection of study participants."
 * Resource.studyDesign.sampling.probabilityMethod from NFDI4Health_VS_MDS_Study_Sampling_Probability_Method_NCI (required)
@@ -320,6 +320,7 @@ Description: "NFDI4Health LogicalModel General Metadataschema"
 * Resource.studyDesign.eligibilityCriteria.ageMax.timeUnit from NFDI4Health_VS_MDS_Time_Units_UCUM_UMLS (required)
 * Resource.studyDesign.eligibilityCriteria.ageMax.timeUnit ^comment = "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2], DRKS [3]"
 * Resource.studyDesign.eligibilityCriteria.genders 0..* Coding "Eligible gender" "Gender of potential participants eligible to participate in the study."
+* Resource.studyDesign.eligibilityCriteria.genders from NFDI4Health_VS_MDS_Study_Eligibility_Criteria_Genders_Local (required)
 * Resource.studyDesign.eligibilityCriteria.genders ^comment = "Short Input Help: Select all that apply. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health, CT.gov [2], DRKS [3]"
 * Resource.studyDesign.eligibilityCriteria.inclusionCriteria 0..1 string "Inclusion criteria" "Inclusion criteria for participation in the study."
 * Resource.studyDesign.eligibilityCriteria.inclusionCriteria ^comment = "Short Input Help: If possible, use an enumerated or bulleted list for each criterion. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2], DRKS [3]"

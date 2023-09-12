@@ -1,8 +1,8 @@
-ValueSet: NFDI4Health_VS_MDS_Role_Name_Identifier_Scheme
-Id: nfdi4health-vs-mds-role-name-identifier-scheme
-Title: "NFDI4Health VS MDS Role Name Identifier Scheme"
+ValueSet: NFDI4Health_VS_MDS_Role_Name_Identifier_Scheme_Local
+Id: nfdi4health-vs-mds-role-name-identifier-scheme-local
+Title: "NFDI4Health VS MDS Role Name Identifier Scheme [local]"
 Description: "Value set defining codes to specify the identifier scheme of a personal identifier."
-* ^url = "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-role-name-identifier-scheme"
+* ^url = "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-role-name-identifier-scheme-local"
 * ^status = #draft
 * ^version = "0.9"
 * ^experimental = true

@@ -1,8 +1,8 @@
-ValueSet: NFDI4Health_VS_MDS_Role_Affiliation_Identifier_Scheme
-Id: nfdi4health-vs-mds-role-affiliation-identifier-scheme
-Title: "NFDI4Health VS MDS Role Affiliation Identifier Scheme"
+ValueSet: NFDI4Health_VS_MDS_Role_Affiliation_Identifier_Scheme_Local
+Id: nfdi4health-vs-mds-role-affiliation-identifier-scheme-local
+Title: "NFDI4Health VS MDS Role Affiliation Identifier Scheme [local]"
 Description: "Value set defining codes to specify the identifier scheme of an affiliation identifier."
-* ^url = "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-role-affiliation-identifier-scheme"
+* ^url = "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-role-affiliation-identifier-scheme-local"
 * ^status = #draft
 * ^version = "0.9"
 * ^experimental = true
