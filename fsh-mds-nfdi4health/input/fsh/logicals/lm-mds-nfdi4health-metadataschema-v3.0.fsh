@@ -121,7 +121,7 @@ Description: "NFDI4Health LogicalModel General Metadataschema"
 * Resource.roles.personal.identifiers.identifier ^example.label = "General"
 * Resource.roles.personal.identifiers.identifier ^example.valueString = "0000-0003-1379-7023"
 * Resource.roles.personal.identifiers.scheme 1..1 Coding "Which type of identifer is reported?" "Type of the identifier scheme."
-* Resource.roles.personal.identifiers.scheme from NFDI4Health_VS_MDS_Role_Name_Identifier_Scheme (required)
+* Resource.roles.personal.identifiers.scheme from NFDI4Health_VS_MDS_Role_Name_Identifier_Scheme_Local (required)
 * Resource.roles.personal.identifiers.scheme ^comment = "Display information? (Data capturing): yes / Display information? (Data visualization): no / Source of the property and/or allowed values: DataCite [1]"
 * Resource.roles.personal.identifiers.scheme ^example.label = "General"
 * Resource.roles.personal.identifiers.scheme ^example.valueCodeableConcept.text = "ORCID"
@@ -146,7 +146,7 @@ Description: "NFDI4Health LogicalModel General Metadataschema"
 * Resource.roles.affiliation.identifiers.identifier ^example.label = "General"
 * Resource.roles.affiliation.identifiers.identifier ^example.valueString = "0259fwx54"
 * Resource.roles.affiliation.identifiers.scheme 1..1 Coding "Identifier scheme" "Type of the identifier scheme."
-* Resource.roles.affiliation.identifiers.scheme from NFDI4Health_VS_MDS_Role_Affiliation_Identifier_Scheme (required)
+* Resource.roles.affiliation.identifiers.scheme from NFDI4Health_VS_MDS_Role_Affiliation_Identifier_Scheme_Local (required)
 * Resource.roles.affiliation.identifiers.scheme ^comment = "Short Input Help: Which type of identifer is reported? / Display information? (Data capturing): yes / Display information? (Data visualization): no / Source of the property and/or allowed values: DataCite [1]"
 * Resource.roles.affiliation.identifiers.scheme ^example.label = "General"
 * Resource.roles.affiliation.identifiers.scheme ^example.valueCodeableConcept.text = "ROR"

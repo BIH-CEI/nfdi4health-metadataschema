@@ -14,6 +14,7 @@ Usage: #example
 * description.extension[translation].extension[content].valueString = "In einer Pilotstudie untersucht das Projekt SPOVID, ob ein individuell abgestimmtes Trainingsprogramm die körperliche Ausdauer von Long COVID-19-Patientinnen und -Patienten sicher und wirksam verbessern kann. Dazu beobachten die Forschenden über mehrere Monate hinweg insbesondere Fitnessparameter der Herz-Kreislauf- und der Lungenfunktion, aber auch die Entwicklung von Kopfschmerz-, Müdigkeits- und Erschöpfungssymptomen. Aus den Ergebnissen wollen sie Empfehlungen für personalisierte Trainingsprogramme ableiten."
 * description.extension[translation].extension[lang].valueCode = #de "German"
 ///Details
+* extension[resourceType].valueCoding = $UMLS#C0947630 "Scientific Study (Research Activity)"
 * extension[label].extension[value].valueString = "SPOVID"
 * extension[label].extension[type].valueCoding = $HL7titleType#acronym
 * extension[label].extension[language].valueCode = #en "English"

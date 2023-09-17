@@ -8,6 +8,14 @@
   },
   "extension": [
     {
+      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-resource-type",
+      "valueCoding": {
+        "code": "021",
+        "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+        "display": "Other study document"
+      }
+    },
+    {
       "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-associated-party",
       "extension": [
         {
@@ -59,6 +67,14 @@
         }
       ],
       "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-keywords"
+    },
+    {
+      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-resource-type-general",
+      "valueCoding": {
+        "code": "C25704",
+        "system": "http://ncimeta.nci.nih.gov",
+        "display": "Text (Manufactured Object)"
+      }
     },
     {
       "extension": [

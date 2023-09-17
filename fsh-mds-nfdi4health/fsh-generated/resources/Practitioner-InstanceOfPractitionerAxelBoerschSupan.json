@@ -1,0 +1,34 @@
+{
+  "resourceType": "Practitioner",
+  "id": "InstanceOfPractitionerAxelBoerschSupan",
+  "meta": {
+    "profile": [
+      "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner"
+    ]
+  },
+  "name": [
+    {
+      "family": "Börsch-Supan",
+      "given": [
+        "Axel"
+      ],
+      "prefix": [
+        "C69166"
+      ]
+    }
+  ],
+  "identifier": [
+    {
+      "value": "0000-0003-0470-8850",
+      "type": {
+        "coding": [
+          {
+            "code": "080",
+            "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+            "display": "ORCID"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -11,6 +11,11 @@
       "system": "url",
       "use": "work",
       "value": "https://imibe.uk-essen.de/"
+    },
+    {
+      "system": "phone",
+      "use": "work",
+      "value": "+49 (0)201 72377201"
     }
   ],
   "address": [
@@ -32,6 +37,18 @@
             "code": "081",
             "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
             "display": "ROR"
+          }
+        ]
+      }
+    },
+    {
+      "value": "grid.491891.c",
+      "type": {
+        "coding": [
+          {
+            "code": "082",
+            "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+            "display": "GRID"
           }
         ]
       }

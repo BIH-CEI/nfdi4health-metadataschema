@@ -244,8 +244,8 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/administrative-gender",
-          "description": "The gender of a person used for administrative purposes."
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-eligibility-criteria-genders-local",
+          "description": "The gender of potential participants eligible to participate in the study."
         }
       }
     ]

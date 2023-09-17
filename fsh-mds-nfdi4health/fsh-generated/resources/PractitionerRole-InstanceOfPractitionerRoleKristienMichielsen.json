@@ -1,0 +1,27 @@
+{
+  "resourceType": "PractitionerRole",
+  "id": "InstanceOfPractitionerRoleKristienMichielsen",
+  "meta": {
+    "profile": [
+      "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner-role"
+    ]
+  },
+  "telecom": [
+    {
+      "system": "email",
+      "use": "work",
+      "value": "kristien.michielsen@ugent.be"
+    },
+    {
+      "system": "phone",
+      "use": "work",
+      "value": "+32 (0)933 25290"
+    }
+  ],
+  "practitioner": {
+    "reference": "Practitioner/InstanceOfPractitionerKristienMichielsen"
+  },
+  "organization": {
+    "reference": "Organization/InstanceOfOrganizationContactFMHSUniGhent"
+  }
+}

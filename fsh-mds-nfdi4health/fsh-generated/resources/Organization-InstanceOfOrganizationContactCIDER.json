@@ -1,0 +1,48 @@
+{
+  "resourceType": "Organization",
+  "id": "InstanceOfOrganizationContactCIDER",
+  "meta": {
+    "profile": [
+      "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+    ]
+  },
+  "telecom": [
+    {
+      "system": "url",
+      "use": "work",
+      "value": "https://www.uni-giessen.de/de/fbz/zentren/zeu"
+    }
+  ],
+  "address": [
+    {
+      "use": "work",
+      "text": "Senckenbergstr 3, 35390, Giessen, Germany"
+    }
+  ],
+  "name": "Center for International Development and Environmental Research, Justus Liebig University Giessen",
+  "identifier": [
+    {
+      "value": "033eqas34",
+      "type": {
+        "coding": [
+          {
+            "code": "081",
+            "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+            "display": "ROR"
+          }
+        ]
+      }
+    },
+    {
+      "value": "grid.8664.c",
+      "type": {
+        "coding": [
+          {
+            "code": "082",
+            "display": "GRID"
+          }
+        ]
+      }
+    }
+  ]
+}

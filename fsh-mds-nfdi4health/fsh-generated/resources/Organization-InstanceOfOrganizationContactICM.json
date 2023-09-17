@@ -1,0 +1,26 @@
+{
+  "resourceType": "Organization",
+  "id": "InstanceOfOrganizationContactICM",
+  "meta": {
+    "profile": [
+      "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+    ]
+  },
+  "telecom": [
+    {
+      "system": "url",
+      "use": "work",
+      "value": "https://www2.medizin.uni-greifswald.de/icm/index.php?id=334"
+    }
+  ],
+  "address": [
+    {
+      "use": "work",
+      "text": "Ellernholzstraße 1-2, 17487, Greifswald, Germany"
+    }
+  ],
+  "name": "Institute for Community Medicine",
+  "partOf": {
+    "reference": "Organization/InstanceOfOrganizationUMG"
+  }
+}

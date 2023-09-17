@@ -1,0 +1,20 @@
+{
+  "resourceType": "Organization",
+  "id": "InstanceOfOrganizationContactWellcome",
+  "meta": {
+    "profile": [
+      "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+    ]
+  },
+  "telecom": [
+    {
+      "system": "email",
+      "use": "work",
+      "value": "wellcomecovid-19@bristol.ac.uk"
+    }
+  ],
+  "name": "Wellcome Longitudinal Population Study Covid-19 Steering Group and Secretariat",
+  "partOf": {
+    "reference": "Organization/InstanceOfOrganizationContactUniversityBristol"
+  }
+}

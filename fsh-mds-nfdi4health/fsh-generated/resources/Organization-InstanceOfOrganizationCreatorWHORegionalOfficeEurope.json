@@ -1,0 +1,49 @@
+{
+  "resourceType": "Organization",
+  "id": "InstanceOfOrganizationCreatorWHORegionalOfficeEurope",
+  "meta": {
+    "profile": [
+      "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+    ]
+  },
+  "telecom": [
+    {
+      "system": "url",
+      "use": "work",
+      "value": "https://www.euro.who.int/en"
+    }
+  ],
+  "address": [
+    {
+      "use": "work",
+      "text": "UN City, Marmorvej 51, DK-2100, Copenhagen, Denmark"
+    }
+  ],
+  "name": "World Health Organization. Regional Office for Europe",
+  "identifier": [
+    {
+      "value": "01rz37c55",
+      "type": {
+        "coding": [
+          {
+            "code": "081",
+            "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+            "display": "ROR"
+          }
+        ]
+      }
+    },
+    {
+      "value": "grid.420226.0",
+      "type": {
+        "coding": [
+          {
+            "code": "082",
+            "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+            "display": "GRID"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -105,7 +105,7 @@
         "max": "1",
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-role-name-identifier-scheme",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-role-name-identifier-scheme-local",
           "description": "Value set defining codes to specify the identifier scheme of a personal identifier."
         }
       },

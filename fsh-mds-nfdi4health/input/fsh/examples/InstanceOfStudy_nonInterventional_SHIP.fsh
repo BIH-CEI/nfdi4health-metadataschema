@@ -12,6 +12,7 @@ Usage: #example
 * description = "SHIP-TREND is a population-based cohort study. It has two main objectives: To assess prevalence and incidence of common risk factors, subclinical disorders and clinical diseases and to investigate the complex associations among risk factors, subclinical disorders and clinical diseases. A particular characteristic of SHIP-TREND is that it does not focus on a selected disease; it rather attempts to describe health-related conditions with the widest focus possible. Important medical areas of investigation include cardiovascular diseases, diabetes mellitus, liver and biliary tract diseases, neurological diseases, thyroid diseases, dental diseases, lung diseases, addiction and risk behaviour, among others. SHIP-TREND is part of the SHIP project with two other independent cohorts, SHIP-START and SHIP-NEXT."
 * description.extension[language].valueCode = #en "English"
 ///Details
+* extension[resourceType].valueCoding = $UMLS#C0947630 "Scientific Study (Research Activity)"
 * extension[label].extension[value].valueString = "SHIP-TREND"
 * extension[label].extension[type].valueCoding = $HL7titleType#acronym
 * extension[label].extension[language].valueCode = #en "English"

@@ -1,0 +1,52 @@
+{
+  "resourceType": "Organization",
+  "id": "InstanceOfOrganizationContactKlinikPsychoSomatik",
+  "meta": {
+    "profile": [
+      "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+    ]
+  },
+  "telecom": [
+    {
+      "system": "url",
+      "use": "work",
+      "value": "https://www.uni-due.de/psychosomatik/"
+    }
+  ],
+  "address": [
+    {
+      "use": "work",
+      "text": "45147, Essen, Germany"
+    }
+  ],
+  "name": "Klinik für Psychosomatische Medizin und Psychotherapie",
+  "identifier": [
+    {
+      "value": "04mz5ra38",
+      "type": {
+        "coding": [
+          {
+            "code": "081",
+            "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+            "display": "ROR"
+          }
+        ]
+      }
+    },
+    {
+      "value": "grid.5718.b",
+      "type": {
+        "coding": [
+          {
+            "code": "082",
+            "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+            "display": "GRID"
+          }
+        ]
+      }
+    }
+  ],
+  "partOf": {
+    "reference": "Organization/InstanceOfOrganizationUniDuisburgEssen"
+  }
+}

@@ -41,6 +41,10 @@
             "display": "Factorial Study (Research Study)"
           },
           {
+            "code": "C1705294",
+            "display": "Sequential (Qualitative Concept)"
+          },
+          {
             "code": "C0205394",
             "display": "Other (Qualitative Concept)"
           },

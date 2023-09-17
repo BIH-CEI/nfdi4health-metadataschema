@@ -21,6 +21,7 @@ Dabei werden drei Hauptziele verfolgt:
 3) Charakterisierung der serologischen Reaktion nach einer bestätigten 2019-nCoV-Infektion (wird dringend empfohlen, ist aber je nach Laborkapazität und Ressourcen optional)."
 * description.extension[translation].extension[lang].valueCode = #de "German"
 /// Details
+* extension[resourceType].valueCoding = $Remaining#021 "Other study document"
 * content.attachment[=].extension[label].extension[value].valueString = "WHO-2019-nCoV-HHtransmission"
 * content.attachment[=].extension[label].extension[type].valueCoding = $HL7titleType#acronym "Acronym"
 * content.attachment[=].extension[label].extension[language].valueCode = #en "English"
@@ -31,6 +32,7 @@ Dabei werden drei Hauptziele verfolgt:
 * content.attachment[=].language = #en "English"
 * content.attachment[=].url = "https://www.who.int/publications/i/item/household-transmission-investigation-protocol-for-2019-novel-coronavirus-(2019-ncov)-infection"
 * content.attachment[=].extension[version].valueString = "2.2"
+* extension[resourceTypeGeneral].valueCoding = $NCI#C25704 "Text (Manufactured Object)"
 * content.format.display = "PDF"
 * extension[useRights].extension[copyrightLabel].valueCoding = $UMLS#C0205394 "Other (Qualitative Concept)"
 * extension[useRights].extension[useRightsDescription].valueString = " This document is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 IGO (CC BY-NC-SA 3.0 IGO) License. To view a copy of the license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/igo/legalcode."

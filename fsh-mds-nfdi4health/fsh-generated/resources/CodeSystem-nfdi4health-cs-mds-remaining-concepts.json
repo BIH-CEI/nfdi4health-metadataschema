@@ -435,6 +435,10 @@
     {
       "code": "104",
       "display": "NFDI4Health"
+    },
+    {
+      "code": "105",
+      "display": "diverse"
     }
   ],
   "version": "0.9",
@@ -450,5 +454,5 @@
       ]
     }
   ],
-  "count": 104
+  "count": 105
 }

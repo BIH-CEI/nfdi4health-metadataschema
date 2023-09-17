@@ -1,0 +1,49 @@
+{
+  "resourceType": "Organization",
+  "id": "InstanceOfOrganizationContactFMHSUniGhent",
+  "meta": {
+    "profile": [
+      "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+    ]
+  },
+  "telecom": [
+    {
+      "system": "url",
+      "use": "work",
+      "value": "https://www.ugent.be/ge/phpc/en"
+    }
+  ],
+  "address": [
+    {
+      "use": "work",
+      "text": "Heymanslaan str. 10, 9000, Gent, Belgium"
+    }
+  ],
+  "name": "Department of Public Health and Primary Care, Faculty of Medicine and Health Sciences, University of Ghent",
+  "identifier": [
+    {
+      "value": "00cv9y106",
+      "type": {
+        "coding": [
+          {
+            "code": "081",
+            "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+            "display": "ROR"
+          }
+        ]
+      }
+    },
+    {
+      "value": "grid.5342.0",
+      "type": {
+        "coding": [
+          {
+            "code": "082",
+            "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+            "display": "GRID"
+          }
+        ]
+      }
+    }
+  ]
+}

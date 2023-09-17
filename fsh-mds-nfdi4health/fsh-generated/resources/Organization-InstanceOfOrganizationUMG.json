@@ -6,5 +6,31 @@
       "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
     ]
   },
-  "name": "University Medicine Greifswald"
+  "name": "University Medicine Greifswald",
+  "identifier": [
+    {
+      "value": "00r1edq15",
+      "type": {
+        "coding": [
+          {
+            "code": "081",
+            "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+            "display": "ROR"
+          }
+        ]
+      }
+    },
+    {
+      "value": "grid.5603.0",
+      "type": {
+        "coding": [
+          {
+            "code": "082",
+            "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+            "display": "GRID"
+          }
+        ]
+      }
+    }
+  ]
 }

@@ -20,7 +20,7 @@ Description: "Resource covering metadata of an individual."
 * identifier.type ^example.label = "Example of identifier scheme"
 * identifier.type ^example.valueCodeableConcept.text = "ORCID"
 * identifier.type.coding 1..1
-* identifier.type.coding from NFDI4Health_VS_MDS_Role_Name_Identifier_Scheme (required)
+* identifier.type.coding from NFDI4Health_VS_MDS_Role_Name_Identifier_Scheme_Local (required)
 * identifier.type.coding ^binding.description = "Value set defining codes to specify the identifier scheme of a personal identifier."
 * identifier.value 1..
 * identifier.value ^short = "Identifier"

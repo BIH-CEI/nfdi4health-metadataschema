@@ -1,0 +1,37 @@
+{
+  "resourceType": "Organization",
+  "id": "InstanceOfOrganizationCreatorMZES",
+  "meta": {
+    "profile": [
+      "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+    ]
+  },
+  "telecom": [
+    {
+      "system": "url",
+      "use": "work",
+      "value": "https://www.mzes.uni-mannheim.de"
+    }
+  ],
+  "address": [
+    {
+      "use": "work",
+      "text": "68159, Mannheim, Germany"
+    }
+  ],
+  "name": "Mannheim Centre for European Social (MZES)",
+  "identifier": [
+    {
+      "value": "05bv91d86",
+      "type": {
+        "coding": [
+          {
+            "code": "081",
+            "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+            "display": "ROR"
+          }
+        ]
+      }
+    }
+  ]
+}

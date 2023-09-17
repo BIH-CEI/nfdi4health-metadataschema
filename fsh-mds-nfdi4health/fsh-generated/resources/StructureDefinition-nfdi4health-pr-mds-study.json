@@ -69,7 +69,49 @@
           ],
           "rules": "open"
         },
-        "min": 5
+        "min": 6
+      },
+      {
+        "id": "ResearchStudy.extension:resourceType",
+        "path": "ResearchStudy.extension",
+        "sliceName": "resourceType",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-resource-type"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.2.1 Resource.classification.resourceType"
+          }
+        ]
+      },
+      {
+        "id": "ResearchStudy.extension:resourceTypeGeneral",
+        "path": "ResearchStudy.extension",
+        "sliceName": "resourceTypeGeneral",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-resource-type-general"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.2.2 Resource.classification.resourceTypeGeneral"
+          }
+        ]
       },
       {
         "id": "ResearchStudy.extension:executionLanguage",
@@ -1603,7 +1645,7 @@
             "key": "core22",
             "severity": "error",
             "human": "Cardinality: 0..1, if Resource.studyDesign.studyType.nonInterventional == ('Longitudinal' OR 'Cohort' OR 'Case-cohort' OR 'Birth cohort' OR 'Trend' OR 'Panel'); otherwise 0..0",
-            "expression": "ResearchStudy.category[studyTypeNonInterventional].exists('Case-Control Studies (Research Activity)') OR ResearchStudy.category[studyTypeNonInterventional].exists('Nested Case-Control Studies (Research Activity)') OR ResearchStudy.category[studyTypeNonInterventional].exists('Case-only studies') OR ResearchStudy.category[studyTypeNonInterventional].exists('Observational Case-Crossover Study (Research Activity)') OR ResearchStudy.category[studyTypeNonInterventional].exists('Ecologic or Community Based Study (Research Activity)') OR ResearchStudy.category[studyTypeNonInterventional].exists('Family Study (Diagnostic Procedure)') OR ResearchStudy.category[studyTypeNonInterventional].exists('Twin Studies as Topic (Research Activity)') OR ResearchStudy.category[studyTypeNonInterventional].exists('Cross-Sectional Studies (Research Activity)') OR ResearchStudy.category[studyTypeNonInterventional].exists('Cross-section ad-hoc follow-up studies') OR ResearchStudy.category[studyTypeNonInterventional].exists() OR ResearchStudy.category[studyTypeNonInterventional].exists('time series study (Research Activity)') OR ResearchStudy.category[studyTypeNonInterventional].exists('Quality control studies') OR ResearchStudy.category[studyTypeNonInterventional].exists('Patient Registry Study (Research Activity)') OR ResearchStudy.category[studyTypeNonInterventional].exists('Other (Qualitative Concept)') OR ResearchStudy.category[studyTypeNonInterventional].exists('Unknown (Qualitative Concept)') implies ResearchStudy.extension[mortalityData].exists().not()",
+            "expression": "ResearchStudy.category[studyTypeNonInterventional].exists('Case-Control Studies (Research Activity)') OR ResearchStudy.category[studyTypeNonInterventional].exists('Nested Case-Control Studies (Research Activity)') OR ResearchStudy.category[studyTypeNonInterventional].exists('Case-only studies') OR ResearchStudy.category[studyTypeNonInterventional].exists('Observational Case-Crossover Study (Research Activity)') OR ResearchStudy.category[studyTypeNonInterventional].exists('Ecologic or Community Based Study (Research Activity)') OR ResearchStudy.category[studyTypeNonInterventional].exists('Family Study (Diagnostic Procedure)') OR ResearchStudy.category[studyTypeNonInterventional].exists('Twin Studies as Topic (Research Activity)') OR ResearchStudy.category[studyTypeNonInterventional].exists('Cross-Sectional Studies (Research Activity)') OR ResearchStudy.category[studyTypeNonInterventional].exists('Cross-section ad-hoc follow-up studies') OR ResearchStudy.category[studyTypeNonInterventional].exists('time series study (Research Activity)') OR ResearchStudy.category[studyTypeNonInterventional].exists('Quality control studies') OR ResearchStudy.category[studyTypeNonInterventional].exists('Patient Registry Study (Research Activity)') OR ResearchStudy.category[studyTypeNonInterventional].exists('Other (Qualitative Concept)') OR ResearchStudy.category[studyTypeNonInterventional].exists('Unknown (Qualitative Concept)') implies ResearchStudy.extension[mortalityData].exists().not()",
             "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
           }
         ],

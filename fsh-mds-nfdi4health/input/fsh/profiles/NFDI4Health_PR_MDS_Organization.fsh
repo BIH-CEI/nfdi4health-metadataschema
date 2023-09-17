@@ -25,7 +25,7 @@ Description: "Resource covering metadata of an organization."
 * identifier.type ^comment = "Which type of identifer is reported?"
 * identifier.type ^example.label = "Identifier type"
 * identifier.type ^example.valueCodeableConcept.text = "ROR"
-* identifier.type from NFDI4Health_VS_MDS_Role_Affiliation_Identifier_Scheme (required)
+* identifier.type from NFDI4Health_VS_MDS_Role_Affiliation_Identifier_Scheme_Local (required)
 * identifier.type ^binding.description = "Value set defining codes to specify the identifier scheme of an affiliation identifier."
 * identifier.type.coding 1..1
 * identifier.value 1..
