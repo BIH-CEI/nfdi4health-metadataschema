@@ -6,6 +6,4481 @@
       "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire"
     ]
   },
+  "item": [
+        {
+            "code": [
+                {
+                    "code": "Sociodemographic_economic_characteristics",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Residence",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "416647007",
+                    "display": "Country of residence (observable entity)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q1_1",
+            "text": "In which country do you currently live?",
+            "type": "text"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "less than 1 year"
+                },
+                {
+                    "valueString": "1 year up to 2 years"
+                },
+                {
+                    "valueString": "2 years up to 5 years"
+                },
+                {
+                    "valueString": "more than 5 years"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Sociodemographic_economic_characteristics",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Residence",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "416647007",
+                    "display": "Country of residence (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "442133001",
+                    "display": "Housing history (observable entity)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q1_2",
+            "text": "How long have you lived here?",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "a rural area"
+                },
+                {
+                    "valueString": "a peri urban/ urban catchment area"
+                },
+                {
+                    "valueString": "a small town (farmland within 1 hour walking distance away from the center)"
+                },
+                {
+                    "valueString": "a small town (farmland within 1 up to 4 hours walking distance away from thecenter)"
+                },
+                {
+                    "valueString": "a big town (farmland within 4 hours of walking distance away from the citycenter)"
+                },
+                {
+                    "valueString": "a big town (district or province capital)"
+                },
+                {
+                    "valueString": "a city"
+                },
+                {
+                    "valueString": "a mega city"
+                },
+                {
+                    "valueString": "the capital city"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Sociodemographic_economic_characteristics",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Residence",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "224153006",
+                    "display": "Local environment and neighborhood details (observable entity)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q2_1a",
+            "text": "Please choose the option that you think best fits the place where you live. I report my observations from...",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Sociodemographic_economic_characteristics",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Residence",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "224153006",
+                    "display": "Local environment and neighborhood details (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "9E+17",
+                    "display": "Text (foundation metadata concept)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q2_1b",
+            "text": "Describe it in your own words:",
+            "type": "text"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "No"
+                },
+                {
+                    "valueString": "Yes"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Sociodemographic_economic_characteristics",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Residence",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "q2_2",
+            "text": "Is the area from where you report your primary residence?",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "younger than 15 years"
+                },
+                {
+                    "valueString": "15-19 years"
+                },
+                {
+                    "valueString": "20-24 years"
+                },
+                {
+                    "valueString": "25-29 years"
+                },
+                {
+                    "valueString": "30-34 years"
+                },
+                {
+                    "valueString": "35-39 years"
+                },
+                {
+                    "valueString": "40-44 years"
+                },
+                {
+                    "valueString": "45-49 years"
+                },
+                {
+                    "valueString": "50-54 years"
+                },
+                {
+                    "valueString": "55-59 years"
+                },
+                {
+                    "valueString": "60-64 years"
+                },
+                {
+                    "valueString": "65-69 years"
+                },
+                {
+                    "valueString": "70-74 years"
+                },
+                {
+                    "valueString": "75-79 years"
+                },
+                {
+                    "valueString": "80-84 years"
+                },
+                {
+                    "valueString": "85-89 years"
+                },
+                {
+                    "valueString": "90 years or older"
+                },
+                {
+                    "valueString": "prefer not to say"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Sociodemographic_economic_characteristics",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Age",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "424144002",
+                    "display": "Current chronological age (observable entity)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q3_1",
+            "text": "How old are you?",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Female"
+                },
+                {
+                    "valueString": "Male"
+                },
+                {
+                    "valueString": "non-binary"
+                },
+                {
+                    "valueString": "prefer not to say"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Sociodemographic_economic_characteristics",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Sex",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "263495000",
+                    "display": "Gender (observable entity) ",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q3_2",
+            "text": "What is your gender?",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Finished school with no qualifications"
+                },
+                {
+                    "valueString": "Still in school"
+                },
+                {
+                    "valueString": "Finished primary school"
+                },
+                {
+                    "valueString": "Finished secondary school"
+                },
+                {
+                    "valueString": "Finished high school/ A-Level/ Abitur"
+                },
+                {
+                    "valueString": "Completed apprenticeship"
+                },
+                {
+                    "valueString": "Vocational baccalaureate diploma, vocational secondary certification"
+                },
+                {
+                    "valueString": "Vocational university/university of applied sciences/university degree"
+                },
+                {
+                    "valueString": "Other degree:"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Sociodemographic_economic_characteristics",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Education",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "224326003",
+                    "display": "Qualifications achieved (observable entity)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q3_3a",
+            "text": "What is your highest educational level?",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Sociodemographic_economic_characteristics",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Education",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "224326003",
+                    "display": "Qualifications achieved (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "74964007",
+                    "display": "Other (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "9E+17",
+                    "display": "Text (foundation metadata concept)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q3_3b",
+            "text": "Other degree [highest educational level]",
+            "type": "text"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Pupil/in school"
+                },
+                {
+                    "valueString": "Training/apprenticeship"
+                },
+                {
+                    "valueString": "University student"
+                },
+                {
+                    "valueString": "Farmer"
+                },
+                {
+                    "valueString": "Daily wages"
+                },
+                {
+                    "valueString": "Unemployed/seeking employment"
+                },
+                {
+                    "valueString": "Employee"
+                },
+                {
+                    "valueString": "Self-employed"
+                },
+                {
+                    "valueString": "Civil servant"
+                },
+                {
+                    "valueString": "Other"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Sociodemographic_economic_characteristics",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Labour_retirement",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "224362002",
+                    "display": "Employment status (observable entity)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q3_4a",
+            "text": "What do you do for a living?",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Sociodemographic_economic_characteristics",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Other_sociodemogr_chars",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "301705009",
+                    "display": "Occupation and employment activity (observable entity)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q3_4b",
+            "text": "Miscellaneous [What do you do for a living?]",
+            "type": "text"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "No, so far not"
+                },
+                {
+                    "valueString": "If yes, do you remember the exact date?"
+                },
+                {
+                    "valueString": "Yes, but can ́t remember the exact date"
+                },
+                {
+                    "valueString": "Yes, I have been but not longer anymore"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Social_environment",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Soc_participation",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "422650009",
+                    "display": "Social isolation (finding)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q3_5a",
+            "text": "Are you affected by a contact or curfew?",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Social_environment",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Soc_participation",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "422650009",
+                    "display": "Social isolation (finding)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q3_5b",
+            "text": "Date [affected by a contact or curfew]",
+            "type": "text"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Contact restrictions"
+                },
+                {
+                    "valueString": "Travel restrictions"
+                },
+                {
+                    "valueString": "Only food retailers/ supermarket, drugstores and pharmaciesare open"
+                },
+                {
+                    "valueString": "Curfew during day"
+                },
+                {
+                    "valueString": "Curfew at night"
+                },
+                {
+                    "valueString": "You are not allowed to leave your house but only to buy food"
+                },
+                {
+                    "valueString": "Others, please describe"
+                },
+                {
+                    "valueString": "Number of restrictions increased within the last seven days;What changed?"
+                },
+                {
+                    "valueString": "Number of restrictions decreased within the last seven days;What changed?"
+                },
+                {
+                    "valueString": "Are you or have been affected by a lockdown?"
+                },
+                {
+                    "valueString": "Other"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Social_environment",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Soc_participation",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "77248004",
+                    "display": "Infection control procedure (procedure)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "363702006",
+                    "display": "Has focus (attribute)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "840539006",
+                    "display": "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "103309006",
+                    "display": "Patient affected (contextual qualifier) (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q3_6a",
+            "text": "Are you affected by certain restrictions in response to COVID-19?",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Social_environment",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Soc_participation",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "77248004",
+                    "display": "Infection control procedure (procedure)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "363702006",
+                    "display": "Has focus (attribute)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "840539006",
+                    "display": "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "103309006",
+                    "display": "Patient affected (contextual qualifier) (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "74964007",
+                    "display": "Other (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q3_6b",
+            "text": "Other, please describe [affected by certain restrictions in response to COVID-19?]",
+            "type": "text"
+        },
+        {
+            "code": [
+                {
+                    "code": "Social_environment",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Soc_participation",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "424228003",
+                    "display": "Infection control status (finding)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q3_6c",
+            "text": "The number of restrictions has increased in the last 7 days. What has changed?",
+            "type": "text"
+        },
+        {
+            "code": [
+                {
+                    "code": "Social_environment",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Soc_participation",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "424228003",
+                    "display": "Infection control status (finding)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q3_6d",
+            "text": "The number of restrictions has been decreased in the last 7 days. What has changed?",
+            "type": "text"
+        },
+        {
+            "code": [
+                {
+                    "code": "Social_environment",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Soc_participation",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "422650009",
+                    "display": "Social isolation (finding)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "103309006",
+                    "display": "Patient affected (contextual qualifier) (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q3_6e",
+            "text": "Are you or were you affected by a curfew?",
+            "type": "text"
+        },
+        {
+            "code": [
+                {
+                    "code": "Social_environment",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Soc_participation",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "422650009",
+                    "display": "Social isolation (finding)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "103309006",
+                    "display": "Patient affected (contextual qualifier) (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "74964007",
+                    "display": "Other (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q3_6f",
+            "text": "Other [affected by a curfew]",
+            "type": "text"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "I live alone."
+                },
+                {
+                    "valueString": "myself and my spouse"
+                },
+                {
+                    "valueString": "myself, my spouse and my children"
+                },
+                {
+                    "valueString": "myself, my spouse, my children and my parents/ parents in law"
+                },
+                {
+                    "valueString": "myself and roommates"
+                },
+                {
+                    "valueString": "Other, please describe.."
+                }
+            ],
+            "code": [
+                {
+                    "code": "Sociodemographic_economic_characteristics",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Family_hh_struct",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "224525003",
+                    "display": "Number in household (observable entity) ",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q4_1a",
+            "text": "How many people live in your household?",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Sociodemographic_economic_characteristics",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Family_hh_struct",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "224525003",
+                    "display": "Number in household (observable entity) ",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "74964007",
+                    "display": "Other (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "9E+17",
+                    "display": "Text (foundation metadata concept)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q4_1b",
+            "text": "Other, please describe... [no. of people in household]",
+            "type": "text"
+        },
+        {
+            "code": [
+                {
+                    "code": "Sociodemographic_economic_characteristics",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Family_hh_struct",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "224118004",
+                    "display": "Number of offspring (observable entity) ",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q4_2a",
+            "text": "Number of children",
+            "type": "text"
+        },
+        {
+            "code": [
+                {
+                    "code": "Sociodemographic_economic_characteristics",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Family_hh_struct",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "424144002",
+                    "display": "Current chronological age (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "224117009",
+                    "display": "Details of own children (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "424144002",
+                    "display": "Current chronological age (observable entity) ",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "160508006",
+                    "display": "Place in family order: youngest sibling (finding)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q4_2b",
+            "text": "How old is your youngest child?",
+            "type": "text"
+        },
+        {
+            "code": [
+                {
+                    "code": "Sociodemographic_economic_characteristics",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Family_hh_struct",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "424144002",
+                    "display": "Current chronological age (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "224117009",
+                    "display": "Details of own children (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "424144002",
+                    "display": "Current chronological age (observable entity) ",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "31114009",
+                    "display": "Place in family order: oldest sibling (finding) ",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q4_2c",
+            "text": "How old is your oldest child?",
+            "type": "text"
+        },
+        {
+            "code": [
+                {
+                    "code": "Sociodemographic_economic_characteristics",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Family_hh_struct",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "224130005",
+                    "display": "Household composition (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "224525003",
+                    "display": "Number in household (observable entity) ",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "424144002",
+                    "display": "Current chronological age (observable entity)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q4_3",
+            "text": "How many roommates live with you and how old are they?",
+            "type": "text"
+        },
+        {
+            "code": [
+                {
+                    "code": "Physical_environment",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Housing",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "q5",
+            "text": "Please describe the place where you live",
+            "type": "text"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "grocery"
+                },
+                {
+                    "valueString": "fruit shop"
+                },
+                {
+                    "valueString": "bakery"
+                },
+                {
+                    "valueString": "butcher"
+                },
+                {
+                    "valueString": "online food shop"
+                },
+                {
+                    "valueString": "small shops to buy food ofdifferent types"
+                },
+                {
+                    "valueString": "open food market"
+                },
+                {
+                    "valueString": "farmer delivering food"
+                },
+                {
+                    "valueString": "small food stands at the street"
+                },
+                {
+                    "valueString": "small supermarket"
+                },
+                {
+                    "valueString": "superstore"
+                },
+                {
+                    "valueString": "street food place which offersready to eat meals to take away"
+                },
+                {
+                    "valueString": "small café or bar which offerssmall meals to eat"
+                },
+                {
+                    "valueString": "restaurant which offers meals"
+                },
+                {
+                    "valueString": "restaurant which offers meals aswell as take away"
+                },
+                {
+                    "valueString": "any other?"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Physical_environment",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Neighborhood",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "1162952007",
+                    "display": "Availability of food shopping facility (observable entity)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q6_1a",
+            "text": "What options do you or the members of your household in your region have to buy food?",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Physical_environment",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Neighborhood",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "1162952007",
+                    "display": "Availability of food shopping facility (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "74964007",
+                    "display": "Other (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "9E+17",
+                    "display": "Text (foundation metadata concept)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q6_1b",
+            "text": "other possibilities? [options to buy food]",
+            "type": "text"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "grocery"
+                },
+                {
+                    "valueString": "fruit shop"
+                },
+                {
+                    "valueString": "bakery"
+                },
+                {
+                    "valueString": "butcher"
+                },
+                {
+                    "valueString": "online food shop"
+                },
+                {
+                    "valueString": "small shops to buy food ofdifferent types"
+                },
+                {
+                    "valueString": "open food market"
+                },
+                {
+                    "valueString": "farmer delivering food"
+                },
+                {
+                    "valueString": "small food stands at the street"
+                },
+                {
+                    "valueString": "small supermarket"
+                },
+                {
+                    "valueString": "superstore"
+                },
+                {
+                    "valueString": "street food place which offersready to eat meals to take away"
+                },
+                {
+                    "valueString": "small café or bar which offerssmall meals to eat"
+                },
+                {
+                    "valueString": "restaurant which offers meals"
+                },
+                {
+                    "valueString": "restaurant which offers meals aswell as take away"
+                },
+                {
+                    "valueString": "any other?"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "1162952007",
+                    "display": "Availability of food shopping facility (observable entity)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q6_2a",
+            "text": "What opportunities have you or any other member of your household use to buy food?",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "1162952007",
+                    "display": "Availability of food shopping facility (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "74964007",
+                    "display": "Other (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "9E+17",
+                    "display": "Text (foundation metadata concept)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q6_2b",
+            "text": "other possibilities? [options used to buy food]",
+            "type": "text"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "No, the roles did not change"
+                },
+                {
+                    "valueString": "Yes, the roles changed. Please comment"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Social_environment",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Soc_support",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "410672004",
+                    "display": "Role change (finding)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "286440006",
+                    "display": "Ability to obtain food (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "47429007",
+                    "display": "Associated with (attribute)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "443684005",
+                    "display": "Disease outbreak (event)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "840539006",
+                    "display": "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q6_3a",
+            "text": "Since the beginning of the pandemic: Has the distribution of roles changed? Who buys the food for you?",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Social_environment",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Soc_support",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "410672004",
+                    "display": "Role change (finding)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "286440006",
+                    "display": "Ability to obtain food (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "47429007",
+                    "display": "Associated with (attribute)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "443684005",
+                    "display": "Disease outbreak (event)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "840539006",
+                    "display": "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "9E+17",
+                    "display": "Text (foundation metadata concept)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q6_3b",
+            "text": "Please explain [distribution of roles for buying food]",
+            "type": "text"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "grocery"
+                },
+                {
+                    "valueString": "fruit shop"
+                },
+                {
+                    "valueString": "bakery"
+                },
+                {
+                    "valueString": "butcher"
+                },
+                {
+                    "valueString": "online food shop"
+                },
+                {
+                    "valueString": "small shops to buy food ofdifferent types"
+                },
+                {
+                    "valueString": "open food market"
+                },
+                {
+                    "valueString": "farmer delivering food"
+                },
+                {
+                    "valueString": "small food stands at the street"
+                },
+                {
+                    "valueString": "small supermarket"
+                },
+                {
+                    "valueString": "superstore"
+                },
+                {
+                    "valueString": "street food place which offersready to eat meals to take away"
+                },
+                {
+                    "valueString": "small café or bar which offerssmall meals to eat"
+                },
+                {
+                    "valueString": "restaurant which offers meals"
+                },
+                {
+                    "valueString": "restaurant which offers meals aswell as take away"
+                },
+                {
+                    "valueString": "restaurant offering takeaway only (no eat in)"
+                },
+                {
+                    "valueString": "any other?"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "1162952007",
+                    "display": "Availability of food shopping facility (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "47429007",
+                    "display": "Associated with (attribute)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "443684005",
+                    "display": "Disease outbreak (event)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "840539006",
+                    "display": "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q6_4a",
+            "text": "Since the pandemic:What options do you or another member of your household use to buy food?",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "1162952007",
+                    "display": "Availability of food shopping facility (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "74964007",
+                    "display": "Other (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "47429007",
+                    "display": "Associated with (attribute)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "443684005",
+                    "display": "Disease outbreak (event)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "840539006",
+                    "display": "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q6_4b",
+            "text": "other options? [options since pandemic to buy food]",
+            "type": "text"
+        },
+        {
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "1162952007",
+                    "display": "Availability of food shopping facility (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "129011005",
+                    "display": "Shopping (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "263703002",
+                    "display": " Changed status (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "385675009",
+                    "display": "Reason for action (attribute)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q6_5",
+            "text": "Why did you change your shopping location?",
+            "type": "text"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "meat"
+                },
+                {
+                    "valueString": "fish"
+                },
+                {
+                    "valueString": "eggs"
+                },
+                {
+                    "valueString": "vegetarian food only"
+                },
+                {
+                    "valueString": "vegan food only"
+                },
+                {
+                    "valueString": "usually everything (do not have specific preferences)"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "q7_1",
+            "text": "I like to eat",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "No"
+                },
+                {
+                    "valueString": "Yes"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "q7_2a",
+            "text": "Has your diet changed significantly in the last 4, 8 or 12 weeks? 4 weeks",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "No"
+                },
+                {
+                    "valueString": "Yes"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "q7_2b",
+            "text": "Has your diet changed significantly in the last 4, 8 or 12 weeks? 8 weeks",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "No"
+                },
+                {
+                    "valueString": "Yes"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "q7_2c",
+            "text": "Has your diet changed significantly in the last 4, 8 or 12 weeks? 12 weeks",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "q7_3a",
+            "text": "Please describe why there was a change in your diet or why you think there was no change? If something has changed, what has changed?",
+            "type": "text"
+        },
+        {
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "q7_3b",
+            "text": "Please describe why there has been a change in your diet or why do you think there hasn't been a change? If nothing has changed, do you have an idea why not?",
+            "type": "text"
+        },
+        {
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "q7_3c",
+            "text": "Please describe why there has been a change in your diet or why do you think there hasn't been a change? Did you have to switch to new brands when selecting food because your favorites were not available?",
+            "type": "text"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Rice"
+                },
+                {
+                    "valueString": "Pasta / Noodles"
+                },
+                {
+                    "valueString": "Potatoes (Irish)"
+                },
+                {
+                    "valueString": "Sweet potatoes"
+                },
+                {
+                    "valueString": "Cooking banana (e.g. matooke)"
+                },
+                {
+                    "valueString": "Maize flour (cooked)"
+                },
+                {
+                    "valueString": "Bread (white)"
+                },
+                {
+                    "valueString": "Bread (whole grain)"
+                },
+                {
+                    "valueString": "Quinoa/ Quinua"
+                },
+                {
+                    "valueString": "others"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "255620007",
+                    "display": "Food (substance)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "226379006",
+                    "display": "Food intake (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "288556008",
+                    "display": "Before (attribute)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "443684005",
+                    "display": "Disease outbreak (event)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "47429007",
+                    "display": "Associated with (attribute)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "840539006",
+                    "display": "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q7_4a",
+            "text": "Before COVID-19: Which of the foods listed below did you normally consume in a 7 day (one week) period before COVID-19?",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "74964007",
+                    "display": "Other (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "255620007",
+                    "display": "Food (substance)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "226379006",
+                    "display": "Food intake (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "288556008",
+                    "display": "Before (attribute)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "443684005",
+                    "display": "Disease outbreak (event)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "47429007",
+                    "display": "Associated with (attribute)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "840539006",
+                    "display": "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q7_4b",
+            "text": "other [foods normally consumed before COVID-19]",
+            "type": "text"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Rice"
+                },
+                {
+                    "valueString": "Pasta / Noodles"
+                },
+                {
+                    "valueString": "Potatoes (Irish)"
+                },
+                {
+                    "valueString": "Sweet potatoes"
+                },
+                {
+                    "valueString": "Cooking banana (e.g. matooke)"
+                },
+                {
+                    "valueString": "Maize flour (cooked)"
+                },
+                {
+                    "valueString": "Bread (white)"
+                },
+                {
+                    "valueString": "Bread (whole grain)"
+                },
+                {
+                    "valueString": "Quinoa/ Quinua"
+                },
+                {
+                    "valueString": "others"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "q7_5a",
+            "text": "Since the beginning of the pandemic: Which of the below mentioned foods have you consumed during the last 7 days (one week)?",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "q7_5b",
+            "text": "other [foods normally consumed since COVID-19]",
+            "type": "text"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "some dark green leafy vegetables"
+                },
+                {
+                    "valueString": "any red or orange vegetable"
+                },
+                {
+                    "valueString": "any starchy vegetables"
+                },
+                {
+                    "valueString": "any beans or peas"
+                },
+                {
+                    "valueString": "any other vegetable"
+                },
+                {
+                    "valueString": "I have not eaten any of these vegetables"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "22836000",
+                    "display": "Vegetable (substance)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "226448008",
+                    "display": "Vegetable intake (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "288556008",
+                    "display": "Before (attribute)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "443684005",
+                    "display": "Disease outbreak (event)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "47429007",
+                    "display": "Associated with (attribute)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "840539006",
+                    "display": "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q7_6",
+            "text": "Before COVID-19: Which of the vegetables listed below did you normally consume in a period of 4 weeks (one month) before Covid-19?",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "4 weeks"
+                },
+                {
+                    "valueString": "8 weeks"
+                },
+                {
+                    "valueString": "12 weeks"
+                },
+                {
+                    "valueString": "Other"
+                },
+                {
+                    "valueString": "I do not think that my vegetable consumption changed"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "226448008",
+                    "display": "Vegetable intake (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "263703002",
+                    "display": "Changed status (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q7_7a",
+            "text": "Has your vegetable consumption changed significantly in the last 4, 8, or 12 weeks?",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "74964007",
+                    "display": "Other (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "226448008",
+                    "display": "Vegetable intake (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "263703002",
+                    "display": "Changed status (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q7_7b",
+            "text": "other [vegetable consumption]",
+            "type": "text"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "some dark green leafy vegetables"
+                },
+                {
+                    "valueString": "any red or orange vegetable"
+                },
+                {
+                    "valueString": "any starchy vegetables"
+                },
+                {
+                    "valueString": "any beans or peas"
+                },
+                {
+                    "valueString": "any other vegetable"
+                },
+                {
+                    "valueString": "I have not eaten any of these vegetables"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "22836000",
+                    "display": "Vegetable (substance)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "226448008",
+                    "display": "Vegetable intake (observable entity)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q7_8",
+            "text": "Since the beginning of the pandemic: Which of the vegetables listed below have you consumed in the last 4 weeks (one month)?",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "I prepared enough to finish"
+                },
+                {
+                    "valueString": "I prepared extra to store"
+                },
+                {
+                    "valueString": "Someone else was usually preparing the meals for me. Who?"
+                },
+                {
+                    "valueString": "I shared the meal preparations with the people I live together."
+                },
+                {
+                    "valueString": "other"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "129012003",
+                    "display": "Preparing meals (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "288556008",
+                    "display": "Before (attribute)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "443684005",
+                    "display": "Disease outbreak (event)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "47429007",
+                    "display": "Associated with (attribute)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "840539006",
+                    "display": "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q7_9a",
+            "text": "Before COVID-19: What was your meal preparation before the Covid-19 pandemic?",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "74964007",
+                    "display": "Other (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "129012003",
+                    "display": "Preparing meals (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "288556008",
+                    "display": "Before (attribute)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "443684005",
+                    "display": "Disease outbreak (event)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "47429007",
+                    "display": "Associated with (attribute)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "840539006",
+                    "display": "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q7_9b",
+            "text": "other [meal preparation before COVID-19]",
+            "type": "text"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "I prepared enough to finish"
+                },
+                {
+                    "valueString": "I prepared extra to store"
+                },
+                {
+                    "valueString": "Someone else was usually preparing the meals for me. Who?"
+                },
+                {
+                    "valueString": "I shared the meal preparations with the people I live together."
+                },
+                {
+                    "valueString": "other"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "129012003",
+                    "display": "Preparing meals (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "443684005",
+                    "display": "Disease outbreak (event)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "47429007",
+                    "display": "Associated with (attribute)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "840539006",
+                    "display": "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q7_10a",
+            "text": "Since the beginning of the pandemic: How do you prepare your meals since the beginning of the pandemic?",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "74964007",
+                    "display": "Other (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "129012003",
+                    "display": "Preparing meals (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "443684005",
+                    "display": "Disease outbreak (event)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "47429007",
+                    "display": "Associated with (attribute)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "840539006",
+                    "display": "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q7_10b",
+            "text": "other [meal preparation since COVID-19]",
+            "type": "text"
+        },
+        {
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "q7_11",
+            "text": "What foods do you usually find on your plate when you prepare a hot meal?",
+            "type": "text"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Just as much than before the pandemic? – please describe"
+                },
+                {
+                    "valueString": "Less than before the pandemic? – please describe"
+                },
+                {
+                    "valueString": "More than before the pandemic? – please describe"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "364650005",
+                    "display": "Quantity of eating (observable entity)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q7_12a",
+            "text": "How much do you eat?",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "364650005",
+                    "display": "Quantity of eating (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "900000000000466000",
+                    "display": "Text (foundation metadata concept)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q7_12b",
+            "text": "Please explain [How much do you eat?]",
+            "type": "text"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "did not prepare any meal myself"
+                },
+                {
+                    "valueString": "approx. 20 min."
+                },
+                {
+                    "valueString": "approx. 30 min."
+                },
+                {
+                    "valueString": "approx. 40 min."
+                },
+                {
+                    "valueString": "approx. 50 min."
+                },
+                {
+                    "valueString": "approx. 60 min."
+                },
+                {
+                    "valueString": "1-2 hours"
+                },
+                {
+                    "valueString": "more than 2 hours"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "129012003",
+                    "display": "Preparing meals (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "364713004",
+                    "display": "Temporal observable (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "288556008",
+                    "display": "Before (attribute)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "443684005",
+                    "display": "Disease outbreak (event)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "47429007",
+                    "display": "Associated with (attribute)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "840539006",
+                    "display": "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "259032004",
+                    "display": "per day (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q7_13",
+            "text": "Before COVID-19: How much time did you spend on average on meal preparation during a day before the pandemic?",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "did not prepare any meal myself"
+                },
+                {
+                    "valueString": "approx. 20 min."
+                },
+                {
+                    "valueString": "approx. 30 min."
+                },
+                {
+                    "valueString": "approx. 40 min."
+                },
+                {
+                    "valueString": "approx. 50 min."
+                },
+                {
+                    "valueString": "approx. 60 min."
+                },
+                {
+                    "valueString": "1-2 hours"
+                },
+                {
+                    "valueString": "more than 2 hours"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "129012003",
+                    "display": "Preparing meals (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "364713004",
+                    "display": "Temporal observable (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "443684005",
+                    "display": "Disease outbreak (event)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "47429007",
+                    "display": "Associated with (attribute)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "840539006",
+                    "display": "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "259032004",
+                    "display": "per day (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q7_14",
+            "text": "Since the beginning of the pandemic: On average, how much time have you spent on meal preparation during the day since the beginning of the pandemic?",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "No"
+                },
+                {
+                    "valueString": "Yes, what changed?"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "226458007",
+                    "display": "Sugary food intake (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "263703002",
+                    "display": "Changed status (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q7_15a",
+            "text": "What about sugar? Do you think that your consumption of e.g. sugar, honey, sweetener, jaggery, maple syrup etc., in tea or while eating sweets, cakes or the like has changed in the last four weeks?",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "226458007",
+                    "display": "Sugary food intake (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "900000000000466000",
+                    "display": "Text (foundation metadata concept)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q7_15b",
+            "text": "Please explain [sugar consumption]",
+            "type": "text"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "I don ́t drink alcohol"
+                },
+                {
+                    "valueString": "I drink less now"
+                },
+                {
+                    "valueString": "did not change"
+                },
+                {
+                    "valueString": "I drink more than before"
+                },
+                {
+                    "valueString": "I do not drink alcohol nowadays"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Alcohol",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "363905002",
+                    "display": "Details of alcohol drinking behavior (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "263703002",
+                    "display": "Changed status (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "443684005",
+                    "display": "Disease outbreak (event)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "47429007",
+                    "display": "Associated with (attribute)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "840539006",
+                    "display": "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q7_16",
+            "text": "Do you drink alcohol? Is there a difference between before and after the beginning of the pandemic?",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Refrigeration"
+                },
+                {
+                    "valueString": "Smoke the extra food"
+                },
+                {
+                    "valueString": "Dry the extra food"
+                },
+                {
+                    "valueString": "Store it in a container or plastic bag"
+                },
+                {
+                    "valueString": "Store it in the freezer"
+                },
+                {
+                    "valueString": "Keep it covered and eat it the following day"
+                },
+                {
+                    "valueString": "Share it with my neighbours"
+                },
+                {
+                    "valueString": "Give the extra to charity organizations"
+                },
+                {
+                    "valueString": "Throw the left overs away"
+                },
+                {
+                    "valueString": "Any other?"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "q7_17a",
+            "text": "Before COVID-19: How did you store food leftovers/ surplus food?",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "q7_17b",
+            "text": "Something else? [How did you store food leftovers/ surplus food before COVID]",
+            "type": "text"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Refrigeration"
+                },
+                {
+                    "valueString": "Smoke the extra food"
+                },
+                {
+                    "valueString": "Dry the extra food"
+                },
+                {
+                    "valueString": "Store it in a container or plastic bag"
+                },
+                {
+                    "valueString": "Store it in the freezer"
+                },
+                {
+                    "valueString": "Keep it covered and eat it the following day"
+                },
+                {
+                    "valueString": "Share it with my neighbours"
+                },
+                {
+                    "valueString": "Give the extra to charity organizations"
+                },
+                {
+                    "valueString": "Throw the left overs away"
+                },
+                {
+                    "valueString": "Any other?"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "q7_18a",
+            "text": "Since the beginning of the pandemic: How do you store food waste/ surplus food?",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "q7_18b",
+            "text": "Something else? [How did you store food leftovers/ surplus food since COVID]",
+            "type": "text"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "1"
+                },
+                {
+                    "valueString": "2"
+                },
+                {
+                    "valueString": "3"
+                },
+                {
+                    "valueString": "4"
+                },
+                {
+                    "valueString": "5"
+                },
+                {
+                    "valueString": "6"
+                },
+                {
+                    "valueString": "7"
+                },
+                {
+                    "valueString": "8"
+                },
+                {
+                    "valueString": "9"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "87276001",
+                    "display": "Nutritional status (observable entity)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q8_1a",
+            "text": "How do you estimate your nutritional status?",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "as active as prior to the pandemic"
+                },
+                {
+                    "valueString": "less active nowadays"
+                },
+                {
+                    "valueString": "more active nowadays"
+                },
+                {
+                    "valueString": "never very sportive, nothing changed"
+                },
+                {
+                    "valueString": "other"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Phys_act",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "68130003",
+                    "display": "Physical activity (observable entity)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q8_2a",
+            "text": "Have you been physically active in the last 7 days?",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Phys_act",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "68130003",
+                    "display": "Physical activity (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "9E+17",
+                    "display": "Text (foundation metadata concept)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q8_2b",
+            "text": "Please explain [physically active]",
+            "type": "text"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "did not purchase any of my main foods, but produced all I need myself"
+                },
+                {
+                    "valueString": "produced my main foods myself, but it was not enough to cover my needs"
+                },
+                {
+                    "valueString": "produced some foods myself and purchased some to cover my needs"
+                },
+                {
+                    "valueString": "purchased my main foods myself at the nearby market"
+                },
+                {
+                    "valueString": "purchased my main foods myself at the nearby supermarket"
+                },
+                {
+                    "valueString": "purchased my main foods myself from my neighbour"
+                },
+                {
+                    "valueString": "somebody else of my household is purchasing the food; Who?"
+                },
+                {
+                    "valueString": "got it delivered. By whom?"
+                },
+                {
+                    "valueString": "other"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "q9_1a",
+            "text": "Before COVID-19: Did you normally produce or buy your own food?",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "q9_1b",
+            "text": "other [normally produce or buy own food before COVID]",
+            "type": "text"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "did not purchase any of my main foods, but produced all I need myself"
+                },
+                {
+                    "valueString": "produced my main foods myself, but it was not enough to cover my needs"
+                },
+                {
+                    "valueString": "produced some foods myself and purchased some to cover my needs"
+                },
+                {
+                    "valueString": "purchased my main foods myself at the nearby market"
+                },
+                {
+                    "valueString": "purchased my main foods myself at the nearby supermarket"
+                },
+                {
+                    "valueString": "purchased my main foods myself from my neighbour"
+                },
+                {
+                    "valueString": "somebody else of my household is purchasing the food; Who?"
+                },
+                {
+                    "valueString": "got it delivered. By whom?"
+                },
+                {
+                    "valueString": "other"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "q9_2a",
+            "text": "Since the beginning of the pandemic: Do you normally produce your own food or do you normally buy it?",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "q9_2b",
+            "text": "other [normally produce or buy own food since COVID]",
+            "type": "text"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "prices increased a lot"
+                },
+                {
+                    "valueString": "prices increased a little"
+                },
+                {
+                    "valueString": "prices did not change"
+                },
+                {
+                    "valueString": "rices are now lower"
+                },
+                {
+                    "valueString": "prices are now much lower"
+                },
+                {
+                    "valueString": "do not eat anything from this group"
+                },
+                {
+                    "valueString": "do not know"
+                },
+                {
+                    "valueString": "do not purchase any foods from this group"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "q9_3",
+            "text": "What is your opinion: Have food prices changed since the beginning of the pandemic?",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "q9_4",
+            "text": "Do you have any comments on prices? [food prices]",
+            "type": "text"
+        },
+        {
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "q9_5",
+            "text": "Where do the vegetables you usually buy come from?",
+            "type": "text"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "own garden"
+                },
+                {
+                    "valueString": "own farm"
+                },
+                {
+                    "valueString": "food aid (church, government, NGOs, Tafel, foodsharing (freeof charge))"
+                },
+                {
+                    "valueString": "small shops"
+                },
+                {
+                    "valueString": "supermarkets"
+                },
+                {
+                    "valueString": "superstores"
+                },
+                {
+                    "valueString": "markets"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "q9_6",
+            "text": "Before COVID-19: How did you get your food before the pandemic/curfew?",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "own garden"
+                },
+                {
+                    "valueString": "own farm"
+                },
+                {
+                    "valueString": "food aid (church, government, NGOs, Tafel, foodsharing (freeof charge))"
+                },
+                {
+                    "valueString": "small shops"
+                },
+                {
+                    "valueString": "supermarkets"
+                },
+                {
+                    "valueString": "superstores"
+                },
+                {
+                    "valueString": "markets"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "q9_7",
+            "text": "Since the pandemic: How do you get your food now?",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "No, less than before"
+                },
+                {
+                    "valueString": "Yes, more than before"
+                },
+                {
+                    "valueString": "Same as before"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "q9_8",
+            "text": "Do you buy more now than before, before the pandemic?",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Non-perishable foods such as dry legumes like beans"
+                },
+                {
+                    "valueString": "Perishable foods such as fresh fruits and vegetables"
+                },
+                {
+                    "valueString": "A mixture of perishable and non-perishable foods"
+                },
+                {
+                    "valueString": "Did you change anything since the pandemic? If yes, pleasedescribe what changed."
+                },
+                {
+                    "valueString": "other comment"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "q9_9a",
+            "text": "Before COVID-19: What food did you normally buy?",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "q9_9b",
+            "text": "Notes [food normally bought before COVID]",
+            "type": "text"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Yes, any in particular?"
+                },
+                {
+                    "valueString": "No"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "q9_10a",
+            "text": "Did you buy food in large quantities in preparation for the curfew?",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "q9_10b",
+            "text": "Yes, which ones in particular? [buy food in large quantities]",
+            "type": "text"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "on stock and will last for the next 7 days"
+                },
+                {
+                    "valueString": "not sufficient for the next 7 days"
+                },
+                {
+                    "valueString": "never stock this food"
+                },
+                {
+                    "valueString": "do not know"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "q9_11",
+            "text": "Is there enough food for you and your family for the next 7 days?",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Yes, but less than before Covid-19"
+                },
+                {
+                    "valueString": "Yes, same as before Covid-19"
+                },
+                {
+                    "valueString": "Yes. more as before Covid-19"
+                },
+                {
+                    "valueString": "no"
+                },
+                {
+                    "valueString": "do not know"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "q9_12a",
+            "text": "Did you have to throw away food in the last 4 weeks because you bought too much of it?",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Yes, but less than before Covid-19"
+                },
+                {
+                    "valueString": "Yes, same as before Covid-19"
+                },
+                {
+                    "valueString": "Yes. more as before Covid-19"
+                },
+                {
+                    "valueString": "no"
+                },
+                {
+                    "valueString": "do not know"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "q9_12b",
+            "text": "Did you have to throw away food in the last 8 weeks because you bought too much of it?",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Yes, but less than before Covid-19"
+                },
+                {
+                    "valueString": "Yes, same as before Covid-19"
+                },
+                {
+                    "valueString": "Yes. more as before Covid-19"
+                },
+                {
+                    "valueString": "no"
+                },
+                {
+                    "valueString": "do not know"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "q9_12c",
+            "text": "Have you had to throw away food in the last 12 weeks because you bought too much of it?",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "q9_13",
+            "text": "Do you have any comments about food being thrown away?",
+            "type": "text"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "q9_14a"
+                },
+                {
+                    "valueString": "no"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "103329007",
+                    "display": "Unavailability of (contextual qualifier) (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "255620007",
+                    "display": "Food (substance)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q9_14a",
+            "text": "When you buy groceries: Do you notice that food is not available?",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "103329007",
+                    "display": "Unavailability of (contextual qualifier) (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "255620007",
+                    "display": "Food (substance)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "900000000000466000",
+                    "display": "Text (foundation metadata concept)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q9_14b",
+            "text": "Yes, which ones? [food not available]",
+            "type": "text"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "No"
+                },
+                {
+                    "valueString": "Yes"
+                },
+                {
+                    "valueString": "Other"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Preschool_school_work",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Work",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "224362002",
+                    "display": "Employment status (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "266956001",
+                    "display": "Loss of job (finding)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "42752001",
+                    "display": "Due to (attribute)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "443684005",
+                    "display": "Disease outbreak (event)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "840539006",
+                    "display": "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q9_15a",
+            "text": "Have you lost your job because of the pandemic?",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Preschool_school_work",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Work",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "74964007",
+                    "display": "Other (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "266956001",
+                    "display": "Loss of job (finding)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q9_15b",
+            "text": "other [job loss]",
+            "type": "text"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "No"
+                },
+                {
+                    "valueString": "Yes, please describe"
+                },
+                {
+                    "valueString": "Other"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Social_environment",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Soc_support",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "q9_16a",
+            "text": "Have you received support from the government, an association, a religious community, church or private individuals?",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Social_environment",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Soc_support",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "q9_16b",
+            "text": "Please describe [support from the government etc.]",
+            "type": "text"
+        },
+        {
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Transportation",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "424483007",
+                    "display": "Transportation details (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "129011005",
+                    "display": "Shopping (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "255620007",
+                    "display": "Food (substance)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "263703002",
+                    "display": "Changed status (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "443684005",
+                    "display": "Disease outbreak (event)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "840539006",
+                    "display": "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q9_17",
+            "text": "What transportation options do you normally use when you go grocery shopping? Has anything changed since the beginning of the pandemic?",
+            "type": "text"
+        },
+        {
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Transportation",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "424483007",
+                    "display": "Transportation details (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "160934006",
+                    "display": "Financial circumstances change (finding)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q9_18",
+            "text": "Have you noticed if your transportation expenses have changed?",
+            "type": "text"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "I do have a garden and grow there..."
+                },
+                {
+                    "valueString": "I do not have a garden, but have some pots/ sacks I use for..."
+                },
+                {
+                    "valueString": "I do not have a garden but would love to..."
+                },
+                {
+                    "valueString": "I do not grow anything because I do not want so."
+                },
+                {
+                    "valueString": "I do not have the resources to grow anything but would like to do so."
+                },
+                {
+                    "valueString": "other"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "q9_19a",
+            "text": "Do you have a vegetable or kitchen garden or something similar where you can grow food?",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "q9_19b",
+            "text": "Please add [garden etc. to grow food]",
+            "type": "text"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "I do not produce foods."
+                },
+                {
+                    "valueString": "No; I did not face any challenges."
+                },
+                {
+                    "valueString": "Yes; please describe the challenges you faced..."
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "q9_20a",
+            "text": "Do you produce food for sale? Have you had difficulties in production, trade and marketing in the last four weeks?",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "q9_20b",
+            "text": "Please describe [produce food for sale]",
+            "type": "text"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Yes, please describe"
+                },
+                {
+                    "valueString": "No"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Health_community_care_utilization",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Community_care",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "q9_21a",
+            "text": "Do you know of a government program in your region that helps access to food improvements?",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Health_community_care_utilization",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Community_care",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "q9_21b",
+            "text": "Please describe [government program in region that helps access to food improvements]",
+            "type": "text"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Yes, which foods are included?"
+                },
+                {
+                    "valueString": "No"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Health_community_care_utilization",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Community_care",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "q9_22a",
+            "text": "Do you receive food aid, free (regular) food packages ?",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Health_community_care_utilization",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Community_care",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "q9_22b",
+            "text": "Yes, what kind of food do you get ? [food aid]",
+            "type": "text"
+        },
+        {
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "q10_1",
+            "text": "Do you have any additional comments about your food environment, food selection, meal preparation etc. that you would like to share with the project?",
+            "type": "text"
+        },
+        {
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Nutrition",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "q10_2",
+            "text": "Do you have any additional comments to make ?",
+            "type": "text"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "today only"
+                },
+                {
+                    "valueString": "the last seven days"
+                },
+                {
+                    "valueString": "last two weeks"
+                },
+                {
+                    "valueString": "last four weeks"
+                },
+                {
+                    "valueString": "the time of lockdown"
+                },
+                {
+                    "valueString": "no specific period"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Administrative_information",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Questionnaire_interview_related_info",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "q10_3",
+            "text": "Have you reported observations you made today or a few days ago while answering the questions?",
+            "type": "integer"
+        }
+    ],
   "status": "active",
   "extension": [
     {
