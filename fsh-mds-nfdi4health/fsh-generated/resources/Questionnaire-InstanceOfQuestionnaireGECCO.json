@@ -6,6 +6,3783 @@
       "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire"
     ]
   },
+  
+        {
+            "answerOption": [
+                {
+                    "valueString": "überhaupt nicht wahrscheinlich"
+                },
+                {
+                    "valueString": "sehr unwahrscheinlich"
+                },
+                {
+                    "valueString": "eher unwahrscheinlich"
+                },
+                {
+                    "valueString": "mittelmäßig wahrscheinlich"
+                },
+                {
+                    "valueString": "eher wahrscheinlich"
+                },
+                {
+                    "valueString": "sehr wahrscheinlich"
+                },
+                {
+                    "valueString": "absolut wahrscheinlich"
+                },
+                {
+                    "valueString": "das ist bereits passiert"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Life_events_plans_beliefs",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Beliefs_values",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p22_2a",
+            "text": "Wie wahrscheinlich ist es Ihrer Meinung nach, dass in den nächsten 2 Monaten... Sie mit dem Coronavirus infiziert werden?",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "überhaupt nicht wahrscheinlich"
+                },
+                {
+                    "valueString": "sehr unwahrscheinlich"
+                },
+                {
+                    "valueString": "eher unwahrscheinlich"
+                },
+                {
+                    "valueString": "mittelmäßig wahrscheinlich"
+                },
+                {
+                    "valueString": "eher wahrscheinlich"
+                },
+                {
+                    "valueString": "sehr wahrscheinlich"
+                },
+                {
+                    "valueString": "absolut wahrscheinlich"
+                },
+                {
+                    "valueString": "das ist bereits passiert"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Life_events_plans_beliefs",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Beliefs_values",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p22_2b",
+            "text": "Wie wahrscheinlich ist es Ihrer Meinung nach, dass in den nächsten 2 Monaten… jemand aus ihrem direkten Umfeld (Familie, Freunde, Kollegen) mit dem Coronavirus infiziert wird?",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "überhaupt nicht wahrscheinlich"
+                },
+                {
+                    "valueString": "sehr unwahrscheinlich"
+                },
+                {
+                    "valueString": "eher unwahrscheinlich"
+                },
+                {
+                    "valueString": "mittelmäßig wahrscheinlich"
+                },
+                {
+                    "valueString": "eher wahrscheinlich"
+                },
+                {
+                    "valueString": "sehr wahrscheinlich"
+                },
+                {
+                    "valueString": "absolut wahrscheinlich"
+                },
+                {
+                    "valueString": "das ist bereits passiert"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Life_events_plans_beliefs",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Beliefs_values",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p22_2c",
+            "text": "Wie wahrscheinlich ist es Ihrer Meinung nach, dass in den nächsten 2 Monaten... Sie stationär im Krankenhaus behandelt werden müssen, falls Sie sich mit dem Coronavirus infizieren?",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "überhaupt nicht wahrscheinlich"
+                },
+                {
+                    "valueString": "sehr unwahrscheinlich"
+                },
+                {
+                    "valueString": "eher unwahrscheinlich"
+                },
+                {
+                    "valueString": "mittelmäßig wahrscheinlich"
+                },
+                {
+                    "valueString": "eher wahrscheinlich"
+                },
+                {
+                    "valueString": "sehr wahrscheinlich"
+                },
+                {
+                    "valueString": "absolut wahrscheinlich"
+                },
+                {
+                    "valueString": "das ist bereits passiert"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Life_events_plans_beliefs",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Beliefs_values",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p22_2d",
+            "text": "Wie wahrscheinlich ist es Ihrer Meinung nach, dass in den nächsten 2 Monaten … Sie wegen des Coronavirus unter Quarantäne gestellt werden, unabhängig davon, ob Sie infiziert sind oder nicht?",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "überhaupt nicht wahrscheinlich"
+                },
+                {
+                    "valueString": "sehr unwahrscheinlich"
+                },
+                {
+                    "valueString": "eher unwahrscheinlich"
+                },
+                {
+                    "valueString": "mittelmäßig wahrscheinlich"
+                },
+                {
+                    "valueString": "eher wahrscheinlich"
+                },
+                {
+                    "valueString": "sehr wahrscheinlich"
+                },
+                {
+                    "valueString": "absolut wahrscheinlich"
+                },
+                {
+                    "valueString": "das ist bereits passiert"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Life_events_plans_beliefs",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Beliefs_values",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p22_2e",
+            "text": "Wie wahrscheinlich ist es Ihrer Meinung nach, dass in den nächsten 2 Monaten … Sie mit dem Coronavirus infiziert werden und andere Personen anstecken?",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Leisure_act",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p22_3a",
+            "text": "Welche dieser Maßnahmen haben Sie in den letzten sieben Tagen getroffen? Ich habe bestimmte (belebte) Orte gemieden.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Leisure_act",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p22_3b",
+            "text": "Welche dieser Maßnahmen haben Sie in den letzten sieben Tagen getroffen?  Ich habe Abstand zu anderen Personen gehalten (mindestens 1,5 Meter).",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Preschool_school_work",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Other_school_work",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p22_3c",
+            "text": "Welche dieser Maßnahmen haben Sie in den letzten sieben Tagen getroffen?   Ich habe meine Schul- oder Arbeitssituation angepasst.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Leisure_act",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p22_3d",
+            "text": "Welche dieser Maßnahmen haben Sie in den letzten sieben Tagen getroffen?   Ich habe mich in Quarantäne begeben, weil ich Symptome habe.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Leisure_act",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p22_3e",
+            "text": "Welche dieser Maßnahmen haben Sie in den letzten sieben Tagen getroffen?  Ich habe mich in Quarantäne begeben, obwohl ich keine Symptome habe.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Pers_hygiene",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "408865005",
+                    "display": "Handwashing precautions (procedure)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "389099004",
+                    "display": "Precautionary procedure (procedure)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "p22_3f",
+            "text": "Welche dieser Maßnahmen haben Sie in den letzten sieben Tagen getroffen?  Ich habe mir öfter und länger die Hände gewaschen.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Pers_hygiene",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "311942001",
+                    "display": "Disinfectant (substance)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "389099004",
+                    "display": "Precautionary procedure (procedure)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "p22_3g",
+            "text": "Welche dieser Maßnahmen haben Sie in den letzten sieben Tagen getroffen?  Ich habe Desinfektionsmittel genutzt.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Leisure_act",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p22_3h",
+            "text": "Welche dieser Maßnahmen haben Sie in den letzten sieben Tagen getroffen? Ich habe meine Wasser- und/oder Lebensmittelvorräte aufgestockt.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Leisure_act",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p22_3i",
+            "text": "Welche dieser Maßnahmen haben Sie in den letzten sieben Tagen getroffen?  Ich habe persönliche Treffen und Kontakte reduziert.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Non_pharmacological_interventions",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Other_non_pharmacological_inter",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "409528009",
+                    "display": "Surgical face mask (physical object)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "389099004",
+                    "display": "Precautionary procedure (procedure)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "p22_3j",
+            "text": "Welche dieser Maßnahmen haben Sie in den letzten sieben Tagen getroffen?  Ich habe Gesichtsmasken/Mundschutz getragen",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Other_lifestyle",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "74964007",
+                    "display": "Other (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "389099004",
+                    "display": "Precautionary procedure (procedure)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "p22_3k",
+            "text": "Welche dieser Maßnahmen haben Sie in den letzten sieben Tagen getroffen? Sonstiges:",
+            "type": "text"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Other_lifestyle",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "260413007",
+                    "display": "None (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "389099004",
+                    "display": "Precautionary procedure (procedure)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "p22_3l",
+            "text": "Welche dieser Maßnahmen haben Sie in den letzten sieben Tagen getroffen?\n Ich habe keine dieser Maßnahmen getroffen.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "überhaupt nicht wirksam"
+                },
+                {
+                    "valueString": "wenig wirksam"
+                },
+                {
+                    "valueString": "teils/ teils"
+                },
+                {
+                    "valueString": "ziemlich wirksam"
+                },
+                {
+                    "valueString": "sehr wirksam"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Life_events_plans_beliefs",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Beliefs_values",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p22_4a",
+            "text": "Wie wirksam sind Ihrer Meinung nach die folgenden politischen Maßnahmen zur Bekämpfung der weiteren Verbreitung des\nCoronavirus? Schließung von Kitas, Kindergärten und Schulen",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "überhaupt nicht wirksam"
+                },
+                {
+                    "valueString": "wenig wirksam"
+                },
+                {
+                    "valueString": "teils/ teils"
+                },
+                {
+                    "valueString": "ziemlich wirksam"
+                },
+                {
+                    "valueString": "sehr wirksam"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Life_events_plans_beliefs",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Beliefs_values",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p22_4b",
+            "text": "Wie wirksam sind Ihrer Meinung nach die folgenden politischen Maßnahmen zur Bekämpfung der weiteren Verbreitung des\nCoronavirus? Schließung von Sportvereinen und Fitnesszentren",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "überhaupt nicht wirksam"
+                },
+                {
+                    "valueString": "wenig wirksam"
+                },
+                {
+                    "valueString": "teils/ teils"
+                },
+                {
+                    "valueString": "ziemlich wirksam"
+                },
+                {
+                    "valueString": "sehr wirksam"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Life_events_plans_beliefs",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Beliefs_values",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p22_4c",
+            "text": "Wie wirksam sind Ihrer Meinung nach die folgenden politischen Maßnahmen zur Bekämpfung der weiteren Verbreitung des\nCoronavirus? Schließung von Bars, Cafés und Restaurants",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "überhaupt nicht wirksam"
+                },
+                {
+                    "valueString": "wenig wirksam"
+                },
+                {
+                    "valueString": "teils/ teils"
+                },
+                {
+                    "valueString": "ziemlich wirksam"
+                },
+                {
+                    "valueString": "sehr wirksam"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Life_events_plans_beliefs",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Beliefs_values",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p23_4d",
+            "text": "Wie wirksam sind Ihrer Meinung nach die folgenden politischen Maßnahmen zur Bekämpfung der weiteren Verbreitung des\nCoronavirus? Schließung aller Geschäfte mit Ausnahme von Supermärkten und Apotheken",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "überhaupt nicht wirksam"
+                },
+                {
+                    "valueString": "wenig wirksam"
+                },
+                {
+                    "valueString": "teils/ teils"
+                },
+                {
+                    "valueString": "ziemlich wirksam"
+                },
+                {
+                    "valueString": "sehr wirksam"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Life_events_plans_beliefs",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Beliefs_values",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p23_4e",
+            "text": "Wie wirksam sind Ihrer Meinung nach die folgenden politischen Maßnahmen zur Bekämpfung der weiteren Verbreitung des\nCoronavirus? Besuchsverbot für Krankenhäuser, Pflege und Altersheime",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "überhaupt nicht wirksam"
+                },
+                {
+                    "valueString": "wenig wirksam"
+                },
+                {
+                    "valueString": "teils/ teils"
+                },
+                {
+                    "valueString": "ziemlich wirksam"
+                },
+                {
+                    "valueString": "sehr wirksam"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Life_events_plans_beliefs",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Beliefs_values",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p23_4f",
+            "text": "Wie wirksam sind Ihrer Meinung nach die folgenden politischen Maßnahmen zur Bekämpfung der weiteren Verbreitung des\nCoronavirus? Ausgangssperre für Personen ab 70 Jahren oder mit gesundheitlichen Problemen (außer für grundlegende Einkäufe und dringende medizinische Versorgung)",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "überhaupt nicht wirksam"
+                },
+                {
+                    "valueString": "wenig wirksam"
+                },
+                {
+                    "valueString": "teils/ teils"
+                },
+                {
+                    "valueString": "ziemlich wirksam"
+                },
+                {
+                    "valueString": "sehr wirksam"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Life_events_plans_beliefs",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Beliefs_values",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p23_4g",
+            "text": "Wie wirksam sind Ihrer Meinung nach die folgenden politischen Maßnahmen zur Bekämpfung der weiteren Verbreitung des Coronavirus? Ausgangssperre für jeden, der nicht im Gesundheitsbereich oder anderen kritischen Berufen arbeitet (außer für grundlegende Einkäufe und dringende medizinische Versorgung)",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "ja"
+                },
+                {
+                    "valueString": "nein"
+                },
+                {
+                    "valueString": "Ich arbeite in einem kritischen Beruf (z. B. Ärzte, Pflegepersonal, Polizei, usw.)."
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Other_lifestyle",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "709017009",
+                    "display": "Compliance behavior to safety precaution (observable entity)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "p23_5",
+            "text": "Stellen Sie sich vor, die Regierung verhängt eine Ausgangssperre. Das bedeutet, man darf seine Wohnung nur noch für Einkäufe und medizinisch\nnotwendige Erledigungen verlassen oder wenn man im Gesundheitsbereich und anderen kritischen Berufen arbeitet.\nWürden Sie sich an die Ausgangssperre halten?",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "stimme überhaupt nicht zu"
+                },
+                {
+                    "valueString": "stimme eher nicht zu"
+                },
+                {
+                    "valueString": "teils/teils"
+                },
+                {
+                    "valueString": "stimme eher zu"
+                },
+                {
+                    "valueString": "stimme voll und ganz zu"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Life_events_plans_beliefs",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Beliefs_values",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "1156445000",
+                    "display": "Complies with safety precaution (finding)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "p23_5_1a",
+            "text": "Sie haben angegeben, dass Sie sich an die Ausganssperre halten würden. Im Folgenden sind einige Gründe hierfür aufgelistet. Inwieweit stimmen Sie den folgenden Aussagen zu oder nicht zu? Ich würde mich an die Ausgangssperre halten, …weil ich es als meine gesellschaftliche Pflicht ansehe.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "stimme überhaupt nicht zu"
+                },
+                {
+                    "valueString": "stimme eher nicht zu"
+                },
+                {
+                    "valueString": "teils/teils"
+                },
+                {
+                    "valueString": "stimme eher zu"
+                },
+                {
+                    "valueString": "stimme voll und ganz zu"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Life_events_plans_beliefs",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Beliefs_values",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p23_5_1b",
+            "text": "Sie haben angegeben, dass Sie sich an die Ausganssperre halten würden. Im Folgenden sind einige Gründe hierfür aufgelistet. Inwieweit stimmen Sie den folgenden Aussagen zu oder nicht zu? Ich würde mich an die Ausgangssperre halten... aus Angst vor Bestrafung.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "stimme überhaupt nicht zu"
+                },
+                {
+                    "valueString": "stimme eher nicht zu"
+                },
+                {
+                    "valueString": "teils/teils"
+                },
+                {
+                    "valueString": "stimme eher zu"
+                },
+                {
+                    "valueString": "stimme voll und ganz zu"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Life_events_plans_beliefs",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Beliefs_values",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p23_5_1c",
+            "text": "Sie haben angegeben, dass Sie sich an die Ausganssperre halten würden. Im Folgenden sind einige Gründe hierfür aufgelistet.\nInwieweit stimmen Sie den folgenden Aussagen zu oder nicht zu?\nIch würde mich an die Ausgangssperre halten, …\n... um mich vor einer Infektion zu\nschützen.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "stimme überhaupt nicht zu"
+                },
+                {
+                    "valueString": "stimme eher nicht zu"
+                },
+                {
+                    "valueString": "teils/teils"
+                },
+                {
+                    "valueString": "stimme eher zu"
+                },
+                {
+                    "valueString": "stimme voll und ganz zu"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Life_events_plans_beliefs",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Beliefs_values",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p23_5_1d",
+            "text": "Sie haben angegeben, dass Sie sich an die Ausganssperre halten würden. Im Folgenden sind einige Gründe hierfür aufgelistet. Inwieweit stimmen Sie den folgenden Aussagen zu oder nicht zu? Ich würde mich an die Ausgangssperre halten ... aus Angst, nahestehende Personen\nanzustecken.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "stimme überhaupt nicht zu"
+                },
+                {
+                    "valueString": "stimme eher nicht zu"
+                },
+                {
+                    "valueString": "teils/teils"
+                },
+                {
+                    "valueString": "stimme eher zu"
+                },
+                {
+                    "valueString": "stimme voll und ganz zu"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Life_events_plans_beliefs",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Beliefs_values",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p23_5_1e",
+            "text": "Sie haben angegeben, dass Sie sich an die Ausganssperre halten würden. Im Folgenden sind einige Gründe hierfür aufgelistet. Inwieweit stimmen Sie den folgenden Aussagen zu oder nicht zu? Ich würde mich an die Ausgangssperre halten ... aus Angst, generell andere anzustecken.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "stimme überhaupt nicht zu"
+                },
+                {
+                    "valueString": "stimme eher nicht zu"
+                },
+                {
+                    "valueString": "teils/teils"
+                },
+                {
+                    "valueString": "stimme eher zu"
+                },
+                {
+                    "valueString": "stimme voll und ganz zu"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Life_events_plans_beliefs",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Beliefs_values",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p23_5_1f",
+            "text": "Sie haben angegeben, dass Sie sich an die Ausganssperre halten würden. Im Folgenden sind einige Gründe hierfür aufgelistet.\nInwieweit stimmen Sie den folgenden Aussagen zu oder nicht zu?\nIch würde mich an die Ausgangssperre halten, …\naus Angst, gefährdete Gruppen (z. B.\nältere Menschen) anzustecken.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "stimme überhaupt nicht zu"
+                },
+                {
+                    "valueString": "stimme eher nicht zu"
+                },
+                {
+                    "valueString": "teils/teils"
+                },
+                {
+                    "valueString": "stimme eher zu"
+                },
+                {
+                    "valueString": "stimme voll und ganz zu"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Life_events_plans_beliefs",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Beliefs_values",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p23_5_2a",
+            "text": "Sie haben angegeben, dass Sie sich an die Ausganssperre halten würden. Im Folgenden sind einige Gründe hierfür aufgelistet. Inwieweit stimmen Sie den folgenden Aussagen zu oder nicht zu? Ich würde mich an die Ausgangssperre halten ...weil ich nicht bereit bin, so drastische Einschränkungen meiner Freiheiten zu akzeptieren.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "stimme überhaupt nicht zu"
+                },
+                {
+                    "valueString": "stimme eher nicht zu"
+                },
+                {
+                    "valueString": "teils/teils"
+                },
+                {
+                    "valueString": "stimme eher zu"
+                },
+                {
+                    "valueString": "stimme voll und ganz zu"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Life_events_plans_beliefs",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Beliefs_values",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "406198009",
+                    "display": "Personal belief pattern (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "129835001",
+                    "display": "Noncompliance with safety precautions (finding)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "410666004",
+                    "display": "Reason for (attribute)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "77248004",
+                    "display": "Infection control procedure (procedure)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "275840002",
+                    "display": "Preventing spread of infection (procedure)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "260381000",
+                    "display": "Inefficient (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "p23_5_2b",
+            "text": "Sie haben angegeben, dass Sie sich nicht an die Ausganssperre halten würden. Im Folgenden sind einige Gründe hierfür aufgelistet.\nInwieweit stimmen Sie den folgenden Aussagen zu oder nicht zu? Ich würde mich nicht an die Ausgangssperre halten, …  weil ich nicht glaube, dass so drastische Einschränkungen gerechtfertigt sind, um die Verbreitung des Coronavirus zu verhindern.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "stimme überhaupt nicht zu"
+                },
+                {
+                    "valueString": "stimme eher nicht zu"
+                },
+                {
+                    "valueString": "teils/teils"
+                },
+                {
+                    "valueString": "stimme eher zu"
+                },
+                {
+                    "valueString": "stimme voll und ganz zu"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Life_events_plans_beliefs",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Beliefs_values",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "406198009",
+                    "display": "Personal belief pattern (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "129835001",
+                    "display": "Noncompliance with safety precautions (finding)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "410666004",
+                    "display": "Reason for (attribute)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "p23_5_2c",
+            "text": "Sie haben angegeben, dass Sie sich nicht an die Ausganssperre halten würden. Im Folgenden sind einige Gründe hierfür aufgelistet.\nInwieweit stimmen Sie den folgenden Aussagen zu oder nicht zu? Ich würde mich nicht an die Ausgangssperre halten, ...weil ich Verpflichtungen habe, wegen denen ich den Empfehlungen nicht folgen kann.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "stimme überhaupt nicht zu"
+                },
+                {
+                    "valueString": "stimme eher nicht zu"
+                },
+                {
+                    "valueString": "teils/teils"
+                },
+                {
+                    "valueString": "stimme eher zu"
+                },
+                {
+                    "valueString": "stimme voll und ganz zu"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Life_events_plans_beliefs",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Beliefs_values",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "406198009",
+                    "display": "Personal belief pattern (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "129835001",
+                    "display": "Noncompliance with safety precautions (finding)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "410666004",
+                    "display": "Reason for (attribute)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "77248004",
+                    "display": "Infection control procedure (procedure)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "275840002",
+                    "display": "Preventing spread of infection (procedure)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "260381000",
+                    "display": "Inefficient (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "p23_5_2d",
+            "text": "Sie haben angegeben, dass Sie sich nicht an die Ausganssperre halten würden. Im Folgenden sind einige Gründe hierfür aufgelistet.\nInwieweit stimmen Sie den folgenden Aussagen zu oder nicht zu? Ich würde mich nicht an die Ausgangssperre halten, ...weil ich nicht glaube, dass die Befolgung der Ausgangssperre die Verbreitung des Coronavirus spürbar verlangsamen würde.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "stimme überhaupt nicht zu"
+                },
+                {
+                    "valueString": "stimme eher nicht zu"
+                },
+                {
+                    "valueString": "teils/teils"
+                },
+                {
+                    "valueString": "stimme eher zu"
+                },
+                {
+                    "valueString": "stimme voll und ganz zu"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Life_events_plans_beliefs",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Beliefs_values",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p23_5_2e",
+            "text": "Sie haben angegeben, dass Sie sich nicht an die Ausganssperre halten würden. Im Folgenden sind einige Gründe hierfür aufgelistet.\nInwieweit stimmen Sie den folgenden Aussagen zu oder nicht zu? Ich würde mich nicht an die Ausgangssperre halten, ...weil ich nicht glaube, dass ich von dem Ausbruch betroffen sein werde.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "stimme überhaupt nicht zu"
+                },
+                {
+                    "valueString": "stimme eher nicht zu"
+                },
+                {
+                    "valueString": "teils/teils"
+                },
+                {
+                    "valueString": "stimme eher zu"
+                },
+                {
+                    "valueString": "stimme voll und ganz zu"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Life_events_plans_beliefs",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Beliefs_values",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p24_5_2f",
+            "text": "Sie haben angegeben, dass Sie sich nicht an die Ausganssperre halten würden. Im Folgenden sind einige Gründe hierfür aufgelistet.\nInwieweit stimmen Sie den folgenden Aussagen zu oder nicht zu? Ich würde mich nicht an die Ausgangssperre halten, ... weil es mir zu langweilig wäre, die ganze Zeit zu Hause zu bleiben.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "stimme überhaupt nicht zu"
+                },
+                {
+                    "valueString": "stimme eher nicht zu"
+                },
+                {
+                    "valueString": "teils/teils"
+                },
+                {
+                    "valueString": "stimme eher zu"
+                },
+                {
+                    "valueString": "stimme voll und ganz zu"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Life_events_plans_beliefs",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Beliefs_values",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p24_5_2g",
+            "text": "Sie haben angegeben, dass Sie sich nicht an die Ausganssperre halten würden. Im Folgenden sind einige Gründe hierfür aufgelistet.\nInwieweit stimmen Sie den folgenden Aussagen zu oder nicht zu? Ich würde mich nicht an die Ausgangssperre halten, ...weil ich nicht glaube, dass ich bestraft werden würde.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "zu wenige"
+                },
+                {
+                    "valueString": "eher zu wenige"
+                },
+                {
+                    "valueString": "genau richtig"
+                },
+                {
+                    "valueString": "eher zu viele"
+                },
+                {
+                    "valueString": "zu viele"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Life_events_plans_beliefs",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Beliefs_values",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p24_6a",
+            "text": "Finden Sie, dass die Bundesregierung in Bezug auf die folgenden Punkte zu wenige oder zu viele Maßnahmen zur Bekämpfung der Corona-Krise ergreift?  Die Gewährleistung der medizinischen Versorgung",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "zu wenige"
+                },
+                {
+                    "valueString": "eher zu wenige"
+                },
+                {
+                    "valueString": "genau richtig"
+                },
+                {
+                    "valueString": "eher zu viele"
+                },
+                {
+                    "valueString": "zu viele"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Life_events_plans_beliefs",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Beliefs_values",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p24_6b",
+            "text": "Finden Sie, dass die Bundesregierung in Bezug auf die folgenden Punkte zu wenige oder zu viele Maßnahmen zur Bekämpfung der Corona-Krise ergreift? Einschränkung des gesellschaftlichen Lebens, wie z. B. Schließung von öffentlichen Einrichtungen und Geschäften",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "zu wenige"
+                },
+                {
+                    "valueString": "eher zu wenige"
+                },
+                {
+                    "valueString": "genau richtig"
+                },
+                {
+                    "valueString": "eher zu viele"
+                },
+                {
+                    "valueString": "zu viele"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Life_events_plans_beliefs",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Beliefs_values",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p24_6c",
+            "text": "Finden Sie, dass die Bundesregierung in Bezug auf die folgenden Punkte zu wenige oder zu viele Maßnahmen zur Bekämpfung der Corona-Krise ergreift? \nVerminderung der wirtschaftlichen\nSchäden",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "zu wenige"
+                },
+                {
+                    "valueString": "eher zu wenige"
+                },
+                {
+                    "valueString": "genau richtig"
+                },
+                {
+                    "valueString": "eher zu viele"
+                },
+                {
+                    "valueString": "zu viele"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Life_events_plans_beliefs",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Beliefs_values",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p24_6d",
+            "text": "Finden Sie, dass die Bundesregierung in Bezug auf die folgenden Punkte zu wenige oder zu viele Maßnahmen zur Bekämpfung der Corona-Krise ergreift? Kommunikation mit der Bevölkerung",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "vertraue überhaupt nicht"
+                },
+                {
+                    "valueString": "vertraue eher nicht"
+                },
+                {
+                    "valueString": "weder noch"
+                },
+                {
+                    "valueString": "vertraue eher"
+                },
+                {
+                    "valueString": "vertraue voll und ganz"
+                },
+                {
+                    "valueString": "kenne ich nicht"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Life_events_plans_beliefs",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Beliefs_values",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p24_7a",
+            "text": "Wie sehr vertrauen Sie den folgenden Personen und Institutionen in Bezug auf den Umgang mit dem Coronavirus? Ihrem Hausarzt/ Ihrer Hausärztin",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "vertraue überhaupt nicht"
+                },
+                {
+                    "valueString": "vertraue eher nicht"
+                },
+                {
+                    "valueString": "weder noch"
+                },
+                {
+                    "valueString": "vertraue eher"
+                },
+                {
+                    "valueString": "vertraue voll und ganz"
+                },
+                {
+                    "valueString": "kenne ich nicht"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Life_events_plans_beliefs",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Beliefs_values",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p24_7b",
+            "text": "Wie sehr vertrauen Sie den folgenden Personen und Institutionen in Bezug auf den Umgang mit dem Coronavirus? Lokale Gesundheitsbehörde",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "vertraue überhaupt nicht"
+                },
+                {
+                    "valueString": "vertraue eher nicht"
+                },
+                {
+                    "valueString": "weder noch"
+                },
+                {
+                    "valueString": "vertraue eher"
+                },
+                {
+                    "valueString": "vertraue voll und ganz"
+                },
+                {
+                    "valueString": "kenne ich nicht"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Life_events_plans_beliefs",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Beliefs_values",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p24_7c",
+            "text": "Wie sehr vertrauen Sie den folgenden Personen und Institutionen in Bezug auf den Umgang mit dem Coronavirus? Kommunale und städtische Verwaltung",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "vertraue überhaupt nicht"
+                },
+                {
+                    "valueString": "vertraue eher nicht"
+                },
+                {
+                    "valueString": "weder noch"
+                },
+                {
+                    "valueString": "vertraue eher"
+                },
+                {
+                    "valueString": "vertraue voll und ganz"
+                },
+                {
+                    "valueString": "kenne ich nicht"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Life_events_plans_beliefs",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Beliefs_values",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p24_7d",
+            "text": "Wie sehr vertrauen Sie den folgenden Personen und Institutionen in Bezug auf den Umgang mit dem Coronavirus? Robert Koch-Institut (RKI)",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "vertraue überhaupt nicht"
+                },
+                {
+                    "valueString": "vertraue eher nicht"
+                },
+                {
+                    "valueString": "weder noch"
+                },
+                {
+                    "valueString": "vertraue eher"
+                },
+                {
+                    "valueString": "vertraue voll und ganz"
+                },
+                {
+                    "valueString": "kenne ich nicht"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Life_events_plans_beliefs",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Beliefs_values",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p24_7e",
+            "text": "Wie sehr vertrauen Sie den folgenden Personen und Institutionen in Bezug auf den Umgang mit dem Coronavirus? Bundesregierung",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "vertraue überhaupt nicht"
+                },
+                {
+                    "valueString": "vertraue eher nicht"
+                },
+                {
+                    "valueString": "weder noch"
+                },
+                {
+                    "valueString": "vertraue eher"
+                },
+                {
+                    "valueString": "vertraue voll und ganz"
+                },
+                {
+                    "valueString": "kenne ich nicht"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Life_events_plans_beliefs",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Beliefs_values",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p24_7f",
+            "text": "Wie sehr vertrauen Sie den folgenden Personen und Institutionen in Bezug auf den Umgang mit dem Coronavirus? Bundeskanzlerin",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "vertraue überhaupt nicht"
+                },
+                {
+                    "valueString": "vertraue eher nicht"
+                },
+                {
+                    "valueString": "weder noch"
+                },
+                {
+                    "valueString": "vertraue eher"
+                },
+                {
+                    "valueString": "vertraue voll und ganz"
+                },
+                {
+                    "valueString": "kenne ich nicht"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Life_events_plans_beliefs",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Beliefs_values",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p24_7g",
+            "text": "Wie sehr vertrauen Sie den folgenden Personen und Institutionen in Bezug auf den Umgang mit dem Coronavirus? Gesundheitsministerium",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "vertraue überhaupt nicht"
+                },
+                {
+                    "valueString": "vertraue eher nicht"
+                },
+                {
+                    "valueString": "weder noch"
+                },
+                {
+                    "valueString": "vertraue eher"
+                },
+                {
+                    "valueString": "vertraue voll und ganz"
+                },
+                {
+                    "valueString": "kenne ich nicht"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Life_events_plans_beliefs",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Beliefs_values",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p24_7h",
+            "text": "Wie sehr vertrauen Sie den folgenden Personen und Institutionen in Bezug auf den Umgang mit dem Coronavirus? Weltgesundheitsorganisation (WHO)",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "vertraue überhaupt nicht"
+                },
+                {
+                    "valueString": "vertraue eher nicht"
+                },
+                {
+                    "valueString": "weder noch"
+                },
+                {
+                    "valueString": "vertraue eher"
+                },
+                {
+                    "valueString": "vertraue voll und ganz"
+                },
+                {
+                    "valueString": "kenne ich nicht"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Life_events_plans_beliefs",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Beliefs_values",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p24_7i",
+            "text": "Wie sehr vertrauen Sie den folgenden Personen und Institutionen in Bezug auf den Umgang mit dem Coronavirus? Wissenschaftlern/ Wissenschaftlerinnen",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Abhängig beschäftigt in Vollzeit oder Teilzeit"
+                },
+                {
+                    "valueString": "Selbständig beschäftigt/ Freiberuflich tätig"
+                },
+                {
+                    "valueString": "Geringfügig erwerbstätig, 450-Euro-Job, Minijob"
+                },
+                {
+                    "valueString": "Arbeitslos"
+                },
+                {
+                    "valueString": "Im Ruhestand/ in Rente"
+                },
+                {
+                    "valueString": "In Ausbildung, Schüler/in, Student/in"
+                },
+                {
+                    "valueString": "Hausfrau/ Hausmann"
+                },
+                {
+                    "valueString": "Sonstiges"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Preschool_school_work",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Work",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p24_8",
+            "text": "Nun haben wir noch einige wenige Fragen zu Ihrer persönlichen Situation. Welche der folgenden Optionen beschreibt Ihre berufliche Situation Anfang März am besten? Wenn mehrere Optionen zutreffen, berücksichtigen Sie bitte nur Ihre Haupttätigkeit.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Preschool_school_work",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Work",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "364703007",
+                    "display": "Employment detail (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "263703002",
+                    "display": "Changed status (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "p24_9_1a",
+            "text": "Hat sich Ihre berufliche Situation seit der Ausbreitung des Coronavirus geändert? Sie können mehrere Antworten ankreuzen.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Preschool_school_work",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Work",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "364703007",
+                    "display": "Employment detail (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "263703002",
+                    "display": "Changed status (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "439812008",
+                    "display": "Number of hours worked per week (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "1250004",
+                    "display": "Decreased (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "p24_9_1b",
+            "text": "Hat sich Ihre berufliche Situation seit der Ausbreitung des Coronavirus geändert? Sie können mehrere Antworten ankreuzen. Meine Stundenzahl hat sich reduziert.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Preschool_school_work",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Work",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "364703007",
+                    "display": "Employment detail (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "263703002",
+                    "display": "Changed status (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "439812008",
+                    "display": "Number of hours worked per week (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "35105006",
+                    "display": "Increased (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "p24_9_1c",
+            "text": "Hat sich Ihre berufliche Situation seit der Ausbreitung des Coronavirus geändert? Sie können mehrere Antworten ankreuzen.  Meine Stundenzahl hat sich erhöht.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Preschool_school_work",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Work",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p24_9_1d",
+            "text": "Hat sich Ihre berufliche Situation seit der Ausbreitung des Coronavirus geändert? Sie können mehrere Antworten ankreuzen. Ich arbeite vermehrt von zu Hause.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Preschool_school_work",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Work",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p24_9_1e",
+            "text": "Hat sich Ihre berufliche Situation seit der Ausbreitung des Coronavirus geändert? Sie können mehrere Antworten ankreuzen.  Ich bin freigestellt mit Lohnfortzahlung.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Preschool_school_work",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Work",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p24_9_1f",
+            "text": "Hat sich Ihre berufliche Situation seit der Ausbreitung des Coronavirus geändert? Sie können mehrere Antworten ankreuzen.  Ich bin freigestellt ohne Lohnfortzahlung.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Preschool_school_work",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Work",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p24_9_1g",
+            "text": "Hat sich Ihre berufliche Situation seit der Ausbreitung des Coronavirus geändert? Sie können mehrere Antworten ankreuzen.  Ich wurde entlassen.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Preschool_school_work",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Work",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p24_9_1h",
+            "text": "Hat sich Ihre berufliche Situation seit der Ausbreitung des Coronavirus geändert? Sie können mehrere Antworten ankreuzen. Nein, es hat sich nichts geändert.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Preschool_school_work",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Work",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p25_10_1a",
+            "text": "Hat sich Ihre berufliche Situation seit der Ausbreitung des Coronavirus geändert? Sie können mehrere Antworten ankreuzen.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Preschool_school_work",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Work",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "364703007",
+                    "display": "Employment detail (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "263703002",
+                    "display": "Changed status (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "439812008",
+                    "display": "Number of hours worked per week (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "1250004",
+                    "display": "Decreased (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "p25_10_1b",
+            "text": "Hat sich Ihre berufliche Situation seit der Ausbreitung des Coronavirus geändert? Sie können mehrere Antworten ankreuzen. Meine durchschnittliche Arbeitszeit hat sich reduziert.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Preschool_school_work",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Work",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "364703007",
+                    "display": "Employment detail (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "263703002",
+                    "display": "Changed status (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "439812008",
+                    "display": "Number of hours worked per week (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "35105006",
+                    "display": "Increased (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "p25_10_1c",
+            "text": "Hat sich Ihre berufliche Situation seit der Ausbreitung des Coronavirus geändert? Sie können mehrere Antworten ankreuzen. Meine durchschnittliche Arbeitszeit hat sich erhöht.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Preschool_school_work",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Work",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p25_10_1d",
+            "text": "Hat sich Ihre berufliche Situation seit der Ausbreitung des Coronavirus geändert? Sie können mehrere Antworten ankreuzen. Ich arbeite vermehrt von zu Hause.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Preschool_school_work",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Work",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p25_10_1e",
+            "text": "Hat sich Ihre berufliche Situation seit der Ausbreitung des Coronavirus geändert? Sie können mehrere Antworten ankreuzen. Mein Umsatz ist gesunken.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Preschool_school_work",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Work",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p25_10_1f",
+            "text": "Hat sich Ihre berufliche Situation seit der Ausbreitung des Coronavirus geändert? Sie können mehrere Antworten ankreuzen. Mein Umsatz ist gestiegen.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Preschool_school_work",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Work",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p25_10_1g",
+            "text": "Hat sich Ihre berufliche Situation seit der Ausbreitung des Coronavirus geändert? Sie können mehrere Antworten ankreuzen. Ich habe mein Unternehmen aufgrund behördlicher Anordnung geschlossen.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Preschool_school_work",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Work",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p25_10_1h",
+            "text": "Hat sich Ihre berufliche Situation seit der Ausbreitung des Coronavirus geändert? Sie können mehrere Antworten ankreuzen. Ich habe mein Unternehmen freiwillig vorübergehend geschlossen.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Preschool_school_work",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Work",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p25_10_1i",
+            "text": "Hat sich Ihre berufliche Situation seit der Ausbreitung des Coronavirus geändert? Sie können mehrere Antworten ankreuzen. Die Corona-Krise bringt mich/ mein Unternehmen in finanzielle Nöte.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Preschool_school_work",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Work",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p25_10_1j",
+            "text": "Hat sich Ihre berufliche Situation seit der Ausbreitung des Coronavirus geändert? Sie können mehrere Antworten ankreuzen.  Ich musste mein Unternehmen dauerhaft schließen oder Insolvenz beantragen.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Preschool_school_work",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Work",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p25_10_1k",
+            "text": "Hat sich Ihre berufliche Situation seit der Ausbreitung des Coronavirus geändert? Sie können mehrere Antworten ankreuzen. Nein, es hat sich nichts geändert.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Sociodemographic_economic_characteristics",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Family_hh_struct",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "224130005",
+                    "display": "Household composition (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "410601007",
+                    "display": "Childhood age person (person)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "p25_11",
+            "text": "Leben Kinder unter 12 Jahren in Ihrem Haushalt?",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Social_environment",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Soc_support",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p25_11_1a",
+            "text": "Wie organisieren Sie die Betreuung des Kindes/ der Kinder während der Schließungen der Kitas, Kindergärten und Schulen? Sie können mehrere Antworten ankreuzen.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Preschool_school_work",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Work",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p25_11_1b",
+            "text": "Wie organisieren Sie die Betreuung des Kindes/ der Kinder während der Schließungen der Kitas, Kindergärten und Schulen? Sie können mehrere Antworten ankreuzen. Ich bleibe zu Hause.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Preschool_school_work",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Work",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p25_11_1c",
+            "text": "Wie organisieren Sie die Betreuung des Kindes/ der Kinder während der Schließungen der Kitas, Kindergärten und Schulen? Sie können mehrere Antworten ankreuzen. Mein Partner/ Meine Partnerin bleibt zu Hause.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Social_environment",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Soc_support",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p25_11_1d",
+            "text": "Wie organisieren Sie die Betreuung des Kindes/ der Kinder während der Schließungen der Kitas, Kindergärten und Schulen? Sie können mehrere Antworten ankreuzen. Die älteren Geschwister passen auf.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Social_environment",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Soc_support",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p25_11_1e",
+            "text": "Wie organisieren Sie die Betreuung des Kindes/ der Kinder während der Schließungen der Kitas, Kindergärten und Schulen? Sie können mehrere Antworten ankreuzen.  Die Großeltern passen auf.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Social_environment",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Soc_support",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p25_11_1f",
+            "text": "Wie organisieren Sie die Betreuung des Kindes/ der Kinder während der Schließungen der Kitas, Kindergärten und Schulen? Sie können mehrere Antworten ankreuzen. Andere Verwandte oder Freunde passen auf.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Social_environment",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Soc_support",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p25_11_1g",
+            "text": "Wie organisieren Sie die Betreuung des Kindes/ der Kinder während der Schließungen der Kitas, Kindergärten und Schulen? Sie können mehrere Antworten ankreuzen.  Ich arbeite mit Freunden/ Nachbarn zusammen, um die Kinderbetreuung zu organisieren.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Preschool_school_work",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Work",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p25_11_1h",
+            "text": "Wie organisieren Sie die Betreuung des Kindes/ der Kinder während der Schließungen der Kitas, Kindergärten und Schulen? Sie können mehrere Antworten ankreuzen. Es gibt offizielle Alternativen für meine Berufsgruppe.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Social_environment",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Soc_support",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p25_11_1i",
+            "text": "Wie organisieren Sie die Betreuung des Kindes/ der Kinder während der Schließungen der Kitas, Kindergärten und Schulen? Sie können mehrere Antworten ankreuzen. Mein Ex-Partner/ Meine Ex-Partnerin kümmert sich.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Preschool_school_work",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Other_school_work",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p25_11_1j",
+            "text": "Wie organisieren Sie die Betreuung des Kindes/ der Kinder während der Schließungen der Kitas, Kindergärten und Schulen? Sie können mehrere Antworten ankreuzen. Das Kind/ Die Kinder bleiben alleine zuhause.",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Preschool_school_work",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Other_school_work",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p25_11_1k",
+            "text": "Wie organisieren Sie die Betreuung des Kindes/ der Kinder während der Schließungen der Kitas, Kindergärten und Schulen? Sie können mehrere Antworten ankreuzen.  Sonstiges:",
+            "type": "text"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Preschool_school_work",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Other_school_work",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p25_11_1l",
+            "text": "Wie organisieren Sie die Betreuung des Kindes/ der Kinder während der Schließungen der Kitas, Kindergärten und Schulen? Sie können mehrere Antworten ankreuzen. Durch die Corona-Krise ändert sich nichts.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Leisure_act",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p25_12a",
+            "text": "Aus welchen Quellen beziehen Sie aktuelle Informationen zum Coronavirus? Kreuzen Sie Medienquellen bitte an, egal ob Sie diese offline oder online nutzen. Sie können mehrere Antworten ankreuzen. Überregionales öffentlich-rechtliches Fernsehen oder Radio (z. B. ARD, ZDF, Deutschlandfunk)",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Leisure_act",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p25_12b",
+            "text": "Aus welchen Quellen beziehen Sie aktuelle Informationen zum Coronavirus?\nKreuzen Sie Medienquellen bitte an, egal ob Sie diese offline oder online nutzen. Sie können mehrere Antworten ankreuzen. Überregionales privates Fernsehen oder Radio (z. B. RTL, Sat1, ProSieben)",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Leisure_act",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p25_12c",
+            "text": "Aus welchen Quellen beziehen Sie aktuelle Informationen zum Coronavirus? Kreuzen Sie Medienquellen bitte an, egal ob Sie diese offline oder online nutzen. Sie können mehrere Antworten ankreuzen. Überregionale Zeitungen (z. B. Süddeutsche Zeitung, Die Welt, FAZ)",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Leisure_act",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p25_12d",
+            "text": "Aus welchen Quellen beziehen Sie aktuelle Informationen zum Coronavirus? Kreuzen Sie Medienquellen bitte an, egal ob Sie diese offline oder online nutzen. Sie können mehrere Antworten ankreuzen. Lokales öffentlich-rechtliches Fernsehen oder Radio (z. B. HR, WDR, RBB)",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Leisure_act",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p25_12e",
+            "text": "Aus welchen Quellen beziehen Sie aktuelle Informationen zum Coronavirus? Kreuzen Sie Medienquellen bitte an, egal ob Sie diese offline oder online nutzen. Sie können mehrere Antworten ankreuzen.  Lokales privates Fernsehen oder Radio (z. B. regio TV, Radio Köln)",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Leisure_act",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p25_12f",
+            "text": "Aus welchen Quellen beziehen Sie aktuelle Informationen zum Coronavirus? Kreuzen Sie Medienquellen bitte an, egal ob Sie diese offline oder online nutzen. Sie können mehrere Antworten ankreuzen. Lokalzeitungen",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Leisure_act",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p25_12g",
+            "text": "Aus welchen Quellen beziehen Sie aktuelle Informationen zum Coronavirus? Kreuzen Sie Medienquellen bitte an, egal ob Sie diese offline oder online nutzen. Sie können mehrere Antworten ankreuzen. Facebook",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Leisure_act",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p25_12h",
+            "text": "Aus welchen Quellen beziehen Sie aktuelle Informationen zum Coronavirus? Kreuzen Sie Medienquellen bitte an, egal ob Sie diese offline oder online nutzen. Sie können mehrere Antworten ankreuzen. Weitere soziale Medien (z. B. Instagram, Twitter)",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Leisure_act",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p25_12i",
+            "text": "Aus welchen Quellen beziehen Sie aktuelle Informationen zum Coronavirus?\nKreuzen Sie Medienquellen bitte an, egal ob Sie diese offline oder online nutzen. Sie können mehrere Antworten ankreuzen. Persönliche Gespräche mit Freunden und Familie",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Leisure_act",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p25_12j",
+            "text": "Aus welchen Quellen beziehen Sie aktuelle Informationen zum Coronavirus? Kreuzen Sie Medienquellen bitte an, egal ob Sie diese offline oder online nutzen. Sie können mehrere Antworten ankreuzen. Sonstiges:",
+            "type": "text"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "ja"
+                },
+                {
+                    "valueString": "nein"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Leisure_act",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p25_12k",
+            "text": "Aus welchen Quellen beziehen Sie aktuelle Informationen zum Coronavirus? Kreuzen Sie Medienquellen bitte an, egal ob Sie diese offline oder online nutzen. Sie können mehrere Antworten ankreuzen. Ich informiere mich nicht zu dem Thema",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Täglich"
+                },
+                {
+                    "valueString": "Mehrmals in der Woche"
+                },
+                {
+                    "valueString": "Mehrmals im Monat"
+                },
+                {
+                    "valueString": "Seltener"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Leisure_act",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p26_12_1",
+            "text": "Wie häufig nutzen Sie Facebook?",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Ja, aus einer Facebook-Seite mit regionalem Fokus (z. B. der Seite der lokalen Tageszeitung meiner Stadt/Region)"
+                },
+                {
+                    "valueString": "Ja, aus einer Facebook-Gruppe mit regionalem Fokus (z. B. Gruppen wie “NETT-WERK Berlin” oder “Du kommst aus... wenn”)"
+                },
+                {
+                    "valueString": "Nein"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Leisure_act",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p26_12_2",
+            "text": "Haben Sie Informationen zum Coronavirus aus einer Facebook-Seite oder Gruppe mit regionalem Fokus bezogen?",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "überhaupt nicht"
+                },
+                {
+                    "valueString": "nicht so gut"
+                },
+                {
+                    "valueString": "mittelmäßig"
+                },
+                {
+                    "valueString": "gut"
+                },
+                {
+                    "valueString": "sehr gut"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Administrative_information",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Questionnaire_interview_related_info",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p26_13a",
+            "text": "Zum Schluss interessiert uns noch: Wie hat Ihnen die Befragung insgesamt gefallen?",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "überhaupt nicht"
+                },
+                {
+                    "valueString": "nicht so gut"
+                },
+                {
+                    "valueString": "mittelmäßig"
+                },
+                {
+                    "valueString": "gut"
+                },
+                {
+                    "valueString": "sehr gut"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Administrative_information",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Questionnaire_interview_related_info",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                }
+            ],
+            "linkId": "p26_13b",
+            "text": "Wie hat es Ihnen gefallen, dass wir Sie zu einer Sonderbefragung zu einem aktuellen Thema eingeladen haben?",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Administrative_information",
+                    "system": "Maelstrom_Domain"
+                },
+                {
+                    "code": "Questionnaire_interview_related_info",
+                    "system": "Maelstrom_Subdomain"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "Mlstr_additional::Source"
+                },
+                {
+                    "code": "Participant",
+                    "system": "Mlstr_additional::Target"
+                },
+                {
+                    "code": "703852005",
+                    "display": "Narrative comment section (record artifact) ",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "900000000000466000",
+                    "display": "Text (foundation metadata concept)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "p26_14",
+            "text": "Haben Sie noch weitere Anmerkungen oder möchten Sie noch etwas zur Sonderbefragung zum Thema Coronavirus hinzufügen? Geben Sie in dieses Feld aus Datenschutzgründen bitte keine persönlichen Daten ein. Wenn Sie Fragen haben, können Sie uns gerne eine E-Mail an info@gesis-gesellschaftsmonitor.de schreiben.",
+            "type": "text"
+        }
+    ],
   "item": [
         {
             "answerOption": [
