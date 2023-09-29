@@ -19,19 +19,19 @@
             "code": [
                 {
                     "code": "End_of_life",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Life_status",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "365860008",
@@ -52,19 +52,19 @@
             "code": [
                 {
                     "code": "Administrative_information",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Identifiers",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "703503000",
@@ -85,19 +85,19 @@
             "code": [
                 {
                     "code": "Administrative_information",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Data_sample_center",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "703503000",
@@ -128,19 +128,19 @@
             "code": [
                 {
                     "code": "Administrative_information",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Other_admin_info",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "734005006",
@@ -161,19 +161,19 @@
             "code": [
                 {
                     "code": "Administrative_information",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Other_admin_info",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "302147001",
@@ -194,19 +194,19 @@
             "code": [
                 {
                     "code": "Administrative_information",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Date_time_related_info",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "442137000",
@@ -222,19 +222,19 @@
             "code": [
                 {
                     "code": "Administrative_information",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Identifiers",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "408677003",
@@ -250,19 +250,19 @@
             "code": [
                 {
                     "code": "Administrative_information",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Identifiers",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "397678008",
@@ -289,19 +289,19 @@
             "code": [
                 {
                     "code": "Sociodemographic_economic_characteristics",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Sex",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "184100006",
@@ -317,19 +317,19 @@
             "code": [
                 {
                     "code": "Sociodemographic_economic_characteristics",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Age",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "184099003",
@@ -345,19 +345,19 @@
             "code": [
                 {
                     "code": "Sociodemographic_economic_characteristics",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Family_hh_struct",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "225706007",
@@ -373,19 +373,19 @@
             "code": [
                 {
                     "code": "Sociodemographic_economic_characteristics",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Residence",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "184097001",
@@ -401,19 +401,19 @@
             "code": [
                 {
                     "code": "Administrative_information",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Other_admin_info",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "428481002",
@@ -434,19 +434,19 @@
             "code": [
                 {
                     "code": "Administrative_information",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Identifiers",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "408677003",
@@ -462,19 +462,19 @@
             "code": [
                 {
                     "code": "Administrative_information",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Identifiers",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "397678008",
@@ -501,19 +501,19 @@
             "code": [
                 {
                     "code": "Sociodemographic_economic_characteristics",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Sex",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "184100006",
@@ -529,19 +529,19 @@
             "code": [
                 {
                     "code": "Sociodemographic_economic_characteristics",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Age",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "184099003",
@@ -557,19 +557,19 @@
             "code": [
                 {
                     "code": "Administrative_information",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Other_admin_info",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "428481002",
@@ -585,19 +585,19 @@
             "code": [
                 {
                     "code": "Sociodemographic_economic_characteristics",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Age",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "424144002",
@@ -623,19 +623,19 @@
             "code": [
                 {
                     "code": "Administrative_information",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Other_admin_info",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "424966008",
@@ -651,19 +651,19 @@
             "code": [
                 {
                     "code": "Sociodemographic_economic_characteristics",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Residence",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "397635003",
@@ -679,19 +679,19 @@
             "code": [
                 {
                     "code": "Administrative_information",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Identifiers",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "398093005",
@@ -707,19 +707,19 @@
             "code": [
                 {
                     "code": "Sociodemographic_economic_characteristics",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Residence",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "416647007",
@@ -735,19 +735,19 @@
             "code": [
                 {
                     "code": "Sociodemographic_economic_characteristics",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Citizenship",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "186034007",
@@ -763,19 +763,19 @@
             "code": [
                 {
                     "code": "Sociodemographic_economic_characteristics",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Ethnic_race_religion",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "186034007",
@@ -791,19 +791,19 @@
             "code": [
                 {
                     "code": "Administrative_information",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Data_sample_center",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "264361005",
@@ -836,19 +836,19 @@
             "code": [
                 {
                     "code": "Sociodemographic_economic_characteristics",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Labour_retirement",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "184104002",
@@ -864,19 +864,19 @@
             "code": [
                 {
                     "code": "Physical_environment",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Workplace",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "224406003",
@@ -892,19 +892,19 @@
             "code": [
                 {
                     "code": "Sociodemographic_economic_characteristics",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Residence",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "20733006",
@@ -930,19 +930,19 @@
             "code": [
                 {
                     "code": "Sociodemographic_economic_characteristics",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Family_hh_struct",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "224525003",
@@ -958,19 +958,19 @@
             "code": [
                 {
                     "code": "Physical_environment",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Housing",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "224249004",
@@ -996,19 +996,19 @@
             "code": [
                 {
                     "code": "Physical_environment",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Housing",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "224249004",
@@ -1034,19 +1034,19 @@
             "code": [
                 {
                     "code": "Sociodemographic_economic_characteristics",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Family_hh_struct",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "224085006",
@@ -1067,19 +1067,19 @@
             "code": [
                 {
                     "code": "Symptoms_signs",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Other_sympt",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "405795006",
@@ -1105,19 +1105,19 @@
             "code": [
                 {
                     "code": "Symptoms_signs",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Other_sympt",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "405795006",
@@ -1143,19 +1143,19 @@
             "code": [
                 {
                     "code": "Symptoms_signs",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "General_sympt",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "426000000",
@@ -1181,19 +1181,19 @@
             "code": [
                 {
                     "code": "Symptoms_signs",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "General_sympt",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "386725007",
@@ -1214,19 +1214,19 @@
             "code": [
                 {
                     "code": "Health_community_care_utilization",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Visit_health_prof",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 }
             ],
             "linkId": "q6a_3a",
@@ -1237,19 +1237,19 @@
             "code": [
                 {
                     "code": "Health_community_care_utilization",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Visit_health_prof",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 }
             ],
             "linkId": "q6a_3b",
@@ -1260,19 +1260,19 @@
             "code": [
                 {
                     "code": "Health_community_care_utilization",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Visit_health_prof",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 }
             ],
             "linkId": "q6a_4a",
@@ -1283,19 +1283,19 @@
             "code": [
                 {
                     "code": "Health_community_care_utilization",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Visit_health_prof",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 }
             ],
             "linkId": "q6a_4b",
@@ -1317,19 +1317,19 @@
             "code": [
                 {
                     "code": "Symptoms_signs",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Circulatory_respiratory_sympt",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "267102003",
@@ -1350,19 +1350,19 @@
             "code": [
                 {
                     "code": "Symptoms_signs",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Circulatory_respiratory_sympt",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "267102003",
@@ -1399,19 +1399,19 @@
             "code": [
                 {
                     "code": "Symptoms_signs",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Circulatory_respiratory_sympt",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "275280004",
@@ -1443,19 +1443,19 @@
             "code": [
                 {
                     "code": "Symptoms_signs",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Circulatory_respiratory_sympt",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "49727002",
@@ -1476,19 +1476,19 @@
             "code": [
                 {
                     "code": "Symptoms_signs",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Circulatory_respiratory_sympt",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "49727002",
@@ -1525,19 +1525,19 @@
             "code": [
                 {
                     "code": "Symptoms_signs",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Circulatory_respiratory_sympt",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "267036007",
@@ -1558,19 +1558,19 @@
             "code": [
                 {
                     "code": "Symptoms_signs",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Circulatory_respiratory_sympt",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "267036007",
@@ -1607,19 +1607,19 @@
             "code": [
                 {
                     "code": "Symptoms_signs",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "General_sympt",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "43724002",
@@ -1656,19 +1656,19 @@
             "code": [
                 {
                     "code": "Symptoms_signs",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Digestive_sympt",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "422400008",
@@ -1705,19 +1705,19 @@
             "code": [
                 {
                     "code": "Symptoms_signs",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Digestive_sympt",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "422587007",
@@ -1754,19 +1754,19 @@
             "code": [
                 {
                     "code": "Symptoms_signs",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Digestive_sympt",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "62315008",
@@ -1803,19 +1803,19 @@
             "code": [
                 {
                     "code": "Symptoms_signs",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "General_sympt",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "25064002",
@@ -1852,19 +1852,19 @@
             "code": [
                 {
                     "code": "Symptoms_signs",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Skin_subcut_sympt",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "271807003",
@@ -1901,19 +1901,19 @@
             "code": [
                 {
                     "code": "Diseases",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Eye_adnexa_dis",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "9826008",
@@ -1950,19 +1950,19 @@
             "code": [
                 {
                     "code": "Diseases",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Musculoskeletal_sys_dis",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "68962001",
@@ -1999,19 +1999,19 @@
             "code": [
                 {
                     "code": "Diseases",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Musculoskeletal_sys_dis",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "57676002",
@@ -2048,19 +2048,19 @@
             "code": [
                 {
                     "code": "Symptoms_signs",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "General_sympt",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "79890006",
@@ -2097,19 +2097,19 @@
             "code": [
                 {
                     "code": "Symptoms_signs",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Cognitive_perc_emotional_sympt",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "36955009",
@@ -2151,19 +2151,19 @@
             "code": [
                 {
                     "code": "Symptoms_signs",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Circulatory_respiratory_sympt",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "249366005",
@@ -2200,19 +2200,19 @@
             "code": [
                 {
                     "code": "Symptoms_signs",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "General_sympt",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "84229001",
@@ -2249,19 +2249,19 @@
             "code": [
                 {
                     "code": "Symptoms_signs",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "General_sympt",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "91175000",
@@ -2298,19 +2298,19 @@
             "code": [
                 {
                     "code": "Symptoms_signs",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Cognitive_perc_emotional_sympt",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "3006004",
@@ -2347,19 +2347,19 @@
             "code": [
                 {
                     "code": "Symptoms_signs",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Nervous_musculoskeletal_sympt",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "102957003",
@@ -2385,19 +2385,19 @@
             "code": [
                 {
                     "code": "Symptoms_signs",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Nervous_musculoskeletal_sympt",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "404684003",
@@ -2434,19 +2434,19 @@
             "code": [
                 {
                     "code": "Symptoms_signs",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Other_sympt",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "404684003",
@@ -2467,19 +2467,19 @@
             "code": [
                 {
                     "code": "Symptoms_signs",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Other_sympt",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "404684003",
@@ -2516,19 +2516,19 @@
             "code": [
                 {
                     "code": "Reproduction",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Pregnancy_delivery",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "77386006",
@@ -2563,19 +2563,19 @@
             "code": [
                 {
                     "code": "Reproduction",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Pregnancy_delivery",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "77386006",
@@ -2612,19 +2612,19 @@
             "code": [
                 {
                     "code": "Diseases",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Endocrine_metabolic_dis",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "414916001",
@@ -2656,19 +2656,19 @@
             "code": [
                 {
                     "code": "Diseases",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Neoplasms",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "363346000",
@@ -2700,19 +2700,19 @@
             "code": [
                 {
                     "code": "Diseases",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Endocrine_metabolic_dis",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "73211009",
@@ -2744,19 +2744,19 @@
             "code": [
                 {
                     "code": "Diseases",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Other_dis",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "86406008",
@@ -2793,19 +2793,19 @@
             "code": [
                 {
                     "code": "Diseases",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Circulatory_sys_dis",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "56265001",
@@ -2837,19 +2837,19 @@
             "code": [
                 {
                     "code": "Diseases",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Respiratory_sys_dis",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "195967001",
@@ -2881,19 +2881,19 @@
             "code": [
                 {
                     "code": "Diseases",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Respiratory_sys_dis",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "413839001",
@@ -2925,19 +2925,19 @@
             "code": [
                 {
                     "code": "Diseases",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Digestive_sys_dis",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "328383001",
@@ -2969,19 +2969,19 @@
             "code": [
                 {
                     "code": "Diseases",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Blood_immune_dis",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "414022008",
@@ -3018,19 +3018,19 @@
             "code": [
                 {
                     "code": "Diseases",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Genitourinary_sys_dis",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "709044004",
@@ -3062,19 +3062,19 @@
             "code": [
                 {
                     "code": "Diseases",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Nervous_sys_dis",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "128283000",
@@ -3106,19 +3106,19 @@
             "code": [
                 {
                     "code": "Diseases",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Other_dis",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "161663000",
@@ -3155,19 +3155,19 @@
             "code": [
                 {
                     "code": "Diseases",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Other_dis",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "102478008",
@@ -3188,19 +3188,19 @@
             "code": [
                 {
                     "code": "Diseases",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Other_dis",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "102478008",
@@ -3226,19 +3226,19 @@
             "code": [
                 {
                     "code": "Laboratory_measures",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Other_lab_measures",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "4,241E+12",
@@ -3262,19 +3262,19 @@
             "code": [
                 {
                     "code": "Administrative_information",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire_interview_related_info",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 }
             ],
             "linkId": "q9_1a",
@@ -3302,19 +3302,19 @@
             "code": [
                 {
                     "code": "Administrative_information",
-                    "system": "Maelstrom_Domain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire_interview_related_info",
-                    "system": "Maelstrom_Subdomain"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
                 },
                 {
                     "code": "Questionnaire",
-                    "system": "Mlstr_additional::Source"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 },
                 {
                     "code": "Participant",
-                    "system": "Mlstr_additional::Target"
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
                 }
             ],
             "linkId": "q9_1b",
