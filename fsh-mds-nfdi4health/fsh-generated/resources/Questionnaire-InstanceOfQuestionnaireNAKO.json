@@ -1,0 +1,3979 @@
+{
+    "resourceType": "Questionnaire",
+    "id": "InstanceOfQuestionnaireNAKO",
+    "meta": {
+      "profile": [
+        "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire"
+      ]
+    },
+    "item": [
+        {
+            "code": [
+                {
+                    "code": "Administrative_information",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Date_time_related_info",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "410672004",
+                    "display": "Date property (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "15240007",
+                    "display": "Current (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q0",
+            "text": "Datum Heute",
+            "type": "date"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Ausgezeichnet"
+                },
+                {
+                    "valueString": "Sehr gut"
+                },
+                {
+                    "valueString": "Gut"
+                },
+                {
+                    "valueString": "Weniger gut"
+                },
+                {
+                    "valueString": "Schlecht"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Health_status_functional_limitations",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Perc_health",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "278844005",
+                    "display": "General clinical state (observable entity)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q1",
+            "text": "Wie würden Sie Ihren Gesundheitszustand im Allgemeinen beschreiben?",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Derzeit viel besser als vorher"
+                },
+                {
+                    "valueString": "Derzeit etwas besser als vorher"
+                },
+                {
+                    "valueString": "Etwa so wie vorher"
+                },
+                {
+                    "valueString": "Derzeit etwas schlechter als vorher"
+                },
+                {
+                    "valueString": "Derzeit viel schlechter als vorher"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Health_status_functional_limitations",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Perc_health",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "278844005",
+                    "display": "General clinical state (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "15240007",
+                    "display": "Current (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q2",
+            "text": "Verglichen mit der Zeit vor der Corona-Pandemie, wie würden Sie Ihren derzeitigen Gesundheitszustand beschreiben?\n",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Ja, ich selbst"
+                },
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja, jemand anderes, und zwar - - Personen"
+                },
+                {
+                    "valueString": "Ich bin mir nicht sicher"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Diseases",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Respiratory_sys_dis",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                }
+            ],
+            "linkId": "q3",
+            "text": "Hatte seit dem 1. Februar 2020 jemand in Ihrem Haushalt eine Infektion der oberen Atemwege (z. B. Schnupfen oder Infektionen von Nasennebenhöhlen, Mandeln, Mittelohr, Rachen, Kehlkopf)?",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Ja, ich selbst"
+                },
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja, jemand anderes, und zwar - - Personen"
+                },
+                {
+                    "valueString": "Ich bin mir nicht sicher"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Diseases",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Respiratory_sys_dis",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                }
+            ],
+            "linkId": "q4",
+            "text": "Hatte seit dem 1. Februar 2020 jemand in Ihrem Haushalt eine Infektion der unteren Atemwege (z. B. Bronchitis oder Lungenentzündung)?\n",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Ja, ich selbst"
+                },
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja, jemand anderes, und zwar - - Personen"
+                },
+                {
+                    "valueString": "Ich bin mir nicht sicher"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Diseases",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Respiratory_sys_dis",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                }
+            ],
+            "linkId": "q5",
+            "text": "Waren seit dem 1. Februar 2020 Personen in Ihrem Haushalt wegen der in Frage 3 oder 4 erfassten Erkrankung(en) so krank, dass sie im Bett bleiben mussten oder ihrem normalen Alltag nicht nachgehen konnten (Hausarbeit, Hobbies etc.)?",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Ja, ich selbst"
+                },
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja, jemand anderes, und zwar - - Personen"
+                },
+                {
+                    "valueString": "Ich bin mir nicht sicher"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Diseases",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Respiratory_sys_dis",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                }
+            ],
+            "linkId": "q6",
+            "text": "Waren seit dem 1. Februar 2020 Personen in Ihrem Haushalt wegen der in Frage 3 oder 4 erfassten Erkrankung(en) krankgemeldet und konnten ihrem Beruf nicht nachgehen?",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Ja, ich selbst"
+                },
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja, jemand anderes, und zwar - - Personen"
+                },
+                {
+                    "valueString": "Ich bin mir nicht sicher"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Health_community_care_utilization",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Hospitalizations",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "32485007",
+                    "display": "Hospital admission (procedure)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "303072008",
+                    "display": "Person in the home environment (person)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q7",
+            "text": "Waren seit dem 1. Februar 2020 Personen in Ihrem Haushalt wegen der in Frage 3 oder 4 erfassten Erkrankung(en) in stationärer Behandlung (d. h. mindestens eine Nacht im Krankenhaus)?\n",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Non_pharmacological_interventions",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Biosample_analyses",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "871562009",
+                    "display": "Detection of severe acute respiratory syndrome coronavirus 2 (observable entity)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q8",
+            "text": "Wurden Sie selbst seit dem 1. Februar 2020 in einer Arztpraxis, in einem Testzentrum oder in einem Krankenhaus einmalig oder mehrfach auf das Corona-Virus getestet?\n",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Non_pharmacological_interventions",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Biosample_analyses",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "871562009",
+                    "display": "Detection of severe acute respiratory syndrome coronavirus 2 (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "260373001",
+                    "display": "Detected (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q8a",
+            "text": "War mindestens ein Testergebnis positiv?",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Non_pharmacological_interventions",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Biosample_analyses",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "439272007",
+                    "display": "Date of procedure (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "871562009",
+                    "display": "Detection of severe acute respiratory syndrome coronavirus 2 (observable entity)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q9",
+            "text": "Wann wurde der Test auf das Corona-Virus durchgeführt? (Datum)",
+            "type": "date"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Social_environment",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Soc_participation",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "871562009",
+                    "display": "Detection of severe acute respiratory syndrome coronavirus 2 (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "385675009",
+                    "display": "Reason for action (attribute)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "840546002",
+                    "display": "Exposure to severe acute respiratory syndrome coronavirus 2 (event",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "260373001",
+                    "display": "Detected (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "161632004",
+                    "display": "History of risk factor (situation)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q10a",
+            "text": "Warum wurden Sie auf das Corona-Virus getestet? Ich hatte in den 14 Tagen vor Testung Kontakt zu jemandem, der positiv auf das Corona-Virus getestet worden war.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Social_environment",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Soc_participation",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "871562009",
+                    "display": "Detection of severe acute respiratory syndrome coronavirus 2 (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "385675009",
+                    "display": "Reason for action (attribute)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "840546002",
+                    "display": "Exposure to severe acute respiratory syndrome coronavirus 2 (event",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "840544004",
+                    "display": "Suspected disease caused by Severe acute respiratory coronavirus 2 (situation)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "161632004",
+                    "display": "History of risk factor (situation)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q10b",
+            "text": "Warum wurden Sie auf das Corona-Virus getestet? Ich hatte in den 14 Tagen vor Testung Kontakt zu jemandem, bei dem der Verdacht auf eine Infektion mit dem Corona-Virus bestand, aber kein Testergebnis vorlag.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Health_status_functional_limitations",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Perc_health",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "871562009",
+                    "display": "Detection of severe acute respiratory syndrome coronavirus 2 (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "385675009",
+                    "display": "Reason for action (attribute)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "102485007",
+                    "display": "Personal risk factor (observable entity)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q10c",
+            "text": "Warum wurden Sie auf das Corona-Virus getestet? Ich gehöre selbst zur Risikogruppe für schwere Verläufe bei einer Corona-Virus-Infektion.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Social_environment",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Soc_participation",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "871562009",
+                    "display": "Detection of severe acute respiratory syndrome coronavirus 2 (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "385675009",
+                    "display": "Reason for action (attribute)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "1260218009",
+                    "display": "Has contact with immunocompromised person (finding)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "102486008",
+                    "display": "Familial risk factor (observable entity)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q10d",
+            "text": "Warum wurden Sie auf das Corona-Virus getestet? Ich hatte in den 14 Tagen vor Testung Kontakt zu Risikopersonen für schwere Verläufe bei einer Corona-Virus-Infektion.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Physical_environment",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Other_environment",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "871562009",
+                    "display": "Detection of severe acute respiratory syndrome coronavirus 2 (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "385675009",
+                    "display": "Reason for action (attribute)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "3,4451E+13",
+                    "display": "History of travel with high risk of exposure to communicable disease (situation)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "762643002",
+                    "display": "At time of procedure (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q10e",
+            "text": "Warum wurden Sie auf das Corona-Virus getestet? Ich war in den 14 Tagen vor Testung aus einem Risikogebiet zurückgekommen.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Physical_environment",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Other_environment",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "871562009",
+                    "display": "Detection of severe acute respiratory syndrome coronavirus 2 (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "385675009",
+                    "display": "Reason for action (attribute)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "161085007",
+                    "display": "Detail of history of foreign travel (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "762643002",
+                    "display": "At time of procedure (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q10f",
+            "text": "Warum wurden Sie auf das Corona-Virus getestet? Ich war in den 14 Tagen vor Testung aus dem Ausland zurückgekommen.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Symptoms_signs",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Circulatory_respiratory_sympt",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "871562009",
+                    "display": "Detection of severe acute respiratory syndrome coronavirus 2 (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "385675009",
+                    "display": "Reason for action (attribute)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "417662000",
+                    "display": "History of clinical finding in subject (situation)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "47429007",
+                    "display": "Associated with (attribute)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "840539006",
+                    "display": "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "762643002",
+                    "display": "At time of procedure (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q10g",
+            "text": "Warum wurden Sie auf das Corona-Virus getestet? Ich hatte zu diesem Zeitpunkt Symptome, die auf eine Infektion mit dem Corona-Virus hinwiesen.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Symptoms_signs",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "General_sympt",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "60119000",
+                    "display": "Exhaustion (finding)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "404684003",
+                    "display": "Clinical finding (finding)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q10ga",
+            "text": "Wenn ja, welche Symptome? Abgeschlagenheit",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Symptoms_signs",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Digestive_sympt",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "422587007",
+                    "display": "Nausea (finding) ",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "404684003",
+                    "display": "Clinical finding (finding)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q10gb",
+            "text": "Wenn ja, welche Symptome? Übelkeit",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Symptoms_signs",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "General_sympt",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "82991003",
+                    "display": "Generalized aches and pains (finding) ",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "404684003",
+                    "display": "Clinical finding (finding)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q10gc",
+            "text": "Wenn ja, welche Symptome? Gliederschmerzen",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Symptoms_signs",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Digestive_sympt",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "62315008",
+                    "display": "Diarrhea (finding) ",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "404684003",
+                    "display": "Clinical finding (finding)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q10gd",
+            "text": "Wenn ja, welche Symptome? Durchfall",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Symptoms_signs",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Circulatory_respiratory_sympt",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "230145002",
+                    "display": "Difficulty breathing (finding)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "404684003",
+                    "display": "Clinical finding (finding)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q10ge",
+            "text": "Wenn ja, welche Symptome? Atemprobleme",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Symptoms_signs",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "General_sympt",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "386661006",
+                    "display": "Fever (finding)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "404684003",
+                    "display": "Clinical finding (finding)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q10gf",
+            "text": "Wenn ja, welche Symptome? Fieber",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Symptoms_signs",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Circulatory_respiratory_sympt",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "49727002",
+                    "display": "Cough (finding) ",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "404684003",
+                    "display": "Clinical finding (finding)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q10gg",
+            "text": "Wenn ja, welche Symptome? Husten",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Symptoms_signs",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Circulatory_respiratory_sympt",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "275462005",
+                    "display": "Disorder of smell (disorder) ",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "404684003",
+                    "display": "Clinical finding (finding)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q10gh",
+            "text": "Wenn ja, welche Symptome? Riechstörung",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Symptoms_signs",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "General_sympt",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "25064002",
+                    "display": "Headache (finding)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "404684003",
+                    "display": "Clinical finding (finding)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q10gi",
+            "text": "Wenn ja, welche Symptome? Kopfschmerzen",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Symptoms_signs",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "General_sympt",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "43724002",
+                    "display": "Chill (finding)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "404684003",
+                    "display": "Clinical finding (finding)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q10gj",
+            "text": "Wenn ja, welche Symptome? Schüttelfrost",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Symptoms_signs",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Circulatory_respiratory_sympt",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "275280004",
+                    "display": "Sniffles (finding) ",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "404684003",
+                    "display": "Clinical finding (finding)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q10gk",
+            "text": "Wenn ja, welche Symptome? Schnupfen",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Symptoms_signs",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Digestive_sympt",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "271801002",
+                    "display": "Taste sense altered (finding)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "404684003",
+                    "display": "Clinical finding (finding)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q10gl",
+            "text": "Wenn ja, welche Symptome? Geschmacksstörung",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Symptoms_signs",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "General_sympt",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "74964007",
+                    "display": "Other (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "404684003",
+                    "display": "Clinical finding (finding)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q10gm",
+            "text": "Wenn ja, welche Symptome? Andere",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Non_pharmacological_interventions",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Biosample_analyses",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "871562009",
+                    "display": "Detection of severe acute respiratory syndrome coronavirus 2 (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "385675009",
+                    "display": "Reason for action (attribute)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "260413007",
+                    "display": "None (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q10h",
+            "text": "Warum wurden Sie auf das Corona-Virus getestet? Keiner der oben genannten Punkte traf zu.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja, ich hatte einen Kontakt für mindestens 15 Minuten mit einem Abstand von weniger als 1,5  Metern zu dieser Person, z. B. ein längeres Gespräch oder mehrere, kurze Gespräche über den  Tag, die zusammen 15 Minuten und mehr ausmachten."
+                },
+                {
+                    "valueString": "Ja, ich hatte einen Kontakt für mindestens 15 Minuten mit einem Abstand, der über 1,5 Meter zu dieser Person betrug, z. B. ein längeres Gespräch oder mehrere, kurze Gespräche mit Abstand, die zusammen 15 Minuten und mehr ausmachten"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Social_environment",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Soc_participation",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                }
+            ],
+            "linkId": "q11",
+            "text": "Hatten Sie seit 1. Februar 2020 auf eine der beiden folgenden Arten und Weisen Kontakt zu einer (anderen) Person, die ein bestätigter SARS-CoV-2-Fall ist bzw. war?",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Social_environment",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Soc_participation",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                }
+            ],
+            "linkId": "q12a",
+            "text": "Mit wie vielen Personen außerhalb Ihres Haushalts haben Sie gestern auf die zwei beschriebenen Arten und Weisen Kontakt gehabt? Mindestens 15-minütiger Kontakt mit einem Abstand von weniger als1,5 Metern zu der Person (Anzahl der Personen)",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Social_environment",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Soc_participation",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                }
+            ],
+            "linkId": "q12b",
+            "text": "Mit wie vielen Personen außerhalb Ihres Haushalts haben Sie gestern auf die zwei beschriebenen Arten und Weisen Kontakt gehabt? Mindestens 15-minütiger Kontakt mit einem Abstand, der über 1,5 Meter zu der Person betrug  (Anzahl der Personen)",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Immer"
+                },
+                {
+                    "valueString": "Oft"
+                },
+                {
+                    "valueString": "Gelegentlich"
+                },
+                {
+                    "valueString": "Selten"
+                },
+                {
+                    "valueString": "Nie"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Social_environment",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Soc_participation",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                }
+            ],
+            "linkId": "q13",
+            "text": "Wie oft achten Sie bei den Kontakten außerhalb Ihres Haushalts darauf, einen Mindestabstand von 1,5 Metern einzuhalten?\n",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Social_environment",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Soc_participation",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                }
+            ],
+            "linkId": "q14a",
+            "text": "Wenn es zurzeit keine Beschränkung der sozialen Kontakte gäbe und Sie Ihren normalen Tagesablauf hätten, mit wie vielen Personen außerhalb Ihres Haushalts hätten Sie an einem Tag wie gestern auf die zwei beschriebenen Arten und Weisen Kontakt gehabt? Mindestens 15-minütiger Kontakt mit einem Abstand von weniger als1,5 Metern zu der Person (Anzahl der Personen)",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Social_environment",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Soc_participation",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                }
+            ],
+            "linkId": "q14b",
+            "text": "Wenn es zurzeit keine Beschränkung der sozialen Kontakte gäbe und Sie Ihren normalen Tagesablauf hätten, mit wie vielen Personen außerhalb Ihres Haushalts hätten Sie an einem Tag wie gestern auf die zwei beschriebenen Arten und Weisen Kontakt gehabt? Mindestens 15-minütiger Kontakt mit einem Abstand, der über 1,5 Meter zu der Person betrug  (Anzahl der Personen)",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Immer"
+                },
+                {
+                    "valueString": "Oft"
+                },
+                {
+                    "valueString": "Gelegentlich"
+                },
+                {
+                    "valueString": "Selten"
+                },
+                {
+                    "valueString": "Nie"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Social_environment",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Soc_participation",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                }
+            ],
+            "linkId": "q15",
+            "text": "In meinem Umfeld halten sich die Leute daran das Händeschütteln, Umarmungen bei Begrüßungen und größere Ansammlungen von Menschen, die nicht zum eigenen Haushalt gehören, zu vermeiden.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Immer"
+                },
+                {
+                    "valueString": "Oft"
+                },
+                {
+                    "valueString": "Gelegentlich"
+                },
+                {
+                    "valueString": "Selten"
+                },
+                {
+                    "valueString": "Nie"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Social_environment",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Soc_participation",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                }
+            ],
+            "linkId": "q16",
+            "text": "Wie oft setzen Sie zurzeit eine (Schutz-)Maske (aus Papier, Stoff oder Vlies) auf, wenn Sie aus dem Haus gehen, z. B. zum Einkaufen, zur Arbeit, Spazieren gehen oder um Sport zu machen?",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Sociodemographic_economic_characteristics",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Family_hh_struct",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "224130005",
+                    "display": "Household composition (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "9E+17",
+                    "display": "Text (foundation metadata concept)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q17",
+            "text": "Bitte beschreiben Sie in der folgenden Tabelle die aktuellen Mitglieder Ihres Haushalts. (many items I do not go into details)",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja, Voll oder Teilzeit erwerbstätig"
+                },
+                {
+                    "valueString": "Angestellt/ verbeamtet"
+                },
+                {
+                    "valueString": "In einer beruflichen Ausbildung/Lehre"
+                },
+                {
+                    "valueString": "Selbstständig"
+                },
+                {
+                    "valueString": "In einer Umschulung, Bundesfreiwilligendienst, Freiwilliges Soziales/Ökologisches Jahr"
+                },
+                {
+                    "valueString": "Mutterschafts-, Erziehungsurlaub, Elternzeit oder sonstige Beurlaubung"
+                },
+                {
+                    "valueString": "Arbeitslos gemeldet (ALG I, ALG II)"
+                },
+                {
+                    "valueString": "Nicht erwerbstätig"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Sociodemographic_economic_characteristics",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Labour_retirement",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "224362002",
+                    "display": "Employment status (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "15240007",
+                    "display": "Current (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q18",
+            "text": "Sind Sie zurzeit erwerbstätig?",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Sociodemographic_economic_characteristics",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Labour_retirement",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                }
+            ],
+            "linkId": "q19a",
+            "text": "Haben sich aufgrund der Auswirkungen der Corona-Pandemie eine oder mehrere der folgenden Veränderungen bei Ihrer Arbeit ergeben?V erringerung der wöchentlichen Arbeitszeit",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Sociodemographic_economic_characteristics",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Labour_retirement",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                }
+            ],
+            "linkId": "q19b",
+            "text": "Haben sich aufgrund der Auswirkungen der Corona-Pandemie eine oder mehrere der folgenden Veränderungen bei Ihrer Arbeit ergeben? Erhöhung der wöchentlichen Arbeitszeit",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Sociodemographic_economic_characteristics",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Labour_retirement",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                }
+            ],
+            "linkId": "q19c",
+            "text": "Haben sich aufgrund der Auswirkungen der Corona-Pandemie eine oder mehrere der folgenden Veränderungen bei Ihrer Arbeit ergeben? Neue Arbeitsstelle",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Sociodemographic_economic_characteristics",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Labour_retirement",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                }
+            ],
+            "linkId": "q19d",
+            "text": "Haben sich aufgrund der Auswirkungen der Corona-Pandemie eine oder mehrere der folgenden Veränderungen bei Ihrer Arbeit ergeben? Arbeit von zuhause aus (Home Office), ganz oder an manchen Tagen",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Sociodemographic_economic_characteristics",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Labour_retirement",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                }
+            ],
+            "linkId": "q19e",
+            "text": "Haben sich aufgrund der Auswirkungen der Corona-Pandemie eine oder mehrere der folgenden Veränderungen bei Ihrer Arbeit ergeben? Bezug von Kurzarbeitergeld.",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Sociodemographic_economic_characteristics",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Labour_retirement",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "364703007",
+                    "display": "Employment detail (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "263703002",
+                    "display": "Changed status (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "260413007",
+                    "display": "None (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "42752001",
+                    "display": "Due to (attribute)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "443684005",
+                    "display": "Disease outbreak (event)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "47429007",
+                    "display": "Associated with (attribute)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "840539006",
+                    "display": "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q19f",
+            "text": "Haben sich aufgrund der Auswirkungen der Corona-Pandemie eine oder mehrere der folgenden Veränderungen bei Ihrer Arbeit ergeben? Nein, keine dieser Veränderungen",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Stimme voll und ganz zu"
+                },
+                {
+                    "valueString": "Stimme eher zu"
+                },
+                {
+                    "valueString": "Stimme eher nicht zu"
+                },
+                {
+                    "valueString": "Stimme gar nicht zu"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Sociodemographic_economic_characteristics",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Labour_retirement",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                }
+            ],
+            "linkId": "q20",
+            "text": "„Mein eigener Arbeitsplatz beziehungsweise meine berufliche Existenz ist gefährdet.“",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Stimme voll und ganz zu"
+                },
+                {
+                    "valueString": "Stimme eher zu"
+                },
+                {
+                    "valueString": "Stimme eher nicht zu"
+                },
+                {
+                    "valueString": "Stimme gar nicht zu"
+                },
+                {
+                    "valueString": "Ich lebe ohne Partner/in oder er/sie arbeitet nicht"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Sociodemographic_economic_characteristics",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Labour_retirement",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                }
+            ],
+            "linkId": "q21",
+            "text": "„Der Arbeitsplatz beziehungsweise die berufliche Existenz meines Partners/meiner Partnerin ist gefährdet.“\n",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja, verbessert"
+                },
+                {
+                    "valueString": "Ja, verschlechtert"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Sociodemographic_economic_characteristics",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Income",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                }
+            ],
+            "linkId": "q22",
+            "text": "Hat sich die finanzielle Situation Ihres Haushalts seit dem Beginn der Corona-Pandemie verändert?\n",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Leicht"
+                },
+                {
+                    "valueString": "Einigermaßen leicht"
+                },
+                {
+                    "valueString": "Mit einigen Schwierigkeiten"
+                },
+                {
+                    "valueString": "Mit großen Schwierigkeiten"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Sociodemographic_economic_characteristics",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Income",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                }
+            ],
+            "linkId": "q23",
+            "text": "Wenn Sie jetzt an das gesamte Monatseinkommen Ihres Haushalts denken – was würden Sie dann sagen wie Ihr Haushalt finanziell über die Runden kommt?\n",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Überhaupt nicht"
+                },
+                {
+                    "valueString": "Einige Tage"
+                },
+                {
+                    "valueString": "Mehr als die Hälfte der Tage"
+                },
+                {
+                    "valueString": "Fast jeden Tag"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Cognitive_psychological_measures",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Psychological_emotional_distress",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "720433000",
+                    "display": "Patient Health Questionnaire Nine Item score (observable entity)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q24",
+            "text": "PHQ-9 Depression instrument",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Überhaupt nicht"
+                },
+                {
+                    "valueString": "Einige Tage"
+                },
+                {
+                    "valueString": "Mehr als die Hälfte der Tage"
+                },
+                {
+                    "valueString": "Fast jeden Tag"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Cognitive_psychological_measures",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Psychological_emotional_distress",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "445455005",
+                    "display": "Generalized Anxiety Disorder 7 item score (observable entity)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q25",
+            "text": "GAD-7 Health questionnaire (Distress)",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Oft"
+                },
+                {
+                    "valueString": "Manchmal"
+                },
+                {
+                    "valueString": "Selten"
+                },
+                {
+                    "valueString": "Nie"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Cognitive_psychological_measures",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Personality",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "225598002",
+                    "display": "Interaction with others (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "423315002",
+                    "display": "Limited social contact (finding)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q26a",
+            "text": "Wenn Sie an die letzten vier Wochen denken, wie häufig…haben Sie das Gefühl, dass Ihnen die Gesellschaft anderer fehlt?",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Oft"
+                },
+                {
+                    "valueString": "Manchmal"
+                },
+                {
+                    "valueString": "Selten"
+                },
+                {
+                    "valueString": "Nie"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Leisure_act",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "105412007",
+                    "display": "Social exclusion (finding)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "162451001",
+                    "display": "Symptom frequency (observable entity)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q26b",
+            "text": "Wenn Sie an die letzten vier Wochen denken, wie häufig…haben Sie das Gefühl, außen vor zu sein?",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Oft"
+                },
+                {
+                    "valueString": "Manchmal"
+                },
+                {
+                    "valueString": "Selten"
+                },
+                {
+                    "valueString": "Nie"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Cognitive_psychological_measures",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Psychological_emotional_distress",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "422650009",
+                    "display": "Social isolation (finding)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "162451001",
+                    "display": "Symptom frequency (observable entity)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q26c",
+            "text": "Wenn Sie an die letzten vier Wochen denken, wie häufig…\nfühlen Sie sich sozial isoliert?",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "…eher stärker geworden?"
+                },
+                {
+                    "valueString": "…eher weniger geworden?"
+                },
+                {
+                    "valueString": "Trifft auf mich nicht zu"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Cognitive_psychological_measures",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Psychological_emotional_distress",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                }
+            ],
+            "linkId": "q27",
+            "text": "Verglichen mit der Zeit vor der Corona-Pandemie, ist eines oder mehrere dieser drei Gefühle\n",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "5 Sekunden"
+                },
+                {
+                    "valueString": "10-15 Sekunden"
+                },
+                {
+                    "valueString": "20-30 Sekunden"
+                },
+                {
+                    "valueString": "Mehr als 60 Sekunden"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Pers_hygiene",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                }
+            ],
+            "linkId": "q28",
+            "text": "Was denken Sie: Wie lange sollte man sich gemäß aktueller Empfehlung die Hände mindestens waschen? Etwa\n",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Pers_hygiene",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "408865005",
+                    "display": "Handwashing precautions (procedure)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "260864003",
+                    "display": "Frequency (attribute)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q29",
+            "text": "Wie oft am Tag waschen Sie sich im Durchschnitt zurzeit die Hände?",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Viel häufiger"
+                },
+                {
+                    "valueString": "Etwas häufiger"
+                },
+                {
+                    "valueString": "Genauso häufig"
+                },
+                {
+                    "valueString": "Etwas seltener"
+                },
+                {
+                    "valueString": "Viel seltener"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Pers_hygiene",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "408865005",
+                    "display": "Handwashing precautions (procedure)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "260864003",
+                    "display": "Frequency (attribute)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q30",
+            "text": "Im Vergleich zu der Zeit vor dem 1. Februar 2020 waschen Sie sich Ihre Hände zurzeit…",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Viel weniger     als zuvor"
+                },
+                {
+                    "valueString": "Etwas weniger   als zuvor"
+                },
+                {
+                    "valueString": "Gleich-    geblieben"
+                },
+                {
+                    "valueString": "Etwas mehr als zuvor"
+                },
+                {
+                    "valueString": "Viel mehr als zuvor"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Phys_act",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                }
+            ],
+            "linkId": "q31a",
+            "text": "Hat sich das Ausmaß Ihrer körperlichen Aktivität durch die Corona-Pandemie in den folgenden Bereichen verändert? Körperliche Aktivität bei der Arbeit",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Viel weniger     als zuvor"
+                },
+                {
+                    "valueString": "Etwas weniger   als zuvor"
+                },
+                {
+                    "valueString": "Gleich-    geblieben"
+                },
+                {
+                    "valueString": "Etwas mehr als zuvor"
+                },
+                {
+                    "valueString": "Viel mehr als zuvor"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Phys_act",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                }
+            ],
+            "linkId": "q31b",
+            "text": "Hat sich das Ausmaß Ihrer körperlichen Aktivität durch die Corona-Pandemie in den folgenden Bereichen verändert? Aktivität im Haushalt",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Viel weniger     als zuvor"
+                },
+                {
+                    "valueString": "Etwas weniger   als zuvor"
+                },
+                {
+                    "valueString": "Gleich-    geblieben"
+                },
+                {
+                    "valueString": "Etwas mehr als zuvor"
+                },
+                {
+                    "valueString": "Viel mehr als zuvor"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Leisure_act",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                }
+            ],
+            "linkId": "q31c",
+            "text": "Hat sich das Ausmaß Ihrer körperlichen Aktivität durch die Corona-Pandemie in den folgenden Bereichen verändert? Aktivität in der Freizeit",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Viel weniger     als zuvor"
+                },
+                {
+                    "valueString": "Etwas weniger   als zuvor"
+                },
+                {
+                    "valueString": "Gleich-    geblieben"
+                },
+                {
+                    "valueString": "Etwas mehr als zuvor"
+                },
+                {
+                    "valueString": "Viel mehr als zuvor"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Leisure_act",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                }
+            ],
+            "linkId": "q31d",
+            "text": "Hat sich das Ausmaß Ihrer körperlichen Aktivität durch die Corona-Pandemie in den folgenden Bereichen verändert? Sportliche Aktivität",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Viel weniger     als zuvor"
+                },
+                {
+                    "valueString": "Etwas weniger   als zuvor"
+                },
+                {
+                    "valueString": "Gleich-    geblieben"
+                },
+                {
+                    "valueString": "Etwas mehr als zuvor"
+                },
+                {
+                    "valueString": "Viel mehr als zuvor"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Transportation",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                }
+            ],
+            "linkId": "q31e",
+            "text": "Hat sich das Ausmaß Ihrer körperlichen Aktivität durch die Corona-Pandemie in den folgenden Bereichen verändert? Aktivitäten zur Fortbewegung",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Viel weniger     als zuvor"
+                },
+                {
+                    "valueString": "Etwas weniger   als zuvor"
+                },
+                {
+                    "valueString": "Gleich-    geblieben"
+                },
+                {
+                    "valueString": "Etwas mehr als zuvor"
+                },
+                {
+                    "valueString": "Viel mehr als zuvor"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Phys_act",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                }
+            ],
+            "linkId": "q31f",
+            "text": "Hat sich das Ausmaß Ihrer körperlichen Aktivität durch die Corona-Pandemie in den folgenden Bereichen verändert? Aktivitäten im Sitzen",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Phys_act",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                }
+            ],
+            "linkId": "q32a",
+            "text": "An wie vielen Tagen einer gewöhnlichen Woche (Montag bis Sonntag) sind Sie außerhalb Ihrer beruflichen und Ihrer Hausarbeit körperlich für insgesamt 30 Minuten oder mehr so aktiv, dass sich Ihre Atemfrequenz erhöht?  Vor der Einschränkung sozialer Kontakte Tage pro Woche",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Phys_act",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                }
+            ],
+            "linkId": "q32b",
+            "text": "An wie vielen Tagen einer gewöhnlichen Woche (Montag bis Sonntag) sind Sie außerhalb Ihrer beruflichen und Ihrer Hausarbeit körperlich für insgesamt 30 Minuten oder mehr so aktiv, dass sich Ihre Atemfrequenz erhöht?  Nach der Einschränkung sozialer Kontakte Tage pro Woche",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nie bzw. fast nie"
+                },
+                {
+                    "valueString": "Weniger als    1 Mal/Woche"
+                },
+                {
+                    "valueString": "1-3 Tage   pro Woche"
+                },
+                {
+                    "valueString": "fast täglich  Täglich bzw."
+                },
+                {
+                    "valueString": "Mehrmals  täglich"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Phys_act",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "129011005",
+                    "display": "Shopping (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "260864003",
+                    "display": "Frequency (attribute)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q33a",
+            "text": "In der Zeit vor dem 1. Februar 2020, wie häufig…\nsind Sie normalerweise einkaufen gegangen?\n",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nie bzw. fast nie"
+                },
+                {
+                    "valueString": "Weniger als    1 Mal/Woche"
+                },
+                {
+                    "valueString": "1-3 Tage   pro Woche"
+                },
+                {
+                    "valueString": "fast täglich  Täglich bzw."
+                },
+                {
+                    "valueString": "Mehrmals  täglich"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Transportation",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "300623004",
+                    "display": "Does use public transport (finding)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "424483007",
+                    "display": "Transportation details (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "260864003",
+                    "display": "Frequency (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q33b",
+            "text": "In der Zeit vor dem 1. Februar 2020, wie häufig…\nhaben Sie öffentliche Verkehrsmittel genutzt?\n",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nie bzw. fast nie"
+                },
+                {
+                    "valueString": "Weniger als    1 Mal/Woche"
+                },
+                {
+                    "valueString": "1-3 Tage   pro Woche"
+                },
+                {
+                    "valueString": "fast täglich  Täglich bzw."
+                },
+                {
+                    "valueString": "Mehrmals  täglich"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Tech_devices",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "2781000175103",
+                    "display": "Video, television or computer screen time (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "410513005",
+                    "display": "In the past (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "307431003",
+                    "display": "Frequency per unit time (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q33c",
+            "text": "In der Zeit vor dem 1. Februar 2020, wie häufig…\nhaben Sie 2 Stunden oder mehr am Stück fern gesehen?\n",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nie bzw. fast nie"
+                },
+                {
+                    "valueString": "Weniger als    1 Mal/Woche"
+                },
+                {
+                    "valueString": "1-3 Tage   pro Woche"
+                },
+                {
+                    "valueString": "fast täglich  Täglich bzw."
+                },
+                {
+                    "valueString": "Mehrmals  täglich"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Tech_devices",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "2781000175103",
+                    "display": "Video, television or computer screen time (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "410513005",
+                    "display": "In the past (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "307431003",
+                    "display": "Frequency per unit time (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q33d",
+            "text": "In der Zeit vor dem 1. Februar 2020, wie häufig…\nhaben Sie in der Freizeit 2 Stunden oder mehr am Computer oder Laptop gespielt?",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nie bzw. fast nie"
+                },
+                {
+                    "valueString": "Weniger als    1 Mal/Woche"
+                },
+                {
+                    "valueString": "1-3 Tage   pro Woche"
+                },
+                {
+                    "valueString": "fast täglich  Täglich bzw."
+                },
+                {
+                    "valueString": "Mehrmals  täglich"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Phys_act",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "129011005",
+                    "display": "Shopping (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "260864003",
+                    "display": "Frequency (attribute)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q34a",
+            "text": "Und wie sieht es aktuell aus, wie häufig…\nsind Sie normalerweise einkaufen gegangen?\n",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nie bzw. fast nie"
+                },
+                {
+                    "valueString": "Weniger als    1 Mal/Woche"
+                },
+                {
+                    "valueString": "1-3 Tage   pro Woche"
+                },
+                {
+                    "valueString": "fast täglich  Täglich bzw."
+                },
+                {
+                    "valueString": "Mehrmals  täglich"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Transportation",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "300623004",
+                    "display": "Does use public transport (finding)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "424483007",
+                    "display": "Transportation details (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "15240007",
+                    "display": "Current (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q34b",
+            "text": "Und wie sieht es aktuell aus, wie häufig…\nhaben Sie öffentliche Verkehrsmittel genutzt?\n",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nie bzw. fast nie"
+                },
+                {
+                    "valueString": "Weniger als    1 Mal/Woche"
+                },
+                {
+                    "valueString": "1-3 Tage   pro Woche"
+                },
+                {
+                    "valueString": "fast täglich  Täglich bzw."
+                },
+                {
+                    "valueString": "Mehrmals  täglich"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Tech_devices",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "2781000175103",
+                    "display": "Video, television or computer screen time (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "15240007",
+                    "display": "Current (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "307431003",
+                    "display": "Frequency per unit time (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q34c",
+            "text": "Und wie sieht es aktuell aus, wie häufig…\nhaben Sie 2 Stunden oder mehr am Stück fern gesehen?\n",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nie bzw. fast nie"
+                },
+                {
+                    "valueString": "Weniger als    1 Mal/Woche"
+                },
+                {
+                    "valueString": "1-3 Tage   pro Woche"
+                },
+                {
+                    "valueString": "fast täglich  Täglich bzw."
+                },
+                {
+                    "valueString": "Mehrmals  täglich"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Tech_devices",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "2781000175103",
+                    "display": "Video, television or computer screen time (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "15240007",
+                    "display": "Current (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "307431003",
+                    "display": "Frequency per unit time (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q34d",
+            "text": "Und wie sieht es aktuell aus, wie häufig…\nhaben Sie in der Freizeit 2 Stunden oder mehr am Computer oder Laptop gespielt?",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                },
+                {
+                    "valueString": "weiß nicht"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Life_events_plans_beliefs",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Beliefs_values",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "247845000",
+                    "display": "Specific fear (finding)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "418161006",
+                    "display": "Vehicle accident (event)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q35a",
+            "text": "Bitte geben Sie an, ob Sie selbst vor den folgenden Ereignissen Angst haben. \nUnfall im Straßenverkehr",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                },
+                {
+                    "valueString": "weiß nicht"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Life_events_plans_beliefs",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Beliefs_values",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "247846004",
+                    "display": "Fear of natural phenomena (finding)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q35b",
+            "text": "Bitte geben Sie an, ob Sie selbst vor den folgenden Ereignissen Angst haben. \nNaturkatastrophe",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                },
+                {
+                    "valueString": "weiß nicht"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Life_events_plans_beliefs",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Beliefs_values",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "102919003",
+                    "display": "Fear of infection (finding)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "840539006",
+                    "display": "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q35c",
+            "text": "Bitte geben Sie an, ob Sie selbst vor den folgenden Ereignissen Angst haben. \nCorona-Virus-Infektion",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                },
+                {
+                    "valueString": "weiß nicht"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Life_events_plans_beliefs",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Beliefs_values",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "34563004",
+                    "display": "Fear of getting cancer (finding)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q35d",
+            "text": "Bitte geben Sie an, ob Sie selbst vor den folgenden Ereignissen Angst haben. \nKrebserkrankung",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                },
+                {
+                    "valueString": "weiß nicht"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Life_events_plans_beliefs",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Beliefs_values",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "724824002",
+                    "display": "Fear of neurological disease (finding)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "230690007",
+                    "display": "Cerebrovascular accident (disorder)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q35e",
+            "text": "Bitte geben Sie an, ob Sie selbst vor den folgenden Ereignissen Angst haben. \nSchlaganfall",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                },
+                {
+                    "valueString": "weiß nicht"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Life_events_plans_beliefs",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Beliefs_values",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "102931001",
+                    "display": "Fear of heart attack (finding)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q35f",
+            "text": "Bitte geben Sie an, ob Sie selbst vor den folgenden Ereignissen Angst haben. \nHerzinfarkt",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                },
+                {
+                    "valueString": "weiß nicht"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Life_events_plans_beliefs",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Beliefs_values",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "723112000",
+                    "display": "Fear of endocrine disease (finding)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "73211009",
+                    "display": "Diabetes mellitus (disorder)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q35g",
+            "text": "Bitte geben Sie an, ob Sie selbst vor den folgenden Ereignissen Angst haben. \nZuckerkrankheit",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                },
+                {
+                    "valueString": "weiß nicht"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Life_events_plans_beliefs",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Beliefs_values",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "102915009",
+                    "display": "Nosophobia (finding)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "32895009",
+                    "display": "Hereditary disease (disorder)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q35h",
+            "text": "Bitte geben Sie an, ob Sie selbst vor den folgenden Ereignissen Angst haben. \nErbliche Erkrankung",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nicht   beeinträchtigt "
+                },
+                {
+                    "valueString": "Wenig      beeinträchtigt"
+                },
+                {
+                    "valueString": "Stark beeinträchtigt"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Cognitive_psychological_measures",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Psychological_emotional_distress",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "720433000",
+                    "display": "Patient Health Questionnaire Nine Item score (observable entity)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q36",
+            "text": "PHQ Health questionnaire",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nie"
+                },
+                {
+                    "valueString": "1 Mal pro Monat oder seltener"
+                },
+                {
+                    "valueString": "2 bis 4 Mal im Monat"
+                },
+                {
+                    "valueString": "2 bis 4 Mal pro Woche"
+                },
+                {
+                    "valueString": "5 bis 6 Mal pro Woche"
+                },
+                {
+                    "valueString": "1 Mal pro Tag oder öfter"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Alcohol",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "228308009",
+                    "display": "Pattern of drinking (observable entity)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q37",
+            "text": "Wie oft nehmen Sie seit dem 1. Februar 2020 ein alkoholisches Getränk, also z. B. ein Glas Wein, Bier, Mixgetränk, Schnaps oder Likör, zu sich?\n",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "1 bis 2 alkoholische Getränke"
+                },
+                {
+                    "valueString": "3 bis 4 alkoholische Getränke"
+                },
+                {
+                    "valueString": "5 bis 6 alkoholische Getränke"
+                },
+                {
+                    "valueString": "7 bis 9 alkoholische Getränke"
+                },
+                {
+                    "valueString": "10 oder mehr alkoholische Getränke"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Alcohol",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "443315005",
+                    "display": "Number of alcohol units consumed on typical drinking day (observable entity)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q38",
+            "text": "Wenn Sie Alkohol trinken, wie viele alkoholische Getränke trinken Sie dann seit dem 1. Februar 2020 üblicherweise an einem Tag?",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "…mehr Alkohol?"
+                },
+                {
+                    "valueString": "…weniger Alkohol?"
+                },
+                {
+                    "valueString": "…so viel Alkohol wie vorher?"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Alcohol",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "363905002",
+                    "display": "Details of alcohol drinking behavior (observable entity)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q39",
+            "text": "Verglichen mit der Zeit vor der Corona-Pandemie, trinken Sie…",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein, ich habe nie geraucht"
+                },
+                {
+                    "valueString": "Nein, aber ich habe früher geraucht"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Tobacco",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "266918002",
+                    "display": "Tobacco smoking consumption (observable entity) ",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "15240007",
+                    "display": "Current (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q40",
+            "text": "Rauchen Sie zurzeit Zigaretten, Zigarren, Zigarillos, Pfeife oder andere Tabakprodukte?",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Tobacco",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "230056004",
+                    "display": "Cigarette consumption (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "15240007",
+                    "display": "Current (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q40a",
+            "text": "Was und wie viel rauchen Sie derzeit durchschnittlich? Zigaretten",
+            "type": "text"
+        },
+        {
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Tobacco",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "230058003",
+                    "display": "Pipe tobacco consumption (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "15240007",
+                    "display": "Current (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q40b",
+            "text": "Was und wie viel rauchen Sie derzeit durchschnittlich? Pfeife",
+            "type": "text"
+        },
+        {
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Tobacco",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "230057008",
+                    "display": "Cigar consumption (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "15240007",
+                    "display": "Current (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q40c",
+            "text": "Was und wie viel rauchen Sie derzeit durchschnittlich? Zigarre / Zigarillo",
+            "type": "text"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Tobacco",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "722499006",
+                    "display": "Electronic cigarette user (finding) ",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "15240007",
+                    "display": "Current (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q41",
+            "text": "Benutzen Sie zurzeit eine elektrische Zigarette (E-Zigarette) oder ein ähnliches Produkt (wie zum Beispiel E-Shisha, E-Zigarre oder E-Pfeife)?",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Alcohol",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "735238003",
+                    "display": "Electronic cigarette liquid (physical object)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "246205007",
+                    "display": "Quantity (attribute)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "258773002",
+                    "display": "Milliliter (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q41a",
+            "text": "Wie viel Milliliter (ml) Liquid verbrauchen Sie derzeit durchschnittlich?",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "…mehr als vorher?"
+                },
+                {
+                    "valueString": "…weniger als vorher?"
+                },
+                {
+                    "valueString": "…ungefähr so viel wie vorher?"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Tobacco",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "266918002",
+                    "display": "Tobacco smoking consumption (observable entity) ",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "735238003",
+                    "display": "Electronic cigarette liquid (physical object)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "246205007",
+                    "display": "Quantity (attribute)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q42",
+            "text": "Verglichen mit der Zeit vor der Corona-Pandemie, rauchen oder verdampfen Sie…",
+            "type": "integer"
+        }
+    ]
+}
