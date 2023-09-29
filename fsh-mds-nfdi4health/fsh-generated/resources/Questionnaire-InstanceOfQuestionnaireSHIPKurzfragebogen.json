@@ -6,6 +6,1355 @@
       "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire"
     ]
   },
+  "item": [
+        {
+            "answerOption": [
+                {
+                    "valueString": "ausgezeichnet"
+                },
+                {
+                    "valueString": "sehr gut"
+                },
+                {
+                    "valueString": "gut"
+                },
+                {
+                    "valueString": "weniger gut"
+                },
+                {
+                    "valueString": "schlecht"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Health_status_functional_limitations",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Perc_health",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "278844005",
+                    "display": "General clinical state (observable entity)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q01",
+            "text": "Wie würden Sie Ihren Gesundheitszustand im Allgemeinen beschreiben?",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Diseases",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Other_dis",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "50043002",
+                    "display": "Disorder of respiratory system (disorder)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "40733004",
+                    "display": "Infectious disease (disorder)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "441308009",
+                    "display": "New diagnosis (observable entity)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q02",
+            "text": "Hatten Sie seit Beginn der Corona-Pandemie eine neu aufgetretene Atemwegs- bzw. Infektionserkrankung?",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Symptoms_signs",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "General_sympt",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "426000000",
+                    "display": "Fever greater than 100.4 Fahrenheit (finding)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "417662000",
+                    "display": "History of clinical finding in subject (situation)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q02a",
+            "text": "Folgende Symptome sind aufgetreten: Fieber über 38 °C",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Symptoms_signs",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "General_sympt",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "43724002",
+                    "display": "Chill (finding)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "417662000",
+                    "display": "History of clinical finding in subject (situation)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q02b",
+            "text": "Folgende Symptome sind aufgetreten: Schüttelfrost",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Diseases",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Musculoskeletal_sys_dis",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "82991003",
+                    "display": "Generalized aches and pains (finding)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "417662000",
+                    "display": "History of clinical finding in subject (situation)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q02c",
+            "text": "Folgende Symptome sind aufgetreten: Gliederschmerzen",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Symptoms_signs",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Circulatory_respiratory_sympt",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "284523002",
+                    "display": "Persistent cough (finding)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "417662000",
+                    "display": "History of clinical finding in subject (situation)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q02d",
+            "text": "Folgende Symptome sind aufgetreten: Anhaltender Husten",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Symptoms_signs",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Circulatory_respiratory_sympt",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "64531003",
+                    "display": "Nasal discharge (finding)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "417662000",
+                    "display": "History of clinical finding in subject (situation)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q02e",
+            "text": "Folgende Symptome sind aufgetreten: Schnupfen",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Diseases",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Digestive_sys_dis",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "62315008",
+                    "display": "Diarrhea (finding) ",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "417662000",
+                    "display": "History of clinical finding in subject (situation)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q02f",
+            "text": "Folgende Symptome sind aufgetreten: Durchfall",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Diseases",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Respiratory_sys_dis",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "267102003",
+                    "display": "Sore throat (finding) ",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "417662000",
+                    "display": "History of clinical finding in subject (situation)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q02g",
+            "text": "Folgende Symptome sind aufgetreten: Halsschmerzen",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Symptoms_signs",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Digestive_sympt",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "288939007",
+                    "display": "Difficulty swallowing (finding)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "417662000",
+                    "display": "History of clinical finding in subject (situation)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q02h",
+            "text": "Folgende Symptome sind aufgetreten: Schluckbeschwerden",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Symptoms_signs",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "General_sympt",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "25064002",
+                    "display": "Headache (finding)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "417662000",
+                    "display": "History of clinical finding in subject (situation)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q02i",
+            "text": "Folgende Symptome sind aufgetreten: Kopfschmerzen",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Symptoms_signs",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Circulatory_respiratory_sympt",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "230145002",
+                    "display": "Difficulty breathing (finding)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "267036007",
+                    "display": "Dyspnea (finding",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "417662000",
+                    "display": "History of clinical finding in subject (situation)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q02j",
+            "text": "Folgende Symptome sind aufgetreten: Atemnot oder Kurzatmigkeit",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Symptoms_signs",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Cognitive_perc_emotional_sympt",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "36955009",
+                    "display": "Loss of taste (finding)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "44169009",
+                    "display": "Loss of sense of smell (finding)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "417662000",
+                    "display": "History of clinical finding in subject (situation)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q02k",
+            "text": "Folgende Symptome sind aufgetreten: Geschmacks- oder Geruchsverlust",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Symptoms_signs",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "General_sympt",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "84229001",
+                    "display": "Fatigue (finding)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "60119000",
+                    "display": "Exhaustion (finding)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "417662000",
+                    "display": "History of clinical finding in subject (situation)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q02l",
+            "text": "Folgende Symptome sind aufgetreten: Abgeschlagenheit, Erschöpfung",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Symptoms_signs",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Circulatory_respiratory_sympt",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "29857009",
+                    "display": "Chest pain (finding)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "417662000",
+                    "display": "History of clinical finding in subject (situation)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q02m",
+            "text": "Folgende Symptome sind aufgetreten: Brustschmerzen",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Non_pharmacological_interventions",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Biosample_analyses",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "871557008",
+                    "display": "Detection of ribonucleic acid of severe acute respiratory syndrome coronavirus 2 in oropharyngeal swab (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "871556004",
+                    "display": "Detection of ribonucleic acid of severe acute respiratory syndrome coronavirus 2 in nasopharyngeal swab (observable entity) ",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q03",
+            "text": "Wurde bei Ihnen seit Beginn der Corona-Pandemie ein Corona-Abstrich durchgeführt?",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Laboratory_measures",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Microbiology",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "897034005",
+                    "display": "Severe acute respiratory syndrome coronavirus 2 antibody detected (finding)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q03a",
+            "text": "War mindestens ein Testergebnis positiv?",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Laboratory_measures",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Microbiology",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "871562009",
+                    "display": "Detection of severe acute respiratory syndrome coronavirus 2 (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "260373001",
+                    "display": "Detected (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "255216001",
+                    "display": "First (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q03b",
+            "text": "War mindestens ein Testergebnis positiv?: Ja, 1. positives Testergebnis:",
+            "type": "date"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Medication_supplements",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Medication_suppl",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                }
+            ],
+            "linkId": "q04",
+            "text": "Waren Sie seit Beginn der Corona-Pandemie aufgrund einer COVID-19-Infektion in Behandlung?",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Medication_supplements",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Medication_suppl",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                }
+            ],
+            "linkId": "q04a",
+            "text": "Waren Sie seit Beginn der Corona-Pandemie aufgrund einer COVID-19-Infektion in Behandlung? Ja, Beginn der Behandlung:",
+            "type": "date"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                },
+                {
+                    "valueString": "Weiß nicht"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Physical_environment",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Biological_exp",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "840546002",
+                    "display": "Exposure to severe acute respiratory syndrome coronavirus 2 (event)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "410605003",
+                    "display": "Confirmed present (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "161632004",
+                    "display": "History of risk factor (situation)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q05",
+            "text": "Hatten Sie seit Beginn der Corona-Pandemie Kontakt zu einem bestätigten COVID-19-Fall?",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                },
+                {
+                    "valueString": "Weiß nicht"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Physical_environment",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Biological_exp",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "3,4451E+13",
+                    "display": "History of travel with high risk of exposure to communicable disease (situation)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "246090004",
+                    "display": "Associated finding (attribute)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "840539006",
+                    "display": "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q06",
+            "text": "Waren Sie seit Beginn der Corona-Pandemie in einem Risikogebiet?",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Social_environment",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Soc_participation",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "272379006",
+                    "display": "Event (event)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "300574001",
+                    "display": "Community living activity (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "1260502004",
+                    "display": "History of event in life of subject (situation)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q07",
+            "text": "Haben Sie seit Beginn der Corona-Pandemie eine Feier/ Veranstaltung besucht?",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Social_environment",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Soc_participation",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "272379006",
+                    "display": "Event (event)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "300574001",
+                    "display": "Community living activity (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "1260502004",
+                    "display": "History of event in life of subject (situation)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "410680006",
+                    "display": "Number (attribute)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "125676002",
+                    "display": "Person (person)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q07a",
+            "text": "Haben Sie seit Beginn der Corona-Pandemie eine Feier/ Veranstaltung besucht?: 10 - 100 Teilnehmer",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "Nein"
+                },
+                {
+                    "valueString": "Ja"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Social_environment",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Soc_participation",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "272379006",
+                    "display": "Event (event)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "300574001",
+                    "display": "Community living activity (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "1260502004",
+                    "display": "History of event in life of subject (situation)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "410680006",
+                    "display": "Number (attribute)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "125676002",
+                    "display": "Person (person)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q07b",
+            "text": "Haben Sie seit Beginn der Corona-Pandemie eine Feier/ Veranstaltung besucht?: Mehr als 100 Teilnehmer",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "immer"
+                },
+                {
+                    "valueString": "meistens"
+                },
+                {
+                    "valueString": "manchmal"
+                },
+                {
+                    "valueString": "selten"
+                },
+                {
+                    "valueString": "nie"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Social_environment",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Soc_participation",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                }
+            ],
+            "linkId": "q08a",
+            "text": "Berücksichtigen Sie derzeit die Corona / AHA-Regeln der Bundesregierung?: Abstand - Mindestens 1,5 m zu Mitmenschen halten",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "immer"
+                },
+                {
+                    "valueString": "meistens"
+                },
+                {
+                    "valueString": "manchmal"
+                },
+                {
+                    "valueString": "selten"
+                },
+                {
+                    "valueString": "nie"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Pers_hygiene",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                }
+            ],
+            "linkId": "q08b",
+            "text": "Berücksichtigen Sie derzeit die Corona / AHA-Regeln der Bundesregierung?: Hygiene - Richtiges Husten und Niesen sowie die Hände regelmäßig waschen",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "immer"
+                },
+                {
+                    "valueString": "meistens"
+                },
+                {
+                    "valueString": "manchmal"
+                },
+                {
+                    "valueString": "selten"
+                },
+                {
+                    "valueString": "nie"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Lifestyle_behaviours",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Other_lifestyle",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                }
+            ],
+            "linkId": "q08c",
+            "text": "Berücksichtigen Sie derzeit die Corona / AHA-Regeln der Bundesregierung?: Alltagsmaske - Wenn es eng wird: Mund-Nasen-Schutz tragen",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "sehr niedrig"
+                },
+                {
+                    "valueString": "niedrig"
+                },
+                {
+                    "valueString": "mittel"
+                },
+                {
+                    "valueString": "hoch"
+                },
+                {
+                    "valueString": "sehr hoch"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Health_status_functional_limitations",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Other",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "1255619009",
+                    "display": " Risk level (observable entity)",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "840539006",
+                    "display": "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q09",
+            "text": "Wie hoch schätzen Sie derzeit Ihr Risiko ein, an COVID-19 zu erkranken?",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "zu wenige"
+                },
+                {
+                    "valueString": "eher zu wenige"
+                },
+                {
+                    "valueString": "genau richtig"
+                },
+                {
+                    "valueString": "eher zu viele"
+                },
+                {
+                    "valueString": "zu viele"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Life_events_plans_beliefs",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Beliefs_values",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                }
+            ],
+            "linkId": "q10",
+            "text": "Ergreift die Politik derzeit ausreichend Maßnahmen zur Bekämpfung von Covid-19?",
+            "type": "integer"
+        },
+        {
+            "answerOption": [
+                {
+                    "valueString": "sehr positiv"
+                },
+                {
+                    "valueString": "positiv"
+                },
+                {
+                    "valueString": "neutral"
+                },
+                {
+                    "valueString": "negativ"
+                },
+                {
+                    "valueString": "sehr negativ"
+                }
+            ],
+            "code": [
+                {
+                    "code": "Cognitive_psychological_measures",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Other_psycholog_measures",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                }
+            ],
+            "linkId": "q11",
+            "text": "Wie bewerten Sie derzeit die Auswirkungen der Corona-Pandemie auf ihr Leben?",
+            "type": "integer"
+        },
+        {
+            "code": [
+                {
+                    "code": "Administrative_information",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Date_time_related_info",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-area"
+                },
+                {
+                    "code": "Questionnaire",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "Participant",
+                    "system": "https://simplifier.net/nfdi4health-metadata-schema/mlstr-additional"
+                },
+                {
+                    "code": "410672004",
+                    "display": "Date property (qualifier value)",
+                    "system": "http://snomed.info/sct"
+                }
+            ],
+            "linkId": "q12",
+            "text": "Wann haben Sie den vorliegenden Fragebogen ausgefüllt?",
+            "type": "date"
+        },
+        {
+            "linkId": "nan",
+            "text": "nan",
+            "type": "nan"
+        }
+    ],
   "status": "active",
   "extension": [
     {
