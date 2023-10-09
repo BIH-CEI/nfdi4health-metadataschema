@@ -114,3 +114,5 @@ Description: "Code system defining remaining concepts without mapping to concept
 * #103 "MDM Portal"
 * #104 "NFDI4Health"
 * #105 "diverse"
+* #106 "NCT (ClinicalTrials.gov)"
+* #107 "EudraCT"
