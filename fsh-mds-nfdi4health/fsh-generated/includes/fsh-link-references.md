@@ -169,8 +169,8 @@
 [NFDI4Health_VS_MDS_Provenance_Activity_HL7_Local]: ValueSet-nfdi4health-vs-mds-provenance-activity-hl7-local.html
 [NFDI4Health_VS_MDS_Provenance_Data_Source_Local]: ValueSet-nfdi4health-vs-mds-provenance-data-source-local.html
 [NFDI4Health_VS_MDS_Time_Units_UCUM_UMLS]: ValueSet-nfdi4health-vs-mds-time-units-ucum-umls.html
-[NFDI4Health_VS_MDS_Relation_Type_Ids_Nfdi_Local_HL7V3]: ValueSet-nfdi4health-vs-mds-relation-type-ids-nfdi-local-hl7v3.html
-[NFDI4Health_VS_MDS_Relation_Type_Ids_Local_HL7V3]: ValueSet-nfdi4health-vs-mds-relation-type-ids-local-hl7v3.html
+[NFDI4Health_VS_MDS_Relation_Type_Ids_Nfdi_Local]: ValueSet-nfdi4health-vs-mds-relation-type-ids-nfdi-local.html
+[NFDI4Health_VS_MDS_Relation_Type_Ids_Local]: ValueSet-nfdi4health-vs-mds-relation-type-ids-local.html
 [NFDI4Health_VS_MDS_Resource_Type_General_NCI_UMLS_Local]: ValueSet-nfdi4health-vs-mds-resource-type-general-nci-umls-local.html
 [NFDI4Health_VS_MDS_Resource_Type_UMLS_Local]: ValueSet-nfdi4health-vs-mds-resource-type-umls-local.html
 [NFDI4Health_VS_MDS_Role_Affiliation_Identifier_Scheme_Local]: ValueSet-nfdi4health-vs-mds-role-affiliation-identifier-scheme-local.html
