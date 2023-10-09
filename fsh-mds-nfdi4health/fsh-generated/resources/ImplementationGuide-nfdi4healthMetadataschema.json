@@ -1365,17 +1365,17 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/nfdi4health-vs-mds-relation-type-ids-nfdi-local-hl7v3"
+          "reference": "ValueSet/nfdi4health-vs-mds-relation-type-ids-nfdi-local"
         },
-        "name": "NFDI4Health VS MDS Relation Type Ids NFDI [local, HL7 V3]",
+        "name": "NFDI4Health VS MDS Relation Type Ids NFDI [local]",
         "description": "Value set defining codes to specify the relationship between two resources (both registered in NFDI4Health).",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "ValueSet/nfdi4health-vs-mds-relation-type-ids-local-hl7v3"
+          "reference": "ValueSet/nfdi4health-vs-mds-relation-type-ids-local"
         },
-        "name": "NFDI4Health VS MDS Relation Type Ids [local, HL7 V3]",
+        "name": "NFDI4Health VS MDS Relation Type Ids [local]",
         "description": "Value set defining codes to specify the relationship between two resources.",
         "exampleBoolean": false
       },

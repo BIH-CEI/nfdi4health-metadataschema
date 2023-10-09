@@ -439,6 +439,46 @@
     {
       "code": "105",
       "display": "diverse"
+    },
+    {
+      "code": "106",
+      "display": "NCT (ClinicalTrials.gov)"
+    },
+    {
+      "code": "107",
+      "display": "EudraCT"
+    },
+    {
+      "code": "108",
+      "definition": "A is supplement to B"
+    },
+    {
+      "code": "109",
+      "definition": "A continues B"
+    },
+    {
+      "code": "110",
+      "definition": "A has metadata B"
+    },
+    {
+      "code": "111",
+      "definition": "A is new version of B"
+    },
+    {
+      "code": "112",
+      "definition": "A has part B"
+    },
+    {
+      "code": "113",
+      "definition": "A references B"
+    },
+    {
+      "code": "114",
+      "definition": "A documents B"
+    },
+    {
+      "code": "115",
+      "definition": "A is derived from B"
     }
   ],
   "version": "0.9",
@@ -454,5 +494,5 @@
       ]
     }
   ],
-  "count": 105
+  "count": 115
 }

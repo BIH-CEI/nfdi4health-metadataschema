@@ -171,7 +171,7 @@ Description: "NFDI4Health LogicalModel General Metadataschema"
 * Resource.ids.date 0..1 date "Date of ID assignment" "Date when the identifier of the related resource was assigned."
 * Resource.ids.date ^comment = "Additional Information: Preferred date format: DD.MM.YYYY / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health"
 * Resource.ids.relationType 1..1 Coding "Relationship between this [RESOURCE] (A) and the related resource (B)?" "Relationship between the resource being registered (A) and the related resource (B)."
-* Resource.ids.relationType from NFDI4Health_VS_MDS_Relation_Type_Ids_Local_HL7V3 (required)
+* Resource.ids.relationType from NFDI4Health_VS_MDS_Relation_Type_Ids_Local (required)
 * Resource.ids.relationType ^comment = "Short Input Help: Select one value from the list. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: DataCite [1]"
 * Resource.ids.relationType ^example.label = "General"
 * Resource.ids.relationType ^example.valueCodeableConcept.text = "A is part of B"
@@ -187,7 +187,7 @@ Description: "NFDI4Health LogicalModel General Metadataschema"
 * Resource.idsNfdi4health.identifier ^example.label = "General"
 * Resource.idsNfdi4health.identifier ^example.valueString = "39"
 * Resource.idsNfdi4health.relationType 0..1 CodeableConcept "Relationship between this [RESOURCE] (A) and the related resource (B)?" "Relationship between the resource being registered (A) and the related resource (B)."
-* Resource.idsNfdi4health.relationType from NFDI4Health_VS_MDS_Relation_Type_Ids_Nfdi_Local_HL7V3 (required)
+* Resource.idsNfdi4health.relationType from NFDI4Health_VS_MDS_Relation_Type_Ids_Nfdi_Local (required)
 * Resource.idsNfdi4health.relationType ^comment = "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: DataCite [1]"
 * Resource.nutritionalData 1..1 boolean "Nutritional data collected?" "Indication whether nutritional data was collected by the resource."
 * Resource.nutritionalData ^comment = "Cardinality: 1..1, if Resource.classification.resourceType == ('Study' OR 'Substudy/Data collection') AND Resource.provenance.dataSource != 'Manually collected'; otherwise 0..0 / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health"
