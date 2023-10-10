@@ -16,7 +16,7 @@ Usage: #example
 - Emotions/worries (e.g., mood circumplex);
 - Media use (e.g., mobile devices, media, etc.);
 - Substance use (e.g., tobacco, alcohol, other drugs)."
-* description.extension[language].valueCode = #en "English"
+* description.extension[language].valueCode = $UMLS#C0376245 "English Language"
 ///Details
 * extension[resourceType].valueCoding = $UMLS#C0034394 "Questionnaires (Intellectual Product)"
 * extension[label].extension[value].valueString = "CRISIS Youth Baseline Current Form"

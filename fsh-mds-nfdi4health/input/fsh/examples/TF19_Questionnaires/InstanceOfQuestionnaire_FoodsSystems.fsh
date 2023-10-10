@@ -9,7 +9,7 @@ Usage: #example
 * status = #active // mandatory in FHIR ; made up as no information in MDS
 ///English description
 * description = "The online questionnaire collected data on food environment, food choices, food access and supporting mechanisms. The questionnaire included closed and opened questions related to periods prior to and post COVID-19 lockdown in March/April 2020."
-* description.extension[language].valueCode = #en "English"
+* description.extension[language].valueCode = $UMLS#C0376245 "English Language"
 ///Details
 * extension[resourceType].valueCoding = $UMLS#C0034394 "Questionnaires (Intellectual Product)"
 * extension[label].extension[value].valueString = "FoodCOVID-19 Questionnaire"

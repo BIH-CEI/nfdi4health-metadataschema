@@ -10,8 +10,8 @@ Description: "Value set defining codes for languages from UMLS."
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 
-* urn:oid:2.16.840.1.113883.6.86#C0376245 "English Language"
-* urn:oid:2.16.840.1.113883.6.86#C0017477 "German language"
-* urn:oid:2.16.840.1.113883.6.86#C0037750 "Spanish Language"
-* urn:oid:2.16.840.1.113883.6.86#C0376246 "French language"
-* urn:oid:2.16.840.1.113883.6.86#C0205394 "Other (Qualitative Concept)"
+* $UMLS#C0376245 "English Language"
+* $UMLS#C0017477 "German language"
+* $UMLS#C0037750 "Spanish Language"
+* $UMLS#C0376246 "French language"
+* $UMLS#C0205394 "Other (Qualitative Concept)"

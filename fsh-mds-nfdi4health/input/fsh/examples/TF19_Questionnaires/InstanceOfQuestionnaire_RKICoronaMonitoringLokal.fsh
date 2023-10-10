@@ -9,7 +9,7 @@ Usage: #example
 * status = #active // mandatory in FHIR ; made up as no information in MDS
 ///English description
 * description = "A self-administered questionnaire on paper (SAQ-P) was provided at the study centre or during home visits. Participants filled out the questionnaire before the collection of blood specimens and oropharyngeal swab, but only if a consent form has been signed."
-* description.extension[language].valueCode = #en "English"
+* description.extension[language].valueCode = $UMLS#C0376245 "English Language"
 ///Details
 * extension[resourceType].valueCoding = $UMLS#C0034394 "Questionnaires (Intellectual Product)"
 * extension[label].extension[value].valueString = "CoMoLo Questionnaire"

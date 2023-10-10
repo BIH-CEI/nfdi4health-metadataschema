@@ -9,7 +9,7 @@ Usage: #example
 * status = #active // mandatory in FHIR ; made up as no information in MDS
 ///English description
 * description = "The questionnaire includes questions on the impact of COVID-19 symptoms and other health problems including mental health, risk perception and preventive practices, recourse to or withholding of care, effects on daily life, violence, family, social and work relations, child care, confidence in public and scientific recommendations."
-* description.extension[language].valueCode = #en "English"
+* description.extension[language].valueCode = $UMLS#C0376245 "English Language"
 ///Details
 * extension[resourceType].valueCoding = $Remaining#009 "Data dictionary"
 * extension[label].extension[value].valueString = "SAPRIS Questionnaire"

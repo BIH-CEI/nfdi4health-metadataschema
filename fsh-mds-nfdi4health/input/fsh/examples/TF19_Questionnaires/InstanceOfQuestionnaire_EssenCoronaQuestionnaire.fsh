@@ -9,12 +9,12 @@ Usage: #example
 * status = #active // mandatory in FHIR ; made up as no information in MDS
 ///English description
 * description = "The Essen Corona questionnaire is a follow-up survey of corona-tested individuals. It inquires about the reasons that led individuals to test for Covid-19, existing complaints and symptoms, previous illnesses and the course of symptom development."
-* description.extension[language].valueCode = #en "English"
+* description.extension[language].valueCode = $UMLS#C0376245 "English Language"
 ///Details
 * extension[resourceType].valueCoding = $UMLS#C0034394 "Questionnaires (Intellectual Product)"
 * extension[label].extension[value].valueString = "Essen Corona Questionnaire"
 * extension[label].extension[type].valueCoding = $HL7titleType#acronym "Acronym"
-* extension[label].extension[language].valueCode = #en "English"
+* extension[label].extension[language].valueCode = $UMLS#C0376245 "English Language"
 * extension[keywords][+].extension[label].valueString = "COVID-19"
 * extension[keywords][=].extension[code].valueUri = "https://id.nlm.nih.gov/mesh/D000086382.html"
 * extension[keywords][+].extension[label].valueString = "Questionnaire"

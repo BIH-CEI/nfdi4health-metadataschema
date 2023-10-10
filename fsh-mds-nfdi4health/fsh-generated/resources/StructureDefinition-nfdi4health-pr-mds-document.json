@@ -912,7 +912,7 @@
       {
         "id": "DocumentReference.description.extension:language.value[x]",
         "path": "DocumentReference.description.extension.value[x]",
-        "fixedCode": "en"
+        "fixedCode": "C0376245"
       },
       {
         "id": "DocumentReference.description.extension:translation",
@@ -1076,7 +1076,7 @@
         "path": "DocumentReference.content.attachment.title.extension.value[x]",
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/ValueSet/languages",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-language-umls",
           "description": "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)"
         }
       },

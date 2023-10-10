@@ -9,7 +9,7 @@ Usage: #example
 * status = #active // mandatory in FHIR ; made up as no information in MDS
 ///English description
 * description = "After having provided written and informed consent, participants of the substudy completed a questionnaire querying information including demographics, symptoms, underlying diseases, medication and participation in carnival festivities (main carnival session 'Kappensitzung' and others)."
-* description.extension[language].valueCode = #en "English"
+* description.extension[language].valueCode = $UMLS#C0376245 "English Language"
 ///Details
 * extension[resourceType].valueCoding = $Remaining#009 "Data dictionary"
 * extension[label].extension[value].valueString = "CoCCS Questionnaire"

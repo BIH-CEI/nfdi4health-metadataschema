@@ -9,7 +9,7 @@ Usage: #example
 * status = #active // mandatory in FHIR ; made up as no information in MDS
 ///English description
 * description = "The Essen Corona questionnaire is a follow-up survey of corona-tested individuals. It inquires about the reasons that led individuals to test for Covid-19, existing complaints and symptoms, previous illnesses and the course of symptom development."
-* description.extension[language].valueCode = #en "English"
+* description.extension[language].valueCode = $UMLS#C0376245 "English Language"
 * description.extension[translation].extension[content].valueString = "Dieses Dokument enthält die in der CILS4COVID-Umfrage verwendeten Feldfragebögen. Da die CILS4COVID-Umfrage ein Umfrageexperiment beinhaltete, gibt es zwei Versionen des Fragebogens, die sich nur in der Fragereihenfolge unterscheiden. Beide Versionen des postalischen Fragebogens sind in diesem Dokument separat präsentiert. Der Web-Fragebogen enthält beide Versionen und dokumentiert die Filter, die verwendet wurden, um die Teilnehmer einer der beiden Experimentalgruppen zuzuordnen."
 * description.extension[translation].extension[lang].valueCode = #de "German"
 ///Details

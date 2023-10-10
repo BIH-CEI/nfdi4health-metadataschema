@@ -75,6 +75,10 @@
             "code": "Coding"
           }
         ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-cd-common-chronic-disease-name-snomedct"
+        },
         "mapping": [
           {
             "identity": "NFDI4Health-EOCD-V3",

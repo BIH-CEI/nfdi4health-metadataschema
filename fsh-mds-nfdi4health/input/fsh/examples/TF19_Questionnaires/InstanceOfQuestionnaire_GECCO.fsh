@@ -11,7 +11,7 @@ Usage: #example
 * description = "In order to draw optimal benefit from research activities around COVID-19, it is important that data are collected in uniform formats and standards. Only then can data be clearly interpreted and shared across studies and systems. As part of the National University Medicine Research Network in the Fight Against COVID-19 (NFN), the Core Unit eHealth and Interoperability is developing the German Corona Consensus (GECCO) dataset in collaboration with the Charité-BIH Clinical Study Center (CSC).
 GECCO is a compact dataset for collecting COVID-19-relevant research data - from demographic data such as age, gender, height and weight to measurements such as blood pressure or laboratory values, risk factors, medication use, symptoms and therapy procedures.
 By using international IT standards, GECCO enables interoperable processing of these data. To this end, GECCO relies on the HL7 FHIR standard for data structures and primarily on SNOMED CT and LOINC for terminologies. There is also close networking with other initiatives and organizations, as the dataset builds on the FHIR-based preliminary work of the Medical Informatics Initiative (MII), HL7 Germany and the National Association of Statutory Health Insurance Physicians (KBV)."
-* description.extension[language].valueCode = #en "English"
+* description.extension[language].valueCode = $UMLS#C0376245 "English Language"
 ///Details
 * extension[resourceType].valueCoding = $UMLS#C0034394 "Questionnaires (Intellectual Product)"
 * extension[label].extension[value].valueString = "GECCO"

@@ -9,7 +9,7 @@ Usage: #example
 * status = #active // mandatory in FHIR ; made up as no information in MDS
 ///English description
 * description = "This questionnaire asks about self-isolation, social distancing, and the activities of participants during the lockdown. The following cohorts took part in developing the questionnaire: ALSPAC, South Asia Biobank, COSMOS/SCAMP/Airwave, National blood donor cohort, SAPRIN, EXCEED, TwinsUK, Born in Bradford, Generation Scotland, ELSA, CLS cohorts."
-* description.extension[language].valueCode = #en "English"
+* description.extension[language].valueCode = $UMLS#C0376245 "English Language"
 ///Details
 * extension[resourceType].valueCoding = $UMLS#C0034394 "Questionnaires (Intellectual Product)"
 * extension[label].extension[value].valueString = "Wellcome Covid-19 Questionnaire" //made up as no information in CSH

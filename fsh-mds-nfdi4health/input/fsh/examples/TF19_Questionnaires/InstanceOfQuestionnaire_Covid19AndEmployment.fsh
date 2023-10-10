@@ -9,7 +9,7 @@ Usage: #example
 * status = #active // mandatory in FHIR ; made up as no information in MDS
 ///English description
 * description = "The questionnaire consists of several modules including demographic data, for example, gender, age, marital status, having a child under 18, educational level, and occupational status. To assess mental health burden, validated measures were used in the survey, namely Patient Health Questionnaire-2 (PHQ-2), Generalized Anxiety Disorder-2 (GAD-2), and Distress Thermometer (DT). The visual analogue scale from the European Quality of Life 5 Dimensions 3 Level (EQ-5D-3L) questionnaire was applied to assess the individual health status."
-* description.extension[language].valueCode = #en "English"
+* description.extension[language].valueCode = $UMLS#C0376245 "English Language"
 ///Details
 * extension[resourceType].valueCoding = $UMLS#C0034394 "Questionnaires (Intellectual Product)"
 * extension[label].extension[value].valueString = "CoPE with Corona Questionnaire"

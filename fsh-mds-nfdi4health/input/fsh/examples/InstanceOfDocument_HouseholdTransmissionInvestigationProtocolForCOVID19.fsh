@@ -13,7 +13,7 @@ Usage: #example
 1) To better understand the extent of transmission within a household by estimating the secondary infection rate for household contacts at an individual level, and factors associated with any variation in the secondary infection risk.
 2) To characterize secondary cases including the range of clinical presentation, risk factors for infection, and the extent and fraction of asymptomatic infections.
 3) To characterize serologic response following confirmed 2019-nCoV infection (highly encouraged, but optional depending on laboratory capacity and resources)."
-* description.extension[language].valueCode = #en "English"
+* description.extension[language].valueCode = #C0376245 "English Language"
 * description.extension[translation].extension[content].valueString = "In diesem Dokument werden die Methoden zur Anleitung der Datenerfassung und der Untersuchung des öffentlichen Gesundheitswesens für die umfassende Beurteilung von Haushaltskontakten von bestätigten COVID-19-Fällen dargelegt. Mit dieser fallbezogenen, prospektiven Studie sollen die Übertragungswege im Haushalt bei im Labor bestätigten 2019-nCoV-Infektionen untersucht werden. Damit sollen schnell und frühzeitig Informationen über die klinischen, epidemiologischen und virologischen Merkmale von 2019-nCoV geliefert werden. 
 Dabei werden drei Hauptziele verfolgt:
 1) Um Kenntnisse hinsichtlich des Ausmaßes von Übertragungen innerhalb eines Haushalts zu gewinnen, soll auf Indivdualebene die Sekundärinfektionsrate geschätzt werden und Faktoren, die die ein solches Sekundärinfektionsrisiko beeinflussen, untersucht werden. 

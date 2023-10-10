@@ -1,0 +1,71 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "NFDI4Health_VS_MDS_CD_Common_Chronic_Disease_Name_SNOMEDCT",
+  "id": "nfdi4health-vs-mds-cd-common-chronic-disease-name-snomedct",
+  "title": "NFDI4Health Data Collected [UMLS]",
+  "description": "Value set used to respond to question dataCollected to Chronic Disease Module",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-cd-common-chronic-disease-name-snomedct",
+  "version": "0.9",
+  "experimental": true,
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "118601006",
+            "display": "Non-Hodgkin's lymphoma (disorder)"
+          },
+          {
+            "code": "93934004",
+            "display": "Primary malignant neoplasm of ovary (disorder)"
+          },
+          {
+            "code": "371973000",
+            "display": "Malignant neoplasm of uterus (disorder)"
+          },
+          {
+            "code": "254837009",
+            "display": "Malignant neoplasm of breast (disorder)"
+          },
+          {
+            "code": "93655004",
+            "display": "Malignant melanoma of skin (disorder)"
+          },
+          {
+            "code": "93986008",
+            "display": "Primary malignant neoplasm of respiratory tract (disorder)"
+          },
+          {
+            "code": "372003004",
+            "display": "Primary malignant neoplasm of pancreas (disorder)"
+          },
+          {
+            "code": "93854002",
+            "display": "Primary malignant neoplasm of large intestine (disorder)"
+          },
+          {
+            "code": "372014001",
+            "display": "Primary malignant neoplasm of stomach (disorder)"
+          },
+          {
+            "code": "271323007",
+            "display": "Malignant neoplasm of lip, oral cavity and/or pharynx (disorder)"
+          }
+        ]
+      }
+    ]
+  }
+}

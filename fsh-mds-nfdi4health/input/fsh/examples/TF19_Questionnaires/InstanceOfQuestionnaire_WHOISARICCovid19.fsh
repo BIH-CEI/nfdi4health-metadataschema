@@ -9,7 +9,7 @@ Usage: #example
 * status = #active // mandatory in FHIR ; made up as no information in MDS
 ///English description
 * description = "The ISARIC-WHO Case Report Forms (CRFs) should be used to collect standardised clinical data on individuals presenting with suspected or confirmed COVID-19 to improve patient care and inform the public health response. There are 2 forms available to choose from: the CORE form and the RAPID form. The CORE CRF is a more comprehensive form with more variables to understand the spectrum of disease and management, especially on pathogen testing, critical care interventions, and medications. It can be used where resources allow the collection of more data."
-* description.extension[language].valueCode = #en "English"
+* description.extension[language].valueCode = $UMLS#C0376245 "English Language"
 * description.extension[translation].extension[content].valueString = "Die ISARIC-WHO Case Report Forms (CRFs) sollen dazu verwendet werden, standartisierte klinische Daten von Individuen mit verdacht auf oder bestätigter COVID-19 Infektion zu sammeln, um die Versorgung des Patienten und die Informationsübermittlung zu verbessern. Es gibt 2 CRFs zwischen denen gewählt werden kann: Das CORE Formular und das RAPID Formular. Das CORE CRF ist ein umfassenderes Formular mit mehr Variablen, um das Spektrum der Krankheit und des Managements zu verstehen, insbesondere in Bezug auf Erregertests, Interventionen in der Intensivpflege und Medikamente. Es kann verwendet werden, wenn die Ressourcen die Erfassung von mehr Daten erlauben."
 * description.extension[translation].extension[lang].valueCode = #de "German"
 ///Details

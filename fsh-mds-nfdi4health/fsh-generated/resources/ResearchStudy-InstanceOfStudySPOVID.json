@@ -659,7 +659,7 @@
     "extension": [
       {
         "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language",
-        "valueCode": "en"
+        "valueCode": "C0376245"
       }
     ]
   },
@@ -668,7 +668,7 @@
     "extension": [
       {
         "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language",
-        "valueCode": "en"
+        "valueCode": "C0376245"
       },
       {
         "extension": [

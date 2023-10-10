@@ -50,7 +50,7 @@ Quellenangaben:
 - Rammstedt, B., Kemper, C., Klein, M. C., Beierlein, C., & Kovaleva, A. (2013). Eine kurze skala zur messung der fünf dimensionen der persönlichkeit: big-five-inventory-10 (BFI-10). Methoden, Daten, Analysen (mda), 7(2), 233-249.
 - Smith, B. W., Dalen, J., Wiggins, K., Tooley, E., Christopher, P., & Bernard, J. (2008). The brief resilience scale: assessing the ability to bounce back. International journal of behavioral medicine, 15(3), 194-200.
 - Veer, I. M., Riepenhausen, A., Zerban, M., Wackerhagen, C., Puhlmann, L. M., Engen, H., ... & Kalisch, R. (2021). Psycho-social factors associated with mental resilience in the Corona lockdown. Translational psychiatry, 11(1), 1-11."
-* description.extension[language].valueCode = #en "English"
+* description.extension[language].valueCode = $UMLS#C0376245 "English Language"
 ///Details
 * extension[resourceType].valueCoding = $Remaining#009 "Data dictionary"
 * extension[label].extension[value].valueString = "DynaCORE-C Questionnaire (Data Dictionary)"

@@ -1039,7 +1039,7 @@
         "path": "Questionnaire.title.extension.value[x]",
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/ValueSet/languages",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-language-umls",
           "description": "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)"
         }
       },
@@ -1104,7 +1104,7 @@
       {
         "id": "Questionnaire.description.extension:language.value[x]",
         "path": "Questionnaire.description.extension.value[x]",
-        "fixedCode": "en"
+        "fixedCode": "C0376245"
       },
       {
         "id": "Questionnaire.description.extension:translation",

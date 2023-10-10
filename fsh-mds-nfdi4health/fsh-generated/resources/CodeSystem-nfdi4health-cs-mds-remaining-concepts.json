@@ -479,6 +479,14 @@
     {
       "code": "115",
       "display": "A is derived from B"
+    },
+    {
+      "code": "116",
+      "display": "Self-report (questionnaires or interviews), cases verified"
+    },
+    {
+      "code": "117",
+      "display": "Self-report (questionnaires or interviews), cases not verified"
     }
   ],
   "version": "0.9",
@@ -494,5 +502,5 @@
       ]
     }
   ],
-  "count": 115
+  "count": 117
 }

@@ -17,7 +17,7 @@ Usage: #example
 - HIV/STI female genital mutilation/cutting and early/forced marriage (optional domain); 
 - mental health (optional domain); and 
 - nutrition (optional domain)."
-* description.extension[language].valueCode = #en "English"
+* description.extension[language].valueCode = $UMLS#C0376245 "English Language"
 ///Details
 * extension[resourceType].valueCoding = $UMLS#C0034394 "Questionnaires (Intellectual Product)"
 * extension[label].extension[value].valueString = "I-SHARE Questionnaire"

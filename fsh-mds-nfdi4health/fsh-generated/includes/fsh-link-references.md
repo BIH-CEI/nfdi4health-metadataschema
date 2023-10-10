@@ -103,6 +103,9 @@
 [NFDI4Health_CS_MDS_Provenance_Data_Source]: CodeSystem-nfdi4health-cs-mds-provenance-data-source.html
 [NFDI4Health_CS_MDS_Remaining_Concepts]: CodeSystem-nfdi4health-cs-mds-remaining-concepts.html
 [NFDI4Health_CS_MDS_Study_Status]: CodeSystem-nfdi4health-cs-mds-study-status.html
+[NFDI4Health_VS_MDS_CD_Common_Chronic_Disease_Name_SNOMEDCT]: ValueSet-nfdi4health-vs-mds-cd-common-chronic-disease-name-snomedct.html
+[NFDI4Health_VS_MDS_CD_DataCollected_UMLS]: ValueSet-nfdi4health-vs-mds-cd-datacollected-umls.html
+[NFDI4Health_VS_MDS_CD_Information_Sources_UMLS_Local]: ValueSet-nfdi4health-vs-mds-cd-information-sources-umls-local.html
 [NFDI4Health_EX_MDS_Associated_Party]: StructureDefinition-nfdi4health-ex-mds-associated-party.html
 [NFDI4Health_EX_MDS_Chronic_Diseases]: StructureDefinition-nfdi4health-ex-mds-chronic-diseases.html
 [NFDI4Health_EX_MDS_Copyright_Label]: StructureDefinition-nfdi4health-ex-mds-copyright-label.html
@@ -217,3 +220,4 @@
 [NFDI4Health_VS_MDS_Yes_No_Not_Applicable_SNOMEDCT]: ValueSet-nfdi4health-vs-mds-yes-no-not-applicable-snomedct.html
 [NFDI4Health_VS_MDS_Yes_No_Undecided_SNOMEDCT_NCI]: ValueSet-nfdi4health-vs-mds-yes-no-undecided-snomedct-nci.html
 [NFDI4Health_EX_MDS_Related]: StructureDefinition-nfdi4health-ex-mds-related.html
+[NFDI4Health_VS_MDS_Language_UMLS]: ValueSet-nfdi4health-vs-mds-language-umls.html

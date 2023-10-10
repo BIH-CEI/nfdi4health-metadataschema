@@ -124,3 +124,5 @@ Description: "Code system defining remaining concepts without mapping to concept
 * #113 "A references B"
 * #114 "A documents B"
 * #115 "A is derived from B"
+* #116 "Self-report (questionnaires or interviews), cases verified"
+* #117 "Self-report (questionnaires or interviews), cases not verified"

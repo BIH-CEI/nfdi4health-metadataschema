@@ -9,7 +9,7 @@ Usage: #example
 * status = #active // mandatory in FHIR ; made up as no information in MDS
 ///English description
 * description = "This 2 page brief questionnaire contains items about diagnosed COVID-19 infections, contacts to persons with infections, social activities, physical symptoms since the last SHIP examination, adherence to pandemic countermeasures, and effects of COVID on the life of the participant."
-* description.extension[language].valueCode = #en "English"
+* description.extension[language].valueCode = $UMLS#C0376245 "English Language"
 ///Details
 * extension[resourceType].valueCoding = $UMLS#C0034394 "Questionnaires (Intellectual Product)"
 * extension[label].extension[value].valueString = "SHIP Short Form" //made up as no information in CSH

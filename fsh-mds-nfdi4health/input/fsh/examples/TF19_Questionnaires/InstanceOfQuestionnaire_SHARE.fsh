@@ -15,7 +15,7 @@ This new questionnaire covers the most important life domains for the target pop
 - Infections and healthcare (COVID-19 related symptoms, SARS-CoV-2 testing and hospitalization, forgone medical treatment, satisfaction with treatments); 
 - Changes in work and economic situation (unemployment, business closures, working from home, changes in working hours and income, financial support);
 - Social networks (changes in personal contacts with family and friends, help given and received, personal care given and received)."
-* description.extension[language].valueCode = #en "English"
+* description.extension[language].valueCode = $UMLS#C0376245 "English Language"
 ///Details
 * extension[resourceType].valueCoding = $UMLS#C0034394 "Questionnaires (Intellectual Product)"
 * extension[label].extension[value].valueString = "SHARE COVID-19 Questionnaire"

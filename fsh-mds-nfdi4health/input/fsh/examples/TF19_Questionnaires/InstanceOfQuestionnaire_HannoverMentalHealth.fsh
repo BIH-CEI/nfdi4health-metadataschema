@@ -9,7 +9,7 @@ Usage: #example
 * status = #active // mandatory in FHIR ; made up as no information in MDS
 ///English description
 * description = "The questionnaire includes a web-based systematic recording of psychological well-being, the experience of stress, coping mechanisms and the experience of different forms of violence using self-assessment scales."
-* description.extension[language].valueCode = #en "English"
+* description.extension[language].valueCode = $UMLS#C0376245 "English Language"
 ///Details
 * extension[resourceType].valueCoding = $UMLS#C0034394 "Questionnaires (Intellectual Product)"
 * extension[label].extension[value].valueString = "COVID-19 Mental Health" //made up as no information in CSH
