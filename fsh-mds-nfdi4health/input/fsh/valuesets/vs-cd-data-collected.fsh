@@ -11,4 +11,4 @@ Description: "Value set used to respond to question dataCollected to Chronic Dis
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 
 * $UMLS#C0033105 "Statistical Prevalence"
-* $SCT#C0021149 "Incidence"
+* $UMLS#C0021149 "Incidence"
