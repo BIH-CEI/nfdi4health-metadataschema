@@ -189,7 +189,7 @@
 [NFDI4Health_VS_MDS_Study_Data_Sources_General_UMLS_Local]: ValueSet-nfdi4health-vs-mds-study-data-sources-general-umls-local.html
 [NFDI4Health_VS_MDS_Study_Data_Sources_Imaging_NCI]: ValueSet-nfdi4health-vs-mds-study-data-sources-imaging-nci.html
 [NFDI4Health_VS_MDS_Study_Data_Sources_Omics_NCI_UMLS]: ValueSet-nfdi4health-vs-mds-study-data-sources-omics-nci-umls.html
-[NFDI4Health_VS_MDS_Study_Eligibility_Criteria_Genders_Local]: ValueSet-nfdi4health-vs-mds-study-eligibility-criteria-genders-local.html
+[NFDI4Health_VS_MDS_Study_Eligibility_Gender_SNOMEDCT_Local]: ValueSet-nfdi4health-vs-mds-study-eligibility-gender-snomedct-local.html
 [NFDI4Health_VS_MDS_Study_Ethics_Committee_Approval_UMLS_Local]: ValueSet-nfdi4health-vs-mds-study-ethics-committee-approval-umls-local.html
 [NFDI4Health_VS_MDS_Study_Group_Characteristics_NCI]: ValueSet-nfdi4health-vs-mds-study-group-characteristics-nci.html
 [NFDI4Health_VS_MDS_Study_Groups_Of_Diseases_Generally_ICD10_UMLS]: ValueSet-nfdi4health-vs-mds-study-groups-of-diseases-generally-icd10-umls.html

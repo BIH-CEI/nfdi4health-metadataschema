@@ -438,7 +438,7 @@
     },
     {
       "code": "105",
-      "display": "diverse"
+      "display": "Diverse"
     },
     {
       "code": "106",
@@ -450,35 +450,35 @@
     },
     {
       "code": "108",
-      "definition": "A is supplement to B"
+      "display": "A is supplement to B"
     },
     {
       "code": "109",
-      "definition": "A continues B"
+      "display": "A continues B"
     },
     {
       "code": "110",
-      "definition": "A has metadata B"
+      "display": "A has metadata B"
     },
     {
       "code": "111",
-      "definition": "A is new version of B"
+      "display": "A is new version of B"
     },
     {
       "code": "112",
-      "definition": "A has part B"
+      "display": "A has part B"
     },
     {
       "code": "113",
-      "definition": "A references B"
+      "display": "A references B"
     },
     {
       "code": "114",
-      "definition": "A documents B"
+      "display": "A documents B"
     },
     {
       "code": "115",
-      "definition": "A is derived from B"
+      "display": "A is derived from B"
     }
   ],
   "version": "0.9",

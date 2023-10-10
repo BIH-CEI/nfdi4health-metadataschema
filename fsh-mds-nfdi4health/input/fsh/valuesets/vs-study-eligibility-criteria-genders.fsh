@@ -1,8 +1,8 @@
-ValueSet: NFDI4Health_VS_MDS_Study_Eligibility_Criteria_Genders_SNOMEDCT_Local
-Id: nfdi4health-vs-mds-study-eligibility-criteria-genders-snomedct-local
+ValueSet: NFDI4Health_VS_MDS_Study_Eligibility_Gender_SNOMEDCT_Local
+Id: nfdi4health-vs-mds-study-eligibility-gender-snomedct-local
 Title: "NFDI4Health VS MDS Study Eligibility Criteria Genders [local, SNOMED CT]"
 Description: "Value set used to indicate the gender of potential participants eligible to participate in the study."
-* ^url = "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-eligibility-criteria-genders-snomedct-local"
+* ^url = "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-eligibility-gender-snomedct-local"
 * ^status = #draft
 * ^version = "0.9"
 * ^experimental = true

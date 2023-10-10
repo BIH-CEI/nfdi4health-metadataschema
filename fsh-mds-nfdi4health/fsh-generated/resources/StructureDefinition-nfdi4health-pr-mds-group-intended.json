@@ -244,7 +244,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-eligibility-criteria-genders-local",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-eligibility-gender-snomedct-local",
           "description": "The gender of potential participants eligible to participate in the study."
         }
       }

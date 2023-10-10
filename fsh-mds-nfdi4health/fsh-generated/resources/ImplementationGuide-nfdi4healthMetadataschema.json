@@ -1525,9 +1525,9 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/nfdi4health-vs-mds-study-eligibility-criteria-genders-local"
+          "reference": "ValueSet/nfdi4health-vs-mds-study-eligibility-gender-snomedct-local"
         },
-        "name": "NFDI4Health VS MDS Study Eligibility Criteria Genders [local]",
+        "name": "NFDI4Health VS MDS Study Eligibility Criteria Genders [local, SNOMED CT]",
         "description": "Value set used to indicate the gender of potential participants eligible to participate in the study.",
         "exampleBoolean": false
       },
