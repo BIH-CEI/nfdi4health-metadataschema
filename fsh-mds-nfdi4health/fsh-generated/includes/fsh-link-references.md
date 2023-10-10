@@ -100,6 +100,7 @@
 [InstanceOfStudySHIP]: ResearchStudy-InstanceOfStudySHIP.html
 [InstanceOfStudySPOVID]: ResearchStudy-InstanceOfStudySPOVID.html
 [InstanceOfOrganizationContactWellcome]: Organization-InstanceOfOrganizationContactWellcome.html
+[InstanceOfChronicDiseaseModule]: Questionnaire-InstanceOfChronicDiseaseModule.html
 [NFDI4Health_CS_MDS_Provenance_Data_Source]: CodeSystem-nfdi4health-cs-mds-provenance-data-source.html
 [NFDI4Health_CS_MDS_Remaining_Concepts]: CodeSystem-nfdi4health-cs-mds-remaining-concepts.html
 [NFDI4Health_CS_MDS_Study_Status]: CodeSystem-nfdi4health-cs-mds-study-status.html

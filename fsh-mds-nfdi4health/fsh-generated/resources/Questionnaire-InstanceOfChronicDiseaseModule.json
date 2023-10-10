@@ -1,0 +1,32 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "InstanceOfChronicDiseaseModule",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-example-chronic-diseases-epidemiology",
+  "status": "draft",
+  "item": [
+    {
+      "type": "choice",
+      "linkId": "8636042615631",
+      "prefix": "commonChronicDiseaseName",
+      "text": "On which of the following common chronic diseases were data collected?",
+      "required": true,
+      "answerValueSet": "NFDI4Health_VS_MDS_CD_Common_Chronic_Disease_Name_SNOMEDCT"
+    },
+    {
+      "type": "choice",
+      "linkId": "3382533000737",
+      "prefix": "dataCollected",
+      "text": "Type of data collected",
+      "required": true,
+      "answerValueSet": "NFDI4Health_VS_MDS_Data_Collected_UMLS"
+    },
+    {
+      "type": "choice",
+      "linkId": "479642564979",
+      "prefix": "informationSources",
+      "text": "From which source(s) are the data generated/extracted?",
+      "required": true,
+      "answerValueSet": "NFDI4Health_VS_MDS_CD_Information_Sources_UMLS_Local"
+    }
+  ]
+}

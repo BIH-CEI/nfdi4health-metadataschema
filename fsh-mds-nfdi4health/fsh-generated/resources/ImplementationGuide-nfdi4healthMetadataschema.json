@@ -815,6 +815,13 @@
       },
       {
         "reference": {
+          "reference": "Questionnaire/InstanceOfChronicDiseaseModule"
+        },
+        "name": "Module for chronic disease data collection",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/nfdi4health-cs-mds-provenance-data-source"
         },
         "name": "NFDI4Health CS MDS Provenance Data Source",
