@@ -99,6 +99,10 @@
             "code": "Coding"
           }
         ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-cd-datacollected-umls"
+        },
         "mapping": [
           {
             "identity": "NFDI4Health-EOCD-V3",
@@ -119,6 +123,10 @@
             "code": "Coding"
           }
         ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-cd-information-sources-umls-local"
+        },
         "mapping": [
           {
             "identity": "NFDI4Health-EOCD-V3",

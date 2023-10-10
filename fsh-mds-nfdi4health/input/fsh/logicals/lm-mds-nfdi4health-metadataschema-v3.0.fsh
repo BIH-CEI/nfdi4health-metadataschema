@@ -943,9 +943,10 @@ Description: "NFDI4Health LogicalModel Epidemiology of Chronic Diseases Metadata
 * ChronicDiseasesEpidemiology.commonChronicDiseaseName from NFDI4Health_VS_MDS_CD_Common_Chronic_Disease_Name_SNOMEDCT (required)
 * ChronicDiseasesEpidemiology.dataCollected 1..1 Coding "Type of data collected" "Type of data collected"
 * ChronicDiseasesEpidemiology.dataCollected ^comment = "Short Input Help: Select one value from the list. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.2 requirements"
+* ChronicDiseasesEpidemiology.dataCollected from NFDI4Health_VS_MDS_CD_DataCollected_UMLS (required)
 * ChronicDiseasesEpidemiology.informationSources 1..* Coding "From which source(s) are the data generated/extracted?" "Source(s) from which information is generated/extracted."
 * ChronicDiseasesEpidemiology.informationSources ^comment = "Additional Information: Treat prevalent and incident diseases separately (selected values should be specific for prevalent diseases and then separately incident diseases) / Short Input Help: Select all that apply. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.2 requirements"
-
+* ChronicDiseasesEpidemiology.informationSources from NFDI4Health_VS_MDS_CD_Information_Sources_UMLS_Local (required)
 
 
 Mapping: NFDI4Health_EOCD_V3
