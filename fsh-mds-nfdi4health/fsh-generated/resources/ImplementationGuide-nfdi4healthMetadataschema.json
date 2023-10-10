@@ -815,13 +815,6 @@
       },
       {
         "reference": {
-          "reference": "Questionnaire/InstanceOfChronicDiseaseModule"
-        },
-        "name": "Module for chronic disease data collection",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
           "reference": "CodeSystem/nfdi4health-cs-mds-provenance-data-source"
         },
         "name": "NFDI4Health CS MDS Provenance Data Source",
@@ -867,6 +860,13 @@
         "name": "NFDI4Health Data Collected [UMLS]",
         "description": "Value set used to respond to question dataCollected to Chronic Disease Module",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/InstanceOfChronicDiseaseModule"
+        },
+        "name": "NFDI4Health Epidemiology of Chronic Diseases Metadataschema (UC 5.2)",
+        "exampleBoolean": true
       },
       {
         "reference": {

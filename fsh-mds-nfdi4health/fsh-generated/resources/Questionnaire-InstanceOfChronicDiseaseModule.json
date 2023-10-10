@@ -10,7 +10,7 @@
       "prefix": "commonChronicDiseaseName",
       "text": "On which of the following common chronic diseases were data collected?",
       "required": true,
-      "answerValueSet": "NFDI4Health_VS_MDS_CD_Common_Chronic_Disease_Name_SNOMEDCT"
+      "answerValueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-cd-common-chronic-disease-name-snomedct"
     },
     {
       "type": "choice",

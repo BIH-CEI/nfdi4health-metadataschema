@@ -1,6 +1,6 @@
 Instance: InstanceOfChronicDiseaseModule
 InstanceOf: Questionnaire
-Title: "Module for chronic disease data collection"
+Title: "NFDI4Health Epidemiology of Chronic Diseases Metadataschema (UC 5.2)"
 Usage: #example
 * url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-example-chronic-diseases-epidemiology"
 * status = #draft
@@ -9,7 +9,7 @@ Usage: #example
 * item[=].prefix = "commonChronicDiseaseName"
 * item[=].text = "On which of the following common chronic diseases were data collected?"
 * item[=].required = true
-* item[=].answerValueSet = "NFDI4Health_VS_MDS_CD_Common_Chronic_Disease_Name_SNOMEDCT"
+* item[=].answerValueSet = "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-cd-common-chronic-disease-name-snomedct"
 * item[+].type = #choice
 * item[=].linkId = "3382533000737"
 * item[=].prefix = "dataCollected"
