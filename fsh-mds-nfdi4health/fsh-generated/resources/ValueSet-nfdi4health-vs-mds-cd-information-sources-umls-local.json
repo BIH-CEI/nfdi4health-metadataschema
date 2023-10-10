@@ -40,6 +40,18 @@
           {
             "code": "C0242356",
             "display": "Databases"
+          },
+          {
+            "code": "C1706958",
+            "display": "Biosample"
+          },
+          {
+            "code": "C0031809",
+            "display": "Physical Examination"
+          },
+          {
+            "code": "C0205394",
+            "display": "Other (Qualitative Concept)"
           }
         ]
       }

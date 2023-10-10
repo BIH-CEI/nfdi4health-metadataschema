@@ -27,12 +27,7 @@
           {
             "code": "C0033105",
             "display": "Statistical Prevalence"
-          }
-        ]
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "concept": [
+          },
           {
             "code": "C0021149",
             "display": "Incidence"
