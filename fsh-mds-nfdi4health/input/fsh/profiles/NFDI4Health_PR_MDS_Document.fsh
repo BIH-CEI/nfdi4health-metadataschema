@@ -123,7 +123,7 @@ Description: "Resource covering metadata of a document."
 * description.extension[language] ^short = "Language of the description"
 * description.extension[language] ^definition = "Language of the description text."
 * description.extension[language] ^comment = "Additional information: English is a default value."
-* description.extension[language].value[x] = #en (exactly)
+* description.extension[language].value[x] = #C0376245 "English Language" (exactly)
 * description.extension contains $translation named translation 0..*
 * description.extension[translation] ^short = "Additional description(s) of the [RESOURCE]"
 * description.extension[translation] ^definition = "Group of items with description(s) of the resource written not in English."
