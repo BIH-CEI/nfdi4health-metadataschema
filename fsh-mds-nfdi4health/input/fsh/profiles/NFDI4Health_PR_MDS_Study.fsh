@@ -241,7 +241,7 @@ Description: "Resource covering metadata of a study."
 * category[samplingMethod].coding.code 1..
 * category[samplingMethod] obeys core26
 * category[samplingMethod] obeys core27
-* category[samplingMethodProbability] from NFDI4Health_VS_MDS_Study_Sampling_Probability_Method_NCI (required)
+* category[samplingMethodProbability] from NFDI4Health_VS_MDS_Study_Sampling_Probability_Method_NCI_Local (required)
 * category[samplingMethodProbability] ^short = "Specific type of probability sampling"
 * category[samplingMethodProbability] ^definition = "Specific type of the probability sampling method applied for the selection of study participants."
 * category[samplingMethodProbability] ^comment = "Short Input Help: If known, select one value from the list."

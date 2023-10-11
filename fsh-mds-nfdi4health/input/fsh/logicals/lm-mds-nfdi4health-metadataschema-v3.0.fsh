@@ -279,7 +279,7 @@ Description: "NFDI4Health LogicalModel General Metadataschema"
 * Resource.studyDesign.sampling.method from NFDI4Health_VS_MDS_Study_Sampling_Method_NCI_Local (required)
 * Resource.studyDesign.sampling.method ^comment = "Short Input Help: Select one value from the list. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health, CT.gov [2], DDI [15]"
 * Resource.studyDesign.sampling.probabilityMethod 0..1 Coding "Specific type of probability sampling" "Specific type of the probability sampling method applied for the selection of study participants."
-* Resource.studyDesign.sampling.probabilityMethod from NFDI4Health_VS_MDS_Study_Sampling_Probability_Method_NCI (required)
+* Resource.studyDesign.sampling.probabilityMethod from NFDI4Health_VS_MDS_Study_Sampling_Probability_Method_NCI_Local (required)
 * Resource.studyDesign.sampling.probabilityMethod ^comment = "Cardinality: 0..1, if study_sampling_method == 'Probability'; otherwise 0..0 / Short Input Help: If known, select one value from the list. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health, DDI [15]"
 * Resource.studyDesign.sampling.nonProbabilityMethod 0..1 Coding "Specific type of non-probability sampling" "Specific type of the probability sampling method applied for the selection of study participants."
 * Resource.studyDesign.sampling.nonProbabilityMethod from NFDI4Health_VS_MDS_Study_Sampling_Method_Non_Probability_NCI_Local (required)
