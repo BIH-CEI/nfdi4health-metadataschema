@@ -100,10 +100,10 @@
 [InstanceOfStudySHIP]: ResearchStudy-InstanceOfStudySHIP.html
 [InstanceOfStudySPOVID]: ResearchStudy-InstanceOfStudySPOVID.html
 [InstanceOfOrganizationContactWellcome]: Organization-InstanceOfOrganizationContactWellcome.html
+[NFDI4Health_VS_MDS_CD_Common_Chronic_Disease_Name_SNOMEDCT]: ValueSet-nfdi4health-vs-mds-cd-common-chronic-disease-name-snomedct.html
 [NFDI4Health_CS_MDS_Provenance_Data_Source]: CodeSystem-nfdi4health-cs-mds-provenance-data-source.html
 [NFDI4Health_CS_MDS_Remaining_Concepts]: CodeSystem-nfdi4health-cs-mds-remaining-concepts.html
 [NFDI4Health_CS_MDS_Study_Status]: CodeSystem-nfdi4health-cs-mds-study-status.html
-[NFDI4Health_VS_MDS_CD_Common_Chronic_Disease_Name_SNOMEDCT]: ValueSet-nfdi4health-vs-mds-cd-common-chronic-disease-name-snomedct.html
 [NFDI4Health_VS_MDS_CD_DataCollected_UMLS]: ValueSet-nfdi4health-vs-mds-cd-datacollected-umls.html
 [NFDI4Health_VS_MDS_CD_Information_Sources_UMLS_Local]: ValueSet-nfdi4health-vs-mds-cd-information-sources-umls-local.html
 [InstanceOfChronicDiseaseModule]: Questionnaire-InstanceOfChronicDiseaseModule.html
@@ -152,6 +152,11 @@
 [NFDI4Health_LM_Metadataschema_EOCD_V3]: StructureDefinition-nfdi4health-lm-metadataschema-eocd-v3.html
 [NFDI4Health_LM_Metadataschema_General_V3]: StructureDefinition-nfdi4health-lm-metadataschema-general-v3.html
 [NFDI4Health_LM_Metadataschema_NE_V3]: StructureDefinition-nfdi4health-lm-metadataschema-ne-v3.html
+[InstanceOfNutritionalEpidemiologyModule]: Questionnaire-InstanceOfNutritionalEpidemiologyModule.html
+[NFDI4Health_VS_MDS_NE_Device_]: ValueSet-nfdi4health-vs-mds-ne-device-.html
+[NFDI4Health_VS_MDS_NE_Instrument_SNOMEDCT_NCI_UMLS_Local]: ValueSet-nfdi4health-vs-mds-ne-instrument-snomedct-nci-umls-local.html
+[NFDI4Health_VS_MDS_NE_Mode_SNOMEDCT_NCI_UMLS_Local]: ValueSet-nfdi4health-vs-mds-ne-mode-snomedct-nci-umls-local.html
+[NFDI4Health_VS_MDS_NE_Portion_Size_SNOMEDCT_Local]: ValueSet-nfdi4health-vs-mds-ne-portion-size-snomedct-local.html
 [NFDI4Health_PR_MDS_Document]: StructureDefinition-nfdi4health-pr-mds-document.html
 [NFDI4Health_PR_MDS_Evidence_Variable_Intervention_Exposure]: StructureDefinition-nfdi4health-pr-mds-evidence-variable-intervention-exposure.html
 [NFDI4Health_PR_MDS_Group_Actual]: StructureDefinition-nfdi4health-pr-mds-group-actual.html

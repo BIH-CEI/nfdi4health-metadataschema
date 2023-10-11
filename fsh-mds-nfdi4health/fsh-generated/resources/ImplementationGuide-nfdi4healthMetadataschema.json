@@ -815,6 +815,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-cd-common-chronic-disease-name-snomedct"
+        },
+        "name": "NFDI4Health CD Common Chronic Disease Name [SNOMED CT]",
+        "description": "Value set used to respond to question common chronic disease name to Chronic Disease Module",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/nfdi4health-cs-mds-provenance-data-source"
         },
         "name": "NFDI4Health CS MDS Provenance Data Source",
@@ -835,14 +843,6 @@
         },
         "name": "NFDI4Health CS MDS Study Status",
         "description": "Code system defining concepts about different status of a study.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/nfdi4health-vs-mds-cd-common-chronic-disease-name-snomedct"
-        },
-        "name": "NFDI4Health Data Collected [UMLS]",
-        "description": "Value set used to respond to question dataCollected to Chronic Disease Module",
         "exampleBoolean": false
       },
       {
@@ -1226,6 +1226,45 @@
         },
         "name": "NFDI4Health LM Nutritional Epidemiology Metadataschema (UC 5.1) V3",
         "description": "NFDI4Health LogicalModel Nutritional Epidemiology Metadataschema (Use Case 5.1) V3",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/InstanceOfNutritionalEpidemiologyModule"
+        },
+        "name": "NFDI4Health LogicalModel Nutritional Epidemiology Metadataschema (Use Case 5.1) V3",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-ne-device-"
+        },
+        "name": "NFDI4Health NE Device []",
+        "description": "Value Set to define the device used within Diet Assessment",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-ne-instrument-snomedct-nci-umls-local"
+        },
+        "name": "NFDI4Health NE Instrument [SNOMED CT, NCI, UMLS, Local]",
+        "description": "Value Set to define the instruments used within Diet Assessment",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-ne-mode-snomedct-nci-umls-local"
+        },
+        "name": "NFDI4Health NE Mode [SNOMED CT, NCI, UMLS, Local]",
+        "description": "Value Set to define the mode within Diet Assessment",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-ne-portion-size-snomedct-local"
+        },
+        "name": "NFDI4Health NE Portion Size [SNOMED CT, Local]",
+        "description": "Value Set to define the portion size used within Diet Assessment",
         "exampleBoolean": false
       },
       {

@@ -487,6 +487,34 @@
     {
       "code": "117",
       "display": "Self-report (questionnaires or interviews), cases not verified"
+    },
+    {
+      "code": "118",
+      "display": "24-h dietary recall"
+    },
+    {
+      "code": "119",
+      "display": "Proxy-administered"
+    },
+    {
+      "code": "120",
+      "display": "Food record"
+    },
+    {
+      "code": "121",
+      "display": "Described portion sizes"
+    },
+    {
+      "code": "122",
+      "display": "Picture book/visual aids"
+    },
+    {
+      "code": "123",
+      "display": "Weighing"
+    },
+    {
+      "code": "124",
+      "display": "Volume measures"
     }
   ],
   "version": "0.9",
@@ -502,5 +530,5 @@
       ]
     }
   ],
-  "count": 117
+  "count": 124
 }

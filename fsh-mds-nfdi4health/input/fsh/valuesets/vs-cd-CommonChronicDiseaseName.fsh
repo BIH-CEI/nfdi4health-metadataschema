@@ -1,7 +1,7 @@
 ValueSet: NFDI4Health_VS_MDS_CD_Common_Chronic_Disease_Name_SNOMEDCT
 Id: nfdi4health-vs-mds-cd-common-chronic-disease-name-snomedct
-Title: "NFDI4Health Data Collected [UMLS]"
-Description: "Value set used to respond to question dataCollected to Chronic Disease Module"
+Title: "NFDI4Health CD Common Chronic Disease Name [SNOMED CT]"
+Description: "Value set used to respond to question common chronic disease name to Chronic Disease Module"
 * ^url = "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-cd-common-chronic-disease-name-snomedct"
 * ^status = #draft
 * ^version = "0.9"
