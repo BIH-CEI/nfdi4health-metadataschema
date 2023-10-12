@@ -246,7 +246,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/ValueSet/languages"
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-language-umls"
         },
         "mapping": [
           {
@@ -328,7 +328,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/ValueSet/languages"
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-language-umls"
         },
         "mapping": [
           {
@@ -402,10 +402,7 @@
             "code": "code"
           }
         ],
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://hl7.org/fhir/ValueSet/languages"
-        },
+        "fixedCode": "C0376245",
         "mapping": [
           {
             "identity": "NFDI4Health-V3-Internal-Numbering",
@@ -480,7 +477,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/ValueSet/languages"
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-language-nonenglish-umls"
         },
         "mapping": [
           {

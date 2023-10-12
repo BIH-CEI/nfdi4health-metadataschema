@@ -1827,6 +1827,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-language-nonenglish-umls"
+        },
+        "name": "NFDI4Health_VS_MDS_Language_NonEnglish_UMLS",
+        "description": "Value set defining codes for languages other than English from UMLS.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/nfdi4health-vs-mds-language-umls"
         },
         "name": "NFDI4Health_VS_MDS_Language_UMLS",

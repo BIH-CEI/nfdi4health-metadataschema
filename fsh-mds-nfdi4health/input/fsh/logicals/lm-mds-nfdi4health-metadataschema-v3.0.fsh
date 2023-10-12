@@ -25,7 +25,7 @@ Description: "NFDI4Health LogicalModel General Metadataschema"
 * Resource.titles.text 1..1 string "Title/name"	"Scientific unabbreviated title or name of the resource."
 * Resource.titles.text ^comment = "Additional Information: If no official title/name has been defined yet, please provide a title/name that is suitable for public display. / Short Input Help: Please provide at least one title/name of the resource. If the original title is not in English, please also provide an English translation of the original title. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health, DataCite [1], CT.gov [2], DRKS [3]"
 * Resource.titles.language 1..1 code "Language of the title/name" "Language of the title/name."
-* Resource.titles.language from http://hl7.org/fhir/ValueSet/languages (required)
+* Resource.titles.language from NFDI4Health_VS_MDS_Language_UMLS (required)
 * Resource.titles.language ^comment = "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health, DataCite [1], CT.gov [2], DRKS [3]"
 * Resource.acronyms 0..* BackboneElement "Acronym(s) of the [RESOURCE]" "Group of items providing  Information about acronym(s) of the resource."
 * Resource.acronyms ^comment = "Display information? (Data capturing): yes / Display information? (Data visualization): no / Source of the property and/or allowed values: NFDI4Health"
@@ -34,21 +34,21 @@ Description: "NFDI4Health LogicalModel General Metadataschema"
 * Resource.acronyms.text ^example.label = "General"
 * Resource.acronyms.text ^example.valueString = "NAKO"
 * Resource.acronyms.language 1..1 code "Language of the acronym" "Language of the acronym."
-* Resource.acronyms.language from http://hl7.org/fhir/ValueSet/languages (required)
+* Resource.acronyms.language from NFDI4Health_VS_MDS_Language_UMLS (required)
 * Resource.acronyms.language ^comment = "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2], DRKS [3]"
 * Resource.descriptionEnglish 1..1 BackboneElement "English description of the [RESOURCE]" "Group of items with an English description of the resource."
 * Resource.descriptionEnglish ^comment = "Display information? (Data capturing): no / Display information? (Data visualization): no / Source of the property and/or allowed values: NFDI4Health"
 * Resource.descriptionEnglish.text 1..1 string "English description of the [RESOURCE]" "A short plain text summary describing the resource in English."
 * Resource.descriptionEnglish.text ^comment = "Additional Information: An English description is mandatory to facilitate the search. / Short Input Help: The provided information should be understandable by scientific audience. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health"
 * Resource.descriptionEnglish.language 1..1 code "Language of the description" "Language of the description text."
-* Resource.descriptionEnglish.language from http://hl7.org/fhir/ValueSet/languages (required) 
+* Resource.descriptionEnglish.language = $UMLS#C0376245 "English Language" (exactly)
 * Resource.descriptionEnglish.language ^comment = "Additional Information: English is a default value. / Display information? (Data capturing): no / Display information? (Data visualization): no / Source of the property and/or allowed values: NFDI4Health"
 * Resource.descriptionNonEnglish 0..* BackboneElement "Additional description(s) of the [RESOURCE]" "Group of items with  description(s) of the resource written not in English."
 * Resource.descriptionNonEnglish ^comment = "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health"
 * Resource.descriptionNonEnglish.text 1..1 string "Description" "Short plain text summary of the resource other than in English."
 * Resource.descriptionNonEnglish.text ^comment = "Short Input Help: Additional descriptions of the resource are optional. The provided information should be understandable by scientific audience. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health, DataCite [1], CT.gov [2], DRKS [3]"
 * Resource.descriptionNonEnglish.language 1..1 code "Language of the description" "Language of the description text."
-* Resource.descriptionNonEnglish.language from http://hl7.org/fhir/ValueSet/languages (required)
+* Resource.descriptionNonEnglish.language from NFDI4Health_VS_MDS_Language_NonEnglish_UMLS (required)
 * Resource.descriptionNonEnglish.language ^comment = "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health, DataCite [1], CT.gov [2], DRKS [3]"
 * Resource.keywords 0..* BackboneElement "Keyword(s) describing the [RESOURCE]" "Group of items providing Information about keywords describing the resource."
 * Resource.keywords ^comment = "Additional Information: The findability of the resource can be significantly increased if proper keywords are stated. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health"
