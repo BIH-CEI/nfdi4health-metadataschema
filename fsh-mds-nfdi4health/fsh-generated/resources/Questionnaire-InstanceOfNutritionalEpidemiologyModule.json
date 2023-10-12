@@ -4,7 +4,7 @@
   "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-example-nutritional-epidemiology",
   "status": "draft",
   "name": "ModuleofNutritionalEpidemiology",
-  "title": "NFDI4Health LogicalModel Nutritional Epidemiology Metadataschema (Use Case 5.1) V3",
+  "title": "NFDI4Health Module Nutritional Epidemiology Metadataschema (Use Case 5.1) V3",
   "description": "Group of items providing information on diet assessment.\n\n**Additional information: **Filtering condition to decide if all following questions will be asked.",
   "identifier": [
     {

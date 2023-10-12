@@ -200,6 +200,10 @@
             "code": "Coding"
           }
         ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-ne-reference-period-unit-snomedct"
+        },
         "mapping": [
           {
             "identity": "NFDI4Health-NE-Metadataschema-V3-Internal-Numbering",

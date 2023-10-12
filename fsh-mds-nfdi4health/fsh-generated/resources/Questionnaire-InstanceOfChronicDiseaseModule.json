@@ -3,6 +3,8 @@
   "id": "InstanceOfChronicDiseaseModule",
   "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-example-chronic-diseases-epidemiology",
   "status": "draft",
+  "name": "InstanceOfChronicDiseaseModule",
+  "title": "NFDI4Health Module Epidemiology of Chronic Diseases Metadataschema (UC 5.2) V3",
   "item": [
     {
       "type": "choice",

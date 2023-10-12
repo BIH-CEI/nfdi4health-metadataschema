@@ -106,7 +106,6 @@
 [NFDI4Health_CS_MDS_Study_Status]: CodeSystem-nfdi4health-cs-mds-study-status.html
 [NFDI4Health_VS_MDS_CD_DataCollected_UMLS]: ValueSet-nfdi4health-vs-mds-cd-datacollected-umls.html
 [NFDI4Health_VS_MDS_CD_Information_Sources_UMLS_Local]: ValueSet-nfdi4health-vs-mds-cd-information-sources-umls-local.html
-[InstanceOfChronicDiseaseModule]: Questionnaire-InstanceOfChronicDiseaseModule.html
 [NFDI4Health_EX_MDS_Associated_Party]: StructureDefinition-nfdi4health-ex-mds-associated-party.html
 [NFDI4Health_EX_MDS_Chronic_Diseases]: StructureDefinition-nfdi4health-ex-mds-chronic-diseases.html
 [NFDI4Health_EX_MDS_Copyright_Label]: StructureDefinition-nfdi4health-ex-mds-copyright-label.html
@@ -152,6 +151,7 @@
 [NFDI4Health_LM_Metadataschema_EOCD_V3]: StructureDefinition-nfdi4health-lm-metadataschema-eocd-v3.html
 [NFDI4Health_LM_Metadataschema_General_V3]: StructureDefinition-nfdi4health-lm-metadataschema-general-v3.html
 [NFDI4Health_LM_Metadataschema_NE_V3]: StructureDefinition-nfdi4health-lm-metadataschema-ne-v3.html
+[InstanceOfChronicDiseaseModule]: Questionnaire-InstanceOfChronicDiseaseModule.html
 [InstanceOfNutritionalEpidemiologyModule]: Questionnaire-InstanceOfNutritionalEpidemiologyModule.html
 [NFDI4Health_VS_MDS_NE_Device_NCI_SNOMEDCT_Local]: ValueSet-nfdi4health-vs-mds-ne-device-nci-snomedct-local.html
 [NFDI4Health_VS_MDS_NE_Instrument_NCI_Local]: ValueSet-nfdi4health-vs-mds-ne-instrument-snomedct-nci-local.html

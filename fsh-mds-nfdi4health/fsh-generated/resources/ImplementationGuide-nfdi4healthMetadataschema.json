@@ -863,13 +863,6 @@
       },
       {
         "reference": {
-          "reference": "Questionnaire/InstanceOfChronicDiseaseModule"
-        },
-        "name": "NFDI4Health Epidemiology of Chronic Diseases Metadataschema (UC 5.2)",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/nfdi4health-ex-mds-associated-party"
         },
         "name": "NFDI4Health EX MDS Associated Party",
@@ -1230,9 +1223,16 @@
       },
       {
         "reference": {
+          "reference": "Questionnaire/InstanceOfChronicDiseaseModule"
+        },
+        "name": "NFDI4Health Module Epidemiology of Chronic Diseases Metadataschema (UC 5.2) V3",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Questionnaire/InstanceOfNutritionalEpidemiologyModule"
         },
-        "name": "NFDI4Health LogicalModel Nutritional Epidemiology Metadataschema (Use Case 5.1) V3",
+        "name": "NFDI4Health Module Nutritional Epidemiology Metadataschema (Use Case 5.1) V3",
         "exampleBoolean": true
       },
       {

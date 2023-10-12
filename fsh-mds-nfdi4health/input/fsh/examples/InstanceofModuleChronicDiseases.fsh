@@ -1,9 +1,11 @@
 Instance: InstanceOfChronicDiseaseModule
 InstanceOf: Questionnaire
-Title: "NFDI4Health Epidemiology of Chronic Diseases Metadataschema (UC 5.2)"
+Title: "NFDI4Health Module Epidemiology of Chronic Diseases Metadataschema (UC 5.2) V3"
 Usage: #example
 * url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-example-chronic-diseases-epidemiology"
 * status = #draft
+* name = "InstanceOfChronicDiseaseModule"
+* title = "NFDI4Health Module Epidemiology of Chronic Diseases Metadataschema (UC 5.2) V3"
 * item[0].type = #choice
 * item[=].linkId = "8636042615631"
 * item[=].prefix = "commonChronicDiseaseName"
