@@ -17,7 +17,7 @@
       "linkId": "NE1.1",
       "text": "Which dietary assessment instrument is used in the study/data collection event?",
       "required": true,
-      "answerValueSet": "NFDI4Health_VS_MDS_NE_Instrument_SNOMEDCT_NCI_UMLS_Local"
+      "answerValueSet": "NFDI4Health_VS_MDS_NE_Instrument_NCI_Local"
     },
     {
       "type": "integer",
@@ -28,16 +28,16 @@
     {
       "type": "choice",
       "linkId": "NE1.3",
-      "text": "How was the dietary assessment instrument applied to the study participants?",
+      "text": "Mode used to apply the dietary assessment instrument to study participants",
       "required": true,
-      "answerValueSet": "NFDI4Health_VS_MDS_NE_Mode_SNOMEDCT_NCI_UMLS_Local"
+      "answerValueSet": "NFDI4Health_VS_MDS_NE_Mode_UMLS_Local"
     },
     {
       "type": "choice",
       "linkId": "NE1.4",
-      "text": "Which device was used to apply the dietary assessment instrument to the study participants?",
+      "text": "Device used to apply the dietary assessment instrument to study participants",
       "required": true,
-      "answerValueSet": "NFDI4Health_VS_MDS_NE_Instrument_SNOMEDCT_NCI_UMLS_Local"
+      "answerValueSet": "NFDI4Health_VS_MDS_NE_Device_NCI_SNOMEDCT_Local"
     },
     {
       "type": "choice",
@@ -51,7 +51,7 @@
       "linkId": "NE1.6",
       "text": "Which reference period is the dietary assessment instrument referring to, e.g. 24-h recall is referring to the previous day.",
       "required": true,
-      "answerValueSet": "NFDI4Health_VS_MDS_NE_ReferencePeriodUnit_SNOMEDCT"
+      "answerValueSet": "NFDI4Health_VS_MDS_NE_Reference_Period_Unit_SNOMEDCT"
     },
     {
       "type": "integer",

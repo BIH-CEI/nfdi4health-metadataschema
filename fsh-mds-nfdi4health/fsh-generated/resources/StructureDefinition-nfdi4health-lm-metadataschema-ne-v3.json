@@ -84,6 +84,10 @@
             "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-ne-v3"
           }
         ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-ne-instrument-nci-local"
+        },
         "mapping": [
           {
             "identity": "NFDI4Health-NE-Metadataschema-V3-Internal-Numbering",
@@ -124,6 +128,10 @@
             "code": "Coding"
           }
         ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-ne-mode-umls-local"
+        },
         "mapping": [
           {
             "identity": "NFDI4Health-NE-Metadataschema-V3-Internal-Numbering",
@@ -144,6 +152,10 @@
             "code": "Coding"
           }
         ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-ne-device-nci-snomedct-local"
+        },
         "mapping": [
           {
             "identity": "NFDI4Health-NE-Metadataschema-V3-Internal-Numbering",
@@ -164,6 +176,10 @@
             "code": "Coding"
           }
         ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-ne-portion-size-snomedct-local"
+        },
         "mapping": [
           {
             "identity": "NFDI4Health-NE-Metadataschema-V3-Internal-Numbering",

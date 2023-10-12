@@ -851,16 +851,21 @@ Description: "NFDI4Health LogicalModel Nutritional Epidemiology Metadataschema (
 * DietAssessment.instrument 1..1 Coding "Dietary assessment instrument used" "Which dietary assessment instrument is used in the study/data collection event?"
 * DietAssessment.instrument ^comment = "Short Input Help: Select one value from the list. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.1 requirements"
 * DietAssessment.instrument obeys ne2
+* DietAssessment.instrument from NFDI4Health_VS_MDS_NE_Instrument_NCI_Local (required)
 * DietAssessment.ffqItemsNumber 1..1 integer "Number of items in FFQ" "How many items were inquired with the FFQ?"
 * DietAssessment.ffqItemsNumber ^comment = "Cardinality: 1..1, if DietAssessment.instrument == 'Food frequency questionnaire'; otherwise 0.. 0 / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.1 requirements"
 * DietAssessment.mode 1..* Coding "Mode used to apply the dietary assessment instrument to study participants" "How was the dietary assessment instrument applied to the study participants?"
 * DietAssessment.mode ^comment = "Short Input Help: Select all that apply. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.1 requirements"
+* DietAssessment.mode from NFDI4Health_VS_MDS_NE_Mode_UMLS_Local (required)
 * DietAssessment.device 1..* Coding "Device used to apply the dietary assessment instrument to study participants" "Which device was used to apply the dietary assessment instrument to the study participants?"
 * DietAssessment.device ^comment = "Short Input Help: Select all that apply. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.1 requirements"
+* DietAssessment.device from NFDI4Health_VS_MDS_NE_Device_NCI_SNOMEDCT_Local (required)
 * DietAssessment.portionSizeEstimation 1..* Coding "Portion size estimated by:" "How is the portion size inquired in the dietary assessment instrument?"
 * DietAssessment.portionSizeEstimation ^comment = "Short Input Help: Select all that apply. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.1 requirements"
+* DietAssessment.portionSizeEstimation from NFDI4Health_VS_MDS_NE_Portion_Size_SNOMEDCT_Local (required)
 * DietAssessment.referencePeriodUnit 1..1 Coding "Reference period unit" "Which reference period is the dietary assessment instrument referring to, e.g. 24-h recall is referring to the previous day."
 * DietAssessment.referencePeriodUnit ^comment = "Short Input Help: Select all that apply. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.1 requirements"
+* DietAssessment.referencePeriodUnit from NFDI4Health_VS_MDS_NE_Reference_Period_Unit_SNOMEDCT (required)
 * DietAssessment.referencePeriodNumber 1..1 integer "Numerical value of reference period units" "How many of the reference period units were assessed?"
 * DietAssessment.referencePeriodNumber ^comment = "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.1 requirements"
 * DietAssessment.repeat 1..1 boolean "Was this instrument applied repeatedly?" "Was the same instrument applied repeatedly?"
