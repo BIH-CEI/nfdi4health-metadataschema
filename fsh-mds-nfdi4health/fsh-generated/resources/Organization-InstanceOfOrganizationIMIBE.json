@@ -9,12 +9,10 @@
   "telecom": [
     {
       "system": "url",
-      "use": "work",
       "value": "https://imibe.uk-essen.de/"
     },
     {
       "system": "phone",
-      "use": "work",
       "value": "+49 (0)201 72377201"
     }
   ],

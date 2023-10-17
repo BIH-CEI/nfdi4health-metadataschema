@@ -202,10 +202,6 @@
         "definition": "Email address of the institution/organisation.",
         "min": 0,
         "max": "1",
-        "fixedContactPoint": {
-          "system": "email",
-          "use": "work"
-        },
         "mapping": [
           {
             "identity": "NFDI4Health",
@@ -225,18 +221,16 @@
         "min": 1
       },
       {
+        "id": "Organization.telecom:email.use",
+        "path": "Organization.telecom.use",
+        "patternCode": "work"
+      },
+      {
         "id": "Organization.telecom:phone",
         "path": "Organization.telecom",
         "sliceName": "phone",
-        "short": "Phone number",
-        "definition": "Phone number of the institution/organisation.",
-        "comment": "Please, use the International ITU-T E.164-number structure for geographic areas, e.g. +49 (0)153 1112233.",
         "min": 0,
         "max": "1",
-        "fixedContactPoint": {
-          "system": "phone",
-          "use": "work"
-        },
         "mapping": [
           {
             "identity": "NFDI4Health",
@@ -265,17 +259,16 @@
         ]
       },
       {
+        "id": "Organization.telecom:phone.use",
+        "path": "Organization.telecom.use",
+        "patternCode": "work"
+      },
+      {
         "id": "Organization.telecom:webpage",
         "path": "Organization.telecom",
         "sliceName": "webpage",
-        "short": "Web page of the organisation",
-        "definition": "Web page of the organisation associated with the role.",
         "min": 0,
         "max": "1",
-        "fixedContactPoint": {
-          "system": "url",
-          "use": "work"
-        },
         "mapping": [
           {
             "identity": "NFDI4Health",
@@ -297,6 +290,11 @@
         "min": 1
       },
       {
+        "id": "Organization.telecom:webpage.use",
+        "path": "Organization.telecom.use",
+        "patternCode": "work"
+      },
+      {
         "id": "Organization.address",
         "path": "Organization.address",
         "short": "Address of the organisation",
@@ -313,10 +311,13 @@
         ]
       },
       {
+        "id": "Organization.address.use",
+        "path": "Organization.address.use",
+        "patternCode": "work"
+      },
+      {
         "id": "Organization.address.text",
         "path": "Organization.address.text",
-        "short": "Address of the organisation",
-        "definition": "Address of the organisation associated with the role.",
         "min": 1
       },
       {

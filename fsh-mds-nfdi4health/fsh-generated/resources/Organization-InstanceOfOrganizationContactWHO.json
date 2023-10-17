@@ -9,12 +9,10 @@
   "telecom": [
     {
       "system": "url",
-      "use": "work",
       "value": "https://www.who.int/"
     },
     {
       "system": "email",
-      "use": "work",
       "value": "EarlyInvestigations-2019-nCoV@who.int"
     }
   ],
