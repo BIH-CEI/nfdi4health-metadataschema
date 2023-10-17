@@ -14,28 +14,3 @@ Description: "Value set used to respond to questions that can be answered Yes, N
 * $SCT#373067005 "No (qualifier value)"
 * $SCT#385432009 "Not applicable (qualifier value)"
 
-Instance: ConceptMap-SNOMEDCT-Yes-No-NotApplicable-to-NFDI4Health
-InstanceOf: ConceptMap
-Usage: #definition
-* url = "https://www.nfdi4health.de/fhir/metadataschema/ConceptMap/SNOMEDCT-Yes-No-NotApplicable-to-NFDI4Health"
-* name = "ConceptMap-VS-MDS-Yes-No-NotApplicatble-SNOMEDCT-NFDI4Health-Mapping"
-* title = "ConceptMap - Value Set Yes-No-Not Applicable from SNOMED CT to NFDI4Health"
-* status = #active
-* experimental = false
-* date = "2023-07-28"
-* publisher = "NFDI4Health"
-* description = "Mapping of Value Set Yes-No-Not Applicable from SNOMED CT to NFDI4Health"
-* sourceCanonical = "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-yes-no-not-applicable-snomedct"
-* group[0].source = "http://snomed.info/sct"
-* group[=].element[0].code = #373066001
-* group[=].element[=].display = "Yes (qualifier value)"
-* group[=].element[=].target.display = "Yes"
-* group[=].element[=].target.equivalence = #equivalent
-* group[=].element[+].code = #373067005
-* group[=].element[=].display = "No (qualifier value)"
-* group[=].element[=].target.display = "No"
-* group[=].element[=].target.equivalence = #equivalent
-* group[=].element[+].code = #385432009
-* group[=].element[=].display = "Not applicable (qualifier value)"
-* group[=].element[=].target.display = "Not applicable"
-* group[=].element[=].target.equivalence = #equivalent

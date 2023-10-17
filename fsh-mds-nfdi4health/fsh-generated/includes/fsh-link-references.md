@@ -1,7 +1,3 @@
-[ConceptMap-SNOMEDCT-Mortality-Data-to-NFDI4Health]: ConceptMap-ConceptMap-SNOMEDCT-Mortality-Data-to-NFDI4Health.html
-[ConceptMap-UCUM-UMLS-Time-Units-to-NFDI4Health]: ConceptMap-ConceptMap-UCUM-UMLS-Time-Units-to-NFDI4Health.html
-[ConceptMap-SNOMEDCT-Yes-No-NotApplicable-to-NFDI4Health]: ConceptMap-ConceptMap-SNOMEDCT-Yes-No-NotApplicable-to-NFDI4Health.html
-[ConceptMap-SNOMEDCT-NCI-Yes-No-Undecided-to-NFDI4Health]: ConceptMap-ConceptMap-SNOMEDCT-NCI-Yes-No-Undecided-to-NFDI4Health.html
 [InstanceOfDocumentHouseholdTransmissionInvestigationForC19]: DocumentReference-InstanceOfDocumentHouseholdTransmissionInvestigationForC19.html
 [InstanceOfOrganizationCreatorCMI]: Organization-InstanceOfOrganizationCreatorCMI.html
 [InstanceOfOrganizationCreatorCRISIS]: Organization-InstanceOfOrganizationCreatorCRISIS.html
