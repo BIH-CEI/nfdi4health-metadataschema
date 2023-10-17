@@ -239,33 +239,5 @@ Source: NFDI4Health_PR_MDS_Questionnaire
 * description.extension[language] -> "1.5.2 Resource.descriptionEnglish.language"
 * copyright -> "1.10.3.3 Resource.nonStudyDetails.useRights.description"
 
-Invariant: core2
-Description: "Cardinality: 1..1, if Resource.nonStudyDetails.useRights.label != ('CC0 1.0 (Creative Commons Zero v1.0 Universal)' OR 'All rights reserved' OR 'Other' OR 'Not applicable'); otherwise 0..0"
-Severity: #error
-Expression: "Questionnaire.copyright.extension[copyrightLabel].exists(Creative Commons Zero v1.0 Universal) OR Questionnaire.copyright.extension[copyrightLabel].exists(All rights reserved) OR Questionnaire.copyright.extension[copyrightLabel].exists('Other (Qualitative Concept)') OR Questionnaire.copyright.extension[copyrightLabel].exists('Not Applicable (Qualitative Concept)') implies Questionnaire.copyright.extension[useRightsConfirmations].exists().not()"
 
-Invariant: core5
-Description: "Cardinality: 1..1, if Resource.roles.nameType =='Organisational'; otherwise 0..0"
-Severity: #error
-Expression: "Questionnaire.extension[roles].extension[nameType].exists('Organizational (Qualitative Concept)') implies Questionnaire.extension[roles].extension[party].where(resolve() is Organization)"
-
-Invariant: core8
-Description: "Cardinality: 1..1, if Resource.roles.nameType =='Organisational'; otherwise 0..0"
-Severity: #error
-Expression: "Questionnaire.extension[roles].extension[nameType].exists('Organizational (Qualitative Concept)') implies Questionnaire.extension[roles].extension[roleOrganisational].exists()"
-
-Invariant: core11
-Description: "Cardinality: 0..*, if Resource.roles.organisational.type == ('Funder (public)' OR 'Funder (private)'); otherwise 0..0"
-Severity: #error
-Expression: "Questionnaire.extension[roles].extension[roleOrganisational].exists('Public Funder' or 'Private Funder').not() implies ResearchStudy.extension[roles].extension[party].valueReference.where(reference=Organization).extension[fundingID].exists().not()"
-
-Invariant: core14
-Description: "Cardinality: 1..1, if Resource.roles.nameType =='Personal'; otherwise 0..0"
-Severity: #error
-Expression: "Questionnaire.extension[roles].extension[nameType].exists('Personal Attribute (Organism Attribute)') implies Questionnaire.extension[roles].extension[party].where(resolve() is PractitionerRole)"
-
-Invariant: core17
-Description: "Cardinality: 1..1, if Resource.roles.nameType =='Personal'; otherwise 0..0"
-Severity: #error
-Expression: "Questionnaire.extension[roles].extension[nameType].exists('Personal Attribute (Organism Attribute)') implies Questionnaire.extension[roles].extension[rolePersonal].exists()"
 

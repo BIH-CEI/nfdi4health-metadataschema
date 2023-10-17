@@ -50,13 +50,4 @@ Source: NFDI4Health_PR_MDS_Provenance
 * agent -> "1.18.11 Resource.provenance.lastUpdatePostedUser"
 
 
-Invariant: core18
-Description: "Cardinality: 1..1, if Resource.classification.resourceType == ('Study' OR 'Substudy/Data collection') AND Resource.provenance.dataSource != 'Manually collected'; otherwise 0..0"
-Severity: #error
-Expression: "Provenance.extension[dataSource].exists('Manually collected') implies ResearchStudy.extension[nutritionalData].exists().not()"
-
-Invariant: core19
-Description: "Cardinality: 1..1, if Resource.provenance.dataSource != 'Manually collected'; otherwise 0..0"
-Severity: #error
-Expression: "Provenance.extension[dataSource].exists('Manually collected') implies ResearchStudy.extension[chronicDiseases].exists().not() 	"
 
