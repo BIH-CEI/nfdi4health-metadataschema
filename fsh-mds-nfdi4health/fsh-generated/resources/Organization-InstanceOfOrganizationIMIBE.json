@@ -16,13 +16,12 @@
       "value": "+49 (0)201 72377201"
     }
   ],
+  "name": "Institut für Medizinische Informatik, Biometrie und Epidemiologie",
   "address": [
     {
-      "use": "work",
       "text": "Hufelandstr. 55, 45147, Essen, Germany"
     }
   ],
-  "name": "Institut für Medizinische Informatik, Biometrie und Epidemiologie",
   "partOf": {
     "reference": "Organization/InstanceOfOrganizationUniklinikumEssen"
   },

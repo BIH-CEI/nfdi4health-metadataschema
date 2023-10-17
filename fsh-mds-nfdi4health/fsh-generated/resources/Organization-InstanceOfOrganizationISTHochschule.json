@@ -12,12 +12,6 @@
       "value": "https://www.ist.de/studieninstitut-hochschule"
     }
   ],
-  "address": [
-    {
-      "use": "work",
-      "text": "Erkrather Str. 220 a-c, 40233, Düsseldorf, Germany"
-    }
-  ],
   "name": "IST - Hochschule für Management GmbH",
   "identifier": [
     {
@@ -31,6 +25,11 @@
           }
         ]
       }
+    }
+  ],
+  "address": [
+    {
+      "text": "Erkrather Str. 220 a-c, 40233, Düsseldorf, Germany"
     }
   ]
 }

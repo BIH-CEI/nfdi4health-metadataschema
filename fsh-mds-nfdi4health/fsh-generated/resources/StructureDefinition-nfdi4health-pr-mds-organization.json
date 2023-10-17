@@ -229,6 +229,8 @@
         "id": "Organization.telecom:phone",
         "path": "Organization.telecom",
         "sliceName": "phone",
+        "short": "Phone number",
+        "definition": "Phone number of the  person, group of persons or institution/organisation.",
         "min": 0,
         "max": "1",
         "mapping": [
@@ -247,8 +249,6 @@
       {
         "id": "Organization.telecom:phone.value",
         "path": "Organization.telecom.value",
-        "short": "Phone number",
-        "definition": "Phone number of the  person, group of persons or institution/organisation.",
         "comment": "Please, use the International ITU-T E.164-number structure for geographic areas, e.g. +49 (0)153 1112233.",
         "min": 1,
         "example": [
@@ -267,6 +267,8 @@
         "id": "Organization.telecom:webpage",
         "path": "Organization.telecom",
         "sliceName": "webpage",
+        "short": "Web page of the organisation",
+        "definition": "Web page of the organisation associated with the role.",
         "min": 0,
         "max": "1",
         "mapping": [
@@ -285,8 +287,6 @@
       {
         "id": "Organization.telecom:webpage.value",
         "path": "Organization.telecom.value",
-        "short": "Web page of the organisation",
-        "definition": "Web page of the organisation associated with the role.",
         "min": 1
       },
       {
@@ -300,9 +300,6 @@
         "short": "Address of the organisation",
         "definition": "Address of the organisation associated with the role.",
         "max": "1",
-        "fixedAddress": {
-          "use": "work"
-        },
         "mapping": [
           {
             "identity": "NFDI4Health",

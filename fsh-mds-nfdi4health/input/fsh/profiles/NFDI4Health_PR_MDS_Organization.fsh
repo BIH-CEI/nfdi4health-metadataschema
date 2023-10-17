@@ -52,25 +52,24 @@ Description: "Resource covering metadata of an organization."
 * telecom[email].system = #email (exactly)
 * telecom[email].value 1..1
 * telecom[email].use = #work
+* telecom[phone] ^short = "Phone number"
+* telecom[phone] ^definition = "Phone number of the  person, group of persons or institution/organisation."
 * telecom[phone].system 1..
 * telecom[phone].system = #phone (exactly)
 * telecom[phone].value 1..1
-* telecom[phone].value ^short = "Phone number"
-* telecom[phone].value ^definition = "Phone number of the  person, group of persons or institution/organisation."
 * telecom[phone].value ^comment = "Please, use the International ITU-T E.164-number structure for geographic areas, e.g. +49 (0)153 1112233."
 * telecom[phone].value ^example.label = "Phone"
 * telecom[phone].value ^example.valueString = "+49 (0)153 1112233"
 * telecom[phone].use = #work
+* telecom[webpage] ^short = "Web page of the organisation"
+* telecom[webpage] ^definition = "Web page of the organisation associated with the role."
 * telecom[webpage].system 1..1
 * telecom[webpage].system = #url (exactly)
 * telecom[webpage].value 1..1
-* telecom[webpage].value ^short = "Web page of the organisation"
-* telecom[webpage].value ^definition = "Web page of the organisation associated with the role."
 * telecom[webpage].use = #work
 * address ..1
 * address ^short = "Address of the organisation"
 * address ^definition = "Address of the organisation associated with the role."
-* address ^fixedAddress.use = #work
 * address.text 1..1
 * address.use = #work
 

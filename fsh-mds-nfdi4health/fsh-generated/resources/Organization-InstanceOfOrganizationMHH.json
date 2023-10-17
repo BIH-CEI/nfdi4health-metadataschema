@@ -12,13 +12,12 @@
       "value": "https://www.mhh.de/"
     }
   ],
+  "name": "Medizinische Hochschule Hannover",
   "address": [
     {
-      "use": "work",
       "text": "Carl-Neuberg-Str. 1, 30625, Hannover, Germany"
     }
   ],
-  "name": "Medizinische Hochschule Hannover",
   "identifier": [
     {
       "value": "00f2yqf98",

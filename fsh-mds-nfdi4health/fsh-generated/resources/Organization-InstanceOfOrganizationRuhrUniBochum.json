@@ -12,12 +12,6 @@
       "value": "https://www.ruhr-uni-bochum.de/de"
     }
   ],
-  "address": [
-    {
-      "use": "work",
-      "text": "Universitätsstraße 150, 44801, Bochum, Germany"
-    }
-  ],
   "name": "Ruhr-Universität Bochum, Lehr und Forschungsbereich 'Trainingswissenschaft'",
   "identifier": [
     {
@@ -31,6 +25,11 @@
           }
         ]
       }
+    }
+  ],
+  "address": [
+    {
+      "text": "Universitätsstraße 150, 44801, Bochum, Germany"
     }
   ]
 }

@@ -12,12 +12,6 @@
       "value": "https://www.bmbf.de/bmbf/de/home/home_node.html"
     }
   ],
-  "address": [
-    {
-      "use": "work",
-      "text": "Kapelle-Ufer 1, 10117, Berlin, Germany"
-    }
-  ],
   "name": "Bundesministerium für Bildung und Forschung",
   "identifier": [
     {
@@ -31,6 +25,11 @@
           }
         ]
       }
+    }
+  ],
+  "address": [
+    {
+      "text": "Kapelle-Ufer 1, 10117, Berlin, Germany"
     }
   ]
 }

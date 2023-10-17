@@ -12,12 +12,6 @@
       "value": "https://www.nimh.nih.gov/research/research-conducted-at-nimh"
     }
   ],
-  "address": [
-    {
-      "use": "work",
-      "text": "Bethesda, MD, USA"
-    }
-  ],
   "name": "National Institute of Mental Health",
   "identifier": [
     {
@@ -43,6 +37,11 @@
           }
         ]
       }
+    }
+  ],
+  "address": [
+    {
+      "text": "Bethesda, MD, USA"
     }
   ]
 }
