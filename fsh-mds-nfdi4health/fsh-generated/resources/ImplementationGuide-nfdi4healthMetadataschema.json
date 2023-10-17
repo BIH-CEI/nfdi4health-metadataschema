@@ -33,46 +33,34 @@
     "resource": [
       {
         "reference": {
-          "reference": "CodeSystem/Mlstr-additional"
-        },
-        "name": "Additional information",
-        "description": "Additional information about the collected variable",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/Mlstr-area"
-        },
-        "name": "Areas of information",
-        "description": "Information classification developed by Maelstrom Research",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
           "reference": "ConceptMap/ConceptMap-SNOMEDCT-Mortality-Data-to-NFDI4Health"
         },
-        "name": "ConceptMap-SNOMEDCT-Mortality-Data-to-NFDI4Health",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ConceptMap/ConceptMap-SNOMEDCT-NCI-Yes-No-Undecided-to-NFDI4Health"
-        },
-        "name": "ConceptMap-SNOMEDCT-NCI-Yes-No-Undecided-to-NFDI4Health",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ConceptMap/ConceptMap-SNOMEDCT-Yes-No-NotApplicable-to-NFDI4Health"
-        },
-        "name": "ConceptMap-SNOMEDCT-Yes-No-NotApplicable-to-NFDI4Health",
+        "name": "ConceptMap - Value Set for Mortality Data from NCI to NFDI4Health",
+        "description": "Mapping of Value Set Mortality Data from NCI to NFDI4Health",
         "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "ConceptMap/ConceptMap-UCUM-UMLS-Time-Units-to-NFDI4Health"
         },
-        "name": "ConceptMap-UCUM-UMLS-Time-Units-to-NFDI4Health",
+        "name": "ConceptMap - Value Set Time Units from UCUM and UMLS to NFDI4Health",
+        "description": "Mapping of Value Set Time Units from UCUM and UMLS to NFDI4Health",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/ConceptMap-SNOMEDCT-Yes-No-NotApplicable-to-NFDI4Health"
+        },
+        "name": "ConceptMap - Value Set Yes-No-Not Applicable from SNOMED CT to NFDI4Health",
+        "description": "Mapping of Value Set Yes-No-Not Applicable from SNOMED CT to NFDI4Health",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/ConceptMap-SNOMEDCT-NCI-Yes-No-Undecided-to-NFDI4Health"
+        },
+        "name": "ConceptMap - Value Set Yes-No-Undecided from SNOMED CT and NCI to NFDI4Health",
+        "description": "Mapping of Value Set Yes-No-Undecided from SNOMED CT and NCI to NFDI4Health",
         "exampleBoolean": false
       },
       {
@@ -80,6 +68,7 @@
           "reference": "DocumentReference/InstanceOfDocumentHouseholdTransmissionInvestigationForC19"
         },
         "name": "Example of the NFDI4Health PR MDS Document - Household Transmission Investigation Protocol for Coronavirus Disease 2019 (COVID-19)",
+        "description": "This document sets out the methods to guide data collection and the public health investigation for the comprehensive assessment of household contacts of confirmed COVID-19 cases. The household transmission investigation is a case-ascertained prospective study of all identified household contacts of a laboratory-confirmed 2019-nCoV infection. It is intended to provide rapid and early information on the clinical, epidemiological and virological characteristics of 2019-nCoV. There are three primary objectives of this household transmission study:\n1) To better understand the extent of transmission within a household by estimating the secondary infection rate for household contacts at an individual level, and factors associated with any variation in the secondary infection risk.\n2) To characterize secondary cases including the range of clinical presentation, risk factors for infection, and the extent and fraction of asymptomatic infections.\n3) To characterize serologic response following confirmed 2019-nCoV infection (highly encouraged, but optional depending on laboratory capacity and resources).",
         "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-document"
       },
       {
@@ -105,20 +94,6 @@
       },
       {
         "reference": {
-          "reference": "Organization/InstanceOfOrganizationContactKlinikPsychoSomatik"
-        },
-        "name": "Example of the NFDI4Health PR MDS Organization - Klinik für Psychosomatische Medizin und Psychotherapie",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
-      },
-      {
-        "reference": {
-          "reference": "Organization/InstanceOfOrganizationContactLVRKlinikumEssen"
-        },
-        "name": "Example of the NFDI4Health PR MDS Organization - LVR-Klinikum Essen",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
-      },
-      {
-        "reference": {
           "reference": "Organization/InstanceOfOrganizationCreatorNIMH"
         },
         "name": "Example of the NFDI4Health PR MDS Organization - National Institute of Mental Health",
@@ -137,153 +112,6 @@
         },
         "name": "Example of the NFDI4Health PR MDS Provenance profil",
         "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-provenance"
-      },
-      {
-        "reference": {
-          "reference": "Questionnaire/InstanceOfQuestionnaireSHARECovid19Fragebogen"
-        },
-        "name": "Example of the NFDI4Health PR MDS Questionnaire -  SHARE COVID-19 Fragebogen für Telefoninterviews",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire"
-      },
-      {
-        "reference": {
-          "reference": "Questionnaire/InstanceOfQuestionnaireCILS4COVID"
-        },
-        "name": "Example of the NFDI4Health PR MDS Questionnaire - Children of Immigrants Longitudinal Survey in Four European Countries – Germany. COVID-19 Zusatzstudie (CILS4COVID). Feldfragebogen",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire"
-      },
-      {
-        "reference": {
-          "reference": "Questionnaire/InstanceOfQuestionnaireCORONAMONITORINGLokalKurzfragebogen"
-        },
-        "name": "Example of the NFDI4Health PR MDS Questionnaire - CORONA-MONITORING lokal - Kurzfragebogen",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire"
-      },
-      {
-        "reference": {
-          "reference": "Questionnaire/InstanceOfQuestionnaireCRISISAdultBaselineForm"
-        },
-        "name": "Example of the NFDI4Health PR MDS Questionnaire - CRISIS Questionnaire - Adult Self-Report Baseline Form: Current Form",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire"
-      },
-      {
-        "reference": {
-          "reference": "Questionnaire/InstanceOfQuestionnaireCRISISYouthBaselineForm"
-        },
-        "name": "Example of the NFDI4Health PR MDS Questionnaire - CRISIS Questionnaire - Youth Self-Report Baseline Form: Current Form",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire"
-      },
-      {
-        "reference": {
-          "reference": "Questionnaire/InstanceOfQuestionnaireWHOEUropesQuestionnaireOnCOVID19Behaviour"
-        },
-        "name": "Example of the NFDI4Health PR MDS Questionnaire - Data Dictionary for the WHO Europe's Questionnaire on COVID-19 Behaviour",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire"
-      },
-      {
-        "reference": {
-          "reference": "Questionnaire/InstanceOfQuestionnaireWHOHouseholdTransmission"
-        },
-        "name": "Example of the NFDI4Health PR MDS Questionnaire - Data Dictionary for the WHO's Household transmission investigation protocol for coronavirus disease 2019 (COVID-19)",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire"
-      },
-      {
-        "reference": {
-          "reference": "Questionnaire/InstanceOfQuestionnaireCovidCaseClusterHeinsbergStudy"
-        },
-        "name": "Example of the NFDI4Health PR MDS Questionnaire - Fragebogen (Data Dictionary) der Covid-19 Case-Cluster-Studie (Heinsberg Studie)",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire"
-      },
-      {
-        "reference": {
-          "reference": "Questionnaire/InstanceOfQuestionnaireGESISPanelSARSCoV2Questionnaire"
-        },
-        "name": "Example of the NFDI4Health PR MDS Questionnaire - Fragebogen der Sondererhebung des GESIS-Panels zum Ausbruch des Coronavirus SARS-CoV-2 in Deutschland",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire"
-      },
-      {
-        "reference": {
-          "reference": "Questionnaire/InstanceOfQuestionnaireCoPE"
-        },
-        "name": "Example of the NFDI4Health PR MDS Questionnaire - Fragebogen der Studie zum Umgang der Allgemeinbevölkerung mit COVID-19/SARS-CoV-2",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire"
-      },
-      {
-        "reference": {
-          "reference": "Questionnaire/InstanceOfQuestionnaireEssenCoronaQuestionnaire"
-        },
-        "name": "Example of the NFDI4Health PR MDS Questionnaire - Fragebogen für Corona-getestete Bürgerinnen und Bürger der Stadt Essen",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire"
-      },
-      {
-        "reference": {
-          "reference": "Questionnaire/InstanceOfQuestionnaireGECCO"
-        },
-        "name": "Example of the NFDI4Health PR MDS Questionnaire - German Corona Consensus Data Set",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire"
-      },
-      {
-        "reference": {
-          "reference": "Questionnaire/InstanceOfQuestionnaireHannoverMentalHealth"
-        },
-        "name": "Example of the NFDI4Health PR MDS Questionnaire - German COVID-19 Mental Health Questionnaire",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire"
-      },
-      {
-        "reference": {
-          "reference": "Questionnaire/InstanceOfQuestionnaireISARICCovid19CORECaseReportForm"
-        },
-        "name": "Example of the NFDI4Health PR MDS Questionnaire - ISARIC COVID-19 CORE Case Report Form",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire"
-      },
-      {
-        "reference": {
-          "reference": "Questionnaire/InstanceOfQuestionnaireDynaCORE"
-        },
-        "name": "Example of the NFDI4Health PR MDS Questionnaire - Questionnaire (Data Dictionary) of the DynaMORE cross-sectional survey study on psychological resilience to the mental health consequences of the Corona crisis (DynaCORE)",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire"
-      },
-      {
-        "reference": {
-          "reference": "Questionnaire/InstanceOfQuestionnaireSAPRISSurvey"
-        },
-        "name": "Example of the NFDI4Health PR MDS Questionnaire - Questionnaire (Data Dictionary) of the SAPRIS Survey",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire"
-      },
-      {
-        "reference": {
-          "reference": "Questionnaire/InstanceOfQuestionnaireFoodCOVID19Survey"
-        },
-        "name": "Example of the NFDI4Health PR MDS Questionnaire - Questionnaire of the FoodCOVID-19 Survey",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire"
-      },
-      {
-        "reference": {
-          "reference": "Questionnaire/InstanceOfQuestionnaireISHAREQuestionnaire"
-        },
-        "name": "Example of the NFDI4Health PR MDS Questionnaire - Questionnaire of the I-SHARE Survey",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire"
-      },
-      {
-        "reference": {
-          "reference": "Questionnaire/InstanceOfQuestionnaireSHIPKurzfragebogen"
-        },
-        "name": "Example of the NFDI4Health PR MDS Questionnaire - SHIP Kurzfragebogen zu COVID-19",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire"
-      },
-      {
-        "reference": {
-          "reference": "Questionnaire/InstanceOfQuestionnaireSHIPLangfragebogen"
-        },
-        "name": "Example of the NFDI4Health PR MDS Questionnaire - SHIP Langfragebogen zu COVID-19",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire"
-      },
-      {
-        "reference": {
-          "reference": "Questionnaire/InstanceOfQuestionnaireUKCovid19"
-        },
-        "name": "Example of the NFDI4Health PR MDS Questionnaire - UK Covid-19 Questionnaire (The Wellcome Covid-19 Questionnaire)",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire"
       },
       {
         "reference": {
@@ -327,114 +155,10 @@
       },
       {
         "reference": {
-          "reference": "PractitionerRole/InstanceOfPractitionerRoleAxelBoerschSupan"
-        },
-        "name": "Instance Of NFDI4Health_PR_MDS_Practitioner_Role for Axel Börsch-Supan",
-        "description": "Example data representing the practitioner role of Axel Börsch-Supan",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner-role"
-      },
-      {
-        "reference": {
-          "reference": "PractitionerRole/InstanceOfPractitionerRoleCarstenOliverSchmidt"
-        },
-        "name": "Instance Of NFDI4Health_PR_MDS_Practitioner_Role for Carsten Oliver Schmidt",
-        "description": "Example data representing the practitioner role of Carsten Oliver Schmidt",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner-role"
-      },
-      {
-        "reference": {
-          "reference": "PractitionerRole/InstanceOfPractitionerRoleClaudiaSantosHoevener"
-        },
-        "name": "Instance Of NFDI4Health_PR_MDS_Practitioner_Role for Claudia Santos-Hövener",
-        "description": "Example data representing the practitioner role of Claudia Santos-Hövener",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner-role"
-      },
-      {
-        "reference": {
-          "reference": "PractitionerRole/InstanceOfPractitionerRoleEvaMariaSkoda"
-        },
-        "name": "Instance Of NFDI4Health_PR_MDS_Practitioner_Role for Eva-Maria Skoda",
-        "description": "Example data representing the practitioner role of Eva-Maria Skoda",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner-role"
-      },
-      {
-        "reference": {
-          "reference": "PractitionerRole/InstanceOfPractitionerRoleHendrikStreeck"
-        },
-        "name": "Instance Of NFDI4Health_PR_MDS_Practitioner_Role for Hendrik Streeck",
-        "description": "Example data representing the practitioner role of Hendrik Streeck",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner-role"
-      },
-      {
-        "reference": {
-          "reference": "PractitionerRole/InstanceOfPractitionerRoleIrmgardJordan"
-        },
-        "name": "Instance Of NFDI4Health_PR_MDS_Practitioner_Role for Irmgard Jordan",
-        "description": "Example data representing the practitioner role of Irmgard Jordan",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner-role"
-      },
-      {
-        "reference": {
-          "reference": "PractitionerRole/InstanceOfPractitionerRoleJulianSass"
-        },
-        "name": "Instance Of NFDI4Health_PR_MDS_Practitioner_Role for Julian Sass",
-        "description": "Example data representing the practitioner role of Julian Sass",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner-role"
-      },
-      {
-        "reference": {
-          "reference": "PractitionerRole/InstanceOfPractitionerRoleJoergDollmann"
-        },
-        "name": "Instance Of NFDI4Health_PR_MDS_Practitioner_Role for Jörg Dollmann",
-        "description": "Example data representing the practitioner role of Jörg Dollmann",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner-role"
-      },
-      {
-        "reference": {
           "reference": "PractitionerRole/InstanceOfPractitionerRoleKathleenMerikangas"
         },
         "name": "Instance Of NFDI4Health_PR_MDS_Practitioner_Role for Kathleen Merikangas",
         "description": "Example data representing the practitioner role of Kathleen Merikangas",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner-role"
-      },
-      {
-        "reference": {
-          "reference": "PractitionerRole/InstanceOfPractitionerRoleKatrineBachHabersaat"
-        },
-        "name": "Instance Of NFDI4Health_PR_MDS_Practitioner_Role for Katrine Bach Habersaat",
-        "description": "Example data representing the practitioner role of Katrine Bach Habersaat",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner-role"
-      },
-      {
-        "reference": {
-          "reference": "PractitionerRole/InstanceOfPractitionerRoleKristienMichielsen"
-        },
-        "name": "Instance Of NFDI4Health_PR_MDS_Practitioner_Role for Kristien Michielsen",
-        "description": "Example data representing the practitioner role of Kristien Michielsen",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner-role"
-      },
-      {
-        "reference": {
-          "reference": "PractitionerRole/InstanceOfPractitionerRoleMarthaScherzer"
-        },
-        "name": "Instance Of NFDI4Health_PR_MDS_Practitioner_Role for Martha Scherzer",
-        "description": "Example data representing the practitioner role of Martha Scherzer",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner-role"
-      },
-      {
-        "reference": {
-          "reference": "PractitionerRole/InstanceOfPractitionerRoleMatthiasZerban"
-        },
-        "name": "Instance Of NFDI4Health_PR_MDS_Practitioner_Role for Matthias Zerban",
-        "description": "Example data representing the practitioner role of Matthias Zerban",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner-role"
-      },
-      {
-        "reference": {
-          "reference": "PractitionerRole/InstanceOfPractitionerRoleNathalieBajos"
-        },
-        "name": "Instance Of NFDI4Health_PR_MDS_Practitioner_Role for Nathalie Bajos",
-        "description": "Example data representing the practitioner role of Nathalie Bajos",
         "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner-role"
       },
       {
@@ -447,66 +171,10 @@
       },
       {
         "reference": {
-          "reference": "Organization/InstanceOfOrganizationContactALSPACSecretariat"
-        },
-        "name": "Instance Of Organization ALSPAC Secretariat",
-        "description": "Example data representing the ALSPAC Secretariat",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
-      },
-      {
-        "reference": {
-          "reference": "Organization/InstanceOfOrganizationCreatorBIH"
-        },
-        "name": "Instance Of Organization BIH at Charité - Universitätsmedizin",
-        "description": "Example data representing the BIH at Charité - Universitätsmedizin",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
-      },
-      {
-        "reference": {
           "reference": "Organization/InstanceOfOrganizationBMBF"
         },
         "name": "Instance Of Organization Bundesministerium für Bildung und Forschung",
         "description": "Example data representing the Bundesministerium für Bildung und Forschung",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
-      },
-      {
-        "reference": {
-          "reference": "Organization/InstanceOfOrganizationContactCIDER"
-        },
-        "name": "Instance Of Organization Center for International Development and Environmental Research, Justus Liebig University Giessen",
-        "description": "Example data representing the Center for International Development and Environmental Research, Justus Liebig University Giessen",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
-      },
-      {
-        "reference": {
-          "reference": "Organization/InstanceOfOrganizationUniOxfordCTMGH"
-        },
-        "name": "Instance Of Organization Centre for Tropical Medicine and Global Health, University of Oxford",
-        "description": "Example data representing the Centre for Tropical Medicine and Global Health, University of Oxford",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
-      },
-      {
-        "reference": {
-          "reference": "Organization/InstanceOfOrganizationContactFMHSUniGhent"
-        },
-        "name": "Instance Of Organization Department of Public Health and Primary Care, Faculty of Medicine and Health Sciences, University of Ghent",
-        "description": "Example data representing the Department of Public Health and Primary Care, Faculty of Medicine and Health Sciences, University of Ghent",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
-      },
-      {
-        "reference": {
-          "reference": "Organization/InstanceOfOrganizationContactGESIS"
-        },
-        "name": "Instance Of Organization GESIS - Leibniz-Institut für Sozialwissenschaften - GESIS Panel Team",
-        "description": "Example data representing the GESIS - Leibniz-Institut für Sozialwissenschaften - GESIS Panel Team",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
-      },
-      {
-        "reference": {
-          "reference": "Organization/InstanceOfOrganizationContactIRIS"
-        },
-        "name": "Instance Of Organization Institut de Recherche Interdisciplinaire sur les Enjeux Sociaux (IRIS)",
-        "description": "Example data representing the Institut de Recherche Interdisciplinaire sur les Enjeux Sociaux (IRIS)",
         "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
       },
       {
@@ -519,42 +187,10 @@
       },
       {
         "reference": {
-          "reference": "Organization/InstanceOfOrganizationContactUKBonnVirologie"
-        },
-        "name": "Instance Of Organization Institut für Virologie, Universitätsklinikum Bonn",
-        "description": "Example data representing the Institut für Virologie, Universitätsklinikum Bonn",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
-      },
-      {
-        "reference": {
-          "reference": "Organization/InstanceOfOrganizationContactICM"
-        },
-        "name": "Instance Of Organization Institute for Community Medicine",
-        "description": "Example data representing the Institute for Community Medicine",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
-      },
-      {
-        "reference": {
-          "reference": "Organization/InstanceOfOrganizationISARIC"
-        },
-        "name": "Instance Of Organization International Severe Acute Respiratory and Emerging Infection Consortium",
-        "description": "Example data representing the International Severe Acute Respiratory and Emerging Infection Consortium",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
-      },
-      {
-        "reference": {
           "reference": "Organization/InstanceOfOrganizationISTHochschule"
         },
         "name": "Instance Of Organization IST Hochschule für Management GmbH",
         "description": "Example data representing the IST Hochschule für Management GmbH",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
-      },
-      {
-        "reference": {
-          "reference": "Organization/InstanceOfOrganizationCreatorMZES"
-        },
-        "name": "Instance Of Organization Mannheim Centre for European Social",
-        "description": "Example data representing the Mannheim Centre for European Social",
         "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
       },
       {
@@ -567,26 +203,10 @@
       },
       {
         "reference": {
-          "reference": "Organization/InstanceOfOrganizationContactNIC"
-        },
-        "name": "Instance Of Organization Neuroimaging Center (NIC), Focus Program Translational Neuroscience (FTN), Johannes Gutenberg University Medical Center",
-        "description": "Example data representing the Neuroimaging Center (NIC), Focus Program Translational Neuroscience (FTN), Johannes Gutenberg University Medical Center",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
-      },
-      {
-        "reference": {
           "reference": "Organization/InstanceOfOrganizationResearchGroupRNCM"
         },
         "name": "Instance Of Organization Research Group",
         "description": "Example data representing the research group 'Research Netwerk Community Medicine'",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
-      },
-      {
-        "reference": {
-          "reference": "Organization/InstanceOfOrganizationContactRKI"
-        },
-        "name": "Instance Of Organization Robert Koch Institute (RKI)",
-        "description": "Example data representing the Robert Koch Institute (RKI)",
         "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
       },
       {
@@ -599,26 +219,10 @@
       },
       {
         "reference": {
-          "reference": "Organization/InstanceOfOrganizationContactSHAREERIC"
-        },
-        "name": "Instance Of Organization SHARE-ERIC, Munich Center for the Economics of Aging, Max Planck Institute for Social Law and Social Policy",
-        "description": "Example data representing the SHARE-ERIC, Munich Center for the Economics of Aging, Max Planck Institute for Social Law and Social Policy",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
-      },
-      {
-        "reference": {
           "reference": "Organization/InstanceOfOrganizationUMG"
         },
         "name": "Instance Of Organization UMG",
         "description": "Example data representing an university",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
-      },
-      {
-        "reference": {
-          "reference": "Organization/InstanceOfOrganizationContactUniversityBristol"
-        },
-        "name": "Instance Of Organization University of Bristol",
-        "description": "Example data representing the University of Bristol",
         "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
       },
       {
@@ -655,121 +259,9 @@
       },
       {
         "reference": {
-          "reference": "Organization/InstanceOfOrganizationCreatorWHORegionalOfficeEurope"
-        },
-        "name": "Instance Of Organization World Health Organization. Regional Office for Europe",
-        "description": "Example data representing the World Health Organization. Regional Office for Europe",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
-      },
-      {
-        "reference": {
-          "reference": "Practitioner/InstanceOfPractitionerAxelBoerschSupan"
-        },
-        "name": "Instance Of Practitioner Axel Börsch-Supan",
-        "description": "Example of the NFDI4Health PR MDS Practitioner",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner"
-      },
-      {
-        "reference": {
-          "reference": "Practitioner/InstanceOfPractitionerClaudiaSantosHoevener"
-        },
-        "name": "Instance Of Practitioner Claudia Santos-Hövener",
-        "description": "Example of the NFDI4Health PR MDS Practitioner",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner"
-      },
-      {
-        "reference": {
-          "reference": "Practitioner/InstanceOfPractitionerEvaMariaSkoda"
-        },
-        "name": "Instance Of Practitioner Eva-Maria Skoda",
-        "description": "Example of the NFDI4Health PR MDS Practitioner",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner"
-      },
-      {
-        "reference": {
-          "reference": "Practitioner/InstanceOfPractitionerHendrikStreeck"
-        },
-        "name": "Instance Of Practitioner Hendrik Streeck",
-        "description": "Example of the NFDI4Health PR MDS Practitioner",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner"
-      },
-      {
-        "reference": {
-          "reference": "Practitioner/InstanceOfPractitionerIrmgardJordan"
-        },
-        "name": "Instance Of Practitioner Irmgard Jordan",
-        "description": "Example of the NFDI4Health PR MDS Practitioner",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner"
-      },
-      {
-        "reference": {
-          "reference": "Practitioner/InstanceOfPractitionerJulianSass"
-        },
-        "name": "Instance Of Practitioner Julian Sass",
-        "description": "Example of the NFDI4Health PR MDS Practitioner",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner"
-      },
-      {
-        "reference": {
-          "reference": "Practitioner/InstanceOfPractitionerCarstenSchmidt"
-        },
-        "name": "Instance Of Practitioner Jörg Dollmann",
-        "description": "Example of the NFDI4Health PR MDS Practitioner",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner"
-      },
-      {
-        "reference": {
-          "reference": "Practitioner/InstanceOfPractitionerJoergDollmann"
-        },
-        "name": "Instance Of Practitioner Jörg Dollmann",
-        "description": "Example of the NFDI4Health PR MDS Practitioner",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner"
-      },
-      {
-        "reference": {
           "reference": "Practitioner/InstanceOfPractitionerKathleenMerikangas"
         },
         "name": "Instance Of Practitioner Kathleen Merikangas",
-        "description": "Example of the NFDI4Health PR MDS Practitioner",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner"
-      },
-      {
-        "reference": {
-          "reference": "Practitioner/InstanceOfPractitionerKatrineBachHabersaat"
-        },
-        "name": "Instance Of Practitioner Katrine Bach Habersaat",
-        "description": "Example of the NFDI4Health PR MDS Practitioner",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner"
-      },
-      {
-        "reference": {
-          "reference": "Practitioner/InstanceOfPractitionerKristienMichielsen"
-        },
-        "name": "Instance Of Practitioner Kristien Michielsen",
-        "description": "Example of the NFDI4Health PR MDS Practitioner",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner"
-      },
-      {
-        "reference": {
-          "reference": "Practitioner/InstanceOfPractitionerMarthaScherzer"
-        },
-        "name": "Instance Of Practitioner Martha Scherzer",
-        "description": "Example of the NFDI4Health PR MDS Practitioner",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner"
-      },
-      {
-        "reference": {
-          "reference": "Practitioner/InstanceOfPractitionerMatthiasZerban"
-        },
-        "name": "Instance Of Practitioner Matthias Zerban",
-        "description": "Example of the NFDI4Health PR MDS Practitioner",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner"
-      },
-      {
-        "reference": {
-          "reference": "Practitioner/InstanceOfPractitionerNathalieBajos"
-        },
-        "name": "Instance Of Practitioner Nathalie Bajos",
         "description": "Example of the NFDI4Health PR MDS Practitioner",
         "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner"
       },
@@ -804,14 +296,6 @@
         "name": "Instance of Study SPOVID",
         "description": "Example data from the SPOVID study - Sports & Long-COVID-Syndrome",
         "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
-      },
-      {
-        "reference": {
-          "reference": "Organization/InstanceOfOrganizationContactWellcome"
-        },
-        "name": "Instance Of Wellcome Longitudinal Population Study Covid-19 Steering Group and Secretariat",
-        "description": "Example data representing the Wellcome Longitudinal Population Study Covid-19 Steering Group and Secretariat",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
       },
       {
         "reference": {
@@ -1233,6 +717,7 @@
           "reference": "Questionnaire/InstanceOfNutritionalEpidemiologyModule"
         },
         "name": "NFDI4Health Module Nutritional Epidemiology Metadataschema (Use Case 5.1) V3",
+        "description": "Group of items providing information on diet assessment.\n\n**Additional information: **Filtering condition to decide if all following questions will be asked.",
         "exampleBoolean": true
       },
       {
@@ -1581,14 +1066,7 @@
         "reference": {
           "reference": "ValueSet/nfdi4health-vs-mds-study-data-sources-general-umls-local"
         },
-        "name": "NFDI4Health VS MDS Study Data Sources General [UMLS, local]",
-        "description": "Value set defining codes to specify the general study data sources.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/nfdi4health-vs-mds-study-data-sources-imaging-nci"
-        },
+        "name": "NFDI4Health VS MDS Study Data Sources General [UMLS, local]",http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1
         "name": "NFDI4Health VS MDS Study Data Sources Imaging [NCI]",
         "description": "Value set defining codes to specify an imaging data source.",
         "exampleBoolean": false
@@ -1853,16 +1331,6 @@
           "generation": "markdown"
         }
       ]
-    },
-    "parameter": [
-      {
-        "code": "copyrightyear",
-        "value": "2022+"
-      },
-      {
-        "code": "releaselabel",
-        "value": "ci-build"
-      }
-    ]
+    }
   }
 }

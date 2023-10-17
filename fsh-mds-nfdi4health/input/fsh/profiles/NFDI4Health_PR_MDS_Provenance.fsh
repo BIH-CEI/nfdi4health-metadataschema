@@ -17,8 +17,6 @@ Description: "Resource covering information about the provenance of a resource."
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
 * extension contains NFDI4Health_EX_MDS_Provenance_Data_Source named dataSource 1..*
-* extension[dataSource] obeys core18
-* extension[dataSource] obeys core19
 * target only Reference(NFDI4Health_PR_MDS_Questionnaire or NFDI4Health_PR_MDS_Document or NFDI4Health_PR_MDS_Study)
 * target ^definition = "The Reference(s) that were generated or updated by the activity described in this resource. A provenance can point to more than one target if multiple resources were created/updated by the same activity."
 * recorded ^short = "Verfication date / Date when the [RESOURCE] was first submitted for publication / Date when the [RESOURCE] was first posted/published / Date when the last update of the [RESOURCE] was submitted for publication / Date when the last update of the [RESOURCE] was posted/published."
@@ -26,8 +24,6 @@ Description: "Resource covering information about the provenance of a resource."
 * activity 1..
 * activity.coding from NFDI4Health_VS_MDS_Provenance_Activity_HL7_Local (required)
 * activity.coding ^binding.description = "Value set defining codes for activity types."
-* activity.coding.system 1..
-* activity.coding.code 1..
 * agent ^short = "User who submitted, published, updated or verified the resource."
 * agent ^definition = "An actor taking a role in an activity for which it can be assigned some degree of responsibility for the activity taking place."
 * agent.who only Reference(NFDI4Health_PR_MDS_Practitioner or NFDI4Health_PR_MDS_Practitioner_Role or NFDI4Health_PR_MDS_Organization)

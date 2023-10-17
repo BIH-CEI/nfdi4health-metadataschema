@@ -174,12 +174,6 @@ Description: "Resource covering metadata of a questionnaire."
 * copyright.extension ^slicing.rules = #open
 * copyright.extension contains NFDI4Health_EX_MDS_Copyright_Label named copyrightLabel 1..1
 * copyright.extension contains NFDI4Health_EX_MDS_Use_Rights_Confirmations named useRightsConfirmations 0..1  
-* copyright.extension[copyrightLabel] obeys core2
-* extension[roles].extension[nameType] obeys core5
-* extension[roles].extension[nameType] obeys core8
-* extension[roles].extension[nameType] obeys core14
-* extension[roles].extension[nameType] obeys core17
-* extension[roles].extension[roleOrganisational] obeys core11
 
 
 Mapping: NFDI4Health-Questionnaire-to-FHIR

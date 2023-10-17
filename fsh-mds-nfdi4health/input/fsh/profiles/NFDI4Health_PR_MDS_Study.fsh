@@ -188,75 +188,45 @@ Description: "Resource covering metadata of a study."
 * category[primaryDesign] ^comment = "Short input help: Select between non-interventional and interventional study design."
 * category[primaryDesign] ^binding.description = "Value set defining codes for primary designs of studies in a ResearchStudy resource."
 * category[primaryDesign].coding 1..1
-* category[primaryDesign].coding.system 1..
-* category[primaryDesign].coding.code 1..
-* category[primaryDesign] obeys core20
-* category[primaryDesign] obeys core21
-* category[primaryDesign] obeys core23
-* category[primaryDesign] obeys core31
-* category[primaryDesign] obeys core36
-* category[primaryDesign] obeys core37
-* category[primaryDesign] obeys core38
-* category[primaryDesign] obeys core40
-* category[primaryDesign] obeys core41
-* category[primaryDesign] obeys core42
-* category[primaryDesign] obeys core43
 * category[studyTypeInterventional] from NFDI4Health_VS_MDS_Study_Type_Interventional_UMLS (required)
 * category[studyTypeInterventional] ^short = "Specification of study type"
 * category[studyTypeInterventional] ^definition = "The strategy for assigning interventions to participants."
 * category[studyTypeInterventional] ^comment = "Short input help: Select all that apply.\r\nIf \"Other\" is selected, you can specify the study type in the field \"Additional information about the study\"."
 * category[studyTypeInterventional] ^binding.description = "Value set defining codes to specify the type of an interventional study in a ResearchStudy resource."
 * category[studyTypeInterventional].coding 1..1
-* category[studyTypeInterventional].coding.system 1..
-* category[studyTypeInterventional].coding.code 1..
 * category[studyTypeNonInterventional] from NFDI4Health_VS_MDS_Study_Type_Non_Interventional_UMLS_Local (required)
 * category[studyTypeNonInterventional] ^short = "Specification of study type"
 * category[studyTypeNonInterventional] ^definition = "The primary strategy for participant identification and follow-up."
 * category[studyTypeNonInterventional] ^comment = "Short input help: Select all that apply.\r\nIf \"Other\" is selected, you can specify the study type in the field \"Additional information about the study\"."
 * category[studyTypeNonInterventional] ^binding.description = "Value set defining codes to specify the type of a non interventional study in a ResearchStudy resource."
 * category[studyTypeNonInterventional].coding 1..1
-* category[studyTypeNonInterventional].coding.system 1..
-* category[studyTypeNonInterventional].coding.code 1..
-* category[studyTypeNonInterventional] obeys core22
 * category[timePerspectives] from NFDI4Health_VS_MDS_Study_Time_Perspectives_UMLS (required)
 * category[timePerspectives] ^binding.description = "Value set defining codes to specify the time perspective of a study in a ResearchStudy resource."
 * category[timePerspectives].coding 1..1
-* category[timePerspectives].coding.system 1..
-* category[timePerspectives].coding.code 1..
 * category[allocation] from NFDI4Health_VS_MDS_Study_Allocation_NCI (required)
 * category[allocation] ^short = "Type of allocation of participants to an arm"
 * category[allocation] ^definition = "Type of allocation/assignment of individual study participants to an arm."
 * category[allocation] ^comment = "Short input help: Select one value from the list."
 * category[allocation] ^binding.description = "Value set defining codes to specify the subject allocation in a study."
 * category[allocation].coding 1..1
-* category[allocation].coding.system 1..
-* category[allocation].coding.code 1..
 * category[samplingMethod] from NFDI4Health_VS_MDS_Study_Sampling_Method_NCI_Local (required)
 * category[samplingMethod] ^short = "Applied sampling method"
 * category[samplingMethod] ^definition = "Type of the sampling method applied for the selection of study participants."
 * category[samplingMethod] ^comment = "Short Input Help: Select one value from the list."
 * category[samplingMethod] ^binding.description = "Value set defining codes to specify types of sampling methods."
 * category[samplingMethod].coding 1..1
-* category[samplingMethod].coding.system 1..
-* category[samplingMethod].coding.code 1..
-* category[samplingMethod] obeys core26
-* category[samplingMethod] obeys core27
 * category[samplingMethodProbability] from NFDI4Health_VS_MDS_Study_Sampling_Probability_Method_NCI_Local (required)
 * category[samplingMethodProbability] ^short = "Specific type of probability sampling"
 * category[samplingMethodProbability] ^definition = "Specific type of the probability sampling method applied for the selection of study participants."
 * category[samplingMethodProbability] ^comment = "Short Input Help: If known, select one value from the list."
 * category[samplingMethodProbability] ^binding.description = "Value set defining codes to specify types of probability sampling methods."
 * category[samplingMethodProbability].coding 1..1
-* category[samplingMethodProbability].coding.system 1..
-* category[samplingMethodProbability].coding.code 1..
 * category[samplingMethodNonProbability] from NFDI4Health_VS_MDS_Study_Sampling_Method_Non_Probability_NCI_Local (required)
 * category[samplingMethodNonProbability] ^short = "Specific type of non-probability sampling"
 * category[samplingMethodNonProbability] ^definition = "Specific type of the probability sampling method applied for the selection of study participants."
 * category[samplingMethodNonProbability] ^comment = "Short Input Help: If known, select one value from the list."
 * category[samplingMethodNonProbability] ^binding.description = "Value set defining codes to specify types of non-probability sampling methods."
 * category[samplingMethodNonProbability].coding 1..1
-* category[samplingMethodNonProbability].coding.system 1..
-* category[samplingMethodNonProbability].coding.code 1..
 * condition ^short = "Primary health condition(s), disease(s) or focus of the study"
 * condition ^definition = "Group of items providing information about primary health condition(s) or disease(s) considered in the study, or the focus of the study (e.g. medication, food, therapy, device, etc.)."
 * condition.coding.extension ^slicing.discriminator.type = #value
@@ -378,7 +348,6 @@ Description: "Resource covering metadata of a study."
 * site.extension ^slicing.discriminator.path = "url"
 * site.extension ^slicing.rules = #open
 * site.extension contains NFDI4Health_EX_MDS_Study_Centers named centers 0..1
-* site.extension[centers].extension[monoOrMulti] obeys core25
 * reasonStopped ^short = "Reason why the study was stopped"
 * reasonStopped ^definition = "If the study was stopped prematurely, specification of the reason(s) why it was halted."
 * reasonStopped ^comment = "Short input help: E.g., accrual goal met / closed due to toxicity / closed due to lack of study progress / temporarily-closed per study design /etc."
@@ -402,24 +371,6 @@ Description: "Resource covering metadata of a study."
 * objective.name 1..
 * objective.name ^short = "Research questions and/or hypothesis underlying the study"
 * objective.name ^definition = "Statement of the research questions and/or hypotheses underlying the study."
-* extension[roles].extension[nameType] obeys core3
-* extension[roles].extension[nameType] obeys core6
-* extension[roles].extension[nameType] obeys core12
-* extension[roles].extension[nameType] obeys core15
-* extension[roles].extension[roleOrganisational] obeys core9
-* extension[studyStatus].extension[overallStatus] obeys core23
-* extension[studyStatus].extension[overallStatus] obeys core24
-* extension[dataSource].extension[general] obeys core28
-* extension[dataSource].extension[general] obeys core29
-* extension[dataSource].extension[general] obeys core30
-* extension[outcomes].extension[name] obeys core32
-* extension[outcomes].extension[description] obeys core32
-* extension[dataSharingPlan].extension[generally] obeys core33
-* extension[dataSharingPlan].extension[generally] obeys core34
-* extension[dataSharingPlan].extension[generally] obeys core35
-* extension[biospecimen].extension[retention] obeys core39
-* extension[masking].extension[general] obeys core44
-* extension[masking].extension[general] obeys core45
 
 Mapping: NFDI4Health-Study-to-FHIR
 Id: NFDI4Health

@@ -186,12 +186,6 @@ Description: "Resource covering metadata of a document."
 * content.format ^example[=].valueString = "PDF"
 * content.format ^example[+].label = "Example of a Document format"
 * content.format ^example[=].valueString = "XLSX"
-* extension[useRights] obeys core1
-* extension[roles].extension[nameType] obeys core4
-* extension[roles].extension[nameType] obeys core7
-* extension[roles].extension[nameType] obeys core13
-* extension[roles].extension[nameType] obeys core16
-* extension[roles].extension[roleOrganisational] obeys core10
 
 Mapping: NFDI4Health-Document-to-FHIR
 Id: NFDI4Health

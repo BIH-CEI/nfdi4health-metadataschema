@@ -108,22 +108,6 @@
               "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-provenance-data-source"
             ]
           }
-        ],
-        "constraint": [
-          {
-            "key": "core18",
-            "severity": "error",
-            "human": "Cardinality: 1..1, if Resource.classification.resourceType == ('Study' OR 'Substudy/Data collection') AND Resource.provenance.dataSource != 'Manually collected'; otherwise 0..0",
-            "expression": "Provenance.extension[dataSource].exists('Manually collected') implies ResearchStudy.extension[nutritionalData].exists().not()",
-            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-provenance"
-          },
-          {
-            "key": "core19",
-            "severity": "error",
-            "human": "Cardinality: 1..1, if Resource.provenance.dataSource != 'Manually collected'; otherwise 0..0",
-            "expression": "Provenance.extension[dataSource].exists('Manually collected') implies ResearchStudy.extension[chronicDiseases].exists().not() \t",
-            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-provenance"
-          }
         ]
       },
       {
@@ -182,16 +166,6 @@
           "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-provenance-activity-hl7-local",
           "description": "Value set defining codes for activity types."
         }
-      },
-      {
-        "id": "Provenance.activity.coding.system",
-        "path": "Provenance.activity.coding.system",
-        "min": 1
-      },
-      {
-        "id": "Provenance.activity.coding.code",
-        "path": "Provenance.activity.coding.code",
-        "min": 1
       },
       {
         "id": "Provenance.agent",
