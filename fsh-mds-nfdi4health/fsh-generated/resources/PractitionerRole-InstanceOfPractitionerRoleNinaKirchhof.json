@@ -9,12 +9,10 @@
   "telecom": [
     {
       "system": "email",
-      "use": "work",
       "value": "Kirchhof.Nina@mh-hannover.de"
     },
     {
       "system": "phone",
-      "use": "work",
       "value": "+49 (0)511 5322407"
     }
   ],

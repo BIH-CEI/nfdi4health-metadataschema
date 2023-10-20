@@ -191,8 +191,7 @@
             }
           ],
           "rules": "open"
-        },
-        "max": "1"
+        }
       },
       {
         "id": "Organization.telecom:email",

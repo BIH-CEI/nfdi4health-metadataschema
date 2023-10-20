@@ -6,9 +6,9 @@ Description: "Example data of eligibility information from the SPOVID study - Sp
 * type = #person
 * actual = false
 * quantity = 60
-* characteristic[gender][0].valueCodeableConcept = $administrative-gender#male "Male"
+* characteristic[gender][0].valueCodeableConcept =  $SCT#248153007 "Male (finding)"
 * characteristic[gender][=].exclude = false
-* characteristic[gender][+].valueCodeableConcept = $administrative-gender#female "Female"
+* characteristic[gender][+].valueCodeableConcept = $SCT#248152002 "Female (finding)"
 * characteristic[gender][=].exclude = false
-* characteristic[gender][+].valueCodeableConcept = $administrative-gender#other "Other"
+* characteristic[gender][+].valueCodeableConcept = $Remaining#105 "Diverse"
 * characteristic[gender][=].exclude = false

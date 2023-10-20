@@ -55,7 +55,6 @@
       {
         "id": "PractitionerRole.practitioner",
         "path": "PractitionerRole.practitioner",
-        "min": 1,
         "type": [
           {
             "code": "Reference",
@@ -98,8 +97,7 @@
           "description": "Email and phone",
           "rules": "open"
         },
-        "definition": "Email and phone of the  person, group of persons or institution/organisation.",
-        "max": "1"
+        "definition": "Email and phone of the  person, group of persons or institution/organisation."
       },
       {
         "id": "PractitionerRole.telecom:email",
@@ -109,10 +107,6 @@
         "definition": "Email address of the person or group of persons",
         "min": 0,
         "max": "1",
-        "fixedContactPoint": {
-          "system": "email",
-          "use": "work"
-        },
         "mapping": [
           {
             "identity": "NFDI4Health",
@@ -132,6 +126,11 @@
         "min": 1
       },
       {
+        "id": "PractitionerRole.telecom:email.use",
+        "path": "PractitionerRole.telecom.use",
+        "patternCode": "work"
+      },
+      {
         "id": "PractitionerRole.telecom:phone",
         "path": "PractitionerRole.telecom",
         "sliceName": "phone",
@@ -140,10 +139,6 @@
         "comment": "Short input help: Please, use the International ITU-T E.164-number structure for geographic areas, e.g. +49 (0)153 1112233.",
         "min": 0,
         "max": "1",
-        "fixedContactPoint": {
-          "system": "phone",
-          "use": "work"
-        },
         "mapping": [
           {
             "identity": "NFDI4Health",
@@ -167,6 +162,11 @@
             "valueString": "+49 (0)153 1112233"
           }
         ]
+      },
+      {
+        "id": "PractitionerRole.telecom:phone.use",
+        "path": "PractitionerRole.telecom.use",
+        "patternCode": "work"
       }
     ]
   }

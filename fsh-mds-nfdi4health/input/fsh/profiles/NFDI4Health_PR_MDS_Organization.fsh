@@ -38,7 +38,7 @@ Description: "Resource covering metadata of an organization."
 * name ^short = "Name of the organisation/institution/group"
 * name ^definition = "For \"1.11.2.3 Resource.roles.organisational.name\": Name of the organisation, institution or group. / For \"1.11.6.1 Resource.roles.affiliation\": Name of the organisation associated with the role."
 * name ^comment = "Short input help: If you are have already entered the name of the organistion in the property \"Name of the organisation/institution/group\", please repeat it here."
-* telecom ..1
+* telecom 0..*
 * telecom ^slicing.discriminator.type = #value
 * telecom ^slicing.discriminator.path = "system"
 * telecom ^slicing.rules = #open

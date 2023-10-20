@@ -11,9 +11,9 @@ Description: "Example data of eligibility information from the SHIP Trend study 
 * characteristic[eligibleMaximumAge].valueQuantity = $UCUM#a "year"
 * characteristic[eligibleMaximumAge].valueQuantity.value = 79
 * characteristic[eligibleMaximumAge].exclude = false
-* characteristic[gender][0].valueCodeableConcept = $administrative-gender#male "Male"
+* characteristic[gender][0].valueCodeableConcept = $SCT#248153007 "Male (finding)"
 * characteristic[gender][=].exclude = false
-* characteristic[gender][+].valueCodeableConcept = $administrative-gender#female "Female"
+* characteristic[gender][+].valueCodeableConcept = $SCT#248152002 "Female (finding)"
 * characteristic[gender][=].exclude = false
-* characteristic[gender][+].valueCodeableConcept = $administrative-gender#other "Other"
+* characteristic[gender][+].valueCodeableConcept = $Remaining#105 "Diverse"
 * characteristic[gender][=].exclude = false
