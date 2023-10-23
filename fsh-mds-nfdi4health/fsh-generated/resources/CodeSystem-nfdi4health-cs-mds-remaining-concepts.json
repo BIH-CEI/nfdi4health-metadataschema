@@ -535,6 +535,58 @@
     {
       "code": "129",
       "display": "Screener"
+    },
+    {
+      "code": "130",
+      "display": "Primary title"
+    },
+    {
+      "code": "131",
+      "display": "Official title"
+    },
+    {
+      "code": "132",
+      "display": "Scientific title"
+    },
+    {
+      "code": "133",
+      "display": "Plain language title"
+    },
+    {
+      "code": "134",
+      "display": "Subtitle"
+    },
+    {
+      "code": "135",
+      "display": "Short title"
+    },
+    {
+      "code": "136",
+      "display": "Acronym"
+    },
+    {
+      "code": "137",
+      "display": "Different text in an earlier version"
+    },
+    {
+      "code": "138",
+      "display": "Different language"
+    },
+    {
+      "code": "139",
+      "display": "Different language derived from autotranslation"
+    },
+    {
+      "code": "140",
+      "display": "Human use"
+    },
+    {
+      "code": "141",
+      "display": "Machine use"
+    },
+    {
+      "code": "142",
+      "display": "Different text for the same object with a different identifier"
     }
   ],
   "version": "0.9",
@@ -550,5 +602,5 @@
       ]
     }
   ],
-  "count": 129
+  "count": 142
 }

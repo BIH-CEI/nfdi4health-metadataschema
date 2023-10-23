@@ -838,9 +838,9 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/nfdi4health-vs-mds-label-type-hl7"
+          "reference": "ValueSet/nfdi4health-vs-mds-label-type-local"
         },
-        "name": "NFDI4Health VS MDS Label Type [HL7]",
+        "name": "NFDI4Health VS MDS Label Type [Local]",
         "description": "Value set used to express the reason and specific aspect for the variant title, such as language and specific language. Comment : Build based on HL7 Value Set specified in FHIR R5",
         "exampleBoolean": false
       },
@@ -874,6 +874,14 @@
         },
         "name": "NFDI4Health VS MDS Provenance Activity [HL7, local]",
         "description": "Value set defining codes for activity types.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-countries-iso"
+        },
+        "name": "NFDI4Health VS MDS Provenance Activity [ISO]",
+        "description": "Value set defining codes countries where the study takes place.",
         "exampleBoolean": false
       },
       {

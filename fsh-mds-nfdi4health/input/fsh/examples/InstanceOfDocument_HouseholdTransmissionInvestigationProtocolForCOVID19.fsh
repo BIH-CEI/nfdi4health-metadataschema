@@ -23,8 +23,8 @@ Dabei werden drei Hauptziele verfolgt:
 /// Details
 * extension[resourceType].valueCoding = $Remaining#021 "Other study document"
 * content.attachment[=].extension[label].extension[value].valueString = "WHO-2019-nCoV-HHtransmission"
-* content.attachment[=].extension[label].extension[type].valueCoding = $HL7titleType#acronym "Acronym"
-* content.attachment[=].extension[label].extension[language].valueCode = #en "English"
+* content.attachment[=].extension[label].extension[type].valueCoding = $Remaining#136 "Acronym"
+* content.attachment[=].extension[label].extension[language].valueCode = $UMLS#C0376245 "English Language"
 * extension[keywords][0].extension[label].valueString = "COVID-19"
 * extension[keywords][=].extension[code].valueUri = "https://id.nlm.nih.gov/mesh/D000086382.html"
 * extension[keywords][+].extension[label].valueString = "Questionnaire"

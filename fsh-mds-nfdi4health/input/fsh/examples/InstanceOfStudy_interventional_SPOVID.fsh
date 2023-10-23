@@ -16,8 +16,8 @@ Usage: #example
 ///Details
 * extension[resourceType].valueCoding = $UMLS#C0947630 "Scientific Study (Research Activity)"
 * extension[label].extension[value].valueString = "SPOVID"
-* extension[label].extension[type].valueCoding = $HL7titleType#acronym
-* extension[label].extension[language].valueCode = #en "English"
+* extension[label].extension[type].valueCoding = $Remaining#136 "Acronym"
+* extension[label].extension[language].valueCode = $UMLS#C0376245 "English Language"
 * keyword[0].coding[0].code = $mesh#D000086382 "COVID-19"
 * keyword[=].coding[=].extension[URI].valueUri = "https://id.nlm.nih.gov/mesh/D000086382.html"
 * keyword[+].coding[0].code = $mesh#T032041 "Pilot study"

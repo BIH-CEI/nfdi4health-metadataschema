@@ -11,7 +11,6 @@ Alias: $Remaining = https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nf
 Alias: $ProvenanceDataSource = https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-mds-provenance-data-source
 Alias: $HL7V3ActRelationType = http://terminology.hl7.org/CodeSystem/v3-ActRelationshipType
 Alias: $StudyStatus = https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-mds-study-status
-Alias: $HL7TitleType = http://hl7.org/fhir/title-type
 Alias: $HL7ParticipationType = http://terminology.hl7.org/CodeSystem/v3-ParticipationType
 Alias: $elementdefinition-identifier = http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier
 Alias: $administrative-gender = http://hl7.org/fhir/administrative-gender

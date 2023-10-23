@@ -100,11 +100,12 @@
 [NFDI4Health_PR_MDS_Study]: StructureDefinition-nfdi4health-pr-mds-study.html
 [NFDI4Health_VS_MDS_ID_TYPE_UMLS_Local]: ValueSet-nfdi4health-vs-mds-id-type-umls-local.html
 [NFDI4Health_VS_MDS_Identifier_Type_Related_Artifact_UMLS_Local]: ValueSet-nfdi4health-vs-mds-identifier-type-related-artifact-umls-local.html
-[NFDI4Health_VS_MDS_Label_Type_HL7]: ValueSet-nfdi4health-vs-mds-label-type-hl7.html
+[NFDI4Health_VS_MDS_Label_Type_Local]: ValueSet-nfdi4health-vs-mds-label-type-local.html
 [NFDI4Health_VS_MDS_Mortality_Data_NCI]: ValueSet-nfdi4health-vs-mds-mortality-data-nci.html
 [NFDI4Health_VS_MDS_Organisational_Roles_NCI_Local]: ValueSet-nfdi4health-vs-mds-organisational-roles-nci-local.html
 [NFDI4Health_VS_MDS_Personal_Roles_NCI_UMLS_Local]: ValueSet-nfdi4health-vs-mds-personal-roles-nci-umls-local.html
 [NFDI4Health_VS_MDS_Provenance_Activity_HL7_Local]: ValueSet-nfdi4health-vs-mds-provenance-activity-hl7-local.html
+[NFDI4Health_VS_MDS_Countries_ISO]: ValueSet-nfdi4health-vs-mds-countries-iso.html
 [NFDI4Health_VS_MDS_Provenance_Data_Source_Local]: ValueSet-nfdi4health-vs-mds-provenance-data-source-local.html
 [NFDI4Health_VS_MDS_Time_Units_UCUM_UMLS]: ValueSet-nfdi4health-vs-mds-time-units-ucum-umls.html
 [NFDI4Health_VS_MDS_Relation_Type_Ids_Nfdi_Local]: ValueSet-nfdi4health-vs-mds-relation-type-ids-nfdi-local.html

@@ -14,8 +14,8 @@ Usage: #example
 ///Details
 * extension[resourceType].valueCoding = $UMLS#C0947630 "Scientific Study (Research Activity)"
 * extension[label].extension[value].valueString = "SHIP-TREND"
-* extension[label].extension[type].valueCoding = $HL7titleType#acronym
-* extension[label].extension[language].valueCode = #en "English"
+* extension[label].extension[type].valueCoding = $Remaining#136 "Acronym"
+* extension[label].extension[language].valueCode = $UMLS#C0376245 "English Language"
 * extension[executionLanguage].valueCode = #de "German"
 * relatedArtifact[webpage].url = "https://www2.medizin.uni-greifswald.de/cm/fv/ship.html"
 ////Missing: source of info in Provenance

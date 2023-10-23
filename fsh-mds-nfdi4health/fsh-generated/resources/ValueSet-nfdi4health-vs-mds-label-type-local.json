@@ -1,11 +1,11 @@
 {
   "resourceType": "ValueSet",
   "status": "draft",
-  "name": "NFDI4Health_VS_MDS_Label_Type_HL7",
-  "id": "nfdi4health-vs-mds-label-type-hl7",
-  "title": "NFDI4Health VS MDS Label Type [HL7]",
+  "name": "NFDI4Health_VS_MDS_Label_Type_Local",
+  "id": "nfdi4health-vs-mds-label-type-local",
+  "title": "NFDI4Health VS MDS Label Type [Local]",
   "description": "Value set used to express the reason and specific aspect for the variant title, such as language and specific language. Comment : Build based on HL7 Value Set specified in FHIR R5",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-label-type-hl7",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-label-type-local",
   "version": "0.9",
   "experimental": true,
   "publisher": "NFDI4Health",
@@ -22,58 +22,58 @@
   "compose": {
     "include": [
       {
-        "system": "http://hl7.org/fhir/title-type",
+        "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
         "concept": [
           {
-            "code": "primary",
+            "code": "130",
             "display": "Primary title"
           },
           {
-            "code": "official",
+            "code": "131",
             "display": "Official title"
           },
           {
-            "code": "scientific",
+            "code": "132",
             "display": "Scientific title"
           },
           {
-            "code": "plain-language",
+            "code": "133",
             "display": "Plain language title"
           },
           {
-            "code": "subtitle",
+            "code": "134",
             "display": "Subtitle"
           },
           {
-            "code": "short-title",
+            "code": "135",
             "display": "Short title"
           },
           {
-            "code": "acronym",
+            "code": "136",
             "display": "Acronym"
           },
           {
-            "code": "earlier-title",
+            "code": "137",
             "display": "Different text in an earlier version"
           },
           {
-            "code": "language",
+            "code": "138",
             "display": "Different language"
           },
           {
-            "code": "autotranslated",
+            "code": "139",
             "display": "Different language derived from autotranslation"
           },
           {
-            "code": "human-use",
+            "code": "140",
             "display": "Human use"
           },
           {
-            "code": "machine-use",
+            "code": "141",
             "display": "Machine use"
           },
           {
-            "code": "duplicate-uid",
+            "code": "142",
             "display": "Different text for the same object with a different identifier"
           }
         ]
