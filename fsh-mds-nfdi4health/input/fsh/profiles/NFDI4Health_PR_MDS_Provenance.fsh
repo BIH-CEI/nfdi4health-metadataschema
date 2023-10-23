@@ -13,9 +13,6 @@ Description: "Resource covering information about the provenance of a resource."
 * . ^definition = "Group of items providing information about provenance aspects of the data entry on the portal"
 * meta.versionId ^short = "Version number of the resource within the portal/system"
 * meta.versionId ^definition = "Version number of the resource within the portal/system"
-* extension ^slicing.discriminator.type = #value
-* extension ^slicing.discriminator.path = "url"
-* extension ^slicing.rules = #open
 * extension contains NFDI4Health_EX_MDS_Provenance_Data_Source named dataSource 1..1
 * target only Reference(NFDI4Health_PR_MDS_Questionnaire or NFDI4Health_PR_MDS_Document or NFDI4Health_PR_MDS_Study)
 * target ^definition = "The Reference(s) that were generated or updated by the activity described in this resource. A provenance can point to more than one target if multiple resources were created/updated by the same activity."
