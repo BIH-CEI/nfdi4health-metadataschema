@@ -61,7 +61,7 @@ Description: "NFDI4Health LogicalModel General Metadataschema"
 * Resource.keywords.code ^example.label = "General"
 * Resource.keywords.code ^example.valueUri = "http://id.nlm.nih.gov/mesh/D000086402"
 * Resource.languages 0..* code "Language(s) of the [RESOURCE]" "Language(s) in which a study/substudy is conducted, or a language in which a study document is composed."
-* Resource.languages from http://terminology.hl7.org/CodeSystem/iso639-1 (required)
+* Resource.languages from NFDI4Health_VS_MDS_Execution_Language_ISO (required)
 * Resource.languages ^comment = "Short Input Help: Select all that apply. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: DataCite [1]"
 * Resource.webpage 0..1 url "Web page of the [RESOURCE]" "If existing, a link to the web page directly relevant to the resource."
 * Resource.webpage ^comment = "Additional Information: Other web pages related to the resource can additionally be entered in the section 'Related resources'. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: DataCite [1], CT.gov [2], DRKS [3]"

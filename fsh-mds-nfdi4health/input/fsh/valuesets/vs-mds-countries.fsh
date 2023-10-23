@@ -10,4 +10,4 @@ Description: "Value set defining codes countries where the study takes place."
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 
-* include codes from system http://terminology.hl7.org/CodeSystem/iso639-1
+* include codes from system urn:iso:std:iso:3166

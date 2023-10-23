@@ -98,6 +98,7 @@
 [NFDI4Health_PR_MDS_Related_Artifact_NFDI4Health_Resource]: StructureDefinition-nfdi4health-pr-mds-related-artifact-ndfi4health-resource.html
 [NFDI4Health_PR_MDS_Related_Artifact_Non_NFDI4Health_Resource]: StructureDefinition-nfdi4health-pr-mds-related-artifact-non-ndfi4health-resource.html
 [NFDI4Health_PR_MDS_Study]: StructureDefinition-nfdi4health-pr-mds-study.html
+[NFDI4Health_VS_MDS_Execution_Language_ISO]: ValueSet-nfdi4health-vs-mds-execution-language-iso.html
 [NFDI4Health_VS_MDS_ID_TYPE_UMLS_Local]: ValueSet-nfdi4health-vs-mds-id-type-umls-local.html
 [NFDI4Health_VS_MDS_Identifier_Type_Related_Artifact_UMLS_Local]: ValueSet-nfdi4health-vs-mds-identifier-type-related-artifact-umls-local.html
 [NFDI4Health_VS_MDS_Label_Type_Local]: ValueSet-nfdi4health-vs-mds-label-type-local.html

@@ -822,6 +822,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-execution-language-iso"
+        },
+        "name": "NFDI4Health VS MDS Execution Language [ISO]",
+        "description": "Value set defining codes of the languages of the resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/nfdi4health-vs-mds-id-type-umls-local"
         },
         "name": "NFDI4Health VS MDS ID Type [UMLS, local]",

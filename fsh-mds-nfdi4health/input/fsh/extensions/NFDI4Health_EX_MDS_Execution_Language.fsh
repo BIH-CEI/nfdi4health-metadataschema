@@ -18,7 +18,7 @@ Description: "Extension provinding information about the language in which a stu
 * . ^comment = "Short input help: Select all that apply."
 * value[x] 1..
 * value[x] only code
-* valueCode from $ISOLanguage (required)
+* valueCode from NFDI4Health_VS_MDS_Execution_Language_ISO (required)
 * valueCode ^binding.description = "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)"
 * valueCode ^short = "A human language."
 * valueCode ^definition = "A human language."
