@@ -100,7 +100,7 @@
         "path": "Provenance.extension",
         "sliceName": "dataSource",
         "min": 1,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "Extension",
