@@ -261,7 +261,7 @@ Description: "NFDI4Health LogicalModel General Metadataschema"
 * Resource.studyDesign.studyEndDate 0..1 date "End date of data collection for the study" "In case of studies with patients or other participants, it is the date when the last participant is examined or receives an intervention, or the date of the last participant's last visit."
 * Resource.studyDesign.studyEndDate ^comment = "Additional Information: Preferred date format: DD.MM.YYYY. / Short Input Information: In case of a planned or ongoing study, it is the intended end date; in case of a completed study — the actual end date. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health, CT.gov [2], DRKS [3]"
 * Resource.studyDesign.countries 1..* CodeableConcept "Country(ies) where the study takes place" "Country or countries where the study takes place."
-* Resource.studyDesign.countries from https://www.hl7.org/fhir/valueset-country.html (required)
+* Resource.studyDesign.countries from NFDI4Health_VS_MDS_Countries_ISO (required)
 * Resource.studyDesign.countries ^comment = "Short Input Help: Select all that apply. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2], DRKS [3]"
 * Resource.studyDesign.region 0..1 string "Regions and/or cities within a country where the study takes place" "If applicable, region(s) and/or city(ies) within a country where the study takes place."
 * Resource.studyDesign.region ^comment = "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health"

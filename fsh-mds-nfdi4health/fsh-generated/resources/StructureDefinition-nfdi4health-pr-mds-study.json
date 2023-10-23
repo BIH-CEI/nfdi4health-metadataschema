@@ -1761,8 +1761,8 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "pattern",
-              "path": "coding.system"
+              "type": "exists",
+              "path": "coding"
             }
           ],
           "rules": "open"
@@ -1779,6 +1779,10 @@
         "comment": "Additional information: Select all that apply.",
         "min": 1,
         "max": "*",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-countries-iso"
+        },
         "mapping": [
           {
             "identity": "NFDI4Health",
@@ -1793,37 +1797,27 @@
         "max": "1"
       },
       {
-        "id": "ResearchStudy.location:countries.coding.system",
-        "path": "ResearchStudy.location.coding.system",
-        "min": 1,
-        "patternUri": "urn:iso:std:iso:3166"
-      },
-      {
         "id": "ResearchStudy.location:regions",
         "path": "ResearchStudy.location",
         "sliceName": "regions",
-        "short": "Regions and/or cities within a country where the study takes place",
-        "definition": "If applicable, region(s) and/or city(ies) within a country where the study takes place.",
         "min": 0,
-        "max": "*",
+        "max": "*"
+      },
+      {
+        "id": "ResearchStudy.location:regions.coding",
+        "path": "ResearchStudy.location.coding",
+        "max": "0"
+      },
+      {
+        "id": "ResearchStudy.location:regions.text",
+        "path": "ResearchStudy.location.text",
+        "min": 1,
         "mapping": [
           {
             "identity": "NFDI4Health",
             "map": "1.17.16 Resource.studyDesign.region"
           }
         ]
-      },
-      {
-        "id": "ResearchStudy.location:regions.coding",
-        "path": "ResearchStudy.location.coding",
-        "min": 1,
-        "max": "1"
-      },
-      {
-        "id": "ResearchStudy.location:regions.coding.system",
-        "path": "ResearchStudy.location.coding.system",
-        "min": 1,
-        "patternUri": "urn:iso:std:iso:3166:-2"
       },
       {
         "id": "ResearchStudy.description",

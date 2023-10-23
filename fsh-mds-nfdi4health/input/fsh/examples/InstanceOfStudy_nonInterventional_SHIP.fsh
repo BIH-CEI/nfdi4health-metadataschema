@@ -108,7 +108,7 @@ Usage: #example
 * extension[exclusionCriteria].valueString = "-persons not being able to understand German"
 /// Study Population
 * location[countries] = $iso3166#DE "Germany"
-* location[regions] = $iso3166-2#DE-MV "Mecklenburg-Vorpommern"
+* location[regions].text = "Mecklenburg-Vorpommern"
 * site.extension[centers].extension[monoOrMulti].valueCoding = $Remaining#084 "Monocentric"
 * extension[population].valueString = "Adults from the general population meeting the criteria stated above."
 * enrollment[+] = Reference(InstanceOfGroupActualSHIP)

@@ -2535,7 +2535,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.hl7.org/fhir/valueset-country.html"
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-countries-iso"
         },
         "mapping": [
           {

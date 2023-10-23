@@ -614,26 +614,6 @@
       "value": "81"
     }
   ],
-  "location": [
-    {
-      "coding": [
-        {
-          "system": "urn:iso:std:iso:3166",
-          "code": "DE",
-          "display": "Germany"
-        }
-      ]
-    },
-    {
-      "coding": [
-        {
-          "system": "urn:iso:std:iso:3166:-2",
-          "code": "DE-MV",
-          "display": "Mecklenburg-Vorpommern"
-        }
-      ]
-    }
-  ],
   "relatedArtifact": [
     {
       "type": "documentation",
@@ -873,6 +853,20 @@
     },
     {
       "reference": "Group/InstanceOfGroupActualSHIP"
+    }
+  ],
+  "location": [
+    {
+      "coding": [
+        {
+          "code": "DE",
+          "system": "urn:iso:std:iso:3166",
+          "display": "Germany"
+        }
+      ]
+    },
+    {
+      "text": "Mecklenburg-Vorpommern"
     }
   ]
 }

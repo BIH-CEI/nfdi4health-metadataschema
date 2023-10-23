@@ -95,7 +95,7 @@
           {
             "code": "a",
             "system": "http://unitsofmeasure.org",
-            "display": "year"
+            "display": "a"
           }
         ],
         "min": 1

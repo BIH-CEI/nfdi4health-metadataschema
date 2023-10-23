@@ -315,17 +315,6 @@
       "value": "236"
     }
   ],
-  "location": [
-    {
-      "coding": [
-        {
-          "system": "urn:iso:std:iso:3166",
-          "code": "DE",
-          "display": "Germany"
-        }
-      ]
-    }
-  ],
   "keyword": [
     {
       "coding": [
@@ -749,6 +738,17 @@
   "enrollment": [
     {
       "reference": "Group/InstanceOfGroupIntendedSPOVID"
+    }
+  ],
+  "location": [
+    {
+      "coding": [
+        {
+          "code": "DE",
+          "system": "urn:iso:std:iso:3166",
+          "display": "Germany"
+        }
+      ]
     }
   ]
 }

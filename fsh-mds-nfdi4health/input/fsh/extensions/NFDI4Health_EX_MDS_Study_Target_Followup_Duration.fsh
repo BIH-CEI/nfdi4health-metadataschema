@@ -18,7 +18,7 @@ Description: "Extension informing about the target follow-up duration of a study
 * value[x] only Quantity
 * valueQuantity.value 1..
 * valueQuantity.code 1..
-* valueQuantity.code ^code = $UCUM#a "year"
+* valueQuantity.code ^code = $UCUM#a "a"
 * valueQuantity.system 1..
 * valueQuantity.system = "http://unitsofmeasure.org" (exactly)
 

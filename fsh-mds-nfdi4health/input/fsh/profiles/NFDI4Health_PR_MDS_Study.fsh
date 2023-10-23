@@ -290,24 +290,20 @@ Description: "Resource covering metadata of a study."
 * keyword.text ^comment = "Additional information: The use of terms from established classifications/vocabularies (e.g. MeSH, UMLS, SNOMED CT) is preferred. However, also self-assigned keywords are allowed. | Short input help: Preferably, use terms from MeSH (https://meshb.nlm.nih.gov/search) or UMLS (https://uts.nlm.nih.gov/uts/umls/home)."
 * keyword.text ^example[0].label = "Keyword label"
 * keyword.text ^example[=].valueString = "SARS-CoV-2"
-* location ^slicing.discriminator.type = #pattern
-* location ^slicing.discriminator.path = "coding.system"
+* location ^slicing.discriminator.type = #exists
+* location ^slicing.discriminator.path = "coding"
 * location ^slicing.rules = #open
 * location ^comment = "Short input help: Select all that apply."
 * location contains
     countries 1..* and
-    regions 0..* 
+    regions 0..*
 * location[countries] ^short = "Country(ies) where the study takes place"
 * location[countries] ^definition = "Country or countries where the study takes place."
 * location[countries] ^comment = "Additional information: Select all that apply."
 * location[countries].coding 1..1
-* location[countries].coding.system 1..1
-* location[countries].coding.system = $iso3166
-* location[regions] ^short = "Regions and/or cities within a country where the study takes place"
-* location[regions] ^definition = "If applicable, region(s) and/or city(ies) within a country where the study takes place."
-* location[regions].coding 1..1
-* location[regions].coding.system 1..1
-* location[regions].coding.system = $iso3166-2
+* location[countries] from NFDI4Health_VS_MDS_Countries_ISO (required)
+* location[regions].coding 0..0
+* location[regions].text 1..1
 * description 1..1
 * description ^short = "English description of the [RESOURCE]"
 * description ^definition = "A short plain text summary describing the resource in English."
@@ -443,7 +439,7 @@ Source: NFDI4Health_PR_MDS_Study
 * keyword.coding.code -> "1.7.2 Resource.keywords.code"
 * keyword.text -> "1.7.1 Resource.keywords.label"
 * location[countries] -> "1.17.15 Resource.studyDesign.countries"
-* location[regions] -> "1.17.16 Resource.studyDesign.region"
+* location[regions].text -> "1.17.16 Resource.studyDesign.region"
 * description -> "1.5.1 Resource.descriptionEnglish.text"
 * description.extension[translation] -> "1.6 Resource.descriptionNonEnglish"
 * description.extension[translation].extension[lang] -> "1.6.2 Resource.descriptionNonEnglish.language"
