@@ -9,12 +9,10 @@
   "telecom": [
     {
       "system": "email",
-      "use": "work",
       "value": "merikank@mail.nih.gov"
     },
     {
       "system": "phone",
-      "use": "work",
       "value": "+1 (0)301 4961172"
     }
   ],

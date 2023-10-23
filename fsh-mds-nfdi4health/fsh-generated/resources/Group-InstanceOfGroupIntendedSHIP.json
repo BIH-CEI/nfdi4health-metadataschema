@@ -57,9 +57,9 @@
       "valueCodeableConcept": {
         "coding": [
           {
-            "code": "male",
-            "system": "http://hl7.org/fhir/administrative-gender",
-            "display": "Male"
+            "code": "248153007",
+            "system": "http://snomed.info/sct",
+            "display": "Male (finding)"
           }
         ]
       },
@@ -78,9 +78,9 @@
       "valueCodeableConcept": {
         "coding": [
           {
-            "code": "female",
-            "system": "http://hl7.org/fhir/administrative-gender",
-            "display": "Female"
+            "code": "248152002",
+            "system": "http://snomed.info/sct",
+            "display": "Female (finding)"
           }
         ]
       },
@@ -99,9 +99,9 @@
       "valueCodeableConcept": {
         "coding": [
           {
-            "code": "other",
-            "system": "http://hl7.org/fhir/administrative-gender",
-            "display": "Other"
+            "code": "105",
+            "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+            "display": "Diverse"
           }
         ]
       },
