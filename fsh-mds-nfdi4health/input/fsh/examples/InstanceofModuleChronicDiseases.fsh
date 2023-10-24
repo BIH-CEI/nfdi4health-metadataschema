@@ -17,10 +17,10 @@ Usage: #example
 * item[=].prefix = "dataCollected"
 * item[=].text = "Type of data collected"
 * item[=].required = true
-* item[=].answerValueSet = "NFDI4Health_VS_MDS_Data_Collected_UMLS"
+* item[=].answerValueSet = "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-cd-datacollected-umls"
 * item[+].type = #choice
 * item[=].linkId = "479642564979"
 * item[=].prefix = "informationSources"
 * item[=].text = "From which source(s) are the data generated/extracted?"
 * item[=].required = true
-* item[=].answerValueSet = "NFDI4Health_VS_MDS_CD_Information_Sources_UMLS_Local"
+* item[=].answerValueSet = "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-cd-information-sources-umls-local"

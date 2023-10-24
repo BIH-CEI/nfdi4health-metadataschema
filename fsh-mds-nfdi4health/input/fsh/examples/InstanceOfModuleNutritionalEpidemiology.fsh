@@ -12,7 +12,7 @@ Usage: #example
 * item[=].linkId = "NE1.1"
 * item[=].text = "Which dietary assessment instrument is used in the study/data collection event?"
 * item[=].required = true
-* item[=].answerValueSet = "NFDI4Health_VS_MDS_NE_Instrument_NCI_Local"
+* item[=].answerValueSet = "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-ne-instrument-nci-local"
 * item[+].type = #integer
 * item[=].linkId = "NE1.2"
 * item[=].text = "How many items were inquired with the FFQ?"
@@ -21,22 +21,22 @@ Usage: #example
 * item[=].linkId = "NE1.3"
 * item[=].text = "Mode used to apply the dietary assessment instrument to study participants"
 * item[=].required = true
-* item[=].answerValueSet = "NFDI4Health_VS_MDS_NE_Mode_UMLS_Local"
+* item[=].answerValueSet = "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-ne-mode-umls-local"
 * item[+].type = #choice
 * item[=].linkId = "NE1.4"
 * item[=].text = "Device used to apply the dietary assessment instrument to study participants"
 * item[=].required = true
-* item[=].answerValueSet = "NFDI4Health_VS_MDS_NE_Device_NCI_SNOMEDCT_Local"
+* item[=].answerValueSet = "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-ne-device-nci-snomedct-local"
 * item[+].type = #choice
 * item[=].linkId = "NE1.5"
 * item[=].text = "How is the portion size inquired in the dietary assessment instrument?"
 * item[=].required = true
-* item[=].answerValueSet = "NFDI4Health_VS_MDS_NE_Portion_Size_SNOMEDCT_Local"
+* item[=].answerValueSet = "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-ne-portion-size-snomedct-local"
 * item[+].type = #choice
 * item[=].linkId = "NE1.6"
 * item[=].text = "Which reference period is the dietary assessment instrument referring to, e.g. 24-h recall is referring to the previous day."
 * item[=].required = true
-* item[=].answerValueSet = "NFDI4Health_VS_MDS_NE_Reference_Period_Unit_SNOMEDCT"
+* item[=].answerValueSet = "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-ne-reference-period-unit-snomedct"
 * item[+].type = #integer
 * item[=].linkId = "NE1.7"
 * item[=].text = "How many of the reference period units were assessed?"
