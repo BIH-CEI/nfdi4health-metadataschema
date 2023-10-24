@@ -4,7 +4,6 @@
 [InstanceOfOrganizationCreatorIRM]: Organization-InstanceOfOrganizationCreatorIRM.html
 [InstanceOfOrganizationCreatorNIMH]: Organization-InstanceOfOrganizationCreatorNIMH.html
 [OrganizationPublicExample]: Organization-OrganizationPublicExample.html
-[ProvenanceExample]: Provenance-ProvenanceExample.html
 [InstanceOfEvidenceVariableSPOVID]: EvidenceVariable-InstanceOfEvidenceVariableSPOVID.html
 [InstanceOfGroupActualSHIP]: Group-InstanceOfGroupActualSHIP.html
 [InstanceOfGroupIntendedSHIP]: Group-InstanceOfGroupIntendedSHIP.html

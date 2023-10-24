@@ -157,11 +157,7 @@
       {
         "id": "Provenance.activity",
         "path": "Provenance.activity",
-        "min": 1
-      },
-      {
-        "id": "Provenance.activity.coding",
-        "path": "Provenance.activity.coding",
+        "min": 1,
         "binding": {
           "strength": "required",
           "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-provenance-activity-hl7-local",
