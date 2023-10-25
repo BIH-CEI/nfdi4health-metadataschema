@@ -83,7 +83,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-countries-iso",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-execution-language-iso",
           "description": "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)"
         }
       }

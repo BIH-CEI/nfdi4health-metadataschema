@@ -70,7 +70,7 @@ Usage: #example
 * condition[=].coding[=].extension[uri].valueUri = "https://browser.ihtsdotools.org/?perspective=full&latestRedirect=false&conceptId1=739122008&edition=MAIN/2023-07-31"
 * condition[+].coding[0] = $SCT#78064003 "Respiratory function (observable entity)"
 * condition[=].coding[=].extension[uri].valueUri = "https://browser.ihtsdotools.org/?perspective=full&conceptId1=78064003&edition=MAIN/2023-07-31&release=&languages=en&latestRedirect=false"
-* condition[+].coding[0] = $SCT#76039005 " Disturbance of attention (finding)"
+* condition[+].coding[0] = $SCT#76039005 "Disturbance of attention (finding)"
 * condition[=].coding[=].extension[uri].valueUri = "https://browser.ihtsdotools.org/?perspective=full&conceptId1=76039005&edition=MAIN/2023-07-31&release=&languages=en&latestRedirect=false"
 * condition[+].coding[0] = $SCT#183301007 "Physical exercises (regime/therapy)"
 * condition[=].coding[=].extension[uri].valueUri = "https://browser.ihtsdotools.org/?perspective=full&conceptId1=183301007&edition=MAIN/2023-07-31&release=&languages=en&latestRedirect=false"

@@ -187,46 +187,46 @@ Description: "Resource covering metadata of a study."
 * category[primaryDesign] ^definition = "Non-interventional study design refers to a study that does not aim to alter study outcomes of interest.\r\nInterventional study design refers to a study that aims to alter study outcomes of interest."
 * category[primaryDesign] ^comment = "Short input help: Select between non-interventional and interventional study design."
 * category[primaryDesign] ^binding.description = "Value set defining codes for primary designs of studies in a ResearchStudy resource."
-* category[primaryDesign].coding 1..1
+* category[primaryDesign].coding 0..1
 * category[studyTypeInterventional] from NFDI4Health_VS_MDS_Study_Type_Interventional_UMLS (required)
 * category[studyTypeInterventional] ^short = "Specification of study type"
 * category[studyTypeInterventional] ^definition = "The strategy for assigning interventions to participants."
 * category[studyTypeInterventional] ^comment = "Short input help: Select all that apply.\r\nIf \"Other\" is selected, you can specify the study type in the field \"Additional information about the study\"."
 * category[studyTypeInterventional] ^binding.description = "Value set defining codes to specify the type of an interventional study in a ResearchStudy resource."
-* category[studyTypeInterventional].coding 1..1
+* category[studyTypeInterventional].coding 0..*
 * category[studyTypeNonInterventional] from NFDI4Health_VS_MDS_Study_Type_Non_Interventional_UMLS_Local (required)
 * category[studyTypeNonInterventional] ^short = "Specification of study type"
 * category[studyTypeNonInterventional] ^definition = "The primary strategy for participant identification and follow-up."
 * category[studyTypeNonInterventional] ^comment = "Short input help: Select all that apply.\r\nIf \"Other\" is selected, you can specify the study type in the field \"Additional information about the study\"."
 * category[studyTypeNonInterventional] ^binding.description = "Value set defining codes to specify the type of a non interventional study in a ResearchStudy resource."
-* category[studyTypeNonInterventional].coding 1..1
+* category[studyTypeNonInterventional].coding 0..1
 * category[timePerspectives] from NFDI4Health_VS_MDS_Study_Time_Perspectives_UMLS (required)
 * category[timePerspectives] ^binding.description = "Value set defining codes to specify the time perspective of a study in a ResearchStudy resource."
-* category[timePerspectives].coding 1..1
+* category[timePerspectives].coding 0..*
 * category[allocation] from NFDI4Health_VS_MDS_Study_Allocation_NCI (required)
 * category[allocation] ^short = "Type of allocation of participants to an arm"
 * category[allocation] ^definition = "Type of allocation/assignment of individual study participants to an arm."
 * category[allocation] ^comment = "Short input help: Select one value from the list."
 * category[allocation] ^binding.description = "Value set defining codes to specify the subject allocation in a study."
-* category[allocation].coding 1..1
+* category[allocation].coding 0..1
 * category[samplingMethod] from NFDI4Health_VS_MDS_Study_Sampling_Method_NCI_Local (required)
 * category[samplingMethod] ^short = "Applied sampling method"
 * category[samplingMethod] ^definition = "Type of the sampling method applied for the selection of study participants."
 * category[samplingMethod] ^comment = "Short Input Help: Select one value from the list."
 * category[samplingMethod] ^binding.description = "Value set defining codes to specify types of sampling methods."
-* category[samplingMethod].coding 1..1
+* category[samplingMethod].coding 0..1
 * category[samplingMethodProbability] from NFDI4Health_VS_MDS_Study_Sampling_Probability_Method_NCI_Local (required)
 * category[samplingMethodProbability] ^short = "Specific type of probability sampling"
 * category[samplingMethodProbability] ^definition = "Specific type of the probability sampling method applied for the selection of study participants."
 * category[samplingMethodProbability] ^comment = "Short Input Help: If known, select one value from the list."
 * category[samplingMethodProbability] ^binding.description = "Value set defining codes to specify types of probability sampling methods."
-* category[samplingMethodProbability].coding 1..1
+* category[samplingMethodProbability].coding 0..1
 * category[samplingMethodNonProbability] from NFDI4Health_VS_MDS_Study_Sampling_Method_Non_Probability_NCI_Local (required)
 * category[samplingMethodNonProbability] ^short = "Specific type of non-probability sampling"
 * category[samplingMethodNonProbability] ^definition = "Specific type of the probability sampling method applied for the selection of study participants."
 * category[samplingMethodNonProbability] ^comment = "Short Input Help: If known, select one value from the list."
 * category[samplingMethodNonProbability] ^binding.description = "Value set defining codes to specify types of non-probability sampling methods."
-* category[samplingMethodNonProbability].coding 1..1
+* category[samplingMethodNonProbability].coding 0..1
 * condition ^short = "Primary health condition(s), disease(s) or focus of the study"
 * condition ^definition = "Group of items providing information about primary health condition(s) or disease(s) considered in the study, or the focus of the study (e.g. medication, food, therapy, device, etc.)."
 * condition.coding.extension ^slicing.discriminator.type = #value

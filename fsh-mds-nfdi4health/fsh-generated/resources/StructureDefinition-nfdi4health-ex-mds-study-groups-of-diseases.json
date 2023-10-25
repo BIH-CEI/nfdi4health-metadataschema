@@ -99,8 +99,8 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-groups-of-diseases-generally-icd11-umls",
-          "description": "Value set defining codes from ICD-11 to specify groups of diseases or conditions on which the data were collected in the study."
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-groups-of-diseases-generally-icd10-umls",
+          "description": "Value set defining codes from ICD-10 to specify groups of diseases or conditions on which the data were collected in the study."
         }
       },
       {

@@ -3,7 +3,7 @@
   "status": "draft",
   "name": "NFDI4Health_VS_MDS_Countries_ISO",
   "id": "nfdi4health-vs-mds-countries-iso",
-  "title": "NFDI4Health VS MDS Provenance Activity [ISO]",
+  "title": "NFDI4Health VS MDS Countries [ISO]",
   "description": "Value set defining codes countries where the study takes place.",
   "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-countries-iso",
   "version": "0.9",

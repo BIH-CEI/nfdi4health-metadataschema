@@ -59,18 +59,32 @@
         "sliceName": "relatedArtifactNFDI4Health",
         "min": 0,
         "max": "*",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related-artifact-reltype-nfdi-resource"
-            ]
-          }
-        ],
         "mapping": [
           {
             "identity": "NFDI4Health",
             "map": "1.14 Resource.idsNfdi4health"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:relatedArtifactNFDI4Health.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:relatedArtifactNFDI4Health.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "relatedArtifactNFDI4Health"
+      },
+      {
+        "id": "Extension.extension:relatedArtifactNFDI4Health.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "RelatedArtifact",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-related-artifact-ndfi4health-resource"
+            ]
           }
         ]
       },
@@ -80,18 +94,32 @@
         "sliceName": "relatedArtifactNonNFDI4Health",
         "min": 0,
         "max": "*",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related-artifact-reltype-non-nfdi-resource"
-            ]
-          }
-        ],
         "mapping": [
           {
             "identity": "NFDI4Health",
             "map": "1.13 Resource.ids"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:relatedArtifactNonNFDI4Health.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:relatedArtifactNonNFDI4Health.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "relatedArtifactNonNFDI4Health"
+      },
+      {
+        "id": "Extension.extension:relatedArtifactNonNFDI4Health.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "RelatedArtifact",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-related-artifact-non-ndfi4health-resource"
+            ]
           }
         ]
       },

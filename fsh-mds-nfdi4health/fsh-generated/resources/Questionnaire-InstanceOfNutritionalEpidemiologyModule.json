@@ -17,7 +17,7 @@
       "linkId": "NE1.1",
       "text": "Which dietary assessment instrument is used in the study/data collection event?",
       "required": true,
-      "answerValueSet": "NFDI4Health_VS_MDS_NE_Instrument_NCI_Local"
+      "answerValueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-ne-instrument-nci-local"
     },
     {
       "type": "integer",
@@ -30,28 +30,28 @@
       "linkId": "NE1.3",
       "text": "Mode used to apply the dietary assessment instrument to study participants",
       "required": true,
-      "answerValueSet": "NFDI4Health_VS_MDS_NE_Mode_UMLS_Local"
+      "answerValueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-ne-mode-umls-local"
     },
     {
       "type": "choice",
       "linkId": "NE1.4",
       "text": "Device used to apply the dietary assessment instrument to study participants",
       "required": true,
-      "answerValueSet": "NFDI4Health_VS_MDS_NE_Device_NCI_SNOMEDCT_Local"
+      "answerValueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-ne-device-nci-snomedct-local"
     },
     {
       "type": "choice",
       "linkId": "NE1.5",
       "text": "How is the portion size inquired in the dietary assessment instrument?",
       "required": true,
-      "answerValueSet": "NFDI4Health_VS_MDS_NE_Portion_Size_SNOMEDCT_Local"
+      "answerValueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-ne-portion-size-snomedct-local"
     },
     {
       "type": "choice",
       "linkId": "NE1.6",
       "text": "Which reference period is the dietary assessment instrument referring to, e.g. 24-h recall is referring to the previous day.",
       "required": true,
-      "answerValueSet": "NFDI4Health_VS_MDS_NE_Reference_Period_Unit_SNOMEDCT"
+      "answerValueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-ne-reference-period-unit-snomedct"
     },
     {
       "type": "integer",

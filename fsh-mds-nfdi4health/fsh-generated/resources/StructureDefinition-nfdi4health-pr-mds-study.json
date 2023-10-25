@@ -1281,8 +1281,8 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "value",
-              "path": "$this"
+              "type": "pattern",
+              "path": "coding"
             }
           ],
           "rules": "open"
@@ -1299,8 +1299,13 @@
         "min": 1,
         "max": "1",
         "binding": {
-          "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-primary-design-umls",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ResearchStudyCategory"
+            }
+          ],
+          "strength": "example",
           "description": "Value set defining codes for primary designs of studies in a ResearchStudy resource."
         },
         "mapping": [
@@ -1313,8 +1318,11 @@
       {
         "id": "ResearchStudy.category:primaryDesign.coding",
         "path": "ResearchStudy.category.coding",
-        "min": 1,
-        "max": "1"
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-primary-design-umls"
+        }
       },
       {
         "id": "ResearchStudy.category:studyTypeInterventional",
@@ -1336,12 +1344,6 @@
             "map": "1.17.2.1 Resource.studyDesign.studyType.interventional"
           }
         ]
-      },
-      {
-        "id": "ResearchStudy.category:studyTypeInterventional.coding",
-        "path": "ResearchStudy.category.coding",
-        "min": 1,
-        "max": "1"
       },
       {
         "id": "ResearchStudy.category:studyTypeNonInterventional",
@@ -1367,7 +1369,6 @@
       {
         "id": "ResearchStudy.category:studyTypeNonInterventional.coding",
         "path": "ResearchStudy.category.coding",
-        "min": 1,
         "max": "1"
       },
       {
@@ -1387,12 +1388,6 @@
             "map": "1.17.36.1 Resource.studyDesign.nonInterventional.timePerspectives"
           }
         ]
-      },
-      {
-        "id": "ResearchStudy.category:timePerspectives.coding",
-        "path": "ResearchStudy.category.coding",
-        "min": 1,
-        "max": "1"
       },
       {
         "id": "ResearchStudy.category:allocation",
@@ -1418,7 +1413,6 @@
       {
         "id": "ResearchStudy.category:allocation.coding",
         "path": "ResearchStudy.category.coding",
-        "min": 1,
         "max": "1"
       },
       {
@@ -1445,7 +1439,6 @@
       {
         "id": "ResearchStudy.category:samplingMethod.coding",
         "path": "ResearchStudy.category.coding",
-        "min": 1,
         "max": "1"
       },
       {
@@ -1472,7 +1465,6 @@
       {
         "id": "ResearchStudy.category:samplingMethodProbability.coding",
         "path": "ResearchStudy.category.coding",
-        "min": 1,
         "max": "1"
       },
       {
@@ -1499,7 +1491,6 @@
       {
         "id": "ResearchStudy.category:samplingMethodNonProbability.coding",
         "path": "ResearchStudy.category.coding",
-        "min": 1,
         "max": "1"
       },
       {
