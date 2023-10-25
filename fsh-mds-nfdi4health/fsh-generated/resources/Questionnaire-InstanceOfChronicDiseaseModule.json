@@ -1,0 +1,34 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "InstanceOfChronicDiseaseModule",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-example-chronic-diseases-epidemiology",
+  "status": "draft",
+  "name": "InstanceOfChronicDiseaseModule",
+  "title": "NFDI4Health Module Epidemiology of Chronic Diseases Metadataschema (UC 5.2) V3",
+  "item": [
+    {
+      "type": "choice",
+      "linkId": "8636042615631",
+      "prefix": "commonChronicDiseaseName",
+      "text": "On which of the following common chronic diseases were data collected?",
+      "required": true,
+      "answerValueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-cd-common-chronic-disease-name-snomedct"
+    },
+    {
+      "type": "choice",
+      "linkId": "3382533000737",
+      "prefix": "dataCollected",
+      "text": "Type of data collected",
+      "required": true,
+      "answerValueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-cd-datacollected-umls"
+    },
+    {
+      "type": "choice",
+      "linkId": "479642564979",
+      "prefix": "informationSources",
+      "text": "From which source(s) are the data generated/extracted?",
+      "required": true,
+      "answerValueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-cd-information-sources-umls-local"
+    }
+  ]
+}

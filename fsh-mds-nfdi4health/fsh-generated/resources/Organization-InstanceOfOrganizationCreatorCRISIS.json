@@ -1,0 +1,13 @@
+{
+  "resourceType": "Organization",
+  "id": "InstanceOfOrganizationCreatorCRISIS",
+  "meta": {
+    "profile": [
+      "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+    ]
+  },
+  "name": "CRISIS research team",
+  "partOf": {
+    "reference": "Organization/InstanceOfOrganizationCreatorNIMH"
+  }
+}

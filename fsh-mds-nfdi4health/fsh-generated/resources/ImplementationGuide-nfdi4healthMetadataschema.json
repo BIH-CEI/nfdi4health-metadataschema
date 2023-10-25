@@ -33,6 +33,239 @@
     "resource": [
       {
         "reference": {
+          "reference": "DocumentReference/InstanceOfDocumentHouseholdTransmissionInvestigationForC19"
+        },
+        "name": "Example of the NFDI4Health PR MDS Document - Household Transmission Investigation Protocol for Coronavirus Disease 2019 (COVID-19)",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-document"
+      },
+      {
+        "reference": {
+          "reference": "Organization/InstanceOfOrganizationCreatorCMI"
+        },
+        "name": "Example of the NFDI4Health PR MDS Organization - Child Mind Institute; New York State Nathan S. Kline Institute for Psychiatric Research",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+      },
+      {
+        "reference": {
+          "reference": "Organization/InstanceOfOrganizationCreatorCRISIS"
+        },
+        "name": "Example of the NFDI4Health PR MDS Organization - CRISIS research team",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+      },
+      {
+        "reference": {
+          "reference": "Organization/InstanceOfOrganizationCreatorIRM"
+        },
+        "name": "Example of the NFDI4Health PR MDS Organization - Intramural Research Program",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+      },
+      {
+        "reference": {
+          "reference": "Organization/InstanceOfOrganizationCreatorNIMH"
+        },
+        "name": "Example of the NFDI4Health PR MDS Organization - National Institute of Mental Health",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+      },
+      {
+        "reference": {
+          "reference": "Organization/OrganizationPublicExample"
+        },
+        "name": "Example of the NFDI4Health PR MDS Organization Public",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+      },
+      {
+        "reference": {
+          "reference": "Provenance/InstanceOfProvenance"
+        },
+        "name": "Example of the NFDI4Health PR MDS Provenance profil",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-provenance"
+      },
+      {
+        "reference": {
+          "reference": "EvidenceVariable/InstanceOfEvidenceVariableSPOVID"
+        },
+        "name": "Instance Of an Intervention Evidence Variable for SPOVID",
+        "description": "Example data representing an intervention in the SPOVID study - Sport & Long-COVID-Syndrome",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-evidence-variable-intervention-exposure"
+      },
+      {
+        "reference": {
+          "reference": "Group/InstanceOfGroupActualSHIP"
+        },
+        "name": "Instance Of Group Actual",
+        "description": "Example data about actual study participants in the SHIP Trend study - Study of Health in Pomerania Trend",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-group-actual"
+      },
+      {
+        "reference": {
+          "reference": "Group/InstanceOfGroupIntendedSHIP"
+        },
+        "name": "Instance Of Group Intended for SHIP Trend",
+        "description": "Example data of eligibility information from the SHIP Trend study - Study of Health in Pomerania Trend",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-group-intended"
+      },
+      {
+        "reference": {
+          "reference": "Group/InstanceOfGroupIntendedSPOVID"
+        },
+        "name": "Instance Of Group Intended for SPOVID",
+        "description": "Example data of eligibility information from the SPOVID study - Sport & Long-COVID-Syndrom",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-group-intended"
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/InstanceOfPractitionerNinaKirchhof"
+        },
+        "name": "Instance Of NFDI4Health_PR_MDS_Practitioner for Nina Kirchhof",
+        "description": "Example data representing the practitioner Nina Kirchhof",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner"
+      },
+      {
+        "reference": {
+          "reference": "PractitionerRole/InstanceOfPractitionerRoleKathleenMerikangas"
+        },
+        "name": "Instance Of NFDI4Health_PR_MDS_Practitioner_Role for Kathleen Merikangas",
+        "description": "Example data representing the practitioner role of Kathleen Merikangas",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner-role"
+      },
+      {
+        "reference": {
+          "reference": "PractitionerRole/InstanceOfPractitionerRoleNinaKirchhof"
+        },
+        "name": "Instance Of NFDI4Health_PR_MDS_Practitioner_Role for Nina Kirchhof",
+        "description": "Example data representing the practitioner role of Nina Kirchhof",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner-role"
+      },
+      {
+        "reference": {
+          "reference": "Organization/InstanceOfOrganizationBMBF"
+        },
+        "name": "Instance Of Organization Bundesministerium für Bildung und Forschung",
+        "description": "Example data representing the Bundesministerium für Bildung und Forschung",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+      },
+      {
+        "reference": {
+          "reference": "Organization/InstanceOfOrganizationIMIBE"
+        },
+        "name": "Instance Of Organization Institut für Medizinische Informatik, Biometrie und Epidemiologie of Universitätsklinikum Essen",
+        "description": "Example data representing the Institut für Medizinische Informatik, Biometrie und Epidemiologie of Universitätsklinikum Essen",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+      },
+      {
+        "reference": {
+          "reference": "Organization/InstanceOfOrganizationISTHochschule"
+        },
+        "name": "Instance Of Organization IST Hochschule für Management GmbH",
+        "description": "Example data representing the IST Hochschule für Management GmbH",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+      },
+      {
+        "reference": {
+          "reference": "Organization/InstanceOfOrganizationMHH"
+        },
+        "name": "Instance Of Organization Medizinische Hochschule Hannover",
+        "description": "Example data representing the Medizinische Hochschule Hannover",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+      },
+      {
+        "reference": {
+          "reference": "Organization/InstanceOfOrganizationResearchGroupRNCM"
+        },
+        "name": "Instance Of Organization Research Group",
+        "description": "Example data representing the research group 'Research Netwerk Community Medicine'",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+      },
+      {
+        "reference": {
+          "reference": "Organization/InstanceOfOrganizationRuhrUniBochum"
+        },
+        "name": "Instance Of Organization Ruhr-Universität Bochum, Lehr und Forschungsbereich 'Trainingswissenschaft'",
+        "description": "Example data representing the Ruhr-Universität Bochum, Lehr und Forschungsbereich 'Trainingswissenschaft'",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+      },
+      {
+        "reference": {
+          "reference": "Organization/InstanceOfOrganizationUMG"
+        },
+        "name": "Instance Of Organization UMG",
+        "description": "Example data representing an university",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+      },
+      {
+        "reference": {
+          "reference": "Organization/InstanceOfOrganizationUniDuisburgEssen"
+        },
+        "name": "Instance Of Organization Universität Duisburg-Essen",
+        "description": "Example data representing the Universität Duisburg-Essen",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+      },
+      {
+        "reference": {
+          "reference": "Organization/InstanceOfOrganizationUniklinikumEssen"
+        },
+        "name": "Instance Of Organization Universitätsklinikum Essen",
+        "description": "Example data representing the Universitätsklinikum Essen",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+      },
+      {
+        "reference": {
+          "reference": "Organization/InstanceOfOrganizationContactWHO"
+        },
+        "name": "Instance Of Organization World Health Organization (WHO) as contact",
+        "description": "Example data representing the World Health Organization (WHO) as contact",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+      },
+      {
+        "reference": {
+          "reference": "Organization/InstanceOfOrganizationCreatorWHO"
+        },
+        "name": "Instance Of Organization World Health Organization (WHO) as creator",
+        "description": "Example data representing the World Health Organization (WHO) as creator",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/InstanceOfPractitionerKathleenMerikangas"
+        },
+        "name": "Instance Of Practitioner Kathleen Merikangas",
+        "description": "Example of the NFDI4Health PR MDS Practitioner",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner"
+      },
+      {
+        "reference": {
+          "reference": "Provenance/InstanceOfProvenanceAutomaticallyUploadedFromCTgov"
+        },
+        "name": "Instance Of Provenance Automatically Uploaded From CTgov",
+        "description": "Example of the NFDI4Health PR MDS Provenance profile for a resource automatically uploaded from CT.gov",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-provenance"
+      },
+      {
+        "reference": {
+          "reference": "Provenance/InstanceOfProvenanceManuallyCollectedSHIPTrend"
+        },
+        "name": "Instance Of Provenance Manually Collected (SHIP Trend)",
+        "description": "Example of the NFDI4Health PR MDS Provenance profile for a resource manually collected - in this case: SHIP Trend",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-provenance"
+      },
+      {
+        "reference": {
+          "reference": "ResearchStudy/InstanceOfStudySHIP"
+        },
+        "name": "Instance of Study SHIP TREND",
+        "description": "Example data from the SHIP Trend study - Study of Health in Pomerania Trend",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+      },
+      {
+        "reference": {
+          "reference": "ResearchStudy/InstanceOfStudySPOVID"
+        },
+        "name": "Instance of Study SPOVID",
+        "description": "Example data from the SPOVID study - Sports & Long-COVID-Syndrome",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+      },
+      {
+        "reference": {
           "reference": "ValueSet/nfdi4health-vs-mds-cd-common-chronic-disease-name-snomedct"
         },
         "name": "NFDI4Health CD Common Chronic Disease Name [SNOMED CT]",
@@ -470,6 +703,20 @@
         "name": "NFDI4Health LM Nutritional Epidemiology Metadataschema (UC 5.1) V3",
         "description": "NFDI4Health LogicalModel Nutritional Epidemiology Metadataschema (Use Case 5.1) V3",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/InstanceOfChronicDiseaseModule"
+        },
+        "name": "NFDI4Health Module Epidemiology of Chronic Diseases Metadataschema (UC 5.2) V3",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/InstanceOfNutritionalEpidemiologyModule"
+        },
+        "name": "NFDI4Health Module Nutritional Epidemiology Metadataschema (Use Case 5.1) V3",
+        "exampleBoolean": true
       },
       {
         "reference": {
