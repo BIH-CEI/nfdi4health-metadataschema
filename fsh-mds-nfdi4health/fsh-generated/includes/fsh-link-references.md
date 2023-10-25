@@ -1,4 +1,5 @@
 [NFDI4Health_VS_MDS_CD_Common_Chronic_Disease_Name_SNOMEDCT]: ValueSet-nfdi4health-vs-mds-cd-common-chronic-disease-name-snomedct.html
+[NFDI4Health_CS_MDS_Label_FHIR]: CodeSystem-nfdi4health-cs-mds-label-fhir.html
 [NFDI4Health_CS_MDS_Provenance_Data_Source]: CodeSystem-nfdi4health-cs-mds-provenance-data-source.html
 [NFDI4Health_CS_MDS_Remaining_Concepts]: CodeSystem-nfdi4health-cs-mds-remaining-concepts.html
 [NFDI4Health_CS_MDS_Study_Status]: CodeSystem-nfdi4health-cs-mds-study-status.html
@@ -104,13 +105,12 @@
 [NFDI4Health_VS_MDS_Study_Ethics_Committee_Approval_UMLS_Local]: ValueSet-nfdi4health-vs-mds-study-ethics-committee-approval-umls-local.html
 [NFDI4Health_VS_MDS_Study_Group_Characteristics_NCI]: ValueSet-nfdi4health-vs-mds-study-group-characteristics-nci.html
 [NFDI4Health_VS_MDS_Study_Groups_Of_Diseases_Generally_ICD10_UMLS]: ValueSet-nfdi4health-vs-mds-study-groups-of-diseases-generally-icd10-umls.html
-[NFDI4Health_VS_MDS_Study_Groups_Of_Diseases_ICD10]: ValueSet-nfdi4health-vs-mds-study-groups-of-diseases-icd10.html
-[NFDI4Health_VS_MDS_Study_Groups_Of_Diseases_ICD11]: ValueSet-nfdi4health-vs-mds-study-groups-of-diseases-icd11.html
 [NFDI4Health_VS_MDS_Study_Intervention_Type_NCI_UMLS]: ValueSet-nfdi4health-vs-mds-study-intervention-type-nci-umls.html
 [NFDI4Health_VS_MDS_Study_Masking_Roles_NCI_Local]: ValueSet-nfdi4health-vs-mds-study-masking-roles-nci-local.html
 [NFDI4Health_VS_MDS_Study_Outcome_Type_UMLS]: ValueSet-nfdi4health-vs-mds-study-outcome-type-umls.html
 [NFDI4Health_VS_MDS_Study_Overall_Status_UMLS_Local]: ValueSet-nfdi4health-vs-mds-study-overall-status-umls-local.html
 [NFDI4Health_VS_MDS_Study_Phase_NCI]: ValueSet-nfdi4health-vs-mds-study-phase-nci.html
+[NFDI4Health_VS_MDS_Study_Primary_Design_Local]: ValueSet-nfdi4health-vs-mds-study-primary-design-local.html
 [NFDI4Health_VS_MDS_Study_Primary_Design_UMLS]: ValueSet-nfdi4health-vs-mds-study-primary-design-umls.html
 [NFDI4Health_VS_MDS_Study_Primary_Purpose_UMLS_NCI]: ValueSet-nfdi4health-vs-mds-study-primary-purpose-umls-nci.html
 [NFDI4Health_VS_MDS_Study_Recruitment_Status_Register_UMLS_Local]: ValueSet-nfdi4health-vs-mds-study-recruitment-status-register-umls-local.html

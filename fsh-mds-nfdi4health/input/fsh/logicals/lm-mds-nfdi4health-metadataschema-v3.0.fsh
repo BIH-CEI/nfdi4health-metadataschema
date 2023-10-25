@@ -198,7 +198,7 @@ Description: "NFDI4Health LogicalModel General Metadataschema"
 * Resource.studyDesign 1..1 BackboneElement "Characteristics of the [RESOURCE]" "Group of items providing information about the characteristics of a study or a substudy."
 * Resource.studyDesign ^comment = "Cardinality: 1..1, if resource_type == ('Study' OR 'Substudy/Data collection'); otherwise 0..0 / Additional Information: Group of items applicable only to studies and substudies. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health"
 * Resource.studyDesign.primaryDesign 1..1 CodeableConcept "Is it an interventional or non-interventional study?" "Non-interventional study design refers to a study that does not aim to alter study outcomes of interest. Interventional study design refers to a study that aims to alter study outcomes of interest."
-* Resource.studyDesign.primaryDesign from NFDI4Health_VS_MDS_Study_Primary_Design_UMLS (required)
+* Resource.studyDesign.primaryDesign from NFDI4Health_VS_MDS_Study_Primary_Design_Local (required)
 * Resource.studyDesign.primaryDesign ^comment = "Select between non-interventional and interventional study design. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2], DRKS [3]"
 * Resource.studyDesign.studyType 1..1 BackboneElement "Specification of study type" "Group of items providing information about the study type."
 * Resource.studyDesign.studyType ^comment = "Display information? (Data capturing): no / Display information? (Data visualization): no / Source of the property and/or allowed values: CT.gov [2], DRKS [3], DDI [9], MIABIS [8]"
@@ -232,7 +232,6 @@ Description: "NFDI4Health LogicalModel General Metadataschema"
 * Resource.studyDesign.studyGroupsOfDiseases.conditions ^comment = "Additional Information: The values originate from the WHO's International Statistical Classification of Diseases and Related Health Problems, 11th Revision (ICD-11). / Short Input Help: For more information about the groups of diseases/conditions, visit the WHO's ICD-11 homepage: https://icd.who.int/en. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: ICD-11 [20] (NFDI4Health UC 5.2 requirement)"
 * Resource.studyDesign.studyGroupsOfDiseases.conditions ^example.label = "General"
 * Resource.studyDesign.studyGroupsOfDiseases.conditions ^example.valueString = "Values are based on lower level ICD-11"
-* Resource.studyDesign.studyGroupsOfDiseases.conditions from NFDI4Health_VS_MDS_Study_Groups_Of_Diseases_ICD11 (required)
 * Resource.studyDesign.mortalityData 0..1 Coding "Were mortality data collected?" "Mortality data."
 * Resource.studyDesign.mortalityData from NFDI4Health_VS_MDS_Mortality_Data_NCI (required)
 * Resource.studyDesign.mortalityData ^comment = "Cardinality: 0..1, if Resource.studyDesign.studyType.nonInterventional == ('Longitudinal' OR 'Cohort' OR 'Case-cohort' OR 'Birth cohort' OR 'Trend' OR 'Panel'); otherwise 0..0 / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.2 requirements"

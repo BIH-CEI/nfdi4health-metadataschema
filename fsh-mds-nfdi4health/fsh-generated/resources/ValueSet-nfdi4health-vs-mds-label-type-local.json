@@ -22,58 +22,58 @@
   "compose": {
     "include": [
       {
-        "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+        "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-label",
         "concept": [
           {
-            "code": "130",
+            "code": "01",
             "display": "Primary title"
           },
           {
-            "code": "131",
+            "code": "02",
             "display": "Official title"
           },
           {
-            "code": "132",
+            "code": "03",
             "display": "Scientific title"
           },
           {
-            "code": "133",
+            "code": "04",
             "display": "Plain language title"
           },
           {
-            "code": "134",
+            "code": "05",
             "display": "Subtitle"
           },
           {
-            "code": "135",
+            "code": "06",
             "display": "Short title"
           },
           {
-            "code": "136",
+            "code": "07",
             "display": "Acronym"
           },
           {
-            "code": "137",
+            "code": "08",
             "display": "Different text in an earlier version"
           },
           {
-            "code": "138",
+            "code": "09",
             "display": "Different language"
           },
           {
-            "code": "139",
+            "code": "10",
             "display": "Different language derived from autotranslation"
           },
           {
-            "code": "140",
+            "code": "11",
             "display": "Human use"
           },
           {
-            "code": "141",
+            "code": "12",
             "display": "Machine use"
           },
           {
-            "code": "142",
+            "code": "13",
             "display": "Different text for the same object with a different identifier"
           }
         ]

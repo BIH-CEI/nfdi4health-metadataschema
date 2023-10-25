@@ -538,43 +538,39 @@
     },
     {
       "code": "130",
-      "display": "Primary title"
+      "display": "Interventional"
     },
     {
       "code": "131",
-      "display": "Official title"
-    },
-    {
-      "code": "132",
-      "display": "Scientific title"
+      "display": "Non-interventional"
     },
     {
       "code": "133",
-      "display": "Plain language title"
+      "display": "Single group"
     },
     {
       "code": "134",
-      "display": "Subtitle"
+      "display": "Parallel"
     },
     {
       "code": "135",
-      "display": "Short title"
+      "display": "Crossover"
     },
     {
       "code": "136",
-      "display": "Acronym"
+      "display": "Factorial"
     },
     {
       "code": "137",
-      "display": "Different text in an earlier version"
+      "display": "Sequential"
     },
     {
       "code": "138",
-      "display": "Different language"
+      "display": "Other (interventional)"
     },
     {
       "code": "139",
-      "display": "Different language derived from autotranslation"
+      "display": "Unknown (interventional)"
     },
     {
       "code": "140",
@@ -650,5 +646,5 @@
       ]
     }
   ],
-  "count": 154
+  "count": 153
 }

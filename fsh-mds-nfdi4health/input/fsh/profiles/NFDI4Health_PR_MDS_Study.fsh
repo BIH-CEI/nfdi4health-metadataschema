@@ -182,7 +182,7 @@ Description: "Resource covering metadata of a study."
     samplingMethod 1..1 and
     samplingMethodProbability 0..1 and
     samplingMethodNonProbability 0..1
-* category[primaryDesign] from NFDI4Health_VS_MDS_Study_Primary_Design_UMLS (required)
+* category[primaryDesign] from NFDI4Health_VS_MDS_Study_Primary_Design_Local (required)
 * category[primaryDesign] ^short = "Is it an interventional or non-interventional study?"
 * category[primaryDesign] ^definition = "Non-interventional study design refers to a study that does not aim to alter study outcomes of interest.\r\nInterventional study design refers to a study that aims to alter study outcomes of interest."
 * category[primaryDesign] ^comment = "Short input help: Select between non-interventional and interventional study design."

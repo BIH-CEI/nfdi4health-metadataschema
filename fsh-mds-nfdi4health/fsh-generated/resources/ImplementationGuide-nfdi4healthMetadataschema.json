@@ -41,6 +41,14 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/nfdi4health-cs-mds-label-fhir"
+        },
+        "name": "NFDI4Health CS MDS Label for use in FHIR according to R5 Study Label",
+        "description": "Code system defining remaining concepts without mapping to concepts from international terminologies, ontologies, classifications, etc..",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/nfdi4health-cs-mds-provenance-data-source"
         },
         "name": "NFDI4Health CS MDS Provenance Data Source",
@@ -879,22 +887,6 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/nfdi4health-vs-mds-study-groups-of-diseases-icd10"
-        },
-        "name": "NFDI4Health VS MDS Study Groups Of Diseases [ICD 10]",
-        "description": "Value set defining codes to specify other diseases or conditions on which the data were collected in the study.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/nfdi4health-vs-mds-study-groups-of-diseases-icd11"
-        },
-        "name": "NFDI4Health VS MDS Study Groups Of Diseases [ICD 11]",
-        "description": "Value set defining codes to specify other diseases or conditions on which the data were collected in the study.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "ValueSet/nfdi4health-vs-mds-study-intervention-type-nci-umls"
         },
         "name": "NFDI4Health VS MDS Study Intervention Type [NCI, UMLS]",
@@ -931,6 +923,14 @@
         },
         "name": "NFDI4Health VS MDS Study Phase [NCI]",
         "description": "Value set defining codes to specify the phase of a study in a ResearchStudy resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-primary-design-local"
+        },
+        "name": "NFDI4Health VS MDS Study Primary Design [Local]",
+        "description": "Value set defining codes for primary designs of studies in a ResearchStudy resource.",
         "exampleBoolean": false
       },
       {

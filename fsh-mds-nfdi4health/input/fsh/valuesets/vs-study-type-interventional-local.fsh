@@ -11,10 +11,10 @@ Description: "Value set defining codes to specify the type of an interventional 
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 
 
-* $Remaining#133 "Single Group Study (Research Activity)"
-* $Remaining#134 "Parallel Study (Research Study)"
-* $Remaining#135 "Cross-Over Studies (Research Activity)"
-* $Remaining#136 "Factorial Study (Research Study)"
-* $Remaining#137 "Sequential (Qualitative Concept)"
-* $Remaining#138 "Other (Qualitative Concept)"
-* $Remaining#139 "Unknown (Qualitative Concept)"
+* $Remaining#133 "Single group"
+* $Remaining#134 "Parallel"
+* $Remaining#135 "Crossover"
+* $Remaining#136 "Factorial"
+* $Remaining#137 "Sequential"
+* $Remaining#138 "Other (interventional)"
+* $Remaining#139 "Unknown (interventional)"

@@ -1300,7 +1300,7 @@
         "max": "1",
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-primary-design-umls",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-primary-design-local",
           "description": "Value set defining codes for primary designs of studies in a ResearchStudy resource."
         },
         "mapping": [
