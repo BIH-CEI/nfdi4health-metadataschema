@@ -22,7 +22,7 @@ Description: "Extension providing information about the relation type of this re
 * value[x] only Coding
 * valueCoding.code 1..1
 * valueCoding.system 1..1
-* valueCoding from $nfdi4health-vs-mds-relation-type-ids-local-hl7v3 (required)
+* valueCoding from $nfdi4health-vs-mds-relation-type-ids-local (required)
 * valueCoding ^binding.description = "Value set defining codes to specify the relationship between two resources."
 
 Mapping: NFDI4Health-Related-Artifact-Relation-Type-Non-NFDI4Health-Resource-to-FHIR

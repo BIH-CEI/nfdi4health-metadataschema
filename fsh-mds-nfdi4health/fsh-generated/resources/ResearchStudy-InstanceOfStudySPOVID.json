@@ -439,44 +439,6 @@
         }
       ],
       "type": "documentation"
-    },
-    {
-      "extension": [
-        {
-          "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-resource-type-general",
-          "valueCoding": {
-            "code": "C17649",
-            "system": "http://ncimeta.nci.nih.gov",
-            "display": "Other (Qualitative Concept)"
-          }
-        },
-        {
-          "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related-artifact-non-nfdi-identifier"
-        },
-        {
-          "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related-artifact-reltype-non-nfdi-resource"
-        }
-      ],
-      "type": "documentation"
-    },
-    {
-      "extension": [
-        {
-          "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-resource-type-general",
-          "valueCoding": {
-            "code": "C17649",
-            "system": "http://ncimeta.nci.nih.gov",
-            "display": "Other (Qualitative Concept)"
-          }
-        },
-        {
-          "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related-artifact-non-nfdi-identifier"
-        },
-        {
-          "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related-artifact-reltype-non-nfdi-resource"
-        }
-      ],
-      "type": "documentation"
     }
   ],
   "condition": [

@@ -108,18 +108,18 @@ Usage: #example
 * extension[roles][=].extension[roleOrganisational].valueCoding = $Remaining#046 "Public Funder"
 
 // Related resources
-* relatedArtifact[nonNFDI4HealthResource][0].extension[identifier].valueIdentifier.value = "https://www.gesundheitsforschung-bmbf.de/de/spovid-sport-long-covid-syndrom-14348.php"
-* relatedArtifact[nonNFDI4HealthResource][=].extension[identifier].valueIdentifier.type = $UMLS#C1710546 "Uniform Resource Locator (Intellectual Product)"
+* relatedArtifact[nonNFDI4HealthResource][0].extension[identifier].value = "https://www.gesundheitsforschung-bmbf.de/de/spovid-sport-long-covid-syndrom-14348.php"
+* relatedArtifact[nonNFDI4HealthResource][=].extension[identifier].scheme = $UMLS#C1710546 "Uniform Resource Locator (Intellectual Product)"
 * relatedArtifact[nonNFDI4HealthResource][=].extension[relationType].valueCoding = $Remaining#059 "A is described by B"
 * relatedArtifact[nonNFDI4HealthResource][=].extension[resourceTypeGeneral].valueCoding = $NCI#C25704 "Text (Manufactured Object)"
 * relatedArtifact[nonNFDI4HealthResource][=].type = #documentation // per default as the VS is required in FHIR
-* relatedArtifact[nonNFDI4HealthResource][+].extension[identifier].valueIdentifier.value = "01EP2104A"
-* relatedArtifact[nonNFDI4HealthResource][=].extension[identifier].valueIdentifier.type = $NCI#C17649 "Other (Qualitative Concept)"
-* relatedArtifact[nonNFDI4HealthResource][=].extension[relationType].valueCoding = $HL7V3ActRelationType#REFR "refers to"
+* relatedArtifact[nonNFDI4HealthResource][+].extension[identifier].value = "01EP2104A"
+* relatedArtifact[nonNFDI4HealthResource][=].extension[identifier].scheme = $NCI#C17649 "Other (Qualitative Concept)"
+* relatedArtifact[nonNFDI4HealthResource][=].extension[relationType].valueCoding = * $Remaining#060 "A describes B"
 * relatedArtifact[nonNFDI4HealthResource][=].extension[resourceTypeGeneral].valueCoding = $NCI#C17649 "Other (Qualitative Concept)"
 * relatedArtifact[nonNFDI4HealthResource][=].type = #documentation // per default as the VS is required in FHIR
-* relatedArtifact[nonNFDI4HealthResource][+].extension[identifier].valueIdentifier.value = "01EP2104B"
-* relatedArtifact[nonNFDI4HealthResource][=].extension[identifier].valueIdentifier.type = $NCI#C17649 "Other (Qualitative Concept)"
-* relatedArtifact[nonNFDI4HealthResource][=].extension[relationType].valueCoding = $HL7V3ActRelationType#REFR "refers to"
+* relatedArtifact[nonNFDI4HealthResource][+].extension[identifier].value = "01EP2104B"
+* relatedArtifact[nonNFDI4HealthResource][=].extension[identifier].scheme = $NCI#C17649 "Other (Qualitative Concept)"
+* relatedArtifact[nonNFDI4HealthResource][=].extension[relationType].valueCoding = * $Remaining#060 "A describes B"
 * relatedArtifact[nonNFDI4HealthResource][=].extension[resourceTypeGeneral].valueCoding = $NCI#C17649 "Other (Qualitative Concept)"
 * relatedArtifact[nonNFDI4HealthResource][=].type = #documentation // per default as the VS is required in FHIR
