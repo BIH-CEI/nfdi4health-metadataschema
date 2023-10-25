@@ -9,7 +9,6 @@ Alias: $ICD11 = url:oid:2.16.840.1.113883.6.347
 Alias: $UseRights = https://www.hl7.org/fhir/R4/codesystem-spdx-license.html
 Alias: $Remaining = https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts
 Alias: $ProvenanceDataSource = https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-mds-provenance-data-source
-Alias: $HL7V3ActRelationType = http://terminology.hl7.org/CodeSystem/v3-ActRelationshipType
 Alias: $StudyStatus = https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-mds-study-status
 Alias: $HL7ParticipationType = http://terminology.hl7.org/CodeSystem/v3-ParticipationType
 Alias: $elementdefinition-identifier = http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier

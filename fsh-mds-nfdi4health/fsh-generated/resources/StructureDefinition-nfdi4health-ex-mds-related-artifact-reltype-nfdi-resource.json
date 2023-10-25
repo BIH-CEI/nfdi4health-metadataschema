@@ -76,7 +76,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-relation-type-ids-nfdi-local-hl7v3",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-relation-type-ids-nfdi-local",
           "description": "Value set defining codes to specify the relationship between two resources (both registered in NFDI4Health)."
         }
       },

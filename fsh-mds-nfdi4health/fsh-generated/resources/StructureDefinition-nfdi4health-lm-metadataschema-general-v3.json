@@ -2005,7 +2005,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-type-interventional-umls"
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-type-interventional-local"
         },
         "mapping": [
           {
@@ -2033,7 +2033,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-type-non-interventional-umls-local"
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-type-non-interventional-local"
         },
         "mapping": [
           {

@@ -188,13 +188,13 @@ Description: "Resource covering metadata of a study."
 * category[primaryDesign] ^comment = "Short input help: Select between non-interventional and interventional study design."
 * category[primaryDesign] ^binding.description = "Value set defining codes for primary designs of studies in a ResearchStudy resource."
 * category[primaryDesign].coding 0..1
-* category[studyTypeInterventional] from NFDI4Health_VS_MDS_Study_Type_Interventional_UMLS (required)
+* category[studyTypeInterventional] from NFDI4Health_VS_MDS_Study_Type_Interventional_Local (required)
 * category[studyTypeInterventional] ^short = "Specification of study type"
 * category[studyTypeInterventional] ^definition = "The strategy for assigning interventions to participants."
 * category[studyTypeInterventional] ^comment = "Short input help: Select all that apply.\r\nIf \"Other\" is selected, you can specify the study type in the field \"Additional information about the study\"."
 * category[studyTypeInterventional] ^binding.description = "Value set defining codes to specify the type of an interventional study in a ResearchStudy resource."
 * category[studyTypeInterventional].coding 0..*
-* category[studyTypeNonInterventional] from NFDI4Health_VS_MDS_Study_Type_Non_Interventional_UMLS_Local (required)
+* category[studyTypeNonInterventional] from NFDI4Health_VS_MDS_Study_Type_Non_Interventional_Local (required)
 * category[studyTypeNonInterventional] ^short = "Specification of study type"
 * category[studyTypeNonInterventional] ^definition = "The primary strategy for participant identification and follow-up."
 * category[studyTypeNonInterventional] ^comment = "Short input help: Select all that apply.\r\nIf \"Other\" is selected, you can specify the study type in the field \"Additional information about the study\"."

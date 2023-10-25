@@ -1281,8 +1281,8 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "pattern",
-              "path": "coding"
+              "type": "value",
+              "path": "$this"
             }
           ],
           "rules": "open"
@@ -1299,13 +1299,8 @@
         "min": 1,
         "max": "1",
         "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "ResearchStudyCategory"
-            }
-          ],
-          "strength": "example",
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-primary-design-umls",
           "description": "Value set defining codes for primary designs of studies in a ResearchStudy resource."
         },
         "mapping": [
@@ -1318,11 +1313,7 @@
       {
         "id": "ResearchStudy.category:primaryDesign.coding",
         "path": "ResearchStudy.category.coding",
-        "max": "1",
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-primary-design-umls"
-        }
+        "max": "1"
       },
       {
         "id": "ResearchStudy.category:studyTypeInterventional",
@@ -1335,7 +1326,7 @@
         "max": "*",
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-type-interventional-umls",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-type-interventional-local",
           "description": "Value set defining codes to specify the type of an interventional study in a ResearchStudy resource."
         },
         "mapping": [
@@ -1356,7 +1347,7 @@
         "max": "*",
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-type-non-interventional-umls-local",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-type-non-interventional-local",
           "description": "Value set defining codes to specify the type of a non interventional study in a ResearchStudy resource."
         },
         "mapping": [

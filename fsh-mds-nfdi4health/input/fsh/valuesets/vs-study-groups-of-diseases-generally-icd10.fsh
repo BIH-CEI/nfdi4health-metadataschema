@@ -12,7 +12,7 @@ Description: "Value set defining codes from ICD-10 to specify groups of diseases
 
 * $ICD10#I "Certain infectious and parasitic diseases (A00-B99)"
 * $ICD10#II "Neoplasms (C00-D48)"
-* $ICD10#III "Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism (D50-D89)"
+* $ICD10#III "Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism"
 * $ICD10#IV "Endocrine, nutritional and metabolic diseases (E00-E90)"
 * $ICD10#V "Mental and behavioural disorders (F00-F99)"
 * $ICD10#VI "Diseases of the nervous system (G00-G99)"

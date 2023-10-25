@@ -578,15 +578,63 @@
     },
     {
       "code": "140",
-      "display": "Human use"
+      "display": "Case-control"
     },
     {
       "code": "141",
-      "display": "Machine use"
+      "display": "Nested case-control"
     },
     {
       "code": "142",
-      "display": "Different text for the same object with a different identifier"
+      "display": "Case-crossover"
+    },
+    {
+      "code": "143",
+      "display": "Ecologic or community studies"
+    },
+    {
+      "code": "144",
+      "display": "Family-based"
+    },
+    {
+      "code": "145",
+      "display": "Twin study"
+    },
+    {
+      "code": "146",
+      "display": "Cohort"
+    },
+    {
+      "code": "147",
+      "display": "Birth Cohort"
+    },
+    {
+      "code": "148",
+      "display": "Panel"
+    },
+    {
+      "code": "149",
+      "display": "Longitudinal"
+    },
+    {
+      "code": "150",
+      "display": "Cross-section"
+    },
+    {
+      "code": "151",
+      "display": "Time series"
+    },
+    {
+      "code": "152",
+      "display": "Registry"
+    },
+    {
+      "code": "153",
+      "display": "Other (Non-Interventional)"
+    },
+    {
+      "code": "154",
+      "display": "Unknown (Non-Interventional)"
     }
   ],
   "version": "0.9",
@@ -602,5 +650,5 @@
       ]
     }
   ],
-  "count": 142
+  "count": 154
 }

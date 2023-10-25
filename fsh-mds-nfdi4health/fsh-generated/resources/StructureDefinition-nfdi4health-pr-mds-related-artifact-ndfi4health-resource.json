@@ -65,46 +65,10 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier"
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related-artifact-nfdi-identifier"
             ]
           }
-        ],
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "1.14.1 Resource.idsNfdi4health.identifier"
-          }
         ]
-      },
-      {
-        "id": "RelatedArtifact.extension:identifier.value[x].type",
-        "path": "RelatedArtifact.extension.value[x].type",
-        "fixedCodeableConcept": {
-          "coding": [
-            {
-              "code": "104",
-              "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
-              "display": "NFDI4Health"
-            }
-          ]
-        },
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-id-type-umls-local"
-        }
-      },
-      {
-        "id": "RelatedArtifact.extension:identifier.value[x].system",
-        "path": "RelatedArtifact.extension.value[x].system",
-        "min": 1,
-        "fixedUri": "https://csh.nfdi4health.de/resource/"
-      },
-      {
-        "id": "RelatedArtifact.extension:identifier.value[x].value",
-        "path": "RelatedArtifact.extension.value[x].value",
-        "short": "Identifier of the related resource",
-        "definition": "Identifier (ID) of the related resource assigned on this portal.",
-        "min": 1
       },
       {
         "id": "RelatedArtifact.extension:relationType",

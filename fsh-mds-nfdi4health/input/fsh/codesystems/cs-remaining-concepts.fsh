@@ -148,6 +148,26 @@ Description: "Code system defining remaining concepts without mapping to concept
 * #137 "Different text in an earlier version"
 * #138 "Different language"
 * #139 "Different language derived from autotranslation"
-* #140 "Human use"
-* #141 "Machine use"
-* #142 "Different text for the same object with a different identifier"
+
+* #140 "Case-control"
+* #141 "Nested case-control"
+* #142 "Case-crossover"
+* #143 "Ecologic or community studies"
+* #144 "Family-based"
+* #145 "Twin study"
+* #146 "Cohort"
+* #147 "Birth Cohort"
+* #148 "Panel"
+* #149 "Longitudinal"
+* #150 "Cross-section"
+* #151 "Time series"
+* #152 "Registry"
+* #153 "Other (Non-Interventional)"
+* #154 "Unknown (Non-Interventional)"
+
+
+
+///where do these codes belong to? Needs to match with AD///
+///* #140 "Human use"///
+///* #141 "Machine use"///
+///* #142 "Different text for the same object with a different identifier"///

@@ -1,0 +1,67 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="2.16.840.1.113883.3.1937.777.64.11.66--20231025131242"/>
+    <meta>
+        <lastUpdated value="2023-10-25T13:12:42Z"/>
+        <source value="https://art-decor.org/fhir/4.0/nfdhtfcov19-"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+        <tag>
+            <system value="http://hl7.org/fhir/FHIR-version"/>
+            <code value="4.0"/>
+        </tag>
+    </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+        <valuePeriod>
+            <start value="2023-10-25T13:12:42+02:00"/>
+        </valuePeriod>
+    </extension>
+    <url value="https://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.64.11.66--20231025131242"/>
+    <identifier>
+        <use value="official"/>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:oid:2.16.840.1.113883.3.1937.777.64.11.66"/>
+    </identifier>
+    <version value="2023-10-25T13:12:42"/>
+    <name value="NFDI4Health_VS_MDS_Study_Type_Interventional_Local"/>
+    <title value="NFDI4Health_VS_MDS_Study_Type_Interventional_Local"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="BIH @ Charité"/>
+    <description value="NFDI4Health_VS_MDS_Study_Type_Interventional_Local"/>
+    <immutable value="false"/>
+    <compose>
+        <include>
+            <system value="https://art-decor.org/fhir/CodeSystem/2.16.840.1.113883.3.1937.777.64.5.1--20230830205625"/>
+        </include>
+        <include>
+            <system value="https://art-decor.org/fhir/CodeSystem/2.16.840.1.113883.3.1937.777.64.5.1--20230830205625"/>
+            <concept>
+                <code value="133"/>
+                <display value="Single Group Study (Research Activity)"/>
+            </concept>
+            <concept>
+                <code value="134"/>
+                <display value="Parallel Study (Research Study)"/>
+            </concept>
+            <concept>
+                <code value="135"/>
+                <display value="Cross-Over Studies (Research Activity)"/>
+            </concept>
+            <concept>
+                <code value="136"/>
+                <display value="Factorial Study (Research Study)"/>
+            </concept>
+            <concept>
+                <code value="137"/>
+                <display value="Sequential (Qualitative Concept)"/>
+            </concept>
+            <concept>
+                <code value="138"/>
+                <display value="Other (Qualitative Concept)"/>
+            </concept>
+            <concept>
+                <code value="139"/>
+                <display value="Unknown (Qualitative Concept)"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>
