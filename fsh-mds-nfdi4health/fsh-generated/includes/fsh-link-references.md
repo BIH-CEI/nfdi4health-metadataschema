@@ -1,3 +1,7 @@
+[ConceptMap-Study-Allocation-NFDI4Health-to-UMLS]: ConceptMap-ConceptMap-Study-Allocation-NFDI4Health-to-UMLS.html
+[ConceptMap-Study-Primary-Design-NFDI4Health-to-UMLS]: ConceptMap-ConceptMap-Study-Primary-Design-NFDI4Health-to-UMLS.html
+[ConceptMap-Study-Time-Perspectives-NFDI4Health-to-UMLS]: ConceptMap-ConceptMap-Study-Time-Perspectives-NFDI4Health-to-UMLS.html
+[ConceptMap-study-type-interventional-NFDI4Health-to-UMLS]: ConceptMap-ConceptMap-study-type-interventional-NFDI4Health-to-UMLS.html
 [InstanceOfDocumentHouseholdTransmissionInvestigationForC19]: DocumentReference-InstanceOfDocumentHouseholdTransmissionInvestigationForC19.html
 [InstanceOfOrganizationCreatorCMI]: Organization-InstanceOfOrganizationCreatorCMI.html
 [InstanceOfOrganizationCreatorCRISIS]: Organization-InstanceOfOrganizationCreatorCRISIS.html
@@ -147,7 +151,9 @@
 [NFDI4Health_VS_MDS_Study_Primary_Design_UMLS]: ValueSet-nfdi4health-vs-mds-study-primary-design-umls.html
 [NFDI4Health_VS_MDS_Study_Primary_Purpose_UMLS_NCI]: ValueSet-nfdi4health-vs-mds-study-primary-purpose-umls-nci.html
 [NFDI4Health_VS_MDS_Study_Recruitment_Status_Register_UMLS_Local]: ValueSet-nfdi4health-vs-mds-study-recruitment-status-register-umls-local.html
+[NFDI4Health_VS_MDS_Study_Sampling_Method_Non_Probability_Local]: ValueSet-nfdi4health-vs-mds-study-sampling-method-non-prob-local.html
 [NFDI4Health_VS_MDS_Study_Sampling_Method_Non_Probability_NCI_Local]: ValueSet-nfdi4health-vs-mds-study-sampling-method-non-prob-nci-local.html
+[NFDI4Health_VS_MDS_Study_Sampling_Method_Local]: ValueSet-nfdi4health-vs-mds-study-sampling-method-local.html
 [NFDI4Health_VS_MDS_Study_Sampling_Method_NCI_Local]: ValueSet-nfdi4health-vs-mds-study-sampling-method-nci-local.html
 [NFDI4Health_VS_MDS_Study_Sampling_Probability_Method_NCI_Local]: ValueSet-nfdi4health-vs-mds-study-sampling-prob-method-nci-local.html
 [NFDI4Health_VS_MDS_Study_Status_Halted_Stage_Local]: ValueSet-nfdi4health-vs-mds-study-status-halted-stage-local.html

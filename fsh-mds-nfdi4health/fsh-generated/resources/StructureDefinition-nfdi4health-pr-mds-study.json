@@ -1412,7 +1412,7 @@
         "max": "1",
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-sampling-method-nci-local",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-sampling-method-local",
           "description": "Value set defining codes to specify types of sampling methods."
         },
         "mapping": [
@@ -1438,7 +1438,7 @@
         "max": "1",
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-sampling-prob-method-nci-local",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-sampling-prob-method-local",
           "description": "Value set defining codes to specify types of probability sampling methods."
         },
         "mapping": [
@@ -1464,7 +1464,7 @@
         "max": "1",
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-sampling-method-non-prob-nci-local",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-sampling-method-non-prob-local",
           "description": "Value set defining codes to specify types of non-probability sampling methods."
         },
         "mapping": [

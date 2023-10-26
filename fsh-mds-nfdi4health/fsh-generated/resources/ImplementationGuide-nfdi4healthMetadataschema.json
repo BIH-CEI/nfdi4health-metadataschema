@@ -33,6 +33,34 @@
     "resource": [
       {
         "reference": {
+          "reference": "ConceptMap/ConceptMap-Study-Allocation-NFDI4Health-to-UMLS"
+        },
+        "name": "ConceptMap-Study-Allocation-NFDI4Health-to-UMLS",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/ConceptMap-Study-Primary-Design-NFDI4Health-to-UMLS"
+        },
+        "name": "ConceptMap-Study-Primary-Design-NFDI4Health-to-UMLS",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/ConceptMap-Study-Time-Perspectives-NFDI4Health-to-UMLS"
+        },
+        "name": "ConceptMap-Study-Time-Perspectives-NFDI4Health-to-UMLS",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/ConceptMap-study-type-interventional-NFDI4Health-to-UMLS"
+        },
+        "name": "ConceptMap-study-type-interventional-NFDI4Health-to-UMLS",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "DocumentReference/InstanceOfDocumentHouseholdTransmissionInvestigationForC19"
         },
         "name": "Example of the NFDI4Health PR MDS Document - Household Transmission Investigation Protocol for Coronavirus Disease 2019 (COVID-19)",
@@ -1214,10 +1242,26 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-sampling-method-non-prob-local"
+        },
+        "name": "NFDI4Health VS MDS Study Sampling Method Non Probability [local]",
+        "description": "Value set defining codes to specify types of non-probability sampling methods.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/nfdi4health-vs-mds-study-sampling-method-non-prob-nci-local"
         },
         "name": "NFDI4Health VS MDS Study Sampling Method Non Probability [NCI, local]",
         "description": "Value set defining codes to specify types of non-probability sampling methods.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-sampling-method-local"
+        },
+        "name": "NFDI4Health VS MDS Study Sampling Method [local]",
+        "description": "Value set defining codes to specify types of sampling methods.",
         "exampleBoolean": false
       },
       {

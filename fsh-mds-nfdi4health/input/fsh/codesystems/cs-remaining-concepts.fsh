@@ -140,7 +140,7 @@ Description: "Code system defining remaining concepts without mapping to concept
 * #129 "Screener"
 * #130 "Interventional"
 * #131 "Non-interventional"
-
+* #132 "Vaccine and biological substance (Pharmacologic Substance)"
 * #133 "Single group"
 * #134 "Parallel"
 * #135 "Crossover"
@@ -163,10 +163,24 @@ Description: "Code system defining remaining concepts without mapping to concept
 * #152 "Registry"
 * #153 "Other (Non-Interventional)"
 * #154 "Unknown (Non-Interventional)"
+* #155 "Retrospective"
+* #156 "Prospective"
+* #157 "Nonrandomized"
+* #158 "Not applicable (for single-arm trials)"
+* #159 "Randomized"
+* #160 "Non-probability"
+* #162 "Cross-sectional (timePerspectives)"
+* #163 "Other (timePerspectives)"
+* #164 "Other (method)"
+* #165 "Unknown (method)"
+* #166 "Not applicable (method)"
+* #167 "Simple random"
+* #168 "Systematic random"
+* #169 "Stratified"
+* #170 "Stratified: Proportional"
+* #171 "Stratified: Disproportional"
+* #172 "Multistage"
+* #173 "Quota"
+* #174 "Purposive"
+* #175 "Availability"
 
-
-
-///where do these codes belong to? Needs to match with AD///
-///* #140 "Human use"///
-///* #141 "Machine use"///
-///* #142 "Different text for the same object with a different identifier"///
