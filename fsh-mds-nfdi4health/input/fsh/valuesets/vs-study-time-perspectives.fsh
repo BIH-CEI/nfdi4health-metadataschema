@@ -10,7 +10,7 @@ Description: "Value set defining codes to specify the time perspective of a stud
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 
-* $UMLS#C0035363 "Respective Studies (Research Activity)"
+* $UMLS#C0035363 "Retrospective Studies (Research Activity)"
 * $UMLS#C0033522 "Prospective Studies (Research Activty)"
 * $UMLS#C0010362 "Cross-Sectional Studies (Research Activity)"
 * $UMLS#C0205394 "Other (Qualitative Concept)"
