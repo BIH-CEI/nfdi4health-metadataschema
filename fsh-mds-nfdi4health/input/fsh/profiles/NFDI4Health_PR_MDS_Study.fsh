@@ -203,7 +203,7 @@ Description: "Resource covering metadata of a study."
 * category[timePerspectives] from NFDI4Health_VS_MDS_Study_Time_Perspectives_Local (required)
 * category[timePerspectives] ^binding.description = "Value set defining codes to specify the time perspective of a study in a ResearchStudy resource."
 * category[timePerspectives].coding 0..*
-* category[allocation] from NFDI4Health_VS_MDS_Study_Allocation_NCI (required)
+* category[allocation] from NFDI4Health_VS_MDS_Study_Allocation_Local (required)
 * category[allocation] ^short = "Type of allocation of participants to an arm"
 * category[allocation] ^definition = "Type of allocation/assignment of individual study participants to an arm."
 * category[allocation] ^comment = "Short input help: Select one value from the list."

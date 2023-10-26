@@ -430,7 +430,7 @@ Description: "NFDI4Health LogicalModel General Metadataschema"
 * Resource.studyDesign.interventional.masking.description 0..1 string "Additional information about masking" "If needed, additional descriptive information about masking (e.g. information about other parties who may be masked)."
 * Resource.studyDesign.interventional.masking.description ^comment = "Cardinality: 0..1, if Resource.studyDesign.interventional.masking.general == true; otherwise 0..0 / Short Input Help: If needed, additional information about masking, e.g. other parties who may be masked. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2]"
 * Resource.studyDesign.interventional.allocation 0..1 Coding "Type of allocation of participants to an arm" "Type of allocation/assignment of individual study participants to an arm."
-* Resource.studyDesign.interventional.allocation from NFDI4Health_VS_MDS_Study_Allocation_NCI (required)
+* Resource.studyDesign.interventional.allocation from NFDI4Health_VS_MDS_Study_Allocation_Local (required)
 * Resource.studyDesign.interventional.allocation ^comment = "Short Input Help: Select one value from the list. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: CT.gov [2], DRKS [3]"
 * Resource.studyDesign.interventional.offLabelUse 0..1 Coding "Off-label use of a drug product" "Unapproved (off-label) use of a drug product. "
 * Resource.studyDesign.interventional.offLabelUse from NFDI4Health_VS_MDS_Yes_No_Not_Applicable_SNOMEDCT (required)
