@@ -121,6 +121,7 @@
 [NFDI4Health_VS_MDS_Role_Name_Identifier_Scheme_Local]: ValueSet-nfdi4health-vs-mds-role-name-identifier-scheme-local.html
 [NFDI4Health_VS_MDS_Role_Name_Personal_Title_NCI]: ValueSet-nfdi4health-vs-mds-role-name-personal-title-nci.html
 [NFDI4Health_VS_MDS_Role_Name_Type_UMLS]: ValueSet-nfdi4health-vs-mds-role-name-type-umls.html
+[NFDI4Health_VS_MDS_Study_Allocation_Local]: ValueSet-nfdi4health-vs-mds-study-allocation-local.html
 [NFDI4Health_VS_MDS_Study_Allocation_NCI]: ValueSet-nfdi4health-vs-mds-study-allocation-nci.html
 [NFDI4Health_VS_MDS_Study_Arm_Group_Type_UMLS]: ValueSet-nfdi4health-vs-mds-study-arm-group-type-umls.html
 [NFDI4Health_VS_MDS_Study_Assessments_SNOMEDCT_UMLS]: ValueSet-nfdi4health-vs-mds-study-assessments-snomedct-umls.html
@@ -152,6 +153,7 @@
 [NFDI4Health_VS_MDS_Study_Status_Halted_Stage_Local]: ValueSet-nfdi4health-vs-mds-study-status-halted-stage-local.html
 [NFDI4Health_VS_MDS_Study_Status_When_Intervention_Local]: ValueSet-nfdi4health-vs-mds-study-status-when-intervention-local.html
 [NFDI4Health_VS_MDS_Study_Subject_SNOMEDCT]: ValueSet-nfdi4health-vs-mds-study-subject-snomedct.html
+[NFDI4Health_VS_MDS_Study_Time_Perspectives_Local]: ValueSet-nfdi4health-vs-mds-study-time-perspectives-local.html
 [NFDI4Health_VS_MDS_Study_Time_Perspectives_UMLS]: ValueSet-nfdi4health-vs-mds-study-time-perspectives-umls.html
 [NFDI4Health_VS_MDS_Study_Type_Interventional_Local]: ValueSet-nfdi4health-vs-mds-study-type-interventional-local.html
 [NFDI4Health_VS_MDS_Study_Type_Interventional_UMLS]: ValueSet-nfdi4health-vs-mds-study-type-interventional-umls.html

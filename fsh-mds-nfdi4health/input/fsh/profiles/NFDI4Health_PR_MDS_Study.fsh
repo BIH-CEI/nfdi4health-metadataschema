@@ -209,7 +209,7 @@ Description: "Resource covering metadata of a study."
 * category[allocation] ^comment = "Short input help: Select one value from the list."
 * category[allocation] ^binding.description = "Value set defining codes to specify the subject allocation in a study."
 * category[allocation].coding 0..1
-* category[samplingMethod] from NFDI4Health_VS_MDS_Study_Sampling_Method_NCI_Local (required)
+* category[samplingMethod] from NFDI4Health_VS_MDS_Study_Sampling_Method_Local (required)
 * category[samplingMethod] ^short = "Applied sampling method"
 * category[samplingMethod] ^definition = "Type of the sampling method applied for the selection of study participants."
 * category[samplingMethod] ^comment = "Short Input Help: Select one value from the list."

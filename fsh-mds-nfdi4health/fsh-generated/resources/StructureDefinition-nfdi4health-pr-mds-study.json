@@ -1358,11 +1358,6 @@
         ]
       },
       {
-        "id": "ResearchStudy.category:studyTypeNonInterventional.coding",
-        "path": "ResearchStudy.category.coding",
-        "max": "1"
-      },
-      {
         "id": "ResearchStudy.category:timePerspectives",
         "path": "ResearchStudy.category",
         "sliceName": "timePerspectives",
@@ -1370,7 +1365,7 @@
         "max": "*",
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-time-perspectives-umls",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-time-perspectives-local",
           "description": "Value set defining codes to specify the time perspective of a study in a ResearchStudy resource."
         },
         "mapping": [
@@ -1391,7 +1386,7 @@
         "max": "1",
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-allocation-nci",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-allocation-local",
           "description": "Value set defining codes to specify the subject allocation in a study."
         },
         "mapping": [

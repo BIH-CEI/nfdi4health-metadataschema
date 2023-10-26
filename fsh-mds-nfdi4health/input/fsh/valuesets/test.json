@@ -1,0 +1,84 @@
+{
+	"resourceType": "ValueSet",
+	"id": "2.16.840.1.113883.3.1937.777.64.11.70--20231025150445",
+	"meta": {
+		"lastUpdated": "2023-10-26T12:44:07Z",
+		"source": "https://art-decor.org/fhir/4.0/nfdhtfcov19-",
+		"profile": [
+			"http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+		],
+		"tag": [
+			{
+				"system": "http://hl7.org/fhir/FHIR-version",
+				"code": "4.0",
+				"fhir_comments": [
+					"<profile value=\"http://hl7.org/fhir/4.0/StructureDefinition/ValueSet\"/>"
+				]
+			}
+		]
+	},
+	"extension": [
+		{
+			"url": "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+			"valuePeriod": {
+				"start": "2023-10-25T15:04:45+02:00"
+			}
+		}
+	],
+	"url": "https://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.64.11.70--20231025150445",
+	"identifier": [
+		{
+			"use": "official",
+			"system": "urn:ietf:rfc:3986",
+			"value": "urn:oid:2.16.840.1.113883.3.1937.777.64.11.70"
+		}
+	],
+	"version": "2023-10-25T15:04:45",
+	"name": "NFDI4Health_VS_MDS_Study_Sampling_Method_Local",
+	"title": "NFDI4Health_VS_MDS_Study_Sampling_Method_Local",
+	"status": "draft",
+	"experimental": false,
+	"publisher": "BIH @ Charité",
+	"description": "NFDI4Health_VS_MDS_Study_Sampling_Method_Local",
+	"immutable": false,
+	"compose": {
+		"include": [
+			{
+				"system": "https://art-decor.org/fhir/CodeSystem/2.16.840.1.113883.3.1937.777.64.5.1--20230830205625"
+			},
+			{
+				"system": "https://art-decor.org/fhir/CodeSystem/2.16.840.1.113883.3.1937.777.64.5.1--20230830205625",
+				"concept": [
+					{
+						"code": "036",
+						"display": "Total universe/Complete enumeration"
+					},
+					{
+						"code": "034",
+						"display": "Probability Sampling Method"
+					},
+					{
+						"code": "166",
+						"display": "Not applicable (method)"
+					},
+					{
+						"code": "165",
+						"display": "Unknown (method)"
+					},
+					{
+						"code": "164",
+						"display": "Other (method)"
+					},
+					{
+						"code": "160",
+						"display": "Non-probability"
+					},
+					{
+						"code": "035",
+						"display": "Mixed Probability and Non-Probability Sampling Method"
+					}
+				]
+			}
+		]
+	}
+}

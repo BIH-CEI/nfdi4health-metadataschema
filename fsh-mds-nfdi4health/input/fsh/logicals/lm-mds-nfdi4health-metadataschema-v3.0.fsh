@@ -275,7 +275,7 @@ Description: "NFDI4Health LogicalModel General Metadataschema"
 * Resource.studyDesign.sampling 0..1 BackboneElement "Sampling method" "Group of items providing information about the applied sampling method."
 * Resource.studyDesign.sampling ^comment = "Short Input Help: Select one value from the list. / Display information? (Data capturing): no / Display information? (Data visualization): no / Source of the property and/or allowed values: NFDI4Health"
 * Resource.studyDesign.sampling.method 1..1 Coding "Applied sampling method" "Type of the sampling method applied for the selection of study participants."
-* Resource.studyDesign.sampling.method from NFDI4Health_VS_MDS_Study_Sampling_Method_NCI_Local (required)
+* Resource.studyDesign.sampling.method from NFDI4Health_VS_MDS_Study_Sampling_Method_Local (required)
 * Resource.studyDesign.sampling.method ^comment = "Short Input Help: Select one value from the list. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health, CT.gov [2], DDI [15]"
 * Resource.studyDesign.sampling.probabilityMethod 0..1 Coding "Specific type of probability sampling" "Specific type of the probability sampling method applied for the selection of study participants."
 * Resource.studyDesign.sampling.probabilityMethod from NFDI4Health_VS_MDS_Study_Sampling_Probability_Method_NCI_Local (required)

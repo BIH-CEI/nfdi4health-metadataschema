@@ -30,7 +30,7 @@
           },
           {
             "code": "II",
-            "display": "Neoplasms (C00-D48)"
+            "display": "Neoplasms"
           },
           {
             "code": "III",
@@ -42,71 +42,59 @@
           },
           {
             "code": "V",
-            "display": "Mental and behavioural disorders (F00-F99)"
+            "display": "Mental and behavioural disorders"
           },
           {
             "code": "VI",
-            "display": "Diseases of the nervous system (G00-G99)"
+            "display": "Diseases of the nervous system"
           },
           {
             "code": "VII",
-            "display": "Diseases of the eye and adnexa (H00-H59)"
+            "display": "Diseases of the eye and adnexa"
           },
           {
             "code": "VIII",
-            "display": "Diseases of the ear and mastoid process (H60-H95)"
+            "display": "Diseases of the ear and mastoid process"
           },
           {
             "code": "IX",
-            "display": "Diseases of the circulatory system (I00-I99)"
+            "display": "Diseases of the circulatory system"
           },
           {
             "code": "X",
-            "display": "Diseases of the respiratory system (J00-J99)"
+            "display": "Diseases of the respiratory system"
           },
           {
             "code": "XI",
-            "display": "Diseases of the digestive system (K00-K93)"
-          },
-          {
-            "code": "XII",
-            "display": "Diseases of the skin and subcutaneous tissue (L00-L99)"
+            "display": "Diseases of the digestive system"
           },
           {
             "code": "XIII",
-            "display": "Diseases of the musculoskeletal system and connective tissue (M00-M99)"
+            "display": "Diseases of the musculoskeletal system and connective tissue"
           },
           {
             "code": "XIV",
-            "display": "Diseases of the genitourinary system (N00-N99)"
+            "display": "Diseases of the genitourinary system"
           },
           {
             "code": "XV",
-            "display": "Pregnancy, childbirth and the puerperium (O00-O99)"
+            "display": "Pregnancy, childbirth and the puerperium"
           },
           {
             "code": "XVI",
-            "display": "Certain conditions originating in the perinatal period (P00-P96)"
+            "display": "Certain conditions originating in the perinatal period"
           },
           {
             "code": "XVII",
-            "display": "Congenital malformations, deformations and chromosomal abnormalities (Q00-Q99)"
+            "display": "Congenital malformations, deformations and chromosomal abnormalities"
           },
           {
-            "code": "XVIII",
-            "display": "Symptoms, signs and abnormal clinical and laboratory findings, not elsewhere classified (R00-R99)"
+            "code": "G47.2",
+            "display": "Disorders of the sleep-wake schedule"
           },
           {
-            "code": "XIX",
-            "display": "Injury, poisoning and certain other consequences of external causes (S00-T98)"
-          },
-          {
-            "code": "XX",
-            "display": "External causes of morbidity and mortality (V01-Y98)"
-          },
-          {
-            "code": "XXI",
-            "display": "Factors influencing health status and contact with health services (Z00-Z99)"
+            "code": "XII",
+            "display": "Diseases of the skin and subcutaneous tissue"
           }
         ]
       },
@@ -124,6 +112,15 @@
           {
             "code": "C0439673",
             "display": "Unknown (Qualitative Concept)"
+          }
+        ]
+      },
+      {
+        "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+        "concept": [
+          {
+            "code": "161",
+            "display": "Conditions related to sexual health"
           }
         ]
       }
