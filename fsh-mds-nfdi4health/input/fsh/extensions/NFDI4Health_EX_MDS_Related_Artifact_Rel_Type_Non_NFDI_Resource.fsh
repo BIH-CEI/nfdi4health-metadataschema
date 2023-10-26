@@ -1,4 +1,4 @@
-Alias: $nfdi4health-vs-mds-relation-type-ids-local-hl7v3 = https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-relation-type-ids-local-hl7v3
+Alias: $nfdi4health-vs-mds-relation-type-ids-local = https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-relation-type-ids-local
 
 Extension: NFDI4Health_EX_MDS_Related_Artifact_Rel_Type_Non_NFDI_Resource
 Id: nfdi4health-ex-mds-related-artifact-reltype-non-nfdi-resource

@@ -101,20 +101,19 @@ Usage: #example
 * extension[roles].extension[nameType].valueCoding = $UMLS#C0220885 "Organizational (Qualitative Concept)"
 * extension[roles].extension[roleOrganisational].valueCoding = $Remaining#048 "Research Group"
 // Related resources
-* relatedArtifact[NFDI4HealthResource][0].extension[identifier].valueIdentifier.value = "e2ddee95749b4bcfac3152d9a35115c9"
-* relatedArtifact[NFDI4HealthResource][0].extension[identifier].valueIdentifier.system = "https://csh.nfdi4health.de/resource/"
+* relatedArtifact[NFDI4HealthResource][0].extension[identifier].valueString = "e2ddee95749b4bcfac3152d9a35115c9"
 * relatedArtifact[NFDI4HealthResource][=].extension[relationType].valueCoding = $Remaining#062 "A has version B"
 * relatedArtifact[NFDI4HealthResource][=].type = #documentation // per default as the VS is required in FHIR
-* relatedArtifact[NFDI4HealthResource][+].extension[identifier].valueIdentifier.value = "ea31c8a1199849378ea0604004efd7a2"
+* relatedArtifact[NFDI4HealthResource][+].extension[identifier].valueString = "ea31c8a1199849378ea0604004efd7a2"
 * relatedArtifact[NFDI4HealthResource][=].extension[relationType].valueCoding = $Remaining#062 "A has version B"
 * relatedArtifact[NFDI4HealthResource][=].type = #documentation // per default as the VS is required in FHIR
-* relatedArtifact[nonNFDI4HealthResource][0].extension[identifier].valueIdentifier.value = "10.1093/ije/dyac034"
-* relatedArtifact[nonNFDI4HealthResource][=].extension[identifier].valueIdentifier.type = $UMLS#C2348291 "Digital Object Identifier (Intellectual Product)"
+* relatedArtifact[nonNFDI4HealthResource][0].extension[identifier].valueString = "10.1093/ije/dyac034"
+* relatedArtifact[nonNFDI4HealthResource][=].extension[scheme].valueCoding = $UMLS#C2348291 "Digital Object Identifier (Intellectual Product)"
 * relatedArtifact[nonNFDI4HealthResource][=].extension[relationType].valueCoding = $Remaining#059 "A is described by B"
 * relatedArtifact[nonNFDI4HealthResource][=].extension[resourceTypeGeneral].valueCoding = $UMLS#C0282420 "Journal Article (Intellectual Product)"
 * relatedArtifact[nonNFDI4HealthResource][=].type = #documentation // per default as the VS is required in FHIR
-* relatedArtifact[nonNFDI4HealthResource][+].extension[identifier].valueIdentifier.value = "10.1093/ije/dyp394"
-* relatedArtifact[nonNFDI4HealthResource][=].extension[identifier].valueIdentifier.type = $UMLS#C2348291 "Digital Object Identifier (Intellectual Product)"
+* relatedArtifact[nonNFDI4HealthResource][+].extension[identifier].valueString = "10.1093/ije/dyp394"
+* relatedArtifact[nonNFDI4HealthResource][=].extension[scheme].valueCoding = $UMLS#C2348291 "Digital Object Identifier (Intellectual Product)"
 * relatedArtifact[nonNFDI4HealthResource][=].extension[relationType].valueCoding = $Remaining#059 "A is described by B"
 * relatedArtifact[nonNFDI4HealthResource][=].extension[resourceTypeGeneral].valueCoding = $UMLS#C0282420 "Journal Article (Intellectual Product)"
 * relatedArtifact[nonNFDI4HealthResource][=].type = #documentation // per default as the VS is required in FHIR
