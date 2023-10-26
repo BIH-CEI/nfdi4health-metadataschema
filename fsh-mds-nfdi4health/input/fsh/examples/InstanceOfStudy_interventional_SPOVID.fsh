@@ -44,8 +44,8 @@ Usage: #example
 * period.start = 2008-01-05 //original format needed to be converted
 * period.end = 2022-11-30 //original format needed to be converted
 /// Study Design Details
-* category[primaryDesign].coding = $UMLS#C3274035 "Interventional Study (Research Study)"
-* category[studyTypeInterventional].coding = $Remaining#139 "Unknown (Qualitative Concept)"
+* category[primaryDesign].coding = $Remaining#130 "Interventional"
+* category[studyTypeInterventional].coding = $Remaining#139 "Unknown (interventional)"
 * extension[subject].valueCoding = $SCT#125676002 "Person (person)"
 * extension[studyGroupsOfDiseases].extension[generally].valueCoding = $UMLS#C0439673 "Unknown (Qualitative Concept)"
 * category[samplingMethod].coding = $NCI#C127781 "Non-Probability Sampling Method (Activity)"

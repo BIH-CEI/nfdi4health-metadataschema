@@ -199,7 +199,7 @@ Description: "Resource covering metadata of a study."
 * category[studyTypeNonInterventional] ^definition = "The primary strategy for participant identification and follow-up."
 * category[studyTypeNonInterventional] ^comment = "Short input help: Select all that apply.\r\nIf \"Other\" is selected, you can specify the study type in the field \"Additional information about the study\"."
 * category[studyTypeNonInterventional] ^binding.description = "Value set defining codes to specify the type of a non interventional study in a ResearchStudy resource."
-* category[studyTypeNonInterventional].coding 0..1
+* category[studyTypeNonInterventional].coding 0..*
 * category[timePerspectives] from NFDI4Health_VS_MDS_Study_Time_Perspectives_Local (required)
 * category[timePerspectives] ^binding.description = "Value set defining codes to specify the time perspective of a study in a ResearchStudy resource."
 * category[timePerspectives].coding 0..*

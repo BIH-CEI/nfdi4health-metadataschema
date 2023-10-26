@@ -27,9 +27,9 @@ Usage: #example
 * extension[studyStatus].extension[statusEnrollingByInvitation].valueCoding = $SCT#373066001 "Yes (qualifier value)"
 * period.start = 2008-09-22 //original format needed to be converted
 /// Study Design Details
-* category[primaryDesign].coding = $UMLS#C4684718 "Non-Interventional Study (Research Activity)"
-* category[studyTypeNonInterventional][0].coding = $UMLS#C0009247 "Cohort Studies (Quantitative Concept)"
-* category[studyTypeNonInterventional][1].coding = $UMLS#C0023981 "Longitudinal Studies (Research Activity)"
+* category[primaryDesign].coding = $Remaining#131 "Non-interventional"
+* category[studyTypeNonInterventional][0].coding = $Remaining#146 "Cohort"
+* category[studyTypeNonInterventional][1].coding = $Remaining#149 "Longitudinal"
 * extension[subject].valueCoding = $SCT#125676002 "Person (person)"
 * extension[studyGroupsOfDiseases].extension[generally][0].valueCoding = $ICD10#I "Certain infectious and parasitic diseases"
 * extension[studyGroupsOfDiseases].extension[generally][+].valueCoding = $ICD10#III "Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism"
@@ -69,7 +69,7 @@ Usage: #example
 * primaryPurposeType.coding = $UMLS#C0205394 "Other (Qualitative Concept)"
 * objective.name = "There is no single set of research questions underlying the study."
 * note.text = "The content of different SHIP data collections are described separately."
-* category[timePerspectives].coding = $UMLS#C0033522 "Prospective Studies (Research Activty)"
+* category[timePerspectives].coding = $Remaining#156 "Prospective"
 * extension[biospecimen].extension[retention].valueCoding = $UMLS#C4288286 "Retained Specimens Contain DNA (Conceptual Entity)"
 * extension[biospecimen].extension[description].valueString = "Whole blood; Saliva"
 * extension[nutritionalData].valueBoolean = false //made up, as no information in CSH
