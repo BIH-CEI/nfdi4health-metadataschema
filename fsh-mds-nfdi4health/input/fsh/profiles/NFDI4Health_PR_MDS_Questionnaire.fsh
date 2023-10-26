@@ -19,7 +19,7 @@ Description: "Resource covering metadata of a questionnaire."
     NFDI4Health_EX_MDS_Label named label 0..* and
     NFDI4Health_EX_MDS_Execution_Language named executionlLanguage 0..* and
     NFDI4Health_EX_MDS_Associated_Party named roles 1..* and
-    NFDI4Health_EX_MDS_Related named relatedResources 0..1 and
+    NFDI4Health_EX_MDS_Related named relatedResources 0..* and
     NFDI4Health_EX_MDS_Keywords named keywords 0..*
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "type"

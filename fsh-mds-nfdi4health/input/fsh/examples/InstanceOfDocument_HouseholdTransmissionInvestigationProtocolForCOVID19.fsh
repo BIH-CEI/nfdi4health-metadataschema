@@ -44,10 +44,5 @@ Dabei werden drei Hauptziele verfolgt:
 * extension[roles][=].extension[nameType].valueCoding = $UMLS#C0220885 "Organizational (Qualitative Concept)"
 * extension[roles][=].extension[roleOrganisational].valueCoding = $NCI#C25461 "Contact Person (Human)"
 // Related Resources
-* extension[relatedResources][0].relatedArtifact.extension[NFDI4HealthResource].extension[identifier].valueString = "122"
-* extension[relatedResources][=].relatedArtifact.extension[NFDI4HealthResource].extension[relationType].valueCoding = $Remaining#075 "A is source of B"
-* extension[relatedResources][=].relatedArtifact.type = #documentation //mandatory in FHIR
-* extension[relatedResources][0].extension[nonNFDI4HealthResource].extension[identifier].valueString = "WHO/2019-nCoV/HHtransmission/2020.4"
-* extension[relatedResources][=].extension[nonNFDI4HealthResource].extension[scheme].valueCoding = $UMLS#C0205394 "Other (Qualitative Concept)"
-* extension[relatedResources][=].extension[nonNFDI4HealthResource].extension[relationType].valueCoding = $Remaining#072 "A is identical to B"
-* extension[relatedResources][=].type = #documentation //mandatory in FHIR
+* extension[relatedResources][0].valueReference = Reference(InstanceOfRelatedArtifact_Household_NFDI)
+* extension[relatedResources][+].valueReference = Reference(InstanceOfRelatedArtifact_Household_Non_NFDI)

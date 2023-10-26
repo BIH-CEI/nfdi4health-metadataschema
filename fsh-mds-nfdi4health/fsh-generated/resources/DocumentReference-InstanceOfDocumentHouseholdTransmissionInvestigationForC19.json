@@ -119,6 +119,18 @@
         }
       ],
       "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-associated-party"
+    },
+    {
+      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related",
+      "valueReference": {
+        "reference": "RelatedArtifact/InstanceOfRelatedArtifact_Household_NFDI"
+      }
+    },
+    {
+      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related",
+      "valueReference": {
+        "reference": "RelatedArtifact/InstanceOfRelatedArtifact_Household_Non_NFDI"
+      }
     }
   ],
   "masterIdentifier": {

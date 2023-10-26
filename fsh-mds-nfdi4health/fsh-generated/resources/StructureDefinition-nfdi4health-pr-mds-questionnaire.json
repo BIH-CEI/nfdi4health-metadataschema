@@ -178,7 +178,7 @@
         "path": "Questionnaire.extension",
         "sliceName": "relatedResources",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "type": [
           {
             "code": "Extension",

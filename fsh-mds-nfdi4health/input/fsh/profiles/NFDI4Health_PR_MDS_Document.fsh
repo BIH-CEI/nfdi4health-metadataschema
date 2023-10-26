@@ -18,7 +18,7 @@ Description: "Resource covering metadata of a document."
     NFDI4Health_EX_MDS_Keywords named keywords 0..* and
     NFDI4Health_EX_MDS_Associated_Party named roles 1..* and
     NFDI4Health_EX_MDS_Document_Use_Rights named useRights 0..1 and 
-    NFDI4Health_EX_MDS_Related named relatedResources 0..1
+    NFDI4Health_EX_MDS_Related named relatedResources 0..*
 * masterIdentifier 1..
 * masterIdentifier ^short = "ID of the [RESOURCE]"
 * masterIdentifier ^definition = "Unique identifier of the resource used for identification within the NFDI4Health."

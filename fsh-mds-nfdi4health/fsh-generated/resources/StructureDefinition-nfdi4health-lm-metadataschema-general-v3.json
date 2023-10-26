@@ -2203,6 +2203,10 @@
             "code": "CodeableConcept"
           }
         ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-diseases-generally-icd10-umls-local"
+        },
         "mapping": [
           {
             "identity": "NFDI4Health-V3-Internal-Numbering",
