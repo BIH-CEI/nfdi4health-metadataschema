@@ -20,27 +20,27 @@
     },
     {
       "code": "003",
-      "display": "Case-only studies",
+      "display": "Case-only",
       "definition": "Type of studies that only uses cases as subjects to estimate/test hypotheses but does not include a comparison group."
     },
     {
       "code": "004",
-      "display": "Case-cohort studies",
+      "display": "Case-cohort",
       "definition": "Type of cohort studies in which a subcohort, a random sample composed of cases and controls, is selected from a parent cohort; the subcohort and the cases outside of the subcohort constitute the case-cohort sample."
     },
     {
       "code": "005",
-      "display": "Trend studies",
+      "display": "Trend",
       "definition": "Type of studies in which different samples from a defined population are surveyed at different points of time."
     },
     {
       "code": "006",
-      "display": "Cross-section ad-hoc follow-up studies",
+      "display": "Cross-section ad-hoc follow-up",
       "definition": "Data collected at one point in time to complete information collected in a previous cross-sectional study; the decision to collect follow-up data is not included in the study design. (Definition from DDI)"
     },
     {
       "code": "007",
-      "display": "Quality control studies",
+      "display": "Quality control",
       "definition": "Type of studies with a focus on quality control."
     },
     {
@@ -545,6 +545,10 @@
       "display": "Non-interventional"
     },
     {
+      "code": "132",
+      "display": "Vaccine and biological substance (Pharmacologic Substance)"
+    },
+    {
       "code": "133",
       "display": "Single group"
     },
@@ -631,6 +635,90 @@
     {
       "code": "154",
       "display": "Unknown (Non-Interventional)"
+    },
+    {
+      "code": "155",
+      "display": "Retrospective"
+    },
+    {
+      "code": "156",
+      "display": "Prospective"
+    },
+    {
+      "code": "157",
+      "display": "Nonrandomized"
+    },
+    {
+      "code": "158",
+      "display": "Not applicable (for single-arm trials)"
+    },
+    {
+      "code": "159",
+      "display": "Randomized"
+    },
+    {
+      "code": "160",
+      "display": "Non-probability"
+    },
+    {
+      "code": "161",
+      "display": "Conditions related to sexual health"
+    },
+    {
+      "code": "162",
+      "display": "Cross-sectional (timePerspectives)"
+    },
+    {
+      "code": "163",
+      "display": "Other (timePerspectives)"
+    },
+    {
+      "code": "164",
+      "display": "Other (method)"
+    },
+    {
+      "code": "165",
+      "display": "Unknown (method)"
+    },
+    {
+      "code": "166",
+      "display": "Not applicable (method)"
+    },
+    {
+      "code": "167",
+      "display": "Simple random"
+    },
+    {
+      "code": "168",
+      "display": "Systematic random"
+    },
+    {
+      "code": "169",
+      "display": "Stratified"
+    },
+    {
+      "code": "170",
+      "display": "Stratified: Proportional"
+    },
+    {
+      "code": "171",
+      "display": "Stratified: Disproportional"
+    },
+    {
+      "code": "172",
+      "display": "Multistage"
+    },
+    {
+      "code": "173",
+      "display": "Quota"
+    },
+    {
+      "code": "174",
+      "display": "Purposive"
+    },
+    {
+      "code": "175",
+      "display": "Availability"
     }
   ],
   "version": "0.9",
@@ -646,5 +734,5 @@
       ]
     }
   ],
-  "count": 153
+  "count": 175
 }

@@ -155,6 +155,7 @@
 [NFDI4Health_VS_MDS_Study_Sampling_Method_Non_Probability_NCI_Local]: ValueSet-nfdi4health-vs-mds-study-sampling-method-non-prob-nci-local.html
 [NFDI4Health_VS_MDS_Study_Sampling_Method_Local]: ValueSet-nfdi4health-vs-mds-study-sampling-method-local.html
 [NFDI4Health_VS_MDS_Study_Sampling_Method_NCI_Local]: ValueSet-nfdi4health-vs-mds-study-sampling-method-nci-local.html
+[NFDI4Health_VS_MDS_Study_Sampling_Probability_Method_Local]: ValueSet-nfdi4health-vs-mds-study-sampling-prob-method-local.html
 [NFDI4Health_VS_MDS_Study_Sampling_Probability_Method_NCI_Local]: ValueSet-nfdi4health-vs-mds-study-sampling-prob-method-nci-local.html
 [NFDI4Health_VS_MDS_Study_Status_Halted_Stage_Local]: ValueSet-nfdi4health-vs-mds-study-status-halted-stage-local.html
 [NFDI4Health_VS_MDS_Study_Status_When_Intervention_Local]: ValueSet-nfdi4health-vs-mds-study-status-when-intervention-local.html

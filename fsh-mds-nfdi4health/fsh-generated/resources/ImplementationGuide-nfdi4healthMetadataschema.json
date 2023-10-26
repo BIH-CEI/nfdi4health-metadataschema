@@ -1274,6 +1274,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-sampling-prob-method-local"
+        },
+        "name": "NFDI4Health VS MDS Study Sampling Probability Method [Local]",
+        "description": "Value set defining codes to specify types of probability sampling methods.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/nfdi4health-vs-mds-study-sampling-prob-method-nci-local"
         },
         "name": "NFDI4Health VS MDS Study Sampling Probability Method [NCI, Local]",

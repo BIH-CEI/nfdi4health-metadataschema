@@ -25,7 +25,7 @@
         "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
         "concept": [
           {
-            "code": "177",
+            "code": "173",
             "display": "Quota"
           },
           {

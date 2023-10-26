@@ -10,7 +10,7 @@ Description: "Value set defining codes to specify types of non-probability sampl
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 
-* $Remaining#177 "Quota"
+* $Remaining#173 "Quota"
 * $Remaining#008 "Respondent-assisted"
 * $Remaining#174 "Purposive"
 * $Remaining#175 "Availability"
