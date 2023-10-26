@@ -221,7 +221,7 @@ Description: "Resource covering metadata of a study."
 * category[samplingMethodProbability] ^comment = "Short Input Help: If known, select one value from the list."
 * category[samplingMethodProbability] ^binding.description = "Value set defining codes to specify types of probability sampling methods."
 * category[samplingMethodProbability].coding 0..1
-* category[samplingMethodNonProbability] from NFDI4Health_VS_MDS_Study_Sampling_Method_Non_Probability_NCI_Local (required)
+* category[samplingMethodNonProbability] from NFDI4Health_VS_MDS_Study_Sampling_Method_Non_Probability_Local (required)
 * category[samplingMethodNonProbability] ^short = "Specific type of non-probability sampling"
 * category[samplingMethodNonProbability] ^definition = "Specific type of the probability sampling method applied for the selection of study participants."
 * category[samplingMethodNonProbability] ^comment = "Short Input Help: If known, select one value from the list."
