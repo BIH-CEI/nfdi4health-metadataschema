@@ -1,5 +1,7 @@
 [ConceptMap-Study-Allocation-NFDI4Health-to-UMLS]: ConceptMap-ConceptMap-Study-Allocation-NFDI4Health-to-UMLS.html
 [ConceptMap-Study-Primary-Design-NFDI4Health-to-UMLS]: ConceptMap-ConceptMap-Study-Primary-Design-NFDI4Health-to-UMLS.html
+[ConceptMap-Study-Sampling-Non-Probability-NFDI4Health-to-NCI]: ConceptMap-ConceptMap-Study-Sampling-Non-Probability-NFDI4Health-to-NCI.html
+[ConceptMap-Study-Sampling-Probability-Method-NFDI4Health-to-NCI]: ConceptMap-ConceptMap-Study-Sampling-Probability-Method-NFDI4Health-to-NCI.html
 [ConceptMap-Study-Time-Perspectives-NFDI4Health-to-UMLS]: ConceptMap-ConceptMap-Study-Time-Perspectives-NFDI4Health-to-UMLS.html
 [ConceptMap-study-type-interventional-NFDI4Health-to-UMLS]: ConceptMap-ConceptMap-study-type-interventional-NFDI4Health-to-UMLS.html
 [InstanceOfDocumentHouseholdTransmissionInvestigationForC19]: DocumentReference-InstanceOfDocumentHouseholdTransmissionInvestigationForC19.html
@@ -55,7 +57,9 @@
 [NFDI4Health_EX_MDS_Off_Label_Use]: StructureDefinition-nfdi4health-ex-mds-off-label-use.html
 [NFDI4Health_EX_MDS_Provenance_Data_Source]: StructureDefinition-nfdi4health-ex-mds-provenance-data-source.html
 [NFDI4Health_EX_MDS_Related_Artifact_Identifier_Date]: StructureDefinition-nfdi4health-ex-mds-related-artifact-identifier-date.html
+[NFDI4Health_EX_MDS_Related_Artifact_NFDI]: StructureDefinition-nfdi4health-ex-mds-related-artifact-nfdi.html
 [NFDI4Health_EX_MDS_Related_Artifact_NFDI_Identifier]: StructureDefinition-nfdi4health-ex-mds-related-artifact-nfdi-identifier.html
+[NFDI4Health_EX_MDS_Related_Artifact_Non_NFDI]: StructureDefinition-nfdi4health-ex-mds-related-artifact-non-nfdi.html
 [NFDI4Health_EX_MDS_Related_Artifact_NonNFDI_Identifier]: StructureDefinition-nfdi4health-ex-mds-related-artifact-nfdi-non-nfdi-identifier.html
 [NFDI4Health_EX_MDS_Related_Artifact_Rel_Type_NFDI4_Resource]: StructureDefinition-nfdi4health-ex-mds-related-artifact-reltype-nfdi-resource.html
 [NFDI4Health_EX_MDS_Related_Artifact_Rel_Type_Non_NFDI_Resource]: StructureDefinition-nfdi4health-ex-mds-related-artifact-reltype-non-nfdi-resource.html
@@ -83,7 +87,6 @@
 [NFDI4Health_EX_MDS_URI]: StructureDefinition-nfdi4health-ex-mds-uri.html
 [NFDI4Health_EX_MDS_Use_Rights_Confirmations]: StructureDefinition-nfdi4health-ex-mds-use-rights-confirmations.html
 [NFDI4Health_EX_MDS_Version]: StructureDefinition-nfdi4health-ex-mds-version.html
-[NFDI4Health_EX_MDS_Webpage]: StructureDefinition-nfdi4health-ex-mds-webpage.html
 [NFDI4Health_LM_Metadataschema_EOCD_V3]: StructureDefinition-nfdi4health-lm-metadataschema-eocd-v3.html
 [NFDI4Health_LM_Metadataschema_General_V3]: StructureDefinition-nfdi4health-lm-metadataschema-general-v3.html
 [NFDI4Health_LM_Metadataschema_NE_V3]: StructureDefinition-nfdi4health-lm-metadataschema-ne-v3.html
@@ -103,8 +106,7 @@
 [NFDI4Health_PR_MDS_Practitioner_Role]: StructureDefinition-nfdi4health-pr-mds-practitioner-role.html
 [NFDI4Health_PR_MDS_Provenance]: StructureDefinition-nfdi4health-pr-mds-provenance.html
 [NFDI4Health_PR_MDS_Questionnaire]: StructureDefinition-nfdi4health-pr-mds-questionnaire.html
-[NFDI4Health_PR_MDS_Related_Artifact_NFDI4Health_Resource]: StructureDefinition-nfdi4health-pr-mds-related-artifact-ndfi4health-resource.html
-[NFDI4Health_PR_MDS_Related_Artifact_Non_NFDI4Health_Resource]: StructureDefinition-nfdi4health-pr-mds-related-artifact-non-ndfi4health-resource.html
+[NFDI4Health_PR_MDS_Related_Artifact_Resource]: StructureDefinition-nfdi4health-pr-mds-related-artifact-resource.html
 [NFDI4Health_PR_MDS_Study]: StructureDefinition-nfdi4health-pr-mds-study.html
 [NFDI4Health_VS_MDS_Countries_ISO]: ValueSet-nfdi4health-vs-mds-countries-iso.html
 [NFDI4Health_VS_MDS_Execution_Language_ISO]: ValueSet-nfdi4health-vs-mds-execution-language-iso.html
@@ -141,7 +143,7 @@
 [NFDI4Health_VS_MDS_Study_Eligibility_Gender_SNOMEDCT_Local]: ValueSet-nfdi4health-vs-mds-study-eligibility-gender-snomedct-local.html
 [NFDI4Health_VS_MDS_Study_Ethics_Committee_Approval_UMLS_Local]: ValueSet-nfdi4health-vs-mds-study-ethics-committee-approval-umls-local.html
 [NFDI4Health_VS_MDS_Study_Group_Characteristics_NCI]: ValueSet-nfdi4health-vs-mds-study-group-characteristics-nci.html
-[NFDI4Health_VS_MDS_Study_Groups_Of_Diseases_Generally_ICD10_UMLS]: ValueSet-nfdi4health-vs-mds-study-groups-of-diseases-generally-icd10-umls.html
+[NFDI4Health_VS_MDS_Study_Diseases_Generally_ICD10_UMLS_Local]: ValueSet-nfdi4health-vs-mds-study-diseases-generally-icd10-umls-local.html
 [NFDI4Health_VS_MDS_Study_Intervention_Type_NCI_UMLS]: ValueSet-nfdi4health-vs-mds-study-intervention-type-nci-umls.html
 [NFDI4Health_VS_MDS_Study_Masking_Roles_NCI_Local]: ValueSet-nfdi4health-vs-mds-study-masking-roles-nci-local.html
 [NFDI4Health_VS_MDS_Study_Outcome_Type_UMLS]: ValueSet-nfdi4health-vs-mds-study-outcome-type-umls.html

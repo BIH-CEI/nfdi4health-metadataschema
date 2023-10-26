@@ -1,3 +1,6 @@
+Alias: $RelatedNonNFDI = https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related-artifact-non-nfdi
+Alias: $RelatedNFDI = https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related-artifact-nfdi
+
 Extension: NFDI4Health_EX_MDS_Related
 Id: nfdi4health-ex-mds-related
 Title: "NFDI4Health_EX_MDS_Related"
@@ -12,20 +15,16 @@ Description: "Extension providing information about related publications, datase
 * ^context[=].expression = "Questionnaire"
 * ^context[+].type = #element
 * ^context[=].expression = "DocumentReference"
-* extension ^slicing.discriminator.type = #value
-* extension ^slicing.discriminator.path = "url"
-* extension ^slicing.rules = #open
-* extension contains
-    relatedArtifactNFDI4Health 0..* and
-    relatedArtifactNonNFDI4Health 0..*
-* extension[relatedArtifactNFDI4Health].value[x] only RelatedArtifact
-* extension[relatedArtifactNFDI4Health].valueRelatedArtifact only NFDI4Health_PR_MDS_Related_Artifact_NFDI4Health_Resource
-* extension[relatedArtifactNonNFDI4Health].value[x] only RelatedArtifact
-* extension[relatedArtifactNonNFDI4Health].valueRelatedArtifact only NFDI4Health_PR_MDS_Related_Artifact_Non_NFDI4Health_Resource
+* . 0..*
+* . ^short = "Test"
+* . ^definition = "Test"
+* value[x] 1..1
+* value[x] only Reference(NFDI4Health_PR_MDS_Related_Artifact_Resource)
 
 Mapping: NFDI4Health-Related-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Related
-* extension[relatedArtifactNonNFDI4Health] -> "1.13 Resource.ids"
-* extension[relatedArtifactNFDI4Health] -> "1.14 Resource.idsNfdi4health"
+* -> "1.13 Resource.ids"
+* -> "1.14 Resource.idsNfdi4health"
+* -> "1.9 Resource.webpage"

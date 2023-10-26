@@ -1,10 +1,10 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "nfdi4health-pr-mds-related-artifact-non-ndfi4health-resource",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-related-artifact-non-ndfi4health-resource",
+  "id": "nfdi4health-ex-mds-related-artifact-non-nfdi",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related-artifact-non-nfdi",
   "version": "0.9",
-  "name": "NFDI4Health_PR_MDS_Related_Artifact_Non_NFDI4Health_Resource",
-  "title": "NFDI4Health PR MDS Related Artifact Non NFDI4Health Resource",
+  "name": "NFDI4Health_EX_MDS_Related_Artifact_Non_NFDI",
+  "title": "NFDI4Health EX MDS Related Artifact Non NFDI",
   "status": "draft",
   "publisher": "NFDI4Health",
   "contact": [
@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "description": "Profile of a RelatedArtifact intended to capture information about related non NFDI4Health resources.",
+  "description": "RelatedArtifact intended to capture information about Resources other than NFDI4Health resources.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -32,14 +32,20 @@
   ],
   "kind": "complex-type",
   "abstract": false,
-  "type": "RelatedArtifact",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/RelatedArtifact",
+  "context": [
+    {
+      "type": "element",
+      "expression": "RelatedArtifact"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation": "constraint",
   "differential": {
     "element": [
       {
-        "id": "RelatedArtifact",
-        "path": "RelatedArtifact",
+        "id": "Extension",
+        "path": "Extension",
         "short": "Related publications, datasets, study documents, web pages, etc.",
         "definition": "Group of items providing information about identifiers (IDs) of the resources related to the given resource, e.g. DOIs of publications, datasets, study documents or links to web pages.",
         "comment": "Short input help: If existing, you can specify identifier(s) of any related resources, e.g. DOIs of publications, datasets, study documents, links to web pages, etc.",
@@ -51,13 +57,13 @@
         ]
       },
       {
-        "id": "RelatedArtifact.extension",
-        "path": "RelatedArtifact.extension",
+        "id": "Extension.extension",
+        "path": "Extension.extension",
         "min": 3
       },
       {
-        "id": "RelatedArtifact.extension:identifier",
-        "path": "RelatedArtifact.extension",
+        "id": "Extension.extension:identifier",
+        "path": "Extension.extension",
         "sliceName": "identifier",
         "min": 1,
         "max": "1",
@@ -77,8 +83,8 @@
         ]
       },
       {
-        "id": "RelatedArtifact.extension:scheme",
-        "path": "RelatedArtifact.extension",
+        "id": "Extension.extension:scheme",
+        "path": "Extension.extension",
         "sliceName": "scheme",
         "min": 1,
         "max": "1",
@@ -98,8 +104,8 @@
         ]
       },
       {
-        "id": "RelatedArtifact.extension:identifierAssignmentDate",
-        "path": "RelatedArtifact.extension",
+        "id": "Extension.extension:identifierAssignmentDate",
+        "path": "Extension.extension",
         "sliceName": "identifierAssignmentDate",
         "min": 0,
         "max": "1",
@@ -119,8 +125,8 @@
         ]
       },
       {
-        "id": "RelatedArtifact.extension:relationType",
-        "path": "RelatedArtifact.extension",
+        "id": "Extension.extension:relationType",
+        "path": "Extension.extension",
         "sliceName": "relationType",
         "min": 1,
         "max": "1",
@@ -140,8 +146,8 @@
         ]
       },
       {
-        "id": "RelatedArtifact.extension:resourceTypeGeneral",
-        "path": "RelatedArtifact.extension",
+        "id": "Extension.extension:resourceTypeGeneral",
+        "path": "Extension.extension",
         "sliceName": "resourceTypeGeneral",
         "min": 0,
         "max": "1",
@@ -159,6 +165,16 @@
             "map": "1.13.5 Resource.ids.resourceTypeGeneral"
           }
         ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related-artifact-non-nfdi"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
       }
     ]
   }

@@ -15,7 +15,7 @@ Description: "Value set defining codes to specify types of non-probability sampl
 * $Remaining#174 "Purposive"
 * $Remaining#175 "Availability"
 
-Instance: ConceptMap-Study-Sampling-Method-Non-Probability-NFDI4Health-to-NCI
+Instance: ConceptMap-Study-Sampling-Non-Probability-NFDI4Health-to-NCI
 InstanceOf: ConceptMap
 Usage: #definition
 * url = "https://www.nfdi4health.de/fhir/metadataschema/ConceptMap/Study-Sampling-Method-Non-Probability-NFDI4Health-to-NCI"

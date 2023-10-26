@@ -1,8 +1,8 @@
-ValueSet: NFDI4Health_VS_MDS_Study_Groups_Of_Diseases_Generally_ICD10_UMLS
-Id: nfdi4health-vs-mds-study-groups-of-diseases-generally-icd10-umls
-Title: "NFDI4Health VS MDS Study Groups Of Diseases Generally [ICD 10, UMLS]"
+ValueSet: NFDI4Health_VS_MDS_Study_Diseases_Generally_ICD10_UMLS_Local
+Id: nfdi4health-vs-mds-study-diseases-generally-icd10-umls-local
+Title: "NFDI4Health VS MDS Study Groups Of Diseases Generally [ICD 10, UMLS, local"
 Description: "Value set defining codes from ICD-10 to specify groups of diseases or conditions on which the data were collected in the study."
-* ^url = "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-groups-of-diseases-generally-icd10-umls"
+* ^url = "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-diseases-generally-icd10-umls-local"
 * ^status = #draft
 * ^version = "0.9"
 * ^experimental = true

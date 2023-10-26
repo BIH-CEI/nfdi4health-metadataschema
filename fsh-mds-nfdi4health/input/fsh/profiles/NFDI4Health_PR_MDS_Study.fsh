@@ -252,20 +252,7 @@ Description: "Resource covering metadata of a study."
 * condition.text ^comment = "Additional information: The use of terms from established terminologies/classifications (e.g. SNOMED CT, ICD, etc.) is preferred. However, also self-assigned terms are allowed. |  Short input help: Preferably, use terms from SNOMED CT (https://browser.ihtsdotools.org)."
 * condition.text ^example[0].label = "Name of a Condition"
 * condition.text ^example[=].valueString = "SARS-CoV-2"
-* relatedArtifact ^slicing.discriminator.type = #value
-* relatedArtifact ^slicing.discriminator.path = "url"
-* relatedArtifact ^slicing.rules = #open
-* relatedArtifact contains
-    webpage 0..1 and
-    nonNFDI4HealthResource 0..* and
-    NFDI4HealthResource 0..*
-* relatedArtifact[webpage] ^short = "Web page of the [RESOURCE]"
-* relatedArtifact[webpage] ^definition = "If existing, a link to the web page directly relevant to the resource."
-* relatedArtifact[webpage] ^comment = "Additional information: Other web pages related to the resource can additionally be entered in the section \"Related resources\"."
-* relatedArtifact[webpage].type = #documentation (exactly)
-* relatedArtifact[webpage].url 1..
-* relatedArtifact[nonNFDI4HealthResource] only NFDI4Health_PR_MDS_Related_Artifact_Non_NFDI4Health_Resource
-* relatedArtifact[NFDI4HealthResource] only NFDI4Health_PR_MDS_Related_Artifact_NFDI4Health_Resource
+* relatedArtifact only NFDI4Health_PR_MDS_Related_Artifact_Resource
 * keyword ^short = "Keyword(s) describing the [RESOURCE]"
 * keyword ^definition = "Group of items providing information about keywords describing the resource."
 * keyword ^comment = "Additional information: The findability of the resource can be significantly increased if proper keywords are stated."
@@ -433,7 +420,9 @@ Source: NFDI4Health_PR_MDS_Study
 * condition.coding.code -> "1.17.3.3 Resource.studyDesign.studyConditions.code"
 * condition.coding.display -> "1.17.3.1 Resource.studyDesign.studyConditions.label"
 * condition.text -> "1.17.3.1 Resource.studyDesign.studyConditions.label"
-* relatedArtifact[webpage] -> "1.9 Resource.webpage"
+* relatedArtifact -> "1.13 Resource.ids"
+* relatedArtifact -> "1.14 Resource.idsNfdi4health"
+* relatedArtifact -> "1.9 Resource.webpage"
 * keyword -> "1.7 Resource.keywords"
 * keyword.coding.extension[URI] -> "1.7.2 Resource.keywords.code"
 * keyword.coding.code -> "1.7.2 Resource.keywords.code"

@@ -44,10 +44,10 @@ Dabei werden drei Hauptziele verfolgt:
 * extension[roles][=].extension[nameType].valueCoding = $UMLS#C0220885 "Organizational (Qualitative Concept)"
 * extension[roles][=].extension[roleOrganisational].valueCoding = $NCI#C25461 "Contact Person (Human)"
 // Related Resources
-* extension[relatedResources].extension[relatedArtifactNFDI4Health][0].valueRelatedArtifact.extension[identifier].valueString = "122"
-* extension[relatedResources].extension[relatedArtifactNFDI4Health][=].valueRelatedArtifact.extension[relationType].valueCoding = $Remaining#075 "A is source of B"
-* extension[relatedResources].extension[relatedArtifactNFDI4Health][=].valueRelatedArtifact.type = #documentation //mandatory in FHIR
-* extension[relatedResources].extension[relatedArtifactNonNFDI4Health][0].valueRelatedArtifact.extension[identifier].valueString = "WHO/2019-nCoV/HHtransmission/2020.4"
-* extension[relatedResources].extension[relatedArtifactNonNFDI4Health][=].valueRelatedArtifact.extension[scheme].valueCoding = $UMLS#C0205394 "Other (Qualitative Concept)"
-* extension[relatedResources].extension[relatedArtifactNonNFDI4Health][=].valueRelatedArtifact.extension[relationType].valueCoding = $Remaining#072 "A is identical to B"
-* extension[relatedResources].extension[relatedArtifactNonNFDI4Health][=].valueRelatedArtifact.type = #documentation //mandatory in FHIR
+* extension[relatedResources][0].relatedArtifact.extension[NFDI4HealthResource].extension[identifier].valueString = "122"
+* extension[relatedResources][=].relatedArtifact.extension[NFDI4HealthResource].extension[relationType].valueCoding = $Remaining#075 "A is source of B"
+* extension[relatedResources][=].relatedArtifact.type = #documentation //mandatory in FHIR
+* extension[relatedResources][0].extension[nonNFDI4HealthResource].extension[identifier].valueString = "WHO/2019-nCoV/HHtransmission/2020.4"
+* extension[relatedResources][=].extension[nonNFDI4HealthResource].extension[scheme].valueCoding = $UMLS#C0205394 "Other (Qualitative Concept)"
+* extension[relatedResources][=].extension[nonNFDI4HealthResource].extension[relationType].valueCoding = $Remaining#072 "A is identical to B"
+* extension[relatedResources][=].type = #documentation //mandatory in FHIR

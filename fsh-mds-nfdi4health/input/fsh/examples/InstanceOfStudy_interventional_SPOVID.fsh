@@ -13,11 +13,11 @@ Usage: #example
 * description = "In a pilot study, the SPOVID project is investigating whether an individually tailored training program can safely and effectively improve the physical endurance of Long COVID-19 patients. To this end, the researchers observe fitness parameters of cardiovascular and lung function in particular over several months, but also the development of headache, fatigue and fatigue symptoms. From the results, they want to derive recommendations for personalized training programs."
 * description.extension[language].valueCode = $UMLS#C0376245 "English Language"
 * description.extension[translation].extension[content].valueString = "In einer Pilotstudie untersucht das Projekt SPOVID, ob ein individuell abgestimmtes Trainingsprogramm die körperliche Ausdauer von Long COVID-19-Patientinnen und -Patienten sicher und wirksam verbessern kann. Dazu beobachten die Forschenden über mehrere Monate hinweg insbesondere Fitnessparameter der Herz-Kreislauf- und der Lungenfunktion, aber auch die Entwicklung von Kopfschmerz-, Müdigkeits- und Erschöpfungssymptomen. Aus den Ergebnissen wollen sie Empfehlungen für personalisierte Trainingsprogramme ableiten."
-* description.extension[translation].extension[lang].valueCode = #de "German"
+* description.extension[translation].extension[lang].valueCode = $UMLS#C0017477 "German language"
 ///Details
 * extension[resourceType].valueCoding = $UMLS#C0947630 "Scientific Study (Research Activity)"
 * extension[label].extension[value].valueString = "SPOVID"
-* extension[label].extension[type].valueCoding = $Remaining#136 "Acronym"
+* extension[label].extension[type].valueCoding = $LabelType#07 "Acronym"
 * extension[label].extension[language].valueCode = $UMLS#C0376245 "English Language"
 * keyword[0].coding[0].code = $mesh#D000086382 "COVID-19"
 * keyword[=].coding[=].extension[URI].valueUri = "https://id.nlm.nih.gov/mesh/D000086382.html"
@@ -34,7 +34,6 @@ Usage: #example
 * keyword[+].coding[0].code = $SCT#1119303003 "Post-acute COVID-19 (disorder)"
 * keyword[=].coding[=].extension[URI].valueUri = "https://browser.ihtsdotools.org/?perspective=full&conceptId1=1119303003&edition=MAIN/2023-07-31&release=&languages=en&latestRedirect=false"
 * extension[executionLanguage].valueCode = #de "German"
-* relatedArtifact[webpage].url = "https://www.uni-due.de/med/meldung.php?id=1325"
 //////Missing: source of info in Provenance
 
 //Study characteristics
@@ -108,18 +107,20 @@ Usage: #example
 * extension[roles][=].extension[roleOrganisational].valueCoding = $Remaining#046 "Public Funder"
 
 // Related resources
-* relatedArtifact[nonNFDI4HealthResource][0].extension[identifier].valueString = "https://www.gesundheitsforschung-bmbf.de/de/spovid-sport-long-covid-syndrom-14348.php"
-* relatedArtifact[nonNFDI4HealthResource][=].extension[scheme].valueCoding = $UMLS#C1710546 "Uniform Resource Locator (Intellectual Product)"
-* relatedArtifact[nonNFDI4HealthResource][=].extension[relationType].valueCoding = $Remaining#059 "A is described by B"
-* relatedArtifact[nonNFDI4HealthResource][=].extension[resourceTypeGeneral].valueCoding = $NCI#C25704 "Text (Manufactured Object)"
-* relatedArtifact[nonNFDI4HealthResource][=].type = #documentation // per default as the VS is required in FHIR
-* relatedArtifact[nonNFDI4HealthResource][+].extension[identifier].valueString = "01EP2104A"
-* relatedArtifact[nonNFDI4HealthResource][=].extension[scheme].valueCoding = $NCI#C17649 "Other (Qualitative Concept)"
-* relatedArtifact[nonNFDI4HealthResource][=].extension[relationType].valueCoding = $Remaining#060 "A describes B"
-* relatedArtifact[nonNFDI4HealthResource][=].extension[resourceTypeGeneral].valueCoding = $NCI#C17649 "Other (Qualitative Concept)"
-* relatedArtifact[nonNFDI4HealthResource][=].type = #documentation // per default as the VS is required in FHIR
-* relatedArtifact[nonNFDI4HealthResource][+].extension[identifier].valueString = "01EP2104B"
-* relatedArtifact[nonNFDI4HealthResource][=].extension[scheme].valueCoding = $NCI#C17649 "Other (Qualitative Concept)"
-* relatedArtifact[nonNFDI4HealthResource][=].extension[relationType].valueCoding = $Remaining#060 "A describes B"
-* relatedArtifact[nonNFDI4HealthResource][=].extension[resourceTypeGeneral].valueCoding = $NCI#C17649 "Other (Qualitative Concept)"
-* relatedArtifact[nonNFDI4HealthResource][=].type = #documentation // per default as the VS is required in FHIR
+* relatedArtifact[0].extension[nonNFDI4HealthResource].extension[identifier].valueString = "https://www.gesundheitsforschung-bmbf.de/de/spovid-sport-long-covid-syndrom-14348.php"
+* relatedArtifact[=].extension[nonNFDI4HealthResource].extension[scheme].valueCoding = $UMLS#C1710546 "Uniform Resource Locator (Intellectual Product)"
+* relatedArtifact[=].extension[nonNFDI4HealthResource].extension[relationType].valueCoding = $Remaining#059 "A is described by B"
+* relatedArtifact[=].extension[nonNFDI4HealthResource].extension[resourceTypeGeneral].valueCoding = $NCI#C25704 "Text (Manufactured Object)"
+* relatedArtifact[=].type = #documentation // per default as the VS is required in FHIR
+* relatedArtifact[+].extension[nonNFDI4HealthResource].extension[identifier].valueString = "01EP2104A"
+* relatedArtifact[=].extension[nonNFDI4HealthResource].extension[scheme].valueCoding = $UMLS#C0205394 "Other (Qualitative Concept)"
+* relatedArtifact[=].extension[nonNFDI4HealthResource].extension[relationType].valueCoding = $Remaining#060 "A describes B"
+* relatedArtifact[=].extension[nonNFDI4HealthResource].extension[resourceTypeGeneral].valueCoding = $NCI#C17649 "Other (Qualitative Concept)"
+* relatedArtifact[=].type = #documentation // per default as the VS is required in FHIR
+* relatedArtifact[+].extension[nonNFDI4HealthResource].extension[identifier].valueString = "01EP2104B"
+* relatedArtifact[=].extension[nonNFDI4HealthResource].extension[scheme].valueCoding = $UMLS#C0205394 "Other (Qualitative Concept)"
+* relatedArtifact[=].extension[nonNFDI4HealthResource].extension[relationType].valueCoding = $Remaining#060 "A describes B"
+* relatedArtifact[=].extension[nonNFDI4HealthResource].extension[resourceTypeGeneral].valueCoding = $NCI#C17649 "Other (Qualitative Concept)"
+* relatedArtifact[=].type = #documentation // per default as the VS is required in FHIR
+* relatedArtifact[+].url = "https://www.uni-due.de/med/meldung.php?id=1325"
+* relatedArtifact[=].type = #documentation // per default as the VS is required in FHIR
