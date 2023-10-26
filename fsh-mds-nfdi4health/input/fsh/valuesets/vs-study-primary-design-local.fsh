@@ -17,7 +17,7 @@ Instance: ConceptMap-Study-Primary-Design-NFDI4Health-to-UMLS
 InstanceOf: ConceptMap
 Usage: #definition
 * url = "https://www.nfdi4health.de/fhir/metadataschema/ConceptMap/Study-Rrimary-Design-NFDI4Health-to-UMLS"
-* name = "ConceptMap-VS-MDS-NFDI4Health-UMLS-Mapping"
+* name = "ConceptMap-VS-MDS-Study-Rrimary-Design-NFDI4Health-UMLS-Mapping"
 * title = "ConceptMap - Study primary design codes from NFDI4Health to UMLS"
 * status = #active
 * experimental = false
