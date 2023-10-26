@@ -38,7 +38,7 @@ Usage: #example
 * extension[studyGroupsOfDiseases].extension[generally][+].valueCoding = $ICD10#V "Mental and behavioural disorders"
 * extension[studyGroupsOfDiseases].extension[generally][+].valueCoding = $UMLS#C0205394 "Other (Qualitative Concept)"//
 * category[samplingMethod].coding = $Remaining#034 "Probability Sampling Method"
-* category[samplingMethodProbability].coding = $NCI#C71516 "Stratified Sampling (Activity)"
+* category[samplingMethodProbability].coding = $Remaining#169 "Stratified"
 * extension[dataSource].extension[general][0].valueCoding = $UMLS#C2347026 "Biospecimen (Body Substance)"
 * extension[dataSource].extension[general][+].valueCoding = $Remaining#029 "Cognitive measurements"
 * extension[dataSource].extension[general][+].valueCoding = $Remaining#031 "Imaging data"

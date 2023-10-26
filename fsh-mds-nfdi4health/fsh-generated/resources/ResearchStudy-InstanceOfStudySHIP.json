@@ -664,9 +664,9 @@
     {
       "coding": [
         {
-          "code": "C71516",
-          "system": "http://ncimeta.nci.nih.gov",
-          "display": "Stratified Sampling (Activity)"
+          "code": "169",
+          "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+          "display": "Stratified"
         }
       ]
     },

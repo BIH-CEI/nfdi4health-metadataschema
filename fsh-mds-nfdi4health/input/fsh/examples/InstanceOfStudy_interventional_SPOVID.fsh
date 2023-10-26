@@ -48,13 +48,13 @@ Usage: #example
 * category[studyTypeInterventional].coding = $Remaining#139 "Unknown (interventional)"
 * extension[subject].valueCoding = $SCT#125676002 "Person (person)"
 * extension[studyGroupsOfDiseases].extension[generally].valueCoding = $UMLS#C0439673 "Unknown (Qualitative Concept)"
-* category[samplingMethod].coding = $NCI#C127781 "Non-Probability Sampling Method (Activity)"
-* category[samplingMethodProbability].coding = $NCI#C71505 "Matched Sampling"
+* category[samplingMethod].coding = $Remaining#160 "Non-probability"
+* category[samplingMethodNonProbability].coding = $Remaining#174 "Purposive"
 * extension[dataSource].extension[general][0].valueCoding = $Remaining#029 "Cognitive measurements"
 * extension[dataSource].extension[general][+].valueCoding = $Remaining#032 "Physiological/Biochemical measurements"
 * primaryPurposeType.coding = $study-prim-purp-type#treatment "Treatment"
 * extension[masking].extension[general].valueBoolean = false
-* category[allocation] = $NCI#C0034656 "Randomization (Health Care Activity)"
+* category[allocation] = $Remaining#159 "Randomized"
 * extension[offLabelUse].valueCoding = $SCT#385432009 "Not applicable (qualifier value)"
 * extension[nutritionalData].valueBoolean = false //made up, as no information in CSH
 * extension[chronicDiseases].valueBoolean = false //made up, as no information in CSH

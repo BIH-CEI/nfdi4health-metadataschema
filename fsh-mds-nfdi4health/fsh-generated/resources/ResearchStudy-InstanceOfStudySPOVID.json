@@ -695,27 +695,27 @@
     {
       "coding": [
         {
-          "code": "C127781",
-          "system": "http://ncimeta.nci.nih.gov",
-          "display": "Non-Probability Sampling Method (Activity)"
+          "code": "160",
+          "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+          "display": "Non-probability"
         }
       ]
     },
     {
       "coding": [
         {
-          "code": "C71505",
-          "system": "http://ncimeta.nci.nih.gov",
-          "display": "Matched Sampling"
+          "code": "174",
+          "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+          "display": "Purposive"
         }
       ]
     },
     {
       "coding": [
         {
-          "code": "C0034656",
-          "system": "http://ncimeta.nci.nih.gov",
-          "display": "Randomization (Health Care Activity)"
+          "code": "159",
+          "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+          "display": "Randomized"
         }
       ]
     }
