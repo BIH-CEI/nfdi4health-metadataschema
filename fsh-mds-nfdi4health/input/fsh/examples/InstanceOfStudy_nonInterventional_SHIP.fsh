@@ -93,7 +93,7 @@ Usage: #example
 /// Study Population
 * location[countries] = $iso3166#DE "Germany"
 * location[regions].text = "Mecklenburg-Vorpommern"
-* site.extension[centers].extension[monoOrMulti].valueCoding = $Remaining#084 "Monocentric"
+* site = Reference(InstanceOfLocationMono)
 * extension[population].valueString = "Adults from the general population meeting the criteria stated above."
 * enrollment[+] = Reference(InstanceOfGroupActualSHIP)
 

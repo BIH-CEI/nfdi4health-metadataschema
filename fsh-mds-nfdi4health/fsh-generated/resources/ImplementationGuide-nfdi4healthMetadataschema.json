@@ -156,14 +156,6 @@
       },
       {
         "reference": {
-          "reference": "Location/InstanceOfLocationMono"
-        },
-        "name": "Instance of Monocentric Study",
-        "description": "Example for monocentric study SHIP",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-centers"
-      },
-      {
-        "reference": {
           "reference": "Practitioner/InstanceOfPractitionerNinaKirchhof"
         },
         "name": "Instance Of NFDI4Health_PR_MDS_Practitioner for Nina Kirchhof",
@@ -806,14 +798,6 @@
         },
         "name": "NFDI4Health NE Portion Size [SNOMED CT]",
         "description": "Value Set to define the reference period unit used within Diet Assessment",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/nfdi4health-pr-mds-centers"
-        },
-        "name": "NFDI4Health PR MDS Centers",
-        "description": "Resource covering metadata of a center.",
         "exampleBoolean": false
       },
       {
