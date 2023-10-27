@@ -97,6 +97,7 @@
 [NFDI4Health_VS_MDS_NE_Mode_UMLS_Local]: ValueSet-nfdi4health-vs-mds-ne-mode-umls-local.html
 [NFDI4Health_VS_MDS_NE_Portion_Size_SNOMEDCT_Local]: ValueSet-nfdi4health-vs-mds-ne-portion-size-snomedct-local.html
 [NFDI4Health_VS_MDS_NE_Reference_Period_Unit_SNOMEDCT]: ValueSet-nfdi4health-vs-mds-ne-reference-period-unit-snomedct.html
+[NFDI4Health_PR_MDS_Centers]: StructureDefinition-nfdi4health-pr-mds-centers.html
 [NFDI4Health_PR_MDS_Document]: StructureDefinition-nfdi4health-pr-mds-document.html
 [NFDI4Health_PR_MDS_Evidence_Variable_Intervention_Exposure]: StructureDefinition-nfdi4health-pr-mds-evidence-variable-intervention-exposure.html
 [NFDI4Health_PR_MDS_Group_Actual]: StructureDefinition-nfdi4health-pr-mds-group-actual.html
