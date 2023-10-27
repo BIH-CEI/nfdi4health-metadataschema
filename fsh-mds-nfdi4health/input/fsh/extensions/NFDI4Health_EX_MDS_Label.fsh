@@ -14,9 +14,9 @@ Description: "Extension covering information about additional title(s), name(s) 
 * ^context[=].expression = "Questionnaire"
 * ^context[+].type = #element
 * ^context[=].expression = "Document"
-* . ^short = "Additional title(s)/name(s) or acronym(s) of the [RESOURCE]"
-* . ^definition = "Group of items providing information about additional title(s)/name(s) or acronym(s) of the resource."
-* . ^comment = "Based on ResearchStudy.label (R5), with an extension for translation and language."
+* . ^short = "Title(s)/name(s) or acronym(s) of the [RESOURCE]"
+* . ^definition = "Group of items providing information about title(s)/name(s) or acronym(s) of the resource."
+* . ^comment = "Based on ResearchStudy.label (R5), with an extension for language."
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
@@ -24,17 +24,10 @@ Description: "Extension covering information about additional title(s), name(s) 
     value 1..1 and
     type 1..1 and
     NFDI4Health_EX_MDS_Language named language 1..1
-* extension[value] ^short = "Additional title(s), additional name(s), and acronym(s)"
-* extension[value] ^definition = "If existing, additional title(s), additional name(s), and acronym(s) of the resource."
+* extension[value] ^short =  "Title(s), additional name(s), and acronym(s)"
+* extension[value] ^definition = "Title(s), additional name(s), and acronym(s) of the resource."
 * extension[value].value[x] 1..
 * extension[value].value[x] only string
-* extension[value].valueString.extension ^slicing.discriminator.type = #value
-* extension[value].valueString.extension ^slicing.discriminator.path = "url"
-* extension[value].valueString.extension ^slicing.rules = #open
-* extension[value].valueString.extension contains 
-    $translation named translation 0..*
-* extension[value].valueString.extension[translation] ^short = "Language translation of the additional title/additional name/acronym"
-* extension[value].valueString.extension[translation] ^definition = "Language of the additional title/additional name/acronym if it is not the base language of the resource."
 * extension[type] ^short = "Kind of name."
 * extension[type] ^definition = "Kind of name."
 * extension[type].value[x] 1..

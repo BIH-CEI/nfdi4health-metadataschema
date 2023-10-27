@@ -141,39 +141,12 @@
   "content": [
     {
       "attachment": {
-        "extension": [
-          {
-            "extension": [
-              {
-                "url": "value",
-                "valueString": "WHO-2019-nCoV-HHtransmission"
-              },
-              {
-                "url": "type",
-                "valueCoding": {
-                  "code": "136",
-                  "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
-                  "display": "Acronym"
-                }
-              },
-              {
-                "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language",
-                "valueCode": "C0376245"
-              }
-            ],
-            "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-label"
-          },
-          {
-            "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-version",
-            "valueString": "2.2"
-          }
-        ],
         "title": "Household transmission investigation protocol for coronavirus disease 2019 (COVID-19)",
         "_title": {
           "extension": [
             {
-              "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language",
-              "valueCode": "en"
+              "url": "http://hl7.org/fhir/StructureDefinition/language",
+              "valueCode": "C0376245"
             }
           ]
         },
@@ -201,7 +174,7 @@
           },
           {
             "url": "lang",
-            "valueCode": "de"
+            "valueCode": "C0017477"
           }
         ],
         "url": "http://hl7.org/fhir/StructureDefinition/translation"

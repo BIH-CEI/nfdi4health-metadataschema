@@ -24,6 +24,10 @@
       "identity": "rim",
       "uri": "http://hl7.org/v3",
       "name": "RIM Mapping"
+    },
+    {
+      "identity": "NFDI4Health",
+      "name": "NFDI4Health to FHIR Mapping"
     }
   ],
   "kind": "complex-type",
@@ -69,7 +73,13 @@
         "binding": {
           "strength": "required",
           "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-centers-snomedct-local"
-        }
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.17 Resource.studyDesign.studyCenters"
+          }
+        ]
       },
       {
         "id": "Extension.value[x].system",

@@ -142,32 +142,8 @@ Description: "Resource covering metadata of a document."
 * content.attachment.extension ^slicing.discriminator.path = "url"
 * content.attachment.extension ^slicing.rules = #open
 * content.attachment.extension ^min = 0
-* content.attachment.extension contains NFDI4Health_EX_MDS_Label named label 0..*
-* content.attachment.extension contains NFDI4Health_EX_MDS_Version named version 0..1
-* content.attachment.title 1..
-* content.attachment.title ^short = "Title/name"
-* content.attachment.title ^definition = "Scientific unabbreviated title or name of the resource."
-* content.attachment.title.extension ^slicing.discriminator.type = #value
-* content.attachment.title.extension ^slicing.discriminator.path = "url"
-* content.attachment.title.extension ^slicing.rules = #open
-* content.attachment.title.extension contains NFDI4Health_EX_MDS_Language named language 1..1
-* content.attachment.title.extension[language] ^short = "Language of the title/name"
-* content.attachment.title.extension[language] ^definition = "Language of the title/name"
-* content.attachment.title.extension[language].valueCode from $NFDILanguages (required)
-* content.attachment.title.extension[language].valueCode ^binding.description = "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)"
-* content.attachment.title.extension contains $translation named translation 0..*
-* content.attachment.title.extension[translation] ^short = "Language translation of the title"
-* content.attachment.title.extension[translation] ^definition = "Language of the title if it is not the base language of the resource."
-* content.attachment.title.extension[translation].extension ^slicing.discriminator.type = #value
-* content.attachment.title.extension[translation].extension ^slicing.discriminator.path = "url"
-* content.attachment.title.extension[translation].extension ^slicing.rules = #open
-* content.attachment.title.extension[translation].extension[lang] ^short = "Language of the title/name"
-* content.attachment.title.extension[translation].extension[lang] ^definition = "Language of the title/name."
-* content.attachment.title.extension[translation].extension[lang].value[x] ^binding.strength = #required
-* content.attachment.title.extension[translation].extension[lang].value[x] ^binding.description = "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)"
-* content.attachment.title.extension[translation].extension[content] ^short = "Title in another language"
-* content.attachment.title.extension[translation].extension[content] ^definition = "Title in another language than the base language of the resource."
-* content.attachment.title.extension[translation].extension[content].value[x] only string
+* content.extension contains NFDI4Health_EX_MDS_Label named label 1..*
+* content.extension contains NFDI4Health_EX_MDS_Version named version 0..1
 * content.attachment.language 0..1
 * content.attachment.language ^short = "Language(s) of the [RESOURCE]"
 * content.attachment.language ^definition = "Language(s) in which a study/substudy is conducted, or a language in which a study document is composed."

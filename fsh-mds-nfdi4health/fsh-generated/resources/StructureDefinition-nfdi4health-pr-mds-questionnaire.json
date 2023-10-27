@@ -129,21 +129,6 @@
         ]
       },
       {
-        "id": "Questionnaire.extension:label",
-        "path": "Questionnaire.extension",
-        "sliceName": "label",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-label"
-            ]
-          }
-        ]
-      },
-      {
         "id": "Questionnaire.extension:executionlLanguage",
         "path": "Questionnaire.extension",
         "sliceName": "executionlLanguage",
@@ -866,118 +851,25 @@
               "path": "url"
             }
           ],
+          "ordered": false,
           "rules": "open"
         },
         "min": 1
       },
       {
-        "id": "Questionnaire.title.extension:translation",
+        "id": "Questionnaire.title.extension:label",
         "path": "Questionnaire.title.extension",
-        "sliceName": "translation",
-        "short": "Language translation of the title",
-        "definition": "Language of the title if it is not the base language of the resource.",
-        "min": 0,
+        "sliceName": "label",
+        "min": 1,
         "max": "*",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/StructureDefinition/translation"
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-label"
             ]
           }
         ]
-      },
-      {
-        "id": "Questionnaire.title.extension:translation.extension:lang",
-        "path": "Questionnaire.title.extension.extension",
-        "sliceName": "lang",
-        "short": "Language of the title/name",
-        "definition": "Language of the title/name.",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "1.3.2 Resource.titles.language",
-            "comment": "Translation language of the title"
-          }
-        ]
-      },
-      {
-        "id": "Questionnaire.title.extension:translation.extension:lang.value[x]",
-        "path": "Questionnaire.title.extension.extension.value[x]",
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet",
-              "valueCanonical": "http://hl7.org/fhir/ValueSet/all-languages"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "Language"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-              "valueBoolean": true
-            }
-          ],
-          "strength": "required",
-          "description": "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)",
-          "valueSet": "http://hl7.org/fhir/ValueSet/languages"
-        }
-      },
-      {
-        "id": "Questionnaire.title.extension:translation.extension:content",
-        "path": "Questionnaire.title.extension.extension",
-        "sliceName": "content",
-        "short": "Title in another language",
-        "definition": "Title in another language than the base language of the resource.",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "1.3.1 Resource.titles.text",
-            "comment": "Translated title"
-          }
-        ]
-      },
-      {
-        "id": "Questionnaire.title.extension:translation.extension:content.value[x]",
-        "path": "Questionnaire.title.extension.extension.value[x]",
-        "type": [
-          {
-            "code": "string"
-          }
-        ]
-      },
-      {
-        "id": "Questionnaire.title.extension:language",
-        "path": "Questionnaire.title.extension",
-        "sliceName": "language",
-        "short": "Language of the title/name",
-        "definition": "Language of the title/name",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language"
-            ]
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "1.3.2 Resource.titles.language"
-          }
-        ]
-      },
-      {
-        "id": "Questionnaire.title.extension:language.value[x]",
-        "path": "Questionnaire.title.extension.value[x]",
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-language-umls",
-          "description": "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)"
-        }
       },
       {
         "id": "Questionnaire.status",

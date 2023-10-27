@@ -75,7 +75,13 @@
       {
         "id": "Location.description",
         "path": "Location.description",
-        "min": 1
+        "min": 1,
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.18 Resource.studyDesign.studyCentersNumber"
+          }
+        ]
       }
     ]
   }

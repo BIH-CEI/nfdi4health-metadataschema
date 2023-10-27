@@ -171,27 +171,6 @@
       ]
     },
     {
-      "extension": [
-        {
-          "url": "value",
-          "valueString": "SHIP-TREND"
-        },
-        {
-          "url": "type",
-          "valueCoding": {
-            "code": "07",
-            "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-label",
-            "display": "Acronym"
-          }
-        },
-        {
-          "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language",
-          "valueCode": "C0376245"
-        }
-      ],
-      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-label"
-    },
-    {
       "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-execution-language",
       "valueCode": "C0017477"
     },
@@ -482,7 +461,7 @@
   "_title": {
     "extension": [
       {
-        "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language",
+        "url": "http://hl7.org/fhir/StructureDefinition/language",
         "valueCode": "C0376245"
       }
     ]

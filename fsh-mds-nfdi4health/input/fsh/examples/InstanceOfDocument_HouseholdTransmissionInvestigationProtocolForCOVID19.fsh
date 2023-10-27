@@ -6,24 +6,24 @@ Usage: #example
 // General information
 * masterIdentifier.value = "97"
 * content.attachment[0].title = "Household transmission investigation protocol for coronavirus disease 2019 (COVID-19)"
-* content.attachment[=].title.extension[language].valueCode = #en "English"
+* content.attachment[=].title.extension[language].valueCode = $UMLS#C0376245 "English Language"
 * status = #current // mandatory in FHIR, no information in MDS
 /// English Description
 * description = "This document sets out the methods to guide data collection and the public health investigation for the comprehensive assessment of household contacts of confirmed COVID-19 cases. The household transmission investigation is a case-ascertained prospective study of all identified household contacts of a laboratory-confirmed 2019-nCoV infection. It is intended to provide rapid and early information on the clinical, epidemiological and virological characteristics of 2019-nCoV. There are three primary objectives of this household transmission study:
 1) To better understand the extent of transmission within a household by estimating the secondary infection rate for household contacts at an individual level, and factors associated with any variation in the secondary infection risk.
 2) To characterize secondary cases including the range of clinical presentation, risk factors for infection, and the extent and fraction of asymptomatic infections.
 3) To characterize serologic response following confirmed 2019-nCoV infection (highly encouraged, but optional depending on laboratory capacity and resources)."
-* description.extension[language].valueCode = #C0376245 "English Language"
+* description.extension[language].valueCode = $UMLS#C0376245 "English Language"
 * description.extension[translation].extension[content].valueString = "In diesem Dokument werden die Methoden zur Anleitung der Datenerfassung und der Untersuchung des öffentlichen Gesundheitswesens für die umfassende Beurteilung von Haushaltskontakten von bestätigten COVID-19-Fällen dargelegt. Mit dieser fallbezogenen, prospektiven Studie sollen die Übertragungswege im Haushalt bei im Labor bestätigten 2019-nCoV-Infektionen untersucht werden. Damit sollen schnell und frühzeitig Informationen über die klinischen, epidemiologischen und virologischen Merkmale von 2019-nCoV geliefert werden. 
 Dabei werden drei Hauptziele verfolgt:
 1) Um Kenntnisse hinsichtlich des Ausmaßes von Übertragungen innerhalb eines Haushalts zu gewinnen, soll auf Indivdualebene die Sekundärinfektionsrate geschätzt werden und Faktoren, die die ein solches Sekundärinfektionsrisiko beeinflussen, untersucht werden. 
 2) Charakterisierung der Sekundärfälle, einschließlich des Spektrums klinischer Krankheitsbilder, der Risikofaktoren für die Infektion und des Ausmaßes und Anteils asymptomatisch verlaufender Infektionen.
 3) Charakterisierung der serologischen Reaktion nach einer bestätigten 2019-nCoV-Infektion (wird dringend empfohlen, ist aber je nach Laborkapazität und Ressourcen optional)."
-* description.extension[translation].extension[lang].valueCode = #de "German"
+* description.extension[translation].extension[lang].valueCode = $UMLS#C0017477 "German language"
 /// Details
 * extension[resourceType].valueCoding = $Remaining#021 "Other study document"
 * content.attachment[=].extension[label].extension[value].valueString = "WHO-2019-nCoV-HHtransmission"
-* content.attachment[=].extension[label].extension[type].valueCoding = $Remaining#136 "Acronym"
+* content.attachment[=].extension[label].extension[type].valueCoding = $LabelType#07 "Acronym"
 * content.attachment[=].extension[label].extension[language].valueCode = $UMLS#C0376245 "English Language"
 * extension[keywords][0].extension[label].valueString = "COVID-19"
 * extension[keywords][=].extension[code].valueUri = "https://id.nlm.nih.gov/mesh/D000086382.html"

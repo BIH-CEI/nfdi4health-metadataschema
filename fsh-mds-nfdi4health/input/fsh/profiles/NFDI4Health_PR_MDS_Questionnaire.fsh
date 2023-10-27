@@ -16,7 +16,6 @@ Description: "Resource covering metadata of a questionnaire."
     NFDI4Health_EX_MDS_Resource_Type named resourceType 1..1 and
     NFDI4Health_EX_MDS_Resource_Type_General named resourceTypeGeneral 0..1 and
     NFDI4Health_EX_MDS_Format named format 0..1 and
-    NFDI4Health_EX_MDS_Label named label 0..* and
     NFDI4Health_EX_MDS_Execution_Language named executionlLanguage 0..* and
     NFDI4Health_EX_MDS_Associated_Party named roles 1..* and
     NFDI4Health_EX_MDS_Related named relatedResources 0..* and
@@ -116,27 +115,7 @@ Description: "Resource covering metadata of a questionnaire."
 * title ^short = "Title/name"
 * title ^definition = "Scientific unabbreviated title or name of the resource."
 * title ^comment = "Additional information: If no official title/name has been defined yet, please provide a title/name that is suitable for public display. | Short input help: Please provide at least one title/name of the resource. If the original title is not in English, please also provide an English translation of the original title."
-* title.extension ^slicing.discriminator.type = #value
-* title.extension ^slicing.discriminator.path = "url"
-* title.extension ^slicing.rules = #open
-* title.extension contains $translation named translation 0..*
-* title.extension[translation] ^short = "Language translation of the title"
-* title.extension[translation] ^definition = "Language of the title if it is not the base language of the resource."
-* title.extension[translation].extension ^slicing.discriminator.type = #value
-* title.extension[translation].extension ^slicing.discriminator.path = "url"
-* title.extension[translation].extension ^slicing.rules = #open
-* title.extension[translation].extension[lang] ^short = "Language of the title/name"
-* title.extension[translation].extension[lang] ^definition = "Language of the title/name."
-* title.extension[translation].extension[lang].value[x] ^binding.strength = #required
-* title.extension[translation].extension[lang].value[x] ^binding.description = "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)"
-* title.extension[translation].extension[content] ^short = "Title in another language"
-* title.extension[translation].extension[content] ^definition = "Title in another language than the base language of the resource."
-* title.extension[translation].extension[content].value[x] only string
-* title.extension contains NFDI4Health_EX_MDS_Language named language 1..1
-* title.extension[language] ^short = "Language of the title/name"
-* title.extension[language] ^definition = "Language of the title/name"
-* title.extension[language].valueCode from $NFDILanguages (required)
-* title.extension[language].valueCode ^binding.description = "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)"
+* title.extension contains NFDI4Health_EX_MDS_Label named label 1..*
 * status = #active (exactly)
 * status ^comment = "The item does not exist in NFDI4Health' MDS. Fixed to 'active' for all studies."
 * description 1..1
