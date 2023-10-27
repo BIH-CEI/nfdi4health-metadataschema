@@ -598,7 +598,7 @@
   ],
   "site": [
     {
-      "reference": "InstanceOfLocationMono"
+      "reference": "Location/InstanceOfLocationMono"
     }
   ],
   "relatedArtifact": [

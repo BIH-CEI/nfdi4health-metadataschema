@@ -12,7 +12,7 @@ Description: "Resource covering metadata of a center."
 
 * description 1..1
 * extension contains 
-    NFDI4Health_EX_MDS_Centers named centers 1.1
+    NFDI4Health_EX_MDS_Centers named centers 1..1
 
 Mapping: NFDI4Health-Centers-to-FHIR
 Id: NFDI4Health

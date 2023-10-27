@@ -327,7 +327,7 @@ Description: "Resource covering metadata of a study."
 * period.end ^definition = "In case of studies with patients or other participants, it is the date when the last participant is examined or receives an intervention, or the date of the last participant’s last visit."
 * period.end ^comment = "Additional information: Preferred date format: DD.MM.YYYY. | Short input help: In case of a planned or ongoing study, it is the intended end date; in case of a completed study — the actual end date."
 * site 0..1
-* site only Reference(NFDI4Health_EX_MDS_Centers)
+* site only Reference(NFDI4Health_PR_MDS_Centers)
 * reasonStopped ^short = "Reason why the study was stopped"
 * reasonStopped ^definition = "If the study was stopped prematurely, specification of the reason(s) why it was halted."
 * reasonStopped ^comment = "Short input help: E.g., accrual goal met / closed due to toxicity / closed due to lack of study progress / temporarily-closed per study design /etc."
