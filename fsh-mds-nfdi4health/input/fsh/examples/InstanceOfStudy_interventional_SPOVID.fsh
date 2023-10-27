@@ -107,20 +107,5 @@ Usage: #example
 * extension[roles][=].extension[roleOrganisational].valueCoding = $Remaining#046 "Public Funder"
 
 // Related resources
-* relatedArtifact[0].extension[nonNFDI4HealthResource].extension[identifier].valueString = "https://www.gesundheitsforschung-bmbf.de/de/spovid-sport-long-covid-syndrom-14348.php"
-* relatedArtifact[=].extension[nonNFDI4HealthResource].extension[scheme].valueCoding = $UMLS#C1710546 "Uniform Resource Locator (Intellectual Product)"
-* relatedArtifact[=].extension[nonNFDI4HealthResource].extension[relationType].valueCoding = $Remaining#059 "A is described by B"
-* relatedArtifact[=].extension[nonNFDI4HealthResource].extension[resourceTypeGeneral].valueCoding = $NCI#C25704 "Text (Manufactured Object)"
-* relatedArtifact[=].type = #documentation // per default as the VS is required in FHIR
-* relatedArtifact[+].extension[nonNFDI4HealthResource].extension[identifier].valueString = "01EP2104A"
-* relatedArtifact[=].extension[nonNFDI4HealthResource].extension[scheme].valueCoding = $UMLS#C0205394 "Other (Qualitative Concept)"
-* relatedArtifact[=].extension[nonNFDI4HealthResource].extension[relationType].valueCoding = $Remaining#060 "A describes B"
-* relatedArtifact[=].extension[nonNFDI4HealthResource].extension[resourceTypeGeneral].valueCoding = $NCI#C17649 "Other (Qualitative Concept)"
-* relatedArtifact[=].type = #documentation // per default as the VS is required in FHIR
-* relatedArtifact[+].extension[nonNFDI4HealthResource].extension[identifier].valueString = "01EP2104B"
-* relatedArtifact[=].extension[nonNFDI4HealthResource].extension[scheme].valueCoding = $UMLS#C0205394 "Other (Qualitative Concept)"
-* relatedArtifact[=].extension[nonNFDI4HealthResource].extension[relationType].valueCoding = $Remaining#060 "A describes B"
-* relatedArtifact[=].extension[nonNFDI4HealthResource].extension[resourceTypeGeneral].valueCoding = $NCI#C17649 "Other (Qualitative Concept)"
-* relatedArtifact[=].type = #documentation // per default as the VS is required in FHIR
-* relatedArtifact[+].url = "https://www.uni-due.de/med/meldung.php?id=1325"
-* relatedArtifact[=].type = #documentation // per default as the VS is required in FHIR
+* relatedArtifact = InstanceOfRelatedArtifact_Household_NFDI
+
