@@ -19,3 +19,9 @@ Description: "Extension informing about the number of centers."
 * valueCoding.code 1..1
 * valueCoding.system 1..1
 * valueCoding from $nfdi4health-vs-mds-study-centers-snomedct-local (required)
+
+Mapping: NFDI4Health-EX-Centers-to-FHIR
+Id: NFDI4Health
+Title: "NFDI4Health to FHIR Mapping"
+Source: NFDI4Health_EX_MDS_Centers
+* valueCoding -> "1.17.17 Resource.studyDesign.studyCenters"
