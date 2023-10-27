@@ -596,6 +596,11 @@
       "text": "Mecklenburg-Vorpommern"
     }
   ],
+  "site": [
+    {
+      "reference": "InstanceOfLocationMono"
+    }
+  ],
   "relatedArtifact": [
     {
       "extension": [

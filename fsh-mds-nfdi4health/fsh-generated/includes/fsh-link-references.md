@@ -42,6 +42,7 @@
 [NFDI4Health_VS_MDS_CD_DataCollected_UMLS]: ValueSet-nfdi4health-vs-mds-cd-datacollected-umls.html
 [NFDI4Health_VS_MDS_CD_Information_Sources_UMLS_Local]: ValueSet-nfdi4health-vs-mds-cd-information-sources-umls-local.html
 [NFDI4Health_EX_MDS_Associated_Party]: StructureDefinition-nfdi4health-ex-mds-associated-party.html
+[NFDI4Health_EX_MDS_Centers]: StructureDefinition-nfdi4health-ex-mds-centers.html
 [NFDI4Health_EX_MDS_Chronic_Diseases]: StructureDefinition-nfdi4health-ex-mds-chronic-diseases.html
 [NFDI4Health_EX_MDS_Copyright_Label]: StructureDefinition-nfdi4health-ex-mds-copyright-label.html
 [NFDI4Health_EX_MDS_Document_Use_Rights]: StructureDefinition-nfdi4health-ex-mds-document-use-rights.html
