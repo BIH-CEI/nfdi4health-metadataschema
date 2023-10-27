@@ -14,4 +14,7 @@ Description: "Resource covering metadata of a center."
 * extension contains 
     NFDI4Health_EX_MDS_Centers named centers 1.1
 
-* type 1..1 from NFDI4Health_VS_MDS_Study_Centers_SNOMEDCT_Local (required)
+Mapping: NFDI4Health-Centers-to-FHIR
+Id: NFDI4Health
+Title: "NFDI4Health to FHIR Mapping"
+Source: NFDI4Health_PR_MDS_Centers

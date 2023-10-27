@@ -5,4 +5,4 @@ Description: "Example for monocentric study SHIP"
 Usage: #example
 
 * description = "1"
-* type = $Remaining#084 "Monocentric"
+* extension[centers] = $Remaining#084 "Monocentric"
