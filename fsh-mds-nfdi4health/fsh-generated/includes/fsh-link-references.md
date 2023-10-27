@@ -15,6 +15,7 @@
 [InstanceOfGroupActualSHIP]: Group-InstanceOfGroupActualSHIP.html
 [InstanceOfGroupIntendedSHIP]: Group-InstanceOfGroupIntendedSHIP.html
 [InstanceOfGroupIntendedSPOVID]: Group-InstanceOfGroupIntendedSPOVID.html
+[InstanceOfLocationMono]: Location-InstanceOfLocationMono.html
 [InstanceOfPractitionerNinaKirchhof]: Practitioner-InstanceOfPractitionerNinaKirchhof.html
 [InstanceOfPractitionerRoleKathleenMerikangas]: PractitionerRole-InstanceOfPractitionerRoleKathleenMerikangas.html
 [InstanceOfPractitionerRoleNinaKirchhof]: PractitionerRole-InstanceOfPractitionerRoleNinaKirchhof.html
@@ -68,7 +69,6 @@
 [NFDI4Health_EX_MDS_Resource_Type_General]: StructureDefinition-nfdi4health-ex-mds-resource-type-general.html
 [NFDI4Health_EX_MDS_Study_Assessments]: StructureDefinition-nfdi4health-ex-mds-study-assessments.html
 [NFDI4Health_EX_MDS_Study_Biospecimen]: StructureDefinition-nfdi4health-ex-mds-study-biospecimen.html
-[NFDI4Health_EX_MDS_Study_Centers]: StructureDefinition-nfdi4health-ex-mds-study-centers.html
 [NFDI4Health_EX_MDS_Study_Comparison_Group]: StructureDefinition-nfdi4health-ex-mds-study-comparison-group.html
 [NFDI4Health_EX_MDS_Study_Data_Sharing_Plan]: StructureDefinition-nfdi4health-ex-mds-study-data-sharing-plan.html
 [NFDI4Health_EX_MDS_Study_Data_Source]: StructureDefinition-nfdi4health-ex-mds-study-data-source.html

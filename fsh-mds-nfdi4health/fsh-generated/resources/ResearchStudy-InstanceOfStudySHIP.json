@@ -478,25 +478,6 @@
       "value": "81"
     }
   ],
-  "site": [
-    {
-      "extension": [
-        {
-          "extension": [
-            {
-              "url": "monoOrMulti",
-              "valueCoding": {
-                "code": "084",
-                "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
-                "display": "Monocentric"
-              }
-            }
-          ],
-          "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-centers"
-        }
-      ]
-    }
-  ],
   "title": "Study of Health in Pomerania - TREND",
   "_title": {
     "extension": [

@@ -35,42 +35,42 @@
         "reference": {
           "reference": "ConceptMap/ConceptMap-Study-Allocation-NFDI4Health-to-UMLS"
         },
-        "name": "ConceptMap - Study allocation codes from NFDI4Health to UMLS",
+        "name": "ConceptMap-Study-Allocation-NFDI4Health-to-UMLS",
         "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "ConceptMap/ConceptMap-Study-Primary-Design-NFDI4Health-to-UMLS"
         },
-        "name": "ConceptMap - Study primary design codes from NFDI4Health to UMLS",
+        "name": "ConceptMap-Study-Primary-Design-NFDI4Health-to-UMLS",
         "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "ConceptMap/ConceptMap-Study-Sampling-Non-Probability-NFDI4Health-to-NCI"
         },
-        "name": "ConceptMap - Study sampling method non probability codes from NFDI4Health to NCI",
+        "name": "ConceptMap-Study-Sampling-Non-Probability-NFDI4Health-to-NCI",
         "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "ConceptMap/ConceptMap-Study-Sampling-Probability-Method-NFDI4Health-to-NCI"
         },
-        "name": "ConceptMap - Study sampling probability method codes from NFDI4Health to NCI",
+        "name": "ConceptMap-Study-Sampling-Probability-Method-NFDI4Health-to-NCI",
         "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "ConceptMap/ConceptMap-Study-Time-Perspectives-NFDI4Health-to-UMLS"
         },
-        "name": "ConceptMap - Study time perspectives codes from NFDI4Health to UMLS",
+        "name": "ConceptMap-Study-Time-Perspectives-NFDI4Health-to-UMLS",
         "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "ConceptMap/ConceptMap-study-type-interventional-NFDI4Health-to-UMLS"
         },
-        "name": "ConceptMap - Study Type Interventional from NFDI4Health to UMLS",
+        "name": "ConceptMap-study-type-interventional-NFDI4Health-to-UMLS",
         "exampleBoolean": false
       },
       {
@@ -78,7 +78,6 @@
           "reference": "DocumentReference/InstanceOfDocumentHouseholdTransmissionInvestigationForC19"
         },
         "name": "Example of the NFDI4Health PR MDS Document - Household Transmission Investigation Protocol for Coronavirus Disease 2019 (COVID-19)",
-        "description": "This document sets out the methods to guide data collection and the public health investigation for the comprehensive assessment of household contacts of confirmed COVID-19 cases. The household transmission investigation is a case-ascertained prospective study of all identified household contacts of a laboratory-confirmed 2019-nCoV infection. It is intended to provide rapid and early information on the clinical, epidemiological and virological characteristics of 2019-nCoV. There are three primary objectives of this household transmission study:\n1) To better understand the extent of transmission within a household by estimating the secondary infection rate for household contacts at an individual level, and factors associated with any variation in the secondary infection risk.\n2) To characterize secondary cases including the range of clinical presentation, risk factors for infection, and the extent and fraction of asymptomatic infections.\n3) To characterize serologic response following confirmed 2019-nCoV infection (highly encouraged, but optional depending on laboratory capacity and resources).",
         "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-document"
       },
       {
@@ -154,6 +153,14 @@
         "name": "Instance Of Group Intended for SPOVID",
         "description": "Example data of eligibility information from the SPOVID study - Sport & Long-COVID-Syndrom",
         "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-group-intended"
+      },
+      {
+        "reference": {
+          "reference": "Location/InstanceOfLocationMono"
+        },
+        "name": "Instance of Monocentric Study",
+        "description": "Example for monocentric study SHIP",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-centers"
       },
       {
         "reference": {
@@ -581,14 +588,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nfdi4health-ex-mds-study-centers"
-        },
-        "name": "NFDI4Health EX MDS Study Centers",
-        "description": "Extension informing about the number of study centers.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/nfdi4health-ex-mds-study-comparison-group"
         },
         "name": "NFDI4Health EX MDS Study Comparison Group",
@@ -767,7 +766,6 @@
           "reference": "Questionnaire/InstanceOfNutritionalEpidemiologyModule"
         },
         "name": "NFDI4Health Module Nutritional Epidemiology Metadataschema (Use Case 5.1) V3",
-        "description": "Group of items providing information on diet assessment.\n\n**Additional information: **Filtering condition to decide if all following questions will be asked.",
         "exampleBoolean": true
       },
       {

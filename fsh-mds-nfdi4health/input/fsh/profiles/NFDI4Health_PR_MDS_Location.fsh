@@ -11,4 +11,7 @@ Description: "Resource covering metadata of a center."
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 
 * description 1..1
-* type 1..1 from $nfdi4health-vs-mds-study-centers-snomedct-local (required)
+* extension contains 
+    NFDI4Health_EX_MDS_Centers named centers 1.1
+
+* type 1..1 from NFDI4Health_VS_MDS_Study_Centers_SNOMEDCT_Local (required)
