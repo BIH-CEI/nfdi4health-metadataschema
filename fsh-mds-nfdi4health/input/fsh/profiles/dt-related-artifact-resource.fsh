@@ -30,6 +30,6 @@ Mapping: NFDI4Health-Related-Artifact-Resource-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_PR_MDS_Related_Artifact_Resource
-*  extension[NFDI4HealthResource] -> "1.13 Resource.ids"
+*  extension[nonNFDI4HealthResource] -> "1.13 Resource.ids"
 *  extension[NFDI4HealthResource] -> "1.14 Resource.idsNfdi4health"
 *  url -> "1.9 Resource.webpage"

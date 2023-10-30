@@ -35,15 +35,15 @@
   "context": [
     {
       "type": "element",
-      "expression": "ResearchStudy"
+      "expression": "ResearchStudy.title"
     },
     {
       "type": "element",
-      "expression": "Questionnaire"
+      "expression": "Questionnaire.title"
     },
     {
       "type": "element",
-      "expression": "Document"
+      "expression": "DocumentReference.content"
     }
   ],
   "type": "Extension",

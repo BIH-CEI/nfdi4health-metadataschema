@@ -61,10 +61,6 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.13 Resource.ids"
-          },
-          {
-            "identity": "NFDI4Health",
             "map": "1.14 Resource.idsNfdi4health"
           }
         ]
@@ -81,6 +77,12 @@
             "profile": [
               "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related-artifact-non-nfdi"
             ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.13 Resource.ids"
           }
         ]
       },

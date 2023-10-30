@@ -9,7 +9,7 @@ Description: "Extension providing information about the relation type of this re
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 * ^context.type = #element
-* ^context.expression = "RelatedArtifact"
+* ^context.expression = "RelatedArtifact.extension"
 * . 0..*
 * . ^short = "Relationship between this [RESOURCE] (A) and the related resource (B)?"
 * . ^definition = "Relationship between the resource being registered (A) and the related resource (B)."

@@ -5,7 +5,6 @@ Description: "Example data from the SPOVID study - Sports & Long-COVID-Syndrome"
 Usage: #example
 
 //General information
-* identifier.type = #NFDI4Health
 * identifier[NFDI4Health].value = "236"
 //Tile and Acronyms
 * title.extension[label][0].extension[value].valueString = "SPOVID - Sport & Long-COVID-Syndrom"

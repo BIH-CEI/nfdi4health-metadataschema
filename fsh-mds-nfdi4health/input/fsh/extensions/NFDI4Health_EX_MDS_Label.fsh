@@ -9,11 +9,11 @@ Description: "Extension covering information about additional title(s), name(s) 
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 * ^context[0].type = #element
-* ^context[=].expression = "ResearchStudy"
+* ^context[=].expression = "ResearchStudy.title"
 * ^context[+].type = #element
-* ^context[=].expression = "Questionnaire"
+* ^context[=].expression = "Questionnaire.title"
 * ^context[+].type = #element
-* ^context[=].expression = "Document"
+* ^context[=].expression = "DocumentReference.content"
 * . ^short = "Title(s)/name(s) or acronym(s) of the [RESOURCE]"
 * . ^definition = "Group of items providing information about title(s)/name(s) or acronym(s) of the resource."
 * . ^comment = "Based on ResearchStudy.label (R5), with an extension for language."
