@@ -512,15 +512,6 @@
       ]
     }
   ],
-  "title": "SPOVID - Sport & Long-COVID-Syndrom",
-  "_title": {
-    "extension": [
-      {
-        "url": "http://hl7.org/fhir/StructureDefinition/language",
-        "valueCode": "C0376245"
-      }
-    ]
-  },
   "description": "In a pilot study, the SPOVID project is investigating whether an individually tailored training program can safely and effectively improve the physical endurance of Long COVID-19 patients. To this end, the researchers observe fitness parameters of cardiovascular and lung function in particular over several months, but also the development of headache, fatigue and fatigue symptoms. From the results, they want to derive recommendations for personalized training programs.",
   "_description": {
     "extension": [
@@ -642,5 +633,51 @@
       ],
       "type": "documentation"
     }
-  ]
+  ],
+  "_title": {
+    "extension": [
+      {
+        "extension": [
+          {
+            "url": "value",
+            "valueString": "SPOVID - Sport & Long-COVID-Syndrom"
+          },
+          {
+            "url": "type",
+            "valueCoding": {
+              "code": "01",
+              "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-label",
+              "display": "Primary Title"
+            }
+          },
+          {
+            "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language",
+            "valueCode": "C0376245"
+          }
+        ],
+        "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-label"
+      },
+      {
+        "extension": [
+          {
+            "url": "value",
+            "valueString": "SPOVID"
+          },
+          {
+            "url": "type",
+            "valueCoding": {
+              "code": "07",
+              "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-label",
+              "display": "Acronym"
+            }
+          },
+          {
+            "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language",
+            "valueCode": "C0376245"
+          }
+        ],
+        "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-label"
+      }
+    ]
+  }
 }

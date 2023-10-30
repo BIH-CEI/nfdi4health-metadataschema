@@ -45,5 +45,5 @@ Source: NFDI4Health_EX_MDS_Label
 * -> "1.4 Resource.acronyms"
 * extension[value].value[x] -> "1.3.1 Resource.titles.text"
 * extension[value].value[x] -> "1.3.2 Resource.acronyms.text"
-* extension[language] -> "1.3.2 Resource.titles.language" "For additional title(s)/name(s)"
+* extension[language] -> "1.3.2 Resource.titles.language" 
 * extension[language] -> "1.4.2 Resource.acronyms.language"

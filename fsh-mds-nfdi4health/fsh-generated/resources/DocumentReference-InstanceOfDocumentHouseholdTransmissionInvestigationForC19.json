@@ -140,16 +140,55 @@
   },
   "content": [
     {
-      "attachment": {
-        "title": "Household transmission investigation protocol for coronavirus disease 2019 (COVID-19)",
-        "_title": {
+      "extension": [
+        {
+          "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-label",
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/language",
+              "url": "value",
+              "valueString": "Household transmission investigation protocol for coronavirus disease 2019 (COVID-19)"
+            },
+            {
+              "url": "type",
+              "valueCoding": {
+                "code": "01",
+                "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-label",
+                "display": "Primary Title"
+              }
+            },
+            {
+              "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language",
               "valueCode": "C0376245"
             }
           ]
         },
+        {
+          "extension": [
+            {
+              "url": "value",
+              "valueString": "WHO-2019-nCoV-HHtransmission"
+            },
+            {
+              "url": "type",
+              "valueCoding": {
+                "code": "07",
+                "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-label",
+                "display": "Acronym"
+              }
+            },
+            {
+              "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language",
+              "valueCode": "C0376245"
+            }
+          ],
+          "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-label"
+        },
+        {
+          "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-version",
+          "valueString": "2.2"
+        }
+      ],
+      "attachment": {
         "language": "en",
         "url": "https://www.who.int/publications/i/item/household-transmission-investigation-protocol-for-2019-novel-coronavirus-(2019-ncov)-infection"
       },

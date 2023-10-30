@@ -7,18 +7,20 @@ Usage: #example
 //General information
 * identifier.type = #NFDI4Health
 * identifier[NFDI4Health].value = "236"
-* title = "SPOVID - Sport & Long-COVID-Syndrom"
-* title.extension[language].valueCode = $UMLS#C0376245 "English Language"
+//Tile and Acronyms
+* title.extension[label][0].extension[value].valueString = "SPOVID - Sport & Long-COVID-Syndrom"
+* title.extension[label][=].extension[type].valueCoding = $LabelType#01 "Primary Title"
+* title.extension[label][=].extension[language].valueCode = UMLS#C0376245 "English Language"
 ///English description of the Study
 * description = "In a pilot study, the SPOVID project is investigating whether an individually tailored training program can safely and effectively improve the physical endurance of Long COVID-19 patients. To this end, the researchers observe fitness parameters of cardiovascular and lung function in particular over several months, but also the development of headache, fatigue and fatigue symptoms. From the results, they want to derive recommendations for personalized training programs."
 * description.extension[language].valueCode = $UMLS#C0376245 "English Language"
 * description.extension[translation].extension[content].valueString = "In einer Pilotstudie untersucht das Projekt SPOVID, ob ein individuell abgestimmtes Trainingsprogramm die körperliche Ausdauer von Long COVID-19-Patientinnen und -Patienten sicher und wirksam verbessern kann. Dazu beobachten die Forschenden über mehrere Monate hinweg insbesondere Fitnessparameter der Herz-Kreislauf- und der Lungenfunktion, aber auch die Entwicklung von Kopfschmerz-, Müdigkeits- und Erschöpfungssymptomen. Aus den Ergebnissen wollen sie Empfehlungen für personalisierte Trainingsprogramme ableiten."
 * description.extension[translation].extension[lang].valueCode = $UMLS#C0017477 "German language"
 ///Details
+* title.extension[label][+].extension[value].valueString = "SPOVID"
+* title.extension[label][=].extension[type].valueCoding = $LabelType#07 "Acronym"
+* title.extension[label][=].extension[language].valueCode = $UMLS#C0376245 "English Language"
 * extension[resourceType].valueCoding = $UMLS#C0947630 "Scientific Study (Research Activity)"
-* extension[label].extension[value].valueString = "SPOVID"
-* extension[label].extension[type].valueCoding = $LabelType#07 "Acronym"
-* extension[label].extension[language].valueCode = $UMLS#C0376245 "English Language"
 * keyword[0].coding[0].code = $mesh#D000086382 "COVID-19"
 * keyword[=].coding[=].extension[URI].valueUri = "https://id.nlm.nih.gov/mesh/D000086382.html"
 * keyword[+].coding[0].code = $mesh#T032041 "Pilot study"

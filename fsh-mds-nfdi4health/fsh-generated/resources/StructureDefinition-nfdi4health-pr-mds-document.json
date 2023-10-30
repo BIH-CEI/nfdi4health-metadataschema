@@ -917,7 +917,6 @@
               "path": "url"
             }
           ],
-          "ordered": false,
           "rules": "open"
         },
         "min": 1
@@ -935,6 +934,13 @@
               "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-label"
             ]
           }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.3 Resource.titles",
+            "comment": "1.4 Resource.acronyms"
+          }
         ]
       },
       {
@@ -949,6 +955,12 @@
             "profile": [
               "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-version"
             ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.10.1 Resource.nonStudyDetails.version"
           }
         ]
       },
@@ -975,16 +987,6 @@
           {
             "identity": "NFDI4Health",
             "map": "1.9 Resource.webpage"
-          }
-        ]
-      },
-      {
-        "id": "DocumentReference.content.attachment.title",
-        "path": "DocumentReference.content.attachment.title",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "1.3.1 Resource.titles.text"
           }
         ]
       },

@@ -138,10 +138,10 @@ Description: "Resource covering metadata of a document."
 * description.extension[translation].extension[content] ^short = "Description (not in English)"
 * description.extension[translation].extension[content] ^definition = "Short plain text summary of the resource other than in English."
 * description.extension[translation].extension[content] ^comment = "Additional information: Additional descriptions of the resource are optional. The provided information should be understandable by scientific audience."
-* content.attachment.extension ^slicing.discriminator.type = #value
-* content.attachment.extension ^slicing.discriminator.path = "url"
-* content.attachment.extension ^slicing.rules = #open
-* content.attachment.extension ^min = 0
+* content.extension ^slicing.discriminator.type = #value
+* content.extension ^slicing.discriminator.path = "url"
+* content.extension ^slicing.rules = #open
+* content.extension ^min = 0
 * content.extension contains NFDI4Health_EX_MDS_Label named label 1..*
 * content.extension contains NFDI4Health_EX_MDS_Version named version 0..1
 * content.attachment.language 0..1
@@ -212,10 +212,8 @@ Source: NFDI4Health_PR_MDS_Document
 * description.extension[translation].extension[lang] -> "1.6.2 Resource.descriptionNonEnglish.language"
 * description.extension[translation].extension[content] -> "1.6.1 Resource.descriptionNonEnglish.text"
 * description.extension[language] -> "1.5.2 Resource.descriptionEnglish.language"
-* content.attachment.title -> "1.3.1 Resource.titles.text"
-* content.attachment.title.extension[language] -> "1.3.2 Resource.titles.language"
-* content.attachment.title.extension[translation].extension[lang] -> "1.3.2 Resource.titles.language" "Translation language of the title"
-* content.attachment.title.extension[translation].extension[content] -> "1.3.1 Resource.titles.text" "Translated title"
+* content.extension[label] -> "1.3 Resource.titles" "1.4 Resource.acronyms"
+* content.extension[version] -> "1.10.1 Resource.nonStudyDetails.version"
 * content.attachment.language -> "1.8 Resource.languages"
 * content.attachment.url -> "1.9 Resource.webpage"
 * content.format -> "1.10.2 Resource.nonStudyDetails.format"
