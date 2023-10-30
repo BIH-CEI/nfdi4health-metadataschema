@@ -19,8 +19,8 @@ Description: "Extension providing information about related publications, datase
 * . ^short = "Test"
 * . ^definition = "Test"
 * value[x] 1..1
-* value[x] only RelatedArtifact
-* valueRelatedArtifact only NFDI4Health_PR_MDS_Related_Artifact_Resource
+* value[x] only NFDI4Health_PR_MDS_Related_Artifact_Resource
+//* valueRelatedArtifact only NFDI4Health_PR_MDS_Related_Artifact_Resource
 
 Mapping: NFDI4Health-Related-to-FHIR
 Id: NFDI4Health

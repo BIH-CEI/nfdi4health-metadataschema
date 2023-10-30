@@ -11,6 +11,7 @@
 [InstanceOfOrganizationCreatorNIMH]: Organization-InstanceOfOrganizationCreatorNIMH.html
 [OrganizationPublicExample]: Organization-OrganizationPublicExample.html
 [InstanceOfProvenance]: Provenance-InstanceOfProvenance.html
+[InstanceOfQuestionnaireWHOHouseholdTransmission]: Questionnaire-InstanceOfQuestionnaireWHOHouseholdTransmission.html
 [InstanceOfEvidenceVariableSPOVID]: EvidenceVariable-InstanceOfEvidenceVariableSPOVID.html
 [InstanceOfGroupActualSHIP]: Group-InstanceOfGroupActualSHIP.html
 [InstanceOfGroupIntendedSHIP]: Group-InstanceOfGroupIntendedSHIP.html
