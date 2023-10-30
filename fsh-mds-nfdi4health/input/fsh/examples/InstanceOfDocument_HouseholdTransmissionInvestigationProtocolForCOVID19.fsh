@@ -48,5 +48,5 @@ Dabei werden drei Hauptziele verfolgt:
 * extension[roles][=].extension[nameType].valueCoding = $UMLS#C0220885 "Organizational (Qualitative Concept)"
 * extension[roles][=].extension[roleOrganisational].valueCoding = $NCI#C25461 "Contact Person (Human)"
 // Related Resources
-* extension[relatedResources][0].valueReference = Reference(InstanceOfRelatedArtifact_Household_NFDI)
-* extension[relatedResources][+].valueReference = Reference(InstanceOfRelatedArtifact_Household_Non_NFDI)
+* extension[relatedResources][0].valueRelatedArtifact = InstanceOfRelatedArtifact_Household_NFDI
+* extension[relatedResources][+].valueRelatedArtifact = InstanceOfRelatedArtifact_Household_Non_NFDI

@@ -83,8 +83,8 @@
         "min": 1,
         "type": [
           {
-            "code": "Reference",
-            "targetProfile": [
+            "code": "RelatedArtifact",
+            "profile": [
               "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-related-artifact-resource"
             ]
           }
