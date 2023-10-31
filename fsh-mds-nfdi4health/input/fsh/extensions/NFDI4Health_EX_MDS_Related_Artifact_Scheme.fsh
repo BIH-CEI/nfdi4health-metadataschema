@@ -8,8 +8,10 @@ Description: "Type of the identifier of the related resource."
 * ^publisher = "NFDI4Health"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
-* ^context.type = #element
-* ^context.expression = "Extension.valueRelatedArtifact.extension"
+* ^context[0].type = #element
+* ^context[=].expression = "Extension.valueRelatedArtifact.extension"
+* ^context[+].type = #element
+* ^context[=].expression = "ResearchStudy.relatedArtifact.extension"
 * . 1..1
 * . ^short = "Type of the identifier"
 * . ^definition = "Type of the identifier of the related resource."

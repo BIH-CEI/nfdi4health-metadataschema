@@ -8,8 +8,10 @@ Description: "Extension storing the information of the Non NFDI4Health identifie
 * ^publisher = "NFDI4Health"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
-* ^context.type = #element
-* ^context.expression = "Extension.valueRelatedArtifact.extension"
+* ^context[0].type = #element
+* ^context[=].expression = "Extension.valueRelatedArtifact.extension"
+* ^context[+].type = #element
+* ^context[=].expression = "ResearchStudy.relatedArtifact.extension"
 * . ..1
 * . ^short = "Identifier of the related resource"
 * . ^definition = "Identifier (ID) related to, or associated with, the resource being registered. These can be IDs of related publications, datasets, study documents, web pages, etc."

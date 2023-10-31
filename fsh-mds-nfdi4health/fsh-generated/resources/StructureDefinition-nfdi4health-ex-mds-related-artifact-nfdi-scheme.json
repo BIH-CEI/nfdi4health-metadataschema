@@ -36,6 +36,10 @@
     {
       "type": "element",
       "expression": "Extension.valueRelatedArtifact.extension"
+    },
+    {
+      "type": "element",
+      "expression": "ResearchStudy.relatedArtifact.extension"
     }
   ],
   "type": "Extension",
