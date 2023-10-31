@@ -1,0 +1,403 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "nfdi4health-lm-metadataschema-ne-v3",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-ne-v3",
+  "name": "NFDI4Health_LM_Metadataschema_NE_V3",
+  "title": "NFDI4Health LM Nutritional Epidemiology Metadataschema (UC 5.1) V3",
+  "status": "draft",
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "description": "NFDI4Health LogicalModel Nutritional Epidemiology Metadataschema (Use Case 5.1) V3",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "NFDI4Health-NE-Metadataschema-V3-Internal-Numbering",
+      "name": "NFDI4Health Nutritional Epidemiology Metadataschema Version 3 Mapping to internal numbering of Metadataschema Version 3"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-ne-v3",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "nfdi4health-lm-metadataschema-ne-v3",
+        "path": "nfdi4health-lm-metadataschema-ne-v3",
+        "short": "NFDI4Health LM Nutritional Epidemiology Metadataschema (UC 5.1) V3",
+        "definition": "NFDI4Health LogicalModel Nutritional Epidemiology Metadataschema (Use Case 5.1) V3"
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-ne-v3.DietAssessment",
+        "path": "nfdi4health-lm-metadataschema-ne-v3.DietAssessment",
+        "short": "Diet assessment",
+        "definition": "Group of items providing information on diet assessment.",
+        "comment": "Cardinality: 1..*, if Resource.nutritionalData == 'Yes'; otherwise 0.. 0 / Additional Information: Filtering condition to decide if all following questions will be asked. / Display information? (Data capturing): yes / Display information? (Data visualization): no / Source of the property and/or allowed values: NFDI4Health UC 5.1 requirements",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-NE-Metadataschema-V3-Internal-Numbering",
+            "map": "NE1"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-ne-v3.DietAssessment.instrument",
+        "path": "nfdi4health-lm-metadataschema-ne-v3.DietAssessment.instrument",
+        "short": "Dietary assessment instrument used",
+        "definition": "Which dietary assessment instrument is used in the study/data collection event?",
+        "comment": "Short Input Help: Select one value from the list. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.1 requirements",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ne2",
+            "severity": "error",
+            "human": "Cardinality: 1..1, if DietAssessment.instrument == 'Food frequency questionnaire'; otherwise 0.. 0",
+            "expression": "Dietassessment.instrument.exists(Food frequency questionnaire).not implies DietAssessment.ffqItemsNumber.exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-ne-v3"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-ne-instrument-nci-local"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-NE-Metadataschema-V3-Internal-Numbering",
+            "map": "NE1.1"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-ne-v3.DietAssessment.ffqItemsNumber",
+        "path": "nfdi4health-lm-metadataschema-ne-v3.DietAssessment.ffqItemsNumber",
+        "short": "Number of items in FFQ",
+        "definition": "How many items were inquired with the FFQ?",
+        "comment": "Cardinality: 1..1, if DietAssessment.instrument == 'Food frequency questionnaire'; otherwise 0.. 0 / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.1 requirements",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-NE-Metadataschema-V3-Internal-Numbering",
+            "map": "NE1.2"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-ne-v3.DietAssessment.mode",
+        "path": "nfdi4health-lm-metadataschema-ne-v3.DietAssessment.mode",
+        "short": "Mode used to apply the dietary assessment instrument to study participants",
+        "definition": "How was the dietary assessment instrument applied to the study participants?",
+        "comment": "Short Input Help: Select all that apply. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.1 requirements",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-ne-mode-umls-local"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-NE-Metadataschema-V3-Internal-Numbering",
+            "map": "NE1.3"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-ne-v3.DietAssessment.device",
+        "path": "nfdi4health-lm-metadataschema-ne-v3.DietAssessment.device",
+        "short": "Device used to apply the dietary assessment instrument to study participants",
+        "definition": "Which device was used to apply the dietary assessment instrument to the study participants?",
+        "comment": "Short Input Help: Select all that apply. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.1 requirements",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-ne-device-nci-snomedct-local"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-NE-Metadataschema-V3-Internal-Numbering",
+            "map": "NE1.4"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-ne-v3.DietAssessment.portionSizeEstimation",
+        "path": "nfdi4health-lm-metadataschema-ne-v3.DietAssessment.portionSizeEstimation",
+        "short": "Portion size estimated by:",
+        "definition": "How is the portion size inquired in the dietary assessment instrument?",
+        "comment": "Short Input Help: Select all that apply. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.1 requirements",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-ne-portion-size-snomedct-local"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-NE-Metadataschema-V3-Internal-Numbering",
+            "map": "NE1.5"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-ne-v3.DietAssessment.referencePeriodUnit",
+        "path": "nfdi4health-lm-metadataschema-ne-v3.DietAssessment.referencePeriodUnit",
+        "short": "Reference period unit",
+        "definition": "Which reference period is the dietary assessment instrument referring to, e.g. 24-h recall is referring to the previous day.",
+        "comment": "Short Input Help: Select all that apply. / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.1 requirements",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-ne-reference-period-unit-snomedct"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-NE-Metadataschema-V3-Internal-Numbering",
+            "map": "NE1.6"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-ne-v3.DietAssessment.referencePeriodNumber",
+        "path": "nfdi4health-lm-metadataschema-ne-v3.DietAssessment.referencePeriodNumber",
+        "short": "Numerical value of reference period units",
+        "definition": "How many of the reference period units were assessed?",
+        "comment": "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.1 requirements",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-NE-Metadataschema-V3-Internal-Numbering",
+            "map": "NE1.7"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-ne-v3.DietAssessment.repeat",
+        "path": "nfdi4health-lm-metadataschema-ne-v3.DietAssessment.repeat",
+        "short": "Was this instrument applied repeatedly?",
+        "definition": "Was the same instrument applied repeatedly?",
+        "comment": "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.1 requirements",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ne3",
+            "severity": "error",
+            "human": "Cardinality: 1..1, if DietAssessment.repeat == 'Yes'; otherwise 0.. 0",
+            "expression": "DietAssessment.repeat = false implies DietAssessment.repeatFrequency.exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-ne-v3"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-NE-Metadataschema-V3-Internal-Numbering",
+            "map": "NE1.8"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-ne-v3.DietAssessment.repeatFrequency",
+        "path": "nfdi4health-lm-metadataschema-ne-v3.DietAssessment.repeatFrequency",
+        "short": "Frequency of applying the dietary assessment instrument",
+        "definition": "How often was the dietary assessment instrument repeatedly applied?",
+        "comment": "Cardinality: 1..1, if DietAssessment.repeat == 'Yes'; otherwise 0..0 / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.1 requirements",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-NE-Metadataschema-V3-Internal-Numbering",
+            "map": "NE1.9"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-ne-v3.DietAssessment.validity",
+        "path": "nfdi4health-lm-metadataschema-ne-v3.DietAssessment.validity",
+        "short": "Was this instrument validated?",
+        "definition": "Was the dietary assessment instrument validated?",
+        "comment": "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.1 requirements",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ne4",
+            "severity": "error",
+            "human": "Cardinality: 1..1, if DietAssessment.validity == 'Yes'; otherwise 0.. 0",
+            "expression": "DietAssessment.validity = false implies DietAssessment.validityReference.exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-ne-v3"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-NE-Metadataschema-V3-Internal-Numbering",
+            "map": "NE1.10"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-ne-v3.DietAssessment.validityReference",
+        "path": "nfdi4health-lm-metadataschema-ne-v3.DietAssessment.validityReference",
+        "short": "Please provide a reference describing the validation.",
+        "definition": "Reference describing the validation.",
+        "comment": "Cardinality: 1..1, if DietAssessment.validity == 'Yes'; otherwise 0..0 / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.1 requirements",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-NE-Metadataschema-V3-Internal-Numbering",
+            "map": "NE1.11"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-ne-v3.DietAssessment.reliability",
+        "path": "nfdi4health-lm-metadataschema-ne-v3.DietAssessment.reliability",
+        "short": "Instrument described according to reliablity?",
+        "definition": "Was the dietary assessment instrument described according to its reliability?",
+        "comment": "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.1 requirements",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ne5",
+            "severity": "error",
+            "human": "Cardinality: 1..1, if DietAssessment.reliability == 'Yes'; otherwise 0.. 0",
+            "expression": "DietAssessment.reliability = false implies DietAssessment.reliabilityReference.exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-ne-v3"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-NE-Metadataschema-V3-Internal-Numbering",
+            "map": "NE1.12"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-ne-v3.DietAssessment.reliabilityReference",
+        "path": "nfdi4health-lm-metadataschema-ne-v3.DietAssessment.reliabilityReference",
+        "short": "Please provide a reference describing the reliability measures.",
+        "definition": "Reference describing the reliability measures.",
+        "comment": "Cardinality: 1..1, if DietAssessment.reliability == 'Yes'; otherwise 0..0 / Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.1 requirements",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-NE-Metadataschema-V3-Internal-Numbering",
+            "map": "NE1.13"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-ne-v3.DietAssessment.dietarySupplements",
+        "path": "nfdi4health-lm-metadataschema-ne-v3.DietAssessment.dietarySupplements",
+        "short": "Dietary supplements inquired?",
+        "definition": "Does the dietary assessment instrument inquire information about dietary supplements?",
+        "comment": "Display information? (Data capturing): yes / Display information? (Data visualization): yes / Source of the property and/or allowed values: NFDI4Health UC 5.1 requirements",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-NE-Metadataschema-V3-Internal-Numbering",
+            "map": "NE1.14"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,213 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "nfdi4health-pr-mds-group-actual",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-group-actual",
+  "version": "0.9",
+  "name": "NFDI4Health_PR_MDS_Group_Actual",
+  "title": "NFDI4Health PR MDS Group Actual",
+  "status": "draft",
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "NFDI4Health",
+      "name": "NFDI4Health to FHIR Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Group",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Group",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Group.actual",
+        "path": "Group.actual",
+        "fixedBoolean": true
+      },
+      {
+        "id": "Group.quantity",
+        "path": "Group.quantity",
+        "short": "Obtained sample size",
+        "definition": "Obtained number of observational units for the whole study (e.g. obtained number of study participants at all study sites). The value is only available after the end of recruitment.",
+        "comment": "Short Input Help: Enter “-1” if obtained sample size is unknown.",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.26 Resource.studyDesign.obtainedSampleSize"
+          }
+        ]
+      },
+      {
+        "id": "Group.characteristic",
+        "path": "Group.characteristic",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        },
+        "max": "1"
+      },
+      {
+        "id": "Group.characteristic:examinedMinimumAge",
+        "path": "Group.characteristic",
+        "sliceName": "examinedMinimumAge",
+        "short": "Actual minimum age of participants",
+        "definition": "Group of items providing information about the actual minimum age of study participants at the time of examination.",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.27 Resource.studyDesign.ageMinExamined"
+          }
+        ]
+      },
+      {
+        "id": "Group.characteristic:examinedMinimumAge.code",
+        "path": "Group.characteristic.code",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "code": "001",
+              "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+              "display": "Minimum age of examined subjects",
+              "version": "0.9"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Group.characteristic:examinedMinimumAge.value[x]",
+        "path": "Group.characteristic.value[x]",
+        "short": "Actual minimum age of participants",
+        "definition": "Group of items providing information about the actual minimum age of study participants at the time of examination.",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Group.characteristic:examinedMinimumAge.value[x].value",
+        "path": "Group.characteristic.value[x].value",
+        "short": "Actual minimum age of participants",
+        "definition": "Numerical value of the minimum age of study participants at the time of examination.",
+        "min": 1,
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.27.1 Resource.studyDesign.ageMinExamined.number"
+          }
+        ]
+      },
+      {
+        "id": "Group.characteristic:examinedMinimumAge.value[x].code",
+        "path": "Group.characteristic.value[x].code",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-time-units-ucum-umls"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.27.2 Resource.studyDesign.ageMinExamined.timeUnit"
+          }
+        ]
+      },
+      {
+        "id": "Group.characteristic:examinedMaximumAge",
+        "path": "Group.characteristic",
+        "sliceName": "examinedMaximumAge",
+        "short": "Actual maximum age of participants",
+        "definition": "Group of items providing information about the actual maximum age of study participants at the time of examination.",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.28 Resource.studyDesign.ageMaxExamined"
+          }
+        ]
+      },
+      {
+        "id": "Group.characteristic:examinedMaximumAge.code",
+        "path": "Group.characteristic.code",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "code": "002",
+              "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+              "display": "Maximum age of examined subjects",
+              "version": "0.9"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Group.characteristic:examinedMaximumAge.value[x]",
+        "path": "Group.characteristic.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Group.characteristic:examinedMaximumAge.value[x].value",
+        "path": "Group.characteristic.value[x].value",
+        "short": "Actual maximum age of participants",
+        "definition": "Numerical value of the maximum age of study participants at the time of examination.",
+        "min": 1,
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.28.1 Resource.studyDesign.ageMaxExamined.number"
+          }
+        ]
+      },
+      {
+        "id": "Group.characteristic:examinedMaximumAge.value[x].code",
+        "path": "Group.characteristic.value[x].code",
+        "short": "Unit of time",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-time-units-ucum-umls"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.28.2 Resource.studyDesign.ageMaxExamined.timeUnit"
+          }
+        ]
+      }
+    ]
+  }
+}

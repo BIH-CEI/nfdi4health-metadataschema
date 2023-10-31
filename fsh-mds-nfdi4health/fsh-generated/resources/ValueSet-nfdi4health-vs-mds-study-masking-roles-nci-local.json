@@ -1,0 +1,52 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "NFDI4Health_VS_MDS_Study_Masking_Roles_NCI_Local",
+  "id": "nfdi4health-vs-mds-study-masking-roles-nci-local",
+  "title": "NFDI4Health VS MDS Study Masking Roles [NCI, local]",
+  "description": "Value set defining codes to specify the party(ies) who are masked if masking is implemented.",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-masking-roles-nci-local",
+  "version": "0.9",
+  "experimental": true,
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://ncimeta.nci.nih.gov",
+        "concept": [
+          {
+            "code": "C29867",
+            "display": "Participant"
+          },
+          {
+            "code": "C16666",
+            "display": "Health Care Provider"
+          },
+          {
+            "code": "C25936",
+            "display": "Investigator "
+          }
+        ]
+      },
+      {
+        "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+        "concept": [
+          {
+            "code": "012",
+            "display": "Outcomes assessor"
+          }
+        ]
+      }
+    ]
+  }
+}

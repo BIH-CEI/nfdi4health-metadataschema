@@ -1,0 +1,85 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "ConceptMap-Study-Sampling-Probability-Method-NFDI4Health-to-NCI",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ConceptMap/Study-Sampling-Probability-Method-NFDI4Health-to-NCI",
+  "name": "ConceptMap-VS-MDS-Study-Sampling-Probability-Method-NFDI4Health-NCI-Mapping",
+  "title": "ConceptMap - Study sampling probability method codes from NFDI4Health to NCI",
+  "status": "active",
+  "experimental": false,
+  "date": "2023-10-26",
+  "publisher": "NFDI4Health",
+  "sourceCanonical": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-sampling-probability-method-local",
+  "group": [
+    {
+      "target": "http://ncimeta.nci.nih.gov",
+      "element": [
+        {
+          "code": "167",
+          "display": "Simple random",
+          "target": [
+            {
+              "code": "#C53196",
+              "display": "Simple Random Sampling (Activity)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "168",
+          "display": "Systematic random",
+          "target": [
+            {
+              "code": "C53200",
+              "display": "Systematic Sampling (Activity)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "169",
+          "display": "Stratified",
+          "target": [
+            {
+              "code": "C71516",
+              "display": "Stratified Sampling (Activity)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "170",
+          "display": "Stratified - Proportional",
+          "target": [
+            {
+              "code": "C71498",
+              "display": "Proportional Stratified Sampling (Activity)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "171",
+          "display": "Stratified - Disproportional",
+          "target": [
+            {
+              "code": "C71497",
+              "display": "Disproportional Stratified Sampling (Activity)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "172",
+          "display": "Multistage",
+          "target": [
+            {
+              "code": "C71515",
+              "display": "Multi-Stage Sampling (Activity)",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

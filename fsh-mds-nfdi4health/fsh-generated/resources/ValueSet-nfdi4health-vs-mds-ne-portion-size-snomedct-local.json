@@ -1,0 +1,56 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "NFDI4Health_VS_MDS_NE_Portion_Size_SNOMEDCT_Local",
+  "id": "nfdi4health-vs-mds-ne-portion-size-snomedct-local",
+  "title": "NFDI4Health NE Portion Size [SNOMED CT, Local]",
+  "description": "Value Set to define the portion size used within Diet Assessment",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-ne-portion-size-snomedct-local",
+  "version": "0.9",
+  "experimental": true,
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+        "concept": [
+          {
+            "code": "121",
+            "display": "Described portion sizes"
+          },
+          {
+            "code": "122",
+            "display": "Picture book/visual aids"
+          },
+          {
+            "code": "123",
+            "display": "Weighing"
+          },
+          {
+            "code": "124",
+            "display": "Volume measures"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "260413007",
+            "display": "None (qualifier value)"
+          }
+        ]
+      }
+    ]
+  }
+}

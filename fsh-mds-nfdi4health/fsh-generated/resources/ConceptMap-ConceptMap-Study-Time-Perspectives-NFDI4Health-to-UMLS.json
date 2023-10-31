@@ -1,0 +1,63 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "ConceptMap-Study-Time-Perspectives-NFDI4Health-to-UMLS",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ConceptMap/Study-Time-Perspectives-NFDI4Health-to-UMLS",
+  "name": "ConceptMap-VS-MDS-Study-Time-Perspectives-NFDI4Health-UMLS-Mapping",
+  "title": "ConceptMap - Study time perspectives codes from NFDI4Health to UMLS",
+  "status": "active",
+  "experimental": false,
+  "date": "2023-10-26",
+  "publisher": "NFDI4Health",
+  "sourceCanonical": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-time-perspectives-local",
+  "group": [
+    {
+      "target": "http://terminology.hl7.org/CodeSystem/umls",
+      "element": [
+        {
+          "code": "155",
+          "display": "Retrospective",
+          "target": [
+            {
+              "code": "C0035363",
+              "display": "Retrospective Studies (Research Activity)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "156",
+          "display": "Prospective",
+          "target": [
+            {
+              "code": "C0033522",
+              "display": "Prospective Studies (Research Activty)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "162",
+          "display": "Cross-Sectional",
+          "target": [
+            {
+              "code": "C0010362",
+              "display": "Cross-Sectional Studies (Research Activity)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "163",
+          "display": "Other (timePerspective)",
+          "target": [
+            {
+              "code": "C0205394",
+              "display": "Other (Qualitative Concept)",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "nfdi4health-pr-mds-practitioner-role",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner-role",
+  "version": "0.9",
+  "name": "NFDI4Health_PR_MDS_Practitioner_Role",
+  "title": "NFDI4Health PR MDS Practitioner Role",
+  "status": "draft",
+  "contact": [
+    {
+      "name": "NFDI4Health",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "description": "Resource covering metadata of roles from individuals.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "servd",
+      "uri": "http://www.omg.org/spec/ServD/1.0/",
+      "name": "ServD"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "NFDI4Health",
+      "name": "NFDI4Health to FHIR Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "PractitionerRole",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "PractitionerRole.practitioner",
+        "path": "PractitionerRole.practitioner",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PractitionerRole.organization",
+        "path": "PractitionerRole.organization",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Organization",
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.11.1.5 Resource.roles.affiliation"
+          }
+        ]
+      },
+      {
+        "id": "PractitionerRole.telecom",
+        "path": "PractitionerRole.telecom",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "description": "Email and phone",
+          "rules": "open"
+        },
+        "definition": "Email and phone of the  person, group of persons or institution/organisation."
+      },
+      {
+        "id": "PractitionerRole.telecom:email",
+        "path": "PractitionerRole.telecom",
+        "sliceName": "email",
+        "short": "Email address",
+        "definition": "Email address of the person or group of persons",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.11.4 Resource.roles.email"
+          }
+        ]
+      },
+      {
+        "id": "PractitionerRole.telecom:email.system",
+        "path": "PractitionerRole.telecom.system",
+        "min": 1,
+        "fixedCode": "email"
+      },
+      {
+        "id": "PractitionerRole.telecom:email.value",
+        "path": "PractitionerRole.telecom.value",
+        "min": 1
+      },
+      {
+        "id": "PractitionerRole.telecom:email.use",
+        "path": "PractitionerRole.telecom.use",
+        "patternCode": "work"
+      },
+      {
+        "id": "PractitionerRole.telecom:phone",
+        "path": "PractitionerRole.telecom",
+        "sliceName": "phone",
+        "short": "Phone number",
+        "definition": "Phone number of the person or group of persons",
+        "comment": "Short input help: Please, use the International ITU-T E.164-number structure for geographic areas, e.g. +49 (0)153 1112233.",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.11.5 Resource.roles.phone"
+          }
+        ]
+      },
+      {
+        "id": "PractitionerRole.telecom:phone.system",
+        "path": "PractitionerRole.telecom.system",
+        "min": 1,
+        "fixedCode": "phone"
+      },
+      {
+        "id": "PractitionerRole.telecom:phone.value",
+        "path": "PractitionerRole.telecom.value",
+        "min": 1,
+        "example": [
+          {
+            "label": "Phone number",
+            "valueString": "+49 (0)153 1112233"
+          }
+        ]
+      },
+      {
+        "id": "PractitionerRole.telecom:phone.use",
+        "path": "PractitionerRole.telecom.use",
+        "patternCode": "work"
+      }
+    ]
+  }
+}

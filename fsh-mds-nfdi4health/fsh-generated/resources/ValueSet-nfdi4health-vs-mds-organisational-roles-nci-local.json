@@ -1,0 +1,120 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "NFDI4Health_VS_MDS_Organisational_Roles_NCI_Local",
+  "id": "nfdi4health-vs-mds-organisational-roles-nci-local",
+  "title": "NFDI4Health VS MDS Organisational Roles [NCI, local]",
+  "description": "Value set defining codes for organisational roles.",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-organisational-roles-nci-local",
+  "version": "0.9",
+  "experimental": true,
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://ncimeta.nci.nih.gov",
+        "concept": [
+          {
+            "code": "C25461",
+            "display": "Contact Person (Human)"
+          },
+          {
+            "code": "C42781",
+            "display": "Author (Human)"
+          },
+          {
+            "code": "C115486",
+            "display": "Content Item Creator (Qualitative Concept)"
+          },
+          {
+            "code": "C142679",
+            "display": "Secondary Sponsor (Human)"
+          },
+          {
+            "code": "C142695",
+            "display": "Sponsor-Investigator (Professional or Occupational Group)"
+          },
+          {
+            "code": "C51820",
+            "display": "Data Manager (Professional or Occupational Group)"
+          },
+          {
+            "code": "C48289",
+            "display": "Distributor (Human)"
+          },
+          {
+            "code": "C45336",
+            "display": "Producer (Human)"
+          },
+          {
+            "code": "C43416",
+            "display": "Publisher (Occupation or Discipline)"
+          },
+          {
+            "code": "C74932",
+            "display": "Registration Authority (Organization)"
+          },
+          {
+            "code": "C134832",
+            "display": "Supervisor (Professional or Occupational Group)"
+          },
+          {
+            "code": "C17649",
+            "display": "Other (Qualitative Concept)"
+          }
+        ]
+      },
+      {
+        "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+        "concept": [
+          {
+            "code": "046",
+            "display": "Public Funder"
+          },
+          {
+            "code": "047",
+            "display": "Private Funder"
+          },
+          {
+            "code": "037",
+            "display": "Primary Sponsor"
+          },
+          {
+            "code": "048",
+            "display": "Research Group"
+          },
+          {
+            "code": "038",
+            "display": "Data Collector"
+          },
+          {
+            "code": "039",
+            "display": "Data Curator"
+          },
+          {
+            "code": "049",
+            "display": "Hosting Institution"
+          },
+          {
+            "code": "050",
+            "display": "Registration Agency"
+          },
+          {
+            "code": "044",
+            "display": "Rights Holder"
+          }
+        ]
+      }
+    ]
+  }
+}

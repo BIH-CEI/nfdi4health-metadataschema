@@ -1,0 +1,92 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "nfdi4health-ex-mds-execution-language",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-execution-language",
+  "version": "0.9",
+  "name": "NFDI4Health_EX_MDS_Execution_Language",
+  "title": "NFDI4Health EX MDS Execution Language",
+  "status": "draft",
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "description": "Extension provinding information about the language in which a study/substudy is conducted, or the language in which a document is composed.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "NFDI4Health",
+      "name": "NFDI4Health to FHIR Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ResearchStudy"
+    },
+    {
+      "type": "element",
+      "expression": "Questionnaire"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Execution language(s) of the [RESOURCE]",
+        "definition": "Language(s) in which a study/substudy is conducted, or a language in which a study document is composed.",
+        "comment": "Short input help: Select all that apply.",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.8 -> Resource.languages"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-execution-language"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "A human language.",
+        "definition": "A human language.",
+        "min": 1,
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-execution-language-iso",
+          "description": "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)"
+        }
+      }
+    ]
+  }
+}

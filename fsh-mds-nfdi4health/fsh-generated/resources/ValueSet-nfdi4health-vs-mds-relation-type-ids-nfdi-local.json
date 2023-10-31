@@ -1,0 +1,103 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "NFDI4Health_VS_MDS_Relation_Type_Ids_Nfdi_Local",
+  "id": "nfdi4health-vs-mds-relation-type-ids-nfdi-local",
+  "title": "NFDI4Health VS MDS Relation Type Ids NFDI [local]",
+  "description": "Value set defining codes to specify the relationship between two resources (both registered in NFDI4Health).",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-relation-type-ids-nfdi-local",
+  "version": "0.9",
+  "experimental": true,
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+        "concept": [
+          {
+            "code": "065",
+            "display": "A is part of B"
+          },
+          {
+            "code": "057",
+            "display": "A is supplemented by B"
+          },
+          {
+            "code": "058",
+            "display": "A is continued by B"
+          },
+          {
+            "code": "059",
+            "display": "A is described by B"
+          },
+          {
+            "code": "060",
+            "display": "A describes B"
+          },
+          {
+            "code": "062",
+            "display": "A has version B"
+          },
+          {
+            "code": "063",
+            "display": "A is version of B"
+          },
+          {
+            "code": "064",
+            "display": "A is previous version of B"
+          },
+          {
+            "code": "070",
+            "display": "A is variant form of B"
+          },
+          {
+            "code": "071",
+            "display": "A is original form of B"
+          },
+          {
+            "code": "072",
+            "display": "A is identical to B"
+          },
+          {
+            "code": "075",
+            "display": "A is source of B"
+          },
+          {
+            "code": "078",
+            "display": "A is obsoleted by B"
+          },
+          {
+            "code": "079",
+            "display": "A obsoletes B"
+          },
+          {
+            "code": "111",
+            "display": "A is new version of B"
+          },
+          {
+            "code": "109",
+            "display": "A continues B"
+          },
+          {
+            "code": "108",
+            "display": "A is supplement to B"
+          },
+          {
+            "code": "112",
+            "display": "A has part B"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "nfdi4health-ex-mds-study-masking",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-masking",
+  "name": "NFDI4Health_EX_MDS_Study_Masking",
+  "title": "NFDI4Health EX MDS Study Masking",
+  "status": "draft",
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "description": "Group of items providing information about the masking of intervention(s) assignment",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "NFDI4Health",
+      "name": "NFDI4Health to FHIR Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ResearchStudy"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Information about masking of intervention(s) assignment",
+        "definition": "Group of items providing information about the masking of intervention(s) assignment",
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.37.2 Resource.studyDesign.interventional.masking"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:general",
+        "path": "Extension.extension",
+        "sliceName": "general",
+        "short": "Is masking of intervention(s) assignment implemented?",
+        "definition": "Indication, whether a masking (or blinding) of intervention(s) assignment is implemented (i.e., whether someone is prevented from having knowledge of the interventions assigned to individual participants).",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.37.2.1 Resource.studyDesign.interventional.masking.general"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:general.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:general.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "general"
+      },
+      {
+        "id": "Extension.extension:general.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:roles",
+        "path": "Extension.extension",
+        "sliceName": "roles",
+        "short": "Who is masked?",
+        "definition": "If masking is implemented, the party(ies) who are masked.",
+        "comment": "Short Input Help: Select all that apply.",
+        "min": 0,
+        "max": "*",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.37.2.2 Resource.studyDesign.interventional.masking.roles"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:roles.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:roles.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "roles"
+      },
+      {
+        "id": "Extension.extension:roles.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-masking-roles-nci-local",
+          "description": "Value set defining codes to specify the party(ies) who are masked if masking is implemented."
+        }
+      },
+      {
+        "id": "Extension.extension:roles.value[x].system",
+        "path": "Extension.extension.value[x].system",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:roles.value[x].code",
+        "path": "Extension.extension.value[x].code",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:description",
+        "path": "Extension.extension",
+        "sliceName": "description",
+        "short": "Additional information about masking",
+        "definition": "If needed, additional descriptive information about masking (e.g. information about other parties who may be masked).",
+        "comment": "Short Input Help: If needed, additional information about masking, e.g. other parties who may be masked.",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.37.2.3 Resource.studyDesign.interventional.masking.description"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:description.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:description.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "description"
+      },
+      {
+        "id": "Extension.extension:description.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-masking"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

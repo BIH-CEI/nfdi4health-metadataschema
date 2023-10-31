@@ -1,0 +1,59 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "NFDI4Health_VS_MDS_Study_Type_Interventional_Local",
+  "id": "nfdi4health-vs-mds-study-type-interventional-local",
+  "title": "NFDI4Health VS MDS Study Type Interventional [Local]",
+  "description": "Value set defining codes to specify the type of an interventional study in a ResearchStudy resource.",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-type-interventional-local",
+  "version": "0.9",
+  "experimental": true,
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+        "concept": [
+          {
+            "code": "133",
+            "display": "Single group"
+          },
+          {
+            "code": "134",
+            "display": "Parallel"
+          },
+          {
+            "code": "135",
+            "display": "Crossover"
+          },
+          {
+            "code": "136",
+            "display": "Factorial"
+          },
+          {
+            "code": "137",
+            "display": "Sequential"
+          },
+          {
+            "code": "138",
+            "display": "Other (interventional)"
+          },
+          {
+            "code": "139",
+            "display": "Unknown (interventional)"
+          }
+        ]
+      }
+    ]
+  }
+}

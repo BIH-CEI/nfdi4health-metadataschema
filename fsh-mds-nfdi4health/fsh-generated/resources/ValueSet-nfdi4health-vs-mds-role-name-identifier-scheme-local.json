@@ -1,0 +1,47 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "NFDI4Health_VS_MDS_Role_Name_Identifier_Scheme_Local",
+  "id": "nfdi4health-vs-mds-role-name-identifier-scheme-local",
+  "title": "NFDI4Health VS MDS Role Name Identifier Scheme [local]",
+  "description": "Value set defining codes to specify the identifier scheme of a personal identifier.",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-role-name-identifier-scheme-local",
+  "version": "0.9",
+  "experimental": true,
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+        "concept": [
+          {
+            "code": "080",
+            "display": "ORCID"
+          },
+          {
+            "code": "081",
+            "display": "ROR"
+          },
+          {
+            "code": "082",
+            "display": "GRID"
+          },
+          {
+            "code": "083",
+            "display": "ISNI"
+          }
+        ]
+      }
+    ]
+  }
+}

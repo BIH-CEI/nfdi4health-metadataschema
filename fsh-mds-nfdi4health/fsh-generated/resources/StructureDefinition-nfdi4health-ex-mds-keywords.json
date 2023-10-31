@@ -1,0 +1,150 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "nfdi4health-ex-mds-keywords",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-keywords",
+  "version": "0.9",
+  "name": "NFDI4Health_EX_MDS_Keywords",
+  "title": "NFDI4Health EX MDS Keyword",
+  "status": "draft",
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "description": "Extension storing keyword(s) describing a resource.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "NFDI4Health",
+      "name": "NFDI4Health to FHIR Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Questionnaire"
+    },
+    {
+      "type": "element",
+      "expression": "DocumentReference"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Keyword(s) describing the  [RESOURCE]",
+        "definition": "Group of items providing  Information about keywords describing the resource.",
+        "comment": "Additional information : The findability of the resource can be significantly increased if proper keywords are stated.",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.7 Resource.keywords"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:label",
+        "path": "Extension.extension",
+        "sliceName": "label",
+        "short": "Keyword",
+        "definition": "Keyword(s) describing the resource.",
+        "comment": "Additional information : The use of terms from established classifications/vocabularies (e.g. MeSH, UMLS, SNOMED CT) is preferred. However, also self-assigned keywords are allowed.\r\nShort input help : Preferably, use terms from MeSH (https://meshb.nlm.nih.gov/search) or UMLS (https://uts.nlm.nih.gov/uts/umls/home).",
+        "min": 1,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.7.1 Resource.keywords.label"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:label.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:label.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "label"
+      },
+      {
+        "id": "Extension.extension:label.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:code",
+        "path": "Extension.extension",
+        "sliceName": "code",
+        "short": "Code of the keyword",
+        "definition": "If known, the code of the keyword in a classification/vocabulary.",
+        "comment": "Short input help : If found, the code from the classification/vocabulary used.",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.7.2 Resource.keywords.code"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:code.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:code.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:code.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-keywords"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "NFDI4Health_CS_MDS_Provenance_Data_Source",
+  "id": "nfdi4health-cs-mds-provenance-data-source",
+  "title": "NFDI4Health CS MDS Provenance Data Source",
+  "description": "Code system defining data sources in a Provenance resource.",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-mds-provenance-data-source",
+  "concept": [
+    {
+      "code": "01",
+      "display": "Automatically uploaded: ClinicalTrials.gov",
+      "definition": "The resource has been automatically uploaded from ClinicalTrials.gov"
+    },
+    {
+      "code": "02",
+      "display": "Automatically uploaded: DRKS",
+      "definition": "The resource has been automatically uploaded from DRKS"
+    },
+    {
+      "code": "03",
+      "display": "Automatically uploaded: ICTRP",
+      "definition": "The resource has been automatically uploaded from ICTRP"
+    },
+    {
+      "code": "04",
+      "display": "Automatically uploaded: MDM Portal",
+      "definition": "The resource has been automatically uploaded from MDM Portal"
+    },
+    {
+      "code": "05",
+      "display": "Automatically uploaded: Other",
+      "definition": "The resource has been automatically uploaded from another source"
+    },
+    {
+      "code": "06",
+      "display": "Manually collected",
+      "definition": "The resource has been manually collected"
+    }
+  ],
+  "version": "0.9",
+  "experimental": true,
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "count": 6
+}

@@ -1,0 +1,738 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "NFDI4Health_CS_MDS_Remaining_Concepts",
+  "id": "nfdi4health-cs-mds-remaining-concepts",
+  "title": "NFDI4Health CS MDS Remaining Concepts",
+  "description": "Code system defining remaining concepts without mapping to concepts from international terminologies, ontologies, classifications, etc..",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+  "concept": [
+    {
+      "code": "001",
+      "display": "Minimum age of examined subjects",
+      "definition": "The actual minimum age of the subjects examined in a clinical trial."
+    },
+    {
+      "code": "002",
+      "display": "Maximum age of examined subjects",
+      "definition": "The actual maximum age of the subjects examined in a clinical trial."
+    },
+    {
+      "code": "003",
+      "display": "Case-only",
+      "definition": "Type of studies that only uses cases as subjects to estimate/test hypotheses but does not include a comparison group."
+    },
+    {
+      "code": "004",
+      "display": "Case-cohort",
+      "definition": "Type of cohort studies in which a subcohort, a random sample composed of cases and controls, is selected from a parent cohort; the subcohort and the cases outside of the subcohort constitute the case-cohort sample."
+    },
+    {
+      "code": "005",
+      "display": "Trend",
+      "definition": "Type of studies in which different samples from a defined population are surveyed at different points of time."
+    },
+    {
+      "code": "006",
+      "display": "Cross-section ad-hoc follow-up",
+      "definition": "Data collected at one point in time to complete information collected in a previous cross-sectional study; the decision to collect follow-up data is not included in the study design. (Definition from DDI)"
+    },
+    {
+      "code": "007",
+      "display": "Quality control",
+      "definition": "Type of studies with a focus on quality control."
+    },
+    {
+      "code": "008",
+      "display": "Respondent-driven sampling",
+      "definition": "Variant of snowball sampling that can be applied to hard-to-reach populations, and uses additionally a mathematical model."
+    },
+    {
+      "code": "009",
+      "display": "Data dictionary",
+      "definition": "Data dictionaries store and communicate metadata about data in a database, a system, or data used by applications. (Definition from USGS)"
+    },
+    {
+      "code": "010",
+      "display": "Analytic code",
+      "definition": "Code on which analyses are based on."
+    },
+    {
+      "code": "011",
+      "display": "Codebook"
+    },
+    {
+      "code": "012",
+      "display": "Outcomes assessor",
+      "definition": "Person who measures the outcomes in a study."
+    },
+    {
+      "code": "013",
+      "display": "All rights reserved"
+    },
+    {
+      "code": "014",
+      "display": "Intervention ongoing"
+    },
+    {
+      "code": "015",
+      "display": "Intervention completed, follow-up ongoing"
+    },
+    {
+      "code": "016",
+      "display": "Interview schema and themes"
+    },
+    {
+      "code": "017",
+      "display": "Observation guide"
+    },
+    {
+      "code": "018",
+      "display": "Discussion guide"
+    },
+    {
+      "code": "019",
+      "display": "Participant tasks"
+    },
+    {
+      "code": "020",
+      "display": "Other data collection instrument"
+    },
+    {
+      "code": "021",
+      "display": "Other study document"
+    },
+    {
+      "code": "022",
+      "display": "Not yet recruiting"
+    },
+    {
+      "code": "023",
+      "display": "Enrolling by invitation"
+    },
+    {
+      "code": "024",
+      "display": "Active, not recruiting"
+    },
+    {
+      "code": "025",
+      "display": "Withdrawn"
+    },
+    {
+      "code": "026",
+      "display": "Request for approval not yet submitted"
+    },
+    {
+      "code": "027",
+      "display": "Study withdrawn prior to decision on approval"
+    },
+    {
+      "code": "028",
+      "display": "Administrative databases"
+    },
+    {
+      "code": "029",
+      "display": "Cognitive measurements"
+    },
+    {
+      "code": "030",
+      "display": "Genealogical records"
+    },
+    {
+      "code": "031",
+      "display": "Imaging data"
+    },
+    {
+      "code": "032",
+      "display": "Physiological/Biochemical measurements"
+    },
+    {
+      "code": "033",
+      "display": "Omics technology"
+    },
+    {
+      "code": "034",
+      "display": "Probability Sampling Method"
+    },
+    {
+      "code": "035",
+      "display": "Mixed Probability and Non-Probability Sampling Method"
+    },
+    {
+      "code": "036",
+      "display": "Total universe/Complete enumeration"
+    },
+    {
+      "code": "037",
+      "display": "Primary Sponsor"
+    },
+    {
+      "code": "038",
+      "display": "Data Collector"
+    },
+    {
+      "code": "039",
+      "display": "Data Curator"
+    },
+    {
+      "code": "040",
+      "display": "Project Leader"
+    },
+    {
+      "code": "041",
+      "display": "Project Manager"
+    },
+    {
+      "code": "042",
+      "display": "Project Member"
+    },
+    {
+      "code": "043",
+      "display": "Related Person"
+    },
+    {
+      "code": "044",
+      "display": "Rights Holder"
+    },
+    {
+      "code": "045",
+      "display": "Work Packager Leader"
+    },
+    {
+      "code": "046",
+      "display": "Public Funder"
+    },
+    {
+      "code": "047",
+      "display": "Private Funder"
+    },
+    {
+      "code": "048",
+      "display": "Research Group"
+    },
+    {
+      "code": "049",
+      "display": "Hosting Institution"
+    },
+    {
+      "code": "050",
+      "display": "Registration Agency"
+    },
+    {
+      "code": "051",
+      "display": "Computational Notebook"
+    },
+    {
+      "code": "052",
+      "display": "Data Paper"
+    },
+    {
+      "code": "053",
+      "display": "Interactive Resource"
+    },
+    {
+      "code": "054",
+      "display": "Output Management Plan"
+    },
+    {
+      "code": "055",
+      "display": "A is cited by B"
+    },
+    {
+      "code": "056",
+      "display": "A cites B"
+    },
+    {
+      "code": "057",
+      "display": "A is supplemented by B"
+    },
+    {
+      "code": "058",
+      "display": "A is continued by B"
+    },
+    {
+      "code": "059",
+      "display": "A is described by B"
+    },
+    {
+      "code": "060",
+      "display": "A describes B"
+    },
+    {
+      "code": "061",
+      "display": "A is metadata for B"
+    },
+    {
+      "code": "062",
+      "display": "A has version B"
+    },
+    {
+      "code": "063",
+      "display": "A is version of B"
+    },
+    {
+      "code": "064",
+      "display": "A is previous version of B"
+    },
+    {
+      "code": "065",
+      "display": "A is part of B"
+    },
+    {
+      "code": "066",
+      "display": "A is referenced by B"
+    },
+    {
+      "code": "067",
+      "display": "A is documented by B"
+    },
+    {
+      "code": "068",
+      "display": "A is compiled by B"
+    },
+    {
+      "code": "069",
+      "display": "A compiles B"
+    },
+    {
+      "code": "070",
+      "display": "A is variant form of B"
+    },
+    {
+      "code": "071",
+      "display": "A is original form of B"
+    },
+    {
+      "code": "072",
+      "display": "A is identical to B"
+    },
+    {
+      "code": "073",
+      "display": "A is reviewed by B"
+    },
+    {
+      "code": "074",
+      "display": "A reviews B"
+    },
+    {
+      "code": "075",
+      "display": "A is source of B"
+    },
+    {
+      "code": "076",
+      "display": "A is required by B"
+    },
+    {
+      "code": "077",
+      "display": "A requires B"
+    },
+    {
+      "code": "078",
+      "display": "A is obsoleted by B"
+    },
+    {
+      "code": "079",
+      "display": "A obsoletes B"
+    },
+    {
+      "code": "080",
+      "display": "ORCID"
+    },
+    {
+      "code": "081",
+      "display": "ROR"
+    },
+    {
+      "code": "082",
+      "display": "GRID"
+    },
+    {
+      "code": "083",
+      "display": "ISNI"
+    },
+    {
+      "code": "084",
+      "display": "Monocentric",
+      "definition": "Having / In one center"
+    },
+    {
+      "code": "085",
+      "display": "First submitted"
+    },
+    {
+      "code": "086",
+      "display": "First posted"
+    },
+    {
+      "code": "087",
+      "display": "Last update submitted"
+    },
+    {
+      "code": "088",
+      "display": "Last update posted"
+    },
+    {
+      "code": "089",
+      "display": "arXiv"
+    },
+    {
+      "code": "090",
+      "display": "EAN13"
+    },
+    {
+      "code": "091",
+      "display": "EISSN"
+    },
+    {
+      "code": "092",
+      "display": "ISBN"
+    },
+    {
+      "code": "093",
+      "display": "ISSN"
+    },
+    {
+      "code": "094",
+      "display": "ISTC"
+    },
+    {
+      "code": "095",
+      "display": "LISSN"
+    },
+    {
+      "code": "096",
+      "display": "PURL"
+    },
+    {
+      "code": "097",
+      "display": "w3id"
+    },
+    {
+      "code": "098",
+      "display": "DRKS"
+    },
+    {
+      "code": "099",
+      "display": "ISRCTN"
+    },
+    {
+      "code": "100",
+      "display": "EUDAMED"
+    },
+    {
+      "code": "101",
+      "display": "UTN"
+    },
+    {
+      "code": "102",
+      "display": "KonsortSWD"
+    },
+    {
+      "code": "103",
+      "display": "MDM Portal"
+    },
+    {
+      "code": "104",
+      "display": "NFDI4Health"
+    },
+    {
+      "code": "105",
+      "display": "Diverse"
+    },
+    {
+      "code": "106",
+      "display": "NCT (ClinicalTrials.gov)"
+    },
+    {
+      "code": "107",
+      "display": "EudraCT"
+    },
+    {
+      "code": "108",
+      "display": "A is supplement to B"
+    },
+    {
+      "code": "109",
+      "display": "A continues B"
+    },
+    {
+      "code": "110",
+      "display": "A has metadata B"
+    },
+    {
+      "code": "111",
+      "display": "A is new version of B"
+    },
+    {
+      "code": "112",
+      "display": "A has part B"
+    },
+    {
+      "code": "113",
+      "display": "A references B"
+    },
+    {
+      "code": "114",
+      "display": "A documents B"
+    },
+    {
+      "code": "115",
+      "display": "A is derived from B"
+    },
+    {
+      "code": "116",
+      "display": "Self-report (questionnaires or interviews), cases verified"
+    },
+    {
+      "code": "117",
+      "display": "Self-report (questionnaires or interviews), cases not verified"
+    },
+    {
+      "code": "118",
+      "display": "24-h dietary recall"
+    },
+    {
+      "code": "119",
+      "display": "Proxy-administered"
+    },
+    {
+      "code": "120",
+      "display": "Food record"
+    },
+    {
+      "code": "121",
+      "display": "Described portion sizes"
+    },
+    {
+      "code": "122",
+      "display": "Picture book/visual aids"
+    },
+    {
+      "code": "123",
+      "display": "Weighing"
+    },
+    {
+      "code": "124",
+      "display": "Volume measures"
+    },
+    {
+      "code": "125",
+      "display": "Online questionnaire"
+    },
+    {
+      "code": "126",
+      "display": "Cluster"
+    },
+    {
+      "code": "127",
+      "display": "Cluster - Simple random"
+    },
+    {
+      "code": "128",
+      "display": "Cluster - Stratified random"
+    },
+    {
+      "code": "129",
+      "display": "Screener"
+    },
+    {
+      "code": "130",
+      "display": "Interventional"
+    },
+    {
+      "code": "131",
+      "display": "Non-interventional"
+    },
+    {
+      "code": "132",
+      "display": "Vaccine and biological substance (Pharmacologic Substance)"
+    },
+    {
+      "code": "133",
+      "display": "Single group"
+    },
+    {
+      "code": "134",
+      "display": "Parallel"
+    },
+    {
+      "code": "135",
+      "display": "Crossover"
+    },
+    {
+      "code": "136",
+      "display": "Factorial"
+    },
+    {
+      "code": "137",
+      "display": "Sequential"
+    },
+    {
+      "code": "138",
+      "display": "Other (interventional)"
+    },
+    {
+      "code": "139",
+      "display": "Unknown (interventional)"
+    },
+    {
+      "code": "140",
+      "display": "Case-control"
+    },
+    {
+      "code": "141",
+      "display": "Nested case-control"
+    },
+    {
+      "code": "142",
+      "display": "Case-crossover"
+    },
+    {
+      "code": "143",
+      "display": "Ecologic or community studies"
+    },
+    {
+      "code": "144",
+      "display": "Family-based"
+    },
+    {
+      "code": "145",
+      "display": "Twin study"
+    },
+    {
+      "code": "146",
+      "display": "Cohort"
+    },
+    {
+      "code": "147",
+      "display": "Birth Cohort"
+    },
+    {
+      "code": "148",
+      "display": "Panel"
+    },
+    {
+      "code": "149",
+      "display": "Longitudinal"
+    },
+    {
+      "code": "150",
+      "display": "Cross-section"
+    },
+    {
+      "code": "151",
+      "display": "Time series"
+    },
+    {
+      "code": "152",
+      "display": "Registry"
+    },
+    {
+      "code": "153",
+      "display": "Other (Non-Interventional)"
+    },
+    {
+      "code": "154",
+      "display": "Unknown (Non-Interventional)"
+    },
+    {
+      "code": "155",
+      "display": "Retrospective"
+    },
+    {
+      "code": "156",
+      "display": "Prospective"
+    },
+    {
+      "code": "157",
+      "display": "Nonrandomized"
+    },
+    {
+      "code": "158",
+      "display": "Not applicable (for single-arm trials)"
+    },
+    {
+      "code": "159",
+      "display": "Randomized"
+    },
+    {
+      "code": "160",
+      "display": "Non-probability"
+    },
+    {
+      "code": "161",
+      "display": "Conditions related to sexual health"
+    },
+    {
+      "code": "162",
+      "display": "Cross-sectional (timePerspectives)"
+    },
+    {
+      "code": "163",
+      "display": "Other (timePerspectives)"
+    },
+    {
+      "code": "164",
+      "display": "Other (method)"
+    },
+    {
+      "code": "165",
+      "display": "Unknown (method)"
+    },
+    {
+      "code": "166",
+      "display": "Not applicable (method)"
+    },
+    {
+      "code": "167",
+      "display": "Simple random"
+    },
+    {
+      "code": "168",
+      "display": "Systematic random"
+    },
+    {
+      "code": "169",
+      "display": "Stratified"
+    },
+    {
+      "code": "170",
+      "display": "Stratified: Proportional"
+    },
+    {
+      "code": "171",
+      "display": "Stratified: Disproportional"
+    },
+    {
+      "code": "172",
+      "display": "Multistage"
+    },
+    {
+      "code": "173",
+      "display": "Quota"
+    },
+    {
+      "code": "174",
+      "display": "Purposive"
+    },
+    {
+      "code": "175",
+      "display": "Availability"
+    }
+  ],
+  "version": "0.9",
+  "experimental": true,
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "count": 175
+}

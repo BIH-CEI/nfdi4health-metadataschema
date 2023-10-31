@@ -1,0 +1,47 @@
+{
+  "resourceType": "Organization",
+  "id": "InstanceOfOrganizationCreatorNIMH",
+  "meta": {
+    "profile": [
+      "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+    ]
+  },
+  "telecom": [
+    {
+      "system": "url",
+      "value": "https://www.nimh.nih.gov/research/research-conducted-at-nimh"
+    }
+  ],
+  "name": "National Institute of Mental Health",
+  "identifier": [
+    {
+      "value": "04xeg9z08",
+      "type": {
+        "coding": [
+          {
+            "code": "081",
+            "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+            "display": "ROR"
+          }
+        ]
+      }
+    },
+    {
+      "value": "grid.416868.5",
+      "type": {
+        "coding": [
+          {
+            "code": "082",
+            "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+            "display": "GRID"
+          }
+        ]
+      }
+    }
+  ],
+  "address": [
+    {
+      "text": "Bethesda, MD, USA"
+    }
+  ]
+}

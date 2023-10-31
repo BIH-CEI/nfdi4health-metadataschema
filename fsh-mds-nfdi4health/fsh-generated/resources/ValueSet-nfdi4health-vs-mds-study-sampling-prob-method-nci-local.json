@@ -1,0 +1,72 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "NFDI4Health_VS_MDS_Study_Sampling_Probability_Method_NCI_Local",
+  "id": "nfdi4health-vs-mds-study-sampling-prob-method-nci-local",
+  "title": "NFDI4Health VS MDS Study Sampling Probability Method [NCI, Local]",
+  "description": "Value set defining codes to specify types of probability sampling methods.",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-sampling-prob-method-nci-local",
+  "version": "0.9",
+  "experimental": true,
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://ncimeta.nci.nih.gov",
+        "concept": [
+          {
+            "code": "C53196",
+            "display": "Simple Random Sampling (Activity)"
+          },
+          {
+            "code": "C53200",
+            "display": "Systematic Sampling (Activity)"
+          },
+          {
+            "code": "C71516",
+            "display": "Stratified Sampling (Activity)"
+          },
+          {
+            "code": "C71498",
+            "display": "Proportional Stratified Sampling (Activity)"
+          },
+          {
+            "code": "C71497",
+            "display": "Disproportional Stratified Sampling (Activity)"
+          },
+          {
+            "code": "C71515",
+            "display": "Multi-Stage Sampling (Activity)"
+          }
+        ]
+      },
+      {
+        "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+        "concept": [
+          {
+            "code": "126",
+            "display": "Cluster"
+          },
+          {
+            "code": "127",
+            "display": "Cluster - Simple random"
+          },
+          {
+            "code": "128",
+            "display": "Cluster - Stratified random"
+          }
+        ]
+      }
+    ]
+  }
+}
