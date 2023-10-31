@@ -9,7 +9,7 @@ Description: "Type of the identifier of the related resource."
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 * ^context.type = #element
-* ^context.expression = "RelatedArtifact"
+* ^context.expression = "Extension.valueRelatedArtifact.extension"
 * . 1..1
 * . ^short = "Type of the identifier"
 * . ^definition = "Type of the identifier of the related resource."
