@@ -13,13 +13,13 @@ Description: "RelatedArtifact intended to capture information about related NFDI
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 * ^context.type = #element
 * ^context.expression = "RelatedArtifact"
-* . 0..*
 * . ^short = "Related (sub-)studies, study documents, etc. registered on this portal"
 * . ^definition = "Group of items providing information about related resources registered on this portal."
 * . ^comment = "Short input help: Does the [RESOURCE] have any related resources registered on this portal?"
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
+* extension 1..1
 * extension contains 
     $RelatedNFDIIdentifier named identifier 1..1 and
     $NFDI4HealthRelType named relationType 0..1

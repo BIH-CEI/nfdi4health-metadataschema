@@ -19,3 +19,4 @@ Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_PR_MDS_Centers
 * description -> "1.17.18 Resource.studyDesign.studyCentersNumber"
+* extension[centers] -> "1.17.17 Resource.studyDesign.studyCentersNumber"

@@ -18,7 +18,7 @@ Description: "Resource covering metadata of a document."
     NFDI4Health_EX_MDS_Keywords named keywords 0..* and
     NFDI4Health_EX_MDS_Associated_Party named roles 1..* and
     NFDI4Health_EX_MDS_Document_Use_Rights named useRights 0..1 and 
-    NFDI4Health_EX_MDS_Related named relatedResources 0..*
+    NFDI4Health_EX_MDS_Related named relatedResources 0..1
 * masterIdentifier 1..
 * masterIdentifier ^short = "ID of the [RESOURCE]"
 * masterIdentifier ^definition = "Unique identifier of the resource used for identification within the NFDI4Health."
@@ -148,10 +148,6 @@ Description: "Resource covering metadata of a document."
 * content.attachment.language ^short = "Language(s) of the [RESOURCE]"
 * content.attachment.language ^definition = "Language(s) in which a study/substudy is conducted, or a language in which a study document is composed."
 * content.attachment.language ^comment = "Short input help: Select all that apply."
-* content.attachment.url 0..1
-* content.attachment.url ^short = "Web page of the [RESOURCE]"
-* content.attachment.url ^definition = "If existing, a link to the web page directly relevant to the resource."
-* content.attachment.url ^comment = "Additional information: Other web pages related to the resource can additionally be entered in the section 'Related resources'."
 * content.format 0..1
 * content.format ^short = "Format of the [RESOURCE]"
 * content.format ^definition = "Technical format of the resource."
@@ -215,7 +211,8 @@ Source: NFDI4Health_PR_MDS_Document
 * content.extension[label] -> "1.3 Resource.titles" "1.4 Resource.acronyms"
 * content.extension[version] -> "1.10.1 Resource.nonStudyDetails.version"
 * content.attachment.language -> "1.8 Resource.languages"
-* content.attachment.url -> "1.9 Resource.webpage"
 * content.format -> "1.10.2 Resource.nonStudyDetails.format"
-
+* extension[relatedResources] -> "1.13 Resource.ids"
+* extension[relatedResources] -> "1.14 Resource.idsNfdi4health"
+* extension[relatedResources] -> "1.9 Resource.webpage"
 

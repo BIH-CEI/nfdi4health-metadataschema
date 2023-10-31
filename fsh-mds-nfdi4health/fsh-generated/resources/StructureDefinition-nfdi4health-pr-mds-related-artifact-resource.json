@@ -42,14 +42,28 @@
         "path": "RelatedArtifact",
         "short": "Related publications, datasets, study documents, web pages, etc.",
         "definition": "Group of items providing information about identifiers (IDs) of the resources related to the given resource, e.g. DOIs of publications, datasets, study documents or links to web pages.",
-        "comment": "Short input help: If existing, you can specify identifier(s) of any related resources, e.g. DOIs of publications, datasets, study documents, links to web pages, etc."
+        "comment": "Short input help: If existing, you can specify identifier(s) of any related resources, e.g. DOIs of publications, datasets, study documents, links to web pages, etc.",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.13 Resource.ids"
+          },
+          {
+            "identity": "NFDI4Health",
+            "map": "1.14 Resource.idsNfdi4health"
+          },
+          {
+            "identity": "NFDI4Health",
+            "map": "1.9 Resource.webpage"
+          }
+        ]
       },
       {
         "id": "RelatedArtifact.extension:NFDI4HealthResource",
         "path": "RelatedArtifact.extension",
         "sliceName": "NFDI4HealthResource",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "type": [
           {
             "code": "Extension",
@@ -70,7 +84,7 @@
         "path": "RelatedArtifact.extension",
         "sliceName": "nonNFDI4HealthResource",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "type": [
           {
             "code": "Extension",

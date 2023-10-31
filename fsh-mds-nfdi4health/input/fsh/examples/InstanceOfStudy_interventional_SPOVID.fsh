@@ -108,5 +108,5 @@ Usage: #example
 * extension[roles][=].extension[roleOrganisational].valueCoding = $Remaining#046 "Public Funder"
 
 // Related resources
-* relatedArtifact = InstanceOfRelatedArtifact_Household_NFDI
+* relatedArtifact = InstanceOfRelatedArtifact
 

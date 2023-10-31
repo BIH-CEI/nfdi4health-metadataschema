@@ -70,6 +70,12 @@
               "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-centers"
             ]
           }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.17 Resource.studyDesign.studyCentersNumber"
+          }
         ]
       },
       {

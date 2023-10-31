@@ -231,6 +231,7 @@ Description: "Resource covering metadata of a study."
 * condition.text ^comment = "Additional information: The use of terms from established terminologies/classifications (e.g. SNOMED CT, ICD, etc.) is preferred. However, also self-assigned terms are allowed. |  Short input help: Preferably, use terms from SNOMED CT (https://browser.ihtsdotools.org)."
 * condition.text ^example[0].label = "Name of a Condition"
 * condition.text ^example[=].valueString = "SARS-CoV-2"
+* relatedArtifact ..1
 * relatedArtifact only NFDI4Health_PR_MDS_Related_Artifact_Resource
 * keyword ^short = "Keyword(s) describing the [RESOURCE]"
 * keyword ^definition = "Group of items providing information about keywords describing the resource."

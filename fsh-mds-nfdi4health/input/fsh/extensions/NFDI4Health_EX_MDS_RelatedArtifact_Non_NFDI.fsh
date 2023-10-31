@@ -16,7 +16,6 @@ Description: "RelatedArtifact intended to capture information about Resources ot
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 * ^context.type = #element
 * ^context.expression = "RelatedArtifact"
-* . 0..*
 * . ^short = "Related publications, datasets, study documents, web pages, etc."
 * . ^definition = "Group of items providing information about identifiers (IDs) of the resources related to the given resource, e.g. DOIs of publications, datasets, study documents or links to web pages."
 * . ^comment = "Short input help: If existing, you can specify identifier(s) of any related resources, e.g. DOIs of publications, datasets, study documents, links to web pages, etc."

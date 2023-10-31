@@ -18,7 +18,7 @@ Description: "Resource covering metadata of a questionnaire."
     NFDI4Health_EX_MDS_Format named format 0..1 and
     NFDI4Health_EX_MDS_Execution_Language named executionlLanguage 0..* and
     NFDI4Health_EX_MDS_Associated_Party named roles 1..* and
-    NFDI4Health_EX_MDS_Related named relatedResources 0..* and
+    NFDI4Health_EX_MDS_Related named relatedResources 0..1 and
     NFDI4Health_EX_MDS_Keywords named keywords 0..*
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "type"
@@ -207,6 +207,9 @@ Source: NFDI4Health_PR_MDS_Questionnaire
 * description.extension[translation].extension[content] -> "1.6.1 Resource.descriptionNonEnglish.text"
 * description.extension[language] -> "1.5.2 Resource.descriptionEnglish.language"
 * copyright -> "1.10.3.3 Resource.nonStudyDetails.useRights.description"
+* extension[relatedResources] -> "1.13 Resource.ids"
+* extension[relatedResources] -> "1.14 Resource.idsNfdi4health"
+* extension[relatedResources] -> "1.9 Resource.webpage"
 
 
 

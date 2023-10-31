@@ -140,15 +140,7 @@
               }
             ],
             "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related-artifact-nfdi"
-          }
-        ],
-        "type": "documentation"
-      }
-    },
-    {
-      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related",
-      "valueRelatedArtifact": {
-        "extension": [
+          },
           {
             "extension": [
               {
@@ -175,7 +167,8 @@
             "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related-artifact-non-nfdi"
           }
         ],
-        "type": "documentation"
+        "type": "documentation",
+        "url": "www.nfdi4health.de"
       }
     }
   ],
@@ -235,8 +228,7 @@
         }
       ],
       "attachment": {
-        "language": "en",
-        "url": "https://www.who.int/publications/i/item/household-transmission-investigation-protocol-for-2019-novel-coronavirus-(2019-ncov)-infection"
+        "language": "en"
       },
       "format": {
         "display": "PDF"

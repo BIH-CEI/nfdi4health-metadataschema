@@ -1469,6 +1469,7 @@
       {
         "id": "ResearchStudy.relatedArtifact",
         "path": "ResearchStudy.relatedArtifact",
+        "max": "1",
         "type": [
           {
             "code": "RelatedArtifact",

@@ -163,13 +163,27 @@
         "path": "Questionnaire.extension",
         "sliceName": "relatedResources",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
               "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related"
             ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.13 Resource.ids"
+          },
+          {
+            "identity": "NFDI4Health",
+            "map": "1.14 Resource.idsNfdi4health"
+          },
+          {
+            "identity": "NFDI4Health",
+            "map": "1.9 Resource.webpage"
           }
         ]
       },

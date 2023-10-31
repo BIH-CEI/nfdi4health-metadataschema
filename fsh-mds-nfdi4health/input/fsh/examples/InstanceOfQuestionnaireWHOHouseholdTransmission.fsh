@@ -31,5 +31,4 @@ Usage: #example
 * extension[roles][=].extension[roleOrganisational].valueCoding = $NCI#C25461 "Contact Person (Human)"
 * extension[roles][=].extension[party].valueReference = Reference(InstanceOfOrganizationContactWHO)
 //Related resources
-* extension[relatedResources][0].valueRelatedArtifact = InstanceOfRelatedArtifact_Household_NFDI
-* extension[relatedResources][+].valueRelatedArtifact = InstanceOfRelatedArtifact_Household_Non_NFDI
+* extension[relatedResources].valueRelatedArtifact = InstanceOfRelatedArtifact
