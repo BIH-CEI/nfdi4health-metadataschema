@@ -15,7 +15,6 @@ Description: "Extension providing information about related publications, datase
 * ^context[=].expression = "Questionnaire"
 * ^context[+].type = #element
 * ^context[=].expression = "DocumentReference"
-* . 0..*
 * . ^short = "Test"
 * . ^definition = "Test"
 * value[x] 1..1

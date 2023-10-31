@@ -19,7 +19,7 @@ Description: "RelatedArtifact intended to capture information about related NFDI
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
-* extension 1..1
+* extension 1..2
 * extension contains 
     $RelatedNFDIIdentifier named identifier 1..1 and
     $NFDI4HealthRelType named relationType 0..1
