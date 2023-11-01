@@ -11,6 +11,7 @@ Description: "Resource covering metadata of a center."
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 
 * description 1..1
+* description ^definition = "Number of study centers" "Number of centers involved in the study."
 * extension contains 
     NFDI4Health_EX_MDS_Centers named centers 1..1
 
