@@ -37,7 +37,7 @@ Usage: #definition
   * insert AddInteraction(#search-type, #SHALL)
   // CORE
   * insert AddSearchParameter(#SHALL, "identifier", DocumentReference-identifier, #token, "Master Version Specific Identifier")
-  * insert AddSearchParameter(#SHALL, "identifier", DocumentReference-masterIdentifier, #token, "Master Version Specific Identifier")
+  * insert AddSearchParameter(#SHALL, "masteridentifier", DocumentReference-masterIdentifier, #token, "Master Version Specific Identifier")
   * insert AddSearchParameter(#SHALL, "description", DocumentReference-description, #string, "Human-readable description")
   * insert AddSearchParameter(#SHALL, "format", DocumentReference-content-format, #token, "Format/content rules for the document")
   * insert AddSearchParameter(#SHALL, "language", DocumentReference-content-attachment-language, #token, "Human language of the content BCP-47")
@@ -125,19 +125,19 @@ Usage: #definition
   * insert AddSearchParameter(#SHALL, "target", Provenance-target, #reference, "Target References usually version specific")
   * insert AddSearchParameter(#SHALL, "recorded", Provenance-recorded, #date, "When the activity was recorded / updated")   
 //------------------
-// Questionaire
+// Questionnaire
 //------------------
 * rest[=].resource[+]
-  * insert InitResource(#Questionaire, #SHALL, Questionaire, #SHALL)
+  * insert InitResource(#Questionnaire, #SHALL, Questionnaire, #SHALL)
   * insert AddSupportedProfile(nfdi4health-pr-mds-questionnaire|1.0.0, #SHALL)
   * insert AddInteraction(#read, #SHALL)
   * insert AddInteraction(#search-type, #SHALL)
 // CORE
-  * insert AddSearchParameter(#SHALL, "identifier", Questionaire-identifier, #token, "External identifier for the questionnaire")
-  * insert AddSearchParameter(#SHALL, "title", Questionaire-title, #string, "The human-friendly name of the questionnaire")
-  * insert AddSearchParameter(#SHALL, "version", Questionaire-version, #token, "The business version of the questionnaire")
-  * insert AddSearchParameter(#SHALL, "status", Questionaire-status, #token, "The current status of the questionnaire")  
-  * insert AddSearchParameter(#SHALL, "description", Questionaire-description, #string, "The description of the questionnaire")     
+  * insert AddSearchParameter(#SHALL, "identifier", Questionnaire-identifier, #token, "External identifier for the questionnaire")
+  * insert AddSearchParameter(#SHALL, "title", Questionnaire-title, #string, "The human-friendly name of the questionnaire")
+  * insert AddSearchParameter(#SHALL, "version", Questionnaire-version, #token, "The business version of the questionnaire")
+  * insert AddSearchParameter(#SHALL, "status", Questionnaire-status, #token, "The current status of the questionnaire")  
+  * insert AddSearchParameter(#SHALL, "description", Questionnaire-description, #string, "The description of the questionnaire")     
 //------------------
 // ResearchStudy
 //------------------
@@ -154,4 +154,4 @@ Usage: #definition
   * insert AddSearchParameter(#SHALL, "keyword", ResearchStudy-keyword, #token, "Used to search for the study")
   * insert AddSearchParameter(#SHALL, "location", ResearchStudy-location, #token, "Geographic regions for study")
   * insert AddSearchParameter(#SHALL, "site", ResearchStudy-site, #reference, "Facility where study activities are conducted")
-  * insert AddSearchParameter(#SHALL, "title", ResearchStudy-site, #string, "Name for this study")
+  * insert AddSearchParameter(#SHALL, "title", ResearchStudy-title, #string, "Name for this study")

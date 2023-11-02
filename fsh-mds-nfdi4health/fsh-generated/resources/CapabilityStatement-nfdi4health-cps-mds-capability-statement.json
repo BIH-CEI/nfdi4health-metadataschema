@@ -1,9 +1,6 @@
 {
   "resourceType": "CapabilityStatement",
   "id": "nfdi4health-cps-mds-capability-statement",
-<<<<<<< HEAD
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/CapabilityStatement/nfdi4health-cps-mds-capability-statement",
-=======
   "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-cps-mds-capability-statement",
   "version": "0.9",
   "status": "draft",
@@ -18,7 +15,6 @@
       ]
     }
   ],
->>>>>>> 861ad2414cb3c648af5bc0c017bfc63fc30479f3
   "name": "NFDI4HEALTH_CPS_MDS_CAPABILITY_STATMENT",
   "title": "Nfdi4Health CPS MDS Capability Statment",
   "description": "The CapabilityStatement describes all mandatory interactions for a system to be conformant to the MDS of Nfdi4Health",
@@ -30,11 +26,6 @@
   ],
   "rest": [
     {
-<<<<<<< HEAD
-      "mode": "server"
-    }
-  ]
-=======
       "mode": "server",
       "resource": [
         {
@@ -152,7 +143,7 @@
               ]
             },
             {
-              "name": "identifier",
+              "name": "masteridentifier",
               "definition": "http://hl7.org/fhir/SearchParameter/DocumentReference-masterIdentifier",
               "type": "token",
               "documentation": "Master Version Specific Identifier",
@@ -769,14 +760,14 @@
           ]
         },
         {
-          "type": "Questionaire",
+          "type": "Questionnaire",
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
               "valueCode": "SHALL"
             }
           ],
-          "profile": "http://hl7.org/fhir/StructureDefinition/Questionaire",
+          "profile": "http://hl7.org/fhir/StructureDefinition/Questionnaire",
           "_profile": {
             "extension": [
               {
@@ -821,7 +812,7 @@
           "searchParam": [
             {
               "name": "identifier",
-              "definition": "http://hl7.org/fhir/SearchParameter/Questionaire-identifier",
+              "definition": "http://hl7.org/fhir/SearchParameter/Questionnaire-identifier",
               "type": "token",
               "documentation": "External identifier for the questionnaire",
               "extension": [
@@ -833,7 +824,7 @@
             },
             {
               "name": "title",
-              "definition": "http://hl7.org/fhir/SearchParameter/Questionaire-title",
+              "definition": "http://hl7.org/fhir/SearchParameter/Questionnaire-title",
               "type": "string",
               "documentation": "The human-friendly name of the questionnaire",
               "extension": [
@@ -845,7 +836,7 @@
             },
             {
               "name": "version",
-              "definition": "http://hl7.org/fhir/SearchParameter/Questionaire-version",
+              "definition": "http://hl7.org/fhir/SearchParameter/Questionnaire-version",
               "type": "token",
               "documentation": "The business version of the questionnaire",
               "extension": [
@@ -857,7 +848,7 @@
             },
             {
               "name": "status",
-              "definition": "http://hl7.org/fhir/SearchParameter/Questionaire-status",
+              "definition": "http://hl7.org/fhir/SearchParameter/Questionnaire-status",
               "type": "token",
               "documentation": "The current status of the questionnaire",
               "extension": [
@@ -869,7 +860,7 @@
             },
             {
               "name": "description",
-              "definition": "http://hl7.org/fhir/SearchParameter/Questionaire-description",
+              "definition": "http://hl7.org/fhir/SearchParameter/Questionnaire-description",
               "type": "string",
               "documentation": "The description of the questionnaire",
               "extension": [
@@ -1018,7 +1009,7 @@
             },
             {
               "name": "title",
-              "definition": "http://hl7.org/fhir/SearchParameter/ResearchStudy-site",
+              "definition": "http://hl7.org/fhir/SearchParameter/ResearchStudy-title",
               "type": "string",
               "documentation": "Name for this study",
               "extension": [
@@ -1034,5 +1025,4 @@
     }
   ],
   "date": "2023-11-02"
->>>>>>> 861ad2414cb3c648af5bc0c017bfc63fc30479f3
 }
