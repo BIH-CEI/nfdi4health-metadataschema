@@ -43,7 +43,6 @@
   "differential": {
     "element": [
       {
-<<<<<<< HEAD
         "id": "Location.extension",
         "path": "Location.extension",
         "slicing": {
@@ -83,11 +82,6 @@
         "path": "Location.description",
         "short": "Number of study centers",
         "definition": "Number of centers involved in the study.",
-=======
-        "id": "Location.description",
-        "path": "Location.description",
-        "definition": "Number of study centers",
->>>>>>> 861ad2414cb3c648af5bc0c017bfc63fc30479f3
         "min": 1,
         "mapping": [
           {
