@@ -1,12 +1,12 @@
 Instance: nfdi4health-cps-mds-capability-statement
 InstanceOf: CapabilityStatement
 Usage: #definition
-* ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-cps-mds-capability-statement"
-* ^version = "0.9"
-* ^status = #draft
-* ^publisher = "NFDI4Health"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "https://www.nfdi4health.de"
+* url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-cps-mds-capability-statement"
+* version = "0.9"
+* status = #draft
+* publisher = "NFDI4Health"
+* contact.telecom.system = #url
+* contact.telecom.value = "https://www.nfdi4health.de"
 * name = "NFDI4HEALTH_CPS_MDS_CAPABILITY_STATMENT"
 * title = "Nfdi4Health CPS MDS Capability Statment"
 * description = "The CapabilityStatement describes all mandatory interactions for a system to be conformant to the MDS of Nfdi4Health"
@@ -15,7 +15,7 @@ Usage: #definition
 * format[+] = #xml
 * format[+] = #json
 * rest[+].mode = #server
-
+* date = "2023-11-02"
 //------------------
 // Location (Centers)
 //------------------
@@ -40,7 +40,7 @@ Usage: #definition
   * insert AddSearchParameter(#SHALL, "identifier", DocumentReference-masterIdentifier, #token, "Master Version Specific Identifier")
   * insert AddSearchParameter(#SHALL, "description", DocumentReference-description, #string, "Human-readable description")
   * insert AddSearchParameter(#SHALL, "format", DocumentReference-content-format, #token, "Format/content rules for the document")
-  * insert AddSearchParameter(#SHALL, "language", DocumentReference-content-attachment-language, #token, "Human language of the content (BCP-47))
+  * insert AddSearchParameter(#SHALL, "language", DocumentReference-content-attachment-language, #token, "Human language of the content BCP-47")
 
 //------------------
 // EvidenceVariable
@@ -67,7 +67,7 @@ Usage: #definition
   // CORE
   * insert AddSearchParameter(#SHALL, "actual", Group-actual, #token, "Descriptive or actual")
   * insert AddSearchParameter(#SHALL, "characteristic", Group-characteristic, #token, "Kind of characteristic")
-  * insert AddSearchParameter(#SHALL, "value", Group.characteristic.value as CodeableConcept, #token, "Value held by characteristic")
+  * insert AddSearchParameter(#SHALL, "value", Group.characteristic.valueCodeableConcept, #token, "Value held by characteristic")
 
 //------------------
 // Organization
@@ -80,7 +80,7 @@ Usage: #definition
   // CORE
   * insert AddSearchParameter(#SHALL, "identifier", Organization-identifier, #token, "Any identifier for the organization - not the accreditation issuer's identifier")
   * insert AddSearchParameter(#SHALL, "name", Organization-name, #string, "A portion of the organization's name or alias")
-  * insert AddSearchParameter(#SHALL, "address", Organization-address, #string, "A server defined search that may match any of the string fields in the Address, including line, city, district, state, country, postalCode, and/or text")
+  * insert AddSearchParameter(#SHALL, "address", Organization-address, #string, "A server defined search that may match any of the string fields in the Address - including line/ city/ district/ state/ country/ postalCode/ and/or text")
   * insert AddSearchParameter(#SHALL, "partOf", Organization-partOf, #reference, "An organization of which this organization forms a part")
 
 
@@ -109,7 +109,7 @@ Usage: #definition
   * insert AddInteraction(#search-type, #SHALL)
   // CORE
   * insert AddSearchParameter(#SHALL, "identifier", PractitionerRole-identifier, #token, "A practitioner's Identifier")
-  * insert AddSearchParameter(#SHALL, "name", PractitionerRole-name, #string, "A server defined search that may match any of the string fields in the HumanName, including family, give, prefix, suffix, suffix, and/or text	")
+  * insert AddSearchParameter(#SHALL, "name", PractitionerRole-name, #string, "A server defined search that may match any of the string fields in the HumanName - including family/ give/ prefix/ suffix/ suffix/ and/or text	")
   * insert AddSearchParameter(#SHALL, "given", PractitionerRole-name-given, #string, "A portion of the given name")
   * insert AddSearchParameter(#SHALL, "family", PractitionerRole-name-family, #string, "A portion of the family name")  
 //------------------
@@ -149,7 +149,7 @@ Usage: #definition
   // CORE
   * insert AddSearchParameter(#SHALL, "category", ResearchStudy-category, #token, "Classifications for the study")
   * insert AddSearchParameter(#SHALL, "date", ResearchStudy-period, #date, "When the study began and ended")
-  * insert AddSearchParameter(#SHALL, "focus", ResearchStudy-focus, #token, "Drugs, devices, etc. under study")
+  * insert AddSearchParameter(#SHALL, "focus", ResearchStudy-focus, #token, "Drugs/devices/etc under study")
   * insert AddSearchParameter(#SHALL, "identifier", ResearchStudy-identifier, #token, "Business Identifier for study")
   * insert AddSearchParameter(#SHALL, "keyword", ResearchStudy-keyword, #token, "Used to search for the study")
   * insert AddSearchParameter(#SHALL, "location", ResearchStudy-location, #token, "Geographic regions for study")
