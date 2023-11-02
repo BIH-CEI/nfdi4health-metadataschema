@@ -1,8 +1,8 @@
 Profile: NFDI4Health_PR_MDS_Study
 Parent: ResearchStudy
 Id: nfdi4health-pr-mds-study
-Title: "Profile to collect information about german (or with at least one study center in Germany) clinical, epidemiological or Public health studies that were uploaded in NFDI4Health"
-Description: "Resource covering metadata of a study."
+Title: "NFDI4Health PR MDS Study"
+Description: "Profile to collect information about german (or with at least one study center in Germany) clinical, epidemiological or Public health studies that were uploaded in NFDI4Health."
 * ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
 * ^version = "0.9"
 * ^status = #draft

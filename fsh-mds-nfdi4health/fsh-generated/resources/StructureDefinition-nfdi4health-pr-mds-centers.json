@@ -4,7 +4,7 @@
   "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-centers",
   "version": "0.9",
   "name": "NFDI4Health_PR_MDS_Centers",
-  "title": "Profile intended to capture information on the number of centers invovled in a study",
+  "title": "NFDI4Health PR MDS Centers",
   "status": "draft",
   "publisher": "NFDI4Health",
   "contact": [
@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "description": "Resource covering metadata of a center.",
+  "description": "Profile intended to capture information on the number of centers invovled in a study.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

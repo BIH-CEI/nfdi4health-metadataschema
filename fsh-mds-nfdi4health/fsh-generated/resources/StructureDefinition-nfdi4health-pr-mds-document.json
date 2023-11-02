@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "description": "Profile to collect information about documents related to german clinical, epidemiological or Public health studies ",
+  "description": "Profile to collect information about documents related to german clinical, epidemiological or Public health studies.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

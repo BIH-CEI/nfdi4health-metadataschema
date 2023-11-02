@@ -2,7 +2,7 @@ Profile: NFDI4Health_PR_MDS_Document
 Parent: DocumentReference
 Id: nfdi4health-pr-mds-document
 Title: "NFDI4Health PR MDS Document"
-Description: "Profile to collect information about documents related to german clinical, epidemiological or Public health studies "
+Description: "Profile to collect information about documents related to german clinical, epidemiological or Public health studies."
 * ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-document"
 * ^version = "0.9"
 * ^status = #draft

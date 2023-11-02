@@ -4,7 +4,7 @@
   "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study",
   "version": "0.9",
   "name": "NFDI4Health_PR_MDS_Study",
-  "title": "Profile to collect information about german (or with at least one study center in Germany) clinical, epidemiological or Public health studies that were uploaded in NFDI4Health",
+  "title": "NFDI4Health PR MDS Study",
   "status": "draft",
   "publisher": "NFDI4Health",
   "contact": [
@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "description": "Resource covering metadata of a study.",
+  "description": "Profile to collect information about german (or with at least one study center in Germany) clinical, epidemiological or Public health studies that were uploaded in NFDI4Health.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
