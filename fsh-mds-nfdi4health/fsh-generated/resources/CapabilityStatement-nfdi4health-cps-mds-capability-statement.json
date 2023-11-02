@@ -397,7 +397,7 @@
             ]
           },
           "supportedProfile": [
-            "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nnfdi4health-pr-mds-organization|1.0.0"
+            "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization|1.0.0"
           ],
           "_supportedProfile": [
             {

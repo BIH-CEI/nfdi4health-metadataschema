@@ -74,7 +74,7 @@ Usage: #definition
 //------------------
 * rest[=].resource[+]
   * insert InitResource(#Organization, #SHALL, Organization, #SHALL)
-  * insert AddSupportedProfile(nnfdi4health-pr-mds-organization|1.0.0, #SHALL)
+  * insert AddSupportedProfile(nfdi4health-pr-mds-organization|1.0.0, #SHALL)
   * insert AddInteraction(#read, #SHALL)
   * insert AddInteraction(#search-type, #SHALL)
   // CORE
