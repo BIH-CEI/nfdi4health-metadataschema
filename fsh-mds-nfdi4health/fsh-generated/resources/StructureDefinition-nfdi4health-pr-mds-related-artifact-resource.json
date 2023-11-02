@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "description": "Profile of a RelatedArtifact intended to capture information about related non NFDI4Health resources.",
+  "description": "Profile of a RelatedArtifact intended to capture information about the webpage and other related resources of the NFDI4Health resource.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

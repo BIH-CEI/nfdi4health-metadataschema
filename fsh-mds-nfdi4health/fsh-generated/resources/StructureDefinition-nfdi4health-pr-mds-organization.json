@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "description": "Resource covering metadata of an organization.",
+  "description": "To collect information on rganizations/institutions having roles and the affiliation and address of persons having roles.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

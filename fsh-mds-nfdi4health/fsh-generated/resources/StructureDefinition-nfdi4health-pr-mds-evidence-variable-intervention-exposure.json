@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "description": "Resource covering information about a study intervention or exposure.",
+  "description": "Information about the intervention or exposure in a study.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

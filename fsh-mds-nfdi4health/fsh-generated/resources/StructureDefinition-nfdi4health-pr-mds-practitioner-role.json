@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "description": "Resource covering metadata of roles from individuals.",
+  "description": "Profile to collect information about the contact information and affiliations of persons having roles.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

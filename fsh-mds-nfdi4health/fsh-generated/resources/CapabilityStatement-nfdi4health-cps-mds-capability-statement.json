@@ -1,0 +1,1028 @@
+{
+  "resourceType": "CapabilityStatement",
+  "id": "nfdi4health-cps-mds-capability-statement",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-cps-mds-capability-statement",
+  "version": "0.9",
+  "status": "draft",
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "name": "NFDI4HEALTH_CPS_MDS_CAPABILITY_STATMENT",
+  "title": "Nfdi4Health CPS MDS Capability Statment",
+  "description": "The CapabilityStatement describes all mandatory interactions for a system to be conformant to the MDS of Nfdi4Health",
+  "kind": "requirements",
+  "fhirVersion": "4.0.1",
+  "format": [
+    "xml",
+    "json"
+  ],
+  "rest": [
+    {
+      "mode": "server",
+      "resource": [
+        {
+          "type": "Location",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+              "valueCode": "SHALL"
+            }
+          ],
+          "profile": "http://hl7.org/fhir/StructureDefinition/Location",
+          "_profile": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                "valueCode": "SHALL"
+              }
+            ]
+          },
+          "supportedProfile": [
+            "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-centers|1.0.0"
+          ],
+          "_supportedProfile": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            }
+          ],
+          "interaction": [
+            {
+              "code": "read",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "code": "search-type",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "DocumentReference",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+              "valueCode": "SHALL"
+            }
+          ],
+          "profile": "http://hl7.org/fhir/StructureDefinition/DocumentReference",
+          "_profile": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                "valueCode": "SHALL"
+              }
+            ]
+          },
+          "supportedProfile": [
+            "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-document|1.0.0"
+          ],
+          "_supportedProfile": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            }
+          ],
+          "interaction": [
+            {
+              "code": "read",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "code": "search-type",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "identifier",
+              "definition": "http://hl7.org/fhir/SearchParameter/DocumentReference-identifier",
+              "type": "token",
+              "documentation": "Master Version Specific Identifier",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "identifier",
+              "definition": "http://hl7.org/fhir/SearchParameter/DocumentReference-masterIdentifier",
+              "type": "token",
+              "documentation": "Master Version Specific Identifier",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "description",
+              "definition": "http://hl7.org/fhir/SearchParameter/DocumentReference-description",
+              "type": "string",
+              "documentation": "Human-readable description",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "format",
+              "definition": "http://hl7.org/fhir/SearchParameter/DocumentReference-content-format",
+              "type": "token",
+              "documentation": "Format/content rules for the document",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "language",
+              "definition": "http://hl7.org/fhir/SearchParameter/DocumentReference-content-attachment-language",
+              "type": "token",
+              "documentation": "Human language of the content BCP-47",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "EvidenceVariable",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+              "valueCode": "SHALL"
+            }
+          ],
+          "profile": "http://hl7.org/fhir/StructureDefinition/EvidenceVariable",
+          "_profile": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                "valueCode": "SHALL"
+              }
+            ]
+          },
+          "supportedProfile": [
+            "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-evidence-variable-intervention-exposure|1.0.0"
+          ],
+          "_supportedProfile": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            }
+          ],
+          "interaction": [
+            {
+              "code": "read",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "code": "search-type",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "identifier",
+              "definition": "http://hl7.org/fhir/SearchParameter/EvidenceVariable-identifier",
+              "type": "token",
+              "documentation": "External identifier for the evidence variable",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "title",
+              "definition": "http://hl7.org/fhir/SearchParameter/EvidenceVariable-title",
+              "type": "string",
+              "documentation": "The human-friendly name of the evidence variable",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "description",
+              "definition": "http://hl7.org/fhir/SearchParameter/EvidenceVariable-description",
+              "type": "string",
+              "documentation": "The description of the evidence variable",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Group",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+              "valueCode": "SHALL"
+            }
+          ],
+          "profile": "http://hl7.org/fhir/StructureDefinition/Group",
+          "_profile": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                "valueCode": "SHALL"
+              }
+            ]
+          },
+          "supportedProfile": [
+            "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-group-actual|1.0.0",
+            "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-group-intended|1.0.0"
+          ],
+          "_supportedProfile": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            }
+          ],
+          "interaction": [
+            {
+              "code": "read",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "code": "search-type",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "actual",
+              "definition": "http://hl7.org/fhir/SearchParameter/Group-actual",
+              "type": "token",
+              "documentation": "Descriptive or actual",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "characteristic",
+              "definition": "http://hl7.org/fhir/SearchParameter/Group-characteristic",
+              "type": "token",
+              "documentation": "Kind of characteristic",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "value",
+              "definition": "http://hl7.org/fhir/SearchParameter/Group.characteristic.valueCodeableConcept",
+              "type": "token",
+              "documentation": "Value held by characteristic",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Organization",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+              "valueCode": "SHALL"
+            }
+          ],
+          "profile": "http://hl7.org/fhir/StructureDefinition/Organization",
+          "_profile": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                "valueCode": "SHALL"
+              }
+            ]
+          },
+          "supportedProfile": [
+            "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nnfdi4health-pr-mds-organization|1.0.0"
+          ],
+          "_supportedProfile": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            }
+          ],
+          "interaction": [
+            {
+              "code": "read",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "code": "search-type",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "identifier",
+              "definition": "http://hl7.org/fhir/SearchParameter/Organization-identifier",
+              "type": "token",
+              "documentation": "Any identifier for the organization - not the accreditation issuer's identifier",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "name",
+              "definition": "http://hl7.org/fhir/SearchParameter/Organization-name",
+              "type": "string",
+              "documentation": "A portion of the organization's name or alias",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "address",
+              "definition": "http://hl7.org/fhir/SearchParameter/Organization-address",
+              "type": "string",
+              "documentation": "A server defined search that may match any of the string fields in the Address - including line/ city/ district/ state/ country/ postalCode/ and/or text",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "partOf",
+              "definition": "http://hl7.org/fhir/SearchParameter/Organization-partOf",
+              "type": "reference",
+              "documentation": "An organization of which this organization forms a part",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "PractitionerRole",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+              "valueCode": "SHALL"
+            }
+          ],
+          "profile": "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+          "_profile": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                "valueCode": "SHALL"
+              }
+            ]
+          },
+          "supportedProfile": [
+            "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner-role|1.0.0"
+          ],
+          "_supportedProfile": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            }
+          ],
+          "interaction": [
+            {
+              "code": "read",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "code": "search-type",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "practitioner",
+              "definition": "http://hl7.org/fhir/SearchParameter/PractitionerRole-practitioner",
+              "type": "reference",
+              "documentation": "Practitioner that is able to provide the defined services for the organization",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "organization",
+              "definition": "http://hl7.org/fhir/SearchParameter/PractitionerRole-organization",
+              "type": "reference",
+              "documentation": "The identity of the organization the practitioner represents / acts on behalf of",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "phone",
+              "definition": "http://hl7.org/fhir/SearchParameter/PractitionerRole.telecom.system='phone'",
+              "type": "token",
+              "documentation": "A value in a phone contact",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Practitioner",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+              "valueCode": "SHALL"
+            }
+          ],
+          "profile": "http://hl7.org/fhir/StructureDefinition/Practitioner",
+          "_profile": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                "valueCode": "SHALL"
+              }
+            ]
+          },
+          "supportedProfile": [
+            "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner|1.0.0"
+          ],
+          "_supportedProfile": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            }
+          ],
+          "interaction": [
+            {
+              "code": "read",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "code": "search-type",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "identifier",
+              "definition": "http://hl7.org/fhir/SearchParameter/PractitionerRole-identifier",
+              "type": "token",
+              "documentation": "A practitioner's Identifier",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "name",
+              "definition": "http://hl7.org/fhir/SearchParameter/PractitionerRole-name",
+              "type": "string",
+              "documentation": "A server defined search that may match any of the string fields in the HumanName - including family/ give/ prefix/ suffix/ suffix/ and/or text\t",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "given",
+              "definition": "http://hl7.org/fhir/SearchParameter/PractitionerRole-name-given",
+              "type": "string",
+              "documentation": "A portion of the given name",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "family",
+              "definition": "http://hl7.org/fhir/SearchParameter/PractitionerRole-name-family",
+              "type": "string",
+              "documentation": "A portion of the family name",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Provenance",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+              "valueCode": "SHALL"
+            }
+          ],
+          "profile": "http://hl7.org/fhir/StructureDefinition/Provenance",
+          "_profile": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                "valueCode": "SHALL"
+              }
+            ]
+          },
+          "supportedProfile": [
+            "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-provenance|1.0.0"
+          ],
+          "_supportedProfile": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            }
+          ],
+          "interaction": [
+            {
+              "code": "read",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "code": "search-type",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "agent",
+              "definition": "http://hl7.org/fhir/SearchParameter/Provenance-agent",
+              "type": "reference",
+              "documentation": "Who participated",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "target",
+              "definition": "http://hl7.org/fhir/SearchParameter/Provenance-target",
+              "type": "reference",
+              "documentation": "Target References usually version specific",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "recorded",
+              "definition": "http://hl7.org/fhir/SearchParameter/Provenance-recorded",
+              "type": "date",
+              "documentation": "When the activity was recorded / updated",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Questionaire",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+              "valueCode": "SHALL"
+            }
+          ],
+          "profile": "http://hl7.org/fhir/StructureDefinition/Questionaire",
+          "_profile": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                "valueCode": "SHALL"
+              }
+            ]
+          },
+          "supportedProfile": [
+            "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire|1.0.0"
+          ],
+          "_supportedProfile": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            }
+          ],
+          "interaction": [
+            {
+              "code": "read",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "code": "search-type",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "identifier",
+              "definition": "http://hl7.org/fhir/SearchParameter/Questionaire-identifier",
+              "type": "token",
+              "documentation": "External identifier for the questionnaire",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "title",
+              "definition": "http://hl7.org/fhir/SearchParameter/Questionaire-title",
+              "type": "string",
+              "documentation": "The human-friendly name of the questionnaire",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "version",
+              "definition": "http://hl7.org/fhir/SearchParameter/Questionaire-version",
+              "type": "token",
+              "documentation": "The business version of the questionnaire",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "status",
+              "definition": "http://hl7.org/fhir/SearchParameter/Questionaire-status",
+              "type": "token",
+              "documentation": "The current status of the questionnaire",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "description",
+              "definition": "http://hl7.org/fhir/SearchParameter/Questionaire-description",
+              "type": "string",
+              "documentation": "The description of the questionnaire",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "ResearchStudy",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+              "valueCode": "SHALL"
+            }
+          ],
+          "profile": "http://hl7.org/fhir/StructureDefinition/ResearchStudy",
+          "_profile": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                "valueCode": "SHALL"
+              }
+            ]
+          },
+          "supportedProfile": [
+            "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study|1.0.0"
+          ],
+          "_supportedProfile": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            }
+          ],
+          "interaction": [
+            {
+              "code": "read",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "code": "search-type",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "category",
+              "definition": "http://hl7.org/fhir/SearchParameter/ResearchStudy-category",
+              "type": "token",
+              "documentation": "Classifications for the study",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "date",
+              "definition": "http://hl7.org/fhir/SearchParameter/ResearchStudy-period",
+              "type": "date",
+              "documentation": "When the study began and ended",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "focus",
+              "definition": "http://hl7.org/fhir/SearchParameter/ResearchStudy-focus",
+              "type": "token",
+              "documentation": "Drugs/devices/etc under study",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "identifier",
+              "definition": "http://hl7.org/fhir/SearchParameter/ResearchStudy-identifier",
+              "type": "token",
+              "documentation": "Business Identifier for study",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "keyword",
+              "definition": "http://hl7.org/fhir/SearchParameter/ResearchStudy-keyword",
+              "type": "token",
+              "documentation": "Used to search for the study",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "location",
+              "definition": "http://hl7.org/fhir/SearchParameter/ResearchStudy-location",
+              "type": "token",
+              "documentation": "Geographic regions for study",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "site",
+              "definition": "http://hl7.org/fhir/SearchParameter/ResearchStudy-site",
+              "type": "reference",
+              "documentation": "Facility where study activities are conducted",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "title",
+              "definition": "http://hl7.org/fhir/SearchParameter/ResearchStudy-site",
+              "type": "string",
+              "documentation": "Name for this study",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "date": "2023-11-02"
+}
