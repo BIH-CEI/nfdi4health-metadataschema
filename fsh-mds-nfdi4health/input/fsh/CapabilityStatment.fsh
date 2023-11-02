@@ -108,8 +108,10 @@ Usage: #definition
   * insert AddInteraction(#read, #SHALL)
   * insert AddInteraction(#search-type, #SHALL)
   // CORE
-  * insert AddSearchParameter(#SHALL, "practitioner", PractitionerRole-practitioner, #token, "")
-  * insert AddSearchParameter(#SHALL, "practitioner", PractitionerRole-practitioner, #token, "")
+  * insert AddSearchParameter(#SHALL, "identifier", PractitionerRole-identifier, #token, "A practitioner's Identifier")
+  * insert AddSearchParameter(#SHALL, "name", PractitionerRole-name, #string, "A server defined search that may match any of the string fields in the HumanName, including family, give, prefix, suffix, suffix, and/or text	")
+  * insert AddSearchParameter(#SHALL, "given", PractitionerRole-name-given, #string, "A portion of the given name")
+  * insert AddSearchParameter(#SHALL, "family", PractitionerRole-name-family, #string, "A portion of the family name")  
 //------------------
 // Provenance
 //------------------
@@ -118,6 +120,10 @@ Usage: #definition
   * insert AddSupportedProfile(nfdi4health-pr-mds-provenance|1.0.0, #SHALL)
   * insert AddInteraction(#read, #SHALL)
   * insert AddInteraction(#search-type, #SHALL)
+// CORE
+  * insert AddSearchParameter(#SHALL, "agent", Provenance-agent, #reference, "Who participated")
+  * insert AddSearchParameter(#SHALL, "target", Provenance-target, #reference, "Target References usually version specific")
+  * insert AddSearchParameter(#SHALL, "recorded", Provenance-recorded, #date, "When the activity was recorded / updated")   
 //------------------
 // Questionaire
 //------------------
@@ -126,6 +132,12 @@ Usage: #definition
   * insert AddSupportedProfile(nfdi4health-pr-mds-questionnaire|1.0.0, #SHALL)
   * insert AddInteraction(#read, #SHALL)
   * insert AddInteraction(#search-type, #SHALL)
+// CORE
+  * insert AddSearchParameter(#SHALL, "identifier", Questionaire-identifier, #token, "External identifier for the questionnaire")
+  * insert AddSearchParameter(#SHALL, "title", Questionaire-title, #string, "The human-friendly name of the questionnaire")
+  * insert AddSearchParameter(#SHALL, "version", Questionaire-version, #token, "The business version of the questionnaire")
+  * insert AddSearchParameter(#SHALL, "status", Questionaire-status, #token, "The current status of the questionnaire")  
+  * insert AddSearchParameter(#SHALL, "description", Questionaire-description, #string, "The description of the questionnaire")     
 //------------------
 // ResearchStudy
 //------------------
@@ -134,3 +146,12 @@ Usage: #definition
   * insert AddSupportedProfile(nfdi4health-pr-mds-study|1.0.0, #SHALL)
   * insert AddInteraction(#read, #SHALL)
   * insert AddInteraction(#search-type, #SHALL)
+  // CORE
+  * insert AddSearchParameter(#SHALL, "category", ResearchStudy-category, #token, "Classifications for the study")
+  * insert AddSearchParameter(#SHALL, "date", ResearchStudy-period, #date, "When the study began and ended")
+  * insert AddSearchParameter(#SHALL, "focus", ResearchStudy-focus, #token, "Drugs, devices, etc. under study")
+  * insert AddSearchParameter(#SHALL, "identifier", ResearchStudy-identifier, #token, "Business Identifier for study")
+  * insert AddSearchParameter(#SHALL, "keyword", ResearchStudy-keyword, #token, "Used to search for the study")
+  * insert AddSearchParameter(#SHALL, "location", ResearchStudy-location, #token, "Geographic regions for study")
+  * insert AddSearchParameter(#SHALL, "site", ResearchStudy-site, #reference, "Facility where study activities are conducted")
+  * insert AddSearchParameter(#SHALL, "title", ResearchStudy-site, #string, "Name for this study")
