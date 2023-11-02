@@ -1,0 +1,19 @@
+{
+  "resourceType": "CapabilityStatement",
+  "id": "nfdi4health-cps-mds-capability-statement",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/CapabilityStatement/nfdi4health-cps-mds-capability-statement",
+  "name": "NFDI4HEALTH_CPS_MDS_CAPABILITY_STATMENT",
+  "title": "Nfdi4Health CPS MDS Capability Statment",
+  "description": "The CapabilityStatement describes all mandatory interactions for a system to be conformant to the MDS of Nfdi4Health",
+  "kind": "requirements",
+  "fhirVersion": "4.0.1",
+  "format": [
+    "xml",
+    "json"
+  ],
+  "rest": [
+    {
+      "mode": "server"
+    }
+  ]
+}

@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "description": "Resource covering information about the provenance of a resource.",
+  "description": "Profile to collect information how data was collected - manually v.s. automatically - and the activities related to a resource - e.g., when it was uploaded, when it was published, when it was updated, etc. - and the persons or devices involved.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

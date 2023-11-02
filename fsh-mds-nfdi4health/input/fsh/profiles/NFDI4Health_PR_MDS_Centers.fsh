@@ -11,13 +11,18 @@ Description: "Resource covering metadata of a center."
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 
 * description 1..1
-* description ^definition = "Number of study centers" "Number of centers involved in the study."
+* description ^short = "Number of study centers" 
+* description ^definition = "Number of centers involved in the study."
+* extension ^slicing.discriminator.type = #value
+* extension ^slicing.discriminator.path = "url"
+* extension ^slicing.rules = #open
 * extension contains 
     NFDI4Health_EX_MDS_Centers named centers 1..1
+
 
 Mapping: NFDI4Health-Centers-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_PR_MDS_Centers
 * description -> "1.17.18 Resource.studyDesign.studyCentersNumber"
-* extension[centers] -> "1.17.17 Resource.studyDesign.studyCentersNumber"
+* extension[centers] -> "1.17.17 Resource.studyDesign.studyCenters"

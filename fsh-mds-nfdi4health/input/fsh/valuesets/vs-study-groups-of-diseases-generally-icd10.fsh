@@ -33,3 +33,7 @@ Description: "Value set defining codes from ICD-10 to specify groups of diseases
 * $ICD10#XIII "Diseases of the musculoskeletal system and connective tissue"
 * $ICD10#XII "Diseases of the skin and subcutaneous tissue"
 * $Remaining#161 "Conditions related to sexual health"
+* $ICD10#XVIII "Symptoms, signs and abnormal clinical and laboratory findings, not elsewhere classified"
+* $ICD10#XIX "Injury, poisoning and certain other consequences of external causes"
+* $ICD10#XX "External causes of morbidity and mortality"
+* $ICD10#XXI "Factors influencing health status and contact with health services"

@@ -95,6 +95,22 @@
           {
             "code": "XII",
             "display": "Diseases of the skin and subcutaneous tissue"
+          },
+          {
+            "code": "XVIII",
+            "display": "Symptoms, signs and abnormal clinical and laboratory findings, not elsewhere classified"
+          },
+          {
+            "code": "XIX",
+            "display": "Injury, poisoning and certain other consequences of external causes"
+          },
+          {
+            "code": "XX",
+            "display": "External causes of morbidity and mortality"
+          },
+          {
+            "code": "XXI",
+            "display": "Factors influencing health status and contact with health services"
           }
         ]
       },

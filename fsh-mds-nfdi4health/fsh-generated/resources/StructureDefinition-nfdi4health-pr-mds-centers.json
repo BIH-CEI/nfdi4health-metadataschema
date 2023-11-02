@@ -4,7 +4,7 @@
   "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-centers",
   "version": "0.9",
   "name": "NFDI4Health_PR_MDS_Centers",
-  "title": "NFDI4Health PR MDS Centers",
+  "title": "Profile intended to capture information on the number of centers invovled in a study",
   "status": "draft",
   "publisher": "NFDI4Health",
   "contact": [
@@ -52,7 +52,6 @@
               "path": "url"
             }
           ],
-          "ordered": false,
           "rules": "open"
         },
         "min": 1
@@ -74,13 +73,15 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.17 Resource.studyDesign.studyCentersNumber"
+            "map": "1.17.17 Resource.studyDesign.studyCenters"
           }
         ]
       },
       {
         "id": "Location.description",
         "path": "Location.description",
+        "short": "Number of study centers",
+        "definition": "Number of centers involved in the study.",
         "min": 1,
         "mapping": [
           {

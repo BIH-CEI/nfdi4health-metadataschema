@@ -1,0 +1,1481 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "nfdi4healthMetadataschema",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ImplementationGuide/nfdi4healthMetadataschema",
+  "version": "1.0",
+  "name": "NFDI4HealthMetadataschema",
+  "status": "draft",
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "name": "NFDI4Health",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "packageId": "nfdi4healthMetadataschema",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "packageId": "hl7.fhir.uv.extensions.r4",
+      "version": "1.0.0",
+      "uri": "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+      "id": "hl7_fhir_uv_extensions_r4"
+    }
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "ConceptMap/ConceptMap-Study-Allocation-NFDI4Health-to-UMLS"
+        },
+        "name": "ConceptMap-Study-Allocation-NFDI4Health-to-UMLS",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/ConceptMap-Study-Primary-Design-NFDI4Health-to-UMLS"
+        },
+        "name": "ConceptMap-Study-Primary-Design-NFDI4Health-to-UMLS",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/ConceptMap-Study-Sampling-Non-Probability-NFDI4Health-to-NCI"
+        },
+        "name": "ConceptMap-Study-Sampling-Non-Probability-NFDI4Health-to-NCI",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/ConceptMap-Study-Sampling-Probability-Method-NFDI4Health-to-NCI"
+        },
+        "name": "ConceptMap-Study-Sampling-Probability-Method-NFDI4Health-to-NCI",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/ConceptMap-Study-Time-Perspectives-NFDI4Health-to-UMLS"
+        },
+        "name": "ConceptMap-Study-Time-Perspectives-NFDI4Health-to-UMLS",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/ConceptMap-study-type-interventional-NFDI4Health-to-UMLS"
+        },
+        "name": "ConceptMap-study-type-interventional-NFDI4Health-to-UMLS",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "DocumentReference/InstanceOfDocumentHouseholdTransmissionInvestigationForC19"
+        },
+        "name": "Example of the NFDI4Health PR MDS Document - Household Transmission Investigation Protocol for Coronavirus Disease 2019 (COVID-19)",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-document"
+      },
+      {
+        "reference": {
+          "reference": "Organization/InstanceOfOrganizationCreatorCMI"
+        },
+        "name": "Example of the NFDI4Health PR MDS Organization - Child Mind Institute; New York State Nathan S. Kline Institute for Psychiatric Research",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+      },
+      {
+        "reference": {
+          "reference": "Organization/InstanceOfOrganizationCreatorCRISIS"
+        },
+        "name": "Example of the NFDI4Health PR MDS Organization - CRISIS research team",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+      },
+      {
+        "reference": {
+          "reference": "Organization/InstanceOfOrganizationCreatorIRM"
+        },
+        "name": "Example of the NFDI4Health PR MDS Organization - Intramural Research Program",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+      },
+      {
+        "reference": {
+          "reference": "Organization/InstanceOfOrganizationCreatorNIMH"
+        },
+        "name": "Example of the NFDI4Health PR MDS Organization - National Institute of Mental Health",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+      },
+      {
+        "reference": {
+          "reference": "Organization/OrganizationPublicExample"
+        },
+        "name": "Example of the NFDI4Health PR MDS Organization Public",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+      },
+      {
+        "reference": {
+          "reference": "Provenance/InstanceOfProvenance"
+        },
+        "name": "Example of the NFDI4Health PR MDS Provenance profil",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-provenance"
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/InstanceOfQuestionnaireWHOHouseholdTransmission"
+        },
+        "name": "Example of the NFDI4Health PR MDS Questionnaire - Data Dictionary for the WHO's Household transmission investigation protocol for coronavirus disease 2019 (COVID-19)",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire"
+      },
+      {
+        "reference": {
+          "reference": "EvidenceVariable/InstanceOfEvidenceVariableSPOVID"
+        },
+        "name": "Instance Of an Intervention Evidence Variable for SPOVID",
+        "description": "Example data representing an intervention in the SPOVID study - Sport & Long-COVID-Syndrome",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-evidence-variable-intervention-exposure"
+      },
+      {
+        "reference": {
+          "reference": "Group/InstanceOfGroupActualSHIP"
+        },
+        "name": "Instance Of Group Actual",
+        "description": "Example data about actual study participants in the SHIP Trend study - Study of Health in Pomerania Trend",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-group-actual"
+      },
+      {
+        "reference": {
+          "reference": "Group/InstanceOfGroupIntendedSHIP"
+        },
+        "name": "Instance Of Group Intended for SHIP Trend",
+        "description": "Example data of eligibility information from the SHIP Trend study - Study of Health in Pomerania Trend",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-group-intended"
+      },
+      {
+        "reference": {
+          "reference": "Group/InstanceOfGroupIntendedSPOVID"
+        },
+        "name": "Instance Of Group Intended for SPOVID",
+        "description": "Example data of eligibility information from the SPOVID study - Sport & Long-COVID-Syndrom",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-group-intended"
+      },
+      {
+        "reference": {
+          "reference": "Location/InstanceOfLocationMono"
+        },
+        "name": "Instance of Monocentric Study",
+        "description": "Example for monocentric study SHIP",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-centers"
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/InstanceOfPractitionerNinaKirchhof"
+        },
+        "name": "Instance Of NFDI4Health_PR_MDS_Practitioner for Nina Kirchhof",
+        "description": "Example data representing the practitioner Nina Kirchhof",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner"
+      },
+      {
+        "reference": {
+          "reference": "PractitionerRole/InstanceOfPractitionerRoleKathleenMerikangas"
+        },
+        "name": "Instance Of NFDI4Health_PR_MDS_Practitioner_Role for Kathleen Merikangas",
+        "description": "Example data representing the practitioner role of Kathleen Merikangas",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner-role"
+      },
+      {
+        "reference": {
+          "reference": "PractitionerRole/InstanceOfPractitionerRoleNinaKirchhof"
+        },
+        "name": "Instance Of NFDI4Health_PR_MDS_Practitioner_Role for Nina Kirchhof",
+        "description": "Example data representing the practitioner role of Nina Kirchhof",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner-role"
+      },
+      {
+        "reference": {
+          "reference": "Organization/InstanceOfOrganizationBMBF"
+        },
+        "name": "Instance Of Organization Bundesministerium für Bildung und Forschung",
+        "description": "Example data representing the Bundesministerium für Bildung und Forschung",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+      },
+      {
+        "reference": {
+          "reference": "Organization/InstanceOfOrganizationIMIBE"
+        },
+        "name": "Instance Of Organization Institut für Medizinische Informatik, Biometrie und Epidemiologie of Universitätsklinikum Essen",
+        "description": "Example data representing the Institut für Medizinische Informatik, Biometrie und Epidemiologie of Universitätsklinikum Essen",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+      },
+      {
+        "reference": {
+          "reference": "Organization/InstanceOfOrganizationISTHochschule"
+        },
+        "name": "Instance Of Organization IST Hochschule für Management GmbH",
+        "description": "Example data representing the IST Hochschule für Management GmbH",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+      },
+      {
+        "reference": {
+          "reference": "Organization/InstanceOfOrganizationMHH"
+        },
+        "name": "Instance Of Organization Medizinische Hochschule Hannover",
+        "description": "Example data representing the Medizinische Hochschule Hannover",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+      },
+      {
+        "reference": {
+          "reference": "Organization/InstanceOfOrganizationResearchGroupRNCM"
+        },
+        "name": "Instance Of Organization Research Group",
+        "description": "Example data representing the research group 'Research Netwerk Community Medicine'",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+      },
+      {
+        "reference": {
+          "reference": "Organization/InstanceOfOrganizationRuhrUniBochum"
+        },
+        "name": "Instance Of Organization Ruhr-Universität Bochum, Lehr und Forschungsbereich 'Trainingswissenschaft'",
+        "description": "Example data representing the Ruhr-Universität Bochum, Lehr und Forschungsbereich 'Trainingswissenschaft'",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+      },
+      {
+        "reference": {
+          "reference": "Organization/InstanceOfOrganizationUMG"
+        },
+        "name": "Instance Of Organization UMG",
+        "description": "Example data representing an university",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+      },
+      {
+        "reference": {
+          "reference": "Organization/InstanceOfOrganizationUniDuisburgEssen"
+        },
+        "name": "Instance Of Organization Universität Duisburg-Essen",
+        "description": "Example data representing the Universität Duisburg-Essen",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+      },
+      {
+        "reference": {
+          "reference": "Organization/InstanceOfOrganizationUniklinikumEssen"
+        },
+        "name": "Instance Of Organization Universitätsklinikum Essen",
+        "description": "Example data representing the Universitätsklinikum Essen",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+      },
+      {
+        "reference": {
+          "reference": "Organization/InstanceOfOrganizationContactWHO"
+        },
+        "name": "Instance Of Organization World Health Organization (WHO) as contact",
+        "description": "Example data representing the World Health Organization (WHO) as contact",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+      },
+      {
+        "reference": {
+          "reference": "Organization/InstanceOfOrganizationCreatorWHO"
+        },
+        "name": "Instance Of Organization World Health Organization (WHO) as creator",
+        "description": "Example data representing the World Health Organization (WHO) as creator",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/InstanceOfPractitionerKathleenMerikangas"
+        },
+        "name": "Instance Of Practitioner Kathleen Merikangas",
+        "description": "Example of the NFDI4Health PR MDS Practitioner",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner"
+      },
+      {
+        "reference": {
+          "reference": "Provenance/InstanceOfProvenanceAutomaticallyUploadedFromCTgov"
+        },
+        "name": "Instance Of Provenance Automatically Uploaded From CTgov",
+        "description": "Example of the NFDI4Health PR MDS Provenance profile for a resource automatically uploaded from CT.gov",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-provenance"
+      },
+      {
+        "reference": {
+          "reference": "Provenance/InstanceOfProvenanceManuallyCollectedSHIPTrend"
+        },
+        "name": "Instance Of Provenance Manually Collected (SHIP Trend)",
+        "description": "Example of the NFDI4Health PR MDS Provenance profile for a resource manually collected - in this case: SHIP Trend",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-provenance"
+      },
+      {
+        "reference": {
+          "reference": "ResearchStudy/InstanceOfStudySHIP"
+        },
+        "name": "Instance of Study SHIP TREND",
+        "description": "Example data from the SHIP Trend study - Study of Health in Pomerania Trend",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+      },
+      {
+        "reference": {
+          "reference": "ResearchStudy/InstanceOfStudySPOVID"
+        },
+        "name": "Instance of Study SPOVID",
+        "description": "Example data from the SPOVID study - Sports & Long-COVID-Syndrome",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-cd-common-chronic-disease-name-snomedct"
+        },
+        "name": "NFDI4Health CD Common Chronic Disease Name [SNOMED CT]",
+        "description": "Value set used to respond to question common chronic disease name to Chronic Disease Module",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/nfdi4health-cs-mds-label-fhir"
+        },
+        "name": "NFDI4Health CS MDS Label for use in FHIR according to R5 Study Label",
+        "description": "Code system defining remaining concepts without mapping to concepts from international terminologies, ontologies, classifications, etc..",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/nfdi4health-cs-mds-provenance-data-source"
+        },
+        "name": "NFDI4Health CS MDS Provenance Data Source",
+        "description": "Code system defining data sources in a Provenance resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/nfdi4health-cs-mds-remaining-concepts"
+        },
+        "name": "NFDI4Health CS MDS Remaining Concepts",
+        "description": "Code system defining remaining concepts without mapping to concepts from international terminologies, ontologies, classifications, etc..",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/nfdi4health-cs-mds-study-status"
+        },
+        "name": "NFDI4Health CS MDS Study Status",
+        "description": "Code system defining concepts about different status of a study.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-cd-datacollected-umls"
+        },
+        "name": "NFDI4Health Data Collected [UMLS]",
+        "description": "Value set used to respond to question dataCollected to Chronic Disease Module",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-cd-information-sources-umls-local"
+        },
+        "name": "NFDI4Health Data Collected [UMLS]",
+        "description": "Value set used to respond to question dataCollected to Chronic Disease Module",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-associated-party"
+        },
+        "name": "NFDI4Health EX MDS Associated Party",
+        "description": "Group of items providing information about person(s), group(s) of persons or institution(s)/organisation(s) contributing to the resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-centers"
+        },
+        "name": "NFDI4Health EX MDS Centers",
+        "description": "Extension informing about the number of centers.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-chronic-diseases"
+        },
+        "name": "NFDI4Health EX MDS Chronic Diseases",
+        "description": "Extension asking if information about chronic diseases was collected",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-copyright-label"
+        },
+        "name": "NFDI4Health EX MDS Copyright Label",
+        "description": "Extension providing information about the license applying to the resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-document-use-rights"
+        },
+        "name": "NFDI4Health EX MDS Document Use Rights",
+        "description": "Extension providing information about the rights to (re-)use the [RESOURCE].",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-execution-language"
+        },
+        "name": "NFDI4Health EX MDS Execution Language",
+        "description": "Extension provinding information about the language in which a study/substudy is conducted, or the language in which a document is composed.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-format"
+        },
+        "name": "NFDI4Health EX MDS Format",
+        "description": "Extension providing information about the format of a resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-fundingID"
+        },
+        "name": "NFDI4Health EX MDS FundingID",
+        "description": "Extension providing information about the identifier assigned by a funder to the resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-identifier-assignment-date"
+        },
+        "name": "NFDI4Health EX MDS Identifier Assignment Date",
+        "description": "Extension to store the date when an identifier was assigned.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-keywords"
+        },
+        "name": "NFDI4Health EX MDS Keyword",
+        "description": "Extension storing keyword(s) describing a resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-label"
+        },
+        "name": "NFDI4Health EX MDS Label",
+        "description": "Extension covering information about additional title(s), name(s) and acronym(s) of a resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-language"
+        },
+        "name": "NFDI4Health EX MDS Language",
+        "description": "Language of an element.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-mortality-data"
+        },
+        "name": "NFDI4Health EX MDS Mortality Data",
+        "description": "Extension covering information about the collection of mortality data",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-nutritional-data"
+        },
+        "name": "NFDI4Health EX MDS Nutritional Data",
+        "description": "Extension asking if nutritional data was collected",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-off-label-use"
+        },
+        "name": "NFDI4Health EX MDS Off Label Use",
+        "description": "Extension informing the unapproved (off-label) use of a drug product in a study.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-provenance-data-source"
+        },
+        "name": "NFDI4Health EX MDS Provenance Data Source",
+        "description": "Extension providing information about the source of information of the resource and the way it was uploaded/collected.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-related-artifact-identifier-date"
+        },
+        "name": "NFDI4Health EX MDS Related Artifact Identifier Date",
+        "description": "Extension storing the date when an identifier was assigned to a related resources.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-related-artifact-nfdi"
+        },
+        "name": "NFDI4Health EX MDS Related Artifact NFDI",
+        "description": "RelatedArtifact intended to capture information about related NFDI4Health resources.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-related-artifact-nfdi-identifier"
+        },
+        "name": "NFDI4Health EX MDS Related Artifact NFDI Identifier",
+        "description": "Extension storing the information of the NFDI4Health identifier of the related resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-related-artifact-non-nfdi"
+        },
+        "name": "NFDI4Health EX MDS Related Artifact Non NFDI",
+        "description": "RelatedArtifact intended to capture information about Resources other than NFDI4Health resources.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-related-artifact-nfdi-non-nfdi-identifier"
+        },
+        "name": "NFDI4Health EX MDS Related Artifact Non NFDI Identifier",
+        "description": "Extension storing the information of the Non NFDI4Health identifier of the related resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-related-artifact-reltype-nfdi-resource"
+        },
+        "name": "NFDI4Health EX MDS Related Artifact Relation Type NFDI4Health Resource",
+        "description": "Extension providing information about the relation type of this resource with a related resource registered on the NFDI4Health portal.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-related-artifact-reltype-non-nfdi-resource"
+        },
+        "name": "NFDI4Health EX MDS Related Artifact Relation Type Non NFDI4Health Resource",
+        "description": "Extension providing information about the relation type of this resource with a related resource not registered on the NFDI4Health portal.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-related-artifact-nfdi-scheme"
+        },
+        "name": "NFDI4Health EX MDS Related Artifact Scheme",
+        "description": "Type of the identifier of the related resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-resource-type"
+        },
+        "name": "NFDI4Health EX MDS Resource Type",
+        "description": "Extension providing information about the resource type.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-resource-type-general"
+        },
+        "name": "NFDI4Health EX MDS Resource Type General",
+        "description": "Extension providing information about the general resource type.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-study-assessments"
+        },
+        "name": "NFDI4Health EX MDS Study Assessments",
+        "description": "Extension providing information about assessments/measurements included in the study.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-study-biospecimen"
+        },
+        "name": "NFDI4Health EX MDS Study Biospecimen",
+        "description": "Extension indicating whether samples of biomaterial from study participants are retained in a biorepository, and providing additional information on these biosamples.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-study-comparison-group"
+        },
+        "name": "NFDI4Health EX MDS Study Comparison Group",
+        "description": "Extension providing information about the arm(s)/group(s)/cohort(s) and intervention(s)/exposure(s) in a study.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-study-data-sharing-plan"
+        },
+        "name": "NFDI4Health EX MDS Study Data Sharing Plan",
+        "description": "Extension  providing information about the data sharing strategy of the study.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-study-data-source"
+        },
+        "name": "NFDI4Health EX MDS Study Data Source",
+        "description": "Extension informing about data sources from which study data are generated or extracted.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-study-eligibility-criteria-exclusion-criteria"
+        },
+        "name": "NFDI4Health EX MDS Study Eligibility Criteria Exclusion Criteria",
+        "description": "Extension informing about the exclusion criteria.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-study-eligibility-criteria-inclusion-criteria"
+        },
+        "name": "NFDI4Health EX MDS Study Eligibility Criteria Inclusion Criteria",
+        "description": "Extension informing about the inclusion criteria.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-study-ethics-committee-approval"
+        },
+        "name": "NFDI4Health EX MDS Study Ethics Committee Approval",
+        "description": "Extension informing about the status of the study approval from the (leading) ethics committee",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-study-groups-of-diseases"
+        },
+        "name": "NFDI4Health EX MDS Study Groups Of Diseases",
+        "description": "Extension covering information about groups of diseases or conditions on which the data were collected in the study.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-study-masking"
+        },
+        "name": "NFDI4Health EX MDS Study Masking",
+        "description": "Group of items providing information about the masking of intervention(s) assignment",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-study-outcomes"
+        },
+        "name": "NFDI4Health EX MDS Study Outcomes",
+        "description": "Extension providing information about outcome measure(s).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-study-population"
+        },
+        "name": "NFDI4Health EX MDS Study Population",
+        "description": "Extension providing a description of the study population.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-study-status"
+        },
+        "name": "NFDI4Health EX MDS Study Status",
+        "description": "Extension informing about the status of a study.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-study-status-halted-stage"
+        },
+        "name": "NFDI4Health EX MDS Study Status Halted Stage",
+        "description": "Extension informing about the stage when at what a study was halted.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-study-subject"
+        },
+        "name": "NFDI4Health EX MDS Study Subject",
+        "description": "Extension informing about the subject of a study.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-study-target-followup-duration"
+        },
+        "name": "NFDI4Health EX MDS Study Target Followup Duration",
+        "description": "Extension informing about the target follow-up duration of a study.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-study-time-perspectives"
+        },
+        "name": "NFDI4Health EX MDS Study Time Perspectives",
+        "description": "Extension informing about the temporal design of a study.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-uri"
+        },
+        "name": "NFDI4Health EX MDS URI",
+        "description": "Extension defining an URI",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-use-rights-confirmations"
+        },
+        "name": "NFDI4Health EX MDS Use Rights Confirmations",
+        "description": "Extension providing information about licensing, if a Creative Commons liesense is selected.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-version"
+        },
+        "name": "NFDI4Health EX MDS Version",
+        "description": "Extension providing information about the version of a resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-lm-metadataschema-eocd-v3"
+        },
+        "name": "NFDI4Health LM Epidemiology of Chronic Diseases Metadataschema (UC 5.2) V3",
+        "description": "NFDI4Health LogicalModel Epidemiology of Chronic Diseases Metadataschema (Use Case 5.2) V3",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-lm-metadataschema-general-v3"
+        },
+        "name": "NFDI4Health LM General Metadataschema V3",
+        "description": "NFDI4Health LogicalModel General Metadataschema",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-lm-metadataschema-ne-v3"
+        },
+        "name": "NFDI4Health LM Nutritional Epidemiology Metadataschema (UC 5.1) V3",
+        "description": "NFDI4Health LogicalModel Nutritional Epidemiology Metadataschema (Use Case 5.1) V3",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/InstanceOfChronicDiseaseModule"
+        },
+        "name": "NFDI4Health Module Epidemiology of Chronic Diseases Metadataschema (UC 5.2) V3",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/InstanceOfNutritionalEpidemiologyModule"
+        },
+        "name": "NFDI4Health Module Nutritional Epidemiology Metadataschema (Use Case 5.1) V3",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-ne-device-nci-snomedct-local"
+        },
+        "name": "NFDI4Health NE Device [NCI, SNOMED CT, Local]",
+        "description": "Value Set to define the device used within Diet Assessment",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-ne-instrument-snomedct-nci-local"
+        },
+        "name": "NFDI4Health NE Instrument [NCI, Local]",
+        "description": "Value Set to define the instruments used within Diet Assessment",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-ne-mode-umls-local"
+        },
+        "name": "NFDI4Health NE Mode [UMLS, Local]",
+        "description": "Value Set to define the mode within Diet Assessment",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-ne-portion-size-snomedct-local"
+        },
+        "name": "NFDI4Health NE Portion Size [SNOMED CT, Local]",
+        "description": "Value Set to define the portion size used within Diet Assessment",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-ne-reference-period-unit-snomedct"
+        },
+        "name": "NFDI4Health NE Portion Size [SNOMED CT]",
+        "description": "Value Set to define the reference period unit used within Diet Assessment",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-pr-mds-document"
+        },
+        "name": "NFDI4Health PR MDS Document",
+        "description": "Profile to collect information about documents related to german clinical, epidemiological or Public health studies ",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-pr-mds-evidence-variable-intervention-exposure"
+        },
+        "name": "NFDI4Health PR MDS Evidence Variable Intervention Exposure",
+        "description": "Information about the intervention or exposure in a study.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-pr-mds-group-actual"
+        },
+        "name": "NFDI4Health PR MDS Group Actual",
+        "description": "Information about the actual study population",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-pr-mds-group-intended"
+        },
+        "name": "NFDI4Health PR MDS Group Intended",
+        "description": "Information about the eligibility criteria in a study",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-pr-mds-organization"
+        },
+        "name": "NFDI4Health PR MDS Organization",
+        "description": "To collect information on rganizations/institutions having roles and the affiliation and address of persons having roles.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-pr-mds-practitioner"
+        },
+        "name": "NFDI4Health PR MDS Practitioner",
+        "description": "Profile to collect information about persons having roles.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-pr-mds-practitioner-role"
+        },
+        "name": "NFDI4Health PR MDS Practitioner Role",
+        "description": "Profile to collect information about the contact information and affiliations of persons having roles.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-pr-mds-provenance"
+        },
+        "name": "NFDI4Health PR MDS Provenance",
+        "description": "Profile to collect information how data was collected - manually v.s. automatically - and the activities related to a resource - e.g., when it was uploaded, when it was published, when it was updated, etc. - and the persons or devices involved.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-pr-mds-questionnaire"
+        },
+        "name": "NFDI4Health PR MDS Questionnaire",
+        "description": "Profile collecting information on questionnaires within NFDI4Health.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-pr-mds-related-artifact-resource"
+        },
+        "name": "NFDI4Health PR MDS Related Artifact Resource",
+        "description": "Profile of a RelatedArtifact intended to capture information about the webpage and other related resources of the NFDI4Health resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-countries-iso"
+        },
+        "name": "NFDI4Health VS MDS Countries [ISO]",
+        "description": "Value set defining codes countries where the study takes place.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-execution-language-iso"
+        },
+        "name": "NFDI4Health VS MDS Execution Language [ISO]",
+        "description": "Value set defining codes of the languages of the resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-id-type-umls-local"
+        },
+        "name": "NFDI4Health VS MDS ID Type [UMLS, local]",
+        "description": "Value set defining codes to specify the type of a resource identifier.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-identifier-type-related-artifact-umls-local"
+        },
+        "name": "NFDI4Health VS MDS Identifier Type Related Artifact [UMLS, local]",
+        "description": "Value set defining codes to specify the ID Type of the related resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-label-type-local"
+        },
+        "name": "NFDI4Health VS MDS Label Type [Local]",
+        "description": "Value set used to express the reason and specific aspect for the variant title, such as language and specific language. Comment : Build based on HL7 Value Set specified in FHIR R5",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-mortality-data-nci"
+        },
+        "name": "NFDI4Health VS MDS Mortality Data [NCI]",
+        "description": "Value set defining codes to specify if mortality data were collected in a study.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-organisational-roles-nci-local"
+        },
+        "name": "NFDI4Health VS MDS Organisational Roles [NCI, local]",
+        "description": "Value set defining codes for organisational roles.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-personal-roles-nci-umls-local"
+        },
+        "name": "NFDI4Health VS MDS Personal Roles [NCI, UMLS, local]",
+        "description": "Value set defining codes for personal roles.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-provenance-activity-hl7-local"
+        },
+        "name": "NFDI4Health VS MDS Provenance Activity [HL7, local]",
+        "description": "Value set defining codes for activity types.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-provenance-data-source-local"
+        },
+        "name": "NFDI4Health VS MDS Provenance Data Source [local]",
+        "description": "Value set created by NFDI4Health defining codes for data sources in a Provenance resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-time-units-ucum-umls"
+        },
+        "name": "NFDI4Health VS MDS Provenance Time Units [UCUM, UMLS]",
+        "description": "Value set defining codes for time units from UCUM and UMLS.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-relation-type-ids-nfdi-local"
+        },
+        "name": "NFDI4Health VS MDS Relation Type Ids NFDI [local]",
+        "description": "Value set defining codes to specify the relationship between two resources (both registered in NFDI4Health).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-relation-type-ids-local"
+        },
+        "name": "NFDI4Health VS MDS Relation Type Ids [local]",
+        "description": "Value set defining codes to specify the relationship between two resources.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-resource-type-general-nci-umls-local"
+        },
+        "name": "NFDI4Health VS MDS Resource Type General [NCI, UMLS, local]",
+        "description": "Value set defining codes to specify the the general resource type.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-resource-type-umls-local"
+        },
+        "name": "NFDI4Health VS MDS Resource Type [UMLS, Local]",
+        "description": "Value set defining codes to specify type of the resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-role-affiliation-identifier-scheme-local"
+        },
+        "name": "NFDI4Health VS MDS Role Affiliation Identifier Scheme [local]",
+        "description": "Value set defining codes to specify the identifier scheme of an affiliation identifier.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-role-name-identifier-scheme-local"
+        },
+        "name": "NFDI4Health VS MDS Role Name Identifier Scheme [local]",
+        "description": "Value set defining codes to specify the identifier scheme of a personal identifier.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-role-name-personal-title-nci"
+        },
+        "name": "NFDI4Health VS MDS Role Name Personal Title [NCI]",
+        "description": "Value set defining codes to specify personal titles.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-role-name-type-umls"
+        },
+        "name": "NFDI4Health VS MDS Role Name Type [UMLS]",
+        "description": "Value set defining codes to specify role types.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-allocation-local"
+        },
+        "name": "NFDI4Health VS MDS Study Allocation [Local]",
+        "description": "Value set defining codes to specify the subject allocation in a study.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-allocation-nci"
+        },
+        "name": "NFDI4Health VS MDS Study Allocation [NCI]",
+        "description": "Value set defining codes to specify the subject allocation in a study.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-arm-group-type-umls"
+        },
+        "name": "NFDI4Health VS MDS Study Arm Group Type [UMLS]",
+        "description": "Value set defining codes to specify the role of a study arm or group in a ResearchStudy resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-assessments-snomedct-umls"
+        },
+        "name": "NFDI4Health VS MDS Study Assessments [SNOMED CT, UMLS]",
+        "description": "Value set defining codes to specify an assessment in a ResearchStudy resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-biospecimen-retention-umls"
+        },
+        "name": "NFDI4Health VS MDS Study Biospecimen Retention [UMLS]",
+        "description": "Value set defining codes to specify which biosamples are retained in a biorepository.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-centers-snomedct-local"
+        },
+        "name": "NFDI4Health VS MDS Study Centers [SNOMED CT, local]",
+        "description": "Value set defining codes to specify the number of study center(s) in a ResearchStudy resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-conditions-classification-umls"
+        },
+        "name": "NFDI4Health VS MDS Study Conditions Classification [UMLS]",
+        "description": "Value set defining codes to specify the terminology/classification used for the health condition, disease or focus.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-data-sharing-plan-ds-snomedct-umls"
+        },
+        "name": "NFDI4Health VS MDS Study Data Sharing Plan Datashield [SNOMED CT, UMLS]",
+        "description": "Value set defining codes to specify if the DataSHIELD/Opal infrastructure is available.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-data-sharing-plan-sup-inf-umls-local"
+        },
+        "name": "NFDI4Health VS MDS Study Data Sharing Plan Supporting Information [UMLS, local]",
+        "description": "Value set defining codes to specify which supporting information/documents will be made available in addition to the study data.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-ds-biosamples-snomedct-nci-umls"
+        },
+        "name": "NFDI4Health VS MDS Study Data Sources Biosamples [SNOMED CT, NCI, UMLS]",
+        "description": "Value set defining codes to specify a biosample data source.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-data-sources-general-umls-local"
+        },
+        "name": "NFDI4Health VS MDS Study Data Sources General [UMLS, local]",
+        "description": "Value set defining codes to specify the general study data sources.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-data-sources-imaging-nci"
+        },
+        "name": "NFDI4Health VS MDS Study Data Sources Imaging [NCI]",
+        "description": "Value set defining codes to specify an imaging data source.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-data-sources-omics-nci-umls"
+        },
+        "name": "NFDI4Health VS MDS Study Data Sources Omics [NCI, UMLS]",
+        "description": "Value set defining codes to specify the omics technology applied in the study.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-eligibility-gender-snomedct-local"
+        },
+        "name": "NFDI4Health VS MDS Study Eligibility Criteria Genders [local, SNOMED CT]",
+        "description": "Value set used to indicate the gender of potential participants eligible to participate in the study.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-ethics-committee-approval-umls-local"
+        },
+        "name": "NFDI4Health VS MDS Study Ethics Commitee Approval [UMLS, local]",
+        "description": "Value set defining codes to specify the status of the study ethics committee approval.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-group-characteristics-nci"
+        },
+        "name": "NFDI4Health VS MDS Study Group Characteristics [NCI]",
+        "description": "Value set defining codes that identify the kind of trait being asserted in a study group.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-diseases-generally-icd10-umls-local"
+        },
+        "name": "NFDI4Health VS MDS Study Groups Of Diseases Generally [ICD 10, UMLS, local",
+        "description": "Value set defining codes from ICD-10 to specify groups of diseases or conditions on which the data were collected in the study.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-intervention-type-nci-umls"
+        },
+        "name": "NFDI4Health VS MDS Study Intervention Type [NCI, UMLS]",
+        "description": "Value set defining codes to specify the general type of the given intervention/exposure in the study.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-masking-roles-nci-local"
+        },
+        "name": "NFDI4Health VS MDS Study Masking Roles [NCI, local]",
+        "description": "Value set defining codes to specify the party(ies) who are masked if masking is implemented.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-outcome-type-umls"
+        },
+        "name": "NFDI4Health VS MDS Study Outcome Type [UMLS]",
+        "description": "Value set defining codes to specify the type of outcome measure.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-overall-status-umls-local"
+        },
+        "name": "NFDI4Health VS MDS Study Overall Status [UMLS, Local]",
+        "description": "Value set defining codes to specify the overall status of a study.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-phase-nci"
+        },
+        "name": "NFDI4Health VS MDS Study Phase [NCI]",
+        "description": "Value set defining codes to specify the phase of a study in a ResearchStudy resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-primary-design-local"
+        },
+        "name": "NFDI4Health VS MDS Study Primary Design [Local]",
+        "description": "Value set defining codes for primary designs of studies in a ResearchStudy resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-primary-design-umls"
+        },
+        "name": "NFDI4Health VS MDS Study Primary Design [UMLS]",
+        "description": "Value set defining codes for primary designs of studies in a ResearchStudy resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-primary-purpose-umls-nci"
+        },
+        "name": "NFDI4Health VS MDS Study Primary Purpose [UMLS, NCI]",
+        "description": "Value set defining codes to specify the primary purpose of a study in a ResearchStudy resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-recruitment-status-register-umls-local"
+        },
+        "name": "NFDI4Health VS MDS Study Recruitment Status Register [UMLS, Local]",
+        "description": "Value set defining codes to specify the study recruitment status (from a register) in a ResearchStudy resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-sampling-method-non-prob-local"
+        },
+        "name": "NFDI4Health VS MDS Study Sampling Method Non Probability [local]",
+        "description": "Value set defining codes to specify types of non-probability sampling methods.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-sampling-method-non-prob-nci-local"
+        },
+        "name": "NFDI4Health VS MDS Study Sampling Method Non Probability [NCI, local]",
+        "description": "Value set defining codes to specify types of non-probability sampling methods.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-sampling-method-local"
+        },
+        "name": "NFDI4Health VS MDS Study Sampling Method [local]",
+        "description": "Value set defining codes to specify types of sampling methods.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-sampling-method-nci-local"
+        },
+        "name": "NFDI4Health VS MDS Study Sampling Method [NCI, local]",
+        "description": "Value set defining codes to specify types of sampling methods.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-sampling-prob-method-local"
+        },
+        "name": "NFDI4Health VS MDS Study Sampling Probability Method [Local]",
+        "description": "Value set defining codes to specify types of probability sampling methods.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-sampling-prob-method-nci-local"
+        },
+        "name": "NFDI4Health VS MDS Study Sampling Probability Method [NCI, Local]",
+        "description": "Value set defining codes to specify types of probability sampling methods.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-status-halted-stage-local"
+        },
+        "name": "NFDI4Health VS MDS Study Status Halted Stage [Local]",
+        "description": "Value set defining codes to specify the status of a study when it was halted.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-status-when-intervention-local"
+        },
+        "name": "NFDI4Health VS MDS Study Status When Intervention [Local]",
+        "description": "Value set defining codes to specify the status of a study in case of an intervention in a ResearchStudy resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-subject-snomedct"
+        },
+        "name": "NFDI4Health VS MDS Study Subject [SNOMED CT]",
+        "description": "Value set defining codes for study sujects in a ResearchStudy resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-time-perspectives-local"
+        },
+        "name": "NFDI4Health VS MDS Study Time Perspectives [Local]",
+        "description": "Value set defining codes to specify the time perspective of a study in a ResearchStudy resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-time-perspectives-umls"
+        },
+        "name": "NFDI4Health VS MDS Study Time Perspectives [UMLS]",
+        "description": "Value set defining codes to specify the time perspective of a study in a ResearchStudy resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-type-interventional-local"
+        },
+        "name": "NFDI4Health VS MDS Study Type Interventional [Local]",
+        "description": "Value set defining codes to specify the type of an interventional study in a ResearchStudy resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-type-interventional-umls"
+        },
+        "name": "NFDI4Health VS MDS Study Type Interventional [UMLS]",
+        "description": "Value set defining codes to specify the type of an interventional study in a ResearchStudy resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-type-non-interventional-local"
+        },
+        "name": "NFDI4Health VS MDS Study Type Non Interventional [local]",
+        "description": "Value set defining codes to specify the type of a non interventional study in a ResearchStudy resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-type-non-interventional-umls-local"
+        },
+        "name": "NFDI4Health VS MDS Study Type Non Interventional [UMLS, local]",
+        "description": "Value set defining codes to specify the type of a non interventional study in a ResearchStudy resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-use-rights-label-spdx-umls-local"
+        },
+        "name": "NFDI4Health VS MDS Use Rights Label [SPDX, UMLS, Local]",
+        "description": "Value set used to indicate the use rights related to a resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-yes-no-not-applicable-snomedct"
+        },
+        "name": "NFDI4Health VS MDS Yes, No, Not Applicable [SNOMED CT]",
+        "description": "Value set used to respond to questions that can be answered Yes, No, or Not Applicable.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-yes-no-undecided-snomedct-nci"
+        },
+        "name": "NFDI4Health VS MDS Yes, No, Undecided [SNOMED CT, NCI]",
+        "description": "Value set used to respond to questions that can be answered Yes, No, or Undecided",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CapabilityStatement/nfdi4health-cps-mds-capability-statement"
+        },
+        "name": "nfdi4health-cps-mds-capability-statement",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-related"
+        },
+        "name": "NFDI4Health_EX_MDS_Related",
+        "description": "Extension providing information about related publications, datasets, study documents, web pages, etc.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-language-nonenglish-umls"
+        },
+        "name": "NFDI4Health_VS_MDS_Language_NonEnglish_UMLS",
+        "description": "Value set defining codes for languages other than English from UMLS.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-language-umls"
+        },
+        "name": "NFDI4Health_VS_MDS_Language_UMLS",
+        "description": "Value set defining codes for languages from UMLS.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-pr-mds-centers"
+        },
+        "name": "Profile intended to capture information on the number of centers invovled in a study",
+        "description": "Resource covering metadata of a center.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-pr-mds-study"
+        },
+        "name": "Profile to collect information about german (or with at least one study center in Germany) clinical, epidemiological or Public health studies that were uploaded in NFDI4Health",
+        "description": "Resource covering metadata of a study.",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2022+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      }
+    ]
+  }
+}

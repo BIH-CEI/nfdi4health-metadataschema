@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "description": "Resource covering metadata of a document.",
+  "description": "Profile to collect information about documents related to german clinical, epidemiological or Public health studies ",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

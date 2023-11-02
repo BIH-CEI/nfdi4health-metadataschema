@@ -17,6 +17,7 @@
       ]
     }
   ],
+  "description": "Information about the eligibility criteria in a study",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
