@@ -1,7 +1,7 @@
 Profile: NFDI4Health_PR_MDS_Centers
 Parent: Location
 Id: nfdi4health-pr-mds-centers
-Title: "NFDI4Health PR MDS Centers"
+Title: "Profile intended to capture information on the number of centers invovled in a study"
 Description: "Resource covering metadata of a center."
 * ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-centers"
 * ^version = "0.9"

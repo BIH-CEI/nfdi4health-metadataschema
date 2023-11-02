@@ -2,6 +2,7 @@ Profile: NFDI4Health_PR_MDS_Group_Actual
 Parent: Group
 Id: nfdi4health-pr-mds-group-actual
 Title: "NFDI4Health PR MDS Group Actual"
+Description: "Information about the actual study population"
 * ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-group-actual"
 * ^version = "0.9"
 * ^status = #draft

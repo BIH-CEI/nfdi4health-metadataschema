@@ -2,6 +2,7 @@ Profile: NFDI4Health_PR_MDS_Group_Intended
 Parent: Group
 Id: nfdi4health-pr-mds-group-intended
 Title: "NFDI4Health PR MDS Group Intended"
+Description: "Information about the eligibility criteria in a study"
 * ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-group-intended"
 * ^version = "0.9"
 * ^status = #draft

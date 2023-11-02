@@ -5,7 +5,7 @@ Profile: NFDI4Health_PR_MDS_Related_Artifact_Resource
 Parent: RelatedArtifact
 Id: nfdi4health-pr-mds-related-artifact-resource
 Title: "NFDI4Health PR MDS Related Artifact Resource"
-Description: "Profile of a RelatedArtifact intended to capture information about related non NFDI4Health resources."
+Description: "Profile of a RelatedArtifact intended to capture information about the webpage and other related resources of the NFDI4Health resource."
 * ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-related-artifact-resource"
 * ^version = "0.9"
 * ^status = #draft

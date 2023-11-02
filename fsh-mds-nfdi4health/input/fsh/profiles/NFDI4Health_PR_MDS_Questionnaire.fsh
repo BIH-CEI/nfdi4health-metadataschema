@@ -2,7 +2,7 @@ Profile: NFDI4Health_PR_MDS_Questionnaire
 Parent: Questionnaire
 Id: nfdi4health-pr-mds-questionnaire
 Title: "NFDI4Health PR MDS Questionnaire"
-Description: "Resource covering metadata of a questionnaire."
+Description: "Profile collecting information on questionnaires within NFDI4Health."
 * ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire"
 * ^version = "0.9"
 * ^status = #draft

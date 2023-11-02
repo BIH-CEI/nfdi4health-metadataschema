@@ -2,7 +2,7 @@ Profile: NFDI4Health_PR_MDS_Organization
 Parent: Organization
 Id: nfdi4health-pr-mds-organization
 Title: "NFDI4Health PR MDS Organization"
-Description: "Resource covering metadata of an organization."
+Description: "To collect information on rganizations/institutions having roles and the affiliation and address of persons having roles."
 * ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
 * ^version = "0.9"
 * ^status = #draft

@@ -2,7 +2,7 @@ Profile: NFDI4Health_PR_MDS_Practitioner
 Parent: Practitioner
 Id: nfdi4health-pr-mds-practitioner
 Title: "NFDI4Health PR MDS Practitioner"
-Description: "Resource covering metadata of an individual."
+Description: "Profile to collect information about persons having roles."
 * ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner"
 * ^version = "0.9"
 * ^status = #draft

@@ -2,7 +2,7 @@ Profile: NFDI4Health_PR_MDS_Provenance
 Parent: Provenance
 Id: nfdi4health-pr-mds-provenance
 Title: "NFDI4Health PR MDS Provenance"
-Description: "Resource covering information about the provenance of a resource."
+Description: "Profile to collect information how data was collected - manually v.s. automatically - and the activities related to a resource - e.g., when it was uploaded, when it was published, when it was updated, etc. - and the persons or devices involved."
 * ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-provenance"
 * ^version = "0.9"
 * ^status = #draft
