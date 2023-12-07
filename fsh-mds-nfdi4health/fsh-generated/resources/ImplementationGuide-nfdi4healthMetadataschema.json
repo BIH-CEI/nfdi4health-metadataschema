@@ -35,42 +35,42 @@
         "reference": {
           "reference": "ConceptMap/ConceptMap-Study-Allocation-NFDI4Health-to-UMLS"
         },
-        "name": "ConceptMap-Study-Allocation-NFDI4Health-to-UMLS",
+        "name": "ConceptMap - Study allocation codes from NFDI4Health to UMLS",
         "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "ConceptMap/ConceptMap-Study-Primary-Design-NFDI4Health-to-UMLS"
         },
-        "name": "ConceptMap-Study-Primary-Design-NFDI4Health-to-UMLS",
+        "name": "ConceptMap - Study primary design codes from NFDI4Health to UMLS",
         "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "ConceptMap/ConceptMap-Study-Sampling-Non-Probability-NFDI4Health-to-NCI"
         },
-        "name": "ConceptMap-Study-Sampling-Non-Probability-NFDI4Health-to-NCI",
+        "name": "ConceptMap - Study sampling method non probability codes from NFDI4Health to NCI",
         "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "ConceptMap/ConceptMap-Study-Sampling-Probability-Method-NFDI4Health-to-NCI"
         },
-        "name": "ConceptMap-Study-Sampling-Probability-Method-NFDI4Health-to-NCI",
+        "name": "ConceptMap - Study sampling probability method codes from NFDI4Health to NCI",
         "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "ConceptMap/ConceptMap-Study-Time-Perspectives-NFDI4Health-to-UMLS"
         },
-        "name": "ConceptMap-Study-Time-Perspectives-NFDI4Health-to-UMLS",
+        "name": "ConceptMap - Study time perspectives codes from NFDI4Health to UMLS",
         "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "ConceptMap/ConceptMap-study-type-interventional-NFDI4Health-to-UMLS"
         },
-        "name": "ConceptMap-study-type-interventional-NFDI4Health-to-UMLS",
+        "name": "ConceptMap - Study Type Interventional from NFDI4Health to UMLS",
         "exampleBoolean": false
       },
       {
@@ -78,6 +78,7 @@
           "reference": "DocumentReference/InstanceOfDocumentHouseholdTransmissionInvestigationForC19"
         },
         "name": "Example of the NFDI4Health PR MDS Document - Household Transmission Investigation Protocol for Coronavirus Disease 2019 (COVID-19)",
+        "description": "This document sets out the methods to guide data collection and the public health investigation for the comprehensive assessment of household contacts of confirmed COVID-19 cases. The household transmission investigation is a case-ascertained prospective study of all identified household contacts of a laboratory-confirmed 2019-nCoV infection. It is intended to provide rapid and early information on the clinical, epidemiological and virological characteristics of 2019-nCoV. There are three primary objectives of this household transmission study:\n1) To better understand the extent of transmission within a household by estimating the secondary infection rate for household contacts at an individual level, and factors associated with any variation in the secondary infection risk.\n2) To characterize secondary cases including the range of clinical presentation, risk factors for infection, and the extent and fraction of asymptomatic infections.\n3) To characterize serologic response following confirmed 2019-nCoV infection (highly encouraged, but optional depending on laboratory capacity and resources).",
         "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-document"
       },
       {
@@ -127,7 +128,16 @@
           "reference": "Questionnaire/InstanceOfQuestionnaireWHOHouseholdTransmission"
         },
         "name": "Example of the NFDI4Health PR MDS Questionnaire - Data Dictionary for the WHO's Household transmission investigation protocol for coronavirus disease 2019 (COVID-19)",
+        "description": "This is a data dictionary for the 'Household transmission investigation protocol for coronavirus disease 2019 (COVID-19)'. This data dictionary is prepared for upload into OPAL/MICA applications of the OBiBa (Open Source Software for BioBanks) software suite. The variables are annotated with metadata using the variable classification taxonomy developed by Maelstrom Research. Further information about format and applications can be found in Doiron et al. (2017; https://doi.org/10.1093/ije/dyx180).",
         "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-lm-metadatenschema-recordlinkage"
+        },
+        "name": "Information about record linkage for the [RESOURCE]",
+        "description": "Group of items providing information on record linkage.",
+        "exampleBoolean": false
       },
       {
         "reference": {
@@ -327,6 +337,14 @@
         },
         "name": "NFDI4Health CD Common Chronic Disease Name [SNOMED CT]",
         "description": "Value set used to respond to question common chronic disease name to Chronic Disease Module",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CapabilityStatement/nfdi4health-cps-mds-capability-statement"
+        },
+        "name": "Nfdi4Health CPS MDS Capability Statment",
+        "description": "The CapabilityStatement describes all mandatory interactions for a system to be conformant to the MDS of Nfdi4Health",
         "exampleBoolean": false
       },
       {
@@ -789,6 +807,7 @@
           "reference": "Questionnaire/InstanceOfNutritionalEpidemiologyModule"
         },
         "name": "NFDI4Health Module Nutritional Epidemiology Metadataschema (Use Case 5.1) V3",
+        "description": "Group of items providing information on diet assessment.\n\n**Additional information: **Filtering condition to decide if all following questions will be asked.",
         "exampleBoolean": true
       },
       {
@@ -933,6 +952,13 @@
         "name": "NFDI4Health PR MDS Study",
         "description": "Profile to collect information about german (or with at least one study center in Germany) clinical, epidemiological or Public health studies that were uploaded in NFDI4Health.",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/2.16.840.1.113883.3.1937.777.64.4.6--20231207000000"
+        },
+        "name": "NFDI4Health Resource",
+        "exampleBoolean": true
       },
       {
         "reference": {
@@ -1436,13 +1462,6 @@
         },
         "name": "NFDI4Health VS MDS Yes, No, Undecided [SNOMED CT, NCI]",
         "description": "Value set used to respond to questions that can be answered Yes, No, or Undecided",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "CapabilityStatement/nfdi4health-cps-mds-capability-statement"
-        },
-        "name": "nfdi4health-cps-mds-capability-statement",
         "exampleBoolean": false
       },
       {
