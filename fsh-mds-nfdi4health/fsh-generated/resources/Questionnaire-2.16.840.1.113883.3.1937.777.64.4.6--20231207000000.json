@@ -1,0 +1,366 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "2.16.840.1.113883.3.1937.777.64.4.6--20231207000000",
+  "meta": {
+    "lastUpdated": "2023-12-07T11:06:06Z",
+    "tag": [
+      {
+        "code": "4.0",
+        "system": "http://hl7.org/fhir/FHIR-version"
+      }
+    ]
+  },
+  "language": "en-US",
+  "url": "https://art-decor.org/fhir/Questionnaire/2.16.840.1.113883.3.1937.777.64.1.5--20231130210338",
+  "name": "NFDI4Health_Resource",
+  "title": "NFDI4Health Resource",
+  "status": "draft",
+  "subjectType": [
+    "Patient"
+  ],
+  "date": "2023-12-07",
+  "publisher": "BIH @ Charité",
+  "item": [
+    {
+      "linkId": "2.16.840.1.113883.3.1937.777.64.2.1.124",
+      "text": "RecordLinkage",
+      "type": "group",
+      "required": true,
+      "repeats": false,
+      "item": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "help",
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "display": "Help-Button"
+                  }
+                ],
+                "text": "Help-Button"
+              }
+            }
+          ],
+          "linkId": "2.16.840.1.113883.3.1937.777.64.2.1.124-help",
+          "text": "Information about record linkage for the [RESOURCE]",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+                "valueString": "<p>Information about record linkage for the [RESOURCE]</p>"
+              }
+            ]
+          },
+          "type": "display"
+        },
+        {
+          "linkId": "2.16.840.1.113883.3.1937.777.64.2.1.123",
+          "text": "legalBasis",
+          "type": "boolean",
+          "required": false,
+          "repeats": false,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "code": "help",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "display": "Help-Button"
+                      }
+                    ],
+                    "text": "Help-Button"
+                  }
+                }
+              ],
+              "linkId": "2.16.840.1.113883.3.1937.777.64.2.1.123-help",
+              "text": "Legal regulation/permission for record linkage",
+              "_text": {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+                    "valueString": "<p>Legal regulation/permission for record linkage</p>"
+                  }
+                ]
+              },
+              "type": "display"
+            }
+          ]
+        },
+        {
+          "linkId": "2.16.840.1.113883.3.1937.777.64.2.1.125",
+          "text": "legalBasisDetails",
+          "type": "string",
+          "required": true,
+          "repeats": false,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "code": "help",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "display": "Help-Button"
+                      }
+                    ],
+                    "text": "Help-Button"
+                  }
+                }
+              ],
+              "linkId": "2.16.840.1.113883.3.1937.777.64.2.1.125-help",
+              "text": "Specific legal basis allowing record linkage",
+              "_text": {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+                    "valueString": "<p>Specific legal basis allowing record linkage</p>"
+                  }
+                ]
+              },
+              "type": "display"
+            }
+          ]
+        },
+        {
+          "linkId": "2.16.840.1.113883.3.1937.777.64.2.1.126",
+          "text": "informedConsent",
+          "type": "boolean",
+          "required": false,
+          "repeats": false,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "code": "help",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "display": "Help-Button"
+                      }
+                    ],
+                    "text": "Help-Button"
+                  }
+                }
+              ],
+              "linkId": "2.16.840.1.113883.3.1937.777.64.2.1.126-help",
+              "text": "Informed consent for record linkage",
+              "_text": {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+                    "valueString": "<p>Informed consent for record linkage</p>"
+                  }
+                ]
+              },
+              "type": "display"
+            }
+          ]
+        },
+        {
+          "linkId": "2.16.840.1.113883.3.1937.777.64.2.1.127",
+          "text": "responsibleInstitutions",
+          "type": "string",
+          "required": false,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "code": "help",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "display": "Help-Button"
+                      }
+                    ],
+                    "text": "Help-Button"
+                  }
+                }
+              ],
+              "linkId": "2.16.840.1.113883.3.1937.777.64.2.1.127-help",
+              "text": "Responsible authorities",
+              "_text": {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+                    "valueString": "<p>Responsible authorities</p>"
+                  }
+                ]
+              },
+              "type": "display"
+            }
+          ]
+        },
+        {
+          "linkId": "2.16.840.1.113883.3.1937.777.64.2.1.128",
+          "text": "additionalCosts",
+          "type": "boolean",
+          "required": false,
+          "repeats": false,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "code": "help",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "display": "Help-Button"
+                      }
+                    ],
+                    "text": "Help-Button"
+                  }
+                }
+              ],
+              "linkId": "2.16.840.1.113883.3.1937.777.64.2.1.128-help",
+              "text": "Additional costs for record linkage",
+              "_text": {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+                    "valueString": "<p>Additional costs for record linkage</p>"
+                  }
+                ]
+              },
+              "type": "display"
+            }
+          ]
+        },
+        {
+          "linkId": "2.16.840.1.113883.3.1937.777.64.2.1.129",
+          "text": "identifiers",
+          "type": "string",
+          "required": false,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "code": "help",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "display": "Help-Button"
+                      }
+                    ],
+                    "text": "Help-Button"
+                  }
+                }
+              ],
+              "linkId": "2.16.840.1.113883.3.1937.777.64.2.1.129-help",
+              "text": "Identifiers for record linkage",
+              "_text": {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+                    "valueString": "<p>Identifiers for record linkage</p>"
+                  }
+                ]
+              },
+              "type": "display"
+            }
+          ]
+        },
+        {
+          "linkId": "2.16.840.1.113883.3.1937.777.64.2.1.130",
+          "text": "furtherDetails",
+          "type": "string",
+          "required": false,
+          "repeats": false,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "code": "help",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "display": "Help-Button"
+                      }
+                    ],
+                    "text": "Help-Button"
+                  }
+                }
+              ],
+              "linkId": "2.16.840.1.113883.3.1937.777.64.2.1.130-help",
+              "text": "Further details important for conducting record linkage",
+              "_text": {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+                    "valueString": "<p>Further details important for conducting record linkage</p>"
+                  }
+                ]
+              },
+              "type": "display"
+            }
+          ]
+        },
+        {
+          "linkId": "2.16.840.1.113883.3.1937.777.64.2.1.131",
+          "text": "Short input help: Please do not repeat those already entered in the section 'Related resources'.",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/rendering-markdown",
+                "valueMarkdown": "<p><strong>Short input help:</strong> Please do not repeat those already entered in the section 'Related resources'.</p>"
+              }
+            ]
+          },
+          "type": "string",
+          "required": false,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "code": "help",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "display": "Help-Button"
+                      }
+                    ],
+                    "text": "Help-Button"
+                  }
+                }
+              ],
+              "linkId": "2.16.840.1.113883.3.1937.777.64.2.1.131-help",
+              "text": "Record linkage example resources",
+              "_text": {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+                    "valueString": "<p>Record linkage example resources</p>"
+                  }
+                ]
+              },
+              "type": "display"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
