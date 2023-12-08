@@ -109,7 +109,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.1014--20220616143355",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-resource-type-umls-local",
           "description": "NFDI4Health_VS_MDS_Resource_Type_UMLS_Local"
         }
       },
@@ -132,7 +132,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.1011--20220627140914",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-resource-type-general-nci-umls-local",
           "description": "NFDI4Health_VS_MDS_Resource_Type_General_NCI_UMLS_Local"
         }
       }
