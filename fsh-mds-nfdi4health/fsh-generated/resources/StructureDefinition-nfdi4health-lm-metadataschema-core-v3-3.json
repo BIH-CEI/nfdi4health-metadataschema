@@ -1,0 +1,311 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "nfdi4health-lm-metadataschema-core-v3-3",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-core-v3-3",
+  "name": "NFDI4Health_LM_Metadataschema_Core_V3_3",
+  "title": "NFDI4Health LM Core Metadataschema V3.3",
+  "status": "draft",
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "description": "NFDI4Health Logical Model Core Metadataschema V3.3",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-core-v3-3",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "nfdi4health-lm-metadataschema-core-v3-3",
+        "path": "nfdi4health-lm-metadataschema-core-v3-3",
+        "short": "NFDI4Health LM Core Metadataschema V3.3",
+        "definition": "NFDI4Health Logical Model Core Metadataschema V3.3"
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-core-v3-3.Resource",
+        "path": "nfdi4health-lm-metadataschema-core-v3-3.Resource",
+        "short": "Resource",
+        "definition": "Resource",
+        "requirements": "**Description:** Group of items providing information about a resource. Resources can be, for example, files or parts of them (e.g. datasets or study documents such as study protocols or questionnaires) or also studies or substudies.",
+        "alias": [
+          "Resource"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Resource",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-core-v3-3.Resource.identifier",
+        "path": "nfdi4health-lm-metadataschema-core-v3-3.Resource.identifier",
+        "short": "identifier",
+        "definition": "ID of the [Resource]",
+        "comment": "<p><strong>Additional information:</strong> The identifier is assigned automatically.</p> \n ",
+        "requirements": "**Description: **Unique identifier of the resource used for identification within the NFDI4Health.",
+        "alias": [
+          "Resource.identifier"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Resource.identifier",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-core-v3-3.Resource.classification",
+        "path": "nfdi4health-lm-metadataschema-core-v3-3.Resource.classification",
+        "short": "classification",
+        "definition": "Resource classification",
+        "requirements": "**Description: **Group of items providing information about the classification of the resource within the predefined categories.",
+        "alias": [
+          "Resource.classification"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Resource.classification",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-core-v3-3.Resource.classification.type",
+        "path": "nfdi4health-lm-metadataschema-core-v3-3.Resource.classification.type",
+        "short": "type",
+        "definition": "Type of the resource",
+        "comment": "<p><strong>Additional information: </strong>The selected resource type determines which information will be asked next.</p> \n ",
+        "requirements": "**Description: **A term describing the resource.",
+        "alias": [
+          "Resource.classification.type"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Resource.classification.type",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://art-decor.org/fhir/ValueSet/2.Xxxxx840.1.113883.3.1937.777.64.11.76--20231213141150",
+          "description": "NFDI4Health_VS_MDS_Resource_Type_UMLS_SNOMED_Local3.3"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-core-v3-3.Resource.classification.typeGeneral",
+        "path": "nfdi4health-lm-metadataschema-core-v3-3.Resource.classification.typeGeneral",
+        "short": "typeGeneral",
+        "definition": "In what form is the [RESOURCE] available?",
+        "comment": "<p><strong>Additional information:</strong> If the [RESOURCE] consists primarily of words for reading and is not covered by another textual resource type in this list, 'Text' should be used instead of 'Other'.</p> \n * 1..1M 1..1, if Resource.classification.type != (\"Study\" OR \"Substudy\" OR \"Dataset\" OR \"Registry\" OR \"Secondary data source\"); otherwise 0..0",
+        "requirements": "**Description: **Specific information about the form in which the [RESOURCE] is available.",
+        "alias": [
+          "Resource.classification.typeGeneral"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Resource.classification.typeGeneral",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.1011--20220627140914",
+          "description": "NFDI4Health_VS_MDS_Resource_Type_General_NCI_UMLS_Local"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-core-v3-3.Resource.titles",
+        "path": "nfdi4health-lm-metadataschema-core-v3-3.Resource.titles",
+        "short": "titles",
+        "definition": "Title(s)/name(s) of the [RESOURCE]",
+        "requirements": "**Description: **Group of items providing information about title(s)/name(s) of the [RESOURCE].",
+        "alias": [
+          "Resource.titles"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Resource.titles",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-core-v3-3.Resource.titles.text",
+        "path": "nfdi4health-lm-metadataschema-core-v3-3.Resource.titles.text",
+        "short": "text",
+        "definition": "Title/name",
+        "comment": "<p><strong>Additional information: </strong>If no official title/name has been defined yet, a title/name that is suitable for public display should be used.</p> \n ",
+        "requirements": "**Description: **Scientific unabbreviated title or name of the [RESOURCE].",
+        "alias": [
+          "Resource.titles.text"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Resource.titles.text",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-core-v3-3.Resource.titles.language",
+        "path": "nfdi4health-lm-metadataschema-core-v3-3.Resource.titles.language",
+        "short": "language",
+        "definition": "Language of the title/name",
+        "requirements": "**Description: **Language in which the title/name is provided.",
+        "alias": [
+          "Resource.titles.language"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Resource.titles.language",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.1008--20220627224337",
+          "description": "NFDI4Health_VS_MDS_Language_UMLS"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-core-v3-3.Resource.acronyms",
+        "path": "nfdi4health-lm-metadataschema-core-v3-3.Resource.acronyms",
+        "short": "acronyms",
+        "definition": "Acronym(s) of the [RESOURCE]",
+        "requirements": "**Description: **Group of items providing information about acronym(s) of the [RESOURCE].",
+        "alias": [
+          "Resource.acronyms"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Resource.acronyms",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-core-v3-3.Resource.acronyms.text",
+        "path": "nfdi4health-lm-metadataschema-core-v3-3.Resource.acronyms.text",
+        "short": "text",
+        "definition": "Acronym",
+        "comment": "<p><strong>Additional information:</strong> The field refers primarily to resources which have an acronym.</p> \n ",
+        "requirements": "**Description: **If existing, acronym(s) of the [RESOURCE].",
+        "alias": [
+          "Resource.acronyms.text"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Resource.acronyms.text",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-metadataschema-core-v3-3.Resource.acronyms.language",
+        "path": "nfdi4health-lm-metadataschema-core-v3-3.Resource.acronyms.language",
+        "short": "language",
+        "definition": "Language of the acronym",
+        "requirements": "**Description: **Language in which the acronym is provided.",
+        "alias": [
+          "Resource.acronyms.language"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Resource.acronyms.language",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.1008--20220627224337",
+          "description": "NFDI4Health_VS_MDS_Language_UMLS"
+        }
+      }
+    ]
+  }
+}
