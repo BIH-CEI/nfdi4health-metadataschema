@@ -42,7 +42,7 @@ Description: "NFDI4Health Logical Model Core Metadataschema V3.3"
 * Resource.classification.type ^base.max = "1"
 * Resource.classification.type ^binding.description = "NFDI4Health_VS_MDS_Resource_Type_UMLS_SNOMED_Local3.3"
 * Resource.classification.typeGeneral 0..1 CodeableConcept "typeGeneral" "In what form is the [RESOURCE] available?"
-* Resource.classification.typeGeneral from https://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.1011--20220627140914 (required)
+* Resource.classification.typeGeneral from NFDI4Health_VS_MDS_Resource_Type_General_NCI_UMLS_Local (required)
 * Resource.classification.typeGeneral ^comment = "<p><strong>Additional information:</strong> If the [RESOURCE] consists primarily of words for reading and is not covered by another textual resource type in this list, 'Text' should be used instead of 'Other'.</p> \n * 1..1M 1..1, if Resource.classification.type != (\"Study\" OR \"Substudy\" OR \"Dataset\" OR \"Registry\" OR \"Secondary data source\"); otherwise 0..0"
 * Resource.classification.typeGeneral ^requirements = "**Description: **Specific information about the form in which the [RESOURCE] is available."
 * Resource.classification.typeGeneral ^alias = "Resource.classification.typeGeneral"
@@ -64,13 +64,13 @@ Description: "NFDI4Health Logical Model Core Metadataschema V3.3"
 * Resource.titles.text ^base.min = 1
 * Resource.titles.text ^base.max = "1"
 * Resource.titles.language 1..1  CodeableConcept "language" "Language of the title/name"
-* Resource.titles.language from https://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.1008--20220627224337 (required)
+* Resource.titles.language from ISOLanguage (required)
 * Resource.titles.language ^requirements = "**Description: **Language in which the title/name is provided."
 * Resource.titles.language ^alias = "Resource.titles.language"
 * Resource.titles.language ^base.path = "Resource.titles.language"
 * Resource.titles.language ^base.min = 1
 * Resource.titles.language ^base.max = "1"
-* Resource.titles.language ^binding.description = "NFDI4Health_VS_MDS_Language_UMLS"
+* Resource.titles.language ^binding.description = "ISOLanguage"
 * Resource.acronyms 0..* BackboneElement "acronyms" "Acronym(s) of the [RESOURCE]"
 * Resource.acronyms ^requirements = "**Description: **Group of items providing information about acronym(s) of the [RESOURCE]."
 * Resource.acronyms ^alias = "Resource.acronyms"
@@ -85,13 +85,13 @@ Description: "NFDI4Health Logical Model Core Metadataschema V3.3"
 * Resource.acronyms.text ^base.min = 1
 * Resource.acronyms.text ^base.max = "1"
 * Resource.acronyms.language 1..1 CodeableConcept "language" "Language of the acronym"
-* Resource.acronyms.language from https://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.1008--20220627224337 (required)
+* Resource.acronyms.language from ISOLanguage (required)
 * Resource.acronyms.language ^requirements = "**Description: **Language in which the acronym is provided."
 * Resource.acronyms.language ^alias = "Resource.acronyms.language"
 * Resource.acronyms.language ^base.path = "Resource.acronyms.language"
 * Resource.acronyms.language ^base.min = 1
 * Resource.acronyms.language ^base.max = "1"
-* Resource.acronyms.language ^binding.description = "NFDI4Health_VS_MDS_Language_UMLS"
+* Resource.acronyms.language ^binding.description = "ISOLanguage"
 * Resource.descriptions 1..1  BackboneElement "descriptions" "Description(s) of the [RESOURCE]"
 * Resource.descriptions ^requirements = "**Description: **Group of items providing information about the description(s) of the [RESOURCE]."
 * Resource.descriptions ^alias = "Resource.descriptions"
@@ -105,6 +105,7 @@ Description: "NFDI4Health Logical Model Core Metadataschema V3.3"
 * Resource.descriptions.text ^base.min = 1
 * Resource.descriptions.text ^base.max = "1"
 * Resource.descriptions.language 1..1  CodeableConcept "language" "Language of the description"
+* Resource.descriptions.language from ISOLanguage (required)
 * Resource.descriptions.language ^requirements = "**Description: **Language in which the description text is provided."
 * Resource.descriptions.language ^alias = "Resource.descriptions.language"
 * Resource.descriptions.language ^base.path = "Resource.descriptions.language"
@@ -135,7 +136,7 @@ Description: "NFDI4Health Logical Model Core Metadataschema V3.3"
 * Resource.keywords.code ^example.label = "example 1"
 * Resource.keywords.code ^example.valueString = "http://id.nlm.nih.gov/mesh/D000086402"
 * Resource.languages 0..* CodeableConcept "languages" "Language(s) of the [RESOURCE]"
-* Resource.languages from https://art-decor.org/fhir/ValueSet/2.Xxxxx840.1.113883.3.1937.777.64.11.52--20231009122430 (required)
+* Resource.languages from ISOLanguage (required) (required)
 * Resource.languages ^requirements = "**Description: **Language(s) in which the   [RESOURCE] is conducted/provided."
 * Resource.languages ^alias = "Resource.languages"
 * Resource.languages ^base.path = "Resource.languages"
@@ -177,13 +178,13 @@ Description: "NFDI4Health Logical Model Core Metadataschema V3.3"
 * Resource.nonStudyDetails.useRights ^base.min = 1
 * Resource.nonStudyDetails.useRights ^base.max = "1"
 * Resource.nonStudyDetails.useRights.label 1..1  CodeableConcept "label" "License"
-* Resource.nonStudyDetails.useRights.label from https://art-decor.org/fhir/ValueSet/2.Xxxxx840.1.113883.3.1937.777.64.11.78--20231213160140 (required)
+* Resource.nonStudyDetails.useRights.label from NFDI4Health_VS_MDS_Use_Rights_Label_SPDX_SNOMED_Local (required)
 * Resource.nonStudyDetails.useRights.label ^requirements = "**Description: **License defining the rights to (re-)use the [RESOURCE]."
 * Resource.nonStudyDetails.useRights.label ^alias = "Resource.nonStudyDetails.useRights.label"
 * Resource.nonStudyDetails.useRights.label ^base.path = "Resource.nonStudyDetails.useRights.label"
 * Resource.nonStudyDetails.useRights.label ^base.min = 1
 * Resource.nonStudyDetails.useRights.label ^base.max = "1"
-* Resource.nonStudyDetails.useRights.label ^binding.description = "NFDI4Health_VS_MDS_Use_Rights_Label_SPDX_Local3.3"
+* Resource.nonStudyDetails.useRights.label ^binding.description = "NFDI4Health_VS_MDS_Use_Rights_Label_SPDX_SNOMED_Local"
 * Resource.nonStudyDetails.useRights.link 1..1  string "link" "URL of the license"
 * Resource.nonStudyDetails.useRights.link ^requirements = "**Description:** Link to the selected license."
 * Resource.nonStudyDetails.useRights.link ^alias = "Resource.nonStudyDetails.useRights.link"
@@ -237,7 +238,7 @@ Description: "NFDI4Health Logical Model Core Metadataschema V3.3"
 * Resource.contributors ^base.min = 1
 * Resource.contributors ^base.max = "1"
 * Resource.contributors.nameType 1..1  CodeableConcept "nameType" "Is it a personal or organisational contribution?"
-* Resource.contributors.nameType from https://art-decor.org/fhir/ValueSet/2.Xxxxx840.1.113883.3.1937.777.64.11.75--20231213135951 (required)
+* Resource.contributors.nameType from NFDI4Health_VS_MDS_Role_Name_Type_SNOMED (required)
 * Resource.contributors.nameType ^requirements = "**Description: **Indication whether the contribution was made by person(s) or organisation(s)/institution(s)/group(s)."
 * Resource.contributors.nameType ^alias = "Resource.contributors.nameType"
 * Resource.contributors.nameType ^base.path = "Resource.contributors.nameType"
@@ -280,7 +281,7 @@ Description: "NFDI4Health Logical Model Core Metadataschema V3.3"
 * Resource.contributors.personal ^base.min = 0
 * Resource.contributors.personal ^base.max = "1"
 * Resource.contributors.personal.type 1..1  CodeableConcept "type" "Contributor type"
-* Resource.contributors.personal.type from https://art-decor.org/fhir/ValueSet/2.Xxxxx840.1.113883.3.1937.777.64.11.3--20230825093512 (required)
+* Resource.contributors.personal.type from NFDI4Health_VS_MDS_Personal_Roles_NCI_Local (required)
 * Resource.contributors.personal.type ^requirements = "**Description: **Contributor type a person fulfills. For example, this can be a principal investigator of a study or an author of a document."
 * Resource.contributors.personal.type ^alias = "Resource.contributors.personal.type"
 * Resource.contributors.personal.type ^base.path = "Resource.contributors.personal.type"
