@@ -63,75 +63,7 @@
       {
         "id": "Extension.extension",
         "path": "Extension.extension",
-        "min": 1
-      },
-      {
-        "id": "Extension.extension:label",
-        "path": "Extension.extension",
-        "sliceName": "label",
-        "short": "label",
-        "definition": "Keyword(s) describing the [RESOURCE].",
-        "min": 1,
-        "max": "1",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "Resource.keywords.label"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:label.extension",
-        "path": "Extension.extension.extension",
         "max": "0"
-      },
-      {
-        "id": "Extension.extension:label.url",
-        "path": "Extension.extension.url",
-        "fixedUri": "label"
-      },
-      {
-        "id": "Extension.extension:label.value[x]",
-        "path": "Extension.extension.value[x]",
-        "type": [
-          {
-            "code": "string"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:code",
-        "path": "Extension.extension",
-        "sliceName": "code",
-        "short": "code",
-        "definition": "If known, the code of the keyword in the classification/vocabulary used",
-        "min": 0,
-        "max": "1",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "Resource.keywords.code"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:code.extension",
-        "path": "Extension.extension.extension",
-        "max": "0"
-      },
-      {
-        "id": "Extension.extension:code.url",
-        "path": "Extension.extension.url",
-        "fixedUri": "code"
-      },
-      {
-        "id": "Extension.extension:code.value[x]",
-        "path": "Extension.extension.value[x]",
-        "type": [
-          {
-            "code": "uri"
-          }
-        ]
       },
       {
         "id": "Extension.url",
@@ -141,7 +73,12 @@
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
-        "max": "0"
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
       }
     ]
   }

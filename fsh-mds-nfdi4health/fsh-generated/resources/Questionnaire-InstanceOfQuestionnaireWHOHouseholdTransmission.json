@@ -44,32 +44,6 @@
       ]
     },
     {
-      "extension": [
-        {
-          "url": "label",
-          "valueString": "COVID-19"
-        },
-        {
-          "url": "code",
-          "valueUri": "https://id.nlm.nih.gov/mesh/D000086382.html"
-        }
-      ],
-      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-keywords"
-    },
-    {
-      "extension": [
-        {
-          "url": "label",
-          "valueString": "Dictionary"
-        },
-        {
-          "url": "code",
-          "valueUri": "https://id.nlm.nih.gov/mesh/T049210.html"
-        }
-      ],
-      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-keywords"
-    },
-    {
       "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-resource-type-general",
       "valueCoding": {
         "code": "C47824",

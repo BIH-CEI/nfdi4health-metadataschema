@@ -453,7 +453,7 @@
     "fshType": "Extension",
     "fshFile": "extensions/NFDI4Health_EX_MDS_Keywords.fsh",
     "startLine": 1,
-    "endLine": 30
+    "endLine": 20
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-label.json",
