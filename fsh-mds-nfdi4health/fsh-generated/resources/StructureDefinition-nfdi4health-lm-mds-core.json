@@ -43,7 +43,6 @@
         "path": "nfdi4health-lm-mds-core.Resource",
         "short": "Resource",
         "definition": "Group of items providing information about a resource. Resources can be, for example, files or parts of them (e.g. datasets or study documents such as study protocols or questionnaires) or also studies or substudies.",
-        "requirements": "**Description:** Group of items providing information about a resource. Resources can be, for example, files or parts of them (e.g. datasets or study documents such as study protocols or questionnaires) or also studies or substudies.",
         "alias": [
           "Resource"
         ],
