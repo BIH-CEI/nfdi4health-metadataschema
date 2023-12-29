@@ -91,7 +91,7 @@
 [NFDI4Health_EX_MDS_URI]: StructureDefinition-nfdi4health-ex-mds-uri.html
 [NFDI4Health_EX_MDS_Use_Rights_Confirmations]: StructureDefinition-nfdi4health-ex-mds-use-rights-confirmations.html
 [NFDI4Health_EX_MDS_Version]: StructureDefinition-nfdi4health-ex-mds-version.html
-[NFDI4Health_LM_Metadataschema_Core_V3_3]: StructureDefinition-nfdi4health-lm-metadataschema-core-v3-3.html
+[NFDI4Health_LM_MDS_Core]: StructureDefinition-nfdi4health-lm-mds-core.html
 [InstanceOfChronicDiseaseModule]: Questionnaire-InstanceOfChronicDiseaseModule.html
 [InstanceOfNutritionalEpidemiologyModule]: Questionnaire-InstanceOfNutritionalEpidemiologyModule.html
 [InstanceOfRecordLinkage]: Questionnaire-InstanceOfRecordLinkage.html

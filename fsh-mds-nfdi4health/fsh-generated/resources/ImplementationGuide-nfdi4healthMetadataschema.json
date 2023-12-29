@@ -765,7 +765,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nfdi4health-lm-metadataschema-core-v3-3"
+          "reference": "StructureDefinition/nfdi4health-lm-mds-core"
         },
         "name": "NFDI4Health LM Core Metadataschema V3.3",
         "description": "NFDI4Health Logical Model Core Metadataschema V3.3",

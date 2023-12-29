@@ -1,10 +1,10 @@
-Logical: NFDI4Health_LM_Metadataschema_Core_V3_3
+Logical: NFDI4Health_LM_MDS_Core
 Parent: Element
-Id: nfdi4health-lm-metadataschema-core-v3-3
+Id: nfdi4health-lm-mds-core
 Title: "NFDI4Health LM Core Metadataschema V3.3"
 Description: "NFDI4Health Logical Model Core Metadataschema V3.3"
 
-* ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-core-v3-3"
+* ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-mds-core"
 * ^publisher = "NFDI4Health"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
@@ -16,9 +16,6 @@ Description: "NFDI4Health Logical Model Core Metadataschema V3.3"
 * Resource ^requirements = "**Description:** Group of items providing information about a resource. Resources can be, for example, files or parts of them (e.g. datasets or study documents such as study protocols or questionnaires) or also studies or substudies."
 * Resource ^alias = "Resource"
 * Resource ^base.path = "Resource"
-* Resource ^base.min = 1
-* Resource ^base.max = "1"
-* Resource ^mustSupport = true
 * Resource.identifier 1..1  string "identifier" "ID of the [Resource]"
 * Resource.identifier ^comment = "<p><strong>Additional information:</strong> The identifier is assigned automatically.</p> \n "
 * Resource.identifier ^requirements = "**Description: **Unique identifier of the resource used for identification within the NFDI4Health."
