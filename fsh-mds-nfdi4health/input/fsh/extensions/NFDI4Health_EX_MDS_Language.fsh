@@ -17,6 +17,6 @@ Description: "Language of an element."
 * . ^short = "language"
 * . ^definition = "Language in which the description text is provided."
 * value[x] 1..
-* value[x] only code
+* value[x] only Coding
 * value[x] from $ISOLanguage (required)
 * value[x] ^binding.description = "A human language."

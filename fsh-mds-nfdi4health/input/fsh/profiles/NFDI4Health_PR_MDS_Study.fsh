@@ -233,28 +233,17 @@ Description: "Profile to collect information about german (or with at least one 
 * condition.text ^example[=].valueString = "SARS-CoV-2"
 * relatedArtifact ..1
 * relatedArtifact only NFDI4Health_PR_MDS_Related_Artifact_Resource
-* keyword ^short = "Keyword(s) describing the [RESOURCE]"
-* keyword ^definition = "Group of items providing information about keywords describing the resource."
-* keyword ^comment = "Additional information: The findability of the resource can be significantly increased if proper keywords are stated."
-* keyword.coding ..1
-* keyword.coding ^short = "Code of the keyword"
-* keyword.coding ^definition = "If known, the code of the keyword in a classification/vocabulary."
-* keyword.coding ^comment = "Short input help: If found, the code from the classification/vocabulary used."
-* keyword.coding.extension ^slicing.discriminator.type = #value
-* keyword.coding.extension ^slicing.discriminator.path = "url"
-* keyword.coding.extension ^slicing.rules = #open
-* keyword.coding.extension contains NFDI4Health_EX_MDS_URI named URI 1..1
-* keyword.coding.extension[URI] ^short = "Code of the keyword"
-* keyword.coding.extension[URI] ^definition = "If known, the code of the keyword in a classification/vocabulary."
-* keyword.coding.extension[URI] ^comment = "Short input help: If found, the code from the classification/vocabulary used."
-* keyword.coding.code ^short = "Code of the keyword"
-* keyword.coding.code ^definition = "If known, the code of the keyword in a classification/vocabulary."
-* keyword.coding.code ^comment = "Short input help: If found, the code from the classification/vocabulary used."
-* keyword.coding.code ^example[0].label = "Keyword URI"
-* keyword.coding.code ^example[=].valueCode = #http://id.nlm.nih.gov/mesh/D000086402
-* keyword.text ^short = "Keyword"
-* keyword.text ^definition = "Keyword(s) describing the resource."
-* keyword.text ^comment = "Additional information: The use of terms from established classifications/vocabularies (e.g. MeSH, UMLS, SNOMED CT) is preferred. However, also self-assigned keywords are allowed. | Short input help: Preferably, use terms from MeSH (https://meshb.nlm.nih.gov/search) or UMLS (https://uts.nlm.nih.gov/uts/umls/home)."
+* keyword ^short = "keywords"
+* keyword ^definition = "Group of items providing information about keywords describing the [RESOURCE]."
+* keyword ^comment = "<p><strong>Additional information: </strong>The findability of the [RESOURCE] can be significantly increased if proper keywords are stated."
+* keyword.coding.system ^short = "Code of the keyword"
+* keyword.coding.system ^definition = "If known, the code of the keyword in a classification/vocabulary."
+* keyword.coding.system ^comment = "Short input help: If found, the code from the classification/vocabulary used."
+* keyword.coding.system ^example.valueUri = http://id.nlm.nih.gov/mesh/D000086402
+* keyword.text 1..1 
+* keyword.text ^short = "label"
+* keyword.text ^definition = "Keyword(s) describing the [RESOURCE]."
+* keyword.text ^comment = "<p><strong>Additional information:<p><strong> The use of terms from established classifications/vocabularies (e.g. SNOMED CT, MeSH, UMLS) is preferred. However, also self-assigned keywords are allowed."
 * keyword.text ^example[0].label = "Keyword label"
 * keyword.text ^example[=].valueString = "SARS-CoV-2"
 * location ^slicing.discriminator.type = #exists
@@ -378,10 +367,9 @@ Source: NFDI4Health_PR_MDS_Study
 * relatedArtifact -> "1.13 Resource.ids"
 * relatedArtifact -> "1.14 Resource.idsNfdi4health"
 * relatedArtifact -> "1.9 Resource.webpage"
-* keyword -> "1.7 Resource.keywords"
-* keyword.coding.extension[URI] -> "1.7.2 Resource.keywords.code"
-* keyword.coding.code -> "1.7.2 Resource.keywords.code"
-* keyword.text -> "1.7.1 Resource.keywords.label"
+* keyword -> "Resource.keywords"
+* keyword.coding.system -> "Resource.keywords.code"
+* keyword.text -> "Resource.keywords.label"
 * location[countries] -> "1.17.15 Resource.studyDesign.countries"
 * location[regions].text -> "1.17.16 Resource.studyDesign.region"
 * description -> "Resource.descriptions.text"

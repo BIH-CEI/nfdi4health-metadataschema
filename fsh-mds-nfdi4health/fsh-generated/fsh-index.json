@@ -373,7 +373,7 @@
     "fshType": "Instance",
     "fshFile": "examples/InstanceOfStudy_interventional_SPOVID.fsh",
     "startLine": 1,
-    "endLine": 111
+    "endLine": 108
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-associated-party.json",
@@ -453,7 +453,7 @@
     "fshType": "Extension",
     "fshFile": "extensions/NFDI4Health_EX_MDS_Keywords.fsh",
     "startLine": 1,
-    "endLine": 32
+    "endLine": 30
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-label.json",
@@ -861,7 +861,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/NFDI4Health_PR_MDS_Study.fsh",
     "startLine": 1,
-    "endLine": 314
+    "endLine": 303
   },
   {
     "outputFile": "ValueSet-nfdi4health-vs-mds-cd-common-chronic-disease-name-snomedct.json",

@@ -424,13 +424,13 @@
         },
         "type": [
           {
-            "code": "string"
+            "code": "uri"
           }
         ],
         "example": [
           {
             "label": "example 1",
-            "valueString": "http://id.nlm.nih.gov/mesh/D000086402"
+            "valueUri": "http://id.nlm.nih.gov/mesh/D000086402"
           }
         ]
       },

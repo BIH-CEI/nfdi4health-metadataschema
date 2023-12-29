@@ -1496,78 +1496,41 @@
       {
         "id": "ResearchStudy.keyword",
         "path": "ResearchStudy.keyword",
-        "short": "Keyword(s) describing the [RESOURCE]",
-        "definition": "Group of items providing information about keywords describing the resource.",
-        "comment": "Additional information: The findability of the resource can be significantly increased if proper keywords are stated.",
+        "short": "keywords",
+        "definition": "Group of items providing information about keywords describing the [RESOURCE].",
+        "comment": "<p><strong>Additional information: </strong>The findability of the [RESOURCE] can be significantly increased if proper keywords are stated.",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.7 Resource.keywords"
+            "map": "Resource.keywords"
           }
         ]
       },
       {
-        "id": "ResearchStudy.keyword.coding",
-        "path": "ResearchStudy.keyword.coding",
-        "short": "Code of the keyword",
-        "definition": "If known, the code of the keyword in a classification/vocabulary.",
-        "comment": "Short input help: If found, the code from the classification/vocabulary used.",
-        "max": "1"
-      },
-      {
-        "id": "ResearchStudy.keyword.coding.extension",
-        "path": "ResearchStudy.keyword.coding.extension",
-        "min": 1
-      },
-      {
-        "id": "ResearchStudy.keyword.coding.extension:URI",
-        "path": "ResearchStudy.keyword.coding.extension",
-        "sliceName": "URI",
-        "short": "Code of the keyword",
-        "definition": "If known, the code of the keyword in a classification/vocabulary.",
-        "comment": "Short input help: If found, the code from the classification/vocabulary used.",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-uri"
-            ]
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "1.7.2 Resource.keywords.code"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.keyword.coding.code",
-        "path": "ResearchStudy.keyword.coding.code",
+        "id": "ResearchStudy.keyword.coding.system",
+        "path": "ResearchStudy.keyword.coding.system",
         "short": "Code of the keyword",
         "definition": "If known, the code of the keyword in a classification/vocabulary.",
         "comment": "Short input help: If found, the code from the classification/vocabulary used.",
         "example": [
           {
-            "label": "Keyword URI",
-            "valueCode": "http://id.nlm.nih.gov/mesh/D000086402"
+            "valueUri": "http://id.nlm.nih.gov/mesh/D000086402"
           }
         ],
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.7.2 Resource.keywords.code"
+            "map": "Resource.keywords.code"
           }
         ]
       },
       {
         "id": "ResearchStudy.keyword.text",
         "path": "ResearchStudy.keyword.text",
-        "short": "Keyword",
-        "definition": "Keyword(s) describing the resource.",
-        "comment": "Additional information: The use of terms from established classifications/vocabularies (e.g. MeSH, UMLS, SNOMED CT) is preferred. However, also self-assigned keywords are allowed. | Short input help: Preferably, use terms from MeSH (https://meshb.nlm.nih.gov/search) or UMLS (https://uts.nlm.nih.gov/uts/umls/home).",
+        "short": "label",
+        "definition": "Keyword(s) describing the [RESOURCE].",
+        "comment": "<p><strong>Additional information:<p><strong> The use of terms from established classifications/vocabularies (e.g. SNOMED CT, MeSH, UMLS) is preferred. However, also self-assigned keywords are allowed.",
+        "min": 1,
         "example": [
           {
             "label": "Keyword label",
@@ -1577,7 +1540,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.7.1 Resource.keywords.label"
+            "map": "Resource.keywords.label"
           }
         ]
       },
