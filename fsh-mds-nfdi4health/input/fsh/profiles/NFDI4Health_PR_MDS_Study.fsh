@@ -272,31 +272,12 @@ Description: "Profile to collect information about german (or with at least one 
 * location[regions].coding 0..0
 * location[regions].text 1..1
 * description 1..1
-* description ^short = "English description of the [RESOURCE]"
-* description ^definition = "A short plain text summary describing the resource in English."
-* description ^comment = "Additional information: An English description is mandatory to facilitate the search. | Short input help: The provided information should be understandable by scientific audience."
+* description ^short = "text"
+* description ^definition = "Short plain text summary of the [RESOURCE]."
 * description.extension ^slicing.discriminator.type = #value
 * description.extension ^slicing.discriminator.path = "url"
 * description.extension ^slicing.rules = #open
 * description.extension contains NFDI4Health_EX_MDS_Language named language 1..1
-* description.extension[language] ^short = "Language of the description"
-* description.extension[language] ^definition = "Language of the description text."
-* description.extension[language] ^comment = "Additional information: English is a default value."
-* description.extension[language].value[x] = $UMLS#C0376245 "English Language" (exactly)
-* description.extension contains $translation named translation 0..*
-* description.extension[translation] ^short = "Additional description(s) of the [RESOURCE]"
-* description.extension[translation] ^definition = "Group of items with description(s) of the resource written not in English."
-* description.extension[translation] ^comment = "Additional descriptions of the resource are optional. The provided information should be understandable by scientific audience."
-* description.extension[translation].extension ^slicing.discriminator.type = #value
-* description.extension[translation].extension ^slicing.discriminator.path = "url"
-* description.extension[translation].extension ^slicing.rules = #open
-* description.extension[translation].extension[lang] ^sliceName = "lang"
-* description.extension[translation].extension[lang] ^short = "Language of the description text."
-* description.extension[translation].extension[lang] ^definition = "Language other than English of the description text."
-* description.extension[translation].extension[content] ^sliceName = "content"
-* description.extension[translation].extension[content] ^short = "Description (not in English)"
-* description.extension[translation].extension[content] ^definition = "Short plain text summary of the resource other than in English."
-* description.extension[translation].extension[content] ^comment = "Additional information: Additional descriptions of the resource are optional. The provided information should be understandable by scientific audience."
 * enrollment only Reference(NFDI4Health_PR_MDS_Group_Intended or NFDI4Health_PR_MDS_Group_Actual)
 * enrollment ^short = "Eligibility criteria for study participants"
 * enrollment ^definition = "Group of items providing information about eligibility criteria for study participants."
@@ -403,11 +384,8 @@ Source: NFDI4Health_PR_MDS_Study
 * keyword.text -> "1.7.1 Resource.keywords.label"
 * location[countries] -> "1.17.15 Resource.studyDesign.countries"
 * location[regions].text -> "1.17.16 Resource.studyDesign.region"
-* description -> "1.5.1 Resource.descriptionEnglish.text"
-* description.extension[translation] -> "1.6 Resource.descriptionNonEnglish"
-* description.extension[translation].extension[lang] -> "1.6.2 Resource.descriptionNonEnglish.language"
-* description.extension[translation].extension[content] -> "1.6.1 Resource.descriptionNonEnglish.text"
-* description.extension[language] -> "1.5.2 Resource.descriptionEnglish.language"
+* description -> "Resource.descriptions.text"
+* description.extension[language] -> "Resource.descriptions.language"
 * enrollment -> "1.17.23 Resource.studyDesign.eligibilityCriteria"
 * period.start -> "1.17.13 Resource.studyDesign.studyStartDate"
 * period.end -> "1.17.14 Resource.studyDesign.studyEndDate"

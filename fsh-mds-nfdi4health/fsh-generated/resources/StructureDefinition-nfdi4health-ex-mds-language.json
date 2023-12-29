@@ -50,8 +50,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Language of an element.",
-        "definition": "Language of an element."
+        "short": "language",
+        "definition": "Language in which the description text is provided."
       },
       {
         "id": "Extension.extension",
@@ -74,7 +74,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-language-umls",
+          "valueSet": "http://terminology.hl7.org/CodeSystem/iso639-1",
           "description": "A human language."
         }
       }

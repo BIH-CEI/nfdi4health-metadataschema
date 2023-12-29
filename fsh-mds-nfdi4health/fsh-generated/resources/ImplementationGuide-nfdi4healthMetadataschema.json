@@ -946,14 +946,6 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/nfdi4health-vs-mds-execution-language-iso"
-        },
-        "name": "NFDI4Health VS MDS Execution Language [ISO]",
-        "description": "Value set defining codes of the languages of the resource.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "ValueSet/nfdi4health-vs-mds-id-type-umls-local"
         },
         "name": "NFDI4Health VS MDS ID Type [UMLS, local]",
@@ -1446,22 +1438,6 @@
         },
         "name": "NFDI4Health_EX_MDS_Related",
         "description": "Extension providing information about related publications, datasets, study documents, web pages, etc.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/nfdi4health-vs-mds-language-nonenglish-umls"
-        },
-        "name": "NFDI4Health_VS_MDS_Language_NonEnglish_UMLS",
-        "description": "Value set defining codes for languages other than English from UMLS.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/nfdi4health-vs-mds-language-umls"
-        },
-        "name": "NFDI4Health_VS_MDS_Language_UMLS",
-        "description": "Value set defining codes for languages from UMLS.",
         "exampleBoolean": false
       }
     ],

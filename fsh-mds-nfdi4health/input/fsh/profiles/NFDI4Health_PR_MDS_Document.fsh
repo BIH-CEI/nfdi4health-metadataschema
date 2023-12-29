@@ -113,31 +113,14 @@ Description: "Profile to collect information about documents related to german c
 * identifier[Other].value 1..
 * identifier[Other].value ^definition = "Identifier (ID) assigned to the given resource by another registering system, e.g. by a register of clinical trials or a data repository."
 * description 1..1
-* description ^short = "English description of the [RESOURCE]"
-* description ^definition = "A short plain text summary describing the resource in English."
-* description ^comment = "Additional information: An English description is mandatory to facilitate the search. | Short input help: The provided information should be understandable by scientific audience."
+* description ^short = "text"
+* description ^definition = "Short plain text summary of the [RESOURCE]."
 * description.extension ^slicing.discriminator.type = #value
 * description.extension ^slicing.discriminator.path = "url"
 * description.extension ^slicing.rules = #open
 * description.extension contains NFDI4Health_EX_MDS_Language named language 1..1
-* description.extension[language] ^short = "Language of the description"
-* description.extension[language] ^definition = "Language of the description text."
-* description.extension[language] ^comment = "Additional information: English is a default value."
-* description.extension[language].value[x] = $UMLS#C0376245 "English Language" (exactly)
-* description.extension contains $translation named translation 0..*
-* description.extension[translation] ^short = "Additional description(s) of the [RESOURCE]"
-* description.extension[translation] ^definition = "Group of items with description(s) of the resource written not in English."
-* description.extension[translation] ^comment = "Additional descriptions of the resource are optional. The provided information should be understandable by scientific audience."
-* description.extension[translation].extension ^slicing.discriminator.type = #value
-* description.extension[translation].extension ^slicing.discriminator.path = "url"
-* description.extension[translation].extension ^slicing.rules = #open
-* description.extension[translation].extension[lang] ^sliceName = "lang"
-* description.extension[translation].extension[lang] ^short = "Language of the description text."
-* description.extension[translation].extension[lang] ^definition = "Language other than English of the description text."
-* description.extension[translation].extension[content] ^sliceName = "content"
-* description.extension[translation].extension[content] ^short = "Description (not in English)"
-* description.extension[translation].extension[content] ^definition = "Short plain text summary of the resource other than in English."
-* description.extension[translation].extension[content] ^comment = "Additional information: Additional descriptions of the resource are optional. The provided information should be understandable by scientific audience."
+* description.extension[language] ^short = "language"
+* description.extension[language] ^definition = "Language in which the description text is provided."
 * content.extension ^slicing.discriminator.type = #value
 * content.extension ^slicing.discriminator.path = "url"
 * content.extension ^slicing.rules = #open
@@ -203,10 +186,7 @@ Source: NFDI4Health_PR_MDS_Document
 * identifier[Other].value -> "1.12.2 Resource.idsAlternative.identifier"
 * extension[resourceType] -> "1.2.1 Resource.classification.resourceType"
 * extension[resourceTypeGeneral] -> "1.2.2 Resource.classification.resourceTypeGeneral"
-* description -> "1.5.1 Resource.descriptionEnglish.text"
-* description.extension[translation] -> "1.6 Resource.descriptionNonEnglish"
-* description.extension[translation].extension[lang] -> "1.6.2 Resource.descriptionNonEnglish.language"
-* description.extension[translation].extension[content] -> "1.6.1 Resource.descriptionNonEnglish.text"
+* description -> "Resource.descriptions.text"
 * description.extension[language] -> "1.5.2 Resource.descriptionEnglish.language"
 * content.extension[label] -> "1.3 Resource.titles" "1.4 Resource.acronyms"
 * content.extension[version] -> "1.10.1 Resource.nonStudyDetails.version"

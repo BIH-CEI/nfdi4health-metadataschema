@@ -781,7 +781,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/NFDI4Health_PR_MDS_Document.fsh",
     "startLine": 1,
-    "endLine": 160
+    "endLine": 143
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-pr-mds-evidence-variable-intervention-exposure.json",
@@ -845,7 +845,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/NFDI4Health_PR_MDS_Questionnaire.fsh",
     "startLine": 1,
-    "endLine": 154
+    "endLine": 135
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-pr-mds-related-artifact-resource.json",
@@ -861,7 +861,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/NFDI4Health_PR_MDS_Study.fsh",
     "startLine": 1,
-    "endLine": 333
+    "endLine": 314
   },
   {
     "outputFile": "ValueSet-nfdi4health-vs-mds-cd-common-chronic-disease-name-snomedct.json",
@@ -896,14 +896,6 @@
     "endLine": 13
   },
   {
-    "outputFile": "ValueSet-nfdi4health-vs-mds-execution-language-iso.json",
-    "fshName": "NFDI4Health_VS_MDS_Execution_Language_ISO",
-    "fshType": "ValueSet",
-    "fshFile": "valuesets/vs-execution-language.fsh",
-    "startLine": 1,
-    "endLine": 13
-  },
-  {
     "outputFile": "ValueSet-nfdi4health-vs-mds-id-type-umls-local.json",
     "fshName": "NFDI4Health_VS_MDS_ID_TYPE_UMLS_Local",
     "fshType": "ValueSet",
@@ -926,22 +918,6 @@
     "fshFile": "valuesets/vs-label-type.fsh",
     "startLine": 1,
     "endLine": 25
-  },
-  {
-    "outputFile": "ValueSet-nfdi4health-vs-mds-language-nonenglish-umls.json",
-    "fshName": "NFDI4Health_VS_MDS_Language_NonEnglish_UMLS",
-    "fshType": "ValueSet",
-    "fshFile": "valuesets/vs-language-nonenglish.fsh",
-    "startLine": 1,
-    "endLine": 17
-  },
-  {
-    "outputFile": "ValueSet-nfdi4health-vs-mds-language-umls.json",
-    "fshName": "NFDI4Health_VS_MDS_Language_UMLS",
-    "fshType": "ValueSet",
-    "fshFile": "valuesets/vs-language.fsh",
-    "startLine": 1,
-    "endLine": 17
   },
   {
     "outputFile": "ValueSet-nfdi4health-vs-mds-mortality-data-nci.json",

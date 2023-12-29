@@ -119,31 +119,12 @@ Description: "Profile collecting information on questionnaires within NFDI4Healt
 * status = #active (exactly)
 * status ^comment = "The item does not exist in NFDI4Health' MDS. Fixed to 'active' for all studies."
 * description 1..1
-* description ^short = "English description of the [RESOURCE]"
-* description ^definition = "A short plain text summary describing the resource in English."
-* description ^comment = "Additional information: An English description is mandatory to facilitate the search. | Short input help: The provided information should be understandable by scientific audience."
+* description ^short = "text"
+* description ^definition = "Short plain text summary of the [RESOURCE]."
 * description.extension ^slicing.discriminator.type = #value
 * description.extension ^slicing.discriminator.path = "url"
 * description.extension ^slicing.rules = #open
 * description.extension contains NFDI4Health_EX_MDS_Language named language 1..1
-* description.extension[language] ^short = "Language of the description"
-* description.extension[language] ^definition = "Language of the description text."
-* description.extension[language] ^comment = "Additional information: English is a default value."
-* description.extension[language].value[x] = $UMLS#C0376245 "English Language" (exactly)
-* description.extension contains $translation named translation 0..*
-* description.extension[translation] ^short = "Additional description(s) of the [RESOURCE]"
-* description.extension[translation] ^definition = "Group of items with description(s) of the resource written not in English."
-* description.extension[translation] ^comment = "Additional descriptions of the resource are optional. The provided information should be understandable by scientific audience."
-* description.extension[translation].extension ^slicing.discriminator.type = #value
-* description.extension[translation].extension ^slicing.discriminator.path = "url"
-* description.extension[translation].extension ^slicing.rules = #open
-* description.extension[translation].extension[lang] ^sliceName = "lang"
-* description.extension[translation].extension[lang] ^short = "Language of the description text."
-* description.extension[translation].extension[lang] ^definition = "Language other than English of the description text."
-* description.extension[translation].extension[content] ^sliceName = "content"
-* description.extension[translation].extension[content] ^short = "Description (not in English)"
-* description.extension[translation].extension[content] ^definition = "Short plain text summary of the resource other than in English."
-* description.extension[translation].extension[content] ^comment = "Additional information: Additional descriptions of the resource are optional. The provided information should be understandable by scientific audience."
 * copyright ^short = "Additional information about use rights"
 * copyright ^definition = "Any additional descriptive information explaining terms and conditions to (re-)use the resource."
 * copyright ^comment = "Short input help: If “Other” is selected in the property 'License', the preferred license or terms and conditions for (re-)use can be specified here."
@@ -201,11 +182,8 @@ Source: NFDI4Health_PR_MDS_Questionnaire
 * extension[resourceTypeGeneral] -> "1.2.2 Resource.classification.resourceTypeGeneral"
 * version -> "1.10.1 Resource.nonStudyDetails.version"
 * title -> "1.3.1 Resource.titles.text"
-* description -> "1.5.1 Resource.descriptionEnglish.text"
-* description.extension[translation] -> "1.6 Resource.descriptionNonEnglish"
-* description.extension[translation].extension[lang] -> "1.6.2 Resource.descriptionNonEnglish.language"
-* description.extension[translation].extension[content] -> "1.6.1 Resource.descriptionNonEnglish.text"
-* description.extension[language] -> "1.5.2 Resource.descriptionEnglish.language"
+* description -> "Resource.descriptions.text"
+* description.extension[language] -> "Resource.descriptions.language"
 * copyright -> "1.10.3.3 Resource.nonStudyDetails.useRights.description"
 * extension[relatedResources] -> "1.13 Resource.ids"
 * extension[relatedResources] -> "1.14 Resource.idsNfdi4health"

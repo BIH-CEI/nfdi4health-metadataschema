@@ -83,7 +83,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-execution-language-iso",
+          "valueSet": "http://terminology.hl7.org/CodeSystem/iso639-1",
           "description": "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)"
         }
       }

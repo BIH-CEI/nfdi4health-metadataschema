@@ -1648,14 +1648,13 @@
       {
         "id": "ResearchStudy.description",
         "path": "ResearchStudy.description",
-        "short": "English description of the [RESOURCE]",
-        "definition": "A short plain text summary describing the resource in English.",
-        "comment": "Additional information: An English description is mandatory to facilitate the search. | Short input help: The provided information should be understandable by scientific audience.",
+        "short": "text",
+        "definition": "Short plain text summary of the [RESOURCE].",
         "min": 1,
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.5.1 Resource.descriptionEnglish.text"
+            "map": "Resource.descriptions.text"
           }
         ]
       },
@@ -1677,9 +1676,6 @@
         "id": "ResearchStudy.description.extension:language",
         "path": "ResearchStudy.description.extension",
         "sliceName": "language",
-        "short": "Language of the description",
-        "definition": "Language of the description text.",
-        "comment": "Additional information: English is a default value.",
         "min": 1,
         "max": "1",
         "type": [
@@ -1693,63 +1689,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.5.2 Resource.descriptionEnglish.language"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.description.extension:language.value[x]",
-        "path": "ResearchStudy.description.extension.value[x]",
-        "fixedCode": "C0376245"
-      },
-      {
-        "id": "ResearchStudy.description.extension:translation",
-        "path": "ResearchStudy.description.extension",
-        "sliceName": "translation",
-        "short": "Additional description(s) of the [RESOURCE]",
-        "definition": "Group of items with description(s) of the resource written not in English.",
-        "comment": "Additional descriptions of the resource are optional. The provided information should be understandable by scientific audience.",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/StructureDefinition/translation"
-            ]
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "1.6 Resource.descriptionNonEnglish"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.description.extension:translation.extension:lang",
-        "path": "ResearchStudy.description.extension.extension",
-        "sliceName": "lang",
-        "short": "Language of the description text.",
-        "definition": "Language other than English of the description text.",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "1.6.2 Resource.descriptionNonEnglish.language"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.description.extension:translation.extension:content",
-        "path": "ResearchStudy.description.extension.extension",
-        "sliceName": "content",
-        "short": "Description (not in English)",
-        "definition": "Short plain text summary of the resource other than in English.",
-        "comment": "Additional information: Additional descriptions of the resource are optional. The provided information should be understandable by scientific audience.",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "1.6.1 Resource.descriptionNonEnglish.text"
+            "map": "Resource.descriptions.language"
           }
         ]
       },

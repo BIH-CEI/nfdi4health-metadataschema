@@ -114,7 +114,6 @@
 [NFDI4Health_PR_MDS_Study]: StructureDefinition-nfdi4health-pr-mds-study.html
 [2.16.840.1.113883.3.1937.777.64.4.6--20231207000000]: Questionnaire-2.16.840.1.113883.3.1937.777.64.4.6--20231207000000.html
 [NFDI4Health_VS_MDS_Countries_ISO]: ValueSet-nfdi4health-vs-mds-countries-iso.html
-[NFDI4Health_VS_MDS_Execution_Language_ISO]: ValueSet-nfdi4health-vs-mds-execution-language-iso.html
 [NFDI4Health_VS_MDS_ID_TYPE_UMLS_Local]: ValueSet-nfdi4health-vs-mds-id-type-umls-local.html
 [NFDI4Health_VS_MDS_Identifier_Type_Related_Artifact_UMLS_Local]: ValueSet-nfdi4health-vs-mds-identifier-type-related-artifact-umls-local.html
 [NFDI4Health_VS_MDS_Label_Type_Local]: ValueSet-nfdi4health-vs-mds-label-type-local.html
@@ -177,5 +176,3 @@
 [NFDI4Health_VS_MDS_Yes_No_Not_Applicable_SNOMEDCT]: ValueSet-nfdi4health-vs-mds-yes-no-not-applicable-snomedct.html
 [NFDI4Health_VS_MDS_Yes_No_Undecided_SNOMEDCT_NCI]: ValueSet-nfdi4health-vs-mds-yes-no-undecided-snomedct-nci.html
 [NFDI4Health_EX_MDS_Related]: StructureDefinition-nfdi4health-ex-mds-related.html
-[NFDI4Health_VS_MDS_Language_NonEnglish_UMLS]: ValueSet-nfdi4health-vs-mds-language-nonenglish-umls.html
-[NFDI4Health_VS_MDS_Language_UMLS]: ValueSet-nfdi4health-vs-mds-language-umls.html
