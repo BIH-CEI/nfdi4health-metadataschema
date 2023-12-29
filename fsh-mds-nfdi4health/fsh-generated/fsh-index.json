@@ -757,7 +757,7 @@
     "fshType": "Logical",
     "fshFile": "logicals/lm-mds-nfdi4health-v3_3.fsh",
     "startLine": 1,
-    "endLine": 595
+    "endLine": 578
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-lm-metadatenschema-recordlinkage.json",

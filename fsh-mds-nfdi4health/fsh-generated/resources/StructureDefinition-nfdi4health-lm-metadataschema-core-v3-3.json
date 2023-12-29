@@ -130,8 +130,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-resource-type-nci-local",
-          "description": "NFDI4Health_VS_MDS_Resource_Type_UMLS_SNOMED_Local3.3"
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-resource-type-nci-local"
         }
       },
       {
@@ -158,8 +157,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-resource-type-general-nci-umls-local",
-          "description": "NFDI4Health_VS_MDS_Resource_Type_General_NCI_UMLS_Local"
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-resource-type-general-nci-umls-local"
         }
       },
       {
@@ -230,8 +228,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://terminology.hl7.org/CodeSystem/iso639-1",
-          "description": "ISOLanguage"
+          "valueSet": "http://terminology.hl7.org/CodeSystem/iso639-1"
         }
       },
       {
@@ -302,8 +299,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://terminology.hl7.org/CodeSystem/iso639-1",
-          "description": "ISOLanguage"
+          "valueSet": "http://terminology.hl7.org/CodeSystem/iso639-1"
         }
       },
       {
@@ -479,8 +475,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://terminology.hl7.org/CodeSystem/iso639-1",
-          "description": "ISO 639-1"
+          "valueSet": "http://terminology.hl7.org/CodeSystem/iso639-1"
         }
       },
       {
@@ -624,8 +619,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-use-rights-label-spdx-smomed-local",
-          "description": "NFDI4Health_VS_MDS_Use_Rights_Label_SPDX_SNOMED_Local"
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-use-rights-label-spdx-smomed-local"
         }
       },
       {
@@ -831,8 +825,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-role-name-type-snomed",
-          "description": "NFDI4Health_VS_MDS_Role_Name_Type_SNOMED"
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-role-name-type-snomed"
         }
       },
       {
@@ -881,8 +874,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-organisational-roles-nci-local",
-          "description": "NFDI4Health_VS_MDS_Organisational_Roles_NCI_Local"
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-organisational-roles-nci-local"
         }
       },
       {
@@ -976,8 +968,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-personal-roles-nci-local",
-          "description": "NFDI4Health_VS_MDS_Personal_Roles_NCI_UMLS_Local"
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-personal-roles-nci-local"
         }
       },
       {
@@ -1112,8 +1103,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-role-name-identifier-scheme-local",
-          "description": "NFDI4Health_VS_MDS_Role_Name_Identifier_Scheme_Local"
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-role-name-identifier-scheme-local"
         }
       },
       {
@@ -1348,8 +1338,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-role-affiliation-identifier-scheme-local",
-          "description": "NFDI4Health_VS_MDS_Role_Affiliation_Identifier_Scheme_Local"
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-role-affiliation-identifier-scheme-local"
         }
       },
       {
@@ -1412,8 +1401,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-id-type-umls-local",
-          "description": "NFDI4Health_VS_MDS_ID_TYPE_UMLS_Local"
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-id-type-umls-local"
         }
       },
       {
@@ -1526,8 +1514,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-identifier-type-related-artifact-umls-local",
-          "description": "NFDI4Health_VS_MDS_Identifier_Type_Related_Artifact_UMLS_Local"
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-identifier-type-related-artifact-umls-local"
         }
       },
       {
@@ -1568,8 +1555,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-relation-type-ids-local",
-          "description": "NFDI4Health_VS_MDS_Relation_Type_Ids_Local"
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-relation-type-ids-local"
         }
       },
       {
@@ -1603,8 +1589,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-resource-type-general-nci-umls-local",
-          "description": "NFDI4Health_VS_MDS_Resource_Type_General_NCI_UMLS_Local"
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-resource-type-general-nci-umls-local"
         }
       },
       {
@@ -1704,8 +1689,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-relation-type-ids-local",
-          "description": "NFDI4Health_VS_MDS_Relation_Type_Ids_Local"
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-relation-type-ids-local"
         }
       },
       {
@@ -1799,8 +1783,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-provenance-data-source-local",
-          "description": "NFDI4Health_VS_MDS_Provenance_Data_Source_Local"
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-provenance-data-source-local"
         }
       },
       {
