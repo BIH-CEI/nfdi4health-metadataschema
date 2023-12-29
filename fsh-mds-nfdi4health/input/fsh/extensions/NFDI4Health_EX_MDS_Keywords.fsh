@@ -16,13 +16,14 @@ Description: "Extension storing keyword(s) describing a resource."
 * . ^definition = "Group of items providing information about keywords describing the [RESOURCE]."
 * . ^comment = "<p><strong>Additional information: </strong>The findability of the [RESOURCE] can be significantly increased if proper keywords are stated."
 * . 0..*
-* value[x] 1..1
 * value[x] only CodeableConcept
+* valueCodeableConcept.coding.system 1..1
+* valueCodeableConcept.text 1..1
 
 Mapping: NFDI4Health-Keywords-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Keywords
 * -> "Resource.keywords"
-* text -> "Resource.keywords.label"
-* coding.system -> "Resource.keywords.code"
+* valueCodeableConcept.text -> "Resource.keywords.label"
+* valueCodeableConcept.coding.system -> "Resource.keywords.code"
