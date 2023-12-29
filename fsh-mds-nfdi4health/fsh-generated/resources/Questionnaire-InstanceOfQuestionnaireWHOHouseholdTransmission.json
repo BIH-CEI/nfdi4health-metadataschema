@@ -37,7 +37,7 @@
           "url": "roleOrganisational",
           "valueCoding": {
             "code": "C25461",
-            "system": "http://ncimeta.nci.nih.gov",
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
             "display": "Contact Person (Human)"
           }
         }
@@ -73,7 +73,7 @@
       "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-resource-type-general",
       "valueCoding": {
         "code": "C47824",
-        "system": "http://ncimeta.nci.nih.gov",
+        "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
         "display": "Data Set (Idea or Concept)"
       }
     },

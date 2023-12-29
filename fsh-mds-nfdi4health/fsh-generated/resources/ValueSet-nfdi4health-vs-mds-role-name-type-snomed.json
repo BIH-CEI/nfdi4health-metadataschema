@@ -1,0 +1,39 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "NFDI4Health_VS_MDS_Role_Name_Type_SNOMED",
+  "id": "nfdi4health-vs-mds-role-name-type-snomed",
+  "title": "NFDI4Health VS MDS Role Name Type [SNOMED]",
+  "description": "Value set defining codes to specify role types.",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-role-name-type-snomed",
+  "version": "0.9",
+  "experimental": true,
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "385437003",
+            "display": "Institution"
+          },
+          {
+            "code": "125676002",
+            "display": "Person"
+          }
+        ]
+      }
+    ]
+  }
+}

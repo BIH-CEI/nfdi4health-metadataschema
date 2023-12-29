@@ -1,11 +1,11 @@
 {
   "resourceType": "ValueSet",
   "status": "draft",
-  "name": "NFDI4Health_VS_MDS_Use_Rights_Label_SPDX_UMLS_Local",
-  "id": "nfdi4health-vs-mds-use-rights-label-spdx-umls-local",
-  "title": "NFDI4Health VS MDS Use Rights Label [SPDX, UMLS, Local]",
+  "name": "NFDI4Health_VS_MDS_Use_Rights_Label_SPDX_SNOMED_Local",
+  "id": "nfdi4health-vs-mds-use-rights-label-spdx-snomed-local",
+  "title": "NFDI4Health VS MDS Use Rights Label [SPDX, SNOMED, Local]",
   "description": "Value set used to indicate the use rights related to a resource.",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-use-rights-label-spdx-umls-local",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-use-rights-label-spdx-smomed-local",
   "version": "0.9",
   "experimental": true,
   "publisher": "NFDI4Health",
@@ -22,12 +22,21 @@
   "compose": {
     "include": [
       {
-        "system": "https://www.hl7.org/fhir/R4/codesystem-spdx-license.html",
+        "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
         "concept": [
           {
-            "code": "CC0-1.0",
-            "display": "Creative Commons Zero v1.0 Universal"
+            "code": "180",
+            "display": "Not assigned"
           },
+          {
+            "code": "013",
+            "display": "All rights reserved"
+          }
+        ]
+      },
+      {
+        "system": "https://www.hl7.org/fhir/R4/codesystem-spdx-license.html",
+        "concept": [
           {
             "code": "CC-BY-4.0",
             "display": "Creative Commons Attribution 4.0 International"
@@ -43,32 +52,27 @@
           {
             "code": "CC-BY-NC-SA-4.0",
             "display": "Creative Commons Attribution Non Commercial Share Alike 4.0 International"
+          },
+          {
+            "code": "CC0-1.0",
+            "display": "Creative Commons Zero v1.0 Universal"
           }
         ]
       },
       {
-        "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+        "system": "http://snomed.info/sct",
         "concept": [
           {
-            "code": "013",
-            "display": "All rights reserved"
-          }
-        ]
-      },
-      {
-        "system": "http://terminology.hl7.org/CodeSystem/umls",
-        "concept": [
-          {
-            "code": "C0205394",
-            "display": "Other (Qualitative Concept)"
+            "code": "74964007",
+            "display": "Other"
           },
           {
-            "code": "C1272460",
-            "display": "Not Applicable (Qualitative Concept)"
+            "code": "385432009",
+            "display": "Not Applicable (qualifier value)"
           },
           {
-            "code": "C0439673",
-            "display": "Unknown (Qualitative Concept)"
+            "code": "261665006",
+            "display": "Unknown (qualifier value)"
           }
         ]
       }

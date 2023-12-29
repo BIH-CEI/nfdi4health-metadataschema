@@ -38,7 +38,7 @@ Description: "Group of items providing information about person(s), group(s) of 
 * extension[rolePersonal].value[x] ^short = "Role type"
 * extension[rolePersonal].value[x] ^definition = "Type of the role a person fulllfils, e.g. a principal investigator of a study or an author of a document?"
 * extension[rolePersonal].value[x] ^comment = "Short input help: Select one value from the list."
-* extension[rolePersonal].valueCoding from NFDI4Health_VS_MDS_Personal_Roles_NCI_UMLS_Local (required)
+* extension[rolePersonal].valueCoding from NFDI4Health_VS_MDS_Personal_Roles_NCI_Local (required)
 * extension[rolePersonal].valueCoding ^binding.description = "Value set defining codes for personal roles."
 * extension[rolePersonal].valueCoding.system 1..
 * extension[rolePersonal].valueCoding.code 1..
@@ -60,7 +60,7 @@ Description: "Group of items providing information about person(s), group(s) of 
 * extension[nameType].value[x] only Coding
 * extension[nameType].value[x] ^short = "Type of the name"
 * extension[nameType].value[x] ^definition = "Personal or organisational/group type of the name."
-* extension[nameType].valueCoding from NFDI4Health_VS_MDS_Role_Name_Type_UMLS (required)
+* extension[nameType].valueCoding from NFDI4Health_VS_MDS_Role_Name_Type_SNOMED (required)
 * extension[nameType].valueCoding ^binding.description = "Value set defining codes to specify role types."
 
 Mapping: NFDI4Health-Associated-Party-to-FHIR

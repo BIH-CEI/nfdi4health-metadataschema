@@ -340,7 +340,7 @@
           "url": "imaging",
           "valueCoding": {
             "code": "C115503",
-            "system": "http://ncimeta.nci.nih.gov",
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
             "display": "Ultrasound Study File (Manufactured Object)"
           }
         },
@@ -348,7 +348,7 @@
           "url": "imaging",
           "valueCoding": {
             "code": "C115501",
-            "system": "http://ncimeta.nci.nih.gov",
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
             "display": "Magnetic Resonance Imaging Study File (Manufactured Object)"
           }
         },
@@ -356,7 +356,7 @@
           "url": "imaging",
           "valueCoding": {
             "code": "C115545",
-            "system": "http://ncimeta.nci.nih.gov",
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
             "display": "Medical Imaging File Not Otherwise Specified (Intellectual Product)"
           }
         },
@@ -364,7 +364,7 @@
           "url": "omics",
           "valueCoding": {
             "code": "C84343",
-            "system": "http://ncimeta.nci.nih.gov",
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
             "display": "Genomics"
           }
         },
@@ -372,7 +372,7 @@
           "url": "omics",
           "valueCoding": {
             "code": "C49019",
-            "system": "http://ncimeta.nci.nih.gov",
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
             "display": "Metabolomics"
           }
         },
@@ -380,7 +380,7 @@
           "url": "omics",
           "valueCoding": {
             "code": "C153189",
-            "system": "http://ncimeta.nci.nih.gov",
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
             "display": "Transcriptomics"
           }
         },
@@ -388,7 +388,7 @@
           "url": "omics",
           "valueCoding": {
             "code": "C20085",
-            "system": "http://ncimeta.nci.nih.gov",
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
             "display": "Proteomics"
           }
         },

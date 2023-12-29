@@ -1,0 +1,128 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "NFDI4Health_VS_MDS_Resource_Type_NCI_Local",
+  "id": "nfdi4health-vs-mds-resource-type-nci-local",
+  "title": "NFDI4Health VS MDS Resource Type [NCI, Local]",
+  "description": "Value set defining codes to specify type of the resource.",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-resource-type-nci-local",
+  "version": "0.9",
+  "experimental": true,
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+        "concept": [
+          {
+            "code": "178",
+            "display": "Secondary data source"
+          },
+          {
+            "code": "021",
+            "display": "Other study document"
+          },
+          {
+            "code": "020",
+            "display": "Other data collection instrument"
+          },
+          {
+            "code": "019",
+            "display": "Participant tasks"
+          },
+          {
+            "code": "018",
+            "display": "Discussion guide"
+          },
+          {
+            "code": "017",
+            "display": "Observation guide"
+          },
+          {
+            "code": "016",
+            "display": "Interview schema and themes"
+          },
+          {
+            "code": "011",
+            "display": "Codebook"
+          },
+          {
+            "code": "009",
+            "display": "Data dictionary"
+          }
+        ]
+      },
+      {
+        "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "concept": [
+          {
+            "code": "C63536",
+            "display": "Study"
+          },
+          {
+            "code": "C198230",
+            "display": "Substudy"
+          },
+          {
+            "code": "C47824",
+            "display": "Data Set"
+          },
+          {
+            "code": "C93381",
+            "display": "Study Protocol Document"
+          },
+          {
+            "code": "C16468",
+            "display": "Consent Form"
+          },
+          {
+            "code": "C15518",
+            "display": "Clinical Trials Information for Patients"
+          },
+          {
+            "code": "C115779",
+            "display": "Standard Operating Procedure List"
+          },
+          {
+            "code": "C115761",
+            "display": "Statistical Analysis Plan"
+          },
+          {
+            "code": "C115756",
+            "display": "Data Management Plan"
+          },
+          {
+            "code": "C40988",
+            "display": "Case Report Form"
+          },
+          {
+            "code": "C17048",
+            "display": "Questionnaire"
+          },
+          {
+            "code": "C17649",
+            "display": "Other"
+          },
+          {
+            "code": "C61393",
+            "display": "Registry"
+          },
+          {
+            "code": "C48800",
+            "display": "Biorepository"
+          }
+        ]
+      }
+    ]
+  }
+}

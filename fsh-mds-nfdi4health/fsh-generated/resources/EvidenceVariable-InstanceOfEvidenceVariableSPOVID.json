@@ -15,7 +15,7 @@
         "coding": [
           {
             "code": "C15184",
-            "system": "http://ncimeta.nci.nih.gov",
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
             "display": "Behavioral Intervention (Therapeutic or Preventive Procedure)"
           }
         ]

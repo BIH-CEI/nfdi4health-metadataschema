@@ -184,4 +184,7 @@ Description: "Code system defining remaining concepts without mapping to concept
 * #173 "Quota"
 * #174 "Purposive"
 * #175 "Availability"
-
+* #178 "Secondary data source"
+* #179 "Biobank"
+* #180 "Not assigned"
+* #196 "ICD-11"

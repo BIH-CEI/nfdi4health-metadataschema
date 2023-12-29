@@ -1,0 +1,120 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "NFDI4Health_VS_MDS_Personal_Roles_NCI_Local",
+  "id": "nfdi4health-vs-mds-personal-roles-nci-local",
+  "title": "NFDI4Health VS MDS Personal Roles [NCI, local]",
+  "description": "Value set defining codes for personal roles.",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-personal-roles-nci-local",
+  "version": "0.9",
+  "experimental": true,
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "concept": [
+          {
+            "code": "C25461",
+            "display": "Contact Person"
+          },
+          {
+            "code": "C19924",
+            "display": "Principal Investigator"
+          },
+          {
+            "code": "C42781",
+            "display": "Author"
+          },
+          {
+            "code": "C115486",
+            "display": "Content Item Creator"
+          },
+          {
+            "code": "C142679",
+            "display": "Secondary Sponsor"
+          },
+          {
+            "code": "C142695",
+            "display": "Sponsor-Investigator"
+          },
+          {
+            "code": "C51820",
+            "display": "Data Manager"
+          },
+          {
+            "code": "C43368",
+            "display": "Editor"
+          },
+          {
+            "code": "C45336",
+            "display": "Producer"
+          },
+          {
+            "code": "C134832",
+            "display": "Supervisor"
+          },
+          {
+            "code": "C17649",
+            "display": "Other"
+          },
+          {
+            "code": "C17089",
+            "display": "Research Personnel"
+          }
+        ]
+      },
+      {
+        "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+        "concept": [
+          {
+            "code": "045",
+            "display": "Work Packager Leader"
+          },
+          {
+            "code": "044",
+            "display": "Rights Holder"
+          },
+          {
+            "code": "043",
+            "display": "Related Person"
+          },
+          {
+            "code": "042",
+            "display": "Project Member"
+          },
+          {
+            "code": "041",
+            "display": "Project Manager"
+          },
+          {
+            "code": "040",
+            "display": "Project Leader"
+          },
+          {
+            "code": "039",
+            "display": "Data Curator"
+          },
+          {
+            "code": "038",
+            "display": "Data Collector"
+          },
+          {
+            "code": "037",
+            "display": "Primary Sponsor"
+          }
+        ]
+      }
+    ]
+  }
+}

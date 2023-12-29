@@ -6,7 +6,7 @@ Description: "Value set defining codes to specify type of the resource."
 * ^status = #draft
 * ^version = "0.9"
 * ^experimental = true
-* ^publisher = "NFDI4Health"‚
+* ^publisher = "NFDI4Health"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 

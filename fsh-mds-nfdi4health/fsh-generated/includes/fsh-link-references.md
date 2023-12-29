@@ -1,4 +1,3 @@
-[2.16.840.1.113883.3.1937.777.64.4.6--20231207000000]: Questionnaire-2.16.840.1.113883.3.1937.777.64.4.6--20231207000000.html
 [ConceptMap-Study-Allocation-NFDI4Health-to-UMLS]: ConceptMap-ConceptMap-Study-Allocation-NFDI4Health-to-UMLS.html
 [ConceptMap-Study-Primary-Design-NFDI4Health-to-UMLS]: ConceptMap-ConceptMap-Study-Primary-Design-NFDI4Health-to-UMLS.html
 [ConceptMap-Study-Sampling-Non-Probability-NFDI4Health-to-NCI]: ConceptMap-ConceptMap-Study-Sampling-Non-Probability-NFDI4Health-to-NCI.html
@@ -39,6 +38,7 @@
 [InstanceOfStudySHIP]: ResearchStudy-InstanceOfStudySHIP.html
 [InstanceOfStudySPOVID]: ResearchStudy-InstanceOfStudySPOVID.html
 [NFDI4Health_VS_MDS_CD_Common_Chronic_Disease_Name_SNOMEDCT]: ValueSet-nfdi4health-vs-mds-cd-common-chronic-disease-name-snomedct.html
+[nfdi4health-cps-mds-capability-statement]: CapabilityStatement-nfdi4health-cps-mds-capability-statement.html
 [NFDI4Health_CS_MDS_Label_FHIR]: CodeSystem-nfdi4health-cs-mds-label-fhir.html
 [NFDI4Health_CS_MDS_Provenance_Data_Source]: CodeSystem-nfdi4health-cs-mds-provenance-data-source.html
 [NFDI4Health_CS_MDS_Remaining_Concepts]: CodeSystem-nfdi4health-cs-mds-remaining-concepts.html
@@ -92,9 +92,6 @@
 [NFDI4Health_EX_MDS_Use_Rights_Confirmations]: StructureDefinition-nfdi4health-ex-mds-use-rights-confirmations.html
 [NFDI4Health_EX_MDS_Version]: StructureDefinition-nfdi4health-ex-mds-version.html
 [NFDI4Health_LM_Metadataschema_Core_V3_3]: StructureDefinition-nfdi4health-lm-metadataschema-core-v3-3.html
-[NFDI4Health_LM_Metadataschema_EOCD_V3]: StructureDefinition-nfdi4health-lm-metadataschema-eocd-v3.html
-[NFDI4Health_LM_Metadataschema_General_V3]: StructureDefinition-nfdi4health-lm-metadataschema-general-v3.html
-[NFDI4Health_LM_Metadataschema_NE_V3]: StructureDefinition-nfdi4health-lm-metadataschema-ne-v3.html
 [InstanceOfChronicDiseaseModule]: Questionnaire-InstanceOfChronicDiseaseModule.html
 [InstanceOfNutritionalEpidemiologyModule]: Questionnaire-InstanceOfNutritionalEpidemiologyModule.html
 [InstanceOfRecordLinkage]: Questionnaire-InstanceOfRecordLinkage.html
@@ -115,6 +112,7 @@
 [NFDI4Health_PR_MDS_Questionnaire]: StructureDefinition-nfdi4health-pr-mds-questionnaire.html
 [NFDI4Health_PR_MDS_Related_Artifact_Resource]: StructureDefinition-nfdi4health-pr-mds-related-artifact-resource.html
 [NFDI4Health_PR_MDS_Study]: StructureDefinition-nfdi4health-pr-mds-study.html
+[2.16.840.1.113883.3.1937.777.64.4.6--20231207000000]: Questionnaire-2.16.840.1.113883.3.1937.777.64.4.6--20231207000000.html
 [NFDI4Health_VS_MDS_Countries_ISO]: ValueSet-nfdi4health-vs-mds-countries-iso.html
 [NFDI4Health_VS_MDS_Execution_Language_ISO]: ValueSet-nfdi4health-vs-mds-execution-language-iso.html
 [NFDI4Health_VS_MDS_ID_TYPE_UMLS_Local]: ValueSet-nfdi4health-vs-mds-id-type-umls-local.html
@@ -122,18 +120,18 @@
 [NFDI4Health_VS_MDS_Label_Type_Local]: ValueSet-nfdi4health-vs-mds-label-type-local.html
 [NFDI4Health_VS_MDS_Mortality_Data_NCI]: ValueSet-nfdi4health-vs-mds-mortality-data-nci.html
 [NFDI4Health_VS_MDS_Organisational_Roles_NCI_Local]: ValueSet-nfdi4health-vs-mds-organisational-roles-nci-local.html
-[NFDI4Health_VS_MDS_Personal_Roles_NCI_UMLS_Local]: ValueSet-nfdi4health-vs-mds-personal-roles-nci-umls-local.html
+[NFDI4Health_VS_MDS_Personal_Roles_NCI_Local]: ValueSet-nfdi4health-vs-mds-personal-roles-nci-local.html
 [NFDI4Health_VS_MDS_Provenance_Activity_HL7_Local]: ValueSet-nfdi4health-vs-mds-provenance-activity-hl7-local.html
 [NFDI4Health_VS_MDS_Provenance_Data_Source_Local]: ValueSet-nfdi4health-vs-mds-provenance-data-source-local.html
 [NFDI4Health_VS_MDS_Time_Units_UCUM_UMLS]: ValueSet-nfdi4health-vs-mds-time-units-ucum-umls.html
 [NFDI4Health_VS_MDS_Relation_Type_Ids_Nfdi_Local]: ValueSet-nfdi4health-vs-mds-relation-type-ids-nfdi-local.html
 [NFDI4Health_VS_MDS_Relation_Type_Ids_Local]: ValueSet-nfdi4health-vs-mds-relation-type-ids-local.html
 [NFDI4Health_VS_MDS_Resource_Type_General_NCI_UMLS_Local]: ValueSet-nfdi4health-vs-mds-resource-type-general-nci-umls-local.html
-[NFDI4Health_VS_MDS_Resource_Type_UMLS_Local]: ValueSet-nfdi4health-vs-mds-resource-type-umls-local.html
+[NFDI4Health_VS_MDS_Resource_Type_NCI_Local]: ValueSet-nfdi4health-vs-mds-resource-type-nci-local.html
 [NFDI4Health_VS_MDS_Role_Affiliation_Identifier_Scheme_Local]: ValueSet-nfdi4health-vs-mds-role-affiliation-identifier-scheme-local.html
 [NFDI4Health_VS_MDS_Role_Name_Identifier_Scheme_Local]: ValueSet-nfdi4health-vs-mds-role-name-identifier-scheme-local.html
 [NFDI4Health_VS_MDS_Role_Name_Personal_Title_NCI]: ValueSet-nfdi4health-vs-mds-role-name-personal-title-nci.html
-[NFDI4Health_VS_MDS_Role_Name_Type_UMLS]: ValueSet-nfdi4health-vs-mds-role-name-type-umls.html
+[NFDI4Health_VS_MDS_Role_Name_Type_SNOMED]: ValueSet-nfdi4health-vs-mds-role-name-type-snomed.html
 [NFDI4Health_VS_MDS_Study_Allocation_Local]: ValueSet-nfdi4health-vs-mds-study-allocation-local.html
 [NFDI4Health_VS_MDS_Study_Allocation_NCI]: ValueSet-nfdi4health-vs-mds-study-allocation-nci.html
 [NFDI4Health_VS_MDS_Study_Arm_Group_Type_UMLS]: ValueSet-nfdi4health-vs-mds-study-arm-group-type-umls.html
@@ -175,10 +173,9 @@
 [NFDI4Health_VS_MDS_Study_Type_Interventional_UMLS]: ValueSet-nfdi4health-vs-mds-study-type-interventional-umls.html
 [NFDI4Health_VS_MDS_Study_Type_Non_Interventional_Local]: ValueSet-nfdi4health-vs-mds-study-type-non-interventional-local.html
 [NFDI4Health_VS_MDS_Study_Type_Non_Interventional_UMLS_Local]: ValueSet-nfdi4health-vs-mds-study-type-non-interventional-umls-local.html
-[NFDI4Health_VS_MDS_Use_Rights_Label_SPDX_UMLS_Local]: ValueSet-nfdi4health-vs-mds-use-rights-label-spdx-umls-local.html
+[NFDI4Health_VS_MDS_Use_Rights_Label_SPDX_SNOMED_Local]: ValueSet-nfdi4health-vs-mds-use-rights-label-spdx-snomed-local.html
 [NFDI4Health_VS_MDS_Yes_No_Not_Applicable_SNOMEDCT]: ValueSet-nfdi4health-vs-mds-yes-no-not-applicable-snomedct.html
 [NFDI4Health_VS_MDS_Yes_No_Undecided_SNOMEDCT_NCI]: ValueSet-nfdi4health-vs-mds-yes-no-undecided-snomedct-nci.html
-[nfdi4health-cps-mds-capability-statement]: CapabilityStatement-nfdi4health-cps-mds-capability-statement.html
 [NFDI4Health_EX_MDS_Related]: StructureDefinition-nfdi4health-ex-mds-related.html
 [NFDI4Health_VS_MDS_Language_NonEnglish_UMLS]: ValueSet-nfdi4health-vs-mds-language-nonenglish-umls.html
 [NFDI4Health_VS_MDS_Language_UMLS]: ValueSet-nfdi4health-vs-mds-language-umls.html

@@ -13,7 +13,7 @@
         "coding": [
           {
             "code": "C49693",
-            "system": "http://ncimeta.nci.nih.gov",
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
             "display": "Planned Minimum Age of Subjects (Group Attribute)"
           }
         ]
@@ -31,7 +31,7 @@
         "coding": [
           {
             "code": "C49694",
-            "system": "http://ncimeta.nci.nih.gov",
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
             "display": "Planned Maximum Age of Subjects (Group Attribute)"
           }
         ]
@@ -49,7 +49,7 @@
         "coding": [
           {
             "code": "C17357",
-            "system": "http://ncimeta.nci.nih.gov",
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
             "display": "Gender (Organism Attribute)"
           }
         ]
@@ -70,7 +70,7 @@
         "coding": [
           {
             "code": "C17357",
-            "system": "http://ncimeta.nci.nih.gov",
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
             "display": "Gender (Organism Attribute)"
           }
         ]
@@ -91,7 +91,7 @@
         "coding": [
           {
             "code": "C17357",
-            "system": "http://ncimeta.nci.nih.gov",
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
             "display": "Gender (Organism Attribute)"
           }
         ]

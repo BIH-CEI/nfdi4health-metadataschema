@@ -33,7 +33,7 @@ Description: "NFDI4Health Logical Model Core Metadataschema V3.3"
 * Resource.classification ^base.min = 1
 * Resource.classification ^base.max = "1"
 * Resource.classification.type 1..1  CodeableConcept "type" "Type of the resource"
-* Resource.classification.type from https://art-decor.org/fhir/ValueSet/2.Xxxxx840.1.113883.3.1937.777.64.11.76--20231213141150 (required)
+* Resource.classification.type from NFDI4Health_VS_MDS_Resource_Type_NCI_Local (required)
 * Resource.classification.type ^comment = "<p><strong>Additional information: </strong>The selected resource type determines which information will be asked next.</p> \n "
 * Resource.classification.type ^requirements = "**Description: **A term describing the resource."
 * Resource.classification.type ^alias = "Resource.classification.type"
@@ -64,7 +64,7 @@ Description: "NFDI4Health Logical Model Core Metadataschema V3.3"
 * Resource.titles.text ^base.min = 1
 * Resource.titles.text ^base.max = "1"
 * Resource.titles.language 1..1  CodeableConcept "language" "Language of the title/name"
-* Resource.titles.language from ISOLanguage (required)
+* Resource.titles.language from $ISOLanguage (required)
 * Resource.titles.language ^requirements = "**Description: **Language in which the title/name is provided."
 * Resource.titles.language ^alias = "Resource.titles.language"
 * Resource.titles.language ^base.path = "Resource.titles.language"
@@ -85,7 +85,7 @@ Description: "NFDI4Health Logical Model Core Metadataschema V3.3"
 * Resource.acronyms.text ^base.min = 1
 * Resource.acronyms.text ^base.max = "1"
 * Resource.acronyms.language 1..1 CodeableConcept "language" "Language of the acronym"
-* Resource.acronyms.language from ISOLanguage (required)
+* Resource.acronyms.language from $ISOLanguage (required)
 * Resource.acronyms.language ^requirements = "**Description: **Language in which the acronym is provided."
 * Resource.acronyms.language ^alias = "Resource.acronyms.language"
 * Resource.acronyms.language ^base.path = "Resource.acronyms.language"
@@ -105,7 +105,7 @@ Description: "NFDI4Health Logical Model Core Metadataschema V3.3"
 * Resource.descriptions.text ^base.min = 1
 * Resource.descriptions.text ^base.max = "1"
 * Resource.descriptions.language 1..1  CodeableConcept "language" "Language of the description"
-* Resource.descriptions.language from ISOLanguage (required)
+* Resource.descriptions.language from $ISOLanguage (required)
 * Resource.descriptions.language ^requirements = "**Description: **Language in which the description text is provided."
 * Resource.descriptions.language ^alias = "Resource.descriptions.language"
 * Resource.descriptions.language ^base.path = "Resource.descriptions.language"
@@ -136,7 +136,7 @@ Description: "NFDI4Health Logical Model Core Metadataschema V3.3"
 * Resource.keywords.code ^example.label = "example 1"
 * Resource.keywords.code ^example.valueString = "http://id.nlm.nih.gov/mesh/D000086402"
 * Resource.languages 0..* CodeableConcept "languages" "Language(s) of the [RESOURCE]"
-* Resource.languages from ISOLanguage (required) (required)
+* Resource.languages from $ISOLanguage (required)
 * Resource.languages ^requirements = "**Description: **Language(s) in which the   [RESOURCE] is conducted/provided."
 * Resource.languages ^alias = "Resource.languages"
 * Resource.languages ^base.path = "Resource.languages"
@@ -253,7 +253,7 @@ Description: "NFDI4Health Logical Model Core Metadataschema V3.3"
 * Resource.contributors.organisational ^base.min = 0
 * Resource.contributors.organisational ^base.max = "1"
 * Resource.contributors.organisational.type 1..1  CodeableConcept "type" "Contributor type"
-* Resource.contributors.organisational.type from https://art-decor.org/fhir/ValueSet/2.Xxxxx840.1.113883.3.1937.777.64.11.3--20230823210303 (required)
+* Resource.contributors.organisational.type from NFDI4Health_VS_MDS_Organisational_Roles_NCI_Local (required)
 * Resource.contributors.organisational.type ^requirements = "**Description: **Contributor type an organisation, institution or group fulfills. For example, this can be a sponsor of the study or a group of authors of the document."
 * Resource.contributors.organisational.type ^alias = "Resource.contributors.organisational.type"
 * Resource.contributors.organisational.type ^base.path = "Resource.contributors.organisational.type"
@@ -315,7 +315,7 @@ Description: "NFDI4Health Logical Model Core Metadataschema V3.3"
 * Resource.contributors.personal.identifiers.identifier ^example.label = "example 1"
 * Resource.contributors.personal.identifiers.identifier ^example.valueString = "0000-0003-1379-7023"
 * Resource.contributors.personal.identifiers.scheme 1..1  CodeableConcept "scheme" "Scheme"
-* Resource.contributors.personal.identifiers.scheme from https://art-decor.org/fhir/ValueSet/2.840.1.113883.3.1937.777.64.11.48--20230922140754 (required)
+* Resource.contributors.personal.identifiers.scheme from NFDI4Health_VS_MDS_Role_Name_Identifier_Scheme_Local (required)
 * Resource.contributors.personal.identifiers.scheme ^requirements = "**Description: **Type of the identifier scheme reported."
 * Resource.contributors.personal.identifiers.scheme ^alias = "Resource.contributors.personal.identifiers.scheme"
 * Resource.contributors.personal.identifiers.scheme ^base.path = "Resource.contributors.personal.identifiers.scheme"
@@ -382,7 +382,7 @@ Description: "NFDI4Health Logical Model Core Metadataschema V3.3"
 * Resource.contributors.affiliations.identifiers.identifier ^example.label = "example 1"
 * Resource.contributors.affiliations.identifiers.identifier ^example.valueString = "0259fwx54"
 * Resource.contributors.affiliations.identifiers.scheme 1..1  CodeableConcept "scheme" "Scheme"
-* Resource.contributors.affiliations.identifiers.scheme from https://art-decor.org/fhir/ValueSet/2.Xxxxx840.1.113883.3.1937.777.64.11.49--20231004075824 (required)
+* Resource.contributors.affiliations.identifiers.scheme from NFDI4Health_VS_MDS_Role_Affiliation_Identifier_Scheme_Local (required)
 * Resource.contributors.affiliations.identifiers.scheme ^requirements = "**Description: **Type of the identifier scheme reported."
 * Resource.contributors.affiliations.identifiers.scheme ^alias = "Resource.contributors.affiliations.identifiers.scheme"
 * Resource.contributors.affiliations.identifiers.scheme ^base.path = "Resource.contributors.affiliations.identifiers.scheme"
@@ -401,7 +401,7 @@ Description: "NFDI4Health Logical Model Core Metadataschema V3.3"
 * Resource.idsAlternative ^base.min = 0
 * Resource.idsAlternative ^base.max = "*"
 * Resource.idsAlternative.scheme 1..1  CodeableConcept "scheme" "Type of the registry"
-* Resource.idsAlternative.scheme from https://art-decor.org/fhir/ValueSet/2.Xxxxx840.1.113883.3.1937.777.64.11.50--20231004091737 (required)
+* Resource.idsAlternative.scheme from NFDI4Health_VS_MDS_ID_TYPE_UMLS_Local (required)
 * Resource.idsAlternative.scheme ^requirements = "**Description: **Type/name of the system where the given [RESOURCE] is already registered."
 * Resource.idsAlternative.scheme ^alias = "Resource.idsAlternative.scheme"
 * Resource.idsAlternative.scheme ^base.path = "Resource.idsAlternative.scheme"
@@ -437,7 +437,7 @@ Description: "NFDI4Health Logical Model Core Metadataschema V3.3"
 * Resource.ids.identifier ^example.label = "example 1"
 * Resource.ids.identifier ^example.valueString = "10.4126/FRL01-006431467"
 * Resource.ids.scheme 1..1  CodeableConcept "scheme" "Type of the identifier"
-* Resource.ids.scheme from https://art-decor.org/fhir/ValueSet/2.Xxxxx840.1.113883.3.1937.777.64.11.71--20231026095811 (required)
+* Resource.ids.scheme from NFDI4Health_VS_MDS_Identifier_Type_Related_Artifact_UMLS_Local (required)
 * Resource.ids.scheme ^requirements = "**Description: **Type of the identifier of the related resource."
 * Resource.ids.scheme ^alias = "Resource.ids.scheme"
 * Resource.ids.scheme ^base.path = "Resource.ids.scheme"
@@ -447,7 +447,7 @@ Description: "NFDI4Health Logical Model Core Metadataschema V3.3"
 * Resource.ids.scheme ^example.valueCodeableConcept.text = "DOI"
 * Resource.ids.scheme ^binding.description = "NFDI4Health_VS_MDS_Identifier_Type_Related_Artifact_UMLS_Local"
 * Resource.ids.relationType 1..1  CodeableConcept "relationType" "Relationship between this [RESOURCE] (A) and the related resource (B)"
-* Resource.ids.relationType from https://art-decor.org/fhir/ValueSet/2.Xxxxx840.1.113883.3.1937.777.64.11.6--20230825102630 (required)
+* Resource.ids.relationType from NFDI4Health_VS_MDS_Relation_Type_Ids_Local (required)
 * Resource.ids.relationType ^requirements = "**Description: **Relationship between the [RESOURCE] being registered (A) and the related resource (B)."
 * Resource.ids.relationType ^alias = "Resource.ids.relationType"
 * Resource.ids.relationType ^base.path = "Resource.ids.relationType"
@@ -460,7 +460,7 @@ Description: "NFDI4Health Logical Model Core Metadataschema V3.3"
 * Resource.ids.relationType ^example.valueCodeableConcept.text = "A is part of B"
 * Resource.ids.relationType ^binding.description = "NFDI4Health_VS_MDS_Relation_Type_Ids_Local"
 * Resource.ids.typeGeneral 0..1 CodeableConcept "typeGeneral" "Type of the related resource"
-* Resource.ids.typeGeneral from https://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.1011--20220627140914 (required)
+* Resource.ids.typeGeneral from NFDI4Health_VS_MDS_Resource_Type_General_NCI_UMLS_Local (required)
 * Resource.ids.typeGeneral ^requirements = "**Description: **Type of the related resource, e.g. journal article, dataset, text, etc."
 * Resource.ids.typeGeneral ^alias = "Resource.ids.typeGeneral"
 * Resource.ids.typeGeneral ^base.path = "Resource.ids.typeGeneral"
@@ -492,7 +492,7 @@ Description: "NFDI4Health Logical Model Core Metadataschema V3.3"
 * Resource.idsNfdi4health.date ^base.min = 0
 * Resource.idsNfdi4health.date ^base.max = "1"
 * Resource.idsNfdi4health.relationType 0..1 CodeableConcept "relationType" "Relationship between this [RESOURCE] (A) and the related resource (B)"
-* Resource.idsNfdi4health.relationType from https://art-decor.org/fhir/ValueSet/2.Xxxxx840.1.113883.3.1937.777.64.11.6--20230825102630 (required)
+* Resource.idsNfdi4health.relationType from NFDI4Health_VS_MDS_Relation_Type_Ids_Local (required)
 * Resource.idsNfdi4health.relationType ^requirements = "**Description: **Relationship between the [RESOURCE] being registered (A) and the related resource (B)."
 * Resource.idsNfdi4health.relationType ^alias = "Resource.idsNfdi4health.relationType"
 * Resource.idsNfdi4health.relationType ^base.path = "Resource.idsNfdi4health.relationType"
@@ -520,7 +520,7 @@ Description: "NFDI4Health Logical Model Core Metadataschema V3.3"
 * Resource.provenance ^base.min = 1
 * Resource.provenance ^base.max = "1"
 * Resource.provenance.dataSource 1..1  CodeableConcept "dataSource" "Source of information about the [RESOURCE]"
-* Resource.provenance.dataSource from https://art-decor.org/fhir/ValueSet/2.Xxxxx840.1.113883.3.1937.777.64.11.45--20230905201454 (required)
+* Resource.provenance.dataSource from NFDI4Health_VS_MDS_Provenance_Data_Source_Local (required)
 * Resource.provenance.dataSource ^requirements = "**Description: **Source of information about the [RESOURCE] and the way it was uploaded/collected."
 * Resource.provenance.dataSource ^alias = "Resource.provenance.dataSource"
 * Resource.provenance.dataSource ^base.path = "Resource.provenance.dataSource"

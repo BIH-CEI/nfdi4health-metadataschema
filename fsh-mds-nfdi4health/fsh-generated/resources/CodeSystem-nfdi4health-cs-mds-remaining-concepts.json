@@ -719,6 +719,22 @@
     {
       "code": "175",
       "display": "Availability"
+    },
+    {
+      "code": "178",
+      "display": "Secondary data source"
+    },
+    {
+      "code": "179",
+      "display": "Biobank"
+    },
+    {
+      "code": "180",
+      "display": "Not assigned"
+    },
+    {
+      "code": "196",
+      "display": "ICD-11"
     }
   ],
   "version": "0.9",
@@ -734,5 +750,5 @@
       ]
     }
   ],
-  "count": 175
+  "count": 179
 }
