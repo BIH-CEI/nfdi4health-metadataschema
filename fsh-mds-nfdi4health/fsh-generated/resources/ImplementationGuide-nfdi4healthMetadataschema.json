@@ -477,18 +477,18 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nfdi4health-ex-mds-language"
-        },
-        "name": "NFDI4Health EX MDS Language",
-        "description": "Language of an element.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/nfdi4health-ex-mds-execution-language"
         },
         "name": "NFDI4Health EX MDS Language",
         "description": "Extension provinding information about the language the [RESOURCE] is conducted/provided.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-language"
+        },
+        "name": "NFDI4Health EX MDS Language",
+        "description": "Language of an element.",
         "exampleBoolean": false
       },
       {

@@ -18,7 +18,6 @@ Description: "Extension provinding information about the language the [RESOURCE]
 * . ^short = "languages"
 * . ^definition = "Language(s) in which the [RESOURCE] is conducted/provided."
 
-* value[x] only code
 * valueCode from $ISOLanguage (required)
 * valueCode ^short = "A human language."
 * valueCode ^definition = "A human language."

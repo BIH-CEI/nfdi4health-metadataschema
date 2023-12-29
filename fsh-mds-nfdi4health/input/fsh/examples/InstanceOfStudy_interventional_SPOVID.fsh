@@ -9,14 +9,14 @@ Usage: #example
 //Tile and Acronyms
 * title.extension[label][0].extension[value].valueString = "SPOVID - Sport & Long-COVID-Syndrom"
 * title.extension[label][=].extension[type].valueCoding = $LabelType#01 "Primary Title"
-* title.extension[label][=].extension[language].valueCoding = #en "English"
+* title.extension[label][=].extension[language].valueCode = #en "English"
 ///Description of the Study
 * description = "In a pilot study, the SPOVID project is investigating whether an individually tailored training program can safely and effectively improve the physical endurance of Long COVID-19 patients. To this end, the researchers observe fitness parameters of cardiovascular and lung function in particular over several months, but also the development of headache, fatigue and fatigue symptoms. From the results, they want to derive recommendations for personalized training programs."
-* description.extension[language].valueCoding = #en "English" 
+* description.extension[language].valueCode = #en "English" 
 ///Details
 * title.extension[label][+].extension[value].valueString = "SPOVID"
 * title.extension[label][=].extension[type].valueCoding = $LabelType#07 "Acronym"
-* title.extension[label][=].extension[language].valueCoding = #en "English"
+* title.extension[label][=].extension[language].valueCode = #en "English"
 * extension[resourceType].valueCoding = $UMLS#C0947630 "Scientific Study (Research Activity)"
 * keyword[0].text = "COVID-19"
 * keyword[=].coding.system = "https://id.nlm.nih.gov/mesh/D000086382.html"

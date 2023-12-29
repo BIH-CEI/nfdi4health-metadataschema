@@ -421,7 +421,7 @@
     "fshType": "Extension",
     "fshFile": "extensions/NFDI4Health_EX_MDS_Execution_Language.fsh",
     "startLine": 1,
-    "endLine": 24
+    "endLine": 23
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-format.json",
@@ -469,7 +469,7 @@
     "fshType": "Extension",
     "fshFile": "extensions/NFDI4Health_EX_MDS_Language.fsh",
     "startLine": 1,
-    "endLine": 22
+    "endLine": 20
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-mortality-data.json",
@@ -781,7 +781,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/NFDI4Health_PR_MDS_Document.fsh",
     "startLine": 1,
-    "endLine": 143
+    "endLine": 144
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-pr-mds-evidence-variable-intervention-exposure.json",

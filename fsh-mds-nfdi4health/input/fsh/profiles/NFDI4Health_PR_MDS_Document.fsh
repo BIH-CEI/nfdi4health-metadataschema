@@ -18,7 +18,8 @@ Description: "Profile to collect information about documents related to german c
     NFDI4Health_EX_MDS_Keywords named keywords 0..* and
     NFDI4Health_EX_MDS_Associated_Party named roles 1..* and
     NFDI4Health_EX_MDS_Document_Use_Rights named useRights 0..1 and 
-    NFDI4Health_EX_MDS_Related named relatedResources 0..1
+    NFDI4Health_EX_MDS_Related named relatedResources 0..1 and
+    NFDI4Health_EX_MDS_Execution_Language named executionLanguage 0..*
 * masterIdentifier 1..
 * masterIdentifier ^short = "ID of the [RESOURCE]"
 * masterIdentifier ^definition = "Unique identifier of the resource used for identification within the NFDI4Health."
@@ -189,9 +190,9 @@ Source: NFDI4Health_PR_MDS_Document
 * description -> "Resource.descriptions.text"
 * description.extension[language] -> "1.5.2 Resource.descriptionEnglish.language"
 * content.extension[label] -> "1.3 Resource.titles" "1.4 Resource.acronyms"
-* content.extension[version] -> "1.10.1 Resource.nonStudyDetails.version"
+* content.extension[version] -> "Resource.nonStudyDetails.version"
 * content.attachment.language -> "1.8 Resource.languages"
-* content.format -> "1.10.2 Resource.nonStudyDetails.format"
+* content.format -> "Resource.nonStudyDetails.format"
 * extension[relatedResources] -> "1.13 Resource.ids"
 * extension[relatedResources] -> "1.14 Resource.idsNfdi4health"
 * extension[relatedResources] -> "1.9 Resource.webpage"

@@ -2,7 +2,7 @@ Extension: NFDI4Health_EX_MDS_Language
 Id: nfdi4health-ex-mds-language
 Title: "NFDI4Health EX MDS Language"
 Description: "Language of an element."
-* ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language"
+* ^url = "http://hl7.org/fhir/StructureDefinition/language"
 * ^version = "0.9"
 * ^status = #draft
 * ^publisher = "NFDI4Health"
@@ -16,7 +16,5 @@ Description: "Language of an element."
 * ^context[=].expression = "markdown"
 * . ^short = "language"
 * . ^definition = "Language in which the description text is provided."
-* value[x] 1..
-* value[x] only Coding
+
 * value[x] from $ISOLanguage (required)
-* value[x] ^binding.description = "A human language."

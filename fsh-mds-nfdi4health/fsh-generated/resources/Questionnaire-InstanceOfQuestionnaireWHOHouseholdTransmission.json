@@ -149,7 +149,7 @@
   "_description": {
     "extension": [
       {
-        "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language",
+        "url": "http://hl7.org/fhir/StructureDefinition/language",
         "valueCoding": {
           "code": "en",
           "display": "English"
@@ -189,7 +189,7 @@
             }
           },
           {
-            "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language",
+            "url": "http://hl7.org/fhir/StructureDefinition/language",
             "valueCoding": {
               "code": "en",
               "display": "English"
@@ -212,7 +212,7 @@
             }
           },
           {
-            "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language",
+            "url": "http://hl7.org/fhir/StructureDefinition/language",
             "valueCoding": {
               "code": "en",
               "display": "English"

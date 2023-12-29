@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "nfdi4health-ex-mds-language",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language",
+  "url": "http://hl7.org/fhir/StructureDefinition/language",
   "version": "0.9",
   "name": "NFDI4Health_EX_MDS_Language",
   "title": "NFDI4Health EX MDS Language",
@@ -61,21 +61,14 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language"
+        "fixedUri": "http://hl7.org/fhir/StructureDefinition/language"
       },
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "Coding"
-          }
-        ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://terminology.hl7.org/CodeSystem/iso639-1",
-          "description": "A human language."
+          "valueSet": "http://terminology.hl7.org/CodeSystem/iso639-1"
         }
       }
     ]
