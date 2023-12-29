@@ -1,8 +1,8 @@
 Extension: NFDI4Health_EX_MDS_Execution_Language
 Id: nfdi4health-ex-mds-execution-language
-Title: "NFDI4Health EX MDS Execution Language"
-Description: "Extension provinding information about the language in which a study/substudy is conducted, or the language in which a document is composed."
-* ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-execution-language"
+Title: "NFDI4Health EX MDS Language"
+Description: "Extension provinding information about the language the [RESOURCE] is conducted/provided."
+* ^url = "http://hl7.org/fhir/StructureDefinition/language"
 * ^version = "0.9"
 * ^status = #draft
 * ^publisher = "NFDI4Health"
@@ -12,14 +12,14 @@ Description: "Extension provinding information about the language in which a stu
 * ^context[=].expression = "ResearchStudy"
 * ^context[+].type = #element
 * ^context[=].expression = "Questionnaire"
+* ^context[+].type = #element
+* ^context[=].expression = "DocumentReference"
 * . 0..*
-* . ^short = "Execution language(s) of the [RESOURCE]"
-* . ^definition = "Language(s) in which a study/substudy is conducted, or a language in which a study document is composed."
-* . ^comment = "Short input help: Select all that apply."
-* value[x] 1..
+* . ^short = "languages"
+* . ^definition = "Language(s) in which the [RESOURCE] is conducted/provided."
+
 * value[x] only code
 * valueCode from $ISOLanguage (required)
-* valueCode ^binding.description = "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)"
 * valueCode ^short = "A human language."
 * valueCode ^definition = "A human language."
 
@@ -27,4 +27,4 @@ Mapping: NFDI4Health-Execution-Language-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Execution_Language
-* -> "1.8 -> Resource.languages"
+* -> "Resource.languages"

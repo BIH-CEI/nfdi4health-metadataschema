@@ -437,14 +437,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nfdi4health-ex-mds-execution-language"
-        },
-        "name": "NFDI4Health EX MDS Execution Language",
-        "description": "Extension provinding information about the language in which a study/substudy is conducted, or the language in which a document is composed.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/nfdi4health-ex-mds-format"
         },
         "name": "NFDI4Health EX MDS Format",
@@ -489,6 +481,14 @@
         },
         "name": "NFDI4Health EX MDS Language",
         "description": "Language of an element.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-execution-language"
+        },
+        "name": "NFDI4Health EX MDS Language",
+        "description": "Extension provinding information about the language the [RESOURCE] is conducted/provided.",
         "exampleBoolean": false
       },
       {

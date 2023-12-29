@@ -1,10 +1,10 @@
 {
   "resourceType": "StructureDefinition",
   "id": "nfdi4health-ex-mds-execution-language",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-execution-language",
+  "url": "http://hl7.org/fhir/StructureDefinition/language",
   "version": "0.9",
   "name": "NFDI4Health_EX_MDS_Execution_Language",
-  "title": "NFDI4Health EX MDS Execution Language",
+  "title": "NFDI4Health EX MDS Language",
   "status": "draft",
   "publisher": "NFDI4Health",
   "contact": [
@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "description": "Extension provinding information about the language in which a study/substudy is conducted, or the language in which a document is composed.",
+  "description": "Extension provinding information about the language the [RESOURCE] is conducted/provided.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -40,6 +40,10 @@
     {
       "type": "element",
       "expression": "Questionnaire"
+    },
+    {
+      "type": "element",
+      "expression": "DocumentReference"
     }
   ],
   "type": "Extension",
@@ -50,13 +54,12 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Execution language(s) of the [RESOURCE]",
-        "definition": "Language(s) in which a study/substudy is conducted, or a language in which a study document is composed.",
-        "comment": "Short input help: Select all that apply.",
+        "short": "languages",
+        "definition": "Language(s) in which the [RESOURCE] is conducted/provided.",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.8 -> Resource.languages"
+            "map": "Resource.languages"
           }
         ]
       },
@@ -68,14 +71,13 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-execution-language"
+        "fixedUri": "http://hl7.org/fhir/StructureDefinition/language"
       },
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
         "short": "A human language.",
         "definition": "A human language.",
-        "min": 1,
         "type": [
           {
             "code": "code"
@@ -83,8 +85,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://terminology.hl7.org/CodeSystem/iso639-1",
-          "description": "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)"
+          "valueSet": "http://terminology.hl7.org/CodeSystem/iso639-1"
         }
       }
     ]

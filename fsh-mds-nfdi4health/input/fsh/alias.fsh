@@ -13,7 +13,6 @@ Alias: $StudyStatus = https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/
 Alias: $HL7ParticipationType = http://terminology.hl7.org/CodeSystem/v3-ParticipationType
 Alias: $administrative-gender = http://hl7.org/fhir/administrative-gender
 Alias: $nfdi4health-vs-mds-use-rights-label-spdx-umls-local = https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-use-rights-label-spdx-umls-local
-Alias: $NFDILanguages = https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-language-umls
 Alias: $ISOLanguage = http://terminology.hl7.org/CodeSystem/iso639-1
 Alias: $translation = http://hl7.org/fhir/StructureDefinition/translation
 Alias: $iso3166 = urn:iso:std:iso:3166

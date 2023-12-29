@@ -138,7 +138,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-execution-language"
+              "http://hl7.org/fhir/StructureDefinition/language"
             ]
           }
         ]
