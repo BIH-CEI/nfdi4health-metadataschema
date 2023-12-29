@@ -10,7 +10,7 @@ Description: "NFDI4Health Logical Model Core Metadataschema V3.3"
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 
 
-* Resource 1..1 BackboneElement "Resource"
+* Resource 1..1 BackboneElement "Resource" "Group of items providing information about a resource. Resources can be, for example, files or parts of them (e.g. datasets or study documents such as study protocols or questionnaires) or also studies or substudies."
 * Resource ^short = "Resource"
 * Resource ^definition = "Resource"
 * Resource ^requirements = "**Description:** Group of items providing information about a resource. Resources can be, for example, files or parts of them (e.g. datasets or study documents such as study protocols or questionnaires) or also studies or substudies."
