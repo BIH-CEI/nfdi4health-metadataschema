@@ -60,21 +60,21 @@ Usage: #example
 
 /// Primary health condition(s), disease(s) or focus of the study - modelling must be changed because not possible to have "other vocabulary" or "freetext" as system
 * condition[0].coding = $SCT#1119303003 "Post-acute COVID-19 (disorder)"
-* condition[=].coding.system.valueUri = "https://browser.ihtsdotools.org/?perspective=full&conceptId1=1119303003&edition=MAIN/2023-07-31&release=&languages=en&latestRedirect=false"
+* condition[=].coding.system = "https://browser.ihtsdotools.org/?perspective=full&conceptId1=1119303003&edition=MAIN/2023-07-31&release=&languages=en&latestRedirect=false"
 * condition[+].coding[0] = $SCT#84229001 "Fatigue (finding)"
-* condition[=].coding[=].system.valueUri = "https://browser.ihtsdotools.org/?perspective=full&conceptId1=84229001&edition=MAIN/2023-07-31&release=&languages=en&latestRedirect=false"
+* condition[=].coding[=].system = "https://browser.ihtsdotools.org/?perspective=full&conceptId1=84229001&edition=MAIN/2023-07-31&release=&languages=en&latestRedirect=false"
 * condition[+].coding[0] = $SCT#739122008 "Cardiac physiological function (observable entity)"
-* condition[=].coding[=].system.valueUri = "https://browser.ihtsdotools.org/?perspective=full&latestRedirect=false&conceptId1=739122008&edition=MAIN/2023-07-31"
+* condition[=].coding[=].system = "https://browser.ihtsdotools.org/?perspective=full&latestRedirect=false&conceptId1=739122008&edition=MAIN/2023-07-31"
 * condition[+].coding[0] = $SCT#78064003 "Respiratory function (observable entity)"
-* condition[=].coding[=].system.valueUri = "https://browser.ihtsdotools.org/?perspective=full&conceptId1=78064003&edition=MAIN/2023-07-31&release=&languages=en&latestRedirect=false"
+* condition[=].coding[=].system = "https://browser.ihtsdotools.org/?perspective=full&conceptId1=78064003&edition=MAIN/2023-07-31&release=&languages=en&latestRedirect=false"
 * condition[+].coding[0] = $SCT#76039005 "Disturbance of attention (finding)"
-* condition[=].coding[=].system.valueUri = "https://browser.ihtsdotools.org/?perspective=full&conceptId1=76039005&edition=MAIN/2023-07-31&release=&languages=en&latestRedirect=false"
+* condition[=].coding[=].system = "https://browser.ihtsdotools.org/?perspective=full&conceptId1=76039005&edition=MAIN/2023-07-31&release=&languages=en&latestRedirect=false"
 * condition[+].coding[0] = $SCT#183301007 "Physical exercises (regime/therapy)"
-* condition[=].coding[=].system.valueUri = "https://browser.ihtsdotools.org/?perspective=full&conceptId1=183301007&edition=MAIN/2023-07-31&release=&languages=en&latestRedirect=false"
+* condition[=].coding[=].system = "https://browser.ihtsdotools.org/?perspective=full&conceptId1=183301007&edition=MAIN/2023-07-31&release=&languages=en&latestRedirect=false"
 * condition[+].coding[0] = $SCT#225303001 "Evaluating interventions (procedure)"
-* condition[=].coding[=].system.valueUri = "https://browser.ihtsdotools.org/?perspective=full&conceptId1=225303001&edition=MAIN/2023-07-31&release=&languages=en&latestRedirect=false"
+* condition[=].coding[=].system = "https://browser.ihtsdotools.org/?perspective=full&conceptId1=225303001&edition=MAIN/2023-07-31&release=&languages=en&latestRedirect=false"
 * condition[+].coding[0] = $SCT#424900004 "Recommendation - action (qualifier value)"
-* condition[=].coding[=].system.valueUri = "https://browser.ihtsdotools.org/?perspective=full&conceptId1=424900004&edition=MAIN/2023-07-31&release=&languages=en&latestRedirect=false"
+* condition[=].coding[=].system = "https://browser.ihtsdotools.org/?perspective=full&conceptId1=424900004&edition=MAIN/2023-07-31&release=&languages=en&latestRedirect=false"
 
 /// Eligibility criteria for study participants
 * enrollment[0] = Reference(InstanceOfGroupIntendedSPOVID)

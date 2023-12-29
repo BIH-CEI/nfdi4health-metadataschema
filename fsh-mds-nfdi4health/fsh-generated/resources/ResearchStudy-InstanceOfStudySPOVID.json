@@ -425,7 +425,7 @@
       "coding": [
         {
           "code": "1119303003",
-          "system": "http://snomed.info/sct",
+          "system": "https://browser.ihtsdotools.org/?perspective=full&conceptId1=1119303003&edition=MAIN/2023-07-31&release=&languages=en&latestRedirect=false",
           "display": "Post-acute COVID-19 (disorder)"
         }
       ]
@@ -434,7 +434,7 @@
       "coding": [
         {
           "code": "84229001",
-          "system": "http://snomed.info/sct",
+          "system": "https://browser.ihtsdotools.org/?perspective=full&conceptId1=84229001&edition=MAIN/2023-07-31&release=&languages=en&latestRedirect=false",
           "display": "Fatigue (finding)"
         }
       ]
@@ -443,7 +443,7 @@
       "coding": [
         {
           "code": "739122008",
-          "system": "http://snomed.info/sct",
+          "system": "https://browser.ihtsdotools.org/?perspective=full&latestRedirect=false&conceptId1=739122008&edition=MAIN/2023-07-31",
           "display": "Cardiac physiological function (observable entity)"
         }
       ]
@@ -452,7 +452,7 @@
       "coding": [
         {
           "code": "78064003",
-          "system": "http://snomed.info/sct",
+          "system": "https://browser.ihtsdotools.org/?perspective=full&conceptId1=78064003&edition=MAIN/2023-07-31&release=&languages=en&latestRedirect=false",
           "display": "Respiratory function (observable entity)"
         }
       ]
@@ -461,7 +461,7 @@
       "coding": [
         {
           "code": "76039005",
-          "system": "http://snomed.info/sct",
+          "system": "https://browser.ihtsdotools.org/?perspective=full&conceptId1=76039005&edition=MAIN/2023-07-31&release=&languages=en&latestRedirect=false",
           "display": "Disturbance of attention (finding)"
         }
       ]
@@ -470,7 +470,7 @@
       "coding": [
         {
           "code": "183301007",
-          "system": "http://snomed.info/sct",
+          "system": "https://browser.ihtsdotools.org/?perspective=full&conceptId1=183301007&edition=MAIN/2023-07-31&release=&languages=en&latestRedirect=false",
           "display": "Physical exercises (regime/therapy)"
         }
       ]
@@ -479,7 +479,7 @@
       "coding": [
         {
           "code": "225303001",
-          "system": "http://snomed.info/sct",
+          "system": "https://browser.ihtsdotools.org/?perspective=full&conceptId1=225303001&edition=MAIN/2023-07-31&release=&languages=en&latestRedirect=false",
           "display": "Evaluating interventions (procedure)"
         }
       ]
@@ -488,7 +488,7 @@
       "coding": [
         {
           "code": "424900004",
-          "system": "http://snomed.info/sct",
+          "system": "https://browser.ihtsdotools.org/?perspective=full&conceptId1=424900004&edition=MAIN/2023-07-31&release=&languages=en&latestRedirect=false",
           "display": "Recommendation - action (qualifier value)"
         }
       ]

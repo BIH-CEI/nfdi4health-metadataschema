@@ -93,7 +93,7 @@
     "fshType": "Instance",
     "fshFile": "examples/InstanceOfDocument_HouseholdTransmissionInvestigationProtocolForCOVID19.fsh",
     "startLine": 1,
-    "endLine": 50
+    "endLine": 44
   },
   {
     "outputFile": "EvidenceVariable-InstanceOfEvidenceVariableSPOVID.json",
@@ -365,7 +365,7 @@
     "fshType": "Instance",
     "fshFile": "examples/InstanceOfStudy_nonInterventional_SHIP.fsh",
     "startLine": 1,
-    "endLine": 107
+    "endLine": 106
   },
   {
     "outputFile": "ResearchStudy-InstanceOfStudySPOVID.json",

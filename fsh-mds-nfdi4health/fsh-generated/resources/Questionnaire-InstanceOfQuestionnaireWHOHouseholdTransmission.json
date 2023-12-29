@@ -153,7 +153,11 @@
   "_description": {
     "extension": [
       {
-        "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language"
+        "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language",
+        "valueCoding": {
+          "code": "en",
+          "display": "English"
+        }
       }
     ]
   },
@@ -189,7 +193,11 @@
             }
           },
           {
-            "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language"
+            "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language",
+            "valueCoding": {
+              "code": "en",
+              "display": "English"
+            }
           }
         ]
       },
@@ -208,7 +216,11 @@
             }
           },
           {
-            "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language"
+            "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language",
+            "valueCoding": {
+              "code": "en",
+              "display": "English"
+            }
           }
         ],
         "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-label"

@@ -6,16 +6,16 @@ Usage: #example
 * identifier[NFDI4Health].value = "112"
 * title.extension[label][0].extension[value].valueString = "Data Dictionary for the WHO's Household transmission investigation protocol for coronavirus disease 2019 (COVID-19)"
 * title.extension[label][=].extension[type].valueCoding = $LabelType#01 "Primary Title"
-* title.extension[label][=].extension[language].valueCode = #en "English"
+* title.extension[label][=].extension[language].valueCoding = #en "English"
 * status = #active // mandatory in FHIR ; made up as no information in MDS
 ///English description
 * description = "This is a data dictionary for the 'Household transmission investigation protocol for coronavirus disease 2019 (COVID-19)'. This data dictionary is prepared for upload into OPAL/MICA applications of the OBiBa (Open Source Software for BioBanks) software suite. The variables are annotated with metadata using the variable classification taxonomy developed by Maelstrom Research. Further information about format and applications can be found in Doiron et al. (2017; https://doi.org/10.1093/ije/dyx180)."
-* description.extension[language].valueCode = $UMLS#C0376245 "English Language"
+* description.extension[language].valueCoding = #en "English"
 ///Details
 * extension[resourceType].valueCoding = $Remaining#009 "Data dictionary"
 * title.extension[label][+].extension[value].valueString = "WHO's Household transmission investigation protocol" // made up as no information in CSH
 * title.extension[label][=].extension[type].valueCoding = $LabelType#07 "Acronym"
-* title.extension[label][=].extension[language].valueCode = #en "English"
+* title.extension[label][=].extension[language].valueCoding = #en "English"
 * extension[keywords][+].extension[label].valueString = "COVID-19"
 * extension[keywords][=].extension[code].valueUri = "https://id.nlm.nih.gov/mesh/D000086382.html"
 * extension[keywords][+].extension[label].valueString = "Dictionary"

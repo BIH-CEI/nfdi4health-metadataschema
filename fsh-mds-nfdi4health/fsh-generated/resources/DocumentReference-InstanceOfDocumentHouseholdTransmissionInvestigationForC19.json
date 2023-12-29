@@ -196,7 +196,11 @@
               }
             },
             {
-              "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language"
+              "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language",
+              "valueCoding": {
+                "code": "en",
+                "display": "English"
+              }
             }
           ]
         },
@@ -215,7 +219,11 @@
               }
             },
             {
-              "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language"
+              "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language",
+              "valueCoding": {
+                "code": "en",
+                "display": "English"
+              }
             }
           ],
           "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-label"
@@ -238,20 +246,11 @@
   "_description": {
     "extension": [
       {
-        "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language"
-      },
-      {
-        "extension": [
-          {
-            "url": "content",
-            "valueString": "In diesem Dokument werden die Methoden zur Anleitung der Datenerfassung und der Untersuchung des öffentlichen Gesundheitswesens für die umfassende Beurteilung von Haushaltskontakten von bestätigten COVID-19-Fällen dargelegt. Mit dieser fallbezogenen, prospektiven Studie sollen die Übertragungswege im Haushalt bei im Labor bestätigten 2019-nCoV-Infektionen untersucht werden. Damit sollen schnell und frühzeitig Informationen über die klinischen, epidemiologischen und virologischen Merkmale von 2019-nCoV geliefert werden. \nDabei werden drei Hauptziele verfolgt:\n1) Um Kenntnisse hinsichtlich des Ausmaßes von Übertragungen innerhalb eines Haushalts zu gewinnen, soll auf Indivdualebene die Sekundärinfektionsrate geschätzt werden und Faktoren, die die ein solches Sekundärinfektionsrisiko beeinflussen, untersucht werden. \n2) Charakterisierung der Sekundärfälle, einschließlich des Spektrums klinischer Krankheitsbilder, der Risikofaktoren für die Infektion und des Ausmaßes und Anteils asymptomatisch verlaufender Infektionen.\n3) Charakterisierung der serologischen Reaktion nach einer bestätigten 2019-nCoV-Infektion (wird dringend empfohlen, ist aber je nach Laborkapazität und Ressourcen optional)."
-          },
-          {
-            "url": "lang",
-            "valueCode": "C0017477"
-          }
-        ],
-        "url": "http://hl7.org/fhir/StructureDefinition/translation"
+        "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language",
+        "valueCoding": {
+          "code": "en",
+          "display": "English"
+        }
       }
     ]
   }
