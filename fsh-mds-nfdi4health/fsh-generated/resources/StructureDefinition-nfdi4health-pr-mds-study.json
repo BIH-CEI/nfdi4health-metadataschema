@@ -1507,11 +1507,17 @@
         ]
       },
       {
+        "id": "ResearchStudy.keyword.coding",
+        "path": "ResearchStudy.keyword.coding",
+        "max": "1"
+      },
+      {
         "id": "ResearchStudy.keyword.coding.system",
         "path": "ResearchStudy.keyword.coding.system",
         "short": "Code of the keyword",
         "definition": "If known, the code of the keyword in a classification/vocabulary.",
         "comment": "Short input help: If found, the code from the classification/vocabulary used.",
+        "min": 1,
         "example": [
           {
             "valueUri": "http://id.nlm.nih.gov/mesh/D000086402"

@@ -236,6 +236,8 @@ Description: "Profile to collect information about german (or with at least one 
 * keyword ^short = "keywords"
 * keyword ^definition = "Group of items providing information about keywords describing the [RESOURCE]."
 * keyword ^comment = "<p><strong>Additional information: </strong>The findability of the [RESOURCE] can be significantly increased if proper keywords are stated."
+* keyword.coding ..1
+* keyword.coding.system 1..1
 * keyword.coding.system ^short = "Code of the keyword"
 * keyword.coding.system ^definition = "If known, the code of the keyword in a classification/vocabulary."
 * keyword.coding.system ^comment = "Short input help: If found, the code from the classification/vocabulary used."

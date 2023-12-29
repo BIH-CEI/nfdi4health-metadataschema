@@ -304,25 +304,60 @@
   },
   "keyword": [
     {
-      "text": "COVID-19"
+      "text": "COVID-19",
+      "coding": [
+        {
+          "system": "https://id.nlm.nih.gov/mesh/D000086382.html"
+        }
+      ]
     },
     {
-      "text": "Pilot study"
+      "text": "Pilot study",
+      "coding": [
+        {
+          "system": "https://id.nlm.nih.gov/mesh/T032041.html"
+        }
+      ]
     },
     {
-      "text": "Physical Education and Training"
+      "text": "Physical Education and Training",
+      "coding": [
+        {
+          "system": "https://id.nlm.nih.gov/mesh/D010806.html"
+        }
+      ]
     },
     {
-      "text": "Exercise"
+      "text": "Exercise",
+      "coding": [
+        {
+          "system": "https://id.nlm.nih.gov/mesh/D015444.html"
+        }
+      ]
     },
     {
-      "text": "Exercise Therapy"
+      "text": "Exercise Therapy",
+      "coding": [
+        {
+          "system": "https://id.nlm.nih.gov/mesh/D005081.html"
+        }
+      ]
     },
     {
-      "text": "Physical activity (observable entity)"
+      "text": "Physical activity (observable entity)",
+      "coding": [
+        {
+          "system": "https://browser.ihtsdotools.org/?perspective=full&conceptId1=68130003&edition=MAIN/2023-07-31&release=&languages=en&latestRedirect=false"
+        }
+      ]
     },
     {
-      "text": "Post-acute COVID-19 (disorder)"
+      "text": "Post-acute COVID-19 (disorder)",
+      "coding": [
+        {
+          "system": "https://browser.ihtsdotools.org/?perspective=full&conceptId1=1119303003&edition=MAIN/2023-07-31&release=&languages=en&latestRedirect=false"
+        }
+      ]
     }
   ],
   "period": {
