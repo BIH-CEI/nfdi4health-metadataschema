@@ -837,7 +837,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.10.1 Resource.nonStudyDetails.version"
+            "map": "Resource.nonStudyDetails.version"
           }
         ]
       },

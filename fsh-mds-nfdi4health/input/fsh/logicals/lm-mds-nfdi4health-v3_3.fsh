@@ -20,8 +20,6 @@ Description: "NFDI4Health Logical Model Core Metadataschema V3.3"
 * Resource.identifier ^definition = "Unique identifier of the resource used for identification within the NFDI4Health."
 * Resource.identifier ^alias = "Resource.identifier"
 * Resource.identifier ^base.path = "Resource.identifier"
-* Resource.identifier ^base.min = 1
-* Resource.identifier ^base.max = "1"
 * Resource.classification 1..1  BackboneElement "classification" "Resource classification"
 * Resource.classification ^definition = "Group of items providing information about the classification of the resource within the predefined categories."
 * Resource.classification ^alias = "Resource.classification"

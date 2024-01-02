@@ -1,0 +1,55 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "NFDI4Health_VS_MDS_Study_Conditions_Classification_NCI_Local",
+  "id": "nfdi4health-vs-mds-study-conditions-classification-nci-local",
+  "title": "NFDI4Health VS MDS Study Conditions Classification [NCI, Local]",
+  "description": "Value set defining codes to specify the terminology/classification used for the health condition, disease or focus.",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-conditions-classification-nci-local",
+  "version": "0.9",
+  "experimental": true,
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "concept": [
+          {
+            "code": "C82845",
+            "display": "Medical Subject Headings"
+          },
+          {
+            "code": "C185253",
+            "display": "ICD-10 Code"
+          },
+          {
+            "code": "C43820",
+            "display": "MedDRA"
+          },
+          {
+            "code": "C49469",
+            "display": "Systematized Nomenclature of Medicine Clinical Terms"
+          },
+          {
+            "code": "C17649",
+            "display": "Other"
+          },
+          {
+            "code": "C70764",
+            "display": "Free Text Format (Qualitative Concept)"
+          }
+        ]
+      }
+    ]
+  }
+}

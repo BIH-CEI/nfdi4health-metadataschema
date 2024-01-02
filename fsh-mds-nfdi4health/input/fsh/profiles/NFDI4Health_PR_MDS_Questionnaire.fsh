@@ -180,7 +180,7 @@ Source: NFDI4Health_PR_MDS_Questionnaire
 * identifier[Other].value -> "1.12.2 Resource.idsAlternative.identifier"
 * extension[resourceType] -> "1.2.1 Resource.classification.resourceType"
 * extension[resourceTypeGeneral] -> "1.2.2 Resource.classification.resourceTypeGeneral"
-* version -> "1.10.1 Resource.nonStudyDetails.version"
+* version -> "Resource.nonStudyDetails.version"
 * title -> "1.3.1 Resource.titles.text"
 * description -> "Resource.descriptions.text"
 * description.extension[language] -> "Resource.descriptions.language"

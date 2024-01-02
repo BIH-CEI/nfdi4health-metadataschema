@@ -773,6 +773,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/nfdi4health-lm-mds-design"
+        },
+        "name": "NFDI4Health LM MDS Module Design V3.3",
+        "description": "NFDI4Health Logical Model MDS Module Design V3.3",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Questionnaire/InstanceOfChronicDiseaseModule"
         },
         "name": "NFDI4Health Module Epidemiology of Chronic Diseases Metadataschema (UC 5.2) V3",
@@ -1130,9 +1138,9 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/nfdi4health-vs-mds-study-conditions-classification-umls"
+          "reference": "ValueSet/nfdi4health-vs-mds-study-conditions-classification-nci-local"
         },
-        "name": "NFDI4Health VS MDS Study Conditions Classification [UMLS]",
+        "name": "NFDI4Health VS MDS Study Conditions Classification [NCI, Local]",
         "description": "Value set defining codes to specify the terminology/classification used for the health condition, disease or focus.",
         "exampleBoolean": false
       },

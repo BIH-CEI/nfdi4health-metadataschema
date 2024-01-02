@@ -92,6 +92,7 @@
 [NFDI4Health_EX_MDS_Use_Rights_Confirmations]: StructureDefinition-nfdi4health-ex-mds-use-rights-confirmations.html
 [NFDI4Health_EX_MDS_Version]: StructureDefinition-nfdi4health-ex-mds-version.html
 [NFDI4Health_LM_MDS_Core]: StructureDefinition-nfdi4health-lm-mds-core.html
+[NFDI4Health_LM_MDS_Design]: StructureDefinition-nfdi4health-lm-mds-design.html
 [InstanceOfChronicDiseaseModule]: Questionnaire-InstanceOfChronicDiseaseModule.html
 [InstanceOfNutritionalEpidemiologyModule]: Questionnaire-InstanceOfNutritionalEpidemiologyModule.html
 [InstanceOfRecordLinkage]: Questionnaire-InstanceOfRecordLinkage.html
@@ -137,7 +138,7 @@
 [NFDI4Health_VS_MDS_Study_Assessments_SNOMEDCT_UMLS]: ValueSet-nfdi4health-vs-mds-study-assessments-snomedct-umls.html
 [NFDI4Health_VS_MDS_Study_Biospecimen_Retention_UMLS]: ValueSet-nfdi4health-vs-mds-study-biospecimen-retention-umls.html
 [NFDI4Health_VS_MDS_Study_Centers_SNOMEDCT_Local]: ValueSet-nfdi4health-vs-mds-study-centers-snomedct-local.html
-[NFDI4Health_VS_MDS_Study_Conditions_Classification_UMLS]: ValueSet-nfdi4health-vs-mds-study-conditions-classification-umls.html
+[NFDI4Health_VS_MDS_Study_Conditions_Classification_NCI_Local]: ValueSet-nfdi4health-vs-mds-study-conditions-classification-nci-local.html
 [NFDI4Health_VS_MDS_Study_Data_Sharing_Plan_Datashield_SNOMEDCT_UMLS]: ValueSet-nfdi4health-vs-mds-study-data-sharing-plan-ds-snomedct-umls.html
 [NFDI4Health_VS_MDS_Study_Data_Sharing_Plan_Supporting_Information_UMLS_Local]: ValueSet-nfdi4health-vs-mds-study-data-sharing-plan-sup-inf-umls-local.html
 [NFDI4Health_VS_MDS_Study_DS_Biosamples_SNOMEDCT_NCI_UMLS]: ValueSet-nfdi4health-vs-mds-study-ds-biosamples-snomedct-nci-umls.html

@@ -757,7 +757,15 @@
     "fshType": "Logical",
     "fshFile": "logicals/lm-mds-nfdi4health-v3_3.fsh",
     "startLine": 1,
-    "endLine": 574
+    "endLine": 572
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-lm-mds-design.json",
+    "fshName": "NFDI4Health_LM_MDS_Design",
+    "fshType": "Logical",
+    "fshFile": "logicals/lm-mds-nfdi4health-design.fsh",
+    "startLine": 1,
+    "endLine": 903
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-lm-metadatenschema-recordlinkage.json",
@@ -1112,12 +1120,12 @@
     "endLine": 14
   },
   {
-    "outputFile": "ValueSet-nfdi4health-vs-mds-study-conditions-classification-umls.json",
-    "fshName": "NFDI4Health_VS_MDS_Study_Conditions_Classification_UMLS",
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-conditions-classification-nci-local.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Conditions_Classification_NCI_Local",
     "fshType": "ValueSet",
     "fshFile": "valuesets/vs-study-conditions-classification.fsh",
     "startLine": 1,
-    "endLine": 18
+    "endLine": 19
   },
   {
     "outputFile": "ValueSet-nfdi4health-vs-mds-study-data-sharing-plan-ds-snomedct-umls.json",
