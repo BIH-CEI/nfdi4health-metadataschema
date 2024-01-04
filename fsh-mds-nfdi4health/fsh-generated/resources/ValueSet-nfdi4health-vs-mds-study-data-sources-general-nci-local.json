@@ -1,11 +1,11 @@
 {
   "resourceType": "ValueSet",
   "status": "draft",
-  "name": "NFDI4Health_VS_MDS_Study_Data_Sources_General_UMLS_Local",
-  "id": "nfdi4health-vs-mds-study-data-sources-general-umls-local",
-  "title": "NFDI4Health VS MDS Study Data Sources General [UMLS, local]",
+  "name": "NFDI4Health_VS_MDS_Study_Data_Sources_General_NCI_Local",
+  "id": "nfdi4health-vs-mds-study-data-sources-general-nci-local",
+  "title": "NFDI4Health VS MDS Study Data Sources General [NCI, local]",
   "description": "Value set defining codes to specify the general study data sources.",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sources-general-umls-local",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sources-general-nci-local",
   "version": "0.9",
   "experimental": true,
   "publisher": "NFDI4Health",
@@ -22,31 +22,31 @@
   "compose": {
     "include": [
       {
-        "system": "http://terminology.hl7.org/CodeSystem/umls",
+        "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
         "concept": [
           {
-            "code": "C2347026",
-            "display": "Biospecimen (Body Substance)"
+            "code": "C0025102",
+            "display": "Medical Record"
           },
           {
-            "code": "C025102",
-            "display": "Medical Records (Intellectual Product)"
+            "code": "C61393",
+            "display": "Registry"
           },
           {
-            "code": "C0034875",
-            "display": "Registries (Intellectual Product)"
+            "code": "C16751",
+            "display": "Interview"
           },
           {
-            "code": "C0021822",
-            "display": "Interview (Activity)"
+            "code": "C17048",
+            "display": "Questionnaire"
           },
           {
-            "code": "C0034394",
-            "display": "Questionnaires (Intellectual Product)"
+            "code": "C17649",
+            "display": "Other"
           },
           {
-            "code": "C0205394",
-            "display": "Other (Qualitative Concept)"
+            "code": "C70699",
+            "display": "Biospecimen"
           }
         ]
       },

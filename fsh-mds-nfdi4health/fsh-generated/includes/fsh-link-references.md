@@ -142,7 +142,7 @@
 [NFDI4Health_VS_MDS_Study_Data_Sharing_Plan_Datashield_SNOMEDCT_UMLS]: ValueSet-nfdi4health-vs-mds-study-data-sharing-plan-ds-snomedct-umls.html
 [NFDI4Health_VS_MDS_Study_Data_Sharing_Plan_Supporting_Information_UMLS_Local]: ValueSet-nfdi4health-vs-mds-study-data-sharing-plan-sup-inf-umls-local.html
 [NFDI4Health_VS_MDS_Study_DS_Biosamples_SNOMEDCT_NCI_UMLS]: ValueSet-nfdi4health-vs-mds-study-ds-biosamples-snomedct-nci-umls.html
-[NFDI4Health_VS_MDS_Study_Data_Sources_General_UMLS_Local]: ValueSet-nfdi4health-vs-mds-study-data-sources-general-umls-local.html
+[NFDI4Health_VS_MDS_Study_Data_Sources_General_NCI_Local]: ValueSet-nfdi4health-vs-mds-study-data-sources-general-nci-local.html
 [NFDI4Health_VS_MDS_Study_Data_Sources_Imaging_NCI]: ValueSet-nfdi4health-vs-mds-study-data-sources-imaging-nci.html
 [NFDI4Health_VS_MDS_Study_Data_Sources_Omics_NCI_UMLS]: ValueSet-nfdi4health-vs-mds-study-data-sources-omics-nci-umls.html
 [NFDI4Health_VS_MDS_Study_Eligibility_Gender_SNOMEDCT_Local]: ValueSet-nfdi4health-vs-mds-study-eligibility-gender-snomedct-local.html
@@ -157,7 +157,7 @@
 [NFDI4Health_VS_MDS_Study_Primary_Design_Local]: ValueSet-nfdi4health-vs-mds-study-primary-design-local.html
 [NFDI4Health_VS_MDS_Study_Primary_Design_UMLS]: ValueSet-nfdi4health-vs-mds-study-primary-design-umls.html
 [NFDI4Health_VS_MDS_Study_Primary_Purpose_UMLS_NCI]: ValueSet-nfdi4health-vs-mds-study-primary-purpose-umls-nci.html
-[NFDI4Health_VS_MDS_Study_Recruitment_Status_Register_UMLS_Local]: ValueSet-nfdi4health-vs-mds-study-recruitment-status-register-umls-local.html
+[NFDI4Health_VS_MDS_Study_Recruitment_Register_NCI_SCT_Local]: ValueSet-nfdi4health-vs-mds-study-recruitment-register-nci-sct-local.html
 [NFDI4Health_VS_MDS_Study_Sampling_Method_Non_Probability_Local]: ValueSet-nfdi4health-vs-mds-study-sampling-method-non-prob-local.html
 [NFDI4Health_VS_MDS_Study_Sampling_Method_Non_Probability_NCI_Local]: ValueSet-nfdi4health-vs-mds-study-sampling-method-non-prob-nci-local.html
 [NFDI4Health_VS_MDS_Study_Sampling_Method_Local]: ValueSet-nfdi4health-vs-mds-study-sampling-method-local.html

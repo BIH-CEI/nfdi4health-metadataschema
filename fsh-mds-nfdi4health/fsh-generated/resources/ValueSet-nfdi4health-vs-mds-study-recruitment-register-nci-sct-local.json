@@ -1,0 +1,77 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "NFDI4Health_VS_MDS_Study_Recruitment_Register_NCI_SCT_Local",
+  "id": "nfdi4health-vs-mds-study-recruitment-register-nci-sct-local",
+  "title": "NFDI4Health VS MDS Study Recruitment Register [NCI, SCT, Local]",
+  "description": "Value set defining codes to specify the study recruitment status (from a register) in a ResearchStudy resource.",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-recruitment-register-nci-sct-local",
+  "version": "0.9",
+  "experimental": true,
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "concept": [
+          {
+            "code": "C25250",
+            "display": "Complete"
+          },
+          {
+            "code": "C17649",
+            "display": "Other"
+          },
+          {
+            "code": "C78343",
+            "display": "Recruitment"
+          }
+        ]
+      },
+      {
+        "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+        "concept": [
+          {
+            "code": "025",
+            "display": "Withdrawn"
+          },
+          {
+            "code": "024",
+            "display": "Active, not recruiting"
+          },
+          {
+            "code": "023",
+            "display": "Enrolling by invitation"
+          },
+          {
+            "code": "022",
+            "display": "Not yet recruiting"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "385655000",
+            "display": "Suspended"
+          },
+          {
+            "code": "360239007",
+            "display": "Termination - action"
+          }
+        ]
+      }
+    ]
+  }
+}

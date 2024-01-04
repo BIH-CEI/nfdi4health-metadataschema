@@ -49,10 +49,6 @@
             "display": "Pregnancy, childbirth and the puerperium"
           },
           {
-            "code": "XIII",
-            "display": "Diseases of the musculoskeletal system and connective tissue\""
-          },
-          {
             "code": "G47.2",
             "display": "Disorders of the sleep-wake schedule"
           },
@@ -79,6 +75,10 @@
           {
             "code": "XII",
             "display": "Diseases of the skin and subcutaneous tissue"
+          },
+          {
+            "code": "XIII",
+            "display": "Diseases of the musculoskeletal system and connective tissue"
           },
           {
             "code": "XI",

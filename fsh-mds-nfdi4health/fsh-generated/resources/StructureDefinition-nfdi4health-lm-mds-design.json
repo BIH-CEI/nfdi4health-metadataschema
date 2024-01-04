@@ -49,11 +49,6 @@
         ],
         "min": 1,
         "max": "1",
-        "base": {
-          "path": "Design",
-          "min": 1,
-          "max": "1"
-        },
         "type": [
           {
             "code": "BackboneElement"
@@ -70,11 +65,6 @@
         ],
         "min": 1,
         "max": "1",
-        "base": {
-          "path": "Design.Design.primaryDesign",
-          "min": 1,
-          "max": "1"
-        },
         "type": [
           {
             "code": "CodeableConcept"
@@ -95,11 +85,6 @@
         ],
         "min": 1,
         "max": "1",
-        "base": {
-          "path": "Design.studyType",
-          "min": 1,
-          "max": "1"
-        },
         "type": [
           {
             "code": "BackboneElement"
@@ -116,11 +101,6 @@
         ],
         "min": 1,
         "max": "1",
-        "base": {
-          "path": "Design.studyType.interventional",
-          "min": 1,
-          "max": "1"
-        },
         "type": [
           {
             "code": "CodeableConcept"
@@ -141,11 +121,6 @@
         ],
         "min": 1,
         "max": "*",
-        "base": {
-          "path": "Design.studyType.nonInterventional",
-          "min": 1,
-          "max": "*"
-        },
         "type": [
           {
             "code": "CodeableConcept"
@@ -166,11 +141,6 @@
         ],
         "min": 0,
         "max": "*",
-        "base": {
-          "path": "Design.conditions",
-          "min": 0,
-          "max": "*"
-        },
         "type": [
           {
             "code": "BackboneElement"
@@ -188,11 +158,6 @@
         ],
         "min": 1,
         "max": "1",
-        "base": {
-          "path": "Design.conditions.label",
-          "min": 1,
-          "max": "1"
-        },
         "type": [
           {
             "code": "string"
@@ -215,11 +180,6 @@
         ],
         "min": 1,
         "max": "1",
-        "base": {
-          "path": "Design.conditions.classification",
-          "min": 1,
-          "max": "1"
-        },
         "type": [
           {
             "code": "CodeableConcept"
@@ -248,11 +208,6 @@
         ],
         "min": 0,
         "max": "1",
-        "base": {
-          "path": "Design.conditions.code",
-          "min": 0,
-          "max": "1"
-        },
         "type": [
           {
             "code": "string"
@@ -275,11 +230,6 @@
         ],
         "min": 0,
         "max": "*",
-        "base": {
-          "path": "Design.focus",
-          "min": 0,
-          "max": "*"
-        },
         "type": [
           {
             "code": "BackboneElement"
@@ -297,11 +247,6 @@
         ],
         "min": 1,
         "max": "1",
-        "base": {
-          "path": "Design.focus.label",
-          "min": 1,
-          "max": "1"
-        },
         "type": [
           {
             "code": "string"
@@ -318,11 +263,6 @@
         ],
         "min": 1,
         "max": "1",
-        "base": {
-          "path": "Design.focus.classification",
-          "min": 1,
-          "max": "1"
-        },
         "type": [
           {
             "code": "CodeableConcept"
@@ -351,11 +291,6 @@
         ],
         "min": 0,
         "max": "1",
-        "base": {
-          "path": "Design.focus.code",
-          "min": 0,
-          "max": "1"
-        },
         "type": [
           {
             "code": "string"
@@ -378,11 +313,6 @@
         ],
         "min": 1,
         "max": "1",
-        "base": {
-          "path": "Design.groupsOfDiseases",
-          "min": 1,
-          "max": "1"
-        },
         "type": [
           {
             "code": "BackboneElement"
@@ -400,11 +330,6 @@
         ],
         "min": 1,
         "max": "*",
-        "base": {
-          "path": "Design.groupsOfDiseases.generally",
-          "min": 1,
-          "max": "*"
-        },
         "type": [
           {
             "code": "CodeableConcept"
@@ -426,11 +351,6 @@
         ],
         "min": 0,
         "max": "*",
-        "base": {
-          "path": "Design.groupsOfDiseases.conditions",
-          "min": 0,
-          "max": "*"
-        },
         "type": [
           {
             "code": "CodeableConcept"
@@ -447,11 +367,6 @@
         ],
         "min": 0,
         "max": "1",
-        "base": {
-          "path": "Design.mortalityData",
-          "min": 0,
-          "max": "1"
-        },
         "type": [
           {
             "code": "CodeableConcept"
@@ -472,11 +387,6 @@
         ],
         "min": 1,
         "max": "1",
-        "base": {
-          "path": "Design.administrativeInformation",
-          "min": 1,
-          "max": "1"
-        },
         "type": [
           {
             "code": "BackboneElement"
@@ -488,13 +398,11 @@
         "path": "nfdi4health-lm-mds-design.Design.administrativeInformation.ethicsCommitteeApproval",
         "short": "ethicsCommiteeApproval",
         "definition": "**Description: **Status of the [RESOURCE] approval from the (leading) ethics committee.",
+        "alias": [
+          "Design.administrativeInformation.ethicsCommitteeApproval"
+        ],
         "min": 0,
         "max": "1",
-        "base": {
-          "path": "Design.administrativeInformation.ethicsCommitteeApproval",
-          "min": 0,
-          "max": "1"
-        },
         "type": [
           {
             "code": "CodeableConcept"
@@ -524,6 +432,455 @@
         "binding": {
           "strength": "required",
           "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-overall-status-nci-local"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.administrativeInformation.statusWhenIntervention",
+        "path": "nfdi4health-lm-mds-design.Design.administrativeInformation.statusWhenIntervention",
+        "short": "statusWhenIntervention",
+        "definition": "**Description: **Specification whether [RESOURCE] participants receive an intervention or have completed it but are still being followed up according to the primary objective of the [RESOURCE].",
+        "alias": [
+          "Design.administrativeInformation.statusWhenIntervention"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-status-when-intervention-local"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.administrativeInformation.stageStopped",
+        "path": "nfdi4health-lm-mds-design.Design.administrativeInformation.stageStopped",
+        "short": "stageStopped",
+        "definition": "**Description: **Specification of the stage at which the [RESOURCE] was prematurely stopped.",
+        "alias": [
+          "Design.administrativeInformation.stageStopped"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-status-halted-stage-local"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.administrativeInformation.reasonStopped",
+        "path": "nfdi4health-lm-mds-design.Design.administrativeInformation.reasonStopped",
+        "short": "reasonStopped",
+        "definition": "**Description: **Specification of the reason(s) why the [RESOURCE] was prematurely stopped.",
+        "alias": [
+          "Design.administrativeInformation.reasonStopped"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "example": [
+          {
+            "label": "example 1",
+            "valueString": "accrual goal met"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.administrativeInformation.statusEnrollingByInvitation",
+        "path": "nfdi4health-lm-mds-design.Design.administrativeInformation.statusEnrollingByInvitation",
+        "short": "statusEnrollingByInvitation",
+        "definition": "**Description: **Specification whether [RESOURCE] participants are selected from a predetermined population.",
+        "alias": [
+          "Design.administrativeInformation.statusEnrollingByInvitation"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-yes-no-not-applicable-snomedct"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.administrativeInformation.recruitmentStatusRegister",
+        "path": "nfdi4health-lm-mds-design.Design.administrativeInformation.recruitmentStatusRegister",
+        "short": "recruitmentStatusRegister",
+        "definition": "**Description: **Overall recruitment status of the [RESOURCE] as indicated in the corresponding register of clinical trials.",
+        "comment": "<p><strong>Additional information: </strong>The item applies only to studies automatically uploaded from the registers of clinical trials.</p> \n ",
+        "alias": [
+          "Design.administrativeInformation.recruitmentStatusRegister"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-recruitment-register-nci-sct-local"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.administrativeInformation.startDate",
+        "path": "nfdi4health-lm-mds-design.Design.administrativeInformation.startDate",
+        "short": "startDate",
+        "definition": "**Description: **Start date of data collection for the [RESOURCE].",
+        "comment": "<p><strong>Additional information: </strong>Preferred date format: DD.MM.YYYY.</p> \n ",
+        "alias": [
+          "Design.administrativeInformation.startDate"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Design.administrativeInformation.startDate",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.administrativeInformation.endDate",
+        "path": "nfdi4health-lm-mds-design.Design.administrativeInformation.endDate",
+        "short": "endDate",
+        "definition": "**Description:** In case of a [RESOURCE] with patients or other participants, it is the date when the last participant is examined or receives an intervention, or the date of the last participant’s last visit.",
+        "comment": "<p><strong>Additional information: </strong>Preferred date format: DD.MM.YYYY.</p> \n ",
+        "alias": [
+          "Design.administrativeInformation.endDate"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.population",
+        "path": "nfdi4health-lm-mds-design.Design.population",
+        "short": "population",
+        "definition": "**Description:** Group of items providing information about the population of the [RESOURCE].",
+        "alias": [
+          "Design.population"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.population.countries",
+        "path": "nfdi4health-lm-mds-design.Design.population.countries",
+        "short": "countries",
+        "definition": "**Description: **Country or countries where the [RESOURCE] takes place.",
+        "alias": [
+          "Design.population.countries"
+        ],
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Design.population.countries",
+          "min": 1,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/country"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.population.region",
+        "path": "nfdi4health-lm-mds-design.Design.population.region",
+        "short": "region",
+        "definition": "**Description: **If applicable, region(s) and/or city(ies) within a country where the [RESOURCE] takes place.",
+        "alias": [
+          "Design.population.region"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Design.population.region",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.centers",
+        "path": "nfdi4health-lm-mds-design.Design.centers",
+        "short": "centers",
+        "definition": "**Description: **Specification whether the [RESOURCE] is conducted at only one or at more than one [RESOURCE] center.",
+        "alias": [
+          "Design.centers"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Design.centers",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-centers-snomedct-local"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.centersNumber",
+        "path": "nfdi4health-lm-mds-design.Design.centersNumber",
+        "short": "centersNumber",
+        "definition": "**Description: **Number of centers involved in the [RESOURCE].",
+        "alias": [
+          "Design.centersNumber"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Design.centersNumber",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.dataProviders",
+        "path": "nfdi4health-lm-mds-design.Design.dataProviders",
+        "short": "dataProviders",
+        "definition": "**Description:** Specification whether the [RESOURCE] involves only one or more than one data provider.",
+        "alias": [
+          "Design.dataProviders"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Design.dataProviders",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.dataProvidersNumber",
+        "path": "nfdi4health-lm-mds-design.Design.dataProvidersNumber",
+        "short": "dataProvidersNumber",
+        "definition": "**Description:** Number of data providers involved in the [RESOURCE].",
+        "alias": [
+          "Design.dataProvidersNumber"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Design.dataProvidersNumber",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.subject",
+        "path": "nfdi4health-lm-mds-design.Design.subject",
+        "short": "subject",
+        "definition": "**Description: **The primary subject addressed by the [RESOURCE], i.e. a person, an animal or other subject types.",
+        "alias": [
+          "Design.subject"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Design.subject",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-subject-snomedct"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.sampling",
+        "path": "nfdi4health-lm-mds-design.Design.sampling",
+        "short": "sampling",
+        "definition": "**Description: **Group of items providing information about the applied sampling method.",
+        "alias": [
+          "Design.sampling"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Design.sampling",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.sampling.method",
+        "path": "nfdi4health-lm-mds-design.Design.sampling.method",
+        "short": "method",
+        "definition": "**Description: **Type of the sampling method applied for the selection of [RESOURCE] participants.",
+        "alias": [
+          "Design.sampling.method"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Design.sampling.method",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-sampling-method-local"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.sampling.probabilityMethod",
+        "path": "nfdi4health-lm-mds-design.Design.sampling.probabilityMethod",
+        "short": "probabilityMethod",
+        "definition": "**Description: **Specific type of the probability sampling method applied for the selection of [RESOURCE] participants.",
+        "alias": [
+          "Design.sampling.probabilityMethod"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Design.sampling.probabilityMethod",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-sampling-prob-method-local"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.sampling.nonProbabilityMethod",
+        "path": "nfdi4health-lm-mds-design.Design.sampling.nonProbabilityMethod",
+        "short": "nonProbabilityMethod",
+        "definition": "**Description: **Specific type of the non-probability sampling method applied for the selection of [RESOURCE] participants.",
+        "alias": [
+          "Design.sampling.nonProbabilityMethod"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Design.sampling.nonProbabilityMethod",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-sampling-method-non-prob-local"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.dataSource",
+        "path": "nfdi4health-lm-mds-design.Design.dataSource",
+        "short": "dataSource",
+        "definition": "**Description: **Group of items providing information about data sources from which the data of the [RESOURCE] are generated or extracted.",
+        "alias": [
+          "Design.dataSource"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.dataSource.general",
+        "path": "nfdi4health-lm-mds-design.Design.dataSource.general",
+        "short": "general",
+        "definition": "**Description: **Different types of data sources from which the data of the [RESOURCE] are generated or extracted.",
+        "alias": [
+          "Design.dataSource.general"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sources-general-nci-local"
         }
       }
     ]

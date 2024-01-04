@@ -17,7 +17,6 @@ Description: "Value set defining codes from ICD-10 to specify groups of diseases
 * $ICD10#XVII "Congenital malformations, deformations and chromosomal abnormalities"
 * $ICD10#XVI "Certain conditions originating in the perinatal period"
 * $ICD10#XV "Pregnancy, childbirth and the puerperium"
-* $ICD10#XIII "Diseases of the musculoskeletal system and connective tissue\""
 * $ICD10#G47.2 "Disorders of the sleep-wake schedule"
 * $ICD10#XIV "Diseases of the genitourinary system"
 * $ICD10#XVIII "Symptoms, signs and abnormal clinical and laboratory findings, not elsewhere classified"
