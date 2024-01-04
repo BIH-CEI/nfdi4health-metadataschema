@@ -16,4 +16,4 @@ Description: "Value set defining codes to specify the terminology/classification
 * $NCI#C49469 "Systematized Nomenclature of Medicine Clinical Terms"
 * $NCI#C17649 "Other"
 * $NCI#C70764 "Free Text Format (Qualitative Concept)"
-* $Remaining# "ICD-11"
+* $Remaining#196 "ICD-11"

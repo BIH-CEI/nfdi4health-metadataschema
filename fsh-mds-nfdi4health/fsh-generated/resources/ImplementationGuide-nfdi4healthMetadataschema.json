@@ -1202,9 +1202,9 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/nfdi4health-vs-mds-study-ethics-committee-approval-umls-local"
+          "reference": "ValueSet/nfdi4health-vs-mds-study-ethics-committee-approval-nci-local"
         },
-        "name": "NFDI4Health VS MDS Study Ethics Commitee Approval [UMLS, local]",
+        "name": "NFDI4Health VS MDS Study Ethics Commitee Approval [NCI, local]",
         "description": "Value set defining codes to specify the status of the study ethics committee approval.",
         "exampleBoolean": false
       },
@@ -1218,9 +1218,9 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/nfdi4health-vs-mds-study-diseases-generally-icd10-umls-local"
+          "reference": "ValueSet/nfdi4health-vs-mds-study-diseases-generally-icd-sct"
         },
-        "name": "NFDI4Health VS MDS Study Groups Of Diseases Generally [ICD 10, UMLS, local",
+        "name": "NFDI4Health VS MDS Study Groups Of Diseases Generally [ICD 10, SCT]",
         "description": "Value set defining codes from ICD-10 to specify groups of diseases or conditions on which the data were collected in the study.",
         "exampleBoolean": false
       },
@@ -1250,9 +1250,9 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/nfdi4health-vs-mds-study-overall-status-umls-local"
+          "reference": "ValueSet/nfdi4health-vs-mds-study-overall-status-nci-local"
         },
-        "name": "NFDI4Health VS MDS Study Overall Status [UMLS, Local]",
+        "name": "NFDI4Health VS MDS Study Overall Status [NCI, Local]",
         "description": "Value set defining codes to specify the overall status of a study.",
         "exampleBoolean": false
       },

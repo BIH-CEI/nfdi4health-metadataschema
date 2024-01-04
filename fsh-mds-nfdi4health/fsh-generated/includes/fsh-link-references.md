@@ -146,13 +146,13 @@
 [NFDI4Health_VS_MDS_Study_Data_Sources_Imaging_NCI]: ValueSet-nfdi4health-vs-mds-study-data-sources-imaging-nci.html
 [NFDI4Health_VS_MDS_Study_Data_Sources_Omics_NCI_UMLS]: ValueSet-nfdi4health-vs-mds-study-data-sources-omics-nci-umls.html
 [NFDI4Health_VS_MDS_Study_Eligibility_Gender_SNOMEDCT_Local]: ValueSet-nfdi4health-vs-mds-study-eligibility-gender-snomedct-local.html
-[NFDI4Health_VS_MDS_Study_Ethics_Committee_Approval_UMLS_Local]: ValueSet-nfdi4health-vs-mds-study-ethics-committee-approval-umls-local.html
+[NFDI4Health_VS_MDS_Study_Ethics_Committee_Approval_NCI_Local]: ValueSet-nfdi4health-vs-mds-study-ethics-committee-approval-nci-local.html
 [NFDI4Health_VS_MDS_Study_Group_Characteristics_NCI]: ValueSet-nfdi4health-vs-mds-study-group-characteristics-nci.html
-[NFDI4Health_VS_MDS_Study_Diseases_Generally_ICD10_UMLS_Local]: ValueSet-nfdi4health-vs-mds-study-diseases-generally-icd10-umls-local.html
+[NFDI4Health_VS_MDS_Study_Groups_Of_Diseases_Generally_ICD10_SCT]: ValueSet-nfdi4health-vs-mds-study-diseases-generally-icd-sct.html
 [NFDI4Health_VS_MDS_Study_Intervention_Type_NCI_UMLS]: ValueSet-nfdi4health-vs-mds-study-intervention-type-nci-umls.html
 [NFDI4Health_VS_MDS_Study_Masking_Roles_NCI_Local]: ValueSet-nfdi4health-vs-mds-study-masking-roles-nci-local.html
 [NFDI4Health_VS_MDS_Study_Outcome_Type_UMLS]: ValueSet-nfdi4health-vs-mds-study-outcome-type-umls.html
-[NFDI4Health_VS_MDS_Study_Overall_Status_UMLS_Local]: ValueSet-nfdi4health-vs-mds-study-overall-status-umls-local.html
+[NFDI4Health_VS_MDS_Study_Overall_Status_NCI_Local]: ValueSet-nfdi4health-vs-mds-study-overall-status-nci-local.html
 [NFDI4Health_VS_MDS_Study_Phase_NCI]: ValueSet-nfdi4health-vs-mds-study-phase-nci.html
 [NFDI4Health_VS_MDS_Study_Primary_Design_Local]: ValueSet-nfdi4health-vs-mds-study-primary-design-local.html
 [NFDI4Health_VS_MDS_Study_Primary_Design_UMLS]: ValueSet-nfdi4health-vs-mds-study-primary-design-umls.html

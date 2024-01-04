@@ -1,0 +1,68 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "NFDI4Health_VS_MDS_Study_Ethics_Committee_Approval_NCI_Local",
+  "id": "nfdi4health-vs-mds-study-ethics-committee-approval-nci-local",
+  "title": "NFDI4Health VS MDS Study Ethics Commitee Approval [NCI, local]",
+  "description": "Value set defining codes to specify the status of the study ethics committee approval.",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-ethics-committee-approval-nci-local",
+  "version": "0.9",
+  "experimental": true,
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "concept": [
+          {
+            "code": "C70758",
+            "display": "Study Withdrawn"
+          },
+          {
+            "code": "C25425",
+            "display": "Approval"
+          },
+          {
+            "code": "C73530",
+            "display": "Exemption"
+          },
+          {
+            "code": "C74933",
+            "display": "Denied"
+          },
+          {
+            "code": "C48660",
+            "display": "Not Applicable"
+          },
+          {
+            "code": "C17998",
+            "display": "Unknown"
+          },
+          {
+            "code": "C53470",
+            "display": "Pending"
+          }
+        ]
+      },
+      {
+        "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+        "concept": [
+          {
+            "code": "026",
+            "display": "Request for approval not yet submitted"
+          }
+        ]
+      }
+    ]
+  }
+}

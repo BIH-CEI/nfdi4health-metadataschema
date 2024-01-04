@@ -765,7 +765,7 @@
     "fshType": "Logical",
     "fshFile": "logicals/lm-mds-nfdi4health-design.fsh",
     "startLine": 1,
-    "endLine": 903
+    "endLine": 143
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-lm-metadatenschema-recordlinkage.json",
@@ -1168,12 +1168,12 @@
     "endLine": 18
   },
   {
-    "outputFile": "ValueSet-nfdi4health-vs-mds-study-diseases-generally-icd10-umls-local.json",
-    "fshName": "NFDI4Health_VS_MDS_Study_Diseases_Generally_ICD10_UMLS_Local",
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-diseases-generally-icd-sct.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Groups_Of_Diseases_Generally_ICD10_SCT",
     "fshType": "ValueSet",
     "fshFile": "valuesets/vs-study-groups-of-diseases-generally-icd10.fsh",
     "startLine": 1,
-    "endLine": 39
+    "endLine": 40
   },
   {
     "outputFile": "ValueSet-nfdi4health-vs-mds-study-ds-biosamples-snomedct-nci-umls.json",
@@ -1192,8 +1192,8 @@
     "endLine": 16
   },
   {
-    "outputFile": "ValueSet-nfdi4health-vs-mds-study-ethics-committee-approval-umls-local.json",
-    "fshName": "NFDI4Health_VS_MDS_Study_Ethics_Committee_Approval_UMLS_Local",
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-ethics-committee-approval-nci-local.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Ethics_Committee_Approval_NCI_Local",
     "fshType": "ValueSet",
     "fshFile": "valuesets/vs-study-ethics-committee-approval.fsh",
     "startLine": 1,
@@ -1232,8 +1232,8 @@
     "endLine": 15
   },
   {
-    "outputFile": "ValueSet-nfdi4health-vs-mds-study-overall-status-umls-local.json",
-    "fshName": "NFDI4Health_VS_MDS_Study_Overall_Status_UMLS_Local",
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-overall-status-nci-local.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Overall_Status_NCI_Local",
     "fshType": "ValueSet",
     "fshFile": "valuesets/vs-study-overall-status.fsh",
     "startLine": 1,

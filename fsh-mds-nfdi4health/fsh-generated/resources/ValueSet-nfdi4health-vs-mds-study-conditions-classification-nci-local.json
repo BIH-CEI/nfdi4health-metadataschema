@@ -49,6 +49,15 @@
             "display": "Free Text Format (Qualitative Concept)"
           }
         ]
+      },
+      {
+        "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+        "concept": [
+          {
+            "code": "196",
+            "display": "ICD-11"
+          }
+        ]
       }
     ]
   }

@@ -16,7 +16,7 @@ Description: "Extension informing about the status of the study approval from th
 * url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-ethics-committee-approval" (exactly)
 * value[x] 1..
 * value[x] only Coding
-* valueCoding from NFDI4Health_VS_MDS_Study_Ethics_Committee_Approval_UMLS_Local (required)
+* valueCoding from NFDI4Health_VS_MDS_Study_Ethics_Committee_Approval_NCI_Local (required)
 * valueCoding ^binding.description = "Value set defining codes to specify the status of the study ethics committee approval."
 * valueCoding.code 1..
 * valueCoding.system 1..

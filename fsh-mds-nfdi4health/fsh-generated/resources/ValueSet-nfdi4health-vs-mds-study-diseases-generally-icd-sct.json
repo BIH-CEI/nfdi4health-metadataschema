@@ -1,0 +1,140 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "NFDI4Health_VS_MDS_Study_Groups_Of_Diseases_Generally_ICD10_SCT",
+  "id": "nfdi4health-vs-mds-study-diseases-generally-icd-sct",
+  "title": "NFDI4Health VS MDS Study Groups Of Diseases Generally [ICD 10, SCT]",
+  "description": "Value set defining codes from ICD-10 to specify groups of diseases or conditions on which the data were collected in the study.",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-diseases-generally-icd-sct",
+  "version": "0.9",
+  "experimental": true,
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10",
+        "concept": [
+          {
+            "code": "II",
+            "display": "Neoplasms"
+          },
+          {
+            "code": "III",
+            "display": "Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism"
+          },
+          {
+            "code": "IV",
+            "display": "Endocrine, nutritional and metabolic diseases"
+          },
+          {
+            "code": "XVII",
+            "display": "Congenital malformations, deformations and chromosomal abnormalities"
+          },
+          {
+            "code": "XVI",
+            "display": "Certain conditions originating in the perinatal period"
+          },
+          {
+            "code": "XV",
+            "display": "Pregnancy, childbirth and the puerperium"
+          },
+          {
+            "code": "XIII",
+            "display": "Diseases of the musculoskeletal system and connective tissue\""
+          },
+          {
+            "code": "G47.2",
+            "display": "Disorders of the sleep-wake schedule"
+          },
+          {
+            "code": "XIV",
+            "display": "Diseases of the genitourinary system"
+          },
+          {
+            "code": "XVIII",
+            "display": "Symptoms, signs and abnormal clinical and laboratory findings, not elsewhere classified"
+          },
+          {
+            "code": "XIX",
+            "display": "Injury, poisoning and certain other consequences of external causes"
+          },
+          {
+            "code": "XX",
+            "display": "External causes of morbidity and mortality"
+          },
+          {
+            "code": "XXI",
+            "display": "Factors influencing health status and contact with health services"
+          },
+          {
+            "code": "XII",
+            "display": "Diseases of the skin and subcutaneous tissue"
+          },
+          {
+            "code": "XI",
+            "display": "Diseases of the digestive system"
+          },
+          {
+            "code": "X",
+            "display": "Diseases of the respiratory system"
+          },
+          {
+            "code": "IX",
+            "display": "Diseases of the circulatory system"
+          },
+          {
+            "code": "VIII",
+            "display": "Diseases of the ear and mastoid process"
+          },
+          {
+            "code": "VII",
+            "display": "Diseases of the eye and adnexa"
+          },
+          {
+            "code": "VI",
+            "display": "Diseases of the nervous system"
+          },
+          {
+            "code": "V",
+            "display": "Mental and behavioural disorders"
+          },
+          {
+            "code": "I",
+            "display": "Certain infectious and parasitic diseases"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "261665006",
+            "display": "Unknown"
+          },
+          {
+            "code": "385432009",
+            "display": "Not applicable"
+          },
+          {
+            "code": "74964007",
+            "display": "Other"
+          },
+          {
+            "code": "231532002",
+            "display": "Sexual disorder"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -12,5 +12,5 @@ Description: "Value set defining codes to specify if mortality data were collect
 
 * $NCI#C25717 "Vital Status"
 * $NCI#C81239 "Cause of Death"
-* $NCI#C49487 "No (Classification)"
+* $NCI#C49487 "No"
 
