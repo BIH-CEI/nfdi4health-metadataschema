@@ -68,7 +68,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.21.1 Resource.studyDesign.dataSource.general"
+            "map": "Design.dataSource.general"
           }
         ]
       },
@@ -93,7 +93,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sources-general-umls-local",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sources-general-nci-local",
           "description": "Value set defining codes to specify the general study data sources."
         }
       },
@@ -118,7 +118,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.21.2 Resource.studyDesign.dataSource.biosamples"
+            "map": "Design.dataSource.biosamples"
           }
         ]
       },
@@ -143,7 +143,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-ds-biosamples-snomedct-nci-umls",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-ds-biosamples-sct-nci",
           "description": "Value set defining codes to specify a biosample data source."
         }
       },
@@ -168,7 +168,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.21.3 Resource.studyDesign.dataSource.imaging"
+            "map": "Design.dataSource.imaging"
           }
         ]
       },
@@ -218,7 +218,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.21.4 Resource.studyDesign.dataSource.omics"
+            "map": "Design.dataSource.omics"
           }
         ]
       },
@@ -243,7 +243,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sources-omics-nci-umls",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sources-omics-nci",
           "description": "NFDI4Health VS MDS Study Data Sources Omics [NCI, UMLS]"
         }
       },
@@ -269,7 +269,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.21.5 Resource.studyDesign.dataSource.description"
+            "map": "Design.dataSource.description"
           }
         ]
       },

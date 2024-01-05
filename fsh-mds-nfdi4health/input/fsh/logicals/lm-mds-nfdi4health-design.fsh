@@ -248,3 +248,59 @@ Description: "NFDI4Health Logical Model MDS Module Design V3.3"
 * Design.dataSource.general ^definition = "**Description: **Different types of data sources from which the data of the [RESOURCE] are generated or extracted."
 * Design.dataSource.general ^alias = "Design.dataSource.general"
 
+* Design.dataSource.biosamples 0..* CodeableConcept "biosamples" "Biosamples collected"
+* Design.dataSource.biosamples from NFDI4Health_VS_MDS_Study_DS_Biosamples_SCT_NCI (required)
+* Design.dataSource.biosamples ^definition = "**Description: **Specification of biosamples collected in the [RESOURCE]."
+* Design.dataSource.biosamples ^alias = "Design.dataSource.biosamples"
+
+* Design.dataSource.imaging 0..* CodeableConcept "imaging" "Imaging data collected"
+* Design.dataSource.imaging from NFDI4Health_VS_MDS_Study_Data_Sources_Imaging_NCI (required)
+* Design.dataSource.imaging ^definition = "**Description: **Specification of imaging data collected in the [RESOURCE]."
+* Design.dataSource.imaging ^alias = "Design.dataSource.imaging"
+
+* Design.dataSource.omics 0..* CodeableConcept "omics" "Omics technology used"
+* Design.dataSource.omics from NFDI4Health_VS_MDS_Study_Data_Sources_Omics_NCI (required)
+* Design.dataSource.omics ^definition = "**Description: **Specification of omics technology applied in the [RESOURCE]."
+* Design.dataSource.omics ^alias = "Design.dataSource.omics"
+
+* Design.dataSource.description 0..1 string "description" "Additional information about data sources"
+* Design.dataSource.description ^definition = "**Description: **If needed, additional descriptive information about the data sources of the [RESOURCE], e.g. indication of the data source(s) not listed in the field 'Type(s) of data sources' or a more detailed description of the selected data sources."
+* Design.dataSource.description ^alias = "Design.dataSource.description"
+
+* Design.primaryPurpose 0..1 CodeableConcept "primaryPurpose" "Primary purpose of the [RESOURCE]"
+* Design.primaryPurpose from NFDI4Health_VS_MDS_Study_Primary_Purpose_HL7_NCI (required)
+* Design.primaryPurpose ^comment = "<p><strong>Additional information: </strong>The field is defined foremost for interventional studies. For non-interventional studies, this field may not be applicable as diverse purposes may be pursued without being able to specify a primary one. In this case, the option 'Not applicable' can be selected.</p> \n "
+* Design.primaryPurpose ^definition = "**Description: **Specification of the main purpose of the [RESOURCE]."
+* Design.primaryPurpose ^alias = "Design.primaryPurpose"
+
+* Design.eligibilityCriteria 0..1  BackboneElement "eligibilityCriteria" "Eligibility criteria for [RESOURCE] participants"
+* Design.eligibilityCriteria ^definition = "**Description: **Group of items providing information about eligibility criteria for [RESOURCE] participants."
+* Design.eligibilityCriteria ^alias = "Design.eligibilityCriteria"
+
+* Design.eligibilityCriteria.ageMin 0..1  BackboneElement "ageMin" "Eligibility criteria: Minimum age"
+* Design.eligibilityCriteria.ageMin ^definition = "**Description: **Group of items providing information about the minimum eligible age of [RESOURCE] participants."
+* Design.eligibilityCriteria.ageMin ^alias = "Design.eligibilityCriteria.ageMin"
+
+* Design.eligibilityCriteria.ageMin.number 1..1  Quantity "number" "Minimum eligible age"
+* Design.eligibilityCriteria.ageMin.number ^comment = "<p><strong>Additional information:</strong> In the case of cohort studies, further participant ages can be indicated in the fields 'Inclusion criteria' or 'Exclusion criteria'.</p> \n "
+* Design.eligibilityCriteria.ageMin.number ^definition = "**Description: **Numerical value of the minimum age of potential participants eligible to participate in the [RESOURCE]."
+* Design.eligibilityCriteria.ageMin.number ^alias = "Design.eligibilityCriteria.ageMin.number"
+
+* Design.eligibilityCriteria.ageMin.timeUnit 1..1  CodeableConcept "timeUnit" "Unit of age"
+* Design.eligibilityCriteria.ageMin.timeUnit from NFDI4Health_VS_MDS_Time_Units_UCUM_LOINC (required)
+* Design.eligibilityCriteria.ageMin.timeUnit ^definition = "**Description: **Unit of measurement used to describe the minimum eligible age."
+* Design.eligibilityCriteria.ageMin.timeUnit ^alias = "Design.eligibilityCriteria.ageMin.timeUnit"
+
+* Design.eligibilityCriteria.ageMax 0..1 BackboneElement "ageMax" "Eligibility criteria: Maximum age"
+* Design.eligibilityCriteria.ageMax ^definition = "**Description: **Group of items providing information about the maximum eligible age of [RESOURCE] participants."
+* Design.eligibilityCriteria.ageMax ^alias = "Design.eligibilityCriteria.ageMax"
+
+* Design.eligibilityCriteria.ageMax.number 1..1  Quantity "number" "Maximum eligible age"
+* Design.eligibilityCriteria.ageMax.number ^comment = "<p><strong>Additional information:</strong> In the case of cohort studies, further participant ages can be indicated in the fields 'Inclusion criteria' or 'Exclusion criteria'.</p> \n "
+* Design.eligibilityCriteria.ageMax.number ^definition = "**Description: **Numerical value of the maximum age of potential participants eligible to participate in the [RESOURCE]."
+* Design.eligibilityCriteria.ageMax.number ^alias = "Design.eligibilityCriteria.ageMax.number"
+
+* Design.eligibilityCriteria.ageMax.timeUnit 1..1  CodeableConcept "timeUnit" "Unit of age"
+* Design.eligibilityCriteria.ageMax.timeUnit from NFDI4Health_VS_MDS_Time_Units_UCUM_LOINC (required)
+* Design.eligibilityCriteria.ageMax.timeUnit ^definition = "**Description: **Unit of measurement used to describe the maximum eligible age."
+* Design.eligibilityCriteria.ageMax.timeUnit ^alias = "Design.eligibilityCriteria.ageMax.timeUnit"

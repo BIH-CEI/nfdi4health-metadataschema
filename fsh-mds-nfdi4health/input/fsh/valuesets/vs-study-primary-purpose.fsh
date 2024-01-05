@@ -1,8 +1,8 @@
-ValueSet: NFDI4Health_VS_MDS_Study_Primary_Purpose_UMLS_NCI
-Id: nfdi4health-vs-mds-study-primary-purpose-umls-nci
-Title: "NFDI4Health VS MDS Study Primary Purpose [UMLS, NCI]"
+ValueSet: NFDI4Health_VS_MDS_Study_Primary_Purpose_HL7_NCI
+Id: nfdi4health-vs-mds-study-primary-purpose-hl7-nci
+Title: "NFDI4Health VS MDS Study Primary Purpose [HL7, NCI]"
 Description: "Value set defining codes to specify the primary purpose of a study in a ResearchStudy resource."
-* ^url = "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-primary-purpose-umls-nci"
+* ^url = "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-primary-purpose-hl7-nci"
 * ^status = #draft
 * ^version = "0.9"
 * ^experimental = true
@@ -10,32 +10,17 @@ Description: "Value set defining codes to specify the primary purpose of a study
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 
-* $study-prim-purp-type#treatment "Treatment"
+* $NCI#C25263 "Prognostic"
+* $NCI#C49661 "Pharmacogenomic Study"
+* $NCI#C16527 "Medical Economics"
+* $NCI#C48660 "Not Applicable"
+* $NCI#C17649 "Other"
+* $NCI#C129001 "Pharmacogenetic Study"
 * $study-prim-purp-type#prevention "Prevention"
-* $UMLS#C0220901 "prognostic (Intellectual Product)"
 * $study-prim-purp-type#diagnostic "Diagnostic"
 * $study-prim-purp-type#supportive-care "Supportive Care"
 * $study-prim-purp-type#screening "Screening"
 * $study-prim-purp-type#health-services-research "Health Services Research"
 * $study-prim-purp-type#basic-science "Basic Science"
 * $study-prim-purp-type#device-feasibility "Device Feasibility"
-* $NCI#C129001 "Pharmacogenetic Study"
-* $UMLS#C1709519 "Pharmacogenomic Study (Research Activity)"
-* $UMLS#C5241252 "Health Economics (Occupational Activity)"
-* $UMLS#C1272460 "Not Applicable (Qualitative Concept)"
-* $UMLS#C0205394 "Other (Qualitative Concept)"
-
-//* $UMLS#C3161471 "Treatment Study (Research Study)"
-//* $UMLS#C1706420 "Prevention Study (Research Study)"
-//* $UMLS#C0220901 "prognostic (Intellectual Product)"
-//* $UMLS#C1704656 "Diagnosis Study (Research Study)"
-//* $UMLS#C2348611 "Supportive Care Study (Research Study)"
-//* $UMLS#C2348164 "Screening Study (Research Activity)"
-//* $UMLS#C0018757 "Health Services Research (Research Activity)"
-//* $UMLS#C0681833 "Basic Research (Research Activity)"
-//* $UMLS#C4528315 "Device Feasibility Study (Research Activity)"
-//* $NCI#C129001 "Pharmacogenetic Study"
-//* $UMLS#C1709519 "Pharmacogenomic Study (Research Activity)"
-//* $UMLS#C5241252 "Health Economics (Occupational Activity)"
-//* $UMLS#C1272460 "Not Applicable (Qualitative Concept)"
-//* $UMLS#C0205394 "Other (Qualitative Concept)"
+* $study-prim-purp-type#treatment "Treatment"

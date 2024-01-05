@@ -1018,10 +1018,10 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/nfdi4health-vs-mds-time-units-ucum-umls"
+          "reference": "ValueSet/nfdi4health-vs-mds-time-units-ucum-loinc"
         },
-        "name": "NFDI4Health VS MDS Provenance Time Units [UCUM, UMLS]",
-        "description": "Value set defining codes for time units from UCUM and UMLS.",
+        "name": "NFDI4Health VS MDS Provenance Time Units [UCUM, LOINC]",
+        "description": "Value set defining codes for time units from UCUM and LOINC.",
         "exampleBoolean": false
       },
       {
@@ -1162,9 +1162,9 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/nfdi4health-vs-mds-study-ds-biosamples-snomedct-nci-umls"
+          "reference": "ValueSet/nfdi4health-vs-mds-study-ds-biosamples-sct-nci"
         },
-        "name": "NFDI4Health VS MDS Study Data Sources Biosamples [SNOMED CT, NCI, UMLS]",
+        "name": "NFDI4Health VS MDS Study Data Sources Biosamples [SCT, NCI]",
         "description": "Value set defining codes to specify a biosample data source.",
         "exampleBoolean": false
       },
@@ -1186,9 +1186,9 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/nfdi4health-vs-mds-study-data-sources-omics-nci-umls"
+          "reference": "ValueSet/nfdi4health-vs-mds-study-data-sources-omics-nci"
         },
-        "name": "NFDI4Health VS MDS Study Data Sources Omics [NCI, UMLS]",
+        "name": "NFDI4Health VS MDS Study Data Sources Omics [NCI]",
         "description": "Value set defining codes to specify the omics technology applied in the study.",
         "exampleBoolean": false
       },
@@ -1282,9 +1282,9 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/nfdi4health-vs-mds-study-primary-purpose-umls-nci"
+          "reference": "ValueSet/nfdi4health-vs-mds-study-primary-purpose-hl7-nci"
         },
-        "name": "NFDI4Health VS MDS Study Primary Purpose [UMLS, NCI]",
+        "name": "NFDI4Health VS MDS Study Primary Purpose [HL7, NCI]",
         "description": "Value set defining codes to specify the primary purpose of a study in a ResearchStudy resource.",
         "exampleBoolean": false
       },

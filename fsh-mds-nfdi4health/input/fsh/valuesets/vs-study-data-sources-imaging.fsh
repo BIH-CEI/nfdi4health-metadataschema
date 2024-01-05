@@ -10,8 +10,8 @@ Description: "Value set defining codes to specify an imaging data source."
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 
-* $NCI#C115503 "Ultrasound Study File (Manufactured Object)"
-* $NCI#C115501 "Magnetic Resonance Imaging Study File (Manufactured Object)"
-* $NCI#C115721 "Radiography Study File (Intellectual Product)"
-* $NCI#C115499 "Computed Tomography Study File (Manufactured Object)"
-* $NCI#C115545 "Medical Imaging File Not Otherwise Specified (Intellectual Product)"
+* $NCI#C115503 "Ultrasound Study File"
+* $NCI#C115501 "Magnetic Resonance Imaging Study File"
+* $NCI#C115721 "Radiography Study File"
+* $NCI#C115499 "Computed Tomography Study File"
+* $NCI#C115545 "Medical Imaging File Not Otherwise Specified"

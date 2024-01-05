@@ -26,23 +26,23 @@
         "concept": [
           {
             "code": "C115503",
-            "display": "Ultrasound Study File (Manufactured Object)"
+            "display": "Ultrasound Study File"
           },
           {
             "code": "C115501",
-            "display": "Magnetic Resonance Imaging Study File (Manufactured Object)"
+            "display": "Magnetic Resonance Imaging Study File"
           },
           {
             "code": "C115721",
-            "display": "Radiography Study File (Intellectual Product)"
+            "display": "Radiography Study File"
           },
           {
             "code": "C115499",
-            "display": "Computed Tomography Study File (Manufactured Object)"
+            "display": "Computed Tomography Study File"
           },
           {
             "code": "C115545",
-            "display": "Medical Imaging File Not Otherwise Specified (Intellectual Product)"
+            "display": "Medical Imaging File Not Otherwise Specified"
           }
         ]
       }

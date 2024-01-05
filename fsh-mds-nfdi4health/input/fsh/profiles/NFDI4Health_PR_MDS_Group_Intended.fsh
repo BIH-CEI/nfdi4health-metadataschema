@@ -33,7 +33,7 @@ Description: "Information about the eligibility criteria in a study."
 * characteristic[eligibleMinimumAge].valueQuantity.value ^short = "Minimum eligible age"
 * characteristic[eligibleMinimumAge].valueQuantity.value ^definition = "Numerical value of the minimum age of potential participants eligible to participate in the study."
 * characteristic[eligibleMinimumAge].valueQuantity.code 1..
-* characteristic[eligibleMinimumAge].valueQuantity.code from NFDI4Health_VS_MDS_Time_Units_UCUM_UMLS (required)
+* characteristic[eligibleMinimumAge].valueQuantity.code from NFDI4Health_VS_MDS_Time_Units_UCUM_LOINC (required)
 * characteristic[eligibleMinimumAge].valueQuantity.code ^short = "Unit of time"
 * characteristic[eligibleMaximumAge] ^short = "Eligibility criteria: Maximum age"
 * characteristic[eligibleMaximumAge] ^definition = "Group of items providing information about the maximum eligible age of study participants."
@@ -43,7 +43,7 @@ Description: "Information about the eligibility criteria in a study."
 * characteristic[eligibleMaximumAge].valueQuantity.value ^short = "Maximum eligible age"
 * characteristic[eligibleMaximumAge].valueQuantity.value ^definition = "Numerical value of the maximum age of potential participants eligible to participate in the study."
 * characteristic[eligibleMaximumAge].valueQuantity.code 1..
-* characteristic[eligibleMaximumAge].valueQuantity.code from NFDI4Health_VS_MDS_Time_Units_UCUM_UMLS (required)
+* characteristic[eligibleMaximumAge].valueQuantity.code from NFDI4Health_VS_MDS_Time_Units_UCUM_LOINC (required)
 * characteristic[eligibleMaximumAge].valueQuantity.code ^short = "Unit of time"
 * characteristic[gender] ^short = "Eligible gender"
 * characteristic[gender] ^definition = "Gender of potential participants eligible to participate in the study."

@@ -1,8 +1,3 @@
-Alias: $nfdi4health-vs-mds-study-data-sources-general-umls-local = https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sources-general-umls-local
-Alias: $nfdi4health-vs-mds-study-ds-biosamples-snomedct-nci-umls = https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-ds-biosamples-snomedct-nci-umls
-Alias: $nfdi4health-vs-mds-study-data-sources-imaging-nci = https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sources-imaging-nci
-Alias: $nfdi4health-vs-mds-study-data-sources-omics-nci-umls = https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sources-omics-nci-umls
-
 Extension: NFDI4Health_EX_MDS_Study_Data_Source
 Id: nfdi4health-ex-mds-study-data-source
 Title: "NFDI4Health EX MDS Study Data Source"
@@ -34,7 +29,7 @@ Description: "Extension informing about data sources from which study data are g
 * extension[general].value[x] only Coding
 * extension[general].valueCoding.code 1..1
 * extension[general].valueCoding.system 1..1
-* extension[general].valueCoding from $nfdi4health-vs-mds-study-data-sources-general-umls-local (required)
+* extension[general].valueCoding from NFDI4Health_VS_MDS_Study_Data_Sources_General_NCI_Local (required)
 * extension[general].valueCoding ^binding.description = "Value set defining codes to specify the general study data sources."
 * extension[biosamples] ^short = "Biosamples collected in the study"
 * extension[biosamples] ^definition = "Specification of biosamples collected in the study."
@@ -42,7 +37,7 @@ Description: "Extension informing about data sources from which study data are g
 * extension[biosamples].value[x] only Coding
 * extension[biosamples].valueCoding.code 1..1
 * extension[biosamples].valueCoding.system 1..1
-* extension[biosamples].valueCoding from $nfdi4health-vs-mds-study-ds-biosamples-snomedct-nci-umls (required)
+* extension[biosamples].valueCoding from NFDI4Health_VS_MDS_Study_DS_Biosamples_SCT_NCI (required)
 * extension[biosamples].valueCoding ^binding.description = "Value set defining codes to specify a biosample data source."
 * extension[imaging] ^short = "Imaging data collected in the study"
 * extension[imaging] ^definition = "Specification of imaging data collected in the study."
@@ -50,7 +45,7 @@ Description: "Extension informing about data sources from which study data are g
 * extension[imaging].value[x] only Coding
 * extension[imaging].valueCoding.code 1..1
 * extension[imaging].valueCoding.system 1..1 
-* extension[imaging].valueCoding from $nfdi4health-vs-mds-study-data-sources-imaging-nci (required)
+* extension[imaging].valueCoding from NFDI4Health_VS_MDS_Study_Data_Sources_Imaging_NCI (required)
 * extension[imaging].valueCoding ^binding.description = "Value set defining codes to specify an imaging data source."
 * extension[omics] ^short = "Omics technology used in the study"
 * extension[omics] ^definition = "Specification of omics technology applied in the study."
@@ -58,7 +53,7 @@ Description: "Extension informing about data sources from which study data are g
 * extension[omics].value[x] only Coding
 * extension[omics].valueCoding.code 1..1
 * extension[omics].valueCoding.system 1..1
-* extension[omics].valueCoding from $nfdi4health-vs-mds-study-data-sources-omics-nci-umls (required)
+* extension[omics].valueCoding from NFDI4Health_VS_MDS_Study_Data_Sources_Omics_NCI (required)
 * extension[omics].valueCoding ^binding.description = "NFDI4Health VS MDS Study Data Sources Omics [NCI, UMLS]"
 * extension[description] ^short = "Additional information about data sources"
 * extension[description] ^definition = "If needed, additional descriptive information about study data sources, e.g. indication of the data source(s) not listed in the property 'Data sources for the study' or more detailed description of the selected data sources."
@@ -70,8 +65,8 @@ Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Study_Data_Source
 * -> "1.17.21 Resource.studyDesign.dataSource"
-* extension[general] -> "1.17.21.1 Resource.studyDesign.dataSource.general"
-* extension[biosamples] -> "1.17.21.2 Resource.studyDesign.dataSource.biosamples"
-* extension[imaging] -> "1.17.21.3 Resource.studyDesign.dataSource.imaging"
-* extension[omics] -> "1.17.21.4 Resource.studyDesign.dataSource.omics"
-* extension[description] -> "1.17.21.5 Resource.studyDesign.dataSource.description"
+* extension[general] -> "Design.dataSource.general"
+* extension[biosamples] -> "Design.dataSource.biosamples"
+* extension[imaging] -> "Design.dataSource.imaging"
+* extension[omics] -> "Design.dataSource.omics"
+* extension[description] -> "Design.dataSource.description"
