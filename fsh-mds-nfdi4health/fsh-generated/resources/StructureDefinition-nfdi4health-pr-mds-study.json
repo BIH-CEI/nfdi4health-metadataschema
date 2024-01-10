@@ -1112,7 +1112,7 @@
         "comment": "Additional information: The field is defined foremost for interventional studies. For non-interventional  studies, this field may be not appplicable as diverse purposes may be pursued without being able to specify a primary one. In this case, the option \"Not applicable\" can be selected. | Short input help: Foremost for interventional studies, please specify the primary purpose why the study was conducted.",
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-primary-purpose-umls-nci",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-primary-purpose-hl7-nci",
           "description": "Value set defining codes to specify the primary purpose of a study in a ResearchStudy resource."
         },
         "mapping": [

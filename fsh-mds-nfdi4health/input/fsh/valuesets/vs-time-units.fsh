@@ -1,8 +1,8 @@
-ValueSet: NFDI4Health_VS_MDS_Time_Units_UCUM_UMLS
-Id: nfdi4health-vs-mds-time-units-ucum-umls
-Title: "NFDI4Health VS MDS Provenance Time Units [UCUM, UMLS]"
-Description: "Value set defining codes for time units from UCUM and UMLS."
-* ^url = "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-time-units-ucum-umls"
+ValueSet: NFDI4Health_VS_MDS_Time_Units_UCUM_LOINC
+Id: nfdi4health-vs-mds-time-units-ucum-loinc 
+Title: "NFDI4Health VS MDS Provenance Time Units [UCUM, LOINC]"
+Description: "Value set defining codes for time units from UCUM and LOINC."
+* ^url = "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-time-units-ucum-loinc"
 * ^status = #draft
 * ^version = "0.9"
 * ^experimental = true
@@ -16,5 +16,5 @@ Description: "Value set defining codes for time units from UCUM and UMLS."
 * $UCUM#d "day"
 * $UCUM#h "hour"
 * $UCUM#min "minute"
-* $UMLS#C1135241 "Weeks pregnant (Finding)"
+* $LNC#49051-6 "Gestational age in weeks"
 

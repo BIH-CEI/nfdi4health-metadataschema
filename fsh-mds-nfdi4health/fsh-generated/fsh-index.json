@@ -628,8 +628,8 @@
     "fshName": "NFDI4Health_EX_MDS_Study_Data_Source",
     "fshType": "Extension",
     "fshFile": "extensions/NFDI4Health_EX_MDS_Study_Data_Source.fsh",
-    "startLine": 6,
-    "endLine": 66
+    "startLine": 1,
+    "endLine": 61
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-study-eligibility-criteria-exclusion-criteria.json",
@@ -765,7 +765,7 @@
     "fshType": "Logical",
     "fshFile": "logicals/lm-mds-nfdi4health-design.fsh",
     "startLine": 1,
-    "endLine": 249
+    "endLine": 306
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-lm-metadatenschema-recordlinkage.json",
@@ -1160,8 +1160,8 @@
     "endLine": 17
   },
   {
-    "outputFile": "ValueSet-nfdi4health-vs-mds-study-data-sources-omics-nci-umls.json",
-    "fshName": "NFDI4Health_VS_MDS_Study_Data_Sources_Omics_NCI_UMLS",
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-data-sources-omics-nci.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Data_Sources_Omics_NCI",
     "fshType": "ValueSet",
     "fshFile": "valuesets/vs-study-data-sources-omics.fsh",
     "startLine": 1,
@@ -1176,8 +1176,8 @@
     "endLine": 39
   },
   {
-    "outputFile": "ValueSet-nfdi4health-vs-mds-study-ds-biosamples-snomedct-nci-umls.json",
-    "fshName": "NFDI4Health_VS_MDS_Study_DS_Biosamples_SNOMEDCT_NCI_UMLS",
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-ds-biosamples-sct-nci.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_DS_Biosamples_SCT_NCI",
     "fshType": "ValueSet",
     "fshFile": "valuesets/vs-study-data-sources-biosamples.fsh",
     "startLine": 1,
@@ -1264,8 +1264,8 @@
     "endLine": 14
   },
   {
-    "outputFile": "ValueSet-nfdi4health-vs-mds-study-primary-purpose-umls-nci.json",
-    "fshName": "NFDI4Health_VS_MDS_Study_Primary_Purpose_UMLS_NCI",
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-primary-purpose-hl7-nci.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Primary_Purpose_HL7_NCI",
     "fshType": "ValueSet",
     "fshFile": "valuesets/vs-study-primary-purpose.fsh",
     "startLine": 1,
@@ -1400,8 +1400,8 @@
     "endLine": 32
   },
   {
-    "outputFile": "ValueSet-nfdi4health-vs-mds-time-units-ucum-umls.json",
-    "fshName": "NFDI4Health_VS_MDS_Time_Units_UCUM_UMLS",
+    "outputFile": "ValueSet-nfdi4health-vs-mds-time-units-ucum-loinc.json",
+    "fshName": "NFDI4Health_VS_MDS_Time_Units_UCUM_LOINC",
     "fshType": "ValueSet",
     "fshFile": "valuesets/vs-time-units.fsh",
     "startLine": 1,

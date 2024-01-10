@@ -882,6 +882,225 @@
           "strength": "required",
           "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sources-general-nci-local"
         }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.dataSource.biosamples",
+        "path": "nfdi4health-lm-mds-design.Design.dataSource.biosamples",
+        "short": "biosamples",
+        "definition": "**Description: **Specification of biosamples collected in the [RESOURCE].",
+        "alias": [
+          "Design.dataSource.biosamples"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-ds-biosamples-sct-nci"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.dataSource.imaging",
+        "path": "nfdi4health-lm-mds-design.Design.dataSource.imaging",
+        "short": "imaging",
+        "definition": "**Description: **Specification of imaging data collected in the [RESOURCE].",
+        "alias": [
+          "Design.dataSource.imaging"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sources-imaging-nci"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.dataSource.omics",
+        "path": "nfdi4health-lm-mds-design.Design.dataSource.omics",
+        "short": "omics",
+        "definition": "**Description: **Specification of omics technology applied in the [RESOURCE].",
+        "alias": [
+          "Design.dataSource.omics"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sources-omics-nci"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.dataSource.description",
+        "path": "nfdi4health-lm-mds-design.Design.dataSource.description",
+        "short": "description",
+        "definition": "**Description: **If needed, additional descriptive information about the data sources of the [RESOURCE], e.g. indication of the data source(s) not listed in the field 'Type(s) of data sources' or a more detailed description of the selected data sources.",
+        "alias": [
+          "Design.dataSource.description"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.primaryPurpose",
+        "path": "nfdi4health-lm-mds-design.Design.primaryPurpose",
+        "short": "primaryPurpose",
+        "definition": "**Description: **Specification of the main purpose of the [RESOURCE].",
+        "comment": "<p><strong>Additional information: </strong>The field is defined foremost for interventional studies. For non-interventional studies, this field may not be applicable as diverse purposes may be pursued without being able to specify a primary one. In this case, the option 'Not applicable' can be selected.</p> \n ",
+        "alias": [
+          "Design.primaryPurpose"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-primary-purpose-hl7-nci"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.eligibilityCriteria",
+        "path": "nfdi4health-lm-mds-design.Design.eligibilityCriteria",
+        "short": "eligibilityCriteria",
+        "definition": "**Description: **Group of items providing information about eligibility criteria for [RESOURCE] participants.",
+        "alias": [
+          "Design.eligibilityCriteria"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.eligibilityCriteria.ageMin",
+        "path": "nfdi4health-lm-mds-design.Design.eligibilityCriteria.ageMin",
+        "short": "ageMin",
+        "definition": "**Description: **Group of items providing information about the minimum eligible age of [RESOURCE] participants.",
+        "alias": [
+          "Design.eligibilityCriteria.ageMin"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.eligibilityCriteria.ageMin.number",
+        "path": "nfdi4health-lm-mds-design.Design.eligibilityCriteria.ageMin.number",
+        "short": "number",
+        "definition": "**Description: **Numerical value of the minimum age of potential participants eligible to participate in the [RESOURCE].",
+        "comment": "<p><strong>Additional information:</strong> In the case of cohort studies, further participant ages can be indicated in the fields 'Inclusion criteria' or 'Exclusion criteria'.</p> \n ",
+        "alias": [
+          "Design.eligibilityCriteria.ageMin.number"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.eligibilityCriteria.ageMin.timeUnit",
+        "path": "nfdi4health-lm-mds-design.Design.eligibilityCriteria.ageMin.timeUnit",
+        "short": "timeUnit",
+        "definition": "**Description: **Unit of measurement used to describe the minimum eligible age.",
+        "alias": [
+          "Design.eligibilityCriteria.ageMin.timeUnit"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-time-units-ucum-loinc"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.eligibilityCriteria.ageMax",
+        "path": "nfdi4health-lm-mds-design.Design.eligibilityCriteria.ageMax",
+        "short": "ageMax",
+        "definition": "**Description: **Group of items providing information about the maximum eligible age of [RESOURCE] participants.",
+        "alias": [
+          "Design.eligibilityCriteria.ageMax"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.eligibilityCriteria.ageMax.number",
+        "path": "nfdi4health-lm-mds-design.Design.eligibilityCriteria.ageMax.number",
+        "short": "number",
+        "definition": "**Description: **Numerical value of the maximum age of potential participants eligible to participate in the [RESOURCE].",
+        "comment": "<p><strong>Additional information:</strong> In the case of cohort studies, further participant ages can be indicated in the fields 'Inclusion criteria' or 'Exclusion criteria'.</p> \n ",
+        "alias": [
+          "Design.eligibilityCriteria.ageMax.number"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.eligibilityCriteria.ageMax.timeUnit",
+        "path": "nfdi4health-lm-mds-design.Design.eligibilityCriteria.ageMax.timeUnit",
+        "short": "timeUnit",
+        "definition": "**Description: **Unit of measurement used to describe the maximum eligible age.",
+        "alias": [
+          "Design.eligibilityCriteria.ageMax.timeUnit"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-time-units-ucum-loinc"
+        }
       }
     ]
   }

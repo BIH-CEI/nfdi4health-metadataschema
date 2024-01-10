@@ -31,7 +31,7 @@ Description: "Information about the actual study population."
 * characteristic[examinedMinimumAge].valueQuantity.value ^short = "Actual minimum age of participants"
 * characteristic[examinedMinimumAge].valueQuantity.value ^definition = "Numerical value of the minimum age of study participants at the time of examination."
 * characteristic[examinedMinimumAge].valueQuantity.code 1..
-* characteristic[examinedMinimumAge].valueQuantity.code from NFDI4Health_VS_MDS_Time_Units_UCUM_UMLS (required)
+* characteristic[examinedMinimumAge].valueQuantity.code from NFDI4Health_VS_MDS_Time_Units_UCUM_LOINC (required)
 * characteristic[examinedMaximumAge] ^short = "Actual maximum age of participants"
 * characteristic[examinedMaximumAge] ^definition = "Group of items providing information about the actual maximum age of study participants at the time of examination."
 * characteristic[examinedMaximumAge].code = NFDI4Health_CS_MDS_Remaining_Concepts#002 "Maximum age of examined subjects" (exactly)
@@ -41,7 +41,7 @@ Description: "Information about the actual study population."
 * characteristic[examinedMaximumAge].valueQuantity.value ^short = "Actual maximum age of participants"
 * characteristic[examinedMaximumAge].valueQuantity.value ^definition = "Numerical value of the maximum age of study participants at the time of examination."
 * characteristic[examinedMaximumAge].valueQuantity.code 1..
-* characteristic[examinedMaximumAge].valueQuantity.code from NFDI4Health_VS_MDS_Time_Units_UCUM_UMLS (required)
+* characteristic[examinedMaximumAge].valueQuantity.code from NFDI4Health_VS_MDS_Time_Units_UCUM_LOINC (required)
 * characteristic[examinedMaximumAge].valueQuantity.code ^short = "Unit of time"
 
 Mapping: NFDI4Health-Group-Actual-to-FHIR

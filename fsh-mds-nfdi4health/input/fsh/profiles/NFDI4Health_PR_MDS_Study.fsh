@@ -133,7 +133,7 @@ Description: "Profile to collect information about german (or with at least one 
 * title.extension contains NFDI4Health_EX_MDS_Label named label 0..*
 * status = #active (exactly)
 * status ^comment = "The item does not exist in NFDI4Health' MDS. Fixed to 'active' for all studies."
-* primaryPurposeType from NFDI4Health_VS_MDS_Study_Primary_Purpose_UMLS_NCI (required)
+* primaryPurposeType from NFDI4Health_VS_MDS_Study_Primary_Purpose_HL7_NCI (required)
 * primaryPurposeType ^short = "Primary purpose of the study"
 * primaryPurposeType ^definition = "Specification of the main purpose of the study."
 * primaryPurposeType ^comment = "Additional information: The field is defined foremost for interventional studies. For non-interventional  studies, this field may be not appplicable as diverse purposes may be pursued without being able to specify a primary one. In this case, the option \"Not applicable\" can be selected. | Short input help: Foremost for interventional studies, please specify the primary purpose why the study was conducted."

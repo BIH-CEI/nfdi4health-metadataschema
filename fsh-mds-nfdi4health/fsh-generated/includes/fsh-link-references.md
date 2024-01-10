@@ -124,7 +124,7 @@
 [NFDI4Health_VS_MDS_Personal_Roles_NCI_Local]: ValueSet-nfdi4health-vs-mds-personal-roles-nci-local.html
 [NFDI4Health_VS_MDS_Provenance_Activity_HL7_Local]: ValueSet-nfdi4health-vs-mds-provenance-activity-hl7-local.html
 [NFDI4Health_VS_MDS_Provenance_Data_Source_Local]: ValueSet-nfdi4health-vs-mds-provenance-data-source-local.html
-[NFDI4Health_VS_MDS_Time_Units_UCUM_UMLS]: ValueSet-nfdi4health-vs-mds-time-units-ucum-umls.html
+[NFDI4Health_VS_MDS_Time_Units_UCUM_LOINC]: ValueSet-nfdi4health-vs-mds-time-units-ucum-loinc.html
 [NFDI4Health_VS_MDS_Relation_Type_Ids_Nfdi_Local]: ValueSet-nfdi4health-vs-mds-relation-type-ids-nfdi-local.html
 [NFDI4Health_VS_MDS_Relation_Type_Ids_Local]: ValueSet-nfdi4health-vs-mds-relation-type-ids-local.html
 [NFDI4Health_VS_MDS_Resource_Type_General_NCI_UMLS_Local]: ValueSet-nfdi4health-vs-mds-resource-type-general-nci-umls-local.html
@@ -142,10 +142,10 @@
 [NFDI4Health_VS_MDS_Study_Conditions_Classification_NCI_Local]: ValueSet-nfdi4health-vs-mds-study-conditions-classification-nci-local.html
 [NFDI4Health_VS_MDS_Study_Data_Sharing_Plan_Datashield_SNOMEDCT_UMLS]: ValueSet-nfdi4health-vs-mds-study-data-sharing-plan-ds-snomedct-umls.html
 [NFDI4Health_VS_MDS_Study_Data_Sharing_Plan_Supporting_Information_UMLS_Local]: ValueSet-nfdi4health-vs-mds-study-data-sharing-plan-sup-inf-umls-local.html
-[NFDI4Health_VS_MDS_Study_DS_Biosamples_SNOMEDCT_NCI_UMLS]: ValueSet-nfdi4health-vs-mds-study-ds-biosamples-snomedct-nci-umls.html
+[NFDI4Health_VS_MDS_Study_DS_Biosamples_SCT_NCI]: ValueSet-nfdi4health-vs-mds-study-ds-biosamples-sct-nci.html
 [NFDI4Health_VS_MDS_Study_Data_Sources_General_NCI_Local]: ValueSet-nfdi4health-vs-mds-study-data-sources-general-nci-local.html
 [NFDI4Health_VS_MDS_Study_Data_Sources_Imaging_NCI]: ValueSet-nfdi4health-vs-mds-study-data-sources-imaging-nci.html
-[NFDI4Health_VS_MDS_Study_Data_Sources_Omics_NCI_UMLS]: ValueSet-nfdi4health-vs-mds-study-data-sources-omics-nci-umls.html
+[NFDI4Health_VS_MDS_Study_Data_Sources_Omics_NCI]: ValueSet-nfdi4health-vs-mds-study-data-sources-omics-nci.html
 [NFDI4Health_VS_MDS_Study_Eligibility_Gender_SNOMEDCT_Local]: ValueSet-nfdi4health-vs-mds-study-eligibility-gender-snomedct-local.html
 [NFDI4Health_VS_MDS_Study_Ethics_Committee_Approval_NCI_Local]: ValueSet-nfdi4health-vs-mds-study-ethics-committee-approval-nci-local.html
 [NFDI4Health_VS_MDS_Study_Group_Characteristics_NCI]: ValueSet-nfdi4health-vs-mds-study-group-characteristics-nci.html
@@ -157,7 +157,7 @@
 [NFDI4Health_VS_MDS_Study_Phase_NCI]: ValueSet-nfdi4health-vs-mds-study-phase-nci.html
 [NFDI4Health_VS_MDS_Study_Primary_Design_Local]: ValueSet-nfdi4health-vs-mds-study-primary-design-local.html
 [NFDI4Health_VS_MDS_Study_Primary_Design_UMLS]: ValueSet-nfdi4health-vs-mds-study-primary-design-umls.html
-[NFDI4Health_VS_MDS_Study_Primary_Purpose_UMLS_NCI]: ValueSet-nfdi4health-vs-mds-study-primary-purpose-umls-nci.html
+[NFDI4Health_VS_MDS_Study_Primary_Purpose_HL7_NCI]: ValueSet-nfdi4health-vs-mds-study-primary-purpose-hl7-nci.html
 [NFDI4Health_VS_MDS_Study_Recruitment_Register_NCI_SCT_Local]: ValueSet-nfdi4health-vs-mds-study-recruitment-register-nci-sct-local.html
 [NFDI4Health_VS_MDS_Study_Sampling_Method_Non_Probability_Local]: ValueSet-nfdi4health-vs-mds-study-sampling-method-non-prob-local.html
 [NFDI4Health_VS_MDS_Study_Sampling_Method_Non_Probability_NCI_Local]: ValueSet-nfdi4health-vs-mds-study-sampling-method-non-prob-nci-local.html
