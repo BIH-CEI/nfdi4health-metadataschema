@@ -22,17 +22,14 @@ Description: "Profile of a RelatedArtifact intended to capture information about
     $RelatedNFDI named NFDI4HealthResource 0..* and
     $RelatedNonNFDI named nonNFDI4HealthResource 0..*
 * url ^short = "Web page of the [RESOURCE]"
-* url ^definition = "If existing, a link to the web page directly relevant to the resource."
-* url ^comment = "Additional information: Other web pages related to the resource can additionally be entered in the section \"Related resources\"."
+* url ^definition = "If existing, a link to the web page directly relevant to the [RESOURCE]."
+* url ^comment = "Additional information: Other web pages related to the [RESOURCE] can additionally be entered in the section 'Related resources'."
 
 
 Mapping: NFDI4Health-Related-Artifact-Resource-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_PR_MDS_Related_Artifact_Resource
-*  -> "1.13 Resource.ids"
-*  -> "1.14 Resource.idsNfdi4health"
-*  -> "1.9 Resource.webpage"
-*  extension[nonNFDI4HealthResource] -> "1.13 Resource.ids"
-*  extension[NFDI4HealthResource] -> "1.14 Resource.idsNfdi4health"
-*  url -> "1.9 Resource.webpage"
+*  extension[nonNFDI4HealthResource] -> "1.12 Resource.ids"
+*  extension[NFDI4HealthResource] -> "1.13 Resource.idsNfdi4health"
+*  url -> "1.8 Resource.webpage"

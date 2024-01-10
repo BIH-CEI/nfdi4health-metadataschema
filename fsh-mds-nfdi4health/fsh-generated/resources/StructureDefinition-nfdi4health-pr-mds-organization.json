@@ -55,17 +55,17 @@
       {
         "id": "Organization",
         "path": "Organization",
-        "short": "Details about the organisation/institution/group/etc.",
-        "definition": "For 1.11.2 Resource.roles.organisational: Group of items providing information about group(s) of persons, institution(s) or organisation(s) contributing to the resource. | For 1.11.6 Resource.roles.affiliation: Group of items providing further information about the organisation(s) associated with the role.",
-        "comment": "For 1.11.2 Resource.roles.organisational: Additional information: Group of items applicable to organisational/group names or providing further information about the organisation(s) associated with the role. | Short input help: Organisational name can be used to denote a research group or an institution.",
+        "short": "Details about the contributing organisation(s)/institution(s)/group(s) | Organisation(s) associated with the contributor",
+        "definition": "For 1.10.2 Resource.contributors.organisational: Group of items providing information about group(s) of persons, institution(s) or organisation(s) contributing to the [RESOURCE]. | For 1.10.6 Resource.contributors.affiliation: Group of items providing further information about the organisation(s) associated with the contributor.",
+        "comment": "For 1.10.2 Resource.contributors.organisational: Additional information: Group of items applicable only when providing organisational, institutional or group names.",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11.2 Resource.roles.organisational"
+            "map": "1.10.2 Resource.contributors.organisational"
           },
           {
             "identity": "NFDI4Health",
-            "map": "1.11.6 Resource.roles.affiliation"
+            "map": "1.10.6 Resource.contributors.affiliation"
           }
         ]
       },
@@ -100,21 +100,20 @@
       {
         "id": "Organization.identifier",
         "path": "Organization.identifier",
-        "short": "Digital identifier(s) of the organisation",
+        "short": "Digital identifier(s)",
         "definition": "Group of items providing information about identifiers of the organisation.",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11.6.4 Resource.roles.affiliation.identifiers"
+            "map": "1.10.6.4 Resource.contributors.affiliation.identifiers"
           }
         ]
       },
       {
         "id": "Organization.identifier.type",
         "path": "Organization.identifier.type",
-        "short": "Identifier scheme",
-        "definition": "Type of the identifier scheme.",
-        "comment": "Which type of identifer is reported?",
+        "short": "Scheme",
+        "definition": "Type of the identifier scheme reported.",
         "min": 1,
         "example": [
           {
@@ -132,7 +131,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11.6.4.2 Resource.roles.affiliation.identifiers.scheme"
+            "map": "1.10.6.4.2 Resource.contributors.affiliation.identifiers.scheme"
           }
         ]
       },
@@ -146,19 +145,19 @@
         "id": "Organization.identifier.value",
         "path": "Organization.identifier.value",
         "short": "Identifier",
-        "definition": "Digital identifier of the organisation according to a definite scheme.",
+        "definition": "Digital identifier according to a specific scheme that uniquely identifies the organisation.",
         "comment": "Short input help: Preferably, provide an identifier from ROR (https://ror.org/search).",
         "min": 1,
         "example": [
           {
-            "label": "ROR Identifier",
+            "label": "Example of ROR Identifier",
             "valueString": "0259fwx54"
           }
         ],
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11.6.4.1 Resource.roles.affiliation.identifiers.identifier"
+            "map": "1.10.6.4.1 Resource.contributors.affiliation.identifiers.identifier"
           }
         ]
       },
@@ -166,17 +165,17 @@
         "id": "Organization.name",
         "path": "Organization.name",
         "short": "Name of the organisation/institution/group",
-        "definition": "For \"1.11.2.3 Resource.roles.organisational.name\": Name of the organisation, institution or group. / For \"1.11.6.1 Resource.roles.affiliation\": Name of the organisation associated with the role.",
-        "comment": "Short input help: If you are have already entered the name of the organistion in the property \"Name of the organisation/institution/group\", please repeat it here.",
+        "definition": "For 1.10.2.3 Resource.contributors.organisational.name: Name of the organisation, institution or group. | For 1.10.6.1 Resource.contributors.affiliations.name: Name of the organisation associated with the contributor.",
+        "comment": "Short input help: 1.10.2.3 Resource.contributors.organisational.name: An organisational name can be used to denote a research group or an institution. | For 1.10.6.1 Resource.contributors.affiliations.name: If you have already entered the name of the organistion in the field 'Name of the organisation/institution/group', please repeat it here.",
         "min": 1,
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11.2.3 Resource.roles.organisational.name"
+            "map": "1.10.2.3 Resource.contributors.organisational.name"
           },
           {
             "identity": "NFDI4Health",
-            "map": "1.11.6.1 Resource.roles.affiliation.name"
+            "map": "1.10.6.1 Resource.contributors.affiliation.name"
           }
         ]
       },
@@ -204,7 +203,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11.4 Resource.roles.email"
+            "map": "1.10.4 Resource.contributors.email"
           }
         ]
       },
@@ -229,13 +228,13 @@
         "path": "Organization.telecom",
         "sliceName": "phone",
         "short": "Phone number",
-        "definition": "Phone number of the  person, group of persons or institution/organisation.",
+        "definition": "Phone number of the institution/organisation.",
         "min": 0,
         "max": "1",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11.5 Resource.roles.phone"
+            "map": "1.10.5 Resource.contributors.phone"
           }
         ]
       },
@@ -266,14 +265,14 @@
         "id": "Organization.telecom:webpage",
         "path": "Organization.telecom",
         "sliceName": "webpage",
-        "short": "Web page of the organisation",
-        "definition": "Web page of the organisation associated with the role.",
+        "short": "Web page",
+        "definition": "Web page of the organisation associated with the contributor.",
         "min": 0,
         "max": "1",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11.6.3 Resource.roles.affiliation.webpage"
+            "map": "1.10.6.3 Resource.contributors.affiliation.webpage"
           }
         ]
       },
@@ -296,13 +295,20 @@
       {
         "id": "Organization.address",
         "path": "Organization.address",
-        "short": "Address of the organisation",
-        "definition": "Address of the organisation associated with the role.",
+        "short": "Address",
+        "definition": "Address of the organisation associated with the contributor.",
+        "comment": "Short Input Help: Please preferably use the following address format: Street name and number [comma] post code [comma] city [comma] country.",
         "max": "1",
+        "example": [
+          {
+            "label": "Example of an organisation address",
+            "valueString": "Gleueler Straße 60, 50931, Cologne, Germany"
+          }
+        ],
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11.6.2 Resource.roles.affiliation.address"
+            "map": "1.10.6.2 Resource.contributors.affiliation.address"
           }
         ]
       },
@@ -319,10 +325,12 @@
       {
         "id": "Organization.partOf",
         "path": "Organization.partOf",
+        "short": "Organisation(s) associated with the contributor",
+        "definition": "Group of items providing further information about the organisation(s) associated with the contributor.",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11.6 Resources.roles.affiliation"
+            "map": "1.10.6 Resources.contributors.affiliation"
           }
         ]
       }

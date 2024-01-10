@@ -55,15 +55,15 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.13 Resource.ids"
+            "map": "1.12 Resource.ids"
           },
           {
             "identity": "NFDI4Health",
-            "map": "1.14 Resource.idsNfdi4health"
+            "map": "1.13 Resource.idsNfdi4health"
           },
           {
             "identity": "NFDI4Health",
-            "map": "1.9 Resource.webpage"
+            "map": "1.8 Resource.webpage"
           }
         ]
       },

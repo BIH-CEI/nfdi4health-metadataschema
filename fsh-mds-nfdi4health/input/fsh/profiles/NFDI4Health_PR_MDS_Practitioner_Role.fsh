@@ -12,6 +12,8 @@ Description: "Profile to collect information about the contact information and a
 * practitioner 0..1
 * practitioner only Reference(Practitioner or NFDI4Health_PR_MDS_Practitioner)
 * organization only Reference(Organization or NFDI4Health_PR_MDS_Organization)
+* organization ^short = "Organisation(s) associated with the contributor"
+* organization ^definition = "Group of items providing further information about the organisation(s) associated with the contributor."
 * telecom 0..*
 * telecom ^slicing.discriminator.type = #value
 * telecom ^slicing.discriminator.path = "system"
@@ -37,11 +39,10 @@ Description: "Profile to collect information about the contact information and a
 * telecom[phone].value ^example.valueString = "+49 (0)153 1112233"
 * telecom[phone].use = #work
 
-
 Mapping: NFDI4Health-Practitioner-Role-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_PR_MDS_Practitioner_Role
-* organization -> "1.11.1.5 Resource.roles.affiliation"
-* telecom[email] -> "1.11.4 Resource.roles.email"
-* telecom[phone] -> "1.11.5 Resource.roles.phone"
+* organization -> "1.10.6 Resource.contributors.affiliation"
+* telecom[email] -> "1.10.4 Resource.contributors.email"
+* telecom[phone] -> "1.10.5 Resource.contributors.phone"

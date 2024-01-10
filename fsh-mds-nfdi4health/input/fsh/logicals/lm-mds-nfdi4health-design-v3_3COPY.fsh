@@ -95,7 +95,7 @@ Description: "NFDI4Health Logical Model MDS Module Design V3.3"
 * Design.dataProviders 0..1 CodeableConcept "One or more data providers?" "Specification whether the [RESOURCE] involves only one or more than one data provider."
 * Design.dataProviders ^comment = "Cardinality: 0..1, if Resource.classification.type == ('Registry' OR 'Secondary data source'); otherwise 0..0 / Source of the property and/or allowed values: NFDI4Health UC 5.3 requirements"
 * Design.dataProvidersNumber 0..1 integer "Number of data providers" "Number of data providers involved in the [RESOURCE]."
-* Design.dataProvidersNumber ^comment "Cardinality: 0..1, if Resource.classification.type == ('Registry' OR 'Secondary data source') AND Design.dataProviders == 'Several data providers'; otherwise 0..0 / Source of the property and/or allowed values: NFDI4Health UC 5.3 requirements"
+* Design.dataProvidersNumber ^comment = "Cardinality: 0..1, if Resource.classification.type == ('Registry' OR 'Secondary data source') AND Design.dataProviders == 'Several data providers'; otherwise 0..0 / Source of the property and/or allowed values: NFDI4Health UC 5.3 requirements"
 * Design.subject 1..1 Coding "Primary subject" "The primary subject addressed by the [RESOURCE], i.e. a person, an animal or other subject types."
 * Design.subject from NFDI4Health_VS_MDS_Study_Subject_SNOMEDCT (required)
 * Design.subject ^comment = "Short Input Help: Select one value from the list. / Source of the property and/or allowed values: NFDI4Health, DDI [4]"
@@ -118,7 +118,7 @@ Description: "NFDI4Health Logical Model MDS Module Design V3.3"
 
 
 
-* Design.dataSource.biosamples 0.. * Coding "Biosamples collected" "Specification of biosamples collected in the [RESOURCE]."
+* Design.dataSource.biosamples 0..* Coding "Biosamples collected" "Specification of biosamples collected in the [RESOURCE]."
 * Design.dataSource.biosamples ^comment = "Cardinality: 0..*, if Design.dataSource.general == 'Biological samples'; otherwise 0..0 / Short Input Help: Select all that apply. / Source of the property and/or allowed values: NFDI4Health, Maelstrom [8], MIABIS [6]"
 
 * Design.dataSource.imaging	0..* Coding	"Imaging data collected" "Specification of imaging data collected in the [RESOURCE]."
@@ -146,7 +146,7 @@ Description: "NFDI4Health Logical Model MDS Module Design V3.3"
 * Design.eligibilityCriteria.ageMin.timeUnit ^comment = "Source of the property and/or allowed values: CT.gov [2], DRKS [3]"
 
 * Design.eligibilityCriteria.ageMax	0..1 BackboneElement "Eligibility criteria: Maximum age" "Group of items providing information about the maximum eligible age of [RESOURCE] participants."
-* Design.eligibilityCriteria.ageMax ^comment ="Source of the property and/or allowed values: NFDI4Health"
+* Design.eligibilityCriteria.ageMax ^comment = "Source of the property and/or allowed values: NFDI4Health"
 
 * Design.eligibilityCriteria.ageMax.number 1..1 integer	"Maximum eligible age" "Numerical value of the maximum age of potential participants eligible to participate in the [RESOURCE]."
 * Design.eligibilityCriteria.ageMax.number ^comment = "Additional Information: In the case of cohort studies, further participant ages can be indicated in the fields 'Inclusion criteria' or 'Exclusion criteria'.	/ Short Input Help: If age is less than 1 year, please indicate a value in months, weeks, days, hours, minutes, or weeks of gestation.	/ Source of the property and/or allowed values: CT.gov [2], DRKS [3]"
@@ -261,7 +261,7 @@ Description: "NFDI4Health Logical Model MDS Module Design V3.3"
 * Design.comment 0..1 string "Additional information about the [RESOURCE]" "Any additional information about specific aspects of the [RESOURCE] that could not be captured by other fields."
 * Design.comment ^comment = "Short Input Help: You can provide here specific aspects of the [RESOURCE] that could not be captured by other fields. / Source of the property and/or allowed values: NFDI4Health"
 
-* Design.assessments 0..* coding "Additional assessments/measurements in the [RESOURCE]" "Any additional assessments/measurements included in the [RESOURCE]."
+* Design.assessments 0..* Coding "Additional assessments/measurements in the [RESOURCE]" "Any additional assessments/measurements included in the [RESOURCE]."
 * Design.assessments ^comment = "Short Input Help: Select all that apply. / Source of the property and/or allowed values: NFDI4Health, ENPADASI [17]"
 
 * Design.dataSharingPlan 1..1 BackboneElement "Data sharing strategy of the [RESOURCE]"	"Group of items providing information about the data sharing strategy of the [RESOURCE]."
@@ -338,7 +338,7 @@ Description: "NFDI4Health Logical Model MDS Module Design V3.3"
 * Design.interventional.masking.description	0..1 string	"Additional information about masking" "If needed, additional descriptive information about masking (e.g. information about other parties who may be masked)."
 * Design.interventional.masking.description ^comment = "Cardinality: 0..1, if Design.interventional.masking.general == true; otherwise 0..0 / Short Input Help: You can provide here additional information about masking, e.g. other parties who may be masked. / Source of the property and/or allowed values: CT.gov [2]"
 
-* Design.interventional.allocation 0..1 coding "Type of allocation of participants to an arm" "Type of allocation/assignment of individual participants of the [RESOURCE] to an arm."
+* Design.interventional.allocation 0..1 Coding "Type of allocation of participants to an arm" "Type of allocation/assignment of individual participants of the [RESOURCE] to an arm."
 * Design.interventional.allocation ^comment = "Short Input Help: Select one value from the list. / Source of the property and/or allowed values: CT.gov [2], DRKS [3]"
 
 * Design.interventional.offLabelUse	0..1 Coding "Off-label use of a drug product" "Unapproved (off-label) use of a drug product."
@@ -410,7 +410,7 @@ Source: NFDI4Health_LM_MDS_Design_V3_3
 * Design.population.description -> "1.17.17.4"
 * Design.population.targetSampleSize -> "1.17.17.5"
 * Design.population.obtainedSampleSize -> "1.17.17.6"
-* Design.hypotheses -"1.17.18"
+* Design.hypotheses -> "1.17.18"
 * Design.arms -> "1.17.19"
 * Design.arms.label -> "1.17.19.1"
 * Design.arms.type -> "1.17.19.2"
@@ -436,7 +436,7 @@ Source: NFDI4Health_LM_MDS_Design_V3_3
 * Design.comment -> "1.17.24"
 * Design.assessments -> "1.17.25"
 * Design.dataSharingPlan -> "1.17.26"
-* Design.dataSharingPlan.generally -> 1.17.26.1
+* Design.dataSharingPlan.generally -> "1.17.26.1"
 * Design.dataSharingPlan.supportingInformation -> "1.17.26.2"
 * Design.dataSharingPlan.timeFrame -> "1.17.26.3"
 * Design.dataSharingPlan.accessCriteria -> "1.17.26.4"

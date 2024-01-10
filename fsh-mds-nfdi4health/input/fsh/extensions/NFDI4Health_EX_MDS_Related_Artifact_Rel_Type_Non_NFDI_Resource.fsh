@@ -13,8 +13,8 @@ Description: "Extension providing information about the relation type of this re
 * ^context.type = #element
 * ^context.expression = "RelatedArtifact.extension"
 * . 0..*
-* . ^short = "Relationship between this [RESOURCE] (A) and the related resource (B)?"
-* . ^definition = "Relationship between the resource being registered (A) and the related resource (B)."
+* . ^short = "Relationship between this [RESOURCE] (A) and the related resource (B)"
+* . ^definition = "Relationship between the [RESOURCE] being registered (A) and the related resource (B)."
 * . ^comment = "Short input help: Select one value from the list."
 * . ^example.label = "General"
 * . ^example.valueString = "A is part of B"
@@ -29,4 +29,4 @@ Mapping: NFDI4Health-Related-Artifact-Relation-Type-Non-NFDI4Health-Resource-to-
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Related_Artifact_Rel_Type_Non_NFDI_Resource
-* -> "1.13.4 Resource.ids.relationType"
+* -> "1.12.3 Resource.ids.relationType"

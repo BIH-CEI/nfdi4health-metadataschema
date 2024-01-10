@@ -46,8 +46,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Relationship between this [RESOURCE] (A) and the related resource (B)?",
-        "definition": "Relationship between the resource being registered (A) and the related resource (B).",
+        "short": "Relationship between this [RESOURCE] (A) and the related resource (B)",
+        "definition": "Relationship between the [RESOURCE] being registered (A) and the related resource (B).",
         "comment": "Short input help: Select one value from the list.",
         "example": [
           {
@@ -58,7 +58,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.13.4 Resource.ids.relationType"
+            "map": "1.12.3 Resource.ids.relationType"
           }
         ]
       },

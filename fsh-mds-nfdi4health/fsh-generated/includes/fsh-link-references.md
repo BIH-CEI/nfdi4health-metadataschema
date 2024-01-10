@@ -48,7 +48,7 @@
 [NFDI4Health_EX_MDS_Associated_Party]: StructureDefinition-nfdi4health-ex-mds-associated-party.html
 [NFDI4Health_EX_MDS_Centers]: StructureDefinition-nfdi4health-ex-mds-centers.html
 [NFDI4Health_EX_MDS_Chronic_Diseases]: StructureDefinition-nfdi4health-ex-mds-chronic-diseases.html
-[NFDI4Health_EX_MDS_Copyright_Label]: StructureDefinition-nfdi4health-ex-mds-copyright-label.html
+[NFDI4Health_EX_MDS_Copyright_Label_And_Link]: StructureDefinition-nfdi4health-ex-mds-copyright-label-and-link.html
 [NFDI4Health_EX_MDS_Document_Use_Rights]: StructureDefinition-nfdi4health-ex-mds-document-use-rights.html
 [NFDI4Health_EX_MDS_Format]: StructureDefinition-nfdi4health-ex-mds-format.html
 [NFDI4Health_EX_MDS_FundingID]: StructureDefinition-nfdi4health-ex-mds-fundingID.html
@@ -61,6 +61,7 @@
 [NFDI4Health_EX_MDS_Nutritional_Data]: StructureDefinition-nfdi4health-ex-mds-nutritional-data.html
 [NFDI4Health_EX_MDS_Off_Label_Use]: StructureDefinition-nfdi4health-ex-mds-off-label-use.html
 [NFDI4Health_EX_MDS_Provenance_Data_Source]: StructureDefinition-nfdi4health-ex-mds-provenance-data-source.html
+[NFDI4Health_EX_MDS_Record_Linkage]: StructureDefinition-nfdi4health-ex-mds-record-linkage.html
 [NFDI4Health_EX_MDS_Related_Artifact_Identifier_Date]: StructureDefinition-nfdi4health-ex-mds-related-artifact-identifier-date.html
 [NFDI4Health_EX_MDS_Related_Artifact_NFDI]: StructureDefinition-nfdi4health-ex-mds-related-artifact-nfdi.html
 [NFDI4Health_EX_MDS_Related_Artifact_NFDI_Identifier]: StructureDefinition-nfdi4health-ex-mds-related-artifact-nfdi-identifier.html
@@ -91,8 +92,9 @@
 [NFDI4Health_EX_MDS_URI]: StructureDefinition-nfdi4health-ex-mds-uri.html
 [NFDI4Health_EX_MDS_Use_Rights_Confirmations]: StructureDefinition-nfdi4health-ex-mds-use-rights-confirmations.html
 [NFDI4Health_EX_MDS_Version]: StructureDefinition-nfdi4health-ex-mds-version.html
-[NFDI4Health_LM_MDS_Core]: StructureDefinition-nfdi4health-lm-mds-core.html
+[NFDI4Health_LM_MDS_Core_V3_3]: StructureDefinition-nfdi4health-lm-mds-core-v3-3.html
 [NFDI4Health_LM_Metadataschema_EOCD_V3_3]: StructureDefinition-nfdi4health-lm-metadataschema-eocd-v3-3.html
+[NFDI4Health_LM_MDS_Design_V3_3]: StructureDefinition-nfdi4health-lm-mds-design-v3-3.html
 [NFDI4Health_LM_MDS_Design]: StructureDefinition-nfdi4health-lm-mds-design.html
 [NFDI4Health_LM_Metadataschema_NE_V3_3]: StructureDefinition-nfdi4health-lm-metadataschema-ne-v3-3.html
 [InstanceOfChronicDiseaseModule]: Questionnaire-InstanceOfChronicDiseaseModule.html
@@ -131,7 +133,6 @@
 [NFDI4Health_VS_MDS_Resource_Type_NCI_Local]: ValueSet-nfdi4health-vs-mds-resource-type-nci-local.html
 [NFDI4Health_VS_MDS_Role_Affiliation_Identifier_Scheme_Local]: ValueSet-nfdi4health-vs-mds-role-affiliation-identifier-scheme-local.html
 [NFDI4Health_VS_MDS_Role_Name_Identifier_Scheme_Local]: ValueSet-nfdi4health-vs-mds-role-name-identifier-scheme-local.html
-[NFDI4Health_VS_MDS_Role_Name_Personal_Title_NCI]: ValueSet-nfdi4health-vs-mds-role-name-personal-title-nci.html
 [NFDI4Health_VS_MDS_Role_Name_Type_SNOMED]: ValueSet-nfdi4health-vs-mds-role-name-type-snomed.html
 [NFDI4Health_VS_MDS_Study_Allocation_Local]: ValueSet-nfdi4health-vs-mds-study-allocation-local.html
 [NFDI4Health_VS_MDS_Study_Allocation_NCI]: ValueSet-nfdi4health-vs-mds-study-allocation-nci.html

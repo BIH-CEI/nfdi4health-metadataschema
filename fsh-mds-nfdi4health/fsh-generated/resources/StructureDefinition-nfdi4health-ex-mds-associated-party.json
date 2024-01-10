@@ -54,14 +54,14 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Role(s)",
-        "definition": "Group of items providing information about person(s), group(s) of persons or institution(s)/organisation(s) contributing to the resource.",
-        "comment": "Additional information: For each resource, there may be multiple roles, but at least one person, group of persons or institution/organisation must be specified. [Extension based on ResearchStudy.associatedParty (R5).]",
+        "short": "Contributor(s) of the [RESOURCE]",
+        "definition": "Group of items providing information about person(s), group(s) of persons or institution(s)/organisation(s) contributing to the [RESOURCE].",
+        "comment": "Additional information: For each [RESOURCE], there may be multiple contributors, but at least one person, group of persons or institution/organisation must be specified. [Extension based on ResearchStudy.associatedParty (R5).]",
         "min": 1,
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11 Resource.roles"
+            "map": "1.10 Resource.contributors"
           }
         ]
       },
@@ -107,15 +107,15 @@
         "id": "Extension.extension:rolePersonal",
         "path": "Extension.extension",
         "sliceName": "rolePersonal",
-        "short": "Type of the role",
-        "definition": "Type of the role a person fulllfils. For example, this can be a principal investigator of a study or an author of a document.",
-        "comment": "Short input help: Which role does the person fulllfil? Select one value from the list.",
+        "short": "Contributor type",
+        "definition": "Contributor type a person fulfills. For example, this can be a principal investigator of a study or an author of a document.",
+        "comment": "Short input help: Which contributor type does the person fulfill? Select one value from the list.",
         "min": 0,
         "max": "1",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11.3.1 Resource.roles.personal.type"
+            "map": "1.10.3.1 Resource.contributors.personal.type"
           }
         ]
       },
@@ -132,9 +132,6 @@
       {
         "id": "Extension.extension:rolePersonal.value[x]",
         "path": "Extension.extension.value[x]",
-        "short": "Role type",
-        "definition": "Type of the role a person fulllfils, e.g. a principal investigator of a study or an author of a document?",
-        "comment": "Short input help: Select one value from the list.",
         "min": 1,
         "type": [
           {
@@ -161,15 +158,15 @@
         "id": "Extension.extension:roleOrganisational",
         "path": "Extension.extension",
         "sliceName": "roleOrganisational",
-        "short": "Type of the role",
-        "definition": "Type of the role an organisation, institution or group fulllfils. For example, this can be a sponsor of the study or a group of authors of the document.",
-        "comment": "Short input help: Which role does the organisation/institution/group/etc. fulllfil? Select one value from the list.",
+        "short": "Contributor type",
+        "definition": "Contributor type an organisation, institution or group fulfills. For example, this can be a sponsor of the study or a group of authors of the document.",
+        "comment": "Short input help: Which contributor type does the organisation, institution or group fulfill? Select one value from the list.",
         "min": 0,
         "max": "1",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11.2.1 Resource.roles.organisational.type"
+            "map": "1.10.2.1 Resource.contributors.organisational.type"
           }
         ]
       },
@@ -186,9 +183,6 @@
       {
         "id": "Extension.extension:roleOrganisational.value[x]",
         "path": "Extension.extension.value[x]",
-        "short": "Type of the role",
-        "definition": "Type of the role an organisation, institution or group fulllfils. For example, this can be a sponsor of the study or a group of authors of the document.",
-        "comment": "Which role does the organisation/institution/group/etc. fulllfil? Select one value from the list.",
         "min": 1,
         "type": [
           {
@@ -215,14 +209,14 @@
         "id": "Extension.extension:nameType",
         "path": "Extension.extension",
         "sliceName": "nameType",
-        "short": "Type of the name",
-        "definition": "Personal or organisational/group type of the name.",
+        "short": "Is it a personal or organisational contribution?",
+        "definition": "Indication whether the contribution was made by person(s) or organisation(s)/institution(s)/group(s).",
         "min": 1,
         "max": "1",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11.1 Resource.roles.nameType"
+            "map": "1.10.1 Resource.contributors.nameType"
           }
         ]
       },
@@ -239,8 +233,6 @@
       {
         "id": "Extension.extension:nameType.value[x]",
         "path": "Extension.extension.value[x]",
-        "short": "Type of the name",
-        "definition": "Personal or organisational/group type of the name.",
         "min": 1,
         "type": [
           {

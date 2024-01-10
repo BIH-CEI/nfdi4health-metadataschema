@@ -50,13 +50,14 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Important information about licensing, if a Creative Commons liesense is selected.",
-        "definition": "Group of items applicable if a Creative Commons liesense is selected.",
+        "short": "Licensing confirmations",
+        "definition": "Group of items applicable only if a Creative Commons license is selected.",
+        "comment": "In order to successfully publish the [RESOURCE] under the respective license, all four questions ought to be confirmed.",
         "max": "1",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.10.3 Resource.nonStudyDetails.useRights"
+            "map": "1.9.3.3 Resource.nonStudyDetails.useRights.confirmations"
           }
         ]
       },
@@ -69,14 +70,14 @@
         "id": "Extension.extension:confirmationAuthority",
         "path": "Extension.extension",
         "sliceName": "confirmationAuthority",
-        "short": "Do you confirm that the authors have authority to license the [RESOURCE]?",
-        "definition": "Confirmation that the authors have authority to license the resource.",
+        "short": "Do you confirm that the authors of the [RESOURCE] have authority to license it?",
+        "definition": "Confirmation that the authors of the [RESOURCE] have authority to license it.",
         "min": 1,
         "max": "1",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.10.3.2.1 Resource.nonStudyDetails.useRights.confirmations.authority"
+            "map": "1.9.3.3.1 Resource.nonStudyDetails.useRights.confirmations.authority"
           }
         ]
       },
@@ -103,14 +104,14 @@
         "id": "Extension.extension:confirmationTerms",
         "path": "Extension.extension",
         "sliceName": "confirmationTerms",
-        "short": "Do you confirm that the authors have read and understood the terms of the chosen license?",
-        "definition": "Confirmation that the authors have read and understand the terms of the chosen license.",
+        "short": "Do you confirm that the authors of the [RESOURCE] have read and understood the terms of the chosen license?",
+        "definition": "Confirmation that the authors of the [RESOURCE] have read and understood the terms of the chosen license.",
         "min": 1,
         "max": "1",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.10.3.2.2 Resource.nonStudyDetails.useRights.confirmations.terms"
+            "map": "1.9.3.3.2 Resource.nonStudyDetails.useRights.confirmations.terms"
           }
         ]
       },
@@ -137,15 +138,15 @@
         "id": "Extension.extension:confirmationIrrevocability",
         "path": "Extension.extension",
         "sliceName": "confirmationIrrevocability",
-        "short": "Do you confirm that the authors understand that Creative Commons (CC) licensing is irrevocable?",
-        "definition": "Confirmation that the authors understand that Creative Commons (CC) licensing is not revocable.",
-        "comment": "Additional information: The resource can be licensed using a CC-license only if it is free of the third-party rights.",
+        "short": "Do you confirm that the authors of the [RESOURCE] understand that Creative Commons (CC) licensing is irrevocable?",
+        "definition": "Confirmation that the authors of the [RESOURCE] understand that Creative Commons (CC) licensing is not revocable..",
+        "comment": "Additional information: The [RESOURCE] can be licensed using a CC-license only if it is free of the third-party rights.",
         "min": 1,
         "max": "1",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.10.3.2.3 Resource.nonStudyDetails.useRights.confirmations.irrevocability"
+            "map": "1.9.3.3.3 Resource.nonStudyDetails.useRights.confirmations.irrevocability"
           }
         ]
       },
@@ -172,13 +173,14 @@
         "id": "Extension.extension:supportByLicensing",
         "path": "Extension.extension",
         "sliceName": "supportByLicensing",
-        "short": "Do you confirm that the authors allow NFDI4Health to license the document?",
+        "short": "Do you confirm that the authors of the [RESOURCE] allow NFDI4Health to license the document?",
+        "definition": "Confirmation that NFDI4Health is allowed to license the document, i.e. to mark the [RESOURCE] with the license information.",
         "min": 1,
         "max": "1",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.10.3.2.4 Resource.nonStudyDetails.useRights.confirmations.supportByLicencing"
+            "map": "1.9.3.3.4 Resource.nonStudyDetails.useRights.confirmations.supportByLicencing"
           }
         ]
       },

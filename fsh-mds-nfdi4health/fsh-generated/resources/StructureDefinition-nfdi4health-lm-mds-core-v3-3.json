@@ -1,0 +1,1855 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "nfdi4health-lm-mds-core-v3-3",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-mds-core-v3-3",
+  "name": "NFDI4Health_LM_MDS_Core_V3_3",
+  "title": "NFDI4Health LM Core Metadataschema V3.3",
+  "status": "draft",
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "description": "NFDI4Health Logical Model Core Metadataschema V3.3",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+      "name": "NFDI4Health Core Metadataschema Version 3.3 Mapping to internal numbering of Metadataschema V3.3"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-mds-core-v3-3",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3",
+        "path": "nfdi4health-lm-mds-core-v3-3",
+        "short": "NFDI4Health LM Core Metadataschema V3.3",
+        "definition": "NFDI4Health Logical Model Core Metadataschema V3.3"
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource",
+        "short": "Resource",
+        "definition": "Group of items providing information about a resource. Resources can be, for example, files or parts of them (e.g. datasets or study documents such as study protocols or questionnaires) or also studies or substudies.",
+        "comment": "Source of the property and/or allowed values: NFDI4Health",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.identifier",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.identifier",
+        "short": "ID of the [RESOURCE]",
+        "definition": "Unique identifier of the resource used for identification within the NFDI4Health.",
+        "comment": "Additional information: The identifier is assigned automatically. / Source of the property and/or allowed values: NFDI4Health, DataCite [1]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.1"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.classification",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.classification",
+        "short": "Resource classification",
+        "definition": "Group of items providing information about the classification of the resource within the predefined categories.",
+        "comment": "Source of the property and/or allowed values: NFDI4Health",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.2"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.classification.type",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.classification.type",
+        "short": "Type of the resource",
+        "definition": "A term describing the resource.",
+        "comment": "Additional information: The selected resource type determines which information will be asked next. / Short Input Help: You can register a study, a study protocol, a questionnaire, etc. Please only add follow up questionnaires if baseline questionnaires have already been registered. / Source of the property and/or allowed values: DataCite [1]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-resource-type-nci-local"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.2.1"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.classification.typeGeneral",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.classification.typeGeneral",
+        "short": "In what form is the [RESOURCE] available?",
+        "definition": "Specific information about the form in which the [RESOURCE] is available.",
+        "comment": "Cardinality: 1..1, if Resource.classification.type != ('Study' OR 'Substudy' OR 'Dataset' OR 'Registry' OR 'Secondary data source'); otherwise 0..0 / Additional Information: If the [RESOURCE] consists primarily of words for reading and is not covered by another textual resource type in this list, 'Text' should be used instead of 'Other'. / Short Input Help: You can select 'Text' for most of the study documents, e.g. for questionnaires, informed consent forms, case report forms, etc.  / Source of the property and/or allowed values: DataCite [1]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-resource-type-general-nci-umls-local"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.2.2"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.titles",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.titles",
+        "short": "Title(s)/name(s) of the [RESOURCE]",
+        "definition": "Group of items providing information about title(s)/name(s) of the [RESOURCE].",
+        "comment": "Source of the property and/or allowed values: NFDI4Health",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.3"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.titles.text",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.titles.text",
+        "short": "Title/name",
+        "definition": "Scientific unabbreviated title or name of the [RESOURCE].",
+        "comment": "Additional information: If no official title/name has been defined yet, a title/name that is suitable for public display should be used. / Short Input Help: Please provide at least one title/name of the [RESOURCE]. If the original title is not in English, please also provide an English translation of the original title. / Source of the property and/or allowed values: NFDI4Health, DataCite [1], CT.gov [2], DRKS [3]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.3.1"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.titles.language",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.titles.language",
+        "short": "Language of the title/name",
+        "definition": "Language in which the title/name is provided.",
+        "comment": "Source of the property and/or allowed values: NFDI4Health, DataCite [1], CT.gov [2], DRKS [3]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/CodeSystem/iso639-1"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.3.2"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.acronyms",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.acronyms",
+        "short": "Acronym(s) of the [RESOURCE]",
+        "definition": "Group of items providing information about acronym(s) of the [RESOURCE].",
+        "comment": "Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.4"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.acronyms.text",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.acronyms.text",
+        "short": "Acronym",
+        "definition": "If existing, acronym(s) of the [RESOURCE].",
+        "comment": "Additional Information: The field refers primarily to resources which have an acronym. / Short Input Help: If no acronym exists, you can provide a short title, preferably up to 5 words, e.g. 'NAKO-COVID Questionnaire'. / Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.4.1"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.acronyms.language",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.acronyms.language",
+        "short": "Language of the acronym",
+        "definition": "Language in which the acronym is provided.",
+        "comment": "Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/CodeSystem/iso639-1"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.4.2"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.descriptions",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.descriptions",
+        "short": "Description(s) of the [RESOURCE]",
+        "definition": "Group of items providing information about the description(s) of the [RESOURCE].",
+        "comment": "Source of the property and/or allowed values: NFDI4Health",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.5"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.descriptions.text",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.descriptions.text",
+        "short": "Description",
+        "definition": "Short plain text summary of the [RESOURCE].",
+        "comment": "Short Input Help: Please provide a description in the original language of the [RESOURCE]. If the original language is not English, please also provide a full English translation of the description. / Source of the property and/or allowed values: NFDI4Health, DataCite [1], CT.gov [2], DRKS [3]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.5.1"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.descriptions.language",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.descriptions.language",
+        "short": "Language of the description",
+        "definition": "Language in which the description text is provided.",
+        "comment": "Source of the property and/or allowed values: NFDI4Health, DataCite [1], CT.gov [2], DRKS [3]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/CodeSystem/iso639-1"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.5.2"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.keywords",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.keywords",
+        "short": "Keyword(s) describing the [RESOURCE]",
+        "definition": "Group of items providing information about keywords describing the [RESOURCE].",
+        "comment": "Additional Information: The findability of the [RESOURCE] can be significantly increased if proper keywords are stated. / Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.6"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.keywords.label",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.keywords.label",
+        "short": "Keyword",
+        "definition": "Keyword(s) describing the [RESOURCE].",
+        "comment": "Additional Information: The use of terms from established classifications/vocabularies (e.g. SNOMED CT, MeSH, UMLS) is preferred. However, also self-assigned keywords are allowed. / Short Input Help: Preferably, use terms from SNOMED CT or MESH. / Source of the property and/or allowed values: DataCite [1], CT.gov [2], DRKS [3]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "example": [
+          {
+            "label": "Example of a keyword label",
+            "valueString": "SARS-CoV-2"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.6.1"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.keywords.code",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.keywords.code",
+        "short": "Code of the keyword",
+        "definition": "If known, the code of the keyword in the classification/vocabulary used.",
+        "comment": "Short Input Help: If known, you can provide the code of the keyword in the classification/vocabulary used. / Source of the property and/or allowed values: DataCite [1], CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "example": [
+          {
+            "label": "Example of a keyword code",
+            "valueUri": "http://id.nlm.nih.gov/mesh/D000086402"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.6.2"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.languages",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.languages",
+        "short": "Language(s) of the [RESOURCE]",
+        "definition": "Language(s) in which the [RESOURCE] is conducted/provided.",
+        "comment": "Short Input Help: Select all that apply. / Source of the property and/or allowed values: DataCite [1]",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/CodeSystem/iso639-1"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.7"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.webpage",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.webpage",
+        "short": "Web page of the [RESOURCE]",
+        "definition": "If existing, a link to the web page directly relevant to the [RESOURCE].",
+        "comment": "Additional Information: Other web pages related to the [RESOURCE] can additionally be entered in the section 'Related resources'. / Source of the property and/or allowed values: DataCite [1], CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "url"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.8"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.nonStudyDetails",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.nonStudyDetails",
+        "short": "Detailed information about the [RESOURCE]",
+        "definition": "Group of items applicable only to resource types other than a study/substudy, a dataset, a registry, or a secondary data source.",
+        "comment": "Cardinality: 1..1, if Resource.classification.type != ('Study' OR 'Substudy' OR 'Registry' OR 'Secondary data source'); otherwise 0..0 / Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.9"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.nonStudyDetails.version",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.nonStudyDetails.version",
+        "short": "Version",
+        "definition": "If applicable, the version number of the [RESOURCE].",
+        "comment": "Source of the property and/or allowed values: DataCite [1]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.9.1"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.nonStudyDetails.format",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.nonStudyDetails.format",
+        "short": "Format",
+        "definition": "If applicable, the file format of the [RESOURCE] (e.g., XML, PDF, XLSX, etc.).",
+        "comment": "Source of the property and/or allowed values: DataCite [1]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "example": [
+          {
+            "label": "Example of a format",
+            "valueString": "PDF"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.9.2"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.nonStudyDetails.useRights",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.nonStudyDetails.useRights",
+        "short": "(Re-)use rights",
+        "definition": "Group of items providing information about the rights to (re-)use the [RESOURCE].",
+        "comment": "Source of the property and/or allowed values: NFDI4Health",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.9.3"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.nonStudyDetails.useRights.label",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.nonStudyDetails.useRights.label",
+        "short": "License",
+        "definition": "License defining the rights to (re-)use the [RESOURCE].",
+        "comment": "Short Input Help: Select one value from the list. If 'Other' is selected, please provide an explanation of the (re-)use terms and conditions in the field 'Additional information about use rights'. / Source of the property and/or allowed values: NFDI4Health, DataCite [1]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-use-rights-label-spdx-smomed-local"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.9.3.1"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.nonStudyDetails.useRights.link",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.nonStudyDetails.useRights.link",
+        "short": "URL of the license",
+        "definition": "Link to the selected license.",
+        "comment": "Cardinality: 0..1, if Resource.nonStudyDetails.useRights.label == 'Other'; otherwise 0..0 / Source of the property and/or allowed values: NFDI4Health, DataCite [1]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "url"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.9.3.2"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.nonStudyDetails.useRights.confirmations",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.nonStudyDetails.useRights.confirmations",
+        "short": "Licensing confirmations",
+        "definition": "Group of items applicable only if a Creative Commons license is selected.",
+        "comment": "Cardinality: 1..1, if Resource.nonStudyDetails.useRights.label != ('CC0 1.0 (Creative Commons Zero v1.0 Universal') OR 'All rights reserved' OR 'Other' OR 'Not applicable' OR 'Unknown'); otherwise 0..0 / Additional Information: In order to successfully publish the [RESOURCE] under the respective license, all four questions ought to be confirmed. / Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.9.3.3"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.nonStudyDetails.useRights.confirmations.authority",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.nonStudyDetails.useRights.confirmations.authority",
+        "short": "Do you confirm that the authors of the [RESOURCE] have authority to license it?",
+        "definition": "Confirmation that the authors of the [RESOURCE] have authority to license it.",
+        "comment": "Source of the property and/or allowed values: NFDI4Health",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.9.3.3.1"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.nonStudyDetails.useRights.confirmations.terms",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.nonStudyDetails.useRights.confirmations.terms",
+        "short": "Do you confirm that the authors of the [RESOURCE] have read and understood the terms of the chosen license?",
+        "definition": "Confirmation that the authors of the [RESOURCE] have read and understood the terms of the chosen license.",
+        "comment": "Source of the property and/or allowed values: NFDI4Health",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.9.3.3.2"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.nonStudyDetails.useRights.confirmations.irrevocability",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.nonStudyDetails.useRights.confirmations.irrevocability",
+        "short": "Do you confirm that the authors of the [RESOURCE] understand that Creative Commons (CC) licensing is irrevocable?",
+        "definition": "Confirmation that the authors of the [RESOURCE] understand that Creative Commons (CC) licensing is not revocable.",
+        "comment": "Additional Information: The [RESOURCE] can be licensed using a CC-license only if it is free of the third-party rights. / Source of the property and/or allowed values: NFDI4Health",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.9.3.3.3"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.nonStudyDetails.useRights.confirmations.supportByLicensing",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.nonStudyDetails.useRights.confirmations.supportByLicensing",
+        "short": "Do you confirm that the authors of the [RESOURCE] allow NFDI4Health to license the document?",
+        "definition": "Confirmation that NFDI4Health is allowed to license the document, i.e. to mark the [RESOURCE] with the license information.",
+        "comment": "Source of the property and/or allowed values: NFDI4Health",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.9.3.3.4"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.nonStudyDetails.useRights.description",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.nonStudyDetails.useRights.description",
+        "short": "Additional information about use rights",
+        "definition": "Any additional descriptive information explaining terms and conditions to (re-)use the [RESOURCE].",
+        "comment": "Additional Information: If 'Other' is selected in the field 'License', the preferred license or terms and conditions for (re-)use should be specified here. / Source of the property and/or allowed values: NFDI4Health, DataCite [1]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.9.3.4"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.contributors",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.contributors",
+        "short": "Contributor(s) of the [RESOURCE]",
+        "definition": "Group of items providing information about person(s), group(s) of persons or institution(s)/organisation(s)",
+        "comment": "Additional Information: For each [RESOURCE], there may be multiple contributors, but at least one person, group of persons or institution/organisation must be specified. / Source of the property and/or allowed values: NFDI4Health",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.10"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.contributors.nameType",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.contributors.nameType",
+        "short": "Is it a personal or organisational contribution?",
+        "definition": "Indication whether the contribution was made by person(s) or organisation(s)/institution(s)/group(s).",
+        "comment": "Source of the property and/or allowed values: NFDI4Health, DataCite [1]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-role-name-type-snomed"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.10.1"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.contributors.organisational",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.contributors.organisational",
+        "short": "Details about the contributing organisation(s)/institution(s)/group(s)",
+        "definition": "Group of items providing information about group(s) of persons, institution(s) or organisation(s) contributing to the [RESOURCE].",
+        "comment": "Cardinality: 1..1, if Resource.contributors.nameType == 'Organisational'; otherwise 0..0 / Additional Information: Group of items applicable only when providing organisational, institutional or group names. / Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.10.2"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.contributors.organisational.type",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.contributors.organisational.type",
+        "short": "Contributor type",
+        "definition": "Contributor type an organisation, institution or group fulfills. For example, this can be a sponsor of the study or a group of authors of the document.",
+        "comment": "Short Input Help: Which contributor type does the organisation, institution or group fulfill? Select one value from the list. / Source of the property and/or allowed values: DataCite [1], CT.gov [2], DRKS [3]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-organisational-roles-nci-local"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.10.2.1"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.contributors.organisational.fundingIds",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.contributors.organisational.fundingIds",
+        "short": "Funding identifier(s)",
+        "definition": "Identifier(s) assigned by a funder to the [RESOURCE].",
+        "comment": "Cardinality: 0..*, if Resource.contributors.organisational.type == ('Funder (public)' OR 'Funder (private)'); otherwise 0..0 / Short Input Help: If available, you can enter funding identifiers. / Source of the property and/or allowed values: NFDI4Health, DataCite [1], CT.gov [2]",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.10.2.2"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.contributors.organisational.name",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.contributors.organisational.name",
+        "short": "Name of the organisation/institution/group",
+        "definition": "Name of the organisation, institution or group.",
+        "comment": "Short Input Help: An organisational name can be used to denote a research group or an institution. / Source of the property and/or allowed values: NFDI4Health, DataCite [1], DataCite [1], CT.gov [2], DRKS [3]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.10.2.3"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.contributors.personal",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.contributors.personal",
+        "short": "Details about the contributing person(s)",
+        "definition": "Group of items providing information about person(s) contributing to the [RESOURCE].",
+        "comment": "Cardinality: 1..1, if Resource.contributors.nameType == 'Personal'; otherwise 0..0 / Additional Information: Group of items applicable only when providing person names. / Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.10.3"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.contributors.personal.type",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.contributors.personal.type",
+        "short": "Contributor type",
+        "definition": "Contributor type a person fulfills. For example, this can be a principal investigator of a study or an author of a document.",
+        "comment": "Short Input Help: Which contributor type does the person fulfill? Select one value from the list. / Source of the property and/or allowed values: DataCite [1], CT.gov [2], DRKS [3]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-personal-roles-nci-local"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.10.3.1"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.contributors.personal.givenName",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.contributors.personal.givenName",
+        "short": "Given name",
+        "definition": "Given name of the person.",
+        "comment": "Source of the property and/or allowed values: DataCite [1], CT.gov [2], DRKS [3]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.10.3.2"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.contributors.personal.familyName",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.contributors.personal.familyName",
+        "short": "Family name(s)",
+        "definition": "Family name(s) of the person.",
+        "comment": "Source of the property and/or allowed values: DataCite [1], CT.gov [2], DRKS [3]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.10.3.3"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.contributors.personal.identifiers",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.contributors.personal.identifiers",
+        "short": "Digital identifier(s)",
+        "definition": "Group of items providing information about digital identifiers of the person.",
+        "comment": "Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.10.3.4"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.contributors.personal.identifiers.identifier",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.contributors.personal.identifiers.identifier",
+        "short": "Identifier",
+        "definition": "Digital identifier according to a specific scheme that uniquely identifies the person.",
+        "comment": "Short Input Help: Preferably, provide an ORCID (https://orcid.org/). / Source of the property and/or allowed values: DataCite [1]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "example": [
+          {
+            "label": "Example of an ORCID",
+            "valueString": "0000-0003-1379-7023"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.10.3.4.1"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.contributors.personal.identifiers.scheme",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.contributors.personal.identifiers.scheme",
+        "short": "Scheme",
+        "definition": "Type of the identifier scheme reported.",
+        "comment": "Source of the property and/or allowed values: DataCite [1]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "example": [
+          {
+            "label": "Example of an Identifier System",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+                  "code": "080",
+                  "display": "ORCID"
+                }
+              ],
+              "text": "ORCID"
+            }
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-role-name-identifier-scheme-local"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.10.3.4.2"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.contributors.email",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.contributors.email",
+        "short": "Email address",
+        "definition": "Email address of the  person, group of persons or institution/organisation.",
+        "comment": "Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.10.4"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.contributors.phone",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.contributors.phone",
+        "short": "Phone number",
+        "definition": "Phone number of the  person, group of persons or institution/organisation.",
+        "comment": "Short Input Help: Please use the International ITU-T E.164-number structure for geographic areas. / Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "example": [
+          {
+            "label": "Example of a Phone Number",
+            "valueString": "+49 (0)153 1112233"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.10.5"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.contributors.affiliations",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.contributors.affiliations",
+        "short": "Organisation(s) associated with the contributor",
+        "definition": "Group of items providing further information about the organisation(s) associated with the contributor.",
+        "comment": "Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.10.6"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.contributors.affiliations.name",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.contributors.affiliations.name",
+        "short": "Name",
+        "definition": "Name of the organisation associated with the contributor.",
+        "comment": "Short Input Help: If you have already entered the name of the organistion in the field 'Name of the organisation/institution/group', please repeat it here. / Source of the property and/or allowed values: DataCite[1], CT.gov [2], DRKS [3], NFDI4Health",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.10.6.1"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.contributors.affiliations.address",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.contributors.affiliations.address",
+        "short": "Address",
+        "definition": "Address of the organisation associated with the contributor.",
+        "comment": "Short Input Help: Please preferably use the following address format: Street name and number [comma] post code [comma] city [comma] country. / Source of the property and/or allowed values: CT.gov [2], DRKS [3], NFDI4Health",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "example": [
+          {
+            "label": "Example of an address of a contributor",
+            "valueString": "Gleueler Straße 60, 50931, Cologne, Germany"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.10.6.2"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.contributors.affiliations.webpage",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.contributors.affiliations.webpage",
+        "short": "Web page",
+        "definition": "Web page of the organisation associated with the contributor.",
+        "comment": "Source of the property and/or allowed values: DRKS [3]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "url"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.10.6.3"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.contributors.affiliations.identifiers",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.contributors.affiliations.identifiers",
+        "short": "Digital identifier(s)",
+        "definition": "Group of items providing information about identifiers of the organisation.",
+        "comment": "Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.10.6.4"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.contributors.affiliations.identifiers.identifier",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.contributors.affiliations.identifiers.identifier",
+        "short": "Identifier",
+        "definition": "Digital identifier according to a specific scheme that uniquely identifies the organisation.",
+        "comment": "Short Input Help: Preferably, provide an identifier from ROR (https://ror.org/search). / Source of the property and/or allowed values: DataCite [1]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "example": [
+          {
+            "label": "Example of a ROR identifier",
+            "valueString": "0259fwx54"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.10.6.4.1"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.contributors.affiliations.identifiers.scheme",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.contributors.affiliations.identifiers.scheme",
+        "short": "Scheme",
+        "definition": "Type of the identifier scheme reported.",
+        "comment": "Source of the property and/or allowed values: DataCite [1]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "example": [
+          {
+            "label": "Example of an Identifier System",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+                  "code": "081",
+                  "display": "ROR"
+                }
+              ],
+              "text": "ROR"
+            }
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-role-affiliation-identifier-scheme-local"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.10.6.4.2"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.idsAlternative",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.idsAlternative",
+        "short": "Alternative identifiers",
+        "definition": "Group of items providing information about identifiers (IDs) assigned to the given [RESOURCE] by another registering systems, e.g. a registry of clinical trials or a data repository.",
+        "comment": "Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.11"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.idsAlternative.scheme",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.idsAlternative.scheme",
+        "short": "Type of the registry",
+        "definition": "Type/name of the system where the given [RESOURCE] is already registered.",
+        "comment": "Source of the property and/or allowed values: NFDI4Health",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "example": [
+          {
+            "label": "Example of a registry",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+                  "code": "098",
+                  "display": "DRKS"
+                }
+              ],
+              "text": "DRKS"
+            }
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-id-type-umls-local"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.11.1"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.idsAlternative.identifier",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.idsAlternative.identifier",
+        "short": "Identifier",
+        "definition": "Identifier (ID) assigned to the given [RESOURCE] by another registering system, e.g. by a registry of clinical trials or a data repository.",
+        "comment": "Short Input Help: If the [RESOURCE] is registered in other systems (e.g. a registry of clinical trials or a data repository), you can provide here corresponding identifier(s) such as DRKS00021273, NCT04327505, etc. / Source of the property and/or allowed values: NFDI4Health, DataCite [1]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "example": [
+          {
+            "label": "Example of an Identifier",
+            "valueString": "ISRCTN91495258"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.11.2"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.ids",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.ids",
+        "short": "Related resources",
+        "definition": "Group of items providing information about identifiers (IDs) of the resources related to the given [RESOURCE], e.g. DOIs of publications, datasets, study documents or links to web pages.",
+        "comment": "Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.12"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.ids.identifier",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.ids.identifier",
+        "short": "Identifier of the related resource",
+        "definition": "Identifier (ID) related to, or associated with, the [RESOURCE] being registered. These can be IDs of related publications, datasets, study documents, web pages, etc.",
+        "comment": "Additional Information: a) Publications like journal articles usually have a DOI, e.g. 10.3238/arztebl.2020.0861. b) A link (URL) starting with 'http(s)://' to a web page with any additional information can also be provided. / Short Input Help: If existing, you can specify here identifier(s) of any related resources, e.g. DOIs of publications, datasets, study documents, links to web pages, etc. / Source of the property and/or allowed values: DataCite [1]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "example": [
+          {
+            "label": "Example of an Identifier",
+            "valueString": "10.4126/FRL01-006431467"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.12.1"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.ids.scheme",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.ids.scheme",
+        "short": "Type of the identifier",
+        "definition": "Type of the identifier of the related resource.",
+        "comment": "Short Input Help: Select one value from the list. / Source of the property and/or allowed values: DataCite [1]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "example": [
+          {
+            "label": "Example of an Identifier System",
+            "valueCodeableConcept": {
+              "text": "DOI"
+            }
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-identifier-type-related-artifact-umls-local"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.12.2"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.ids.relationType",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.ids.relationType",
+        "short": "Relationship between this [RESOURCE] (A) and the related resource (B)",
+        "definition": "Relationship between the [RESOURCE] being registered (A) and the related resource (B).",
+        "comment": "Short Input Help: Select one value from the list. / Source of the property and/or allowed values: DataCite [1]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "example": [
+          {
+            "label": "Example of a relationship between two resources",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+                  "code": "065",
+                  "display": "A is part of B"
+                }
+              ],
+              "text": "A is part of B"
+            }
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-relation-type-ids-local"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.12.3"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.ids.typeGeneral",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.ids.typeGeneral",
+        "short": "Type of the related resource",
+        "definition": "Type of the related resource, e.g. journal article, dataset, text, etc.",
+        "comment": "Short Input Help: Select one value from the list./ Source of the property and/or allowed values: DataCite [1]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "example": [
+          {
+            "label": "Example of a related resource type",
+            "valueCodeableConcept": {
+              "text": "Text"
+            }
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-resource-type-general-nci-umls-local"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.12.4"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.idsNfdi4health",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.idsNfdi4health",
+        "short": "Related resources registered on this portal",
+        "definition": "Group of items providing information about related resources (e.g. (sub-)studies, study documents, etc.) registered on this portal.",
+        "comment": "Additional Information: Does the [RESOURCE] have any related resources registered on this portal? / Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.13"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.idsNfdi4health.identifier",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.idsNfdi4health.identifier",
+        "short": "Identifier of the related resource",
+        "definition": "Identifier (ID) of the related resource assigned on this portal.",
+        "comment": "Source of the property and/or allowed values: NFDI4Health",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "example": [
+          {
+            "label": "Example of an Identifier assigned by NFDI4Health",
+            "valueString": "39"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.13.1"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.idsNfdi4health.date",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.idsNfdi4health.date",
+        "short": "Date of ID assignment",
+        "definition": "Date when the identifier of the related resource was assigned.",
+        "comment": "Additional Information: Preferred date format: DD.MM.YYYY. / Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.13.2"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.idsNfdi4health.relationType",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.idsNfdi4health.relationType",
+        "short": "Relationship between this [RESOURCE] (A) and the related resource (B)",
+        "definition": "Relationship between the [RESOURCE] being registered (A) and the related resource (B).",
+        "comment": "Source of the property and/or allowed values: DataCite [1]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-relation-type-ids-local"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.13.3"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.nutritionalData",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.nutritionalData",
+        "short": "Collects nutritional data?",
+        "definition": "Indication whether the [RESOURCE] collects nutritional data.",
+        "comment": "Cardinality: 1..1, if Resource.classification.type == ('Study' OR 'Substudy') AND Resource.provenance.dataSource == 'Manually collected'; otherwise 0..0 / Source of the property and/or allowed values: NFDI4Health UC 5.1 requirements",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.14"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.chronicDiseases",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.chronicDiseases",
+        "short": "Includes chronic diseases?",
+        "definition": "Indication whether the [RESOURCE] addresses chronic diseases.",
+        "comment": "Cardinality: 1..1, if Resource.provenance.dataSource == 'Manually collected'; otherwise 0..0 / Source of the property and/or allowed values: NFDI4Health UC 5.2 requirements",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.15"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.provenance",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.provenance",
+        "short": "Provenance aspects of data entry",
+        "definition": "Group of items providing information about provenance aspects of the data entry on this portal.",
+        "comment": "Source of the property and/or allowed values: NFDI4Health",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.16"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.provenance.dataSource",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.provenance.dataSource",
+        "short": "Source of information about the [RESOURCE]",
+        "definition": "Source of information about the [RESOURCE] and the way it was uploaded/collected.",
+        "comment": "Source of the property and/or allowed values: NFDI4Health",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-provenance-data-source-local"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.16.1"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.provenance.verificationDate",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.provenance.verificationDate",
+        "short": "Last verified on",
+        "definition": "Date on which the responsible party last verified the information about the [RESOURCE], even if no additional or updated information is being submitted.",
+        "comment": "Source of the property and/or allowed values: CT.gov [2]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.16.2"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.provenance.verificationUser",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.provenance.verificationUser",
+        "short": "Last verified by",
+        "definition": "User who last verified the information about the [RESOURCE].",
+        "comment": "Source of the property and/or allowed values: CT.gov [2]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.16.3"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.provenance.firstSubmittedDate",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.provenance.firstSubmittedDate",
+        "short": "First submitted on",
+        "definition": "Date when the [RESOURCE] was first submitted for publication.",
+        "comment": "Source of the property and/or allowed values: CT.gov [2]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.16.4"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.provenance.firstSubmittedUser",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.provenance.firstSubmittedUser",
+        "short": "First submitted by",
+        "definition": "User who first submitted the [RESOURCE] for publication.",
+        "comment": "Source of the property and/or allowed values: CT.gov [2]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.16.5"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.provenance.firstPostedDate",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.provenance.firstPostedDate",
+        "short": "First posted/published on",
+        "definition": "Date when the [RESOURCE] was first posted/published.",
+        "comment": "Source of the property and/or allowed values: CT.gov [2]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.16.6"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.provenance.firstPostedUser",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.provenance.firstPostedUser",
+        "short": "First posted/published by",
+        "definition": "User who first posted/published the [RESOURCE].",
+        "comment": "Source of the property and/or allowed values: CT.gov [2]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.16.7"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.provenance.lastUpdateSubmittedDate",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.provenance.lastUpdateSubmittedDate",
+        "short": "Last update submitted on",
+        "definition": "Date when the last update of the [RESOURCE] was submitted for publication.",
+        "comment": "Source of the property and/or allowed values: CT.gov [2]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.16.8"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.provenance.lastUpdateSubmittedUser",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.provenance.lastUpdateSubmittedUser",
+        "short": "Last updated submitted by",
+        "definition": "User who submitted the last update of the [RESOURCE].",
+        "comment": "Source of the property and/or allowed values: CT.gov [2]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.16.9"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.provenance.lastUpdatePostedDate",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.provenance.lastUpdatePostedDate",
+        "short": "Last update posted/published on",
+        "definition": "Date when the last update of the [RESOURCE] was posted/published.",
+        "comment": "Source of the property and/or allowed values: CT.gov [2]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.16.10"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.provenance.lastUpdatePostedUser",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.provenance.lastUpdatePostedUser",
+        "short": "Last update posted/published by",
+        "definition": "User who posted/published the last update of the [RESOURCE].",
+        "comment": "Source of the property and/or allowed values: CT.gov [2]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.16.11"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-v3-3.Resource.provenance.resourceVersion",
+        "path": "nfdi4health-lm-mds-core-v3-3.Resource.provenance.resourceVersion",
+        "short": "Version number",
+        "definition": "Version number of the [RESOURCE] within this portal.",
+        "comment": "Source of the property and/or allowed values: CT.gov [2]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-LM-MDS-Core-V3-3-Internal-Numbering",
+            "map": "1.16.12"
+          }
+        ]
+      }
+    ]
+  }
+}

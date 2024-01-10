@@ -46,9 +46,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Format of the [RESOURCE]",
-        "definition": "Technical format of the resource.",
-        "comment": "Short input help : E.g., XML, PDF, XLSX, etc.",
+        "short": "Format",
+        "definition": "If applicable, the file format of the [RESOURCE] (e.g., XML, PDF, XLSX, etc.).",
         "example": [
           {
             "label": "Example of format",
@@ -66,7 +65,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.10.2 Resource.nonStudyDetails.format"
+            "map": "1.9.2 Resource.nonStudyDetails.format"
           }
         ]
       },

@@ -11,8 +11,8 @@ Description: "Extension providing information about the relation type of this re
 * ^context.type = #element
 * ^context.expression = "RelatedArtifact.extension"
 * . 0..*
-* . ^short = "Relationship between this [RESOURCE] (A) and the related resource (B)?"
-* . ^definition = "Relationship between the resource being registered (A) and the related resource (B)."
+* . ^short = "Relationship between this [RESOURCE] (A) and the related resource (B)"
+* . ^definition = "Relationship between the [RESOURCE] being registered (A) and the related resource (B)."
 * value[x] 1..1
 * value[x] only Coding
 * valueCoding.code 1..1
@@ -24,4 +24,4 @@ Mapping: NFDI4Health-Related-Artifact-Relation-Type-NFDI4Health-Extension-to-FHI
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Related_Artifact_Rel_Type_NFDI4_Resource
-* -> "1.14.2 Resource.idsNfdi4health.relationType"
+* -> "1.13.3 Resource.idsNfdi4health.relationType"

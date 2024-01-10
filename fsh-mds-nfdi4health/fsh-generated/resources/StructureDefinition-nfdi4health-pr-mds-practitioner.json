@@ -55,32 +55,32 @@
       {
         "id": "Practitioner",
         "path": "Practitioner",
-        "short": "Details about the person",
-        "definition": "Group of items providing information about person(s) contributing to the resource.",
-        "comment": "Additional information: Group of items applicable to personal names.",
+        "short": "Details about the contributing person(s)",
+        "definition": "Group of items providing information about person(s) contributing to the [RESOURCE].",
+        "comment": "Additional information: Group of items applicable only when providing person names.",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11.3 Resource.roles.personal"
+            "map": "1.10.3 Resource.contributors.personal"
           }
         ]
       },
       {
         "id": "Practitioner.identifier",
         "path": "Practitioner.identifier",
-        "short": "Digital identifier(s) of the person",
+        "short": "Digital identifier(s)",
         "definition": "Group of items providing information about digital identifiers of the person.",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11.3.5 Resource.roles.personal.identifiers"
+            "map": "1.10.3.4 Resource.contributors.personal.identifiers"
           }
         ]
       },
       {
         "id": "Practitioner.identifier.type",
         "path": "Practitioner.identifier.type",
-        "short": "Which type of identifer is reported?",
+        "short": "Scheme",
         "definition": "Type of the identifier scheme.",
         "min": 1,
         "example": [
@@ -94,7 +94,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11.3.5.2 Resource.roles.personal.identifiers.scheme"
+            "map": "1.10.3.4.2 Resource.contributors.personal.identifiers.scheme"
           }
         ]
       },
@@ -113,13 +113,19 @@
         "id": "Practitioner.identifier.value",
         "path": "Practitioner.identifier.value",
         "short": "Identifier",
-        "definition": "Digital identifier of the person according to a definite scheme.",
+        "definition": "Digital identifier according to a specific scheme that uniquely identifies the person.",
         "comment": "Short input help: Preferably, provide an ORCID (https://orcid.org/).",
         "min": 1,
         "example": [
           {
             "label": "Example of ORCID",
             "valueString": "0000-0003-1379-7023"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.10.3.4.1 Resource.contributors.personal.identifiers.identifier"
           }
         ]
       },
@@ -132,46 +138,27 @@
       {
         "id": "Practitioner.name.family",
         "path": "Practitioner.name.family",
-        "short": "Family name of the person",
-        "definition": "Family name of the person",
+        "short": "Family name(s)",
+        "definition": "Family name(s) of the person",
         "min": 1,
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11.3.3 Resource.roles.personal.familyName"
+            "map": "1.10.3.3 Resource.contributors.personal.familyName"
           }
         ]
       },
       {
         "id": "Practitioner.name.given",
         "path": "Practitioner.name.given",
-        "short": "Given name of the person",
+        "short": "Given name",
         "definition": "Given name of the person.",
         "min": 1,
         "max": "1",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11.3.2 Resource.roles.personal.givenName"
-          }
-        ]
-      },
-      {
-        "id": "Practitioner.name.prefix",
-        "path": "Practitioner.name.prefix",
-        "short": "Title of the person",
-        "definition": "Title of the person.",
-        "min": 1,
-        "max": "1",
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-role-name-personal-title-nci",
-          "description": "Value set defining codes to specify personal titles."
-        },
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "1.11.3.4 Resource.roles.personal.title"
+            "map": "1.10.3.2 Resource.contributors.personal.givenName"
           }
         ]
       }

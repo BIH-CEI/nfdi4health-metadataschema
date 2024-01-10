@@ -1,0 +1,351 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "nfdi4health-ex-mds-record-linkage",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-record-linkage",
+  "version": "0.9",
+  "name": "NFDI4Health_EX_MDS_Record_Linkage",
+  "title": "NFDI4Health EX MDS Record Linkage",
+  "status": "draft",
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "description": "Group of items providing information on record linkage.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "NFDI4Health",
+      "name": "NFDI4Health to FHIR Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ResearchStudy"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Information about record linkage for the [RESOURCE]",
+        "definition": "Group of items providing information on record linkage.",
+        "comment": "Applies only if 1.17.26.9 Design.dataSharingPlan.recordLinkage has been answered with Yes",
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "RL1 RecordLinkage"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:legalBasis",
+        "path": "Extension.extension",
+        "sliceName": "legalBasis",
+        "short": "Legal regulation/permission for record linkage",
+        "definition": "Indication whether there are specific regulations/permissions for record linkage.",
+        "comment": "Additional Information: Whether any specific legal regulations/permissions exist (e.g. for social data, for cancer registry data, hospital data, etc.).",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "RL1.1 RecordLinkage.legalBasis"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:legalBasis.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:legalBasis.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "legalBasis"
+      },
+      {
+        "id": "Extension.extension:legalBasis.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:legalBasisDetails",
+        "path": "Extension.extension",
+        "sliceName": "legalBasisDetails",
+        "short": "Specific legal basis allowing record linkage",
+        "definition": "Information specifying which specific legal basis allows for record linkage.",
+        "comment": "Additional Information: If existing, any specific legal regulations/permissions (e.g. for social data, for cancer registry data, hospital data, etc.).",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "RL1.2 RecordLinkage.legalBasisDetails"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:legalBasisDetails.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:legalBasisDetails.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "legalBasisDetails"
+      },
+      {
+        "id": "Extension.extension:legalBasisDetails.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:informedConsent",
+        "path": "Extension.extension",
+        "sliceName": "informedConsent",
+        "short": "Informed consent for record linkage",
+        "definition": "Indication whether an informed consent that allows record linkage has been obtained.",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "RL1.3 RecordLinkage.informedConsent"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:informedConsent.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:informedConsent.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "informedConsent"
+      },
+      {
+        "id": "Extension.extension:informedConsent.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:responsibleInstitutions",
+        "path": "Extension.extension",
+        "sliceName": "responsibleInstitutions",
+        "short": "Responsible authorities",
+        "definition": "Institutions and authorities that must agree to the record linkage.",
+        "min": 0,
+        "max": "*",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "RL1.4 RecordLinkage.responsibleInstitutions"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:responsibleInstitutions.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:responsibleInstitutions.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "responsibleInstitutions"
+      },
+      {
+        "id": "Extension.extension:responsibleInstitutions.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:additionalCosts",
+        "path": "Extension.extension",
+        "sliceName": "additionalCosts",
+        "short": "Additional costs for record linkage",
+        "definition": "Indication whether there are additional costs for record linkage.",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "RL1.5 RecordLinkage.additionalCosts"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:additionalCosts.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:additionalCosts.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "additionalCosts"
+      },
+      {
+        "id": "Extension.extension:additionalCosts.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:identifiers",
+        "path": "Extension.extension",
+        "sliceName": "identifiers",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:identifiers.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:identifiers.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "identifiers"
+      },
+      {
+        "id": "Extension.extension:identifiers.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:identifiers.value[x].value",
+        "path": "Extension.extension.value[x].value",
+        "short": "Identifiers for record linkage",
+        "definition": "Identifiers that can be used for record linkage (e.g. names, date of birth, zip code, insurance number or control number as in cancer registries).",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "RL1.6 RecordLinkage.identifiers"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:furtherDetails",
+        "path": "Extension.extension",
+        "sliceName": "furtherDetails",
+        "short": "Further details important for conducting record linkage",
+        "definition": "Additional important details for conducting record linkage.",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "RL1.7 RecordLinkage.furtherDetails"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:furtherDetails.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:furtherDetails.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "furtherDetails"
+      },
+      {
+        "id": "Extension.extension:furtherDetails.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:exampleResources",
+        "path": "Extension.extension",
+        "sliceName": "exampleResources",
+        "short": "Record linkage example resources",
+        "definition": "DOIs of additional related resources specific to record linkage (e.g., publications).",
+        "comment": "Short Input Help: Please do not repeat those already entered in the section 'Related resources'.",
+        "min": 0,
+        "max": "*",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "RL1.8 RecordLinkage.exampleResources"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:exampleResources.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:exampleResources.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "exampleResources"
+      },
+      {
+        "id": "Extension.extension:exampleResources.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-record-linkage"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

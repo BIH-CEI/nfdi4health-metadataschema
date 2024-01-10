@@ -53,7 +53,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.13.3 Resource.ids.date"
+            "map": "1.13.2 Resource.idsNfdi4health.date"
           }
         ]
       },

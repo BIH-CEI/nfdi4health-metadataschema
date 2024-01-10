@@ -46,13 +46,13 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Funding identifier",
-        "definition": "Identifier assigned by a funder to the resource.",
-        "comment": "Short input help: If available, you can enter a funding identifier",
+        "short": "Funding identifier(s)",
+        "definition": "Identifier(s) assigned by a funder to the [RESOURCE].",
+        "comment": "Short input help: If available, you can enter funding identifiers.",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11.2.2 Resource.roles.organisational.fundingId"
+            "map": "1.10.2.2 Resource.contributors.organisational.fundingIds"
           }
         ]
       },

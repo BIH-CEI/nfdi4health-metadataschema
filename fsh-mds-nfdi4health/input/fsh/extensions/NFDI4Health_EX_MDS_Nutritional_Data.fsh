@@ -11,8 +11,8 @@ Description: "Extension asking if nutritional data was collected"
 * ^context.type = #element
 * ^context.expression = "ResearchStudy"
 * . 0..1
-* . ^short = "Nutritional data collected?"
-* . ^definition = "Indication whether nutritional data was collected by the resource."
+* . ^short = "Collects nutritional data?"
+* . ^definition = "Indication whether the [RESOURCE] collects nutritional data."
 * value[x] 1..
 * value[x] only boolean
 
@@ -20,4 +20,4 @@ Mapping: NFDI4Health-Nutritional-Data-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Nutritional_Data
-* -> "1.15 Resource.nutritionalData"
+* -> "1.14 Resource.nutritionalData"

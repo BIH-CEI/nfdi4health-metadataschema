@@ -418,9 +418,9 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nfdi4health-ex-mds-copyright-label"
+          "reference": "StructureDefinition/nfdi4health-ex-mds-copyright-label-and-link"
         },
-        "name": "NFDI4Health EX MDS Copyright Label",
+        "name": "NFDI4Health EX MDS Copyright Label And Link",
         "description": "Extension providing information about the license applying to the resource.",
         "exampleBoolean": false
       },
@@ -518,6 +518,14 @@
         },
         "name": "NFDI4Health EX MDS Provenance Data Source",
         "description": "Extension providing information about the source of information of the resource and the way it was uploaded/collected.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-record-linkage"
+        },
+        "name": "NFDI4Health EX MDS Record Linkage",
+        "description": "Group of items providing information on record linkage.",
         "exampleBoolean": false
       },
       {
@@ -762,7 +770,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nfdi4health-lm-mds-core"
+          "reference": "StructureDefinition/nfdi4health-lm-mds-core-v3-3"
         },
         "name": "NFDI4Health LM Core Metadataschema V3.3",
         "description": "NFDI4Health Logical Model Core Metadataschema V3.3",
@@ -774,6 +782,14 @@
         },
         "name": "NFDI4Health LM Epidemiology of Chronic Diseases Metadataschema (UC 5.2) V3.3",
         "description": "NFDI4Health LogicalModel Epidemiology of Chronic Diseases Metadataschema (Use Case 5.2) V3.3",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-lm-mds-design-v3-3"
+        },
+        "name": "NFDI4Health LM MDS Module Design V3.3",
+        "description": "NFDI4Health Logical Model MDS Module Design V3.3",
         "exampleBoolean": false
       },
       {
@@ -1075,14 +1091,6 @@
         },
         "name": "NFDI4Health VS MDS Role Name Identifier Scheme [local]",
         "description": "Value set defining codes to specify the identifier scheme of a personal identifier.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/nfdi4health-vs-mds-role-name-personal-title-nci"
-        },
-        "name": "NFDI4Health VS MDS Role Name Personal Title [NCI]",
-        "description": "Value set defining codes to specify personal titles.",
         "exampleBoolean": false
       },
       {

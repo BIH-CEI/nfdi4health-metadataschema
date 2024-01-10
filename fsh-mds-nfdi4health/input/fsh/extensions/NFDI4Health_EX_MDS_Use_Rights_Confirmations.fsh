@@ -13,8 +13,9 @@ Description: "Extension providing information about licensing, if a Creative Com
 * ^context[+].type = #element
 * ^context[=].expression = "Extension"
 * . 0..1
-* . ^short = "Important information about licensing, if a Creative Commons liesense is selected."
-* . ^definition = "Group of items applicable if a Creative Commons liesense is selected."
+* . ^short = "Licensing confirmations"
+* . ^definition = "Group of items applicable only if a Creative Commons license is selected."
+* . ^comment = "In order to successfully publish the [RESOURCE] under the respective license, all four questions ought to be confirmed."
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
@@ -23,25 +24,26 @@ Description: "Extension providing information about licensing, if a Creative Com
     confirmationTerms 1..1 and
     confirmationIrrevocability 1..1 and
     supportByLicensing 1..1
-* extension[confirmationAuthority] ^short = "Do you confirm that the authors have authority to license the [RESOURCE]?"
-* extension[confirmationAuthority] ^definition = "Confirmation that the authors have authority to license the resource."
+* extension[confirmationAuthority] ^short = "Do you confirm that the authors of the [RESOURCE] have authority to license it?"
+* extension[confirmationAuthority] ^definition = "Confirmation that the authors of the [RESOURCE] have authority to license it."
 * extension[confirmationAuthority].value[x] only boolean
-* extension[confirmationTerms] ^short = "Do you confirm that the authors have read and understood the terms of the chosen license?"
-* extension[confirmationTerms] ^definition = "Confirmation that the authors have read and understand the terms of the chosen license."
+* extension[confirmationTerms] ^short = "Do you confirm that the authors of the [RESOURCE] have read and understood the terms of the chosen license?"
+* extension[confirmationTerms] ^definition = "Confirmation that the authors of the [RESOURCE] have read and understood the terms of the chosen license."
 * extension[confirmationTerms].value[x] only boolean
-* extension[confirmationIrrevocability] ^short = "Do you confirm that the authors understand that Creative Commons (CC) licensing is irrevocable?"
-* extension[confirmationIrrevocability] ^definition = "Confirmation that the authors understand that Creative Commons (CC) licensing is not revocable."
-* extension[confirmationIrrevocability] ^comment = "Additional information: The resource can be licensed using a CC-license only if it is free of the third-party rights."
+* extension[confirmationIrrevocability] ^short = "Do you confirm that the authors of the [RESOURCE] understand that Creative Commons (CC) licensing is irrevocable?"
+* extension[confirmationIrrevocability] ^definition = "Confirmation that the authors of the [RESOURCE] understand that Creative Commons (CC) licensing is not revocable.."
+* extension[confirmationIrrevocability] ^comment = "Additional information: The [RESOURCE] can be licensed using a CC-license only if it is free of the third-party rights."
 * extension[confirmationIrrevocability].value[x] only boolean
-* extension[supportByLicensing] ^short = "Do you confirm that the authors allow NFDI4Health to license the document?"
+* extension[supportByLicensing] ^short = "Do you confirm that the authors of the [RESOURCE] allow NFDI4Health to license the document?"
+* extension[supportByLicensing] ^definition = "Confirmation that NFDI4Health is allowed to license the document, i.e. to mark the [RESOURCE] with the license information."
 * extension[supportByLicensing].value[x] only boolean
 
 Mapping: NFDI4Health-Use-Rights-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Use_Rights_Confirmations
-* -> "1.10.3 Resource.nonStudyDetails.useRights"
-* extension[confirmationAuthority] -> "1.10.3.2.1 Resource.nonStudyDetails.useRights.confirmations.authority"
-* extension[confirmationTerms] -> "1.10.3.2.2 Resource.nonStudyDetails.useRights.confirmations.terms"
-* extension[confirmationIrrevocability] -> "1.10.3.2.3 Resource.nonStudyDetails.useRights.confirmations.irrevocability"
-* extension[supportByLicensing] -> "1.10.3.2.4 Resource.nonStudyDetails.useRights.confirmations.supportByLicencing"
+* -> "1.9.3.3 Resource.nonStudyDetails.useRights.confirmations"
+* extension[confirmationAuthority] -> "1.9.3.3.1 Resource.nonStudyDetails.useRights.confirmations.authority"
+* extension[confirmationTerms] -> "1.9.3.3.2 Resource.nonStudyDetails.useRights.confirmations.terms"
+* extension[confirmationIrrevocability] -> "1.9.3.3.3 Resource.nonStudyDetails.useRights.confirmations.irrevocability"
+* extension[supportByLicensing] -> "1.9.3.3.4 Resource.nonStudyDetails.useRights.confirmations.supportByLicencing"

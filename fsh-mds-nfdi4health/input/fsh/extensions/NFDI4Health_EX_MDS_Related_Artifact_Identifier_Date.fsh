@@ -14,11 +14,10 @@ Description: "Extension storing the date when an identifier was assigned to a re
 * . ^short = "Date of ID assignment"
 * . ^definition = "Date when the identifier of the related resource was assigned."
 * . ^comment = "Additional information: Preferred date format: DD.MM.YYYY"
-* url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related-artifact-identifier-date" (exactly)
 * value[x] only date
 
 Mapping: NFDI4Health-Related-Artifact-Identifier-Date-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Related_Artifact_Identifier_Date
-* -> "1.13.3 Resource.ids.date"
+* -> "1.13.2 Resource.idsNfdi4health.date"

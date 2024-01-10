@@ -18,3 +18,4 @@ Alias: $iso3166 = urn:iso:std:iso:3166
 Alias: $iso3166-2 = urn:iso:std:iso:3166:-2
 Alias: $mesh = url:oid:2.16.840.1.113883.6.177
 Alias: $study-prim-purp-type = http://terminology.hl7.org/CodeSystem/research-study-prim-purp-type
+Alias: $fhir-idenfitier = http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier

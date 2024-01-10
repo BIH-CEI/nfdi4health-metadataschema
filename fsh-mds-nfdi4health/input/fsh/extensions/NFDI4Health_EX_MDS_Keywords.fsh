@@ -12,9 +12,9 @@ Description: "Extension storing keyword(s) describing a resource."
 * ^context[=].expression = "Questionnaire"
 * ^context[+].type = #element
 * ^context[=].expression = "DocumentReference"
-* . ^short = "keywords"
+* . ^short = "Keyword(s) describing the [RESOURCE]"
 * . ^definition = "Group of items providing information about keywords describing the [RESOURCE]."
-* . ^comment = "<p><strong>Additional information: </strong>The findability of the [RESOURCE] can be significantly increased if proper keywords are stated."
+* . ^comment = "Additional information: The findability of the [RESOURCE] can be significantly increased if proper keywords are stated."
 * . 0..*
 * value[x] only CodeableConcept
 * valueCodeableConcept.coding.system 1..1

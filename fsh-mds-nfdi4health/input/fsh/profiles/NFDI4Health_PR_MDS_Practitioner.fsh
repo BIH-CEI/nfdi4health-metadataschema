@@ -9,13 +9,13 @@ Description: "Profile to collect information about persons having roles."
 * ^publisher = "NFDI4Health"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
-* . ^short = "Details about the person"
-* . ^definition = "Group of items providing information about person(s) contributing to the resource."
-* . ^comment = "Additional information: Group of items applicable to personal names."
-* identifier ^short = "Digital identifier(s) of the person"
+* . ^short = "Details about the contributing person(s)"
+* . ^definition = "Group of items providing information about person(s) contributing to the [RESOURCE]."
+* . ^comment = "Additional information: Group of items applicable only when providing person names."
+* identifier ^short = "Digital identifier(s)"
 * identifier ^definition = "Group of items providing information about digital identifiers of the person."
 * identifier.type 1..
-* identifier.type ^short = "Which type of identifer is reported?"
+* identifier.type ^short = "Scheme"
 * identifier.type ^definition = "Type of the identifier scheme."
 * identifier.type ^example.label = "Example of identifier scheme"
 * identifier.type ^example.valueCodeableConcept.text = "ORCID"
@@ -24,30 +24,25 @@ Description: "Profile to collect information about persons having roles."
 * identifier.type.coding ^binding.description = "Value set defining codes to specify the identifier scheme of a personal identifier."
 * identifier.value 1..
 * identifier.value ^short = "Identifier"
-* identifier.value ^definition = "Digital identifier of the person according to a definite scheme."
+* identifier.value ^definition = "Digital identifier according to a specific scheme that uniquely identifies the person."
 * identifier.value ^comment = "Short input help: Preferably, provide an ORCID (https://orcid.org/)."
 * identifier.value ^example.label = "Example of ORCID"
 * identifier.value ^example.valueString = "0000-0003-1379-7023"
 * name 1..1
 * name.family 1..
-* name.family ^short = "Family name of the person"
-* name.family ^definition = "Family name of the person"
+* name.family ^short = "Family name(s)"
+* name.family ^definition = "Family name(s) of the person"
 * name.given 1..1
-* name.given ^short = "Given name of the person"
+* name.given ^short = "Given name"
 * name.given ^definition = "Given name of the person."
-* name.prefix 1..1
-* name.prefix from NFDI4Health_VS_MDS_Role_Name_Personal_Title_NCI (required)
-* name.prefix ^short = "Title of the person"
-* name.prefix ^definition = "Title of the person."
-* name.prefix ^binding.description = "Value set defining codes to specify personal titles."
 
 Mapping: NFDI4Health-Practitioner-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_PR_MDS_Practitioner
-* -> "1.11.3 Resource.roles.personal"
-* identifier -> "1.11.3.5 Resource.roles.personal.identifiers"
-* identifier.type -> "1.11.3.5.2 Resource.roles.personal.identifiers.scheme"
-* name.family -> "1.11.3.3 Resource.roles.personal.familyName"
-* name.given -> "1.11.3.2 Resource.roles.personal.givenName"
-* name.prefix -> "1.11.3.4 Resource.roles.personal.title"
+* -> "1.10.3 Resource.contributors.personal"
+* identifier -> "1.10.3.4 Resource.contributors.personal.identifiers"
+* identifier.value -> "1.10.3.4.1 Resource.contributors.personal.identifiers.identifier"
+* identifier.type -> "1.10.3.4.2 Resource.contributors.personal.identifiers.scheme"
+* name.family -> "1.10.3.3 Resource.contributors.personal.familyName"
+* name.given -> "1.10.3.2 Resource.contributors.personal.givenName"

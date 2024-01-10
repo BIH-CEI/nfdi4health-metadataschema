@@ -15,8 +15,9 @@ Description: "Extension provinding information about the language the [RESOURCE]
 * ^context[+].type = #element
 * ^context[=].expression = "DocumentReference"
 * . 0..*
-* . ^short = "languages"
+* . ^short = "Language(s) of the [RESOURCE]"
 * . ^definition = "Language(s) in which the [RESOURCE] is conducted/provided."
+* . ^comment = "Short Input Help: Select all that apply."
 
 * valueCode from $ISOLanguage (required)
 * valueCode ^short = "A human language."
@@ -26,4 +27,4 @@ Mapping: NFDI4Health-Execution-Language-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Execution_Language
-* -> "Resource.languages"
+* -> "1. 7 Resource.languages"

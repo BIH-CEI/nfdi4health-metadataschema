@@ -46,14 +46,14 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Chronic diseases included?",
-        "definition": "Indication whether chronic diseases were addressed by the resource.",
+        "short": "Includes chronic diseases?",
+        "definition": "Indication whether the [RESOURCE] addresses chronic diseases.",
         "min": 1,
         "max": "1",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.16 Resource.chronicDiseases"
+            "map": "1.15 Resource.chronicDiseases"
           }
         ]
       },

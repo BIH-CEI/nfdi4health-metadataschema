@@ -42,21 +42,7 @@
         "path": "RelatedArtifact",
         "short": "Related publications, datasets, study documents, web pages, etc.",
         "definition": "Group of items providing information about identifiers (IDs) of the resources related to the given resource, e.g. DOIs of publications, datasets, study documents or links to web pages.",
-        "comment": "Short input help: If existing, you can specify identifier(s) of any related resources, e.g. DOIs of publications, datasets, study documents, links to web pages, etc.",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "1.13 Resource.ids"
-          },
-          {
-            "identity": "NFDI4Health",
-            "map": "1.14 Resource.idsNfdi4health"
-          },
-          {
-            "identity": "NFDI4Health",
-            "map": "1.9 Resource.webpage"
-          }
-        ]
+        "comment": "Short input help: If existing, you can specify identifier(s) of any related resources, e.g. DOIs of publications, datasets, study documents, links to web pages, etc."
       },
       {
         "id": "RelatedArtifact.extension:NFDI4HealthResource",
@@ -75,7 +61,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.14 Resource.idsNfdi4health"
+            "map": "1.13 Resource.idsNfdi4health"
           }
         ]
       },
@@ -96,7 +82,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.13 Resource.ids"
+            "map": "1.12 Resource.ids"
           }
         ]
       },
@@ -104,12 +90,12 @@
         "id": "RelatedArtifact.url",
         "path": "RelatedArtifact.url",
         "short": "Web page of the [RESOURCE]",
-        "definition": "If existing, a link to the web page directly relevant to the resource.",
-        "comment": "Additional information: Other web pages related to the resource can additionally be entered in the section \"Related resources\".",
+        "definition": "If existing, a link to the web page directly relevant to the [RESOURCE].",
+        "comment": "Additional information: Other web pages related to the [RESOURCE] can additionally be entered in the section 'Related resources'.",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.9 Resource.webpage"
+            "map": "1.8 Resource.webpage"
           }
         ]
       }

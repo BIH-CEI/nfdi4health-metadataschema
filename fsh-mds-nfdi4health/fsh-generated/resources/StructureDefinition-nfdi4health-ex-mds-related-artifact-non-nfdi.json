@@ -46,81 +46,85 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Related publications, datasets, study documents, web pages, etc.",
-        "definition": "Group of items providing information about identifiers (IDs) of the resources related to the given resource, e.g. DOIs of publications, datasets, study documents or links to web pages.",
-        "comment": "Short input help: If existing, you can specify identifier(s) of any related resources, e.g. DOIs of publications, datasets, study documents, links to web pages, etc.",
+        "short": "Related resources",
+        "definition": "Group of items providing information about identifiers (IDs) of the resources related to the given [RESOURCE], e.g. DOIs of publications, datasets, study documents or links to web pages.",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.13 Resource.ids"
+            "map": "1.12 Resource.ids"
           }
         ]
       },
       {
         "id": "Extension.extension",
         "path": "Extension.extension",
-        "min": 3
+        "min": 2
       },
       {
         "id": "Extension.extension:identifier",
         "path": "Extension.extension",
         "sliceName": "identifier",
         "min": 1,
-        "max": "1",
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:identifier.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:identifier.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "identifier"
+      },
+      {
+        "id": "Extension.extension:identifier.value[x]",
+        "path": "Extension.extension.value[x]",
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related-artifact-non-nfdi-identifier"
-            ]
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "1.13.1 Resource.ids.identifier"
+            "code": "Identifier"
           }
         ]
       },
       {
-        "id": "Extension.extension:scheme",
-        "path": "Extension.extension",
-        "sliceName": "scheme",
-        "min": 1,
-        "max": "1",
-        "type": [
+        "id": "Extension.extension:identifier.value[x].type",
+        "path": "Extension.extension.value[x].type",
+        "short": "Type of the identifier",
+        "definition": "Type of the identifier of the related resource.",
+        "comment": "Select one value from the list.",
+        "example": [
           {
-            "code": "Extension",
-            "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related-artifact-scheme"
-            ]
+            "label": "Example of an identifier type of a related resource.",
+            "valueString": "DOI"
           }
         ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-identifier-type-related-artifact-umls-local"
+        },
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.13.2 Resource.ids.scheme"
+            "map": "1.12.2 Resource.ids.scheme"
           }
         ]
       },
       {
-        "id": "Extension.extension:identifierAssignmentDate",
-        "path": "Extension.extension",
-        "sliceName": "identifierAssignmentDate",
-        "min": 0,
-        "max": "1",
-        "type": [
+        "id": "Extension.extension:identifier.value[x].value",
+        "path": "Extension.extension.value[x].value",
+        "short": "Identifier of the related resource",
+        "definition": "Identifier (ID) related to, or associated with, the [RESOURCE] being registered. These can be IDs of related publications, datasets, study documents, web pages, etc.",
+        "comment": "Additional Information: a) Publications like journal articles usually have a DOI, e.g. 10.3238/arztebl.2020.0861.b) A link (URL) starting with 'http(s)://' to a web page with any additional information can also be provided. | Short Input Help: If existing, you can specify here identifier(s) of any related resources, e.g. DOIs of publications, datasets, study documents, links to web pages, etc.",
+        "example": [
           {
-            "code": "Extension",
-            "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-identifier-assignment-date"
-            ]
+            "label": "Example of an identifier from a related resource",
+            "valueString": "10.4126/FRL01-006431467"
           }
         ],
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.13.3 Resource.ids.date"
+            "map": "1.12.1 Resource.ids.identifier"
           }
         ]
       },
@@ -141,7 +145,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.13.4 Resource.ids.relationType"
+            "map": "1.12.3 Resource.ids.relationType"
           }
         ]
       },
@@ -162,7 +166,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.13.5 Resource.ids.resourceTypeGeneral"
+            "map": "1.12.4 Resource.ids.resourceTypeGeneral"
           }
         ]
       },

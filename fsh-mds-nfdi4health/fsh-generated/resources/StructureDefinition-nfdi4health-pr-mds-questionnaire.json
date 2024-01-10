@@ -88,7 +88,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.2.1 Resource.classification.resourceType"
+            "map": "1.2.1 Resource.classification.type"
           }
         ]
       },
@@ -109,7 +109,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.2.2 Resource.classification.resourceTypeGeneral"
+            "map": "1.2.2 Resource.classification.typeGeneral"
           }
         ]
       },
@@ -175,15 +175,15 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.13 Resource.ids"
+            "map": "1.12 Resource.ids"
           },
           {
             "identity": "NFDI4Health",
-            "map": "1.14 Resource.idsNfdi4health"
+            "map": "1.13 Resource.idsNfdi4health"
           },
           {
             "identity": "NFDI4Health",
-            "map": "1.9 Resource.webpage"
+            "map": "1.8 Resource.webpage"
           }
         ]
       },
@@ -222,7 +222,7 @@
           },
           {
             "identity": "NFDI4Health",
-            "map": "1.12 Resource.idsAlternative"
+            "map": "1.11 Resource.idsAlternative"
           }
         ]
       },
@@ -290,7 +290,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12 Resource.idsAlternative"
+            "map": "1.11 Resource.idsAlternative"
           }
         ]
       },
@@ -309,7 +309,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12.1 Resource.idsAlternative.scheme",
+            "map": "1.11.1 Resource.idsAlternative.scheme",
             "comment": "Type = DRKS"
           }
         ]
@@ -323,7 +323,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12.1 Resource.idsAlternative.scheme",
+            "map": "1.11.1 Resource.idsAlternative.scheme",
             "comment": "Type = DRKS"
           }
         ]
@@ -342,7 +342,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12.2 Resource.idsAlternative.identifier"
+            "map": "1.11.2 Resource.idsAlternative.identifier"
           }
         ]
       },
@@ -356,7 +356,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12 Resource.idsAlternative"
+            "map": "1.11 Resource.idsAlternative"
           }
         ]
       },
@@ -375,7 +375,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12.1 Resource.idsAlternative.scheme",
+            "map": "1.11.1 Resource.idsAlternative.scheme",
             "comment": "Type = NCT"
           }
         ]
@@ -389,7 +389,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12.1 Resource.idsAlternative.scheme",
+            "map": "1.11.1 Resource.idsAlternative.scheme",
             "comment": "Type = NCT"
           }
         ]
@@ -408,7 +408,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12.2 Resource.idsAlternative.identifier"
+            "map": "1.11.2 Resource.idsAlternative.identifier"
           }
         ]
       },
@@ -422,7 +422,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12 Resource.idsAlternative"
+            "map": "1.11 Resource.idsAlternative"
           }
         ]
       },
@@ -441,7 +441,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12.1 Resource.idsAlternative.scheme",
+            "map": "1.11.1 Resource.idsAlternative.scheme",
             "comment": "Type = ISRCTN"
           }
         ]
@@ -455,7 +455,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12.1 Resource.idsAlternative.scheme",
+            "map": "1.11.1 Resource.idsAlternative.scheme",
             "comment": "Type = ISRCTN"
           }
         ]
@@ -468,7 +468,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12.2 Resource.idsAlternative.identifier"
+            "map": "1.11.2 Resource.idsAlternative.identifier"
           }
         ]
       },
@@ -482,7 +482,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12 Resource.idsAlternative"
+            "map": "1.11 Resource.idsAlternative"
           }
         ]
       },
@@ -501,7 +501,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12.1 Resource.idsAlternative.scheme",
+            "map": "1.11.1 Resource.idsAlternative.scheme",
             "comment": "Type = EudraCT"
           }
         ]
@@ -515,7 +515,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12.1 Resource.idsAlternative.scheme",
+            "map": "1.11.1 Resource.idsAlternative.scheme",
             "comment": "Type = EudraCT"
           }
         ]
@@ -527,7 +527,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12.2 Resource.idsAlternative.identifier"
+            "map": "1.11.2 Resource.idsAlternative.identifier"
           }
         ]
       },
@@ -541,7 +541,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12 Resource.idsAlternative"
+            "map": "1.11 Resource.idsAlternative"
           }
         ]
       },
@@ -560,7 +560,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12.1 Resource.idsAlternative.scheme",
+            "map": "1.11.1 Resource.idsAlternative.scheme",
             "comment": "Type = EUDAMED"
           }
         ]
@@ -574,7 +574,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12.1 Resource.idsAlternative.scheme",
+            "map": "1.11.1 Resource.idsAlternative.scheme",
             "comment": "Type = EUDAMED"
           }
         ]
@@ -587,7 +587,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12.2 Resource.idsAlternative.identifier"
+            "map": "1.11.2 Resource.idsAlternative.identifier"
           }
         ]
       },
@@ -601,7 +601,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12 Resource.idsAlternative"
+            "map": "1.11 Resource.idsAlternative"
           }
         ]
       },
@@ -620,7 +620,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12.1 Resource.idsAlternative.scheme",
+            "map": "1.11.1 Resource.idsAlternative.scheme",
             "comment": "Type = UTN"
           }
         ]
@@ -634,7 +634,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12.1 Resource.idsAlternative.scheme",
+            "map": "1.11.1 Resource.idsAlternative.scheme",
             "comment": "Type = UTN"
           }
         ]
@@ -646,7 +646,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12.2 Resource.idsAlternative.identifier"
+            "map": "1.11.2 Resource.idsAlternative.identifier"
           }
         ]
       },
@@ -660,7 +660,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12 Resource.idsAlternative"
+            "map": "1.11 Resource.idsAlternative"
           }
         ]
       },
@@ -679,7 +679,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12.1 Resource.idsAlternative.scheme",
+            "map": "1.11.1 Resource.idsAlternative.scheme",
             "comment": "Type = KonsortSWD"
           }
         ]
@@ -693,7 +693,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12.1 Resource.idsAlternative.scheme",
+            "map": "1.11.1 Resource.idsAlternative.scheme",
             "comment": "Type = KonsortSWD"
           }
         ]
@@ -706,7 +706,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12.2 Resource.idsAlternative.identifier"
+            "map": "1.11.2 Resource.idsAlternative.identifier"
           }
         ]
       },
@@ -720,7 +720,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12 Resource.idsAlternative"
+            "map": "1.11 Resource.idsAlternative"
           }
         ]
       },
@@ -739,7 +739,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12.1 Resource.idsAlternative.scheme",
+            "map": "1.11.1 Resource.idsAlternative.scheme",
             "comment": "Type = MDM Portal"
           }
         ]
@@ -753,7 +753,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12.1 Resource.idsAlternative.scheme",
+            "map": "1.11.1 Resource.idsAlternative.scheme",
             "comment": "Type = MDM Portal"
           }
         ]
@@ -766,7 +766,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12.2 Resource.idsAlternative.identifier"
+            "map": "1.11.2 Resource.idsAlternative.identifier"
           }
         ]
       },
@@ -781,7 +781,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12 Resource.idsAlternative"
+            "map": "1.11 Resource.idsAlternative"
           }
         ]
       },
@@ -800,7 +800,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12.1 Resource.idsAlternative.scheme",
+            "map": "1.11.1 Resource.idsAlternative.scheme",
             "comment": "Type = Other"
           }
         ]
@@ -812,7 +812,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12.1 Resource.idsAlternative.scheme",
+            "map": "1.11.1 Resource.idsAlternative.scheme",
             "comment": "Type = Other"
           }
         ]
@@ -825,19 +825,19 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12.2 Resource.idsAlternative.identifier"
+            "map": "1.11.2 Resource.idsAlternative.identifier"
           }
         ]
       },
       {
         "id": "Questionnaire.version",
         "path": "Questionnaire.version",
-        "short": "Version of the [RESOURCE]",
-        "definition": "If existing, the version number of the resource.",
+        "short": "Version",
+        "definition": "If applicable, the version number of the [RESOURCE].",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "Resource.nonStudyDetails.version"
+            "map": "1.9.1 Resource.nonStudyDetails.version"
           }
         ]
       },
@@ -900,7 +900,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "Resource.descriptions.text"
+            "map": "1.5.1 Resource.descriptions.text"
           }
         ]
       },
@@ -935,7 +935,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "Resource.descriptions.language"
+            "map": "1.5.2 Resource.descriptions.language"
           }
         ]
       },
@@ -943,12 +943,12 @@
         "id": "Questionnaire.copyright",
         "path": "Questionnaire.copyright",
         "short": "Additional information about use rights",
-        "definition": "Any additional descriptive information explaining terms and conditions to (re-)use the resource.",
-        "comment": "Short input help: If “Other” is selected in the property 'License', the preferred license or terms and conditions for (re-)use can be specified here.",
+        "definition": "Any additional descriptive information explaining terms and conditions to (re-)use the [RESOURCE].",
+        "comment": "Short input help: If 'Other' is selected in the field 'License', the preferred license or terms and conditions for (re-)use should be specified here.",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.10.3.3 Resource.nonStudyDetails.useRights.description"
+            "map": "1.9.3.4 Resource.nonStudyDetails.useRights.description"
           }
         ]
       },
@@ -967,16 +967,16 @@
         "min": 1
       },
       {
-        "id": "Questionnaire.copyright.extension:copyrightLabel",
+        "id": "Questionnaire.copyright.extension:copyrightLabelandLink",
         "path": "Questionnaire.copyright.extension",
-        "sliceName": "copyrightLabel",
+        "sliceName": "copyrightLabelandLink",
         "min": 1,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-copyright-label"
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-copyright-label-and-link"
             ]
           }
         ]

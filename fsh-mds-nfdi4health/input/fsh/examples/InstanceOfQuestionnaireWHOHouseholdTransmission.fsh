@@ -25,7 +25,8 @@ Usage: #example
 * extension[resourceTypeGeneral].valueCoding = $NCI#C47824 "Data Set (Idea or Concept)"
 * extension[format].valueString = "XLSX"
 * copyright = "This data dictionary was created by the NFDI4Health Task Force COVID-19 on the basis of the 'Household transmission investigation protocol for coronavirus disease 2019 (COVID-19)' licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 IGO License (CC BY-NC-SA 3.0 IGO). Please contact the authors/contact persons to get permission to reuse the data dictionary in whole or parts of it."
-* copyright.extension[copyrightLabel].valueCoding = $UMLS#C0205394 "Other (Qualitative Concept)"
+* copyright.extension[copyrightLabelandLink].extension[label].valueCoding = $UMLS#C0205394 "Other (Qualitative Concept)"
+
 ////Roles
 * extension[roles][0].extension[nameType].valueCoding = $UMLS#C0220885 "Organizational (Qualitative Concept)"
 * extension[roles][=].extension[roleOrganisational].valueCoding = $NCI#C25461 "Contact Person (Human)"

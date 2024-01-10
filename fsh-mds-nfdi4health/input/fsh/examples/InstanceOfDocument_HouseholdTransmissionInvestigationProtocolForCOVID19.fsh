@@ -31,7 +31,7 @@ Usage: #example
 * extension[keywords][=].valueCodeableConcept.coding.system = "https://id.nlm.nih.gov/mesh/T000997092.html"
 * extension[resourceTypeGeneral].valueCoding = $NCI#C25704 "Text (Manufactured Object)"
 * content.format.display = "PDF"
-* extension[useRights].extension[copyrightLabel].valueCoding = $UMLS#C0205394 "Other (Qualitative Concept)"
+* extension[useRights].extension[copyrightLabelAndLink].extension[label].valueCoding = $UMLS#C0205394 "Other (Qualitative Concept)"
 * extension[useRights].extension[useRightsDescription].valueString = " This document is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 IGO (CC BY-NC-SA 3.0 IGO) License. To view a copy of the license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/igo/legalcode."
 // Roles
 * extension[roles][0].extension[party].valueReference = Reference(InstanceOfOrganizationCreatorWHO)

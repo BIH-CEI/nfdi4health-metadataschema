@@ -10,9 +10,8 @@ Description: "Extension providing information about the format of a resource."
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 * ^context.type = #element
 * ^context.expression = "Questionnaire"
-* . ^short = "Format of the [RESOURCE]"
-* . ^definition = "Technical format of the resource."
-* . ^comment = "Short input help : E.g., XML, PDF, XLSX, etc."
+* . ^short = "Format"
+* . ^definition = "If applicable, the file format of the [RESOURCE] (e.g., XML, PDF, XLSX, etc.)."
 * . ^example[0].label = "Example of format"
 * . ^example[=].valueString = "XML"
 * . ^example[+].label = "Example of format"
@@ -25,4 +24,4 @@ Mapping: NFDI4Health-Format-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Format
-* -> "1.10.2 Resource.nonStudyDetails.format"
+* -> "1.9.2 Resource.nonStudyDetails.format"

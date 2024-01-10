@@ -46,13 +46,13 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Related (sub-)studies, study documents, etc. registered on this portal",
-        "definition": "Group of items providing information about related resources registered on this portal.",
-        "comment": "Short input help: Does the [RESOURCE] have any related resources registered on this portal?",
+        "short": "Related resources registered on this portal",
+        "definition": "Group of items providing information about related resources (e.g. (sub-)studies, study documents, etc.) registered on this portal.",
+        "comment": "Additional Information: Does the [RESOURCE] have any related resources registered on this portal?",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.14 Resource.idsNfdi4health"
+            "map": "1.13 Resource.idsNfdi4health"
           }
         ]
       },
@@ -68,20 +68,58 @@
         "sliceName": "identifier",
         "min": 1,
         "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related-artifact-nfdi-identifier"
-            ]
-          }
-        ],
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.14.1 Resource.idsNfdi4health.identifier"
+            "map": "1.13.1 Resource.idsNfdi4health.identifier"
           }
         ]
+      },
+      {
+        "id": "Extension.extension:identifier.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:identifier.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "identifier"
+      },
+      {
+        "id": "Extension.extension:identifier.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:identifier.value[x].type",
+        "path": "Extension.extension.value[x].type",
+        "min": 1,
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "code": "104",
+              "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+              "display": "NFDI4Health"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Extension.extension:identifier.value[x].system",
+        "path": "Extension.extension.value[x].system",
+        "min": 1,
+        "fixedUri": "https://csh.nfdi4health.de/resource/"
+      },
+      {
+        "id": "Extension.extension:identifier.value[x].value",
+        "path": "Extension.extension.value[x].value",
+        "short": "Identifier of the related resource",
+        "definition": "Identifier (ID) of the related resource assigned on this portal.",
+        "min": 1
       },
       {
         "id": "Extension.extension:relationType",
@@ -100,7 +138,28 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.14.2 Resource.idsNfdi4health.relationType"
+            "map": "1.13.3 Resource.idsNfdi4health.relationType"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:identifierAssignmentDate",
+        "path": "Extension.extension",
+        "sliceName": "identifierAssignmentDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-identifier-assignment-date"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.13.2 Resource.idsNfdi4health.date"
           }
         ]
       },

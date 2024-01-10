@@ -46,9 +46,15 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "NFDI4Health EX MDS Document Use Rights",
-        "definition": "Extension providing information about the rights to (re-)use the [RESOURCE].",
-        "max": "1"
+        "short": "(Re-)use rights",
+        "definition": "Group of items providing information about the rights to (re-)use the [RESOURCE].",
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.9.3 Resource.nonStudyDetails.useRights"
+          }
+        ]
       },
       {
         "id": "Extension.extension",
@@ -56,23 +62,27 @@
         "min": 1
       },
       {
-        "id": "Extension.extension:copyrightLabel",
+        "id": "Extension.extension:copyrightLabelAndLink",
         "path": "Extension.extension",
-        "sliceName": "copyrightLabel",
+        "sliceName": "copyrightLabelAndLink",
         "min": 1,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-copyright-label"
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-copyright-label-and-link"
             ]
           }
         ],
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.10.3.1 Resource.nonStudyDetails.useRights.label"
+            "map": "1.9.3.1 Resource.nonStudyDetails.useRights.label"
+          },
+          {
+            "identity": "NFDI4Health",
+            "map": "1.9.3.2 Resource.nonStudyDetails.useRights.link"
           }
         ]
       },
@@ -93,7 +103,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.10.3.2 Resource.nonStudyDetails.useRights.confirmations"
+            "map": "1.9.3.3 Resource.nonStudyDetails.useRights.confirmations"
           }
         ]
       },
@@ -102,14 +112,14 @@
         "path": "Extension.extension",
         "sliceName": "useRightsDescription",
         "short": "Additional information about use rights",
-        "definition": "Any additional descriptive information explaining terms and conditions to (re-)use the resource.",
-        "comment": "If 'Other' is selected in the property 'License', the preferred license or terms and conditions for (re-)use can be specified here.",
+        "definition": "Any additional descriptive information explaining terms and conditions to (re-)use the [RESOURCE].",
+        "comment": "Short Input Help: If 'Other' is selected in the field 'License', the preferred license or terms and conditions for (re-)use should be specified here.",
         "min": 0,
         "max": "1",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.10.3.3 Resource.nonStudyDetails.useRights.description"
+            "map": "1.9.3.4 Resource.nonStudyDetails.useRights.description"
           }
         ]
       },

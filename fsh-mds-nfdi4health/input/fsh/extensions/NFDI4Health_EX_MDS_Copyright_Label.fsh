@@ -1,8 +1,8 @@
-Extension: NFDI4Health_EX_MDS_Copyright_Label
-Id: nfdi4health-ex-mds-copyright-label
-Title: "NFDI4Health EX MDS Copyright Label"
+Extension: NFDI4Health_EX_MDS_Copyright_Label_And_Link
+Id: nfdi4health-ex-mds-copyright-label-and-link
+Title: "NFDI4Health EX MDS Copyright Label And Link"
 Description: "Extension providing information about the license applying to the resource."
-* ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-copyright-label"
+* ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-copyright-label-and-link"
 * ^version = "0.9"
 * ^status = #draft
 * ^publisher = "NFDI4Health"
@@ -13,15 +13,21 @@ Description: "Extension providing information about the license applying to the 
 * ^context[+].type = #element
 * ^context[=].expression = "Extension"
 * . 1..1
-* . ^short = "License"
-* . ^definition = "License defining the rights to (re-)use the resource."
-* . ^comment = "Short input help: Select one value from the list. If 'Other' is selected, an explanation of the (re-)use terms and conditions can be provided in the property “Additional information about use rights”."
-* value[x] 1..
-* value[x] only Coding
-* valueCoding from $nfdi4health-vs-mds-use-rights-label-spdx-umls-local (required)
+* extension contains
+    label 1..1 and
+    link 0..1 
+* extension[label].value[x] only Coding 
+* extension[label].valueCoding from $nfdi4health-vs-mds-use-rights-label-spdx-umls-local (required)
+* extension[label] ^short = "License"
+* extension[label] ^definition = "License defining the rights to (re-)use the [RESOURCE]."
+* extension[label] ^comment = "Short input help: Select one value from the list. If 'Other' is selected, please provide an explanation of the (re-)use terms and conditions in the field 'Additional information about use rights'."
+* extension[link] ^short = "URL of the license"
+* extension[link] ^definition = "Link to the selected license."
+* extension[link].value[x] only url
 
-Mapping: NFDI4Health-Copyright-Label-to-FHIR
+Mapping: NFDI4Health-Copyright-Label-And-Link-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
-Source: NFDI4Health_EX_MDS_Copyright_Label
-* -> "1.10.3.1 Resource.nonStudyDetails.useRights.label"
+Source: NFDI4Health_EX_MDS_Copyright_Label_And_Link
+* extension[label] -> "1.9.3.1 Resource.nonStudyDetails.useRights.label"
+* extension[link] -> "1.9.3.2 Resource.nonStudyDetails.useRights.link"

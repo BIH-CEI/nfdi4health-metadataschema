@@ -10,9 +10,9 @@ Description: "Extension providing information about the identifier assigned by a
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 * ^context.type = #element
 * ^context.expression = "Organization"
-* . ^short = "Funding identifier"
-* . ^definition = "Identifier assigned by a funder to the resource."
-* . ^comment = "Short input help: If available, you can enter a funding identifier"
+* . ^short = "Funding identifier(s)"
+* . ^definition = "Identifier(s) assigned by a funder to the [RESOURCE]."
+* . ^comment = "Short input help: If available, you can enter funding identifiers."
 * value[x] 1..1
 * value[x] only string
 
@@ -20,4 +20,4 @@ Mapping: NFDI4Health-FundingID-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_FundingID
-* -> "1.11.2.2 Resource.roles.organisational.fundingId"
+* -> "1.10.2.2 Resource.contributors.organisational.fundingIds"

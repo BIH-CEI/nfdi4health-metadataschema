@@ -24,6 +24,10 @@
       "identity": "rim",
       "uri": "http://hl7.org/v3",
       "name": "RIM Mapping"
+    },
+    {
+      "identity": "NFDI4Health",
+      "name": "NFDI4Health to FHIR Mapping"
     }
   ],
   "kind": "complex-type",
@@ -42,9 +46,16 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "NFDI4Health EX MDS Resource Type",
-        "definition": "Extension providing information about the resource type.",
-        "max": "1"
+        "short": "Type of the resource",
+        "definition": "A term describing the resource.",
+        "comment": "Additional Information: The selected resource type determines which information will be asked next. | Short Input Help: You can register a study, a study protocol, a questionnaire, etc. Please only add follow up questionnaires if baseline questionnaires have already been registered.",
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.2.1 Resource.classification.type"
+          }
+        ]
       },
       {
         "id": "Extension.extension",

@@ -14,7 +14,7 @@ Description: "Extension providing information about the source of information of
 * ^context.expression = "Provenance"
 * . 1..1
 * . ^short = "Source of information about the [RESOURCE]"
-* . ^definition = "Source of information about the resource and the way it was uploaded/collected."
+* . ^definition = "Source of information about the [RESOURCE] and the way it was uploaded/collected."
 * value[x] 1..1
 * value[x] only Coding
 * value[x].code 1..1
@@ -26,4 +26,4 @@ Mapping: NFDI4Health-Provenance-Data-Source-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Provenance_Data_Source
-* -> "1.18.1 Resource.provenance.dataSource"
+* -> "1.16.1 Resource.provenance.dataSource"

@@ -68,6 +68,8 @@
       {
         "id": "PractitionerRole.organization",
         "path": "PractitionerRole.organization",
+        "short": "Organisation(s) associated with the contributor",
+        "definition": "Group of items providing further information about the organisation(s) associated with the contributor.",
         "type": [
           {
             "code": "Reference",
@@ -80,7 +82,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11.1.5 Resource.roles.affiliation"
+            "map": "1.10.6 Resource.contributors.affiliation"
           }
         ]
       },
@@ -110,7 +112,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11.4 Resource.roles.email"
+            "map": "1.10.4 Resource.contributors.email"
           }
         ]
       },
@@ -142,7 +144,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11.5 Resource.roles.phone"
+            "map": "1.10.5 Resource.contributors.phone"
           }
         ]
       },

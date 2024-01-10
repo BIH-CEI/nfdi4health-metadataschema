@@ -60,24 +60,24 @@
       {
         "id": "Provenance",
         "path": "Provenance",
-        "short": "Information about provenance aspects of the data entry",
-        "definition": "Group of items providing information about provenance aspects of the data entry on the portal",
+        "short": "Provenance aspects of data entry",
+        "definition": "Group of items providing information about provenance aspects of the data entry on this portal.",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.18 Resource.provenance"
+            "map": "1.16 Resource.provenance"
           }
         ]
       },
       {
         "id": "Provenance.meta.versionId",
         "path": "Provenance.meta.versionId",
-        "short": "Version number of the resource within the portal/system",
-        "definition": "Version number of the resource within the portal/system",
+        "short": "Version number",
+        "definition": "Version number of the [RESOURCE] within the portal/system",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.18.12 Resource.provenance.resourceVersion"
+            "map": "1.16.12 Resource.provenance.resourceVersion"
           }
         ]
       },
@@ -129,28 +129,28 @@
       {
         "id": "Provenance.recorded",
         "path": "Provenance.recorded",
-        "short": "Verfication date / Date when the [RESOURCE] was first submitted for publication / Date when the [RESOURCE] was first posted/published / Date when the last update of the [RESOURCE] was submitted for publication / Date when the last update of the [RESOURCE] was posted/published.",
-        "definition": "For verification date: Date on which the responsible party last verified the information about the resource, even if no additional or updated information is being submitted.\r\n\r\nFor first submission date: Date when the resource was first submitted for publication.\r\n\r\nFor first posted date: Date when the resource was first posted/published.\r\n\r\nFor last update date: Date when the last update of the resource was submitted for publication.\r\n\r\nFor last posted date: Date when the last update of the resource was posted/published.\r\nFor",
+        "short": "Last verified on | First submitted on | First posted/published on | Last update submitted on | Last update posted/published on",
+        "definition": "For verification date: Date on which the responsible party last verified the information about the [RESOURCE], even if no additional or updated information is being submitted. | For first submission date: Date when the [RESOURCE] was first submitted for publication. | For first posted date: Date when the [RESOURCE] was first posted/published. | For last update submission date: Date when the last update of the [RESOURCE] was submitted for publication. | For last update posted date: Date when the last update of the [RESOURCE] was posted/published.",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.18.2 Resource.provenance.verificationDate"
+            "map": "1.16.2 Resource.provenance.verificationDate"
           },
           {
             "identity": "NFDI4Health",
-            "map": "1.18.4 Resource.provenance.firstSubmittedDate"
+            "map": "1.16.4 Resource.provenance.firstSubmittedDate"
           },
           {
             "identity": "NFDI4Health",
-            "map": "1.18.6 Resource.provenance.firstPostedDate"
+            "map": "1.16.6 Resource.provenance.firstPostedDate"
           },
           {
             "identity": "NFDI4Health",
-            "map": "1.18.8 Resource.provenance.lastUpdateSubmittedDate"
+            "map": "1.16.8 Resource.provenance.lastUpdateSubmittedDate"
           },
           {
             "identity": "NFDI4Health",
-            "map": "1.18.10 Resource.provenance.lastUpdatePostedDate"
+            "map": "1.16.10 Resource.provenance.lastUpdatePostedDate"
           }
         ]
       },
@@ -167,28 +167,28 @@
       {
         "id": "Provenance.agent",
         "path": "Provenance.agent",
-        "short": "User who submitted, published, updated or verified the resource.",
-        "definition": "An actor taking a role in an activity for which it can be assigned some degree of responsibility for the activity taking place.",
+        "short": "Last verified by [USER] | First submitted by [USER] | First posted/published by [USER] | Last updated submitted by [USER] | Last update posted/published by [USER]",
+        "definition": "For verification user: User who last verified the information about the [RESOURCE]. | For first submission user: User who first submitted the [RESOURCE] for publication. | For first posted user: User who first posted/published the [RESOURCE]. | For last update submission user: User who submitted the last update of the [RESOURCE]. | For last update posted user: User who posted/published the last update of the [RESOURCE].",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.18.3 Resource.provenance.verificationUser"
+            "map": "1.16.3 Resource.provenance.verificationUser"
           },
           {
             "identity": "NFDI4Health",
-            "map": "1.18.5 Resource.provenance.firstSubmittedUser"
+            "map": "1.16.5 Resource.provenance.firstSubmittedUser"
           },
           {
             "identity": "NFDI4Health",
-            "map": "1.18.7 Resource.provenance.firstPostedUser"
+            "map": "1.16.7 Resource.provenance.firstPostedUser"
           },
           {
             "identity": "NFDI4Health",
-            "map": "1.18.9 Resource.provenance.lastUpdateSubmittedUser"
+            "map": "1.16.9 Resource.provenance.lastUpdateSubmittedUser"
           },
           {
             "identity": "NFDI4Health",
-            "map": "1.18.11 Resource.provenance.lastUpdatePostedUser"
+            "map": "1.16.11 Resource.provenance.lastUpdatePostedUser"
           }
         ]
       },
