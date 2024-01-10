@@ -1,3 +1,4 @@
+[2.16.840.1.113883.3.1937.777.64.4.6--20231207000000]: Questionnaire-2.16.840.1.113883.3.1937.777.64.4.6--20231207000000.html
 [ConceptMap-Study-Allocation-NFDI4Health-to-UMLS]: ConceptMap-ConceptMap-Study-Allocation-NFDI4Health-to-UMLS.html
 [ConceptMap-Study-Primary-Design-NFDI4Health-to-UMLS]: ConceptMap-ConceptMap-Study-Primary-Design-NFDI4Health-to-UMLS.html
 [ConceptMap-Study-Sampling-Non-Probability-NFDI4Health-to-NCI]: ConceptMap-ConceptMap-Study-Sampling-Non-Probability-NFDI4Health-to-NCI.html
@@ -12,7 +13,7 @@
 [OrganizationPublicExample]: Organization-OrganizationPublicExample.html
 [InstanceOfProvenance]: Provenance-InstanceOfProvenance.html
 [InstanceOfQuestionnaireWHOHouseholdTransmission]: Questionnaire-InstanceOfQuestionnaireWHOHouseholdTransmission.html
-[NFDI4Health_LM_Metadataschema_RecordLinkage]: StructureDefinition-nfdi4health-lm-metadatenschema-recordlinkage.html
+[NFDI4Health_LM_Metadataschema_RecordLinkage_V3_3]: StructureDefinition-nfdi4health-lm-metadatenschema-recordlinkage-v3-3.html
 [InstanceOfEvidenceVariableSPOVID]: EvidenceVariable-InstanceOfEvidenceVariableSPOVID.html
 [InstanceOfGroupActualSHIP]: Group-InstanceOfGroupActualSHIP.html
 [InstanceOfGroupIntendedSHIP]: Group-InstanceOfGroupIntendedSHIP.html
@@ -38,7 +39,6 @@
 [InstanceOfStudySHIP]: ResearchStudy-InstanceOfStudySHIP.html
 [InstanceOfStudySPOVID]: ResearchStudy-InstanceOfStudySPOVID.html
 [NFDI4Health_VS_MDS_CD_Common_Chronic_Disease_Name_SNOMEDCT]: ValueSet-nfdi4health-vs-mds-cd-common-chronic-disease-name-snomedct.html
-[nfdi4health-cps-mds-capability-statement]: CapabilityStatement-nfdi4health-cps-mds-capability-statement.html
 [NFDI4Health_CS_MDS_Label_FHIR]: CodeSystem-nfdi4health-cs-mds-label-fhir.html
 [NFDI4Health_CS_MDS_Provenance_Data_Source]: CodeSystem-nfdi4health-cs-mds-provenance-data-source.html
 [NFDI4Health_CS_MDS_Remaining_Concepts]: CodeSystem-nfdi4health-cs-mds-remaining-concepts.html
@@ -92,7 +92,9 @@
 [NFDI4Health_EX_MDS_Use_Rights_Confirmations]: StructureDefinition-nfdi4health-ex-mds-use-rights-confirmations.html
 [NFDI4Health_EX_MDS_Version]: StructureDefinition-nfdi4health-ex-mds-version.html
 [NFDI4Health_LM_MDS_Core]: StructureDefinition-nfdi4health-lm-mds-core.html
+[NFDI4Health_LM_Metadataschema_EOCD_V3_3]: StructureDefinition-nfdi4health-lm-metadataschema-eocd-v3-3.html
 [NFDI4Health_LM_MDS_Design]: StructureDefinition-nfdi4health-lm-mds-design.html
+[NFDI4Health_LM_Metadataschema_NE_V3_3]: StructureDefinition-nfdi4health-lm-metadataschema-ne-v3-3.html
 [InstanceOfChronicDiseaseModule]: Questionnaire-InstanceOfChronicDiseaseModule.html
 [InstanceOfNutritionalEpidemiologyModule]: Questionnaire-InstanceOfNutritionalEpidemiologyModule.html
 [InstanceOfRecordLinkage]: Questionnaire-InstanceOfRecordLinkage.html
@@ -113,7 +115,6 @@
 [NFDI4Health_PR_MDS_Questionnaire]: StructureDefinition-nfdi4health-pr-mds-questionnaire.html
 [NFDI4Health_PR_MDS_Related_Artifact_Resource]: StructureDefinition-nfdi4health-pr-mds-related-artifact-resource.html
 [NFDI4Health_PR_MDS_Study]: StructureDefinition-nfdi4health-pr-mds-study.html
-[2.16.840.1.113883.3.1937.777.64.4.6--20231207000000]: Questionnaire-2.16.840.1.113883.3.1937.777.64.4.6--20231207000000.html
 [NFDI4Health_VS_MDS_Countries_ISO]: ValueSet-nfdi4health-vs-mds-countries-iso.html
 [NFDI4Health_VS_MDS_ID_TYPE_UMLS_Local]: ValueSet-nfdi4health-vs-mds-id-type-umls-local.html
 [NFDI4Health_VS_MDS_Identifier_Type_Related_Artifact_UMLS_Local]: ValueSet-nfdi4health-vs-mds-identifier-type-related-artifact-umls-local.html
@@ -176,4 +177,5 @@
 [NFDI4Health_VS_MDS_Use_Rights_Label_SPDX_SNOMED_Local]: ValueSet-nfdi4health-vs-mds-use-rights-label-spdx-snomed-local.html
 [NFDI4Health_VS_MDS_Yes_No_Not_Applicable_SNOMEDCT]: ValueSet-nfdi4health-vs-mds-yes-no-not-applicable-snomedct.html
 [NFDI4Health_VS_MDS_Yes_No_Undecided_SNOMEDCT_NCI]: ValueSet-nfdi4health-vs-mds-yes-no-undecided-snomedct-nci.html
+[nfdi4health-cps-mds-capability-statement]: CapabilityStatement-nfdi4health-cps-mds-capability-statement.html
 [NFDI4Health_EX_MDS_Related]: StructureDefinition-nfdi4health-ex-mds-related.html
