@@ -20,21 +20,21 @@ Description: "Profile to collect information about german (or with at least one 
     NFDI4Health_EX_MDS_Associated_Party named roles 1..* and
     NFDI4Health_EX_MDS_Nutritional_Data named nutritionalData 0..1 and
     NFDI4Health_EX_MDS_Chronic_Diseases named chronicDiseases 0..1 and
-    NFDI4Health_EX_MDS_Study_Groups_Of_Diseases named studyGroupsOfDiseases 1..1 and
+    NFDI4Health_EX_MDS_Groups_Of_Diseases named groupsOfDiseases 1..1 and
     NFDI4Health_EX_MDS_Mortality_Data named mortalityData 0..1 and
     NFDI4Health_EX_MDS_Study_Ethics_Committee_Approval named studyEthicsCommitteeApproval 0..1 and
     NFDI4Health_EX_MDS_Study_Status named studyStatus 1..1 and
-    NFDI4Health_EX_MDS_Study_Subject named subject 1..1 and
-    NFDI4Health_EX_MDS_Study_Data_Source named dataSource 0..1 and
-    NFDI4Health_EX_MDS_Study_Eligibility_Criteria_Inclusion_Criteria named inclusionCriteria 0..1 and
-    NFDI4Health_EX_MDS_Study_Eligibility_Criteria_Exclusion_Criteria named exclusionCriteria 0..1 and
+    NFDI4Health_EX_MDS_Subject named subject 1..1 and
+    NFDI4Health_EX_MDS_Data_Source named dataSource 0..1 and
+    NFDI4Health_EX_MDS_Eligibility_Criteria_Inclusion_Criteria named inclusionCriteria 0..1 and
+    NFDI4Health_EX_MDS_Eligibility_Criteria_Exclusion_Criteria named exclusionCriteria 0..1 and
     NFDI4Health_EX_MDS_Study_Comparison_Group named comparisonGroup 0..* and
     NFDI4Health_EX_MDS_Study_Outcomes named outcomes 0..* and
-    NFDI4Health_EX_MDS_Study_Assessments named assessments 0..* and
+    NFDI4Health_EX_MDS_Assessments named assessments 0..* and
     NFDI4Health_EX_MDS_Study_Population named population 0..1 and
-    NFDI4Health_EX_MDS_Study_Data_Sharing_Plan named dataSharingPlan 1..1 and
+    NFDI4Health_EX_MDS_Data_Sharing_Plan named dataSharingPlan 1..1 and
     NFDI4Health_EX_MDS_Study_Target_Followup_Duration named targetFollowupDuration 0..1 and
-    NFDI4Health_EX_MDS_Study_Biospecimen named biospecimen 0..1 and
+    NFDI4Health_EX_MDS_Biospecimen named biospecimen 0..1 and
     NFDI4Health_EX_MDS_Off_Label_Use named offLabelUse 0..1 and
     NFDI4Health_EX_MDS_Study_Masking named masking 0..1
 * identifier ^slicing.discriminator.type = #value
@@ -129,14 +129,14 @@ Description: "Profile to collect information about german (or with at least one 
 * title 1..
 * title ^short = "Title/name"
 * title ^definition = "Scientific unabbreviated title or name of the resource."
-* title ^comment = "Additional information: If no official title/name has been defined yet, please provide a title/name that is suitable for public display. | Short input help: Please provide at least one title/name of the resource. If the original title is not in English, please also provide an English translation of the original title."
+* title ^comment = "Additional Information: If no official title/name has been defined yet, please provide a title/name that is suitable for public display. | Short Input Help: Please provide at least one title/name of the resource. If the original title is not in English, please also provide an English translation of the original title."
 * title.extension contains NFDI4Health_EX_MDS_Label named label 0..*
 * status = #active (exactly)
 * status ^comment = "The item does not exist in NFDI4Health' MDS. Fixed to 'active' for all studies."
 * primaryPurposeType from NFDI4Health_VS_MDS_Study_Primary_Purpose_HL7_NCI (required)
-* primaryPurposeType ^short = "Primary purpose of the study"
-* primaryPurposeType ^definition = "Specification of the main purpose of the study."
-* primaryPurposeType ^comment = "Additional information: The field is defined foremost for interventional studies. For non-interventional  studies, this field may be not appplicable as diverse purposes may be pursued without being able to specify a primary one. In this case, the option \"Not applicable\" can be selected. | Short input help: Foremost for interventional studies, please specify the primary purpose why the study was conducted."
+* primaryPurposeType ^short = "Primary purpose of the [RESOURCE]"
+* primaryPurposeType ^definition = "Specification of the main purpose of the [RESOURCE]."
+* primaryPurposeType ^comment = "Additional Information: The field is defined foremost for interventional studies. For non-interventional studies, this field may not be applicable as diverse purposes may be pursued without being able to specify a primary one. In this case, the option 'Not applicable' can be selected. | Short Input Help: Foremost for interventional studies, please specify the primary purpose why the [RESOURCE] was conducted. For non-interventional studies, this field may be 'Not applicable' as multiple purposes may be defined as primary ones."
 * primaryPurposeType ^binding.description = "Value set defining codes to specify the primary purpose of a study in a ResearchStudy resource."
 * primaryPurposeType.coding 1..1
 * primaryPurposeType.coding.system 1..
@@ -162,21 +162,21 @@ Description: "Profile to collect information about german (or with at least one 
     samplingMethodProbability 0..1 and
     samplingMethodNonProbability 0..1
 * category[primaryDesign] from NFDI4Health_VS_MDS_Study_Primary_Design_Local (required)
-* category[primaryDesign] ^short = "Is it an interventional or non-interventional study?"
-* category[primaryDesign] ^definition = "Non-interventional study design refers to a study that does not aim to alter study outcomes of interest. Interventional study design refers to a study that aims to alter study outcomes of interest."
-* category[primaryDesign] ^comment = "Short input help: Select between non-interventional and interventional study design."
+* category[primaryDesign] ^short = "Is it an interventional or non-interventional [RESOURCE]?"
+* category[primaryDesign] ^definition = "Non-interventional design refers to a [RESOURCE] that does not aim to alter its outcomes of interest. Interventional design refers to a [RESOURCE] that aims to alter its outcomes of interest."
+* category[primaryDesign] ^comment = "Short input help: Select between non-interventional and interventional design for the given [RESOURCE]."
 * category[primaryDesign] ^binding.description = "Value set defining codes for primary designs of studies in a ResearchStudy resource."
 * category[primaryDesign].coding 0..1
 * category[studyTypeInterventional] from NFDI4Health_VS_MDS_Study_Type_Interventional_Local (required)
-* category[studyTypeInterventional] ^short = "Specification of study type"
+* category[studyTypeInterventional] ^short = "Interventional [RESOURCE] type"
 * category[studyTypeInterventional] ^definition = "The strategy for assigning interventions to participants."
-* category[studyTypeInterventional] ^comment = "Short input help: Select all that apply. If 'Other' is selected, you can specify the study type in the field 'Additional information about the study'."
+* category[studyTypeInterventional] ^comment = "Short input help: Select all that apply. If 'Other' is selected, please specify the type of the [RESOURCE] in the field 'Additional information about the [RESOURCE]'."
 * category[studyTypeInterventional] ^binding.description = "Value set defining codes to specify the type of an interventional study in a ResearchStudy resource."
 * category[studyTypeInterventional].coding 0..*
 * category[studyTypeNonInterventional] from NFDI4Health_VS_MDS_Study_Type_Non_Interventional_Local (required)
-* category[studyTypeNonInterventional] ^short = "Specification of study type"
+* category[studyTypeNonInterventional] ^short = "Non-interventional [RESOURCE] type"
 * category[studyTypeNonInterventional] ^definition = "The primary strategy for participant identification and follow-up."
-* category[studyTypeNonInterventional] ^comment = "Short input help: Select all that apply. If 'Other' is selected, you can specify the study type in the field 'Additional information about the study'."
+* category[studyTypeNonInterventional] ^comment = "Short input help: Select all that apply. If 'Other' is selected, please specify the type of the [RESOURCE] in the field 'Additional information about the [RESOURCE]'."
 * category[studyTypeNonInterventional] ^binding.description = "Value set defining codes to specify the type of a non interventional study in a ResearchStudy resource."
 * category[studyTypeNonInterventional].coding 0..*
 * category[timePerspectives] from NFDI4Health_VS_MDS_Study_Time_Perspectives_Local (required)
@@ -206,8 +206,8 @@ Description: "Profile to collect information about german (or with at least one 
 * category[samplingMethodNonProbability] ^comment = "Short Input Help: If known, select one value from the list."
 * category[samplingMethodNonProbability] ^binding.description = "Value set defining codes to specify types of non-probability sampling methods."
 * category[samplingMethodNonProbability].coding 0..1
-* condition ^short = "Primary health condition(s), disease(s) or focus of the study"
-* condition ^definition = "Group of items providing information about primary health condition(s) or disease(s) considered in the study, or the focus of the study (e.g. medication, food, therapy, device, etc.)."
+* condition ^short = "Primary health condition(s) or disease(s) considered in the [RESOURCE]"
+* condition ^definition = "Group of items providing information about primary health condition(s) or disease(s) considered in the [RESOURCE]."
 * condition.coding.extension ^slicing.discriminator.type = #value
 * condition.coding.extension ^slicing.discriminator.path = "url"
 * condition.coding.extension ^slicing.rules = #open
@@ -292,17 +292,14 @@ Description: "Profile to collect information about german (or with at least one 
 * reasonStopped.text ^definition = "If the study was stopped prematurely, specification of the reason(s) why it was halted."
 * reasonStopped.text ^comment = "Short input help: E.g., accrual goal met / closed due to toxicity / closed due to lack of study progress / temporarily-closed per study design /etc."
 * note ..1
-* note ^short = "Any additional information about the study"
-* note ^definition = "Any additional information about specific aspects of the study that cannot be captured by other properties."
-* note ^comment = "Short input help: Any additional information about specific aspects of the study that cannot be captured by other properties."
-* note.text ^short = "Any additional information about the study"
-* note.text ^definition = "Any additional information about specific aspects of the study that cannot be captured by other properties."
-* note.text ^comment = "Short input help: Any additional information about specific aspects of the study that cannot be captured by other properties."
+* note.text ^short = "Additional information about the [RESOURCE]"
+* note.text ^definition = "Any additional information about specific aspects of the [RESOURCE] that could not be captured by other fields.."
+* note.text ^comment = "Short input help: You can provide here specific aspects of the [RESOURCE] that could not be captured by other fields."
 * arm ..0
-* objective ..1
+* objective ..*
 * objective.name 1..
-* objective.name ^short = "Research questions and/or hypothesis underlying the study"
-* objective.name ^definition = "Statement of the research questions and/or hypotheses underlying the study."
+* objective.name ^short = "Research questions/hypotheses"
+* objective.name ^definition = "Statement of the research questions and/or hypotheses underlying the [RESOURCE]."
 
 Mapping: NFDI4Health-Study-to-FHIR
 Id: NFDI4Health
@@ -350,17 +347,17 @@ Source: NFDI4Health_PR_MDS_Study
 * extension[resourceType] -> "1.2.1 Resource.classification.type"
 * extension[resourceTypeGeneral] -> "1.2.2 Resource.classification.typeGeneral"
 * title -> "1.3.1 Resource.titles.text"
-* primaryPurposeType -> "1.17.22 Resource.studyDesign.primaryPurpose"
+* primaryPurposeType -> "1.17.15 Design.primaryPurpose"
 * phase -> "1.17.37.1 Resource.studyDesign.interventional.phase"
-* category[primaryDesign] -> "1.17.1 Resource.studyDesign.primaryDesign"
-* category[studyTypeInterventional] -> "1.17.2.1 Resource.studyDesign.studyType.interventional"
-* category[studyTypeNonInterventional] -> "1.17.2.2 Resource.studyDesign.studyType.nonInterventional"
+* category[primaryDesign] -> "1.17.1 Design.primaryDesign"
+* category[studyTypeInterventional] -> "1.17.2.1 Design.studyType.interventional"
+* category[studyTypeNonInterventional] -> "1.17.2.2 Design.nonInterventional"
 * category[timePerspectives] -> "1.17.36.1 Resource.studyDesign.nonInterventional.timePerspectives"
 * category[allocation] -> "1.17.37.3 Resource.studyDesign.interventional.allocation"
 * category[samplingMethod] -> "1.17.20.1 Resource.studyDesign.sampling.method"
 * category[samplingMethodProbability] -> "1.17.20.2 Resource.studyDesign.sampling.probabilityMethod"
 * category[samplingMethodNonProbability] -> "1.17.20.3 Resource.studyDesign.sampling.nonProbabilityMethod"
-* condition -> "1.17.3 Resource.studyDesign.studyConditions"
+* condition -> "1.17.3 Design.conditions"
 * condition.coding.extension[uri] -> "1.17.3.3 Resource.studyDesign.studyConditions.code"
 * condition.coding.system -> "1.17.3.2 Resource.studyDesign.studyConditions.classification"
 * condition.coding.code -> "1.17.3.3 Resource.studyDesign.studyConditions.code"
@@ -380,8 +377,5 @@ Source: NFDI4Health_PR_MDS_Study
 * period.start -> "1.17.13 Resource.studyDesign.studyStartDate"
 * period.end -> "1.17.14 Resource.studyDesign.studyEndDate"
 * reasonStopped.text -> "1.17.10 Resource.studyDesign.reasonStopped"
-* note.text -> "1.17.33 Resource.studyDesign.comment"
-* objective.name -> "1.17.29 Resource.studyDesign.hypothesis"
-
-
-
+* note.text -> "1.17.24 Design.comment"
+* objective.name -> "1.17.18 Design.hypotheses"

@@ -174,16 +174,16 @@
         ]
       },
       {
-        "id": "ResearchStudy.extension:studyGroupsOfDiseases",
+        "id": "ResearchStudy.extension:groupsOfDiseases",
         "path": "ResearchStudy.extension",
-        "sliceName": "studyGroupsOfDiseases",
+        "sliceName": "groupsOfDiseases",
         "min": 1,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-groups-of-diseases"
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-groups-of-diseases"
             ]
           }
         ]
@@ -243,7 +243,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-subject"
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-subject"
             ]
           }
         ]
@@ -258,7 +258,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-data-source"
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-data-source"
             ]
           }
         ]
@@ -273,7 +273,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-eligibility-criteria-inclusion-criteria"
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-eligibility-criteria-inclusion-criteria"
             ]
           }
         ]
@@ -288,7 +288,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-eligibility-criteria-exclusion-criteria"
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-eligibility-criteria-exclusion-criteria"
             ]
           }
         ]
@@ -333,7 +333,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-assessments"
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-assessments"
             ]
           }
         ]
@@ -363,7 +363,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-data-sharing-plan"
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-data-sharing-plan"
             ]
           }
         ]
@@ -393,7 +393,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-biospecimen"
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-biospecimen"
             ]
           }
         ]
@@ -1060,7 +1060,7 @@
         "path": "ResearchStudy.title",
         "short": "Title/name",
         "definition": "Scientific unabbreviated title or name of the resource.",
-        "comment": "Additional information: If no official title/name has been defined yet, please provide a title/name that is suitable for public display. | Short input help: Please provide at least one title/name of the resource. If the original title is not in English, please also provide an English translation of the original title.",
+        "comment": "Additional Information: If no official title/name has been defined yet, please provide a title/name that is suitable for public display. | Short Input Help: Please provide at least one title/name of the resource. If the original title is not in English, please also provide an English translation of the original title.",
         "min": 1,
         "mapping": [
           {
@@ -1107,9 +1107,9 @@
       {
         "id": "ResearchStudy.primaryPurposeType",
         "path": "ResearchStudy.primaryPurposeType",
-        "short": "Primary purpose of the study",
-        "definition": "Specification of the main purpose of the study.",
-        "comment": "Additional information: The field is defined foremost for interventional studies. For non-interventional  studies, this field may be not appplicable as diverse purposes may be pursued without being able to specify a primary one. In this case, the option \"Not applicable\" can be selected. | Short input help: Foremost for interventional studies, please specify the primary purpose why the study was conducted.",
+        "short": "Primary purpose of the [RESOURCE]",
+        "definition": "Specification of the main purpose of the [RESOURCE].",
+        "comment": "Additional Information: The field is defined foremost for interventional studies. For non-interventional studies, this field may not be applicable as diverse purposes may be pursued without being able to specify a primary one. In this case, the option 'Not applicable' can be selected. | Short Input Help: Foremost for interventional studies, please specify the primary purpose why the [RESOURCE] was conducted. For non-interventional studies, this field may be 'Not applicable' as multiple purposes may be defined as primary ones.",
         "binding": {
           "strength": "required",
           "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-primary-purpose-hl7-nci",
@@ -1118,7 +1118,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.22 Resource.studyDesign.primaryPurpose"
+            "map": "1.17.15 Design.primaryPurpose"
           }
         ]
       },
@@ -1184,9 +1184,9 @@
         "id": "ResearchStudy.category:primaryDesign",
         "path": "ResearchStudy.category",
         "sliceName": "primaryDesign",
-        "short": "Is it an interventional or non-interventional study?",
-        "definition": "Non-interventional study design refers to a study that does not aim to alter study outcomes of interest. Interventional study design refers to a study that aims to alter study outcomes of interest.",
-        "comment": "Short input help: Select between non-interventional and interventional study design.",
+        "short": "Is it an interventional or non-interventional [RESOURCE]?",
+        "definition": "Non-interventional design refers to a [RESOURCE] that does not aim to alter its outcomes of interest. Interventional design refers to a [RESOURCE] that aims to alter its outcomes of interest.",
+        "comment": "Short input help: Select between non-interventional and interventional design for the given [RESOURCE].",
         "min": 1,
         "max": "1",
         "binding": {
@@ -1197,7 +1197,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.1 Resource.studyDesign.primaryDesign"
+            "map": "1.17.1 Design.primaryDesign"
           }
         ]
       },
@@ -1210,9 +1210,9 @@
         "id": "ResearchStudy.category:studyTypeInterventional",
         "path": "ResearchStudy.category",
         "sliceName": "studyTypeInterventional",
-        "short": "Specification of study type",
+        "short": "Interventional [RESOURCE] type",
         "definition": "The strategy for assigning interventions to participants.",
-        "comment": "Short input help: Select all that apply. If 'Other' is selected, you can specify the study type in the field 'Additional information about the study'.",
+        "comment": "Short input help: Select all that apply. If 'Other' is selected, please specify the type of the [RESOURCE] in the field 'Additional information about the [RESOURCE]'.",
         "min": 0,
         "max": "*",
         "binding": {
@@ -1223,7 +1223,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.2.1 Resource.studyDesign.studyType.interventional"
+            "map": "1.17.2.1 Design.studyType.interventional"
           }
         ]
       },
@@ -1231,9 +1231,9 @@
         "id": "ResearchStudy.category:studyTypeNonInterventional",
         "path": "ResearchStudy.category",
         "sliceName": "studyTypeNonInterventional",
-        "short": "Specification of study type",
+        "short": "Non-interventional [RESOURCE] type",
         "definition": "The primary strategy for participant identification and follow-up.",
-        "comment": "Short input help: Select all that apply. If 'Other' is selected, you can specify the study type in the field 'Additional information about the study'.",
+        "comment": "Short input help: Select all that apply. If 'Other' is selected, please specify the type of the [RESOURCE] in the field 'Additional information about the [RESOURCE]'.",
         "min": 0,
         "max": "*",
         "binding": {
@@ -1244,7 +1244,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.2.2 Resource.studyDesign.studyType.nonInterventional"
+            "map": "1.17.2.2 Design.nonInterventional"
           }
         ]
       },
@@ -1373,12 +1373,12 @@
       {
         "id": "ResearchStudy.condition",
         "path": "ResearchStudy.condition",
-        "short": "Primary health condition(s), disease(s) or focus of the study",
-        "definition": "Group of items providing information about primary health condition(s) or disease(s) considered in the study, or the focus of the study (e.g. medication, food, therapy, device, etc.).",
+        "short": "Primary health condition(s) or disease(s) considered in the [RESOURCE]",
+        "definition": "Group of items providing information about primary health condition(s) or disease(s) considered in the [RESOURCE].",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.3 Resource.studyDesign.studyConditions"
+            "map": "1.17.3 Design.conditions"
           }
         ]
       },
@@ -1760,21 +1760,18 @@
       {
         "id": "ResearchStudy.note",
         "path": "ResearchStudy.note",
-        "short": "Any additional information about the study",
-        "definition": "Any additional information about specific aspects of the study that cannot be captured by other properties.",
-        "comment": "Short input help: Any additional information about specific aspects of the study that cannot be captured by other properties.",
         "max": "1"
       },
       {
         "id": "ResearchStudy.note.text",
         "path": "ResearchStudy.note.text",
-        "short": "Any additional information about the study",
-        "definition": "Any additional information about specific aspects of the study that cannot be captured by other properties.",
-        "comment": "Short input help: Any additional information about specific aspects of the study that cannot be captured by other properties.",
+        "short": "Additional information about the [RESOURCE]",
+        "definition": "Any additional information about specific aspects of the [RESOURCE] that could not be captured by other fields..",
+        "comment": "Short input help: You can provide here specific aspects of the [RESOURCE] that could not be captured by other fields.",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.33 Resource.studyDesign.comment"
+            "map": "1.17.24 Design.comment"
           }
         ]
       },
@@ -1784,20 +1781,15 @@
         "max": "0"
       },
       {
-        "id": "ResearchStudy.objective",
-        "path": "ResearchStudy.objective",
-        "max": "1"
-      },
-      {
         "id": "ResearchStudy.objective.name",
         "path": "ResearchStudy.objective.name",
-        "short": "Research questions and/or hypothesis underlying the study",
-        "definition": "Statement of the research questions and/or hypotheses underlying the study.",
+        "short": "Research questions/hypotheses",
+        "definition": "Statement of the research questions and/or hypotheses underlying the [RESOURCE].",
         "min": 1,
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.29 Resource.studyDesign.hypothesis"
+            "map": "1.17.18 Design.hypotheses"
           }
         ]
       }

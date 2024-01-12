@@ -1,10 +1,10 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "nfdi4health-ex-mds-study-data-source",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-data-source",
+  "id": "nfdi4health-ex-mds-data-source",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-data-source",
   "version": "0.9",
-  "name": "NFDI4Health_EX_MDS_Study_Data_Source",
-  "title": "NFDI4Health EX MDS Study Data Source",
+  "name": "NFDI4Health_EX_MDS_Data_Source",
+  "title": "NFDI4Health EX MDS Data Source",
   "status": "draft",
   "publisher": "NFDI4Health",
   "contact": [
@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "description": "Extension informing about data sources from which study data are generated or extracted.",
+  "description": "Extension informing about data sources from which data are generated or extracted.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -46,13 +46,13 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Data sources from which study data are generated or extracted.",
-        "definition": "Group of items providing information about data sources from which study data are generated or extracted.",
+        "short": "Data sources of the [RESOURCE]",
+        "definition": "Group of items providing information about data sources from which the data of the [RESOURCE] are generated or extracted.",
         "max": "1",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.21 Resource.studyDesign.dataSource"
+            "map": "1.17.14 Design.dataSource"
           }
         ]
       },
@@ -60,15 +60,15 @@
         "id": "Extension.extension:general",
         "path": "Extension.extension",
         "sliceName": "general",
-        "short": "Data sources for the study (e.g. biosamples, registries, questionnaires, etc.)",
-        "definition": "Different types of data sources from which study data are generated or extracted.",
+        "short": "Type(s) of data sources",
+        "definition": "Different types of data sources from which the data of the [RESOURCE] are generated or extracted.",
         "comment": "Short input help: Select all that apply.",
         "min": 0,
         "max": "*",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "Design.dataSource.general"
+            "map": "1.17.14.1 Design.dataSource.general"
           }
         ]
       },
@@ -111,14 +111,15 @@
         "id": "Extension.extension:biosamples",
         "path": "Extension.extension",
         "sliceName": "biosamples",
-        "short": "Biosamples collected in the study",
-        "definition": "Specification of biosamples collected in the study.",
+        "short": "Biosamples collected",
+        "definition": "Specification of biosamples collected in the [RESOURCE].",
+        "comment": "Short input help: Select all that apply.",
         "min": 0,
         "max": "*",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "Design.dataSource.biosamples"
+            "map": "1.17.14.2 Design.dataSource.biosamples"
           }
         ]
       },
@@ -161,14 +162,15 @@
         "id": "Extension.extension:imaging",
         "path": "Extension.extension",
         "sliceName": "imaging",
-        "short": "Imaging data collected in the study",
-        "definition": "Specification of imaging data collected in the study.",
+        "short": "Imaging data collected",
+        "definition": "Specification of imaging data collected in the [RESOURCE].",
+        "comment": "Short input help: Select all that apply.",
         "min": 0,
         "max": "*",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "Design.dataSource.imaging"
+            "map": "1.17.14.3 Design.dataSource.imaging"
           }
         ]
       },
@@ -211,14 +213,15 @@
         "id": "Extension.extension:omics",
         "path": "Extension.extension",
         "sliceName": "omics",
-        "short": "Omics technology used in the study",
-        "definition": "Specification of omics technology applied in the study.",
+        "short": "Omics technology used",
+        "definition": "Specification of omics technology applied in the [RESOURCE].",
+        "comment": "Short input help: Select all that apply.",
         "min": 0,
         "max": "*",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "Design.dataSource.omics"
+            "map": "1.17.14.4 Design.dataSource.omics"
           }
         ]
       },
@@ -262,14 +265,14 @@
         "path": "Extension.extension",
         "sliceName": "description",
         "short": "Additional information about data sources",
-        "definition": "If needed, additional descriptive information about study data sources, e.g. indication of the data source(s) not listed in the property 'Data sources for the study' or more detailed description of the selected data sources.",
-        "comment": "Short input help: E.g., indication of the data source(s) not listed in the field „Data sources for the study” or more detailed description of the selected data sources.",
+        "definition": "If needed, additional descriptive information about the data sources of the [RESOURCE], e.g. indication of the data source(s) not listed in the field 'Type(s) of data sources' or a more detailed description of the selected data sources.",
+        "comment": "Short input help: You can indicate here other data source(s) not listed in the field 'Type(s) of data sources' or provide a more detailed description of the selected data sources.",
         "min": 0,
         "max": "1",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "Design.dataSource.description"
+            "map": "1.17.14.5 Design.dataSource.description"
           }
         ]
       },
@@ -295,7 +298,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-data-source"
+        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-data-source"
       },
       {
         "id": "Extension.value[x]",

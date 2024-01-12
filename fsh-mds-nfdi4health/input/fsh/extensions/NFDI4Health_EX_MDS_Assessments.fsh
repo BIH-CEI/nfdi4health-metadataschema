@@ -1,10 +1,10 @@
 Alias: $nfdi4health-vs-mds-study-assessments-snomedct-umls = https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-assessments-snomedct-umls
 
-Extension: NFDI4Health_EX_MDS_Study_Assessments
-Id: nfdi4health-ex-mds-study-assessments
-Title: "NFDI4Health EX MDS Study Assessments"
-Description: "Extension providing information about assessments/measurements included in the study."
-* ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-assessments"
+Extension: NFDI4Health_EX_MDS_Assessments
+Id: nfdi4health-ex-mds-assessments
+Title: "NFDI4Health EX MDS Assessments"
+Description: "Extension providing information about assessments/measurements included in the resource."
+* ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-assessments"
 * ^version = "0.9"
 * ^status = #draft
 * ^publisher = "NFDI4Health"
@@ -13,8 +13,9 @@ Description: "Extension providing information about assessments/measurements inc
 * ^context.type = #element
 * ^context.expression = "ResearchStudy"
 * . 0..*
-* . ^short = "Further assessments/measurements included in the study"
-* . ^definition = "Assessments/measurements included in the study"
+* . ^short = "Additional assessments/measurements in the [RESOURCE]"
+* . ^definition = "Any additional assessments/measurements included in the [RESOURCE]."
+* . ^comment = "Select all that apply."
 * value[x] 1..1
 * value[x] only Coding
 * valueCoding.code 1..1
@@ -22,8 +23,8 @@ Description: "Extension providing information about assessments/measurements inc
 * valueCoding from $nfdi4health-vs-mds-study-assessments-snomedct-umls (required)
 * valueCoding ^binding.description = "Value set defining codes to specify an assessment in a ResearchStudy resource."
 
-Mapping: NFDI4Health-Study-Assessments-to-FHIR
+Mapping: NFDI4Health-Assessments-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
-Source: NFDI4Health_EX_MDS_Study_Assessments
-* -> "1.17.34 Resource.studyDesign.assessments"
+Source: NFDI4Health_EX_MDS_Assessments
+* -> "1.17.25 Design.assessments"

@@ -1,10 +1,10 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "nfdi4health-ex-mds-study-data-sharing-plan",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-data-sharing-plan",
+  "id": "nfdi4health-ex-mds-data-sharing-plan",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-data-sharing-plan",
   "version": "0.9",
-  "name": "NFDI4Health_EX_MDS_Study_Data_Sharing_Plan",
-  "title": "NFDI4Health EX MDS Study Data Sharing Plan",
+  "name": "NFDI4Health_EX_MDS_Data_Sharing_Plan",
+  "title": "NFDI4Health EX MDS Data Sharing Plan",
   "status": "draft",
   "publisher": "NFDI4Health",
   "contact": [
@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "description": "Extension  providing information about the data sharing strategy of the study.",
+  "description": "Extension providing information about the data sharing strategy of the resource.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -46,14 +46,14 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Information about data sharing",
-        "definition": "Group of items providing information about the data sharing strategy of the study.",
+        "short": "Data sharing strategy of the [RESOURCE]",
+        "definition": "Group of items providing information about the data sharing strategy of the [RESOURCE].",
         "min": 1,
         "max": "1",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.35 Resource.studyDesign.dataSharingPlan"
+            "map": "1.17.26 Design.dataSharingPlan"
           }
         ]
       },
@@ -67,14 +67,14 @@
         "path": "Extension.extension",
         "sliceName": "generally",
         "short": "Is it planned to share the data?",
-        "definition": "Indication whether there is a plan to make data collected in the study available. In case of studies with patients or other individuals, this refers to individual participant data (IPD).",
+        "definition": "Indication whether there is a plan to make data collected in the [RESOURCE] available. In case of a [RESOURCE] with patients or other individuals, this refers to individual participant data (IPD).",
         "comment": "Short input help: Select one value from the list.",
         "min": 1,
         "max": "1",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.35.1 Resource.studyDesign.dataSharingPlan.generally"
+            "map": "1.17.16.1 Design.dataSharingPlan.generally"
           }
         ]
       },
@@ -118,14 +118,14 @@
         "path": "Extension.extension",
         "sliceName": "supportingInformation",
         "short": "Supporting documents available in addition to the data",
-        "definition": "Supporting information/documents which will be made available in addition to the study data.",
+        "definition": "Supporting information/documents which will be made available in addition to the data collected in the [RESOURCE].",
         "comment": "Short input help: Select all that apply.",
         "min": 0,
         "max": "*",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.35.2 Resource.studyDesign.dataSharingPlan.supportingInformation"
+            "map": "1.17.16.2 Design.dataSharingPlan.supportingInformation"
           }
         ]
       },
@@ -169,13 +169,13 @@
         "path": "Extension.extension",
         "sliceName": "timeFrame",
         "short": "When and for how long will the data be available?",
-        "definition": "Indication when the data and, if applicable, supporting documents will become available and for how long.",
+        "definition": "Indication of the time period for which the data and, if applicable, supporting documents will be made available.",
         "min": 0,
         "max": "1",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.35.3 Resource.studyDesign.dataSharingPlan.timeFrame"
+            "map": "1.17.26.3 Design.dataSharingPlan.timeFrame"
           }
         ]
       },
@@ -202,15 +202,15 @@
         "id": "Extension.extension:accessCriteria",
         "path": "Extension.extension",
         "sliceName": "accessCriteria",
-        "short": "Criteria for the data access",
-        "definition": "Indication by what access criteria data will be shared, including: a) with whom, b) for what types of analyses, and c) by what mechanism.",
-        "comment": "Short input help: E.g., with whom, for what types of analyses and by what mechanism the data will be shared.",
+        "short": "Criteria for data access",
+        "definition": "Indication of the access criteria by which the data will be shared, including: a) with whom; b) for which types of analyses; and c) by what mechanism.",
+        "comment": "Short input help: Please provide here with whom, for which types of analyses and by what mechanism the data will be shared.",
         "min": 0,
         "max": "1",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.35.4 Resource.studyDesign.dataSharingPlan.accessCriteria"
+            "map": "1.17.26.4 Design.dataSharingPlan.accessCriteria"
           }
         ]
       },
@@ -238,14 +238,14 @@
         "path": "Extension.extension",
         "sliceName": "description",
         "short": "Additional information about data sharing",
-        "definition": "Additional descriptive information providing more details about the data sharing, e.g. indication what data in particular will be shared or why the data will not be shared or why it is not yet decided.",
-        "comment": "Short input help: E.g., indication what data in particular will be shared or why the data will not be shared or why it is not yet decided",
+        "definition": "Additional descriptive information providing more details about data sharing, e.g. indication of which data in particular will be shared or why the data will not be shared or why it is not yet decided.",
+        "comment": "Short input help: Please indicate here which data in particular will be shared, or the reasons why it will not be shared or it is not yet decided.",
         "min": 0,
         "max": "1",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.35.5 Resource.studyDesign.dataSharingPlan.description"
+            "map": "1.17.26.5 Design.dataSharingPlan.description"
           }
         ]
       },
@@ -272,14 +272,14 @@
         "id": "Extension.extension:datashield",
         "path": "Extension.extension",
         "sliceName": "datashield",
-        "short": "Is the DataSHIELD/Opal infrastructure available?",
-        "definition": "Indication, whether the DataSHIELD/Opal infrastructure is available.",
+        "short": "DataSHIELD/Opal infrastructure available?",
+        "definition": "Indication whether the DataSHIELD/Opal infrastructure is available.",
         "min": 0,
         "max": "1",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.35.6 Resource.studyDesign.dataSharingPlan.datashield"
+            "map": "1.17.16.6 Design.dataSharingPlan.datashield"
           }
         ]
       },
@@ -319,6 +319,40 @@
         "min": 1
       },
       {
+        "id": "Extension.extension:requestData",
+        "path": "Extension.extension",
+        "sliceName": "requestData",
+        "short": "Link to data request application",
+        "definition": "If existing, a link to the web page where the data request form and/or information on data reuse can be found.",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.26.7 Design.dataSharingPlan.requestData"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:requestData.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:requestData.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "requestData"
+      },
+      {
+        "id": "Extension.extension:requestData.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "url"
+          }
+        ]
+      },
+      {
         "id": "Extension.extension:url",
         "path": "Extension.extension",
         "sliceName": "url",
@@ -329,7 +363,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.35.7 Resource.studyDesign.dataSharingPlan.url"
+            "map": "1.17.26.8 Design.dataSharingPlan.url"
           }
         ]
       },
@@ -353,9 +387,44 @@
         ]
       },
       {
+        "id": "Extension.extension:recordLinkage",
+        "path": "Extension.extension",
+        "sliceName": "recordLinkage",
+        "short": "Record linkage possible?",
+        "definition": "Indication if record linkage with other data sources is possible.",
+        "comment": "Additional Information: Record linkage refers to the merging of data on the same person from different databases.",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.26.9 Design.dataSharingPlan.recordLinkage"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:recordLinkage.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:recordLinkage.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "recordLinkage"
+      },
+      {
+        "id": "Extension.extension:recordLinkage.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-data-sharing-plan"
+        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-data-sharing-plan"
       },
       {
         "id": "Extension.value[x]",

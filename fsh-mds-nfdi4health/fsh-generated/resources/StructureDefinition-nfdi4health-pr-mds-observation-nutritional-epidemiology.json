@@ -1,0 +1,674 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "nfdi4health-pr-mds-observation-nutritional-epidemiology",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-observation-nutritional-epidemiology",
+  "version": "0.9",
+  "name": "NFDI4Health_PR_MDS_Observation_Nutritional_Epidemiology",
+  "title": "NFDI4Health PR MDS Observation Nutritional Epidemiology",
+  "status": "draft",
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "description": "Profile to collect information about a diet assessment used for nutritional epidemiology research.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
+    },
+    {
+      "identity": "NFDI4Health",
+      "name": "NFDI4Health to FHIR Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation",
+        "path": "Observation",
+        "short": "Diet assessment information collected in the [RESOURCE]",
+        "definition": "Group of items providing information on diet assessment.",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "NE1 DietAssessment"
+          }
+        ]
+      },
+      {
+        "id": "Observation.category",
+        "path": "Observation.category",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "code": "survey"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "75303-8",
+              "system": "http://loinc.org",
+              "display": "Nutrition assessment Narrative"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 10
+      },
+      {
+        "id": "Observation.component:instrument",
+        "path": "Observation.component",
+        "sliceName": "instrument",
+        "short": "Dietary assessment instrument used",
+        "definition": "Specification of the dietary assessment instrument used in the [RESOURCE].",
+        "comment": "Select one value from the list.",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:instrument.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "182",
+              "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+              "display": "Dietary assessment instrument"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:instrument.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-ne-instrument-nci-local"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "NE1.1 DietAssessment.instrument"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:ffqItemsNumber",
+        "path": "Observation.component",
+        "sliceName": "ffqItemsNumber",
+        "short": "Number of items in FFQ",
+        "definition": "The number of items inquired by the food frequency questionnaire (FFQ).",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:ffqItemsNumber.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "183",
+              "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+              "display": "Number of items in food frequency questionnaire"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:ffqItemsNumber.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "NE1.2 DietAssessment.ffqItemsNumber"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:mode",
+        "path": "Observation.component",
+        "sliceName": "mode",
+        "short": "Mode(s) used to apply the dietary assessment instrument",
+        "definition": "Specification of how the dietary assessment instrument was applied to participants of the [RESOURCE].",
+        "comment": "Select all that apply.",
+        "min": 1,
+        "max": "*"
+      },
+      {
+        "id": "Observation.component:mode.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "184",
+              "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+              "display": "Mode to apply dietary assessment instrument"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:mode.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-ne-mode-nci-mesh-local"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "NE1.3 DietAssessment.mode"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:device",
+        "path": "Observation.component",
+        "sliceName": "device",
+        "short": "Device(s) used to apply the dietary assessment instrument",
+        "definition": "Specification of device(s) used to apply the dietary assessment instrument to participants of the [RESOURCE].",
+        "comment": "Select all that apply.",
+        "min": 1,
+        "max": "*"
+      },
+      {
+        "id": "Observation.component:device.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "185",
+              "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+              "display": "Device to apply dietary assessment instrument"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:device.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-ne-device-nci-snomedct-local"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "NE1.4 DietAssessment.device"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:portionSizeEstimation",
+        "path": "Observation.component",
+        "sliceName": "portionSizeEstimation",
+        "short": "Portion size estimated by:",
+        "definition": "Specification of how the portion size is inquired in the dietary assessment instrument.",
+        "comment": "Select all that apply.",
+        "min": 1,
+        "max": "*",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "NE1.5 DietAssessment.portionSizeEstimation"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:portionSizeEstimation.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "186",
+              "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+              "display": "Method to estimate portion size"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:portionSizeEstimation.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-ne-portion-size-snomedct-local"
+        }
+      },
+      {
+        "id": "Observation.component:referencePeriodUnit",
+        "path": "Observation.component",
+        "sliceName": "referencePeriodUnit",
+        "short": "Reference period unit",
+        "definition": "Indication of the reference period the dietary assessment instrument refers to (e.g. 24-h recall refers to the previous day).",
+        "comment": "Select one value from the list.",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:referencePeriodUnit.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "258695005",
+              "system": "http://snomed.info/sct",
+              "display": "Unit of time (qualifier value)"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:referencePeriodUnit.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-ne-reference-period-unit-ucum"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "NE1.6 DietAssessment.referencePeriodUnit"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:referencePeriodNumber",
+        "path": "Observation.component",
+        "sliceName": "referencePeriodNumber",
+        "short": "Numerical value of reference period units",
+        "definition": "Indication of the number of reference period units assessed.",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:referencePeriodNumber.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "C49637",
+              "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+              "display": "Reference Period (Temporal Concept)"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:referencePeriodNumber.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "NE1.7 DietAssessment.referencePeriodNumber"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:repeat",
+        "path": "Observation.component",
+        "sliceName": "repeat",
+        "short": "Instrument applied repeatedly?",
+        "definition": "Indication whether the same instrument was applied repeatedly.",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:repeat.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "27582007",
+              "system": "http://snomed.info/sct",
+              "display": "Repeat (qualifier value)"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:repeat.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "NE1.8 DietAssessment.repeat"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:repeatFrequency",
+        "path": "Observation.component",
+        "sliceName": "repeatFrequency",
+        "short": "Frequency of instrument application",
+        "definition": "Indication of how often the dietary assessment instrument was repeatedly applied.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:repeatFrequency.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "C118873",
+              "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+              "display": "How Often (Intellectual Product)"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:repeatFrequency.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "NE1.9 DietAssessment.repeatFrequency"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:validity",
+        "path": "Observation.component",
+        "sliceName": "validity",
+        "short": "Instrument validated?",
+        "definition": "Indication whether the dietary assessment instrument was validated.",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:validity.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "C78690",
+              "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+              "display": "Content Validity (Quantitative Concept)"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:validity.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "NE1.10 DietAssessment.validity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:validityReference",
+        "path": "Observation.component",
+        "sliceName": "validityReference",
+        "short": "Reference describing the validation",
+        "definition": "Indication of the reference describing the validation.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:validityReference.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "187",
+              "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+              "display": "Validity reference"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:validityReference.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "NE1.11 DietAssessment.validityReference"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:reliability",
+        "path": "Observation.component",
+        "sliceName": "reliability",
+        "short": "Instrument described according to reliability?",
+        "definition": "Indication whether the dietary assessment instrument was described according to its reliability.",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:reliability.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "C73622",
+              "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+              "display": "Reliability (Quantitative Concept)"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:reliability.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "NE1.12 DietAssessment.reliability"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:reliabilityReference",
+        "path": "Observation.component",
+        "sliceName": "reliabilityReference",
+        "short": "Reference describing reliability measures",
+        "definition": "Indication of the reference describing the reliability measures.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:reliabilityReference.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "188",
+              "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+              "display": "Reliability reference"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:reliabilityReference.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "NE1.13 DietAssessment.reliabilityReference"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:dietarySupplements",
+        "path": "Observation.component",
+        "sliceName": "dietarySupplements",
+        "short": "Dietary supplements inquired?",
+        "definition": "Indication whether the dietary assessment instrument inquires information about dietary supplements.",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:dietarySupplements.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "C1505",
+              "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+              "display": "Dietary Supplement (Food)"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:dietarySupplements.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "NE1.14 DietAssessment.dietarySupplements"
+          }
+        ]
+      }
+    ]
+  }
+}

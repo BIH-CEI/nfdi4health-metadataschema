@@ -733,8 +733,40 @@
       "display": "Not assigned"
     },
     {
+      "code": "181",
+      "display": "Face-to-face interview"
+    },
+    {
       "code": "196",
       "display": "ICD-11"
+    },
+    {
+      "code": "182",
+      "display": "Dietary assessment instrument"
+    },
+    {
+      "code": "183",
+      "display": "Number of items in food frequency questionnaire"
+    },
+    {
+      "code": "184",
+      "display": "Mode to apply dietary assessment instrument"
+    },
+    {
+      "code": "185",
+      "display": "Device to apply dietary assessment instrument"
+    },
+    {
+      "code": "186",
+      "display": "Method to estimate portion size"
+    },
+    {
+      "code": "187",
+      "display": "Validity reference"
+    },
+    {
+      "code": "188",
+      "display": "Reliability reference"
     }
   ],
   "version": "0.9",
@@ -750,5 +782,5 @@
       ]
     }
   ],
-  "count": 179
+  "count": 187
 }

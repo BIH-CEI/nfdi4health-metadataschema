@@ -1,10 +1,10 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "nfdi4health-ex-mds-study-eligibility-criteria-exclusion-criteria",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-eligibility-criteria-exclusion-criteria",
+  "id": "nfdi4health-ex-mds-assessments",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-assessments",
   "version": "0.9",
-  "name": "NFDI4Health_EX_MDS_Study_Eligibility_Criteria_Exclusion_Criteria",
-  "title": "NFDI4Health EX MDS Study Eligibility Criteria Exclusion Criteria",
+  "name": "NFDI4Health_EX_MDS_Assessments",
+  "title": "NFDI4Health EX MDS Assessments",
   "status": "draft",
   "publisher": "NFDI4Health",
   "contact": [
@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "description": "Extension informing about the exclusion criteria.",
+  "description": "Extension providing information about assessments/measurements included in the resource.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -46,14 +46,13 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Exclusion criteria",
-        "definition": "Exclusion criteria for participation in the study.",
-        "comment": "Short input help: If possible, use an enumerated or bulleted list for each criterion.",
-        "max": "1",
+        "short": "Additional assessments/measurements in the [RESOURCE]",
+        "definition": "Any additional assessments/measurements included in the [RESOURCE].",
+        "comment": "Select all that apply.",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.23.5 Resource.studyDesign.eligibilityCriteria.exclusionCriteria"
+            "map": "1.17.25 Design.assessments"
           }
         ]
       },
@@ -65,7 +64,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-eligibility-criteria-exclusion-criteria"
+        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-assessments"
       },
       {
         "id": "Extension.value[x]",
@@ -73,9 +72,24 @@
         "min": 1,
         "type": [
           {
-            "code": "string"
+            "code": "Coding"
           }
-        ]
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-assessments-snomedct-umls",
+          "description": "Value set defining codes to specify an assessment in a ResearchStudy resource."
+        }
+      },
+      {
+        "id": "Extension.value[x].system",
+        "path": "Extension.value[x].system",
+        "min": 1
+      },
+      {
+        "id": "Extension.value[x].code",
+        "path": "Extension.value[x].code",
+        "min": 1
       }
     ]
   }

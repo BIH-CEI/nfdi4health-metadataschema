@@ -22,11 +22,19 @@
   "compose": {
     "include": [
       {
-        "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "system": "http://snomed.info/sct",
         "concept": [
           {
-            "code": "C17649",
-            "display": "Other"
+            "code": "74964007",
+            "display": "Other (qualifier value)"
+          },
+          {
+            "code": "706690007",
+            "display": "Web-based application software (physical object)"
+          },
+          {
+            "code": "22151000087106",
+            "display": "Paper report (record artifact)"
           }
         ]
       },
@@ -36,19 +44,6 @@
           {
             "code": "125",
             "display": "Online questionnaire"
-          }
-        ]
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "concept": [
-          {
-            "code": "706690007",
-            "display": "Web-based application software (physical object)"
-          },
-          {
-            "code": "22151000087106",
-            "display": "Paper report (record artifact)"
           }
         ]
       }

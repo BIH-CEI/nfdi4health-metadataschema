@@ -44,7 +44,7 @@ Usage: #example
 * category[primaryDesign].coding = $Remaining#130 "Interventional"
 * category[studyTypeInterventional].coding = $Remaining#139 "Unknown (interventional)"
 * extension[subject].valueCoding = $SCT#125676002 "Person (person)"
-* extension[studyGroupsOfDiseases].extension[generally].valueCoding = $UMLS#C0439673 "Unknown (Qualitative Concept)"
+* extension[groupsOfDiseases].extension[generally].valueCoding = $UMLS#C0439673 "Unknown (Qualitative Concept)"
 * category[samplingMethod].coding = $Remaining#160 "Non-probability"
 * category[samplingMethodNonProbability].coding = $Remaining#174 "Purposive"
 * extension[dataSource].extension[general][0].valueCoding = $Remaining#029 "Cognitive measurements"

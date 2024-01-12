@@ -394,10 +394,26 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-assessments"
+        },
+        "name": "NFDI4Health EX MDS Assessments",
+        "description": "Extension providing information about assessments/measurements included in the resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/nfdi4health-ex-mds-associated-party"
         },
         "name": "NFDI4Health EX MDS Associated Party",
         "description": "Group of items providing information about person(s), group(s) of persons or institution(s)/organisation(s) contributing to the resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-biospecimen"
+        },
+        "name": "NFDI4Health EX MDS Biospecimen",
+        "description": "Extension indicating whether samples of biomaterial from participants are retained in a biorepository, and providing additional information on these biosamples.",
         "exampleBoolean": false
       },
       {
@@ -426,10 +442,42 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-data-sharing-plan"
+        },
+        "name": "NFDI4Health EX MDS Data Sharing Plan",
+        "description": "Extension providing information about the data sharing strategy of the resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-data-source"
+        },
+        "name": "NFDI4Health EX MDS Data Source",
+        "description": "Extension informing about data sources from which data are generated or extracted.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/nfdi4health-ex-mds-document-use-rights"
         },
         "name": "NFDI4Health EX MDS Document Use Rights",
         "description": "Extension providing information about the rights to (re-)use the [RESOURCE].",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-eligibility-criteria-exclusion-criteria"
+        },
+        "name": "NFDI4Health EX MDS Eligibility Criteria Exclusion Criteria",
+        "description": "Extension informing about the exclusion criteria.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-eligibility-criteria-inclusion-criteria"
+        },
+        "name": "NFDI4Health EX MDS Eligibility Criteria Inclusion Criteria",
+        "description": "Extension informing about the inclusion criteria.",
         "exampleBoolean": false
       },
       {
@@ -446,6 +494,14 @@
         },
         "name": "NFDI4Health EX MDS FundingID",
         "description": "Extension providing information about the identifier assigned by a funder to the resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-study-of-diseases"
+        },
+        "name": "NFDI4Health EX MDS Groups Of Diseases",
+        "description": "Extension covering information about groups of diseases or conditions on which the data were collected in a resource.",
         "exampleBoolean": false
       },
       {
@@ -509,7 +565,7 @@
           "reference": "StructureDefinition/nfdi4health-ex-mds-off-label-use"
         },
         "name": "NFDI4Health EX MDS Off Label Use",
-        "description": "Extension informing the unapproved (off-label) use of a drug product in a study.",
+        "description": "Extension informing the unapproved (off-label) use of a drug product in a resource.",
         "exampleBoolean": false
       },
       {
@@ -610,22 +666,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nfdi4health-ex-mds-study-assessments"
-        },
-        "name": "NFDI4Health EX MDS Study Assessments",
-        "description": "Extension providing information about assessments/measurements included in the study.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/nfdi4health-ex-mds-study-biospecimen"
-        },
-        "name": "NFDI4Health EX MDS Study Biospecimen",
-        "description": "Extension indicating whether samples of biomaterial from study participants are retained in a biorepository, and providing additional information on these biosamples.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/nfdi4health-ex-mds-study-comparison-group"
         },
         "name": "NFDI4Health EX MDS Study Comparison Group",
@@ -634,50 +674,10 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nfdi4health-ex-mds-study-data-sharing-plan"
-        },
-        "name": "NFDI4Health EX MDS Study Data Sharing Plan",
-        "description": "Extension  providing information about the data sharing strategy of the study.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/nfdi4health-ex-mds-study-data-source"
-        },
-        "name": "NFDI4Health EX MDS Study Data Source",
-        "description": "Extension informing about data sources from which study data are generated or extracted.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/nfdi4health-ex-mds-study-eligibility-criteria-exclusion-criteria"
-        },
-        "name": "NFDI4Health EX MDS Study Eligibility Criteria Exclusion Criteria",
-        "description": "Extension informing about the exclusion criteria.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/nfdi4health-ex-mds-study-eligibility-criteria-inclusion-criteria"
-        },
-        "name": "NFDI4Health EX MDS Study Eligibility Criteria Inclusion Criteria",
-        "description": "Extension informing about the inclusion criteria.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/nfdi4health-ex-mds-study-ethics-committee-approval"
         },
         "name": "NFDI4Health EX MDS Study Ethics Committee Approval",
         "description": "Extension informing about the status of the study approval from the (leading) ethics committee",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/nfdi4health-ex-mds-study-groups-of-diseases"
-        },
-        "name": "NFDI4Health EX MDS Study Groups Of Diseases",
-        "description": "Extension covering information about groups of diseases or conditions on which the data were collected in the study.",
         "exampleBoolean": false
       },
       {
@@ -722,14 +722,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nfdi4health-ex-mds-study-subject"
-        },
-        "name": "NFDI4Health EX MDS Study Subject",
-        "description": "Extension informing about the subject of a study.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/nfdi4health-ex-mds-study-target-followup-duration"
         },
         "name": "NFDI4Health EX MDS Study Target Followup Duration",
@@ -742,6 +734,14 @@
         },
         "name": "NFDI4Health EX MDS Study Time Perspectives",
         "description": "Extension informing about the temporal design of a study.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-subject"
+        },
+        "name": "NFDI4Health EX MDS Subject",
+        "description": "Extension informing about the subject of a resource.",
         "exampleBoolean": false
       },
       {
@@ -847,9 +847,9 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/nfdi4health-vs-mds-ne-mode-umls-local"
+          "reference": "ValueSet/nfdi4health-vs-mds-ne-mode-nci-mesh-local"
         },
-        "name": "NFDI4Health NE Mode [UMLS, Local]",
+        "name": "NFDI4Health NE Mode [NCI, MeSH, Local]",
         "description": "Value Set to define the mode within Diet Assessment",
         "exampleBoolean": false
       },
@@ -863,9 +863,9 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/nfdi4health-vs-mds-ne-reference-period-unit-snomedct"
+          "reference": "ValueSet/nfdi4health-vs-mds-ne-reference-period-unit-ucum"
         },
-        "name": "NFDI4Health NE Portion Size [SNOMED CT]",
+        "name": "NFDI4Health NE Portion Size [UCUM]",
         "description": "Value Set to define the reference period unit used within Diet Assessment",
         "exampleBoolean": false
       },
@@ -911,10 +911,18 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/nfdi4health-pr-mds-observation-nutritional-epidemiology"
+        },
+        "name": "NFDI4Health PR MDS Observation Nutritional Epidemiology",
+        "description": "Profile to collect information about a diet assessment used for nutritional epidemiology research.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/nfdi4health-pr-mds-organization"
         },
         "name": "NFDI4Health PR MDS Organization",
-        "description": "To collect information on rganizations/institutions having roles and the affiliation and address of persons having roles.",
+        "description": "Profile to collect information on organizations/institutions having roles and the affiliation and address of persons having roles.",
         "exampleBoolean": false
       },
       {

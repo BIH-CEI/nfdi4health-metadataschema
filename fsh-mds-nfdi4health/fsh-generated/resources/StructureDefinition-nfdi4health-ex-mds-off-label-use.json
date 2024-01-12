@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "description": "Extension informing the unapproved (off-label) use of a drug product in a study.",
+  "description": "Extension informing the unapproved (off-label) use of a drug product in a resource.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -48,12 +48,12 @@
         "path": "Extension",
         "short": "Off-label use of a drug product",
         "definition": "Unapproved (off-label) use of a drug product.",
-        "comment": "Short input help: Select 'Yes' or 'No' only for drug studies and 'Not applicable' for all other studies.",
+        "comment": "Short input help: Select 'Yes' or 'No' only for a drug [RESOURCE] and 'Not applicable' for any other [RESOURCE].",
         "max": "1",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.37.4 Resource.studyDesign.interventional.offLabelUse"
+            "map": "1.17.28.4 Design.interventional.offLabelUse"
           }
         ]
       },

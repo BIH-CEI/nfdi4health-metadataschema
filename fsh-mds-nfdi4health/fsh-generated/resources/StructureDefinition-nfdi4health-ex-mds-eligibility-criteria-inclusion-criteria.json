@@ -1,10 +1,10 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "nfdi4health-ex-mds-study-subject",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-subject",
+  "id": "nfdi4health-ex-mds-eligibility-criteria-inclusion-criteria",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-eligibility-criteria-inclusion-criteria",
   "version": "0.9",
-  "name": "NFDI4Health_EX_MDS_Study_Subject",
-  "title": "NFDI4Health EX MDS Study Subject",
+  "name": "NFDI4Health_EX_MDS_Eligibility_Criteria_Inclusion_Criteria",
+  "title": "NFDI4Health EX MDS Eligibility Criteria Inclusion Criteria",
   "status": "draft",
   "publisher": "NFDI4Health",
   "contact": [
@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "description": "Extension informing about the subject of a study.",
+  "description": "Extension informing about the inclusion criteria.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -46,15 +46,14 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Primary study subject ",
-        "definition": "Primary study subject, i.e. a person, an animal or some other type of the subject.",
-        "comment": "Short input help: Select one value from the list.",
-        "min": 1,
+        "short": "Inclusion criteria",
+        "definition": "Inclusion criteria for participation in the [RESOURCE].",
+        "comment": "Short input help: If possible, use an enumerated or bulleted list for each criterion, starting with '-' and finishing with ';'.",
         "max": "1",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.19 Resource.studyDesign.subject"
+            "map": "1.17.16.4 Design.eligibilityCriteria.inclusionCriteria"
           }
         ]
       },
@@ -66,7 +65,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-subject"
+        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-eligibility-criteria-inclusion-criteria"
       },
       {
         "id": "Extension.value[x]",
@@ -74,24 +73,9 @@
         "min": 1,
         "type": [
           {
-            "code": "Coding"
+            "code": "string"
           }
-        ],
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-subject-snomedct",
-          "description": "Value set defining codes for study sujects in a ResearchStudy resource."
-        }
-      },
-      {
-        "id": "Extension.value[x].system",
-        "path": "Extension.value[x].system",
-        "min": 1
-      },
-      {
-        "id": "Extension.value[x].code",
-        "path": "Extension.value[x].code",
-        "min": 1
+        ]
       }
     ]
   }

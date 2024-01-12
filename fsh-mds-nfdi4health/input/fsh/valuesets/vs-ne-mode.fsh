@@ -1,8 +1,8 @@
-ValueSet: NFDI4Health_VS_MDS_NE_Mode_UMLS_Local
-Id: nfdi4health-vs-mds-ne-mode-umls-local
-Title: "NFDI4Health NE Mode [UMLS, Local]"
+ValueSet: NFDI4Health_VS_MDS_NE_Mode_NCI_MeSH_Local
+Id: nfdi4health-vs-mds-ne-mode-nci-mesh-local
+Title: "NFDI4Health NE Mode [NCI, MeSH, Local]"
 Description: "Value Set to define the mode within Diet Assessment"
-* ^url = "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-ne-mode-umls-local"
+* ^url = "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-ne-mode-nci-mesh-local"
 * ^status = #draft
 * ^version = "0.9"
 * ^experimental = true
@@ -12,7 +12,7 @@ Description: "Value Set to define the mode within Diet Assessment"
 
 * $Remaining#119 "Proxy-administered"
 * $Remaining#129 "Screener"
-* $UMLS#C0681912 "face-to-face interview"
-* $UMLS#C0021823 "Telephone interview"
-* $UMLS#C0205394 "Other"
-* $UMLS#C1519231 "Self-Administered"
+* $Remaining#181 "Face-to-face interview"
+* $MeSH#M0011566 "Interviews, Telephone"
+* $NCI#C17649 "Other (Qualitative Concept)"
+* $NCI#C25670 "Self-Administered (Functional Concept)"

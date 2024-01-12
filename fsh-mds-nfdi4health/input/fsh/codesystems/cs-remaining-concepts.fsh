@@ -187,4 +187,14 @@ Description: "Code system defining remaining concepts without mapping to concept
 * #178 "Secondary data source"
 * #179 "Biobank"
 * #180 "Not assigned"
+* #181 "Face-to-face interview"
 * #196 "ICD-11"
+
+//UC 5.1 - Codes for concepts to be used in slices
+* #182 "Dietary assessment instrument"
+* #183 "Number of items in food frequency questionnaire"
+* #184 "Mode to apply dietary assessment instrument"
+* #185 "Device to apply dietary assessment instrument"
+* #186 "Method to estimate portion size"
+* #187 "Validity reference"
+* #188 "Reliability reference"

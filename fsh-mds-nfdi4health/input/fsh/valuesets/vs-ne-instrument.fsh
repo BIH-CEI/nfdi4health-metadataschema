@@ -13,6 +13,6 @@ Description: "Value Set to define the instruments used within Diet Assessment"
 * $NCI#C94817 "Food Frequency Questionnaire"
 * $NCI#C17994 "Dietary History"
 * $NCI#C17649 "Other (Qualitative Concept)"
-* $Remaining#118 "24-h dietary recall"
+* $Remaining#118 "24-h dietary recall" //226069004 | Review of current diet (procedure) |
 * $Remaining#120 "Food record"
-* $Remaining#129 "Screener"
+* $Remaining#129 "Screener" //  $NCI#C188186 "Dietary Screener Questionnaire (Intellectual Product)" https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=23.12d&ns=ncit&code=C188186&key=1921661669&b=1&n=null

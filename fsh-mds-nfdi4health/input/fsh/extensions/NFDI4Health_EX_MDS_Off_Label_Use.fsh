@@ -3,7 +3,7 @@ Alias: $nfdi4health-vs-mds-yes-no-not-applicable-snomedct = https://www.nfdi4hea
 Extension: NFDI4Health_EX_MDS_Off_Label_Use
 Id: nfdi4health-ex-mds-off-label-use
 Title: "NFDI4Health EX MDS Off Label Use"
-Description: "Extension informing the unapproved (off-label) use of a drug product in a study."
+Description: "Extension informing the unapproved (off-label) use of a drug product in a resource."
 * ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-off-label-use"
 * ^version = "0.9"
 * ^status = #draft
@@ -15,7 +15,7 @@ Description: "Extension informing the unapproved (off-label) use of a drug produ
 * . 0..1
 * . ^short = "Off-label use of a drug product"
 * . ^definition = "Unapproved (off-label) use of a drug product."
-* . ^comment = "Short input help: Select 'Yes' or 'No' only for drug studies and 'Not applicable' for all other studies."
+* . ^comment = "Short input help: Select 'Yes' or 'No' only for a drug [RESOURCE] and 'Not applicable' for any other [RESOURCE]."
 * value[x] 1..1
 * value[x] only Coding
 * valueCoding.code 1..1
@@ -27,4 +27,4 @@ Mapping: NFDI4Health-Off-Label-Use-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Off_Label_Use
-* -> "1.17.37.4 Resource.studyDesign.interventional.offLabelUse"
+* -> "1.17.28.4 Design.interventional.offLabelUse"

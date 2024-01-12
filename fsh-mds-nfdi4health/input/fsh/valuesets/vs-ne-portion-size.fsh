@@ -10,7 +10,6 @@ Description: "Value Set to define the portion size used within Diet Assessment"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 
-
 * $Remaining#121 "Described portion sizes"
 * $Remaining#122 "Picture book/visual aids"
 * $Remaining#123 "Weighing"

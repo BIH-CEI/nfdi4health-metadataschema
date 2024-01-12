@@ -46,13 +46,13 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Were mortality data collected?",
-        "definition": "Mortality data.",
+        "short": "Collects mortality data?",
+        "definition": "Indication whether mortality data are collected in the [RESOURCE].",
         "max": "1",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.5 Resource.studyDesign.mortalityData"
+            "map": "1.17.6 Design.mortalityData"
           }
         ]
       },

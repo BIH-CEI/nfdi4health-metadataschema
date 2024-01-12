@@ -10,7 +10,7 @@ Description: "Value Set to define the device used within Diet Assessment"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 
-* $NCI#C17649 "Other"
+* $SCT#74964007  "Other (qualifier value)"
 * $Remaining#125 "Online questionnaire"
 * $SCT#706690007 "Web-based application software (physical object)"
 * $SCT#22151000087106 "Paper report (record artifact)"
