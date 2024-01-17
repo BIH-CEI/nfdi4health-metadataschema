@@ -172,22 +172,6 @@ Description: "NFDI4Health Logical Model MDS Module Design V3.3"
 * Design.administrativeInformation.endDate ^definition = "**Description:** In case of a [RESOURCE] with patients or other participants, it is the date when the last participant is examined or receives an intervention, or the date of the last participant’s last visit."
 * Design.administrativeInformation.endDate ^alias = "Design.administrativeInformation.endDate"
 
-* Design.population 1..1 BackboneElement "population" "Population of the [RESOURCE]"
-* Design.population ^definition = "**Description:** Group of items providing information about the population of the [RESOURCE]."
-* Design.population ^alias = "Design.population"
-
-* Design.population.countries 1..*  CodeableConcept "countries" "Country(ies)"
-* Design.population.countries from  http://hl7.org/fhir/ValueSet/country (required)
-* Design.population.countries ^definition = "**Description: **Country or countries where the [RESOURCE] takes place."
-* Design.population.countries ^alias = "Design.population.countries"
-* Design.population.countries ^base.path = "Design.population.countries"
-
-
-* Design.population.region 0..1  string "region" "Region(s) and/or city(ies)"
-* Design.population.region ^definition = "**Description: **If applicable, region(s) and/or city(ies) within a country where the [RESOURCE] takes place."
-* Design.population.region ^alias = "Design.population.region"
-* Design.population.region ^base.path = "Design.population.region"
-
 * Design.centers 0..1 CodeableConcept "centers" "Mono- or multicentric?"
 * Design.centers from NFDI4Health_VS_MDS_Study_Centers_SNOMEDCT_Local (required)
 * Design.centers ^definition = "**Description: **Specification whether the [RESOURCE] is conducted at only one or at more than one [RESOURCE] center."
@@ -304,3 +288,168 @@ Description: "NFDI4Health Logical Model MDS Module Design V3.3"
 * Design.eligibilityCriteria.ageMax.timeUnit from NFDI4Health_VS_MDS_Time_Units_UCUM_LOINC (required)
 * Design.eligibilityCriteria.ageMax.timeUnit ^definition = "**Description: **Unit of measurement used to describe the maximum eligible age."
 * Design.eligibilityCriteria.ageMax.timeUnit ^alias = "Design.eligibilityCriteria.ageMax.timeUnit"
+
+* Design.eligibilityCriteria.genders 0..1 CodeableConcept "genders" "Eligible gender"
+* Design.eligibilityCriteria.genders from NFDI4Health_VS_MDS_Study_Eligibility_Gender_SNOMEDCT_Local (required)
+* Design.eligibilityCriteria.genders ^definition = "**Description: **Gender of potential participants eligible to participate in the [RESOURCE]."
+* Design.eligibilityCriteria.genders ^alias = "Design.eligibilityCriteria.genders"
+
+* Design.eligibilityCriteria.inclusionCriteria 0..1 string "inclusionCriteria" "Inclusion criteria"
+* Design.eligibilityCriteria.inclusionCriteria ^definition = "**Description: **Inclusion criteria for participation in the [RESOURCE]."
+* Design.eligibilityCriteria.inclusionCriteria ^alias = "Design.eligibilityCriteria.inclusionCriteria"
+* Design.eligibilityCriteria.inclusionCriteria ^example.label = "example 1"
+* Design.eligibilityCriteria.inclusionCriteria ^example.valueString = "- First inclusion criterion; - Second inclusion criterion;"
+
+* Design.eligibilityCriteria.exclusionCriteria 0..1  string "exclusionCriteria" "Exclusion criteria"
+* Design.eligibilityCriteria.exclusionCriteria ^definition = "**Description: **Exclusion criteria for participation in the [RESOURCE]."
+* Design.eligibilityCriteria.exclusionCriteria ^alias = "Design.eligibilityCriteria.exclusionCriteria"
+* Design.eligibilityCriteria.exclusionCriteria ^example.label = "example 1"
+* Design.eligibilityCriteria.exclusionCriteria ^example.valueString = "- First inclusion criterion; - Second inclusion criterion;"
+
+* Design.population 1..1 BackboneElement "population" "Population of the [RESOURCE]"
+* Design.population ^definition = "**Description:** Group of items providing information about the population of the [RESOURCE]."
+* Design.population ^alias = "Design.population"
+
+* Design.population.countries 1..*  CodeableConcept "countries" "Country(ies)"
+* Design.population.countries from  http://hl7.org/fhir/ValueSet/country (required)
+* Design.population.countries ^definition = "**Description: **Country or countries where the [RESOURCE] takes place."
+* Design.population.countries ^alias = "Design.population.countries"
+* Design.population.countries ^base.path = "Design.population.countries"
+
+* Design.population.region 0..1  string "region" "Region(s) and/or city(ies)"
+* Design.population.region ^definition = "**Description: **If applicable, region(s) and/or city(ies) within a country where the [RESOURCE] takes place."
+* Design.population.region ^alias = "Design.population.region"
+* Design.population.region ^base.path = "Design.population.region"
+
+* Design.population.coverage 0..1  CodeableConcept "coverage" "Coverage"
+* Design.population.coverage ^definition = "**Description:** Specification of the recruitment area of the [RESOURCE]."
+* Design.population.coverage ^alias = "Design.population.coverage"
+* Design.population.coverage ^base.path = "Design.population.coverage"
+* Design.population.coverage ^base.min = 0
+* Design.population.coverage ^base.max = "1"
+
+* Design.population.description 0..1  string "description" "Population description"
+* Design.population.description ^definition = "**Description: **Additional descriptive information providing more details about the population of the [RESOURCE]."
+* Design.population.description ^alias = "Design.population.description"
+
+* Design.population.targetSampleSize 0..1 Quantity "targetSampleSize" "Target sample size"
+* Design.population.targetSampleSize ^definition = "**Description: **Intended number of observational units for the whole [RESOURCE] (e.g. intended number of [RESOURCE] participants at all sites of the [RESOURCE])."
+* Design.population.targetSampleSize ^alias = "Design.population.targetSampleSize"
+
+* Design.population.obtainedSampleSize 0..1  Quantity "obtainedSampleSize" "Obtained sample size"
+* Design.population.obtainedSampleSize ^comment = "<p><strong>Additional information:</strong> The value is only available after the end of recruitment.</p> \n "
+* Design.population.obtainedSampleSize ^definition = "**Description: **Obtained number of observational units for the whole [RESOURCE] (e.g. obtained number of [RESOURCE] participants at all sites of the [RESOURCE])."
+* Design.population.obtainedSampleSize ^alias = "Design.population.obtainedSampleSize"
+
+* Design.hypotheses 0..* string "hypothesis" "Research questions/hypotheses"
+* Design.hypotheses ^definition = "**Description: **Statement of the research questions and/or hypotheses underlying the [RESOURCE]."
+* Design.hypotheses ^alias = "Design.hypotheses"
+
+* Design.arms 0..* BackboneElement "arms" "Arms of the [RESOURCE]"
+* Design.arms ^definition = "**Description: **Group of items providing information about the arms of the [RESOURCE]."
+* Design.arms ^alias = "Design.arms"
+
+* Design.arms.label 1..1  string "label" "Name of the arm"
+* Design.arms.label ^comment = "<p><strong>Additional information: </strong>'Arm' means a pre-specified group or subgroup of participants in the [RESOURCE] assigned to receive specific intervention(s) (or no intervention) according to a protocol.</p> \n "
+* Design.arms.label ^definition = "**Description: **Short name used to identify the arm."
+* Design.arms.label ^alias = "Design.arms.label"
+
+* Design.arms.type 1..1  CodeableConcept "type" "Role of the arm"
+* Design.arms.type from NFDI4Health_VS_MDS_Study_Arm_Group_Type_NCI (required)
+* Design.arms.type ^definition = "**Description: **Role of the given arm in the [RESOURCE]."
+* Design.arms.type ^alias = "Design.arms.type"
+
+* Design.arms.description 0..1  string "description" "Additional information about the arm"
+* Design.arms.description ^comment = "<p><strong>Additional information: </strong>If needed, additional descriptive information (including which interventions are administered in each arm) to differentiate each arm from other arms in the [RESOURCE].</p> \n "
+* Design.arms.description ^definition = "**Description: **Additional descriptive information about the given arm."
+* Design.arms.description ^alias = "Design.arms.description"
+
+* Design.groups 0..* BackboneElement "groups" "Groups/cohorts of the [RESOURCE]"
+* Design.groups ^definition = "**Description:** Group of items providing information about the groups/cohorts of the [RESOURCE]."
+* Design.groups ^alias = "Design.groups"
+
+* Design.groups.label 1..1  string "label" "Name of the group"
+* Design.groups.label ^comment = "<p><strong>Additional information:</strong> 'Group' means a predefined group (cohort) of participants to be studied.</p> \n "
+* Design.groups.label ^definition = "**Description:** Short name used to identify the group."
+* Design.groups.label ^alias = "Design.groups.label"
+
+* Design.groups.description 0..1  string "description" "Additional information about the group"
+* Design.groups.description ^comment = "<p><strong>Additional information:</strong> Explanation of the nature of the [RESOURCE] group (for example, participants with and without a condition, participants with and without an exposure, etc.).</p> \n "
+* Design.groups.description ^definition = "**Description:** Additional descriptive information about the given group."
+* Design.groups.description ^alias = "Design.groups.description"
+
+* Design.interventions 0..* BackboneElement "interventions" "Interventions of the [RESOURCE]"
+* Design.interventions ^comment = "<p><strong>Additional information: </strong>Specification of the intervention(s) associated with each arm.</p> \n "
+* Design.interventions ^definition = "**Description: **Group of items providing information about the interventions of the [RESOURCE]."
+* Design.interventions ^alias = "Design.interventions"
+
+* Design.interventions.name 1..1  string "name" "Name of the intervention"
+* Design.interventions.name ^definition = "**Description: **A short descriptive name of the intervention."
+* Design.interventions.name ^alias = "Design.interventions.name"
+
+* Design.interventions.type 0..1  CodeableConcept "type" "Type of the intervention"
+* Design.interventions.type from NFDI4Health_VS_MDS_Study_Intervention_Type_NCI (required)
+* Design.interventions.type ^definition = "**Description: **General type of the given intervention."
+* Design.interventions.type ^alias = "Design.interventions.type"
+
+* Design.interventions.type ^binding.description = "NFDI4Health_VS_MDS_Study_Intervention_Type_NCI_UMLS"
+* Design.interventions.description 0..1  string "description" "Additional information about the intervention"
+* Design.interventions.description ^definition = "**Description: **If needed, additional descriptive information about the given intervention."
+* Design.interventions.description ^alias = "Design.interventions.description"
+
+* Design.interventions.armsLabel 0..*  string "armsLabel" "Name(s) of the arm(s) associated with the given intervention"
+* Design.interventions.armsLabel ^definition = "**Description: **Name(s) of the [RESOURCE] arm(s) associated with the given intervention."
+* Design.interventions.armsLabel ^alias = "Design.interventions.armsLabel"
+
+* Design.exposures 0..* BackboneElement "exposures" "Exposures of the [RESOURCE]"
+* Design.exposures ^comment = "<p><strong>Additional information:</strong> Specification of the exposure(s) associated with each group.</p> \n "
+* Design.exposures ^definition = "**Description:** Group of items providing information about the exposures of the [RESOURCE]."
+* Design.exposures ^alias = "Design.exposures"
+
+
+* Design.exposures.name 1..1 string "name" "Name of the exposure"
+* Design.exposures.name ^definition = "**Description:** A short descriptive name of the exposure."
+* Design.exposures.name ^alias = "Design.exposures.name"
+
+* Design.exposures.type 0..1  CodeableConcept "type" "Type of the exposure"
+* Design.exposures.type from NFDI4Health_VS_MDS_Study_Exposure_Type_NCI (required)
+* Design.exposures.type ^definition = "**Description:** General type of the given exposure."
+* Design.exposures.type ^alias = "Design.exposures.type"
+
+* Design.exposures.description 0..1  string "description" "Additional information about the exposure"
+* Design.exposures.description ^definition = "**Description:** If needed, additional descriptive information about the given exposure."
+* Design.exposures.description ^alias = "Design.exposures.description"
+
+* Design.exposures.groupsLabel 0..* string "groupsLabel" "Name(s) of the group(s) associated with the given exposure"
+* Design.exposures.groupsLabel ^definition = "**Description:** Name(s) of the [RESOURCE] group(s) associated with the given exposure."
+* Design.exposures.groupsLabel ^alias = "Design.exposures.groupsLabel"
+
+* Design.outcomes 0..* BackboneElement "outcomes" "Outcome measures in the [RESOURCE]"
+* Design.outcomes ^comment = "<p><strong>Additional information: </strong>he items are optional, especially for non-interventional studies.</p> \n "
+* Design.outcomes ^definition = "**Description: **Group of items providing information about outcome measures."
+* Design.outcomes ^alias = "Design.outcomes"
+* Design.outcomes.type 1..1 CodeableConcept "type" "Type of the outcome measure"
+* Design.outcomes.type from NFDI4Health_VS_MDS_Study_Outcome_Type_NCI (required)
+* Design.outcomes.type ^definition = "**Description: **The type indicates the degree of importance of the outcome measure in the [RESOURCE]."
+* Design.outcomes.type ^alias = "Design.outcomes.type"
+
+* Design.outcomes.title 1..1  string "title" "Name of the outcome measure"
+* Design.outcomes.title ^definition = "**Description: **Name of the outcome measure.\nFor non-interventional studies, this can be the name of specific measurement(s) or observation(s) used to describe patterns of diseases or traits or associations with exposures, risk factors or treatment."
+* Design.outcomes.title ^alias = "Design.outcomes.title"
+
+* Design.outcomes.description 0..1  string "description" "Description of the outcome measure"
+* Design.outcomes.description ^definition = "**Description: **Additional descriptive information about the given outcome."
+* Design.outcomes.description ^alias = "Design.outcomes.description"
+
+* Design.outcomes.timeFrame 0..1  string "timeFrame" "Time point(s) of assessment"
+* Design.outcomes.timeFrame ^definition = "**Description: **Description of the time point(s) at which the measurement for the outcome is assessed, e.g. the specific duration of time over which each participant is assessed."
+* Design.outcomes.timeFrame ^alias = "Design.outcomes.timeFrame"
+
+* Design.comment 0..1  string "comment" "Additional information about the [RESOURCE]"
+* Design.comment ^definition = "**Description: **Any additional information about specific aspects of the [RESOURCE] that could not be captured by other fields."
+* Design.comment ^alias = "Design.comment"
+
+* Design.assessments 0..* CodeableConcept "assessments" "Additional assessments/measurements in the [RESOURCE]"
+* Design.assessments from NFDI4Health_VS_MDS_Study_Assessments_SCT_NCI (required)
+* Design.assessments ^definition = "**Description: **Any additional assessments/measurements included in the [RESOURCE]."
+* Design.assessments ^alias = "Design.assessments"

@@ -19,7 +19,7 @@ Description: "Information about the intervention or exposure in a study."
 * description ^short = "Additional information about the intervention/exposure"
 * description ^definition = "If needed, additional descriptive information about the given intervention/exposure."
 * characteristic.definitionCodeableConcept 1..1
-* characteristic.definitionCodeableConcept from NFDI4Health_VS_MDS_Study_Intervention_Type_NCI_UMLS (required)
+* characteristic.definitionCodeableConcept from NFDI4Health_VS_MDS_Study_Intervention_Type_NCI (required)
 * characteristic.definitionCodeableConcept ^short = "Type of the intervention/exposure"
 * characteristic.definitionCodeableConcept ^definition = "General type of the given intervention/exposure."
 * characteristic.definitionCodeableConcept ^binding.description = "Value set defining codes to specify the general type of the given intervention/exposure in the study."

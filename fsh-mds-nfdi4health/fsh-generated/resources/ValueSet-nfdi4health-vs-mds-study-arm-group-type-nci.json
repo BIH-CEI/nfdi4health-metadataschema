@@ -1,0 +1,55 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "NFDI4Health_VS_MDS_Study_Arm_Group_Type_NCI",
+  "id": "nfdi4health-vs-mds-study-arm-group-type-nci",
+  "title": "NFDI4Health VS MDS Study Arm Group Type [NCI]",
+  "description": "Value set defining codes to specify the role of a study arm or group in a ResearchStudy resource.",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-arm-group-type-nci",
+  "version": "0.9",
+  "experimental": true,
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "concept": [
+          {
+            "code": "C174266",
+            "display": "Investigational Arm"
+          },
+          {
+            "code": "C174267",
+            "display": "Active Comparator Arm"
+          },
+          {
+            "code": "C174268",
+            "display": "Placebo Control Arm"
+          },
+          {
+            "code": "C174269",
+            "display": "Sham Comparator Arm"
+          },
+          {
+            "code": "C174270",
+            "display": "No Intervention Arm"
+          },
+          {
+            "code": "C17649",
+            "display": "Other"
+          }
+        ]
+      }
+    ]
+  }
+}

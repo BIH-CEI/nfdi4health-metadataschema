@@ -577,68 +577,6 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-mds-design.Design.population",
-        "path": "nfdi4health-lm-mds-design.Design.population",
-        "short": "population",
-        "definition": "**Description:** Group of items providing information about the population of the [RESOURCE].",
-        "alias": [
-          "Design.population"
-        ],
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ]
-      },
-      {
-        "id": "nfdi4health-lm-mds-design.Design.population.countries",
-        "path": "nfdi4health-lm-mds-design.Design.population.countries",
-        "short": "countries",
-        "definition": "**Description: **Country or countries where the [RESOURCE] takes place.",
-        "alias": [
-          "Design.population.countries"
-        ],
-        "min": 1,
-        "max": "*",
-        "base": {
-          "path": "Design.population.countries",
-          "min": 1,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://hl7.org/fhir/ValueSet/country"
-        }
-      },
-      {
-        "id": "nfdi4health-lm-mds-design.Design.population.region",
-        "path": "nfdi4health-lm-mds-design.Design.population.region",
-        "short": "region",
-        "definition": "**Description: **If applicable, region(s) and/or city(ies) within a country where the [RESOURCE] takes place.",
-        "alias": [
-          "Design.population.region"
-        ],
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Design.population.region",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ]
-      },
-      {
         "id": "nfdi4health-lm-mds-design.Design.centers",
         "path": "nfdi4health-lm-mds-design.Design.centers",
         "short": "centers",
@@ -1100,6 +1038,630 @@
         "binding": {
           "strength": "required",
           "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-time-units-ucum-loinc"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.eligibilityCriteria.genders",
+        "path": "nfdi4health-lm-mds-design.Design.eligibilityCriteria.genders",
+        "short": "genders",
+        "definition": "**Description: **Gender of potential participants eligible to participate in the [RESOURCE].",
+        "alias": [
+          "Design.eligibilityCriteria.genders"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-eligibility-gender-snomedct-local"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.eligibilityCriteria.inclusionCriteria",
+        "path": "nfdi4health-lm-mds-design.Design.eligibilityCriteria.inclusionCriteria",
+        "short": "inclusionCriteria",
+        "definition": "**Description: **Inclusion criteria for participation in the [RESOURCE].",
+        "alias": [
+          "Design.eligibilityCriteria.inclusionCriteria"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "example": [
+          {
+            "label": "example 1",
+            "valueString": "- First inclusion criterion; - Second inclusion criterion;"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.eligibilityCriteria.exclusionCriteria",
+        "path": "nfdi4health-lm-mds-design.Design.eligibilityCriteria.exclusionCriteria",
+        "short": "exclusionCriteria",
+        "definition": "**Description: **Exclusion criteria for participation in the [RESOURCE].",
+        "alias": [
+          "Design.eligibilityCriteria.exclusionCriteria"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "example": [
+          {
+            "label": "example 1",
+            "valueString": "- First inclusion criterion; - Second inclusion criterion;"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.population",
+        "path": "nfdi4health-lm-mds-design.Design.population",
+        "short": "population",
+        "definition": "**Description:** Group of items providing information about the population of the [RESOURCE].",
+        "alias": [
+          "Design.population"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.population.countries",
+        "path": "nfdi4health-lm-mds-design.Design.population.countries",
+        "short": "countries",
+        "definition": "**Description: **Country or countries where the [RESOURCE] takes place.",
+        "alias": [
+          "Design.population.countries"
+        ],
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Design.population.countries",
+          "min": 1,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/country"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.population.region",
+        "path": "nfdi4health-lm-mds-design.Design.population.region",
+        "short": "region",
+        "definition": "**Description: **If applicable, region(s) and/or city(ies) within a country where the [RESOURCE] takes place.",
+        "alias": [
+          "Design.population.region"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Design.population.region",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.population.coverage",
+        "path": "nfdi4health-lm-mds-design.Design.population.coverage",
+        "short": "coverage",
+        "definition": "**Description:** Specification of the recruitment area of the [RESOURCE].",
+        "alias": [
+          "Design.population.coverage"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Design.population.coverage",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.population.description",
+        "path": "nfdi4health-lm-mds-design.Design.population.description",
+        "short": "description",
+        "definition": "**Description: **Additional descriptive information providing more details about the population of the [RESOURCE].",
+        "alias": [
+          "Design.population.description"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.population.targetSampleSize",
+        "path": "nfdi4health-lm-mds-design.Design.population.targetSampleSize",
+        "short": "targetSampleSize",
+        "definition": "**Description: **Intended number of observational units for the whole [RESOURCE] (e.g. intended number of [RESOURCE] participants at all sites of the [RESOURCE]).",
+        "alias": [
+          "Design.population.targetSampleSize"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.population.obtainedSampleSize",
+        "path": "nfdi4health-lm-mds-design.Design.population.obtainedSampleSize",
+        "short": "obtainedSampleSize",
+        "definition": "**Description: **Obtained number of observational units for the whole [RESOURCE] (e.g. obtained number of [RESOURCE] participants at all sites of the [RESOURCE]).",
+        "comment": "<p><strong>Additional information:</strong> The value is only available after the end of recruitment.</p> \n ",
+        "alias": [
+          "Design.population.obtainedSampleSize"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.hypotheses",
+        "path": "nfdi4health-lm-mds-design.Design.hypotheses",
+        "short": "hypothesis",
+        "definition": "**Description: **Statement of the research questions and/or hypotheses underlying the [RESOURCE].",
+        "alias": [
+          "Design.hypotheses"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.arms",
+        "path": "nfdi4health-lm-mds-design.Design.arms",
+        "short": "arms",
+        "definition": "**Description: **Group of items providing information about the arms of the [RESOURCE].",
+        "alias": [
+          "Design.arms"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.arms.label",
+        "path": "nfdi4health-lm-mds-design.Design.arms.label",
+        "short": "label",
+        "definition": "**Description: **Short name used to identify the arm.",
+        "comment": "<p><strong>Additional information: </strong>'Arm' means a pre-specified group or subgroup of participants in the [RESOURCE] assigned to receive specific intervention(s) (or no intervention) according to a protocol.</p> \n ",
+        "alias": [
+          "Design.arms.label"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.arms.type",
+        "path": "nfdi4health-lm-mds-design.Design.arms.type",
+        "short": "type",
+        "definition": "**Description: **Role of the given arm in the [RESOURCE].",
+        "alias": [
+          "Design.arms.type"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-arm-group-type-nci"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.arms.description",
+        "path": "nfdi4health-lm-mds-design.Design.arms.description",
+        "short": "description",
+        "definition": "**Description: **Additional descriptive information about the given arm.",
+        "comment": "<p><strong>Additional information: </strong>If needed, additional descriptive information (including which interventions are administered in each arm) to differentiate each arm from other arms in the [RESOURCE].</p> \n ",
+        "alias": [
+          "Design.arms.description"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.groups",
+        "path": "nfdi4health-lm-mds-design.Design.groups",
+        "short": "groups",
+        "definition": "**Description:** Group of items providing information about the groups/cohorts of the [RESOURCE].",
+        "alias": [
+          "Design.groups"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.groups.label",
+        "path": "nfdi4health-lm-mds-design.Design.groups.label",
+        "short": "label",
+        "definition": "**Description:** Short name used to identify the group.",
+        "comment": "<p><strong>Additional information:</strong> 'Group' means a predefined group (cohort) of participants to be studied.</p> \n ",
+        "alias": [
+          "Design.groups.label"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.groups.description",
+        "path": "nfdi4health-lm-mds-design.Design.groups.description",
+        "short": "description",
+        "definition": "**Description:** Additional descriptive information about the given group.",
+        "comment": "<p><strong>Additional information:</strong> Explanation of the nature of the [RESOURCE] group (for example, participants with and without a condition, participants with and without an exposure, etc.).</p> \n ",
+        "alias": [
+          "Design.groups.description"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.interventions",
+        "path": "nfdi4health-lm-mds-design.Design.interventions",
+        "short": "interventions",
+        "definition": "**Description: **Group of items providing information about the interventions of the [RESOURCE].",
+        "comment": "<p><strong>Additional information: </strong>Specification of the intervention(s) associated with each arm.</p> \n ",
+        "alias": [
+          "Design.interventions"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.interventions.name",
+        "path": "nfdi4health-lm-mds-design.Design.interventions.name",
+        "short": "name",
+        "definition": "**Description: **A short descriptive name of the intervention.",
+        "alias": [
+          "Design.interventions.name"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.interventions.type",
+        "path": "nfdi4health-lm-mds-design.Design.interventions.type",
+        "short": "type",
+        "definition": "**Description: **General type of the given intervention.",
+        "alias": [
+          "Design.interventions.type"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-intervention-type-nci",
+          "description": "NFDI4Health_VS_MDS_Study_Intervention_Type_NCI_UMLS"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.interventions.description",
+        "path": "nfdi4health-lm-mds-design.Design.interventions.description",
+        "short": "description",
+        "definition": "**Description: **If needed, additional descriptive information about the given intervention.",
+        "alias": [
+          "Design.interventions.description"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.interventions.armsLabel",
+        "path": "nfdi4health-lm-mds-design.Design.interventions.armsLabel",
+        "short": "armsLabel",
+        "definition": "**Description: **Name(s) of the [RESOURCE] arm(s) associated with the given intervention.",
+        "alias": [
+          "Design.interventions.armsLabel"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.exposures",
+        "path": "nfdi4health-lm-mds-design.Design.exposures",
+        "short": "exposures",
+        "definition": "**Description:** Group of items providing information about the exposures of the [RESOURCE].",
+        "comment": "<p><strong>Additional information:</strong> Specification of the exposure(s) associated with each group.</p> \n ",
+        "alias": [
+          "Design.exposures"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.exposures.name",
+        "path": "nfdi4health-lm-mds-design.Design.exposures.name",
+        "short": "name",
+        "definition": "**Description:** A short descriptive name of the exposure.",
+        "alias": [
+          "Design.exposures.name"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.exposures.type",
+        "path": "nfdi4health-lm-mds-design.Design.exposures.type",
+        "short": "type",
+        "definition": "**Description:** General type of the given exposure.",
+        "alias": [
+          "Design.exposures.type"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-exposure-type-nci"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.exposures.description",
+        "path": "nfdi4health-lm-mds-design.Design.exposures.description",
+        "short": "description",
+        "definition": "**Description:** If needed, additional descriptive information about the given exposure.",
+        "alias": [
+          "Design.exposures.description"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.exposures.groupsLabel",
+        "path": "nfdi4health-lm-mds-design.Design.exposures.groupsLabel",
+        "short": "groupsLabel",
+        "definition": "**Description:** Name(s) of the [RESOURCE] group(s) associated with the given exposure.",
+        "alias": [
+          "Design.exposures.groupsLabel"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.outcomes",
+        "path": "nfdi4health-lm-mds-design.Design.outcomes",
+        "short": "outcomes",
+        "definition": "**Description: **Group of items providing information about outcome measures.",
+        "comment": "<p><strong>Additional information: </strong>he items are optional, especially for non-interventional studies.</p> \n ",
+        "alias": [
+          "Design.outcomes"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.outcomes.type",
+        "path": "nfdi4health-lm-mds-design.Design.outcomes.type",
+        "short": "type",
+        "definition": "**Description: **The type indicates the degree of importance of the outcome measure in the [RESOURCE].",
+        "alias": [
+          "Design.outcomes.type"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-outcome-type-nci"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.outcomes.title",
+        "path": "nfdi4health-lm-mds-design.Design.outcomes.title",
+        "short": "title",
+        "definition": "**Description: **Name of the outcome measure.\nFor non-interventional studies, this can be the name of specific measurement(s) or observation(s) used to describe patterns of diseases or traits or associations with exposures, risk factors or treatment.",
+        "alias": [
+          "Design.outcomes.title"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.outcomes.description",
+        "path": "nfdi4health-lm-mds-design.Design.outcomes.description",
+        "short": "description",
+        "definition": "**Description: **Additional descriptive information about the given outcome.",
+        "alias": [
+          "Design.outcomes.description"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.outcomes.timeFrame",
+        "path": "nfdi4health-lm-mds-design.Design.outcomes.timeFrame",
+        "short": "timeFrame",
+        "definition": "**Description: **Description of the time point(s) at which the measurement for the outcome is assessed, e.g. the specific duration of time over which each participant is assessed.",
+        "alias": [
+          "Design.outcomes.timeFrame"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.comment",
+        "path": "nfdi4health-lm-mds-design.Design.comment",
+        "short": "comment",
+        "definition": "**Description: **Any additional information about specific aspects of the [RESOURCE] that could not be captured by other fields.",
+        "alias": [
+          "Design.comment"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design.Design.assessments",
+        "path": "nfdi4health-lm-mds-design.Design.assessments",
+        "short": "assessments",
+        "definition": "**Description: **Any additional assessments/measurements included in the [RESOURCE].",
+        "alias": [
+          "Design.assessments"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-assessments-sct-nci"
         }
       }
     ]

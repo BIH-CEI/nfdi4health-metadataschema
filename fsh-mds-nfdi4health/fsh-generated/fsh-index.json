@@ -1,0 +1,1474 @@
+[
+  {
+    "outputFile": "CapabilityStatement-nfdi4health-cps-mds-capability-statement.json",
+    "fshName": "nfdi4health-cps-mds-capability-statement",
+    "fshType": "Instance",
+    "fshFile": "CapabilityStatment.fsh",
+    "startLine": 1,
+    "endLine": 157
+  },
+  {
+    "outputFile": "CodeSystem-nfdi4health-cs-mds-label-fhir.json",
+    "fshName": "NFDI4Health_CS_MDS_Label_FHIR",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystems/cs-label.fsh",
+    "startLine": 1,
+    "endLine": 25
+  },
+  {
+    "outputFile": "CodeSystem-nfdi4health-cs-mds-provenance-data-source.json",
+    "fshName": "NFDI4Health_CS_MDS_Provenance_Data_Source",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystems/cs-provenance-data-source.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "CodeSystem-nfdi4health-cs-mds-remaining-concepts.json",
+    "fshName": "NFDI4Health_CS_MDS_Remaining_Concepts",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystems/cs-remaining-concepts.fsh",
+    "startLine": 1,
+    "endLine": 200
+  },
+  {
+    "outputFile": "CodeSystem-nfdi4health-cs-mds-study-status.json",
+    "fshName": "NFDI4Health_CS_MDS_Study_Status",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystems/cs-study-status.fsh",
+    "startLine": 1,
+    "endLine": 20
+  },
+  {
+    "outputFile": "ConceptMap-ConceptMap-Study-Allocation-NFDI4Health-to-UMLS.json",
+    "fshName": "ConceptMap-Study-Allocation-NFDI4Health-to-UMLS",
+    "fshType": "Instance",
+    "fshFile": "valuesets/vs-study-allocation-local.fsh",
+    "startLine": 17,
+    "endLine": 43
+  },
+  {
+    "outputFile": "ConceptMap-ConceptMap-Study-Primary-Design-NFDI4Health-to-UMLS.json",
+    "fshName": "ConceptMap-Study-Primary-Design-NFDI4Health-to-UMLS",
+    "fshType": "Instance",
+    "fshFile": "valuesets/vs-study-primary-design-local.fsh",
+    "startLine": 16,
+    "endLine": 37
+  },
+  {
+    "outputFile": "ConceptMap-ConceptMap-Study-Sampling-Non-Probability-NFDI4Health-to-NCI.json",
+    "fshName": "ConceptMap-Study-Sampling-Non-Probability-NFDI4Health-to-NCI",
+    "fshType": "Instance",
+    "fshFile": "valuesets/vs-study-sampling-method-non-probability-local.fsh",
+    "startLine": 18,
+    "endLine": 44
+  },
+  {
+    "outputFile": "ConceptMap-ConceptMap-Study-Sampling-Probability-Method-NFDI4Health-to-NCI.json",
+    "fshName": "ConceptMap-Study-Sampling-Probability-Method-NFDI4Health-to-NCI",
+    "fshType": "Instance",
+    "fshFile": "valuesets/vs-study-sampling-method-probability-local.fsh",
+    "startLine": 23,
+    "endLine": 64
+  },
+  {
+    "outputFile": "ConceptMap-ConceptMap-Study-Time-Perspectives-NFDI4Health-to-UMLS.json",
+    "fshName": "ConceptMap-Study-Time-Perspectives-NFDI4Health-to-UMLS",
+    "fshType": "Instance",
+    "fshFile": "valuesets/vs-study-time-perspectives-local.fsh",
+    "startLine": 18,
+    "endLine": 49
+  },
+  {
+    "outputFile": "ConceptMap-ConceptMap-study-type-interventional-NFDI4Health-to-UMLS.json",
+    "fshName": "ConceptMap-study-type-interventional-NFDI4Health-to-UMLS",
+    "fshType": "Instance",
+    "fshFile": "valuesets/vs-study-type-interventional-local.fsh",
+    "startLine": 22,
+    "endLine": 68
+  },
+  {
+    "outputFile": "DocumentReference-InstanceOfDocumentHouseholdTransmissionInvestigationForC19.json",
+    "fshName": "InstanceOfDocumentHouseholdTransmissionInvestigationForC19",
+    "fshType": "Instance",
+    "fshFile": "examples/InstanceOfDocument_HouseholdTransmissionInvestigationProtocolForCOVID19.fsh",
+    "startLine": 1,
+    "endLine": 44
+  },
+  {
+    "outputFile": "EvidenceVariable-InstanceOfEvidenceVariableSPOVID.json",
+    "fshName": "InstanceOfEvidenceVariableSPOVID",
+    "fshType": "Instance",
+    "fshFile": "examples/InstanceOfEvidenceVariable_SPOVID.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "Group-InstanceOfGroupActualSHIP.json",
+    "fshName": "InstanceOfGroupActualSHIP",
+    "fshType": "Instance",
+    "fshFile": "examples/InstanceOfGroupActual_SHIP.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "Group-InstanceOfGroupIntendedSHIP.json",
+    "fshName": "InstanceOfGroupIntendedSHIP",
+    "fshType": "Instance",
+    "fshFile": "examples/InstanceOfGroupIntended_SHIP.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Group-InstanceOfGroupIntendedSPOVID.json",
+    "fshName": "InstanceOfGroupIntendedSPOVID",
+    "fshType": "Instance",
+    "fshFile": "examples/InstanceOfGroupIntended_SPOVID.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "Location-InstanceOfLocationMono.json",
+    "fshName": "InstanceOfLocationMono",
+    "fshType": "Instance",
+    "fshFile": "examples/InstanceOfLocationMono.fsh",
+    "startLine": 1,
+    "endLine": 8
+  },
+  {
+    "outputFile": "Organization-InstanceOfOrganizationBMBF.json",
+    "fshName": "InstanceOfOrganizationBMBF",
+    "fshType": "Instance",
+    "fshFile": "examples/InstanceOfOrganization_FunderPublic_BMBF.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "Organization-InstanceOfOrganizationContactWHO.json",
+    "fshName": "InstanceOfOrganizationContactWHO",
+    "fshType": "Instance",
+    "fshFile": "examples/InstanceOfOrganization_Contact_WHO.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "Organization-InstanceOfOrganizationCreatorCMI.json",
+    "fshName": "InstanceOfOrganizationCreatorCMI",
+    "fshType": "Instance",
+    "fshFile": "examples/InstanceOfOrganization_Creator_CMI.fsh",
+    "startLine": 1,
+    "endLine": 6
+  },
+  {
+    "outputFile": "Organization-InstanceOfOrganizationCreatorCRISIS.json",
+    "fshName": "InstanceOfOrganizationCreatorCRISIS",
+    "fshType": "Instance",
+    "fshFile": "examples/InstanceOfOrganization_Creator_CRISISTeam.fsh",
+    "startLine": 1,
+    "endLine": 6
+  },
+  {
+    "outputFile": "Organization-InstanceOfOrganizationCreatorIRM.json",
+    "fshName": "InstanceOfOrganizationCreatorIRM",
+    "fshType": "Instance",
+    "fshFile": "examples/InstanceOfOrganization_Contact_IRM.fsh",
+    "startLine": 1,
+    "endLine": 6
+  },
+  {
+    "outputFile": "Organization-InstanceOfOrganizationCreatorNIMH.json",
+    "fshName": "InstanceOfOrganizationCreatorNIMH",
+    "fshType": "Instance",
+    "fshFile": "examples/InstanceOfOrganization_Creator_NIMH.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "Organization-InstanceOfOrganizationCreatorWHO.json",
+    "fshName": "InstanceOfOrganizationCreatorWHO",
+    "fshType": "Instance",
+    "fshFile": "examples/InstanceOfOrganization_Creator_WHO.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "Organization-InstanceOfOrganizationIMIBE.json",
+    "fshName": "InstanceOfOrganizationIMIBE",
+    "fshType": "Instance",
+    "fshFile": "examples/InstanceOfOrganization_IMIBE.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "Organization-InstanceOfOrganizationISTHochschule.json",
+    "fshName": "InstanceOfOrganizationISTHochschule",
+    "fshType": "Instance",
+    "fshFile": "examples/InstanceOfOrganization_SponsorPrimary_IST Hochschule.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "Organization-InstanceOfOrganizationMHH.json",
+    "fshName": "InstanceOfOrganizationMHH",
+    "fshType": "Instance",
+    "fshFile": "examples/InstanceOfOrganization_MHH.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "Organization-InstanceOfOrganizationResearchGroupRNCM.json",
+    "fshName": "InstanceOfOrganizationResearchGroupRNCM",
+    "fshType": "Instance",
+    "fshFile": "examples/InstanceOfOrganization_ResearchGroup_RNCM.fsh",
+    "startLine": 1,
+    "endLine": 7
+  },
+  {
+    "outputFile": "Organization-InstanceOfOrganizationRuhrUniBochum.json",
+    "fshName": "InstanceOfOrganizationRuhrUniBochum",
+    "fshType": "Instance",
+    "fshFile": "examples/InstanceOfOrganization_SponsorPrimary_RuhrUniBochum.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "Organization-InstanceOfOrganizationUMG.json",
+    "fshName": "InstanceOfOrganizationUMG",
+    "fshType": "Instance",
+    "fshFile": "examples/InstanceOfOrganization_UMGGreifswald.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "Organization-InstanceOfOrganizationUniDuisburgEssen.json",
+    "fshName": "InstanceOfOrganizationUniDuisburgEssen",
+    "fshType": "Instance",
+    "fshFile": "examples/InstanceOfOrganization_UniDuisburgEssen.fsh",
+    "startLine": 1,
+    "endLine": 6
+  },
+  {
+    "outputFile": "Organization-InstanceOfOrganizationUniklinikumEssen.json",
+    "fshName": "InstanceOfOrganizationUniklinikumEssen",
+    "fshType": "Instance",
+    "fshFile": "examples/InstanceOfOrganization_SponsorPrimary_UniklinikumEssen.fsh",
+    "startLine": 1,
+    "endLine": 9
+  },
+  {
+    "outputFile": "Organization-OrganizationPublicExample.json",
+    "fshName": "OrganizationPublicExample",
+    "fshType": "Instance",
+    "fshFile": "examples/Organization_PublicFunder.fsh",
+    "startLine": 3,
+    "endLine": 8
+  },
+  {
+    "outputFile": "Practitioner-InstanceOfPractitionerKathleenMerikangas.json",
+    "fshName": "InstanceOfPractitionerKathleenMerikangas",
+    "fshType": "Instance",
+    "fshFile": "examples/InstanceOfPractitioner_Kathleen_Merikangas.fsh",
+    "startLine": 1,
+    "endLine": 8
+  },
+  {
+    "outputFile": "Practitioner-InstanceOfPractitionerNinaKirchhof.json",
+    "fshName": "InstanceOfPractitionerNinaKirchhof",
+    "fshType": "Instance",
+    "fshFile": "examples/InstanceOfPractitioner_NinaKirchhof.fsh",
+    "startLine": 1,
+    "endLine": 9
+  },
+  {
+    "outputFile": "PractitionerRole-InstanceOfPractitionerRoleKathleenMerikangas.json",
+    "fshName": "InstanceOfPractitionerRoleKathleenMerikangas",
+    "fshType": "Instance",
+    "fshFile": "examples/InstanceOfPractitionerRole_KathleenMerikangas.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "PractitionerRole-InstanceOfPractitionerRoleNinaKirchhof.json",
+    "fshName": "InstanceOfPractitionerRoleNinaKirchhof",
+    "fshType": "Instance",
+    "fshFile": "examples/InstanceOfPractitionerRole_NinaKirchhof.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "Provenance-InstanceOfProvenance.json",
+    "fshName": "InstanceOfProvenance",
+    "fshType": "Instance",
+    "fshFile": "examples/Provenance.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "Provenance-InstanceOfProvenanceAutomaticallyUploadedFromCTgov.json",
+    "fshName": "InstanceOfProvenanceAutomaticallyUploadedFromCTgov",
+    "fshType": "Instance",
+    "fshFile": "examples/InstanceOfProvenance_AutomaticallyUploadedFromCTgov.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "Provenance-InstanceOfProvenanceManuallyCollectedSHIPTrend.json",
+    "fshName": "InstanceOfProvenanceManuallyCollectedSHIPTrend",
+    "fshType": "Instance",
+    "fshFile": "examples/InstanceOfProvenance_ManuallyCollected_SHIPTrend.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "Questionnaire-2.16.840.1.113883.3.1937.777.64.4.6--20231207000000.json",
+    "fshName": "2.16.840.1.113883.3.1937.777.64.4.6--20231207000000",
+    "fshType": "Instance",
+    "fshFile": "examples/InstanceOfModuleRecordLinkage_generated.fsh",
+    "startLine": 4,
+    "endLine": 135
+  },
+  {
+    "outputFile": "Questionnaire-InstanceOfChronicDiseaseModule.json",
+    "fshName": "InstanceOfChronicDiseaseModule",
+    "fshType": "Instance",
+    "fshFile": "examples/InstanceofModuleChronicDiseases.fsh",
+    "startLine": 1,
+    "endLine": 26
+  },
+  {
+    "outputFile": "Questionnaire-InstanceOfNutritionalEpidemiologyModule.json",
+    "fshName": "InstanceOfNutritionalEpidemiologyModule",
+    "fshType": "Instance",
+    "fshFile": "examples/InstanceOfModuleNutritionalEpidemiology.fsh",
+    "startLine": 1,
+    "endLine": 71
+  },
+  {
+    "outputFile": "Questionnaire-InstanceOfQuestionnaireWHOHouseholdTransmission.json",
+    "fshName": "InstanceOfQuestionnaireWHOHouseholdTransmission",
+    "fshType": "Instance",
+    "fshFile": "examples/InstanceOfQuestionnaireWHOHouseholdTransmission.fsh",
+    "startLine": 1,
+    "endLine": 35
+  },
+  {
+    "outputFile": "Questionnaire-InstanceOfRecordLinkage.json",
+    "fshName": "InstanceOfRecordLinkage",
+    "fshType": "Instance",
+    "fshFile": "examples/InstanceOfModuleRecordLinkage.fsh",
+    "startLine": 1,
+    "endLine": 48
+  },
+  {
+    "outputFile": "ResearchStudy-InstanceOfStudySHIP.json",
+    "fshName": "InstanceOfStudySHIP",
+    "fshType": "Instance",
+    "fshFile": "examples/InstanceOfStudy_nonInterventional_SHIP.fsh",
+    "startLine": 1,
+    "endLine": 106
+  },
+  {
+    "outputFile": "ResearchStudy-InstanceOfStudySPOVID.json",
+    "fshName": "InstanceOfStudySPOVID",
+    "fshType": "Instance",
+    "fshFile": "examples/InstanceOfStudy_interventional_SPOVID.fsh",
+    "startLine": 1,
+    "endLine": 108
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-assessments.json",
+    "fshName": "NFDI4Health_EX_MDS_Assessments",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Assessments.fsh",
+    "startLine": 3,
+    "endLine": 24
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-associated-party.json",
+    "fshName": "NFDI4Health_EX_MDS_Associated_Party",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Associated_Party.fsh",
+    "startLine": 1,
+    "endLine": 56
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-biospecimen.json",
+    "fshName": "NFDI4Health_EX_MDS_Biospecimen",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Study_Biospecimen.fsh",
+    "startLine": 3,
+    "endLine": 39
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-centers.json",
+    "fshName": "NFDI4Health_EX_MDS_Centers",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Centers.fsh",
+    "startLine": 3,
+    "endLine": 21
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-chronic-diseases.json",
+    "fshName": "NFDI4Health_EX_MDS_Chronic_Diseases",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Chronic_Diseases.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-copyright-label-and-link.json",
+    "fshName": "NFDI4Health_EX_MDS_Copyright_Label_And_Link",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Copyright_Label.fsh",
+    "startLine": 1,
+    "endLine": 26
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-data-sharing-plan.json",
+    "fshName": "NFDI4Health_EX_MDS_Data_Sharing_Plan",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Data_Sharing_Plan.fsh",
+    "startLine": 5,
+    "endLine": 79
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-data-source.json",
+    "fshName": "NFDI4Health_EX_MDS_Data_Source",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Data_Source.fsh",
+    "startLine": 1,
+    "endLine": 64
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-document-use-rights.json",
+    "fshName": "NFDI4Health_EX_MDS_Document_Use_Rights",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Document_Use_Rights.fsh",
+    "startLine": 1,
+    "endLine": 26
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-eligibility-criteria-exclusion-criteria.json",
+    "fshName": "NFDI4Health_EX_MDS_Eligibility_Criteria_Exclusion_Criteria",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Eligibility_Criteria_Exclusion_Criteria.fsh",
+    "startLine": 1,
+    "endLine": 18
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-eligibility-criteria-inclusion-criteria.json",
+    "fshName": "NFDI4Health_EX_MDS_Eligibility_Criteria_Inclusion_Criteria",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Eligibility_Criteria_Inclusion_Criteria.fsh",
+    "startLine": 1,
+    "endLine": 18
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-execution-language.json",
+    "fshName": "NFDI4Health_EX_MDS_Execution_Language",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Execution_Language.fsh",
+    "startLine": 1,
+    "endLine": 24
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-format.json",
+    "fshName": "NFDI4Health_EX_MDS_Format",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Format.fsh",
+    "startLine": 1,
+    "endLine": 21
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-fundingID.json",
+    "fshName": "NFDI4Health_EX_MDS_FundingID",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_FundingID.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-identifier-assignment-date.json",
+    "fshName": "NFDI4Health_EX_MDS_Identifier_Assignment_Date",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Identifier_Assignment_Date.fsh",
+    "startLine": 1,
+    "endLine": 18
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-keywords.json",
+    "fshName": "NFDI4Health_EX_MDS_Keywords",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Keywords.fsh",
+    "startLine": 1,
+    "endLine": 21
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-label.json",
+    "fshName": "NFDI4Health_EX_MDS_Label",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Label.fsh",
+    "startLine": 1,
+    "endLine": 38
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-language.json",
+    "fshName": "NFDI4Health_EX_MDS_Language",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Language.fsh",
+    "startLine": 1,
+    "endLine": 20
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-mortality-data.json",
+    "fshName": "NFDI4Health_EX_MDS_Mortality_Data",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Mortality_Data.fsh",
+    "startLine": 1,
+    "endLine": 21
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-nutritional-data.json",
+    "fshName": "NFDI4Health_EX_MDS_Nutritional_Data",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Nutritional_Data.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-off-label-use.json",
+    "fshName": "NFDI4Health_EX_MDS_Off_Label_Use",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Off_Label_Use.fsh",
+    "startLine": 3,
+    "endLine": 24
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-provenance-data-source.json",
+    "fshName": "NFDI4Health_EX_MDS_Provenance_Data_Source",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Provenance_Data_Source.fsh",
+    "startLine": 3,
+    "endLine": 23
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-record-linkage.json",
+    "fshName": "NFDI4Health_EX_MDS_Record_Linkage",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Record_Linkage.fsh",
+    "startLine": 1,
+    "endLine": 55
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-related-artifact-identifier-date.json",
+    "fshName": "NFDI4Health_EX_MDS_Related_Artifact_Identifier_Date",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Related_Artifact_Identifier_Date.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-related-artifact-nfdi-identifier.json",
+    "fshName": "NFDI4Health_EX_MDS_Related_Artifact_NFDI_Identifier",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Related_Artifact_NFDI_Identifier.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-related-artifact-nfdi-non-nfdi-identifier.json",
+    "fshName": "NFDI4Health_EX_MDS_Related_Artifact_NonNFDI_Identifier",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Related_Artifact_Identifier.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-related-artifact-nfdi-scheme.json",
+    "fshName": "NFDI4Health_EX_MDS_Related_Artifact_Scheme",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Related_Artifact_Scheme.fsh",
+    "startLine": 1,
+    "endLine": 22
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-related-artifact-nfdi.json",
+    "fshName": "NFDI4Health_EX_MDS_Related_Artifact_NFDI",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_RelatedArtifact_NFDI.fsh",
+    "startLine": 5,
+    "endLine": 35
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-related-artifact-non-nfdi.json",
+    "fshName": "NFDI4Health_EX_MDS_Related_Artifact_Non_NFDI",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_RelatedArtifact_Non_NFDI.fsh",
+    "startLine": 7,
+    "endLine": 41
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-related-artifact-reltype-nfdi-resource.json",
+    "fshName": "NFDI4Health_EX_MDS_Related_Artifact_Rel_Type_NFDI4_Resource",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Related_Artifact_Rel_Type_NFDI4_Resource.fsh",
+    "startLine": 1,
+    "endLine": 21
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-related-artifact-reltype-non-nfdi-resource.json",
+    "fshName": "NFDI4Health_EX_MDS_Related_Artifact_Rel_Type_Non_NFDI_Resource",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Related_Artifact_Rel_Type_Non_NFDI_Resource.fsh",
+    "startLine": 3,
+    "endLine": 26
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-related.json",
+    "fshName": "NFDI4Health_EX_MDS_Related",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Related.fsh",
+    "startLine": 4,
+    "endLine": 21
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-resource-type-general.json",
+    "fshName": "NFDI4Health_EX_MDS_Resource_Type_General",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Resource_Type_General.fsh",
+    "startLine": 3,
+    "endLine": 26
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-resource-type.json",
+    "fshName": "NFDI4Health_EX_MDS_Resource_Type",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_Ex_MDS_Resource_Type.fsh",
+    "startLine": 3,
+    "endLine": 24
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-study-comparison-group.json",
+    "fshName": "NFDI4Health_EX_MDS_Study_Comparison_Group",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Study_Comparison_Group.fsh",
+    "startLine": 3,
+    "endLine": 50
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-study-ethics-committee-approval.json",
+    "fshName": "NFDI4Health_EX_MDS_Study_Ethics_Committee_Approval",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Study_Ethics_Committee_Approval.fsh",
+    "startLine": 1,
+    "endLine": 22
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-study-masking.json",
+    "fshName": "NFDI4Health_EX_MDS_Study_Masking",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Study_Masking.fsh",
+    "startLine": 1,
+    "endLine": 38
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-study-of-diseases.json",
+    "fshName": "NFDI4Health_EX_MDS_Groups_Of_Diseases",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Groups_Of_Diseases.fsh",
+    "startLine": 3,
+    "endLine": 38
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-study-outcomes.json",
+    "fshName": "NFDI4Health_EX_MDS_Study_Outcomes",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Study_Outcomes.fsh",
+    "startLine": 3,
+    "endLine": 45
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-study-population.json",
+    "fshName": "NFDI4Health_EX_MDS_Study_Population",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Study_Population.fsh",
+    "startLine": 1,
+    "endLine": 18
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-study-status-halted-stage.json",
+    "fshName": "NFDI4Health_EX_MDS_Study_Status_Halted_Stage",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Study_Status_Halted_Stage.fsh",
+    "startLine": 3,
+    "endLine": 24
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-study-status.json",
+    "fshName": "NFDI4Health_EX_MDS_Study_Status",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Study_Status.fsh",
+    "startLine": 6,
+    "endLine": 63
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-study-target-followup-duration.json",
+    "fshName": "NFDI4Health_EX_MDS_Study_Target_Followup_Duration",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Study_Target_Followup_Duration.fsh",
+    "startLine": 1,
+    "endLine": 23
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-study-time-perspectives.json",
+    "fshName": "NFDI4Health_EX_MDS_Study_Time_Perspectives",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Study-Time-Perspectives.fsh",
+    "startLine": 3,
+    "endLine": 24
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-subject.json",
+    "fshName": "NFDI4Health_EX_MDS_Subject",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Subject.fsh",
+    "startLine": 3,
+    "endLine": 24
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-uri.json",
+    "fshName": "NFDI4Health_EX_MDS_URI",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_URI.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-use-rights-confirmations.json",
+    "fshName": "NFDI4Health_EX_MDS_Use_Rights_Confirmations",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Use_Rights_Confirmations.fsh",
+    "startLine": 1,
+    "endLine": 39
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-version.json",
+    "fshName": "NFDI4Health_EX_MDS_Version",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Version.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-lm-mds-core-v3-3.json",
+    "fshName": "NFDI4Health_LM_MDS_Core_V3_3",
+    "fshType": "Logical",
+    "fshFile": "logicals/lm-mds-nfdi4health-core-v3_3.fsh",
+    "startLine": 1,
+    "endLine": 232
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-lm-mds-design-v3-3.json",
+    "fshName": "NFDI4Health_LM_MDS_Design_V3_3",
+    "fshType": "Logical",
+    "fshFile": "logicals/lm-mds-nfdi4health-design-v3_3COPY.fsh",
+    "startLine": 1,
+    "endLine": 345
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-lm-mds-design.json",
+    "fshName": "NFDI4Health_LM_MDS_Design",
+    "fshType": "Logical",
+    "fshFile": "logicals/lm-mds-nfdi4health-design.fsh",
+    "startLine": 1,
+    "endLine": 455
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-lm-metadataschema-eocd-v3-3.json",
+    "fshName": "NFDI4Health_LM_Metadataschema_EOCD_V3_3",
+    "fshType": "Logical",
+    "fshFile": "logicals/lm-mds-nfdi4health-epidemiology-of-chronic-diseases.fsh",
+    "startLine": 1,
+    "endLine": 22
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-lm-metadataschema-ne-v3-3.json",
+    "fshName": "NFDI4Health_LM_Metadataschema_NE_V3_3",
+    "fshType": "Logical",
+    "fshFile": "logicals/lm-mds-nfdi4health-nutritional-epidemiology.fsh",
+    "startLine": 1,
+    "endLine": 44
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-lm-metadatenschema-recordlinkage-v3-3.json",
+    "fshName": "NFDI4Health_LM_Metadataschema_RecordLinkage_V3_3",
+    "fshType": "Logical",
+    "fshFile": "logicals/lm-mds-nfdi4health-record-linkage.fsh",
+    "startLine": 1,
+    "endLine": 29
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-pr-mds-centers.json",
+    "fshName": "NFDI4Health_PR_MDS_Centers",
+    "fshType": "Profile",
+    "fshFile": "profiles/NFDI4Health_PR_MDS_Centers.fsh",
+    "startLine": 1,
+    "endLine": 20
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-pr-mds-document.json",
+    "fshName": "NFDI4Health_PR_MDS_Document",
+    "fshType": "Profile",
+    "fshFile": "profiles/NFDI4Health_PR_MDS_Document.fsh",
+    "startLine": 1,
+    "endLine": 143
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-pr-mds-evidence-variable-intervention-exposure.json",
+    "fshName": "NFDI4Health_PR_MDS_Evidence_Variable_Intervention_Exposure",
+    "fshType": "Profile",
+    "fshFile": "profiles/NFDI4Health_PR_MDS_Evidence_Variable_Intervention_Exposure.fsh",
+    "startLine": 1,
+    "endLine": 25
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-pr-mds-group-actual.json",
+    "fshName": "NFDI4Health_PR_MDS_Group_Actual",
+    "fshType": "Profile",
+    "fshFile": "profiles/NFDI4Health_PR_MDS_Group_Actual.fsh",
+    "startLine": 1,
+    "endLine": 45
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-pr-mds-group-intended.json",
+    "fshName": "NFDI4Health_PR_MDS_Group_Intended",
+    "fshType": "Profile",
+    "fshFile": "profiles/NFDI4Health_PR_MDS_Group_Intended.fsh",
+    "startLine": 1,
+    "endLine": 53
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-pr-mds-observation-nutritional-epidemiology.json",
+    "fshName": "NFDI4Health_PR_MDS_Observation_Nutritional_Epidemiology",
+    "fshType": "Profile",
+    "fshFile": "profiles/NFDI4Health_PR_MDS_Observation_Nutritional_Epidemiology.fsh",
+    "startLine": 1,
+    "endLine": 114
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-pr-mds-organization.json",
+    "fshName": "NFDI4Health_PR_MDS_Organization",
+    "fshType": "Profile",
+    "fshFile": "profiles/NFDI4Health_PR_MDS_Organization.fsh",
+    "startLine": 1,
+    "endLine": 78
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-pr-mds-practitioner-role.json",
+    "fshName": "NFDI4Health_PR_MDS_Practitioner_Role",
+    "fshType": "Profile",
+    "fshFile": "profiles/NFDI4Health_PR_MDS_Practitioner_Role.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-pr-mds-practitioner.json",
+    "fshName": "NFDI4Health_PR_MDS_Practitioner",
+    "fshType": "Profile",
+    "fshFile": "profiles/NFDI4Health_PR_MDS_Practitioner.fsh",
+    "startLine": 1,
+    "endLine": 37
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-pr-mds-provenance.json",
+    "fshName": "NFDI4Health_PR_MDS_Provenance",
+    "fshType": "Profile",
+    "fshFile": "profiles/NFDI4Health_PR_MDS_Provenance.fsh",
+    "startLine": 1,
+    "endLine": 26
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-pr-mds-questionnaire.json",
+    "fshName": "NFDI4Health_PR_MDS_Questionnaire",
+    "fshType": "Profile",
+    "fshFile": "profiles/NFDI4Health_PR_MDS_Questionnaire.fsh",
+    "startLine": 1,
+    "endLine": 135
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-pr-mds-related-artifact-resource.json",
+    "fshName": "NFDI4Health_PR_MDS_Related_Artifact_Resource",
+    "fshType": "Profile",
+    "fshFile": "profiles/dt-related-artifact-resource.fsh",
+    "startLine": 4,
+    "endLine": 26
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-pr-mds-study.json",
+    "fshName": "NFDI4Health_PR_MDS_Study",
+    "fshType": "Profile",
+    "fshFile": "profiles/NFDI4Health_PR_MDS_Study.fsh",
+    "startLine": 1,
+    "endLine": 302
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-cd-common-chronic-disease-name-snomedct.json",
+    "fshName": "NFDI4Health_VS_MDS_CD_Common_Chronic_Disease_Name_SNOMEDCT",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-cd-CommonChronicDiseaseName.fsh",
+    "startLine": 1,
+    "endLine": 22
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-cd-datacollected-umls.json",
+    "fshName": "NFDI4Health_VS_MDS_CD_DataCollected_UMLS",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-cd-data-collected.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-cd-information-sources-umls-local.json",
+    "fshName": "NFDI4Health_VS_MDS_CD_Information_Sources_UMLS_Local",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-cd-informationSources.fsh",
+    "startLine": 1,
+    "endLine": 18
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-countries-iso.json",
+    "fshName": "NFDI4Health_VS_MDS_Countries_ISO",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-mds-countries.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-id-type-umls-local.json",
+    "fshName": "NFDI4Health_VS_MDS_ID_TYPE_UMLS_Local",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-mds-id-type.fsh",
+    "startLine": 1,
+    "endLine": 22
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-identifier-type-related-artifact-umls-local.json",
+    "fshName": "NFDI4Health_VS_MDS_Identifier_Type_Related_Artifact_UMLS_Local",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-related-identifier-type.fsh",
+    "startLine": 1,
+    "endLine": 28
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-label-type-local.json",
+    "fshName": "NFDI4Health_VS_MDS_Label_Type_Local",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-label-type.fsh",
+    "startLine": 1,
+    "endLine": 25
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-mortality-data-nci.json",
+    "fshName": "NFDI4Health_VS_MDS_Mortality_Data_NCI",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-study-mortality-data.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-ne-device-nci-snomedct-local.json",
+    "fshName": "NFDI4Health_VS_MDS_NE_Device_NCI_SNOMEDCT_Local",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-ne-device.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-ne-instrument-snomedct-nci-local.json",
+    "fshName": "NFDI4Health_VS_MDS_NE_Instrument_NCI_Local",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-ne-instrument.fsh",
+    "startLine": 1,
+    "endLine": 18
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-ne-mode-nci-mesh-local.json",
+    "fshName": "NFDI4Health_VS_MDS_NE_Mode_NCI_MeSH_Local",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-ne-mode.fsh",
+    "startLine": 1,
+    "endLine": 18
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-ne-portion-size-snomedct-local.json",
+    "fshName": "NFDI4Health_VS_MDS_NE_Portion_Size_SNOMEDCT_Local",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-ne-portion-size.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-ne-reference-period-unit-ucum.json",
+    "fshName": "NFDI4Health_VS_MDS_NE_Reference_Period_Unit_UCUM",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-ne-referenceperiodunit.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-organisational-roles-nci-local.json",
+    "fshName": "NFDI4Health_VS_MDS_Organisational_Roles_NCI_Local",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-roles-organisational.fsh",
+    "startLine": 1,
+    "endLine": 34
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-personal-roles-nci-local.json",
+    "fshName": "NFDI4Health_VS_MDS_Personal_Roles_NCI_Local",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-roles-personal.fsh",
+    "startLine": 1,
+    "endLine": 33
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-provenance-activity-hl7-local.json",
+    "fshName": "NFDI4Health_VS_MDS_Provenance_Activity_HL7_Local",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-provenance-activity.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-provenance-data-source-local.json",
+    "fshName": "NFDI4Health_VS_MDS_Provenance_Data_Source_Local",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-provenance-data-source.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-relation-type-ids-local.json",
+    "fshName": "NFDI4Health_VS_MDS_Relation_Type_Ids_Local",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-relation-type-ids.fsh",
+    "startLine": 1,
+    "endLine": 45
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-relation-type-ids-nfdi-local.json",
+    "fshName": "NFDI4Health_VS_MDS_Relation_Type_Ids_Nfdi_Local",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-relation-type-nfdi4healthids.fsh",
+    "startLine": 1,
+    "endLine": 30
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-resource-type-general-nci-umls-local.json",
+    "fshName": "NFDI4Health_VS_MDS_Resource_Type_General_NCI_UMLS_Local",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-resource-type-general.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-resource-type-nci-local.json",
+    "fshName": "NFDI4Health_VS_MDS_Resource_Type_NCI_Local",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-mds-resource-type.fsh",
+    "startLine": 1,
+    "endLine": 35
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-role-affiliation-identifier-scheme-local.json",
+    "fshName": "NFDI4Health_VS_MDS_Role_Affiliation_Identifier_Scheme_Local",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-role-affiliation-identifier-scheme.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-role-name-identifier-scheme-local.json",
+    "fshName": "NFDI4Health_VS_MDS_Role_Name_Identifier_Scheme_Local",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-role-name-identifier-scheme.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-role-name-type-snomed.json",
+    "fshName": "NFDI4Health_VS_MDS_Role_Name_Type_SNOMED",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-role-name-type.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-allocation-local.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Allocation_Local",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-study-allocation-local.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-allocation-nci.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Allocation_NCI",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-study-allocation.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-arm-group-type-nci.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Arm_Group_Type_NCI",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-study-arm-group-type.fsh",
+    "startLine": 1,
+    "endLine": 18
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-assessments-sct-nci.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Assessments_SCT_NCI",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-study-assessments.fsh",
+    "startLine": 1,
+    "endLine": 22
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-biospecimen-retention-umls.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Biospecimen_Retention_UMLS",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-study-biospecimen-retention.fsh",
+    "startLine": 2,
+    "endLine": 16
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-centers-snomedct-local.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Centers_SNOMEDCT_Local",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-study-centers.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-conditions-classification-nci-local.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Conditions_Classification_NCI_Local",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-study-conditions-classification.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-data-sharing-plan-ds-snomedct-umls.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Data_Sharing_Plan_Datashield_SNOMEDCT_UMLS",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-study-data-sharing-plan-datashield.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-data-sharing-plan-sup-inf-umls-local.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Data_Sharing_Plan_Supporting_Information_UMLS_Local",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-study-data-sharing-plan-supporting-infomation.fsh",
+    "startLine": 1,
+    "endLine": 24
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-data-sources-general-nci-local.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Data_Sources_General_NCI_Local",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-study-data-sources-general.fsh",
+    "startLine": 1,
+    "endLine": 24
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-data-sources-imaging-nci.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Data_Sources_Imaging_NCI",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-study-data-sources-imaging.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-data-sources-omics-nci.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Data_Sources_Omics_NCI",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-study-data-sources-omics.fsh",
+    "startLine": 1,
+    "endLine": 18
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-diseases-generally-icd-sct.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Groups_Of_Diseases_Generally_ICD10_SCT",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-study-groups-of-diseases-generally-icd10.fsh",
+    "startLine": 1,
+    "endLine": 39
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-ds-biosamples-sct-nci.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_DS_Biosamples_SCT_NCI",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-study-data-sources-biosamples.fsh",
+    "startLine": 1,
+    "endLine": 29
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-eligibility-gender-snomedct-local.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Eligibility_Gender_SNOMEDCT_Local",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-study-eligibility-criteria-genders.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-ethics-committee-approval-nci-local.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Ethics_Committee_Approval_NCI_Local",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-study-ethics-committee-approval.fsh",
+    "startLine": 1,
+    "endLine": 20
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-exposure-type-nci.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Exposure_Type_NCI",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-study-exposure-type.fsh",
+    "startLine": 1,
+    "endLine": 23
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-group-characteristics-nci.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Group_Characteristics_NCI",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-study-group-characteristics.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-intervention-type-nci.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Intervention_Type_NCI",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-study-intervention-type.fsh",
+    "startLine": 1,
+    "endLine": 23
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-masking-roles-nci-local.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Masking_Roles_NCI_Local",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-study-masking-roles.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-outcome-type-nci.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Outcome_Type_NCI",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-study-outcome-type.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-overall-status-nci-local.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Overall_Status_NCI_Local",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-study-overall-status.fsh",
+    "startLine": 1,
+    "endLine": 21
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-phase-nci.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Phase_NCI",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-study-phase.fsh",
+    "startLine": 1,
+    "endLine": 25
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-primary-design-local.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Primary_Design_Local",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-study-primary-design-local.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-primary-design-umls.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Primary_Design_UMLS",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-study-primary-design-umls.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-primary-purpose-hl7-nci.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Primary_Purpose_HL7_NCI",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-study-primary-purpose.fsh",
+    "startLine": 1,
+    "endLine": 26
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-recruitment-register-nci-sct-local.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Recruitment_Register_NCI_SCT_Local",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-study-recruitment-register.fsh",
+    "startLine": 1,
+    "endLine": 22
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-sampling-method-local.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Sampling_Method_Local",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-study-sampling-method-local.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-sampling-method-nci-local.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Sampling_Method_NCI_Local",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-study-sampling-method.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-sampling-method-non-prob-local.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Sampling_Method_Non_Probability_Local",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-study-sampling-method-non-probability-local.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-sampling-method-non-prob-nci-local.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Sampling_Method_Non_Probability_NCI_Local",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-study-sampling-method-non-probability.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-sampling-prob-method-local.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Sampling_Probability_Method_Local",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-study-sampling-method-probability-local.fsh",
+    "startLine": 1,
+    "endLine": 21
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-sampling-prob-method-nci-local.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Sampling_Probability_Method_NCI_Local",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-study-sampling-method-probability.fsh",
+    "startLine": 1,
+    "endLine": 21
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-status-halted-stage-local.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Status_Halted_Stage_Local",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-study-status-halted-stage.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-status-when-intervention-local.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Status_When_Intervention_Local",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-study-status-when-intervention.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-subject-snomedct.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Subject_SNOMEDCT",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-study-subject.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-time-perspectives-local.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Time_Perspectives_Local",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-study-time-perspectives-local.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-time-perspectives-umls.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Time_Perspectives_UMLS",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-study-time-perspectives.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-type-interventional-local.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Type_Interventional_Local",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-study-type-interventional-local.fsh",
+    "startLine": 1,
+    "endLine": 20
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-type-interventional-umls.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Type_Interventional_UMLS",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-study-type-interventional.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-type-non-interventional-local.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Type_Non_Interventional_Local",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-study-type-non-interventional-local.fsh",
+    "startLine": 1,
+    "endLine": 32
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-type-non-interventional-umls-local.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Type_Non_Interventional_UMLS_Local",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-study-type-non-interventional.fsh",
+    "startLine": 1,
+    "endLine": 32
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-time-units-ucum-loinc.json",
+    "fshName": "NFDI4Health_VS_MDS_Time_Units_UCUM_LOINC",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-time-units.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-use-rights-label-spdx-snomed-local.json",
+    "fshName": "NFDI4Health_VS_MDS_Use_Rights_Label_SPDX_SNOMED_Local",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-use-rights-label.fsh",
+    "startLine": 1,
+    "endLine": 23
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-yes-no-not-applicable-snomedct.json",
+    "fshName": "NFDI4Health_VS_MDS_Yes_No_Not_Applicable_SNOMEDCT",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-yes-no-not-applicable.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-yes-no-undecided-snomedct-nci.json",
+    "fshName": "NFDI4Health_VS_MDS_Yes_No_Undecided_SNOMEDCT_NCI",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-yes-no-undecided.fsh",
+    "startLine": 1,
+    "endLine": 15
+  }
+]

@@ -1,4 +1,3 @@
-[2.16.840.1.113883.3.1937.777.64.4.6--20231207000000]: Questionnaire-2.16.840.1.113883.3.1937.777.64.4.6--20231207000000.html
 [ConceptMap-Study-Allocation-NFDI4Health-to-UMLS]: ConceptMap-ConceptMap-Study-Allocation-NFDI4Health-to-UMLS.html
 [ConceptMap-Study-Primary-Design-NFDI4Health-to-UMLS]: ConceptMap-ConceptMap-Study-Primary-Design-NFDI4Health-to-UMLS.html
 [ConceptMap-Study-Sampling-Non-Probability-NFDI4Health-to-NCI]: ConceptMap-ConceptMap-Study-Sampling-Non-Probability-NFDI4Health-to-NCI.html
@@ -39,6 +38,7 @@
 [InstanceOfStudySHIP]: ResearchStudy-InstanceOfStudySHIP.html
 [InstanceOfStudySPOVID]: ResearchStudy-InstanceOfStudySPOVID.html
 [NFDI4Health_VS_MDS_CD_Common_Chronic_Disease_Name_SNOMEDCT]: ValueSet-nfdi4health-vs-mds-cd-common-chronic-disease-name-snomedct.html
+[nfdi4health-cps-mds-capability-statement]: CapabilityStatement-nfdi4health-cps-mds-capability-statement.html
 [NFDI4Health_CS_MDS_Label_FHIR]: CodeSystem-nfdi4health-cs-mds-label-fhir.html
 [NFDI4Health_CS_MDS_Provenance_Data_Source]: CodeSystem-nfdi4health-cs-mds-provenance-data-source.html
 [NFDI4Health_CS_MDS_Remaining_Concepts]: CodeSystem-nfdi4health-cs-mds-remaining-concepts.html
@@ -118,6 +118,7 @@
 [NFDI4Health_PR_MDS_Questionnaire]: StructureDefinition-nfdi4health-pr-mds-questionnaire.html
 [NFDI4Health_PR_MDS_Related_Artifact_Resource]: StructureDefinition-nfdi4health-pr-mds-related-artifact-resource.html
 [NFDI4Health_PR_MDS_Study]: StructureDefinition-nfdi4health-pr-mds-study.html
+[2.16.840.1.113883.3.1937.777.64.4.6--20231207000000]: Questionnaire-2.16.840.1.113883.3.1937.777.64.4.6--20231207000000.html
 [NFDI4Health_VS_MDS_Countries_ISO]: ValueSet-nfdi4health-vs-mds-countries-iso.html
 [NFDI4Health_VS_MDS_ID_TYPE_UMLS_Local]: ValueSet-nfdi4health-vs-mds-id-type-umls-local.html
 [NFDI4Health_VS_MDS_Identifier_Type_Related_Artifact_UMLS_Local]: ValueSet-nfdi4health-vs-mds-identifier-type-related-artifact-umls-local.html
@@ -137,8 +138,8 @@
 [NFDI4Health_VS_MDS_Role_Name_Type_SNOMED]: ValueSet-nfdi4health-vs-mds-role-name-type-snomed.html
 [NFDI4Health_VS_MDS_Study_Allocation_Local]: ValueSet-nfdi4health-vs-mds-study-allocation-local.html
 [NFDI4Health_VS_MDS_Study_Allocation_NCI]: ValueSet-nfdi4health-vs-mds-study-allocation-nci.html
-[NFDI4Health_VS_MDS_Study_Arm_Group_Type_UMLS]: ValueSet-nfdi4health-vs-mds-study-arm-group-type-umls.html
-[NFDI4Health_VS_MDS_Study_Assessments_SNOMEDCT_UMLS]: ValueSet-nfdi4health-vs-mds-study-assessments-snomedct-umls.html
+[NFDI4Health_VS_MDS_Study_Arm_Group_Type_NCI]: ValueSet-nfdi4health-vs-mds-study-arm-group-type-nci.html
+[NFDI4Health_VS_MDS_Study_Assessments_SCT_NCI]: ValueSet-nfdi4health-vs-mds-study-assessments-sct-nci.html
 [NFDI4Health_VS_MDS_Study_Biospecimen_Retention_UMLS]: ValueSet-nfdi4health-vs-mds-study-biospecimen-retention-umls.html
 [NFDI4Health_VS_MDS_Study_Centers_SNOMEDCT_Local]: ValueSet-nfdi4health-vs-mds-study-centers-snomedct-local.html
 [NFDI4Health_VS_MDS_Study_Conditions_Classification_NCI_Local]: ValueSet-nfdi4health-vs-mds-study-conditions-classification-nci-local.html
@@ -150,11 +151,12 @@
 [NFDI4Health_VS_MDS_Study_Data_Sources_Omics_NCI]: ValueSet-nfdi4health-vs-mds-study-data-sources-omics-nci.html
 [NFDI4Health_VS_MDS_Study_Eligibility_Gender_SNOMEDCT_Local]: ValueSet-nfdi4health-vs-mds-study-eligibility-gender-snomedct-local.html
 [NFDI4Health_VS_MDS_Study_Ethics_Committee_Approval_NCI_Local]: ValueSet-nfdi4health-vs-mds-study-ethics-committee-approval-nci-local.html
+[NFDI4Health_VS_MDS_Study_Exposure_Type_NCI]: ValueSet-nfdi4health-vs-mds-study-exposure-type-nci.html
 [NFDI4Health_VS_MDS_Study_Group_Characteristics_NCI]: ValueSet-nfdi4health-vs-mds-study-group-characteristics-nci.html
 [NFDI4Health_VS_MDS_Study_Groups_Of_Diseases_Generally_ICD10_SCT]: ValueSet-nfdi4health-vs-mds-study-diseases-generally-icd-sct.html
-[NFDI4Health_VS_MDS_Study_Intervention_Type_NCI_UMLS]: ValueSet-nfdi4health-vs-mds-study-intervention-type-nci-umls.html
+[NFDI4Health_VS_MDS_Study_Intervention_Type_NCI]: ValueSet-nfdi4health-vs-mds-study-intervention-type-nci.html
 [NFDI4Health_VS_MDS_Study_Masking_Roles_NCI_Local]: ValueSet-nfdi4health-vs-mds-study-masking-roles-nci-local.html
-[NFDI4Health_VS_MDS_Study_Outcome_Type_UMLS]: ValueSet-nfdi4health-vs-mds-study-outcome-type-umls.html
+[NFDI4Health_VS_MDS_Study_Outcome_Type_NCI]: ValueSet-nfdi4health-vs-mds-study-outcome-type-nci.html
 [NFDI4Health_VS_MDS_Study_Overall_Status_NCI_Local]: ValueSet-nfdi4health-vs-mds-study-overall-status-nci-local.html
 [NFDI4Health_VS_MDS_Study_Phase_NCI]: ValueSet-nfdi4health-vs-mds-study-phase-nci.html
 [NFDI4Health_VS_MDS_Study_Primary_Design_Local]: ValueSet-nfdi4health-vs-mds-study-primary-design-local.html
@@ -179,5 +181,4 @@
 [NFDI4Health_VS_MDS_Use_Rights_Label_SPDX_SNOMED_Local]: ValueSet-nfdi4health-vs-mds-use-rights-label-spdx-snomed-local.html
 [NFDI4Health_VS_MDS_Yes_No_Not_Applicable_SNOMEDCT]: ValueSet-nfdi4health-vs-mds-yes-no-not-applicable-snomedct.html
 [NFDI4Health_VS_MDS_Yes_No_Undecided_SNOMEDCT_NCI]: ValueSet-nfdi4health-vs-mds-yes-no-undecided-snomedct-nci.html
-[nfdi4health-cps-mds-capability-statement]: CapabilityStatement-nfdi4health-cps-mds-capability-statement.html
 [NFDI4Health_EX_MDS_Related]: StructureDefinition-nfdi4health-ex-mds-related.html

@@ -1,0 +1,43 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "NFDI4Health_VS_MDS_Study_Outcome_Type_NCI",
+  "id": "nfdi4health-vs-mds-study-outcome-type-nci",
+  "title": "NFDI4Health VS MDS Study Outcome Type [NCI]",
+  "description": "Value set defining codes to specify the type of outcome measure.",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-outcome-type-nci",
+  "version": "0.9",
+  "experimental": true,
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "concept": [
+          {
+            "code": "C98772",
+            "display": "Primary Outcome Measure"
+          },
+          {
+            "code": "C98781",
+            "display": "Secondary Outcome Measure"
+          },
+          {
+            "code": "C17649",
+            "display": "Other"
+          }
+        ]
+      }
+    ]
+  }
+}
