@@ -11,7 +11,7 @@ Description: "NFDI4Health Logical Model MDS Module Design V3.3"
 * Design 0..1 BackboneElement "Characteristics of the [RESOURCE]" "Group of items providing information about the characteristics of a [RESOURCE]."
 * Design ^comment = "Cardinality: 1..1, if Resource.classification.type == ('Study' OR 'Substudy' OR 'Registry' OR 'Secondary data source'); otherwise 0..0 / Additional Information: Group of items applicable only to studies, substudies, registries, and secondary data sources. / Source of the property and/or allowed values: NFDI4Health"
 * Design.primaryDesign 0..1 Coding "Is it an interventional or non-interventional [RESOURCE]?" "Non-interventional design refers to a [RESOURCE] that does not aim to alter its outcomes of interest. Interventional design refers to a [RESOURCE] that aims to alter its outcomes of interest."
-* Design.primaryDesign from NFDI4Health_VS_MDS_Study_Primary_Design_Local (required)
+* Design.primaryDesign from NFDI4Health_VS_MDS_Study_Primary_Design_NCI (required)
 * Design.primaryDesign ^comment = "Cardinality: 1..1, if Resource.classification.type == ('Study' OR 'Substudy'); otherwise 0..0 / Short Input Help: Select between non-interventional and interventional design for the given [RESOURCE]. / Source of the property and/or allowed values: CT.gov [2], DRKS [3]"
 * Design.studyType 0..1 BackboneElement "Specification of the type of the [RESOURCE]" "Group of items providing information about the type of the [RESOURCE]."
 * Design.studyType ^comment = "Cardinality: 1..1, if Resource.classification.type == ('Study' OR 'Substudy'); otherwise 0..0 / Source of the property and/or allowed values: CT.gov [2], DRKS [3], DDI [7], MIABIS [6]"

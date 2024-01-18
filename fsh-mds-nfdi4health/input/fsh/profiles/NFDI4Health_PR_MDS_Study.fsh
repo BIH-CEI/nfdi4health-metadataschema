@@ -161,7 +161,7 @@ Description: "Profile to collect information about german (or with at least one 
     samplingMethod 1..1 and
     samplingMethodProbability 0..1 and
     samplingMethodNonProbability 0..1
-* category[primaryDesign] from NFDI4Health_VS_MDS_Study_Primary_Design_Local (required)
+* category[primaryDesign] from NFDI4Health_VS_MDS_Study_Primary_Design_NCI (required)
 * category[primaryDesign] ^short = "Is it an interventional or non-interventional [RESOURCE]?"
 * category[primaryDesign] ^definition = "Non-interventional design refers to a [RESOURCE] that does not aim to alter its outcomes of interest. Interventional design refers to a [RESOURCE] that aims to alter its outcomes of interest."
 * category[primaryDesign] ^comment = "Short input help: Select between non-interventional and interventional design for the given [RESOURCE]."
@@ -182,7 +182,7 @@ Description: "Profile to collect information about german (or with at least one 
 * category[timePerspectives] from NFDI4Health_VS_MDS_Study_Time_Perspectives_NCI (required)
 * category[timePerspectives] ^binding.description = "Value set defining codes to specify the time perspective of a study in a ResearchStudy resource."
 * category[timePerspectives].coding 0..*
-* category[allocation] from NFDI4Health_VS_MDS_Study_Allocation_Local (required)
+* category[allocation] from NFDI4Health_VS_MDS_Study_Allocation_NCI (required)
 * category[allocation] ^short = "Type of allocation of participants to an arm"
 * category[allocation] ^definition = "Type of allocation/assignment of individual study participants to an arm."
 * category[allocation] ^comment = "Short input help: Select one value from the list."

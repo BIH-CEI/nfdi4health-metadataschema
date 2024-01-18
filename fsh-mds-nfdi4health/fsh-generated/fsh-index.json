@@ -40,22 +40,6 @@
     "endLine": 20
   },
   {
-    "outputFile": "ConceptMap-ConceptMap-Study-Allocation-NFDI4Health-to-UMLS.json",
-    "fshName": "ConceptMap-Study-Allocation-NFDI4Health-to-UMLS",
-    "fshType": "Instance",
-    "fshFile": "valuesets/vs-study-allocation-local.fsh",
-    "startLine": 17,
-    "endLine": 43
-  },
-  {
-    "outputFile": "ConceptMap-ConceptMap-Study-Primary-Design-NFDI4Health-to-UMLS.json",
-    "fshName": "ConceptMap-Study-Primary-Design-NFDI4Health-to-UMLS",
-    "fshType": "Instance",
-    "fshFile": "valuesets/vs-study-primary-design-local.fsh",
-    "startLine": 16,
-    "endLine": 37
-  },
-  {
     "outputFile": "ConceptMap-ConceptMap-Study-Sampling-Non-Probability-NFDI4Health-to-NCI.json",
     "fshName": "ConceptMap-Study-Sampling-Non-Probability-NFDI4Health-to-NCI",
     "fshType": "Instance",
@@ -1088,14 +1072,6 @@
     "endLine": 14
   },
   {
-    "outputFile": "ValueSet-nfdi4health-vs-mds-study-allocation-local.json",
-    "fshName": "NFDI4Health_VS_MDS_Study_Allocation_Local",
-    "fshType": "ValueSet",
-    "fshFile": "valuesets/vs-study-allocation-local.fsh",
-    "startLine": 1,
-    "endLine": 15
-  },
-  {
     "outputFile": "ValueSet-nfdi4health-vs-mds-study-allocation-nci.json",
     "fshName": "NFDI4Health_VS_MDS_Study_Allocation_NCI",
     "fshType": "ValueSet",
@@ -1272,16 +1248,8 @@
     "endLine": 25
   },
   {
-    "outputFile": "ValueSet-nfdi4health-vs-mds-study-primary-design-local.json",
-    "fshName": "NFDI4Health_VS_MDS_Study_Primary_Design_Local",
-    "fshType": "ValueSet",
-    "fshFile": "valuesets/vs-study-primary-design-local.fsh",
-    "startLine": 1,
-    "endLine": 14
-  },
-  {
-    "outputFile": "ValueSet-nfdi4health-vs-mds-study-primary-design-umls.json",
-    "fshName": "NFDI4Health_VS_MDS_Study_Primary_Design_UMLS",
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-primary-design-nci.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Primary_Design_NCI",
     "fshType": "ValueSet",
     "fshFile": "valuesets/vs-study-primary-design-umls.fsh",
     "startLine": 1,
