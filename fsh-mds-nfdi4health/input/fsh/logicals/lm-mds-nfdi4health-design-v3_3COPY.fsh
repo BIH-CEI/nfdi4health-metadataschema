@@ -16,7 +16,7 @@ Description: "NFDI4Health Logical Model MDS Module Design V3.3"
 * Design.studyType 0..1 BackboneElement "Specification of the type of the [RESOURCE]" "Group of items providing information about the type of the [RESOURCE]."
 * Design.studyType ^comment = "Cardinality: 1..1, if Resource.classification.type == ('Study' OR 'Substudy'); otherwise 0..0 / Source of the property and/or allowed values: CT.gov [2], DRKS [3], DDI [7], MIABIS [6]"
 * Design.studyType.interventional 0..* Coding "Interventional [RESOURCE] type" "The strategy for assigning interventions to participants."
-* Design.studyType.interventional from NFDI4Health_VS_MDS_Study_Type_Interventional_Local (required)
+* Design.studyType.interventional from NFDI4Health_VS_MDS_Study_Type_Interventional_NCI (required)
 * Design.studyType.interventional ^comment = "Cardinality: 1..*, if Design.primaryDesign == 'Interventional'; otherwise 0..0 / Short Input Help: Select all that apply. If 'Other' is selected, please specify the type of the [RESOURCE] in the field 'Additional information about the [RESOURCE]'. / Source of the property and/or allowed values: CT.gov [2], DRKS [3]"
 * Design.studyType.nonInterventional 0..* Coding "Non-interventional [RESOURCE] type" "The primary strategy for participant identification and follow-up."
 * Design.studyType.nonInterventional from NFDI4Health_VS_MDS_Study_Type_Non_Interventional_Local (required)
@@ -102,13 +102,13 @@ Description: "NFDI4Health Logical Model MDS Module Design V3.3"
 * Design.sampling 0..1 BackboneElement "Sampling method" "Group of items providing information about the applied sampling method."
 * Design.sampling ^comment = "Cardinality: 0..1, if Resource.classification.type == ('Study' OR 'Substudy'); otherwise 0..0 / Source of the property and/or allowed values: NFDI4Health"
 * Design.sampling.method 1..1 Coding "Applied sampling method" "Type of the sampling method applied for the selection of [RESOURCE] participants."
-* Design.sampling.method from NFDI4Health_VS_MDS_Study_Sampling_Method_Local (required)
+* Design.sampling.method from NFDI4Health_VS_MDS_Study_Sampling_Method_NCI_Local (required)
 * Design.sampling.method ^comment = "Short Input Help: Select one value from the list. / Source of the property and/or allowed values: DDI [12], NFDI4Health, CT.gov [2]"
 * Design.sampling.probabilityMethod 0..1 Coding "Specific type of probability sampling"	"Specific type of the probability sampling method applied for the selection of [RESOURCE] participants."
-* Design.sampling.probabilityMethod from NFDI4Health_VS_MDS_Study_Sampling_Probability_Method_Local (required)
+* Design.sampling.probabilityMethod from NFDI4Health_VS_MDS_Study_Sampling_Probability_Method_NCI_Local (required)
 * Design.sampling.probabilityMethod ^comment = "Cardinality: 0..1, if Design.sampling.method == 'Probability'; otherwise 0..0 / Short Input Help: If known, select one value from the list. / Source of the property and/or allowed values: NFDI4Health, DDI [12]"
 * Design.sampling.nonProbabilityMethod 0..1 Coding "Specific type of non-probability sampling" "Specific type of the non-probability sampling method applied for the selection of [RESOURCE] participants."
-* Design.sampling.nonProbabilityMethod from NFDI4Health_VS_MDS_Study_Sampling_Method_Non_Probability_Local (required)
+* Design.sampling.nonProbabilityMethod from NFDI4Health_VS_MDS_Study_Sampling_Method_Non_Probability_NCI_Local (required)
 * Design.sampling.nonProbabilityMethod ^comment = "Cardinality: 0..1, if Design.sampling.method == 'Non-probability'; otherwise 0..0 / Short Input Help: If known, select one value from the list. / Source of the property and/or allowed values: NFDI4Health, DDI [12]"
 * Design.dataSource 0..1 BackboneElement "Data sources of the [RESOURCE]" "Group of items providing information about data sources from which the data of the [RESOURCE] are generated or extracted."
 * Design.dataSource ^comment = "Source of the property and/or allowed values: NFDI4Health"

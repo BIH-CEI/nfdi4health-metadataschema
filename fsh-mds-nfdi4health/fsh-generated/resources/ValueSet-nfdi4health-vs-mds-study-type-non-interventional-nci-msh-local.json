@@ -1,0 +1,121 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "NFDI4Health_VS_MDS_Study_Type_Non_Interventional_NCI_MSH_Local",
+  "id": "nfdi4health-vs-mds-study-type-non-interventional-nci-msh-local",
+  "title": "NFDI4Health VS MDS Study Type Non Interventional [NCI, MSH, local]",
+  "description": "Value set defining codes to specify the type of a non interventional study in a ResearchStudy resource.",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-type-non-interventional-nci-msh-local",
+  "version": "0.9",
+  "experimental": true,
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "url:oid:2.16.840.1.113883.6.177",
+        "concept": [
+          {
+            "code": "D018433",
+            "display": "Twin Studies as Topic"
+          },
+          {
+            "code": "D015331",
+            "display": "Birth Cohort Study"
+          }
+        ]
+      },
+      {
+        "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "concept": [
+          {
+            "code": "C15197",
+            "display": "Case-Control Study"
+          },
+          {
+            "code": "C48202",
+            "display": "Nested Case-control Study"
+          },
+          {
+            "code": "C127779",
+            "display": "Observational Case-Crossover Study"
+          },
+          {
+            "code": "C127780",
+            "display": "Ecologic or Community Based Study"
+          },
+          {
+            "code": "C15407",
+            "display": "Family Study"
+          },
+          {
+            "code": "C15208",
+            "display": "Cohort Study"
+          },
+          {
+            "code": "C53311",
+            "display": "Panel Study"
+          },
+          {
+            "code": "C15273",
+            "display": "Longitudinal Study"
+          },
+          {
+            "code": "C53310",
+            "display": "Cross-Sectional Study"
+          },
+          {
+            "code": "C181915",
+            "display": "Time Series"
+          },
+          {
+            "code": "C129000",
+            "display": "Patient Registry Study"
+          },
+          {
+            "code": "C17649",
+            "display": "Other"
+          },
+          {
+            "code": "C17998",
+            "display": "Unknown"
+          }
+        ]
+      },
+      {
+        "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+        "concept": [
+          {
+            "code": "007",
+            "display": "Quality control studies"
+          },
+          {
+            "code": "006",
+            "display": "Cross-section ad-hoc follow-up studies"
+          },
+          {
+            "code": "005",
+            "display": "Trend studies"
+          },
+          {
+            "code": "004",
+            "display": "Case-cohort studies"
+          },
+          {
+            "code": "003",
+            "display": "Case-only studies"
+          }
+        ]
+      }
+    ]
+  }
+}

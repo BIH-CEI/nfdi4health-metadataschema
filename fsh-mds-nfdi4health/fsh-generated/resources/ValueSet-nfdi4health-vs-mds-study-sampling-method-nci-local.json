@@ -22,12 +22,29 @@
   "compose": {
     "include": [
       {
-        "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+        "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
         "concept": [
           {
-            "code": "034",
-            "display": "Probability Sampling Method"
+            "code": "C48660",
+            "display": "Not Applicable"
           },
+          {
+            "code": "C17998",
+            "display": "Unknown"
+          },
+          {
+            "code": "C17649",
+            "display": "Other"
+          },
+          {
+            "code": "C127781",
+            "display": "Non-Probability Sampling Method"
+          }
+        ]
+      },
+      {
+        "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+        "concept": [
           {
             "code": "035",
             "display": "Mixed Probability and Non-Probability Sampling Method"
@@ -35,27 +52,10 @@
           {
             "code": "036",
             "display": "Total universe/Complete enumeration"
-          }
-        ]
-      },
-      {
-        "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
-        "concept": [
-          {
-            "code": "C127781",
-            "display": "Non-Probability Sampling Method (Activity)"
           },
           {
-            "code": "C17649",
-            "display": "Other (Qualitative Concept)"
-          },
-          {
-            "code": "C17998",
-            "display": "Unknown (Idea or Concept)"
-          },
-          {
-            "code": "C48660",
-            "display": "Not Applicable (Qualitative Concept)"
+            "code": "034",
+            "display": "Probability Sampling Method"
           }
         ]
       }

@@ -40,30 +40,6 @@
     "endLine": 20
   },
   {
-    "outputFile": "ConceptMap-ConceptMap-Study-Sampling-Non-Probability-NFDI4Health-to-NCI.json",
-    "fshName": "ConceptMap-Study-Sampling-Non-Probability-NFDI4Health-to-NCI",
-    "fshType": "Instance",
-    "fshFile": "valuesets/vs-study-sampling-method-non-probability-local.fsh",
-    "startLine": 18,
-    "endLine": 44
-  },
-  {
-    "outputFile": "ConceptMap-ConceptMap-Study-Sampling-Probability-Method-NFDI4Health-to-NCI.json",
-    "fshName": "ConceptMap-Study-Sampling-Probability-Method-NFDI4Health-to-NCI",
-    "fshType": "Instance",
-    "fshFile": "valuesets/vs-study-sampling-method-probability-local.fsh",
-    "startLine": 23,
-    "endLine": 64
-  },
-  {
-    "outputFile": "ConceptMap-ConceptMap-study-type-interventional-NFDI4Health-to-UMLS.json",
-    "fshName": "ConceptMap-study-type-interventional-NFDI4Health-to-UMLS",
-    "fshType": "Instance",
-    "fshFile": "valuesets/vs-study-type-interventional-local.fsh",
-    "startLine": 22,
-    "endLine": 68
-  },
-  {
     "outputFile": "DocumentReference-InstanceOfDocumentHouseholdTransmissionInvestigationForC19.json",
     "fshName": "InstanceOfDocumentHouseholdTransmissionInvestigationForC19",
     "fshType": "Instance",
@@ -1272,14 +1248,6 @@
     "endLine": 22
   },
   {
-    "outputFile": "ValueSet-nfdi4health-vs-mds-study-sampling-method-local.json",
-    "fshName": "NFDI4Health_VS_MDS_Study_Sampling_Method_Local",
-    "fshType": "ValueSet",
-    "fshFile": "valuesets/vs-study-sampling-method-local.fsh",
-    "startLine": 1,
-    "endLine": 19
-  },
-  {
     "outputFile": "ValueSet-nfdi4health-vs-mds-study-sampling-method-nci-local.json",
     "fshName": "NFDI4Health_VS_MDS_Study_Sampling_Method_NCI_Local",
     "fshType": "ValueSet",
@@ -1288,28 +1256,12 @@
     "endLine": 19
   },
   {
-    "outputFile": "ValueSet-nfdi4health-vs-mds-study-sampling-method-non-prob-local.json",
-    "fshName": "NFDI4Health_VS_MDS_Study_Sampling_Method_Non_Probability_Local",
-    "fshType": "ValueSet",
-    "fshFile": "valuesets/vs-study-sampling-method-non-probability-local.fsh",
-    "startLine": 1,
-    "endLine": 16
-  },
-  {
     "outputFile": "ValueSet-nfdi4health-vs-mds-study-sampling-method-non-prob-nci-local.json",
     "fshName": "NFDI4Health_VS_MDS_Study_Sampling_Method_Non_Probability_NCI_Local",
     "fshType": "ValueSet",
     "fshFile": "valuesets/vs-study-sampling-method-non-probability.fsh",
     "startLine": 1,
     "endLine": 16
-  },
-  {
-    "outputFile": "ValueSet-nfdi4health-vs-mds-study-sampling-prob-method-local.json",
-    "fshName": "NFDI4Health_VS_MDS_Study_Sampling_Probability_Method_Local",
-    "fshType": "ValueSet",
-    "fshFile": "valuesets/vs-study-sampling-method-probability-local.fsh",
-    "startLine": 1,
-    "endLine": 21
   },
   {
     "outputFile": "ValueSet-nfdi4health-vs-mds-study-sampling-prob-method-nci-local.json",
@@ -1352,16 +1304,8 @@
     "endLine": 16
   },
   {
-    "outputFile": "ValueSet-nfdi4health-vs-mds-study-type-interventional-local.json",
-    "fshName": "NFDI4Health_VS_MDS_Study_Type_Interventional_Local",
-    "fshType": "ValueSet",
-    "fshFile": "valuesets/vs-study-type-interventional-local.fsh",
-    "startLine": 1,
-    "endLine": 20
-  },
-  {
-    "outputFile": "ValueSet-nfdi4health-vs-mds-study-type-interventional-umls.json",
-    "fshName": "NFDI4Health_VS_MDS_Study_Type_Interventional_UMLS",
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-type-interventional-nci.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Type_Interventional_NCI",
     "fshType": "ValueSet",
     "fshFile": "valuesets/vs-study-type-interventional.fsh",
     "startLine": 1,
@@ -1376,8 +1320,8 @@
     "endLine": 32
   },
   {
-    "outputFile": "ValueSet-nfdi4health-vs-mds-study-type-non-interventional-umls-local.json",
-    "fshName": "NFDI4Health_VS_MDS_Study_Type_Non_Interventional_UMLS_Local",
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-type-non-interventional-nci-msh-local.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Type_Non_Interventional_NCI_MSH_Local",
     "fshType": "ValueSet",
     "fshFile": "valuesets/vs-study-type-non-interventional.fsh",
     "startLine": 1,

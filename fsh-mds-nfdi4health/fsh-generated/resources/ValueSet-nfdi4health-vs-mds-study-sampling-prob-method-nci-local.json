@@ -25,28 +25,28 @@
         "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
         "concept": [
           {
-            "code": "C53196",
-            "display": "Simple Random Sampling (Activity)"
-          },
-          {
             "code": "C53200",
-            "display": "Systematic Sampling (Activity)"
+            "display": "Systematic Sampling"
           },
           {
             "code": "C71516",
-            "display": "Stratified Sampling (Activity)"
+            "display": "Stratified Sampling"
           },
           {
             "code": "C71498",
-            "display": "Proportional Stratified Sampling (Activity)"
+            "display": "Proportional Stratified Sampling"
           },
           {
             "code": "C71497",
-            "display": "Disproportional Stratified Sampling (Activity)"
+            "display": "Disproportional Stratified Sampling"
           },
           {
             "code": "C71515",
-            "display": "Multi-Stage Sampling (Activity)"
+            "display": "Multi-Stage Sampling"
+          },
+          {
+            "code": "C53196",
+            "display": "Simple Random Sampling"
           }
         ]
       },
@@ -54,16 +54,16 @@
         "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
         "concept": [
           {
-            "code": "126",
-            "display": "Cluster"
+            "code": "128",
+            "display": "Cluster - Stratified random"
           },
           {
             "code": "127",
             "display": "Cluster - Simple random"
           },
           {
-            "code": "128",
-            "display": "Cluster - Stratified random"
+            "code": "126",
+            "display": "Cluster"
           }
         ]
       }

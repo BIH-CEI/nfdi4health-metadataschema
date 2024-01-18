@@ -167,13 +167,13 @@ Description: "Profile to collect information about german (or with at least one 
 * category[primaryDesign] ^comment = "Short input help: Select between non-interventional and interventional design for the given [RESOURCE]."
 * category[primaryDesign] ^binding.description = "Value set defining codes for primary designs of studies in a ResearchStudy resource."
 * category[primaryDesign].coding 0..1
-* category[studyTypeInterventional] from NFDI4Health_VS_MDS_Study_Type_Interventional_Local (required)
+* category[studyTypeInterventional] from NFDI4Health_VS_MDS_Study_Type_Interventional_NCI (required)
 * category[studyTypeInterventional] ^short = "Interventional [RESOURCE] type"
 * category[studyTypeInterventional] ^definition = "The strategy for assigning interventions to participants."
 * category[studyTypeInterventional] ^comment = "Short input help: Select all that apply. If 'Other' is selected, please specify the type of the [RESOURCE] in the field 'Additional information about the [RESOURCE]'."
 * category[studyTypeInterventional] ^binding.description = "Value set defining codes to specify the type of an interventional study in a ResearchStudy resource."
 * category[studyTypeInterventional].coding 0..*
-* category[studyTypeNonInterventional] from NFDI4Health_VS_MDS_Study_Type_Non_Interventional_Local (required)
+* category[studyTypeNonInterventional] from NFDI4Health_VS_MDS_Study_Type_Non_Interventional_NCI_MSH_Local (required)
 * category[studyTypeNonInterventional] ^short = "Non-interventional [RESOURCE] type"
 * category[studyTypeNonInterventional] ^definition = "The primary strategy for participant identification and follow-up."
 * category[studyTypeNonInterventional] ^comment = "Short input help: Select all that apply. If 'Other' is selected, please specify the type of the [RESOURCE] in the field 'Additional information about the [RESOURCE]'."
@@ -188,19 +188,19 @@ Description: "Profile to collect information about german (or with at least one 
 * category[allocation] ^comment = "Short input help: Select one value from the list."
 * category[allocation] ^binding.description = "Value set defining codes to specify the subject allocation in a study."
 * category[allocation].coding 0..1
-* category[samplingMethod] from NFDI4Health_VS_MDS_Study_Sampling_Method_Local (required)
+* category[samplingMethod] from NFDI4Health_VS_MDS_Study_Sampling_Method_NCI_Local (required)
 * category[samplingMethod] ^short = "Applied sampling method"
 * category[samplingMethod] ^definition = "Type of the sampling method applied for the selection of study participants."
 * category[samplingMethod] ^comment = "Short Input Help: Select one value from the list."
 * category[samplingMethod] ^binding.description = "Value set defining codes to specify types of sampling methods."
 * category[samplingMethod].coding 0..1
-* category[samplingMethodProbability] from NFDI4Health_VS_MDS_Study_Sampling_Probability_Method_Local (required)
+* category[samplingMethodProbability] from NFDI4Health_VS_MDS_Study_Sampling_Probability_Method_NCI_Local (required)
 * category[samplingMethodProbability] ^short = "Specific type of probability sampling"
 * category[samplingMethodProbability] ^definition = "Specific type of the probability sampling method applied for the selection of study participants."
 * category[samplingMethodProbability] ^comment = "Short Input Help: If known, select one value from the list."
 * category[samplingMethodProbability] ^binding.description = "Value set defining codes to specify types of probability sampling methods."
 * category[samplingMethodProbability].coding 0..1
-* category[samplingMethodNonProbability] from NFDI4Health_VS_MDS_Study_Sampling_Method_Non_Probability_Local (required)
+* category[samplingMethodNonProbability] from NFDI4Health_VS_MDS_Study_Sampling_Method_Non_Probability_NCI_Local (required)
 * category[samplingMethodNonProbability] ^short = "Specific type of non-probability sampling"
 * category[samplingMethodNonProbability] ^definition = "Specific type of the probability sampling method applied for the selection of study participants."
 * category[samplingMethodNonProbability] ^comment = "Short Input Help: If known, select one value from the list."
