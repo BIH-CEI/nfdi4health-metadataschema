@@ -2107,6 +2107,10 @@
             "code": "Coding"
           }
         ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-time-perspectives-nci"
+        },
         "mapping": [
           {
             "identity": "NFDI4Health-LM-MDS-Design-V3-3-Internal-Numbering",

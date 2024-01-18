@@ -1256,7 +1256,7 @@
         "max": "*",
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-time-perspectives-local",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-time-perspectives-nci",
           "description": "Value set defining codes to specify the time perspective of a study in a ResearchStudy resource."
         },
         "mapping": [

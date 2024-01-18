@@ -2,7 +2,6 @@
 [ConceptMap-Study-Primary-Design-NFDI4Health-to-UMLS]: ConceptMap-ConceptMap-Study-Primary-Design-NFDI4Health-to-UMLS.html
 [ConceptMap-Study-Sampling-Non-Probability-NFDI4Health-to-NCI]: ConceptMap-ConceptMap-Study-Sampling-Non-Probability-NFDI4Health-to-NCI.html
 [ConceptMap-Study-Sampling-Probability-Method-NFDI4Health-to-NCI]: ConceptMap-ConceptMap-Study-Sampling-Probability-Method-NFDI4Health-to-NCI.html
-[ConceptMap-Study-Time-Perspectives-NFDI4Health-to-UMLS]: ConceptMap-ConceptMap-Study-Time-Perspectives-NFDI4Health-to-UMLS.html
 [ConceptMap-study-type-interventional-NFDI4Health-to-UMLS]: ConceptMap-ConceptMap-study-type-interventional-NFDI4Health-to-UMLS.html
 [InstanceOfDocumentHouseholdTransmissionInvestigationForC19]: DocumentReference-InstanceOfDocumentHouseholdTransmissionInvestigationForC19.html
 [InstanceOfOrganizationCreatorCMI]: Organization-InstanceOfOrganizationCreatorCMI.html
@@ -95,7 +94,6 @@
 [NFDI4Health_LM_MDS_Core_V3_3]: StructureDefinition-nfdi4health-lm-mds-core-v3-3.html
 [NFDI4Health_LM_Metadataschema_EOCD_V3_3]: StructureDefinition-nfdi4health-lm-metadataschema-eocd-v3-3.html
 [NFDI4Health_LM_MDS_Design_V3_3]: StructureDefinition-nfdi4health-lm-mds-design-v3-3.html
-[NFDI4Health_LM_MDS_Design]: StructureDefinition-nfdi4health-lm-mds-design.html
 [NFDI4Health_LM_Metadataschema_NE_V3_3]: StructureDefinition-nfdi4health-lm-metadataschema-ne-v3-3.html
 [InstanceOfChronicDiseaseModule]: Questionnaire-InstanceOfChronicDiseaseModule.html
 [InstanceOfNutritionalEpidemiologyModule]: Questionnaire-InstanceOfNutritionalEpidemiologyModule.html
@@ -129,6 +127,7 @@
 [NFDI4Health_VS_MDS_Provenance_Activity_HL7_Local]: ValueSet-nfdi4health-vs-mds-provenance-activity-hl7-local.html
 [NFDI4Health_VS_MDS_Provenance_Data_Source_Local]: ValueSet-nfdi4health-vs-mds-provenance-data-source-local.html
 [NFDI4Health_VS_MDS_Time_Units_UCUM_LOINC]: ValueSet-nfdi4health-vs-mds-time-units-ucum-loinc.html
+[NFDI4Health_VS_MDS_Time_Units_UCUM]: ValueSet-nfdi4health-vs-mds-time-units-ucum.html
 [NFDI4Health_VS_MDS_Relation_Type_Ids_Nfdi_Local]: ValueSet-nfdi4health-vs-mds-relation-type-ids-nfdi-local.html
 [NFDI4Health_VS_MDS_Relation_Type_Ids_Local]: ValueSet-nfdi4health-vs-mds-relation-type-ids-local.html
 [NFDI4Health_VS_MDS_Resource_Type_General_NCI_UMLS_Local]: ValueSet-nfdi4health-vs-mds-resource-type-general-nci-umls-local.html
@@ -143,8 +142,8 @@
 [NFDI4Health_VS_MDS_Study_Biospecimen_Retention_UMLS]: ValueSet-nfdi4health-vs-mds-study-biospecimen-retention-umls.html
 [NFDI4Health_VS_MDS_Study_Centers_SNOMEDCT_Local]: ValueSet-nfdi4health-vs-mds-study-centers-snomedct-local.html
 [NFDI4Health_VS_MDS_Study_Conditions_Classification_NCI_Local]: ValueSet-nfdi4health-vs-mds-study-conditions-classification-nci-local.html
-[NFDI4Health_VS_MDS_Study_Data_Sharing_Plan_Datashield_SNOMEDCT_UMLS]: ValueSet-nfdi4health-vs-mds-study-data-sharing-plan-ds-snomedct-umls.html
-[NFDI4Health_VS_MDS_Study_Data_Sharing_Plan_Supporting_Information_UMLS_Local]: ValueSet-nfdi4health-vs-mds-study-data-sharing-plan-sup-inf-umls-local.html
+[NFDI4Health_VS_MDS_Study_Data_Sharing_Plan_Datashield_SCT_NCI]: ValueSet-nfdi4health-vs-mds-study-data-sharing-plan-ds-sct-nci.html
+[NFDI4Health_VS_MDS_Study_Data_Sharing_Plan_Supporting_Information_SCT_Local]: ValueSet-nfdi4health-vs-mds-study-data-sharing-plan-sup-inf-sct-local.html
 [NFDI4Health_VS_MDS_Study_DS_Biosamples_SCT_NCI]: ValueSet-nfdi4health-vs-mds-study-ds-biosamples-sct-nci.html
 [NFDI4Health_VS_MDS_Study_Data_Sources_General_NCI_Local]: ValueSet-nfdi4health-vs-mds-study-data-sources-general-nci-local.html
 [NFDI4Health_VS_MDS_Study_Data_Sources_Imaging_NCI]: ValueSet-nfdi4health-vs-mds-study-data-sources-imaging-nci.html
@@ -172,8 +171,7 @@
 [NFDI4Health_VS_MDS_Study_Status_Halted_Stage_Local]: ValueSet-nfdi4health-vs-mds-study-status-halted-stage-local.html
 [NFDI4Health_VS_MDS_Study_Status_When_Intervention_Local]: ValueSet-nfdi4health-vs-mds-study-status-when-intervention-local.html
 [NFDI4Health_VS_MDS_Study_Subject_SNOMEDCT]: ValueSet-nfdi4health-vs-mds-study-subject-snomedct.html
-[NFDI4Health_VS_MDS_Study_Time_Perspectives_Local]: ValueSet-nfdi4health-vs-mds-study-time-perspectives-local.html
-[NFDI4Health_VS_MDS_Study_Time_Perspectives_UMLS]: ValueSet-nfdi4health-vs-mds-study-time-perspectives-umls.html
+[NFDI4Health_VS_MDS_Study_Time_Perspectives_NCI]: ValueSet-nfdi4health-vs-mds-study-time-perspectives-nci.html
 [NFDI4Health_VS_MDS_Study_Type_Interventional_Local]: ValueSet-nfdi4health-vs-mds-study-type-interventional-local.html
 [NFDI4Health_VS_MDS_Study_Type_Interventional_UMLS]: ValueSet-nfdi4health-vs-mds-study-type-interventional-umls.html
 [NFDI4Health_VS_MDS_Study_Type_Non_Interventional_Local]: ValueSet-nfdi4health-vs-mds-study-type-non-interventional-local.html

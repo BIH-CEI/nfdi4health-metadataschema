@@ -72,14 +72,6 @@
     "endLine": 64
   },
   {
-    "outputFile": "ConceptMap-ConceptMap-Study-Time-Perspectives-NFDI4Health-to-UMLS.json",
-    "fshName": "ConceptMap-Study-Time-Perspectives-NFDI4Health-to-UMLS",
-    "fshType": "Instance",
-    "fshFile": "valuesets/vs-study-time-perspectives-local.fsh",
-    "startLine": 18,
-    "endLine": 49
-  },
-  {
     "outputFile": "ConceptMap-ConceptMap-study-type-interventional-NFDI4Health-to-UMLS.json",
     "fshName": "ConceptMap-study-type-interventional-NFDI4Health-to-UMLS",
     "fshType": "Instance",
@@ -773,15 +765,7 @@
     "fshType": "Logical",
     "fshFile": "logicals/lm-mds-nfdi4health-design-v3_3COPY.fsh",
     "startLine": 1,
-    "endLine": 345
-  },
-  {
-    "outputFile": "StructureDefinition-nfdi4health-lm-mds-design.json",
-    "fshName": "NFDI4Health_LM_MDS_Design",
-    "fshType": "Logical",
-    "fshFile": "logicals/lm-mds-nfdi4health-design.fsh",
-    "startLine": 1,
-    "endLine": 455
+    "endLine": 346
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-lm-metadataschema-eocd-v3-3.json",
@@ -1160,16 +1144,16 @@
     "endLine": 19
   },
   {
-    "outputFile": "ValueSet-nfdi4health-vs-mds-study-data-sharing-plan-ds-snomedct-umls.json",
-    "fshName": "NFDI4Health_VS_MDS_Study_Data_Sharing_Plan_Datashield_SNOMEDCT_UMLS",
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-data-sharing-plan-ds-sct-nci.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Data_Sharing_Plan_Datashield_SCT_NCI",
     "fshType": "ValueSet",
     "fshFile": "valuesets/vs-study-data-sharing-plan-datashield.fsh",
     "startLine": 1,
     "endLine": 15
   },
   {
-    "outputFile": "ValueSet-nfdi4health-vs-mds-study-data-sharing-plan-sup-inf-umls-local.json",
-    "fshName": "NFDI4Health_VS_MDS_Study_Data_Sharing_Plan_Supporting_Information_UMLS_Local",
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-data-sharing-plan-sup-inf-sct-local.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Data_Sharing_Plan_Supporting_Information_SCT_Local",
     "fshType": "ValueSet",
     "fshFile": "valuesets/vs-study-data-sharing-plan-supporting-infomation.fsh",
     "startLine": 1,
@@ -1392,16 +1376,8 @@
     "endLine": 17
   },
   {
-    "outputFile": "ValueSet-nfdi4health-vs-mds-study-time-perspectives-local.json",
-    "fshName": "NFDI4Health_VS_MDS_Study_Time_Perspectives_Local",
-    "fshType": "ValueSet",
-    "fshFile": "valuesets/vs-study-time-perspectives-local.fsh",
-    "startLine": 1,
-    "endLine": 16
-  },
-  {
-    "outputFile": "ValueSet-nfdi4health-vs-mds-study-time-perspectives-umls.json",
-    "fshName": "NFDI4Health_VS_MDS_Study_Time_Perspectives_UMLS",
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-time-perspectives-nci.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Time_Perspectives_NCI",
     "fshType": "ValueSet",
     "fshFile": "valuesets/vs-study-time-perspectives.fsh",
     "startLine": 1,
@@ -1446,6 +1422,14 @@
     "fshFile": "valuesets/vs-time-units.fsh",
     "startLine": 1,
     "endLine": 19
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-time-units-ucum.json",
+    "fshName": "NFDI4Health_VS_MDS_Time_Units_UCUM",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-time-units-ucum.fsh",
+    "startLine": 1,
+    "endLine": 16
   },
   {
     "outputFile": "ValueSet-nfdi4health-vs-mds-use-rights-label-spdx-snomed-local.json",

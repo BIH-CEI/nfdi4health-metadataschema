@@ -10,6 +10,6 @@ Description: "Value set defining codes to specify the subject allocation in a st
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 
-* $NCI#C0034656 "Randomization (Health Care Activity)"
-* $NCI#C93043 "Nonrandomized Clinical Trial (Research Activity)"
-* $NCI#C48660 "Not Applicable (Qualitative Concept)"
+* $NCI#C25196 "Randomization"
+* $NCI#C93043 "Nonrandomized Clinical Trial"
+* $NCI#C48660 "Not Applicable"

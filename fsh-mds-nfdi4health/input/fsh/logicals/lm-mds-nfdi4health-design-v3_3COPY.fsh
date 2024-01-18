@@ -298,6 +298,7 @@ Description: "NFDI4Health Logical Model MDS Module Design V3.3"
 * Design.nonInterventional ^comment = "Cardinality: 0..1, if (Resource.classification.type == ('Study' OR 'Substudy') AND Design.primaryDesign == 'Non-interventional') OR Resource.classification.type == ('Registry' OR 'Secondary data source'); otherwise 0..0 / Additional Information: Group of items applicable only to non-interventional resources. / Source of the property and/or allowed values: NFDI4Health"
 
 * Design.nonInterventional.timePerspectives	0..* Coding	"Temporal design" "Temporal design of the [RESOURCE], i.e. the observation period in relation to the time of participant enrollment."
+* Design.nonInterventional.timePerspectives from NFDI4Health_VS_MDS_Study_Time_Perspectives_NCI (required)
 * Design.nonInterventional.timePerspectives ^comment = "Cardinality: 0..*, if Resource.classification.type == ('Study' OR 'Substudy'); otherwise 0..0 / Short Input Help: Is it a retrospective, prospective or cross-sectional [RESOURCE]?	/ Source of the property and/or allowed values: CT.gov [2]"
 
 * Design.nonInterventional.targetFollowUpDuration 0..1 BackboneElement "Target follow-up duration of the [RESOURCE]" "If applicable, anticipated time period over which each participant would be followed."

@@ -61,13 +61,6 @@
       },
       {
         "reference": {
-          "reference": "ConceptMap/ConceptMap-Study-Time-Perspectives-NFDI4Health-to-UMLS"
-        },
-        "name": "ConceptMap - Study time perspectives codes from NFDI4Health to UMLS",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "ConceptMap/ConceptMap-study-type-interventional-NFDI4Health-to-UMLS"
         },
         "name": "ConceptMap - Study Type Interventional from NFDI4Health to UMLS",
@@ -797,14 +790,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nfdi4health-lm-mds-design"
-        },
-        "name": "NFDI4Health LM MDS Module Design V3.3",
-        "description": "NFDI4Health Logical Model MDS Module Design V3.3",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/nfdi4health-lm-metadataschema-ne-v3-3"
         },
         "name": "NFDI4Health LM Nutritional Epidemiology Metadataschema (UC 5.1) V3.3",
@@ -1066,6 +1051,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-time-units-ucum"
+        },
+        "name": "NFDI4Health VS MDS Provenance Time Units [UCUM]",
+        "description": "Value set defining codes for time units from UCUM.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/nfdi4health-vs-mds-relation-type-ids-nfdi-local"
         },
         "name": "NFDI4Health VS MDS Relation Type Ids NFDI [local]",
@@ -1178,17 +1171,17 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/nfdi4health-vs-mds-study-data-sharing-plan-ds-snomedct-umls"
+          "reference": "ValueSet/nfdi4health-vs-mds-study-data-sharing-plan-ds-sct-nci"
         },
-        "name": "NFDI4Health VS MDS Study Data Sharing Plan Datashield [SNOMED CT, UMLS]",
+        "name": "NFDI4Health VS MDS Study Data Sharing Plan Datashield [SCT, NCI]",
         "description": "Value set defining codes to specify if the DataSHIELD/Opal infrastructure is available.",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "ValueSet/nfdi4health-vs-mds-study-data-sharing-plan-sup-inf-umls-local"
+          "reference": "ValueSet/nfdi4health-vs-mds-study-data-sharing-plan-sup-inf-sct-local"
         },
-        "name": "NFDI4Health VS MDS Study Data Sharing Plan Supporting Information [UMLS, local]",
+        "name": "NFDI4Health VS MDS Study Data Sharing Plan Supporting Information [SCT, local]",
         "description": "Value set defining codes to specify which supporting information/documents will be made available in addition to the study data.",
         "exampleBoolean": false
       },
@@ -1410,17 +1403,9 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/nfdi4health-vs-mds-study-time-perspectives-local"
+          "reference": "ValueSet/nfdi4health-vs-mds-study-time-perspectives-nci"
         },
-        "name": "NFDI4Health VS MDS Study Time Perspectives [Local]",
-        "description": "Value set defining codes to specify the time perspective of a study in a ResearchStudy resource.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/nfdi4health-vs-mds-study-time-perspectives-umls"
-        },
-        "name": "NFDI4Health VS MDS Study Time Perspectives [UMLS]",
+        "name": "NFDI4Health VS MDS Study Time Perspectives [NCI]",
         "description": "Value set defining codes to specify the time perspective of a study in a ResearchStudy resource.",
         "exampleBoolean": false
       },

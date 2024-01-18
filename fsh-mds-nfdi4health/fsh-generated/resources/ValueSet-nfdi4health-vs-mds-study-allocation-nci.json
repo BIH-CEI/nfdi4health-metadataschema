@@ -25,16 +25,16 @@
         "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
         "concept": [
           {
-            "code": "C0034656",
-            "display": "Randomization (Health Care Activity)"
+            "code": "C25196",
+            "display": "Randomization"
           },
           {
             "code": "C93043",
-            "display": "Nonrandomized Clinical Trial (Research Activity)"
+            "display": "Nonrandomized Clinical Trial"
           },
           {
             "code": "C48660",
-            "display": "Not Applicable (Qualitative Concept)"
+            "display": "Not Applicable"
           }
         ]
       }

@@ -179,7 +179,7 @@ Description: "Profile to collect information about german (or with at least one 
 * category[studyTypeNonInterventional] ^comment = "Short input help: Select all that apply. If 'Other' is selected, please specify the type of the [RESOURCE] in the field 'Additional information about the [RESOURCE]'."
 * category[studyTypeNonInterventional] ^binding.description = "Value set defining codes to specify the type of a non interventional study in a ResearchStudy resource."
 * category[studyTypeNonInterventional].coding 0..*
-* category[timePerspectives] from NFDI4Health_VS_MDS_Study_Time_Perspectives_Local (required)
+* category[timePerspectives] from NFDI4Health_VS_MDS_Study_Time_Perspectives_NCI (required)
 * category[timePerspectives] ^binding.description = "Value set defining codes to specify the time perspective of a study in a ResearchStudy resource."
 * category[timePerspectives].coding 0..*
 * category[allocation] from NFDI4Health_VS_MDS_Study_Allocation_Local (required)
