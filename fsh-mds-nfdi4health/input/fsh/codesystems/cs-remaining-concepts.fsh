@@ -187,8 +187,9 @@ Description: "Code system defining remaining concepts without mapping to concept
 * #178 "Secondary data source"
 * #179 "Biobank"
 * #180 "Not assigned"
-* #181 "Face-to-face interview"
+* #197 "Face-to-face interview"
 * #196 "ICD-11"
+* #198 "Conference paper"
 
 //UC 5.1 - Codes for concepts to be used in slices
 * #182 "Dietary assessment instrument"

@@ -1,0 +1,153 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "NFDI4Health_VS_MDS_Resource_Type_General_NCI_MSH_Local",
+  "id": "nfdi4health-vs-mds-resource-type-general-nci-msh-local",
+  "title": "NFDI4Health VS MDS Resource Type General [NCI, MSH, local]",
+  "description": "Value set defining codes to specify the the general resource type.",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-resource-type-general-nci-msh-local",
+  "version": "0.9",
+  "experimental": true,
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "url:oid:2.16.840.1.113883.6.177",
+        "concept": [
+          {
+            "code": "D001877",
+            "display": "Book Chapter"
+          },
+          {
+            "code": "D003226",
+            "display": "Conference Proceedings as Topic"
+          },
+          {
+            "code": "D019478",
+            "display": "Academic Dissertations"
+          },
+          {
+            "code": "D016428",
+            "display": "Journal Article"
+          },
+          {
+            "code": "D000076942",
+            "display": "Pre-Print"
+          }
+        ]
+      },
+      {
+        "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "concept": [
+          {
+            "code": "C19695",
+            "display": "Audiovisual Material"
+          },
+          {
+            "code": "C16360",
+            "display": "Book"
+          },
+          {
+            "code": "C17649",
+            "display": "Other"
+          },
+          {
+            "code": "C42753",
+            "display": "Workflow"
+          },
+          {
+            "code": "C25704",
+            "display": "Text"
+          },
+          {
+            "code": "C81893",
+            "display": "Standard"
+          },
+          {
+            "code": "C64383",
+            "display": "Sound"
+          },
+          {
+            "code": "C17146",
+            "display": "Computer Program"
+          },
+          {
+            "code": "C47920",
+            "display": "Service"
+          },
+          {
+            "code": "C25375",
+            "display": "Report"
+          },
+          {
+            "code": "C16963",
+            "display": "Peer Review"
+          },
+          {
+            "code": "C16866",
+            "display": "Model"
+          },
+          {
+            "code": "C40976",
+            "display": "Journal"
+          },
+          {
+            "code": "C48179",
+            "display": "Image"
+          },
+          {
+            "code": "C25499",
+            "display": "Event"
+          },
+          {
+            "code": "C47824",
+            "display": "Data Set"
+          },
+          {
+            "code": "C45261",
+            "display": "Item Collection"
+          },
+          {
+            "code": "C45281",
+            "display": "Object"
+          }
+        ]
+      },
+      {
+        "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+        "concept": [
+          {
+            "code": "054",
+            "display": "Output Management Plan"
+          },
+          {
+            "code": "053",
+            "display": "Interactive Resource"
+          },
+          {
+            "code": "052",
+            "display": "Data Paper"
+          },
+          {
+            "code": "051",
+            "display": "Computational Notebook"
+          },
+          {
+            "code": "198",
+            "display": "Conference paper"
+          }
+        ]
+      }
+    ]
+  }
+}

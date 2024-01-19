@@ -95,7 +95,7 @@
 [InstanceOfRecordLinkage]: Questionnaire-InstanceOfRecordLinkage.html
 [NFDI4Health_VS_MDS_NE_Device_NCI_SNOMEDCT_Local]: ValueSet-nfdi4health-vs-mds-ne-device-nci-snomedct-local.html
 [NFDI4Health_VS_MDS_NE_Instrument_NCI_Local]: ValueSet-nfdi4health-vs-mds-ne-instrument-snomedct-nci-local.html
-[NFDI4Health_VS_MDS_NE_Mode_NCI_MeSH_Local]: ValueSet-nfdi4health-vs-mds-ne-mode-nci-mesh-local.html
+[NFDI4Health_VS_MDS_NE_Mode_NCI_MSH_Local]: ValueSet-nfdi4health-vs-mds-ne-mode-nci-msh-local.html
 [NFDI4Health_VS_MDS_NE_Portion_Size_SNOMEDCT_Local]: ValueSet-nfdi4health-vs-mds-ne-portion-size-snomedct-local.html
 [NFDI4Health_VS_MDS_NE_Reference_Period_Unit_UCUM]: ValueSet-nfdi4health-vs-mds-ne-reference-period-unit-ucum.html
 [NFDI4Health_PR_MDS_Centers]: StructureDefinition-nfdi4health-pr-mds-centers.html
@@ -125,7 +125,7 @@
 [NFDI4Health_VS_MDS_Time_Units_UCUM]: ValueSet-nfdi4health-vs-mds-time-units-ucum.html
 [NFDI4Health_VS_MDS_Relation_Type_Ids_Nfdi_Local]: ValueSet-nfdi4health-vs-mds-relation-type-ids-nfdi-local.html
 [NFDI4Health_VS_MDS_Relation_Type_Ids_Local]: ValueSet-nfdi4health-vs-mds-relation-type-ids-local.html
-[NFDI4Health_VS_MDS_Resource_Type_General_NCI_UMLS_Local]: ValueSet-nfdi4health-vs-mds-resource-type-general-nci-umls-local.html
+[NFDI4Health_VS_MDS_Resource_Type_General_NCI_MSH_Local]: ValueSet-nfdi4health-vs-mds-resource-type-general-nci-msh-local.html
 [NFDI4Health_VS_MDS_Resource_Type_NCI_Local]: ValueSet-nfdi4health-vs-mds-resource-type-nci-local.html
 [NFDI4Health_VS_MDS_Role_Affiliation_Identifier_Scheme_Local]: ValueSet-nfdi4health-vs-mds-role-affiliation-identifier-scheme-local.html
 [NFDI4Health_VS_MDS_Role_Name_Identifier_Scheme_Local]: ValueSet-nfdi4health-vs-mds-role-name-identifier-scheme-local.html

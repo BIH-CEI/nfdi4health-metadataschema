@@ -1,11 +1,11 @@
 {
   "resourceType": "ValueSet",
   "status": "draft",
-  "name": "NFDI4Health_VS_MDS_NE_Mode_NCI_MeSH_Local",
-  "id": "nfdi4health-vs-mds-ne-mode-nci-mesh-local",
+  "name": "NFDI4Health_VS_MDS_NE_Mode_NCI_MSH_Local",
+  "id": "nfdi4health-vs-mds-ne-mode-nci-msh-local",
   "title": "NFDI4Health NE Mode [NCI, MeSH, Local]",
   "description": "Value Set to define the mode within Diet Assessment",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-ne-mode-nci-mesh-local",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-ne-mode-nci-msh-local",
   "version": "0.9",
   "experimental": true,
   "publisher": "NFDI4Health",
@@ -29,17 +29,13 @@
             "display": "Proxy-administered"
           },
           {
-            "code": "129",
-            "display": "Screener"
-          },
-          {
-            "code": "181",
+            "code": "197",
             "display": "Face-to-face interview"
           }
         ]
       },
       {
-        "system": "https://www.nlm.nih.gov/mesh",
+        "system": "url:oid:2.16.840.1.113883.6.177",
         "concept": [
           {
             "code": "M0011566",
@@ -52,11 +48,11 @@
         "concept": [
           {
             "code": "C17649",
-            "display": "Other (Qualitative Concept)"
+            "display": "Other"
           },
           {
             "code": "C25670",
-            "display": "Self-Administered (Functional Concept)"
+            "display": "Self-Administered"
           }
         ]
       }

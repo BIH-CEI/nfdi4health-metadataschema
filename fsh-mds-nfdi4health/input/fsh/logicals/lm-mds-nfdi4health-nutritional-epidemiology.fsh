@@ -16,7 +16,7 @@ Description: "NFDI4Health LogicalModel Nutritional Epidemiology Metadataschema (
 * DietAssessment.ffqItemsNumber ^comment = "Cardinality: 1..1, if DietAssessment.instrument == 'Food frequency questionnaire (FFQ)'; otherwise 0..0 / Source of the property and/or allowed values: NFDI4Health UC 5.1 requirements"
 * DietAssessment.mode 1..* Coding "Mode(s) used to apply the dietary assessment instrument" "Specification of how the dietary assessment instrument was applied to participants of the [RESOURCE]."
 * DietAssessment.mode ^comment = "Short Input Help: Select all that apply. / Source of the property and/or allowed values: NFDI4Health UC 5.1 requirements"
-* DietAssessment.mode from NFDI4Health_VS_MDS_NE_Mode_NCI_MeSH_Local (required)
+* DietAssessment.mode from NFDI4Health_VS_MDS_NE_Mode_NCI_MSH_Local (required)
 * DietAssessment.device 1..* Coding "Device(s) used to apply the dietary assessment instrument" "Specification of device(s) used to apply the dietary assessment instrument to participants of the [RESOURCE]."
 * DietAssessment.device ^comment = "Short Input Help: Select all that apply. / Source of the property and/or allowed values: NFDI4Health UC 5.1 requirements"
 * DietAssessment.device from NFDI4Health_VS_MDS_NE_Device_NCI_SNOMEDCT_Local (required)

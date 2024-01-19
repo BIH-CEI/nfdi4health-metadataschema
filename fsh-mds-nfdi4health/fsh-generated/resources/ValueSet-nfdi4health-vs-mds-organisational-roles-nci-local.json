@@ -25,16 +25,12 @@
         "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
         "concept": [
           {
-            "code": "C25461",
-            "display": "Contact Person (Human)"
-          },
-          {
             "code": "C42781",
-            "display": "Author (Human)"
+            "display": "Author"
           },
           {
             "code": "C115486",
-            "display": "Content Item Creator (Qualitative Concept)"
+            "display": "Content Item Creator"
           },
           {
             "code": "C142679",
@@ -42,35 +38,39 @@
           },
           {
             "code": "C142695",
-            "display": "Sponsor-Investigator (Professional or Occupational Group)"
+            "display": "Sponsor-Investigator"
           },
           {
-            "code": "C51820",
-            "display": "Data Manager (Professional or Occupational Group)"
-          },
-          {
-            "code": "C48289",
-            "display": "Distributor (Human)"
-          },
-          {
-            "code": "C45336",
-            "display": "Producer (Human)"
-          },
-          {
-            "code": "C43416",
-            "display": "Publisher (Occupation or Discipline)"
-          },
-          {
-            "code": "C74932",
-            "display": "Registration Authority (Organization)"
-          },
-          {
-            "code": "C134832",
-            "display": "Supervisor (Professional or Occupational Group)"
+            "code": "C25461",
+            "display": "Contact Person"
           },
           {
             "code": "C17649",
-            "display": "Other (Qualitative Concept)"
+            "display": "Other"
+          },
+          {
+            "code": "C134832",
+            "display": "Supervisor"
+          },
+          {
+            "code": "C74932",
+            "display": "Registration Authority"
+          },
+          {
+            "code": "C43416",
+            "display": "Publisher"
+          },
+          {
+            "code": "C45336",
+            "display": "Producer"
+          },
+          {
+            "code": "C48289",
+            "display": "Distributor"
+          },
+          {
+            "code": "C51820",
+            "display": "Data Manager"
           }
         ]
       },
@@ -78,40 +78,40 @@
         "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
         "concept": [
           {
-            "code": "046",
-            "display": "Public Funder"
-          },
-          {
-            "code": "047",
-            "display": "Private Funder"
-          },
-          {
-            "code": "037",
-            "display": "Primary Sponsor"
-          },
-          {
-            "code": "048",
-            "display": "Research Group"
-          },
-          {
-            "code": "038",
-            "display": "Data Collector"
-          },
-          {
-            "code": "039",
-            "display": "Data Curator"
-          },
-          {
-            "code": "049",
-            "display": "Hosting Institution"
+            "code": "044",
+            "display": "Rights Holder"
           },
           {
             "code": "050",
             "display": "Registration Agency"
           },
           {
-            "code": "044",
-            "display": "Rights Holder"
+            "code": "049",
+            "display": "Hosting Institution"
+          },
+          {
+            "code": "039",
+            "display": "Data Curator"
+          },
+          {
+            "code": "038",
+            "display": "Data Collector"
+          },
+          {
+            "code": "048",
+            "display": "Research Group"
+          },
+          {
+            "code": "037",
+            "display": "Primary Sponsor"
+          },
+          {
+            "code": "047",
+            "display": "Private Funder"
+          },
+          {
+            "code": "046",
+            "display": "Public Funder"
           }
         ]
       }

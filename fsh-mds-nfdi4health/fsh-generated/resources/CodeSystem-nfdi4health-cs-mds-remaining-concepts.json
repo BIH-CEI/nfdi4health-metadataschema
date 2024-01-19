@@ -733,12 +733,16 @@
       "display": "Not assigned"
     },
     {
-      "code": "181",
+      "code": "197",
       "display": "Face-to-face interview"
     },
     {
       "code": "196",
       "display": "ICD-11"
+    },
+    {
+      "code": "198",
+      "display": "Conference paper"
     },
     {
       "code": "182",
@@ -782,5 +786,5 @@
       ]
     }
   ],
-  "count": 187
+  "count": 188
 }

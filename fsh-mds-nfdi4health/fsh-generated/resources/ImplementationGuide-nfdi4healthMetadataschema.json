@@ -801,7 +801,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/nfdi4health-vs-mds-ne-mode-nci-mesh-local"
+          "reference": "ValueSet/nfdi4health-vs-mds-ne-mode-nci-msh-local"
         },
         "name": "NFDI4Health NE Mode [NCI, MeSH, Local]",
         "description": "Value Set to define the mode within Diet Assessment",
@@ -1040,9 +1040,9 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/nfdi4health-vs-mds-resource-type-general-nci-umls-local"
+          "reference": "ValueSet/nfdi4health-vs-mds-resource-type-general-nci-msh-local"
         },
-        "name": "NFDI4Health VS MDS Resource Type General [NCI, UMLS, local]",
+        "name": "NFDI4Health VS MDS Resource Type General [NCI, MSH, local]",
         "description": "Value set defining codes to specify the the general resource type.",
         "exampleBoolean": false
       },

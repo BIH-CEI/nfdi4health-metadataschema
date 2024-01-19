@@ -18,7 +18,7 @@ Description: "NFDI4Health Logical Model Core Metadataschema V3.3"
 * Resource.classification.type from NFDI4Health_VS_MDS_Resource_Type_NCI_Local (required)
 * Resource.classification.type ^comment = "Additional information: The selected resource type determines which information will be asked next. / Short Input Help: You can register a study, a study protocol, a questionnaire, etc. Please only add follow up questionnaires if baseline questionnaires have already been registered. / Source of the property and/or allowed values: DataCite [1]"
 * Resource.classification.typeGeneral 0..1 Coding "In what form is the [RESOURCE] available?" "Specific information about the form in which the [RESOURCE] is available."
-* Resource.classification.typeGeneral from NFDI4Health_VS_MDS_Resource_Type_General_NCI_UMLS_Local (required)
+* Resource.classification.typeGeneral from NFDI4Health_VS_MDS_Resource_Type_General_NCI_MSH_Local (required)
 * Resource.classification.typeGeneral ^comment = "Cardinality: 1..1, if Resource.classification.type != ('Study' OR 'Substudy' OR 'Dataset' OR 'Registry' OR 'Secondary data source'); otherwise 0..0 / Additional Information: If the [RESOURCE] consists primarily of words for reading and is not covered by another textual resource type in this list, 'Text' should be used instead of 'Other'. / Short Input Help: You can select 'Text' for most of the study documents, e.g. for questionnaires, informed consent forms, case report forms, etc.  / Source of the property and/or allowed values: DataCite [1]"
 * Resource.titles 1..* BackboneElement "Title(s)/name(s) of the [RESOURCE]" "Group of items providing information about title(s)/name(s) of the [RESOURCE]."
 * Resource.titles ^comment = "Source of the property and/or allowed values: NFDI4Health"
@@ -184,7 +184,7 @@ Description: "NFDI4Health Logical Model Core Metadataschema V3.3"
 * Resource.ids.relationType ^example.valueCodeableConcept.coding.display = "A is part of B"
 * Resource.ids.relationType ^example.valueCodeableConcept.text = "A is part of B"
 * Resource.ids.typeGeneral 0..1 Coding "Type of the related resource" "Type of the related resource, e.g. journal article, dataset, text, etc."
-* Resource.ids.typeGeneral from NFDI4Health_VS_MDS_Resource_Type_General_NCI_UMLS_Local (required)
+* Resource.ids.typeGeneral from NFDI4Health_VS_MDS_Resource_Type_General_NCI_MSH_Local (required)
 * Resource.ids.typeGeneral ^comment = "Short Input Help: Select one value from the list./ Source of the property and/or allowed values: DataCite [1]"
 * Resource.ids.typeGeneral ^example.label = "Example of a related resource type"
 * Resource.ids.typeGeneral ^example.valueCodeableConcept.text = "Text"

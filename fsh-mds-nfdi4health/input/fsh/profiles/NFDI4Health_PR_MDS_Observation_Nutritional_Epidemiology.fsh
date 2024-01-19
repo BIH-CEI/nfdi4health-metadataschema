@@ -50,7 +50,7 @@ Description: "Profile to collect information about a diet assessment used for nu
 * component[mode].code = $Remaining#184 "Mode to apply dietary assessment instrument"
 * component[mode].value[x] 1..1
 * component[mode].value[x] only CodeableConcept
-* component[mode].valueCodeableConcept from NFDI4Health_VS_MDS_NE_Mode_NCI_MeSH_Local (required)
+* component[mode].valueCodeableConcept from NFDI4Health_VS_MDS_NE_Mode_NCI_MSH_Local (required)
 * component[device] ^short = "Device(s) used to apply the dietary assessment instrument"
 * component[device] ^definition = "Specification of device(s) used to apply the dietary assessment instrument to participants of the [RESOURCE]."
 * component[device] ^comment = "Select all that apply."

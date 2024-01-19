@@ -29,7 +29,7 @@
     "fshType": "CodeSystem",
     "fshFile": "codesystems/cs-remaining-concepts.fsh",
     "startLine": 1,
-    "endLine": 200
+    "endLine": 201
   },
   {
     "outputFile": "CodeSystem-nfdi4health-cs-mds-study-status.json",
@@ -936,12 +936,12 @@
     "endLine": 18
   },
   {
-    "outputFile": "ValueSet-nfdi4health-vs-mds-ne-mode-nci-mesh-local.json",
-    "fshName": "NFDI4Health_VS_MDS_NE_Mode_NCI_MeSH_Local",
+    "outputFile": "ValueSet-nfdi4health-vs-mds-ne-mode-nci-msh-local.json",
+    "fshName": "NFDI4Health_VS_MDS_NE_Mode_NCI_MSH_Local",
     "fshType": "ValueSet",
     "fshFile": "valuesets/vs-ne-mode.fsh",
     "startLine": 1,
-    "endLine": 18
+    "endLine": 17
   },
   {
     "outputFile": "ValueSet-nfdi4health-vs-mds-ne-portion-size-snomedct-local.json",
@@ -1008,8 +1008,8 @@
     "endLine": 30
   },
   {
-    "outputFile": "ValueSet-nfdi4health-vs-mds-resource-type-general-nci-umls-local.json",
-    "fshName": "NFDI4Health_VS_MDS_Resource_Type_General_NCI_UMLS_Local",
+    "outputFile": "ValueSet-nfdi4health-vs-mds-resource-type-general-nci-msh-local.json",
+    "fshName": "NFDI4Health_VS_MDS_Resource_Type_General_NCI_MSH_Local",
     "fshType": "ValueSet",
     "fshFile": "valuesets/vs-resource-type-general.fsh",
     "startLine": 1,
