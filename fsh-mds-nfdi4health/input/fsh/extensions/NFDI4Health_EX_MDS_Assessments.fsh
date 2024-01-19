@@ -1,4 +1,4 @@
-Alias: $nfdi4health-vs-mds-study-assessments-snomedct-umls = https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-assessments-snomedct-umls
+Alias: $nfdi4health-vs-mds-study-assessments-sct-nci = https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-assessments-sct-nci
 
 Extension: NFDI4Health_EX_MDS_Assessments
 Id: nfdi4health-ex-mds-assessments
@@ -20,7 +20,7 @@ Description: "Extension providing information about assessments/measurements inc
 * value[x] only Coding
 * valueCoding.code 1..1
 * valueCoding.system 1..1
-* valueCoding from $nfdi4health-vs-mds-study-assessments-snomedct-umls (required)
+* valueCoding from $nfdi4health-vs-mds-study-assessments-sct-nci (required)
 * valueCoding ^binding.description = "Value set defining codes to specify an assessment in a ResearchStudy resource."
 
 Mapping: NFDI4Health-Assessments-to-FHIR

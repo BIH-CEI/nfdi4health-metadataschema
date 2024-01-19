@@ -74,7 +74,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.16.1 Design.dataSharingPlan.generally"
+            "map": "1.17.26.1 Design.dataSharingPlan.generally"
           }
         ]
       },
@@ -125,7 +125,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.16.2 Design.dataSharingPlan.supportingInformation"
+            "map": "1.17.26.2 Design.dataSharingPlan.supportingInformation"
           }
         ]
       },
@@ -279,7 +279,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.16.6 Design.dataSharingPlan.datashield"
+            "map": "1.17.26.6 Design.dataSharingPlan.datashield"
           }
         ]
       },
@@ -304,7 +304,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sharing-plan-ds-snomedct-umls",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sharing-plan-ds-sct-nci",
           "description": "Value set defining codes to specify if the DataSHIELD/Opal infrastructure is available."
         }
       },

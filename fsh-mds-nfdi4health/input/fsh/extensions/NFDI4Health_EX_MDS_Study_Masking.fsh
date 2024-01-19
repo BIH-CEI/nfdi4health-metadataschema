@@ -10,7 +10,7 @@ Description: "Group of items providing information about the masking of interven
 * ^context.type = #element
 * ^context.expression = "ResearchStudy"
 * . 0..1
-* . ^short = "Information about masking of intervention(s) assignment"
+* . ^short = "Masking of intervention(s) assignment"
 * . ^definition = "Group of items providing information about the masking of intervention(s) assignment"
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
@@ -19,8 +19,8 @@ Description: "Group of items providing information about the masking of interven
     general 0..1 and
     roles 0..* and
     description 0..1
-* extension[general] ^short = "Is masking of intervention(s) assignment implemented?"
-* extension[general] ^definition = "Indication, whether a masking (or blinding) of intervention(s) assignment is implemented (i.e., whether someone is prevented from having knowledge of the interventions assigned to individual participants)."
+* extension[general] ^short = "Masking implemented?"
+* extension[general] ^definition = "Indication whether a masking (or blinding) of intervention(s) assignment is implemented (i.e., whether someone is prevented from having knowledge of the interventions assigned to individual participants)."
 * extension[general].value[x] only boolean
 * extension[roles] ^short = "Who is masked?"
 * extension[roles] ^definition = "If masking is implemented, the party(ies) who are masked."
@@ -33,7 +33,7 @@ Description: "Group of items providing information about the masking of interven
 * extension[roles].valueCoding.code 1..
 * extension[description] ^short = "Additional information about masking"
 * extension[description] ^definition = "If needed, additional descriptive information about masking (e.g. information about other parties who may be masked)."
-* extension[description] ^comment = "Short Input Help: If needed, additional information about masking, e.g. other parties who may be masked."
+* extension[description] ^comment = "Short Input Help: You can provide here additional information about masking, e.g. other parties who may be masked."
 * extension[description].value[x] 1..
 * extension[description].value[x] only string
 
@@ -41,7 +41,7 @@ Mapping: NFDI4Health-Study-Masking-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Study_Masking
-* -> "1.17.37.2 Resource.studyDesign.interventional.masking"
-* extension[general] -> "1.17.37.2.1 Resource.studyDesign.interventional.masking.general"
-* extension[roles] -> "1.17.37.2.2 Resource.studyDesign.interventional.masking.roles"
-* extension[description] -> "1.17.37.2.3 Resource.studyDesign.interventional.masking.description"
+* -> "1.17.28.2	Design.interventional.masking"
+* extension[general] -> "1.17.28.2.1 Design.interventional.masking.general"
+* extension[roles] -> "1.17.28.2.2 Design.interventional.masking.roles"
+* extension[description] -> "1.17.28.2.3 Design.interventional.masking.description"

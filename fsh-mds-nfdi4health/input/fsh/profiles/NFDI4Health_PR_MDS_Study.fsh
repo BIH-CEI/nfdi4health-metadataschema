@@ -29,7 +29,7 @@ Description: "Profile to collect information about german (or with at least one 
     NFDI4Health_EX_MDS_Eligibility_Criteria_Inclusion_Criteria named inclusionCriteria 0..1 and
     NFDI4Health_EX_MDS_Eligibility_Criteria_Exclusion_Criteria named exclusionCriteria 0..1 and
     NFDI4Health_EX_MDS_Study_Comparison_Group named comparisonGroup 0..* and
-    NFDI4Health_EX_MDS_Study_Outcomes named outcomes 0..* and
+    NFDI4Health_EX_MDS_Outcomes named outcomes 0..* and
     NFDI4Health_EX_MDS_Assessments named assessments 0..* and
     NFDI4Health_EX_MDS_Study_Population named population 0..1 and
     NFDI4Health_EX_MDS_Data_Sharing_Plan named dataSharingPlan 1..1 and
@@ -137,15 +137,15 @@ Description: "Profile to collect information about german (or with at least one 
 * primaryPurposeType ^short = "Primary purpose of the [RESOURCE]"
 * primaryPurposeType ^definition = "Specification of the main purpose of the [RESOURCE]."
 * primaryPurposeType ^comment = "Additional Information: The field is defined foremost for interventional studies. For non-interventional studies, this field may not be applicable as diverse purposes may be pursued without being able to specify a primary one. In this case, the option 'Not applicable' can be selected. | Short Input Help: Foremost for interventional studies, please specify the primary purpose why the [RESOURCE] was conducted. For non-interventional studies, this field may be 'Not applicable' as multiple purposes may be defined as primary ones."
-* primaryPurposeType ^binding.description = "Value set defining codes to specify the primary purpose of a study in a ResearchStudy resource."
+* primaryPurposeType ^binding.description = "Value set defining codes to specify the primary purpose of a (sub-)study in a ResearchStudy resource."
 * primaryPurposeType.coding 1..1
 * primaryPurposeType.coding.system 1..
 * primaryPurposeType.coding.code 1..
 * phase from NFDI4Health_VS_MDS_Study_Phase_NCI (required)
-* phase ^short = "Numerical phase of the study"
-* phase ^definition = "If applicable, numerical phase of the study."
+* phase ^short = "Numerical phase"
+* phase ^definition = "If applicable, numerical phase of the [RESOURCE]."
 * phase ^comment = "Short input help: Select one value from the list."
-* phase ^binding.description = "Value set defining codes to specify the phase of a study in a ResearchStudy resource."
+* phase ^binding.description = "Value set defining codes to specify the phase of a (sub-)study in a ResearchStudy resource."
 * phase.coding.system 1..
 * phase.coding.code 1..
 * category 1..
@@ -165,44 +165,47 @@ Description: "Profile to collect information about german (or with at least one 
 * category[primaryDesign] ^short = "Is it an interventional or non-interventional [RESOURCE]?"
 * category[primaryDesign] ^definition = "Non-interventional design refers to a [RESOURCE] that does not aim to alter its outcomes of interest. Interventional design refers to a [RESOURCE] that aims to alter its outcomes of interest."
 * category[primaryDesign] ^comment = "Short input help: Select between non-interventional and interventional design for the given [RESOURCE]."
-* category[primaryDesign] ^binding.description = "Value set defining codes for primary designs of studies in a ResearchStudy resource."
+* category[primaryDesign] ^binding.description = "Value set defining codes for primary designs of (sub-)studies in a ResearchStudy resource."
 * category[primaryDesign].coding 0..1
 * category[studyTypeInterventional] from NFDI4Health_VS_MDS_Study_Type_Interventional_NCI (required)
 * category[studyTypeInterventional] ^short = "Interventional [RESOURCE] type"
 * category[studyTypeInterventional] ^definition = "The strategy for assigning interventions to participants."
 * category[studyTypeInterventional] ^comment = "Short input help: Select all that apply. If 'Other' is selected, please specify the type of the [RESOURCE] in the field 'Additional information about the [RESOURCE]'."
-* category[studyTypeInterventional] ^binding.description = "Value set defining codes to specify the type of an interventional study in a ResearchStudy resource."
+* category[studyTypeInterventional] ^binding.description = "Value set defining codes to specify the type of an interventional (sub-)study in a ResearchStudy resource."
 * category[studyTypeInterventional].coding 0..*
 * category[studyTypeNonInterventional] from NFDI4Health_VS_MDS_Study_Type_Non_Interventional_NCI_MSH_Local (required)
 * category[studyTypeNonInterventional] ^short = "Non-interventional [RESOURCE] type"
 * category[studyTypeNonInterventional] ^definition = "The primary strategy for participant identification and follow-up."
 * category[studyTypeNonInterventional] ^comment = "Short input help: Select all that apply. If 'Other' is selected, please specify the type of the [RESOURCE] in the field 'Additional information about the [RESOURCE]'."
-* category[studyTypeNonInterventional] ^binding.description = "Value set defining codes to specify the type of a non interventional study in a ResearchStudy resource."
+* category[studyTypeNonInterventional] ^binding.description = "Value set defining codes to specify the type of a non interventional (sub-)study in a ResearchStudy resource."
 * category[studyTypeNonInterventional].coding 0..*
 * category[timePerspectives] from NFDI4Health_VS_MDS_Study_Time_Perspectives_NCI (required)
-* category[timePerspectives] ^binding.description = "Value set defining codes to specify the time perspective of a study in a ResearchStudy resource."
+* category[timePerspectives] ^short = "Temporal design"
+* category[timePerspectives] ^definition = "Temporal design of the [RESOURCE], i.e. the observation period in relation to the time of participant enrollment."
+* category[timePerspectives] ^comment = "Short input help: Is it a retrospective, prospective or cross-sectional [RESOURCE]?"
+* category[timePerspectives] ^binding.description = "Value set defining codes to specify the time perspective of a (sub-)study in a ResearchStudy resource."
 * category[timePerspectives].coding 0..*
 * category[allocation] from NFDI4Health_VS_MDS_Study_Allocation_NCI (required)
 * category[allocation] ^short = "Type of allocation of participants to an arm"
-* category[allocation] ^definition = "Type of allocation/assignment of individual study participants to an arm."
+* category[allocation] ^definition = "Type of allocation/assignment of individual participants of the [RESOURCE] to an arm."
 * category[allocation] ^comment = "Short input help: Select one value from the list."
-* category[allocation] ^binding.description = "Value set defining codes to specify the subject allocation in a study."
+* category[allocation] ^binding.description = "Value set defining codes to specify the subject allocation in a (sub-)study in a ResearchStudy resource."
 * category[allocation].coding 0..1
 * category[samplingMethod] from NFDI4Health_VS_MDS_Study_Sampling_Method_NCI_Local (required)
 * category[samplingMethod] ^short = "Applied sampling method"
-* category[samplingMethod] ^definition = "Type of the sampling method applied for the selection of study participants."
+* category[samplingMethod] ^definition = "Type of the sampling method applied for the selection of [RESOURCE] participants."
 * category[samplingMethod] ^comment = "Short Input Help: Select one value from the list."
 * category[samplingMethod] ^binding.description = "Value set defining codes to specify types of sampling methods."
 * category[samplingMethod].coding 0..1
 * category[samplingMethodProbability] from NFDI4Health_VS_MDS_Study_Sampling_Probability_Method_NCI_Local (required)
 * category[samplingMethodProbability] ^short = "Specific type of probability sampling"
-* category[samplingMethodProbability] ^definition = "Specific type of the probability sampling method applied for the selection of study participants."
+* category[samplingMethodProbability] ^definition = "Specific type of the probability sampling method applied for the selection of [RESOURCE] participants."
 * category[samplingMethodProbability] ^comment = "Short Input Help: If known, select one value from the list."
 * category[samplingMethodProbability] ^binding.description = "Value set defining codes to specify types of probability sampling methods."
 * category[samplingMethodProbability].coding 0..1
 * category[samplingMethodNonProbability] from NFDI4Health_VS_MDS_Study_Sampling_Method_Non_Probability_NCI_Local (required)
 * category[samplingMethodNonProbability] ^short = "Specific type of non-probability sampling"
-* category[samplingMethodNonProbability] ^definition = "Specific type of the probability sampling method applied for the selection of study participants."
+* category[samplingMethodNonProbability] ^definition = "Specific type of the non-probability sampling method applied for the selection of [RESOURCE] participants."
 * category[samplingMethodNonProbability] ^comment = "Short Input Help: If known, select one value from the list."
 * category[samplingMethodNonProbability] ^binding.description = "Value set defining codes to specify types of non-probability sampling methods."
 * category[samplingMethodNonProbability].coding 0..1
@@ -220,7 +223,7 @@ Description: "Profile to collect information about german (or with at least one 
 * condition.coding.system ^definition = "Terminology/classification used for the health condition, disease or focus."
 * condition.coding.system ^comment = "Short input help: If used, name of the terminology/classification."
 * condition.coding.code ^short = "Code"
-* condition.coding.code ^definition = "Code of the health condition,  disease, focus in the terminology/classification used."
+* condition.coding.code ^definition = "Code of the health condition, disease, focus in the terminology/classification used."
 * condition.coding.code ^comment = "Short input help: If found, the code from the terminology/classification used."
 * condition.coding.display 1..
 * condition.coding.display ^short = "Name of the primary health condition, disease or focus of the study"
@@ -245,7 +248,7 @@ Description: "Profile to collect information about german (or with at least one 
 * keyword.text 1..1 
 * keyword.text ^short = "label"
 * keyword.text ^definition = "Keyword(s) describing the [RESOURCE]."
-* keyword.text ^comment = "Additional information: The use of terms from established classifications/vocabularies (e.g. SNOMED CT, MeSH, UMLS) is preferred. However, also self-assigned keywords are allowed."
+* keyword.text ^comment = "Additional information: The use of terms from established classifications/vocabularies (e.g. SNOMED CT, MeSH, UMLS) is preferred. However, also self-assigned keywords are allowed. | Short input help: Preferably, use terms from SNOMED CT or MESH."
 * keyword.text ^example[0].label = "Keyword label"
 * keyword.text ^example[=].valueString = "SARS-CoV-2"
 * location ^slicing.discriminator.type = #exists
@@ -348,15 +351,15 @@ Source: NFDI4Health_PR_MDS_Study
 * extension[resourceTypeGeneral] -> "1.2.2 Resource.classification.typeGeneral"
 * title -> "1.3.1 Resource.titles.text"
 * primaryPurposeType -> "1.17.15 Design.primaryPurpose"
-* phase -> "1.17.37.1 Resource.studyDesign.interventional.phase"
+* phase -> "1.17.28.1 Design.interventional.phase"
 * category[primaryDesign] -> "1.17.1 Design.primaryDesign"
 * category[studyTypeInterventional] -> "1.17.2.1 Design.studyType.interventional"
 * category[studyTypeNonInterventional] -> "1.17.2.2 Design.nonInterventional"
-* category[timePerspectives] -> "1.17.36.1 Resource.studyDesign.nonInterventional.timePerspectives"
-* category[allocation] -> "1.17.37.3 Resource.studyDesign.interventional.allocation"
-* category[samplingMethod] -> "1.17.20.1 Resource.studyDesign.sampling.method"
-* category[samplingMethodProbability] -> "1.17.20.2 Resource.studyDesign.sampling.probabilityMethod"
-* category[samplingMethodNonProbability] -> "1.17.20.3 Resource.studyDesign.sampling.nonProbabilityMethod"
+* category[timePerspectives] -> "1.17.27.1 Design.nonInterventional.timePerspectives"
+* category[allocation] -> "1.17.28.3 Design.interventional.allocation"
+* category[samplingMethod] -> "1.17.13.1 Design.sampling.method"
+* category[samplingMethodProbability] -> "1.17.13.2	Design.sampling.probabilityMethod"
+* category[samplingMethodNonProbability] -> "1.17.13.3 Design.sampling.nonProbabilityMethod"
 * condition -> "1.17.3 Design.conditions"
 * condition.coding.extension[uri] -> "1.17.3.3 Resource.studyDesign.studyConditions.code"
 * condition.coding.system -> "1.17.3.2 Resource.studyDesign.studyConditions.classification"
@@ -366,9 +369,9 @@ Source: NFDI4Health_PR_MDS_Study
 * relatedArtifact -> "1.13 Resource.ids"
 * relatedArtifact -> "1.14 Resource.idsNfdi4health"
 * relatedArtifact -> "1.9 Resource.webpage"
-* keyword -> "Resource.keywords"
-* keyword.coding.system -> "Resource.keywords.code"
-* keyword.text -> "Resource.keywords.label"
+* keyword -> "1.6 Resource.keywords"
+* keyword.coding.system -> "1.6.2 Resource.keywords.code"
+* keyword.text -> "1.6.1 Resource.keywords.label"
 * location[countries] -> "1.17.15 Resource.studyDesign.countries"
 * location[regions].text -> "1.17.16 Resource.studyDesign.region"
 * description -> "Resource.descriptions.text"

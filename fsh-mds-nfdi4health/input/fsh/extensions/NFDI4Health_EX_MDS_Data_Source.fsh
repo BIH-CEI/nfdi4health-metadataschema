@@ -30,7 +30,7 @@ Description: "Extension informing about data sources from which data are generat
 * extension[general].valueCoding.code 1..1
 * extension[general].valueCoding.system 1..1
 * extension[general].valueCoding from NFDI4Health_VS_MDS_Study_Data_Sources_General_NCI_Local (required)
-* extension[general].valueCoding ^binding.description = "Value set defining codes to specify the general study data sources."
+* extension[general].valueCoding ^binding.description = "Value set defining codes to specify the general data sources."
 * extension[biosamples] ^short = "Biosamples collected"
 * extension[biosamples] ^definition = "Specification of biosamples collected in the [RESOURCE]."
 * extension[biosamples] ^comment = "Short input help: Select all that apply."

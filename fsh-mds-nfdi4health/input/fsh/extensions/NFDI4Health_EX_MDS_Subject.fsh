@@ -21,7 +21,7 @@ Description: "Extension informing about the subject of a resource."
 * valueCoding.code 1..1
 * valueCoding.system 1..1
 * valueCoding from $nfdi4health-vs-mds-study-subject-snomedct (required)
-* valueCoding ^binding.description = "Value set defining codes for study sujects in a ResearchStudy resource."
+* valueCoding ^binding.description = "Value set defining codes for sujects in a resource."
 
 Mapping: NFDI4Health-Subject-to-FHIR
 Id: NFDI4Health

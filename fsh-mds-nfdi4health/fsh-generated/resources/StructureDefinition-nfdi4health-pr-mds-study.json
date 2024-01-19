@@ -318,7 +318,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-outcomes"
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-outcomes"
             ]
           }
         ]
@@ -1113,7 +1113,7 @@
         "binding": {
           "strength": "required",
           "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-primary-purpose-hl7-nci",
-          "description": "Value set defining codes to specify the primary purpose of a study in a ResearchStudy resource."
+          "description": "Value set defining codes to specify the primary purpose of a (sub-)study in a ResearchStudy resource."
         },
         "mapping": [
           {
@@ -1141,18 +1141,18 @@
       {
         "id": "ResearchStudy.phase",
         "path": "ResearchStudy.phase",
-        "short": "Numerical phase of the study",
-        "definition": "If applicable, numerical phase of the study.",
+        "short": "Numerical phase",
+        "definition": "If applicable, numerical phase of the [RESOURCE].",
         "comment": "Short input help: Select one value from the list.",
         "binding": {
           "strength": "required",
           "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-phase-nci",
-          "description": "Value set defining codes to specify the phase of a study in a ResearchStudy resource."
+          "description": "Value set defining codes to specify the phase of a (sub-)study in a ResearchStudy resource."
         },
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.37.1 Resource.studyDesign.interventional.phase"
+            "map": "1.17.28.1 Design.interventional.phase"
           }
         ]
       },
@@ -1192,7 +1192,7 @@
         "binding": {
           "strength": "required",
           "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-primary-design-nci",
-          "description": "Value set defining codes for primary designs of studies in a ResearchStudy resource."
+          "description": "Value set defining codes for primary designs of (sub-)studies in a ResearchStudy resource."
         },
         "mapping": [
           {
@@ -1218,7 +1218,7 @@
         "binding": {
           "strength": "required",
           "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-type-interventional-nci",
-          "description": "Value set defining codes to specify the type of an interventional study in a ResearchStudy resource."
+          "description": "Value set defining codes to specify the type of an interventional (sub-)study in a ResearchStudy resource."
         },
         "mapping": [
           {
@@ -1239,7 +1239,7 @@
         "binding": {
           "strength": "required",
           "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-type-non-interventional-nci-msh-local",
-          "description": "Value set defining codes to specify the type of a non interventional study in a ResearchStudy resource."
+          "description": "Value set defining codes to specify the type of a non interventional (sub-)study in a ResearchStudy resource."
         },
         "mapping": [
           {
@@ -1252,17 +1252,20 @@
         "id": "ResearchStudy.category:timePerspectives",
         "path": "ResearchStudy.category",
         "sliceName": "timePerspectives",
+        "short": "Temporal design",
+        "definition": "Temporal design of the [RESOURCE], i.e. the observation period in relation to the time of participant enrollment.",
+        "comment": "Short input help: Is it a retrospective, prospective or cross-sectional [RESOURCE]?",
         "min": 0,
         "max": "*",
         "binding": {
           "strength": "required",
           "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-time-perspectives-nci",
-          "description": "Value set defining codes to specify the time perspective of a study in a ResearchStudy resource."
+          "description": "Value set defining codes to specify the time perspective of a (sub-)study in a ResearchStudy resource."
         },
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.36.1 Resource.studyDesign.nonInterventional.timePerspectives"
+            "map": "1.17.27.1 Design.nonInterventional.timePerspectives"
           }
         ]
       },
@@ -1271,19 +1274,19 @@
         "path": "ResearchStudy.category",
         "sliceName": "allocation",
         "short": "Type of allocation of participants to an arm",
-        "definition": "Type of allocation/assignment of individual study participants to an arm.",
+        "definition": "Type of allocation/assignment of individual participants of the [RESOURCE] to an arm.",
         "comment": "Short input help: Select one value from the list.",
         "min": 0,
         "max": "1",
         "binding": {
           "strength": "required",
           "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-allocation-nci",
-          "description": "Value set defining codes to specify the subject allocation in a study."
+          "description": "Value set defining codes to specify the subject allocation in a (sub-)study in a ResearchStudy resource."
         },
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.37.3 Resource.studyDesign.interventional.allocation"
+            "map": "1.17.28.3 Design.interventional.allocation"
           }
         ]
       },
@@ -1297,7 +1300,7 @@
         "path": "ResearchStudy.category",
         "sliceName": "samplingMethod",
         "short": "Applied sampling method",
-        "definition": "Type of the sampling method applied for the selection of study participants.",
+        "definition": "Type of the sampling method applied for the selection of [RESOURCE] participants.",
         "comment": "Short Input Help: Select one value from the list.",
         "min": 1,
         "max": "1",
@@ -1309,7 +1312,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.20.1 Resource.studyDesign.sampling.method"
+            "map": "1.17.13.1 Design.sampling.method"
           }
         ]
       },
@@ -1323,7 +1326,7 @@
         "path": "ResearchStudy.category",
         "sliceName": "samplingMethodProbability",
         "short": "Specific type of probability sampling",
-        "definition": "Specific type of the probability sampling method applied for the selection of study participants.",
+        "definition": "Specific type of the probability sampling method applied for the selection of [RESOURCE] participants.",
         "comment": "Short Input Help: If known, select one value from the list.",
         "min": 0,
         "max": "1",
@@ -1335,7 +1338,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.20.2 Resource.studyDesign.sampling.probabilityMethod"
+            "map": "1.17.13.2\tDesign.sampling.probabilityMethod"
           }
         ]
       },
@@ -1349,7 +1352,7 @@
         "path": "ResearchStudy.category",
         "sliceName": "samplingMethodNonProbability",
         "short": "Specific type of non-probability sampling",
-        "definition": "Specific type of the probability sampling method applied for the selection of study participants.",
+        "definition": "Specific type of the non-probability sampling method applied for the selection of [RESOURCE] participants.",
         "comment": "Short Input Help: If known, select one value from the list.",
         "min": 0,
         "max": "1",
@@ -1361,7 +1364,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.20.3 Resource.studyDesign.sampling.nonProbabilityMethod"
+            "map": "1.17.13.3 Design.sampling.nonProbabilityMethod"
           }
         ]
       },
@@ -1424,7 +1427,7 @@
         "id": "ResearchStudy.condition.coding.code",
         "path": "ResearchStudy.condition.coding.code",
         "short": "Code",
-        "definition": "Code of the health condition,  disease, focus in the terminology/classification used.",
+        "definition": "Code of the health condition, disease, focus in the terminology/classification used.",
         "comment": "Short input help: If found, the code from the terminology/classification used.",
         "mapping": [
           {
@@ -1502,7 +1505,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "Resource.keywords"
+            "map": "1.6 Resource.keywords"
           }
         ]
       },
@@ -1526,7 +1529,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "Resource.keywords.code"
+            "map": "1.6.2 Resource.keywords.code"
           }
         ]
       },
@@ -1535,7 +1538,7 @@
         "path": "ResearchStudy.keyword.text",
         "short": "label",
         "definition": "Keyword(s) describing the [RESOURCE].",
-        "comment": "Additional information: The use of terms from established classifications/vocabularies (e.g. SNOMED CT, MeSH, UMLS) is preferred. However, also self-assigned keywords are allowed.",
+        "comment": "Additional information: The use of terms from established classifications/vocabularies (e.g. SNOMED CT, MeSH, UMLS) is preferred. However, also self-assigned keywords are allowed. | Short input help: Preferably, use terms from SNOMED CT or MESH.",
         "min": 1,
         "example": [
           {
@@ -1546,7 +1549,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "Resource.keywords.label"
+            "map": "1.6.1 Resource.keywords.label"
           }
         ]
       },

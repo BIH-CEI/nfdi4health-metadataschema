@@ -1,6 +1,6 @@
 Alias: $nfdi4health-vs-mds-yes-no-undecided-snomedct-nci = https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-yes-no-undecided-snomedct-nci
 Alias: $nfdi4health-vs-mds-study-data-sharing-plan-sup-inf-umls-local = https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sharing-plan-sup-inf-umls-local
-Alias: $nfdi4health-vs-mds-study-data-sharing-plan-ds-snomedct-umls = https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sharing-plan-ds-snomedct-umls
+Alias: $nfdi4health-vs-mds-study-data-sharing-plan-ds-sct-nci = https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sharing-plan-ds-sct-nci
 
 Extension: NFDI4Health_EX_MDS_Data_Sharing_Plan
 Id: nfdi4health-ex-mds-data-sharing-plan
@@ -65,7 +65,7 @@ Description: "Extension providing information about the data sharing strategy of
 * extension[datashield].value[x] only Coding
 * extension[datashield].valueCoding.code 1..1
 * extension[datashield].valueCoding.system 1..1
-* extension[datashield].valueCoding from $nfdi4health-vs-mds-study-data-sharing-plan-ds-snomedct-umls (required)
+* extension[datashield].valueCoding from $nfdi4health-vs-mds-study-data-sharing-plan-ds-sct-nci (required)
 * extension[datashield].valueCoding ^binding.description = "Value set defining codes to specify if the DataSHIELD/Opal infrastructure is available."
 * extension[requestData] ^short = "Link to data request application"
 * extension[requestData] ^definition = "If existing, a link to the web page where the data request form and/or information on data reuse can be found."
@@ -83,12 +83,12 @@ Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Data_Sharing_Plan
 * -> "1.17.26 Design.dataSharingPlan"
-* extension[generally] -> "1.17.16.1 Design.dataSharingPlan.generally"
-* extension[supportingInformation] -> "1.17.16.2 Design.dataSharingPlan.supportingInformation"
+* extension[generally] -> "1.17.26.1 Design.dataSharingPlan.generally"
+* extension[supportingInformation] -> "1.17.26.2 Design.dataSharingPlan.supportingInformation"
 * extension[timeFrame] -> "1.17.26.3 Design.dataSharingPlan.timeFrame"
 * extension[accessCriteria] -> "1.17.26.4 Design.dataSharingPlan.accessCriteria"
 * extension[description] -> "1.17.26.5 Design.dataSharingPlan.description"
-* extension[datashield] -> "1.17.16.6 Design.dataSharingPlan.datashield"
+* extension[datashield] -> "1.17.26.6 Design.dataSharingPlan.datashield"
 * extension[requestData] -> "1.17.26.7 Design.dataSharingPlan.requestData"
 * extension[url] -> "1.17.26.8 Design.dataSharingPlan.url"
 * extension[recordLinkage] -> "1.17.26.9 Design.dataSharingPlan.recordLinkage"

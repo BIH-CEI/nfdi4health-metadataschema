@@ -46,21 +46,117 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Target follow-up duration",
-        "definition": "If applicable, anticipated time period over which each participant is to be followed, provided in years.",
-        "comment": "Short input help : The value must be provided in years.",
+        "short": "Target follow-up duration of the [RESOURCE]",
+        "definition": "If applicable, anticipated time period over which each participant would be followed.",
         "max": "1",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.36.2 Resource.studyDesign.nonInterventional.targetFollowUpDuration"
+            "map": "1.17.27.2 Design.nonInterventional.targetFollowUpDuration"
           }
         ]
       },
       {
         "id": "Extension.extension",
         "path": "Extension.extension",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:number",
+        "path": "Extension.extension",
+        "sliceName": "number",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:number.extension",
+        "path": "Extension.extension.extension",
         "max": "0"
+      },
+      {
+        "id": "Extension.extension:number.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "number"
+      },
+      {
+        "id": "Extension.extension:number.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:number.value[x].value",
+        "path": "Extension.extension.value[x].value",
+        "short": "Target follow-up duration",
+        "definition": "Numerical value of the target follow-up duration.",
+        "min": 1,
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.27.2.1 Design.nonInterventional.targetFollowUpDuration.number"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:number.value[x].system",
+        "path": "Extension.extension.value[x].system",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:number.value[x].code",
+        "path": "Extension.extension.value[x].code",
+        "short": "Unit of time",
+        "definition": "Unit of measurement used to describe the follow-up duration.",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-time-units-ucum"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.27.2.2 Design.nonInterventional.targetFollowUpDuration.timeUnit"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:frequency",
+        "path": "Extension.extension",
+        "sliceName": "frequency",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:frequency.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:frequency.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "frequency"
+      },
+      {
+        "id": "Extension.extension:frequency.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Number of follow-ups conducted",
+        "definition": "The number of follow-ups conducted within the specified duration.",
+        "min": 1,
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.27.2.3\tDesign.nonInterventional.targetFollowUpDuration.frequency"
+          }
+        ]
       },
       {
         "id": "Extension.url",
@@ -70,35 +166,7 @@
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "Quantity"
-          }
-        ]
-      },
-      {
-        "id": "Extension.value[x].value",
-        "path": "Extension.value[x].value",
-        "min": 1
-      },
-      {
-        "id": "Extension.value[x].system",
-        "path": "Extension.value[x].system",
-        "min": 1,
-        "fixedUri": "http://unitsofmeasure.org"
-      },
-      {
-        "id": "Extension.value[x].code",
-        "path": "Extension.value[x].code",
-        "code": [
-          {
-            "code": "a",
-            "system": "http://unitsofmeasure.org",
-            "display": "a"
-          }
-        ],
-        "min": 1
+        "max": "0"
       }
     ]
   }

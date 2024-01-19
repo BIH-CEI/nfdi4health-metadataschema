@@ -1,4 +1,4 @@
-Alias: $nfdi4health-vs-mds-study-diseases-generally-icd10-umls-local = https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-diseases-generally-icd10-umls-local
+Alias: $nfdi4health-vs-mds-study-diseases-generally-icd-sct = https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-diseases-generally-icd-sct
 
 Extension: NFDI4Health_EX_MDS_Groups_Of_Diseases
 Id: nfdi4health-ex-mds-study-of-diseases
@@ -26,7 +26,7 @@ Description: "Extension covering information about groups of diseases or conditi
 * extension[generally] ^comment = "Additional information: The values originate from the WHO's International Statistical Classification of Diseases and Related Health Problems, 10th Revision (ICD-10). | Short input help: Select all that apply. For more information about the groups of diseases/conditions, visit the WHO's ICD-10 homepage: https://icd.who.int/en."
 * extension[generally].value[x] 1..
 * extension[generally].value[x] only Coding
-* extension[generally].valueCoding from nfdi4health-vs-mds-study-diseases-generally-icd-sct (required)
+* extension[generally].valueCoding from $nfdi4health-vs-mds-study-diseases-generally-icd-sct (required)
 * extension[generally].valueCoding ^binding.description = "Value set defining codes from ICD-10 to specify groups of diseases or conditions on which the data were collected in the study."
 * extension[generally].valueCoding.system 1..
 * extension[generally].valueCoding.code 1..

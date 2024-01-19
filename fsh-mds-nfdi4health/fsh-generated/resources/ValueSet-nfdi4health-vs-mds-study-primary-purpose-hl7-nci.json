@@ -4,7 +4,7 @@
   "name": "NFDI4Health_VS_MDS_Study_Primary_Purpose_HL7_NCI",
   "id": "nfdi4health-vs-mds-study-primary-purpose-hl7-nci",
   "title": "NFDI4Health VS MDS Study Primary Purpose [HL7, NCI]",
-  "description": "Value set defining codes to specify the primary purpose of a study in a ResearchStudy resource.",
+  "description": "Value set defining codes to specify the primary purpose of a (sub-)study in a ResearchStudy resource.",
   "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-primary-purpose-hl7-nci",
   "version": "0.9",
   "experimental": true,

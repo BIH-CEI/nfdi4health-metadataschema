@@ -45,13 +45,13 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Information about masking of intervention(s) assignment",
+        "short": "Masking of intervention(s) assignment",
         "definition": "Group of items providing information about the masking of intervention(s) assignment",
         "max": "1",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.37.2 Resource.studyDesign.interventional.masking"
+            "map": "1.17.28.2\tDesign.interventional.masking"
           }
         ]
       },
@@ -59,14 +59,14 @@
         "id": "Extension.extension:general",
         "path": "Extension.extension",
         "sliceName": "general",
-        "short": "Is masking of intervention(s) assignment implemented?",
-        "definition": "Indication, whether a masking (or blinding) of intervention(s) assignment is implemented (i.e., whether someone is prevented from having knowledge of the interventions assigned to individual participants).",
+        "short": "Masking implemented?",
+        "definition": "Indication whether a masking (or blinding) of intervention(s) assignment is implemented (i.e., whether someone is prevented from having knowledge of the interventions assigned to individual participants).",
         "min": 0,
         "max": "1",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.37.2.1 Resource.studyDesign.interventional.masking.general"
+            "map": "1.17.28.2.1 Design.interventional.masking.general"
           }
         ]
       },
@@ -101,7 +101,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.37.2.2 Resource.studyDesign.interventional.masking.roles"
+            "map": "1.17.28.2.2 Design.interventional.masking.roles"
           }
         ]
       },
@@ -146,13 +146,13 @@
         "sliceName": "description",
         "short": "Additional information about masking",
         "definition": "If needed, additional descriptive information about masking (e.g. information about other parties who may be masked).",
-        "comment": "Short Input Help: If needed, additional information about masking, e.g. other parties who may be masked.",
+        "comment": "Short Input Help: You can provide here additional information about masking, e.g. other parties who may be masked.",
         "min": 0,
         "max": "1",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.37.2.3 Resource.studyDesign.interventional.masking.description"
+            "map": "1.17.28.2.3 Design.interventional.masking.description"
           }
         ]
       },

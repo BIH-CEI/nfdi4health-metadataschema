@@ -1,3 +1,4 @@
+[2.16.840.1.113883.3.1937.777.64.4.6--20231207000000]: Questionnaire-2.16.840.1.113883.3.1937.777.64.4.6--20231207000000.html
 [InstanceOfDocumentHouseholdTransmissionInvestigationForC19]: DocumentReference-InstanceOfDocumentHouseholdTransmissionInvestigationForC19.html
 [InstanceOfOrganizationCreatorCMI]: Organization-InstanceOfOrganizationCreatorCMI.html
 [InstanceOfOrganizationCreatorCRISIS]: Organization-InstanceOfOrganizationCreatorCRISIS.html
@@ -32,7 +33,6 @@
 [InstanceOfStudySHIP]: ResearchStudy-InstanceOfStudySHIP.html
 [InstanceOfStudySPOVID]: ResearchStudy-InstanceOfStudySPOVID.html
 [NFDI4Health_VS_MDS_CD_Common_Chronic_Disease_Name_SNOMEDCT]: ValueSet-nfdi4health-vs-mds-cd-common-chronic-disease-name-snomedct.html
-[nfdi4health-cps-mds-capability-statement]: CapabilityStatement-nfdi4health-cps-mds-capability-statement.html
 [NFDI4Health_CS_MDS_Label_FHIR]: CodeSystem-nfdi4health-cs-mds-label-fhir.html
 [NFDI4Health_CS_MDS_Provenance_Data_Source]: CodeSystem-nfdi4health-cs-mds-provenance-data-source.html
 [NFDI4Health_CS_MDS_Remaining_Concepts]: CodeSystem-nfdi4health-cs-mds-remaining-concepts.html
@@ -61,6 +61,7 @@
 [NFDI4Health_EX_MDS_Mortality_Data]: StructureDefinition-nfdi4health-ex-mds-mortality-data.html
 [NFDI4Health_EX_MDS_Nutritional_Data]: StructureDefinition-nfdi4health-ex-mds-nutritional-data.html
 [NFDI4Health_EX_MDS_Off_Label_Use]: StructureDefinition-nfdi4health-ex-mds-off-label-use.html
+[NFDI4Health_EX_MDS_Outcomes]: StructureDefinition-nfdi4health-ex-mds-outcomes.html
 [NFDI4Health_EX_MDS_Provenance_Data_Source]: StructureDefinition-nfdi4health-ex-mds-provenance-data-source.html
 [NFDI4Health_EX_MDS_Record_Linkage]: StructureDefinition-nfdi4health-ex-mds-record-linkage.html
 [NFDI4Health_EX_MDS_Related_Artifact_Identifier_Date]: StructureDefinition-nfdi4health-ex-mds-related-artifact-identifier-date.html
@@ -76,7 +77,6 @@
 [NFDI4Health_EX_MDS_Study_Comparison_Group]: StructureDefinition-nfdi4health-ex-mds-study-comparison-group.html
 [NFDI4Health_EX_MDS_Study_Ethics_Committee_Approval]: StructureDefinition-nfdi4health-ex-mds-study-ethics-committee-approval.html
 [NFDI4Health_EX_MDS_Study_Masking]: StructureDefinition-nfdi4health-ex-mds-study-masking.html
-[NFDI4Health_EX_MDS_Study_Outcomes]: StructureDefinition-nfdi4health-ex-mds-study-outcomes.html
 [NFDI4Health_EX_MDS_Study_Population]: StructureDefinition-nfdi4health-ex-mds-study-population.html
 [NFDI4Health_EX_MDS_Study_Status]: StructureDefinition-nfdi4health-ex-mds-study-status.html
 [NFDI4Health_EX_MDS_Study_Status_Halted_Stage]: StructureDefinition-nfdi4health-ex-mds-study-status-halted-stage.html
@@ -111,7 +111,6 @@
 [NFDI4Health_PR_MDS_Questionnaire]: StructureDefinition-nfdi4health-pr-mds-questionnaire.html
 [NFDI4Health_PR_MDS_Related_Artifact_Resource]: StructureDefinition-nfdi4health-pr-mds-related-artifact-resource.html
 [NFDI4Health_PR_MDS_Study]: StructureDefinition-nfdi4health-pr-mds-study.html
-[2.16.840.1.113883.3.1937.777.64.4.6--20231207000000]: Questionnaire-2.16.840.1.113883.3.1937.777.64.4.6--20231207000000.html
 [NFDI4Health_VS_MDS_Countries_ISO]: ValueSet-nfdi4health-vs-mds-countries-iso.html
 [NFDI4Health_VS_MDS_ID_TYPE_UMLS_Local]: ValueSet-nfdi4health-vs-mds-id-type-umls-local.html
 [NFDI4Health_VS_MDS_Identifier_Type_Related_Artifact_UMLS_Local]: ValueSet-nfdi4health-vs-mds-identifier-type-related-artifact-umls-local.html
@@ -168,4 +167,5 @@
 [NFDI4Health_VS_MDS_Use_Rights_Label_SPDX_SNOMED_Local]: ValueSet-nfdi4health-vs-mds-use-rights-label-spdx-snomed-local.html
 [NFDI4Health_VS_MDS_Yes_No_Not_Applicable_SNOMEDCT]: ValueSet-nfdi4health-vs-mds-yes-no-not-applicable-snomedct.html
 [NFDI4Health_VS_MDS_Yes_No_Undecided_SNOMEDCT_NCI]: ValueSet-nfdi4health-vs-mds-yes-no-undecided-snomedct-nci.html
+[nfdi4health-cps-mds-capability-statement]: CapabilityStatement-nfdi4health-cps-mds-capability-statement.html
 [NFDI4Health_EX_MDS_Related]: StructureDefinition-nfdi4health-ex-mds-related.html

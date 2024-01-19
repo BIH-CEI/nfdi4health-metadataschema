@@ -145,7 +145,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-type-non-interventional-local"
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-type-non-interventional-nci-msh-local"
         },
         "mapping": [
           {
@@ -931,6 +931,10 @@
             "code": "Coding"
           }
         ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-ds-biosamples-sct-nci"
+        },
         "mapping": [
           {
             "identity": "NFDI4Health-LM-MDS-Design-V3-3-Internal-Numbering",
@@ -951,6 +955,10 @@
             "code": "Coding"
           }
         ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sources-imaging-nci"
+        },
         "mapping": [
           {
             "identity": "NFDI4Health-LM-MDS-Design-V3-3-Internal-Numbering",
@@ -971,6 +979,10 @@
             "code": "Coding"
           }
         ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sources-omics-nci"
+        },
         "mapping": [
           {
             "identity": "NFDI4Health-LM-MDS-Design-V3-3-Internal-Numbering",
@@ -1011,6 +1023,10 @@
             "code": "Coding"
           }
         ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-primary-purpose-hl7-nci"
+        },
         "mapping": [
           {
             "identity": "NFDI4Health-LM-MDS-Design-V3-3-Internal-Numbering",
@@ -1807,6 +1823,10 @@
             "code": "CodeableConcept"
           }
         ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-outcome-type-nci"
+        },
         "mapping": [
           {
             "identity": "NFDI4Health-LM-MDS-Design-V3-3-Internal-Numbering",
@@ -1867,6 +1887,10 @@
             "code": "Coding"
           }
         ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-assessments-sct-nci"
+        },
         "mapping": [
           {
             "identity": "NFDI4Health-LM-MDS-Design-V3-3-Internal-Numbering",
@@ -1907,6 +1931,10 @@
             "code": "Coding"
           }
         ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-yes-no-undecided-snomedct-nci"
+        },
         "mapping": [
           {
             "identity": "NFDI4Health-LM-MDS-Design-V3-3-Internal-Numbering",
@@ -2007,6 +2035,10 @@
             "code": "Coding"
           }
         ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sharing-plan-ds-sct-nci"
+        },
         "mapping": [
           {
             "identity": "NFDI4Health-LM-MDS-Design-V3-3-Internal-Numbering",
@@ -2171,6 +2203,10 @@
             "code": "Coding"
           }
         ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-time-units-ucum"
+        },
         "mapping": [
           {
             "identity": "NFDI4Health-LM-MDS-Design-V3-3-Internal-Numbering",
@@ -2277,6 +2313,10 @@
             "code": "Coding"
           }
         ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-phase-nci"
+        },
         "mapping": [
           {
             "identity": "NFDI4Health-LM-MDS-Design-V3-3-Internal-Numbering",
@@ -2337,6 +2377,10 @@
             "code": "Coding"
           }
         ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-masking-roles-nci-local"
+        },
         "mapping": [
           {
             "identity": "NFDI4Health-LM-MDS-Design-V3-3-Internal-Numbering",
@@ -2377,6 +2421,10 @@
             "code": "Coding"
           }
         ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-allocation-nci"
+        },
         "mapping": [
           {
             "identity": "NFDI4Health-LM-MDS-Design-V3-3-Internal-Numbering",
@@ -2397,6 +2445,10 @@
             "code": "Coding"
           }
         ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-yes-no-not-applicable-snomedct"
+        },
         "mapping": [
           {
             "identity": "NFDI4Health-LM-MDS-Design-V3-3-Internal-Numbering",

@@ -94,7 +94,7 @@
         "binding": {
           "strength": "required",
           "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sources-general-nci-local",
-          "description": "Value set defining codes to specify the general study data sources."
+          "description": "Value set defining codes to specify the general data sources."
         }
       },
       {

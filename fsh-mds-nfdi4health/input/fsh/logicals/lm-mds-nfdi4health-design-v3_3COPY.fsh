@@ -19,7 +19,7 @@ Description: "NFDI4Health Logical Model MDS Module Design V3.3"
 * Design.studyType.interventional from NFDI4Health_VS_MDS_Study_Type_Interventional_NCI (required)
 * Design.studyType.interventional ^comment = "Cardinality: 1..*, if Design.primaryDesign == 'Interventional'; otherwise 0..0 / Short Input Help: Select all that apply. If 'Other' is selected, please specify the type of the [RESOURCE] in the field 'Additional information about the [RESOURCE]'. / Source of the property and/or allowed values: CT.gov [2], DRKS [3]"
 * Design.studyType.nonInterventional 0..* Coding "Non-interventional [RESOURCE] type" "The primary strategy for participant identification and follow-up."
-* Design.studyType.nonInterventional from NFDI4Health_VS_MDS_Study_Type_Non_Interventional_Local (required)
+* Design.studyType.nonInterventional from NFDI4Health_VS_MDS_Study_Type_Non_Interventional_NCI_MSH_Local (required)
 * Design.studyType.nonInterventional ^comment = "Cardinality: 1..*, if Design.primaryDesign == 'Non-interventional'; otherwise 0..0 / Short Input Help: Select all that apply. If 'Other' is selected, please specify the type of the [RESOURCE] in the field 'Additional information about the [RESOURCE]'./ Source of the property and/or allowed values: CT.gov [2], DRKS [3], DDI [7], MIABIS [6]"
 * Design.conditions 0..* BackboneElement "Primary health condition(s) or disease(s) considered in the [RESOURCE]" "Group of items providing information about primary health condition(s) or disease(s) considered in the [RESOURCE]."
 * Design.conditions ^comment = "Source of the property and/or allowed values: NFDI4Health"
@@ -49,7 +49,7 @@ Description: "NFDI4Health Logical Model MDS Module Design V3.3"
 * Design.focus.code ^comment = "Short Input Help: If known, you can provide the code from the terminology/classification used. / Source of the property and/or allowed values: DataCite [1]"
 * Design.focus.code ^example.label = "Example of a code for a focus area"
 * Design.focus.code ^example.valueString = "http://snomed.info/id/840533007"
-* Design.groupsOfDiseases 1..1  BackboneElement "Groups of diseases or conditions" "Group of items providing information about groups of diseases or conditions on which the data were collected in the [RESOURCE]."
+* Design.groupsOfDiseases 1..1 BackboneElement "Groups of diseases or conditions" "Group of items providing information about groups of diseases or conditions on which the data were collected in the [RESOURCE]."
 * Design.groupsOfDiseases ^comment = "Source of the property and/or allowed values: NFDI4Health"
 * Design.groupsOfDiseases.generally 1..* Coding "Which groups of diseases or conditions were the data collected on?" "General groups of diseases or conditions on which the data were collected in the [RESOURCE]."
 * Design.groupsOfDiseases.generally from NFDI4Health_VS_MDS_Study_Groups_Of_Diseases_Generally_ICD10_SCT (required)
@@ -115,24 +115,21 @@ Description: "NFDI4Health Logical Model MDS Module Design V3.3"
 * Design.dataSource.general 0..* Coding "Type(s) of data sources" "Different types of data sources from which the data of the [RESOURCE] are generated or extracted."
 * Design.dataSource.general from NFDI4Health_VS_MDS_Study_Data_Sources_General_NCI_Local (required)
 * Design.dataSource.general ^comment = "Short Input Help: Select all that apply. / Source of the property and/or allowed values: NFDI4Health, Maelstrom [8], MIABIS [6]"
-
-
-
 * Design.dataSource.biosamples 0..* Coding "Biosamples collected" "Specification of biosamples collected in the [RESOURCE]."
 * Design.dataSource.biosamples ^comment = "Cardinality: 0..*, if Design.dataSource.general == 'Biological samples'; otherwise 0..0 / Short Input Help: Select all that apply. / Source of the property and/or allowed values: NFDI4Health, Maelstrom [8], MIABIS [6]"
-
+* Design.dataSource.biosamples from NFDI4Health_VS_MDS_Study_DS_Biosamples_SCT_NCI (required)
 * Design.dataSource.imaging	0..* Coding	"Imaging data collected" "Specification of imaging data collected in the [RESOURCE]."
 * Design.dataSource.imaging ^comment = "Cardinality: 0..*, if Design.dataSource.general == 'Imaging data'; otherwise 0..0 / Short Input Help: Select all that apply. / Source of the property and/or allowed values: NFDI4Health, Maelstrom [8], MIABIS [6]"
-
+* Design.dataSource.imaging from NFDI4Health_VS_MDS_Study_Data_Sources_Imaging_NCI (required)
 * Design.dataSource.omics 0..* Coding "Omics technology used" "Specification of omics technology applied in the [RESOURCE]."
 * Design.dataSource.omics ^comment = "Cardinality: 0..*, if Design.dataSource.general == 'Omics technology'; otherwise 0..0 / Short Input Help: Select all that apply. / Source of the property and/or allowed values: NFDI4Health, Maelstrom [8], MIABIS [6]"
-
+* Design.dataSource.omics from NFDI4Health_VS_MDS_Study_Data_Sources_Omics_NCI (required)
 * Design.dataSource.description	0..1 string "Additional information about data sources"	"If needed, additional descriptive information about the data sources of the [RESOURCE], e.g. indication of the data source(s) not listed in the field 'Type(s) of data sources' or a more detailed description of the selected data sources."
 * Design.dataSource.description ^comment = "Short Input Help: You can indicate here other data source(s) not listed in the field 'Type(s) of data sources' or provide a more detailed description of the selected data sources. / Source of the property and/or allowed values: NFDI4Health"
 
 * Design.primaryPurpose 0..1 Coding "Primary purpose of the [RESOURCE]" "Specification of the main purpose of the [RESOURCE]."
 * Design.primaryPurpose ^comment = "Cardinality: 0..1, if Resource.classification.type == ('Study' OR 'Substudy'); otherwise 0..0 / Additional Information: The field is defined foremost for interventional studies. For non-interventional studies, this field may not be applicable as diverse purposes may be pursued without being able to specify a primary one. In this case, the option 'Not applicable' can be selected. / Short Input Help: Foremost for interventional studies, please specify the primary purpose why the [RESOURCE] was conducted. For non-interventional studies, this field may be 'Not applicable' as multiple purposes may be defined as primary ones. / Source of the property and/or allowed values: CT.gov [2], DRKS [3]"
-
+* Design.primaryPurpose from NFDI4Health_VS_MDS_Study_Primary_Purpose_HL7_NCI (required)
 * Design.eligibilityCriteria 0..1 BackboneElement "Eligibility criteria for [RESOURCE] participants" "Group of items providing information about eligibility criteria for [RESOURCE] participants."
 * Design.eligibilityCriteria ^comment = "Source of the property and/or allowed values: NFDI4Health"
 
@@ -161,7 +158,6 @@ Description: "NFDI4Health Logical Model MDS Module Design V3.3"
 * Design.eligibilityCriteria.inclusionCriteria ^comment = "Short Input Help: If possible, use an enumerated or bulleted list for each criterion, starting with '-' and finishing with ';'. / Source of the property and/or allowed values: CT.gov [2], DRKS [3]"
 * Design.eligibilityCriteria.inclusionCriteria ^example.label = "Example of a list of inclusion criteria"
 * Design.eligibilityCriteria.inclusionCriteria ^example.valueString = "'- First inclusion criterion; - Second inclusion criterion;"
-
 * Design.eligibilityCriteria.exclusionCriteria 0..1 string "Exclusion criteria"	"Exclusion criteria for participation in the [RESOURCE]."
 * Design.eligibilityCriteria.exclusionCriteria ^comment = "Short Input Help: If possible, use an enumerated or bulleted list for each criterion, starting with '-' and finishing with ';'. / Source of the property and/or allowed values: CT.gov [2], DRKS [3]"
 * Design.eligibilityCriteria.exclusionCriteria ^example.label = "Example of a list of exclusion criteria"
@@ -245,71 +241,58 @@ Description: "NFDI4Health Logical Model MDS Module Design V3.3"
 
 * Design.outcomes 0..* BackboneElement "Outcome measures in the [RESOURCE]"	"Group of items providing information about outcome measures."
 * Design.outcomes ^comment = "Additional Information: The items are optional, especially for non-interventional studies. / Source of the property and/or allowed values: NFDI4Health"
-
 * Design.outcomes.title	1..1 string "Name of the outcome measure" "Name of the outcome measure. For non-interventional studies, this can be the name of specific measurement(s) or observation(s) used to describe patterns of diseases or traits or associations with exposures, risk factors or treatment."
 * Design.outcomes.title ^comment = "Short Input Help: For non-interventional studies, you can provide specific measurement(s) or observation(s) used to describe patterns of diseases or traits or associations with exposures, risk factors or treatment. / Source of the property and/or allowed values: CT.gov [2]"
-
 * Design.outcomes.description 0..1 string "Description of the outcome measure" "Additional descriptive information about the given outcome."
 * Design.outcomes.description ^comment = "Source of the property and/or allowed values: CT.gov [2], DRKS [3]"
-
 * Design.outcomes.type 0..1 CodeableConcept	"Type of the outcome measure" "The type indicates the degree of importance of the outcome measure in the [RESOURCE]."
 * Design.outcomes.type ^comment = "Cardinality: 1..1, if (Design.outcomes.title != Null OR Design.outcomes.description != Null); otherwise 0..0 / Source of the property and/or allowed values: NFDI4Health, CT.gov [2], DRKS [3]"
-
+* Design.outcomes.type from NFDI4Health_VS_MDS_Study_Outcome_Type_NCI (required)
 * Design.outcomes.timeFrame	0..1 string	"Time point(s) of assessment" "Description of the time point(s) at which the measurement for the outcome is assessed, e.g. the specific duration of time over which each participant is assessed."
 * Design.outcomes.timeFrame ^comment = "Source of the property and/or allowed values: CT.gov [2]"
-
 * Design.comment 0..1 string "Additional information about the [RESOURCE]" "Any additional information about specific aspects of the [RESOURCE] that could not be captured by other fields."
 * Design.comment ^comment = "Short Input Help: You can provide here specific aspects of the [RESOURCE] that could not be captured by other fields. / Source of the property and/or allowed values: NFDI4Health"
-
 * Design.assessments 0..* Coding "Additional assessments/measurements in the [RESOURCE]" "Any additional assessments/measurements included in the [RESOURCE]."
 * Design.assessments ^comment = "Short Input Help: Select all that apply. / Source of the property and/or allowed values: NFDI4Health, ENPADASI [17]"
-
+* Design.assessments from NFDI4Health_VS_MDS_Study_Assessments_SCT_NCI (required)
 * Design.dataSharingPlan 1..1 BackboneElement "Data sharing strategy of the [RESOURCE]"	"Group of items providing information about the data sharing strategy of the [RESOURCE]."
 * Design.dataSharingPlan ^comment = "Source of the property and/or allowed values: NFDI4Health"
-
 * Design.dataSharingPlan.generally 1..1 Coding "Is it planned to share the data?" "Indication whether there is a plan to make data collected in the [RESOURCE] available. In case of a [RESOURCE] with patients or other individuals, this refers to individual participant data (IPD)."
 * Design.dataSharingPlan.generally ^comment = "Short Input Help: Select one value from the list. / Source of the property and/or allowed values: Taichman DB, et al. [5], CT.gov [2], DRKS [3]"
-
+* Design.dataSharingPlan.generally from NFDI4Health_VS_MDS_Yes_No_Undecided_SNOMEDCT_NCI (required)
 * Design.dataSharingPlan.supportingInformation 0..* Coding "Supporting documents available in addition to the data"	"Supporting information/documents which will be made available in addition to the data collected in the [RESOURCE]."
 * Design.dataSharingPlan.supportingInformation ^comment = "Cardinality: 0..*, if Design.dataSharingPlan.generally == 'Yes, there is a plan to make data available'; otherwise 0..0 / Short Input Help: Select all that apply. / Source of the property and/or allowed values: Taichman DB, et al. [5], CT.gov [2]"
 
+
 * Design.dataSharingPlan.timeFrame 0..1 string "When and for how long will the data be available?" "Indication of the time period for which the data and, if applicable, supporting documents will be made available."
 * Design.dataSharingPlan.timeFrame ^comment = "Cardinality: 0..1, if Design.dataSharingPlan.generally == 'Yes, there is a plan to make data available'; otherwise 0..0 / Source of the property and/or allowed values: Taichman DB, et al. [5], CT.gov [2]"
-
 * Design.dataSharingPlan.accessCriteria	0..1 string	"Criteria for data access" "Indication of the access criteria by which the data will be shared, including: a) with whom; b) for which types of analyses; and c) by what mechanism."
 * Design.dataSharingPlan.accessCriteria ^comment = "0..1, if Design.dataSharingPlan.generally == 'Yes, there is a plan to make data available'; otherwise 0..0 / Short Input Help: Please provide here with whom, for which types of analyses and by what mechanism the data will be shared. / Source of the property and/or allowed values: Taichman DB, et al. [5], CT.gov [2]"
-
 * Design.dataSharingPlan.description 0..1 string "Additional information about data sharing" "Additional descriptive information providing more details about data sharing, e.g. indication of which data in particular will be shared or why the data will not be shared or why it is not yet decided."
 * Design.dataSharingPlan.description ^comment = "Short Input Help: Please indicate here which data in particular will be shared, or the reasons why it will not be shared or it is not yet decided.	/ Source of the property and/or allowed values: Taichman DB, et al. [5], CT.gov [2], DRKS [3]"
-
 * Design.dataSharingPlan.datashield	0..1 Coding "DataSHIELD/Opal infrastructure available?"	"Indication whether the DataSHIELD/Opal infrastructure is available."
 * Design.dataSharingPlan.datashield ^comment = "Source of the property and/or allowed values: NFDI4Health"
-
+* Design.dataSharingPlan.datashield from NFDI4Health_VS_MDS_Study_Data_Sharing_Plan_Datashield_SCT_NCI (required)
 * Design.dataSharingPlan.requestData 0..1 url "Link to data request application" "If existing, a link to the web page where the data request form and/or information on data reuse can be found."
 * Design.dataSharingPlan.requestData ^comment = "Source of the property and/or allowed values: NFDI4Health"
-
 * Design.dataSharingPlan.url 0..1 url "Web page with additional information about data sharing"	"If existing, a link to the web page where additional information about data sharing can be found."
 * Design.dataSharingPlan.url ^comment = "Source of the property and/or allowed values: Taichman DB, et al. [5], CT.gov [2]"
-
 * Design.dataSharingPlan.recordLinkage 0..1	boolean	"Record linkage possible?" "Indication if record linkage with other data sources is possible."
 * Design.dataSharingPlan.recordLinkage ^comment = "Cardinality: 1..1, if Resource.provenance.dataSource == 'Manually collected'; otherwise 0..0 / Additional Information: Record linkage refers to the merging of data on the same person from different databases. / Source of the property and/or allowed values: NFDI4Health UC 5.3 requirements"
-
 * Design.nonInterventional 0..1 BackboneElement	"Non-interventional aspects of the [RESOURCE]" "Group of items providing information about specific non-interventional aspects of the [RESOURCE]."
 * Design.nonInterventional ^comment = "Cardinality: 0..1, if (Resource.classification.type == ('Study' OR 'Substudy') AND Design.primaryDesign == 'Non-interventional') OR Resource.classification.type == ('Registry' OR 'Secondary data source'); otherwise 0..0 / Additional Information: Group of items applicable only to non-interventional resources. / Source of the property and/or allowed values: NFDI4Health"
-
 * Design.nonInterventional.timePerspectives	0..* Coding	"Temporal design" "Temporal design of the [RESOURCE], i.e. the observation period in relation to the time of participant enrollment."
 * Design.nonInterventional.timePerspectives from NFDI4Health_VS_MDS_Study_Time_Perspectives_NCI (required)
 * Design.nonInterventional.timePerspectives ^comment = "Cardinality: 0..*, if Resource.classification.type == ('Study' OR 'Substudy'); otherwise 0..0 / Short Input Help: Is it a retrospective, prospective or cross-sectional [RESOURCE]?	/ Source of the property and/or allowed values: CT.gov [2]"
 
+
 * Design.nonInterventional.targetFollowUpDuration 0..1 BackboneElement "Target follow-up duration of the [RESOURCE]" "If applicable, anticipated time period over which each participant would be followed."
 * Design.nonInterventional.targetFollowUpDuration ^comment = "Source of the property and/or allowed values: CT.gov [2]"
-
 * Design.nonInterventional.targetFollowUpDuration.number 1..1 integer "Target follow-up duration" "Numerical value of the target follow-up duration."
 * Design.nonInterventional.targetFollowUpDuration.number ^comment = "Source of the property and/or allowed values: CT.gov [2]"
-
 * Design.nonInterventional.targetFollowUpDuration.timeUnit 1..1 Coding "Unit of time" "Unit of measurement used to describe the follow-up duration."
 * Design.nonInterventional.targetFollowUpDuration.timeUnit ^comment = "Source of the property and/or allowed values: CT.gov [2]"
-
+* Design.nonInterventional.targetFollowUpDuration.timeUnit from NFDI4Health_VS_MDS_Time_Units_UCUM (required)
 * Design.nonInterventional.targetFollowUpDuration.frequency 0..1 integer "Number of follow-ups conducted" "The number of follow-ups conducted within the specified duration."
 * Design.nonInterventional.targetFollowUpDuration.frequency ^comment = "Source of the property and/or allowed values: NFDI4Health"
 
@@ -323,28 +306,24 @@ Description: "NFDI4Health Logical Model MDS Module Design V3.3"
 
 * Design.interventional	0..1 BackboneElement "Interventional aspects of the [RESOURCE]"	"Group of items providing information about specific interventional aspects of the [RESOURCE]."	
 * Design.interventional ^comment = "Cardinality: 0..1, if Resource.classification.type == ('Study' OR 'Substudy') AND Design.primaryDesign =='Interventional'; otherwise 0..0 / Additional Information: Group of items applicable only to interventional resources. / Source of the property and/or allowed values: NFDI4Health"
-
 * Design.interventional.phase 0..1 Coding "Numerical phase"	"If applicable, numerical phase of the [RESOURCE]."
 * Design.interventional.phase ^comment = "Short Input Help: Select one value from the list.	/ Source of the property and/or allowed values: CT.gov [2], DRKS [3]"
-
+* Design.interventional.phase from NFDI4Health_VS_MDS_Study_Phase_NCI (required)
 * Design.interventional.masking	0..1 BackboneElement "Masking of intervention(s) assignment" "Group of items providing information about the masking of intervention(s) assignment."
 * Design.interventional.masking ^comment = "Source of the property and/or allowed values: NFDI4Health"
-
 * Design.interventional.masking.general	0..1 boolean "Masking implemented?"	"Indication whether a masking (or blinding) of intervention(s) assignment is implemented (i.e., whether someone is prevented from having knowledge of the interventions assigned to individual participants)."
 * Design.interventional.masking.general	^comment = "Source of the property and/or allowed values: CT.gov [2], DRKS [3], NFDI4Health"
-
 * Design.interventional.masking.roles 0..* Coding "Who is masked?" "If masking is implemented, the party(ies) who are masked."
 * Design.interventional.masking.roles ^comment = "Cardinality: 0..*, if Design.interventional.masking.general == true; otherwise 0..0 / Short Input Help: Select all that apply. / Source of the property and/or allowed values: CT.gov [2], DRKS [3]"
-
+* Design.interventional.masking.roles from NFDI4Health_VS_MDS_Study_Masking_Roles_NCI_Local (required)
 * Design.interventional.masking.description	0..1 string	"Additional information about masking" "If needed, additional descriptive information about masking (e.g. information about other parties who may be masked)."
 * Design.interventional.masking.description ^comment = "Cardinality: 0..1, if Design.interventional.masking.general == true; otherwise 0..0 / Short Input Help: You can provide here additional information about masking, e.g. other parties who may be masked. / Source of the property and/or allowed values: CT.gov [2]"
-
 * Design.interventional.allocation 0..1 Coding "Type of allocation of participants to an arm" "Type of allocation/assignment of individual participants of the [RESOURCE] to an arm."
 * Design.interventional.allocation ^comment = "Short Input Help: Select one value from the list. / Source of the property and/or allowed values: CT.gov [2], DRKS [3]"
-
+* Design.interventional.allocation from NFDI4Health_VS_MDS_Study_Allocation_NCI (required)
 * Design.interventional.offLabelUse	0..1 Coding "Off-label use of a drug product" "Unapproved (off-label) use of a drug product."
 * Design.interventional.offLabelUse ^comment = "Short Input Help: Select 'Yes' or 'No' only for a drug [RESOURCE] and 'Not applicable' for any other [RESOURCE]. / Source of the property and/or allowed values: DRKS [3]"
-
+* Design.interventional.offLabelUse from NFDI4Health_VS_MDS_Yes_No_Not_Applicable_SNOMEDCT (required)
 
 Mapping: NFDI4Health_LM_MDS_Design_V3_3_Internal_Numbering
 Id: NFDI4Health-LM-MDS-Design-V3-3-Internal-Numbering

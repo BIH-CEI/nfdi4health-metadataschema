@@ -10,7 +10,6 @@ Description: "Value set defining codes from ICD-10 to specify groups of diseases
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de" 
 
-
 * $ICD10#II "Neoplasms"
 * $ICD10#III "Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism"
 * $ICD10#IV "Endocrine, nutritional and metabolic diseases"
