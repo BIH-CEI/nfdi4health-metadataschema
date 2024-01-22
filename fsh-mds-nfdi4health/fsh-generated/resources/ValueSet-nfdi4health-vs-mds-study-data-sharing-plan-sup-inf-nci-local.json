@@ -1,0 +1,84 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "NFDI4Health_VS_MDS_Study_Data_Sharing_Plan_Supporting_Information_NCI_Local",
+  "id": "nfdi4health-vs-mds-study-data-sharing-plan-sup-inf-nci-local",
+  "title": "NFDI4Health VS MDS Study Data Sharing Plan Supporting Information [NCI, local]",
+  "description": "Value set defining codes to specify which supporting information/documents will be made available in addition to the study data.",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sharing-plan-sup-inf-nci-local",
+  "version": "0.9",
+  "experimental": true,
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "concept": [
+          {
+            "code": "C70817",
+            "display": "Study Protocol"
+          },
+          {
+            "code": "C132347",
+            "display": "Protocol Amendment"
+          },
+          {
+            "code": "C115761",
+            "display": "Statistical Analysis Plan"
+          },
+          {
+            "code": "C16468",
+            "display": "Consent Form"
+          },
+          {
+            "code": "C142439",
+            "display": "Clinical study report"
+          },
+          {
+            "code": "C115779",
+            "display": "Standard Operating Procedure List (Intellectual Product)"
+          },
+          {
+            "code": "C40988",
+            "display": "Case Report Form"
+          },
+          {
+            "code": "C17048",
+            "display": "Questionnaire"
+          },
+          {
+            "code": "C17649",
+            "display": "Other"
+          }
+        ]
+      },
+      {
+        "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+        "concept": [
+          {
+            "code": "009",
+            "display": "Data dictionary"
+          },
+          {
+            "code": "010",
+            "display": "Analytic code"
+          },
+          {
+            "code": "011",
+            "display": "Codebook"
+          }
+        ]
+      }
+    ]
+  }
+}

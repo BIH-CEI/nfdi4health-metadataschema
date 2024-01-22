@@ -14,10 +14,10 @@ Description: "NFDI4Health LogicalModel Epidemiology of Chronic Diseases Metadata
 * ChronicDiseasesEpidemiology.commonChronicDiseaseName from NFDI4Health_VS_MDS_CD_Common_Chronic_Disease_Name_SNOMEDCT (required)
 * ChronicDiseasesEpidemiology.dataCollected 1..1 Coding "Type of data collected" "Specification of the type of data collected."
 * ChronicDiseasesEpidemiology.dataCollected ^comment = "Short Input Help: Select one value from the list. / Source of the property and/or allowed values: NFDI4Health UC 5.2 requirements"
-* ChronicDiseasesEpidemiology.dataCollected from NFDI4Health_VS_MDS_CD_DataCollected_UMLS (required)
+* ChronicDiseasesEpidemiology.dataCollected from NFDI4Health_VS_MDS_CD_DataCollected_NCI (required)
 * ChronicDiseasesEpidemiology.informationSources 1..* Coding "From which source(s) are data generated/extracted?" "Specification of the source(s) from which information is generated/extracted."
 * ChronicDiseasesEpidemiology.informationSources ^comment = "Additional Information: Treat prevalent and incident diseases separately (selected values should be specific for prevalent diseases and then separately incident diseases). / Short Input Help: Select all that apply. / Source of the property and/or allowed values: NFDI4Health UC 5.2 requirements"
-* ChronicDiseasesEpidemiology.informationSources from NFDI4Health_VS_MDS_CD_Information_Sources_UMLS_Local (required)
+* ChronicDiseasesEpidemiology.informationSources from NFDI4Health_VS_MDS_CD_Information_Sources_NCI_Local (required)
 * ChronicDiseasesEpidemiology.outcomesVerificationMethods 0..* string "How were outcomes generally verified?" "Methods of verification differ by study. All the details per outcome are not needed here but rather an explanation of how outcomes were verified in general."
 * ChronicDiseasesEpidemiology.outcomesVerificationMethods ^comment = "Source of the property and/or allowed values: NFDI4Health UC 5.2 requirements"
 

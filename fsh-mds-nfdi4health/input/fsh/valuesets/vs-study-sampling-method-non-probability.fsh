@@ -13,4 +13,4 @@ Description: "Value set defining codes to specify types of non-probability sampl
 * $NCI#C53204 "Convenience Sampling"
 * $NCI#C71505 "Matched Sampling" //purposive
 * $NCI#C71504 "Quota Sampling"
-* $Remaining#008 "Respondent-driven sampling"
+* $Remaining#008 "Respondent-assisted"
