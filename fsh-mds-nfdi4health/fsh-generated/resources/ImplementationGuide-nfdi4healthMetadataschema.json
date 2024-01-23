@@ -731,6 +731,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/nfdi4health-lm-mds-core-v3-3-version2"
+        },
+        "name": "NFDI4Health LM Core Metadataschema V3.3",
+        "description": "NFDI4Health Logical Model Core Metadataschema V3.3  Version2 (AD)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/nfdi4health-lm-mds-core-v3-3"
         },
         "name": "NFDI4Health LM Core Metadataschema V3.3",
@@ -1104,9 +1112,9 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/nfdi4health-vs-mds-study-biospecimen-retention-umls"
+          "reference": "ValueSet/nfdi4health-vs-mds-study-biospecimen-retention-nci"
         },
-        "name": "NFDI4Health VS MDS Study Biospecimen Retention [UMLS]",
+        "name": "NFDI4Health VS MDS Study Biospecimen Retention [NCI]",
         "description": "Value set defining codes to specify which biosamples are retained in a biorepository.",
         "exampleBoolean": false
       },

@@ -45,7 +45,7 @@
     },
     {
       "code": "008",
-      "display": "Respondent-driven sampling",
+      "display": "Respondent-assisted",
       "definition": "Variant of snowball sampling that can be applied to hard-to-reach populations, and uses additionally a mathematical model."
     },
     {

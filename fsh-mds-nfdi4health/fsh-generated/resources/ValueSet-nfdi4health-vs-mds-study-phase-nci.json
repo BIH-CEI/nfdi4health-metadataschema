@@ -26,55 +26,55 @@
         "concept": [
           {
             "code": "C54721",
-            "display": "Phase 0 Trial (Research Activity)"
+            "display": "Phase 0 Trial"
           },
           {
             "code": "C15600",
-            "display": "Phase I Trial (Research Activity)"
+            "display": "Phase I Trial"
           },
           {
             "code": "C15693",
-            "display": "Phase I/II Trial (Research Activity)"
+            "display": "Phase I/II Trial"
           },
           {
             "code": "C15601",
-            "display": "Phase II Trial (Research Activity)"
+            "display": "Phase II Trial"
           },
           {
             "code": "C49686",
-            "display": "Phase IIa Trial (Research Activity)"
+            "display": "Phase IIa Trial"
           },
           {
             "code": "C49688",
-            "display": "Phase II b Trial (Research Activity)"
+            "display": "Phase II b Trial"
           },
           {
             "code": "C15694",
-            "display": "Phase II/III Trial (Research Activity)"
+            "display": "Phase II/III Trial"
           },
           {
             "code": "C15602",
-            "display": "Phase III Trial (Research Activity)"
+            "display": "Phase III Trial"
           },
           {
             "code": "C49687",
-            "display": "Phase IIIa Trial (Research Activity)"
+            "display": "Phase IIIa Trial"
           },
           {
             "code": "C49689",
-            "display": "Phase IIIb Trial (Research Activity)"
+            "display": "Phase IIIb Trial"
           },
           {
             "code": "C15603",
-            "display": "Phase IV Trial (Research Activity)"
+            "display": "Phase IV Trial"
           },
           {
             "code": "C17649",
-            "display": "Other (Qualitative Concept)"
+            "display": "Other"
           },
           {
             "code": "C48660",
-            "display": "Not Applicable (Qualitative Concept)"
+            "display": "Not Applicable"
           }
         ]
       }

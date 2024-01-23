@@ -712,6 +712,14 @@
     "endLine": 17
   },
   {
+    "outputFile": "StructureDefinition-nfdi4health-lm-mds-core-v3-3-version2.json",
+    "fshName": "NFDI4Health_LM_MDS_Core_V3_3_Version2",
+    "fshType": "Logical",
+    "fshFile": "logicals/lm-mds-core-ad.fsh",
+    "startLine": 1,
+    "endLine": 49
+  },
+  {
     "outputFile": "StructureDefinition-nfdi4health-lm-mds-core-v3-3.json",
     "fshName": "NFDI4Health_LM_MDS_Core_V3_3",
     "fshType": "Logical",
@@ -1072,8 +1080,8 @@
     "endLine": 22
   },
   {
-    "outputFile": "ValueSet-nfdi4health-vs-mds-study-biospecimen-retention-umls.json",
-    "fshName": "NFDI4Health_VS_MDS_Study_Biospecimen_Retention_UMLS",
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-biospecimen-retention-nci.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Biospecimen_Retention_NCI",
     "fshType": "ValueSet",
     "fshFile": "valuesets/vs-study-biospecimen-retention.fsh",
     "startLine": 2,

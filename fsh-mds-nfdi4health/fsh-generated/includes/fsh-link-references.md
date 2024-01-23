@@ -86,6 +86,7 @@
 [NFDI4Health_EX_MDS_URI]: StructureDefinition-nfdi4health-ex-mds-uri.html
 [NFDI4Health_EX_MDS_Use_Rights_Confirmations]: StructureDefinition-nfdi4health-ex-mds-use-rights-confirmations.html
 [NFDI4Health_EX_MDS_Version]: StructureDefinition-nfdi4health-ex-mds-version.html
+[NFDI4Health_LM_MDS_Core_V3_3_Version2]: StructureDefinition-nfdi4health-lm-mds-core-v3-3-version2.html
 [NFDI4Health_LM_MDS_Core_V3_3]: StructureDefinition-nfdi4health-lm-mds-core-v3-3.html
 [NFDI4Health_LM_Metadataschema_EOCD_V3_3]: StructureDefinition-nfdi4health-lm-metadataschema-eocd-v3-3.html
 [NFDI4Health_LM_MDS_Design_V3_3]: StructureDefinition-nfdi4health-lm-mds-design-v3-3.html
@@ -133,7 +134,7 @@
 [NFDI4Health_VS_MDS_Study_Allocation_NCI]: ValueSet-nfdi4health-vs-mds-study-allocation-nci.html
 [NFDI4Health_VS_MDS_Study_Arm_Group_Type_NCI]: ValueSet-nfdi4health-vs-mds-study-arm-group-type-nci.html
 [NFDI4Health_VS_MDS_Study_Assessments_SCT_NCI]: ValueSet-nfdi4health-vs-mds-study-assessments-sct-nci.html
-[NFDI4Health_VS_MDS_Study_Biospecimen_Retention_UMLS]: ValueSet-nfdi4health-vs-mds-study-biospecimen-retention-umls.html
+[NFDI4Health_VS_MDS_Study_Biospecimen_Retention_NCI]: ValueSet-nfdi4health-vs-mds-study-biospecimen-retention-nci.html
 [NFDI4Health_VS_MDS_Study_Centers_SNOMEDCT_Local]: ValueSet-nfdi4health-vs-mds-study-centers-snomedct-local.html
 [NFDI4Health_VS_MDS_Study_Conditions_Classification_NCI_Local]: ValueSet-nfdi4health-vs-mds-study-conditions-classification-nci-local.html
 [NFDI4Health_VS_MDS_Study_Data_Sharing_Plan_Datashield_SCT_NCI]: ValueSet-nfdi4health-vs-mds-study-data-sharing-plan-ds-sct-nci.html
