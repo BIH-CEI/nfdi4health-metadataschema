@@ -40,6 +40,22 @@
     "endLine": 20
   },
   {
+    "outputFile": "Composition-InstanceOfCompositionHouseholdTransmissionInvestigationForC19.json",
+    "fshName": "InstanceOfCompositionHouseholdTransmissionInvestigationForC19",
+    "fshType": "Instance",
+    "fshFile": "examples/InstanceOfComposition_Household.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "Composition-InstanceOfCompositionSPOVID.json",
+    "fshName": "InstanceOfCompositionSPOVID",
+    "fshType": "Instance",
+    "fshFile": "examples/InstanceofComposition_Study.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
     "outputFile": "DocumentReference-InstanceOfDocumentHouseholdTransmissionInvestigationForC19.json",
     "fshName": "InstanceOfDocumentHouseholdTransmissionInvestigationForC19",
     "fshType": "Instance",
@@ -862,6 +878,14 @@
     "fshFile": "profiles/NFDI4Health_PR_MDS_Study.fsh",
     "startLine": 1,
     "endLine": 305
+  },
+  {
+    "outputFile": "StructureDefinition-pr-mds-composition.json",
+    "fshName": "PR_MDS_Composition",
+    "fshType": "Profile",
+    "fshFile": "profiles/PR_MDS_Composition.fsh",
+    "startLine": 1,
+    "endLine": 26
   },
   {
     "outputFile": "ValueSet-nfdi4health-vs-mds-cd-common-chronic-disease-name-snomedct.json",

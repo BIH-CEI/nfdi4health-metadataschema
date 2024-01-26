@@ -91,6 +91,20 @@
       },
       {
         "reference": {
+          "reference": "Composition/InstanceOfCompositionHouseholdTransmissionInvestigationForC19"
+        },
+        "name": "Example of the PR MDS Composition - Household Transmission Investigation Protocol for Coronavirus Disease 2019 (COVID-19)",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/pr-mds-composition"
+      },
+      {
+        "reference": {
+          "reference": "Composition/InstanceOfCompositionSPOVID"
+        },
+        "name": "Example of the PR MDS Composition - SPOVID - Sport & Long-COVID-Syndrom",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/pr-mds-composition"
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/nfdi4health-lm-metadatenschema-recordlinkage-v3-3"
         },
         "name": "Information about record linkage for the [RESOURCE]",
@@ -837,6 +851,14 @@
         },
         "name": "NFDI4Health PR MDS Centers",
         "description": "Profile intended to capture information on the number of centers invovled in a study.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/pr-mds-composition"
+        },
+        "name": "NFDI4Health PR MDS Composition",
+        "description": "Profile intended to capture information on the core information of resources.",
         "exampleBoolean": false
       },
       {

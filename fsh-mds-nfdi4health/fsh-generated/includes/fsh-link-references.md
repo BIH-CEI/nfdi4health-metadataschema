@@ -6,6 +6,8 @@
 [OrganizationPublicExample]: Organization-OrganizationPublicExample.html
 [InstanceOfProvenance]: Provenance-InstanceOfProvenance.html
 [InstanceOfQuestionnaireWHOHouseholdTransmission]: Questionnaire-InstanceOfQuestionnaireWHOHouseholdTransmission.html
+[InstanceOfCompositionHouseholdTransmissionInvestigationForC19]: Composition-InstanceOfCompositionHouseholdTransmissionInvestigationForC19.html
+[InstanceOfCompositionSPOVID]: Composition-InstanceOfCompositionSPOVID.html
 [NFDI4Health_LM_Metadataschema_RecordLinkage_V3_3]: StructureDefinition-nfdi4health-lm-metadatenschema-recordlinkage-v3-3.html
 [InstanceOfEvidenceVariableSPOVID]: EvidenceVariable-InstanceOfEvidenceVariableSPOVID.html
 [InstanceOfGroupActualSHIP]: Group-InstanceOfGroupActualSHIP.html
@@ -100,6 +102,7 @@
 [NFDI4Health_VS_MDS_NE_Portion_Size_SNOMEDCT_Local]: ValueSet-nfdi4health-vs-mds-ne-portion-size-snomedct-local.html
 [NFDI4Health_VS_MDS_NE_Reference_Period_Unit_UCUM]: ValueSet-nfdi4health-vs-mds-ne-reference-period-unit-ucum.html
 [NFDI4Health_PR_MDS_Centers]: StructureDefinition-nfdi4health-pr-mds-centers.html
+[PR_MDS_Composition]: StructureDefinition-pr-mds-composition.html
 [NFDI4Health_PR_MDS_Document]: StructureDefinition-nfdi4health-pr-mds-document.html
 [NFDI4Health_PR_MDS_Evidence_Variable_Intervention_Exposure]: StructureDefinition-nfdi4health-pr-mds-evidence-variable-intervention-exposure.html
 [NFDI4Health_PR_MDS_Group_Actual]: StructureDefinition-nfdi4health-pr-mds-group-actual.html
