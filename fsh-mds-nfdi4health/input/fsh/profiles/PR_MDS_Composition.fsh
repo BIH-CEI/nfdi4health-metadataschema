@@ -24,13 +24,14 @@ Description: "Profile intended to capture information on the core information of
 * category ^definition = "Specific information about the form in which the [RESOURCE] is available."
 * category ^comment = "Cardinality: 1..1, if Resource.classification.type != ('Study' OR 'Substudy' OR 'Dataset' OR 'Registry' OR 'Secondary data source'); otherwise 0..0"
 * category from NFDI4Health_VS_MDS_Resource_Type_General_NCI_MSH_Local (required)
+* category obeys core-1
 
 
 //FHIR Paths
 Invariant: core-1
 Description: "When Composition.type = 'C63536' OR 'C198230' OR 'C47824' OR 'C61393' OR '178' then category must be empty and when Composition.type != 'C63536' OR 'C198230' OR 'C47824' OR 'C61393' OR '178' then Composition.category must exist."
 Severity: #error
-Expression: "type.coding.where(code = 'C63536','C198230','C47824', 'C61393', '178') implies category.exists().not() and type.coding.where(code != 'C63536','C198230','C47824', 'C61393', '178') implies category.exists()"
+Expression: "type.coding.where(code = 'C63536' or code = 'C198230' or code = 'C47824' or code =  'C61393' or code = '178') implies category.exists().not() and type.coding.where(code != 'C63536' or code != 'C198230' or != 'C47824' or code != 'C61393' or code != '178') implies category.exists()"
 
 
 

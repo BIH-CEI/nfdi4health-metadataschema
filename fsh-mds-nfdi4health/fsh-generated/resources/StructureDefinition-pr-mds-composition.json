@@ -99,6 +99,15 @@
         "definition": "Specific information about the form in which the [RESOURCE] is available.",
         "comment": "Cardinality: 1..1, if Resource.classification.type != ('Study' OR 'Substudy' OR 'Dataset' OR 'Registry' OR 'Secondary data source'); otherwise 0..0",
         "max": "1",
+        "constraint": [
+          {
+            "key": "core-1",
+            "severity": "error",
+            "human": "When Composition.type = 'C63536' OR 'C198230' OR 'C47824' OR 'C61393' OR '178' then category must be empty and when Composition.type != 'C63536' OR 'C198230' OR 'C47824' OR 'C61393' OR '178' then Composition.category must exist.",
+            "expression": "type.coding.where(code = 'C63536' or code = 'C198230' or code = 'C47824' or code =  'C61393' or code = '178') implies category.exists().not() and type.coding.where(code != 'C63536' or code != 'C198230' or != 'C47824' or code != 'C61393' or code != '178') implies category.exists()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/pr-mds-composition"
+          }
+        ],
         "binding": {
           "strength": "required",
           "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-resource-type-general-nci-msh-local"
