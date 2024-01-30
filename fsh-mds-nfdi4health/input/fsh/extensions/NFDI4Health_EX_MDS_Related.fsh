@@ -25,6 +25,6 @@ Mapping: NFDI4Health-Related-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Related
-* -> "1.12 Resource.ids"
-* -> "1.13 Resource.idsNfdi4health"
-* -> "1.8 Resource.webpage"
+* -> "Resource.ids"
+* -> "Resource.idsNfdi4health"
+* -> "Resource.webpage"

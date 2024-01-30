@@ -14,10 +14,8 @@ Description: "Profile to collect information about german (or with at least one 
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
 * extension contains
-    NFDI4Health_EX_MDS_Resource_Type named resourceType 1..1 and
-    NFDI4Health_EX_MDS_Resource_Type_General named resourceTypeGeneral 0..1 and
     NFDI4Health_EX_MDS_Execution_Language named executionLanguage 0..* and
-    NFDI4Health_EX_MDS_Associated_Party named roles 1..* and
+    NFDI4Health_EX_MDS_Descriptions named descritpions 1..1 and
     NFDI4Health_EX_MDS_Nutritional_Data named nutritionalData 0..1 and
     NFDI4Health_EX_MDS_Chronic_Diseases named chronicDiseases 0..1 and
     NFDI4Health_EX_MDS_Groups_Of_Diseases named groupsOfDiseases 1..1 and
@@ -41,7 +39,6 @@ Description: "Profile to collect information about german (or with at least one 
 * identifier ^slicing.discriminator.path = "type"
 * identifier ^slicing.rules = #open
 * identifier contains
-    NFDI4Health 1..1 and
     DRKS 0..* and
     NCT 0..* and
     ISRCTN 0..* and
@@ -52,15 +49,7 @@ Description: "Profile to collect information about german (or with at least one 
     MDMPortal 0..* and
     Other 0..*
 * identifier.type 1..1
-* identifier.type from NFDI4Health_VS_MDS_ID_TYPE_UMLS_Local (required)
-* identifier[NFDI4Health] ^definition = "Unique identifier of the resource used for identification within the NFDI4Health."
-* identifier[NFDI4Health] ^comment = "Additional information: The identifier is assigned automatically."
-* identifier[NFDI4Health].type = $Remaining#104 "NFDI4Health" (exactly)
-* identifier[NFDI4Health].use 1..
-* identifier[NFDI4Health].use = #official (exactly)
-* identifier[NFDI4Health].system 1..
-* identifier[NFDI4Health].system = "https://csh.nfdi4health.de/resource/" (exactly)
-* identifier[NFDI4Health].value 1..
+* identifier.type from NFDI4Health_VS_MDS_ID_TYPE_NCI_Local (required)
 * identifier[DRKS] ^definition = "Group of items providing information about identifiers (IDs) assigned to the given resource by another registering systems, e.g. a register of clinical trials or a data repository."
 * identifier[DRKS].type = $Remaining#098 "DRKS" (exactly)
 * identifier[DRKS].system 1..
@@ -126,11 +115,6 @@ Description: "Profile to collect information about german (or with at least one 
 * identifier[Other].system ^definition = "Type/name of the system where the given resource is already registered."
 * identifier[Other].value 1..
 * identifier[Other].value ^definition = "Identifier (ID) assigned to the given resource by another registering system, e.g. by a register of clinical trials or a data repository."
-* title 1..
-* title ^short = "Title/name"
-* title ^definition = "Scientific unabbreviated title or name of the resource."
-* title ^comment = "Additional Information: If no official title/name has been defined yet, please provide a title/name that is suitable for public display. | Short Input Help: Please provide at least one title/name of the resource. If the original title is not in English, please also provide an English translation of the original title."
-* title.extension contains NFDI4Health_EX_MDS_Label named label 0..*
 * status = #active (exactly)
 * status ^comment = "The item does not exist in NFDI4Health' MDS. Fixed to 'active' for all studies."
 * primaryPurposeType from NFDI4Health_VS_MDS_Study_Primary_Purpose_HL7_NCI (required)
@@ -265,13 +249,6 @@ Description: "Profile to collect information about german (or with at least one 
 * location[countries] from NFDI4Health_VS_MDS_Countries_ISO (required)
 * location[regions].coding 0..0
 * location[regions].text 1..1
-* description 1..1
-* description ^short = "text"
-* description ^definition = "Short plain text summary of the [RESOURCE]."
-* description.extension ^slicing.discriminator.type = #value
-* description.extension ^slicing.discriminator.path = "url"
-* description.extension ^slicing.rules = #open
-* description.extension contains NFDI4Health_EX_MDS_Language named language 1..1
 * enrollment only Reference(NFDI4Health_PR_MDS_Group_Intended or NFDI4Health_PR_MDS_Group_Actual)
 * enrollment ^short = "Eligibility criteria for study participants"
 * enrollment ^definition = "Group of items providing information about eligibility criteria for study participants."
@@ -308,9 +285,8 @@ Mapping: NFDI4Health-Study-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_PR_MDS_Study
-* identifier -> "1.1 Resource.identifier"
-* identifier -> "1.11 Resource.idsAlternative"
-* identifier[NFDI4Health] -> "1.1 Resource.identifier"
+
+* identifier -> "Resource.idsAlternative"
 * identifier[DRKS] -> "1.11 Resource.idsAlternative"
 * identifier[DRKS].system -> "1.11.1 Resource.idsAlternative.scheme" "Type = DRKS"
 * identifier[DRKS].type -> "1.11.1 Resource.idsAlternative.scheme" "Type = DRKS"
@@ -347,9 +323,6 @@ Source: NFDI4Health_PR_MDS_Study
 * identifier[Other].system -> "1.11.1 Resource.idsAlternative.scheme" "Type = Other"
 * identifier[Other].type -> "1.11.1 Resource.idsAlternative.scheme" "Type = Other"
 * identifier[Other].value -> "1.11.2 Resource.idsAlternative.identifier"
-* extension[resourceType] -> "1.2.1 Resource.classification.type"
-* extension[resourceTypeGeneral] -> "1.2.2 Resource.classification.typeGeneral"
-* title -> "1.3.1 Resource.titles.text"
 * primaryPurposeType -> "1.17.15 Design.primaryPurpose"
 * phase -> "1.17.28.1 Design.interventional.phase"
 * category[primaryDesign] -> "1.17.1 Design.primaryDesign"
@@ -374,8 +347,7 @@ Source: NFDI4Health_PR_MDS_Study
 * keyword.text -> "1.6.1 Resource.keywords.label"
 * location[countries] -> "1.17.15 Resource.studyDesign.countries"
 * location[regions].text -> "1.17.16 Resource.studyDesign.region"
-* description -> "Resource.descriptions.text"
-* description.extension[language] -> "Resource.descriptions.language"
+* extension[descritpions] -> "Resource.descriptions"
 * enrollment -> "1.17.23 Resource.studyDesign.eligibilityCriteria"
 * period.start -> "1.17.13 Resource.studyDesign.studyStartDate"
 * period.end -> "1.17.14 Resource.studyDesign.studyEndDate"

@@ -16,7 +16,9 @@ Description: "Profile to collect information on organizations/institutions havin
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
 * extension ^min = 0
-* extension contains NFDI4Health_EX_MDS_FundingID named fundingID 0..* 
+* extension contains 
+    NFDI4Health_EX_MDS_FundingID named fundingID 0..* and
+    NFDI4Health_EX_MDS_Role_Organisational named roleOrganisational 0..1
 * identifier ^short = "Digital identifier(s)"
 * identifier ^definition = "Group of items providing information about identifiers of the organisation."
 * identifier.type 1..
@@ -81,15 +83,17 @@ Mapping: NFDI4Health-Organization-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_PR_MDS_Organization
-* -> "1.10.2 Resource.contributors.organisational"
-* -> "1.10.6 Resource.contributors.affiliation"
+* -> "Resource.contributors.organisational"
+* -> "Resource.contributors.affiliation"
 * identifier -> "1.10.6.4 Resource.contributors.affiliation.identifiers"
 * identifier.type -> "1.10.6.4.2 Resource.contributors.affiliation.identifiers.scheme"
 * identifier.value -> "1.10.6.4.1 Resource.contributors.affiliation.identifiers.identifier"
-* name -> "1.10.2.3 Resource.contributors.organisational.name"
+* name -> "Resource.contributors.organisational.name"
 * name -> "1.10.6.1 Resource.contributors.affiliation.name"
 * telecom[email] -> "1.10.4 Resource.contributors.email"
 * telecom[phone] -> "1.10.5 Resource.contributors.phone"
 * telecom[webpage] -> "1.10.6.3 Resource.contributors.affiliation.webpage"
 * address -> "1.10.6.2 Resource.contributors.affiliation.address"
 * partOf -> "1.10.6 Resources.contributors.affiliation"
+* extension[roleOrganisational] -> "Resource.contributors.organisational"
+* extension[fundingID] -> "Resource.contributors.organisational"

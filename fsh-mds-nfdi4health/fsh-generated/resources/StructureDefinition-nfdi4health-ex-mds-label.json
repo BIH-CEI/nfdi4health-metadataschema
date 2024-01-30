@@ -104,11 +104,11 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.3.1 Resource.titles.text"
+            "map": "Resource.titles.text"
           },
           {
             "identity": "NFDI4Health",
-            "map": "1.3.2 Resource.acronyms.text"
+            "map": "Resource.acronyms.text"
           }
         ]
       },
@@ -165,11 +165,11 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.3.2 Resource.titles.language"
+            "map": "Resource.titles.language"
           },
           {
             "identity": "NFDI4Health",
-            "map": "1.4.2 Resource.acronyms.language"
+            "map": "Resource.acronyms.language"
           }
         ]
       },

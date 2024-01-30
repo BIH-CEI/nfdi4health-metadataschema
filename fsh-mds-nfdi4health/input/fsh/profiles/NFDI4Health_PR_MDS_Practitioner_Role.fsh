@@ -9,6 +9,12 @@ Description: "Profile to collect information about the contact information and a
 * ^contact.name = "NFDI4Health"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
+* extension ^slicing.discriminator.type = #value
+* extension ^slicing.discriminator.path = "url"
+* extension ^slicing.rules = #open
+* extension ^min = 0
+* extension contains 
+    NFDI4Health_EX_MDS_Role_Personal named rolePersonal 0..1
 * practitioner 0..1
 * practitioner only Reference(Practitioner or NFDI4Health_PR_MDS_Practitioner)
 * organization only Reference(Organization or NFDI4Health_PR_MDS_Organization)
@@ -43,6 +49,7 @@ Mapping: NFDI4Health-Practitioner-Role-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_PR_MDS_Practitioner_Role
-* organization -> "1.10.6 Resource.contributors.affiliation"
-* telecom[email] -> "1.10.4 Resource.contributors.email"
-* telecom[phone] -> "1.10.5 Resource.contributors.phone"
+* organization -> "Resource.contributors.affiliations"
+* telecom[email] -> "Resource.contributors.email"
+* telecom[phone] -> "Resource.contributors.phone"
+* extension[rolePersonal] -> "Resource.contributors.personal.type"

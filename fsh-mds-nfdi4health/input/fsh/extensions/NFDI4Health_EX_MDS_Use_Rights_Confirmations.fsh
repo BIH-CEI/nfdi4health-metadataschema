@@ -42,8 +42,8 @@ Mapping: NFDI4Health-Use-Rights-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Use_Rights_Confirmations
-* -> "1.9.3.3 Resource.nonStudyDetails.useRights.confirmations"
-* extension[confirmationAuthority] -> "1.9.3.3.1 Resource.nonStudyDetails.useRights.confirmations.authority"
-* extension[confirmationTerms] -> "1.9.3.3.2 Resource.nonStudyDetails.useRights.confirmations.terms"
-* extension[confirmationIrrevocability] -> "1.9.3.3.3 Resource.nonStudyDetails.useRights.confirmations.irrevocability"
-* extension[supportByLicensing] -> "1.9.3.3.4 Resource.nonStudyDetails.useRights.confirmations.supportByLicencing"
+* -> "Resource.nonStudyDetails.useRights.confirmations"
+* extension[confirmationAuthority] -> "Resource.nonStudyDetails.useRights.confirmations.authority"
+* extension[confirmationTerms] -> "Resource.nonStudyDetails.useRights.confirmations.terms"
+* extension[confirmationIrrevocability] -> "Resource.nonStudyDetails.useRights.confirmations.irrevocability"
+* extension[supportByLicensing] -> "Resource.nonStudyDetails.useRights.confirmations.supportByLicencing"

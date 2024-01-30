@@ -61,11 +61,11 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.10.2 Resource.contributors.organisational"
+            "map": "Resource.contributors.organisational"
           },
           {
             "identity": "NFDI4Health",
-            "map": "1.10.6 Resource.contributors.affiliation"
+            "map": "Resource.contributors.affiliation"
           }
         ]
       },
@@ -94,6 +94,33 @@
             "profile": [
               "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-fundingID"
             ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Resource.contributors.organisational"
+          }
+        ]
+      },
+      {
+        "id": "Organization.extension:roleOrganisational",
+        "path": "Organization.extension",
+        "sliceName": "roleOrganisational",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-role-organisational"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Resource.contributors.organisational"
           }
         ]
       },
@@ -171,7 +198,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.10.2.3 Resource.contributors.organisational.name"
+            "map": "Resource.contributors.organisational.name"
           },
           {
             "identity": "NFDI4Health",

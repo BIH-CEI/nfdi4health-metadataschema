@@ -13,18 +13,15 @@ Description: "Profile collecting information on questionnaires within NFDI4Healt
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
 * extension contains
-    NFDI4Health_EX_MDS_Resource_Type named resourceType 1..1 and
-    NFDI4Health_EX_MDS_Resource_Type_General named resourceTypeGeneral 0..1 and
     NFDI4Health_EX_MDS_Format named format 0..1 and
+    NFDI4Health_EX_MDS_Descriptions named descritpions 1..1 and
     NFDI4Health_EX_MDS_Execution_Language named executionlLanguage 0..* and
-    NFDI4Health_EX_MDS_Associated_Party named roles 1..* and
     NFDI4Health_EX_MDS_Related named relatedResources 0..1 and
     NFDI4Health_EX_MDS_Keywords named keywords 0..*
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "type"
 * identifier ^slicing.rules = #open
 * identifier contains
-    NFDI4Health 1..1 and
     DRKS 0..* and
     NCT 0..* and
     ISRCTN 0..* and
@@ -35,15 +32,7 @@ Description: "Profile collecting information on questionnaires within NFDI4Healt
     MDMPortal 0..* and
     Other 0..*
 * identifier.type 1..1
-* identifier.type from NFDI4Health_VS_MDS_ID_TYPE_UMLS_Local (required)
-* identifier[NFDI4Health] ^definition = "Unique identifier of the resource used for identification within the NFDI4Health."
-* identifier[NFDI4Health] ^comment = "Additional information: The identifier is assigned automatically."
-* identifier[NFDI4Health].type = $Remaining#104 "NFDI4Health" (exactly)
-* identifier[NFDI4Health].use 1..
-* identifier[NFDI4Health].use = #official (exactly)
-* identifier[NFDI4Health].system 1..
-* identifier[NFDI4Health].system = "https://csh.nfdi4health.de/resource/" (exactly)
-* identifier[NFDI4Health].value 1..
+* identifier.type from NFDI4Health_VS_MDS_ID_TYPE_NCI_Local (required)
 * identifier[DRKS] ^definition = "Group of items providing information about identifiers (IDs) assigned to the given resource by another registering systems, e.g. a register of clinical trials or a data repository."
 * identifier[DRKS].type = $Remaining#098 "DRKS" (exactly)
 * identifier[DRKS].system 1..
@@ -111,23 +100,11 @@ Description: "Profile collecting information on questionnaires within NFDI4Healt
 * identifier[Other].value ^definition = "Identifier (ID) assigned to the given resource by another registering system, e.g. by a register of clinical trials or a data repository."
 * version ^short = "Version"
 * version ^definition = "If applicable, the version number of the [RESOURCE]."
-* title 1..
-* title ^short = "Title/name"
-* title ^definition = "Scientific unabbreviated title or name of the resource."
-* title ^comment = "Additional information: If no official title/name has been defined yet, please provide a title/name that is suitable for public display. | Short input help: Please provide at least one title/name of the resource. If the original title is not in English, please also provide an English translation of the original title."
-* title.extension contains NFDI4Health_EX_MDS_Label named label 1..*
 * status = #active (exactly)
 * status ^comment = "The item does not exist in NFDI4Health' MDS. Fixed to 'active' for all studies."
-* description 1..1
-* description ^short = "text"
-* description ^definition = "Short plain text summary of the [RESOURCE]."
-* description.extension ^slicing.discriminator.type = #value
-* description.extension ^slicing.discriminator.path = "url"
-* description.extension ^slicing.rules = #open
-* description.extension contains NFDI4Health_EX_MDS_Language named language 1..1
-* copyright ^short = "Additional information about use rights"
-* copyright ^definition = "Any additional descriptive information explaining terms and conditions to (re-)use the [RESOURCE]."
-* copyright ^comment = "Short input help: If 'Other' is selected in the field 'License', the preferred license or terms and conditions for (re-)use should be specified here."
+* copyright ^short = "(Re-)use rights"
+* copyright ^definition = "Group of items providing information about the rights to (re-)use the [RESOURCE]."
+* copyright ^comment = "Additional information about use rights"
 * copyright.extension ^slicing.discriminator.type = #value
 * copyright.extension ^slicing.discriminator.path = "url"
 * copyright.extension ^slicing.rules = #open
@@ -139,14 +116,12 @@ Mapping: NFDI4Health-Questionnaire-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_PR_MDS_Questionnaire
-* identifier -> "1.1 Resource.identifier"
-* identifier -> "1.11 Resource.idsAlternative"
-* identifier[NFDI4Health] -> "1.1 Resource.identifier"
-* identifier[DRKS] -> "1.11 Resource.idsAlternative"
-* identifier[DRKS].system -> "1.11.1 Resource.idsAlternative.scheme" "Type = DRKS"
-* identifier[DRKS].type -> "1.11.1 Resource.idsAlternative.scheme" "Type = DRKS"
-* identifier[DRKS].value -> "1.11.2 Resource.idsAlternative.identifier"
-* identifier[NCT] -> "1.11 Resource.idsAlternative"
+* identifier -> "Resource.idsAlternative"
+* identifier[DRKS] -> "Resource.idsAlternative"
+* identifier[DRKS].system -> "Resource.idsAlternative.scheme" "Type = DRKS"
+* identifier[DRKS].type -> "Resource.idsAlternative.scheme" "Type = DRKS"
+* identifier[DRKS].value -> "Resource.idsAlternative.identifier"
+* identifier[NCT] -> "Resource.idsAlternative"
 * identifier[NCT].system -> "1.11.1 Resource.idsAlternative.scheme" "Type = NCT"
 * identifier[NCT].type -> "1.11.1 Resource.idsAlternative.scheme" "Type = NCT"
 * identifier[NCT].value -> "1.11.2 Resource.idsAlternative.identifier"
@@ -178,16 +153,16 @@ Source: NFDI4Health_PR_MDS_Questionnaire
 * identifier[Other].system -> "1.11.1 Resource.idsAlternative.scheme" "Type = Other"
 * identifier[Other].type -> "1.11.1 Resource.idsAlternative.scheme" "Type = Other"
 * identifier[Other].value -> "1.11.2 Resource.idsAlternative.identifier"
-* extension[resourceType] -> "1.2.1 Resource.classification.type"
-* extension[resourceTypeGeneral] -> "1.2.2 Resource.classification.typeGeneral"
-* version -> "1.9.1 Resource.nonStudyDetails.version"
-* title -> "1.3.1 Resource.titles.text"
-* description -> "1.5.1 Resource.descriptions.text"
-* description.extension[language] -> "1.5.2 Resource.descriptions.language"
-* copyright -> "1.9.3.4 Resource.nonStudyDetails.useRights.description"
+* version -> "Resource.nonStudyDetails.version"
+* extension[descritpions] -> "Resource.descriptions"
+* copyright -> "Resource.nonStudyDetails.useRights.description"
+* copyright.extension[NFDI4Health_EX_MDS_Copyright_Label_And_Link] -> "Resource.nonStudyDetails.useRights.label"
+* copyright.extension[NFDI4Health_EX_MDS_Copyright_Label_And_Link] -> "Resource.nonStudyDetails.useRights.link"
+* copyright.extension[useRightsConfirmations] -> "Resource.nonStudyDetails.useRights.useRightsConfirmations"
 * extension[relatedResources] -> "1.12 Resource.ids"
 * extension[relatedResources] -> "1.13 Resource.idsNfdi4health"
 * extension[relatedResources] -> "1.8 Resource.webpage"
+* extension[format] -> "Resource.nonStudyDetails.format"
 
 
 

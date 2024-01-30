@@ -58,12 +58,79 @@
   "differential": {
     "element": [
       {
-        "id": "Composition.identifier",
-        "path": "Composition.identifier",
-        "short": "ID of the [RESOURCE]",
-        "definition": "Unique identifier of the resource used for identification within the NFDI4Health.",
-        "comment": "Additional information: The identifier is assigned automatically. / Source of the property and/or allowed values: NFDI4Health, DataCite [1]",
+        "id": "Composition.extension",
+        "path": "Composition.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "min": 1
+      },
+      {
+        "id": "Composition.extension:nameType",
+        "path": "Composition.extension",
+        "sliceName": "nameType",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-name-type"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.extension:format",
+        "path": "Composition.extension",
+        "sliceName": "format",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-format"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.extension:executionlLanguage",
+        "path": "Composition.extension",
+        "sliceName": "executionlLanguage",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/language"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.extension:keywords",
+        "path": "Composition.extension",
+        "sliceName": "keywords",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-keywords"
+            ]
+          }
+        ]
       },
       {
         "id": "Composition.identifier.value",
@@ -77,6 +144,11 @@
         ]
       },
       {
+        "id": "Composition.status",
+        "path": "Composition.status",
+        "fixedCode": "final"
+      },
+      {
         "id": "Composition.type",
         "path": "Composition.type",
         "short": "Resource classification",
@@ -88,7 +160,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "Resource.type"
+            "map": "Resource.classification.type"
           }
         ]
       },
@@ -103,7 +175,7 @@
           {
             "key": "core-1",
             "severity": "error",
-            "human": "When Composition.type = 'C63536' OR 'C198230' OR 'C47824' OR 'C61393' OR '178' then category must be empty and when Composition.type != 'C63536' OR 'C198230' OR 'C47824' OR 'C61393' OR '178' then Composition.category must exist.",
+            "human": "When Composition.type = 'C63536' OR 'C198230' OR 'C47824' OR 'C61393' OR '178' then Composition.category must be empty and when Composition.type != 'C63536' OR 'C198230' OR 'C47824' OR 'C61393' OR '178' then Composition.category must exist.",
             "expression": "type.coding.where(code = 'C63536' or code = 'C198230' or code = 'C47824' or code =  'C61393' or code = '178') implies category.exists().not() and type.coding.where(code != 'C63536' or code != 'C198230' or != 'C47824' or code != 'C61393' or code != '178') implies category.exists()",
             "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/pr-mds-composition"
           }
@@ -115,7 +187,97 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "Resource.classificiation"
+            "map": "Resource.classificiation.typeGeneral"
+          }
+        ]
+      },
+      {
+        "id": "Composition.subject",
+        "path": "Composition.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-document",
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire",
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+            ]
+          }
+        ],
+        "constraint": [
+          {
+            "key": "core-2",
+            "severity": "error",
+            "human": "When Composition.type = 'C63536' OR 'C198230' then subject only Reference (NFDI4Health_PR_MDS_Study)",
+            "expression": "type.coding.where(code = 'C63536' or code = 'C198230') implies subject only Reference (NFDI4Health_PR_MDS_Study)",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/pr-mds-composition"
+          }
+        ]
+      },
+      {
+        "id": "Composition.author",
+        "path": "Composition.author",
+        "short": "Individual or organisation associated with the [RESOURCE]",
+        "definition": "Individual or organisation associated with the [RESOURCE] (use practitionerRole to specify their organisation).",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner-role",
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Resource.contributors"
+          }
+        ]
+      },
+      {
+        "id": "Composition.title",
+        "path": "Composition.title",
+        "short": "Title/name",
+        "definition": "Scientific unabbreviated title or name of the resource.",
+        "comment": "Additional Information: If no official title/name has been defined yet, please provide a title/name that is suitable for public display. | Short Input Help: Please provide at least one title/name of the resource. If the original title is not in English, please also provide an English translation of the original title.",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Resource.titles"
+          },
+          {
+            "identity": "NFDI4Health",
+            "map": "Resource.acronyms"
+          }
+        ]
+      },
+      {
+        "id": "Composition.title.extension",
+        "path": "Composition.title.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Composition.title.extension:label",
+        "path": "Composition.title.extension",
+        "sliceName": "label",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-label"
+            ]
           }
         ]
       }

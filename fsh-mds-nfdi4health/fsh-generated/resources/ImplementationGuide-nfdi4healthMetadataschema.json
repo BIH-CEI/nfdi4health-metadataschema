@@ -33,275 +33,11 @@
     "resource": [
       {
         "reference": {
-          "reference": "DocumentReference/InstanceOfDocumentHouseholdTransmissionInvestigationForC19"
-        },
-        "name": "Example of the NFDI4Health PR MDS Document - Household Transmission Investigation Protocol for Coronavirus Disease 2019 (COVID-19)",
-        "description": "This document sets out the methods to guide data collection and the public health investigation for the comprehensive assessment of household contacts of confirmed COVID-19 cases. The household transmission investigation is a case-ascertained prospective study of all identified household contacts of a laboratory-confirmed 2019-nCoV infection. It is intended to provide rapid and early information on the clinical, epidemiological and virological characteristics of 2019-nCoV. There are three primary objectives of this household transmission study:\n1) To better understand the extent of transmission within a household by estimating the secondary infection rate for household contacts at an individual level, and factors associated with any variation in the secondary infection risk.\n2) To characterize secondary cases including the range of clinical presentation, risk factors for infection, and the extent and fraction of asymptomatic infections.\n3) To characterize serologic response following confirmed 2019-nCoV infection (highly encouraged, but optional depending on laboratory capacity and resources).",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-document"
-      },
-      {
-        "reference": {
-          "reference": "Organization/InstanceOfOrganizationCreatorCMI"
-        },
-        "name": "Example of the NFDI4Health PR MDS Organization - Child Mind Institute; New York State Nathan S. Kline Institute for Psychiatric Research",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
-      },
-      {
-        "reference": {
-          "reference": "Organization/InstanceOfOrganizationCreatorCRISIS"
-        },
-        "name": "Example of the NFDI4Health PR MDS Organization - CRISIS research team",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
-      },
-      {
-        "reference": {
-          "reference": "Organization/InstanceOfOrganizationCreatorIRM"
-        },
-        "name": "Example of the NFDI4Health PR MDS Organization - Intramural Research Program",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
-      },
-      {
-        "reference": {
-          "reference": "Organization/InstanceOfOrganizationCreatorNIMH"
-        },
-        "name": "Example of the NFDI4Health PR MDS Organization - National Institute of Mental Health",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
-      },
-      {
-        "reference": {
-          "reference": "Organization/OrganizationPublicExample"
-        },
-        "name": "Example of the NFDI4Health PR MDS Organization Public",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
-      },
-      {
-        "reference": {
-          "reference": "Provenance/InstanceOfProvenance"
-        },
-        "name": "Example of the NFDI4Health PR MDS Provenance profil",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-provenance"
-      },
-      {
-        "reference": {
-          "reference": "Questionnaire/InstanceOfQuestionnaireWHOHouseholdTransmission"
-        },
-        "name": "Example of the NFDI4Health PR MDS Questionnaire - Data Dictionary for the WHO's Household transmission investigation protocol for coronavirus disease 2019 (COVID-19)",
-        "description": "This is a data dictionary for the 'Household transmission investigation protocol for coronavirus disease 2019 (COVID-19)'. This data dictionary is prepared for upload into OPAL/MICA applications of the OBiBa (Open Source Software for BioBanks) software suite. The variables are annotated with metadata using the variable classification taxonomy developed by Maelstrom Research. Further information about format and applications can be found in Doiron et al. (2017; https://doi.org/10.1093/ije/dyx180).",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire"
-      },
-      {
-        "reference": {
-          "reference": "Composition/InstanceOfCompositionHouseholdTransmissionInvestigationForC19"
-        },
-        "name": "Example of the PR MDS Composition - Household Transmission Investigation Protocol for Coronavirus Disease 2019 (COVID-19)",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/pr-mds-composition"
-      },
-      {
-        "reference": {
-          "reference": "Composition/InstanceOfCompositionSPOVID"
-        },
-        "name": "Example of the PR MDS Composition - SPOVID - Sport & Long-COVID-Syndrom",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/pr-mds-composition"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/nfdi4health-lm-metadatenschema-recordlinkage-v3-3"
+          "reference": "StructureDefinition/nfdi4health-lm-metadatenschema-recordlinkage"
         },
         "name": "Information about record linkage for the [RESOURCE]",
         "description": "Group of items providing information on record linkage.",
         "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "EvidenceVariable/InstanceOfEvidenceVariableSPOVID"
-        },
-        "name": "Instance Of an Intervention Evidence Variable for SPOVID",
-        "description": "Example data representing an intervention in the SPOVID study - Sport & Long-COVID-Syndrome",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-evidence-variable-intervention-exposure"
-      },
-      {
-        "reference": {
-          "reference": "Group/InstanceOfGroupActualSHIP"
-        },
-        "name": "Instance Of Group Actual",
-        "description": "Example data about actual study participants in the SHIP Trend study - Study of Health in Pomerania Trend",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-group-actual"
-      },
-      {
-        "reference": {
-          "reference": "Group/InstanceOfGroupIntendedSHIP"
-        },
-        "name": "Instance Of Group Intended for SHIP Trend",
-        "description": "Example data of eligibility information from the SHIP Trend study - Study of Health in Pomerania Trend",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-group-intended"
-      },
-      {
-        "reference": {
-          "reference": "Group/InstanceOfGroupIntendedSPOVID"
-        },
-        "name": "Instance Of Group Intended for SPOVID",
-        "description": "Example data of eligibility information from the SPOVID study - Sport & Long-COVID-Syndrom",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-group-intended"
-      },
-      {
-        "reference": {
-          "reference": "Location/InstanceOfLocationMono"
-        },
-        "name": "Instance of Monocentric Study",
-        "description": "Example for monocentric study SHIP",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-centers"
-      },
-      {
-        "reference": {
-          "reference": "Practitioner/InstanceOfPractitionerNinaKirchhof"
-        },
-        "name": "Instance Of NFDI4Health_PR_MDS_Practitioner for Nina Kirchhof",
-        "description": "Example data representing the practitioner Nina Kirchhof",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner"
-      },
-      {
-        "reference": {
-          "reference": "PractitionerRole/InstanceOfPractitionerRoleKathleenMerikangas"
-        },
-        "name": "Instance Of NFDI4Health_PR_MDS_Practitioner_Role for Kathleen Merikangas",
-        "description": "Example data representing the practitioner role of Kathleen Merikangas",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner-role"
-      },
-      {
-        "reference": {
-          "reference": "PractitionerRole/InstanceOfPractitionerRoleNinaKirchhof"
-        },
-        "name": "Instance Of NFDI4Health_PR_MDS_Practitioner_Role for Nina Kirchhof",
-        "description": "Example data representing the practitioner role of Nina Kirchhof",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner-role"
-      },
-      {
-        "reference": {
-          "reference": "Organization/InstanceOfOrganizationBMBF"
-        },
-        "name": "Instance Of Organization Bundesministerium für Bildung und Forschung",
-        "description": "Example data representing the Bundesministerium für Bildung und Forschung",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
-      },
-      {
-        "reference": {
-          "reference": "Organization/InstanceOfOrganizationIMIBE"
-        },
-        "name": "Instance Of Organization Institut für Medizinische Informatik, Biometrie und Epidemiologie of Universitätsklinikum Essen",
-        "description": "Example data representing the Institut für Medizinische Informatik, Biometrie und Epidemiologie of Universitätsklinikum Essen",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
-      },
-      {
-        "reference": {
-          "reference": "Organization/InstanceOfOrganizationISTHochschule"
-        },
-        "name": "Instance Of Organization IST Hochschule für Management GmbH",
-        "description": "Example data representing the IST Hochschule für Management GmbH",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
-      },
-      {
-        "reference": {
-          "reference": "Organization/InstanceOfOrganizationMHH"
-        },
-        "name": "Instance Of Organization Medizinische Hochschule Hannover",
-        "description": "Example data representing the Medizinische Hochschule Hannover",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
-      },
-      {
-        "reference": {
-          "reference": "Organization/InstanceOfOrganizationResearchGroupRNCM"
-        },
-        "name": "Instance Of Organization Research Group",
-        "description": "Example data representing the research group 'Research Netwerk Community Medicine'",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
-      },
-      {
-        "reference": {
-          "reference": "Organization/InstanceOfOrganizationRuhrUniBochum"
-        },
-        "name": "Instance Of Organization Ruhr-Universität Bochum, Lehr und Forschungsbereich 'Trainingswissenschaft'",
-        "description": "Example data representing the Ruhr-Universität Bochum, Lehr und Forschungsbereich 'Trainingswissenschaft'",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
-      },
-      {
-        "reference": {
-          "reference": "Organization/InstanceOfOrganizationUMG"
-        },
-        "name": "Instance Of Organization UMG",
-        "description": "Example data representing an university",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
-      },
-      {
-        "reference": {
-          "reference": "Organization/InstanceOfOrganizationUniDuisburgEssen"
-        },
-        "name": "Instance Of Organization Universität Duisburg-Essen",
-        "description": "Example data representing the Universität Duisburg-Essen",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
-      },
-      {
-        "reference": {
-          "reference": "Organization/InstanceOfOrganizationUniklinikumEssen"
-        },
-        "name": "Instance Of Organization Universitätsklinikum Essen",
-        "description": "Example data representing the Universitätsklinikum Essen",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
-      },
-      {
-        "reference": {
-          "reference": "Organization/InstanceOfOrganizationContactWHO"
-        },
-        "name": "Instance Of Organization World Health Organization (WHO) as contact",
-        "description": "Example data representing the World Health Organization (WHO) as contact",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
-      },
-      {
-        "reference": {
-          "reference": "Organization/InstanceOfOrganizationCreatorWHO"
-        },
-        "name": "Instance Of Organization World Health Organization (WHO) as creator",
-        "description": "Example data representing the World Health Organization (WHO) as creator",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
-      },
-      {
-        "reference": {
-          "reference": "Practitioner/InstanceOfPractitionerKathleenMerikangas"
-        },
-        "name": "Instance Of Practitioner Kathleen Merikangas",
-        "description": "Example of the NFDI4Health PR MDS Practitioner",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner"
-      },
-      {
-        "reference": {
-          "reference": "Provenance/InstanceOfProvenanceAutomaticallyUploadedFromCTgov"
-        },
-        "name": "Instance Of Provenance Automatically Uploaded From CTgov",
-        "description": "Example of the NFDI4Health PR MDS Provenance profile for a resource automatically uploaded from CT.gov",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-provenance"
-      },
-      {
-        "reference": {
-          "reference": "Provenance/InstanceOfProvenanceManuallyCollectedSHIPTrend"
-        },
-        "name": "Instance Of Provenance Manually Collected (SHIP Trend)",
-        "description": "Example of the NFDI4Health PR MDS Provenance profile for a resource manually collected - in this case: SHIP Trend",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-provenance"
-      },
-      {
-        "reference": {
-          "reference": "ResearchStudy/InstanceOfStudySHIP"
-        },
-        "name": "Instance of Study SHIP TREND",
-        "description": "Example data from the SHIP Trend study - Study of Health in Pomerania Trend",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
-      },
-      {
-        "reference": {
-          "reference": "ResearchStudy/InstanceOfStudySPOVID"
-        },
-        "name": "Instance of Study SPOVID",
-        "description": "Example data from the SPOVID study - Sports & Long-COVID-Syndrome",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
       },
       {
         "reference": {
@@ -433,6 +169,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-descriptions"
+        },
+        "name": "NFDI4Health EX MDS Descriptions",
+        "description": "Group of items providing information about the description(s) of the [RESOURCE].",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/nfdi4health-ex-mds-document-use-rights"
         },
         "name": "NFDI4Health EX MDS Document Use Rights",
@@ -505,14 +249,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nfdi4health-ex-mds-execution-language"
-        },
-        "name": "NFDI4Health EX MDS Language",
-        "description": "Extension provinding information about the language the [RESOURCE] is conducted/provided.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/nfdi4health-ex-mds-language"
         },
         "name": "NFDI4Health EX MDS Language",
@@ -521,10 +257,26 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-execution-language"
+        },
+        "name": "NFDI4Health EX MDS Language",
+        "description": "Extension provinding information about the language the [RESOURCE] is conducted/provided.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/nfdi4health-ex-mds-mortality-data"
         },
         "name": "NFDI4Health EX MDS Mortality Data",
         "description": "Extension covering information about the collection of mortality data",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-name-type"
+        },
+        "name": "NFDI4Health EX MDS Name Type",
+        "description": "Group of items providing information about person(s), group(s) of persons or institution(s)/organisation(s) contributing to the resource.",
         "exampleBoolean": false
       },
       {
@@ -649,6 +401,22 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-role-organisational"
+        },
+        "name": "NFDI4Health EX MDS Role Organisational",
+        "description": "Which contributor type does the organisation, institution or group fulfill? Select one value from the list.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-role-personal"
+        },
+        "name": "NFDI4Health EX MDS Role Personal",
+        "description": "Which contributor type does the person fulfill?",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/nfdi4health-ex-mds-study-comparison-group"
         },
         "name": "NFDI4Health EX MDS Study Comparison Group",
@@ -745,65 +513,35 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nfdi4health-lm-mds-core-v3-3-version2"
+          "reference": "StructureDefinition/nfdi4health-lm-mds-core"
         },
-        "name": "NFDI4Health LM Core Metadataschema V3.3",
-        "description": "NFDI4Health Logical Model Core Metadataschema V3.3  Version2 (AD)",
+        "name": "NFDI4Health LM Core Metadataschema",
+        "description": "NFDI4Health Logical Model Core Metadataschema",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nfdi4health-lm-mds-core-v3-3"
+          "reference": "StructureDefinition/nfdi4health-lm-metadataschema-eocd"
         },
-        "name": "NFDI4Health LM Core Metadataschema V3.3",
-        "description": "NFDI4Health Logical Model Core Metadataschema V3.3",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/nfdi4health-lm-metadataschema-eocd-v3-3"
-        },
-        "name": "NFDI4Health LM Epidemiology of Chronic Diseases Metadataschema (UC 5.2) V3.3",
+        "name": "NFDI4Health LM Epidemiology of Chronic Diseases Metadataschema (UC 5.2)",
         "description": "NFDI4Health LogicalModel Epidemiology of Chronic Diseases Metadataschema (Use Case 5.2) V3.3",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nfdi4health-lm-mds-design-v3-3"
+          "reference": "StructureDefinition/nfdi4health-lm-mds-design"
         },
-        "name": "NFDI4Health LM MDS Module Design V3.3",
+        "name": "NFDI4Health LM MDS Module Design",
         "description": "NFDI4Health Logical Model MDS Module Design V3.3",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nfdi4health-lm-metadataschema-ne-v3-3"
+          "reference": "StructureDefinition/nfdi4health-lm-metadataschema-ne"
         },
-        "name": "NFDI4Health LM Nutritional Epidemiology Metadataschema (UC 5.1) V3.3",
+        "name": "NFDI4Health LM Nutritional Epidemiology Metadataschema (UC 5.1)",
         "description": "NFDI4Health LogicalModel Nutritional Epidemiology Metadataschema (Use Case 5.1) V3.3",
         "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "Questionnaire/InstanceOfChronicDiseaseModule"
-        },
-        "name": "NFDI4Health Module Epidemiology of Chronic Diseases Metadataschema (UC 5.2) V3",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Questionnaire/InstanceOfNutritionalEpidemiologyModule"
-        },
-        "name": "NFDI4Health Module Nutritional Epidemiology Metadataschema (Use Case 5.1) V3",
-        "description": "Group of items providing information on diet assessment.\n\n**Additional information: **Filtering condition to decide if all following questions will be asked.",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Questionnaire/InstanceOfRecordLinkage"
-        },
-        "name": "NFDI4Health Module Record Linkage Metadataschema (UC 5.3) V3.3",
-        "exampleBoolean": true
       },
       {
         "reference": {
@@ -959,13 +697,6 @@
       },
       {
         "reference": {
-          "reference": "Questionnaire/2.16.840.1.113883.3.1937.777.64.4.6--20231207000000"
-        },
-        "name": "NFDI4Health Resource",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
           "reference": "ValueSet/nfdi4health-vs-mds-countries-iso"
         },
         "name": "NFDI4Health VS MDS Countries [ISO]",
@@ -974,9 +705,9 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/nfdi4health-vs-mds-id-type-umls-local"
+          "reference": "ValueSet/nfdi4health-vs-mds-id-type-nci-local"
         },
-        "name": "NFDI4Health VS MDS ID Type [UMLS, local]",
+        "name": "NFDI4Health VS MDS ID Type [NCI, local]",
         "description": "Value set defining codes to specify the type of a resource identifier.",
         "exampleBoolean": false
       },

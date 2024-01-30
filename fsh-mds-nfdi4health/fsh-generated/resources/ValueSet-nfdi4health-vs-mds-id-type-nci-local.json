@@ -1,0 +1,72 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "NFDI4Health_VS_MDS_ID_TYPE_NCI_Local",
+  "id": "nfdi4health-vs-mds-id-type-nci-local",
+  "title": "NFDI4Health VS MDS ID Type [NCI, local]",
+  "description": "Value set defining codes to specify the type of a resource identifier.",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-id-type-nci-local",
+  "version": "0.9",
+  "experimental": true,
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+        "concept": [
+          {
+            "code": "098",
+            "display": "DRKS"
+          },
+          {
+            "code": "099",
+            "display": "ISRCTN"
+          },
+          {
+            "code": "100",
+            "display": "EUDAMED"
+          },
+          {
+            "code": "101",
+            "display": "UTN"
+          },
+          {
+            "code": "102",
+            "display": "KonsortSWD"
+          },
+          {
+            "code": "103",
+            "display": "MDM Portal"
+          }
+        ]
+      },
+      {
+        "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "concept": [
+          {
+            "code": "C172240",
+            "display": "Clinicaltrials.gov Identifier"
+          },
+          {
+            "code": "C132782",
+            "display": "European Union Drug Regulating Authorities Clinical Trials Database"
+          },
+          {
+            "code": "C17649",
+            "display": "Other"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -78,11 +78,11 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.9.3.1 Resource.nonStudyDetails.useRights.label"
+            "map": "Resource.nonStudyDetails.useRights.label"
           },
           {
             "identity": "NFDI4Health",
-            "map": "1.9.3.2 Resource.nonStudyDetails.useRights.link"
+            "map": "Resource.nonStudyDetails.useRights.link"
           }
         ]
       },
@@ -103,7 +103,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.9.3.3 Resource.nonStudyDetails.useRights.confirmations"
+            "map": "Resource.nonStudyDetails.useRights.confirmations"
           }
         ]
       },
@@ -119,7 +119,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.9.3.4 Resource.nonStudyDetails.useRights.description"
+            "map": "Resource.nonStudyDetails.useRights.description"
           }
         ]
       },
