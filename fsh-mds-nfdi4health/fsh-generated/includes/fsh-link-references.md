@@ -8,7 +8,6 @@
 [NFDI4Health_VS_MDS_CD_DataCollected_NCI]: ValueSet-nfdi4health-vs-mds-cd-datacollected-nci.html
 [NFDI4Health_VS_MDS_CD_Information_Sources_NCI_Local]: ValueSet-nfdi4health-vs-mds-cd-information-sources-nci-local.html
 [NFDI4Health_EX_MDS_Assessments]: StructureDefinition-nfdi4health-ex-mds-assessments.html
-[NFDI4Health_EX_MDS_Associated_Party]: StructureDefinition-nfdi4health-ex-mds-associated-party.html
 [NFDI4Health_EX_MDS_Biospecimen]: StructureDefinition-nfdi4health-ex-mds-biospecimen.html
 [NFDI4Health_EX_MDS_Centers]: StructureDefinition-nfdi4health-ex-mds-centers.html
 [NFDI4Health_EX_MDS_Chronic_Diseases]: StructureDefinition-nfdi4health-ex-mds-chronic-diseases.html
@@ -20,7 +19,6 @@
 [NFDI4Health_EX_MDS_Eligibility_Criteria_Exclusion_Criteria]: StructureDefinition-nfdi4health-ex-mds-eligibility-criteria-exclusion-criteria.html
 [NFDI4Health_EX_MDS_Eligibility_Criteria_Inclusion_Criteria]: StructureDefinition-nfdi4health-ex-mds-eligibility-criteria-inclusion-criteria.html
 [NFDI4Health_EX_MDS_Format]: StructureDefinition-nfdi4health-ex-mds-format.html
-[NFDI4Health_EX_MDS_FundingID]: StructureDefinition-nfdi4health-ex-mds-fundingID.html
 [NFDI4Health_EX_MDS_Groups_Of_Diseases]: StructureDefinition-nfdi4health-ex-mds-study-of-diseases.html
 [NFDI4Health_EX_MDS_Identifier_Assignment_Date]: StructureDefinition-nfdi4health-ex-mds-identifier-assignment-date.html
 [NFDI4Health_EX_MDS_Keywords]: StructureDefinition-nfdi4health-ex-mds-keywords.html
@@ -42,10 +40,7 @@
 [NFDI4Health_EX_MDS_Related_Artifact_Rel_Type_NFDI4_Resource]: StructureDefinition-nfdi4health-ex-mds-related-artifact-reltype-nfdi-resource.html
 [NFDI4Health_EX_MDS_Related_Artifact_Rel_Type_Non_NFDI_Resource]: StructureDefinition-nfdi4health-ex-mds-related-artifact-reltype-non-nfdi-resource.html
 [NFDI4Health_EX_MDS_Related_Artifact_Scheme]: StructureDefinition-nfdi4health-ex-mds-related-artifact-nfdi-scheme.html
-[NFDI4Health_EX_MDS_Resource_Type]: StructureDefinition-nfdi4health-ex-mds-resource-type.html
 [NFDI4Health_EX_MDS_Resource_Type_General]: StructureDefinition-nfdi4health-ex-mds-resource-type-general.html
-[NFDI4Health_EX_MDS_Role_Organisational]: StructureDefinition-nfdi4health-ex-mds-role-organisational.html
-[NFDI4Health_EX_MDS_Role_Personal]: StructureDefinition-nfdi4health-ex-mds-role-personal.html
 [NFDI4Health_EX_MDS_Study_Comparison_Group]: StructureDefinition-nfdi4health-ex-mds-study-comparison-group.html
 [NFDI4Health_EX_MDS_Study_Ethics_Committee_Approval]: StructureDefinition-nfdi4health-ex-mds-study-ethics-committee-approval.html
 [NFDI4Health_EX_MDS_Study_Masking]: StructureDefinition-nfdi4health-ex-mds-study-masking.html
@@ -67,6 +62,7 @@
 [NFDI4Health_VS_MDS_NE_Mode_NCI_MSH_Local]: ValueSet-nfdi4health-vs-mds-ne-mode-nci-msh-local.html
 [NFDI4Health_VS_MDS_NE_Portion_Size_SNOMEDCT_Local]: ValueSet-nfdi4health-vs-mds-ne-portion-size-snomedct-local.html
 [NFDI4Health_VS_MDS_NE_Reference_Period_Unit_UCUM]: ValueSet-nfdi4health-vs-mds-ne-reference-period-unit-ucum.html
+[NFDI4Health_PR_MDS_Affiliation]: StructureDefinition-nfdi4health-pr-mds-affiliation.html
 [NFDI4Health_PR_MDS_Centers]: StructureDefinition-nfdi4health-pr-mds-centers.html
 [NFDI4Health_PR_MDS_Composition]: StructureDefinition-nfdi4health-pr-mds-composition.html
 [NFDI4Health_PR_MDS_Document]: StructureDefinition-nfdi4health-pr-mds-document.html

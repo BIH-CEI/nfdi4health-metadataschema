@@ -16,6 +16,8 @@ Description: "Profile intended to capture information on the core information of
 * title ^comment = "Additional Information: If no official title/name has been defined yet, please provide a title/name that is suitable for public display. | Short Input Help: Please provide at least one title/name of the resource. If the original title is not in English, please also provide an English translation of the original title."
 * title.extension contains NFDI4Health_EX_MDS_Label named label 0..*
 * identifier.value 1..1
+* identifier ^short = "ID of the [RESOURCE]"
+* identifier ^definition = "Unique identifier of the resource used for identification within the NFDI4Health."
 * status = #final (exactly)
 * type 1..1
 * type from NFDI4Health_VS_MDS_Resource_Type_NCI_Local (required)

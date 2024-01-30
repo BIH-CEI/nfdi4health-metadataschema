@@ -113,14 +113,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nfdi4health-ex-mds-associated-party"
-        },
-        "name": "NFDI4Health EX MDS Associated Party",
-        "description": "Group of items providing information about person(s), group(s) of persons or institution(s)/organisation(s) contributing to the resource.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/nfdi4health-ex-mds-biospecimen"
         },
         "name": "NFDI4Health EX MDS Biospecimen",
@@ -205,14 +197,6 @@
         },
         "name": "NFDI4Health EX MDS Format",
         "description": "Extension providing information about the format of a resource.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/nfdi4health-ex-mds-fundingID"
-        },
-        "name": "NFDI4Health EX MDS FundingID",
-        "description": "Extension providing information about the identifier assigned by a funder to the resource.",
         "exampleBoolean": false
       },
       {
@@ -385,34 +369,10 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nfdi4health-ex-mds-resource-type"
-        },
-        "name": "NFDI4Health EX MDS Resource Type",
-        "description": "Extension providing information about the resource type.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/nfdi4health-ex-mds-resource-type-general"
         },
         "name": "NFDI4Health EX MDS Resource Type General",
         "description": "Extension providing information about the general resource type.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/nfdi4health-ex-mds-role-organisational"
-        },
-        "name": "NFDI4Health EX MDS Role Organisational",
-        "description": "Which contributor type does the organisation, institution or group fulfill? Select one value from the list.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/nfdi4health-ex-mds-role-personal"
-        },
-        "name": "NFDI4Health EX MDS Role Personal",
-        "description": "Which contributor type does the person fulfill?",
         "exampleBoolean": false
       },
       {
@@ -581,6 +541,14 @@
         },
         "name": "NFDI4Health NE Portion Size [UCUM]",
         "description": "Value Set to define the reference period unit used within Diet Assessment",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-pr-mds-affiliation"
+        },
+        "name": "NFDI4Health PR MDS Affiliation",
+        "description": "Group of items providing further information about the organisation(s) associated with the contributor.",
         "exampleBoolean": false
       },
       {

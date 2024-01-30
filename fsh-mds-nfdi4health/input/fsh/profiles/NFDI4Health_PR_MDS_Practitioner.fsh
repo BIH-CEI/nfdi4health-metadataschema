@@ -40,9 +40,9 @@ Mapping: NFDI4Health-Practitioner-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_PR_MDS_Practitioner
-* -> "1.10.3 Resource.contributors.personal"
-* identifier -> "1.10.3.4 Resource.contributors.personal.identifiers"
-* identifier.value -> "1.10.3.4.1 Resource.contributors.personal.identifiers.identifier"
-* identifier.type -> "1.10.3.4.2 Resource.contributors.personal.identifiers.scheme"
-* name.family -> "1.10.3.3 Resource.contributors.personal.familyName"
-* name.given -> "1.10.3.2 Resource.contributors.personal.givenName"
+* -> "Resource.contributors.personal"
+* identifier -> "Resource.contributors.personal.identifiers"
+* identifier.value -> "Resource.contributors.personal.identifiers.identifier"
+* identifier.type -> "Resource.contributors.personal.identifiers.scheme"
+* name.family -> "Resource.contributors.personal.familyName"
+* name.given -> "Resource.contributors.personal.givenName"

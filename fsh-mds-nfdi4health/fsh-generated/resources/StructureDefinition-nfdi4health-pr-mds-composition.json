@@ -58,6 +58,12 @@
   "differential": {
     "element": [
       {
+        "id": "Composition.identifier",
+        "path": "Composition.identifier",
+        "short": "ID of the [RESOURCE]",
+        "definition": "Unique identifier of the resource used for identification within the NFDI4Health."
+      },
+      {
         "id": "Composition.identifier.value",
         "path": "Composition.identifier.value",
         "min": 1,

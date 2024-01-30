@@ -48,14 +48,6 @@
     "endLine": 24
   },
   {
-    "outputFile": "StructureDefinition-nfdi4health-ex-mds-associated-party.json",
-    "fshName": "NFDI4Health_EX_MDS_Associated_Party",
-    "fshType": "Extension",
-    "fshFile": "extensions/NFDI4Health_EX_MDS_Associated_Party.fsh",
-    "startLine": 1,
-    "endLine": 56
-  },
-  {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-biospecimen.json",
     "fshName": "NFDI4Health_EX_MDS_Biospecimen",
     "fshType": "Extension",
@@ -150,14 +142,6 @@
     "fshFile": "extensions/NFDI4Health_EX_MDS_Format.fsh",
     "startLine": 1,
     "endLine": 21
-  },
-  {
-    "outputFile": "StructureDefinition-nfdi4health-ex-mds-fundingID.json",
-    "fshName": "NFDI4Health_EX_MDS_FundingID",
-    "fshType": "Extension",
-    "fshFile": "extensions/NFDI4Health_EX_MDS_FundingID.fsh",
-    "startLine": 1,
-    "endLine": 17
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-identifier-assignment-date.json",
@@ -328,30 +312,6 @@
     "endLine": 26
   },
   {
-    "outputFile": "StructureDefinition-nfdi4health-ex-mds-resource-type.json",
-    "fshName": "NFDI4Health_EX_MDS_Resource_Type",
-    "fshType": "Extension",
-    "fshFile": "extensions/NFDI4Health_Ex_MDS_Resource_Type.fsh",
-    "startLine": 3,
-    "endLine": 24
-  },
-  {
-    "outputFile": "StructureDefinition-nfdi4health-ex-mds-role-organisational.json",
-    "fshName": "NFDI4Health_EX_MDS_Role_Organisational",
-    "fshType": "Extension",
-    "fshFile": "extensions/NFDI4Health_EX_MDS_Role_Org.fsh",
-    "startLine": 1,
-    "endLine": 23
-  },
-  {
-    "outputFile": "StructureDefinition-nfdi4health-ex-mds-role-personal.json",
-    "fshName": "NFDI4Health_EX_MDS_Role_Personal",
-    "fshType": "Extension",
-    "fshFile": "extensions/NFDI4Health_EX_MDS_Role_Pers.fsh",
-    "startLine": 1,
-    "endLine": 23
-  },
-  {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-study-comparison-group.json",
     "fshName": "NFDI4Health_EX_MDS_Study_Comparison_Group",
     "fshType": "Extension",
@@ -496,6 +456,14 @@
     "endLine": 29
   },
   {
+    "outputFile": "StructureDefinition-nfdi4health-pr-mds-affiliation.json",
+    "fshName": "NFDI4Health_PR_MDS_Affiliation",
+    "fshType": "Profile",
+    "fshFile": "profiles/NFDI4Health_PR_MDS_Affiliation.fsh",
+    "startLine": 1,
+    "endLine": 50
+  },
+  {
     "outputFile": "StructureDefinition-nfdi4health-pr-mds-centers.json",
     "fshName": "NFDI4Health_PR_MDS_Centers",
     "fshType": "Profile",
@@ -509,7 +477,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/NFDI4Health_PR_MDS_Composition.fsh",
     "startLine": 1,
-    "endLine": 37
+    "endLine": 39
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-pr-mds-document.json",
@@ -557,7 +525,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/NFDI4Health_PR_MDS_Organization.fsh",
     "startLine": 1,
-    "endLine": 80
+    "endLine": 53
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-pr-mds-practitioner-role.json",
@@ -565,7 +533,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/NFDI4Health_PR_MDS_Practitioner_Role.fsh",
     "startLine": 1,
-    "endLine": 46
+    "endLine": 45
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-pr-mds-practitioner.json",

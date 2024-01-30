@@ -70,121 +70,38 @@
         ]
       },
       {
-        "id": "Organization.extension",
-        "path": "Organization.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "rules": "open"
-        }
-      },
-      {
-        "id": "Organization.extension:fundingID",
-        "path": "Organization.extension",
-        "sliceName": "fundingID",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-fundingID"
-            ]
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "Resource.contributors.organisational"
-          }
-        ]
-      },
-      {
-        "id": "Organization.extension:roleOrganisational",
-        "path": "Organization.extension",
-        "sliceName": "roleOrganisational",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-role-organisational"
-            ]
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "Resource.contributors.organisational"
-          }
-        ]
-      },
-      {
         "id": "Organization.identifier",
         "path": "Organization.identifier",
-        "short": "Digital identifier(s)",
-        "definition": "Group of items providing information about identifiers of the organisation.",
+        "short": "Funding identifier(s)",
+        "definition": "Identifier(s) assigned by a funder to the [RESOURCE].",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.10.6.4 Resource.contributors.affiliation.identifiers"
+            "map": "Resource.contributors.organisational.fundingIds"
           }
         ]
-      },
-      {
-        "id": "Organization.identifier.type",
-        "path": "Organization.identifier.type",
-        "short": "Scheme",
-        "definition": "Type of the identifier scheme reported.",
-        "min": 1,
-        "example": [
-          {
-            "label": "Identifier type",
-            "valueCodeableConcept": {
-              "text": "ROR"
-            }
-          }
-        ],
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-role-affiliation-identifier-scheme-local",
-          "description": "Value set defining codes to specify the identifier scheme of an affiliation identifier."
-        },
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "1.10.6.4.2 Resource.contributors.affiliation.identifiers.scheme"
-          }
-        ]
-      },
-      {
-        "id": "Organization.identifier.type.coding",
-        "path": "Organization.identifier.type.coding",
-        "min": 1,
-        "max": "1"
       },
       {
         "id": "Organization.identifier.value",
         "path": "Organization.identifier.value",
-        "short": "Identifier",
-        "definition": "Digital identifier according to a specific scheme that uniquely identifies the organisation.",
-        "comment": "Short input help: Preferably, provide an identifier from ROR (https://ror.org/search).",
+        "min": 1
+      },
+      {
+        "id": "Organization.type",
+        "path": "Organization.type",
+        "short": "Contributor type",
+        "definition": "Contributor type an organisation, institution or group fulfills. For example, this can be a sponsor of the study or a group of authors of the document.",
+        "comment": "Short input help: Which contributor type does the organisation, institution or group fulfill? Select one value from the list.",
         "min": 1,
-        "example": [
-          {
-            "label": "Example of ROR Identifier",
-            "valueString": "0259fwx54"
-          }
-        ],
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-organisational-roles-nci-local"
+        },
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.10.6.4.1 Resource.contributors.affiliation.identifiers.identifier"
+            "map": "Resource.contributors.organisational"
           }
         ]
       },
@@ -192,17 +109,13 @@
         "id": "Organization.name",
         "path": "Organization.name",
         "short": "Name of the organisation/institution/group",
-        "definition": "For 1.10.2.3 Resource.contributors.organisational.name: Name of the organisation, institution or group. | For 1.10.6.1 Resource.contributors.affiliations.name: Name of the organisation associated with the contributor.",
-        "comment": "Short input help: 1.10.2.3 Resource.contributors.organisational.name: An organisational name can be used to denote a research group or an institution. | For 1.10.6.1 Resource.contributors.affiliations.name: If you have already entered the name of the organistion in the field 'Name of the organisation/institution/group', please repeat it here.",
+        "definition": "Name of the organisation, institution or group.",
+        "comment": "An organisational name can be used to denote a research group or an institution.",
         "min": 1,
         "mapping": [
           {
             "identity": "NFDI4Health",
             "map": "Resource.contributors.organisational.name"
-          },
-          {
-            "identity": "NFDI4Health",
-            "map": "1.10.6.1 Resource.contributors.affiliation.name"
           }
         ]
       },
@@ -230,7 +143,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.10.4 Resource.contributors.email"
+            "map": "Resource.contributors.email"
           }
         ]
       },
@@ -261,7 +174,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.10.5 Resource.contributors.phone"
+            "map": "Resource.contributors.phone"
           }
         ]
       },
@@ -289,75 +202,28 @@
         "patternCode": "work"
       },
       {
-        "id": "Organization.telecom:webpage",
-        "path": "Organization.telecom",
-        "sliceName": "webpage",
-        "short": "Web page",
-        "definition": "Web page of the organisation associated with the contributor.",
-        "min": 0,
-        "max": "1",
-        "mapping": [
+        "id": "Organization.partOf",
+        "path": "Organization.partOf",
+        "short": "Organisation(s) associated with the contributor",
+        "definition": "Group of items providing further information about the organisation(s) associated with the contributor.",
+        "type": [
           {
-            "identity": "NFDI4Health",
-            "map": "1.10.6.3 Resource.contributors.affiliation.webpage"
-          }
-        ]
-      },
-      {
-        "id": "Organization.telecom:webpage.system",
-        "path": "Organization.telecom.system",
-        "min": 1,
-        "fixedCode": "url"
-      },
-      {
-        "id": "Organization.telecom:webpage.value",
-        "path": "Organization.telecom.value",
-        "min": 1
-      },
-      {
-        "id": "Organization.telecom:webpage.use",
-        "path": "Organization.telecom.use",
-        "patternCode": "work"
-      },
-      {
-        "id": "Organization.address",
-        "path": "Organization.address",
-        "short": "Address",
-        "definition": "Address of the organisation associated with the contributor.",
-        "comment": "Short Input Help: Please preferably use the following address format: Street name and number [comma] post code [comma] city [comma] country.",
-        "max": "1",
-        "example": [
-          {
-            "label": "Example of an organisation address",
-            "valueString": "Gleueler Straße 60, 50931, Cologne, Germany"
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-affiliation"
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy",
+                "valueBoolean": true
+              }
+            ]
           }
         ],
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.10.6.2 Resource.contributors.affiliation.address"
-          }
-        ]
-      },
-      {
-        "id": "Organization.address.use",
-        "path": "Organization.address.use",
-        "patternCode": "work"
-      },
-      {
-        "id": "Organization.address.text",
-        "path": "Organization.address.text",
-        "min": 1
-      },
-      {
-        "id": "Organization.partOf",
-        "path": "Organization.partOf",
-        "short": "Organisation(s) associated with the contributor",
-        "definition": "Group of items providing further information about the organisation(s) associated with the contributor.",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "1.10.6 Resources.contributors.affiliation"
+            "map": "Resources.contributors.affiliation"
           }
         ]
       }
