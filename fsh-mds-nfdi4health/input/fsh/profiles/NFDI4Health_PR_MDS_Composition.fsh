@@ -1,20 +1,15 @@
-Profile: PR_MDS_Composition
+Profile: NFDI4Health_PR_MDS_Composition
 Parent: Composition
-Id: pr-mds-composition
+Id: nfdi4health-pr-mds-composition
 Title: "NFDI4Health PR MDS Composition"
 Description: "Profile intended to capture information on the core information of resources."
-* ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/pr-mds-composition"
+* ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-composition"
 * ^version = "0.9"
 * ^status = #draft
 * ^publisher = "NFDI4Health"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 
-* extension contains
-    NFDI4Health_EX_MDS_Name_Type named nameType 1..1 and
-    NFDI4Health_EX_MDS_Format named format 0..1 and
-    NFDI4Health_EX_MDS_Execution_Language named executionlLanguage 0..* and
-    NFDI4Health_EX_MDS_Keywords named keywords 0..*
 * title 1..
 * title ^short = "Title/name"
 * title ^definition = "Scientific unabbreviated title or name of the resource."
@@ -35,6 +30,8 @@ Description: "Profile intended to capture information on the core information of
 * subject only Reference(NFDI4Health_PR_MDS_Study or NFDI4Health_PR_MDS_Questionnaire or NFDI4Health_PR_MDS_Document)
 * author ^short = "Individual or organisation associated with the [RESOURCE]"
 * author ^definition = "Individual or organisation associated with the [RESOURCE] (use practitionerRole to specify their organisation)."
+* author.extension contains 
+    NFDI4Health_EX_MDS_Name_Type named nameType 1..1
 * author only Reference(NFDI4Health_PR_MDS_Practitioner_Role or NFDI4Health_PR_MDS_Organization)
 * subject only Reference(NFDI4Health_PR_MDS_Document or NFDI4Health_PR_MDS_Questionnaire or NFDI4Health_PR_MDS_Study)
 * subject obeys core-2
@@ -59,12 +56,15 @@ Expression: "type.coding.where(code = 'C63536' or code = 'C198230') implies subj
 Mapping: NFDI4Health-Composition-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
-Source: PR_MDS_Composition
+Source: NFDI4Health_PR_MDS_Composition
 * identifier.value -> "Resource.identifier"
 * type -> "Resource.classification.type"
 * category -> "Resource.classificiation.typeGeneral"
 * author -> "Resource.contributors"
+* author.extension[nameType] -> "Resource.contributors.nameType"
+* author
 * title -> "Resource.titles"
 * title -> "Resource.acronyms"
+
 
 

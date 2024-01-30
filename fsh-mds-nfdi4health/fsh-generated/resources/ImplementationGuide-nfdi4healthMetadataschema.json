@@ -593,7 +593,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/pr-mds-composition"
+          "reference": "StructureDefinition/nfdi4health-pr-mds-composition"
         },
         "name": "NFDI4Health PR MDS Composition",
         "description": "Profile intended to capture information on the core information of resources.",

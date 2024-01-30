@@ -116,7 +116,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "Resource.contributors.affiliation"
+            "map": "Resource.contributors.affiliations"
           }
         ]
       },

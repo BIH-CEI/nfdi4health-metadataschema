@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "pr-mds-composition",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/pr-mds-composition",
+  "id": "nfdi4health-pr-mds-composition",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-composition",
   "version": "0.9",
-  "name": "PR_MDS_Composition",
+  "name": "NFDI4Health_PR_MDS_Composition",
   "title": "NFDI4Health PR MDS Composition",
   "status": "draft",
   "publisher": "NFDI4Health",
@@ -58,81 +58,6 @@
   "differential": {
     "element": [
       {
-        "id": "Composition.extension",
-        "path": "Composition.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "min": 1
-      },
-      {
-        "id": "Composition.extension:nameType",
-        "path": "Composition.extension",
-        "sliceName": "nameType",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-name-type"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Composition.extension:format",
-        "path": "Composition.extension",
-        "sliceName": "format",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-format"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Composition.extension:executionlLanguage",
-        "path": "Composition.extension",
-        "sliceName": "executionlLanguage",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/StructureDefinition/language"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Composition.extension:keywords",
-        "path": "Composition.extension",
-        "sliceName": "keywords",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-keywords"
-            ]
-          }
-        ]
-      },
-      {
         "id": "Composition.identifier.value",
         "path": "Composition.identifier.value",
         "min": 1,
@@ -177,7 +102,7 @@
             "severity": "error",
             "human": "When Composition.type = 'C63536' OR 'C198230' OR 'C47824' OR 'C61393' OR '178' then Composition.category must be empty and when Composition.type != 'C63536' OR 'C198230' OR 'C47824' OR 'C61393' OR '178' then Composition.category must exist.",
             "expression": "type.coding.where(code = 'C63536' or code = 'C198230' or code = 'C47824' or code =  'C61393' or code = '178') implies category.exists().not() and type.coding.where(code != 'C63536' or code != 'C198230' or != 'C47824' or code != 'C61393' or code != '178') implies category.exists()",
-            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/pr-mds-composition"
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-composition"
           }
         ],
         "binding": {
@@ -210,7 +135,7 @@
             "severity": "error",
             "human": "When Composition.type = 'C63536' OR 'C198230' then subject only Reference (NFDI4Health_PR_MDS_Study)",
             "expression": "type.coding.where(code = 'C63536' or code = 'C198230') implies subject only Reference (NFDI4Health_PR_MDS_Study)",
-            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/pr-mds-composition"
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-composition"
           }
         ]
       },
@@ -232,6 +157,32 @@
           {
             "identity": "NFDI4Health",
             "map": "Resource.contributors"
+          }
+        ]
+      },
+      {
+        "id": "Composition.author.extension",
+        "path": "Composition.author.extension",
+        "min": 1
+      },
+      {
+        "id": "Composition.author.extension:nameType",
+        "path": "Composition.author.extension",
+        "sliceName": "nameType",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-name-type"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Resource.contributors.nameType"
           }
         ]
       },
