@@ -205,7 +205,7 @@
     "fshType": "Extension",
     "fshFile": "extensions/NFDI4Health_EX_MDS_NameType.fsh",
     "startLine": 1,
-    "endLine": 20
+    "endLine": 19
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-nutritional-data.json",

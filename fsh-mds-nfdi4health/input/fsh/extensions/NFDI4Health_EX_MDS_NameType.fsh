@@ -11,12 +11,11 @@ Description: "Group of items providing information about person(s), group(s) of 
 * ^context[0].type = #element
 * ^context[=].expression = "Composition"
 
-* . 1..
+* . 1..1
 * . ^short = "Is it a personal or organisational contribution?"
 * . ^definition = "Indication whether the contribution was made by person(s) or organisation(s)/institution(s)/group(s)."
 
-* value[x] 1..1
-* value[x] only Coding
+* valueCoding
 * valueCoding from NFDI4Health_VS_MDS_Role_Name_Type_SNOMED (required)
 
 

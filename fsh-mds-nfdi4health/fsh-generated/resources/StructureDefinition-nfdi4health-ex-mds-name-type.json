@@ -49,6 +49,7 @@
         "short": "Is it a personal or organisational contribution?",
         "definition": "Indication whether the contribution was made by person(s) or organisation(s)/institution(s)/group(s).",
         "min": 1,
+        "max": "1",
         "mapping": [
           {
             "identity": "NFDI4Health",
@@ -69,7 +70,23 @@
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
-        "min": 1,
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Extension.value[x]:valueCoding",
+        "path": "Extension.value[x]",
+        "sliceName": "valueCoding",
+        "min": 0,
+        "max": "1",
         "type": [
           {
             "code": "Coding"
