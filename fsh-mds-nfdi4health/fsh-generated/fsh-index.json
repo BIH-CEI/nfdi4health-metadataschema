@@ -64,14 +64,6 @@
     "endLine": 21
   },
   {
-    "outputFile": "StructureDefinition-nfdi4health-ex-mds-chronic-diseases.json",
-    "fshName": "NFDI4Health_EX_MDS_Chronic_Diseases",
-    "fshType": "Extension",
-    "fshFile": "extensions/NFDI4Health_EX_MDS_Chronic_Diseases.fsh",
-    "startLine": 1,
-    "endLine": 18
-  },
-  {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-copyright-label-and-link.json",
     "fshName": "NFDI4Health_EX_MDS_Copyright_Label_And_Link",
     "fshType": "Extension",
@@ -190,14 +182,6 @@
     "fshFile": "extensions/NFDI4Health_EX_MDS_NameType.fsh",
     "startLine": 1,
     "endLine": 19
-  },
-  {
-    "outputFile": "StructureDefinition-nfdi4health-ex-mds-nutritional-data.json",
-    "fshName": "NFDI4Health_EX_MDS_Nutritional_Data",
-    "fshType": "Extension",
-    "fshFile": "extensions/NFDI4Health_EX_MDS_Nutritional_Data.fsh",
-    "startLine": 1,
-    "endLine": 17
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-off-label-use.json",
@@ -477,7 +461,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/NFDI4Health_PR_MDS_Composition.fsh",
     "startLine": 1,
-    "endLine": 43
+    "endLine": 58
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-pr-mds-document.json",

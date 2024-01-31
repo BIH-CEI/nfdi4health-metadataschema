@@ -11,9 +11,7 @@ Description: "Profile intended to capture information on the core information of
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 
 * extension contains 
-    NFDI4Health_EX_MDS_Provenance_Data_Source named dataSource 1..1 and
-    NFDI4Health_EX_MDS_Chronic_Diseases named chronicDiseases 0..1 and
-    NFDI4Health_EX_MDS_Nutritional_Data named nutritionalData 0..1
+    NFDI4Health_EX_MDS_Provenance_Data_Source named dataSource 1..1
 * title 1..
 * title ^short = "Title/name"
 * title ^definition = "Scientific unabbreviated title or name of the resource."
@@ -33,7 +31,6 @@ Description: "Profile intended to capture information on the core information of
 * category ^comment = "Cardinality: 1..1, if Resource.classification.type != ('Study' OR 'Substudy' OR 'Dataset' OR 'Registry' OR 'Secondary data source'); otherwise 0..0"
 * category from NFDI4Health_VS_MDS_Resource_Type_General_NCI_MSH_Local (required)
 * category obeys core-1
-* subject only Reference(NFDI4Health_PR_MDS_Study or NFDI4Health_PR_MDS_Questionnaire or NFDI4Health_PR_MDS_Document)
 * author ^short = "Individual or organisation associated with the [RESOURCE]"
 * author ^definition = "Individual or organisation associated with the [RESOURCE] (use practitionerRole to specify their organisation)."
 * author.extension contains 
@@ -41,6 +38,24 @@ Description: "Profile intended to capture information on the core information of
 * author only Reference(NFDI4Health_PR_MDS_Practitioner_Role or NFDI4Health_PR_MDS_Organization)
 * subject only Reference(NFDI4Health_PR_MDS_Document or NFDI4Health_PR_MDS_Questionnaire or NFDI4Health_PR_MDS_Study)
 * subject obeys core-2
+* section ^slicing.discriminator.type = #value
+* section ^slicing.discriminator.path = "code"
+* section ^slicing.rules = #open
+* section contains
+    nutritionalData 0..1 and
+    chronicDiseases 0..1
+* section[nutritionalData] ^short = "Collects nutritional data?"
+* section[nutritionalData] ^definition = "Specification of the dietary assessment instrument used in the [RESOURCE]."
+* section[nutritionalData] ^comment = "1..1, if Resource.classification.type == ('Study' OR 'Substudy') AND Resource.provenance.dataSource == 'Manually collected'; otherwise 0..0"
+* section[nutritionalData].code = $NCI#C16927 "Nutritional Science"
+* section[nutritionalData].focus 1..1
+* section[nutritionalData].focus only Reference(NFDI4Health_PR_MDS_Observation_Nutritional_Epidemiology)
+* section[chronicDiseases] ^short = "Includes chronic diseases?"
+* section[chronicDiseases] ^definition = "Indication whether the [RESOURCE] addresses chronic diseases."
+* section[chronicDiseases] ^comment = "1..1, if Resource.provenance.dataSource == 'Manually collected'; otherwise 0..0"
+* section[chronicDiseases].code = $NCI#C165593 "Chronic Disease"
+* section[chronicDiseases].focus 1..1
+* section[chronicDiseases].focus only Reference(NFDI4Health_PR_MDS_Observation_Nutritional_Epidemiology)
 
 
 //FHIR Paths
@@ -71,6 +86,8 @@ Source: NFDI4Health_PR_MDS_Composition
 * author
 * title -> "Resource.titles"
 * title -> "Resource.acronyms"
+* section[nutritionalData] -> "1.14 Resource.nutritionalData"
+* section[chronicDiseases] -> "Resource.chronicDiseases"
 
 
 

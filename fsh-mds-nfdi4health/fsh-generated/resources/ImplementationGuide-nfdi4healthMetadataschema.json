@@ -129,14 +129,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nfdi4health-ex-mds-chronic-diseases"
-        },
-        "name": "NFDI4Health EX MDS Chronic Diseases",
-        "description": "Extension asking if information about chronic diseases was collected",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/nfdi4health-ex-mds-copyright-label-and-link"
         },
         "name": "NFDI4Health EX MDS Copyright Label And Link",
@@ -261,14 +253,6 @@
         },
         "name": "NFDI4Health EX MDS Name Type",
         "description": "Group of items providing information about person(s), group(s) of persons or institution(s)/organisation(s) contributing to the resource.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/nfdi4health-ex-mds-nutritional-data"
-        },
-        "name": "NFDI4Health EX MDS Nutritional Data",
-        "description": "Extension asking if nutritional data was collected",
         "exampleBoolean": false
       },
       {

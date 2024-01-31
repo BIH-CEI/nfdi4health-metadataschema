@@ -88,36 +88,6 @@
         ]
       },
       {
-        "id": "Composition.extension:chronicDiseases",
-        "path": "Composition.extension",
-        "sliceName": "chronicDiseases",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-chronic-diseases"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Composition.extension:nutritionalData",
-        "path": "Composition.extension",
-        "sliceName": "nutritionalData",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-nutritional-data"
-            ]
-          }
-        ]
-      },
-      {
         "id": "Composition.identifier",
         "path": "Composition.identifier",
         "short": "ID of the [RESOURCE]",
@@ -294,6 +264,105 @@
             "code": "Extension",
             "profile": [
               "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-label"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section",
+        "path": "Composition.section",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Composition.section:nutritionalData",
+        "path": "Composition.section",
+        "sliceName": "nutritionalData",
+        "short": "Collects nutritional data?",
+        "definition": "Specification of the dietary assessment instrument used in the [RESOURCE].",
+        "comment": "1..1, if Resource.classification.type == ('Study' OR 'Substudy') AND Resource.provenance.dataSource == 'Manually collected'; otherwise 0..0",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.14 Resource.nutritionalData"
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:nutritionalData.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "C16927",
+              "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+              "display": "Nutritional Science"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Composition.section:nutritionalData.focus",
+        "path": "Composition.section.focus",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-observation-nutritional-epidemiology"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:chronicDiseases",
+        "path": "Composition.section",
+        "sliceName": "chronicDiseases",
+        "short": "Includes chronic diseases?",
+        "definition": "Indication whether the [RESOURCE] addresses chronic diseases.",
+        "comment": "1..1, if Resource.provenance.dataSource == 'Manually collected'; otherwise 0..0",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Resource.chronicDiseases"
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:chronicDiseases.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "C165593",
+              "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+              "display": "Chronic Disease"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Composition.section:chronicDiseases.focus",
+        "path": "Composition.section.focus",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-observation-nutritional-epidemiology"
             ]
           }
         ]
