@@ -65,7 +65,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.16 Resource.provenance"
+            "map": "Resource.provenance"
           }
         ]
       },
@@ -134,23 +134,23 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.16.2 Resource.provenance.verificationDate"
+            "map": "Resource.provenance.verificationDate"
           },
           {
             "identity": "NFDI4Health",
-            "map": "1.16.4 Resource.provenance.firstSubmittedDate"
+            "map": "Resource.provenance.firstSubmittedDate"
           },
           {
             "identity": "NFDI4Health",
-            "map": "1.16.6 Resource.provenance.firstPostedDate"
+            "map": "Resource.provenance.firstPostedDate"
           },
           {
             "identity": "NFDI4Health",
-            "map": "1.16.8 Resource.provenance.lastUpdateSubmittedDate"
+            "map": "Resource.provenance.lastUpdateSubmittedDate"
           },
           {
             "identity": "NFDI4Health",
-            "map": "1.16.10 Resource.provenance.lastUpdatePostedDate"
+            "map": "Resource.provenance.lastUpdatePostedDate"
           }
         ]
       },
@@ -172,23 +172,23 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.16.3 Resource.provenance.verificationUser"
+            "map": "Resource.provenance.verificationUser"
           },
           {
             "identity": "NFDI4Health",
-            "map": "1.16.5 Resource.provenance.firstSubmittedUser"
+            "map": "Resource.provenance.firstSubmittedUser"
           },
           {
             "identity": "NFDI4Health",
-            "map": "1.16.7 Resource.provenance.firstPostedUser"
+            "map": "Resource.provenance.firstPostedUser"
           },
           {
             "identity": "NFDI4Health",
-            "map": "1.16.9 Resource.provenance.lastUpdateSubmittedUser"
+            "map": "Resource.provenance.lastUpdateSubmittedUser"
           },
           {
             "identity": "NFDI4Health",
-            "map": "1.16.11 Resource.provenance.lastUpdatePostedUser"
+            "map": "Resource.provenance.lastUpdatePostedUser"
           }
         ]
       },
