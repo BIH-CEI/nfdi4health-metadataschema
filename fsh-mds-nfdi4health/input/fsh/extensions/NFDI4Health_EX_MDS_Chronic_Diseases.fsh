@@ -13,6 +13,7 @@ Description: "Extension asking if information about chronic diseases was collect
 * . 1..1
 * . ^short = "Includes chronic diseases?"
 * . ^definition = "Indication whether the [RESOURCE] addresses chronic diseases."
+* . ^comment = "1..1, if Resource.provenance.dataSource == 'Manually collected'; otherwise 0..0"
 * value[x] 1..
 * value[x] only boolean
 
@@ -20,4 +21,4 @@ Mapping: NFDI4Health-Chronic-Diseases-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Chronic_Diseases
-* -> "1.15 Resource.chronicDiseases"
+* -> "Resource.chronicDiseases"

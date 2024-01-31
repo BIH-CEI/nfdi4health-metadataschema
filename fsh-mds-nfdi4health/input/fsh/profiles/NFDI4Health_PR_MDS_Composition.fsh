@@ -10,7 +10,10 @@ Description: "Profile intended to capture information on the core information of
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 
-* extension contains NFDI4Health_EX_MDS_Provenance_Data_Source named dataSource 1..1
+* extension contains 
+    NFDI4Health_EX_MDS_Provenance_Data_Source named dataSource 1..1 and
+    NFDI4Health_EX_MDS_Chronic_Diseases named chronicDiseases 0..1 and
+    NFDI4Health_EX_MDS_Nutritional_Data named nutritionalData 0..1
 * title 1..
 * title ^short = "Title/name"
 * title ^definition = "Scientific unabbreviated title or name of the resource."

@@ -69,7 +69,7 @@
     "fshType": "Extension",
     "fshFile": "extensions/NFDI4Health_EX_MDS_Chronic_Diseases.fsh",
     "startLine": 1,
-    "endLine": 17
+    "endLine": 18
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-copyright-label-and-link.json",
@@ -477,7 +477,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/NFDI4Health_PR_MDS_Composition.fsh",
     "startLine": 1,
-    "endLine": 40
+    "endLine": 43
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-pr-mds-document.json",
@@ -549,7 +549,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/NFDI4Health_PR_MDS_Provenance.fsh",
     "startLine": 1,
-    "endLine": 26
+    "endLine": 25
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-pr-mds-questionnaire.json",
@@ -573,7 +573,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/NFDI4Health_PR_MDS_Study.fsh",
     "startLine": 1,
-    "endLine": 282
+    "endLine": 280
   },
   {
     "outputFile": "ValueSet-nfdi4health-vs-mds-cd-common-chronic-disease-name-snomedct.json",

@@ -82,36 +82,6 @@
         ]
       },
       {
-        "id": "Provenance.extension",
-        "path": "Provenance.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "min": 1
-      },
-      {
-        "id": "Provenance.extension:dataSource",
-        "path": "Provenance.extension",
-        "sliceName": "dataSource",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-provenance-data-source"
-            ]
-          }
-        ]
-      },
-      {
         "id": "Provenance.target",
         "path": "Provenance.target",
         "definition": "The Reference(s) that were generated or updated by the activity described in this resource. A provenance can point to more than one target if multiple resources were created/updated by the same activity.",

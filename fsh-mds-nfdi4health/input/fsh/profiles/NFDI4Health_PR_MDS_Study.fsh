@@ -16,8 +16,6 @@ Description: "Profile to collect information about german (or with at least one 
 * extension contains
     NFDI4Health_EX_MDS_Execution_Language named executionLanguage 0..* and
     NFDI4Health_EX_MDS_Descriptions named descritpions 1..1 and
-    NFDI4Health_EX_MDS_Nutritional_Data named nutritionalData 0..1 and
-    NFDI4Health_EX_MDS_Chronic_Diseases named chronicDiseases 0..1 and
     NFDI4Health_EX_MDS_Groups_Of_Diseases named groupsOfDiseases 1..1 and
     NFDI4Health_EX_MDS_Mortality_Data named mortalityData 0..1 and
     NFDI4Health_EX_MDS_Study_Ethics_Committee_Approval named studyEthicsCommitteeApproval 0..1 and
