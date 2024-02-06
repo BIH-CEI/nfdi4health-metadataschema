@@ -193,14 +193,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nfdi4health-ex-mds-study-of-diseases"
-        },
-        "name": "NFDI4Health EX MDS Groups Of Diseases",
-        "description": "Extension covering information about groups of diseases or conditions on which the data were collected in a resource.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/nfdi4health-ex-mds-identifier-assignment-date"
         },
         "name": "NFDI4Health EX MDS Identifier Assignment Date",
@@ -397,14 +389,6 @@
         },
         "name": "NFDI4Health EX MDS Study Status",
         "description": "Extension informing about the status of a study.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/nfdi4health-ex-mds-study-status-halted-stage"
-        },
-        "name": "NFDI4Health EX MDS Study Status Halted Stage",
-        "description": "Extension informing about the stage when at what a study was halted.",
         "exampleBoolean": false
       },
       {
@@ -644,7 +628,7 @@
           "reference": "StructureDefinition/nfdi4health-pr-mds-study"
         },
         "name": "NFDI4Health PR MDS Study",
-        "description": "Profile to collect information about german (or with at least one study center in Germany) clinical, epidemiological or Public health studies that were uploaded in NFDI4Health.",
+        "description": "Group of items applicable only to studies, substudies, registries, and secondary data sources.",
         "exampleBoolean": false
       },
       {
@@ -1053,14 +1037,6 @@
         },
         "name": "NFDI4Health VS MDS Study Type Interventional [NCI]",
         "description": "Value set defining codes to specify the type of an interventional study in a ResearchStudy resource.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/nfdi4health-vs-mds-study-type-non-interventional-local"
-        },
-        "name": "NFDI4Health VS MDS Study Type Non Interventional [local]",
-        "description": "Value set defining codes to specify the type of a non interventional study in a ResearchStudy resource.",
         "exampleBoolean": false
       },
       {

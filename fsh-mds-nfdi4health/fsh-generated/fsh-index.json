@@ -320,28 +320,12 @@
     "endLine": 38
   },
   {
-    "outputFile": "StructureDefinition-nfdi4health-ex-mds-study-of-diseases.json",
-    "fshName": "NFDI4Health_EX_MDS_Groups_Of_Diseases",
-    "fshType": "Extension",
-    "fshFile": "extensions/NFDI4Health_EX_MDS_Groups_Of_Diseases.fsh",
-    "startLine": 3,
-    "endLine": 38
-  },
-  {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-study-population.json",
     "fshName": "NFDI4Health_EX_MDS_Study_Population",
     "fshType": "Extension",
     "fshFile": "extensions/NFDI4Health_EX_MDS_Study_Population.fsh",
     "startLine": 1,
     "endLine": 18
-  },
-  {
-    "outputFile": "StructureDefinition-nfdi4health-ex-mds-study-status-halted-stage.json",
-    "fshName": "NFDI4Health_EX_MDS_Study_Status_Halted_Stage",
-    "fshType": "Extension",
-    "fshFile": "extensions/NFDI4Health_EX_MDS_Study_Status_Halted_Stage.fsh",
-    "startLine": 3,
-    "endLine": 24
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-study-status.json",
@@ -381,7 +365,7 @@
     "fshType": "Extension",
     "fshFile": "extensions/NFDI4Health_EX_MDS_URI.fsh",
     "startLine": 1,
-    "endLine": 15
+    "endLine": 20
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-use-rights-confirmations.json",
@@ -461,7 +445,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/NFDI4Health_PR_MDS_Composition.fsh",
     "startLine": 1,
-    "endLine": 58
+    "endLine": 59
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-pr-mds-document.json",
@@ -557,7 +541,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/NFDI4Health_PR_MDS_Study.fsh",
     "startLine": 1,
-    "endLine": 280
+    "endLine": 296
   },
   {
     "outputFile": "ValueSet-nfdi4health-vs-mds-cd-common-chronic-disease-name-snomedct.json",
@@ -1014,14 +998,6 @@
     "fshFile": "valuesets/vs-study-type-interventional.fsh",
     "startLine": 1,
     "endLine": 19
-  },
-  {
-    "outputFile": "ValueSet-nfdi4health-vs-mds-study-type-non-interventional-local.json",
-    "fshName": "NFDI4Health_VS_MDS_Study_Type_Non_Interventional_Local",
-    "fshType": "ValueSet",
-    "fshFile": "valuesets/vs-study-type-non-interventional-local.fsh",
-    "startLine": 1,
-    "endLine": 32
   },
   {
     "outputFile": "ValueSet-nfdi4health-vs-mds-study-type-non-interventional-nci-msh-local.json",

@@ -68,7 +68,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.7 Resource.studyDesign.status"
+            "map": "Design.administrativeInformation.status"
           }
         ]
       },
@@ -93,7 +93,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-overall-status-umls-local",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-overall-status-nci-local",
           "description": "Value set defining codes to specify the overall status of a study."
         }
       },
@@ -111,15 +111,15 @@
         "id": "Extension.extension:statusWhenIntervention",
         "path": "Extension.extension",
         "sliceName": "statusWhenIntervention",
-        "short": "Do participants receive an intervention?",
-        "definition": "Specification whether study participants receive intervention or have completed it but are still being followed according to the primary objective of the study.",
-        "comment": "Short input help: Select one value from the list.",
+        "short": "Participants receive an intervention?",
+        "definition": "Specification whether [RESOURCE] participants receive an intervention or have completed it but are still being followed up according to the primary objective of the [RESOURCE].",
+        "comment": "Cardinality: 0..1, if Resource.classification.type == ('Study' OR 'Substudy') AND Design.primaryDesign == 'Interventional' AND Design.administrativeInformation.status == ('At the planning stage' OR 'Ongoing (I): Recruitment ongoing, but data collection not yet started' OR 'Ongoing (II): Recruitment and data collection ongoing' OR 'Ongoing (III): Recruitment completed, but data collection ongoing' OR 'Ongoing (IV): Recruitment and data collection completed, but data quality management ongoing'); otherwise 0..0/ Short Input Help: Select one value from the list. / Source of the property and/or allowed values: NFDI4Health, CT.gov [2], DRKS [3]",
         "min": 0,
         "max": "1",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.8 Resource.studyDesign.statusWhenIntervention"
+            "map": "Design.administrativeInformation.statusWhenIntervention"
           }
         ]
       },
@@ -163,14 +163,14 @@
         "path": "Extension.extension",
         "sliceName": "recruitmentStatusRegister",
         "short": "Overall recruitment status of the study from the register of clinical trials",
-        "definition": "Overall recruitment status of the study as indicated in the corresponding register of clinical trials.",
+        "definition": "Overall recruitment status of the [RESOURCE] as indicated in the corresponding register of clinical trials.",
         "comment": "Additional information: The item applies only to studies automatically uploaded from the registers of clinical trials.",
         "min": 0,
         "max": "1",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.12 Resource.studyDesign.recruitmentStatusRegister"
+            "map": "Design.administrativeInformation.recruitmentStatusRegister"
           }
         ]
       },
@@ -195,7 +195,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-recruitment-status-register-umls-local",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-recruitment-register-nci-sct-local",
           "description": "Value set defining codes to specify the study recruitment status (from a register) in a ResearchStudy resource."
         }
       },
@@ -213,14 +213,14 @@
         "id": "Extension.extension:statusEnrollingByInvitation",
         "path": "Extension.extension",
         "sliceName": "statusEnrollingByInvitation",
-        "short": "Are participants enrolled by invitation?",
-        "definition": "Specification whether study participants have been selected from a predetermined population or enrolled by invitation.",
+        "short": "Participants enrolled by invitation?",
+        "definition": "Specification whether [RESOURCE] participants are selected from a predetermined population.",
         "min": 0,
         "max": "1",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.11 Resource.studyDesign.statusEnrollingByInvitation"
+            "map": "Design.administrativeInformation.statusEnrollingByInvitation"
           }
         ]
       },

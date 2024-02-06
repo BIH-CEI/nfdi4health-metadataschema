@@ -18,7 +18,6 @@
 [NFDI4Health_EX_MDS_Eligibility_Criteria_Exclusion_Criteria]: StructureDefinition-nfdi4health-ex-mds-eligibility-criteria-exclusion-criteria.html
 [NFDI4Health_EX_MDS_Eligibility_Criteria_Inclusion_Criteria]: StructureDefinition-nfdi4health-ex-mds-eligibility-criteria-inclusion-criteria.html
 [NFDI4Health_EX_MDS_Format]: StructureDefinition-nfdi4health-ex-mds-format.html
-[NFDI4Health_EX_MDS_Groups_Of_Diseases]: StructureDefinition-nfdi4health-ex-mds-study-of-diseases.html
 [NFDI4Health_EX_MDS_Identifier_Assignment_Date]: StructureDefinition-nfdi4health-ex-mds-identifier-assignment-date.html
 [NFDI4Health_EX_MDS_Keywords]: StructureDefinition-nfdi4health-ex-mds-keywords.html
 [NFDI4Health_EX_MDS_Label]: StructureDefinition-nfdi4health-ex-mds-label.html
@@ -44,7 +43,6 @@
 [NFDI4Health_EX_MDS_Study_Masking]: StructureDefinition-nfdi4health-ex-mds-study-masking.html
 [NFDI4Health_EX_MDS_Study_Population]: StructureDefinition-nfdi4health-ex-mds-study-population.html
 [NFDI4Health_EX_MDS_Study_Status]: StructureDefinition-nfdi4health-ex-mds-study-status.html
-[NFDI4Health_EX_MDS_Study_Status_Halted_Stage]: StructureDefinition-nfdi4health-ex-mds-study-status-halted-stage.html
 [NFDI4Health_EX_MDS_Study_Target_Followup_Duration]: StructureDefinition-nfdi4health-ex-mds-study-target-followup-duration.html
 [NFDI4Health_EX_MDS_Study_Time_Perspectives]: StructureDefinition-nfdi4health-ex-mds-study-time-perspectives.html
 [NFDI4Health_EX_MDS_Subject]: StructureDefinition-nfdi4health-ex-mds-subject.html
@@ -126,7 +124,6 @@
 [NFDI4Health_VS_MDS_Study_Subject_SNOMEDCT]: ValueSet-nfdi4health-vs-mds-study-subject-snomedct.html
 [NFDI4Health_VS_MDS_Study_Time_Perspectives_NCI]: ValueSet-nfdi4health-vs-mds-study-time-perspectives-nci.html
 [NFDI4Health_VS_MDS_Study_Type_Interventional_NCI]: ValueSet-nfdi4health-vs-mds-study-type-interventional-nci.html
-[NFDI4Health_VS_MDS_Study_Type_Non_Interventional_Local]: ValueSet-nfdi4health-vs-mds-study-type-non-interventional-local.html
 [NFDI4Health_VS_MDS_Study_Type_Non_Interventional_NCI_MSH_Local]: ValueSet-nfdi4health-vs-mds-study-type-non-interventional-nci-msh-local.html
 [NFDI4Health_VS_MDS_Use_Rights_Label_SPDX_SNOMED_Local]: ValueSet-nfdi4health-vs-mds-use-rights-label-spdx-snomed-local.html
 [NFDI4Health_VS_MDS_Yes_No_Not_Applicable_SNOMEDCT]: ValueSet-nfdi4health-vs-mds-yes-no-not-applicable-snomedct.html

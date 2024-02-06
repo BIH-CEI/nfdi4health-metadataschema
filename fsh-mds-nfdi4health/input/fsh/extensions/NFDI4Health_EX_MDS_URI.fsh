@@ -12,4 +12,9 @@ Description: "Extension defining an URI"
 * ^context.expression = "Coding"
 * url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-uri" (exactly)
 * value[x] 1..
-* value[x] only uri or url
+* value[x] only uri
+
+* . ^short = "Code of the health condition[conditions] or disease"
+* . ^definition = "Code of the health condition[conditions] or disease in the terminology/classification used."
+* . ^comment = "Short input help: If known, you can provide the code from the terminology/classification used."
+* . ^example.valueUri = http://snomed.info/id/840533007

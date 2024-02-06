@@ -2,7 +2,7 @@ Profile: NFDI4Health_PR_MDS_Study
 Parent: ResearchStudy
 Id: nfdi4health-pr-mds-study
 Title: "NFDI4Health PR MDS Study"
-Description: "Profile to collect information about german (or with at least one study center in Germany) clinical, epidemiological or Public health studies that were uploaded in NFDI4Health."
+Description: "Group of items applicable only to studies, substudies, registries, and secondary data sources."
 * ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
 * ^version = "0.9"
 * ^status = #draft
@@ -16,7 +16,6 @@ Description: "Profile to collect information about german (or with at least one 
 * extension contains
     NFDI4Health_EX_MDS_Execution_Language named executionLanguage 0..* and
     NFDI4Health_EX_MDS_Descriptions named descritpions 1..1 and
-    NFDI4Health_EX_MDS_Groups_Of_Diseases named groupsOfDiseases 1..1 and
     NFDI4Health_EX_MDS_Mortality_Data named mortalityData 0..1 and
     NFDI4Health_EX_MDS_Study_Ethics_Committee_Approval named studyEthicsCommitteeApproval 0..1 and
     NFDI4Health_EX_MDS_Study_Status named studyStatus 1..1 and
@@ -191,31 +190,51 @@ Description: "Profile to collect information about german (or with at least one 
 * category[samplingMethodNonProbability] ^comment = "Short Input Help: If known, select one value from the list."
 * category[samplingMethodNonProbability] ^binding.description = "Value set defining codes to specify types of non-probability sampling methods."
 * category[samplingMethodNonProbability].coding 0..1
-* condition ^short = "Primary health condition(s) or disease(s) considered in the [RESOURCE]"
-* condition ^definition = "Group of items providing information about primary health condition(s) or disease(s) considered in the [RESOURCE]."
-* condition.coding.extension ^slicing.discriminator.type = #value
-* condition.coding.extension ^slicing.discriminator.path = "url"
-* condition.coding.extension ^slicing.rules = #open
-* condition.coding.extension contains NFDI4Health_EX_MDS_URI named uri 0..1
-* condition.coding.extension[uri] ^short = "Code ---- If known, code of the health condition, disease or focus in the terminology/classification used"
-* condition.coding.extension[uri] ^definition = "Code of the health condition,  disease, focus in the terminology/classification used."
-* condition.coding.extension[uri] ^comment = "Short input help: If found, the code from the terminology/classification used."
-* condition.coding.system 1..
-* condition.coding.system ^short = "Terminology/classification"
-* condition.coding.system ^definition = "Terminology/classification used for the health condition, disease or focus."
-* condition.coding.system ^comment = "Short input help: If used, name of the terminology/classification."
-* condition.coding.code ^short = "Code"
-* condition.coding.code ^definition = "Code of the health condition, disease, focus in the terminology/classification used."
-* condition.coding.code ^comment = "Short input help: If found, the code from the terminology/classification used."
-* condition.coding.display 1..
-* condition.coding.display ^short = "Name of the primary health condition, disease or focus of the study"
-* condition.coding.display ^definition = "Name of primary health condition or disease considered in the study, or the focus of the study (e.g. medication, food, therapy, device, etc.)."
-* condition.coding.display ^comment = "Additional information: The use of terms from established terminologies/classifications (e.g. SNOMED CT, ICD, etc.) is preferred. However, also self-assigned terms are allowed. | Short input help: Preferably, use terms from SNOMED CT (https://browser.ihtsdotools.org)."
-* condition.text ^short = "Name of the primary health condition, disease or focus of the study"
-* condition.text ^definition = "Name of primary health condition or disease considered in the study, or the focus of the study (e.g. medication, food, therapy, device, etc.)."
-* condition.text ^comment = "Additional information: The use of terms from established terminologies/classifications (e.g. SNOMED CT, ICD, etc.) is preferred. However, also self-assigned terms are allowed. |  Short input help: Preferably, use terms from SNOMED CT (https://browser.ihtsdotools.org)."
-* condition.text ^example[0].label = "Name of a Condition"
-* condition.text ^example[=].valueString = "SARS-CoV-2"
+
+* condition ^slicing.discriminator.type = #exists
+* condition ^slicing.discriminator.path = "coding"
+* condition ^slicing.rules = #open
+* condition contains
+    conditions 0..* and
+    groupsOfDiseasesGenerally 1..* and 
+    groupsOfDiseasesConditions 0..*
+* condition[conditions] ^short = "Primary health condition[conditions](s) or disease(s) considered in the [RESOURCE]"
+* condition[conditions] ^definition = "Group of items providing information about primary health condition[conditions](s) or disease(s) considered in the [RESOURCE]."
+* condition[conditions].coding.extension ^slicing.discriminator.type = #value
+* condition[conditions].coding.extension ^slicing.discriminator.path = "url"
+* condition[conditions].coding.extension ^slicing.rules = #open
+* condition[conditions].coding.extension contains NFDI4Health_EX_MDS_URI named uri 0..1
+* condition[conditions].coding.system ^short = "Terminology/classification"
+* condition[conditions].coding.system ^definition = "Terminology/classification used for the health condition[conditions] or disease."
+* condition[conditions].coding.system ^comment = "Short Input Help: If used, name of the terminology/classification."
+* condition[conditions].coding.system from NFDI4Health_VS_MDS_Study_Conditions_Classification_NCI_Local (required)
+* condition[conditions].coding.display 1..
+* condition[conditions].coding.display ^short = "Primary health condition[conditions] or disease name"
+* condition[conditions].coding.display ^definition = "Name of primary health condition[conditions] or disease considered in the [RESOURCE]."
+* condition[conditions].coding.display ^comment = "Additional information: The use of terms from established terminologies/classifications (e.g. SNOMED CT, ICD, etc.) is preferred. However, also self-assigned terms are allowed."
+* condition[groupsOfDiseasesGenerally] ^short = "Which groups of diseases or conditions were the data collected on?"
+* condition[groupsOfDiseasesGenerally] ^definition = "General groups of diseases or conditions on which the data were collected in the [RESOURCE]."
+* condition[groupsOfDiseasesGenerally] ^comment = "Additional information: The values originate from the WHO's International Statistical Classification of Diseases and Related Health Problems, 10th Revision (ICD-10). | Short input help: Select all that apply. For more information about the groups of diseases/conditions, visit the WHO's ICD-10 homepage: https://icd.who.int/en."
+* condition[groupsOfDiseasesGenerally] from NFDI4Health_VS_MDS_Study_Groups_Of_Diseases_Generally_ICD10_SCT
+* condition[groupsOfDiseasesGenerally] ^binding.description = "Value set defining codes from ICD-10 to specify groups of diseases or conditions on which the data were collected in the study."
+* condition[groupsOfDiseasesConditions] ^short = "On which other diseases or conditions were the data collected?"
+* condition[groupsOfDiseasesConditions] ^definition = "Diseases or conditions on which the data were collected in the [RESOURCE]."
+* condition[groupsOfDiseasesConditions] ^comment = "Additional information: The values originate from the WHO's International Statistical Classification of Diseases and Related Health Problems, 10th Revision (ICD-10). | Short input help: Select all that apply. Values are based on lower level ICD-10. For more information visit the WHO's ICD-10 homepage: https://icd.who.int/en."
+
+* focus ^short = "Primary focus of the [RESOURCE]"
+* focus ^definition = "Group of items providing information about the focus of the [RESOURCE] (e.g. medication, food, therapy, device, etc.)."
+* focus.coding.extension ^slicing.discriminator.type = #value
+* focus.coding.extension ^slicing.discriminator.path = "url"
+* focus.coding.extension ^slicing.rules = #open
+* focus.coding.extension contains NFDI4Health_EX_MDS_URI named uri 0..1
+* focus.coding.system ^short = "Terminology/classification"
+* focus.coding.system ^definition = "Terminology/classification used for the focus area."
+* focus.coding.system ^comment = "Short Input Help: If used, name of the terminology/classification."
+* focus.coding.system from NFDI4Health_VS_MDS_Study_Conditions_Classification_NCI_Local (required)
+* focus.coding.display 1..
+* focus.coding.display ^short = "Focus area"
+* focus.coding.display ^definition = "Focus area of the [RESOURCE] (e.g. medication, food, therapy, device, etc.)."
+* focus.coding.display ^comment = "Additional Information: The use of terms from established terminologies/classifications (e.g. SNOMED CT, ICD, etc.) is preferred. However, also self-assigned terms are allowed."
 * relatedArtifact ..1
 * relatedArtifact only NFDI4Health_PR_MDS_Related_Artifact_Resource
 * keyword ^short = "Keyword(s) describing the [RESOURCE]"
@@ -250,25 +269,22 @@ Description: "Profile to collect information about german (or with at least one 
 * enrollment only Reference(NFDI4Health_PR_MDS_Group_Intended or NFDI4Health_PR_MDS_Group_Actual)
 * enrollment ^short = "Eligibility criteria for study participants"
 * enrollment ^definition = "Group of items providing information about eligibility criteria for study participants."
-* period.start ^short = "Start date of data collection for the study"
-* period.start ^definition = "Start date of data collection for the study."
-* period.start ^comment = "Additional information: Preferred date format: DD.MM.YYYY. | Short input help: In case of a planned study, it is the intended start date; in case of an ongoing study — the actual start date."
-* period.end ^short = "End date of data collection for the study"
-* period.end ^definition = "In case of studies with patients or other participants, it is the date when the last participant is examined or receives an intervention, or the date of the last participant’s last visit."
-* period.end ^comment = "Additional information: Preferred date format: DD.MM.YYYY. | Short input help: In case of a planned or ongoing study, it is the intended end date; in case of a completed study — the actual end date."
+* period.start ^short = "Start date"
+* period.start ^definition = "Start date of data collection for the [RESOURCE]."
+* period.start ^comment = "Additional information: Preferred date format: DD.MM.YYYY. | Short input help: In case of a planned [RESOURCE], enter the intended start date. In case of an ongoing [RESOURCE], enter the actual start date."
+* period.end ^short = "End date"
+* period.end ^definition = "In case of a [RESOURCE] with patients or other participants, it is the date when the last participant is examined or receives an intervention, or the date of the last participant’s last visit."
+* period.end ^comment = "Additional information: Preferred date format: DD.MM.YYYY. | In case of a [RESOURCE] with patients or other participants, it is the date when the last participant is examined or receives an intervention, or the date of the last participant’s last visit."
 * site 0..1
 * site only Reference(NFDI4Health_PR_MDS_Centers)
-* reasonStopped ^short = "Reason why the study was stopped"
-* reasonStopped ^definition = "If the study was stopped prematurely, specification of the reason(s) why it was halted."
-* reasonStopped ^comment = "Short input help: E.g., accrual goal met / closed due to toxicity / closed due to lack of study progress / temporarily-closed per study design /etc."
-* reasonStopped.extension ^slicing.discriminator.type = #value
-* reasonStopped.extension ^slicing.discriminator.path = "url"
-* reasonStopped.extension ^slicing.rules = #open
-* reasonStopped.extension ^min = 0
-* reasonStopped.extension contains NFDI4Health_EX_MDS_Study_Status_Halted_Stage named haltedStage 0..1
-* reasonStopped.text ^short = "Reason why the study was stopped"
-* reasonStopped.text ^definition = "If the study was stopped prematurely, specification of the reason(s) why it was halted."
-* reasonStopped.text ^comment = "Short input help: E.g., accrual goal met / closed due to toxicity / closed due to lack of study progress / temporarily-closed per study design /etc."
+* reasonStopped.coding ^short = "Stopping stage"
+* reasonStopped.coding ^definition = "Specification of the stage at which the [RESOURCE] was prematurely stopped."
+* reasonStopped.coding ^comment = "Cardinality: 0..1, if Resource.classification.type == ('Study' OR 'Substudy') AND Design.administrativeInformation.status == ('Suspended: Recruitment, data collection, or data quality management, halted, but potentially will resume' OR 'Terminated: Recruitment, data collection, data and quality management halted prematurely and will not resume'); otherwise 0..0 / Short Input Help: Select one value from the list. / Source of the property and/or allowed values: NFDI4Health, CT.gov [2], DRKS [3]"
+* reasonStopped.coding 0..1
+* reasonStopped.coding from NFDI4Health_VS_MDS_Study_Status_Halted_Stage_Local (required)
+* reasonStopped.text ^short = "Stopping reason"
+* reasonStopped.text ^definition = "Specification of the reason(s) why the [RESOURCE] was prematurely stopped."
+* reasonStopped.text ^comment = "Cardinality: 0..1, if Resource.classification.type == ('Study' OR 'Substudy') AND Design.administrativeInformation.status == ('Suspended: Recruitment, data collection, or data quality management, halted, but potentially will resume' OR 'Terminated: Recruitment, data collection, data and quality management halted prematurely and will not resume'); otherwise 0..0 / Short Input Help: You can provide reasons such as closed due to toxicity, closed due to lack of [RESOURCE] progress, temporarily-closed per [RESOURCE] design, etc. / Source of the property and/or allowed values: CT.gov [2], DRKS [3]"
 * note ..1
 * note.text ^short = "Additional information about the [RESOURCE]"
 * note.text ^definition = "Any additional information about specific aspects of the [RESOURCE] that could not be captured by other fields.."
@@ -283,7 +299,7 @@ Mapping: NFDI4Health-Study-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_PR_MDS_Study
-
+* -> "Design"
 * identifier -> "Resource.idsAlternative"
 * identifier[DRKS] -> "1.11 Resource.idsAlternative"
 * identifier[DRKS].system -> "1.11.1 Resource.idsAlternative.scheme" "Type = DRKS"
@@ -323,20 +339,24 @@ Source: NFDI4Health_PR_MDS_Study
 * identifier[Other].value -> "1.11.2 Resource.idsAlternative.identifier"
 * primaryPurposeType -> "1.17.15 Design.primaryPurpose"
 * phase -> "1.17.28.1 Design.interventional.phase"
-* category[primaryDesign] -> "1.17.1 Design.primaryDesign"
-* category[studyTypeInterventional] -> "1.17.2.1 Design.studyType.interventional"
-* category[studyTypeNonInterventional] -> "1.17.2.2 Design.nonInterventional"
+* category[primaryDesign] -> "Design.primaryDesign"
+* category[studyTypeInterventional] -> "Design.studyType.interventional"
+* category[studyTypeNonInterventional] -> "Design.studyType.nonInterventional"
 * category[timePerspectives] -> "1.17.27.1 Design.nonInterventional.timePerspectives"
 * category[allocation] -> "1.17.28.3 Design.interventional.allocation"
 * category[samplingMethod] -> "1.17.13.1 Design.sampling.method"
 * category[samplingMethodProbability] -> "1.17.13.2	Design.sampling.probabilityMethod"
 * category[samplingMethodNonProbability] -> "1.17.13.3 Design.sampling.nonProbabilityMethod"
-* condition -> "1.17.3 Design.conditions"
-* condition.coding.extension[uri] -> "1.17.3.3 Resource.studyDesign.studyConditions.code"
-* condition.coding.system -> "1.17.3.2 Resource.studyDesign.studyConditions.classification"
-* condition.coding.code -> "1.17.3.3 Resource.studyDesign.studyConditions.code"
-* condition.coding.display -> "1.17.3.1 Resource.studyDesign.studyConditions.label"
-* condition.text -> "1.17.3.1 Resource.studyDesign.studyConditions.label"
+* condition[conditions] -> "Design.conditions"
+* condition[conditions].coding.extension[uri] -> "Design.conditions.code"
+* condition[conditions].coding.system -> "Design.conditions.classification"
+* condition[conditions].coding.display -> "Design.conditions.label"
+* condition[groupsOfDiseasesGenerally] -> "Design.groupsOfDiseases.generally"
+* condition[groupsOfDiseasesConditions] -> "Design.groupsOfDiseases.conditions"
+* focus -> "Design.focus"
+* focus.coding.extension[uri] -> "Design.focus.code"
+* focus.coding.system -> "Design.focus.classification"
+* focus.coding.display -> "Design.focus.label"
 * relatedArtifact -> "1.13 Resource.ids"
 * relatedArtifact -> "1.14 Resource.idsNfdi4health"
 * relatedArtifact -> "1.9 Resource.webpage"
@@ -347,8 +367,9 @@ Source: NFDI4Health_PR_MDS_Study
 * location[regions].text -> "1.17.16 Resource.studyDesign.region"
 * extension[descritpions] -> "Resource.descriptions"
 * enrollment -> "1.17.23 Resource.studyDesign.eligibilityCriteria"
-* period.start -> "1.17.13 Resource.studyDesign.studyStartDate"
-* period.end -> "1.17.14 Resource.studyDesign.studyEndDate"
-* reasonStopped.text -> "1.17.10 Resource.studyDesign.reasonStopped"
+* period.start -> "Design.administrativeInformation.startDate"
+* period.end -> "Design.administrativeInformation.endDate"
+* reasonStopped.text -> "Design.administrativeInformation.reasonStopped"
+* reasonStopped.coding -> "Design.administrativeInformation.stageStopped"
 * note.text -> "1.17.24 Design.comment"
 * objective.name -> "1.17.18 Design.hypotheses"

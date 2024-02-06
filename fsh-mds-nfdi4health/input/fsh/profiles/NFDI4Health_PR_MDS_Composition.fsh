@@ -37,6 +37,7 @@ Description: "Profile intended to capture information on the core information of
     NFDI4Health_EX_MDS_Name_Type named nameType 1..1
 * author only Reference(NFDI4Health_PR_MDS_Practitioner_Role or NFDI4Health_PR_MDS_Organization)
 * subject only Reference(NFDI4Health_PR_MDS_Document or NFDI4Health_PR_MDS_Questionnaire or NFDI4Health_PR_MDS_Study)
+* subject ^comment = "1..1, if Resource.classification.type == ('Study' OR 'Substudy' OR 'Registry' OR 'Secondary data source'); otherwise 0..0"
 * subject obeys core-2
 * section ^slicing.discriminator.type = #value
 * section ^slicing.discriminator.path = "code"
@@ -66,9 +67,9 @@ Expression: "type.coding.where(code = 'C63536' or code = 'C198230' or code = 'C4
 
 
 Invariant: core-2
-Description: "When Composition.type = 'C63536' OR 'C198230' then subject only Reference (NFDI4Health_PR_MDS_Study)"
+Description: "When Composition.type = 'C63536' or 'C198230' or 'C61393' or '178' then subject only Reference (NFDI4Health_PR_MDS_Study)"
 Severity: #error
-Expression: "type.coding.where(code = 'C63536' or code = 'C198230') implies subject only Reference (NFDI4Health_PR_MDS_Study)"
+Expression: "type.coding.where(code = 'C63536' or code = 'C61393' or code = 'C198230' or code = 178) implies subject only Reference (NFDI4Health_PR_MDS_Study)"
 
 
 
