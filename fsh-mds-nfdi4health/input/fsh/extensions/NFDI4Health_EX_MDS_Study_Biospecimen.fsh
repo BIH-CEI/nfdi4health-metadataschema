@@ -28,7 +28,7 @@ Description: "Extension indicating whether samples of biomaterial from participa
 * extension[retention].value[x] only Coding
 * extension[retention].valueCoding.code 1..1
 * extension[retention].valueCoding.system 1..1
-* extension[retention].valueCoding from $nfdi4health-vs-mds-study-biospecimen-retention-umls (required)
+* extension[retention].valueCoding from NFDI4Health_VS_MDS_Study_Biospecimen_Retention_NCI (required)
 * extension[retention].valueCoding ^binding.description = "Value set defining codes to specify which biosamples are retained in a biorepository."
 * extension[description] ^short = "Specific types of retained biosamples"
 * extension[description] ^definition = "Additional information about retained biosamples, i.e. an indication of the specific types of retained biospecimens (e.g. blood, serum, urine, etc.)."

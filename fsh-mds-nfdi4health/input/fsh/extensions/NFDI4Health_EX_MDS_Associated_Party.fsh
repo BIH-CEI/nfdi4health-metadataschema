@@ -52,7 +52,7 @@ Description: "Group of items providing information about person(s), group(s) of 
 * extension[nameType] ^definition = "Indication whether the contribution was made by person(s) or organisation(s)/institution(s)/group(s)."
 * extension[nameType].value[x] 1..
 * extension[nameType].value[x] only Coding
-* extension[nameType].valueCoding from NFDI4Health_VS_MDS_Role_Name_Type_SNOMED (required)
+* extension[nameType].valueCoding from NFDI4Health_VS_MDS_Role_Name_Type_SNOMEDCT (required)
 * extension[nameType].valueCoding ^binding.description = "Value set defining codes to specify role types."
 
 Mapping: NFDI4Health-Associated-Party-to-FHIR
