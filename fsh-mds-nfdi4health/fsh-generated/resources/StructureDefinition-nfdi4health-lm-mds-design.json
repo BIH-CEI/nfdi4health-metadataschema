@@ -1,0 +1,1791 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "nfdi4health-lm-mds-design",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-mds-design-v3-3",
+  "name": "NFDI4Health_LM_MDS_Design",
+  "title": "NFDI4Health LM MDS Module Design",
+  "status": "draft",
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "description": "NFDI4Health Logical Model MDS Module Design V3.3",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-mds-design-v3-3",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3",
+        "path": "nfdi4health-lm-mds-design-v3-3",
+        "short": "NFDI4Health LM MDS Module Design",
+        "definition": "NFDI4Health Logical Model MDS Module Design V3.3"
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design",
+        "short": "Characteristics of the [RESOURCE]",
+        "definition": "Group of items providing information about the characteristics of a [RESOURCE].",
+        "comment": "Cardinality: 1..1, if Resource.classification.type == ('Study' OR 'Substudy' OR 'Registry' OR 'Secondary data source'); otherwise 0..0 / Additional Information: Group of items applicable only to studies, substudies, registries, and secondary data sources. / Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.primaryDesign",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.primaryDesign",
+        "short": "Is it an interventional or non-interventional [RESOURCE]?",
+        "definition": "Non-interventional design refers to a [RESOURCE] that does not aim to alter its outcomes of interest. Interventional design refers to a [RESOURCE] that aims to alter its outcomes of interest.",
+        "comment": "Cardinality: 1..1, if Resource.classification.type == ('Study' OR 'Substudy'); otherwise 0..0 / Short Input Help: Select between non-interventional and interventional design for the given [RESOURCE]. / Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-primary-design-nci"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.studyType",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.studyType",
+        "short": "Specification of the type of the [RESOURCE]",
+        "definition": "Group of items providing information about the type of the [RESOURCE].",
+        "comment": "Cardinality: 1..1, if Resource.classification.type == ('Study' OR 'Substudy'); otherwise 0..0 / Source of the property and/or allowed values: CT.gov [2], DRKS [3], DDI [7], MIABIS [6]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.studyType.interventional",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.studyType.interventional",
+        "short": "Interventional [RESOURCE] type",
+        "definition": "The strategy for assigning interventions to participants.",
+        "comment": "Cardinality: 1..*, if Design.primaryDesign == 'Interventional'; otherwise 0..0 / Short Input Help: Select all that apply. If 'Other' is selected, please specify the type of the [RESOURCE] in the field 'Additional information about the [RESOURCE]'. / Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-type-interventional-nci"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.studyType.nonInterventional",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.studyType.nonInterventional",
+        "short": "Non-interventional [RESOURCE] type",
+        "definition": "The primary strategy for participant identification and follow-up.",
+        "comment": "Cardinality: 1..*, if Design.primaryDesign == 'Non-interventional'; otherwise 0..0 / Short Input Help: Select all that apply. If 'Other' is selected, please specify the type of the [RESOURCE] in the field 'Additional information about the [RESOURCE]'./ Source of the property and/or allowed values: CT.gov [2], DRKS [3], DDI [7], MIABIS [6]",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-type-non-interventional-nci-msh-local"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.conditions",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.conditions",
+        "short": "Primary health condition(s) or disease(s) considered in the [RESOURCE]",
+        "definition": "Group of items providing information about primary health condition(s) or disease(s) considered in the [RESOURCE].",
+        "comment": "Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.conditions.label",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.conditions.label",
+        "short": "Primary health condition or disease name",
+        "definition": "Name of primary health condition or disease considered in the [RESOURCE].",
+        "comment": "Additional Information: The use of terms from established terminologies/classifications (e.g. SNOMED CT, ICD, etc.) is preferred. However, also self-assigned terms are allowed. / Short Input Help: Preferably, use terms from SNOMED CT (https://browser.ihtsdotools.org). / Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "example": [
+          {
+            "label": "Example of a condition or disease name",
+            "valueString": "SARS-CoV-2"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.conditions.classification",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.conditions.classification",
+        "short": "Terminology/classification",
+        "definition": "Terminology/classification used for the health condition or disease.",
+        "comment": "Short Input Help: If used, name of the terminology/classification. / Source of the property and/or allowed values: DRKS [3], DataCite [1]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "example": [
+          {
+            "label": "Example of a terminology",
+            "valueCodeableConcept": {
+              "text": "SNOMED CT"
+            }
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-conditions-classification-nci-local"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.conditions.code",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.conditions.code",
+        "short": "Code of the health condition or disease",
+        "definition": "Code of the health condition or disease in the terminology/classification used.",
+        "comment": "Short Input Help: If known, you can provide the code from the terminology/classification used. / Source of the property and/or allowed values: DataCite [1]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "example": [
+          {
+            "label": "Example of a code for a condition or disease",
+            "valueString": "http://snomed.info/id/840533007"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.focus",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.focus",
+        "short": "Primary focus of the [RESOURCE]",
+        "definition": "Group of items providing information about the focus of the [RESOURCE] (e.g. medication, food, therapy, device, etc.).",
+        "comment": "Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.focus.label",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.focus.label",
+        "short": "Focus area",
+        "definition": "Focus area of the [RESOURCE] (e.g. medication, food, therapy, device, etc.).",
+        "comment": "Additional Information: The use of terms from established terminologies/classifications (e.g. SNOMED CT, ICD, etc.) is preferred. However, also self-assigned terms are allowed. / Short Input Help: Preferably, use terms from SNOMED CT (https://browser.ihtsdotools.org). / Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.focus.classification",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.focus.classification",
+        "short": "Terminology/classification",
+        "definition": "Terminology/classification used for the focus area.",
+        "comment": "Short Input Help: If used, name of the terminology/classification. / Source of the property and/or allowed values: DRKS [3], DataCite [1]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "example": [
+          {
+            "label": "Example of a terminology or classification",
+            "valueCodeableConcept": {
+              "text": "SNOMED CT"
+            }
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-conditions-classification-nci-local"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.focus.code",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.focus.code",
+        "short": "Code of the focus area",
+        "definition": "Code of the focus area in the terminology/classification used.",
+        "comment": "Short Input Help: If known, you can provide the code from the terminology/classification used. / Source of the property and/or allowed values: DataCite [1]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "example": [
+          {
+            "label": "Example of a code for a focus area",
+            "valueString": "http://snomed.info/id/840533007"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.groupsOfDiseases",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.groupsOfDiseases",
+        "short": "Groups of diseases or conditions",
+        "definition": "Group of items providing information about groups of diseases or conditions on which the data were collected in the [RESOURCE].",
+        "comment": "Source of the property and/or allowed values: NFDI4Health",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.groupsOfDiseases.generally",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.groupsOfDiseases.generally",
+        "short": "Which groups of diseases or conditions were the data collected on?",
+        "definition": "General groups of diseases or conditions on which the data were collected in the [RESOURCE].",
+        "comment": "Additional Information: The values originate from the WHO's International Statistical Classification of Diseases and Related Health Problems, 10th Revision (ICD-10). / Short Input Help: Select all that apply. For more information about the groups of diseases/conditions, visit the WHO's ICD-10 homepage: https://icd.who.int/en. /\tSource of the property and/or allowed values: ICD-10 [15]",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-diseases-generally-icd-sct"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.groupsOfDiseases.conditions",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.groupsOfDiseases.conditions",
+        "short": "On which diseases or conditions were the data collected?",
+        "definition": "Diseases or conditions on which the data were collected in the [RESOURCE].",
+        "comment": "Additional Information: The values originate from the WHO's International Statistical Classification of Diseases and Related Health Problems, 10th Revision (ICD-10). / Short Input Help: Select all that apply. Values are based on lower level ICD-10. For more information visit the WHO's ICD-10 homepage: https://icd.who.int/en. / Source of the property and/or allowed values: ICD-10 [15] (NFDI4Health UC 5.2 requirements)",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.mortalityData",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.mortalityData",
+        "short": "Collects mortality data?",
+        "definition": "Indication whether mortality data are collected in the [RESOURCE].",
+        "comment": "Cardinality: 0..1, if (Resource.classification.type == ('Study' OR 'Substudy') AND Design.studyType.nonInterventional == ('Longitudinal' OR 'Cohort' OR 'Case-cohort' OR 'Birth cohort' OR 'Trend' OR 'Panel')) OR Resource.classification.type == ('Registry' OR 'Secondary data source'); otherwise 0..0 / Source of the property and/or allowed values: NFDI4Health UC 5.2 requirements",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-mortality-data-nci"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.administrativeInformation",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.administrativeInformation",
+        "short": "Administrative information about the [RESOURCE]",
+        "definition": "Group of items providing administrative information about the [RESOURCE].",
+        "comment": "Cardinality: 1..1, if Resource.classification.type == ('Study' OR 'Substudy'); otherwise 0..1 / Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.administrativeInformation.ethicsCommitteeApproval",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.administrativeInformation.ethicsCommitteeApproval",
+        "short": "Status of the ethics committee approval",
+        "definition": "Status of the [RESOURCE] approval from the (leading) ethics committee.",
+        "comment": "Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-ethics-committee-approval-nci-local"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.administrativeInformation.status",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.administrativeInformation.status",
+        "short": "Overall [RESOURCE] status",
+        "definition": "Overall status of the [RESOURCE].",
+        "comment": "Cardinality: 1..1, if Resource.classification.type == ('Study' OR 'Substudy'); otherwise 0..0 / Additional Information: If at least one [RESOURCE] site in a multicenter [RESOURCE] has the status 'Ongoing', then the overall status of the [RESOURCE] must be 'Ongoing'. / Short Input Help: Select one value from the list. / Source of the property and/or allowed values: NFDI4Health, CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-overall-status-nci-local"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.administrativeInformation.statusWhenIntervention",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.administrativeInformation.statusWhenIntervention",
+        "short": "Participants receive an intervention?",
+        "definition": "Specification whether [RESOURCE] participants receive an intervention or have completed it but are still being followed up according to the primary objective of the [RESOURCE].",
+        "comment": "Cardinality: 0..1, if Resource.classification.type == ('Study' OR 'Substudy') AND Design.primaryDesign == 'Interventional' AND Design.administrativeInformation.status == ('At the planning stage' OR 'Ongoing (I): Recruitment ongoing, but data collection not yet started' OR 'Ongoing (II): Recruitment and data collection ongoing' OR 'Ongoing (III): Recruitment completed, but data collection ongoing' OR 'Ongoing (IV): Recruitment and data collection completed, but data quality management ongoing'); otherwise 0..0/ Short Input Help: Select one value from the list. / Source of the property and/or allowed values: NFDI4Health, CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-status-when-intervention-local"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.administrativeInformation.stageStopped",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.administrativeInformation.stageStopped",
+        "short": "Stopping stage",
+        "definition": "Specification of the stage at which the [RESOURCE] was prematurely stopped.",
+        "comment": "Cardinality: 0..1, if Resource.classification.type == ('Study' OR 'Substudy') AND Design.administrativeInformation.status == ('Suspended: Recruitment, data collection, or data quality management, halted, but potentially will resume' OR 'Terminated: Recruitment, data collection, data and quality management halted prematurely and will not resume'); otherwise 0..0 / Short Input Help: Select one value from the list.\t/ Source of the property and/or allowed values: NFDI4Health, CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-status-halted-stage-local"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.administrativeInformation.reasonStopped",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.administrativeInformation.reasonStopped",
+        "short": "Stopping reason",
+        "definition": "Specification of the reason(s) why the [RESOURCE] was prematurely stopped.",
+        "comment": "Cardinality: 0..1, if Resource.classification.type == ('Study' OR 'Substudy') AND Design.administrativeInformation.status == ('Suspended: Recruitment, data collection, or data quality management, halted, but potentially will resume' OR 'Terminated: Recruitment, data collection, data and quality management halted prematurely and will not resume'); otherwise 0..0 / Short Input Help: You can provide reasons such as closed due to toxicity, closed due to lack of [RESOURCE] progress, temporarily-closed per [RESOURCE] design, etc. / Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "example": [
+          {
+            "label": "Example of a stopping reason",
+            "valueString": "accrual goal met"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.administrativeInformation.statusEnrollingByInvitation",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.administrativeInformation.statusEnrollingByInvitation",
+        "short": "Participants enrolled by invitation?",
+        "definition": "Specification whether [RESOURCE] participants are selected from a predetermined population.",
+        "comment": "Cardinality: 0..1, if Resource.classification.type == ('Study' OR 'Substudy'); otherwise 0..0 / Source of the property and/or allowed values: NFDI4Health, CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-yes-no-not-applicable-snomedct"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.administrativeInformation.recruitmentStatusRegister",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.administrativeInformation.recruitmentStatusRegister",
+        "short": "Overall recruitment status from the register of clinical trials",
+        "definition": "Overall recruitment status of the [RESOURCE] as indicated in the corresponding register of clinical trials.",
+        "comment": "Cardinality: 0..1, if Resource.classification.type == ('Study' OR 'Substudy') AND Resource.provenance.dataSource != 'Manually collected'; otherwise 0..0 / Additional Information: The item applies only to studies automatically uploaded from the registers of clinical trials. / Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-recruitment-register-nci-sct-local"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.administrativeInformation.startDate",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.administrativeInformation.startDate",
+        "short": "Start date",
+        "definition": "Start date of data collection for the [RESOURCE].",
+        "comment": "Additional Information: Preferred date format: DD.MM.YYYY.\t/ Short Input Help: In case of a planned [RESOURCE], enter the intended start date. In case of an ongoing [RESOURCE], enter the actual start date. / Source of the property and/or allowed values: CT.gov [2], DRKS [3], NFDI4Health",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.administrativeInformation.endDate",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.administrativeInformation.endDate",
+        "short": "End date",
+        "definition": "In case of a [RESOURCE] with patients or other participants, it is the date when the last participant is examined or receives an intervention, or the date of the last participant’s last visit.",
+        "comment": "Additional Information: Preferred date format: DD.MM.YYYY. / Short Input Help: In case of a planned or ongoing [RESOURCE], enter the intended end date. In case of a completed [RESOURCE], enter the actual end date. / Source of the property and/or allowed values: CT.gov [2], DRKS [3], NFDI4Health",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.centers",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.centers",
+        "short": "Mono- or multicentric?",
+        "definition": "Specification whether the [RESOURCE] is conducted at only one or at more than one [RESOURCE] center.",
+        "comment": "Cardinality: 0..1, if Resource.classification.type == ('Study' OR 'Substudy'); otherwise 0..0 / Source of the property and/or allowed values: DRKS [3], CT.gov [2]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-centers-snomedct-local"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.centersNumber",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.centersNumber",
+        "short": "Number of centers",
+        "definition": "Number of centers involved in the [RESOURCE].",
+        "comment": "Cardinality: 0..1, if Resource.classification.type == ('Study' OR 'Substudy') AND Design.centers == 'Multicentric'; otherwise 0..0 / Source of the property and/or allowed values: NFDI4Health, DRKS [3], CT.gov [2]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.dataProviders",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.dataProviders",
+        "short": "One or more data providers?",
+        "definition": "Specification whether the [RESOURCE] involves only one or more than one data provider.",
+        "comment": "Cardinality: 0..1, if Resource.classification.type == ('Registry' OR 'Secondary data source'); otherwise 0..0 / Source of the property and/or allowed values: NFDI4Health UC 5.3 requirements",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.dataProvidersNumber",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.dataProvidersNumber",
+        "short": "Number of data providers",
+        "definition": "Number of data providers involved in the [RESOURCE].",
+        "comment": "Cardinality: 0..1, if Resource.classification.type == ('Registry' OR 'Secondary data source') AND Design.dataProviders == 'Several data providers'; otherwise 0..0 / Source of the property and/or allowed values: NFDI4Health UC 5.3 requirements",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.subject",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.subject",
+        "short": "Primary subject",
+        "definition": "The primary subject addressed by the [RESOURCE], i.e. a person, an animal or other subject types.",
+        "comment": "Short Input Help: Select one value from the list. / Source of the property and/or allowed values: NFDI4Health, DDI [4]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-subject-snomedct"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.sampling",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.sampling",
+        "short": "Sampling method",
+        "definition": "Group of items providing information about the applied sampling method.",
+        "comment": "Cardinality: 0..1, if Resource.classification.type == ('Study' OR 'Substudy'); otherwise 0..0 / Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.sampling.method",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.sampling.method",
+        "short": "Applied sampling method",
+        "definition": "Type of the sampling method applied for the selection of [RESOURCE] participants.",
+        "comment": "Short Input Help: Select one value from the list. / Source of the property and/or allowed values: DDI [12], NFDI4Health, CT.gov [2]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-sampling-method-nci-local"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.sampling.probabilityMethod",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.sampling.probabilityMethod",
+        "short": "Specific type of probability sampling",
+        "definition": "Specific type of the probability sampling method applied for the selection of [RESOURCE] participants.",
+        "comment": "Cardinality: 0..1, if Design.sampling.method == 'Probability'; otherwise 0..0 / Short Input Help: If known, select one value from the list. / Source of the property and/or allowed values: NFDI4Health, DDI [12]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-sampling-prob-method-nci-local"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.sampling.nonProbabilityMethod",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.sampling.nonProbabilityMethod",
+        "short": "Specific type of non-probability sampling",
+        "definition": "Specific type of the non-probability sampling method applied for the selection of [RESOURCE] participants.",
+        "comment": "Cardinality: 0..1, if Design.sampling.method == 'Non-probability'; otherwise 0..0 / Short Input Help: If known, select one value from the list. / Source of the property and/or allowed values: NFDI4Health, DDI [12]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-sampling-method-non-prob-nci-local"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.dataSource",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.dataSource",
+        "short": "Data sources of the [RESOURCE]",
+        "definition": "Group of items providing information about data sources from which the data of the [RESOURCE] are generated or extracted.",
+        "comment": "Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.dataSource.general",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.dataSource.general",
+        "short": "Type(s) of data sources",
+        "definition": "Different types of data sources from which the data of the [RESOURCE] are generated or extracted.",
+        "comment": "Short Input Help: Select all that apply. / Source of the property and/or allowed values: NFDI4Health, Maelstrom [8], MIABIS [6]",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sources-general-nci-local"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.dataSource.biosamples",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.dataSource.biosamples",
+        "short": "Biosamples collected",
+        "definition": "Specification of biosamples collected in the [RESOURCE].",
+        "comment": "Cardinality: 0..*, if Design.dataSource.general == 'Biological samples'; otherwise 0..0 / Short Input Help: Select all that apply. / Source of the property and/or allowed values: NFDI4Health, Maelstrom [8], MIABIS [6]",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-ds-biosamples-sct-nci"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.dataSource.imaging",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.dataSource.imaging",
+        "short": "Imaging data collected",
+        "definition": "Specification of imaging data collected in the [RESOURCE].",
+        "comment": "Cardinality: 0..*, if Design.dataSource.general == 'Imaging data'; otherwise 0..0 / Short Input Help: Select all that apply. / Source of the property and/or allowed values: NFDI4Health, Maelstrom [8], MIABIS [6]",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sources-imaging-nci"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.dataSource.omics",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.dataSource.omics",
+        "short": "Omics technology used",
+        "definition": "Specification of omics technology applied in the [RESOURCE].",
+        "comment": "Cardinality: 0..*, if Design.dataSource.general == 'Omics technology'; otherwise 0..0 / Short Input Help: Select all that apply. / Source of the property and/or allowed values: NFDI4Health, Maelstrom [8], MIABIS [6]",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sources-omics-nci"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.dataSource.description",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.dataSource.description",
+        "short": "Additional information about data sources",
+        "definition": "If needed, additional descriptive information about the data sources of the [RESOURCE], e.g. indication of the data source(s) not listed in the field 'Type(s) of data sources' or a more detailed description of the selected data sources.",
+        "comment": "Short Input Help: You can indicate here other data source(s) not listed in the field 'Type(s) of data sources' or provide a more detailed description of the selected data sources. / Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.primaryPurpose",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.primaryPurpose",
+        "short": "Primary purpose of the [RESOURCE]",
+        "definition": "Specification of the main purpose of the [RESOURCE].",
+        "comment": "Cardinality: 0..1, if Resource.classification.type == ('Study' OR 'Substudy'); otherwise 0..0 / Additional Information: The field is defined foremost for interventional studies. For non-interventional studies, this field may not be applicable as diverse purposes may be pursued without being able to specify a primary one. In this case, the option 'Not applicable' can be selected. / Short Input Help: Foremost for interventional studies, please specify the primary purpose why the [RESOURCE] was conducted. For non-interventional studies, this field may be 'Not applicable' as multiple purposes may be defined as primary ones. / Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-primary-purpose-hl7-nci"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.eligibilityCriteria",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.eligibilityCriteria",
+        "short": "Eligibility criteria for [RESOURCE] participants",
+        "definition": "Group of items providing information about eligibility criteria for [RESOURCE] participants.",
+        "comment": "Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.eligibilityCriteria.ageMin",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.eligibilityCriteria.ageMin",
+        "short": "Eligibility criteria: Minimum age",
+        "definition": "Group of items providing information about the minimum eligible age of [RESOURCE] participants.",
+        "comment": "Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.eligibilityCriteria.ageMin.number",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.eligibilityCriteria.ageMin.number",
+        "short": "Minimum eligible age",
+        "definition": "Numerical value of the minimum age of potential participants eligible to participate in the [RESOURCE].",
+        "comment": "Additional Information: In the case of cohort studies, further participant ages can be indicated in the fields 'Inclusion criteria' or 'Exclusion criteria'. / Short Input Help: If age is less than 1 year, please indicate a value in months, weeks, days, hours, minutes, or weeks of gestation. / Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.eligibilityCriteria.ageMin.timeUnit",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.eligibilityCriteria.ageMin.timeUnit",
+        "short": "Unit of age",
+        "definition": "Unit of measurement used to describe the minimum eligible age.",
+        "comment": "Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.eligibilityCriteria.ageMax",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.eligibilityCriteria.ageMax",
+        "short": "Eligibility criteria: Maximum age",
+        "definition": "Group of items providing information about the maximum eligible age of [RESOURCE] participants.",
+        "comment": "Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.eligibilityCriteria.ageMax.number",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.eligibilityCriteria.ageMax.number",
+        "short": "Maximum eligible age",
+        "definition": "Numerical value of the maximum age of potential participants eligible to participate in the [RESOURCE].",
+        "comment": "Additional Information: In the case of cohort studies, further participant ages can be indicated in the fields 'Inclusion criteria' or 'Exclusion criteria'.\t/ Short Input Help: If age is less than 1 year, please indicate a value in months, weeks, days, hours, minutes, or weeks of gestation.\t/ Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.eligibilityCriteria.ageMax.timeUnit",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.eligibilityCriteria.ageMax.timeUnit",
+        "short": "Unit of age",
+        "definition": "Unit of measurement used to describe the maximum eligible age.",
+        "comment": "Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.eligibilityCriteria.genders",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.eligibilityCriteria.genders",
+        "short": "Eligible gender",
+        "definition": "Gender of potential participants eligible to participate in the [RESOURCE].",
+        "comment": "Short Input Help: Select all that apply. If no gender was explicitly excluded in the [RESOURCE], 'Male', 'Female', and 'Diverse' should be selected. / Source of the property and/or allowed values: CT.gov [2], DRKS [3], NFDI4Health",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.eligibilityCriteria.inclusionCriteria",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.eligibilityCriteria.inclusionCriteria",
+        "short": "Inclusion criteria",
+        "definition": "Inclusion criteria for participation in the [RESOURCE].",
+        "comment": "Short Input Help: If possible, use an enumerated or bulleted list for each criterion, starting with '-' and finishing with ';'. / Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "example": [
+          {
+            "label": "Example of a list of inclusion criteria",
+            "valueString": "'- First inclusion criterion; - Second inclusion criterion;"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.eligibilityCriteria.exclusionCriteria",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.eligibilityCriteria.exclusionCriteria",
+        "short": "Exclusion criteria",
+        "definition": "Exclusion criteria for participation in the [RESOURCE].",
+        "comment": "Short Input Help: If possible, use an enumerated or bulleted list for each criterion, starting with '-' and finishing with ';'. / Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "example": [
+          {
+            "label": "Example of a list of exclusion criteria",
+            "valueString": "'- First inclusion criterion; - Second inclusion criterion;"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.population",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.population",
+        "short": "Population of the [RESOURCE]",
+        "definition": "Group of items providing information about the population of the [RESOURCE].",
+        "comment": "Source of the property and/or allowed values: NFDI4Health",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.population.coverage",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.population.coverage",
+        "short": "Coverage",
+        "definition": "Specification of the recruitment area of the [RESOURCE].",
+        "comment": "Short Input Help: Select one value from the list. / Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.population.countries",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.population.countries",
+        "short": "Country(ies)",
+        "definition": "Country or countries where the [RESOURCE] takes place.",
+        "comment": "Short Input Help: Select all that apply. / Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/country"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.population.region",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.population.region",
+        "short": "Region(s) and/or city(ies)",
+        "definition": "If applicable, region(s) and/or city(ies) within a country where the [RESOURCE] takes place.",
+        "comment": "Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.population.description",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.population.description",
+        "short": "Population description",
+        "definition": "Additional descriptive information providing more details about the population of the [RESOURCE].",
+        "comment": "Short Input Help: Any information important for the given [RESOURCE] population can be specified here. / Source of the property and/or allowed values: CT.gov [2], Maelstrom [8]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.population.targetSampleSize",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.population.targetSampleSize",
+        "short": "Target sample size",
+        "definition": "Intended number of observational units for the whole [RESOURCE] (e.g. intended number of [RESOURCE] participants at all sites of the [RESOURCE]).",
+        "comment": "Cardinality: 0..1, if Resource.classification.type == ('Study' OR 'Substudy'); otherwise 0..0 / Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.population.obtainedSampleSize",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.population.obtainedSampleSize",
+        "short": "Obtained sample size",
+        "definition": "Obtained number of observational units for the whole [RESOURCE] (e.g. obtained number of [RESOURCE] participants at all sites of the [RESOURCE]).",
+        "comment": "Additional Information: The value is only available after the end of recruitment. / Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.hypotheses",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.hypotheses",
+        "short": "Research questions/hypotheses",
+        "definition": "Statement of the research questions and/or hypotheses underlying the [RESOURCE].",
+        "comment": "Cardinality: 0..*, if Resource.classification.type == ('Study' OR 'Substudy'); otherwise 0..0 / Source of the property and/or allowed values: NFDI4Health, ISRCTN [16]",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.arms",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.arms",
+        "short": "Arms of the [RESOURCE]",
+        "definition": "Group of items providing information about the arms of the [RESOURCE].",
+        "comment": "Cardinality: 0..*, if Resource.classification.type == ('Study' OR 'Substudy') AND Design.primaryDesign == 'Interventional'; otherwise 0..0 / Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.arms.label",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.arms.label",
+        "short": "Name of the arm",
+        "definition": "Short name used to identify the arm.",
+        "comment": "Additional Information: Arm' means a pre-specified group or subgroup of participants in the [RESOURCE] assigned to receive specific intervention(s) (or no intervention) according to a protocol. / Source of the property and/or allowed values: CT.gov [2]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.arms.type",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.arms.type",
+        "short": "Role of the arm",
+        "definition": "Role of the given arm in the [RESOURCE].",
+        "comment": "Short Input Help: Select one value from the list. / Source of the property and/or allowed values: CT.gov [2]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.arms.description",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.arms.description",
+        "short": "Additional information about the arm",
+        "definition": "Additional descriptive information about the given arm.",
+        "comment": "Additional Information: If needed, additional descriptive information (including which interventions are administered in each arm) to differentiate each arm from other arms in the [RESOURCE]. / Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.groups",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.groups",
+        "short": "Groups/cohorts of the [RESOURCE]",
+        "definition": "Group of items providing information about the groups/cohorts of the [RESOURCE].",
+        "comment": "Cardinality: 0..*, if Resource.classification.type == ('Study' OR 'Substudy') AND Design.primaryDesign == 'Non-interventional'; otherwise 0..0 / Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.groups.label",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.groups.label",
+        "short": "Name of the group",
+        "definition": "Short name used to identify the group.",
+        "comment": "Additional Information: Group' means a predefined group (cohort) of participants to be studied. /  Source of the property and/or allowed values: CT.gov [2]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.groups.description",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.groups.description",
+        "short": "Additional information about the group",
+        "definition": "Additional descriptive information about the given group.",
+        "comment": "Additional Information: Explanation of the nature of the [RESOURCE] group (for example, participants with and without a condition, participants with and without an exposure, etc.). / Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.interventions",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.interventions",
+        "short": "Interventions of the [RESOURCE]",
+        "definition": "Group of items providing information about the interventions of the [RESOURCE].",
+        "comment": "Cardinality: 0..*,  if Resource.classification.type == ('Study' OR 'Substudy') AND Design.primaryDesign == 'Interventional'; otherwise 0..0 / Additional Information: Specification of the intervention(s) associated with each arm. / Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.interventions.name",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.interventions.name",
+        "short": "Name of the intervention",
+        "definition": "A short descriptive name of the intervention.",
+        "comment": "Short Input Help: If the same intervention is associated with more than one arm, please provide the information once and use the field 'Name(s) of the arm(s) associated with the given intervention' to associate it with more than one arm. / Source of the property and/or allowed values: CT.gov [2]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.interventions.type",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.interventions.type",
+        "short": "Type of the intervention",
+        "definition": "General type of the given intervention.",
+        "comment": "Source of the property and/or allowed values: CT.gov [2]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.interventions.description",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.interventions.description",
+        "short": "Additional information about the intervention",
+        "definition": "If needed, additional descriptive information about the given intervention.",
+        "comment": "Source of the property and/or allowed values: CT.gov [2]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.interventions.armsLabel",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.interventions.armsLabel",
+        "short": "Name(s) of the arm(s) associated with the given intervention",
+        "definition": "Name(s) of the [RESOURCE] arm(s) associated with the given intervention.",
+        "comment": "Source of the property and/or allowed values: CT.gov [2]",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.exposures",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.exposures",
+        "short": "Exposures of the [RESOURCE]",
+        "definition": "Group of items providing information about the exposures of the [RESOURCE].",
+        "comment": "Cardinality: 0..*, if (Resource.classification.type == ('Study' OR 'Substudy') AND Design.primaryDesign == 'Non-interventional') OR Resource.classification.type == ('Registry' OR 'Secondary data source'); otherwise 0..0 / Additional Information: Specification of the exposure(s) associated with each group. / Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.exposures.name",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.exposures.name",
+        "short": "Name of the exposure",
+        "definition": "A short descriptive name of the exposure.",
+        "comment": "Cardinality: 1..1, if Resource.classification.type == ('Study' OR 'Substudy'); otherwise 0..0 / Short Input Help: If the same exposure is associated with more than one group, please provide the information once and use the field 'Name(s) of the group(s) associated with the given exposure' to associate it with more than one group. / Source of the property and/or allowed values: CT.gov [2]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.exposures.type",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.exposures.type",
+        "short": "Type of the exposure",
+        "definition": "General type of the given exposure.",
+        "comment": "Source of the property and/or allowed values: CT.gov [2]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.exposures.description",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.exposures.description",
+        "short": "Additional information about the exposure",
+        "definition": "If needed, additional descriptive information about the given exposure.",
+        "comment": "Source of the property and/or allowed values: CT.gov [2]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.exposures.groupsLabel",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.exposures.groupsLabel",
+        "short": "Name(s) of the group(s) associated with the given exposure",
+        "definition": "Name(s) of the [RESOURCE] group(s) associated with the given exposure.",
+        "comment": "Cardinality: 0..*, if Resource.classification.type == ('Study' OR 'Substudy'); otherwise 0..0 / Source of the property and/or allowed values: CT.gov [2]",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.outcomes",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.outcomes",
+        "short": "Outcome measures in the [RESOURCE]",
+        "definition": "Group of items providing information about outcome measures.",
+        "comment": "Additional Information: The items are optional, especially for non-interventional studies. / Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.outcomes.title",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.outcomes.title",
+        "short": "Name of the outcome measure",
+        "definition": "Name of the outcome measure. For non-interventional studies, this can be the name of specific measurement(s) or observation(s) used to describe patterns of diseases or traits or associations with exposures, risk factors or treatment.",
+        "comment": "Short Input Help: For non-interventional studies, you can provide specific measurement(s) or observation(s) used to describe patterns of diseases or traits or associations with exposures, risk factors or treatment. / Source of the property and/or allowed values: CT.gov [2]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.outcomes.description",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.outcomes.description",
+        "short": "Description of the outcome measure",
+        "definition": "Additional descriptive information about the given outcome.",
+        "comment": "Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.outcomes.type",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.outcomes.type",
+        "short": "Type of the outcome measure",
+        "definition": "The type indicates the degree of importance of the outcome measure in the [RESOURCE].",
+        "comment": "Cardinality: 1..1, if (Design.outcomes.title != Null OR Design.outcomes.description != Null); otherwise 0..0 / Source of the property and/or allowed values: NFDI4Health, CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-outcome-type-nci"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.outcomes.timeFrame",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.outcomes.timeFrame",
+        "short": "Time point(s) of assessment",
+        "definition": "Description of the time point(s) at which the measurement for the outcome is assessed, e.g. the specific duration of time over which each participant is assessed.",
+        "comment": "Source of the property and/or allowed values: CT.gov [2]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.comment",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.comment",
+        "short": "Additional information about the [RESOURCE]",
+        "definition": "Any additional information about specific aspects of the [RESOURCE] that could not be captured by other fields.",
+        "comment": "Short Input Help: You can provide here specific aspects of the [RESOURCE] that could not be captured by other fields. / Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.assessments",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.assessments",
+        "short": "Additional assessments/measurements in the [RESOURCE]",
+        "definition": "Any additional assessments/measurements included in the [RESOURCE].",
+        "comment": "Short Input Help: Select all that apply. / Source of the property and/or allowed values: NFDI4Health, ENPADASI [17]",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-assessments-sct-nci"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.dataSharingPlan",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.dataSharingPlan",
+        "short": "Data sharing strategy of the [RESOURCE]",
+        "definition": "Group of items providing information about the data sharing strategy of the [RESOURCE].",
+        "comment": "Source of the property and/or allowed values: NFDI4Health",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.dataSharingPlan.generally",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.dataSharingPlan.generally",
+        "short": "Is it planned to share the data?",
+        "definition": "Indication whether there is a plan to make data collected in the [RESOURCE] available. In case of a [RESOURCE] with patients or other individuals, this refers to individual participant data (IPD).",
+        "comment": "Short Input Help: Select one value from the list. / Source of the property and/or allowed values: Taichman DB, et al. [5], CT.gov [2], DRKS [3]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-yes-no-undecided-snomedct-nci"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.dataSharingPlan.supportingInformation",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.dataSharingPlan.supportingInformation",
+        "short": "Supporting documents available in addition to the data",
+        "definition": "Supporting information/documents which will be made available in addition to the data collected in the [RESOURCE].",
+        "comment": "Cardinality: 0..*, if Design.dataSharingPlan.generally == 'Yes, there is a plan to make data available'; otherwise 0..0 / Short Input Help: Select all that apply. / Source of the property and/or allowed values: Taichman DB, et al. [5], CT.gov [2]",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.dataSharingPlan.timeFrame",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.dataSharingPlan.timeFrame",
+        "short": "When and for how long will the data be available?",
+        "definition": "Indication of the time period for which the data and, if applicable, supporting documents will be made available.",
+        "comment": "Cardinality: 0..1, if Design.dataSharingPlan.generally == 'Yes, there is a plan to make data available'; otherwise 0..0 / Source of the property and/or allowed values: Taichman DB, et al. [5], CT.gov [2]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.dataSharingPlan.accessCriteria",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.dataSharingPlan.accessCriteria",
+        "short": "Criteria for data access",
+        "definition": "Indication of the access criteria by which the data will be shared, including: a) with whom; b) for which types of analyses; and c) by what mechanism.",
+        "comment": "0..1, if Design.dataSharingPlan.generally == 'Yes, there is a plan to make data available'; otherwise 0..0 / Short Input Help: Please provide here with whom, for which types of analyses and by what mechanism the data will be shared. / Source of the property and/or allowed values: Taichman DB, et al. [5], CT.gov [2]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.dataSharingPlan.description",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.dataSharingPlan.description",
+        "short": "Additional information about data sharing",
+        "definition": "Additional descriptive information providing more details about data sharing, e.g. indication of which data in particular will be shared or why the data will not be shared or why it is not yet decided.",
+        "comment": "Short Input Help: Please indicate here which data in particular will be shared, or the reasons why it will not be shared or it is not yet decided.\t/ Source of the property and/or allowed values: Taichman DB, et al. [5], CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.dataSharingPlan.datashield",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.dataSharingPlan.datashield",
+        "short": "DataSHIELD/Opal infrastructure available?",
+        "definition": "Indication whether the DataSHIELD/Opal infrastructure is available.",
+        "comment": "Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sharing-plan-ds-sct-nci"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.dataSharingPlan.requestData",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.dataSharingPlan.requestData",
+        "short": "Link to data request application",
+        "definition": "If existing, a link to the web page where the data request form and/or information on data reuse can be found.",
+        "comment": "Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "url"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.dataSharingPlan.url",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.dataSharingPlan.url",
+        "short": "Web page with additional information about data sharing",
+        "definition": "If existing, a link to the web page where additional information about data sharing can be found.",
+        "comment": "Source of the property and/or allowed values: Taichman DB, et al. [5], CT.gov [2]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "url"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.dataSharingPlan.recordLinkage",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.dataSharingPlan.recordLinkage",
+        "short": "Record linkage possible?",
+        "definition": "Indication if record linkage with other data sources is possible.",
+        "comment": "Cardinality: 1..1, if Resource.provenance.dataSource == 'Manually collected'; otherwise 0..0 / Additional Information: Record linkage refers to the merging of data on the same person from different databases. / Source of the property and/or allowed values: NFDI4Health UC 5.3 requirements",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.nonInterventional",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.nonInterventional",
+        "short": "Non-interventional aspects of the [RESOURCE]",
+        "definition": "Group of items providing information about specific non-interventional aspects of the [RESOURCE].",
+        "comment": "Cardinality: 0..1, if (Resource.classification.type == ('Study' OR 'Substudy') AND Design.primaryDesign == 'Non-interventional') OR Resource.classification.type == ('Registry' OR 'Secondary data source'); otherwise 0..0 / Additional Information: Group of items applicable only to non-interventional resources. / Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.nonInterventional.timePerspectives",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.nonInterventional.timePerspectives",
+        "short": "Temporal design",
+        "definition": "Temporal design of the [RESOURCE], i.e. the observation period in relation to the time of participant enrollment.",
+        "comment": "Cardinality: 0..*, if Resource.classification.type == ('Study' OR 'Substudy'); otherwise 0..0 / Short Input Help: Is it a retrospective, prospective or cross-sectional [RESOURCE]?\t/ Source of the property and/or allowed values: CT.gov [2]",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-time-perspectives-nci"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.nonInterventional.targetFollowUpDuration",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.nonInterventional.targetFollowUpDuration",
+        "short": "Target follow-up duration of the [RESOURCE]",
+        "definition": "If applicable, anticipated time period over which each participant would be followed.",
+        "comment": "Source of the property and/or allowed values: CT.gov [2]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.nonInterventional.targetFollowUpDuration.number",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.nonInterventional.targetFollowUpDuration.number",
+        "short": "Target follow-up duration",
+        "definition": "Numerical value of the target follow-up duration.",
+        "comment": "Source of the property and/or allowed values: CT.gov [2]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.nonInterventional.targetFollowUpDuration.timeUnit",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.nonInterventional.targetFollowUpDuration.timeUnit",
+        "short": "Unit of time",
+        "definition": "Unit of measurement used to describe the follow-up duration.",
+        "comment": "Source of the property and/or allowed values: CT.gov [2]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-time-units-ucum"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.nonInterventional.targetFollowUpDuration.frequency",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.nonInterventional.targetFollowUpDuration.frequency",
+        "short": "Number of follow-ups conducted",
+        "definition": "The number of follow-ups conducted within the specified duration.",
+        "comment": "Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.nonInterventional.biospecimenRetention",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.nonInterventional.biospecimenRetention",
+        "short": "Biosamples retained in a biorepository",
+        "definition": "Indication whether samples of biomaterials from participants of the [RESOURCE] are retained in a biorepository.",
+        "comment": "Short Input Help: Select all that apply. / Source of the property and/or allowed values: CT.gov [2]",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.nonInterventional.biospecimenDescription",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.nonInterventional.biospecimenDescription",
+        "short": "Specific types of retained biosamples",
+        "definition": "Additional information about retained biosamples, i.e. an indication of the specific types of retained biospecimens (e.g. blood, serum, urine, etc.).",
+        "comment": "Cardinality: 0..1, if Design.nonInterventional.biospecimenRetention != 'None retained'; otherwise 0..0 / Short Input Help: You can provide here specific types of retained biosamples (e.g. blood, serum, urine, etc.). / Source of the property and/or allowed values: CT.gov [2]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "example": [
+          {
+            "label": "Example of a retained biosample",
+            "valueString": "blood"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.interventional",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.interventional",
+        "short": "Interventional aspects of the [RESOURCE]",
+        "definition": "Group of items providing information about specific interventional aspects of the [RESOURCE].",
+        "comment": "Cardinality: 0..1, if Resource.classification.type == ('Study' OR 'Substudy') AND Design.primaryDesign =='Interventional'; otherwise 0..0 / Additional Information: Group of items applicable only to interventional resources. / Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.interventional.phase",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.interventional.phase",
+        "short": "Numerical phase",
+        "definition": "If applicable, numerical phase of the [RESOURCE].",
+        "comment": "Short Input Help: Select one value from the list.\t/ Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-phase-nci"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.interventional.masking",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.interventional.masking",
+        "short": "Masking of intervention(s) assignment",
+        "definition": "Group of items providing information about the masking of intervention(s) assignment.",
+        "comment": "Source of the property and/or allowed values: NFDI4Health",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.interventional.masking.general",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.interventional.masking.general",
+        "short": "Masking implemented?",
+        "definition": "Indication whether a masking (or blinding) of intervention(s) assignment is implemented (i.e., whether someone is prevented from having knowledge of the interventions assigned to individual participants).",
+        "comment": "Source of the property and/or allowed values: CT.gov [2], DRKS [3], NFDI4Health",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.interventional.masking.roles",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.interventional.masking.roles",
+        "short": "Who is masked?",
+        "definition": "If masking is implemented, the party(ies) who are masked.",
+        "comment": "Cardinality: 0..*, if Design.interventional.masking.general == true; otherwise 0..0 / Short Input Help: Select all that apply. / Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-masking-roles-nci-local"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.interventional.masking.description",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.interventional.masking.description",
+        "short": "Additional information about masking",
+        "definition": "If needed, additional descriptive information about masking (e.g. information about other parties who may be masked).",
+        "comment": "Cardinality: 0..1, if Design.interventional.masking.general == true; otherwise 0..0 / Short Input Help: You can provide here additional information about masking, e.g. other parties who may be masked. / Source of the property and/or allowed values: CT.gov [2]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.interventional.allocation",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.interventional.allocation",
+        "short": "Type of allocation of participants to an arm",
+        "definition": "Type of allocation/assignment of individual participants of the [RESOURCE] to an arm.",
+        "comment": "Short Input Help: Select one value from the list. / Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-allocation-nci"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-design-v3-3.Design.interventional.offLabelUse",
+        "path": "nfdi4health-lm-mds-design-v3-3.Design.interventional.offLabelUse",
+        "short": "Off-label use of a drug product",
+        "definition": "Unapproved (off-label) use of a drug product.",
+        "comment": "Short Input Help: Select 'Yes' or 'No' only for a drug [RESOURCE] and 'Not applicable' for any other [RESOURCE]. / Source of the property and/or allowed values: DRKS [3]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-yes-no-not-applicable-snomedct"
+        }
+      }
+    ]
+  }
+}

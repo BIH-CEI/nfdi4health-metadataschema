@@ -24,4 +24,4 @@ Mapping: NFDI4Health-Format-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Format
-* -> "1.9.2 Resource.nonStudyDetails.format"
+* -> "Resource.nonStudyDetails.format"

@@ -25,4 +25,4 @@ Mapping: NFDI4Health-Study-Ethics-Committee-Approval-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Study_Ethics_Committee_Approval
-* -> "1.17.6 Resource.studyDesign.ethicsCommiteeApproval"
+* -> "Design.administrativeInformation.ethicsCommitteeApproval"

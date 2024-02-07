@@ -30,7 +30,7 @@ Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Document_Use_Rights
 * -> "1.9.3 Resource.nonStudyDetails.useRights"
-* extension[copyrightLabelAndLink] -> "1.9.3.1 Resource.nonStudyDetails.useRights.label"
-* extension[copyrightLabelAndLink] -> "1.9.3.2 Resource.nonStudyDetails.useRights.link"
-* extension[useRightsConfirmations] -> "1.9.3.3 Resource.nonStudyDetails.useRights.confirmations"
-* extension[useRightsDescription] -> "1.9.3.4 Resource.nonStudyDetails.useRights.description"
+* extension[copyrightLabelAndLink] -> "Resource.nonStudyDetails.useRights.label"
+* extension[copyrightLabelAndLink] -> "Resource.nonStudyDetails.useRights.link"
+* extension[useRightsConfirmations] -> "Resource.nonStudyDetails.useRights.confirmations"
+* extension[useRightsDescription] -> "Resource.nonStudyDetails.useRights.description"

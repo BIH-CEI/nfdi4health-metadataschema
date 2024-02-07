@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "description": "Profile to collect information about german (or with at least one study center in Germany) clinical, epidemiological or Public health studies that were uploaded in NFDI4Health.",
+  "description": "Group of items applicable only to studies, substudies, registries, and secondary data sources.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -58,6 +58,16 @@
   "differential": {
     "element": [
       {
+        "id": "ResearchStudy",
+        "path": "ResearchStudy",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design"
+          }
+        ]
+      },
+      {
         "id": "ResearchStudy.extension",
         "path": "ResearchStudy.extension",
         "slicing": {
@@ -69,49 +79,7 @@
           ],
           "rules": "open"
         },
-        "min": 6
-      },
-      {
-        "id": "ResearchStudy.extension:resourceType",
-        "path": "ResearchStudy.extension",
-        "sliceName": "resourceType",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-resource-type"
-            ]
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "1.2.1 Resource.classification.type"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.extension:resourceTypeGeneral",
-        "path": "ResearchStudy.extension",
-        "sliceName": "resourceTypeGeneral",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-resource-type-general"
-            ]
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "1.2.2 Resource.classification.typeGeneral"
-          }
-        ]
+        "min": 4
       },
       {
         "id": "ResearchStudy.extension:executionLanguage",
@@ -129,62 +97,23 @@
         ]
       },
       {
-        "id": "ResearchStudy.extension:roles",
+        "id": "ResearchStudy.extension:descritpions",
         "path": "ResearchStudy.extension",
-        "sliceName": "roles",
-        "min": 1,
-        "max": "*",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-associated-party"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.extension:nutritionalData",
-        "path": "ResearchStudy.extension",
-        "sliceName": "nutritionalData",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-nutritional-data"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.extension:chronicDiseases",
-        "path": "ResearchStudy.extension",
-        "sliceName": "chronicDiseases",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-chronic-diseases"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.extension:groupsOfDiseases",
-        "path": "ResearchStudy.extension",
-        "sliceName": "groupsOfDiseases",
+        "sliceName": "descritpions",
         "min": 1,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-groups-of-diseases"
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-descriptions"
             ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Resource.descriptions"
           }
         ]
       },
@@ -440,15 +369,10 @@
           ],
           "rules": "open"
         },
-        "min": 1,
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.1 Resource.identifier"
-          },
-          {
-            "identity": "NFDI4Health",
-            "map": "1.11 Resource.idsAlternative"
+            "map": "Resource.idsAlternative"
           }
         ]
       },
@@ -458,53 +382,8 @@
         "min": 1,
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-id-type-umls-local"
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-id-type-nci-local"
         }
-      },
-      {
-        "id": "ResearchStudy.identifier:NFDI4Health",
-        "path": "ResearchStudy.identifier",
-        "sliceName": "NFDI4Health",
-        "definition": "Unique identifier of the resource used for identification within the NFDI4Health.",
-        "comment": "Additional information: The identifier is assigned automatically.",
-        "min": 1,
-        "max": "1",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "1.1 Resource.identifier"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.identifier:NFDI4Health.use",
-        "path": "ResearchStudy.identifier.use",
-        "min": 1,
-        "fixedCode": "official"
-      },
-      {
-        "id": "ResearchStudy.identifier:NFDI4Health.type",
-        "path": "ResearchStudy.identifier.type",
-        "fixedCodeableConcept": {
-          "coding": [
-            {
-              "code": "104",
-              "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
-              "display": "NFDI4Health"
-            }
-          ]
-        }
-      },
-      {
-        "id": "ResearchStudy.identifier:NFDI4Health.system",
-        "path": "ResearchStudy.identifier.system",
-        "min": 1,
-        "fixedUri": "https://csh.nfdi4health.de/resource/"
-      },
-      {
-        "id": "ResearchStudy.identifier:NFDI4Health.value",
-        "path": "ResearchStudy.identifier.value",
-        "min": 1
       },
       {
         "id": "ResearchStudy.identifier:DRKS",
@@ -1056,49 +935,6 @@
         ]
       },
       {
-        "id": "ResearchStudy.title",
-        "path": "ResearchStudy.title",
-        "short": "Title/name",
-        "definition": "Scientific unabbreviated title or name of the resource.",
-        "comment": "Additional Information: If no official title/name has been defined yet, please provide a title/name that is suitable for public display. | Short Input Help: Please provide at least one title/name of the resource. If the original title is not in English, please also provide an English translation of the original title.",
-        "min": 1,
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "1.3.1 Resource.titles.text"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.title.extension",
-        "path": "ResearchStudy.title.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
-        "id": "ResearchStudy.title.extension:label",
-        "path": "ResearchStudy.title.extension",
-        "sliceName": "label",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-label"
-            ]
-          }
-        ]
-      },
-      {
         "id": "ResearchStudy.status",
         "path": "ResearchStudy.status",
         "comment": "The item does not exist in NFDI4Health' MDS. Fixed to 'active' for all studies.",
@@ -1197,7 +1033,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.1 Design.primaryDesign"
+            "map": "Design.primaryDesign"
           }
         ]
       },
@@ -1223,7 +1059,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.2.1 Design.studyType.interventional"
+            "map": "Design.studyType.interventional"
           }
         ]
       },
@@ -1244,7 +1080,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.2.2 Design.nonInterventional"
+            "map": "Design.studyType.nonInterventional"
           }
         ]
       },
@@ -1374,24 +1210,21 @@
         "max": "1"
       },
       {
-        "id": "ResearchStudy.condition",
-        "path": "ResearchStudy.condition",
-        "short": "Primary health condition(s) or disease(s) considered in the [RESOURCE]",
-        "definition": "Group of items providing information about primary health condition(s) or disease(s) considered in the [RESOURCE].",
+        "id": "ResearchStudy.focus",
+        "path": "ResearchStudy.focus",
+        "short": "Primary focus of the [RESOURCE]",
+        "definition": "Group of items providing information about the focus of the [RESOURCE] (e.g. medication, food, therapy, device, etc.).",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.3 Design.conditions"
+            "map": "Design.focus"
           }
         ]
       },
       {
-        "id": "ResearchStudy.condition.coding.extension:uri",
-        "path": "ResearchStudy.condition.coding.extension",
+        "id": "ResearchStudy.focus.coding.extension:uri",
+        "path": "ResearchStudy.focus.coding.extension",
         "sliceName": "uri",
-        "short": "Code ---- If known, code of the health condition, disease or focus in the terminology/classification used",
-        "definition": "Code of the health condition,  disease, focus in the terminology/classification used.",
-        "comment": "Short input help: If found, the code from the terminology/classification used.",
         "min": 0,
         "max": "1",
         "type": [
@@ -1405,67 +1238,156 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.3.3 Resource.studyDesign.studyConditions.code"
+            "map": "Design.focus.code"
           }
         ]
       },
       {
-        "id": "ResearchStudy.condition.coding.system",
-        "path": "ResearchStudy.condition.coding.system",
+        "id": "ResearchStudy.focus.coding.system",
+        "path": "ResearchStudy.focus.coding.system",
         "short": "Terminology/classification",
-        "definition": "Terminology/classification used for the health condition, disease or focus.",
-        "comment": "Short input help: If used, name of the terminology/classification.",
+        "definition": "Terminology/classification used for the focus area.",
+        "comment": "Short Input Help: If used, name of the terminology/classification.",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-conditions-classification-nci-local"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.focus.classification"
+          }
+        ]
+      },
+      {
+        "id": "ResearchStudy.focus.coding.display",
+        "path": "ResearchStudy.focus.coding.display",
+        "short": "Focus area",
+        "definition": "Focus area of the [RESOURCE] (e.g. medication, food, therapy, device, etc.).",
+        "comment": "Additional Information: The use of terms from established terminologies/classifications (e.g. SNOMED CT, ICD, etc.) is preferred. However, also self-assigned terms are allowed.",
         "min": 1,
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.3.2 Resource.studyDesign.studyConditions.classification"
+            "map": "Design.focus.label"
           }
         ]
       },
       {
-        "id": "ResearchStudy.condition.coding.code",
-        "path": "ResearchStudy.condition.coding.code",
-        "short": "Code",
-        "definition": "Code of the health condition, disease, focus in the terminology/classification used.",
-        "comment": "Short input help: If found, the code from the terminology/classification used.",
+        "id": "ResearchStudy.condition",
+        "path": "ResearchStudy.condition",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "exists",
+              "path": "coding"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "ResearchStudy.condition:conditions",
+        "path": "ResearchStudy.condition",
+        "sliceName": "conditions",
+        "short": "Primary health condition[conditions](s) or disease(s) considered in the [RESOURCE]",
+        "definition": "Group of items providing information about primary health condition[conditions](s) or disease(s) considered in the [RESOURCE].",
+        "min": 0,
+        "max": "*",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.3.3 Resource.studyDesign.studyConditions.code"
+            "map": "Design.conditions"
           }
         ]
       },
       {
-        "id": "ResearchStudy.condition.coding.display",
-        "path": "ResearchStudy.condition.coding.display",
-        "short": "Name of the primary health condition, disease or focus of the study",
-        "definition": "Name of primary health condition or disease considered in the study, or the focus of the study (e.g. medication, food, therapy, device, etc.).",
-        "comment": "Additional information: The use of terms from established terminologies/classifications (e.g. SNOMED CT, ICD, etc.) is preferred. However, also self-assigned terms are allowed. | Short input help: Preferably, use terms from SNOMED CT (https://browser.ihtsdotools.org).",
-        "min": 1,
-        "mapping": [
+        "id": "ResearchStudy.condition:conditions.coding.extension:uri",
+        "path": "ResearchStudy.condition.coding.extension",
+        "sliceName": "uri",
+        "min": 0,
+        "max": "1",
+        "type": [
           {
-            "identity": "NFDI4Health",
-            "map": "1.17.3.1 Resource.studyDesign.studyConditions.label"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.condition.text",
-        "path": "ResearchStudy.condition.text",
-        "short": "Name of the primary health condition, disease or focus of the study",
-        "definition": "Name of primary health condition or disease considered in the study, or the focus of the study (e.g. medication, food, therapy, device, etc.).",
-        "comment": "Additional information: The use of terms from established terminologies/classifications (e.g. SNOMED CT, ICD, etc.) is preferred. However, also self-assigned terms are allowed. |  Short input help: Preferably, use terms from SNOMED CT (https://browser.ihtsdotools.org).",
-        "example": [
-          {
-            "label": "Name of a Condition",
-            "valueString": "SARS-CoV-2"
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-uri"
+            ]
           }
         ],
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.3.1 Resource.studyDesign.studyConditions.label"
+            "map": "Design.conditions.code"
+          }
+        ]
+      },
+      {
+        "id": "ResearchStudy.condition:conditions.coding.system",
+        "path": "ResearchStudy.condition.coding.system",
+        "short": "Terminology/classification",
+        "definition": "Terminology/classification used for the health condition[conditions] or disease.",
+        "comment": "Short Input Help: If used, name of the terminology/classification.",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-conditions-classification-nci-local"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.conditions.classification"
+          }
+        ]
+      },
+      {
+        "id": "ResearchStudy.condition:conditions.coding.display",
+        "path": "ResearchStudy.condition.coding.display",
+        "short": "Primary health condition[conditions] or disease name",
+        "definition": "Name of primary health condition[conditions] or disease considered in the [RESOURCE].",
+        "comment": "Additional information: The use of terms from established terminologies/classifications (e.g. SNOMED CT, ICD, etc.) is preferred. However, also self-assigned terms are allowed.",
+        "min": 1,
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.conditions.label"
+          }
+        ]
+      },
+      {
+        "id": "ResearchStudy.condition:groupsOfDiseasesGenerally",
+        "path": "ResearchStudy.condition",
+        "sliceName": "groupsOfDiseasesGenerally",
+        "short": "Which groups of diseases or conditions were the data collected on?",
+        "definition": "General groups of diseases or conditions on which the data were collected in the [RESOURCE].",
+        "comment": "Additional information: The values originate from the WHO's International Statistical Classification of Diseases and Related Health Problems, 10th Revision (ICD-10). | Short input help: Select all that apply. For more information about the groups of diseases/conditions, visit the WHO's ICD-10 homepage: https://icd.who.int/en.",
+        "min": 1,
+        "max": "*",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-diseases-generally-icd-sct",
+          "description": "Value set defining codes from ICD-10 to specify groups of diseases or conditions on which the data were collected in the study."
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.groupsOfDiseases.generally"
+          }
+        ]
+      },
+      {
+        "id": "ResearchStudy.condition:groupsOfDiseasesConditions",
+        "path": "ResearchStudy.condition",
+        "sliceName": "groupsOfDiseasesConditions",
+        "short": "On which other diseases or conditions were the data collected?",
+        "definition": "Diseases or conditions on which the data were collected in the [RESOURCE].",
+        "comment": "Additional information: The values originate from the WHO's International Statistical Classification of Diseases and Related Health Problems, 10th Revision (ICD-10). | Short input help: Select all that apply. Values are based on lower level ICD-10. For more information visit the WHO's ICD-10 homepage: https://icd.who.int/en.",
+        "min": 0,
+        "max": "*",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.groupsOfDiseases.conditions"
           }
         ]
       },
@@ -1618,54 +1540,6 @@
         ]
       },
       {
-        "id": "ResearchStudy.description",
-        "path": "ResearchStudy.description",
-        "short": "text",
-        "definition": "Short plain text summary of the [RESOURCE].",
-        "min": 1,
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "Resource.descriptions.text"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.description.extension",
-        "path": "ResearchStudy.description.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "rules": "open"
-        },
-        "min": 1
-      },
-      {
-        "id": "ResearchStudy.description.extension:language",
-        "path": "ResearchStudy.description.extension",
-        "sliceName": "language",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/StructureDefinition/language"
-            ]
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "Resource.descriptions.language"
-          }
-        ]
-      },
-      {
         "id": "ResearchStudy.enrollment",
         "path": "ResearchStudy.enrollment",
         "short": "Eligibility criteria for study participants",
@@ -1689,26 +1563,26 @@
       {
         "id": "ResearchStudy.period.start",
         "path": "ResearchStudy.period.start",
-        "short": "Start date of data collection for the study",
-        "definition": "Start date of data collection for the study.",
-        "comment": "Additional information: Preferred date format: DD.MM.YYYY. | Short input help: In case of a planned study, it is the intended start date; in case of an ongoing study — the actual start date.",
+        "short": "Start date",
+        "definition": "Start date of data collection for the [RESOURCE].",
+        "comment": "Additional information: Preferred date format: DD.MM.YYYY. | Short input help: In case of a planned [RESOURCE], enter the intended start date. In case of an ongoing [RESOURCE], enter the actual start date.",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.13 Resource.studyDesign.studyStartDate"
+            "map": "Design.administrativeInformation.startDate"
           }
         ]
       },
       {
         "id": "ResearchStudy.period.end",
         "path": "ResearchStudy.period.end",
-        "short": "End date of data collection for the study",
-        "definition": "In case of studies with patients or other participants, it is the date when the last participant is examined or receives an intervention, or the date of the last participant’s last visit.",
-        "comment": "Additional information: Preferred date format: DD.MM.YYYY. | Short input help: In case of a planned or ongoing study, it is the intended end date; in case of a completed study — the actual end date.",
+        "short": "End date",
+        "definition": "In case of a [RESOURCE] with patients or other participants, it is the date when the last participant is examined or receives an intervention, or the date of the last participant’s last visit.",
+        "comment": "Additional information: Preferred date format: DD.MM.YYYY. | In case of a [RESOURCE] with patients or other participants, it is the date when the last participant is examined or receives an intervention, or the date of the last participant’s last visit.",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.14 Resource.studyDesign.studyEndDate"
+            "map": "Design.administrativeInformation.endDate"
           }
         ]
       },
@@ -1726,37 +1600,33 @@
         ]
       },
       {
-        "id": "ResearchStudy.reasonStopped",
-        "path": "ResearchStudy.reasonStopped",
-        "short": "Reason why the study was stopped",
-        "definition": "If the study was stopped prematurely, specification of the reason(s) why it was halted.",
-        "comment": "Short input help: E.g., accrual goal met / closed due to toxicity / closed due to lack of study progress / temporarily-closed per study design /etc."
-      },
-      {
-        "id": "ResearchStudy.reasonStopped.extension:haltedStage",
-        "path": "ResearchStudy.reasonStopped.extension",
-        "sliceName": "haltedStage",
-        "min": 0,
+        "id": "ResearchStudy.reasonStopped.coding",
+        "path": "ResearchStudy.reasonStopped.coding",
+        "short": "Stopping stage",
+        "definition": "Specification of the stage at which the [RESOURCE] was prematurely stopped.",
+        "comment": "Cardinality: 0..1, if Resource.classification.type == ('Study' OR 'Substudy') AND Design.administrativeInformation.status == ('Suspended: Recruitment, data collection, or data quality management, halted, but potentially will resume' OR 'Terminated: Recruitment, data collection, data and quality management halted prematurely and will not resume'); otherwise 0..0 / Short Input Help: Select one value from the list. / Source of the property and/or allowed values: NFDI4Health, CT.gov [2], DRKS [3]",
         "max": "1",
-        "type": [
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-status-halted-stage-local"
+        },
+        "mapping": [
           {
-            "code": "Extension",
-            "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-status-halted-stage"
-            ]
+            "identity": "NFDI4Health",
+            "map": "Design.administrativeInformation.stageStopped"
           }
         ]
       },
       {
         "id": "ResearchStudy.reasonStopped.text",
         "path": "ResearchStudy.reasonStopped.text",
-        "short": "Reason why the study was stopped",
-        "definition": "If the study was stopped prematurely, specification of the reason(s) why it was halted.",
-        "comment": "Short input help: E.g., accrual goal met / closed due to toxicity / closed due to lack of study progress / temporarily-closed per study design /etc.",
+        "short": "Stopping reason",
+        "definition": "Specification of the reason(s) why the [RESOURCE] was prematurely stopped.",
+        "comment": "Cardinality: 0..1, if Resource.classification.type == ('Study' OR 'Substudy') AND Design.administrativeInformation.status == ('Suspended: Recruitment, data collection, or data quality management, halted, but potentially will resume' OR 'Terminated: Recruitment, data collection, data and quality management halted prematurely and will not resume'); otherwise 0..0 / Short Input Help: You can provide reasons such as closed due to toxicity, closed due to lack of [RESOURCE] progress, temporarily-closed per [RESOURCE] design, etc. / Source of the property and/or allowed values: CT.gov [2], DRKS [3]",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.10 Resource.studyDesign.reasonStopped"
+            "map": "Design.administrativeInformation.reasonStopped"
           }
         ]
       },

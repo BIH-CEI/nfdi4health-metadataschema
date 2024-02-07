@@ -13,7 +13,6 @@ Description: "Profile to collect information how data was collected - manually v
 * . ^definition = "Group of items providing information about provenance aspects of the data entry on this portal."
 * meta.versionId ^short = "Version number"
 * meta.versionId ^definition = "Version number of the [RESOURCE] within the portal/system"
-* extension contains NFDI4Health_EX_MDS_Provenance_Data_Source named dataSource 1..1
 * target only Reference(NFDI4Health_PR_MDS_Questionnaire or NFDI4Health_PR_MDS_Document or NFDI4Health_PR_MDS_Study)
 * target ^definition = "The Reference(s) that were generated or updated by the activity described in this resource. A provenance can point to more than one target if multiple resources were created/updated by the same activity."
 * recorded ^short = "Last verified on | First submitted on | First posted/published on | Last update submitted on | Last update posted/published on"
@@ -29,18 +28,18 @@ Mapping: NFDI4Health-Provenance-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_PR_MDS_Provenance
-* -> "1.16 Resource.provenance"
+* -> "Resource.provenance"
 * meta.versionId -> "1.16.12 Resource.provenance.resourceVersion"
-* recorded -> "1.16.2 Resource.provenance.verificationDate"
-* recorded -> "1.16.4 Resource.provenance.firstSubmittedDate"
-* recorded -> "1.16.6 Resource.provenance.firstPostedDate"
-* recorded -> "1.16.8 Resource.provenance.lastUpdateSubmittedDate"
-* recorded -> "1.16.10 Resource.provenance.lastUpdatePostedDate"
-* agent -> "1.16.3 Resource.provenance.verificationUser"
-* agent -> "1.16.5 Resource.provenance.firstSubmittedUser"
-* agent -> "1.16.7 Resource.provenance.firstPostedUser"
-* agent -> "1.16.9 Resource.provenance.lastUpdateSubmittedUser"
-* agent -> "1.16.11 Resource.provenance.lastUpdatePostedUser"
+* recorded -> "Resource.provenance.verificationDate"
+* recorded -> "Resource.provenance.firstSubmittedDate"
+* recorded -> "Resource.provenance.firstPostedDate"
+* recorded -> "Resource.provenance.lastUpdateSubmittedDate"
+* recorded -> "Resource.provenance.lastUpdatePostedDate"
+* agent -> "Resource.provenance.verificationUser"
+* agent -> "Resource.provenance.firstSubmittedUser"
+* agent -> "Resource.provenance.firstPostedUser"
+* agent -> "Resource.provenance.lastUpdateSubmittedUser"
+* agent -> "Resource.provenance.lastUpdatePostedUser"
 
 
 

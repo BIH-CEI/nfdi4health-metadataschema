@@ -65,7 +65,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.9.2 Resource.nonStudyDetails.format"
+            "map": "Resource.nonStudyDetails.format"
           }
         ]
       },

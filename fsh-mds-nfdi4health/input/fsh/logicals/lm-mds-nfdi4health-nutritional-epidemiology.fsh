@@ -1,7 +1,7 @@
-Logical: NFDI4Health_LM_Metadataschema_NE_V3_3
+Logical: NFDI4Health_LM_Metadataschema_NE
 Parent: Element
-Id: nfdi4health-lm-metadataschema-ne-v3-3
-Title: "NFDI4Health LM Nutritional Epidemiology Metadataschema (UC 5.1) V3.3"
+Id: nfdi4health-lm-metadataschema-ne
+Title: "NFDI4Health LM Nutritional Epidemiology Metadataschema (UC 5.1)"
 Description: "NFDI4Health LogicalModel Nutritional Epidemiology Metadataschema (Use Case 5.1) V3.3"
 * ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-ne-v3-3"
 * ^publisher = "NFDI4Health"
@@ -43,22 +43,3 @@ Description: "NFDI4Health LogicalModel Nutritional Epidemiology Metadataschema (
 * DietAssessment.dietarySupplements 1..1 boolean "Dietary supplements inquired?" "Indication whether the dietary assessment instrument inquires information about dietary supplements."
 * DietAssessment.dietarySupplements ^comment = "Source of the property and/or allowed values: NFDI4Health UC 5.1 requirements"
 
-Mapping: NFDI4Health_NE_Metadataschema_V3_3_Internal_Numbering
-Id: NFDI4Health-NE-Metadataschema-V3-3-Internal-Numbering
-Title: "NFDI4Health Nutritional Epidemiology Metadataschema Version 3.3 Mapping to internal numbering of Metadataschema Version 3.3"
-Source: NFDI4Health_LM_Metadataschema_NE_V3_3
-* DietAssessment -> "NE1"
-* DietAssessment.instrument -> "NE1.1"
-* DietAssessment.ffqItemsNumber -> "NE1.2"
-* DietAssessment.mode -> "NE1.3"
-* DietAssessment.device -> "NE1.4"
-* DietAssessment.portionSizeEstimation -> "NE1.5"
-* DietAssessment.referencePeriodUnit -> "NE1.6"
-* DietAssessment.referencePeriodNumber -> "NE1.7"
-* DietAssessment.repeat -> "NE1.8"
-* DietAssessment.repeatFrequency -> "NE1.9"
-* DietAssessment.validity -> "NE1.10"
-* DietAssessment.validityReference -> "NE1.11"
-* DietAssessment.reliability -> "NE1.12"
-* DietAssessment.reliabilityReference -> "NE1.13"
-* DietAssessment.dietarySupplements -> "NE1.14"

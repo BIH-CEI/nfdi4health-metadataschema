@@ -61,7 +61,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.10.3 Resource.contributors.personal"
+            "map": "Resource.contributors.personal"
           }
         ]
       },
@@ -73,7 +73,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.10.3.4 Resource.contributors.personal.identifiers"
+            "map": "Resource.contributors.personal.identifiers"
           }
         ]
       },
@@ -94,7 +94,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.10.3.4.2 Resource.contributors.personal.identifiers.scheme"
+            "map": "Resource.contributors.personal.identifiers.scheme"
           }
         ]
       },
@@ -125,7 +125,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.10.3.4.1 Resource.contributors.personal.identifiers.identifier"
+            "map": "Resource.contributors.personal.identifiers.identifier"
           }
         ]
       },
@@ -144,7 +144,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.10.3.3 Resource.contributors.personal.familyName"
+            "map": "Resource.contributors.personal.familyName"
           }
         ]
       },
@@ -158,7 +158,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.10.3.2 Resource.contributors.personal.givenName"
+            "map": "Resource.contributors.personal.givenName"
           }
         ]
       }

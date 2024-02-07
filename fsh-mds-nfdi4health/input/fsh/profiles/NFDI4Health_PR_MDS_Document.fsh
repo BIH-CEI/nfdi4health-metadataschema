@@ -13,23 +13,11 @@ Description: "Profile to collect information about documents related to german c
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
 * extension contains
-    NFDI4Health_EX_MDS_Resource_Type named resourceType 1..1 and
-    NFDI4Health_EX_MDS_Resource_Type_General named resourceTypeGeneral 0..1 and
     NFDI4Health_EX_MDS_Keywords named keywords 0..* and
-    NFDI4Health_EX_MDS_Associated_Party named roles 1..* and
+    NFDI4Health_EX_MDS_Descriptions named descritpions 1..1 and
     NFDI4Health_EX_MDS_Document_Use_Rights named useRights 0..1 and 
     NFDI4Health_EX_MDS_Related named relatedResources 0..1 and
     NFDI4Health_EX_MDS_Execution_Language named executionLanguage 0..*
-* masterIdentifier 1..
-* masterIdentifier ^short = "ID of the [RESOURCE]"
-* masterIdentifier ^definition = "Unique identifier of the resource used for identification within the NFDI4Health."
-* masterIdentifier ^comment = "Additional information: The identifier is assigned automatically."
-* masterIdentifier.system 1..
-* masterIdentifier.system = "https://csh.nfdi4health.de/resource/" (exactly)
-* masterIdentifier.value 1..
-* masterIdentifier.type = $Remaining#104 "NFDI4Health" (exactly)
-* masterIdentifier.use 1..
-* masterIdentifier.use = #official (exactly)
 * identifier ^short = "Alternative identifiers"
 * identifier ^definition = "Group of items providing information about identifiers (IDs) assigned to the given resource by another registering systems, e.g. a register of clinical trials or a data repository."
 * identifier ^comment = "Short input help: If the [RESOURCE] is registered in other systems (e.g. a register of clinical trials or a data repository), you can provide corresponding identifier(s) here."
@@ -47,7 +35,7 @@ Description: "Profile to collect information about documents related to german c
     MDMPortal 0..* and
     Other 0..*
 * identifier.type 1..1
-* identifier.type from NFDI4Health_VS_MDS_ID_TYPE_UMLS_Local (required)
+* identifier.type from NFDI4Health_VS_MDS_ID_TYPE_NCI_Local (required)
 * identifier[DRKS] ^definition = "Group of items providing information about identifiers (IDs) assigned to the given resource by another registering systems, e.g. a register of clinical trials or a data repository."
 * identifier[DRKS].type = $Remaining#098 "DRKS" (exactly)
 * identifier[DRKS].system 1..
@@ -113,20 +101,10 @@ Description: "Profile to collect information about documents related to german c
 * identifier[Other].system ^definition = "Type/name of the system where the given resource is already registered."
 * identifier[Other].value 1..
 * identifier[Other].value ^definition = "Identifier (ID) assigned to the given resource by another registering system, e.g. by a register of clinical trials or a data repository."
-* description 1..1
-* description ^short = "text"
-* description ^definition = "Short plain text summary of the [RESOURCE]."
-* description.extension ^slicing.discriminator.type = #value
-* description.extension ^slicing.discriminator.path = "url"
-* description.extension ^slicing.rules = #open
-* description.extension contains NFDI4Health_EX_MDS_Language named language 1..1
-* description.extension[language] ^short = "language"
-* description.extension[language] ^definition = "Language in which the description text is provided."
 * content.extension ^slicing.discriminator.type = #value
 * content.extension ^slicing.discriminator.path = "url"
 * content.extension ^slicing.rules = #open
 * content.extension ^min = 0
-* content.extension contains NFDI4Health_EX_MDS_Label named label 1..*
 * content.extension contains NFDI4Health_EX_MDS_Version named version 0..1
 * content.attachment.language 0..1
 * content.attachment.language ^short = "Language(s) of the [RESOURCE]"
@@ -146,7 +124,6 @@ Mapping: NFDI4Health-Document-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health Document to FHIR Mapping"
 Source: NFDI4Health_PR_MDS_Document
-* masterIdentifier -> "1.1 Resource.identifier"
 * identifier -> "1.11 Resource.idsAlternative"
 * identifier[DRKS] -> "1.11 Resource.idsAlternative"
 * identifier[DRKS].system -> "1.11.1 Resource.idsAlternative.scheme" "Type = DRKS"
@@ -184,15 +161,12 @@ Source: NFDI4Health_PR_MDS_Document
 * identifier[Other].system -> "1.11.1 Resource.idsAlternative.scheme" "Type = Other"
 * identifier[Other].type -> "1.11.1 Resource.idsAlternative.scheme" "Type = Other"
 * identifier[Other].value -> "1.11.2 Resource.idsAlternative.identifier"
-* extension[resourceType] -> "1.2.1 Resource.classification.type"
-* extension[resourceTypeGeneral] -> "1.2.2 Resource.classification.typeGeneral"
-* description -> "1.5.1 Resource.descriptions.text"
-* description.extension[language] -> "1.5.2 Resource.descriptions.language"
-* content.extension[label] -> "1.3 Resource.titles" "1.4 Resource.acronyms"
-* content.extension[version] -> "1.9.1 Resource.nonStudyDetails.version"
+* extension[descritpions] -> "Resource.descriptions"
+* content.extension[version] -> "Resource.nonStudyDetails.version"
 * content.attachment.language -> "1.8 Resource.languages"
-* content.format -> "1.9.2 Resource.nonStudyDetails.format"
-* extension[relatedResources] -> "1.12 Resource.ids"
-* extension[relatedResources] -> "1.13 Resource.idsNfdi4health"
-* extension[relatedResources] -> "1.8 Resource.webpage"
+* content.format -> "Resource.nonStudyDetails.format"
+* extension[relatedResources] -> "Resource.ids"
+* extension[relatedResources] -> "Resource.idsNfdi4health"
+* extension[relatedResources] -> "Resource.webpage"
+* extension[useRights] -> "Resource.nonStudyDetails.useRights"
 

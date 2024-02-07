@@ -57,7 +57,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.9.3.3 Resource.nonStudyDetails.useRights.confirmations"
+            "map": "Resource.nonStudyDetails.useRights.confirmations"
           }
         ]
       },
@@ -77,7 +77,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.9.3.3.1 Resource.nonStudyDetails.useRights.confirmations.authority"
+            "map": "Resource.nonStudyDetails.useRights.confirmations.authority"
           }
         ]
       },
@@ -111,7 +111,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.9.3.3.2 Resource.nonStudyDetails.useRights.confirmations.terms"
+            "map": "Resource.nonStudyDetails.useRights.confirmations.terms"
           }
         ]
       },
@@ -146,7 +146,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.9.3.3.3 Resource.nonStudyDetails.useRights.confirmations.irrevocability"
+            "map": "Resource.nonStudyDetails.useRights.confirmations.irrevocability"
           }
         ]
       },
@@ -180,7 +180,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.9.3.3.4 Resource.nonStudyDetails.useRights.confirmations.supportByLicencing"
+            "map": "Resource.nonStudyDetails.useRights.confirmations.supportByLicencing"
           }
         ]
       },

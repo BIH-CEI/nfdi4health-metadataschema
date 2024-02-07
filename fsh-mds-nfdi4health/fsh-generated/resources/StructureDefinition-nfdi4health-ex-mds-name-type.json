@@ -1,10 +1,10 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "nfdi4health-ex-mds-provenance-data-source",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-provenance-data-source",
+  "id": "nfdi4health-ex-mds-name-type",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-name-type",
   "version": "0.9",
-  "name": "NFDI4Health_EX_MDS_Provenance_Data_Source",
-  "title": "NFDI4Health EX MDS Provenance Data Source",
+  "name": "NFDI4Health_EX_MDS_Name_Type",
+  "title": "NFDI4Health EX MDS Name Type",
   "status": "draft",
   "publisher": "NFDI4Health",
   "contact": [
@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "description": "Extension providing information about the source of information of the resource and the way it was uploaded/collected.",
+  "description": "Group of items providing information about person(s), group(s) of persons or institution(s)/organisation(s) contributing to the resource.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -35,7 +35,7 @@
   "context": [
     {
       "type": "element",
-      "expression": "Provenance"
+      "expression": "Composition"
     }
   ],
   "type": "Extension",
@@ -46,14 +46,14 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Source of information about the [RESOURCE]",
-        "definition": "Source of information about the [RESOURCE] and the way it was uploaded/collected.",
+        "short": "Is it a personal or organisational contribution?",
+        "definition": "Indication whether the contribution was made by person(s) or organisation(s)/institution(s)/group(s).",
         "min": 1,
         "max": "1",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "Resource.provenance.dataSource"
+            "map": "Resource.contributors.nameType"
           }
         ]
       },
@@ -65,12 +65,28 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-provenance-data-source"
+        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-name-type"
       },
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
-        "min": 1,
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Extension.value[x]:valueCoding",
+        "path": "Extension.value[x]",
+        "sliceName": "valueCoding",
+        "min": 0,
+        "max": "1",
         "type": [
           {
             "code": "Coding"
@@ -78,19 +94,8 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-provenance-data-source-local",
-          "description": "Value set created by NFDI4Health defining codes for data sources in a Provenance resource."
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-role-name-type-snomed"
         }
-      },
-      {
-        "id": "Extension.value[x].system",
-        "path": "Extension.value[x].system",
-        "min": 1
-      },
-      {
-        "id": "Extension.value[x].code",
-        "path": "Extension.value[x].code",
-        "min": 1
       }
     ]
   }

@@ -65,7 +65,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.16 Resource.provenance"
+            "map": "Resource.provenance"
           }
         ]
       },
@@ -78,36 +78,6 @@
           {
             "identity": "NFDI4Health",
             "map": "1.16.12 Resource.provenance.resourceVersion"
-          }
-        ]
-      },
-      {
-        "id": "Provenance.extension",
-        "path": "Provenance.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "min": 1
-      },
-      {
-        "id": "Provenance.extension:dataSource",
-        "path": "Provenance.extension",
-        "sliceName": "dataSource",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-provenance-data-source"
-            ]
           }
         ]
       },
@@ -134,23 +104,23 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.16.2 Resource.provenance.verificationDate"
+            "map": "Resource.provenance.verificationDate"
           },
           {
             "identity": "NFDI4Health",
-            "map": "1.16.4 Resource.provenance.firstSubmittedDate"
+            "map": "Resource.provenance.firstSubmittedDate"
           },
           {
             "identity": "NFDI4Health",
-            "map": "1.16.6 Resource.provenance.firstPostedDate"
+            "map": "Resource.provenance.firstPostedDate"
           },
           {
             "identity": "NFDI4Health",
-            "map": "1.16.8 Resource.provenance.lastUpdateSubmittedDate"
+            "map": "Resource.provenance.lastUpdateSubmittedDate"
           },
           {
             "identity": "NFDI4Health",
-            "map": "1.16.10 Resource.provenance.lastUpdatePostedDate"
+            "map": "Resource.provenance.lastUpdatePostedDate"
           }
         ]
       },
@@ -172,23 +142,23 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.16.3 Resource.provenance.verificationUser"
+            "map": "Resource.provenance.verificationUser"
           },
           {
             "identity": "NFDI4Health",
-            "map": "1.16.5 Resource.provenance.firstSubmittedUser"
+            "map": "Resource.provenance.firstSubmittedUser"
           },
           {
             "identity": "NFDI4Health",
-            "map": "1.16.7 Resource.provenance.firstPostedUser"
+            "map": "Resource.provenance.firstPostedUser"
           },
           {
             "identity": "NFDI4Health",
-            "map": "1.16.9 Resource.provenance.lastUpdateSubmittedUser"
+            "map": "Resource.provenance.lastUpdateSubmittedUser"
           },
           {
             "identity": "NFDI4Health",
-            "map": "1.16.11 Resource.provenance.lastUpdatePostedUser"
+            "map": "Resource.provenance.lastUpdatePostedUser"
           }
         ]
       },

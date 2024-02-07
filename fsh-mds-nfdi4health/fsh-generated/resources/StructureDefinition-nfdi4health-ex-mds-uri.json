@@ -42,8 +42,14 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "NFDI4Health EX MDS URI",
-        "definition": "Extension defining an URI"
+        "short": "Code of the health condition[conditions] or disease",
+        "definition": "Code of the health condition[conditions] or disease in the terminology/classification used.",
+        "comment": "Short input help: If known, you can provide the code from the terminology/classification used.",
+        "example": [
+          {
+            "valueUri": "http://snomed.info/id/840533007"
+          }
+        ]
       },
       {
         "id": "Extension.extension",
@@ -62,9 +68,6 @@
         "type": [
           {
             "code": "uri"
-          },
-          {
-            "code": "url"
           }
         ]
       }

@@ -79,49 +79,7 @@
           ],
           "rules": "open"
         },
-        "min": 2
-      },
-      {
-        "id": "DocumentReference.extension:resourceType",
-        "path": "DocumentReference.extension",
-        "sliceName": "resourceType",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-resource-type"
-            ]
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "1.2.1 Resource.classification.type"
-          }
-        ]
-      },
-      {
-        "id": "DocumentReference.extension:resourceTypeGeneral",
-        "path": "DocumentReference.extension",
-        "sliceName": "resourceTypeGeneral",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-resource-type-general"
-            ]
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "1.2.2 Resource.classification.typeGeneral"
-          }
-        ]
+        "min": 1
       },
       {
         "id": "DocumentReference.extension:keywords",
@@ -139,17 +97,23 @@
         ]
       },
       {
-        "id": "DocumentReference.extension:roles",
+        "id": "DocumentReference.extension:descritpions",
         "path": "DocumentReference.extension",
-        "sliceName": "roles",
+        "sliceName": "descritpions",
         "min": 1,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-associated-party"
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-descriptions"
             ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Resource.descriptions"
           }
         ]
       },
@@ -165,6 +129,12 @@
             "profile": [
               "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-document-use-rights"
             ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Resource.nonStudyDetails.useRights"
           }
         ]
       },
@@ -185,15 +155,15 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12 Resource.ids"
+            "map": "Resource.ids"
           },
           {
             "identity": "NFDI4Health",
-            "map": "1.13 Resource.idsNfdi4health"
+            "map": "Resource.idsNfdi4health"
           },
           {
             "identity": "NFDI4Health",
-            "map": "1.8 Resource.webpage"
+            "map": "Resource.webpage"
           }
         ]
       },
@@ -211,50 +181,6 @@
             ]
           }
         ]
-      },
-      {
-        "id": "DocumentReference.masterIdentifier",
-        "path": "DocumentReference.masterIdentifier",
-        "short": "ID of the [RESOURCE]",
-        "definition": "Unique identifier of the resource used for identification within the NFDI4Health.",
-        "comment": "Additional information: The identifier is assigned automatically.",
-        "min": 1,
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "1.1 Resource.identifier"
-          }
-        ]
-      },
-      {
-        "id": "DocumentReference.masterIdentifier.use",
-        "path": "DocumentReference.masterIdentifier.use",
-        "min": 1,
-        "fixedCode": "official"
-      },
-      {
-        "id": "DocumentReference.masterIdentifier.type",
-        "path": "DocumentReference.masterIdentifier.type",
-        "fixedCodeableConcept": {
-          "coding": [
-            {
-              "code": "104",
-              "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
-              "display": "NFDI4Health"
-            }
-          ]
-        }
-      },
-      {
-        "id": "DocumentReference.masterIdentifier.system",
-        "path": "DocumentReference.masterIdentifier.system",
-        "min": 1,
-        "fixedUri": "https://csh.nfdi4health.de/resource/"
-      },
-      {
-        "id": "DocumentReference.masterIdentifier.value",
-        "path": "DocumentReference.masterIdentifier.value",
-        "min": 1
       },
       {
         "id": "DocumentReference.identifier",
@@ -284,7 +210,7 @@
         "min": 1,
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-id-type-umls-local"
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-id-type-nci-local"
         }
       },
       {
@@ -829,56 +755,6 @@
         ]
       },
       {
-        "id": "DocumentReference.description",
-        "path": "DocumentReference.description",
-        "short": "text",
-        "definition": "Short plain text summary of the [RESOURCE].",
-        "min": 1,
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "1.5.1 Resource.descriptions.text"
-          }
-        ]
-      },
-      {
-        "id": "DocumentReference.description.extension",
-        "path": "DocumentReference.description.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "rules": "open"
-        },
-        "min": 1
-      },
-      {
-        "id": "DocumentReference.description.extension:language",
-        "path": "DocumentReference.description.extension",
-        "sliceName": "language",
-        "short": "language",
-        "definition": "Language in which the description text is provided.",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/StructureDefinition/language"
-            ]
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "1.5.2 Resource.descriptions.language"
-          }
-        ]
-      },
-      {
         "id": "DocumentReference.content.extension",
         "path": "DocumentReference.content.extension",
         "slicing": {
@@ -889,30 +765,7 @@
             }
           ],
           "rules": "open"
-        },
-        "min": 1
-      },
-      {
-        "id": "DocumentReference.content.extension:label",
-        "path": "DocumentReference.content.extension",
-        "sliceName": "label",
-        "min": 1,
-        "max": "*",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-label"
-            ]
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "1.3 Resource.titles",
-            "comment": "1.4 Resource.acronyms"
-          }
-        ]
+        }
       },
       {
         "id": "DocumentReference.content.extension:version",
@@ -931,7 +784,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.9.1 Resource.nonStudyDetails.version"
+            "map": "Resource.nonStudyDetails.version"
           }
         ]
       },
@@ -970,7 +823,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.9.2 Resource.nonStudyDetails.format"
+            "map": "Resource.nonStudyDetails.format"
           }
         ]
       }

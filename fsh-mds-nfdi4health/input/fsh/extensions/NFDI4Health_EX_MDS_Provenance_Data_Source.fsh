@@ -26,4 +26,4 @@ Mapping: NFDI4Health-Provenance-Data-Source-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Provenance_Data_Source
-* -> "1.16.1 Resource.provenance.dataSource"
+* -> "Resource.provenance.dataSource"

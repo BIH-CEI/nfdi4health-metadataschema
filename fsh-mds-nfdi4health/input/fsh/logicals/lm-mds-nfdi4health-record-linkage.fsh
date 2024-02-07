@@ -1,6 +1,6 @@
-Logical: NFDI4Health_LM_Metadataschema_RecordLinkage_V3_3
+Logical: NFDI4Health_LM_Metadataschema_RecordLinkage
 Parent: Element
-Id: nfdi4health-lm-metadatenschema-recordlinkage-v3-3
+Id: nfdi4health-lm-metadatenschema-recordlinkage
 Title: "Information about record linkage for the [RESOURCE]"
 Description: "Group of items providing information on record linkage."
 
@@ -28,18 +28,5 @@ Description: "Group of items providing information on record linkage."
 * RecordLinkage.exampleResources 0..* string "Record linkage example resources" "DOIs of additional related resources specific to record linkage (e.g., publications)."
 * RecordLinkage.exampleResources ^comment = "Short Input Help: Please do not repeat those already entered in the section 'Related resources'. / Source of the property and/or allowed values: NFDI4Health UC 5.3 requirements"
 
-Mapping: NFDI4Health_RL_Metadataschema_V3_3_Internal_Numbering
-Id: NFDI4Health-RL-Metadataschema-V3-3-Internal-Numbering
-Title: "NFDI4Health Record Linkage Metadataschema Version 3.3 Mapping to internal numbering of Metadataschema Version 3.3"
-Source: NFDI4Health_LM_Metadataschema_RecordLinkage_V3_3
 
-* RecordLinkage -> "RL1"
-* RecordLinkage.legalBasis -> "RL1.1"
-* RecordLinkage.legalBasisDetails -> "RL1.2"
-* RecordLinkage.informedConsent -> "RL1.3"
-* RecordLinkage.responsibleInstitutions -> "RL1.4"
-* RecordLinkage.additionalCosts -> "RL1.5"
-* RecordLinkage.identifiers -> "RL1.6"
-* RecordLinkage.furtherDetails -> "RL1.7"
-* RecordLinkage.exampleResources -> "RL1.8"
 

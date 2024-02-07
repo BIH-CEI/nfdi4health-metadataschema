@@ -72,7 +72,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.9.3.1 Resource.nonStudyDetails.useRights.label"
+            "map": "Resource.nonStudyDetails.useRights.label"
           }
         ]
       },
@@ -96,7 +96,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-use-rights-label-spdx-umls-local"
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-use-rights-label-spdx-smomed-local"
         }
       },
       {
@@ -104,13 +104,12 @@
         "path": "Extension.extension",
         "sliceName": "link",
         "short": "URL of the license",
-        "definition": "Link to the selected license.",
         "min": 0,
         "max": "1",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.9.3.2 Resource.nonStudyDetails.useRights.link"
+            "map": "Resource.nonStudyDetails.useRights.link"
           }
         ]
       },

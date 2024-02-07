@@ -11,8 +11,8 @@ Description: "Profile intended to capture information on the number of centers i
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 
 * description 1..1
-* description ^short = "Number of study centers" 
-* description ^definition = "Number of centers involved in the study."
+* description ^short = "Number of centers" 
+* description ^definition = "Number of centers involved in the [RESOURCE]."
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
@@ -24,5 +24,5 @@ Mapping: NFDI4Health-Centers-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_PR_MDS_Centers
-* description -> "1.17.18 Resource.studyDesign.studyCentersNumber"
-* extension[centers] -> "1.17.17 Resource.studyDesign.studyCenters"
+* description -> "Design.centersNumber"
+* extension[centers] -> "Design.centers"

@@ -1,0 +1,373 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "nfdi4health-pr-mds-composition",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-composition",
+  "version": "0.9",
+  "name": "NFDI4Health_PR_MDS_Composition",
+  "title": "NFDI4Health PR MDS Composition",
+  "status": "draft",
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "description": "Profile intended to capture information on the core information of resources.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "cda",
+      "uri": "http://hl7.org/v3/cda",
+      "name": "CDA (R2)"
+    },
+    {
+      "identity": "fhirdocumentreference",
+      "uri": "http://hl7.org/fhir/documentreference",
+      "name": "FHIR DocumentReference"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "NFDI4Health",
+      "name": "NFDI4Health to FHIR Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Composition",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Composition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Composition.extension",
+        "path": "Composition.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Composition.extension:dataSource",
+        "path": "Composition.extension",
+        "sliceName": "dataSource",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-provenance-data-source"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.identifier",
+        "path": "Composition.identifier",
+        "short": "ID of the [RESOURCE]",
+        "definition": "Unique identifier of the resource used for identification within the NFDI4Health."
+      },
+      {
+        "id": "Composition.identifier.value",
+        "path": "Composition.identifier.value",
+        "min": 1,
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Resource.identifier"
+          }
+        ]
+      },
+      {
+        "id": "Composition.status",
+        "path": "Composition.status",
+        "fixedCode": "final"
+      },
+      {
+        "id": "Composition.type",
+        "path": "Composition.type",
+        "short": "Resource classification",
+        "definition": "Group of items providing information about the classification of the resource within the predefined categories.",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-resource-type-nci-local"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Resource.classification.type"
+          }
+        ]
+      },
+      {
+        "id": "Composition.category",
+        "path": "Composition.category",
+        "short": "In what form is the [RESOURCE] available?",
+        "definition": "Specific information about the form in which the [RESOURCE] is available.",
+        "comment": "Cardinality: 1..1, if Resource.classification.type != ('Study' OR 'Substudy' OR 'Dataset' OR 'Registry' OR 'Secondary data source'); otherwise 0..0",
+        "max": "1",
+        "constraint": [
+          {
+            "key": "core-1",
+            "severity": "error",
+            "human": "When Composition.type = 'C63536' OR 'C198230' OR 'C47824' OR 'C61393' OR '178' then Composition.category must be empty and when Composition.type != 'C63536' OR 'C198230' OR 'C47824' OR 'C61393' OR '178' then Composition.category must exist.",
+            "expression": "type.coding.where(code = 'C63536' or code = 'C198230' or code = 'C47824' or code =  'C61393' or code = '178') implies category.exists().not() and type.coding.where(code != 'C63536' or code != 'C198230' or != 'C47824' or code != 'C61393' or code != '178') implies category.exists()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-composition"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-resource-type-general-nci-msh-local"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Resource.classificiation.typeGeneral"
+          }
+        ]
+      },
+      {
+        "id": "Composition.subject",
+        "path": "Composition.subject",
+        "comment": "1..1, if Resource.classification.type == ('Study' OR 'Substudy' OR 'Registry' OR 'Secondary data source'); otherwise 0..0",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-document",
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire",
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+            ]
+          }
+        ],
+        "constraint": [
+          {
+            "key": "core-2",
+            "severity": "error",
+            "human": "When Composition.type = 'C63536' or 'C198230' or 'C61393' or '178' then subject only Reference (NFDI4Health_PR_MDS_Study)",
+            "expression": "type.coding.where(code = 'C63536' or code = 'C61393' or code = 'C198230' or code = 178) implies subject only Reference (NFDI4Health_PR_MDS_Study)",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-composition"
+          }
+        ]
+      },
+      {
+        "id": "Composition.author",
+        "path": "Composition.author",
+        "short": "Individual or organisation associated with the [RESOURCE]",
+        "definition": "Individual or organisation associated with the [RESOURCE] (use practitionerRole to specify their organisation).",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner-role",
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Resource.contributors"
+          }
+        ]
+      },
+      {
+        "id": "Composition.author.extension",
+        "path": "Composition.author.extension",
+        "min": 1
+      },
+      {
+        "id": "Composition.author.extension:nameType",
+        "path": "Composition.author.extension",
+        "sliceName": "nameType",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-name-type"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Resource.contributors.nameType"
+          }
+        ]
+      },
+      {
+        "id": "Composition.title",
+        "path": "Composition.title",
+        "short": "Title/name",
+        "definition": "Scientific unabbreviated title or name of the resource.",
+        "comment": "Additional Information: If no official title/name has been defined yet, please provide a title/name that is suitable for public display. | Short Input Help: Please provide at least one title/name of the resource. If the original title is not in English, please also provide an English translation of the original title.",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Resource.titles"
+          },
+          {
+            "identity": "NFDI4Health",
+            "map": "Resource.acronyms"
+          }
+        ]
+      },
+      {
+        "id": "Composition.title.extension",
+        "path": "Composition.title.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Composition.title.extension:label",
+        "path": "Composition.title.extension",
+        "sliceName": "label",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-label"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section",
+        "path": "Composition.section",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Composition.section:nutritionalData",
+        "path": "Composition.section",
+        "sliceName": "nutritionalData",
+        "short": "Collects nutritional data?",
+        "definition": "Specification of the dietary assessment instrument used in the [RESOURCE].",
+        "comment": "1..1, if Resource.classification.type == ('Study' OR 'Substudy') AND Resource.provenance.dataSource == 'Manually collected'; otherwise 0..0",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.14 Resource.nutritionalData"
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:nutritionalData.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "C16927",
+              "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+              "display": "Nutritional Science"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Composition.section:nutritionalData.focus",
+        "path": "Composition.section.focus",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-observation-nutritional-epidemiology"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:chronicDiseases",
+        "path": "Composition.section",
+        "sliceName": "chronicDiseases",
+        "short": "Includes chronic diseases?",
+        "definition": "Indication whether the [RESOURCE] addresses chronic diseases.",
+        "comment": "1..1, if Resource.provenance.dataSource == 'Manually collected'; otherwise 0..0",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Resource.chronicDiseases"
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:chronicDiseases.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "C165593",
+              "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+              "display": "Chronic Disease"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Composition.section:chronicDiseases.focus",
+        "path": "Composition.section.focus",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-observation-nutritional-epidemiology"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -61,7 +61,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.13 Resource.idsNfdi4health"
+            "map": "Resource.idsNfdi4health"
           }
         ]
       },
@@ -82,7 +82,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12 Resource.ids"
+            "map": "Resource.ids"
           }
         ]
       },
@@ -95,7 +95,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.8 Resource.webpage"
+            "map": "Resource.webpage"
           }
         ]
       }

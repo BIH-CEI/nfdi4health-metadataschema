@@ -53,6 +53,16 @@
   "differential": {
     "element": [
       {
+        "id": "PractitionerRole",
+        "path": "PractitionerRole",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Resource.contributors.personal"
+          }
+        ]
+      },
+      {
         "id": "PractitionerRole.practitioner",
         "path": "PractitionerRole.practitioner",
         "type": [
@@ -74,15 +84,32 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Organization",
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-affiliation"
             ]
           }
         ],
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.10.6 Resource.contributors.affiliation"
+            "map": "Resource.contributors.affiliations"
+          }
+        ]
+      },
+      {
+        "id": "PractitionerRole.code",
+        "path": "PractitionerRole.code",
+        "short": "Contributor type",
+        "definition": "Contributor type a person fulfills. For example, this can be a principal investigator of a study or an author of a document.",
+        "min": 1,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-personal-roles-nci-local"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Resource.contributors.personal.type"
           }
         ]
       },
@@ -112,7 +139,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.10.4 Resource.contributors.email"
+            "map": "Resource.contributors.email"
           }
         ]
       },
@@ -144,7 +171,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.10.5 Resource.contributors.phone"
+            "map": "Resource.contributors.phone"
           }
         ]
       },

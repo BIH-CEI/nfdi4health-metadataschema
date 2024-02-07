@@ -1,8 +1,8 @@
-ValueSet: NFDI4Health_VS_MDS_ID_TYPE_UMLS_Local
-Id: nfdi4health-vs-mds-id-type-umls-local
-Title: "NFDI4Health VS MDS ID Type [UMLS, local]"
+ValueSet: NFDI4Health_VS_MDS_ID_TYPE_NCI_Local
+Id: nfdi4health-vs-mds-id-type-nci-local
+Title: "NFDI4Health VS MDS ID Type [NCI, local]"
 Description: "Value set defining codes to specify the type of a resource identifier."
-* ^url = "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-id-type-umls-local"
+* ^url = "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-id-type-nci-local"
 * ^status = #draft
 * ^version = "0.9"
 * ^experimental = true
@@ -11,12 +11,11 @@ Description: "Value set defining codes to specify the type of a resource identif
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 
 * $Remaining#098 "DRKS"
-* $UMLS#C5419532 "Clinicaltrials.gov Identifier"
+* $NCI#C172240 "Clinicaltrials.gov Identifier"
 * $Remaining#099 "ISRCTN"
-* $UMLS#C4329800 "European Union Drug Regulating Authorities Clinical Trials Database (Intellectual Product)"
+* $NCI#C132782 "European Union Drug Regulating Authorities Clinical Trials Database"
 * $Remaining#100 "EUDAMED"
 * $Remaining#101 "UTN"
 * $Remaining#102 "KonsortSWD"
 * $Remaining#103 "MDM Portal"
-* $UMLS#C0205394 "Other (Qualitative Concept)"
-* $Remaining#104 "NFDI4Health"
+* $NCI#C17649 "Other"

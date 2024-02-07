@@ -56,11 +56,10 @@
         "path": "Extension",
         "short": "Language(s) of the [RESOURCE]",
         "definition": "Language(s) in which the [RESOURCE] is conducted/provided.",
-        "comment": "Short Input Help: Select all that apply.",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1. 7 Resource.languages"
+            "map": "Resource.languages"
           }
         ]
       },

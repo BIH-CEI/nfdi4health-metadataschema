@@ -14,8 +14,9 @@ Description: "Extension informing about the number of centers."
 
 * value[x] 1..1
 * value[x] only Coding
-* valueCoding ^short = "Is it a mono- or multicentric study?"
-* valueCoding ^definition = "Specification whether a study is conducted at one study center or at more than one study center."
+* valueCoding ^short = "Mono- or multicentric?"
+* valueCoding ^definition = "Specification whether the [RESOURCE] is conducted at only one or at more than one [RESOURCE] center."
+* valueCoding ^comment = "0..1, if Resource.classification.type == ('C63536' OR 'C198230'); otherwise 0..0"
 * valueCoding.code 1..1
 * valueCoding.system 1..1
 * valueCoding from $nfdi4health-vs-mds-study-centers-snomedct-local (required)
@@ -24,4 +25,4 @@ Mapping: NFDI4Health-EX-Centers-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Centers
-* valueCoding -> "1.17.17 Resource.studyDesign.studyCenters"
+* valueCoding -> "Design.centers"

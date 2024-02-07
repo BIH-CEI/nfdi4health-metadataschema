@@ -52,7 +52,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.6 Resource.studyDesign.ethicsCommiteeApproval"
+            "map": "Design.administrativeInformation.ethicsCommitteeApproval"
           }
         ]
       },
