@@ -45,8 +45,15 @@
       {
         "id": "Group",
         "path": "Group",
-        "short": "Eligibility criteria for study participants",
-        "definition": "Group of items providing information about eligibility criteria for study participants."
+        "short": "Eligibility criteria for [RESOURCE] participants",
+        "definition": "Group of items providing information about eligibility criteria for [RESOURCE] participants.",
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.16 Design.eligibilityCriteria"
+          }
+        ]
       },
       {
         "id": "Group.actual",
@@ -57,8 +64,13 @@
         "id": "Group.quantity",
         "path": "Group.quantity",
         "short": "Target sample size",
-        "definition": "Intended number of observational units for the whole study (e.g. intended number of study participants at all study sites).",
-        "comment": "Short Input Help: Enter “-1” if target sample size was not set or is unknown."
+        "definition": "Intended number of observational units for the whole [RESOURCE] (e.g. intended number of [RESOURCE] participants at all sites of the [RESOURCE]).",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.17.5 Design.population.targetSampleSize"
+          }
+        ]
       },
       {
         "id": "Group.characteristic",
@@ -80,13 +92,13 @@
         "path": "Group.characteristic",
         "sliceName": "eligibleMinimumAge",
         "short": "Eligibility criteria: Minimum age",
-        "definition": "Group of items providing information about the minimum eligible age of study participants.",
+        "definition": "Group of items providing information about the minimum eligible age of [RESOURCE] participants.",
         "min": 0,
         "max": "1",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.23.1 Resource.studyDesign.eligibilityCriteria.ageMin"
+            "map": "1.17.16.1 Design.eligibilityCriteria.ageMin"
           }
         ]
       },
@@ -116,19 +128,21 @@
         "id": "Group.characteristic:eligibleMinimumAge.value[x].value",
         "path": "Group.characteristic.value[x].value",
         "short": "Minimum eligible age",
-        "definition": "Numerical value of the minimum age of potential participants eligible to participate in the study.",
+        "definition": "Numerical value of the minimum age of potential participants eligible to participate in the [RESOURCE].",
+        "comment": "Additional information: In the case of cohort studies, further participant ages can be indicated in the fields 'Inclusion criteria' or 'Exclusion criteria'. | Short input help: If age is less than 1 year, please indicate a value in months, weeks, days, hours, minutes, or weeks of gestation.",
         "min": 1,
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.23.1.1 Resource.studyDesign.eligibilityCriteria.ageMin.number"
+            "map": "1.17.16.1.1 Design.eligibilityCriteria.ageMin.number"
           }
         ]
       },
       {
         "id": "Group.characteristic:eligibleMinimumAge.value[x].code",
         "path": "Group.characteristic.value[x].code",
-        "short": "Unit of time",
+        "short": "Unit of age",
+        "definition": "Unit of measurement used to describe the minimum eligible age.",
         "min": 1,
         "binding": {
           "strength": "required",
@@ -137,7 +151,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.23.1.2 Resource.studyDesign.eligibilityCriteria.ageMin.timeUnit"
+            "map": "1.17.16.1.2\tDesign.eligibilityCriteria.ageMin.timeUnit"
           }
         ]
       },
@@ -146,13 +160,13 @@
         "path": "Group.characteristic",
         "sliceName": "eligibleMaximumAge",
         "short": "Eligibility criteria: Maximum age",
-        "definition": "Group of items providing information about the maximum eligible age of study participants.",
+        "definition": "Group of items providing information about the maximum eligible age of [RESOURCE] participants.",
         "min": 0,
         "max": "1",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.23.2 Resource.studyDesign.eligibilityCriteria.ageMax"
+            "map": "1.17.16.2 Design.eligibilityCriteria.ageMax"
           }
         ]
       },
@@ -182,12 +196,13 @@
         "id": "Group.characteristic:eligibleMaximumAge.value[x].value",
         "path": "Group.characteristic.value[x].value",
         "short": "Maximum eligible age",
-        "definition": "Numerical value of the maximum age of potential participants eligible to participate in the study.",
+        "definition": "Numerical value of the maximum age of potential participants eligible to participate in the [RESOURCE].",
+        "comment": "Additional information: In the case of cohort studies, further participant ages can be indicated in the fields 'Inclusion criteria' or 'Exclusion criteria'. | Short input help: If age is less than 1 year, please indicate a value in months, weeks, days, hours, minutes, or weeks of gestation.",
         "min": 1,
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.23.2.1 Resource.studyDesign.eligibilityCriteria.ageMax.number"
+            "map": "1.17.16.2.1 Design.eligibilityCriteria.ageMax.number"
           }
         ]
       },
@@ -195,6 +210,7 @@
         "id": "Group.characteristic:eligibleMaximumAge.value[x].code",
         "path": "Group.characteristic.value[x].code",
         "short": "Unit of time",
+        "definition": "Unit of measurement used to describe the maximum eligible age.",
         "min": 1,
         "binding": {
           "strength": "required",
@@ -203,7 +219,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.23.2.2 Resource.studyDesign.eligibilityCriteria.ageMax.timeUnit"
+            "map": "1.17.16.2.2\tDesign.eligibilityCriteria.ageMax.timeUnit"
           }
         ]
       },
@@ -212,13 +228,14 @@
         "path": "Group.characteristic",
         "sliceName": "gender",
         "short": "Eligible gender",
-        "definition": "Gender of potential participants eligible to participate in the study.",
+        "definition": "Gender of potential participants eligible to participate in the [RESOURCE].",
+        "comment": "Short input help: Select all that apply. If no gender was explicitly excluded in the [RESOURCE], 'Male', 'Female', and 'Diverse' should be selected.",
         "min": 0,
         "max": "*",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.23.3 Resource.studyDesign.eligibilityCriteria.genders"
+            "map": "1.17.16.3 Design.eligibilityCriteria.genders"
           }
         ]
       },

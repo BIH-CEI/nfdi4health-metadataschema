@@ -1,0 +1,43 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "NFDI4Health_VS_MDS_Population_Coverage_NCI",
+  "id": "nfdi4health-vs-mds-population-coverage-nci",
+  "title": "NFDI4Health VS MDS Population Coverage [NCI]",
+  "description": "Value set defining codes to specify the population coverage in a resource.",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-population-coverage-nci",
+  "version": "0.9",
+  "experimental": true,
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "concept": [
+          {
+            "code": "C61423",
+            "display": "National"
+          },
+          {
+            "code": "C25541",
+            "display": "International"
+          },
+          {
+            "code": "C25643",
+            "display": "Regional"
+          }
+        ]
+      }
+    ]
+  }
+}

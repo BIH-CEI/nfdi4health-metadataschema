@@ -168,9 +168,9 @@ Description: "NFDI4Health Logical Model MDS Module Design V3.3"
 
 * Design.population.coverage 0..1 Coding "Coverage"	"Specification of the recruitment area of the [RESOURCE]."
 * Design.population.coverage ^comment = "Short Input Help: Select one value from the list. / Source of the property and/or allowed values: NFDI4Health"
-
+* Design.population.coverage from NFDI4Health_VS_MDS_Population_Coverage_NCI (required)
 * Design.population.countries 1..* Coding "Country(ies)" "Country or countries where the [RESOURCE] takes place."
-* Design.population.countries from http://hl7.org/fhir/ValueSet/country (required)
+* Design.population.countries from NFDI4Health_VS_MDS_Countries_ISO (required)
 * Design.population.countries ^comment = "Short Input Help: Select all that apply. / Source of the property and/or allowed values: CT.gov [2], DRKS [3]"
 
 * Design.population.region 0..1 string "Region(s) and/or city(ies)" "If applicable, region(s) and/or city(ies) within a country where the [RESOURCE] takes place."
@@ -217,6 +217,7 @@ Description: "NFDI4Health Logical Model MDS Module Design V3.3"
 
 * Design.interventions.type	0..1 Coding "Type of the intervention" "General type of the given intervention."
 * Design.interventions.type	^comment = "Source of the property and/or allowed values: CT.gov [2]"
+* Design.interventions.type from NFDI4Health_VS_MDS_Study_Intervention_Or_Exposure_Type_NCI (required)
 
 * Design.interventions.description 0..1 string "Additional information about the intervention" "If needed, additional descriptive information about the given intervention."
 * Design.interventions.description ^comment = "Source of the property and/or allowed values: CT.gov [2]"
@@ -232,6 +233,7 @@ Description: "NFDI4Health Logical Model MDS Module Design V3.3"
 
 * Design.exposures.type 0..1 Coding "Type of the exposure" "General type of the given exposure."
 * Design.exposures.type ^comment = "Source of the property and/or allowed values: CT.gov [2]"
+* Design.exposures.type from NFDI4Health_VS_MDS_Study_Intervention_Or_Exposure_Type_NCI (required)
 
 * Design.exposures.description 0..1 string "Additional information about the exposure"	"If needed, additional descriptive information about the given exposure."
 * Design.exposures.description ^comment = "Source of the property and/or allowed values: CT.gov [2]"

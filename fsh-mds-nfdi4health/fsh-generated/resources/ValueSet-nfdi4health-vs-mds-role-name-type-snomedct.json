@@ -1,9 +1,9 @@
 {
   "resourceType": "ValueSet",
   "status": "draft",
-  "name": "NFDI4Health_VS_MDS_Role_Name_Type_SNOMED",
-  "id": "nfdi4health-vs-mds-role-name-type-snomed",
-  "title": "NFDI4Health VS MDS Role Name Type [SNOMED]",
+  "name": "NFDI4Health_VS_MDS_Role_Name_Type_SNOMEDCT",
+  "id": "nfdi4health-vs-mds-role-name-type-snomedct",
+  "title": "NFDI4Health VS MDS Role Name Type [SNOMED CT]",
   "description": "Value set defining codes to specify role types.",
   "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-role-name-type-snomed",
   "version": "0.9",

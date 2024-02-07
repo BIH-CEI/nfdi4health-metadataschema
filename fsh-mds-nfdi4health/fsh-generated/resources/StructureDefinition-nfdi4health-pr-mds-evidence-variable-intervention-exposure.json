@@ -55,39 +55,51 @@
       {
         "id": "EvidenceVariable",
         "path": "EvidenceVariable",
-        "short": "Interventions/exposures of the study",
-        "definition": "Group of items providing information about study interventions or exposures.",
-        "comment": "Additional information: The items may be not applicable for non-interventional studies.",
+        "short": "For 1.17.21\tDesign.interventions: Interventions of the [RESOURCE] | For 1.17.22\tDesign.exposures: Exposures of the [RESOURCE]",
+        "definition": "For 1.17.21 Design.interventions: Group of items providing information about the interventions of the [RESOURCE]. | For 1.17.22 Design.exposures: Group of items providing information about the exposures of the [RESOURCE].",
+        "comment": "Additional information: For 1.17.21 Design.interventions: Specification of the intervention(s) associated with each arm. | For 1.17.22 Design.exposures: Specification of the exposure(s) associated with each group.",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.31 Resource.studyDesign.interventions"
+            "map": "1.17.21 Design.interventions"
+          },
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.22 Design.exposures"
           }
         ]
       },
       {
         "id": "EvidenceVariable.title",
         "path": "EvidenceVariable.title",
-        "short": "Name of the intervention/exposure",
-        "definition": "A short descriptive name of the intervention/exposure.",
-        "comment": "Additional information: Please specify the intervention(s)/exposure associated with each arm/group. | Short input help: If the same intervention/exposure is associated with more than one arm or group, provide the information once and use the field \"Name of the associated study arm/group\" to associate it with more than one arm/group.",
+        "short": "For 1.17.21.1\tDesign.interventions.name: Name of the intervention | For 1.17.22.1\tDesign.exposures.name: Name of the exposure",
+        "definition": "For 1.17.21.1 Design.interventions.name: A short descriptive name of the intervention.| For 1.17.22.1\tDesign.exposures.name: A short descriptive name of the exposure.",
+        "comment": "Short input help: For 1.17.21.1 Design.interventions.name: If the same intervention is associated with more than one arm, please provide the information once and use the field 'Name(s) of the arm(s) associated with the given intervention' to associate it with more than one arm. | For 1.17.22.1\tDesign.exposures.name: If the same exposure is associated with more than one group, please provide the information once and use the field 'Name(s) of the group(s) associated with the given exposure' to associate it with more than one group.",
         "min": 1,
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.31.1 Resource.studyDesign.interventions.name"
+            "map": "1.17.21.1 Design.interventions.name"
+          },
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.22.1 Design.exposures.name"
           }
         ]
       },
       {
         "id": "EvidenceVariable.description",
         "path": "EvidenceVariable.description",
-        "short": "Additional information about the intervention/exposure",
-        "definition": "If needed, additional descriptive information about the given intervention/exposure.",
+        "short": "For 1.17.21.3 Design.interventions.description: Additional information about the intervention | For 1.17.22.3\tDesign.exposures.description: Additional information about the exposure",
+        "definition": "For 1.17.21.3 Design.interventions.description: If needed, additional descriptive information about the given intervention. | For 1.17.22.3 Design.exposures.description: If needed, additional descriptive information about the given exposure.",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.31.3 Resource.studyDesign.interventions.description"
+            "map": "1.17.21.3\tDesign.interventions.description"
+          },
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.22.3\tDesign.exposures.description"
           }
         ]
       },
@@ -109,8 +121,8 @@
         "id": "EvidenceVariable.characteristic.definition[x]:definitionCodeableConcept",
         "path": "EvidenceVariable.characteristic.definition[x]",
         "sliceName": "definitionCodeableConcept",
-        "short": "Type of the intervention/exposure",
-        "definition": "General type of the given intervention/exposure.",
+        "short": "For 1.17.21.2 Design.interventions.type: Type of the intervention | For 1.17.22.2 Design.exposures.type: Type of the exposure",
+        "definition": "For 1.17.21.2 Design.interventions.type: General type of the given intervention. | For 1.17.22.2 Design.exposures.type: General type of the given exposure.",
         "min": 1,
         "max": "1",
         "type": [
@@ -120,13 +132,17 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-intervention-type-nci",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-intervention-or-exposure-type-nci",
           "description": "Value set defining codes to specify the general type of the given intervention/exposure in the study."
         },
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.31.2 Resource.studyDesign.interventions.type"
+            "map": "1.17.21.2 Design.interventions.type"
+          },
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.22.2 Design.exposures.type"
           }
         ]
       }

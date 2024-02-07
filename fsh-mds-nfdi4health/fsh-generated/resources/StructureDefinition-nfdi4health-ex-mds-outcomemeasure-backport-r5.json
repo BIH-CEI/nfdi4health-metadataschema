@@ -1,0 +1,244 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "nfdi4health-ex-mds-outcomemeasure-backport-r5",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.outcomeMeasure",
+  "version": "0.9",
+  "name": "NFDI4Health_EX_MDS_OutcomeMeasure_Backport_R5",
+  "title": "NFDI4Health EX MDS Outcome Measure Backport R5",
+  "status": "draft",
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "description": "Extension providing information about outcome measure(s).",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "NFDI4Health",
+      "name": "NFDI4Health to FHIR Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ResearchStudy"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Outcome measures in the [RESOURCE]",
+        "definition": "Group of items providing information about outcome measures.",
+        "comment": "Additional information: The items are optional, especially for non-interventional studies. [Backport Extension from R5: ResearchStudy.outcomeMeasure; Please note that some cardinalities have been adapted and some of the elements are not relevant for NFDI4Health. We changed the DataType from description to string and added an element to capture the time frame.]",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.23 Design.outcomes"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:name",
+        "path": "Extension.extension",
+        "sliceName": "name",
+        "min": 1,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.23.1\tDesign.outcomes.title"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:name.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:name.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "name"
+      },
+      {
+        "id": "Extension.extension:name.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Name of the outcome measure",
+        "definition": "Name of the outcome measure. For non-interventional studies, this can be the name of specific measurement(s) or observation(s) used to describe patterns of diseases or traits or associations with exposures, risk factors or treatment.",
+        "comment": "Short input help: For non-interventional studies, you can provide specific measurement(s) or observation(s) used to describe patterns of diseases or traits or associations with exposures, risk factors or treatment.",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension",
+        "sliceName": "type",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.23.3\tDesign.outcomes.type"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:type.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:type.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:type.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Type of the outcome measure",
+        "definition": "The type indicates the degree of importance of the outcome measure in the [RESOURCE].",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:type.value[x].coding",
+        "path": "Extension.extension.value[x].coding",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-outcome-type-nci",
+          "description": "Value set defining codes to specify the type of outcome measure."
+        }
+      },
+      {
+        "id": "Extension.extension:type.value[x].coding.system",
+        "path": "Extension.extension.value[x].coding.system",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:type.value[x].coding.code",
+        "path": "Extension.extension.value[x].coding.code",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:description",
+        "path": "Extension.extension",
+        "sliceName": "description",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.23.2 Design.outcomes.description"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:description.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:description.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "description"
+      },
+      {
+        "id": "Extension.extension:description.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Description of the outcome measure",
+        "definition": "Additional descriptive information about the given outcome.",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:reference",
+        "path": "Extension.extension",
+        "sliceName": "reference",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:reference.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "reference"
+      },
+      {
+        "id": "Extension.extension:timeFrame",
+        "path": "Extension.extension",
+        "sliceName": "timeFrame",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.23.4 Design.outcomes.timeFrame"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:timeFrame.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:timeFrame.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "timeFrame"
+      },
+      {
+        "id": "Extension.extension:timeFrame.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Time point(s) of assessment",
+        "definition": "Description of the time point(s) at which the measurement for the outcome is assessed, e.g. the specific duration of time over which each participant is assessed.",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.outcomeMeasure"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

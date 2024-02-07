@@ -11,9 +11,9 @@ Description: "Extension providing a description of the study population."
 * ^context.type = #element
 * ^context.expression = "ResearchStudy"
 * . 0..1
-* . ^short = "Description of study population"
-* . ^definition = "Additional descriptive information providing more details about study population."
-* . ^comment = "Short input help: Any information important for the given study population can be specified here."
+* . ^short = "Population description"
+* . ^definition = "Additional descriptive information providing more details about the population of the [RESOURCE]."
+* . ^comment = "Short input help: Any information important for the given [RESOURCE] population can be specified here."
 * value[x] 1..1
 * value[x] only string
 
@@ -21,4 +21,4 @@ Mapping: NFDI4Health-Study-Population-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Study_Population
-* -> "1.17.24 Resource.studyDesign.population"
+* -> "1.17.17.4	Design.population.description"

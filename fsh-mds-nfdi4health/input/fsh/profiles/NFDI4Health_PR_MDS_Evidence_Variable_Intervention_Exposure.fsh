@@ -9,26 +9,30 @@ Description: "Information about the intervention or exposure in a study."
 * ^publisher = "NFDI4Health"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
-* . ^short = "Interventions/exposures of the study"
-* . ^definition = "Group of items providing information about study interventions or exposures."
-* . ^comment = "Additional information: The items may be not applicable for non-interventional studies."
+* . ^short = "For 1.17.21	Design.interventions: Interventions of the [RESOURCE] | For 1.17.22	Design.exposures: Exposures of the [RESOURCE]"
+* . ^definition = "For 1.17.21 Design.interventions: Group of items providing information about the interventions of the [RESOURCE]. | For 1.17.22 Design.exposures: Group of items providing information about the exposures of the [RESOURCE]."
+* . ^comment = "Additional information: For 1.17.21 Design.interventions: Specification of the intervention(s) associated with each arm. | For 1.17.22 Design.exposures: Specification of the exposure(s) associated with each group."
 * title 1..
-* title ^short = "Name of the intervention/exposure"
-* title ^definition = "A short descriptive name of the intervention/exposure."
-* title ^comment = "Additional information: Please specify the intervention(s)/exposure associated with each arm/group. | Short input help: If the same intervention/exposure is associated with more than one arm or group, provide the information once and use the field \"Name of the associated study arm/group\" to associate it with more than one arm/group."
-* description ^short = "Additional information about the intervention/exposure"
-* description ^definition = "If needed, additional descriptive information about the given intervention/exposure."
+* title ^short = "For 1.17.21.1	Design.interventions.name: Name of the intervention | For 1.17.22.1	Design.exposures.name: Name of the exposure"
+* title ^definition = "For 1.17.21.1 Design.interventions.name: A short descriptive name of the intervention.| For 1.17.22.1	Design.exposures.name: A short descriptive name of the exposure."
+* title ^comment = "Short input help: For 1.17.21.1 Design.interventions.name: If the same intervention is associated with more than one arm, please provide the information once and use the field 'Name(s) of the arm(s) associated with the given intervention' to associate it with more than one arm. | For 1.17.22.1	Design.exposures.name: If the same exposure is associated with more than one group, please provide the information once and use the field 'Name(s) of the group(s) associated with the given exposure' to associate it with more than one group."
+* description ^short = "For 1.17.21.3 Design.interventions.description: Additional information about the intervention | For 1.17.22.3	Design.exposures.description: Additional information about the exposure"
+* description ^definition = "For 1.17.21.3 Design.interventions.description: If needed, additional descriptive information about the given intervention. | For 1.17.22.3 Design.exposures.description: If needed, additional descriptive information about the given exposure."
 * characteristic.definitionCodeableConcept 1..1
-* characteristic.definitionCodeableConcept from NFDI4Health_VS_MDS_Study_Intervention_Type_NCI (required)
-* characteristic.definitionCodeableConcept ^short = "Type of the intervention/exposure"
-* characteristic.definitionCodeableConcept ^definition = "General type of the given intervention/exposure."
+* characteristic.definitionCodeableConcept from NFDI4Health_VS_MDS_Study_Intervention_Or_Exposure_Type_NCI (required)
 * characteristic.definitionCodeableConcept ^binding.description = "Value set defining codes to specify the general type of the given intervention/exposure in the study."
+* characteristic.definitionCodeableConcept ^short = "For 1.17.21.2 Design.interventions.type: Type of the intervention | For 1.17.22.2 Design.exposures.type: Type of the exposure"
+* characteristic.definitionCodeableConcept ^definition = "For 1.17.21.2 Design.interventions.type: General type of the given intervention. | For 1.17.22.2 Design.exposures.type: General type of the given exposure."
 
 Mapping: NFDI4Health-Evidence-Variable-Intervention-Exposure-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_PR_MDS_Evidence_Variable_Intervention_Exposure
-* -> "1.17.31 Resource.studyDesign.interventions"
-* title -> "1.17.31.1 Resource.studyDesign.interventions.name"
-* description -> "1.17.31.3 Resource.studyDesign.interventions.description"
-* characteristic.definitionCodeableConcept -> "1.17.31.2 Resource.studyDesign.interventions.type"
+* -> "1.17.21 Design.interventions"
+* -> "1.17.22 Design.exposures"
+* title -> "1.17.21.1 Design.interventions.name"
+* title -> "1.17.22.1 Design.exposures.name"
+* description -> "1.17.21.3	Design.interventions.description"
+* description -> "1.17.22.3	Design.exposures.description"
+* characteristic.definitionCodeableConcept -> "1.17.21.2 Design.interventions.type"
+* characteristic.definitionCodeableConcept -> "1.17.22.2 Design.exposures.type"

@@ -51,7 +51,7 @@
         "id": "Extension",
         "path": "Extension",
         "short": "language",
-        "definition": "Language in which the description text is provided."
+        "definition": "Language in which the title/name, acronym or description text is provided."
       },
       {
         "id": "Extension.extension",

@@ -8,6 +8,7 @@
 [NFDI4Health_VS_MDS_CD_DataCollected_NCI]: ValueSet-nfdi4health-vs-mds-cd-datacollected-nci.html
 [NFDI4Health_VS_MDS_CD_Information_Sources_NCI_Local]: ValueSet-nfdi4health-vs-mds-cd-information-sources-nci-local.html
 [NFDI4Health_EX_MDS_Assessments]: StructureDefinition-nfdi4health-ex-mds-assessments.html
+[NFDI4Health_EX_MDS_Associated_Party]: StructureDefinition-nfdi4health-ex-mds-associated-party.html
 [NFDI4Health_EX_MDS_Biospecimen]: StructureDefinition-nfdi4health-ex-mds-biospecimen.html
 [NFDI4Health_EX_MDS_Centers]: StructureDefinition-nfdi4health-ex-mds-centers.html
 [NFDI4Health_EX_MDS_Copyright_Label_And_Link]: StructureDefinition-nfdi4health-ex-mds-copyright-label-and-link.html
@@ -26,6 +27,7 @@
 [NFDI4Health_EX_MDS_Mortality_Data]: StructureDefinition-nfdi4health-ex-mds-mortality-data.html
 [NFDI4Health_EX_MDS_Name_Type]: StructureDefinition-nfdi4health-ex-mds-name-type.html
 [NFDI4Health_EX_MDS_Off_Label_Use]: StructureDefinition-nfdi4health-ex-mds-off-label-use.html
+[NFDI4Health_EX_MDS_OutcomeMeasure_Backport_R5]: StructureDefinition-nfdi4health-ex-mds-outcomemeasure-backport-r5.html
 [NFDI4Health_EX_MDS_Outcomes]: StructureDefinition-nfdi4health-ex-mds-outcomes.html
 [NFDI4Health_EX_MDS_Provenance_Data_Source]: StructureDefinition-nfdi4health-ex-mds-provenance-data-source.html
 [NFDI4Health_EX_MDS_Record_Linkage]: StructureDefinition-nfdi4health-ex-mds-record-linkage.html
@@ -39,6 +41,7 @@
 [NFDI4Health_EX_MDS_Related_Artifact_Scheme]: StructureDefinition-nfdi4health-ex-mds-related-artifact-nfdi-scheme.html
 [NFDI4Health_EX_MDS_Resource_Type_General]: StructureDefinition-nfdi4health-ex-mds-resource-type-general.html
 [NFDI4Health_EX_MDS_Study_Comparison_Group]: StructureDefinition-nfdi4health-ex-mds-study-comparison-group.html
+[NFDI4Health_EX_MDS_Study_Comparison_Group_Backport_R5]: StructureDefinition-nfdi4health-ex-mds-study-comparison-group-backport-r5.html
 [NFDI4Health_EX_MDS_Study_Ethics_Committee_Approval]: StructureDefinition-nfdi4health-ex-mds-study-ethics-committee-approval.html
 [NFDI4Health_EX_MDS_Study_Masking]: StructureDefinition-nfdi4health-ex-mds-study-masking.html
 [NFDI4Health_EX_MDS_Study_Population]: StructureDefinition-nfdi4health-ex-mds-study-population.html
@@ -80,6 +83,7 @@
 [NFDI4Health_VS_MDS_Mortality_Data_NCI]: ValueSet-nfdi4health-vs-mds-mortality-data-nci.html
 [NFDI4Health_VS_MDS_Organisational_Roles_NCI_Local]: ValueSet-nfdi4health-vs-mds-organisational-roles-nci-local.html
 [NFDI4Health_VS_MDS_Personal_Roles_NCI_Local]: ValueSet-nfdi4health-vs-mds-personal-roles-nci-local.html
+[NFDI4Health_VS_MDS_Population_Coverage_NCI]: ValueSet-nfdi4health-vs-mds-population-coverage-nci.html
 [NFDI4Health_VS_MDS_Provenance_Activity_HL7_Local]: ValueSet-nfdi4health-vs-mds-provenance-activity-hl7-local.html
 [NFDI4Health_VS_MDS_Provenance_Data_Source_Local]: ValueSet-nfdi4health-vs-mds-provenance-data-source-local.html
 [NFDI4Health_VS_MDS_Time_Units_UCUM_LOINC]: ValueSet-nfdi4health-vs-mds-time-units-ucum-loinc.html
@@ -90,7 +94,7 @@
 [NFDI4Health_VS_MDS_Resource_Type_NCI_Local]: ValueSet-nfdi4health-vs-mds-resource-type-nci-local.html
 [NFDI4Health_VS_MDS_Role_Affiliation_Identifier_Scheme_Local]: ValueSet-nfdi4health-vs-mds-role-affiliation-identifier-scheme-local.html
 [NFDI4Health_VS_MDS_Role_Name_Identifier_Scheme_Local]: ValueSet-nfdi4health-vs-mds-role-name-identifier-scheme-local.html
-[NFDI4Health_VS_MDS_Role_Name_Type_SNOMED]: ValueSet-nfdi4health-vs-mds-role-name-type-snomed.html
+[NFDI4Health_VS_MDS_Role_Name_Type_SNOMEDCT]: ValueSet-nfdi4health-vs-mds-role-name-type-snomedct.html
 [NFDI4Health_VS_MDS_Study_Allocation_NCI]: ValueSet-nfdi4health-vs-mds-study-allocation-nci.html
 [NFDI4Health_VS_MDS_Study_Arm_Group_Type_NCI]: ValueSet-nfdi4health-vs-mds-study-arm-group-type-nci.html
 [NFDI4Health_VS_MDS_Study_Assessments_SCT_NCI]: ValueSet-nfdi4health-vs-mds-study-assessments-sct-nci.html
@@ -105,10 +109,9 @@
 [NFDI4Health_VS_MDS_Study_Data_Sources_Omics_NCI]: ValueSet-nfdi4health-vs-mds-study-data-sources-omics-nci.html
 [NFDI4Health_VS_MDS_Study_Eligibility_Gender_SNOMEDCT_Local]: ValueSet-nfdi4health-vs-mds-study-eligibility-gender-snomedct-local.html
 [NFDI4Health_VS_MDS_Study_Ethics_Committee_Approval_NCI_Local]: ValueSet-nfdi4health-vs-mds-study-ethics-committee-approval-nci-local.html
-[NFDI4Health_VS_MDS_Study_Exposure_Type_NCI]: ValueSet-nfdi4health-vs-mds-study-exposure-type-nci.html
 [NFDI4Health_VS_MDS_Study_Group_Characteristics_NCI]: ValueSet-nfdi4health-vs-mds-study-group-characteristics-nci.html
 [NFDI4Health_VS_MDS_Study_Groups_Of_Diseases_Generally_ICD10_SCT]: ValueSet-nfdi4health-vs-mds-study-diseases-generally-icd-sct.html
-[NFDI4Health_VS_MDS_Study_Intervention_Type_NCI]: ValueSet-nfdi4health-vs-mds-study-intervention-type-nci.html
+[NFDI4Health_VS_MDS_Study_Intervention_Or_Exposure_Type_NCI]: ValueSet-nfdi4health-vs-mds-study-intervention-or-exposure-type-nci.html
 [NFDI4Health_VS_MDS_Study_Masking_Roles_NCI_Local]: ValueSet-nfdi4health-vs-mds-study-masking-roles-nci-local.html
 [NFDI4Health_VS_MDS_Study_Outcome_Type_NCI]: ValueSet-nfdi4health-vs-mds-study-outcome-type-nci.html
 [NFDI4Health_VS_MDS_Study_Overall_Status_NCI_Local]: ValueSet-nfdi4health-vs-mds-study-overall-status-nci-local.html

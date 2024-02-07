@@ -1,8 +1,3 @@
-Alias: $nfdi4health-vs-mds-study-overall-status-umls-local = https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-overall-status-umls-local
-Alias: $nfdi4health-vs-mds-study-status-when-intervention-local = https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-status-when-intervention-local
-Alias: $nfdi4health-vs-mds-study-recruitment-status-register-umls-local = https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-recruitment-status-register-umls-local
-Alias: $nfdi4health-vs-mds-yes-no-not-applicable-snomedct = https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-yes-no-not-applicable-snomedct
-
 Extension: NFDI4Health_EX_MDS_Study_Status
 Id: nfdi4health-ex-mds-study-status
 Title: "NFDI4Health EX MDS Study Status"

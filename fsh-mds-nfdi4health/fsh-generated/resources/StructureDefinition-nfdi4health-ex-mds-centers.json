@@ -61,8 +61,9 @@
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
-        "short": "Is it a mono- or multicentric study?",
-        "definition": "Specification whether a study is conducted at one study center or at more than one study center.",
+        "short": "Mono- or multicentric?",
+        "definition": "Specification whether the [RESOURCE] is conducted at only one or at more than one [RESOURCE] center.",
+        "comment": "0..1, if Resource.classification.type == ('C63536' OR 'C198230'); otherwise 0..0",
         "min": 1,
         "type": [
           {
@@ -76,7 +77,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.17 Resource.studyDesign.studyCenters"
+            "map": "Design.centers"
           }
         ]
       },

@@ -10,14 +10,14 @@ Description: "Profile intended to capture information on the number of centers i
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 
-* description 1..1
+* description 0..1
 * description ^short = "Number of centers" 
 * description ^definition = "Number of centers involved in the [RESOURCE]."
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
 * extension contains 
-    NFDI4Health_EX_MDS_Centers named centers 1..1
+    NFDI4Health_EX_MDS_Centers named centers 0..1
 
 
 Mapping: NFDI4Health-Centers-to-FHIR

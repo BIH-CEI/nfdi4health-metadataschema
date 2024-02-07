@@ -9,12 +9,12 @@ Description: "Information about the eligibility criteria in a study."
 * ^publisher = "NFDI4Health"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
-* . ^short = "Eligibility criteria for study participants"
-* . ^definition = "Group of items providing information about eligibility criteria for study participants."
+* . ^short = "Eligibility criteria for [RESOURCE] participants"
+* . ^definition = "Group of items providing information about eligibility criteria for [RESOURCE] participants."
+* . 0..1
 * actual = false (exactly)
 * quantity ^short = "Target sample size"
-* quantity ^definition = "Intended number of observational units for the whole study (e.g. intended number of study participants at all study sites)."
-* quantity ^comment = "Short Input Help: Enter “-1” if target sample size was not set or is unknown."
+* quantity ^definition = "Intended number of observational units for the whole [RESOURCE] (e.g. intended number of [RESOURCE] participants at all sites of the [RESOURCE])."
 * characteristic ..*
 * characteristic ^slicing.discriminator.type = #value
 * characteristic ^slicing.discriminator.path = "code"
@@ -26,27 +26,32 @@ Description: "Information about the eligibility criteria in a study."
     eligibleMaximumAge 0..1 and
     gender 0..*
 * characteristic[eligibleMinimumAge] ^short = "Eligibility criteria: Minimum age"
-* characteristic[eligibleMinimumAge] ^definition = "Group of items providing information about the minimum eligible age of study participants."
+* characteristic[eligibleMinimumAge] ^definition = "Group of items providing information about the minimum eligible age of [RESOURCE] participants."
 * characteristic[eligibleMinimumAge].code = $NCI#C49693 "Planned Minimum Age of Subjects (Group Attribute)" (exactly)
 * characteristic[eligibleMinimumAge].value[x] only Quantity
 * characteristic[eligibleMinimumAge].valueQuantity.value 1..
 * characteristic[eligibleMinimumAge].valueQuantity.value ^short = "Minimum eligible age"
-* characteristic[eligibleMinimumAge].valueQuantity.value ^definition = "Numerical value of the minimum age of potential participants eligible to participate in the study."
+* characteristic[eligibleMinimumAge].valueQuantity.value ^definition = "Numerical value of the minimum age of potential participants eligible to participate in the [RESOURCE]."
+* characteristic[eligibleMinimumAge].valueQuantity.value ^comment = "Additional information: In the case of cohort studies, further participant ages can be indicated in the fields 'Inclusion criteria' or 'Exclusion criteria'. | Short input help: If age is less than 1 year, please indicate a value in months, weeks, days, hours, minutes, or weeks of gestation."
 * characteristic[eligibleMinimumAge].valueQuantity.code 1..
 * characteristic[eligibleMinimumAge].valueQuantity.code from NFDI4Health_VS_MDS_Time_Units_UCUM_LOINC (required)
-* characteristic[eligibleMinimumAge].valueQuantity.code ^short = "Unit of time"
+* characteristic[eligibleMinimumAge].valueQuantity.code ^short = "Unit of age"
+* characteristic[eligibleMinimumAge].valueQuantity.code ^definition = "Unit of measurement used to describe the minimum eligible age."
 * characteristic[eligibleMaximumAge] ^short = "Eligibility criteria: Maximum age"
-* characteristic[eligibleMaximumAge] ^definition = "Group of items providing information about the maximum eligible age of study participants."
+* characteristic[eligibleMaximumAge] ^definition = "Group of items providing information about the maximum eligible age of [RESOURCE] participants."
 * characteristic[eligibleMaximumAge].code = $NCI#C49694 "Planned Maximum Age of Subjects (Group Attribute)" (exactly)
 * characteristic[eligibleMaximumAge].value[x] only Quantity
 * characteristic[eligibleMaximumAge].valueQuantity.value 1..
 * characteristic[eligibleMaximumAge].valueQuantity.value ^short = "Maximum eligible age"
-* characteristic[eligibleMaximumAge].valueQuantity.value ^definition = "Numerical value of the maximum age of potential participants eligible to participate in the study."
+* characteristic[eligibleMaximumAge].valueQuantity.value ^definition = "Numerical value of the maximum age of potential participants eligible to participate in the [RESOURCE]."
+* characteristic[eligibleMaximumAge].valueQuantity.value ^comment = "Additional information: In the case of cohort studies, further participant ages can be indicated in the fields 'Inclusion criteria' or 'Exclusion criteria'. | Short input help: If age is less than 1 year, please indicate a value in months, weeks, days, hours, minutes, or weeks of gestation."
 * characteristic[eligibleMaximumAge].valueQuantity.code 1..
 * characteristic[eligibleMaximumAge].valueQuantity.code from NFDI4Health_VS_MDS_Time_Units_UCUM_LOINC (required)
 * characteristic[eligibleMaximumAge].valueQuantity.code ^short = "Unit of time"
+* characteristic[eligibleMaximumAge].valueQuantity.code ^definition = "Unit of measurement used to describe the maximum eligible age."
 * characteristic[gender] ^short = "Eligible gender"
-* characteristic[gender] ^definition = "Gender of potential participants eligible to participate in the study."
+* characteristic[gender] ^definition = "Gender of potential participants eligible to participate in the [RESOURCE]."
+* characteristic[gender] ^comment = "Short input help: Select all that apply. If no gender was explicitly excluded in the [RESOURCE], 'Male', 'Female', and 'Diverse' should be selected."
 * characteristic[gender].code = $NCI#C17357 "Gender (Organism Attribute)" (exactly)
 * characteristic[gender].value[x] only CodeableConcept
 * characteristic[gender].valueCodeableConcept from NFDI4Health_VS_MDS_Study_Eligibility_Gender_SNOMEDCT_Local (required)
@@ -56,11 +61,12 @@ Mapping: NFDI4Health-Group-Intended-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_PR_MDS_Group_Intended
-
-* characteristic[eligibleMinimumAge] -> "1.17.23.1 Resource.studyDesign.eligibilityCriteria.ageMin"
-* characteristic[eligibleMinimumAge].value[x].value -> "1.17.23.1.1 Resource.studyDesign.eligibilityCriteria.ageMin.number"
-* characteristic[eligibleMinimumAge].value[x].code -> "1.17.23.1.2 Resource.studyDesign.eligibilityCriteria.ageMin.timeUnit"
-* characteristic[eligibleMaximumAge] -> "1.17.23.2 Resource.studyDesign.eligibilityCriteria.ageMax"
-* characteristic[eligibleMaximumAge].value[x].value -> "1.17.23.2.1 Resource.studyDesign.eligibilityCriteria.ageMax.number"
-* characteristic[eligibleMaximumAge].value[x].code -> "1.17.23.2.2 Resource.studyDesign.eligibilityCriteria.ageMax.timeUnit"
-* characteristic[gender] -> "1.17.23.3 Resource.studyDesign.eligibilityCriteria.genders"
+* -> "1.17.16 Design.eligibilityCriteria"
+* quantity -> "1.17.17.5 Design.population.targetSampleSize"
+* characteristic[eligibleMinimumAge] -> "1.17.16.1 Design.eligibilityCriteria.ageMin"
+* characteristic[eligibleMinimumAge].valueQuantity.value -> "1.17.16.1.1 Design.eligibilityCriteria.ageMin.number"
+* characteristic[eligibleMinimumAge].valueQuantity.code -> "1.17.16.1.2	Design.eligibilityCriteria.ageMin.timeUnit"
+* characteristic[eligibleMaximumAge] -> "1.17.16.2 Design.eligibilityCriteria.ageMax"
+* characteristic[eligibleMaximumAge].valueQuantity.value -> "1.17.16.2.1 Design.eligibilityCriteria.ageMax.number"
+* characteristic[eligibleMaximumAge].valueQuantity.code -> "1.17.16.2.2	Design.eligibilityCriteria.ageMax.timeUnit"
+* characteristic[gender] -> "1.17.16.3 Design.eligibilityCriteria.genders"

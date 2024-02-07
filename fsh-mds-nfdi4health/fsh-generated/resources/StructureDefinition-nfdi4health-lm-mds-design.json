@@ -950,7 +950,11 @@
           {
             "code": "Coding"
           }
-        ]
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-population-coverage-nci"
+        }
       },
       {
         "id": "nfdi4health-lm-mds-design-v3-3.Design.population.countries",
@@ -967,7 +971,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/ValueSet/country"
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-countries-iso"
         }
       },
       {
@@ -1178,7 +1182,11 @@
           {
             "code": "Coding"
           }
-        ]
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-intervention-or-exposure-type-nci"
+        }
       },
       {
         "id": "nfdi4health-lm-mds-design-v3-3.Design.interventions.description",
@@ -1248,7 +1256,11 @@
           {
             "code": "Coding"
           }
-        ]
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-intervention-or-exposure-type-nci"
+        }
       },
       {
         "id": "nfdi4health-lm-mds-design-v3-3.Design.exposures.description",

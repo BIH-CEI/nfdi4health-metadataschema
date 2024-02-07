@@ -46,14 +46,14 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Description of study population",
-        "definition": "Additional descriptive information providing more details about study population.",
-        "comment": "Short input help: Any information important for the given study population can be specified here.",
+        "short": "Population description",
+        "definition": "Additional descriptive information providing more details about the population of the [RESOURCE].",
+        "comment": "Short input help: Any information important for the given [RESOURCE] population can be specified here.",
         "max": "1",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.24 Resource.studyDesign.population"
+            "map": "1.17.17.4\tDesign.population.description"
           }
         ]
       },

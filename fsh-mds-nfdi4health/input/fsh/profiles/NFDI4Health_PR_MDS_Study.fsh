@@ -15,7 +15,7 @@ Description: "Group of items applicable only to studies, substudies, registries,
 * extension ^slicing.rules = #open
 * extension contains
     NFDI4Health_EX_MDS_Execution_Language named executionLanguage 0..* and
-    NFDI4Health_EX_MDS_Descriptions named descritpions 1..1 and
+    NFDI4Health_EX_MDS_Descriptions named descriptions 1..1 and
     NFDI4Health_EX_MDS_Mortality_Data named mortalityData 0..1 and
     NFDI4Health_EX_MDS_Study_Ethics_Committee_Approval named studyEthicsCommitteeApproval 0..1 and
     NFDI4Health_EX_MDS_Study_Status named studyStatus 1..1 and
@@ -23,8 +23,8 @@ Description: "Group of items applicable only to studies, substudies, registries,
     NFDI4Health_EX_MDS_Data_Source named dataSource 0..1 and
     NFDI4Health_EX_MDS_Eligibility_Criteria_Inclusion_Criteria named inclusionCriteria 0..1 and
     NFDI4Health_EX_MDS_Eligibility_Criteria_Exclusion_Criteria named exclusionCriteria 0..1 and
-    NFDI4Health_EX_MDS_Study_Comparison_Group named comparisonGroup 0..* and
-    NFDI4Health_EX_MDS_Outcomes named outcomes 0..* and
+    NFDI4Health_EX_MDS_Study_Comparison_Group_Backport_R5 named comparisonGroup 0..* and
+    NFDI4Health_EX_MDS_OutcomeMeasure_Backport_R5 named outcomes 0..* and
     NFDI4Health_EX_MDS_Assessments named assessments 0..* and
     NFDI4Health_EX_MDS_Study_Population named population 0..1 and
     NFDI4Health_EX_MDS_Data_Sharing_Plan named dataSharingPlan 1..1 and
@@ -57,7 +57,7 @@ Description: "Group of items applicable only to studies, substudies, registries,
 * identifier[DRKS].value ^example[0].label = "DRKS Identifier"
 * identifier[DRKS].value ^example[=].valueString = "DRKS00021273"
 * identifier[NCT] ^definition = "Group of items providing information about identifiers (IDs) assigned to the given resource by another registering systems, e.g. a register of clinical trials or a data repository."
-* identifier[NCT].type = $UMLS#C5419532 "Clinicaltrials.gov Identifier" (exactly)
+* identifier[NCT].type = $NCI#C172240 "Clinicaltrials.gov Identifier" (exactly)
 * identifier[NCT].system 1..
 * identifier[NCT].system = "https://www.clinicaltrials.gov/" (exactly)
 * identifier[NCT].system ^definition = "Name of the system where the given resource is already registered. Fixed to NCT (CT.gov)."
@@ -74,7 +74,7 @@ Description: "Group of items applicable only to studies, substudies, registries,
 * identifier[ISRCTN].value 1..
 * identifier[ISRCTN].value ^definition = "Identifier (ID) assigned to the given resource by ISRCTN."
 * identifier[EudraCT] ^definition = "Group of items providing information about identifiers (IDs) assigned to the given resource by another registering systems, e.g. a register of clinical trials or a data repository."
-* identifier[EudraCT].type = $UMLS#C4329800 "European Union Drug Regulating Authorities Clinical Trials Database (Intellectual Product)" (exactly)
+* identifier[EudraCT].type = $NCI#C132782 "European Union Drug Regulating Authorities Clinical Trials Database" (exactly)
 * identifier[EudraCT].system 1..
 * identifier[EudraCT].system = "https://eudract.ema.europa.eu/results-web/index.xhtml" (exactly)
 * identifier[EudraCT].system ^definition = "Name of the system where the given resource is already registered. Fixed to EudraCT."
@@ -108,7 +108,7 @@ Description: "Group of items applicable only to studies, substudies, registries,
 * identifier[MDMPortal].value ^definition = "Identifier (ID) assigned to the given resource by MDM Portal."
 * identifier[Other] ^short = "Identifier"
 * identifier[Other] ^definition = "Identifier (ID) assigned to the given resource by another registering system, e.g. by a register of clinical trials or a data repository."
-* identifier[Other].type = $UMLS#C0205394 "Other (Qualitative Concept)" (exactly)
+* identifier[Other].type = $NCI#C17649 "Other" (exactly)
 * identifier[Other].system ^definition = "Type/name of the system where the given resource is already registered."
 * identifier[Other].value 1..
 * identifier[Other].value ^definition = "Identifier (ID) assigned to the given resource by another registering system, e.g. by a register of clinical trials or a data repository."
@@ -204,14 +204,24 @@ Description: "Group of items applicable only to studies, substudies, registries,
 * condition[conditions].coding.extension ^slicing.discriminator.path = "url"
 * condition[conditions].coding.extension ^slicing.rules = #open
 * condition[conditions].coding.extension contains NFDI4Health_EX_MDS_URI named uri 0..1
+* condition[conditions].coding.extension[uri] ^short = "Code of the health condition or disease"
+* condition[conditions].coding.extension[uri] ^definition = "Code of the health condition or disease in the terminology/classification used."
+* condition[conditions].coding.extension[uri] ^comment = "Short Input Help: If known, you can provide the code from the terminology/classification used."
+* condition[conditions].coding.extension[uri] ^example.label = "Example of an URI for a SNOMED CT concept"
+* condition[conditions].coding.extension[uri] ^example.valueUri = "http://snomed.info/id/840533007"
 * condition[conditions].coding.system ^short = "Terminology/classification"
 * condition[conditions].coding.system ^definition = "Terminology/classification used for the health condition[conditions] or disease."
 * condition[conditions].coding.system ^comment = "Short Input Help: If used, name of the terminology/classification."
 * condition[conditions].coding.system from NFDI4Health_VS_MDS_Study_Conditions_Classification_NCI_Local (required)
+* condition[conditions].coding.system 1..
+* condition[conditions].coding.system ^example.label = "Example of a terminology/classification"
+* condition[conditions].coding.system ^example.valueCode = $NCI#C49469
 * condition[conditions].coding.display 1..
 * condition[conditions].coding.display ^short = "Primary health condition[conditions] or disease name"
 * condition[conditions].coding.display ^definition = "Name of primary health condition[conditions] or disease considered in the [RESOURCE]."
-* condition[conditions].coding.display ^comment = "Additional information: The use of terms from established terminologies/classifications (e.g. SNOMED CT, ICD, etc.) is preferred. However, also self-assigned terms are allowed."
+* condition[conditions].coding.display ^comment = "Additional information: The use of terms from established terminologies/classifications (e.g. SNOMED CT, ICD, etc.) is preferred. However, also self-assigned terms are allowed. |Short Input Help: Preferably, use terms from SNOMED CT (https://browser.ihtsdotools.org)."
+* condition[conditions].coding.display ^example.label = "Example of a primary health condition name"
+* condition[conditions].coding.display ^example.valueString = "SARS-CoV-2"
 * condition[groupsOfDiseasesGenerally] ^short = "Which groups of diseases or conditions were the data collected on?"
 * condition[groupsOfDiseasesGenerally] ^definition = "General groups of diseases or conditions on which the data were collected in the [RESOURCE]."
 * condition[groupsOfDiseasesGenerally] ^comment = "Additional information: The values originate from the WHO's International Statistical Classification of Diseases and Related Health Problems, 10th Revision (ICD-10). | Short input help: Select all that apply. For more information about the groups of diseases/conditions, visit the WHO's ICD-10 homepage: https://icd.who.int/en."
@@ -227,14 +237,22 @@ Description: "Group of items applicable only to studies, substudies, registries,
 * focus.coding.extension ^slicing.discriminator.path = "url"
 * focus.coding.extension ^slicing.rules = #open
 * focus.coding.extension contains NFDI4Health_EX_MDS_URI named uri 0..1
+* focus.coding.extension[uri] ^short = "Code of the focus area"
+* focus.coding.extension[uri] ^definition = "Code of the focus area in the terminology/classification used."
+* focus.coding.extension[uri] ^comment = "Short Input Help: If known, you can provide the code from the terminology/classification used."
+* focus.coding.extension[uri] ^example.label = "Example of an URI for a SNOMED CT concept representing a focus area"
+* focus.coding.extension[uri] ^example.valueUri = "http://snomed.info/id/840533007"
 * focus.coding.system ^short = "Terminology/classification"
 * focus.coding.system ^definition = "Terminology/classification used for the focus area."
 * focus.coding.system ^comment = "Short Input Help: If used, name of the terminology/classification."
+* focus.coding.system 1..1
+* focus.coding.system ^example.label = "Example of a terminology/classification"
+* focus.coding.system ^example.valueCode = $NCI#C49469
 * focus.coding.system from NFDI4Health_VS_MDS_Study_Conditions_Classification_NCI_Local (required)
 * focus.coding.display 1..
 * focus.coding.display ^short = "Focus area"
 * focus.coding.display ^definition = "Focus area of the [RESOURCE] (e.g. medication, food, therapy, device, etc.)."
-* focus.coding.display ^comment = "Additional Information: The use of terms from established terminologies/classifications (e.g. SNOMED CT, ICD, etc.) is preferred. However, also self-assigned terms are allowed."
+* focus.coding.display ^comment = "Additional Information: The use of terms from established terminologies/classifications (e.g. SNOMED CT, ICD, etc.) is preferred. However, also self-assigned terms are allowed. | Short input help: Preferably, use terms from SNOMED CT (https://browser.ihtsdotools.org)."
 * relatedArtifact ..1
 * relatedArtifact only NFDI4Health_PR_MDS_Related_Artifact_Resource
 * keyword ^short = "Keyword(s) describing the [RESOURCE]"
@@ -257,24 +275,33 @@ Description: "Group of items applicable only to studies, substudies, registries,
 * location ^slicing.rules = #open
 * location ^comment = "Short input help: Select all that apply."
 * location contains
+    coverage 0..1 and
     countries 1..* and
     regions 0..*
-* location[countries] ^short = "Country(ies) where the study takes place"
-* location[countries] ^definition = "Country or countries where the study takes place."
-* location[countries] ^comment = "Additional information: Select all that apply."
+* location[coverage] ^short = "Coverage"
+* location[coverage] ^definition = "Specification of the recruitment area of the [RESOURCE]."
+* location[coverage] ^comment = "Short input help: Select one value from the list."
+* location[coverage].coding 1..1
+* location[coverage].coding from NFDI4Health_VS_MDS_Population_Coverage_NCI (required)
+* location[countries] ^short = "Country(ies)"
+* location[countries] ^definition = "Country or countries where the [RESOURCE] takes place."
+* location[countries] ^comment = "Short input help: Select all that apply."
 * location[countries].coding 1..1
 * location[countries] from NFDI4Health_VS_MDS_Countries_ISO (required)
+* location[countries] ^binding.description = "Value set including the country names from the ISO 3166-1 list"
 * location[regions].coding 0..0
 * location[regions].text 1..1
+* location[regions].text ^short = "Region(s) and/or city(ies)"
+* location[regions].text ^definition = "If applicable, region(s) and/or city(ies) within a country where the [RESOURCE] takes place."
 * enrollment only Reference(NFDI4Health_PR_MDS_Group_Intended or NFDI4Health_PR_MDS_Group_Actual)
-* enrollment ^short = "Eligibility criteria for study participants"
-* enrollment ^definition = "Group of items providing information about eligibility criteria for study participants."
+//* enrollment ^short = "Eligibility criteria for study participants"
+//* enrollment ^definition = "Group of items providing information about eligibility criteria for study participants."
 * period.start ^short = "Start date"
 * period.start ^definition = "Start date of data collection for the [RESOURCE]."
 * period.start ^comment = "Additional information: Preferred date format: DD.MM.YYYY. | Short input help: In case of a planned [RESOURCE], enter the intended start date. In case of an ongoing [RESOURCE], enter the actual start date."
 * period.end ^short = "End date"
-* period.end ^definition = "In case of a [RESOURCE] with patients or other participants, it is the date when the last participant is examined or receives an intervention, or the date of the last participant’s last visit."
-* period.end ^comment = "Additional information: Preferred date format: DD.MM.YYYY. | In case of a [RESOURCE] with patients or other participants, it is the date when the last participant is examined or receives an intervention, or the date of the last participant’s last visit."
+* period.end ^definition = "In case of a [RESOURCE] with patients or other participants, it is the date when the last participant is examined or receives an intervention, or the date of the last participant's last visit."
+* period.end ^comment = "Additional information: Preferred date format: DD.MM.YYYY. | Short input help: In case of a planned or ongoing [RESOURCE], enter the intended end date. In case of a completed [RESOURCE], enter the actual end date."
 * site 0..1
 * site only Reference(NFDI4Health_PR_MDS_Centers)
 * reasonStopped.coding ^short = "Stopping stage"
@@ -363,10 +390,10 @@ Source: NFDI4Health_PR_MDS_Study
 * keyword -> "1.6 Resource.keywords"
 * keyword.coding.system -> "1.6.2 Resource.keywords.code"
 * keyword.text -> "1.6.1 Resource.keywords.label"
-* location[countries] -> "1.17.15 Resource.studyDesign.countries"
-* location[regions].text -> "1.17.16 Resource.studyDesign.region"
-* extension[descritpions] -> "Resource.descriptions"
-* enrollment -> "1.17.23 Resource.studyDesign.eligibilityCriteria"
+* location[coverage] -> "1.17.17.1 Design.population.coverage"
+* location[countries] -> "1.17.17.2 Design.population.countries"
+* location[regions].text -> "1.17.17.3 Design.population.region"
+* extension[descriptions] -> "Resource.descriptions"
 * period.start -> "Design.administrativeInformation.startDate"
 * period.end -> "Design.administrativeInformation.endDate"
 * reasonStopped.text -> "Design.administrativeInformation.reasonStopped"

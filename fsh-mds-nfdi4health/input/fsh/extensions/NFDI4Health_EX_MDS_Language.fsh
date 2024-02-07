@@ -15,6 +15,6 @@ Description: "Language of an element."
 * ^context[+].type = #element
 * ^context[=].expression = "markdown"
 * . ^short = "language"
-* . ^definition = "Language in which the description text is provided."
+* . ^definition = "Language in which the title/name, acronym or description text is provided."
 
 * value[x] from $ISOLanguage (required)

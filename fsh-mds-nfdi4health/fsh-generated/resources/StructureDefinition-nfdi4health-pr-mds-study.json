@@ -97,9 +97,9 @@
         ]
       },
       {
-        "id": "ResearchStudy.extension:descritpions",
+        "id": "ResearchStudy.extension:descriptions",
         "path": "ResearchStudy.extension",
-        "sliceName": "descritpions",
+        "sliceName": "descriptions",
         "min": 1,
         "max": "1",
         "type": [
@@ -232,7 +232,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-comparison-group"
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.comparisonGroup"
             ]
           }
         ]
@@ -247,7 +247,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-outcomes"
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.outcomeMeasure"
             ]
           }
         ]
@@ -471,8 +471,8 @@
         "fixedCodeableConcept": {
           "coding": [
             {
-              "code": "C5419532",
-              "system": "http://terminology.hl7.org/CodeSystem/umls",
+              "code": "C172240",
+              "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
               "display": "Clinicaltrials.gov Identifier"
             }
           ]
@@ -597,9 +597,9 @@
         "fixedCodeableConcept": {
           "coding": [
             {
-              "code": "C4329800",
-              "system": "http://terminology.hl7.org/CodeSystem/umls",
-              "display": "European Union Drug Regulating Authorities Clinical Trials Database (Intellectual Product)"
+              "code": "C132782",
+              "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+              "display": "European Union Drug Regulating Authorities Clinical Trials Database"
             }
           ]
         },
@@ -896,9 +896,9 @@
         "fixedCodeableConcept": {
           "coding": [
             {
-              "code": "C0205394",
-              "system": "http://terminology.hl7.org/CodeSystem/umls",
-              "display": "Other (Qualitative Concept)"
+              "code": "C17649",
+              "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+              "display": "Other"
             }
           ]
         },
@@ -1225,6 +1225,9 @@
         "id": "ResearchStudy.focus.coding.extension:uri",
         "path": "ResearchStudy.focus.coding.extension",
         "sliceName": "uri",
+        "short": "Code of the focus area",
+        "definition": "Code of the focus area in the terminology/classification used.",
+        "comment": "Short Input Help: If known, you can provide the code from the terminology/classification used.",
         "min": 0,
         "max": "1",
         "type": [
@@ -1233,6 +1236,12 @@
             "profile": [
               "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-uri"
             ]
+          }
+        ],
+        "example": [
+          {
+            "label": "Example of an URI for a SNOMED CT concept representing a focus area",
+            "valueUri": "http://snomed.info/id/840533007"
           }
         ],
         "mapping": [
@@ -1248,6 +1257,13 @@
         "short": "Terminology/classification",
         "definition": "Terminology/classification used for the focus area.",
         "comment": "Short Input Help: If used, name of the terminology/classification.",
+        "min": 1,
+        "example": [
+          {
+            "label": "Example of a terminology/classification",
+            "valueCode": "C49469"
+          }
+        ],
         "binding": {
           "strength": "required",
           "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-conditions-classification-nci-local"
@@ -1264,7 +1280,7 @@
         "path": "ResearchStudy.focus.coding.display",
         "short": "Focus area",
         "definition": "Focus area of the [RESOURCE] (e.g. medication, food, therapy, device, etc.).",
-        "comment": "Additional Information: The use of terms from established terminologies/classifications (e.g. SNOMED CT, ICD, etc.) is preferred. However, also self-assigned terms are allowed.",
+        "comment": "Additional Information: The use of terms from established terminologies/classifications (e.g. SNOMED CT, ICD, etc.) is preferred. However, also self-assigned terms are allowed. | Short input help: Preferably, use terms from SNOMED CT (https://browser.ihtsdotools.org).",
         "min": 1,
         "mapping": [
           {
@@ -1306,6 +1322,9 @@
         "id": "ResearchStudy.condition:conditions.coding.extension:uri",
         "path": "ResearchStudy.condition.coding.extension",
         "sliceName": "uri",
+        "short": "Code of the health condition or disease",
+        "definition": "Code of the health condition or disease in the terminology/classification used.",
+        "comment": "Short Input Help: If known, you can provide the code from the terminology/classification used.",
         "min": 0,
         "max": "1",
         "type": [
@@ -1314,6 +1333,12 @@
             "profile": [
               "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-uri"
             ]
+          }
+        ],
+        "example": [
+          {
+            "label": "Example of an URI for a SNOMED CT concept",
+            "valueUri": "http://snomed.info/id/840533007"
           }
         ],
         "mapping": [
@@ -1329,6 +1354,13 @@
         "short": "Terminology/classification",
         "definition": "Terminology/classification used for the health condition[conditions] or disease.",
         "comment": "Short Input Help: If used, name of the terminology/classification.",
+        "min": 1,
+        "example": [
+          {
+            "label": "Example of a terminology/classification",
+            "valueCode": "C49469"
+          }
+        ],
         "binding": {
           "strength": "required",
           "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-conditions-classification-nci-local"
@@ -1345,8 +1377,14 @@
         "path": "ResearchStudy.condition.coding.display",
         "short": "Primary health condition[conditions] or disease name",
         "definition": "Name of primary health condition[conditions] or disease considered in the [RESOURCE].",
-        "comment": "Additional information: The use of terms from established terminologies/classifications (e.g. SNOMED CT, ICD, etc.) is preferred. However, also self-assigned terms are allowed.",
+        "comment": "Additional information: The use of terms from established terminologies/classifications (e.g. SNOMED CT, ICD, etc.) is preferred. However, also self-assigned terms are allowed. |Short Input Help: Preferably, use terms from SNOMED CT (https://browser.ihtsdotools.org).",
         "min": 1,
+        "example": [
+          {
+            "label": "Example of a primary health condition name",
+            "valueString": "SARS-CoV-2"
+          }
+        ],
         "mapping": [
           {
             "identity": "NFDI4Health",
@@ -1491,22 +1529,48 @@
         "min": 1
       },
       {
+        "id": "ResearchStudy.location:coverage",
+        "path": "ResearchStudy.location",
+        "sliceName": "coverage",
+        "short": "Coverage",
+        "definition": "Specification of the recruitment area of the [RESOURCE].",
+        "comment": "Short input help: Select one value from the list.",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.17.1 Design.population.coverage"
+          }
+        ]
+      },
+      {
+        "id": "ResearchStudy.location:coverage.coding",
+        "path": "ResearchStudy.location.coding",
+        "min": 1,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-population-coverage-nci"
+        }
+      },
+      {
         "id": "ResearchStudy.location:countries",
         "path": "ResearchStudy.location",
         "sliceName": "countries",
-        "short": "Country(ies) where the study takes place",
-        "definition": "Country or countries where the study takes place.",
-        "comment": "Additional information: Select all that apply.",
+        "short": "Country(ies)",
+        "definition": "Country or countries where the [RESOURCE] takes place.",
         "min": 1,
         "max": "*",
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-countries-iso"
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-countries-iso",
+          "description": "Value set including the country names from the ISO 3166-1 list"
         },
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.15 Resource.studyDesign.countries"
+            "map": "1.17.17.2 Design.population.countries"
           }
         ]
       },
@@ -1531,19 +1595,19 @@
       {
         "id": "ResearchStudy.location:regions.text",
         "path": "ResearchStudy.location.text",
+        "short": "Region(s) and/or city(ies)",
+        "definition": "If applicable, region(s) and/or city(ies) within a country where the [RESOURCE] takes place.",
         "min": 1,
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.16 Resource.studyDesign.region"
+            "map": "1.17.17.3 Design.population.region"
           }
         ]
       },
       {
         "id": "ResearchStudy.enrollment",
         "path": "ResearchStudy.enrollment",
-        "short": "Eligibility criteria for study participants",
-        "definition": "Group of items providing information about eligibility criteria for study participants.",
         "type": [
           {
             "code": "Reference",
@@ -1551,12 +1615,6 @@
               "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-group-intended",
               "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-group-actual"
             ]
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "1.17.23 Resource.studyDesign.eligibilityCriteria"
           }
         ]
       },
@@ -1577,8 +1635,8 @@
         "id": "ResearchStudy.period.end",
         "path": "ResearchStudy.period.end",
         "short": "End date",
-        "definition": "In case of a [RESOURCE] with patients or other participants, it is the date when the last participant is examined or receives an intervention, or the date of the last participant’s last visit.",
-        "comment": "Additional information: Preferred date format: DD.MM.YYYY. | In case of a [RESOURCE] with patients or other participants, it is the date when the last participant is examined or receives an intervention, or the date of the last participant’s last visit.",
+        "definition": "In case of a [RESOURCE] with patients or other participants, it is the date when the last participant is examined or receives an intervention, or the date of the last participant's last visit.",
+        "comment": "Additional information: Preferred date format: DD.MM.YYYY. | Short input help: In case of a planned or ongoing [RESOURCE], enter the intended end date. In case of a completed [RESOURCE], enter the actual end date.",
         "mapping": [
           {
             "identity": "NFDI4Health",

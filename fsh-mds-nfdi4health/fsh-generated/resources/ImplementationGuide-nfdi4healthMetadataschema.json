@@ -113,6 +113,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-associated-party"
+        },
+        "name": "NFDI4Health EX MDS Associated Party",
+        "description": "Group of items providing information about person(s), group(s) of persons or institution(s)/organisation(s) contributing to the resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/nfdi4health-ex-mds-biospecimen"
         },
         "name": "NFDI4Health EX MDS Biospecimen",
@@ -257,6 +265,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-outcomemeasure-backport-r5"
+        },
+        "name": "NFDI4Health EX MDS Outcome Measure Backport R5",
+        "description": "Extension providing information about outcome measure(s).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/nfdi4health-ex-mds-outcomes"
         },
         "name": "NFDI4Health EX MDS Outcomes",
@@ -357,6 +373,14 @@
         },
         "name": "NFDI4Health EX MDS Study Comparison Group",
         "description": "Extension providing information about the arm(s)/group(s)/cohort(s) and intervention(s)/exposure(s) in a study.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-study-comparison-group-backport-r5"
+        },
+        "name": "NFDI4Health EX MDS Study Comparison Group Backport R5",
+        "description": "Extension providing information about the arm(s)/group(s)/cohort(s) and intervention(s)/exposure(s) in a resource. Based on ResearchStudy.comparisonGroup (R5)",
         "exampleBoolean": false
       },
       {
@@ -689,6 +713,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-population-coverage-nci"
+        },
+        "name": "NFDI4Health VS MDS Population Coverage [NCI]",
+        "description": "Value set defining codes to specify the population coverage in a resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/nfdi4health-vs-mds-provenance-activity-hl7-local"
         },
         "name": "NFDI4Health VS MDS Provenance Activity [HL7, local]",
@@ -769,9 +801,9 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/nfdi4health-vs-mds-role-name-type-snomed"
+          "reference": "ValueSet/nfdi4health-vs-mds-role-name-type-snomedct"
         },
-        "name": "NFDI4Health VS MDS Role Name Type [SNOMED]",
+        "name": "NFDI4Health VS MDS Role Name Type [SNOMED CT]",
         "description": "Value set defining codes to specify role types.",
         "exampleBoolean": false
       },
@@ -889,14 +921,6 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/nfdi4health-vs-mds-study-exposure-type-nci"
-        },
-        "name": "NFDI4Health VS MDS Study Exposure Type [NCI]",
-        "description": "Value set defining codes to specify the general type of the given exposure in the study.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "ValueSet/nfdi4health-vs-mds-study-group-characteristics-nci"
         },
         "name": "NFDI4Health VS MDS Study Group Characteristics [NCI]",
@@ -913,10 +937,10 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/nfdi4health-vs-mds-study-intervention-type-nci"
+          "reference": "ValueSet/nfdi4health-vs-mds-study-intervention-or-exposure-type-nci"
         },
-        "name": "NFDI4Health VS MDS Study Intervention Type [NCI]",
-        "description": "Value set defining codes to specify the general type of the given intervention in the study.",
+        "name": "NFDI4Health VS MDS Study Intervention Or Exposure Type [NCI]",
+        "description": "Value set defining codes to specify the general type of the given intervention or exposure in the study.",
         "exampleBoolean": false
       },
       {

@@ -16,7 +16,7 @@ Description: "Group of items providing information about person(s), group(s) of 
 * . ^definition = "Indication whether the contribution was made by person(s) or organisation(s)/institution(s)/group(s)."
 
 * valueCoding
-* valueCoding from NFDI4Health_VS_MDS_Role_Name_Type_SNOMED (required)
+* valueCoding from NFDI4Health_VS_MDS_Role_Name_Type_SNOMEDCT (required)
 
 
 Mapping: NFDI4Health-Name-Type-to-FHIR

@@ -86,7 +86,7 @@ Description: "NFDI4Health Logical Model Core Metadataschema"
 * Resource.contributors 1..* BackboneElement "Contributor(s) of the [RESOURCE]" "Group of items providing information about person(s), group(s) of persons or institution(s)/organisation(s)"
 * Resource.contributors ^comment = "Additional Information: For each [RESOURCE], there may be multiple contributors, but at least one person, group of persons or institution/organisation must be specified. / Source of the property and/or allowed values: NFDI4Health"
 * Resource.contributors.nameType 1..1 Coding "Is it a personal or organisational contribution?" "Indication whether the contribution was made by person(s) or organisation(s)/institution(s)/group(s)."
-* Resource.contributors.nameType from NFDI4Health_VS_MDS_Role_Name_Type_SNOMED (required)
+* Resource.contributors.nameType from NFDI4Health_VS_MDS_Role_Name_Type_SNOMEDCT (required)
 * Resource.contributors.nameType ^comment = "Source of the property and/or allowed values: NFDI4Health, DataCite [1]"
 * Resource.contributors.organisational 0..1 BackboneElement "Details about the contributing organisation(s)/institution(s)/group(s)" "Group of items providing information about group(s) of persons, institution(s) or organisation(s) contributing to the [RESOURCE]."
 * Resource.contributors.organisational ^comment = "Cardinality: 1..1, if Resource.contributors.nameType == 'Organisational'; otherwise 0..0 / Additional Information: Group of items applicable only when providing organisational, institutional or group names. / Source of the property and/or allowed values: NFDI4Health"

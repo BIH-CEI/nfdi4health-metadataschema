@@ -53,14 +53,13 @@
             }
           ],
           "rules": "open"
-        },
-        "min": 1
+        }
       },
       {
         "id": "Location.extension:centers",
         "path": "Location.extension",
         "sliceName": "centers",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -73,20 +72,19 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.17 Resource.studyDesign.studyCenters"
+            "map": "Design.centers"
           }
         ]
       },
       {
         "id": "Location.description",
         "path": "Location.description",
-        "short": "Number of study centers",
-        "definition": "Number of centers involved in the study.",
-        "min": 1,
+        "short": "Number of centers",
+        "definition": "Number of centers involved in the [RESOURCE].",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.18 Resource.studyDesign.studyCentersNumber"
+            "map": "Design.centersNumber"
           }
         ]
       }

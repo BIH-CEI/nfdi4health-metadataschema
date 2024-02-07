@@ -1,0 +1,309 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "nfdi4health-ex-mds-study-comparison-group-backport-r5",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.comparisonGroup",
+  "version": "0.9",
+  "name": "NFDI4Health_EX_MDS_Study_Comparison_Group_Backport_R5",
+  "title": "NFDI4Health EX MDS Study Comparison Group Backport R5",
+  "status": "draft",
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "description": "Extension providing information about the arm(s)/group(s)/cohort(s) and intervention(s)/exposure(s) in a resource. Based on ResearchStudy.comparisonGroup (R5)",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "NFDI4Health",
+      "name": "NFDI4Health to FHIR Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ResearchStudy"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Arms or groups/cohorts of the [RESOURCE]",
+        "definition": "Group of items providing information about arms or groups/cohorts of a [RESOURCE].",
+        "comment": "[Backport Extension from R5: ResearchStudy.comparisonGroup; Please note that some of the elements are not relevant for NFDI4Health. Also the DataType of 'Description' has been modified to string.]",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.19 Design.arms"
+          },
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.20 Design.groups"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:linkId",
+        "path": "Extension.extension",
+        "sliceName": "linkId",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:linkId.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:linkId.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "linkId"
+      },
+      {
+        "id": "Extension.extension:linkId.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:name",
+        "path": "Extension.extension",
+        "sliceName": "name",
+        "min": 1,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.19.1\tDesign.arms.label"
+          },
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.20.1\tDesign.groups.label"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:name.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:name.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "name"
+      },
+      {
+        "id": "Extension.extension:name.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "For 1.17.19.1 Design.arms.label: Name of the arm | For 1.17.20.1 Design.groups.label: Name of the group",
+        "definition": "For 1.17.19.1 Design.arms.label: Short name used to identify the arm. | For 1.17.20.1 Design.groups.label: Short name used to identify the group.",
+        "comment": "Additional information: For 1.17.19.1 Design.arms.label: 'Arm' means a pre-specified group or subgroup of participants in the [RESOURCE] assigned to receive specific intervention(s) (or no intervention) according to a protocol. | For 1.17.20.1 Design.groups.label: 'Group' means a predefined group (cohort) of participants to be studied.",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension",
+        "sliceName": "type",
+        "short": "Role of the arm",
+        "definition": "Role of the given arm in the [RESOURCE].",
+        "comment": "Short input help: Select one value from the list.",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.19.2\tDesign.arms.type"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:type.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:type.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:type.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:type.value[x].coding",
+        "path": "Extension.extension.value[x].coding",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-arm-group-type-nci",
+          "description": "Value set defining codes to specify the role of an arm or group/cohort in a [RESOURCE]."
+        }
+      },
+      {
+        "id": "Extension.extension:type.value[x].coding.system",
+        "path": "Extension.extension.value[x].coding.system",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:type.value[x].coding.code",
+        "path": "Extension.extension.value[x].coding.code",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:description",
+        "path": "Extension.extension",
+        "sliceName": "description",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.19.3 Design.arms.description"
+          },
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.20.2 Design.groups.description"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:description.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:description.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "description"
+      },
+      {
+        "id": "Extension.extension:description.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "For 1.17.19.3 Design.arms.description: Additional information about the arm | For 1.17.20.2 Design.groups.description: Additional information about the group",
+        "definition": "For 1.17.19.3 Design.arms.description: Additional descriptive information about the given arm. | For 1.17.20.2 Design.groups.description: Additional descriptive information about the given group.",
+        "comment": "Additional information: For 1.17.19.3 Design.arms.description: If needed, additional descriptive information (including which interventions are administered in each arm) to differentiate each arm from other arms in the [RESOURCE]. | For 1.17.20.2 Design.groups.description: Explanation of the nature of the [RESOURCE] group (for example, participants with and without a condition, participants with and without an exposure, etc.).",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:intendedExposure",
+        "path": "Extension.extension",
+        "sliceName": "intendedExposure",
+        "short": "For 1.17.21\tDesign.interventions: Interventions of the [RESOURCE] | For 1.17.22\tDesign.exposures: Exposures of the [RESOURCE]",
+        "definition": "For 1.17.21 Design.interventions: Group of items providing information about the interventions of the [RESOURCE]. | For 1.17.22 Design.exposures: Group of items providing information about the exposures of the [RESOURCE].",
+        "comment": "Additional information: For 1.17.21 Design.interventions: Specification of the intervention(s) associated with each arm. | For 1.17.22 Design.exposures: Specification of the exposure(s) associated with each group.",
+        "min": 0,
+        "max": "*",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.21 Design.interventions"
+          },
+          {
+            "identity": "NFDI4Health",
+            "map": "1.17.22 Design.exposures"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:intendedExposure.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:intendedExposure.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "intendedExposure"
+      },
+      {
+        "id": "Extension.extension:intendedExposure.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-evidence-variable-intervention-exposure"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:observedGroup",
+        "path": "Extension.extension",
+        "sliceName": "observedGroup",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:observedGroup.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:observedGroup.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "observedGroup"
+      },
+      {
+        "id": "Extension.extension:observedGroup.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Group"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.comparisonGroup"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}
