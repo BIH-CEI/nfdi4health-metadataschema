@@ -8,9 +8,9 @@
 [NFDI4Health_VS_MDS_CD_DataCollected_NCI]: ValueSet-nfdi4health-vs-mds-cd-datacollected-nci.html
 [NFDI4Health_VS_MDS_CD_Information_Sources_NCI_Local]: ValueSet-nfdi4health-vs-mds-cd-information-sources-nci-local.html
 [NFDI4Health_EX_MDS_Assessments]: StructureDefinition-nfdi4health-ex-mds-assessments.html
-[NFDI4Health_EX_MDS_Associated_Party]: StructureDefinition-nfdi4health-ex-mds-associated-party.html
 [NFDI4Health_EX_MDS_Biospecimen]: StructureDefinition-nfdi4health-ex-mds-biospecimen.html
 [NFDI4Health_EX_MDS_Centers]: StructureDefinition-nfdi4health-ex-mds-centers.html
+[NFDI4Health_EX_MDS_Chronic_Diseases]: StructureDefinition-nfdi4health-ex-mds-chronic-diseases.html
 [NFDI4Health_EX_MDS_Copyright_Label_And_Link]: StructureDefinition-nfdi4health-ex-mds-copyright-label-and-link.html
 [NFDI4Health_EX_MDS_Data_Sharing_Plan]: StructureDefinition-nfdi4health-ex-mds-data-sharing-plan.html
 [NFDI4Health_EX_MDS_Data_Source]: StructureDefinition-nfdi4health-ex-mds-data-source.html
@@ -26,6 +26,7 @@
 [NFDI4Health_EX_MDS_Execution_Language]: StructureDefinition-nfdi4health-ex-mds-execution-language.html
 [NFDI4Health_EX_MDS_Mortality_Data]: StructureDefinition-nfdi4health-ex-mds-mortality-data.html
 [NFDI4Health_EX_MDS_Name_Type]: StructureDefinition-nfdi4health-ex-mds-name-type.html
+[NFDI4Health_EX_MDS_Nutritional_Data]: StructureDefinition-nfdi4health-ex-mds-nutritional-data.html
 [NFDI4Health_EX_MDS_Off_Label_Use]: StructureDefinition-nfdi4health-ex-mds-off-label-use.html
 [NFDI4Health_EX_MDS_OutcomeMeasure_Backport_R5]: StructureDefinition-nfdi4health-ex-mds-outcomemeasure-backport-r5.html
 [NFDI4Health_EX_MDS_Outcomes]: StructureDefinition-nfdi4health-ex-mds-outcomes.html

@@ -1,9 +1,9 @@
 Logical: NFDI4Health_LM_Metadataschema_EOCD
 Parent: Element
 Id: nfdi4health-lm-metadataschema-eocd
-Title: "NFDI4Health LM Epidemiology of Chronic Diseases Metadataschema (UC 5.2)"
-Description: "NFDI4Health LogicalModel Epidemiology of Chronic Diseases Metadataschema (Use Case 5.2) V3.3"
-* ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-eocd-v3-3"
+Title: "NFDI4Health LM Epidemiology of Chronic Diseases Metadataschema"
+Description: "NFDI4Health Logical Model of MDS Module Epidemiology of Chronic Diseases"
+* ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-eocd"
 * ^publisher = "NFDI4Health"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"

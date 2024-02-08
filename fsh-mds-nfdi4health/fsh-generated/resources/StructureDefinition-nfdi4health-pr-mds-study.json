@@ -395,7 +395,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11 Resource.idsAlternative"
+            "map": "Resource.idsAlternative"
           }
         ]
       },
@@ -414,7 +414,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11.1 Resource.idsAlternative.scheme",
+            "map": "Resource.idsAlternative.scheme",
             "comment": "Type = DRKS"
           }
         ]
@@ -428,7 +428,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11.1 Resource.idsAlternative.scheme",
+            "map": "esource.idsAlternative.scheme",
             "comment": "Type = DRKS"
           }
         ]
@@ -447,7 +447,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11.2 Resource.idsAlternative.identifier"
+            "map": "Resource.idsAlternative.identifier"
           }
         ]
       },
@@ -461,7 +461,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11 Resource.idsAlternative"
+            "map": "Resource.idsAlternative"
           }
         ]
       },
@@ -480,7 +480,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11.1 Resource.idsAlternative.scheme",
+            "map": "Resource.idsAlternative.scheme",
             "comment": "Type = NCT"
           }
         ]
@@ -494,7 +494,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11.1 Resource.idsAlternative.scheme",
+            "map": "Resource.idsAlternative.scheme",
             "comment": "Type = NCT"
           }
         ]
@@ -513,7 +513,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11.2 Resource.idsAlternative.identifier"
+            "map": "Resource.idsAlternative.identifier"
           }
         ]
       },
@@ -527,7 +527,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11 Resource.idsAlternative"
+            "map": "Resource.idsAlternative"
           }
         ]
       },
@@ -546,7 +546,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11.1 Resource.idsAlternative.scheme",
+            "map": "Resource.idsAlternative.scheme",
             "comment": "Type = ISRCTN"
           }
         ]
@@ -560,7 +560,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11.1 Resource.idsAlternative.scheme",
+            "map": "Resource.idsAlternative.scheme",
             "comment": "Type = ISRCTN"
           }
         ]
@@ -573,7 +573,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11.2 Resource.idsAlternative.identifier"
+            "map": "Resource.idsAlternative.identifier"
           }
         ]
       },
@@ -587,7 +587,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11 Resource.idsAlternative"
+            "map": "Resource.idsAlternative"
           }
         ]
       },
@@ -606,7 +606,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11.1 Resource.idsAlternative.scheme",
+            "map": "Resource.idsAlternative.scheme",
             "comment": "Type = EudraCT"
           }
         ]
@@ -620,7 +620,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11.1 Resource.idsAlternative.scheme",
+            "map": "Resource.idsAlternative.scheme",
             "comment": "Type = EudraCT"
           }
         ]
@@ -632,7 +632,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11.2 Resource.idsAlternative.identifier"
+            "map": "Resource.idsAlternative.identifier"
           }
         ]
       },
@@ -646,7 +646,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11 Resource.idsAlternative"
+            "map": "Resource.idsAlternative"
           }
         ]
       },
@@ -665,7 +665,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11.1 Resource.idsAlternative.scheme",
+            "map": "Resource.idsAlternative.scheme",
             "comment": "Type = EUDAMED"
           }
         ]
@@ -679,7 +679,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11.1 Resource.idsAlternative.scheme",
+            "map": "Resource.idsAlternative.scheme",
             "comment": "Type = EUDAMED"
           }
         ]
@@ -692,7 +692,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11.2 Resource.idsAlternative.identifier"
+            "map": "Resource.idsAlternative.identifier"
           }
         ]
       },
@@ -706,7 +706,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11 Resource.idsAlternative"
+            "map": "Resource.idsAlternative"
           }
         ]
       },
@@ -725,7 +725,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11.1 Resource.idsAlternative.scheme",
+            "map": "Resource.idsAlternative.scheme",
             "comment": "Type = UTN"
           }
         ]
@@ -739,7 +739,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11.1 Resource.idsAlternative.scheme",
+            "map": "Resource.idsAlternative.scheme",
             "comment": "Type = UTN"
           }
         ]
@@ -751,7 +751,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11.2 Resource.idsAlternative.identifier"
+            "map": "Resource.idsAlternative.identifier"
           }
         ]
       },
@@ -765,7 +765,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11 Resource.idsAlternative"
+            "map": "Resource.idsAlternative"
           }
         ]
       },
@@ -784,7 +784,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11.1 Resource.idsAlternative.scheme",
+            "map": "Resource.idsAlternative.scheme",
             "comment": "Type = KonsortSWD"
           }
         ]
@@ -798,7 +798,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11.1 Resource.idsAlternative.scheme",
+            "map": "Resource.idsAlternative.scheme",
             "comment": "Type = KonsortSWD"
           }
         ]
@@ -811,7 +811,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11.2 Resource.idsAlternative.identifier"
+            "map": "Resource.idsAlternative.identifier"
           }
         ]
       },
@@ -825,7 +825,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11 Resource.idsAlternative"
+            "map": "Resource.idsAlternative"
           }
         ]
       },
@@ -844,7 +844,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11.1 Resource.idsAlternative.scheme",
+            "map": "Resource.idsAlternative.scheme",
             "comment": "Type = MDM Portal"
           }
         ]
@@ -858,7 +858,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11.1 Resource.idsAlternative.scheme",
+            "map": "Resource.idsAlternative.scheme",
             "comment": "Type = MDM Portal"
           }
         ]
@@ -871,7 +871,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11.2 Resource.idsAlternative.identifier"
+            "map": "Resource.idsAlternative.identifier"
           }
         ]
       },
@@ -886,7 +886,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11 Resource.idsAlternative"
+            "map": "Resource.idsAlternative"
           }
         ]
       },
@@ -905,7 +905,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11.1 Resource.idsAlternative.scheme",
+            "map": "Resource.idsAlternative.scheme",
             "comment": "Type = Other"
           }
         ]
@@ -917,7 +917,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11.1 Resource.idsAlternative.scheme",
+            "map": "Resource.idsAlternative.scheme",
             "comment": "Type = Other"
           }
         ]
@@ -930,7 +930,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.11.2 Resource.idsAlternative.identifier"
+            "map": "Resource.idsAlternative.identifier"
           }
         ]
       },
@@ -954,7 +954,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.15 Design.primaryPurpose"
+            "map": "Design.primaryPurpose"
           }
         ]
       },
@@ -988,7 +988,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.28.1 Design.interventional.phase"
+            "map": "Design.interventional.phase"
           }
         ]
       },
