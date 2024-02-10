@@ -14,7 +14,7 @@ Description: "Profile to collect information about documents related to german c
 * extension ^slicing.rules = #open
 * extension contains
     NFDI4Health_EX_MDS_Keywords named keywords 0..* and
-    NFDI4Health_EX_MDS_Descriptions named descritpions 1..1 and
+    NFDI4Health_EX_MDS_Descriptions named descriptions 1..1 and
     NFDI4Health_EX_MDS_Document_Use_Rights named useRights 0..1 and 
     NFDI4Health_EX_MDS_Related named relatedResources 0..1 and
     NFDI4Health_EX_MDS_Execution_Language named executionLanguage 0..*
@@ -161,7 +161,7 @@ Source: NFDI4Health_PR_MDS_Document
 * identifier[Other].system -> "Resource.idsAlternative.scheme" "Type = Other"
 * identifier[Other].type -> "Resource.idsAlternative.scheme" "Type = Other"
 * identifier[Other].value -> "Resource.idsAlternative.identifier"
-* extension[descritpions] -> "Resource.descriptions"
+* extension[descriptions] -> "Resource.descriptions"
 * content.extension[version] -> "Resource.nonStudyDetails.version"
 * content.attachment.language -> "1.8 Resource.languages"
 * content.format -> "Resource.nonStudyDetails.format"

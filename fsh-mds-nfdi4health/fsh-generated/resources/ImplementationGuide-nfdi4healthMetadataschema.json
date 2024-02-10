@@ -85,7 +85,6 @@
           "reference": "Questionnaire/InstanceOfQuestionnaireWHOHouseholdTransmission"
         },
         "name": "Example of the NFDI4Health PR MDS Questionnaire - Data Dictionary for the WHO's Household transmission investigation protocol for coronavirus disease 2019 (COVID-19)",
-        "description": "This is a data dictionary for the 'Household transmission investigation protocol for coronavirus disease 2019 (COVID-19)'. This data dictionary is prepared for upload into OPAL/MICA applications of the OBiBa (Open Source Software for BioBanks) software suite. The variables are annotated with metadata using the variable classification taxonomy developed by Maelstrom Research. Further information about format and applications can be found in Doiron et al. (2017; https://doi.org/10.1093/ije/dyx180).",
         "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-questionnaire"
       },
       {
@@ -93,6 +92,13 @@
           "reference": "Composition/InstanceOfCompositionHouseholdTransmissionInvestigationForC19"
         },
         "name": "Example of the PR MDS Composition - Household Transmission Investigation Protocol for Coronavirus Disease 2019 (COVID-19)",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-composition"
+      },
+      {
+        "reference": {
+          "reference": "Composition/InstanceOfCompositionWHOHouseholdTransmission"
+        },
+        "name": "Example of the PR MDS Composition - Questionnaire - Data Dictionary for the WHO's Household transmission investigation protocol for coronavirus disease 2019 (COVID-19)",
         "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-composition"
       },
       {

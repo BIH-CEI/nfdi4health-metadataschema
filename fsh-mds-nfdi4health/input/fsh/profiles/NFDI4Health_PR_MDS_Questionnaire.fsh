@@ -14,7 +14,7 @@ Description: "Profile collecting information on questionnaires within NFDI4Healt
 * extension ^slicing.rules = #open
 * extension contains
     NFDI4Health_EX_MDS_Format named format 0..1 and
-    NFDI4Health_EX_MDS_Descriptions named descritpions 1..1 and
+    NFDI4Health_EX_MDS_Descriptions named descriptions 1..1 and
     NFDI4Health_EX_MDS_Execution_Language named executionlLanguage 0..* and
     NFDI4Health_EX_MDS_Related named relatedResources 0..1 and
     NFDI4Health_EX_MDS_Keywords named keywords 0..*
@@ -163,6 +163,8 @@ Source: NFDI4Health_PR_MDS_Questionnaire
 * extension[relatedResources] -> "1.13 Resource.idsNfdi4health"
 * extension[relatedResources] -> "1.8 Resource.webpage"
 * extension[format] -> "Resource.nonStudyDetails.format"
+* extension[descriptions] -> "Resource.descriptions"
+
 
 
 

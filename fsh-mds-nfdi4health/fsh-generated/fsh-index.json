@@ -56,6 +56,14 @@
     "endLine": 31
   },
   {
+    "outputFile": "Composition-InstanceOfCompositionWHOHouseholdTransmission.json",
+    "fshName": "InstanceOfCompositionWHOHouseholdTransmission",
+    "fshType": "Instance",
+    "fshFile": "examples/InstanceOfCompositionQuestionnaireHousehold.fsh",
+    "startLine": 1,
+    "endLine": 30
+  },
+  {
     "outputFile": "DocumentReference-InstanceOfDocumentHouseholdTransmissionInvestigationForC19.json",
     "fshName": "InstanceOfDocumentHouseholdTransmissionInvestigationForC19",
     "fshType": "Instance",
@@ -317,7 +325,7 @@
     "fshType": "Instance",
     "fshFile": "examples/InstanceOfQuestionnaireWHOHouseholdTransmission.fsh",
     "startLine": 1,
-    "endLine": 35
+    "endLine": 26
   },
   {
     "outputFile": "Questionnaire-InstanceOfRecordLinkage.json",
@@ -341,7 +349,7 @@
     "fshType": "Instance",
     "fshFile": "examples/InstanceOfStudy_interventional_SPOVID.fsh",
     "startLine": 1,
-    "endLine": 105
+    "endLine": 91
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-assessments.json",

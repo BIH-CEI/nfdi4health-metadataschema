@@ -11,14 +11,13 @@ Usage: #example
 * content.extension[version].valueString = "2.2"
 
 /// English Description
-* extension[descriptions].valueString = "This document sets out the methods to guide data collection and the public health investigation for the comprehensive assessment of household contacts of confirmed COVID-19 cases. The household transmission investigation is a case-ascertained prospective study of all identified household contacts of a laboratory-confirmed 2019-nCoV infection. It is intended to provide rapid and early information on the clinical, epidemiological and virological characteristics of 2019-nCoV. There are three primary objectives of this household transmission study:
+* extension[descriptions].extension[value].valueString = "This document sets out the methods to guide data collection and the public health investigation for the comprehensive assessment of household contacts of confirmed COVID-19 cases. The household transmission investigation is a case-ascertained prospective study of all identified household contacts of a laboratory-confirmed 2019-nCoV infection. It is intended to provide rapid and early information on the clinical, epidemiological and virological characteristics of 2019-nCoV. There are three primary objectives of this household transmission study:
 1) To better understand the extent of transmission within a household by estimating the secondary infection rate for household contacts at an individual level, and factors associated with any variation in the secondary infection risk.
 2) To characterize secondary cases including the range of clinical presentation, risk factors for infection, and the extent and fraction of asymptomatic infections.
 3) To characterize serologic response following confirmed 2019-nCoV infection (highly encouraged, but optional depending on laboratory capacity and resources)."
-* extension[descriptions].extension[language].valueCode = #en "English"
+* extension[descriptions].extension[language].valueCoding = #en "English"
 
 /// Details
-
 * extension[keywords][0].valueCodeableConcept.text = "COVID-19"
 * extension[keywords][=].valueCodeableConcept.coding.system = "https://id.nlm.nih.gov/mesh/D000086382.html"
 * extension[keywords][+].valueCodeableConcept.text = "Questionnaire"
