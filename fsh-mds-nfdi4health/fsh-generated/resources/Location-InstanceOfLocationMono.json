@@ -1,0 +1,20 @@
+{
+  "resourceType": "Location",
+  "id": "InstanceOfLocationMono",
+  "meta": {
+    "profile": [
+      "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-centers"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-centers",
+      "valueCoding": {
+        "code": "084",
+        "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+        "display": "Monocentric"
+      }
+    }
+  ],
+  "description": "1"
+}

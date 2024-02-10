@@ -3,7 +3,7 @@ Parent: Element
 Id: nfdi4health-lm-mds-core
 Title: "NFDI4Health LM Core Metadataschema"
 Description: "NFDI4Health Logical Model Core Metadataschema"
-* ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-mds-core-3.3"
+* ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-mds-core"
 * ^publisher = "NFDI4Health"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"

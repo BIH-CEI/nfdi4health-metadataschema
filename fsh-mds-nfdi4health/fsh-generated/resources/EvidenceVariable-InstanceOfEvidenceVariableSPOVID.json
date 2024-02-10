@@ -1,0 +1,25 @@
+{
+  "resourceType": "EvidenceVariable",
+  "id": "InstanceOfEvidenceVariableSPOVID",
+  "meta": {
+    "profile": [
+      "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-evidence-variable-intervention-exposure"
+    ]
+  },
+  "status": "unknown",
+  "title": "Physical training",
+  "description": "Individualized endurance-oriented training intervention in patients with persistent complaints after infection with SARS-CoV-2 (Long COVID-19 syndrome)",
+  "characteristic": [
+    {
+      "definitionCodeableConcept": {
+        "coding": [
+          {
+            "code": "C15184",
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "display": "Behavioral Intervention (Therapeutic or Preventive Procedure)"
+          }
+        ]
+      }
+    }
+  ]
+}

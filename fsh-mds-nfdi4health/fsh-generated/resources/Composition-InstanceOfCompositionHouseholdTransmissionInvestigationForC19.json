@@ -1,0 +1,123 @@
+{
+  "resourceType": "Composition",
+  "id": "InstanceOfCompositionHouseholdTransmissionInvestigationForC19",
+  "meta": {
+    "profile": [
+      "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-composition"
+    ]
+  },
+  "status": "final",
+  "extension": [
+    {
+      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-provenance-data-source",
+      "valueCoding": {
+        "code": "06",
+        "display": "Manually collected"
+      }
+    }
+  ],
+  "author": [
+    {
+      "extension": [
+        {
+          "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-name-type",
+          "valueCoding": {
+            "code": "385437003",
+            "system": "http://snomed.info/sct",
+            "display": "Institution"
+          }
+        }
+      ],
+      "reference": "Organization/InstanceOfOrganizationCreatorWHO"
+    },
+    {
+      "extension": [
+        {
+          "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-name-type",
+          "valueCoding": {
+            "code": "385437003",
+            "system": "http://snomed.info/sct",
+            "display": "Institution"
+          }
+        }
+      ],
+      "reference": "Organization/InstanceOfOrganizationContactWHO"
+    }
+  ],
+  "identifier": {
+    "value": "97"
+  },
+  "date": "2024",
+  "type": {
+    "coding": [
+      {
+        "code": "021",
+        "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+        "display": "Other study document"
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "C25704",
+          "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "display": "Text"
+        }
+      ]
+    }
+  ],
+  "_title": {
+    "extension": [
+      {
+        "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-label",
+        "extension": [
+          {
+            "url": "value",
+            "valueString": "Household transmission investigation protocol for coronavirus disease 2019 (COVID-19)"
+          },
+          {
+            "url": "type",
+            "valueCoding": {
+              "code": "01",
+              "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-label",
+              "display": "Primary Title"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/language",
+            "valueCoding": {
+              "code": "en",
+              "display": "English"
+            }
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "value",
+            "valueString": "WHO-2019-nCoV-HHtransmission"
+          },
+          {
+            "url": "type",
+            "valueCoding": {
+              "code": "07",
+              "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-label",
+              "display": "Acronym"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/language",
+            "valueCoding": {
+              "code": "en",
+              "display": "English"
+            }
+          }
+        ],
+        "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-label"
+      }
+    ]
+  }
+}

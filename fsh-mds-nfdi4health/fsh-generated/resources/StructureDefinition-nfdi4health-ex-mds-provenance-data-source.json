@@ -81,16 +81,6 @@
           "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-provenance-data-source-local",
           "description": "Value set created by NFDI4Health defining codes for data sources in a Provenance resource."
         }
-      },
-      {
-        "id": "Extension.value[x].system",
-        "path": "Extension.value[x].system",
-        "min": 1
-      },
-      {
-        "id": "Extension.value[x].code",
-        "path": "Extension.value[x].code",
-        "min": 1
       }
     ]
   }

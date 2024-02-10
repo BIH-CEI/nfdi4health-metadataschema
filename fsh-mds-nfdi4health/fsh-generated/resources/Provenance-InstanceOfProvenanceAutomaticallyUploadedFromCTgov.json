@@ -1,0 +1,31 @@
+{
+  "resourceType": "Provenance",
+  "id": "InstanceOfProvenanceAutomaticallyUploadedFromCTgov",
+  "meta": {
+    "profile": [
+      "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-provenance"
+    ]
+  },
+  "target": [
+    {
+      "reference": "DocumentReference/InstanceOfDocumentHouseholdTransmissionInvestigationForC19"
+    }
+  ],
+  "recorded": "2022-03-07T17:31:17.239+02:00",
+  "activity": {
+    "coding": [
+      {
+        "code": "085",
+        "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+        "display": "First submitted"
+      }
+    ]
+  },
+  "agent": [
+    {
+      "who": {
+        "reference": "NFDI4Health_Practitioner"
+      }
+    }
+  ]
+}

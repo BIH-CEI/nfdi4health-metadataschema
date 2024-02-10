@@ -17,8 +17,6 @@ Description: "Extension providing information about the source of information of
 * . ^definition = "Source of information about the [RESOURCE] and the way it was uploaded/collected."
 * value[x] 1..1
 * value[x] only Coding
-* value[x].code 1..1
-* value[x].system 1..1
 * value[x] from $nfdi4health-vs-mds-provenance-data-source-local (required)
 * value[x] ^binding.description = "Value set created by NFDI4Health defining codes for data sources in a Provenance resource."
 

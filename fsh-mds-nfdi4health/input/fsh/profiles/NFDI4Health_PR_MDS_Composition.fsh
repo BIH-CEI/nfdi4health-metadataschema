@@ -18,7 +18,7 @@ Description: "Profile intended to capture information on the core information of
 * title ^short = "Title/name"
 * title ^definition = "Scientific unabbreviated title or name of the resource."
 * title ^comment = "Additional Information: If no official title/name has been defined yet, please provide a title/name that is suitable for public display. | Short Input Help: Please provide at least one title/name of the resource. If the original title is not in English, please also provide an English translation of the original title."
-* title.extension contains NFDI4Health_EX_MDS_Label named label 0..*
+* title.extension contains NFDI4Health_EX_MDS_Label named label 1..*
 * identifier.value 1..1
 * identifier ^short = "ID of the [RESOURCE]"
 * identifier ^definition = "Unique identifier of the resource used for identification within the NFDI4Health."

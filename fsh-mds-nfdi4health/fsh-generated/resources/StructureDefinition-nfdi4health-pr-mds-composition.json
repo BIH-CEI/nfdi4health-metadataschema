@@ -73,9 +73,9 @@
         "min": 1
       },
       {
-        "id": "Composition.extension:dataSource",
+        "id": "Composition.extension:provenanceDataSource",
         "path": "Composition.extension",
-        "sliceName": "dataSource",
+        "sliceName": "provenanceDataSource",
         "min": 1,
         "max": "1",
         "type": [
@@ -84,6 +84,12 @@
             "profile": [
               "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-provenance-data-source"
             ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Resource.provenance.dataSource"
           }
         ]
       },
@@ -100,6 +106,12 @@
               "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-chronic-diseases"
             ]
           }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Resource.chronicDiseases"
+          }
         ]
       },
       {
@@ -114,6 +126,12 @@
             "profile": [
               "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-nutritional-data"
             ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Resource.nutritionalData"
           }
         ]
       },
@@ -312,13 +330,14 @@
           ],
           "ordered": false,
           "rules": "open"
-        }
+        },
+        "min": 1
       },
       {
         "id": "Composition.title.extension:label",
         "path": "Composition.title.extension",
         "sliceName": "label",
-        "min": 0,
+        "min": 1,
         "max": "*",
         "type": [
           {
@@ -363,7 +382,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "Resource.nutritionalData"
+            "map": "DietAssessment"
           }
         ]
       },
@@ -408,14 +427,14 @@
             "key": "core-4",
             "severity": "error",
             "human": "1..*, if Resource.chronicDiseases == 'True' AND Resource.classification.type == ('C93381' OR 'C16468' OR 'C15518' OR 'C115779' OR 'C115761' OR 'C115756' OR 'C40988' OR  '016' OR '017' OR '018' OR '019' OR '021' OR 'C17649'); otherwise 0.. 0",
-            "expression": "extension[chronicDiseases] = 'TRUE' and type.where(code = 'C93381' code = 'C16468' code = 'C15518' code = 'C115779' code = 'C115761' code = 'C115756' code = 'C40988' code =  '016' code = '017' code = '018' code = '019' code = '021' code = 'C17649') implies section[chronicDiseases].exists()",
+            "expression": "extension[chronicDiseases].where (boolean = 'TRUE') and type.where(code = 'C93381' code = 'C16468' code = 'C15518' code = 'C115779' code = 'C115761' code = 'C115756' code = 'C40988' code =  '016' code = '017' code = '018' code = '019' code = '021' code = 'C17649') implies section[chronicDiseases].exists()",
             "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-composition"
           }
         ],
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "Resource.chronicDiseases"
+            "map": "ChronicDiseasesEpidemiology"
           }
         ]
       },
@@ -441,7 +460,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-observation-nutritional-epidemiology"
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-evidence-variable-chronic-diseases"
             ]
           }
         ]

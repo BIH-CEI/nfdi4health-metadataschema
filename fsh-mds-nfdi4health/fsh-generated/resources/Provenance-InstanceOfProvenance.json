@@ -1,0 +1,31 @@
+{
+  "resourceType": "Provenance",
+  "id": "InstanceOfProvenance",
+  "meta": {
+    "profile": [
+      "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-provenance"
+    ]
+  },
+  "target": [
+    {
+      "reference": "ISARIC_COVID-19_CORE_Case_Report_Form"
+    }
+  ],
+  "recorded": "2000-01-01T00:00:00Z",
+  "activity": {
+    "coding": [
+      {
+        "code": "085",
+        "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+        "display": "First submitted"
+      }
+    ]
+  },
+  "agent": [
+    {
+      "who": {
+        "reference": "Practitioner/InstanceOfPractitionerKathleenMerikangas"
+      }
+    }
+  ]
+}

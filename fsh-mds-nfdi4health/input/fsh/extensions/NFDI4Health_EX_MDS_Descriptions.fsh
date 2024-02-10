@@ -22,6 +22,7 @@ Description: "Group of items providing information about the description(s) of t
 * extension contains
     value 1..1 and
     NFDI4Health_EX_MDS_Language named language 1..1
+    
 * extension[value] ^short =  "Description"
 * extension[value] ^definition = "Short plain text summary of the [RESOURCE]."
 * extension[value].value[x] 1..

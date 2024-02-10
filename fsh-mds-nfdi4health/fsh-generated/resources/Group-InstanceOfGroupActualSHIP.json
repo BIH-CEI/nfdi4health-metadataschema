@@ -1,0 +1,12 @@
+{
+  "resourceType": "Group",
+  "id": "InstanceOfGroupActualSHIP",
+  "meta": {
+    "profile": [
+      "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-group-actual"
+    ]
+  },
+  "actual": true,
+  "type": "person",
+  "quantity": 4420
+}

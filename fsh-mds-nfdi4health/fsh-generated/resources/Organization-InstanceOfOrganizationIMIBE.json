@@ -1,0 +1,61 @@
+{
+  "resourceType": "Organization",
+  "id": "InstanceOfOrganizationIMIBE",
+  "meta": {
+    "profile": [
+      "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+    ]
+  },
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "+49 (0)201 72377201"
+    }
+  ],
+  "name": "Institut für Medizinische Informatik, Biometrie und Epidemiologie",
+  "address": [
+    {
+      "text": "Hufelandstr. 55, 45147, Essen, Germany"
+    }
+  ],
+  "partOf": {
+    "reference": "Organization/InstanceOfOrganizationUniklinikumEssen"
+  },
+  "identifier": [
+    {
+      "value": "02na8dn90",
+      "type": {
+        "coding": [
+          {
+            "code": "081",
+            "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+            "display": "ROR"
+          }
+        ]
+      }
+    },
+    {
+      "value": "grid.491891.c",
+      "type": {
+        "coding": [
+          {
+            "code": "082",
+            "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+            "display": "GRID"
+          }
+        ]
+      }
+    }
+  ],
+  "type": [
+    {
+      "coding": [
+        {
+          "code": "037",
+          "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+          "display": "Primary Sponsor"
+        }
+      ]
+    }
+  ]
+}

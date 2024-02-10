@@ -35,7 +35,7 @@
   "context": [
     {
       "type": "element",
-      "expression": "ResearchStudy"
+      "expression": "Composition"
     }
   ],
   "type": "Extension",

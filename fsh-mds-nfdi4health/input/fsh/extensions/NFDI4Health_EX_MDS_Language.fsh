@@ -17,4 +17,6 @@ Description: "Language of an element."
 * . ^short = "language"
 * . ^definition = "Language in which the title/name, acronym or description text is provided."
 
-* value[x] from $ISOLanguage (required)
+* value[x] 1..
+* value[x] only Coding
+* valueCoding from from $ISOLanguage (required)

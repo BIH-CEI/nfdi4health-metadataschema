@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
   "id": "nfdi4health-lm-metadataschema-eocd",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-eocd-v3-3",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-eocd",
   "name": "NFDI4Health_LM_Metadataschema_EOCD",
-  "title": "NFDI4Health LM Epidemiology of Chronic Diseases Metadataschema (UC 5.2)",
+  "title": "NFDI4Health LM Epidemiology of Chronic Diseases Metadataschema",
   "status": "draft",
   "publisher": "NFDI4Health",
   "contact": [
@@ -16,7 +16,7 @@
       ]
     }
   ],
-  "description": "NFDI4Health LogicalModel Epidemiology of Chronic Diseases Metadataschema (Use Case 5.2) V3.3",
+  "description": "NFDI4Health Logical Model of MDS Module Epidemiology of Chronic Diseases",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -27,20 +27,20 @@
   ],
   "kind": "logical",
   "abstract": false,
-  "type": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-eocd-v3-3",
+  "type": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-eocd",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
   "derivation": "specialization",
   "differential": {
     "element": [
       {
-        "id": "nfdi4health-lm-metadataschema-eocd-v3-3",
-        "path": "nfdi4health-lm-metadataschema-eocd-v3-3",
-        "short": "NFDI4Health LM Epidemiology of Chronic Diseases Metadataschema (UC 5.2)",
-        "definition": "NFDI4Health LogicalModel Epidemiology of Chronic Diseases Metadataschema (Use Case 5.2) V3.3"
+        "id": "nfdi4health-lm-metadataschema-eocd",
+        "path": "nfdi4health-lm-metadataschema-eocd",
+        "short": "NFDI4Health LM Epidemiology of Chronic Diseases Metadataschema",
+        "definition": "NFDI4Health Logical Model of MDS Module Epidemiology of Chronic Diseases"
       },
       {
-        "id": "nfdi4health-lm-metadataschema-eocd-v3-3.ChronicDiseasesEpidemiology",
-        "path": "nfdi4health-lm-metadataschema-eocd-v3-3.ChronicDiseasesEpidemiology",
+        "id": "nfdi4health-lm-metadataschema-eocd.ChronicDiseasesEpidemiology",
+        "path": "nfdi4health-lm-metadataschema-eocd.ChronicDiseasesEpidemiology",
         "short": "Chronic disease data collected in the [RESOURCE]",
         "definition": "Group of items providing information on chronic disease data collection.",
         "comment": "Cardinality: 1..*, if Resource.chronicDiseases == 'Yes' AND Resource.classification.type == ('Study protocol' OR 'Informed consent form' OR 'Patient information sheet' OR 'Manual of operations (SOPs)' OR 'Statistical analysis plan' OR 'Data management plan' OR 'Case report form' OR 'Interview scheme and themes' OR 'Observation guide' OR 'Discussion guide' OR 'Participant tasks' OR 'Other study document' OR 'Other'); otherwise 0..0 / Source of the property and/or allowed values: NFDI4Health UC 5.2 requirements",
@@ -53,8 +53,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-eocd-v3-3.ChronicDiseasesEpidemiology.commonChronicDiseaseName",
-        "path": "nfdi4health-lm-metadataschema-eocd-v3-3.ChronicDiseasesEpidemiology.commonChronicDiseaseName",
+        "id": "nfdi4health-lm-metadataschema-eocd.ChronicDiseasesEpidemiology.commonChronicDiseaseName",
+        "path": "nfdi4health-lm-metadataschema-eocd.ChronicDiseasesEpidemiology.commonChronicDiseaseName",
         "short": "On which of the following common chronic diseases were data collected?",
         "definition": "Specification of the common chronic disease on which data were collected in the [RESOURCE].",
         "comment": "Additional Information: The values originate from the following sources: 1) 10 types of cancer with the highest incidence in Germany, by gender, based on 2017/2018 German cancer registry data (RKI, Zentrum für Krebsregisterdaten, https://www.krebsdaten.de/); 2) 10 cardiovascular diseases with highest mortality in Germany in 2020 (www.destatis.de). / Short Input Help: Select one value from the list. / Source of the property and/or allowed values: ICD-10 [15], Zentrum für Krebsregisterdaten [18], Statistisches Bundesamt [19], (NFDI4Health UC 5.2 requirements)",
@@ -71,8 +71,8 @@
         }
       },
       {
-        "id": "nfdi4health-lm-metadataschema-eocd-v3-3.ChronicDiseasesEpidemiology.dataCollected",
-        "path": "nfdi4health-lm-metadataschema-eocd-v3-3.ChronicDiseasesEpidemiology.dataCollected",
+        "id": "nfdi4health-lm-metadataschema-eocd.ChronicDiseasesEpidemiology.dataCollected",
+        "path": "nfdi4health-lm-metadataschema-eocd.ChronicDiseasesEpidemiology.dataCollected",
         "short": "Type of data collected",
         "definition": "Specification of the type of data collected.",
         "comment": "Short Input Help: Select one value from the list. / Source of the property and/or allowed values: NFDI4Health UC 5.2 requirements",
@@ -89,8 +89,8 @@
         }
       },
       {
-        "id": "nfdi4health-lm-metadataschema-eocd-v3-3.ChronicDiseasesEpidemiology.informationSources",
-        "path": "nfdi4health-lm-metadataschema-eocd-v3-3.ChronicDiseasesEpidemiology.informationSources",
+        "id": "nfdi4health-lm-metadataschema-eocd.ChronicDiseasesEpidemiology.informationSources",
+        "path": "nfdi4health-lm-metadataschema-eocd.ChronicDiseasesEpidemiology.informationSources",
         "short": "From which source(s) are data generated/extracted?",
         "definition": "Specification of the source(s) from which information is generated/extracted.",
         "comment": "Additional Information: Treat prevalent and incident diseases separately (selected values should be specific for prevalent diseases and then separately incident diseases). / Short Input Help: Select all that apply. / Source of the property and/or allowed values: NFDI4Health UC 5.2 requirements",
@@ -107,8 +107,8 @@
         }
       },
       {
-        "id": "nfdi4health-lm-metadataschema-eocd-v3-3.ChronicDiseasesEpidemiology.outcomesVerificationMethods",
-        "path": "nfdi4health-lm-metadataschema-eocd-v3-3.ChronicDiseasesEpidemiology.outcomesVerificationMethods",
+        "id": "nfdi4health-lm-metadataschema-eocd.ChronicDiseasesEpidemiology.outcomesVerificationMethods",
+        "path": "nfdi4health-lm-metadataschema-eocd.ChronicDiseasesEpidemiology.outcomesVerificationMethods",
         "short": "How were outcomes generally verified?",
         "definition": "Methods of verification differ by study. All the details per outcome are not needed here but rather an explanation of how outcomes were verified in general.",
         "comment": "Source of the property and/or allowed values: NFDI4Health UC 5.2 requirements",

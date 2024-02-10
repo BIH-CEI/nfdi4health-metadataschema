@@ -1,0 +1,138 @@
+{
+  "resourceType": "DocumentReference",
+  "id": "InstanceOfDocumentHouseholdTransmissionInvestigationForC19",
+  "meta": {
+    "profile": [
+      "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-document"
+    ]
+  },
+  "content": [
+    {
+      "extension": [
+        {
+          "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-version",
+          "valueString": "2.2"
+        }
+      ],
+      "attachment": {
+        "language": "en"
+      },
+      "format": {
+        "display": "PDF"
+      }
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-keywords",
+      "valueCodeableConcept": {
+        "text": "COVID-19",
+        "coding": [
+          {
+            "system": "https://id.nlm.nih.gov/mesh/D000086382.html"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-keywords",
+      "valueCodeableConcept": {
+        "text": "Questionnaire",
+        "coding": [
+          {
+            "system": "https://id.nlm.nih.gov/mesh/T000997092.html"
+          }
+        ]
+      }
+    },
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "label",
+              "valueCoding": {
+                "code": "C0205394",
+                "system": "http://terminology.hl7.org/CodeSystem/umls",
+                "display": "Other (Qualitative Concept)"
+              }
+            }
+          ],
+          "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-copyright-label-and-link"
+        },
+        {
+          "url": "useRightsDescription",
+          "valueString": " This document is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 IGO (CC BY-NC-SA 3.0 IGO) License. To view a copy of the license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/igo/legalcode."
+        }
+      ],
+      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-document-use-rights"
+    },
+    {
+      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related",
+      "valueRelatedArtifact": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "valueIdentifier": {
+                  "type": {
+                    "coding": [
+                      {
+                        "code": "104",
+                        "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+                        "display": "NFDI4Health"
+                      }
+                    ]
+                  },
+                  "system": "https://csh.nfdi4health.de/resource/",
+                  "value": "122"
+                },
+                "url": "identifier"
+              },
+              {
+                "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related-artifact-reltype-nfdi-resource",
+                "valueCoding": {
+                  "code": "075",
+                  "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+                  "display": "A is source of B"
+                }
+              }
+            ],
+            "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related-artifact-nfdi"
+          },
+          {
+            "extension": [
+              {
+                "url": "identifier",
+                "valueIdentifier": {
+                  "value": "WHO/2019-nCoV/HHtransmission/2020.4",
+                  "type": {
+                    "coding": [
+                      {
+                        "code": "C0205394",
+                        "system": "http://terminology.hl7.org/CodeSystem/umls",
+                        "display": "Other (Qualitative Concept)"
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related-artifact-reltype-non-nfdi-resource",
+                "valueCoding": {
+                  "code": "072",
+                  "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+                  "display": "A is identical to B"
+                }
+              }
+            ],
+            "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related-artifact-non-nfdi"
+          }
+        ],
+        "type": "documentation",
+        "url": "www.nfdi4health.de"
+      }
+    }
+  ],
+  "status": "current"
+}
