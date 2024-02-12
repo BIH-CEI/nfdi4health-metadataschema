@@ -120,12 +120,28 @@
     "endLine": 8
   },
   {
+    "outputFile": "Organization-InstanceOfAffiliationUMG.json",
+    "fshName": "InstanceOfAffiliationUMG",
+    "fshType": "Instance",
+    "fshFile": "examples/InstanceOfAffiliation_UMGGreifswald.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "Organization-InstanceOfAffiliationUniDuisburgEssen.json",
+    "fshName": "InstanceOfAffiliationUniDuisburgEssen",
+    "fshType": "Instance",
+    "fshFile": "examples/InstanceOfAffiliation_UniDuisburgEssen.fsh",
+    "startLine": 1,
+    "endLine": 6
+  },
+  {
     "outputFile": "Organization-InstanceOfOrganizationBMBF.json",
     "fshName": "InstanceOfOrganizationBMBF",
     "fshType": "Instance",
     "fshFile": "examples/InstanceOfOrganization_FunderPublic_BMBF.fsh",
     "startLine": 1,
-    "endLine": 11
+    "endLine": 10
   },
   {
     "outputFile": "Organization-InstanceOfOrganizationContactWHO.json",
@@ -133,7 +149,7 @@
     "fshType": "Instance",
     "fshFile": "examples/InstanceOfOrganization_Contact_WHO.fsh",
     "startLine": 1,
-    "endLine": 13
+    "endLine": 12
   },
   {
     "outputFile": "Organization-InstanceOfOrganizationCreatorCMI.json",
@@ -165,7 +181,7 @@
     "fshType": "Instance",
     "fshFile": "examples/InstanceOfOrganization_Creator_NIMH.fsh",
     "startLine": 1,
-    "endLine": 12
+    "endLine": 11
   },
   {
     "outputFile": "Organization-InstanceOfOrganizationCreatorWHO.json",
@@ -173,7 +189,7 @@
     "fshType": "Instance",
     "fshFile": "examples/InstanceOfOrganization_Creator_WHO.fsh",
     "startLine": 1,
-    "endLine": 12
+    "endLine": 11
   },
   {
     "outputFile": "Organization-InstanceOfOrganizationIMIBE.json",
@@ -181,7 +197,7 @@
     "fshType": "Instance",
     "fshFile": "examples/InstanceOfOrganization_IMIBE.fsh",
     "startLine": 1,
-    "endLine": 15
+    "endLine": 14
   },
   {
     "outputFile": "Organization-InstanceOfOrganizationISTHochschule.json",
@@ -189,7 +205,7 @@
     "fshType": "Instance",
     "fshFile": "examples/InstanceOfOrganization_SponsorPrimary_IST Hochschule.fsh",
     "startLine": 1,
-    "endLine": 11
+    "endLine": 10
   },
   {
     "outputFile": "Organization-InstanceOfOrganizationMHH.json",
@@ -213,23 +229,7 @@
     "fshType": "Instance",
     "fshFile": "examples/InstanceOfOrganization_SponsorPrimary_RuhrUniBochum.fsh",
     "startLine": 1,
-    "endLine": 11
-  },
-  {
-    "outputFile": "Organization-InstanceOfOrganizationUMG.json",
-    "fshName": "InstanceOfOrganizationUMG",
-    "fshType": "Instance",
-    "fshFile": "examples/InstanceOfOrganization_UMGGreifswald.fsh",
-    "startLine": 1,
     "endLine": 10
-  },
-  {
-    "outputFile": "Organization-InstanceOfOrganizationUniDuisburgEssen.json",
-    "fshName": "InstanceOfOrganizationUniDuisburgEssen",
-    "fshType": "Instance",
-    "fshFile": "examples/InstanceOfOrganization_UniDuisburgEssen.fsh",
-    "startLine": 1,
-    "endLine": 6
   },
   {
     "outputFile": "Organization-InstanceOfOrganizationUniklinikumEssen.json",
@@ -269,7 +269,7 @@
     "fshType": "Instance",
     "fshFile": "examples/InstanceOfPractitionerRole_KathleenMerikangas.fsh",
     "startLine": 1,
-    "endLine": 10
+    "endLine": 11
   },
   {
     "outputFile": "PractitionerRole-InstanceOfPractitionerRoleNinaKirchhof.json",
@@ -277,7 +277,7 @@
     "fshType": "Instance",
     "fshFile": "examples/InstanceOfPractitionerRole_NinaKirchhof.fsh",
     "startLine": 1,
-    "endLine": 10
+    "endLine": 11
   },
   {
     "outputFile": "Provenance-InstanceOfProvenance.json",
@@ -293,7 +293,7 @@
     "fshType": "Instance",
     "fshFile": "examples/InstanceOfProvenance_AutomaticallyUploadedFromCTgov.fsh",
     "startLine": 1,
-    "endLine": 11
+    "endLine": 10
   },
   {
     "outputFile": "Provenance-InstanceOfProvenanceManuallyCollectedSHIPTrend.json",
@@ -301,7 +301,7 @@
     "fshType": "Instance",
     "fshFile": "examples/InstanceOfProvenance_ManuallyCollected_SHIPTrend.fsh",
     "startLine": 1,
-    "endLine": 11
+    "endLine": 10
   },
   {
     "outputFile": "Questionnaire-2.16.840.1.113883.3.1937.777.64.4.6--20231207000000.json",

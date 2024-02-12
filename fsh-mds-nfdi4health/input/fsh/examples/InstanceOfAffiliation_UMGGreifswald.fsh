@@ -1,5 +1,5 @@
-Instance: InstanceOfOrganizationUMG
-InstanceOf: NFDI4Health_PR_MDS_Organization
+Instance: InstanceOfAffiliationUMG
+InstanceOf: NFDI4Health_PR_MDS_Affiliation
 Usage: #example
 Title: "Instance Of Organization UMG"
 Description: "Example data representing an university"

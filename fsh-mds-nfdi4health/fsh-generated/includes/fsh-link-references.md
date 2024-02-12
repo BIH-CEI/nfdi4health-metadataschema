@@ -25,8 +25,8 @@
 [InstanceOfOrganizationMHH]: Organization-InstanceOfOrganizationMHH.html
 [InstanceOfOrganizationResearchGroupRNCM]: Organization-InstanceOfOrganizationResearchGroupRNCM.html
 [InstanceOfOrganizationRuhrUniBochum]: Organization-InstanceOfOrganizationRuhrUniBochum.html
-[InstanceOfOrganizationUMG]: Organization-InstanceOfOrganizationUMG.html
-[InstanceOfOrganizationUniDuisburgEssen]: Organization-InstanceOfOrganizationUniDuisburgEssen.html
+[InstanceOfAffiliationUMG]: Organization-InstanceOfAffiliationUMG.html
+[InstanceOfAffiliationUniDuisburgEssen]: Organization-InstanceOfAffiliationUniDuisburgEssen.html
 [InstanceOfOrganizationUniklinikumEssen]: Organization-InstanceOfOrganizationUniklinikumEssen.html
 [InstanceOfOrganizationContactWHO]: Organization-InstanceOfOrganizationContactWHO.html
 [InstanceOfOrganizationCreatorWHO]: Organization-InstanceOfOrganizationCreatorWHO.html

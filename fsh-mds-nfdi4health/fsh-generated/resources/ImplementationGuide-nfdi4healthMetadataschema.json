@@ -237,19 +237,19 @@
       },
       {
         "reference": {
-          "reference": "Organization/InstanceOfOrganizationUMG"
+          "reference": "Organization/InstanceOfAffiliationUMG"
         },
         "name": "Instance Of Organization UMG",
         "description": "Example data representing an university",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-affiliation"
       },
       {
         "reference": {
-          "reference": "Organization/InstanceOfOrganizationUniDuisburgEssen"
+          "reference": "Organization/InstanceOfAffiliationUniDuisburgEssen"
         },
         "name": "Instance Of Organization Universität Duisburg-Essen",
         "description": "Example data representing the Universität Duisburg-Essen",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-affiliation"
       },
       {
         "reference": {
@@ -265,7 +265,7 @@
         },
         "name": "Instance Of Organization World Health Organization (WHO) as contact",
         "description": "Example data representing the World Health Organization (WHO) as contact",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-affiliation"
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
       },
       {
         "reference": {

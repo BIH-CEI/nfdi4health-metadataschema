@@ -58,7 +58,7 @@ Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_PR_MDS_Organization
 * -> "Resource.contributors.organisational"
 * -> "Resource.contributors.affiliation"
-* identifier -> "Resource.contributors.organisational.fundingIds"
+* identifier.value -> "Resource.contributors.organisational.fundingIds"
 * name -> "Resource.contributors.organisational.name"
 * telecom[email] -> "Resource.contributors.email"
 * telecom[phone] -> "Resource.contributors.phone"

@@ -73,18 +73,18 @@
         "id": "Organization.identifier",
         "path": "Organization.identifier",
         "short": "Funding identifier(s)",
-        "definition": "Identifier(s) assigned by a funder to the [RESOURCE].",
+        "definition": "Identifier(s) assigned by a funder to the [RESOURCE]."
+      },
+      {
+        "id": "Organization.identifier.value",
+        "path": "Organization.identifier.value",
+        "min": 1,
         "mapping": [
           {
             "identity": "NFDI4Health",
             "map": "Resource.contributors.organisational.fundingIds"
           }
         ]
-      },
-      {
-        "id": "Organization.identifier.value",
-        "path": "Organization.identifier.value",
-        "min": 1
       },
       {
         "id": "Organization.type",

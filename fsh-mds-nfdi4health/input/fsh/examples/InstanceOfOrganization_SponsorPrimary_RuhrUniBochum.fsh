@@ -6,6 +6,5 @@ Description: "Example data representing the Ruhr-Universität Bochum, Lehr und F
 * name = "Ruhr-Universität Bochum, Lehr und Forschungsbereich 'Trainingswissenschaft'"
 * identifier.value = "04tsk2644"
 * identifier.type = $Remaining#081 "ROR"
-* telecom[webpage].value = "https://www.ruhr-uni-bochum.de/de"
 * address.text = "Universitätsstraße 150, 44801, Bochum, Germany"
 * type =  $Remaining#037 "Primary Sponsor"

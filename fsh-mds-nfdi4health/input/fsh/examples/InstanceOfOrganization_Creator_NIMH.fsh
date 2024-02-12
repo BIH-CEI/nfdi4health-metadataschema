@@ -7,6 +7,5 @@ Usage: #example
 * identifier[=].type = $Remaining#081 "ROR"
 * identifier[+].value = "grid.416868.5"
 * identifier[=].type = $Remaining#082 "GRID"
-* telecom[webpage].value = "https://www.nimh.nih.gov/research/research-conducted-at-nimh"
 * address.text = "Bethesda, MD, USA"
 * type = $NCI#C115486 "Content Item Creator"

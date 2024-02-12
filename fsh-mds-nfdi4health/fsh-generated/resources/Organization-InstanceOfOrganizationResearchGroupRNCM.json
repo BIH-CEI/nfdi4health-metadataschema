@@ -8,7 +8,7 @@
   },
   "name": "Research Netwerk Community Medicine",
   "partOf": {
-    "reference": "Organization/InstanceOfOrganizationUMG"
+    "reference": "InstanceOfOrganizationUMG"
   },
   "type": [
     {

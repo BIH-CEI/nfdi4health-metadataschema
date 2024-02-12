@@ -6,6 +6,12 @@
       "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-affiliation"
     ]
   },
+  "telecom": [
+    {
+      "system": "url",
+      "value": "https://www.mhh.de/"
+    }
+  ],
   "name": "Medizinische Hochschule Hannover",
   "address": [
     {

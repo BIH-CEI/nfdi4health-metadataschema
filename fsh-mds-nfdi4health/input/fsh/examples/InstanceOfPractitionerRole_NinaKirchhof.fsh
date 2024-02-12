@@ -5,6 +5,7 @@ Title: "Instance Of NFDI4Health_PR_MDS_Practitioner_Role for Nina Kirchhof"
 Description: "Example data representing the practitioner role of Nina Kirchhof"
 
 * practitioner = Reference(InstanceOfPractitionerNinaKirchhof)
-* organization = Reference(InstanceOfOrganizationMHH)
+* organization = Reference(InstanceOfAffiliationUMG)
 * telecom[email].value = "Kirchhof.Nina@mh-hannover.de"
 * telecom[phone].value = "+49 (0)511 5322407"
+* code = $NCI#C17089 "Research Personnel"

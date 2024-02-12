@@ -1,5 +1,5 @@
 Instance: InstanceOfOrganizationContactWHO
-InstanceOf: NFDI4Health_PR_MDS_Affiliation
+InstanceOf: NFDI4Health_PR_MDS_Organization
 Usage: #example
 Title: "Instance Of Organization World Health Organization (WHO) as contact"
 Description: "Example data representing the World Health Organization (WHO) as contact"
@@ -8,6 +8,5 @@ Description: "Example data representing the World Health Organization (WHO) as c
 * identifier[=].type = $Remaining#081 "ROR"
 * identifier[+].value = "grid.3575.4"
 * identifier[=].type = $Remaining#082 "GRID"
-* telecom[webpage].value = "https://www.who.int/"
-* telecom[email].value = "EarlyInvestigations-2019-nCoV@who.int"
+* telecom.value = "EarlyInvestigations-2019-nCoV@who.int"
 * type = $NCI#C25461 "Contact Person"

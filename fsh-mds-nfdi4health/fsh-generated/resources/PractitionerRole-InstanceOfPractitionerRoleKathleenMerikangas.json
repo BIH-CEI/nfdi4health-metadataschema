@@ -20,6 +20,17 @@
     "reference": "Practitioner/InstanceOfPractitionerKathleenMerikangas"
   },
   "organization": {
-    "reference": "Organization/InstanceOfOrganizationCreatorIRM"
-  }
+    "reference": "Organization/InstanceOfAffiliationUniDuisburgEssen"
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "code": "C51820",
+          "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "display": "Data Manager"
+        }
+      ]
+    }
+  ]
 }

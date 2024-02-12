@@ -1,0 +1,10 @@
+{
+  "resourceType": "Organization",
+  "id": "InstanceOfAffiliationUniDuisburgEssen",
+  "meta": {
+    "profile": [
+      "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-affiliation"
+    ]
+  },
+  "name": "Universität Duisburg-Essen"
+}
