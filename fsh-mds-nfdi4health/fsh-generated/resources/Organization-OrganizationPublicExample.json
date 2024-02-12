@@ -6,5 +6,16 @@
       "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
     ]
   },
-  "name": "example name"
+  "name": "example name",
+  "type": [
+    {
+      "coding": [
+        {
+          "code": "046",
+          "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+          "display": "Public Funder"
+        }
+      ]
+    }
+  ]
 }

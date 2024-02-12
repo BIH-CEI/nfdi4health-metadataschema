@@ -15,7 +15,7 @@ Usage: #example
 1) To better understand the extent of transmission within a household by estimating the secondary infection rate for household contacts at an individual level, and factors associated with any variation in the secondary infection risk.
 2) To characterize secondary cases including the range of clinical presentation, risk factors for infection, and the extent and fraction of asymptomatic infections.
 3) To characterize serologic response following confirmed 2019-nCoV infection (highly encouraged, but optional depending on laboratory capacity and resources)."
-* extension[descriptions].extension[language].valueCodeableConcept = #en "English"
+* extension[descriptions].extension[language].valueCodeableConcept = $ISOLanguage#en "English"
 
 /// Details
 * extension[keywords][0].valueCodeableConcept.text = "COVID-19"

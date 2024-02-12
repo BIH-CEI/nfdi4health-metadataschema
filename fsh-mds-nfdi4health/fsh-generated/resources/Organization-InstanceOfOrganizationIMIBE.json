@@ -3,9 +3,15 @@
   "id": "InstanceOfOrganizationIMIBE",
   "meta": {
     "profile": [
-      "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-affiliation"
+      "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
     ]
   },
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "+49 (0)201 72377201"
+    }
+  ],
   "name": "Institut für Medizinische Informatik, Biometrie und Epidemiologie",
   "address": [
     {

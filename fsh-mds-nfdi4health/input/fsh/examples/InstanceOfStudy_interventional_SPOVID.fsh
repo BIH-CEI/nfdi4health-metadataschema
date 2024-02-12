@@ -6,7 +6,7 @@ Usage: #example
 
 ///Descriptions of the Study
 * extension[descriptions].extension[value].valueString = "In a pilot study, the SPOVID project is investigating whether an individually tailored training program can safely and effectively improve the physical endurance of Long COVID-19 patients. To this end, the researchers observe fitness parameters of cardiovascular and lung function in particular over several months, but also the development of headache, fatigue and fatigue symptoms. From the results, they want to derive recommendations for personalized training programs."
-* extension[descriptions].extension[language].valueCoding = #en "English" 
+* extension[descriptions].extension[language].valueCodeableConcept = $ISOLanguage#en "English" 
 
 
 ///Keywords

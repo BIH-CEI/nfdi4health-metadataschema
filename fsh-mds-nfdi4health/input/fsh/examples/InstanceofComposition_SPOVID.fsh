@@ -12,10 +12,10 @@ Usage: #example
 // Title and Acronyms
 * title.extension[label][0].extension[value].valueString = "SPOVID - Sport & Long-COVID-Syndrom"
 * title.extension[label][=].extension[type].valueCoding = $LabelType#01 "Primary Title"
-* title.extension[label][=].extension[language].valueCodeableConcept = #en "English"
+* title.extension[label][=].extension[language].valueCodeableConcept = $ISOLanguage#en "English"
 * title.extension[label][+].extension[value].valueString = "SPOVID"
 * title.extension[label][=].extension[type].valueCoding = $LabelType#07 "Acronym"
-* title.extension[label][=].extension[language].valueCodeableConcept = #en "English"
+* title.extension[label][=].extension[language].valueCodeableConcept = $ISOLanguage#en "English"
 
 // Roles
 * author[0] = Reference(InstanceOfOrganizationIMIBE)

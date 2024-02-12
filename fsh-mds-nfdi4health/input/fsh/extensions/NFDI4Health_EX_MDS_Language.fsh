@@ -19,6 +19,6 @@ Description: "Language of an element."
 
 * value[x] 1..
 * value[x] only CodeableConcept
-* valueCode from $ISOLanguage (required)
+* valueCodeableConcept from $ISOLanguage (required)
 * valueCodeableConcept.coding.code 1..1
 * valueCodeableConcept.coding.system 1..1

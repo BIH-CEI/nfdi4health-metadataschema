@@ -16,7 +16,16 @@
           "valueString": "In a pilot study, the SPOVID project is investigating whether an individually tailored training program can safely and effectively improve the physical endurance of Long COVID-19 patients. To this end, the researchers observe fitness parameters of cardiovascular and lung function in particular over several months, but also the development of headache, fatigue and fatigue symptoms. From the results, they want to derive recommendations for personalized training programs."
         },
         {
-          "url": "http://hl7.org/fhir/StructureDefinition/language"
+          "url": "http://hl7.org/fhir/StructureDefinition/language",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "en",
+                "system": "http://terminology.hl7.org/CodeSystem/iso639-1",
+                "display": "English"
+              }
+            ]
+          }
         }
       ]
     },
