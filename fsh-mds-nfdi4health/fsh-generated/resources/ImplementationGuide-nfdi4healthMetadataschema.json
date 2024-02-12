@@ -103,6 +103,13 @@
       },
       {
         "reference": {
+          "reference": "Composition/InstanceOfCompositionSHIP"
+        },
+        "name": "Example of the PR MDS Composition - SHIP",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-composition"
+      },
+      {
+        "reference": {
           "reference": "Composition/InstanceOfCompositionSPOVID"
         },
         "name": "Example of the PR MDS Composition - SPOVID - Sport & Long-COVID-Syndrom",
@@ -194,7 +201,7 @@
         },
         "name": "Instance Of Organization Institut für Medizinische Informatik, Biometrie und Epidemiologie of Universitätsklinikum Essen",
         "description": "Example data representing the Institut für Medizinische Informatik, Biometrie und Epidemiologie of Universitätsklinikum Essen",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-affiliation"
       },
       {
         "reference": {
@@ -210,7 +217,7 @@
         },
         "name": "Instance Of Organization Medizinische Hochschule Hannover",
         "description": "Example data representing the Medizinische Hochschule Hannover",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-affiliation"
       },
       {
         "reference": {
@@ -258,7 +265,7 @@
         },
         "name": "Instance Of Organization World Health Organization (WHO) as contact",
         "description": "Example data representing the World Health Organization (WHO) as contact",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-affiliation"
       },
       {
         "reference": {

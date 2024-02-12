@@ -16,9 +16,13 @@
         },
         {
           "url": "http://hl7.org/fhir/StructureDefinition/language",
-          "valueCoding": {
-            "code": "en",
-            "display": "English"
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "en",
+                "display": "English"
+              }
+            ]
           }
         }
       ]

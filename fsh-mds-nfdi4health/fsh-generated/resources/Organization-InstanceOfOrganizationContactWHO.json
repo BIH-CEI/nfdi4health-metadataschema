@@ -3,15 +3,9 @@
   "id": "InstanceOfOrganizationContactWHO",
   "meta": {
     "profile": [
-      "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
+      "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-affiliation"
     ]
   },
-  "telecom": [
-    {
-      "system": "email",
-      "value": "EarlyInvestigations-2019-nCoV@who.int"
-    }
-  ],
   "name": "World Health Organization (WHO)",
   "identifier": [
     {

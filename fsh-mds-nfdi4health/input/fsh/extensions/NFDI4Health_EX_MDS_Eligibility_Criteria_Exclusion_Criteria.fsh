@@ -21,4 +21,4 @@ Mapping: NFDI4Health-Eligibility-Criteria-Exclusion-Criteria-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Eligibility_Criteria_Exclusion_Criteria
-* -> "1.17.16.5 Design.eligibilityCriteria.exclusionCriteria"
+* -> "Design.eligibilityCriteria.exclusionCriteria"

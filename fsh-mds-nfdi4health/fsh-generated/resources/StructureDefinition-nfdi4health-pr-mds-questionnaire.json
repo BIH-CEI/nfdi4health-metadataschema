@@ -93,9 +93,9 @@
         ]
       },
       {
-        "id": "Questionnaire.extension:descritpions",
+        "id": "Questionnaire.extension:descriptions",
         "path": "Questionnaire.extension",
-        "sliceName": "descritpions",
+        "sliceName": "descriptions",
         "min": 1,
         "max": "1",
         "type": [
@@ -107,6 +107,10 @@
           }
         ],
         "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Resource.descriptions"
+          },
           {
             "identity": "NFDI4Health",
             "map": "Resource.descriptions"

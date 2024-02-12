@@ -7,3 +7,4 @@ Description: "Example data representing the Universitätsklinikum Essen"
 * identifier.value = "02na8dn90"
 * identifier.type = $Remaining#081 "ROR"
 * partOf = Reference(InstanceOfOrganizationUniDuisburgEssen)
+* type =  $Remaining#037 "Primary Sponsor"

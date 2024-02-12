@@ -1,6 +1,6 @@
 {
   "resourceType": "Composition",
-  "id": "InstanceOfCompositionSPOVID",
+  "id": "InstanceOfCompositionSHIP",
   "meta": {
     "profile": [
       "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-composition"
@@ -12,6 +12,7 @@
       "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-provenance-data-source",
       "valueCoding": {
         "code": "06",
+        "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-mds-provenance-data-source",
         "display": "Manually collected"
       }
     },
@@ -36,50 +37,11 @@
           }
         }
       ],
-      "reference": "Organization/InstanceOfOrganizationIMIBE"
-    },
-    {
-      "extension": [
-        {
-          "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-name-type",
-          "valueCoding": {
-            "code": "385437003",
-            "system": "http://snomed.info/sct",
-            "display": "Institution"
-          }
-        }
-      ],
-      "reference": "Organization/InstanceOfOrganizationISTHochschule"
-    },
-    {
-      "extension": [
-        {
-          "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-name-type",
-          "valueCoding": {
-            "code": "385437003",
-            "system": "http://snomed.info/sct",
-            "display": "Institution"
-          }
-        }
-      ],
-      "reference": "Organization/InstanceOfOrganizationRuhrUniBochum"
-    },
-    {
-      "extension": [
-        {
-          "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-name-type",
-          "valueCoding": {
-            "code": "385437003",
-            "system": "http://snomed.info/sct",
-            "display": "Institution"
-          }
-        }
-      ],
-      "reference": "Organization/InstanceOfOrganizationBMBF"
+      "reference": "Organization/InstanceOfOrganizationResearchGroupRNCM"
     }
   ],
   "identifier": {
-    "value": "236"
+    "value": "81"
   },
   "date": "2024",
   "type": {
@@ -98,7 +60,7 @@
         "extension": [
           {
             "url": "value",
-            "valueString": "SPOVID - Sport & Long-COVID-Syndrom"
+            "valueString": "Study of Health in Pomerania - TREND"
           },
           {
             "url": "type",
@@ -125,7 +87,7 @@
         "extension": [
           {
             "url": "value",
-            "valueString": "SPOVID"
+            "valueString": "SHIP-TREND"
           },
           {
             "url": "type",

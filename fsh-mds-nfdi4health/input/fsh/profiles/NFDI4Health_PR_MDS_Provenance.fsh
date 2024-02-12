@@ -29,7 +29,7 @@ Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_PR_MDS_Provenance
 * -> "Resource.provenance"
-* meta.versionId -> "1.16.12 Resource.provenance.resourceVersion"
+* meta.versionId -> "Resource.provenance.resourceVersion"
 * recorded -> "Resource.provenance.verificationDate"
 * recorded -> "Resource.provenance.firstSubmittedDate"
 * recorded -> "Resource.provenance.firstPostedDate"

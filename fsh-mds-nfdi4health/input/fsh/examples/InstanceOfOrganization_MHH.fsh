@@ -1,5 +1,5 @@
 Instance: InstanceOfOrganizationMHH
-InstanceOf: NFDI4Health_PR_MDS_Organization
+InstanceOf: NFDI4Health_PR_MDS_Affiliation
 Usage: #example
 Title: "Instance Of Organization Medizinische Hochschule Hannover"
 Description: "Example data representing the Medizinische Hochschule Hannover"

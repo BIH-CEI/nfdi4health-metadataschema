@@ -29,10 +29,10 @@ Description: "Extension providing information about the arm(s)/group(s)/cohort(s
 * extension[name].valueString ^definition = "For 1.17.19.1 Design.arms.label: Short name used to identify the arm. | For 1.17.20.1 Design.groups.label: Short name used to identify the group."
 * extension[name].valueString ^comment = "Additional information: For 1.17.19.1 Design.arms.label: 'Arm' means a pre-specified group or subgroup of participants in the [RESOURCE] assigned to receive specific intervention(s) (or no intervention) according to a protocol. | For 1.17.20.1 Design.groups.label: 'Group' means a predefined group (cohort) of participants to be studied."
 * extension[type].value[x] only CodeableConcept
+* extension[type].valueCodeableConcept from NFDI4Health_VS_MDS_Study_Arm_Group_Type_NCI (required)
+* extension[type].valueCodeableConcept ^binding.description = "Value set defining codes to specify the role of an arm or group/cohort in a [RESOURCE]."
 * extension[type].valueCodeableConcept.coding.code 1..1
 * extension[type].valueCodeableConcept.coding.system 1..1
-* extension[type].valueCodeableConcept.coding from NFDI4Health_VS_MDS_Study_Arm_Group_Type_NCI (required)
-* extension[type].valueCodeableConcept.coding ^binding.description = "Value set defining codes to specify the role of an arm or group/cohort in a [RESOURCE]."
 * extension[type] ^short = "Role of the arm"
 * extension[type] ^definition = "Role of the given arm in the [RESOURCE]."
 * extension[type] ^comment =  "Short input help: Select one value from the list."

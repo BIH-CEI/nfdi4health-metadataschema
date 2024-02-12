@@ -9,5 +9,16 @@
   "name": "Research Netwerk Community Medicine",
   "partOf": {
     "reference": "Organization/InstanceOfOrganizationUMG"
-  }
+  },
+  "type": [
+    {
+      "coding": [
+        {
+          "code": "048",
+          "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+          "display": "Research Group"
+        }
+      ]
+    }
+  ]
 }

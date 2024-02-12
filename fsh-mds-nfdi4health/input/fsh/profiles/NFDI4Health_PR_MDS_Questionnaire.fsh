@@ -154,7 +154,7 @@ Source: NFDI4Health_PR_MDS_Questionnaire
 * identifier[Other].type -> "Resource.idsAlternative.scheme" "Type = Other"
 * identifier[Other].value -> "Resource.idsAlternative.identifier"
 * version -> "Resource.nonStudyDetails.version"
-* extension[descritpions] -> "Resource.descriptions"
+* extension[descriptions] -> "Resource.descriptions"
 * copyright -> "Resource.nonStudyDetails.useRights.description"
 * copyright.extension[NFDI4Health_EX_MDS_Copyright_Label_And_Link] -> "Resource.nonStudyDetails.useRights.label"
 * copyright.extension[NFDI4Health_EX_MDS_Copyright_Label_And_Link] -> "Resource.nonStudyDetails.useRights.link"

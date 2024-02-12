@@ -6,6 +6,3 @@ Description: "Example data about actual study participants in the SHIP Trend stu
 * type = #person
 * actual = true
 * quantity = 4420
-* characteristic[examinedMinimumAge].valueQuantity = $UCUM#a "year"
-* characteristic[examinedMinimumAge].valueQuantity.value = 20
-* characteristic[examinedMinimumAge].exclude = false

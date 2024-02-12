@@ -13,12 +13,12 @@ Usage: #example
 // Title and Acronyms
 * title.extension[label][0].extension[value].valueString = "Data Dictionary for the WHO's Household transmission investigation protocol for coronavirus disease 2019 (COVID-19)"
 * title.extension[label][=].extension[type].valueCoding = $LabelType#01 "Primary Title"
-* title.extension[label][=].extension[language].valueCoding = #en "English"
+* title.extension[label][=].extension[language].valueCodeableConcept = #en "English"
 
 
 * title.extension[label][+].extension[value].valueString = "WHO's Household transmission investigation protocol" // made up as no information in CSH
 * title.extension[label][=].extension[type].valueCoding = $LabelType#07 "Acronym"
-* title.extension[label][=].extension[language].valueCoding = #en "English"
+* title.extension[label][=].extension[language].valueCodeableConcept = #en "English"
 
 // Roles
 * author[+] = Reference(InstanceOfOrganizationContactWHO)

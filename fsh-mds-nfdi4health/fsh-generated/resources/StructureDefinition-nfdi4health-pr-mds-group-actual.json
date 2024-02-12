@@ -61,7 +61,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.17.6 Design.population.obtainedSampleSize"
+            "map": "Design.population.obtainedSampleSize"
           }
         ]
       }

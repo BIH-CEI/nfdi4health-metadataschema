@@ -21,4 +21,4 @@ Mapping: NFDI4Health-Study-Population-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Study_Population
-* -> "1.17.17.4	Design.population.description"
+* -> "Design.population.description"

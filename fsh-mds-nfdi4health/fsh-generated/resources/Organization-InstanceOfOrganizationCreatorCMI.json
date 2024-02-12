@@ -9,5 +9,16 @@
   "name": "Child Mind Institute; New York State Nathan S. Kline Institute for Psychiatric Research",
   "partOf": {
     "reference": "Organization/InstanceOfOrganizationCreatorNIMH"
-  }
+  },
+  "type": [
+    {
+      "coding": [
+        {
+          "code": "C42781",
+          "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "display": "Author"
+        }
+      ]
+    }
+  ]
 }

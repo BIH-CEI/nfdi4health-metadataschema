@@ -4,3 +4,4 @@ Title: "Example of the NFDI4Health PR MDS Organization - Intramural Research Pro
 Usage: #example
 * name = "Intramural Research Program"
 * partOf = Reference(InstanceOfOrganizationCreatorNIMH)
+* type = $NCI#C25461 "Contact Person"

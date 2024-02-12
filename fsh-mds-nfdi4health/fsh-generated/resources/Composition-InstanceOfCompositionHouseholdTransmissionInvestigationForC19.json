@@ -87,9 +87,14 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/language",
-            "valueCoding": {
-              "code": "en",
-              "display": "English"
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "en",
+                  "system": "http://terminology.hl7.org/CodeSystem/iso639-1",
+                  "display": "English"
+                }
+              ]
             }
           }
         ]
@@ -110,9 +115,14 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/language",
-            "valueCoding": {
-              "code": "en",
-              "display": "English"
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "en",
+                  "system": "http://terminology.hl7.org/CodeSystem/iso639-1",
+                  "display": "English"
+                }
+              ]
             }
           }
         ],

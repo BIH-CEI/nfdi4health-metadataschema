@@ -4,22 +4,10 @@ Title: "Instance of Study SHIP TREND"
 Description: "Example data from the SHIP Trend study - Study of Health in Pomerania Trend"
 Usage: #example
 
-//General information
-* identifier[NFDI4Health].value = "81"
-* title.extension[label].extension[value].valueString = "Study of Health in Pomerania - TREND"
-* title.extension[label].extension[type].valueCoding = $LabelType#01 "Primary Title"
-* title.extension[label].extension[language].valueCode = #en "English"
+
 ///English description of the Study
-* description = "SHIP-TREND is a population-based cohort study. It has two main objectives: To assess prevalence and incidence of common risk factors, subclinical disorders and clinical diseases and to investigate the complex associations among risk factors, subclinical disorders and clinical diseases. A particular characteristic of SHIP-TREND is that it does not focus on a selected disease; it rather attempts to describe health-related conditions with the widest focus possible. Important medical areas of investigation include cardiovascular diseases, diabetes mellitus, liver and biliary tract diseases, neurological diseases, thyroid diseases, dental diseases, lung diseases, addiction and risk behaviour, among others. SHIP-TREND is part of the SHIP project with two other independent cohorts, SHIP-START and SHIP-NEXT."
-* description.extension[language].valueCode = #en "English"
-///Details
-* extension[resourceType].valueCoding = $UMLS#C0947630 "Scientific Study (Research Activity)"
-* title.extension[label].extension[value].valueString = "SHIP-TREND"
-* title.extension[label].extension[type].valueCoding = $LabelType#07 "Acronym"
-* title.extension[label].extension[language].valueCode = #en "English"
-
-
-////Missing: source of info in Provenance
+* extension[descriptions].extension[value].valueString = "SHIP-TREND is a population-based cohort study. It has two main objectives: To assess prevalence and incidence of common risk factors, subclinical disorders and clinical diseases and to investigate the complex associations among risk factors, subclinical disorders and clinical diseases. A particular characteristic of SHIP-TREND is that it does not focus on a selected disease; it rather attempts to describe health-related conditions with the widest focus possible. Important medical areas of investigation include cardiovascular diseases, diabetes mellitus, liver and biliary tract diseases, neurological diseases, thyroid diseases, dental diseases, lung diseases, addiction and risk behaviour, among others. SHIP-TREND is part of the SHIP project with two other independent cohorts, SHIP-START and SHIP-NEXT."
+* extension[descriptions].extension[language].valueCodeableConcept = $ISOLanguage#en "English"
 
 //Study characteristics
 /// Administrative Information
@@ -27,17 +15,18 @@ Usage: #example
 * extension[studyStatus].extension[overallStatus].valueCoding = $StudyStatus#04 "Ongoing (III): Recruitment completed, but data collection ongoing"
 * extension[studyStatus].extension[statusEnrollingByInvitation].valueCoding = $SCT#373066001 "Yes (qualifier value)"
 * period.start = 2008-09-22 //original format needed to be converted
+
 /// Study Design Details
 * category[primaryDesign].coding = $Remaining#131 "Non-interventional"
 * category[studyTypeNonInterventional][0].coding = $Remaining#146 "Cohort"
 * category[studyTypeNonInterventional][1].coding = $Remaining#149 "Longitudinal"
 * extension[subject].valueCoding = $SCT#125676002 "Person (person)"
-* extension[groupsOfDiseases].extension[generally][0].valueCoding = $ICD10#I "Certain infectious and parasitic diseases"
-* extension[groupsOfDiseases].extension[generally][+].valueCoding = $ICD10#III "Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism"
-* extension[groupsOfDiseases].extension[generally][+].valueCoding = $ICD10#IV "Endocrine, nutritional and metabolic diseases"
-* extension[groupsOfDiseases].extension[generally][+].valueCoding = $ICD10#II  "Neoplasms"
-* extension[groupsOfDiseases].extension[generally][+].valueCoding = $ICD10#V "Mental and behavioural disorders"
-* extension[groupsOfDiseases].extension[generally][+].valueCoding = $UMLS#C0205394 "Other (Qualitative Concept)"
+* condition[groupsOfDiseasesGenerally] = $ICD10#I "Certain infectious and parasitic diseases"
+* condition[groupsOfDiseasesGenerally] = $ICD10#III "Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism"
+* condition[groupsOfDiseasesGenerally] = $ICD10#IV "Endocrine, nutritional and metabolic diseases"
+* condition[groupsOfDiseasesGenerally] = $ICD10#II  "Neoplasms"
+* condition[groupsOfDiseasesGenerally] = $ICD10#V "Mental and behavioural disorders"
+* condition[groupsOfDiseasesGenerally] = $SCT#74964007 "Other"
 * category[samplingMethod].coding = $Remaining#034 "Probability Sampling Method"
 * category[samplingMethodProbability].coding = $Remaining#169 "Stratified"
 * extension[dataSource].extension[general][0].valueCoding = $UMLS#C2347026 "Biospecimen (Body Substance)"
@@ -73,8 +62,7 @@ Usage: #example
 * category[timePerspectives].coding = $Remaining#156 "Prospective"
 * extension[biospecimen].extension[retention].valueCoding = $UMLS#C4288286 "Retained Specimens Contain DNA (Conceptual Entity)"
 * extension[biospecimen].extension[description].valueString = "Whole blood; Saliva"
-* extension[nutritionalData].valueBoolean = false //made up, as no information in CSH
-* extension[chronicDiseases].valueBoolean = false //made up, as no information in CSH
+
 /// Information about data sharing
 * extension[dataSharingPlan].extension[generally].valueCoding = $SCT#373066001 "Yes (qualifier value)"
 * extension[dataSharingPlan].extension[description].valueString = "SHIP also shares biomaterials."
@@ -97,11 +85,7 @@ Usage: #example
 * extension[population].valueString = "Adults from the general population meeting the criteria stated above."
 * enrollment[+] = Reference(InstanceOfGroupActualSHIP)
 
-// Roles
-* extension[roles].extension[party].valueReference = Reference(InstanceOfOrganizationResearchGroupRNCM) 
-* extension[roles].extension[nameType].valueCoding = $UMLS#C0220885 "Organizational (Qualitative Concept)"
-* extension[roles].extension[roleOrganisational].valueCoding = $Remaining#048 "Research Group"
-// Related resources
 
+// Related resources
 * relatedArtifact = InstanceOfRelatedArtifact
 

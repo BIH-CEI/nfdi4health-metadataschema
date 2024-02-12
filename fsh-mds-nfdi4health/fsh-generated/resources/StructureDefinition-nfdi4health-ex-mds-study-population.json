@@ -53,7 +53,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.17.4\tDesign.population.description"
+            "map": "Design.population.description"
           }
         ]
       },

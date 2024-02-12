@@ -1,5 +1,5 @@
 Instance: InstanceOfOrganizationIMIBE
-InstanceOf: NFDI4Health_PR_MDS_Organization
+InstanceOf: NFDI4Health_PR_MDS_Affiliation
 Usage: #example
 Title: "Instance Of Organization Institut für Medizinische Informatik, Biometrie und Epidemiologie of Universitätsklinikum Essen"
 Description: "Example data representing the Institut für Medizinische Informatik, Biometrie und Epidemiologie of Universitätsklinikum Essen"

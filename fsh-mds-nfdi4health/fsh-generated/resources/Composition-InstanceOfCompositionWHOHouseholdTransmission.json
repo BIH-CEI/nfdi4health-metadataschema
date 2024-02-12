@@ -28,19 +28,6 @@
           }
         }
       ],
-      "reference": "Organization/InstanceOfOrganizationCreatorWHO"
-    },
-    {
-      "extension": [
-        {
-          "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-name-type",
-          "valueCoding": {
-            "code": "385437003",
-            "system": "http://snomed.info/sct",
-            "display": "Institution"
-          }
-        }
-      ],
       "reference": "Organization/InstanceOfOrganizationContactWHO"
     }
   ],
@@ -87,9 +74,13 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/language",
-            "valueCoding": {
-              "code": "en",
-              "display": "English"
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "en",
+                  "display": "English"
+                }
+              ]
             }
           }
         ]
@@ -110,9 +101,13 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/language",
-            "valueCoding": {
-              "code": "en",
-              "display": "English"
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "en",
+                  "display": "English"
+                }
+              ]
             }
           }
         ],

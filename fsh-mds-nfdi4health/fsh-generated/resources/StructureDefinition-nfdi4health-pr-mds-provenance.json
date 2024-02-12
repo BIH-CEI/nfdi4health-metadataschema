@@ -77,7 +77,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.16.12 Resource.provenance.resourceVersion"
+            "map": "Resource.provenance.resourceVersion"
           }
         ]
       },

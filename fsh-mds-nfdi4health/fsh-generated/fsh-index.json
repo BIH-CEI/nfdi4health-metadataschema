@@ -48,12 +48,20 @@
     "endLine": 28
   },
   {
+    "outputFile": "Composition-InstanceOfCompositionSHIP.json",
+    "fshName": "InstanceOfCompositionSHIP",
+    "fshType": "Instance",
+    "fshFile": "examples/InstanceOfComposition_SHIP.fsh",
+    "startLine": 1,
+    "endLine": 28
+  },
+  {
     "outputFile": "Composition-InstanceOfCompositionSPOVID.json",
     "fshName": "InstanceOfCompositionSPOVID",
     "fshType": "Instance",
     "fshFile": "examples/InstanceofComposition_SPOVID.fsh",
     "startLine": 1,
-    "endLine": 31
+    "endLine": 33
   },
   {
     "outputFile": "Composition-InstanceOfCompositionWHOHouseholdTransmission.json",
@@ -61,7 +69,7 @@
     "fshType": "Instance",
     "fshFile": "examples/InstanceOfCompositionQuestionnaireHousehold.fsh",
     "startLine": 1,
-    "endLine": 30
+    "endLine": 28
   },
   {
     "outputFile": "DocumentReference-InstanceOfDocumentHouseholdTransmissionInvestigationForC19.json",
@@ -69,7 +77,7 @@
     "fshType": "Instance",
     "fshFile": "examples/InstanceOfDocument_HouseholdTransmissionInvestigationProtocolForCOVID19.fsh",
     "startLine": 1,
-    "endLine": 32
+    "endLine": 31
   },
   {
     "outputFile": "EvidenceVariable-InstanceOfEvidenceVariableSPOVID.json",
@@ -85,7 +93,7 @@
     "fshType": "Instance",
     "fshFile": "examples/InstanceOfGroupActual_SHIP.fsh",
     "startLine": 1,
-    "endLine": 11
+    "endLine": 8
   },
   {
     "outputFile": "Group-InstanceOfGroupIntendedSHIP.json",
@@ -133,7 +141,7 @@
     "fshType": "Instance",
     "fshFile": "examples/InstanceOfOrganization_Creator_CMI.fsh",
     "startLine": 1,
-    "endLine": 6
+    "endLine": 7
   },
   {
     "outputFile": "Organization-InstanceOfOrganizationCreatorCRISIS.json",
@@ -141,7 +149,7 @@
     "fshType": "Instance",
     "fshFile": "examples/InstanceOfOrganization_Creator_CRISISTeam.fsh",
     "startLine": 1,
-    "endLine": 6
+    "endLine": 7
   },
   {
     "outputFile": "Organization-InstanceOfOrganizationCreatorIRM.json",
@@ -149,7 +157,7 @@
     "fshType": "Instance",
     "fshFile": "examples/InstanceOfOrganization_Contact_IRM.fsh",
     "startLine": 1,
-    "endLine": 6
+    "endLine": 7
   },
   {
     "outputFile": "Organization-InstanceOfOrganizationCreatorNIMH.json",
@@ -157,7 +165,7 @@
     "fshType": "Instance",
     "fshFile": "examples/InstanceOfOrganization_Creator_NIMH.fsh",
     "startLine": 1,
-    "endLine": 11
+    "endLine": 12
   },
   {
     "outputFile": "Organization-InstanceOfOrganizationCreatorWHO.json",
@@ -197,7 +205,7 @@
     "fshType": "Instance",
     "fshFile": "examples/InstanceOfOrganization_ResearchGroup_RNCM.fsh",
     "startLine": 1,
-    "endLine": 7
+    "endLine": 8
   },
   {
     "outputFile": "Organization-InstanceOfOrganizationRuhrUniBochum.json",
@@ -229,7 +237,7 @@
     "fshType": "Instance",
     "fshFile": "examples/InstanceOfOrganization_SponsorPrimary_UniklinikumEssen.fsh",
     "startLine": 1,
-    "endLine": 9
+    "endLine": 10
   },
   {
     "outputFile": "Organization-OrganizationPublicExample.json",
@@ -277,7 +285,7 @@
     "fshType": "Instance",
     "fshFile": "examples/Provenance.fsh",
     "startLine": 1,
-    "endLine": 10
+    "endLine": 9
   },
   {
     "outputFile": "Provenance-InstanceOfProvenanceAutomaticallyUploadedFromCTgov.json",
@@ -341,7 +349,7 @@
     "fshType": "Instance",
     "fshFile": "examples/InstanceOfStudy_nonInterventional_SHIP.fsh",
     "startLine": 1,
-    "endLine": 106
+    "endLine": 90
   },
   {
     "outputFile": "ResearchStudy-InstanceOfStudySPOVID.json",
@@ -349,7 +357,7 @@
     "fshType": "Instance",
     "fshFile": "examples/InstanceOfStudy_interventional_SPOVID.fsh",
     "startLine": 1,
-    "endLine": 91
+    "endLine": 88
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-assessments.json",
@@ -485,7 +493,7 @@
     "fshType": "Extension",
     "fshFile": "extensions/NFDI4Health_EX_MDS_Language.fsh",
     "startLine": 1,
-    "endLine": 22
+    "endLine": 24
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-mortality-data.json",
@@ -893,7 +901,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/NFDI4Health_PR_MDS_Study.fsh",
     "startLine": 1,
-    "endLine": 323
+    "endLine": 321
   },
   {
     "outputFile": "ValueSet-nfdi4health-vs-mds-cd-common-chronic-disease-name-snomedct.json",

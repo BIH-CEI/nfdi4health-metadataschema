@@ -9,5 +9,16 @@
   "name": "CRISIS research team",
   "partOf": {
     "reference": "Organization/InstanceOfOrganizationCreatorNIMH"
-  }
+  },
+  "type": [
+    {
+      "coding": [
+        {
+          "code": "C115486",
+          "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "display": "Content Item Creator"
+        }
+      ]
+    }
+  ]
 }

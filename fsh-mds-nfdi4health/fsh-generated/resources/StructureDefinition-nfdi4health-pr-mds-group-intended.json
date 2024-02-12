@@ -51,7 +51,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.16 Design.eligibilityCriteria"
+            "map": "Design.eligibilityCriteria"
           }
         ]
       },
@@ -68,7 +68,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.17.5 Design.population.targetSampleSize"
+            "map": "Design.population.targetSampleSize"
           }
         ]
       },
@@ -98,7 +98,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.16.1 Design.eligibilityCriteria.ageMin"
+            "map": "Design.eligibilityCriteria.ageMin"
           }
         ]
       },
@@ -134,7 +134,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.16.1.1 Design.eligibilityCriteria.ageMin.number"
+            "map": "Design.eligibilityCriteria.ageMin.number"
           }
         ]
       },
@@ -151,7 +151,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.16.1.2\tDesign.eligibilityCriteria.ageMin.timeUnit"
+            "map": "Design.eligibilityCriteria.ageMin.timeUnit"
           }
         ]
       },
@@ -166,7 +166,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.16.2 Design.eligibilityCriteria.ageMax"
+            "map": "Design.eligibilityCriteria.ageMax"
           }
         ]
       },
@@ -202,7 +202,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.16.2.1 Design.eligibilityCriteria.ageMax.number"
+            "map": "Design.eligibilityCriteria.ageMax.number"
           }
         ]
       },
@@ -219,7 +219,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.16.2.2\tDesign.eligibilityCriteria.ageMax.timeUnit"
+            "map": "Design.eligibilityCriteria.ageMax.timeUnit"
           }
         ]
       },
@@ -235,7 +235,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.16.3 Design.eligibilityCriteria.genders"
+            "map": "Design.eligibilityCriteria.genders"
           }
         ]
       },

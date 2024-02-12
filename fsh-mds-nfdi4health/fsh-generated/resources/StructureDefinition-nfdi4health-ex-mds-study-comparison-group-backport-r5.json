@@ -163,11 +163,7 @@
           {
             "code": "CodeableConcept"
           }
-        ]
-      },
-      {
-        "id": "Extension.extension:type.value[x].coding",
-        "path": "Extension.extension.value[x].coding",
+        ],
         "binding": {
           "strength": "required",
           "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-arm-group-type-nci",

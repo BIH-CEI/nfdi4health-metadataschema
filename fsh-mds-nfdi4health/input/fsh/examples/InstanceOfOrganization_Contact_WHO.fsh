@@ -1,5 +1,5 @@
 Instance: InstanceOfOrganizationContactWHO
-InstanceOf: NFDI4Health_PR_MDS_Organization
+InstanceOf: NFDI4Health_PR_MDS_Affiliation
 Usage: #example
 Title: "Instance Of Organization World Health Organization (WHO) as contact"
 Description: "Example data representing the World Health Organization (WHO) as contact"

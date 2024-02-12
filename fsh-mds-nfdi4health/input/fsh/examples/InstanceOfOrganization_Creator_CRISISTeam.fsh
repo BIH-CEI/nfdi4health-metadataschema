@@ -4,3 +4,4 @@ Title: "Example of the NFDI4Health PR MDS Organization - CRISIS research team"
 Usage: #example
 * name = "CRISIS research team"
 * partOf = Reference(InstanceOfOrganizationCreatorNIMH)
+* type = $NCI#C115486 "Content Item Creator"

@@ -4,14 +4,9 @@ Title: "Instance of Study SPOVID"
 Description: "Example data from the SPOVID study - Sports & Long-COVID-Syndrome"
 Usage: #example
 
-
-//General information
-* identifier[NFDI4Health].value = "236"
-
-
-///Description of the Study
-* extension[descriptions].valueString  = "In a pilot study, the SPOVID project is investigating whether an individually tailored training program can safely and effectively improve the physical endurance of Long COVID-19 patients. To this end, the researchers observe fitness parameters of cardiovascular and lung function in particular over several months, but also the development of headache, fatigue and fatigue symptoms. From the results, they want to derive recommendations for personalized training programs."
-* extension[descriptions].extension[language].valueCode = #en "English" 
+///Descriptions of the Study
+* extension[descriptions].extension[value].valueString = "In a pilot study, the SPOVID project is investigating whether an individually tailored training program can safely and effectively improve the physical endurance of Long COVID-19 patients. To this end, the researchers observe fitness parameters of cardiovascular and lung function in particular over several months, but also the development of headache, fatigue and fatigue symptoms. From the results, they want to derive recommendations for personalized training programs."
+* extension[descriptions].extension[language].valueCoding = #en "English" 
 
 
 ///Keywords
@@ -29,6 +24,7 @@ Usage: #example
 * keyword[=].coding.system = "https://browser.ihtsdotools.org/?perspective=full&conceptId1=68130003&edition=MAIN/2023-07-31&release=&languages=en&latestRedirect=false"
 * keyword[+].text = "Post-acute COVID-19 (disorder)"
 * keyword[=].coding.system = "https://browser.ihtsdotools.org/?perspective=full&conceptId1=1119303003&edition=MAIN/2023-07-31&release=&languages=en&latestRedirect=false"
+
 //////Missing: source of info in Provenance
 
 //Study characteristics
@@ -37,11 +33,12 @@ Usage: #example
 * extension[studyStatus].extension[statusWhenIntervention].valueCoding = $Remaining#014 "Intervention ongoing"
 * period.start = 2008-01-05 //original format needed to be converted
 * period.end = 2022-11-30 //original format needed to be converted
+
 /// Study Design Details
 * category[primaryDesign].coding = $Remaining#130 "Interventional"
 * category[studyTypeInterventional].coding = $Remaining#139 "Unknown (interventional)"
 * extension[subject].valueCoding = $SCT#125676002 "Person (person)"
-* extension[groupsOfDiseases].extension[generally].valueCoding = $UMLS#C0439673 "Unknown (Qualitative Concept)"
+
 * category[samplingMethod].coding = $Remaining#160 "Non-probability"
 * category[samplingMethodNonProbability].coding = $Remaining#174 "Purposive"
 * extension[dataSource].extension[general][0].valueCoding = $Remaining#029 "Cognitive measurements"
@@ -50,8 +47,8 @@ Usage: #example
 * extension[masking].extension[general].valueBoolean = false
 * category[allocation] = $Remaining#159 "Randomized"
 * extension[offLabelUse].valueCoding = $SCT#385432009 "Not applicable (qualifier value)"
-* extension[nutritionalData].valueBoolean = false //made up, as no information in CSH
-* extension[chronicDiseases].valueBoolean = false //made up, as no information in CSH
+
+
 /// Information about data sharing
 * extension[dataSharingPlan].extension[generally].valueCoding = $NCI#C150084 "Undecided (Intellectual Product)"
 
@@ -81,11 +78,11 @@ Usage: #example
 
 /// Arms or groups/corhorts of the study /// Interventions/exposures of the study
 * extension[comparisonGroup][0].extension[name].valueString = "Physical training group"
-* extension[comparisonGroup][=].extension[type].valueCoding = $UMLS#C2347177 "Active Comparator (Conceptual Entity)"
+* extension[comparisonGroup][=].extension[type].valueCodeableConcept = $NCI#C174267 "Active Comparator Arm"
 * extension[comparisonGroup][=].extension[description].valueString = "Patients receive an individually tailored training program to improve physical endurance safely and effectively."
 * extension[comparisonGroup][=].extension[intendedExposure].valueReference = Reference(InstanceOfEvidenceVariableSPOVID)
 * extension[comparisonGroup][+].extension[name].valueString = "Control group"
-* extension[comparisonGroup][=].extension[type].valueCoding = $UMLS#C5420679 "No Intervention Arm (Research Activity)"
+* extension[comparisonGroup][=].extension[type].valueCodeableConcept = $NCI#C174270 "No Intervention Arm"
 
 // Related resources
 * relatedArtifact = InstanceOfRelatedArtifact

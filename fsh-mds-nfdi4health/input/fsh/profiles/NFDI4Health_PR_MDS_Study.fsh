@@ -190,7 +190,6 @@ Description: "Group of items applicable only to studies, substudies, registries,
 * category[samplingMethodNonProbability] ^comment = "Short Input Help: If known, select one value from the list."
 * category[samplingMethodNonProbability] ^binding.description = "Value set defining codes to specify types of non-probability sampling methods."
 * category[samplingMethodNonProbability].coding 0..1
-
 * condition ^slicing.discriminator.type = #exists
 * condition ^slicing.discriminator.path = "coding"
 * condition ^slicing.rules = #open
@@ -230,7 +229,6 @@ Description: "Group of items applicable only to studies, substudies, registries,
 * condition[groupsOfDiseasesConditions] ^short = "On which other diseases or conditions were the data collected?"
 * condition[groupsOfDiseasesConditions] ^definition = "Diseases or conditions on which the data were collected in the [RESOURCE]."
 * condition[groupsOfDiseasesConditions] ^comment = "Additional information: The values originate from the WHO's International Statistical Classification of Diseases and Related Health Problems, 10th Revision (ICD-10). | Short input help: Select all that apply. Values are based on lower level ICD-10. For more information visit the WHO's ICD-10 homepage: https://icd.who.int/en."
-
 * focus ^short = "Primary focus of the [RESOURCE]"
 * focus ^definition = "Group of items providing information about the focus of the [RESOURCE] (e.g. medication, food, therapy, device, etc.)."
 * focus.coding.extension ^slicing.discriminator.type = #value
@@ -400,3 +398,4 @@ Source: NFDI4Health_PR_MDS_Study
 * reasonStopped.coding -> "Design.administrativeInformation.stageStopped"
 * note.text -> "1.17.24 Design.comment"
 * objective.name -> "1.17.18 Design.hypotheses"
+* enrollment -> "Design.population.obtainedSampleSize"

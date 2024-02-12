@@ -49,7 +49,7 @@ Mapping: NFDI4Health-Group-Actual-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_PR_MDS_Group_Actual
-* quantity -> "1.17.17.6 Design.population.obtainedSampleSize"
+* quantity -> "Design.population.obtainedSampleSize"
 //* characteristic[examinedMinimumAge] -> "1.17.27 Resource.studyDesign.ageMinExamined"
 //* characteristic[examinedMinimumAge].valueQuantity.value -> "1.17.27.1 Resource.studyDesign.ageMinExamined.number"
 //* characteristic[examinedMinimumAge].valueQuantity.code -> "1.17.27.2 Resource.studyDesign.ageMinExamined.timeUnit"

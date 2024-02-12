@@ -18,5 +18,7 @@ Description: "Language of an element."
 * . ^definition = "Language in which the title/name, acronym or description text is provided."
 
 * value[x] 1..
-* value[x] only Code
-* valueCode from from $ISOLanguage (required)
+* value[x] only CodeableConcept
+* valueCode from $ISOLanguage (required)
+* valueCodeableConcept.coding.code 1..1
+* valueCodeableConcept.coding.system 1..1

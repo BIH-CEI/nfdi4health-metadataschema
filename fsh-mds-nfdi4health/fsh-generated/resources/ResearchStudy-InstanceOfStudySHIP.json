@@ -9,6 +9,27 @@
   "status": "active",
   "extension": [
     {
+      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-descriptions",
+      "extension": [
+        {
+          "url": "value",
+          "valueString": "SHIP-TREND is a population-based cohort study. It has two main objectives: To assess prevalence and incidence of common risk factors, subclinical disorders and clinical diseases and to investigate the complex associations among risk factors, subclinical disorders and clinical diseases. A particular characteristic of SHIP-TREND is that it does not focus on a selected disease; it rather attempts to describe health-related conditions with the widest focus possible. Important medical areas of investigation include cardiovascular diseases, diabetes mellitus, liver and biliary tract diseases, neurological diseases, thyroid diseases, dental diseases, lung diseases, addiction and risk behaviour, among others. SHIP-TREND is part of the SHIP project with two other independent cohorts, SHIP-START and SHIP-NEXT."
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/language",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "en",
+                "system": "http://terminology.hl7.org/CodeSystem/iso639-1",
+                "display": "English"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
       "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-status",
       "extension": [
         {
@@ -341,7 +362,6 @@
       "valueString": "Adults from the general population meeting the criteria stated above."
     }
   ],
-  "description": "SHIP-TREND is a population-based cohort study. It has two main objectives: To assess prevalence and incidence of common risk factors, subclinical disorders and clinical diseases and to investigate the complex associations among risk factors, subclinical disorders and clinical diseases. A particular characteristic of SHIP-TREND is that it does not focus on a selected disease; it rather attempts to describe health-related conditions with the widest focus possible. Important medical areas of investigation include cardiovascular diseases, diabetes mellitus, liver and biliary tract diseases, neurological diseases, thyroid diseases, dental diseases, lung diseases, addiction and risk behaviour, among others. SHIP-TREND is part of the SHIP project with two other independent cohorts, SHIP-START and SHIP-NEXT.",
   "period": {
     "start": "2008-09-22"
   },
@@ -397,6 +417,17 @@
           "code": "156",
           "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
           "display": "Prospective"
+        }
+      ]
+    }
+  ],
+  "condition": [
+    {
+      "coding": [
+        {
+          "code": "74964007",
+          "system": "http://snomed.info/sct",
+          "display": "Other"
         }
       ]
     }

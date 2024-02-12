@@ -23,5 +23,16 @@
   ],
   "partOf": {
     "reference": "Organization/InstanceOfOrganizationUniDuisburgEssen"
-  }
+  },
+  "type": [
+    {
+      "coding": [
+        {
+          "code": "037",
+          "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+          "display": "Primary Sponsor"
+        }
+      ]
+    }
+  ]
 }
