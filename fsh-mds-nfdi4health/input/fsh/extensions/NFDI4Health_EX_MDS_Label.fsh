@@ -14,6 +14,8 @@ Description: "Extension covering information about additional title(s), name(s) 
 * ^context[=].expression = "Questionnaire.title"
 * ^context[+].type = #element
 * ^context[=].expression = "DocumentReference.content"
+* ^context[+].type = #element
+* ^context[=].expression = "Composition.title"
 * . ^short = "Title(s)/name(s) or acronym(s) of the [RESOURCE]"
 * . ^definition = "Group of items providing information about title(s)/name(s) or acronym(s) of the resource."
 * . ^comment = "Based on ResearchStudy.label (R5), with an extension for language."

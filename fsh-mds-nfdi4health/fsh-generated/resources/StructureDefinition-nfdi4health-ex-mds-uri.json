@@ -47,6 +47,7 @@
         "comment": "Short input help: If known, you can provide the code from the terminology/classification used.",
         "example": [
           {
+            "label": "Example of an URI for a SNOMED CT concept.",
             "valueUri": "http://snomed.info/id/840533007"
           }
         ]

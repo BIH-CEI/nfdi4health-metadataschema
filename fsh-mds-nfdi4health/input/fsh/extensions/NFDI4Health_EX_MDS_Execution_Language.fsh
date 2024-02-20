@@ -18,7 +18,7 @@ Description: "Extension provinding information about the language the [RESOURCE]
 * . ^short = "Language(s) of the [RESOURCE]"
 * . ^definition = "Language(s) in which the [RESOURCE] is conducted/provided."
 
-* valueCode from $ISOLanguage (required)
+* valueCode from $ISOLanguage (required) // TODO: VS erstellen?
 * valueCode ^short = "A human language."
 * valueCode ^definition = "A human language."
 

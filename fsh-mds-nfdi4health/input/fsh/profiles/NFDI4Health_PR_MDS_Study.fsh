@@ -261,6 +261,7 @@ Description: "Group of items applicable only to studies, substudies, registries,
 * keyword.coding.system ^short = "Code of the keyword"
 * keyword.coding.system ^definition = "If known, the code of the keyword in a classification/vocabulary."
 * keyword.coding.system ^comment = "Short input help: If found, the code from the classification/vocabulary used."
+* keyword.coding.system ^example.label = "Hier Beschreibung einfügen" //TODO
 * keyword.coding.system ^example.valueUri = http://id.nlm.nih.gov/mesh/D000086402
 * keyword.text 1..1 
 * keyword.text ^short = "label"

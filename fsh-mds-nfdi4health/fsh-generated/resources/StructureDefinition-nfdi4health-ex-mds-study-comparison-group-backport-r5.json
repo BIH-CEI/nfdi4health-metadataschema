@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "nfdi4health-ex-mds-study-comparison-group-backport-r5",
-  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.comparisonGroup",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-comparison-group-backport-r5",
   "version": "0.9",
   "name": "NFDI4Health_EX_MDS_Study_Comparison_Group_Backport_R5",
   "title": "NFDI4Health EX MDS Study Comparison Group Backport R5",
@@ -293,7 +293,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.comparisonGroup"
+        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-comparison-group-backport-r5"
       },
       {
         "id": "Extension.value[x]",

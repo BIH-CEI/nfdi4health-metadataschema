@@ -122,6 +122,7 @@
 [NFDI4Health_VS_MDS_ID_TYPE_NCI_Local]: ValueSet-nfdi4health-vs-mds-id-type-nci-local.html
 [NFDI4Health_VS_MDS_Identifier_Type_Related_Artifact_UMLS_Local]: ValueSet-nfdi4health-vs-mds-identifier-type-related-artifact-umls-local.html
 [NFDI4Health_VS_MDS_Label_Type_Local]: ValueSet-nfdi4health-vs-mds-label-type-local.html
+[NFDI4Health_VS_MDS_Languages_ISO]: ValueSet-nfdi4health-vs-mds-languages-iso.html
 [NFDI4Health_VS_MDS_Mortality_Data_NCI]: ValueSet-nfdi4health-vs-mds-mortality-data-nci.html
 [NFDI4Health_VS_MDS_Organisational_Roles_NCI_Local]: ValueSet-nfdi4health-vs-mds-organisational-roles-nci-local.html
 [NFDI4Health_VS_MDS_Personal_Roles_NCI_Local]: ValueSet-nfdi4health-vs-mds-personal-roles-nci-local.html

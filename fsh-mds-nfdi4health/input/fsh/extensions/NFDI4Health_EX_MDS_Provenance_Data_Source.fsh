@@ -10,8 +10,10 @@ Description: "Extension providing information about the source of information of
 * ^publisher = "NFDI4Health"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
-* ^context.type = #element
-* ^context.expression = "Provenance"
+* ^context[0].type = #element
+* ^context[=].expression = "Provenance"
+* ^context[+].type = #element
+* ^context[=].expression = "Composition"
 * . 1..1
 * . ^short = "Source of information about the [RESOURCE]"
 * . ^definition = "Source of information about the [RESOURCE] and the way it was uploaded/collected."

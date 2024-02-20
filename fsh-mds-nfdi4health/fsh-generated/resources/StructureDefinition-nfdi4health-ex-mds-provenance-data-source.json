@@ -36,6 +36,10 @@
     {
       "type": "element",
       "expression": "Provenance"
+    },
+    {
+      "type": "element",
+      "expression": "Composition"
     }
   ],
   "type": "Extension",

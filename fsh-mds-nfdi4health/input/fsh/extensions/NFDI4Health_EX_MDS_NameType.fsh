@@ -9,7 +9,7 @@ Description: "Group of items providing information about person(s), group(s) of 
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 * ^context[0].type = #element
-* ^context[=].expression = "Composition"
+* ^context[=].expression = "Composition.author"
 
 * . 1..1
 * . ^short = "Is it a personal or organisational contribution?"

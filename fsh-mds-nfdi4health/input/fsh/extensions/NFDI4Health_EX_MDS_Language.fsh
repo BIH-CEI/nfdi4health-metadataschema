@@ -2,7 +2,7 @@ Extension: NFDI4Health_EX_MDS_Language
 Id: nfdi4health-ex-mds-language
 Title: "NFDI4Health EX MDS Language"
 Description: "Language of an element."
-* ^url = "http://hl7.org/fhir/StructureDefinition/language"
+* ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language"
 * ^version = "0.9"
 * ^status = #draft
 * ^publisher = "NFDI4Health"
@@ -19,6 +19,6 @@ Description: "Language of an element."
 
 * value[x] 1..
 * value[x] only CodeableConcept
-* valueCodeableConcept from $ISOLanguage (required)
+* valueCodeableConcept from nfdi4health-vs-mds-languages-iso (required)
 * valueCodeableConcept.coding.code 1..1
 * valueCodeableConcept.coding.system 1..1

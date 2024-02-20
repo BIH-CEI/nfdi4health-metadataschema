@@ -232,7 +232,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.comparisonGroup"
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-comparison-group-backport-r5"
             ]
           }
         ]
@@ -247,7 +247,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.outcomeMeasure"
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-outcomemeasure-backport-r5"
             ]
           }
         ]
@@ -1483,6 +1483,7 @@
         "min": 1,
         "example": [
           {
+            "label": "Hier Beschreibung einfügen",
             "valueUri": "http://id.nlm.nih.gov/mesh/D000086402"
           }
         ],

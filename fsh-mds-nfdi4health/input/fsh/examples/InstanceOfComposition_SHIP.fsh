@@ -9,6 +9,7 @@ Usage: #example
 * date = "2024"
 * type = $NCI#C63536 "Study"
 
+
 // Title and Acronyms
 * title.extension[label][0].extension[value].valueString = "Study of Health in Pomerania - TREND"
 * title.extension[label][=].extension[type].valueCoding = $LabelType#01 "Primary Title"

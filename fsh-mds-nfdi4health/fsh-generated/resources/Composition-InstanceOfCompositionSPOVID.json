@@ -109,7 +109,7 @@
             }
           },
           {
-            "url": "http://hl7.org/fhir/StructureDefinition/language",
+            "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language",
             "valueCodeableConcept": {
               "coding": [
                 {
@@ -137,7 +137,7 @@
             }
           },
           {
-            "url": "http://hl7.org/fhir/StructureDefinition/language",
+            "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language",
             "valueCodeableConcept": {
               "coding": [
                 {

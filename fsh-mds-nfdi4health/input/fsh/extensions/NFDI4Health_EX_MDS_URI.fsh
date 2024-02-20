@@ -17,4 +17,5 @@ Description: "Extension defining an URI"
 * . ^short = "Code of the health condition[conditions] or disease"
 * . ^definition = "Code of the health condition[conditions] or disease in the terminology/classification used."
 * . ^comment = "Short input help: If known, you can provide the code from the terminology/classification used."
+* . ^example.label = "Example of an URI for a SNOMED CT concept."
 * . ^example.valueUri = http://snomed.info/id/840533007

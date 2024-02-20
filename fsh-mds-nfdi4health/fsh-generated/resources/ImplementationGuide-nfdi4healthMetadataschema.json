@@ -1010,6 +1010,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-languages-iso"
+        },
+        "name": "NFDI4Health VS MDS Languages [ISO]",
+        "description": "Value set defining codes for languages.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/nfdi4health-vs-mds-mortality-data-nci"
         },
         "name": "NFDI4Health VS MDS Mortality Data [NCI]",

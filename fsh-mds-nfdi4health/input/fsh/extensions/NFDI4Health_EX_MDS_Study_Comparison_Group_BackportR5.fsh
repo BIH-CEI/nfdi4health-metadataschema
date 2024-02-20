@@ -4,7 +4,7 @@ Extension: NFDI4Health_EX_MDS_Study_Comparison_Group_Backport_R5
 Id: nfdi4health-ex-mds-study-comparison-group-backport-r5
 Title: "NFDI4Health EX MDS Study Comparison Group Backport R5"
 Description: "Extension providing information about the arm(s)/group(s)/cohort(s) and intervention(s)/exposure(s) in a resource. Based on ResearchStudy.comparisonGroup (R5)"
-* ^url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.comparisonGroup"
+* ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-comparison-group-backport-r5"
 * ^version = "0.9"
 * ^status = #draft
 * ^publisher = "NFDI4Health"
