@@ -85,21 +85,21 @@ Expression: "author.extension[nameType].where(code = '385437003') implies author
 Invariant: core-3a
 Description: "When Composition.type = 'C63536' or 'C198230' or 'C61393' or '178' then subject only Reference (NFDI4Health_PR_MDS_Study)"
 Severity: #error
-Expression: "type.coding.where(code = 'C63536' or code = 'C61393' or code = 'C198230' or code = 178) implies subject only Reference (NFDI4Health_PR_MDS_Study)"
+Expression: "type.coding.where(code = 'C63536' or code = 'C61393' or code = 'C198230' or code = 178) implies subject(NFDI4Health_PR_MDS_Study)"
 
 
 
 Invariant: core-3b
 Description: "When Composition.type = 009, C16468 , C15518, C115779, C115761, C115756, 011, 016, '017', '018', '021' then subject only Reference (NFDI4Health_PR_MDS_Document)"
 Severity: #error
-Expression: "type.coding.where(code = '009' or code = 'C16468' or code = 'C15518' or code = 'C115779' or code = 'C115761' or code = 'C115756' or code = '011' or code = '016' or code = '017' or code = '018' or code = '021') implies subject only Reference (NFDI4Health_PR_MDS_Document)"
+Expression: "type.coding.where(code = '009' or code = 'C16468' or code = 'C15518' or code = 'C115779' or code = 'C115761' or code = 'C115756' or code = '011' or code = '016' or code = '017' or code = '018' or code = '021') implies subject(NFDI4Health_PR_MDS_Document)"
 
 
 
 Invariant: core-3c
 Description: "When Composition.type = 'C17048' or 'C40988' then subject only Reference (Profile: NFDI4Health_PR_MDS_Questionnaire)"
 Severity: #error
-Expression: "type.coding.where(code = 'C17048' or code = 'C40988') implies subject only Reference (NFDI4Health_PR_MDS_Questionnaire)"
+Expression: "type.coding.where(code = 'C17048' or code = 'C40988') implies subject(NFDI4Health_PR_MDS_Questionnaire)"
 
 
 Invariant: core-4

@@ -8,5 +8,6 @@ Description: "Example data representing the World Health Organization (WHO) as c
 * identifier[=].type = $Remaining#081 "ROR"
 * identifier[+].value = "grid.3575.4"
 * identifier[=].type = $Remaining#082 "GRID"
+* telecom.system = #email
 * telecom.value = "EarlyInvestigations-2019-nCoV@who.int"
 * type = $NCI#C25461 "Contact Person"
