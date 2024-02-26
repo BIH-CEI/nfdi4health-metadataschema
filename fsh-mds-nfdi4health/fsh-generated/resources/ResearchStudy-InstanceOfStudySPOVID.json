@@ -232,9 +232,9 @@
     {
       "coding": [
         {
-          "code": "130",
-          "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
-          "display": "Interventional"
+          "code": "C98388",
+          "system": "urn:oid:2.16.840.1.113883.3.26.1.1",
+          "display": "Interventional Study"
         }
       ]
     },
@@ -250,9 +250,9 @@
     {
       "coding": [
         {
-          "code": "160",
-          "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
-          "display": "Non-probability"
+          "code": "C127781",
+          "system": "urn:oid:2.16.840.1.113883.3.26.1.1",
+          "display": "Non-Probability Sampling Method"
         }
       ]
     },
@@ -367,7 +367,7 @@
     {
       "coding": [
         {
-          "code": "DE",
+          "code": "DEU",
           "system": "urn:iso:std:iso:3166",
           "display": "Germany"
         }

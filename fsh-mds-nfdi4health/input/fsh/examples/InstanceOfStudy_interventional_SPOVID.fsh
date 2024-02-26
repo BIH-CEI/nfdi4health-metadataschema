@@ -35,17 +35,17 @@ Usage: #example
 * period.end = 2022-11-30 //original format needed to be converted
 
 /// Study Design Details
-* category[primaryDesign].coding = $Remaining#130 "Interventional"
+* category[primaryDesign].coding = $NCI#C98388 "Interventional Study"
 * category[studyTypeInterventional].coding = $Remaining#139 "Unknown (interventional)"
 * extension[subject].valueCoding = $SCT#125676002 "Person (person)"
 
-* category[samplingMethod].coding = $Remaining#160 "Non-probability"
+* category[samplingMethod].coding = $NCI#C127781 "Non-Probability Sampling Method"
 * category[samplingMethodNonProbability].coding = $Remaining#174 "Purposive"
 * extension[dataSource].extension[general][0].valueCoding = $Remaining#029 "Cognitive measurements"
 * extension[dataSource].extension[general][+].valueCoding = $Remaining#032 "Physiological/Biochemical measurements"
 * primaryPurposeType.coding = $study-prim-purp-type#treatment "Treatment"
 * extension[masking].extension[general].valueBoolean = false
-* category[allocation] = $Remaining#159 "Randomized"
+* category[allocation] = $NCI#C25196 "Randomization"
 * extension[offLabelUse].valueCoding = $SCT#385432009 "Not applicable (qualifier value)"
 
 
@@ -73,7 +73,7 @@ Usage: #example
 /// Eligibility criteria for study participants
 * enrollment[0] = Reference(InstanceOfGroupIntendedSPOVID)
 /// Study Population
-* location[countries] = $iso3166#DE "Germany"
+* location[countries] = $iso3166#DEU "Germany"
 * extension[population].valueString = "Subjects will be recruited from the existing study population of the health study on COVID-19 taking place at IMIBE (Institute for Medical Informatics, Biometry and Epidemiology)."
 
 /// Arms or groups/corhorts of the study /// Interventions/exposures of the study
