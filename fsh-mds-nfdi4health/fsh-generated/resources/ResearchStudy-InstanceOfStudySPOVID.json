@@ -268,9 +268,9 @@
     {
       "coding": [
         {
-          "code": "159",
-          "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
-          "display": "Randomized"
+          "code": "C25196",
+          "system": "urn:oid:2.16.840.1.113883.3.26.1.1",
+          "display": "Randomization"
         }
       ]
     }

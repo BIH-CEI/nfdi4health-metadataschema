@@ -35,17 +35,17 @@ Usage: #example
 * period.end = 2022-11-30 //original format needed to be converted
 
 /// Study Design Details
-* category[primaryDesign].coding = $NCI#C98388 "Interventional Study"
-* category[studyTypeInterventional].coding = $Remaining#139 "Unknown (interventional)"
-* extension[subject].valueCoding = $SCT#125676002 "Person (person)"
+* category[primaryDesign][0].coding = $NCI#C98388 "Interventional Study"
+* category[studyTypeInterventional][+].coding = $Remaining#139 "Unknown (interventional)"
+* category[samplingMethod][+].coding = $NCI#C127781 "Non-Probability Sampling Method"
+* category[samplingMethodNonProbability].coding = * $NCI#C53204 "Convenience Sampling"
 
-* category[samplingMethod].coding = $NCI#C127781 "Non-Probability Sampling Method"
-* category[samplingMethodNonProbability].coding = $Remaining#174 "Purposive"
+* primaryPurposeType.coding = $study-prim-purp-type#treatment "Treatment"
+
+* extension[subject].valueCoding = $SCT#125676002 "Person (person)"
 * extension[dataSource].extension[general][0].valueCoding = $Remaining#029 "Cognitive measurements"
 * extension[dataSource].extension[general][+].valueCoding = $Remaining#032 "Physiological/Biochemical measurements"
-* primaryPurposeType.coding = $study-prim-purp-type#treatment "Treatment"
 * extension[masking].extension[general].valueBoolean = false
-* category[allocation] = $NCI#C25196 "Randomization"
 * extension[offLabelUse].valueCoding = $SCT#385432009 "Not applicable (qualifier value)"
 
 
