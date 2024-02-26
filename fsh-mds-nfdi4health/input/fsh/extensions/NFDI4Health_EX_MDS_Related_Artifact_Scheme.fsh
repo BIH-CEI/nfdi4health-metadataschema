@@ -18,7 +18,7 @@ Description: "Type of the identifier of the related resource."
 * . ^comment = "Short input help: Select one value from the list."
 * value[x] 1..1
 * value[x] only Coding
-* valueCoding from NFDI4Health_VS_MDS_Identifier_Type_Related_Artifact_UMLS_Local (required)
+* valueCoding from nfdi4health-vs-mds-identifier-type-related-artifact-nci-local (required)
 * valueCoding ^binding.description = "Value set defining codes to specify the ID Type of the related resource."
 
 

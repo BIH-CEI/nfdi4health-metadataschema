@@ -2,7 +2,7 @@ Extension: NFDI4Health_EX_MDS_Execution_Language
 Id: nfdi4health-ex-mds-execution-language
 Title: "NFDI4Health EX MDS Language"
 Description: "Extension provinding information about the language the [RESOURCE] is conducted/provided."
-* ^url = "http://hl7.org/fhir/StructureDefinition/language"
+* ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-execution-language"
 * ^version = "0.9"
 * ^status = #draft
 * ^publisher = "NFDI4Health"
@@ -18,7 +18,7 @@ Description: "Extension provinding information about the language the [RESOURCE]
 * . ^short = "Language(s) of the [RESOURCE]"
 * . ^definition = "Language(s) in which the [RESOURCE] is conducted/provided."
 
-* valueCode from $ISOLanguage (required) // TODO: VS erstellen?
+* valueCode from nfdi4health-vs-mds-languages-iso (required)
 * valueCode ^short = "A human language."
 * valueCode ^definition = "A human language."
 

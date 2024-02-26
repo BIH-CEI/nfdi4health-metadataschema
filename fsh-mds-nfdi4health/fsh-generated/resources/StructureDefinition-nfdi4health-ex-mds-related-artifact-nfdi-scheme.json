@@ -82,6 +82,8 @@
           }
         ],
         "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-identifier-type-related-artifact-nci-local",
           "description": "Value set defining codes to specify the ID Type of the related resource."
         }
       }
