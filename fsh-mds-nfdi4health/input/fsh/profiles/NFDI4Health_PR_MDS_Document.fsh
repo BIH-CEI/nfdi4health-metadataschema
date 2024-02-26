@@ -14,7 +14,7 @@ Description: "Profile to collect information about documents related to german c
 * extension ^slicing.rules = #open
 * extension contains
     NFDI4Health_EX_MDS_Keywords named keywords 0..* and
-    NFDI4Health_EX_MDS_Descriptions named descriptions 1..1 and
+    NFDI4Health_EX_MDS_Descriptions named descriptions 1..* and
     NFDI4Health_EX_MDS_Document_Use_Rights named useRights 0..1 and 
     NFDI4Health_EX_MDS_Related named relatedResources 0..1 and
     NFDI4Health_EX_MDS_Execution_Language named executionLanguage 0..*

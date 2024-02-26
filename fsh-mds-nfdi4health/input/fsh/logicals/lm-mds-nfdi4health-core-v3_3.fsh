@@ -25,21 +25,21 @@ Description: "NFDI4Health Logical Model Core Metadataschema"
 * Resource.titles.text 1..1  string "Title/name" "Scientific unabbreviated title or name of the [RESOURCE]."
 * Resource.titles.text ^comment = "Additional information: If no official title/name has been defined yet, a title/name that is suitable for public display should be used. / Short Input Help: Please provide at least one title/name of the [RESOURCE]. If the original title is not in English, please also provide an English translation of the original title. / Source of the property and/or allowed values: NFDI4Health, DataCite [1], CT.gov [2], DRKS [3]"
 * Resource.titles.language 1..1 Coding "Language of the title/name" "Language in which the title/name is provided."
-* Resource.titles.language from $ISOLanguage (required)
+* Resource.titles.language from NFDI4Health_VS_MDS_Languages_ISO (required)
 * Resource.titles.language ^comment = "Source of the property and/or allowed values: NFDI4Health, DataCite [1], CT.gov [2], DRKS [3]"
 * Resource.acronyms 0..* BackboneElement "Acronym(s) of the [RESOURCE]" "Group of items providing information about acronym(s) of the [RESOURCE]."
 * Resource.acronyms ^comment = "Source of the property and/or allowed values: NFDI4Health"
 * Resource.acronyms.text 1..1 string "Acronym" "If existing, acronym(s) of the [RESOURCE]."
 * Resource.acronyms.text ^comment = "Additional Information: The field refers primarily to resources which have an acronym. / Short Input Help: If no acronym exists, you can provide a short title, preferably up to 5 words, e.g. 'NAKO-COVID Questionnaire'. / Source of the property and/or allowed values: CT.gov [2], DRKS [3]"
 * Resource.acronyms.language 1..1 Coding "Language of the acronym" "Language in which the acronym is provided."
-* Resource.acronyms.language from $ISOLanguage (required)
+* Resource.acronyms.language from NFDI4Health_VS_MDS_Languages_ISO (required)
 * Resource.acronyms.language ^comment = "Source of the property and/or allowed values: CT.gov [2], DRKS [3]"
 * Resource.descriptions 1..* BackboneElement "Description(s) of the [RESOURCE]" "Group of items providing information about the description(s) of the [RESOURCE]."
 * Resource.descriptions ^comment = "Source of the property and/or allowed values: NFDI4Health"
 * Resource.descriptions.text 1..1 string "Description" "Short plain text summary of the [RESOURCE]."
 * Resource.descriptions.text ^comment = "Short Input Help: Please provide a description in the original language of the [RESOURCE]. If the original language is not English, please also provide a full English translation of the description. / Source of the property and/or allowed values: NFDI4Health, DataCite [1], CT.gov [2], DRKS [3]"
 * Resource.descriptions.language 1..1 Coding "Language of the description" "Language in which the description text is provided."
-* Resource.descriptions.language from $ISOLanguage (required)
+* Resource.descriptions.language from NFDI4Health_VS_MDS_Languages_ISO (required)
 * Resource.descriptions.language ^comment = "Source of the property and/or allowed values: NFDI4Health, DataCite [1], CT.gov [2], DRKS [3]"
 * Resource.keywords 0..* BackboneElement "Keyword(s) describing the [RESOURCE]" "Group of items providing information about keywords describing the [RESOURCE]."
 * Resource.keywords ^comment = "Additional Information: The findability of the [RESOURCE] can be significantly increased if proper keywords are stated. / Source of the property and/or allowed values: NFDI4Health"
@@ -52,7 +52,7 @@ Description: "NFDI4Health Logical Model Core Metadataschema"
 * Resource.keywords.code ^example.label = "Example of a keyword code"
 * Resource.keywords.code ^example.valueUri = "http://id.nlm.nih.gov/mesh/D000086402"
 * Resource.languages 0..* Coding "Language(s) of the [RESOURCE]" "Language(s) in which the [RESOURCE] is conducted/provided."
-* Resource.languages from $ISOLanguage (required)
+* Resource.languages from NFDI4Health_VS_MDS_Languages_ISO (required)
 * Resource.languages ^comment = "Short Input Help: Select all that apply. / Source of the property and/or allowed values: DataCite [1]"
 * Resource.webpage 0..1 url "Web page of the [RESOURCE]" "If existing, a link to the web page directly relevant to the [RESOURCE]."
 * Resource.webpage ^comment = "Additional Information: Other web pages related to the [RESOURCE] can additionally be entered in the section 'Related resources'. / Source of the property and/or allowed values: DataCite [1], CT.gov [2], DRKS [3]"
