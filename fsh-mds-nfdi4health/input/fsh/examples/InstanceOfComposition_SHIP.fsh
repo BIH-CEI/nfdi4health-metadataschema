@@ -7,7 +7,7 @@ Usage: #example
 * identifier.value = "81"
 * status = #final // mandatory in FHIR, no information in MDS
 * date = "2024"
-* type = $NCI#C63536 "Study"
+* type = #C63536 "Study"
 
 
 // Title and Acronyms
@@ -19,8 +19,8 @@ Usage: #example
 * title.extension[label][=].extension[language].valueCodeableConcept = $ISOLanguage#en "English"
 
 // Roles
-* author[0] = Reference(InstanceOfOrganizationResearchGroupRNCM)
-* author[=].extension[nameType].valueCoding = $SCT#385437003 "Institution"
+* author = Reference(InstanceOfOrganizationResearchGroupRNCM)
+* author.extension[nameType].valueCoding = $SCT#385437003 "Institution"
 
 
 // Extensions
