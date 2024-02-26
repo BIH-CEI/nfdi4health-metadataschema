@@ -58,7 +58,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12.3 Resource.ids.relationType"
+            "map": "Resource.ids.relationType"
           }
         ]
       },

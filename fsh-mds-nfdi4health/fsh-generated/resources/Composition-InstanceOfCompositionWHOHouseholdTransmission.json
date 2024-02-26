@@ -49,7 +49,7 @@
       "coding": [
         {
           "code": "C47824",
-          "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "system": "urn:oid:2.16.840.1.113883.3.26.1.1",
           "display": "Data Set"
         }
       ]

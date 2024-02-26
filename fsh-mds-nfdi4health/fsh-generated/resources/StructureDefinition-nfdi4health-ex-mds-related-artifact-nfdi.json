@@ -52,7 +52,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.13 Resource.idsNfdi4health"
+            "map": "Resource.idsNfdi4health"
           }
         ]
       },
@@ -71,7 +71,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.13.1 Resource.idsNfdi4health.identifier"
+            "map": "Resource.idsNfdi4health.identifier"
           }
         ]
       },
@@ -138,7 +138,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.13.3 Resource.idsNfdi4health.relationType"
+            "map": "Resource.idsNfdi4health.relationType"
           }
         ]
       },
@@ -159,7 +159,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.13.2 Resource.idsNfdi4health.date"
+            "map": "Resource.idsNfdi4health.date"
           }
         ]
       },

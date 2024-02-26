@@ -381,7 +381,7 @@
           "coding": [
             {
               "code": "C49637",
-              "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.1",
               "display": "Reference Period (Temporal Concept)"
             }
           ]
@@ -457,7 +457,7 @@
           "coding": [
             {
               "code": "C118873",
-              "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.1",
               "display": "How Often (Intellectual Product)"
             }
           ]
@@ -495,7 +495,7 @@
           "coding": [
             {
               "code": "C78690",
-              "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.1",
               "display": "Content Validity (Quantitative Concept)"
             }
           ]
@@ -571,7 +571,7 @@
           "coding": [
             {
               "code": "C73622",
-              "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.1",
               "display": "Reliability (Quantitative Concept)"
             }
           ]
@@ -647,7 +647,7 @@
           "coding": [
             {
               "code": "C1505",
-              "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.1",
               "display": "Dietary Supplement (Food)"
             }
           ]

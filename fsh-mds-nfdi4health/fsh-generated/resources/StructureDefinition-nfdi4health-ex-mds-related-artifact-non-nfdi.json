@@ -51,7 +51,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12 Resource.ids"
+            "map": "Resource.ids"
           }
         ]
       },
@@ -100,12 +100,12 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-identifier-type-related-artifact-umls-local"
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-identifier-type-related-artifact-nci-local"
         },
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12.2 Resource.ids.scheme"
+            "map": "Resource.ids.scheme"
           }
         ]
       },
@@ -124,7 +124,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12.1 Resource.ids.identifier"
+            "map": "Resource.ids.identifier"
           }
         ]
       },
@@ -145,7 +145,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12.3 Resource.ids.relationType"
+            "map": "Resource.ids.relationType"
           }
         ]
       },
@@ -166,7 +166,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12.4 Resource.ids.resourceTypeGeneral"
+            "map": "Resource.ids.resourceTypeGeneral"
           }
         ]
       },

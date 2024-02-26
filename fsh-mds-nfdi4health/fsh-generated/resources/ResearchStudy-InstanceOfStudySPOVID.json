@@ -65,7 +65,7 @@
           "url": "generally",
           "valueCoding": {
             "code": "C150084",
-            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "system": "urn:oid:2.16.840.1.113883.3.26.1.1",
             "display": "Undecided (Intellectual Product)"
           }
         }
@@ -125,7 +125,7 @@
             "coding": [
               {
                 "code": "C174267",
-                "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+                "system": "urn:oid:2.16.840.1.113883.3.26.1.1",
                 "display": "Active Comparator Arm"
               }
             ]
@@ -156,7 +156,7 @@
             "coding": [
               {
                 "code": "C174270",
-                "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+                "system": "urn:oid:2.16.840.1.113883.3.26.1.1",
                 "display": "No Intervention Arm"
               }
             ]

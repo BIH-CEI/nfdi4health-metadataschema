@@ -1,0 +1,100 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "NFDI4Health_VS_MDS_Identifier_Type_Related_Artifact_NCI_Local",
+  "id": "nfdi4health-vs-mds-identifier-type-related-artifact-nci-local",
+  "title": "NFDI4Health VS MDS Identifier Type Related Artifact [NCI, local]",
+  "description": "Value set defining codes to specify the ID Type of the related resource.",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-identifier-type-related-artifact-nci-local",
+  "version": "0.9",
+  "experimental": true,
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.3.26.1.1",
+        "concept": [
+          {
+            "code": "C42743",
+            "display": "Uniform Resource Locator"
+          },
+          {
+            "code": "C54106",
+            "display": "Handle"
+          },
+          {
+            "code": "C47841",
+            "display": "Life Sciences Identifier"
+          },
+          {
+            "code": "C127797",
+            "display": "PubMed Unique Identifier"
+          },
+          {
+            "code": "C71581",
+            "display": "Uniform Resource Name"
+          },
+          {
+            "code": "C17649",
+            "display": "Other"
+          },
+          {
+            "code": "C71462",
+            "display": "Digital Object Identifier"
+          }
+        ]
+      },
+      {
+        "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+        "concept": [
+          {
+            "code": "097",
+            "display": "w3id"
+          },
+          {
+            "code": "096",
+            "display": "PURL"
+          },
+          {
+            "code": "095",
+            "display": "LISSN"
+          },
+          {
+            "code": "094",
+            "display": "ISTC"
+          },
+          {
+            "code": "093",
+            "display": "ISSN"
+          },
+          {
+            "code": "092",
+            "display": "ISBN"
+          },
+          {
+            "code": "091",
+            "display": "EISSN"
+          },
+          {
+            "code": "090",
+            "display": "EAN13"
+          },
+          {
+            "code": "089",
+            "display": "arXiv"
+          }
+        ]
+      }
+    ]
+  }
+}

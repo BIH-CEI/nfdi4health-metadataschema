@@ -120,7 +120,7 @@
 [2.16.840.1.113883.3.1937.777.64.4.6--20231207000000]: Questionnaire-2.16.840.1.113883.3.1937.777.64.4.6--20231207000000.html
 [NFDI4Health_VS_MDS_Countries_ISO]: ValueSet-nfdi4health-vs-mds-countries-iso.html
 [NFDI4Health_VS_MDS_ID_TYPE_NCI_Local]: ValueSet-nfdi4health-vs-mds-id-type-nci-local.html
-[NFDI4Health_VS_MDS_Identifier_Type_Related_Artifact_UMLS_Local]: ValueSet-nfdi4health-vs-mds-identifier-type-related-artifact-umls-local.html
+[NFDI4Health_VS_MDS_Identifier_Type_Related_Artifact_NCI_Local]: ValueSet-nfdi4health-vs-mds-identifier-type-related-artifact-nci-local.html
 [NFDI4Health_VS_MDS_Label_Type_Local]: ValueSet-nfdi4health-vs-mds-label-type-local.html
 [NFDI4Health_VS_MDS_Languages_ISO]: ValueSet-nfdi4health-vs-mds-languages-iso.html
 [NFDI4Health_VS_MDS_Mortality_Data_NCI]: ValueSet-nfdi4health-vs-mds-mortality-data-nci.html

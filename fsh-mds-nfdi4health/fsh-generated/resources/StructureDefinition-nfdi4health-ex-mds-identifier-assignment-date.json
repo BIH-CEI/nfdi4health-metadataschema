@@ -34,7 +34,8 @@
   "abstract": false,
   "context": [
     {
-      "type": "element"
+      "type": "element",
+      "expression": "Element"
     }
   ],
   "type": "Extension",
@@ -52,7 +53,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.13.2 Resource.idsNfdi4health.date"
+            "map": "Resource.idsNfdi4health.date"
           }
         ]
       },
