@@ -7,7 +7,7 @@ Usage: #example
 * identifier.value = "81"
 * status = #final // mandatory in FHIR, no information in MDS
 * date = "2024"
-* type = #C63536 "Study"
+* type = $NCI#C63536 "Study"
 
 
 // Title and Acronyms
