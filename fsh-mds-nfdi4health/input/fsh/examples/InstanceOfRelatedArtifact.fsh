@@ -14,7 +14,7 @@ Description: "Example data representing Related Artifact"
 
 // Non NFDI4Health IDs
 * extension[nonNFDI4HealthResource][0].extension[identifier].valueIdentifier.value = "WHO/2019-nCoV/HHtransmission/2020.4"
-* extension[nonNFDI4HealthResource][=].extension[identifier].valueIdentifier.type = $UMLS#C0205394 "Other (Qualitative Concept)"
+* extension[nonNFDI4HealthResource][=].extension[identifier].valueIdentifier.type = $NCI#C17649 "Other"
 * extension[nonNFDI4HealthResource][=].extension[relationType].valueCoding = $Remaining#072 "A is identical to B"
 
 // Webpage
