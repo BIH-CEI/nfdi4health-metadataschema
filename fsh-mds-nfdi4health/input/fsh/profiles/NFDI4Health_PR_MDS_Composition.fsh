@@ -74,12 +74,12 @@ Expression: "type.coding.where(code = 'C63536' or code = 'C198230' or code = 'C4
 Invariant: core-2a
 Description: "When author.extension[nameType] = '125676002' then author only Reference (NFDI4Health_PR_MDS_Practitioner_Role)"
 Severity: #error
-Expression: "author.extension[nameType].where(code = '125676002') implies author Reference (NFDI4Health_PR_MDS_Practitioner_Role)"
+Expression: "author.extension[nameType].where(code = '125676002') implies author(NFDI4Health_PR_MDS_Practitioner_Role)"
 
 Invariant: core-2b
 Description: "When author.extension[nameType] = '385437003' then author only Reference (NFDI4Health_PR_MDS_Organization)"
 Severity: #error
-Expression: "author.extension[nameType].where(code = '385437003') implies author Reference (NFDI4Health_PR_MDS_Organization)"
+Expression: "author.extension[nameType].where(code = '385437003') implies author(NFDI4Health_PR_MDS_Organization)"
 
 
 Invariant: core-3a
