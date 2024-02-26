@@ -24,4 +24,4 @@ Mapping: NFDI4Health-Related-Artifact-Relation-Type-NFDI4Health-Extension-to-FHI
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Related_Artifact_Rel_Type_NFDI4_Resource
-* -> "1.13.3 Resource.idsNfdi4health.relationType"
+* -> "Resource.idsNfdi4health.relationType"

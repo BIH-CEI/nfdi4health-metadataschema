@@ -21,4 +21,4 @@ Mapping: NFDI4Health-Identifier-Assignment-Date-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Identifier_Assignment_Date
-* -> "1.13.2 Resource.idsNfdi4health.date"
+* -> "Resource.idsNfdi4health.date"

@@ -171,7 +171,7 @@ Description: "NFDI4Health Logical Model Core Metadataschema"
 * Resource.ids.identifier ^example.label = "Example of an Identifier"
 * Resource.ids.identifier ^example.valueString = "10.4126/FRL01-006431467"
 * Resource.ids.scheme 1..1 Coding "Type of the identifier" "Type of the identifier of the related resource."
-* Resource.ids.scheme from NFDI4Health_VS_MDS_Identifier_Type_Related_Artifact_UMLS_Local (required)
+* Resource.ids.scheme from NFDI4Health_VS_MDS_Identifier_Type_Related_Artifact_NCI_Local (required)
 * Resource.ids.scheme ^comment = "Short Input Help: Select one value from the list. / Source of the property and/or allowed values: DataCite [1]"
 * Resource.ids.scheme ^example.label = "Example of an Identifier System"
 * Resource.ids.scheme ^example.valueCodeableConcept.text = "DOI"

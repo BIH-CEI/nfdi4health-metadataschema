@@ -14,8 +14,8 @@ Description: "Extension providing information about the general resource type."
 * ^context.expression = "Element"
 * . 0..1
 * . ^short = "In what form is the [RESOURCE] available? | Type of the related resource"
-* . ^definition = "For 1.2.2 Resource.classification.typeGeneral: Specific information about the form in which the [RESOURCE] is available. / For 1.12.4 Resource.ids.typeGeneral: Type of the related resource, e.g. journal article, dataset, text, etc."
-* . ^comment = "Additional Information: For 1.2.2 Resource.classification.typeGeneral: If the [RESOURCE] consists primarily of words for reading and is not covered by another textual resource type in this list, 'Text' should be used instead of 'Other'. | Short Input Help: For 1.2.2 Resource.classification.typeGeneral: You can select 'Text' for most of the study documents, e.g. for questionnaires, informed consent forms, case report forms, etc. / For 1.12.4 Resource.ids.typeGeneral: Select one value from the list"
+* . ^definition = "For Resource.classification.typeGeneral: Specific information about the form in which the [RESOURCE] is available. / For Resource.ids.typeGeneral: Type of the related resource, e.g. journal article, dataset, text, etc."
+* . ^comment = "Additional Information: For Resource.classification.typeGeneral: If the [RESOURCE] consists primarily of words for reading and is not covered by another textual resource type in this list, 'Text' should be used instead of 'Other'. | Short Input Help: For Resource.classification.typeGeneral: You can select 'Text' for most of the study documents, e.g. for questionnaires, informed consent forms, case report forms, etc. / For 1.12.4 Resource.ids.typeGeneral: Select one value from the list"
 * . ^example.label = "Example of a general resource type of a related resource"
 * . ^example.valueString = "Text"
 * value[x] 1..1
@@ -29,5 +29,5 @@ Mapping: NFDI4Health-Resource-Type-General-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Resource_Type_General
-* -> "1.2.2 Resource.classification.typeGeneral"
-* -> "1.12.4 Resource.ids.typeGeneral"
+* -> "Resource.classification.typeGeneral"
+* -> "Resource.ids.typeGeneral"

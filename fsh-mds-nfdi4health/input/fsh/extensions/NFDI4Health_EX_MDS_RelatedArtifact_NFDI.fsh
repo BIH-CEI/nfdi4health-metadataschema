@@ -39,7 +39,7 @@ Mapping: NFDI4Health-Ex-Related-Artifact-NFDI-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Related_Artifact_NFDI
-* -> "1.13 Resource.idsNfdi4health"
-* extension[identifier] -> "1.13.1 Resource.idsNfdi4health.identifier"
-* extension[identifierAssignmentDate] -> "1.13.2 Resource.idsNfdi4health.date"
-* extension[relationType] -> "1.13.3 Resource.idsNfdi4health.relationType"
+* -> "Resource.idsNfdi4health"
+* extension[identifier] -> "Resource.idsNfdi4health.identifier"
+* extension[identifierAssignmentDate] -> "Resource.idsNfdi4health.date"
+* extension[relationType] -> "Resource.idsNfdi4health.relationType"

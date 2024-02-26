@@ -29,4 +29,4 @@ Mapping: NFDI4Health-Related-Artifact-Relation-Type-Non-NFDI4Health-Resource-to-
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Related_Artifact_Rel_Type_Non_NFDI_Resource
-* -> "1.12.3 Resource.ids.relationType"
+* -> "Resource.ids.relationType"
