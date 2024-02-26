@@ -21,8 +21,8 @@ Usage: #example
 * title.extension[label][=].extension[language].valueCodeableConcept = $ISOLanguage#en "English"
 
 // Roles
-* author[+] = Reference(InstanceOfOrganizationContactWHO)
-* author[=].extension[nameType].valueCoding = $SCT#385437003 "Institution"
+* author = Reference(InstanceOfOrganizationContactWHO)
+* author.extension[nameType].valueCoding = $SCT#385437003 "Institution"
 
 // Extensions
 * extension[provenanceDataSource].valueCoding = #06 "Manually collected"
