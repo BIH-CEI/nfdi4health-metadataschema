@@ -14,6 +14,10 @@
         "code": "06",
         "display": "Manually collected"
       }
+    },
+    {
+      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-chronic-diseases",
+      "valueBoolean": true
     }
   ],
   "author": [
@@ -35,13 +39,29 @@
         {
           "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-name-type",
           "valueCoding": {
-            "code": "385437003",
+            "code": "125676002",
             "system": "http://snomed.info/sct",
-            "display": "Institution"
+            "display": "Person"
           }
         }
       ],
-      "reference": "Organization/InstanceOfOrganizationContactWHO"
+      "reference": "PractitionerRole/InstanceOfPractitionerRoleNinaKirchhof"
+    }
+  ],
+  "section": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "C165593",
+            "system": "urn:oid:2.16.840.1.113883.3.26.1.1",
+            "display": "Chronic Disease"
+          }
+        ]
+      },
+      "focus": {
+        "reference": "Questionnaire/InstanceOfChronicDiseaseModule"
+      }
     }
   ],
   "identifier": {

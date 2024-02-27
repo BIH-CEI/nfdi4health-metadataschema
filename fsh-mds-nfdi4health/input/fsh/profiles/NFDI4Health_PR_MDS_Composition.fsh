@@ -54,21 +54,21 @@ Description: "Profile intended to capture information on the core information of
 * section[nutritionalData] obeys core-5
 * section[nutritionalData].code = $NCI#C16927 "Nutritional Science"
 * section[nutritionalData].focus 1..1
-* section[nutritionalData].focus only Reference(NFDI4Health_PR_MDS_Observation_Nutritional_Epidemiology)
+* section[nutritionalData].focus only Reference(Questionnaire)
 * section[chronicDiseases] ^short = "Includes chronic diseases?"
 * section[chronicDiseases] ^definition = "Indication whether the [RESOURCE] addresses chronic diseases."
 * section[chronicDiseases] ^comment = "Cardinality: 1..*, if Resource.chronicDiseases == 'Yes' AND Resource.classification.type == ('Study protocol' OR 'Informed consent form' OR 'Patient information sheet' OR 'Manual of operations (SOPs)' OR 'Statistical analysis plan' OR 'Data management plan' OR 'Case report form' OR 'Interview scheme and themes' OR 'Observation guide' OR 'Discussion guide' OR 'Participant tasks' OR 'Other study document' OR 'Other'); otherwise 0..0 / Source of the property and/or allowed values: NFDI4Health UC 5.2 requirements"
-* section[chronicDiseases] obeys core-4
+* section[chronicDiseases] obeys core-4a and core-4b
 * section[chronicDiseases].code = $NCI#C165593 "Chronic Disease"
 * section[chronicDiseases].focus 1..1
-* section[chronicDiseases].focus only Reference(NFDI4Health_PR_MDS_EvidenceVariable_Chronic_Diseases)
+* section[chronicDiseases].focus only Reference(Questionnaire)
 
 
 //FHIR Paths
 Invariant: core-1a
 Description: "When Composition.type = 'C63536' OR 'C198230' OR 'C47824' OR 'C61393' OR '178' then Composition.category must be empty."
 Severity: #error
-Expression: "Composition.type.coding.where(code = 'C63536' | = 'C198230' | 'C47824' | 'C61393' |'178') implies category.exists().not()"
+Expression: "Composition.type.coding.where(code = 'C63536' | 'C198230' | 'C47824' | 'C61393' |'178') implies category.exists().not()"
 
 Invariant: core-1b
 Description: "When Composition.type != 'C63536' OR 'C198230' OR 'C47824' OR 'C61393' OR '178' then Composition.category must exist."
@@ -88,27 +88,32 @@ Expression: "author.extension.where(url ='https://www.nfdi4health.de/fhir/metada
 Invariant: core-3a
 Description: "When Composition.type = 'C63536' or 'C198230' or 'C61393' or '178' then subject only Reference (NFDI4Health_PR_MDS_Study)"
 Severity: #error
-Expression: "Composition.type.coding.where(code = 'C63536' | 'C61393' | 'C198230' | = 178) implies (subject.resolve() is ResearchStudy)"
+Expression: "Composition.type.coding.where(code = 'C63536' or code = 'C61393' or code = 'C198230' or code = 178) implies (subject.resolve() is ResearchStudy)"
 
 Invariant: core-3b
 Description: "When Composition.type = 009, C16468 , C15518, C115779, C115761, C115756, 011, 016, '017', '018', '021' then subject only Reference (NFDI4Health_PR_MDS_Document)"
 Severity: #error
-Expression: "Composition.type.coding.where(code = '009' | 'C16468' | 'C15518' | 'C115779' | 'C115761' | 'C115756' | '011' | '016' | '017' | '018' | '021') implies (subject.resolves() is Document)"
+Expression: "Composition.type.coding.where(code = '009' or code = 'C16468' or code = 'C15518' or code = 'C115779' or code = 'C115761' or code = 'C115756' or code = '011' or code = '016' or code = '017' or code = '018' or code = '021') implies (subject.resolves() is Document)"
 
 Invariant: core-3c
 Description: "When Composition.type = 'C17048' or 'C40988' then subject only Reference (Profile: NFDI4Health_PR_MDS_Questionnaire)"
 Severity: #error
-Expression: "type.coding.where(code = 'C17048' | 'C40988') implies (subject.resolves() is Questionnaire)"
+Expression: "Composition.type.coding.where(code = 'C17048' or code = 'C40988') implies (subject.resolves() is Questionnaire)"
 
-Invariant: core-4
+Invariant: core-4a
 Description: "1..*, if Resource.chronicDiseases == 'True' AND Resource.classification.type == ('C93381' OR 'C16468' OR 'C15518' OR 'C115779' OR 'C115761' OR 'C115756' OR 'C40988' OR  '016' OR '017' OR '018' OR '019' OR '021' OR 'C17649'); otherwise 0.. 0"
 Severity: #error
-Expression: "extension[chronicDiseases].where (boolean = 'TRUE') and type.where(code = 'C93381' code = 'C16468' code = 'C15518' code = 'C115779' code = 'C115761' code = 'C115756' code = 'C40988' code =  '016' code = '017' code = '018' code = '019' code = '021' code = 'C17649') implies section[chronicDiseases].exists()"
+Expression: "Composition.extension.where(url ='https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-chronic-diseases').where(value = true) implies section.code.coding.where(code = 'C165593').exists()"
+ 
+Invariant: core-4b
+Description: "1..*, if Resource.chronicDiseases == 'True' AND Resource.classification.type == ('C93381' OR 'C16468' OR 'C15518' OR 'C115779' OR 'C115761' OR 'C115756' OR 'C40988' OR  '016' OR '017' OR '018' OR '019' OR '021' OR 'C17649'); otherwise 0.. 0"
+Severity: #error
+Expression: "Composition.type.coding.where(code = 'C93381' or code = 'C16468' or code = 'C15518' or code = 'C115779' or code = 'C115761' or code = 'C115756' or code = 'C40988' or code =  '016' or code = '017' or code = '018' or code = '019' or code = '021' or code = 'C17649')  implies section.code.coding.where(code = 'C165593').exists()"
 
 Invariant: core-5
 Description: "1..*, if Resource.nutritionalData == 'True'; otherwise 0.. 0"
 Severity: #error
-Expression: "extension[nutritionalData] = 'TRUE' implies section[nutritionalData].exists()"
+Expression: "Composition.extension.where(url ='https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-nutritional-data').where(value = true) implies section.code.coding.where(code = 'C16927').exists()"
 
 
 

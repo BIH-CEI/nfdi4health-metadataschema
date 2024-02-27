@@ -21,10 +21,14 @@ Usage: #example
 // Roles
 * author[0] = Reference(InstanceOfOrganizationCreatorWHO)
 * author[=].extension[nameType].valueCoding = $SCT#385437003 "Institution"
-* author[+] = Reference(InstanceOfOrganizationContactWHO)
-* author[=].extension[nameType].valueCoding = $SCT#385437003 "Institution"
+* author[+] = Reference(InstanceOfPractitionerRoleNinaKirchhof)
+* author[=].extension[nameType].valueCoding = $SCT#125676002 "Person"
 
 // Extensions
 * extension[provenanceDataSource].valueCoding = #06 "Manually collected"
+* extension[chronicDiseases].valueBoolean = true
+* extension[nutritionalData].valueBoolean = true
 
-
+// Sections
+* section[chronicDiseases].focus = Reference(InstanceOfChronicDiseaseModule)
+* section[nutritionalData].focus = Reference(InstanceOfNutritionalEpidemiologyModule)
