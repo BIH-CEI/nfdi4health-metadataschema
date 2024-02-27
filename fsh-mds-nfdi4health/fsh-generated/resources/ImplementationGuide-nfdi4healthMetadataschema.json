@@ -157,14 +157,6 @@
       },
       {
         "reference": {
-          "reference": "Location/InstanceOfLocationMono"
-        },
-        "name": "Instance of Monocentric Study",
-        "description": "Example for monocentric study SHIP",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-centers"
-      },
-      {
-        "reference": {
           "reference": "Practitioner/InstanceOfPractitionerNinaKirchhof"
         },
         "name": "Instance Of NFDI4Health_PR_MDS_Practitioner for Nina Kirchhof",

@@ -45,7 +45,7 @@
     "fshType": "Instance",
     "fshFile": "examples/InstanceOfComposition_Household.fsh",
     "startLine": 1,
-    "endLine": 32
+    "endLine": 34
   },
   {
     "outputFile": "Composition-InstanceOfCompositionSHIP.json",
@@ -110,14 +110,6 @@
     "fshFile": "examples/InstanceOfGroupIntended_SPOVID.fsh",
     "startLine": 1,
     "endLine": 14
-  },
-  {
-    "outputFile": "Location-InstanceOfLocationMono.json",
-    "fshName": "InstanceOfLocationMono",
-    "fshType": "Instance",
-    "fshFile": "examples/InstanceOfLocationMono.fsh",
-    "startLine": 1,
-    "endLine": 8
   },
   {
     "outputFile": "Organization-InstanceOfAffiliationUMG.json",

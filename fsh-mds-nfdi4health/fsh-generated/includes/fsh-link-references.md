@@ -15,7 +15,6 @@
 [InstanceOfGroupActualSHIP]: Group-InstanceOfGroupActualSHIP.html
 [InstanceOfGroupIntendedSHIP]: Group-InstanceOfGroupIntendedSHIP.html
 [InstanceOfGroupIntendedSPOVID]: Group-InstanceOfGroupIntendedSPOVID.html
-[InstanceOfLocationMono]: Location-InstanceOfLocationMono.html
 [InstanceOfPractitionerNinaKirchhof]: Practitioner-InstanceOfPractitionerNinaKirchhof.html
 [InstanceOfPractitionerRoleKathleenMerikangas]: PractitionerRole-InstanceOfPractitionerRoleKathleenMerikangas.html
 [InstanceOfPractitionerRoleNinaKirchhof]: PractitionerRole-InstanceOfPractitionerRoleNinaKirchhof.html
