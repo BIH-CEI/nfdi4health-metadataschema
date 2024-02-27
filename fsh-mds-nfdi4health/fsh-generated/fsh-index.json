@@ -357,7 +357,7 @@
     "fshType": "Instance",
     "fshFile": "examples/InstanceOfStudy_interventional_SPOVID.fsh",
     "startLine": 1,
-    "endLine": 88
+    "endLine": 41
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-assessments.json",

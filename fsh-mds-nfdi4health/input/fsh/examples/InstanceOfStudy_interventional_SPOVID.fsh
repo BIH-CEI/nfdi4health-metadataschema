@@ -35,9 +35,9 @@ Usage: #example
 * period.end = 2022-11-30 //original format needed to be converted
 
 /// Study Design Details
-* category[primaryDesign][0].coding = $NCI#C98388 "Interventional Study"
-* category[studyTypeInterventional][+].coding = $Remaining#139 "Unknown (interventional)"
-* category[samplingMethod][+].coding = $NCI#C127781 "Non-Probability Sampling Method"
+* category[primaryDesign].coding = $NCI#C98388 "Interventional Study"
+* category[studyTypeInterventional].coding = $Remaining#139 "Unknown (interventional)"
+* category[samplingMethod].coding = $NCI#C127781 "Non-Probability Sampling Method"
 * category[samplingMethodNonProbability].coding = * $NCI#C53204 "Convenience Sampling"
 
 * primaryPurposeType.coding = $study-prim-purp-type#treatment "Treatment"

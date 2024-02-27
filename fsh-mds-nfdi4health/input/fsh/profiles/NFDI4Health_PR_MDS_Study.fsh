@@ -190,8 +190,8 @@ Description: "Group of items applicable only to studies, substudies, registries,
 * category[samplingMethodNonProbability] ^comment = "Short Input Help: If known, select one value from the list."
 * category[samplingMethodNonProbability] ^binding.description = "Value set defining codes to specify types of non-probability sampling methods."
 * category[samplingMethodNonProbability].coding 0..1
-* condition ^slicing.discriminator.type = #exists
-* condition ^slicing.discriminator.path = "coding"
+* condition ^slicing.discriminator.type = #value
+* condition ^slicing.discriminator.path = "$this"
 * condition ^slicing.rules = #open
 * condition contains
     conditions 0..* and
