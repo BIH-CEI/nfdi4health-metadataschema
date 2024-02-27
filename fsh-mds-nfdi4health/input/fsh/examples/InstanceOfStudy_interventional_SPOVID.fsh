@@ -38,7 +38,7 @@ Usage: #example
 * category[primaryDesign].coding = $NCI#C98388 "Interventional Study"
 * category[studyTypeInterventional].coding = $Remaining#139 "Unknown (interventional)"
 * category[samplingMethod].coding = $NCI#C127781 "Non-Probability Sampling Method"
-* category[samplingMethodNonProbability].coding = * $NCI#C53204 "Convenience Sampling"
+* category[samplingMethodNonProbability].coding = $NCI#C53204 "Convenience Sampling"
 
 * primaryPurposeType.coding = $study-prim-purp-type#treatment "Treatment"
 
