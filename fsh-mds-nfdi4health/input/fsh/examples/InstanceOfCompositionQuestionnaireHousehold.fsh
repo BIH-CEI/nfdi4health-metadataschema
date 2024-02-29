@@ -7,8 +7,9 @@ Usage: #example
 * identifier.value = "112"
 * status = #final // mandatory in FHIR, no information in MDS
 * date = "2024"
-* type = $Remaining#009 "Data dictionary"
+* type = $NCI#C17048 "Questionnaire"
 * category = $NCI#C47824 "Data Set"
+* subject = Reference(InstanceOfQuestionnaireWHOHouseholdTransmission)
 
 // Title and Acronyms
 * title.extension[label][0].extension[value].valueString = "Data Dictionary for the WHO's Household transmission investigation protocol for coronavirus disease 2019 (COVID-19)"

@@ -9,6 +9,7 @@ Usage: #example
 * date = "2024"
 * type = $Remaining#021 "Other study document"
 * category = $NCI#C25704 "Text"
+* subject = Reference(InstanceOfDocumentHouseholdTransmissionInvestigationForC19)
 
 // Title and Acronyms
 * title.extension[label][0].extension[value].valueString = "Household transmission investigation protocol for coronavirus disease 2019 (COVID-19)"
@@ -30,5 +31,5 @@ Usage: #example
 * extension[nutritionalData].valueBoolean = true
 
 // Sections
-* section[chronicDiseases].focus = Reference(InstanceOfChronicDiseaseModule)
-* section[nutritionalData].focus = Reference(InstanceOfNutritionalEpidemiologyModule)
+* section[chronicDiseases].entry = Reference(InstanceOfChronicDiseaseModule)
+* section[nutritionalData].entry = Reference(InstanceOfNutritionalEpidemiologyModule)

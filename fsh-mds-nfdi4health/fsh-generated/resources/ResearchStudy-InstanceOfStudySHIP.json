@@ -269,7 +269,7 @@
           "url": "imaging",
           "valueCoding": {
             "code": "C115503",
-            "system": "urn:oid:2.16.840.1.113883.3.26.1.1",
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
             "display": "Ultrasound Study File (Manufactured Object)"
           }
         },
@@ -277,7 +277,7 @@
           "url": "imaging",
           "valueCoding": {
             "code": "C115501",
-            "system": "urn:oid:2.16.840.1.113883.3.26.1.1",
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
             "display": "Magnetic Resonance Imaging Study File (Manufactured Object)"
           }
         },
@@ -285,7 +285,7 @@
           "url": "imaging",
           "valueCoding": {
             "code": "C115545",
-            "system": "urn:oid:2.16.840.1.113883.3.26.1.1",
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
             "display": "Medical Imaging File Not Otherwise Specified (Intellectual Product)"
           }
         },
@@ -293,7 +293,7 @@
           "url": "omics",
           "valueCoding": {
             "code": "C84343",
-            "system": "urn:oid:2.16.840.1.113883.3.26.1.1",
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
             "display": "Genomics"
           }
         },
@@ -301,7 +301,7 @@
           "url": "omics",
           "valueCoding": {
             "code": "C49019",
-            "system": "urn:oid:2.16.840.1.113883.3.26.1.1",
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
             "display": "Metabolomics"
           }
         },
@@ -309,7 +309,7 @@
           "url": "omics",
           "valueCoding": {
             "code": "C153189",
-            "system": "urn:oid:2.16.840.1.113883.3.26.1.1",
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
             "display": "Transcriptomics"
           }
         },
@@ -317,7 +317,7 @@
           "url": "omics",
           "valueCoding": {
             "code": "C20085",
-            "system": "urn:oid:2.16.840.1.113883.3.26.1.1",
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
             "display": "Proteomics"
           }
         },
@@ -520,7 +520,7 @@
                   "coding": [
                     {
                       "code": "C17649",
-                      "system": "urn:oid:2.16.840.1.113883.3.26.1.1",
+                      "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
                       "display": "Other"
                     }
                   ]

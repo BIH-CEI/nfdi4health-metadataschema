@@ -8,6 +8,7 @@ Usage: #example
 * status = #final // mandatory in FHIR, no information in MDS
 * date = "2024"
 * type = $NCI#C63536 "Study"
+* subject = Reference(InstanceOfStudySHIP)
 
 
 // Title and Acronyms

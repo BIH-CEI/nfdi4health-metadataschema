@@ -8,6 +8,7 @@ Usage: #example
 * status = #final // mandatory in FHIR, no information in MDS
 * date = "2024"
 * type = $NCI#C63536 "Study"
+* subject = Reference(InstanceOfStudySPOVID)
 
 // Title and Acronyms
 * title.extension[label][0].extension[value].valueString = "SPOVID - Sport & Long-COVID-Syndrom"

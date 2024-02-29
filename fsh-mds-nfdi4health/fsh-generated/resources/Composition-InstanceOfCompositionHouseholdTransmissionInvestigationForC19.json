@@ -58,28 +58,32 @@
         "coding": [
           {
             "code": "C165593",
-            "system": "urn:oid:2.16.840.1.113883.3.26.1.1",
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
             "display": "Chronic Disease"
           }
         ]
       },
-      "focus": {
-        "reference": "Questionnaire/InstanceOfChronicDiseaseModule"
-      }
+      "entry": [
+        {
+          "reference": "Questionnaire/InstanceOfChronicDiseaseModule"
+        }
+      ]
     },
     {
       "code": {
         "coding": [
           {
             "code": "C16927",
-            "system": "urn:oid:2.16.840.1.113883.3.26.1.1",
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
             "display": "Nutritional Science"
           }
         ]
       },
-      "focus": {
-        "reference": "Questionnaire/InstanceOfNutritionalEpidemiologyModule"
-      }
+      "entry": [
+        {
+          "reference": "Questionnaire/InstanceOfNutritionalEpidemiologyModule"
+        }
+      ]
     }
   ],
   "identifier": {
@@ -100,12 +104,15 @@
       "coding": [
         {
           "code": "C25704",
-          "system": "urn:oid:2.16.840.1.113883.3.26.1.1",
+          "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
           "display": "Text"
         }
       ]
     }
   ],
+  "subject": {
+    "reference": "DocumentReference/InstanceOfDocumentHouseholdTransmissionInvestigationForC19"
+  },
   "_title": {
     "extension": [
       {

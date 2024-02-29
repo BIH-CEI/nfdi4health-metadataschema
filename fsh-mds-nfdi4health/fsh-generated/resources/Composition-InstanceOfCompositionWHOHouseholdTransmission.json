@@ -38,9 +38,9 @@
   "type": {
     "coding": [
       {
-        "code": "009",
-        "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
-        "display": "Data dictionary"
+        "code": "C17048",
+        "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "display": "Questionnaire"
       }
     ]
   },
@@ -49,12 +49,15 @@
       "coding": [
         {
           "code": "C47824",
-          "system": "urn:oid:2.16.840.1.113883.3.26.1.1",
+          "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
           "display": "Data Set"
         }
       ]
     }
   ],
+  "subject": {
+    "reference": "Questionnaire/InstanceOfQuestionnaireWHOHouseholdTransmission"
+  },
   "_title": {
     "extension": [
       {

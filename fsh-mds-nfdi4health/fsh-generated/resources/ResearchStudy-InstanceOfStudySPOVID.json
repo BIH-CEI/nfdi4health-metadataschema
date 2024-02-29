@@ -65,7 +65,7 @@
           "url": "generally",
           "valueCoding": {
             "code": "C150084",
-            "system": "urn:oid:2.16.840.1.113883.3.26.1.1",
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
             "display": "Undecided (Intellectual Product)"
           }
         }
@@ -125,7 +125,7 @@
             "coding": [
               {
                 "code": "C174267",
-                "system": "urn:oid:2.16.840.1.113883.3.26.1.1",
+                "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
                 "display": "Active Comparator Arm"
               }
             ]
@@ -156,7 +156,7 @@
             "coding": [
               {
                 "code": "C174270",
-                "system": "urn:oid:2.16.840.1.113883.3.26.1.1",
+                "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
                 "display": "No Intervention Arm"
               }
             ]
@@ -233,7 +233,7 @@
       "coding": [
         {
           "code": "C98388",
-          "system": "urn:oid:2.16.840.1.113883.3.26.1.1",
+          "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
           "display": "Interventional Study"
         }
       ]
@@ -251,7 +251,7 @@
       "coding": [
         {
           "code": "C127781",
-          "system": "urn:oid:2.16.840.1.113883.3.26.1.1",
+          "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
           "display": "Non-Probability Sampling Method"
         }
       ]
@@ -260,7 +260,7 @@
       "coding": [
         {
           "code": "C53204",
-          "system": "urn:oid:2.16.840.1.113883.3.26.1.1",
+          "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
           "display": "Convenience Sampling"
         }
       ]
@@ -407,7 +407,7 @@
                   "coding": [
                     {
                       "code": "C17649",
-                      "system": "urn:oid:2.16.840.1.113883.3.26.1.1",
+                      "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
                       "display": "Other"
                     }
                   ]

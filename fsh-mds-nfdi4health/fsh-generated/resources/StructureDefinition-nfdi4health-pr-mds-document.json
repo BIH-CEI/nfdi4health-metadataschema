@@ -298,7 +298,7 @@
           "coding": [
             {
               "code": "C172240",
-              "system": "urn:oid:2.16.840.1.113883.3.26.1.1",
+              "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
               "display": "Clinicaltrials.gov Identifier"
             }
           ]
@@ -422,7 +422,7 @@
           "coding": [
             {
               "code": "C132782",
-              "system": "urn:oid:2.16.840.1.113883.3.26.1.1",
+              "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
               "display": "European Union Drug Regulating Authorities Clinical Trials Database"
             }
           ]
@@ -717,7 +717,7 @@
           "coding": [
             {
               "code": "C17649",
-              "system": "urn:oid:2.16.840.1.113883.3.26.1.1",
+              "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
               "display": "Other"
             }
           ]
