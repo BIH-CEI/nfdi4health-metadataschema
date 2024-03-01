@@ -398,10 +398,6 @@
     {
       "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-eligibility-criteria-exclusion-criteria",
       "valueString": "-persons not being able to understand German"
-    },
-    {
-      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-population",
-      "valueString": "Adults from the general population meeting the criteria stated above."
     }
   ],
   "category": [
@@ -466,20 +462,6 @@
     },
     {
       "reference": "Group/InstanceOfGroupActualSHIP"
-    }
-  ],
-  "location": [
-    {
-      "coding": [
-        {
-          "code": "DE",
-          "system": "urn:iso:std:iso:3166",
-          "display": "Germany"
-        }
-      ]
-    },
-    {
-      "text": "Mecklenburg-Vorpommern"
     }
   ],
   "site": [

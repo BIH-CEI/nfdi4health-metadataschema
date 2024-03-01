@@ -93,7 +93,15 @@
     "fshType": "Instance",
     "fshFile": "examples/InstanceOfGroupActual_SHIP.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 11
+  },
+  {
+    "outputFile": "Group-InstanceOfGroupActualSPOVID.json",
+    "fshName": "InstanceOfGroupActualSPOVID",
+    "fshType": "Instance",
+    "fshFile": "examples/InstanceOfGroupActual_SPOVID.fsh",
+    "startLine": 1,
+    "endLine": 11
   },
   {
     "outputFile": "Group-InstanceOfGroupIntendedSHIP.json",
@@ -349,7 +357,7 @@
     "fshType": "Instance",
     "fshFile": "examples/InstanceOfStudy_nonInterventional_SHIP.fsh",
     "startLine": 1,
-    "endLine": 90
+    "endLine": 87
   },
   {
     "outputFile": "ResearchStudy-InstanceOfStudySPOVID.json",
@@ -680,12 +688,20 @@
     "endLine": 38
   },
   {
-    "outputFile": "StructureDefinition-nfdi4health-ex-mds-study-population.json",
-    "fshName": "NFDI4Health_EX_MDS_Study_Population",
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-study-population-description.json",
+    "fshName": "NFDI4Health_EX_MDS_Study_Population_Description",
     "fshType": "Extension",
-    "fshFile": "extensions/NFDI4Health_EX_MDS_Study_Population.fsh",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Study_Population_Description.fsh",
     "startLine": 1,
     "endLine": 18
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-study-population-location.json",
+    "fshName": "NFDI4Health_EX_MDS_Study_Population_Location",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Study_Population_Location.fsh",
+    "startLine": 1,
+    "endLine": 34
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-study-sampling.json",
@@ -869,7 +885,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/NFDI4Health_PR_MDS_Group_Actual.fsh",
     "startLine": 1,
-    "endLine": 16
+    "endLine": 19
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-pr-mds-group-intended.json",
@@ -941,7 +957,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/NFDI4Health_PR_MDS_Study.fsh",
     "startLine": 1,
-    "endLine": 174
+    "endLine": 151
   },
   {
     "outputFile": "ValueSet-nfdi4health-vs-mds-cd-common-chronic-disease-name-snomedct.json",

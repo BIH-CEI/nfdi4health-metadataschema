@@ -1,0 +1,180 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "nfdi4health-ex-mds-study-population-location",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-population-location",
+  "version": "0.9",
+  "name": "NFDI4Health_EX_MDS_Study_Population_Location",
+  "title": "NFDI4Health EX MDS Study Population Location",
+  "status": "draft",
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "description": "Extension providing info of the study population Location.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "NFDI4Health",
+      "name": "NFDI4Health to FHIR Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Group"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "NFDI4Health EX MDS Study Population Location",
+        "definition": "Extension providing info of the study population Location.",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.population.coverage"
+          },
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.population.countries"
+          },
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.population.region"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:coverage",
+        "path": "Extension.extension",
+        "sliceName": "coverage",
+        "short": "Coverage",
+        "definition": "Specification of the recruitment area of the [RESOURCE].",
+        "comment": "Short input help: Select one value from the list.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:coverage.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:coverage.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "coverage"
+      },
+      {
+        "id": "Extension.extension:coverage.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-population-coverage-nci"
+        }
+      },
+      {
+        "id": "Extension.extension:countries",
+        "path": "Extension.extension",
+        "sliceName": "countries",
+        "short": "Country(ies)",
+        "definition": "Country or countries where the [RESOURCE] takes place.",
+        "comment": "Short input help: Select all that apply.",
+        "min": 1,
+        "max": "*",
+        "binding": {
+          "description": "Value set including the country names from the ISO 3166-1 list"
+        }
+      },
+      {
+        "id": "Extension.extension:countries.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:countries.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "countries"
+      },
+      {
+        "id": "Extension.extension:countries.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-countries-iso"
+        }
+      },
+      {
+        "id": "Extension.extension:region",
+        "path": "Extension.extension",
+        "sliceName": "region",
+        "short": "Region(s) and/or city(ies)",
+        "definition": "If applicable, region(s) and/or city(ies) within a country where the [RESOURCE] takes place.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:region.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:region.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "region"
+      },
+      {
+        "id": "Extension.extension:region.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-population-location"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

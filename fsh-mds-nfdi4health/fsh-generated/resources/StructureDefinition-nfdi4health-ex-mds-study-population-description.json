@@ -1,10 +1,10 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "nfdi4health-ex-mds-study-population",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-population",
+  "id": "nfdi4health-ex-mds-study-population-description",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-population-description",
   "version": "0.9",
-  "name": "NFDI4Health_EX_MDS_Study_Population",
-  "title": "NFDI4Health EX MDS Study Population",
+  "name": "NFDI4Health_EX_MDS_Study_Population_Description",
+  "title": "NFDI4Health EX MDS Study Population Description",
   "status": "draft",
   "publisher": "NFDI4Health",
   "contact": [
@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "description": "Extension providing a description of the study population.",
+  "description": "Extension providing a description of the study population description.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -35,7 +35,7 @@
   "context": [
     {
       "type": "element",
-      "expression": "ResearchStudy"
+      "expression": "Group"
     }
   ],
   "type": "Extension",
@@ -65,7 +65,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-population"
+        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-population-description"
       },
       {
         "id": "Extension.value[x]",

@@ -1,6 +1,6 @@
 {
   "resourceType": "Group",
-  "id": "InstanceOfGroupActualSHIP",
+  "id": "InstanceOfGroupActualSPOVID",
   "meta": {
     "profile": [
       "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-group-actual"
@@ -27,7 +27,7 @@
     },
     {
       "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-population-description",
-      "valueString": "Adults from the general population meeting the criteria stated above."
+      "valueString": "Subjects will be recruited from the existing study population of the health study on COVID-19 taking place at IMIBE (Institute for Medical Informatics, Biometry and Epidemiology)."
     }
   ],
   "type": "person",

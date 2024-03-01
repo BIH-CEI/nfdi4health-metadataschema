@@ -79,10 +79,7 @@ Usage: #example
 * extension[inclusionCriteria].valueString = "-meeting the age range -first place of residence in the target region Pomerania (Vorpommern / West Pomerania)"
 * extension[exclusionCriteria].valueString = "-persons not being able to understand German"
 /// Study Population
-* location[countries] = $iso3166#DE "Germany"
-* location[regions].text = "Mecklenburg-Vorpommern"
 * site = Reference(InstanceOfLocationMono)
-* extension[population].valueString = "Adults from the general population meeting the criteria stated above."
 * enrollment[+] = Reference(InstanceOfGroupActualSHIP)
 
 

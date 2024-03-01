@@ -57,6 +57,7 @@ Description: "Information about the eligibility criteria in a study."
 * characteristic[gender].valueCodeableConcept from NFDI4Health_VS_MDS_Study_Eligibility_Gender_SNOMEDCT_Local (required)
 * characteristic[gender].valueCodeableConcept ^binding.description = "The gender of potential participants eligible to participate in the study."
 
+
 Mapping: NFDI4Health-Group-Intended-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"

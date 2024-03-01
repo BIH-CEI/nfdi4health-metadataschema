@@ -26,7 +26,6 @@ Description: "Group of items applicable only to studies, substudies, registries,
     NFDI4Health_EX_MDS_Study_Comparison_Group_Backport_R5 named comparisonGroup 0..* and
     NFDI4Health_EX_MDS_OutcomeMeasure_Backport_R5 named outcomes 0..* and
     NFDI4Health_EX_MDS_Assessments named assessments 0..* and
-    NFDI4Health_EX_MDS_Study_Population named population 0..1 and
     NFDI4Health_EX_MDS_Data_Sharing_Plan named dataSharingPlan 1..1 and
     NFDI4Health_EX_MDS_Study_Target_Followup_Duration named targetFollowupDuration 0..1 and
     NFDI4Health_EX_MDS_Biospecimen named biospecimen 0..1 and
@@ -121,29 +120,7 @@ Description: "Group of items applicable only to studies, substudies, registries,
 * keyword.text ^comment = "Additional information: The use of terms from established classifications/vocabularies (e.g. SNOMED CT, MeSH, UMLS) is preferred. However, also self-assigned keywords are allowed. | Short input help: Preferably, use terms from SNOMED CT or MESH."
 * keyword.text ^example[0].label = "Keyword label"
 * keyword.text ^example[=].valueString = "SARS-CoV-2"
-* location ^slicing.discriminator.type = #exists
-* location ^slicing.discriminator.path = "coding"
-* location ^slicing.rules = #open
-* location ^comment = "Short input help: Select all that apply."
-* location contains
-    coverage 0..1 and
-    countries 1..* and
-    regions 0..*
-* location[coverage] ^short = "Coverage"
-* location[coverage] ^definition = "Specification of the recruitment area of the [RESOURCE]."
-* location[coverage] ^comment = "Short input help: Select one value from the list."
-* location[coverage].coding 1..1
-* location[coverage].coding from NFDI4Health_VS_MDS_Population_Coverage_NCI (required)
-* location[countries] ^short = "Country(ies)"
-* location[countries] ^definition = "Country or countries where the [RESOURCE] takes place."
-* location[countries] ^comment = "Short input help: Select all that apply."
-* location[countries].coding 1..1
-* location[countries] from NFDI4Health_VS_MDS_Countries_ISO (required)
-* location[countries] ^binding.description = "Value set including the country names from the ISO 3166-1 list"
-* location[regions].coding 0..0
-* location[regions].text 1..1
-* location[regions].text ^short = "Region(s) and/or city(ies)"
-* location[regions].text ^definition = "If applicable, region(s) and/or city(ies) within a country where the [RESOURCE] takes place."
+* enrollment 1..2
 * enrollment only Reference(NFDI4Health_PR_MDS_Group_Intended or NFDI4Health_PR_MDS_Group_Actual)
 //* enrollment ^short = "Eligibility criteria for study participants"
 //* enrollment ^definition = "Group of items providing information about eligibility criteria for study participants."
@@ -199,9 +176,6 @@ Source: NFDI4Health_PR_MDS_Study
 * keyword -> "1.6 Resource.keywords"
 * keyword.coding.system -> "1.6.2 Resource.keywords.code"
 * keyword.text -> "1.6.1 Resource.keywords.label"
-* location[coverage] -> "1.17.17.1 Design.population.coverage"
-* location[countries] -> "1.17.17.2 Design.population.countries"
-* location[regions].text -> "1.17.17.3 Design.population.region"
 * extension[descriptions] -> "Resource.descriptions"
 * period.start -> "Design.administrativeInformation.startDate"
 * period.end -> "Design.administrativeInformation.endDate"

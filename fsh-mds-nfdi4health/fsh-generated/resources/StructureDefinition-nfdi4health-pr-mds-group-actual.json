@@ -48,6 +48,51 @@
         "max": "1"
       },
       {
+        "id": "Group.extension",
+        "path": "Group.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Group.extension:populationDescription",
+        "path": "Group.extension",
+        "sliceName": "populationDescription",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-population-description"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Group.extension:populationLocation",
+        "path": "Group.extension",
+        "sliceName": "populationLocation",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-population-location"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Group.actual",
         "path": "Group.actual",
         "fixedBoolean": true

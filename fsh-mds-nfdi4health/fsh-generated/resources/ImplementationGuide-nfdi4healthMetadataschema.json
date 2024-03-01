@@ -141,6 +141,14 @@
       },
       {
         "reference": {
+          "reference": "Group/InstanceOfGroupActualSPOVID"
+        },
+        "name": "Instance Of Group Actual",
+        "description": "Example data about actual study participants in the SHIP Trend study - Study of Health in Pomerania Trend",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-group-actual"
+      },
+      {
+        "reference": {
           "reference": "Group/InstanceOfGroupIntendedSHIP"
         },
         "name": "Instance Of Group Intended for SHIP Trend",
@@ -685,10 +693,18 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nfdi4health-ex-mds-study-population"
+          "reference": "StructureDefinition/nfdi4health-ex-mds-study-population-description"
         },
-        "name": "NFDI4Health EX MDS Study Population",
-        "description": "Extension providing a description of the study population.",
+        "name": "NFDI4Health EX MDS Study Population Description",
+        "description": "Extension providing a description of the study population description.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-study-population-location"
+        },
+        "name": "NFDI4Health EX MDS Study Population Location",
+        "description": "Extension providing info of the study population Location.",
         "exampleBoolean": false
       },
       {

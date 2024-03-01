@@ -67,8 +67,8 @@ Usage: #example
 /// Eligibility criteria for study participants
 * enrollment[0] = Reference(InstanceOfGroupIntendedSPOVID)
 /// Study Population
-* location[countries] = $iso3166#DEU "Germany"
-* extension[population].valueString = "Subjects will be recruited from the existing study population of the health study on COVID-19 taking place at IMIBE (Institute for Medical Informatics, Biometry and Epidemiology)."
+* enrollment[1] = Reference(InstanceOfGroupActualSPOVID)
+
 
 /// Arms or groups/corhorts of the study /// Interventions/exposures of the study
 * extension[comparisonGroup][0].extension[name].valueString = "Physical training group"

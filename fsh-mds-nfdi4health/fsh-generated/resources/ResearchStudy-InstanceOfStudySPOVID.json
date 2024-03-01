@@ -149,10 +149,6 @@
       "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-sampling"
     },
     {
-      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-population",
-      "valueString": "Subjects will be recruited from the existing study population of the health study on COVID-19 taking place at IMIBE (Institute for Medical Informatics, Biometry and Epidemiology)."
-    },
-    {
       "extension": [
         {
           "url": "name",
@@ -335,17 +331,9 @@
   "enrollment": [
     {
       "reference": "Group/InstanceOfGroupIntendedSPOVID"
-    }
-  ],
-  "location": [
+    },
     {
-      "coding": [
-        {
-          "code": "DEU",
-          "system": "urn:iso:std:iso:3166",
-          "display": "Germany"
-        }
-      ]
+      "reference": "Group/InstanceOfGroupActualSPOVID"
     }
   ],
   "relatedArtifact": [

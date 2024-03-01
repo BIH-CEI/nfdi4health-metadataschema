@@ -13,6 +13,7 @@
 [NFDI4Health_LM_Metadataschema_RecordLinkage]: StructureDefinition-nfdi4health-lm-metadatenschema-recordlinkage.html
 [InstanceOfEvidenceVariableSPOVID]: EvidenceVariable-InstanceOfEvidenceVariableSPOVID.html
 [InstanceOfGroupActualSHIP]: Group-InstanceOfGroupActualSHIP.html
+[InstanceOfGroupActualSPOVID]: Group-InstanceOfGroupActualSPOVID.html
 [InstanceOfGroupIntendedSHIP]: Group-InstanceOfGroupIntendedSHIP.html
 [InstanceOfGroupIntendedSPOVID]: Group-InstanceOfGroupIntendedSPOVID.html
 [InstanceOfLocationMono]: Location-InstanceOfLocationMono.html
@@ -81,7 +82,8 @@
 [NFDI4Health_EX_MDS_Study_Comparison_Group_Backport_R5]: StructureDefinition-nfdi4health-ex-mds-study-comparison-group-backport-r5.html
 [NFDI4Health_EX_MDS_Study_Ethics_Committee_Approval]: StructureDefinition-nfdi4health-ex-mds-study-ethics-committee-approval.html
 [NFDI4Health_EX_MDS_Study_Masking]: StructureDefinition-nfdi4health-ex-mds-study-masking.html
-[NFDI4Health_EX_MDS_Study_Population]: StructureDefinition-nfdi4health-ex-mds-study-population.html
+[NFDI4Health_EX_MDS_Study_Population_Description]: StructureDefinition-nfdi4health-ex-mds-study-population-description.html
+[NFDI4Health_EX_MDS_Study_Population_Location]: StructureDefinition-nfdi4health-ex-mds-study-population-location.html
 [NFDI4Health_EX_MDS_Study_Sampling]: StructureDefinition-nfdi4health-ex-mds-study-sampling.html
 [NFDI4Health_EX_MDS_Study_Status]: StructureDefinition-nfdi4health-ex-mds-study-status.html
 [NFDI4Health_EX_MDS_Study_Target_Followup_Duration]: StructureDefinition-nfdi4health-ex-mds-study-target-followup-duration.html
