@@ -318,7 +318,11 @@
           {
             "code": "Coding"
           }
-        ]
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-groups-of-diseases-generally-conditions-icd"
+        }
       },
       {
         "id": "nfdi4health-lm-mds-design-v3-3.Design.mortalityData",

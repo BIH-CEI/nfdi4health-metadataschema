@@ -1322,6 +1322,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-diseases-generally-conditions-icd"
+        },
+        "name": "NFDI4Health VS MDS Study Groups of Diseases Generally Conditions [ICD]",
+        "description": "Value set created by NFDI4Health defining codes for groups of diseases generally conditions.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/nfdi4health-vs-mds-study-diseases-generally-icd-sct"
         },
         "name": "NFDI4Health VS MDS Study Groups Of Diseases Generally [ICD 10, SCT]",

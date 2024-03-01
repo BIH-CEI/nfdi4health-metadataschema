@@ -477,7 +477,7 @@
     "fshType": "Extension",
     "fshFile": "extensions/NFDI4Health_EX_MDS_Groups_Of_Diseases.fsh",
     "startLine": 1,
-    "endLine": 29
+    "endLine": 30
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-identifier-assignment-date.json",
@@ -805,7 +805,7 @@
     "fshType": "Logical",
     "fshFile": "logicals/lm-mds-nfdi4health-design-v3_3COPY.fsh",
     "startLine": 1,
-    "endLine": 328
+    "endLine": 329
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-lm-metadataschema-eocd.json",
@@ -1262,6 +1262,14 @@
     "fshFile": "valuesets/vs-study-data-sources-omics.fsh",
     "startLine": 1,
     "endLine": 18
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-diseases-generally-conditions-icd.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Groups_Of_Diseases_Generally_Conditions_ICD",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-study-groups-diseases-conditions.fsh",
+    "startLine": 1,
+    "endLine": 35
   },
   {
     "outputFile": "ValueSet-nfdi4health-vs-mds-study-diseases-generally-icd-sct.json",

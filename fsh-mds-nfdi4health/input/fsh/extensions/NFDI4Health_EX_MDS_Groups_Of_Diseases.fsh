@@ -26,7 +26,8 @@ Description: "Group of items providing information about the groups of diseases 
 * extension[conditions] ^short = "On which other diseases or conditions were the data collected?"
 * extension[conditions] ^definition = "Diseases or conditions on which the data were collected in the [RESOURCE]."
 * extension[conditions].value[x] only Coding
-* extension[conditions].valueCoding ^binding.description = ""
+* extension[conditions].valueCoding from NFDI4Health_VS_MDS_Study_Groups_Of_Diseases_Generally_Conditions_ICD (required)
+* extension[conditions].valueCoding ^binding.description = "alue set created by NFDI4Health defining codes for groups of diseases generally conditions."
  
 
 Mapping: NFDI4Health-Groups-Of-Diseases-to-FHIR

@@ -133,7 +133,9 @@
           }
         ],
         "binding": {
-          "description": ""
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-groups-of-diseases-generally-conditions-icd",
+          "description": "alue set created by NFDI4Health defining codes for groups of diseases generally conditions."
         }
       },
       {

@@ -161,6 +161,7 @@
 [NFDI4Health_VS_MDS_Study_Eligibility_Gender_SNOMEDCT_Local]: ValueSet-nfdi4health-vs-mds-study-eligibility-gender-snomedct-local.html
 [NFDI4Health_VS_MDS_Study_Ethics_Committee_Approval_NCI_Local]: ValueSet-nfdi4health-vs-mds-study-ethics-committee-approval-nci-local.html
 [NFDI4Health_VS_MDS_Study_Group_Characteristics_NCI]: ValueSet-nfdi4health-vs-mds-study-group-characteristics-nci.html
+[NFDI4Health_VS_MDS_Study_Groups_Of_Diseases_Generally_Conditions_ICD]: ValueSet-nfdi4health-vs-mds-study-diseases-generally-conditions-icd.html
 [NFDI4Health_VS_MDS_Study_Groups_Of_Diseases_Generally_ICD10_SCT]: ValueSet-nfdi4health-vs-mds-study-diseases-generally-icd-sct.html
 [NFDI4Health_VS_MDS_Study_Intervention_Or_Exposure_Type_NCI]: ValueSet-nfdi4health-vs-mds-study-intervention-or-exposure-type-nci.html
 [NFDI4Health_VS_MDS_Study_Masking_Roles_NCI_Local]: ValueSet-nfdi4health-vs-mds-study-masking-roles-nci-local.html
