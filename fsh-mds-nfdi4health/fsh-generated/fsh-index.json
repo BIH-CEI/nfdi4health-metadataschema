@@ -29,7 +29,7 @@
     "fshType": "CodeSystem",
     "fshFile": "codesystems/cs-remaining-concepts.fsh",
     "startLine": 1,
-    "endLine": 201
+    "endLine": 203
   },
   {
     "outputFile": "CodeSystem-nfdi4health-cs-mds-study-status.json",
@@ -110,6 +110,14 @@
     "fshFile": "examples/InstanceOfGroupIntended_SPOVID.fsh",
     "startLine": 1,
     "endLine": 14
+  },
+  {
+    "outputFile": "Location-InstanceOfLocationMono.json",
+    "fshName": "InstanceOfLocationMono",
+    "fshType": "Instance",
+    "fshFile": "examples/InstanceOfLocationMono.fsh",
+    "startLine": 1,
+    "endLine": 7
   },
   {
     "outputFile": "Organization-InstanceOfAffiliationUMG.json",
@@ -349,7 +357,7 @@
     "fshType": "Instance",
     "fshFile": "examples/InstanceOfStudy_interventional_SPOVID.fsh",
     "startLine": 1,
-    "endLine": 88
+    "endLine": 82
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-assessments.json",
@@ -454,6 +462,14 @@
     "fshFile": "extensions/NFDI4Health_EX_MDS_Format.fsh",
     "startLine": 1,
     "endLine": 21
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-groups-of-diseases.json",
+    "fshName": "NFDI4Health_EX_MDS_Groups_Of_Diseases",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Groups_Of_Diseases.fsh",
+    "startLine": 1,
+    "endLine": 29
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-identifier-assignment-date.json",
@@ -672,6 +688,14 @@
     "endLine": 18
   },
   {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-study-sampling.json",
+    "fshName": "NFDI4Health_EX_MDS_Study_Sampling",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Study_Sampling.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-study-status.json",
     "fshName": "NFDI4Health_EX_MDS_Study_Status",
     "fshType": "Extension",
@@ -696,12 +720,36 @@
     "endLine": 24
   },
   {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-study-type-interventional.json",
+    "fshName": "NFDI4Health_EX_MDS_Study_Type_Interventional",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Study_Type_Interventional.fsh",
+    "startLine": 1,
+    "endLine": 27
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-study-type.json",
+    "fshName": "NFDI4Health_EX_MDS_Study_Type",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_Study_StudyType.fsh",
+    "startLine": 1,
+    "endLine": 31
+  },
+  {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-subject.json",
     "fshName": "NFDI4Health_EX_MDS_Subject",
     "fshType": "Extension",
     "fshFile": "extensions/NFDI4Health_EX_MDS_Subject.fsh",
     "startLine": 3,
     "endLine": 24
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-time-perspectives.json",
+    "fshName": "NFDI4Health_EX_MDS_Time_Perspectives",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Time_Perspectives.fsh",
+    "startLine": 1,
+    "endLine": 20
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-uri.json",
@@ -893,7 +941,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/NFDI4Health_PR_MDS_Study.fsh",
     "startLine": 1,
-    "endLine": 322
+    "endLine": 174
   },
   {
     "outputFile": "ValueSet-nfdi4health-vs-mds-cd-common-chronic-disease-name-snomedct.json",
@@ -1150,6 +1198,14 @@
     "fshFile": "valuesets/vs-study-conditions-classification.fsh",
     "startLine": 1,
     "endLine": 19
+  },
+  {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-data-providers-local.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Data_Providers_Local",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-study-data-providers.fsh",
+    "startLine": 1,
+    "endLine": 14
   },
   {
     "outputFile": "ValueSet-nfdi4health-vs-mds-study-data-sharing-plan-ds-sct-nci.json",

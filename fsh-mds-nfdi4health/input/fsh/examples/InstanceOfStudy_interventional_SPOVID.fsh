@@ -34,41 +34,35 @@ Usage: #example
 * period.start = 2008-01-05 //original format needed to be converted
 * period.end = 2022-11-30 //original format needed to be converted
 
-/// Study Design Details
-* category[primaryDesign].coding = $NCI#C98388 "Interventional Study"
-* category[studyTypeInterventional].coding = $Remaining#139 "Unknown (interventional)"
-* category[samplingMethod].coding = $NCI#C127781 "Non-Probability Sampling Method"
-* category[samplingMethodNonProbability].coding = $NCI#C53204 "Convenience Sampling"
-
+/// Study Design and Purpose 
+* category.coding = $NCI#C98388 "Interventional Study"
+* category.extension[studyType].extension[interventional].valueCoding = $NCI#C17998 "Unknown"
 * primaryPurposeType.coding = $study-prim-purp-type#treatment "Treatment"
 
+/// Extensions
 * extension[subject].valueCoding = $SCT#125676002 "Person (person)"
 * extension[dataSource].extension[general][0].valueCoding = $Remaining#029 "Cognitive measurements"
 * extension[dataSource].extension[general][+].valueCoding = $Remaining#032 "Physiological/Biochemical measurements"
 * extension[masking].extension[general].valueBoolean = false
-* extension[offLabelUse].valueCoding = $SCT#385432009 "Not applicable (qualifier value)"
-
+* extension[studyTypeInterventional].extension[offLabelUse].valueCoding = $SCT#385432009 "Not applicable (qualifier value)"
+* extension[sampling].extension[method].valueCoding = $NCI#C127781 "Non-Probability Sampling Method"
+* extension[sampling].extension[nonProbabilityMethod].valueCoding = $NCI#C53204 "Convenience Sampling"
 
 /// Information about data sharing
 * extension[dataSharingPlan].extension[generally].valueCoding = $NCI#C150084 "Undecided (Intellectual Product)"
 
 /// Primary health condition(s), disease(s) or focus of the study - modelling must be changed because not possible to have "other vocabulary" or "freetext" as system
-* condition[0].coding = $SCT#1119303003 "Post-acute COVID-19 (disorder)"
-* condition[=].coding.system = "https://browser.ihtsdotools.org/?perspective=full&conceptId1=1119303003&edition=MAIN/2023-07-31&release=&languages=en&latestRedirect=false"
-* condition[+].coding[0] = $SCT#84229001 "Fatigue (finding)"
-* condition[=].coding[=].system = "https://browser.ihtsdotools.org/?perspective=full&conceptId1=84229001&edition=MAIN/2023-07-31&release=&languages=en&latestRedirect=false"
-* condition[+].coding[0] = $SCT#739122008 "Cardiac physiological function (observable entity)"
-* condition[=].coding[=].system = "https://browser.ihtsdotools.org/?perspective=full&latestRedirect=false&conceptId1=739122008&edition=MAIN/2023-07-31"
-* condition[+].coding[0] = $SCT#78064003 "Respiratory function (observable entity)"
-* condition[=].coding[=].system = "https://browser.ihtsdotools.org/?perspective=full&conceptId1=78064003&edition=MAIN/2023-07-31&release=&languages=en&latestRedirect=false"
-* condition[+].coding[0] = $SCT#76039005 "Disturbance of attention (finding)"
-* condition[=].coding[=].system = "https://browser.ihtsdotools.org/?perspective=full&conceptId1=76039005&edition=MAIN/2023-07-31&release=&languages=en&latestRedirect=false"
-* condition[+].coding[0] = $SCT#183301007 "Physical exercises (regime/therapy)"
-* condition[=].coding[=].system = "https://browser.ihtsdotools.org/?perspective=full&conceptId1=183301007&edition=MAIN/2023-07-31&release=&languages=en&latestRedirect=false"
-* condition[+].coding[0] = $SCT#225303001 "Evaluating interventions (procedure)"
-* condition[=].coding[=].system = "https://browser.ihtsdotools.org/?perspective=full&conceptId1=225303001&edition=MAIN/2023-07-31&release=&languages=en&latestRedirect=false"
-* condition[+].coding[0] = $SCT#424900004 "Recommendation - action (qualifier value)"
-* condition[=].coding[=].system = "https://browser.ihtsdotools.org/?perspective=full&conceptId1=424900004&edition=MAIN/2023-07-31&release=&languages=en&latestRedirect=false"
+* condition[0].coding.code = $NCI#C49469 "Systematized Nomenclature of Medicine Clinical Terms"
+* condition[=].text = "COVID-19"
+* condition[=].extension[uri].valueUri = "http://snomed.info/id/840539006"
+
+* condition[+].coding.code = $NCI#C49469 "Systematized Nomenclature of Medicine Clinical Terms"
+* condition[=].text = "Cardiac physiological function"
+* condition[=].extension[uri].valueUri = "http://snomed.info/id/739122008"
+
+* extension[groupsOfDiseases].extension[generally].valueCoding = $ICD10#I "Certain infectious and parasitic diseases"
+
+
 
 /// Eligibility criteria for study participants
 * enrollment[0] = Reference(InstanceOfGroupIntendedSPOVID)

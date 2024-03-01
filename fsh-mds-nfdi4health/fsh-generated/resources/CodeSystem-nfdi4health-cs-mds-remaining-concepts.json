@@ -745,6 +745,14 @@
       "display": "Conference paper"
     },
     {
+      "code": "199",
+      "display": "One data provider"
+    },
+    {
+      "code": "200",
+      "display": "Several data providers"
+    },
+    {
       "code": "182",
       "display": "Dietary assessment instrument"
     },
@@ -786,5 +794,5 @@
       ]
     }
   ],
-  "count": 188
+  "count": 190
 }

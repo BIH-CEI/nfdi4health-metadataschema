@@ -1,0 +1,192 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "nfdi4health-ex-mds-study-sampling",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-sampling",
+  "name": "NFDI4Health_EX_MDS_Study_Sampling",
+  "title": "NFDI4Health EX MDS Study Sampling",
+  "status": "draft",
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "description": "Group of items providing information about the sampling methohd",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "NFDI4Health",
+      "name": "NFDI4Health to FHIR Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ResearchStudy"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Sampling method",
+        "definition": "Group of items providing information about the applied sampling method.",
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.sampling"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:method",
+        "path": "Extension.extension",
+        "sliceName": "method",
+        "short": "Applied sampling method",
+        "definition": "Type of the sampling method applied for the selection of [RESOURCE] participants.",
+        "min": 1,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.sampling.Method"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:method.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:method.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "method"
+      },
+      {
+        "id": "Extension.extension:method.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-sampling-method-nci-local",
+          "description": "Value set defining codes to specify types of sampling methods."
+        }
+      },
+      {
+        "id": "Extension.extension:probabilityMethod",
+        "path": "Extension.extension",
+        "sliceName": "probabilityMethod",
+        "short": "Specific type of probability sampling",
+        "definition": " Specific type of the probability sampling method applied for the selection of [RESOURCE] participants.",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.sampling.probabilityMethod"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:probabilityMethod.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:probabilityMethod.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "probabilityMethod"
+      },
+      {
+        "id": "Extension.extension:probabilityMethod.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-sampling-prob-method-nci-local",
+          "description": "Value set defining codes to specify types of probability sampling methods."
+        }
+      },
+      {
+        "id": "Extension.extension:nonProbabilityMethod",
+        "path": "Extension.extension",
+        "sliceName": "nonProbabilityMethod",
+        "short": "Specific type of non-probability sampling",
+        "definition": "Specific type of the non-probability sampling method applied for the selection of [RESOURCE] participants.",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.sampling.nonProbabilityMethod"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:nonProbabilityMethod.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:nonProbabilityMethod.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "nonProbabilityMethod"
+      },
+      {
+        "id": "Extension.extension:nonProbabilityMethod.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-sampling-method-non-prob-nci-local",
+          "description": "Value set defining codes to specify types of non-probability sampling methods."
+        }
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-sampling"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

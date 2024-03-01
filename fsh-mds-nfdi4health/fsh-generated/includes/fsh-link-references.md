@@ -15,6 +15,7 @@
 [InstanceOfGroupActualSHIP]: Group-InstanceOfGroupActualSHIP.html
 [InstanceOfGroupIntendedSHIP]: Group-InstanceOfGroupIntendedSHIP.html
 [InstanceOfGroupIntendedSPOVID]: Group-InstanceOfGroupIntendedSPOVID.html
+[InstanceOfLocationMono]: Location-InstanceOfLocationMono.html
 [InstanceOfPractitionerNinaKirchhof]: Practitioner-InstanceOfPractitionerNinaKirchhof.html
 [InstanceOfPractitionerRoleKathleenMerikangas]: PractitionerRole-InstanceOfPractitionerRoleKathleenMerikangas.html
 [InstanceOfPractitionerRoleNinaKirchhof]: PractitionerRole-InstanceOfPractitionerRoleNinaKirchhof.html
@@ -81,10 +82,15 @@
 [NFDI4Health_EX_MDS_Study_Ethics_Committee_Approval]: StructureDefinition-nfdi4health-ex-mds-study-ethics-committee-approval.html
 [NFDI4Health_EX_MDS_Study_Masking]: StructureDefinition-nfdi4health-ex-mds-study-masking.html
 [NFDI4Health_EX_MDS_Study_Population]: StructureDefinition-nfdi4health-ex-mds-study-population.html
+[NFDI4Health_EX_MDS_Study_Sampling]: StructureDefinition-nfdi4health-ex-mds-study-sampling.html
 [NFDI4Health_EX_MDS_Study_Status]: StructureDefinition-nfdi4health-ex-mds-study-status.html
 [NFDI4Health_EX_MDS_Study_Target_Followup_Duration]: StructureDefinition-nfdi4health-ex-mds-study-target-followup-duration.html
 [NFDI4Health_EX_MDS_Study_Time_Perspectives]: StructureDefinition-nfdi4health-ex-mds-study-time-perspectives.html
+[NFDI4Health_EX_MDS_Groups_Of_Diseases]: StructureDefinition-nfdi4health-ex-mds-groups-of-diseases.html
+[NFDI4Health_EX_MDS_Study_Type]: StructureDefinition-nfdi4health-ex-mds-study-type.html
+[NFDI4Health_EX_MDS_Study_Type_Interventional]: StructureDefinition-nfdi4health-ex-mds-study-type-interventional.html
 [NFDI4Health_EX_MDS_Subject]: StructureDefinition-nfdi4health-ex-mds-subject.html
+[NFDI4Health_EX_MDS_Time_Perspectives]: StructureDefinition-nfdi4health-ex-mds-time-perspectives.html
 [NFDI4Health_EX_MDS_URI]: StructureDefinition-nfdi4health-ex-mds-uri.html
 [NFDI4Health_EX_MDS_Use_Rights_Confirmations]: StructureDefinition-nfdi4health-ex-mds-use-rights-confirmations.html
 [NFDI4Health_EX_MDS_Version]: StructureDefinition-nfdi4health-ex-mds-version.html
@@ -143,6 +149,7 @@
 [NFDI4Health_VS_MDS_Study_Biospecimen_Retention_NCI]: ValueSet-nfdi4health-vs-mds-study-biospecimen-retention-nci.html
 [NFDI4Health_VS_MDS_Study_Centers_SNOMEDCT_Local]: ValueSet-nfdi4health-vs-mds-study-centers-snomedct-local.html
 [NFDI4Health_VS_MDS_Study_Conditions_Classification_NCI_Local]: ValueSet-nfdi4health-vs-mds-study-conditions-classification-nci-local.html
+[NFDI4Health_VS_MDS_Study_Data_Providers_Local]: ValueSet-nfdi4health-vs-mds-study-data-providers-local.html
 [NFDI4Health_VS_MDS_Study_Data_Sharing_Plan_Datashield_SCT_NCI]: ValueSet-nfdi4health-vs-mds-study-data-sharing-plan-ds-sct-nci.html
 [NFDI4Health_VS_MDS_Study_Data_Sharing_Plan_Supporting_Information_NCI_Local]: ValueSet-nfdi4health-vs-mds-study-data-sharing-plan-sup-inf-nci-local.html
 [NFDI4Health_VS_MDS_Study_DS_Biosamples_SCT_NCI]: ValueSet-nfdi4health-vs-mds-study-ds-biosamples-sct-nci.html

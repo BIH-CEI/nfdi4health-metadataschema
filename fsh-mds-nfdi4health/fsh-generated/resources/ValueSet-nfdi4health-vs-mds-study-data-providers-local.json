@@ -1,0 +1,39 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "NFDI4Health_VS_MDS_Study_Data_Providers_Local",
+  "id": "nfdi4health-vs-mds-study-data-providers-local",
+  "title": "NFDI4Health VS MDS Study Data Providers [Local]",
+  "description": "Value set defining codes to specify the data providers.",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-providers-local",
+  "version": "0.9",
+  "experimental": true,
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+        "concept": [
+          {
+            "code": "199",
+            "display": "One data provider"
+          },
+          {
+            "code": "200",
+            "display": "Several data providers"
+          }
+        ]
+      }
+    ]
+  }
+}

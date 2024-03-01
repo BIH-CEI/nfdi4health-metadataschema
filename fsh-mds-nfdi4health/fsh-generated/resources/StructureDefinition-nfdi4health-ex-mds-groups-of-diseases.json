@@ -1,0 +1,151 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "nfdi4health-ex-mds-groups-of-diseases",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-groups-of-diseases",
+  "name": "NFDI4Health_EX_MDS_Groups_Of_Diseases",
+  "title": "NFDI4Health EX MDS Study Type",
+  "status": "draft",
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "description": "Group of items providing information about the groups of diseases or conditions",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "NFDI4Health",
+      "name": "NFDI4Health to FHIR Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ResearchStudy"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Groups of diseases or conditions",
+        "definition": "Description: Group of items providing information about groups of diseases or conditions on which the data were collected in the [RESOURCE].",
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.groupsOfDiseases"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:generally",
+        "path": "Extension.extension",
+        "sliceName": "generally",
+        "short": "Which groups of diseases or conditions were the data collected on?",
+        "definition": "General groups of diseases or conditions on which the data were collected in the [RESOURCE].",
+        "min": 1,
+        "max": "*",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.groupsOfDiseases.generally"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:generally.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:generally.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "generally"
+      },
+      {
+        "id": "Extension.extension:generally.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-diseases-generally-icd-sct",
+          "description": "Value set defining codes from ICD-10 to specify groups of diseases or conditions on which the data were collected in the study."
+        }
+      },
+      {
+        "id": "Extension.extension:conditions",
+        "path": "Extension.extension",
+        "sliceName": "conditions",
+        "short": "On which other diseases or conditions were the data collected?",
+        "definition": "Diseases or conditions on which the data were collected in the [RESOURCE].",
+        "min": 0,
+        "max": "*",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.groupsOfDiseases.conditions"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:conditions.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:conditions.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "conditions"
+      },
+      {
+        "id": "Extension.extension:conditions.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "description": ""
+        }
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-groups-of-diseases"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

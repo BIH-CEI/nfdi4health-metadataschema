@@ -157,6 +157,14 @@
       },
       {
         "reference": {
+          "reference": "Location/InstanceOfLocationMono"
+        },
+        "name": "Instance of Monocentric Study",
+        "description": "Example for monocentric study SHIP",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-centers"
+      },
+      {
+        "reference": {
           "reference": "Practitioner/InstanceOfPractitionerNinaKirchhof"
         },
         "name": "Instance Of NFDI4Health_PR_MDS_Practitioner for Nina Kirchhof",
@@ -685,6 +693,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-study-sampling"
+        },
+        "name": "NFDI4Health EX MDS Study Sampling",
+        "description": "Group of items providing information about the sampling methohd",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/nfdi4health-ex-mds-study-status"
         },
         "name": "NFDI4Health EX MDS Study Status",
@@ -709,10 +725,42 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-groups-of-diseases"
+        },
+        "name": "NFDI4Health EX MDS Study Type",
+        "description": "Group of items providing information about the groups of diseases or conditions",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-study-type"
+        },
+        "name": "NFDI4Health EX MDS Study Type",
+        "description": "Group of items providing information about the specification of the type of the [RESOURCE]",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-study-type-interventional"
+        },
+        "name": "NFDI4Health EX MDS Study Type Interventional",
+        "description": "Group of items providing information about interventional studys",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/nfdi4health-ex-mds-subject"
         },
         "name": "NFDI4Health EX MDS Subject",
         "description": "Extension informing about the subject of a resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-time-perspectives"
+        },
+        "name": "NFDI4Health EX MDS Time Perspectives",
+        "description": "Group of items providing information about the temporal design of a non-interventional study",
         "exampleBoolean": false
       },
       {
@@ -1174,6 +1222,14 @@
         },
         "name": "NFDI4Health VS MDS Study Conditions Classification [NCI, Local]",
         "description": "Value set defining codes to specify the terminology/classification used for the health condition, disease or focus.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-data-providers-local"
+        },
+        "name": "NFDI4Health VS MDS Study Data Providers [Local]",
+        "description": "Value set defining codes to specify the data providers.",
         "exampleBoolean": false
       },
       {

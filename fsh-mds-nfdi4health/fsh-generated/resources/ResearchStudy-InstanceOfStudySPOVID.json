@@ -72,6 +72,19 @@
       ]
     },
     {
+      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-groups-of-diseases",
+      "extension": [
+        {
+          "url": "generally",
+          "valueCoding": {
+            "code": "I",
+            "system": "http://hl7.org/fhir/sid/icd-10",
+            "display": "Certain infectious and parasitic diseases"
+          }
+        }
+      ]
+    },
+    {
       "extension": [
         {
           "url": "general",
@@ -102,12 +115,38 @@
       "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-masking"
     },
     {
-      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-off-label-use",
-      "valueCoding": {
-        "code": "385432009",
-        "system": "http://snomed.info/sct",
-        "display": "Not applicable (qualifier value)"
-      }
+      "extension": [
+        {
+          "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-off-label-use",
+          "valueCoding": {
+            "code": "385432009",
+            "system": "http://snomed.info/sct",
+            "display": "Not applicable (qualifier value)"
+          }
+        }
+      ],
+      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-type-interventional"
+    },
+    {
+      "extension": [
+        {
+          "url": "method",
+          "valueCoding": {
+            "code": "C127781",
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "display": "Non-Probability Sampling Method"
+          }
+        },
+        {
+          "url": "nonProbabilityMethod",
+          "valueCoding": {
+            "code": "C53204",
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "display": "Convenience Sampling"
+          }
+        }
+      ],
+      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-sampling"
     },
     {
       "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-population",
@@ -164,6 +203,62 @@
         }
       ],
       "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-comparison-group-backport-r5"
+    }
+  ],
+  "category": [
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "interventional",
+              "valueCoding": {
+                "code": "C17998",
+                "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+                "display": "Unknown"
+              }
+            }
+          ],
+          "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-type"
+        }
+      ],
+      "coding": [
+        {
+          "code": "C98388",
+          "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "display": "Interventional Study"
+        }
+      ]
+    }
+  ],
+  "condition": [
+    {
+      "extension": [
+        {
+          "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-uri",
+          "valueUri": "http://snomed.info/id/840539006"
+        }
+      ],
+      "coding": [
+        {
+          "code": "C49469"
+        }
+      ],
+      "text": "COVID-19"
+    },
+    {
+      "extension": [
+        {
+          "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-uri",
+          "valueUri": "http://snomed.info/id/739122008"
+        }
+      ],
+      "coding": [
+        {
+          "code": "C49469"
+        }
+      ],
+      "text": "Cardiac physiological function"
     }
   ],
   "keyword": [
@@ -228,44 +323,6 @@
     "start": "2008-01-05",
     "end": "2022-11-30"
   },
-  "category": [
-    {
-      "coding": [
-        {
-          "code": "C98388",
-          "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
-          "display": "Interventional Study"
-        }
-      ]
-    },
-    {
-      "coding": [
-        {
-          "code": "139",
-          "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
-          "display": "Unknown (interventional)"
-        }
-      ]
-    },
-    {
-      "coding": [
-        {
-          "code": "C127781",
-          "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
-          "display": "Non-Probability Sampling Method"
-        }
-      ]
-    },
-    {
-      "coding": [
-        {
-          "code": "C53204",
-          "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
-          "display": "Convenience Sampling"
-        }
-      ]
-    }
-  ],
   "primaryPurposeType": {
     "coding": [
       {
@@ -275,80 +332,6 @@
       }
     ]
   },
-  "condition": [
-    {
-      "coding": [
-        {
-          "code": "1119303003",
-          "system": "https://browser.ihtsdotools.org/?perspective=full&conceptId1=1119303003&edition=MAIN/2023-07-31&release=&languages=en&latestRedirect=false",
-          "display": "Post-acute COVID-19 (disorder)"
-        }
-      ]
-    },
-    {
-      "coding": [
-        {
-          "code": "84229001",
-          "system": "https://browser.ihtsdotools.org/?perspective=full&conceptId1=84229001&edition=MAIN/2023-07-31&release=&languages=en&latestRedirect=false",
-          "display": "Fatigue (finding)"
-        }
-      ]
-    },
-    {
-      "coding": [
-        {
-          "code": "739122008",
-          "system": "https://browser.ihtsdotools.org/?perspective=full&latestRedirect=false&conceptId1=739122008&edition=MAIN/2023-07-31",
-          "display": "Cardiac physiological function (observable entity)"
-        }
-      ]
-    },
-    {
-      "coding": [
-        {
-          "code": "78064003",
-          "system": "https://browser.ihtsdotools.org/?perspective=full&conceptId1=78064003&edition=MAIN/2023-07-31&release=&languages=en&latestRedirect=false",
-          "display": "Respiratory function (observable entity)"
-        }
-      ]
-    },
-    {
-      "coding": [
-        {
-          "code": "76039005",
-          "system": "https://browser.ihtsdotools.org/?perspective=full&conceptId1=76039005&edition=MAIN/2023-07-31&release=&languages=en&latestRedirect=false",
-          "display": "Disturbance of attention (finding)"
-        }
-      ]
-    },
-    {
-      "coding": [
-        {
-          "code": "183301007",
-          "system": "https://browser.ihtsdotools.org/?perspective=full&conceptId1=183301007&edition=MAIN/2023-07-31&release=&languages=en&latestRedirect=false",
-          "display": "Physical exercises (regime/therapy)"
-        }
-      ]
-    },
-    {
-      "coding": [
-        {
-          "code": "225303001",
-          "system": "https://browser.ihtsdotools.org/?perspective=full&conceptId1=225303001&edition=MAIN/2023-07-31&release=&languages=en&latestRedirect=false",
-          "display": "Evaluating interventions (procedure)"
-        }
-      ]
-    },
-    {
-      "coding": [
-        {
-          "code": "424900004",
-          "system": "https://browser.ihtsdotools.org/?perspective=full&conceptId1=424900004&edition=MAIN/2023-07-31&release=&languages=en&latestRedirect=false",
-          "display": "Recommendation - action (qualifier value)"
-        }
-      ]
-    }
-  ],
   "enrollment": [
     {
       "reference": "Group/InstanceOfGroupIntendedSPOVID"

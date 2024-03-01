@@ -79,7 +79,7 @@
           ],
           "rules": "open"
         },
-        "min": 4
+        "min": 5
       },
       {
         "id": "ResearchStudy.extension:executionLanguage",
@@ -328,21 +328,6 @@
         ]
       },
       {
-        "id": "ResearchStudy.extension:offLabelUse",
-        "path": "ResearchStudy.extension",
-        "sliceName": "offLabelUse",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-off-label-use"
-            ]
-          }
-        ]
-      },
-      {
         "id": "ResearchStudy.extension:masking",
         "path": "ResearchStudy.extension",
         "sliceName": "masking",
@@ -358,17 +343,76 @@
         ]
       },
       {
+        "id": "ResearchStudy.extension:studyTypeInterventional",
+        "path": "ResearchStudy.extension",
+        "sliceName": "studyTypeInterventional",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-type-interventional"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ResearchStudy.extension:timePerspectives",
+        "path": "ResearchStudy.extension",
+        "sliceName": "timePerspectives",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-time-perspectives"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ResearchStudy.extension:groupsOfDiseases",
+        "path": "ResearchStudy.extension",
+        "sliceName": "groupsOfDiseases",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-groups-of-diseases"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.groupsOfDiseases"
+          }
+        ]
+      },
+      {
+        "id": "ResearchStudy.extension:sampling",
+        "path": "ResearchStudy.extension",
+        "sliceName": "sampling",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-sampling"
+            ]
+          }
+        ]
+      },
+      {
         "id": "ResearchStudy.identifier",
         "path": "ResearchStudy.identifier",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "type"
-            }
-          ],
-          "rules": "open"
-        },
+        "short": "Alternative identifiers",
+        "definition": "Group of items providing information about identifiers (IDs) assigned to the given [RESOURCE] by another registering systems, e.g. a registry of clinical trials or a data repository.",
         "mapping": [
           {
             "identity": "NFDI4Health",
@@ -379,558 +423,36 @@
       {
         "id": "ResearchStudy.identifier.type",
         "path": "ResearchStudy.identifier.type",
+        "short": "Type of the registry",
+        "definition": "Type/name of the system where the given [RESOURCE] is already registered.",
         "min": 1,
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-id-type-nci-local"
-        }
-      },
-      {
-        "id": "ResearchStudy.identifier:DRKS",
-        "path": "ResearchStudy.identifier",
-        "sliceName": "DRKS",
-        "definition": "Group of items providing information about identifiers (IDs) assigned to the given resource by another registering systems, e.g. a register of clinical trials or a data repository.",
-        "min": 0,
-        "max": "*",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "Resource.idsAlternative"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.identifier:DRKS.type",
-        "path": "ResearchStudy.identifier.type",
-        "fixedCodeableConcept": {
-          "coding": [
-            {
-              "code": "098",
-              "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
-              "display": "DRKS"
-            }
-          ]
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-id-type-nci-local",
+          "description": "Value set defining codes to specify the type of a resource identifier."
         },
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "Resource.idsAlternative.scheme",
-            "comment": "Type = DRKS"
+            "map": "Resource.idsAlternative.scheme"
           }
         ]
       },
       {
-        "id": "ResearchStudy.identifier:DRKS.system",
-        "path": "ResearchStudy.identifier.system",
-        "definition": "Name of the system where the given resource is already registered. Fixed to DRKS.",
-        "min": 1,
-        "fixedUri": "https://www.drks.de",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "esource.idsAlternative.scheme",
-            "comment": "Type = DRKS"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.identifier:DRKS.value",
+        "id": "ResearchStudy.identifier.value",
         "path": "ResearchStudy.identifier.value",
-        "definition": "Identifier (ID) assigned to the given resource by DRKS.",
+        "definition": "Identifier",
         "min": 1,
         "example": [
           {
-            "label": "DRKS Identifier",
-            "valueString": "DRKS00021273"
+            "label": "Identifier (ID) assigned to the given [RESOURCE] by another registering system, e.g. by a registry of clinical trials or a data repository.",
+            "valueString": "ISRCTN91495258"
           }
         ],
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "Resource.idsAlternative.identifier"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.identifier:NCT",
-        "path": "ResearchStudy.identifier",
-        "sliceName": "NCT",
-        "definition": "Group of items providing information about identifiers (IDs) assigned to the given resource by another registering systems, e.g. a register of clinical trials or a data repository.",
-        "min": 0,
-        "max": "*",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "Resource.idsAlternative"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.identifier:NCT.type",
-        "path": "ResearchStudy.identifier.type",
-        "fixedCodeableConcept": {
-          "coding": [
-            {
-              "code": "C172240",
-              "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
-              "display": "Clinicaltrials.gov Identifier"
-            }
-          ]
-        },
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "Resource.idsAlternative.scheme",
-            "comment": "Type = NCT"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.identifier:NCT.system",
-        "path": "ResearchStudy.identifier.system",
-        "definition": "Name of the system where the given resource is already registered. Fixed to NCT (CT.gov).",
-        "min": 1,
-        "fixedUri": "https://www.clinicaltrials.gov/",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "Resource.idsAlternative.scheme",
-            "comment": "Type = NCT"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.identifier:NCT.value",
-        "path": "ResearchStudy.identifier.value",
-        "definition": "Identifier (ID) assigned to the given resource by ClinicalTrials.gov.",
-        "min": 1,
-        "example": [
-          {
-            "label": "NCT Identifier",
-            "valueString": "NCT04327505"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "Resource.idsAlternative.identifier"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.identifier:ISRCTN",
-        "path": "ResearchStudy.identifier",
-        "sliceName": "ISRCTN",
-        "definition": "Group of items providing information about identifiers (IDs) assigned to the given resource by another registering systems, e.g. a register of clinical trials or a data repository.",
-        "min": 0,
-        "max": "*",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "Resource.idsAlternative"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.identifier:ISRCTN.type",
-        "path": "ResearchStudy.identifier.type",
-        "fixedCodeableConcept": {
-          "coding": [
-            {
-              "code": "099",
-              "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
-              "display": "ISRCTN"
-            }
-          ]
-        },
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "Resource.idsAlternative.scheme",
-            "comment": "Type = ISRCTN"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.identifier:ISRCTN.system",
-        "path": "ResearchStudy.identifier.system",
-        "definition": "Name of the system where the given resource is already registered. Fixed to ISRCTN.",
-        "min": 1,
-        "fixedUri": "https://www.isrctn.com/",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "Resource.idsAlternative.scheme",
-            "comment": "Type = ISRCTN"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.identifier:ISRCTN.value",
-        "path": "ResearchStudy.identifier.value",
-        "definition": "Identifier (ID) assigned to the given resource by ISRCTN.",
-        "min": 1,
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "Resource.idsAlternative.identifier"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.identifier:EudraCT",
-        "path": "ResearchStudy.identifier",
-        "sliceName": "EudraCT",
-        "definition": "Group of items providing information about identifiers (IDs) assigned to the given resource by another registering systems, e.g. a register of clinical trials or a data repository.",
-        "min": 0,
-        "max": "*",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "Resource.idsAlternative"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.identifier:EudraCT.type",
-        "path": "ResearchStudy.identifier.type",
-        "fixedCodeableConcept": {
-          "coding": [
-            {
-              "code": "C132782",
-              "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
-              "display": "European Union Drug Regulating Authorities Clinical Trials Database"
-            }
-          ]
-        },
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "Resource.idsAlternative.scheme",
-            "comment": "Type = EudraCT"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.identifier:EudraCT.system",
-        "path": "ResearchStudy.identifier.system",
-        "definition": "Name of the system where the given resource is already registered. Fixed to EudraCT.",
-        "min": 1,
-        "fixedUri": "https://eudract.ema.europa.eu/results-web/index.xhtml",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "Resource.idsAlternative.scheme",
-            "comment": "Type = EudraCT"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.identifier:EudraCT.value",
-        "path": "ResearchStudy.identifier.value",
-        "min": 1,
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "Resource.idsAlternative.identifier"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.identifier:EUDAMED",
-        "path": "ResearchStudy.identifier",
-        "sliceName": "EUDAMED",
-        "definition": "Group of items providing information about identifiers (IDs) assigned to the given resource by another registering systems, e.g. a register of clinical trials or a data repository.",
-        "min": 0,
-        "max": "*",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "Resource.idsAlternative"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.identifier:EUDAMED.type",
-        "path": "ResearchStudy.identifier.type",
-        "fixedCodeableConcept": {
-          "coding": [
-            {
-              "code": "100",
-              "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
-              "display": "EUDAMED"
-            }
-          ]
-        },
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "Resource.idsAlternative.scheme",
-            "comment": "Type = EUDAMED"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.identifier:EUDAMED.system",
-        "path": "ResearchStudy.identifier.system",
-        "definition": "Name of the system where the given resource is already registered. Fixed to EUDAMED.",
-        "min": 1,
-        "fixedUri": "https://ec.europa.eu/tools/eudamed/#/screen/home",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "Resource.idsAlternative.scheme",
-            "comment": "Type = EUDAMED"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.identifier:EUDAMED.value",
-        "path": "ResearchStudy.identifier.value",
-        "definition": "Identifier (ID) assigned to the given resource by EUDAMED.",
-        "min": 1,
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "Resource.idsAlternative.identifier"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.identifier:UTN",
-        "path": "ResearchStudy.identifier",
-        "sliceName": "UTN",
-        "definition": "Group of items providing information about identifiers (IDs) assigned to the given resource by another registering systems, e.g. a register of clinical trials or a data repository.",
-        "min": 0,
-        "max": "*",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "Resource.idsAlternative"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.identifier:UTN.type",
-        "path": "ResearchStudy.identifier.type",
-        "fixedCodeableConcept": {
-          "coding": [
-            {
-              "code": "101",
-              "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
-              "display": "UTN"
-            }
-          ]
-        },
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "Resource.idsAlternative.scheme",
-            "comment": "Type = UTN"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.identifier:UTN.system",
-        "path": "ResearchStudy.identifier.system",
-        "definition": "Name of the system where the given resource is already registered. Fixed to UTN (WHO).",
-        "min": 1,
-        "fixedUri": "https://trialsearch.who.int/utn.aspx",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "Resource.idsAlternative.scheme",
-            "comment": "Type = UTN"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.identifier:UTN.value",
-        "path": "ResearchStudy.identifier.value",
-        "min": 1,
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "Resource.idsAlternative.identifier"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.identifier:KonsortSWD",
-        "path": "ResearchStudy.identifier",
-        "sliceName": "KonsortSWD",
-        "definition": "Group of items providing information about identifiers (IDs) assigned to the given resource by another registering systems, e.g. a register of clinical trials or a data repository.",
-        "min": 0,
-        "max": "*",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "Resource.idsAlternative"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.identifier:KonsortSWD.type",
-        "path": "ResearchStudy.identifier.type",
-        "fixedCodeableConcept": {
-          "coding": [
-            {
-              "code": "102",
-              "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
-              "display": "KonsortSWD"
-            }
-          ]
-        },
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "Resource.idsAlternative.scheme",
-            "comment": "Type = KonsortSWD"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.identifier:KonsortSWD.system",
-        "path": "ResearchStudy.identifier.system",
-        "definition": "Name of the system where the given resource is already registered. Fixed to KonsortSWD.",
-        "min": 1,
-        "fixedUri": "https://www.konsortswd.de/",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "Resource.idsAlternative.scheme",
-            "comment": "Type = KonsortSWD"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.identifier:KonsortSWD.value",
-        "path": "ResearchStudy.identifier.value",
-        "definition": "Identifier (ID) assigned to the given resource by KonsortSWD.",
-        "min": 1,
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "Resource.idsAlternative.identifier"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.identifier:MDMPortal",
-        "path": "ResearchStudy.identifier",
-        "sliceName": "MDMPortal",
-        "definition": "Group of items providing information about identifiers (IDs) assigned to the given resource by another registering systems, e.g. a register of clinical trials or a data repository.",
-        "min": 0,
-        "max": "*",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "Resource.idsAlternative"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.identifier:MDMPortal.type",
-        "path": "ResearchStudy.identifier.type",
-        "fixedCodeableConcept": {
-          "coding": [
-            {
-              "code": "103",
-              "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
-              "display": "MDM Portal"
-            }
-          ]
-        },
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "Resource.idsAlternative.scheme",
-            "comment": "Type = MDM Portal"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.identifier:MDMPortal.system",
-        "path": "ResearchStudy.identifier.system",
-        "definition": "Name of the system where the given resource is already registered. Fixed to MDM Portal.",
-        "min": 1,
-        "fixedUri": "https://www.mdm-portal.de/",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "Resource.idsAlternative.scheme",
-            "comment": "Type = MDM Portal"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.identifier:MDMPortal.value",
-        "path": "ResearchStudy.identifier.value",
-        "definition": "Identifier (ID) assigned to the given resource by MDM Portal.",
-        "min": 1,
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "Resource.idsAlternative.identifier"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.identifier:Other",
-        "path": "ResearchStudy.identifier",
-        "sliceName": "Other",
-        "short": "Identifier",
-        "definition": "Identifier (ID) assigned to the given resource by another registering system, e.g. by a register of clinical trials or a data repository.",
-        "min": 0,
-        "max": "*",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "Resource.idsAlternative"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.identifier:Other.type",
-        "path": "ResearchStudy.identifier.type",
-        "fixedCodeableConcept": {
-          "coding": [
-            {
-              "code": "C17649",
-              "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
-              "display": "Other"
-            }
-          ]
-        },
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "Resource.idsAlternative.scheme",
-            "comment": "Type = Other"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.identifier:Other.system",
-        "path": "ResearchStudy.identifier.system",
-        "definition": "Type/name of the system where the given resource is already registered.",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "Resource.idsAlternative.scheme",
-            "comment": "Type = Other"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.identifier:Other.value",
-        "path": "ResearchStudy.identifier.value",
-        "definition": "Identifier (ID) assigned to the given resource by another registering system, e.g. by a register of clinical trials or a data repository.",
-        "min": 1,
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "Resource.idsAlternative.identifier"
+            "map": "esource.idsAlternative.identifier"
           }
         ]
       },
@@ -1005,26 +527,9 @@
       {
         "id": "ResearchStudy.category",
         "path": "ResearchStudy.category",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "$this"
-            }
-          ],
-          "rules": "open"
-        },
-        "min": 2
-      },
-      {
-        "id": "ResearchStudy.category:primaryDesign",
-        "path": "ResearchStudy.category",
-        "sliceName": "primaryDesign",
         "short": "Is it an interventional or non-interventional [RESOURCE]?",
         "definition": "Non-interventional design refers to a [RESOURCE] that does not aim to alter its outcomes of interest. Interventional design refers to a [RESOURCE] that aims to alter its outcomes of interest.",
         "comment": "Short input help: Select between non-interventional and interventional design for the given [RESOURCE].",
-        "min": 1,
-        "max": "1",
         "binding": {
           "strength": "required",
           "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-primary-design-nci",
@@ -1038,176 +543,19 @@
         ]
       },
       {
-        "id": "ResearchStudy.category:primaryDesign.coding",
-        "path": "ResearchStudy.category.coding",
-        "max": "1"
-      },
-      {
-        "id": "ResearchStudy.category:studyTypeInterventional",
-        "path": "ResearchStudy.category",
-        "sliceName": "studyTypeInterventional",
-        "short": "Interventional [RESOURCE] type",
-        "definition": "The strategy for assigning interventions to participants.",
-        "comment": "Short input help: Select all that apply. If 'Other' is selected, please specify the type of the [RESOURCE] in the field 'Additional information about the [RESOURCE]'.",
-        "min": 0,
-        "max": "*",
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-type-interventional-nci",
-          "description": "Value set defining codes to specify the type of an interventional (sub-)study in a ResearchStudy resource."
-        },
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "Design.studyType.interventional"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.category:studyTypeNonInterventional",
-        "path": "ResearchStudy.category",
-        "sliceName": "studyTypeNonInterventional",
-        "short": "Non-interventional [RESOURCE] type",
-        "definition": "The primary strategy for participant identification and follow-up.",
-        "comment": "Short input help: Select all that apply. If 'Other' is selected, please specify the type of the [RESOURCE] in the field 'Additional information about the [RESOURCE]'.",
-        "min": 0,
-        "max": "*",
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-type-non-interventional-nci-msh-local",
-          "description": "Value set defining codes to specify the type of a non interventional (sub-)study in a ResearchStudy resource."
-        },
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "Design.studyType.nonInterventional"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.category:timePerspectives",
-        "path": "ResearchStudy.category",
-        "sliceName": "timePerspectives",
-        "short": "Temporal design",
-        "definition": "Temporal design of the [RESOURCE], i.e. the observation period in relation to the time of participant enrollment.",
-        "comment": "Short input help: Is it a retrospective, prospective or cross-sectional [RESOURCE]?",
-        "min": 0,
-        "max": "*",
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-time-perspectives-nci",
-          "description": "Value set defining codes to specify the time perspective of a (sub-)study in a ResearchStudy resource."
-        },
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "1.17.27.1 Design.nonInterventional.timePerspectives"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.category:allocation",
-        "path": "ResearchStudy.category",
-        "sliceName": "allocation",
-        "short": "Type of allocation of participants to an arm",
-        "definition": "Type of allocation/assignment of individual participants of the [RESOURCE] to an arm.",
-        "comment": "Short input help: Select one value from the list.",
+        "id": "ResearchStudy.category.extension:studyType",
+        "path": "ResearchStudy.category.extension",
+        "sliceName": "studyType",
         "min": 0,
         "max": "1",
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-allocation-nci",
-          "description": "Value set defining codes to specify the subject allocation in a (sub-)study in a ResearchStudy resource."
-        },
-        "mapping": [
+        "type": [
           {
-            "identity": "NFDI4Health",
-            "map": "1.17.28.3 Design.interventional.allocation"
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-type"
+            ]
           }
         ]
-      },
-      {
-        "id": "ResearchStudy.category:allocation.coding",
-        "path": "ResearchStudy.category.coding",
-        "max": "1"
-      },
-      {
-        "id": "ResearchStudy.category:samplingMethod",
-        "path": "ResearchStudy.category",
-        "sliceName": "samplingMethod",
-        "short": "Applied sampling method",
-        "definition": "Type of the sampling method applied for the selection of [RESOURCE] participants.",
-        "comment": "Short Input Help: Select one value from the list.",
-        "min": 1,
-        "max": "1",
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-sampling-method-nci-local",
-          "description": "Value set defining codes to specify types of sampling methods."
-        },
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "1.17.13.1 Design.sampling.method"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.category:samplingMethod.coding",
-        "path": "ResearchStudy.category.coding",
-        "max": "1"
-      },
-      {
-        "id": "ResearchStudy.category:samplingMethodProbability",
-        "path": "ResearchStudy.category",
-        "sliceName": "samplingMethodProbability",
-        "short": "Specific type of probability sampling",
-        "definition": "Specific type of the probability sampling method applied for the selection of [RESOURCE] participants.",
-        "comment": "Short Input Help: If known, select one value from the list.",
-        "min": 0,
-        "max": "1",
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-sampling-prob-method-nci-local",
-          "description": "Value set defining codes to specify types of probability sampling methods."
-        },
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "1.17.13.2\tDesign.sampling.probabilityMethod"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.category:samplingMethodProbability.coding",
-        "path": "ResearchStudy.category.coding",
-        "max": "1"
-      },
-      {
-        "id": "ResearchStudy.category:samplingMethodNonProbability",
-        "path": "ResearchStudy.category",
-        "sliceName": "samplingMethodNonProbability",
-        "short": "Specific type of non-probability sampling",
-        "definition": "Specific type of the non-probability sampling method applied for the selection of [RESOURCE] participants.",
-        "comment": "Short Input Help: If known, select one value from the list.",
-        "min": 0,
-        "max": "1",
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-sampling-method-non-prob-nci-local",
-          "description": "Value set defining codes to specify types of non-probability sampling methods."
-        },
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "1.17.13.3 Design.sampling.nonProbabilityMethod"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.category:samplingMethodNonProbability.coding",
-        "path": "ResearchStudy.category.coding",
-        "max": "1"
       },
       {
         "id": "ResearchStudy.focus",
@@ -1225,9 +573,6 @@
         "id": "ResearchStudy.focus.coding.extension:uri",
         "path": "ResearchStudy.focus.coding.extension",
         "sliceName": "uri",
-        "short": "Code of the focus area",
-        "definition": "Code of the focus area in the terminology/classification used.",
-        "comment": "Short Input Help: If known, you can provide the code from the terminology/classification used.",
         "min": 0,
         "max": "1",
         "type": [
@@ -1236,12 +581,6 @@
             "profile": [
               "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-uri"
             ]
-          }
-        ],
-        "example": [
-          {
-            "label": "Example of an URI for a SNOMED CT concept representing a focus area",
-            "valueUri": "http://snomed.info/id/840533007"
           }
         ],
         "mapping": [
@@ -1292,25 +631,8 @@
       {
         "id": "ResearchStudy.condition",
         "path": "ResearchStudy.condition",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "$this"
-            }
-          ],
-          "rules": "open"
-        },
-        "min": 1
-      },
-      {
-        "id": "ResearchStudy.condition:conditions",
-        "path": "ResearchStudy.condition",
-        "sliceName": "conditions",
         "short": "Primary health condition[conditions](s) or disease(s) considered in the [RESOURCE]",
         "definition": "Group of items providing information about primary health condition[conditions](s) or disease(s) considered in the [RESOURCE].",
-        "min": 0,
-        "max": "*",
         "mapping": [
           {
             "identity": "NFDI4Health",
@@ -1319,12 +641,9 @@
         ]
       },
       {
-        "id": "ResearchStudy.condition:conditions.coding.extension:uri",
-        "path": "ResearchStudy.condition.coding.extension",
+        "id": "ResearchStudy.condition.extension:uri",
+        "path": "ResearchStudy.condition.extension",
         "sliceName": "uri",
-        "short": "Code of the health condition or disease",
-        "definition": "Code of the health condition or disease in the terminology/classification used.",
-        "comment": "Short Input Help: If known, you can provide the code from the terminology/classification used.",
         "min": 0,
         "max": "1",
         "type": [
@@ -1335,12 +654,6 @@
             ]
           }
         ],
-        "example": [
-          {
-            "label": "Example of an URI for a SNOMED CT concept",
-            "valueUri": "http://snomed.info/id/840533007"
-          }
-        ],
         "mapping": [
           {
             "identity": "NFDI4Health",
@@ -1349,18 +662,12 @@
         ]
       },
       {
-        "id": "ResearchStudy.condition:conditions.coding.system",
-        "path": "ResearchStudy.condition.coding.system",
+        "id": "ResearchStudy.condition.coding.code",
+        "path": "ResearchStudy.condition.coding.code",
         "short": "Terminology/classification",
         "definition": "Terminology/classification used for the health condition[conditions] or disease.",
         "comment": "Short Input Help: If used, name of the terminology/classification.",
         "min": 1,
-        "example": [
-          {
-            "label": "Example of a terminology/classification",
-            "valueCode": "C49469"
-          }
-        ],
         "binding": {
           "strength": "required",
           "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-conditions-classification-nci-local"
@@ -1373,59 +680,21 @@
         ]
       },
       {
-        "id": "ResearchStudy.condition:conditions.coding.display",
-        "path": "ResearchStudy.condition.coding.display",
+        "id": "ResearchStudy.condition.text",
+        "path": "ResearchStudy.condition.text",
         "short": "Primary health condition[conditions] or disease name",
         "definition": "Name of primary health condition[conditions] or disease considered in the [RESOURCE].",
         "comment": "Additional information: The use of terms from established terminologies/classifications (e.g. SNOMED CT, ICD, etc.) is preferred. However, also self-assigned terms are allowed. |Short Input Help: Preferably, use terms from SNOMED CT (https://browser.ihtsdotools.org).",
         "min": 1,
         "example": [
           {
-            "label": "Example of a primary health condition name",
-            "valueString": "SARS-CoV-2"
+            "label": "Example of a primary health condition name"
           }
         ],
         "mapping": [
           {
             "identity": "NFDI4Health",
             "map": "Design.conditions.label"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.condition:groupsOfDiseasesGenerally",
-        "path": "ResearchStudy.condition",
-        "sliceName": "groupsOfDiseasesGenerally",
-        "short": "Which groups of diseases or conditions were the data collected on?",
-        "definition": "General groups of diseases or conditions on which the data were collected in the [RESOURCE].",
-        "comment": "Additional information: The values originate from the WHO's International Statistical Classification of Diseases and Related Health Problems, 10th Revision (ICD-10). | Short input help: Select all that apply. For more information about the groups of diseases/conditions, visit the WHO's ICD-10 homepage: https://icd.who.int/en.",
-        "min": 1,
-        "max": "*",
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-diseases-generally-icd-sct",
-          "description": "Value set defining codes from ICD-10 to specify groups of diseases or conditions on which the data were collected in the study."
-        },
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "Design.groupsOfDiseases.generally"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.condition:groupsOfDiseasesConditions",
-        "path": "ResearchStudy.condition",
-        "sliceName": "groupsOfDiseasesConditions",
-        "short": "On which other diseases or conditions were the data collected?",
-        "definition": "Diseases or conditions on which the data were collected in the [RESOURCE].",
-        "comment": "Additional information: The values originate from the WHO's International Statistical Classification of Diseases and Related Health Problems, 10th Revision (ICD-10). | Short input help: Select all that apply. Values are based on lower level ICD-10. For more information visit the WHO's ICD-10 homepage: https://icd.who.int/en.",
-        "min": 0,
-        "max": "*",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "Design.groupsOfDiseases.conditions"
           }
         ]
       },

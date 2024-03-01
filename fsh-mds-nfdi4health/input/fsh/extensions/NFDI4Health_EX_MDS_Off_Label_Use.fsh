@@ -27,4 +27,4 @@ Mapping: NFDI4Health-Off-Label-Use-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Off_Label_Use
-* -> "1.17.28.4 Design.interventional.offLabelUse"
+* -> "Design.interventional.offLabelUse"

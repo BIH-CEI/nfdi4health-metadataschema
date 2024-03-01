@@ -1,10 +1,9 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "nfdi4health-ex-mds-off-label-use",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-off-label-use",
-  "version": "0.9",
-  "name": "NFDI4Health_EX_MDS_Off_Label_Use",
-  "title": "NFDI4Health EX MDS Off Label Use",
+  "id": "nfdi4health-ex-mds-time-perspectives",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-time-perspectives",
+  "name": "NFDI4Health_EX_MDS_Time_Perspectives",
+  "title": "NFDI4Health EX MDS Time Perspectives",
   "status": "draft",
   "publisher": "NFDI4Health",
   "contact": [
@@ -17,7 +16,7 @@
       ]
     }
   ],
-  "description": "Extension informing the unapproved (off-label) use of a drug product in a resource.",
+  "description": "Group of items providing information about the temporal design of a non-interventional study",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -46,14 +45,12 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Off-label use of a drug product",
-        "definition": "Unapproved (off-label) use of a drug product.",
-        "comment": "Short input help: Select 'Yes' or 'No' only for a drug [RESOURCE] and 'Not applicable' for any other [RESOURCE].",
-        "max": "1",
+        "short": "Temporal design",
+        "definition": "Temporal design of the [RESOURCE], i.e. the observation period in relation to the time of participant enrollment.",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "Design.interventional.offLabelUse"
+            "map": "Design.nonInterventional.timePerspectives"
           }
         ]
       },
@@ -65,11 +62,12 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-off-label-use"
+        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-time-perspectives"
       },
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
+        "comment": "Short input help: Is it a retrospective, prospective or cross-sectional [RESOURCE]?",
         "min": 1,
         "type": [
           {
@@ -78,19 +76,9 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-yes-no-not-applicable-snomedct",
-          "description": "Value set used to respond to questions that can be answered Yes, No, or Not Applicable."
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-time-perspectives-nci",
+          "description": "Value set defining codes to specify the time perspective of a (sub-)study in a ResearchStudy resource."
         }
-      },
-      {
-        "id": "Extension.value[x].system",
-        "path": "Extension.value[x].system",
-        "min": 1
-      },
-      {
-        "id": "Extension.value[x].code",
-        "path": "Extension.value[x].code",
-        "min": 1
       }
     ]
   }

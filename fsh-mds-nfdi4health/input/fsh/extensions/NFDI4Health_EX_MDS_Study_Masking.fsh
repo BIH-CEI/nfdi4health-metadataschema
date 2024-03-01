@@ -37,11 +37,12 @@ Description: "Group of items providing information about the masking of interven
 * extension[description].value[x] 1..
 * extension[description].value[x] only string
 
+
 Mapping: NFDI4Health-Study-Masking-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Study_Masking
-* -> "1.17.28.2	Design.interventional.masking"
-* extension[general] -> "1.17.28.2.1 Design.interventional.masking.general"
-* extension[roles] -> "1.17.28.2.2 Design.interventional.masking.roles"
-* extension[description] -> "1.17.28.2.3 Design.interventional.masking.description"
+* -> "Design.interventional.masking"
+* extension[general] -> "Design.interventional.masking.general"
+* extension[roles] -> "Design.interventional.masking.roles"
+* extension[description] -> "Design.interventional.masking.description"

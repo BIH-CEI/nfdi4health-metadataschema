@@ -11,24 +11,24 @@ Usage: #example
 
 //Study characteristics
 /// Administrative Information
-* extension[studyEthicsCommitteeApproval].valueCoding = $UMLS#C0205540 "Approved (Qualitative Concept)"
+* extension[studyEthicsCommitteeApproval].valueCoding = $NCI#C25425 "Approval"
 * extension[studyStatus].extension[overallStatus].valueCoding = $StudyStatus#04 "Ongoing (III): Recruitment completed, but data collection ongoing"
 * extension[studyStatus].extension[statusEnrollingByInvitation].valueCoding = $SCT#373066001 "Yes (qualifier value)"
 * period.start = 2008-09-22 //original format needed to be converted
 
 /// Study Design Details
-* category[primaryDesign].coding = $Remaining#131 "Non-interventional"
-* category[studyTypeNonInterventional][0].coding = $Remaining#146 "Cohort"
-* category[studyTypeNonInterventional][1].coding = $Remaining#149 "Longitudinal"
+* category.coding = $NCI#C142615 "Non-Interventional Study"
+* category.extension[studyType].extension[nonInterventional][0].valueCoding = $NCI#C15208 "Cohort Study"
+* category.extension[studyType].extension[nonInterventional][+].valueCoding = $NCI#C15273 "Longitudinal Study"
 * extension[subject].valueCoding = $SCT#125676002 "Person (person)"
-* condition[groupsOfDiseasesGenerally] = $ICD10#I "Certain infectious and parasitic diseases"
-* condition[groupsOfDiseasesGenerally] = $ICD10#III "Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism"
-* condition[groupsOfDiseasesGenerally] = $ICD10#IV "Endocrine, nutritional and metabolic diseases"
-* condition[groupsOfDiseasesGenerally] = $ICD10#II  "Neoplasms"
-* condition[groupsOfDiseasesGenerally] = $ICD10#V "Mental and behavioural disorders"
-* condition[groupsOfDiseasesGenerally] = $SCT#74964007 "Other"
-* category[samplingMethod].coding = $Remaining#034 "Probability Sampling Method"
-* category[samplingMethodProbability].coding = $Remaining#169 "Stratified"
+* extension[groupsOfDiseases].extension[generally].valueCoding  = $ICD10#I "Certain infectious and parasitic diseases"
+* extension[groupsOfDiseases].extension[generally].valueCoding  = $ICD10#III "Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism"
+* extension[groupsOfDiseases].extension[generally].valueCoding  = $ICD10#IV "Endocrine, nutritional and metabolic diseases"
+* extension[groupsOfDiseases].extension[generally].valueCoding  = $ICD10#II  "Neoplasms"
+* extension[groupsOfDiseases].extension[generally].valueCoding  = $ICD10#V "Mental and behavioural disorders"
+* extension[groupsOfDiseases].extension[generally].valueCoding  = $SCT#74964007 "Other"
+* extension[sampling].extension[method].valueCoding = $Remaining#034 "Probability Sampling Method"
+* extension[sampling].extension[probabilityMethod].valueCoding = $NCI#C71516 "Stratified Sampling"
 * extension[dataSource].extension[general][0].valueCoding = $UMLS#C2347026 "Biospecimen (Body Substance)"
 * extension[dataSource].extension[general][+].valueCoding = $Remaining#029 "Cognitive measurements"
 * extension[dataSource].extension[general][+].valueCoding = $Remaining#031 "Imaging data"
@@ -59,8 +59,8 @@ Usage: #example
 * primaryPurposeType.coding = $UMLS#C0205394 "Other (Qualitative Concept)"
 * objective.name = "There is no single set of research questions underlying the study."
 * note.text = "The content of different SHIP data collections are described separately."
-* category[timePerspectives].coding = $Remaining#156 "Prospective"
-* extension[biospecimen].extension[retention].valueCoding = $UMLS#C4288286 "Retained Specimens Contain DNA (Conceptual Entity)"
+* extension[timePerspectives].valueCoding = $NCI#C53312 "Retrospective Study"
+* extension[biospecimen].extension[retention].valueCoding = $NCI#C127777 "Retained Specimens Contain DNA"
 * extension[biospecimen].extension[description].valueString = "Whole blood; Saliva"
 
 /// Information about data sharing
