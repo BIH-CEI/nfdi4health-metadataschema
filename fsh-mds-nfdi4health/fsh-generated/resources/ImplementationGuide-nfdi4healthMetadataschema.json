@@ -325,9 +325,9 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/nfdi4health-vs-mds-cd-common-chronic-disease-name-snomedct"
+          "reference": "ValueSet/nfdi4health-vs-mds-cd-common-chronic-disease-name-sct-local"
         },
-        "name": "NFDI4Health CD Common Chronic Disease Name [SNOMED CT]",
+        "name": "NFDI4Health CD Common Chronic Disease Name [SNOMED CT, Local]",
         "description": "Value set used to respond to question common chronic disease name to Chronic Disease Module",
         "exampleBoolean": false
       },

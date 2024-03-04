@@ -29,7 +29,7 @@
     "fshType": "CodeSystem",
     "fshFile": "codesystems/cs-remaining-concepts.fsh",
     "startLine": 1,
-    "endLine": 203
+    "endLine": 204
   },
   {
     "outputFile": "CodeSystem-nfdi4health-cs-mds-study-status.json",
@@ -960,12 +960,12 @@
     "endLine": 151
   },
   {
-    "outputFile": "ValueSet-nfdi4health-vs-mds-cd-common-chronic-disease-name-snomedct.json",
-    "fshName": "NFDI4Health_VS_MDS_CD_Common_Chronic_Disease_Name_SNOMEDCT",
+    "outputFile": "ValueSet-nfdi4health-vs-mds-cd-common-chronic-disease-name-sct-local.json",
+    "fshName": "NFDI4Health_VS_MDS_CD_CommonChronicDiseaseName_SCT_Local",
     "fshType": "ValueSet",
     "fshFile": "valuesets/vs-cd-CommonChronicDiseaseName.fsh",
     "startLine": 1,
-    "endLine": 22
+    "endLine": 23
   },
   {
     "outputFile": "ValueSet-nfdi4health-vs-mds-cd-datacollected-nci.json",

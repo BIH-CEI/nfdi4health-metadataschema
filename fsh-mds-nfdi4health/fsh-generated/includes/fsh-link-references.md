@@ -36,7 +36,7 @@
 [InstanceOfProvenanceManuallyCollectedSHIPTrend]: Provenance-InstanceOfProvenanceManuallyCollectedSHIPTrend.html
 [InstanceOfStudySHIP]: ResearchStudy-InstanceOfStudySHIP.html
 [InstanceOfStudySPOVID]: ResearchStudy-InstanceOfStudySPOVID.html
-[NFDI4Health_VS_MDS_CD_Common_Chronic_Disease_Name_SNOMEDCT]: ValueSet-nfdi4health-vs-mds-cd-common-chronic-disease-name-snomedct.html
+[NFDI4Health_VS_MDS_CD_CommonChronicDiseaseName_SCT_Local]: ValueSet-nfdi4health-vs-mds-cd-common-chronic-disease-name-sct-local.html
 [nfdi4health-cps-mds-capability-statement]: CapabilityStatement-nfdi4health-cps-mds-capability-statement.html
 [NFDI4Health_CS_MDS_Label_FHIR]: CodeSystem-nfdi4health-cs-mds-label-fhir.html
 [NFDI4Health_CS_MDS_Provenance_Data_Source]: CodeSystem-nfdi4health-cs-mds-provenance-data-source.html

@@ -1,11 +1,11 @@
 {
   "resourceType": "ValueSet",
   "status": "draft",
-  "name": "NFDI4Health_VS_MDS_CD_Common_Chronic_Disease_Name_SNOMEDCT",
-  "id": "nfdi4health-vs-mds-cd-common-chronic-disease-name-snomedct",
-  "title": "NFDI4Health CD Common Chronic Disease Name [SNOMED CT]",
+  "name": "NFDI4Health_VS_MDS_CD_CommonChronicDiseaseName_SCT_Local",
+  "id": "nfdi4health-vs-mds-cd-common-chronic-disease-name-sct-local",
+  "title": "NFDI4Health CD Common Chronic Disease Name [SNOMED CT, Local]",
   "description": "Value set used to respond to question common chronic disease name to Chronic Disease Module",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-cd-common-chronic-disease-name-snomedct",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-cd-common-chronic-disease-name-sct-local",
   "version": "0.9",
   "experimental": true,
   "publisher": "NFDI4Health",
@@ -63,6 +63,15 @@
           {
             "code": "271323007",
             "display": "Malignant neoplasm of lip, oral cavity and/or pharynx (disorder)"
+          }
+        ]
+      },
+      {
+        "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+        "concept": [
+          {
+            "code": "201",
+            "display": "Data not collected for any of the above-listed diseases"
           }
         ]
       }

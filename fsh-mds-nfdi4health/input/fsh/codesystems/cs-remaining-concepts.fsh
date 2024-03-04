@@ -192,6 +192,7 @@ Description: "Code system defining remaining concepts without mapping to concept
 * #198 "Conference paper"
 * #199 "One data provider"
 * #200 "Several data providers"
+* #201 "Data not collected for any of the above-listed diseases"
 
 //UC 5.1 - Codes for concepts to be used in slices
 * #182 "Dietary assessment instrument"
