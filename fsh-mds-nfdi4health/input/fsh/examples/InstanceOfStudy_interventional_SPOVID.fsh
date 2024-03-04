@@ -29,8 +29,8 @@ Usage: #example
 
 //Study characteristics
 /// Administrative Information
-* extension[studyStatus].extension[overallStatus].valueCoding = $StudyStatus#04 "Ongoing (III): Recruitment completed, but data collection ongoing"
-* extension[studyStatus].extension[statusWhenIntervention].valueCoding = $Remaining#014 "Intervention ongoing"
+* extension[administrativeInformation].extension[status].valueCoding = $StudyStatus#04 "Ongoing (III): Recruitment completed, but data collection ongoing"
+* extension[administrativeInformation].extension[statusWhenIntervention].valueCoding = $Remaining#014 "Intervention ongoing"
 * period.start = 2008-01-05 //original format needed to be converted
 * period.end = 2022-11-30 //original format needed to be converted
 
@@ -44,7 +44,7 @@ Usage: #example
 * extension[dataSource].extension[general][0].valueCoding = $Remaining#029 "Cognitive measurements"
 * extension[dataSource].extension[general][+].valueCoding = $Remaining#032 "Physiological/Biochemical measurements"
 * extension[masking].extension[general].valueBoolean = false
-* extension[studyTypeInterventional].extension[offLabelUse].valueCoding = $SCT#385432009 "Not applicable (qualifier value)"
+* extension[studyInterventional].extension[offLabelUse].valueCoding = $SCT#385432009 "Not applicable (qualifier value)"
 * extension[sampling].extension[method].valueCoding = $NCI#C127781 "Non-Probability Sampling Method"
 * extension[sampling].extension[nonProbabilityMethod].valueCoding = $NCI#C53204 "Convenience Sampling"
 

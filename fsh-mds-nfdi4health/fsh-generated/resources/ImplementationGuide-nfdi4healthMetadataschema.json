@@ -661,6 +661,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-study-admin-info"
+        },
+        "name": "NFDI4Health EX MDS Study Administrative Information",
+        "description": "Extension informing about administrative information of a study.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/nfdi4health-ex-mds-study-comparison-group"
         },
         "name": "NFDI4Health EX MDS Study Comparison Group",
@@ -677,10 +685,10 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nfdi4health-ex-mds-study-ethics-committee-approval"
+          "reference": "StructureDefinition/nfdi4health-ex-mds-study-interventional"
         },
-        "name": "NFDI4Health EX MDS Study Ethics Committee Approval",
-        "description": "Extension informing about the status of the study approval from the (leading) ethics committee",
+        "name": "NFDI4Health EX MDS Study Interventional",
+        "description": "Group of items providing information about interventional studys",
         "exampleBoolean": false
       },
       {
@@ -717,14 +725,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nfdi4health-ex-mds-study-status"
-        },
-        "name": "NFDI4Health EX MDS Study Status",
-        "description": "Extension informing about the status of a study.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/nfdi4health-ex-mds-study-target-followup-duration"
         },
         "name": "NFDI4Health EX MDS Study Target Followup Duration",
@@ -753,14 +753,6 @@
         },
         "name": "NFDI4Health EX MDS Study Type",
         "description": "Group of items providing information about the specification of the type of the [RESOURCE]",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/nfdi4health-ex-mds-study-type-interventional"
-        },
-        "name": "NFDI4Health EX MDS Study Type Interventional",
-        "description": "Group of items providing information about interventional studys",
         "exampleBoolean": false
       },
       {

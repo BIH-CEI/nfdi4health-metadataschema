@@ -10,15 +10,20 @@ Description: "Group of items applicable only to studies, substudies, registries,
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 //* language 1..
-* extension ^slicing.discriminator.type = #value
-* extension ^slicing.discriminator.path = "url"
-* extension ^slicing.rules = #open
+
+// Invariants
+* obeys study-interventional-a and study-interventional-b
+* obeys study-nonInterventional-a and study-nonInterventional-b
+* obeys study-mortalityData-a and study-mortalityData-b
+* obeys study-statusWhenIntervention-a and study-statusWhenIntervention-b and study-statusWhenIntervention-c and study-statusWhenIntervention-d
+* obeys study-recruitmentStatusRegister-a and study-recruitmentStatusRegister-b
+
+// Extensions
 * extension contains
     NFDI4Health_EX_MDS_Execution_Language named executionLanguage 0..* and
     NFDI4Health_EX_MDS_Descriptions named descriptions 1..1 and
     NFDI4Health_EX_MDS_Mortality_Data named mortalityData 0..1 and
-    NFDI4Health_EX_MDS_Study_Ethics_Committee_Approval named studyEthicsCommitteeApproval 0..1 and
-    NFDI4Health_EX_MDS_Study_Status named studyStatus 1..1 and
+    NFDI4Health_EX_MDS_Study_Admin_Info named administrativeInformation 0..1 and
     NFDI4Health_EX_MDS_Subject named subject 1..1 and
     NFDI4Health_EX_MDS_Data_Source named dataSource 0..1 and
     NFDI4Health_EX_MDS_Eligibility_Criteria_Inclusion_Criteria named inclusionCriteria 0..1 and
@@ -30,11 +35,12 @@ Description: "Group of items applicable only to studies, substudies, registries,
     NFDI4Health_EX_MDS_Study_Target_Followup_Duration named targetFollowupDuration 0..1 and
     NFDI4Health_EX_MDS_Biospecimen named biospecimen 0..1 and
     NFDI4Health_EX_MDS_Study_Masking named masking 0..1 and
-    NFDI4Health_EX_MDS_Study_Type_Interventional named studyTypeInterventional 0..1 and
+    NFDI4Health_EX_MDS_Study_Interventional named studyInterventional 0..1 and
     NFDI4Health_EX_MDS_Time_Perspectives named timePerspectives 0..* and
     NFDI4Health_EX_MDS_Groups_Of_Diseases named groupsOfDiseases 1..1 and
     NFDI4Health_EX_MDS_Study_Sampling named sampling 0..1
 
+// Elements
 * identifier 0..* 
 * identifier ^short = "Alternative identifiers"
 * identifier ^definition = "Group of items providing information about identifiers (IDs) assigned to the given [RESOURCE] by another registering systems, e.g. a registry of clinical trials or a data repository."
@@ -64,13 +70,14 @@ Description: "Group of items applicable only to studies, substudies, registries,
 * phase ^binding.description = "Value set defining codes to specify the phase of a (sub-)study in a ResearchStudy resource."
 * phase.coding.system 1..
 * phase.coding.code 1..
+* category 1..1 // Cardinality: 1..1, if Resource.classification.type == ('Study' OR 'Substudy'); otherwise 0..0
 * category from NFDI4Health_VS_MDS_Study_Primary_Design_NCI (required)
 * category ^short = "Is it an interventional or non-interventional [RESOURCE]?"
 * category ^definition = "Non-interventional design refers to a [RESOURCE] that does not aim to alter its outcomes of interest. Interventional design refers to a [RESOURCE] that aims to alter its outcomes of interest."
 * category ^comment = "Short input help: Select between non-interventional and interventional design for the given [RESOURCE]."
 * category ^binding.description = "Value set defining codes for primary designs of (sub-)studies in a ResearchStudy resource."
 * category.extension contains 
-    NFDI4Health_EX_MDS_Study_Type named studyType 0..1
+    NFDI4Health_EX_MDS_Study_Type named studyType 1..1 // Cardinality: 1..1, if Resource.classification.type == ('Study' OR 'Substudy'); otherwise 0..0
 * condition ^short = "Primary health condition[conditions](s) or disease(s) considered in the [RESOURCE]"
 * condition ^definition = "Group of items providing information about primary health condition[conditions](s) or disease(s) considered in the [RESOURCE]."
 * condition.coding.code 1..1
@@ -184,3 +191,87 @@ Source: NFDI4Health_PR_MDS_Study
 * note.text -> "1.17.24 Design.comment"
 * objective.name -> "1.17.18 Design.hypotheses"
 * enrollment -> "Design.population.obtainedSampleSize"
+
+// All conditions stating Resource.classification.type == ('Study' OR 'Substudy were evaluated as given within the ResearchStudy Profile
+Invariant: study-interventional-a
+Description: "Cardinality: 1..*, if Design.primaryDesign == 'C98388'"
+Severity: #error
+Expression: "category.coding.where(code = 'C98388').exists() implies category.extension.extension.where(url='interventional').exists()"
+
+Invariant: study-interventional-b
+Description: "Cardinality: 0..0, if Design.primaryDesign != 'C98388'"
+Severity: #error
+Expression: "category.coding.where(code = 'C98388').exists().not() implies category.extension.extension.where(url='interventional').exists().not()"
+
+Invariant: study-nonInterventional-a
+Description: "Cardinality: 1..*, if Design.primaryDesign == 'C142615''"
+Severity: #error
+Expression: "category.coding.where(code = 'C142615').exists() implies category.extension.extension.where(url='nonInterventional').exists()"
+
+Invariant: study-nonInterventional-b
+Description: "Cardinality: 0..0, if Design.primaryDesign != 'C142615'"
+Severity: #error
+Expression: "category.coding.where(code = 'C142615').exists().not() implies category.extension.extension.where(url='nonInterventional').exists().not()"
+
+Invariant: study-mortalityData-a
+Description: "Cardinality: 0..1, if Design.studyType.nonInterventional == ('C15273' OR 'C15208' OR '004' OR 'D015331' OR '005' OR 'C53311'))"
+Severity: #error
+Expression: "category.extension.extension.where(url='nonInterventional').valueCoding.where(code = 'C15273' | 'C15208' | '004' | 'D015331' | '005' | 'C53311').exists() implies extension.where(url='https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-mortality-data').exists()"
+
+Invariant: study-mortalityData-b
+Description: "Cardinality: 0..0, if Design.studyType.nonInterventional != ('C15273' OR 'C15208' OR '004' OR 'D015331' OR '005' OR 'C53311'))"
+Severity: #error
+Expression: "category.extension.extension.where(url='nonInterventional').valueCoding.where(code = 'C15273' | 'C15208' | '004' | 'D015331' | '005' | 'C53311').exists().not() implies extension.where(url='https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-mortality-data').exists().not()"
+
+Invariant: study-statusWhenIntervention-a
+Description: "Cardinality: 0..1, if Design.primaryDesign == 'C98388'"
+Severity: #error
+Expression: "category.coding.where(code = 'C98388').exists() implies extension.extension.where(url='statusWhenIntervention').exists()"
+
+Invariant: study-statusWhenIntervention-b
+Description: "Cardinality: 0..1, if Design.administrativeInformation.status == ('01' OR '02' OR '03' OR '04' OR '05')"
+Severity: #error
+Expression: "extension.extension.where(url='status').valueCoding.where(code = '01' or code = '02' or code =  '03' or code = '04' or code = '05').exists() implies extension.extension.where(url='statusWhenIntervention').exists()"
+
+Invariant: study-statusWhenIntervention-c
+Description: "Cardinality: 0..0, if Design.primaryDesign != 'C98388'"
+Severity: #error
+Expression: "category.coding.where(code = 'C98388').exists().not() implies extension.extension.where(url='statusWhenIntervention').exists().not()"
+
+Invariant: study-statusWhenIntervention-d
+Description: "Cardinality: 0..0, if Design.administrativeInformation.status != ('01' OR '02' OR '03' OR '04' OR '05')"
+Severity: #error
+Expression: "extension.extension.where(url='status').valueCoding.where(code = '01' or code = '02' or code =  '03' or code = '04' or code = '05').exists().not() implies extension.extension.where(url='statusWhenIntervention').exists().not()"
+
+// Needs to be tested
+Invariant: study-stageStopped-a
+Description: "Cardinality: 0..1, if Design.administrativeInformation.status == ('06' OR '07')"
+Severity: #error
+Expression: "extension.extension.where(url='status').valueCoding.where(code = '06' or code = '07').exists() implies reasonStopped.coding.exists()"
+
+Invariant: study-stageStopped-b
+Description: "Cardinality: 0..0, if Design.administrativeInformation.status != ('06' OR '07')"
+Severity: #error
+Expression: "extension.extension.where(url='status').valueCoding.where(code = '06' or code = '07').exists().not() implies reasonStopped.coding.exists().not()"
+
+Invariant: study-reasonStopped-a
+Description: "Cardinality: 0..1, if Design.administrativeInformation.status == ('06' OR '07')"
+Severity: #error
+Expression: "extension.extension.where(url='status').valueCoding.where(code = '06' or code = '07').exists() implies reasonStopped.text.exists()"
+
+Invariant: study-reasonStopped-b
+Description: "Cardinality: 0..0, if Design.administrativeInformation.status != ('06' OR '07')"
+Severity: #error
+Expression: "extension.extension.where(url='status').valueCoding.where(code = '06' or code = '07').exists().not() implies reasonStopped.text.exists().not()"
+
+// Can NOT be tested but needs example data with recruitmentStatusRegister
+Invariant: study-recruitmentStatusRegister-a
+Description: "Cardinality: 0..1, if Resource.provenance.dataSource != '06'"
+Severity: #error
+Expression: "Composition.extension.where(url='https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-provenance-data-source').valueCoding.where(code='06').exists().not() implies extension.extension.where(url='recruitmentStatusRegister').exists()"
+
+
+Invariant: study-recruitmentStatusRegister-b
+Description: "Cardinality: 0..0, if Resource.provenance.dataSource == '06'"
+Severity: #error
+Expression: "Composition.extension.where(url='https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-provenance-data-source').valueCoding.where(code='06').exists() implies extension.extension.where(url='recruitmentStatusRegister').exists().not()"

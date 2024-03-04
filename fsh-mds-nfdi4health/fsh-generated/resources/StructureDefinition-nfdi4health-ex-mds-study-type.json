@@ -34,7 +34,7 @@
   "context": [
     {
       "type": "element",
-      "expression": "ResearchStudy"
+      "expression": "ResearchStudy.category"
     }
   ],
   "type": "Extension",
@@ -61,6 +61,7 @@
         "sliceName": "interventional",
         "short": "Interventional [RESOURCE] type",
         "definition": "The strategy for assigning interventions to participants.",
+        "comment": "Cardinality: 1..*, if Design.primaryDesign == 'C98388'; otherwise 0..0",
         "min": 0,
         "max": "*",
         "mapping": [
@@ -100,6 +101,7 @@
         "sliceName": "nonInterventional",
         "short": "Non-interventional [RESOURCE] type",
         "definition": "The primary strategy for participant identification and follow-up.",
+        "comment": "Cardinality: 1..*, if Design.primaryDesign == 'C142615'; otherwise 0..0",
         "min": 0,
         "max": "*",
         "mapping": [

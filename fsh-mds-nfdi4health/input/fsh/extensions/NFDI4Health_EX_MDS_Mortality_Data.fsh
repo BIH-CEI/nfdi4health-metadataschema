@@ -13,7 +13,9 @@ Description: "Extension covering information about the collection of mortality d
 * . 0..1
 * . ^short = "Collects mortality data?"
 * . ^definition = "Indication whether mortality data are collected in the [RESOURCE]."
-* value[x] 1..
+* . ^comment = "Cardinality: 0..1, if (Resource.classification.type == ('Study' OR 'Substudy') AND Design.studyType.nonInterventional == ('Longitudinal' OR 'Cohort' OR 'Case-cohort' OR 'Birth cohort' OR 'Trend' OR 'Panel')) OR Resource.classification.type == ('Registry' OR 'Secondary data source'); otherwise 0..0
+                Cardinality: 0..1, if (Resource.classification.type == ('C63536' OR 'C198230') AND Design.studyType.nonInterventional == ('C15273' OR 'C15208' OR '004' OR 'D015331' OR '005' OR 'C53311')) OR Resource.classification.type == ('C61393' OR '178'); otherwise 0..0"
+* value[x] 1..  
 * value[x] only Coding
 * valueCoding from NFDI4Health_VS_MDS_Mortality_Data_NCI (required)
 * valueCoding ^binding.description = "Value set defining codes to specify if mortality data were collected in a study."
@@ -24,4 +26,5 @@ Mapping: NFDI4Health-Mortality-Data-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Mortality_Data
-* -> "1.17.6 Design.mortalityData"
+* -> "Design.mortalityData"
+

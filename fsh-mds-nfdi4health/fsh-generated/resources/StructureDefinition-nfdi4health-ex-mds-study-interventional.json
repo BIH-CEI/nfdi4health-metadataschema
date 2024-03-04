@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "nfdi4health-ex-mds-study-type-interventional",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-type-interventional",
-  "name": "NFDI4Health_EX_MDS_Study_Type_Interventional",
-  "title": "NFDI4Health EX MDS Study Type Interventional",
+  "id": "nfdi4health-ex-mds-study-interventional",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-interventional",
+  "name": "NFDI4Health_EX_MDS_Study_Interventional",
+  "title": "NFDI4Health EX MDS Study Interventional",
   "status": "draft",
   "publisher": "NFDI4Health",
   "contact": [
@@ -128,7 +128,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-type-interventional"
+        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-interventional"
       },
       {
         "id": "Extension.value[x]",

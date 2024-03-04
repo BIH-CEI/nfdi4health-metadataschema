@@ -30,27 +30,6 @@
       ]
     },
     {
-      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-status",
-      "extension": [
-        {
-          "url": "overallStatus",
-          "valueCoding": {
-            "code": "04",
-            "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-mds-study-status",
-            "display": "Ongoing (III): Recruitment completed, but data collection ongoing"
-          }
-        },
-        {
-          "url": "statusWhenIntervention",
-          "valueCoding": {
-            "code": "014",
-            "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
-            "display": "Intervention ongoing"
-          }
-        }
-      ]
-    },
-    {
       "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-subject",
       "valueCoding": {
         "code": "125676002",
@@ -83,6 +62,27 @@
           }
         }
       ]
+    },
+    {
+      "extension": [
+        {
+          "url": "status",
+          "valueCoding": {
+            "code": "04",
+            "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-mds-study-status",
+            "display": "Ongoing (III): Recruitment completed, but data collection ongoing"
+          }
+        },
+        {
+          "url": "statusWhenIntervention",
+          "valueCoding": {
+            "code": "014",
+            "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+            "display": "Intervention ongoing"
+          }
+        }
+      ],
+      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-admin-info"
     },
     {
       "extension": [
@@ -125,7 +125,7 @@
           }
         }
       ],
-      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-type-interventional"
+      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-interventional"
     },
     {
       "extension": [
@@ -205,6 +205,7 @@
     {
       "extension": [
         {
+          "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-type",
           "extension": [
             {
               "url": "interventional",
@@ -214,8 +215,7 @@
                 "display": "Unknown"
               }
             }
-          ],
-          "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-type"
+          ]
         }
       ],
       "coding": [

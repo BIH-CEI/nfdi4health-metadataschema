@@ -11,9 +11,9 @@ Usage: #example
 
 //Study characteristics
 /// Administrative Information
-* extension[studyEthicsCommitteeApproval].valueCoding = $NCI#C25425 "Approval"
-* extension[studyStatus].extension[overallStatus].valueCoding = $StudyStatus#04 "Ongoing (III): Recruitment completed, but data collection ongoing"
-* extension[studyStatus].extension[statusEnrollingByInvitation].valueCoding = $SCT#373066001 "Yes (qualifier value)"
+* extension[administrativeInformation].extension[ethicsCommiteeApproval].valueCoding = $NCI#C25425 "Approval"
+* extension[administrativeInformation].extension[status].valueCoding = $StudyStatus#04 "Ongoing (III): Recruitment completed, but data collection ongoing"
+* extension[administrativeInformation].extension[statusEnrollingByInvitation].valueCoding = $SCT#373066001 "Yes (qualifier value)"
 * period.start = 2008-09-22 //original format needed to be converted
 
 /// Study Design Details
@@ -29,16 +29,12 @@ Usage: #example
 * extension[groupsOfDiseases].extension[generally].valueCoding  = $SCT#74964007 "Other"
 * extension[sampling].extension[method].valueCoding = $Remaining#034 "Probability Sampling Method"
 * extension[sampling].extension[probabilityMethod].valueCoding = $NCI#C71516 "Stratified Sampling"
-* extension[dataSource].extension[general][0].valueCoding = $UMLS#C2347026 "Biospecimen (Body Substance)"
+//* extension[dataSource].extension[general][0].valueCoding = $UMLS#C2347026 "Biospecimen (Body Substance)"
 * extension[dataSource].extension[general][+].valueCoding = $Remaining#029 "Cognitive measurements"
 * extension[dataSource].extension[general][+].valueCoding = $Remaining#031 "Imaging data"
-* extension[dataSource].extension[general][+].valueCoding = $UMLS#C025102 "Medical Records (Intellectual Product)"
-* extension[dataSource].extension[general][+].valueCoding = $UMLS#C0034875 "Registries (Intellectual Product)"
-* extension[dataSource].extension[general][+].valueCoding = $UMLS#C0021822 "Interview (Activity)"
-* extension[dataSource].extension[general][+].valueCoding = $UMLS#C0034394 "Questionnaires (Intellectual Product)"
 * extension[dataSource].extension[general][+].valueCoding = $Remaining#032 "Physiological/Biochemical measurements"
 * extension[dataSource].extension[general][+].valueCoding = $Remaining#033 "Omics technology"
-* extension[dataSource].extension[general][+].valueCoding = $UMLS#C0205394 "Other (Qualitative Concept)"
+* extension[dataSource].extension[general][+].valueCoding = $NCI#C17649 "Other"
 * extension[dataSource].extension[general][+].valueCoding = $Remaining#028 "Administrative databases"
 * extension[dataSource].extension[biosamples][0].valueCoding = $SCT#87612001 "Blood (substance)"
 * extension[dataSource].extension[biosamples][+].valueCoding = $SCT#24851008 "Deoxyribonucleic acid (substance)"
@@ -55,13 +51,13 @@ Usage: #example
 * extension[dataSource].extension[omics][+].valueCoding = $NCI#C49019 "Metabolomics"
 * extension[dataSource].extension[omics][+].valueCoding = $NCI#C153189 "Transcriptomics"
 * extension[dataSource].extension[omics][+].valueCoding = $NCI#C20085 "Proteomics"
-* extension[dataSource].extension[omics][+].valueCoding = $UMLS#C0205394 "Other (Qualitative Concept)"
-* primaryPurposeType.coding = $UMLS#C0205394 "Other (Qualitative Concept)"
+* primaryPurposeType.coding = $NCI#C17649 "Other"
 * objective.name = "There is no single set of research questions underlying the study."
 * note.text = "The content of different SHIP data collections are described separately."
 * extension[timePerspectives].valueCoding = $NCI#C53312 "Retrospective Study"
 * extension[biospecimen].extension[retention].valueCoding = $NCI#C127777 "Retained Specimens Contain DNA"
 * extension[biospecimen].extension[description].valueString = "Whole blood; Saliva"
+* extension[mortalityData].valueCoding = $NCI#C25717 "Vital Status"
 
 /// Information about data sharing
 * extension[dataSharingPlan].extension[generally].valueCoding = $SCT#373066001 "Yes (qualifier value)"

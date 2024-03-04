@@ -1,10 +1,10 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "nfdi4health-ex-mds-study-status",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-status",
+  "id": "nfdi4health-ex-mds-study-admin-info",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-admin-info",
   "version": "0.9",
-  "name": "NFDI4Health_EX_MDS_Study_Status",
-  "title": "NFDI4Health EX MDS Study Status",
+  "name": "NFDI4Health_EX_MDS_Study_Admin_Info",
+  "title": "NFDI4Health EX MDS Study Administrative Information",
   "status": "draft",
   "publisher": "NFDI4Health",
   "contact": [
@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "description": "Extension informing about the status of a study.",
+  "description": "Extension informing about administrative information of a study.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -46,8 +46,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Status",
-        "definition": "Group of items providing information about different status of a study (overall status, status of an interventional study, recruitment status, enrolling by invitation status).",
+        "short": "Administrative information about the [RESOURCE]",
+        "definition": " Group of items providing administrative information about the [RESOURCE].",
         "min": 1,
         "max": "1"
       },
@@ -57,9 +57,48 @@
         "min": 1
       },
       {
-        "id": "Extension.extension:overallStatus",
+        "id": "Extension.extension:ethicsCommiteeApproval",
         "path": "Extension.extension",
-        "sliceName": "overallStatus",
+        "sliceName": "ethicsCommiteeApproval",
+        "short": "Status of the ethics committee approval",
+        "definition": "Status of the study approval from the (leading) ethics committee",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.administrativeInformation.ethicsCommitteeApproval"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:ethicsCommiteeApproval.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:ethicsCommiteeApproval.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "ethicsCommiteeApproval"
+      },
+      {
+        "id": "Extension.extension:ethicsCommiteeApproval.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-ethics-committee-approval-nci-local",
+          "description": "Value set defining codes to specify the status of the study ethics committee approval."
+        }
+      },
+      {
+        "id": "Extension.extension:status",
+        "path": "Extension.extension",
+        "sliceName": "status",
         "short": "Overall study status",
         "definition": "Overall status of the study.",
         "comment": "Additional information: If at least one study site in a multicenter study has the status 'Ongoing', then the overall status for the study must be 'Ongoing'. | Short input help: Select one value from the list.",
@@ -73,17 +112,17 @@
         ]
       },
       {
-        "id": "Extension.extension:overallStatus.extension",
+        "id": "Extension.extension:status.extension",
         "path": "Extension.extension.extension",
         "max": "0"
       },
       {
-        "id": "Extension.extension:overallStatus.url",
+        "id": "Extension.extension:status.url",
         "path": "Extension.extension.url",
-        "fixedUri": "overallStatus"
+        "fixedUri": "status"
       },
       {
-        "id": "Extension.extension:overallStatus.value[x]",
+        "id": "Extension.extension:status.value[x]",
         "path": "Extension.extension.value[x]",
         "min": 1,
         "type": [
@@ -98,12 +137,12 @@
         }
       },
       {
-        "id": "Extension.extension:overallStatus.value[x].system",
+        "id": "Extension.extension:status.value[x].system",
         "path": "Extension.extension.value[x].system",
         "min": 1
       },
       {
-        "id": "Extension.extension:overallStatus.value[x].code",
+        "id": "Extension.extension:status.value[x].code",
         "path": "Extension.extension.value[x].code",
         "min": 1
       },
@@ -159,6 +198,56 @@
         "min": 1
       },
       {
+        "id": "Extension.extension:statusEnrollingByInvitation",
+        "path": "Extension.extension",
+        "sliceName": "statusEnrollingByInvitation",
+        "short": "Participants enrolled by invitation?",
+        "definition": "Specification whether [RESOURCE] participants are selected from a predetermined population.",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.administrativeInformation.statusEnrollingByInvitation"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:statusEnrollingByInvitation.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:statusEnrollingByInvitation.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "statusEnrollingByInvitation"
+      },
+      {
+        "id": "Extension.extension:statusEnrollingByInvitation.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-yes-no-not-applicable-snomedct",
+          "description": "Value set used to respond to questions that can be answered Yes, No, or Not Applicable."
+        }
+      },
+      {
+        "id": "Extension.extension:statusEnrollingByInvitation.value[x].system",
+        "path": "Extension.extension.value[x].system",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:statusEnrollingByInvitation.value[x].code",
+        "path": "Extension.extension.value[x].code",
+        "min": 1
+      },
+      {
         "id": "Extension.extension:recruitmentStatusRegister",
         "path": "Extension.extension",
         "sliceName": "recruitmentStatusRegister",
@@ -210,59 +299,9 @@
         "min": 1
       },
       {
-        "id": "Extension.extension:statusEnrollingByInvitation",
-        "path": "Extension.extension",
-        "sliceName": "statusEnrollingByInvitation",
-        "short": "Participants enrolled by invitation?",
-        "definition": "Specification whether [RESOURCE] participants are selected from a predetermined population.",
-        "min": 0,
-        "max": "1",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "Design.administrativeInformation.statusEnrollingByInvitation"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:statusEnrollingByInvitation.extension",
-        "path": "Extension.extension.extension",
-        "max": "0"
-      },
-      {
-        "id": "Extension.extension:statusEnrollingByInvitation.url",
-        "path": "Extension.extension.url",
-        "fixedUri": "statusEnrollingByInvitation"
-      },
-      {
-        "id": "Extension.extension:statusEnrollingByInvitation.value[x]",
-        "path": "Extension.extension.value[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "Coding"
-          }
-        ],
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-yes-no-not-applicable-snomedct",
-          "description": "Value set used to respond to questions that can be answered Yes, No, or Not Applicable."
-        }
-      },
-      {
-        "id": "Extension.extension:statusEnrollingByInvitation.value[x].system",
-        "path": "Extension.extension.value[x].system",
-        "min": 1
-      },
-      {
-        "id": "Extension.extension:statusEnrollingByInvitation.value[x].code",
-        "path": "Extension.extension.value[x].code",
-        "min": 1
-      },
-      {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-status"
+        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-admin-info"
       },
       {
         "id": "Extension.value[x]",

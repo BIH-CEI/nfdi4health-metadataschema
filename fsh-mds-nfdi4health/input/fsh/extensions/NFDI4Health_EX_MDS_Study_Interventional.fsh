@@ -1,8 +1,8 @@
-Extension: NFDI4Health_EX_MDS_Study_Type_Interventional
-Id: nfdi4health-ex-mds-study-type-interventional
-Title: "NFDI4Health EX MDS Study Type Interventional"
+Extension: NFDI4Health_EX_MDS_Study_Interventional
+Id: nfdi4health-ex-mds-study-interventional
+Title: "NFDI4Health EX MDS Study Interventional"
 Description: "Group of items providing information about interventional studys"
-* ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-type-interventional"
+* ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-interventional"
 * ^status = #draft
 * ^publisher = "NFDI4Health"
 * ^contact.telecom.system = #url
@@ -26,9 +26,9 @@ Description: "Group of items providing information about interventional studys"
 * extension[allocation] ^comment = "Short input help: Select one value from the list."
 * extension[allocation].valueCoding ^binding.description = "Value set defining codes to specify the subject allocation in a (sub-)study in a ResearchStudy resource."
 
-Mapping: NFDI4Health-Study-Type-International-to-FHIR
+Mapping: NFDI4Health-Study-International-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
-Source: NFDI4Health_EX_MDS_Study_Type_Interventional
+Source: NFDI4Health_EX_MDS_Study_Interventional
 * -> "Design.interventional"
 * extension[allocation]  -> "Design.interventional.allocation"

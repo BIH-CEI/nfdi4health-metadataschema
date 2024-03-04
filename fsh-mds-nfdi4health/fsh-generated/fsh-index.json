@@ -357,7 +357,7 @@
     "fshType": "Instance",
     "fshFile": "examples/InstanceOfStudy_nonInterventional_SHIP.fsh",
     "startLine": 1,
-    "endLine": 87
+    "endLine": 83
   },
   {
     "outputFile": "ResearchStudy-InstanceOfStudySPOVID.json",
@@ -517,7 +517,7 @@
     "fshType": "Extension",
     "fshFile": "extensions/NFDI4Health_EX_MDS_Mortality_Data.fsh",
     "startLine": 1,
-    "endLine": 21
+    "endLine": 23
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-name-type.json",
@@ -656,6 +656,14 @@
     "endLine": 26
   },
   {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-study-admin-info.json",
+    "fshName": "NFDI4Health_EX_MDS_Study_Admin_Info",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Admin_Info.fsh",
+    "startLine": 1,
+    "endLine": 62
+  },
+  {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-study-comparison-group-backport-r5.json",
     "fshName": "NFDI4Health_EX_MDS_Study_Comparison_Group_Backport_R5",
     "fshType": "Extension",
@@ -672,12 +680,12 @@
     "endLine": 50
   },
   {
-    "outputFile": "StructureDefinition-nfdi4health-ex-mds-study-ethics-committee-approval.json",
-    "fshName": "NFDI4Health_EX_MDS_Study_Ethics_Committee_Approval",
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-study-interventional.json",
+    "fshName": "NFDI4Health_EX_MDS_Study_Interventional",
     "fshType": "Extension",
-    "fshFile": "extensions/NFDI4Health_EX_MDS_Study_Ethics_Committee_Approval.fsh",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Study_Interventional.fsh",
     "startLine": 1,
-    "endLine": 22
+    "endLine": 27
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-study-masking.json",
@@ -712,14 +720,6 @@
     "endLine": 36
   },
   {
-    "outputFile": "StructureDefinition-nfdi4health-ex-mds-study-status.json",
-    "fshName": "NFDI4Health_EX_MDS_Study_Status",
-    "fshType": "Extension",
-    "fshFile": "extensions/NFDI4Health_EX_MDS_Study_Status.fsh",
-    "startLine": 1,
-    "endLine": 58
-  },
-  {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-study-target-followup-duration.json",
     "fshName": "NFDI4Health_EX_MDS_Study_Target_Followup_Duration",
     "fshType": "Extension",
@@ -736,20 +736,12 @@
     "endLine": 24
   },
   {
-    "outputFile": "StructureDefinition-nfdi4health-ex-mds-study-type-interventional.json",
-    "fshName": "NFDI4Health_EX_MDS_Study_Type_Interventional",
-    "fshType": "Extension",
-    "fshFile": "extensions/NFDI4Health_EX_MDS_Study_Type_Interventional.fsh",
-    "startLine": 1,
-    "endLine": 27
-  },
-  {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-study-type.json",
     "fshName": "NFDI4Health_EX_MDS_Study_Type",
     "fshType": "Extension",
     "fshFile": "extensions/NFDI4Health_EX_Study_StudyType.fsh",
     "startLine": 1,
-    "endLine": 31
+    "endLine": 30
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-subject.json",
@@ -957,7 +949,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/NFDI4Health_PR_MDS_Study.fsh",
     "startLine": 1,
-    "endLine": 151
+    "endLine": 158
   },
   {
     "outputFile": "ValueSet-nfdi4health-vs-mds-cd-common-chronic-disease-name-sct-local.json",

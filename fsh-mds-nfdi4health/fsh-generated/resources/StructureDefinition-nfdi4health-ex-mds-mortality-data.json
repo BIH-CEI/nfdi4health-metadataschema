@@ -48,11 +48,12 @@
         "path": "Extension",
         "short": "Collects mortality data?",
         "definition": "Indication whether mortality data are collected in the [RESOURCE].",
+        "comment": "Cardinality: 0..1, if (Resource.classification.type == ('Study' OR 'Substudy') AND Design.studyType.nonInterventional == ('Longitudinal' OR 'Cohort' OR 'Case-cohort' OR 'Birth cohort' OR 'Trend' OR 'Panel')) OR Resource.classification.type == ('Registry' OR 'Secondary data source'); otherwise 0..0\n                Cardinality: 0..1, if (Resource.classification.type == ('C63536' OR 'C198230') AND Design.studyType.nonInterventional == ('C15273' OR 'C15208' OR '004' OR 'D015331' OR '005' OR 'C53311')) OR Resource.classification.type == ('C61393' OR '178'); otherwise 0..0",
         "max": "1",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.6 Design.mortalityData"
+            "map": "Design.mortalityData"
           }
         ]
       },
