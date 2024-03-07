@@ -17,6 +17,11 @@ Description: "Group of items applicable only to studies, substudies, registries,
 * obeys study-mortalityData-a and study-mortalityData-b
 * obeys study-statusWhenIntervention-a and study-statusWhenIntervention-b and study-statusWhenIntervention-c and study-statusWhenIntervention-d
 * obeys study-recruitmentStatusRegister-a and study-recruitmentStatusRegister-b
+* obeys probabilityMethod-a and probabilityMethod-b
+* obeys nonProbabilityMethod-a and nonProbabilityMethod-b
+* obeys biosamples-a and biosamples-b
+* obeys imaging-a and imaging-b
+* obeys omics-a and omics-b
 
 // Extensions
 * extension contains
@@ -151,7 +156,20 @@ Description: "Group of items applicable only to studies, substudies, registries,
 * note.text ^short = "Additional information about the [RESOURCE]"
 * note.text ^definition = "Any additional information about specific aspects of the [RESOURCE] that could not be captured by other fields.."
 * note.text ^comment = "Short input help: You can provide here specific aspects of the [RESOURCE] that could not be captured by other fields."
-* arm ..0
+* arm 0..*
+* arm ^short = "Arms of the [RESOURCE]"
+* arm ^definition = "Description: Group of items providing information about the arms of the [RESOURCE]."
+* arm ^comment = "0..*, if Resource.classification.type == ('Study' OR 'Substudy') AND Design.primaryDesign == 'Interventional'; otherwise 0..0"
+* arm.name 1..1
+* arm.name ^short = "Name of the arm"
+* arm.name ^definition = "Short name used to identify the arm."
+* arm.type 1..1
+* arm.type ^short = "Role of the arm"
+* arm.type ^definition = "Role of the given arm in the [RESOURCE]."
+* arm.type from NFDI4Health_VS_MDS_Study_Arm_Group_Type_NCI (required)
+* arm.description 0..1
+* arm.description ^short = "Additional information about the arm"
+* arm.description ^definition = "Additional descriptive information about the given arm."
 * objective ..*
 * objective.name 1..
 * objective.name ^short = "Research questions/hypotheses"
@@ -191,6 +209,9 @@ Source: NFDI4Health_PR_MDS_Study
 * note.text -> "1.17.24 Design.comment"
 * objective.name -> "1.17.18 Design.hypotheses"
 * enrollment -> "Design.population.obtainedSampleSize"
+* arm.name -> "Design.arms"
+* arm.type -> "Design.arms.type"
+* arm.description -> "Design.arms.type"
 
 // All conditions stating Resource.classification.type == ('Study' OR 'Substudy were evaluated as given within the ResearchStudy Profile
 Invariant: study-interventional-a
@@ -242,6 +263,57 @@ Invariant: study-statusWhenIntervention-d
 Description: "Cardinality: 0..0, if Design.administrativeInformation.status != ('01' OR '02' OR '03' OR '04' OR '05')"
 Severity: #error
 Expression: "extension.extension.where(url='status').valueCoding.where(code = '01' or code = '02' or code =  '03' or code = '04' or code = '05').exists().not() implies extension.extension.where(url='statusWhenIntervention').exists().not()"
+
+
+Invariant: probabilityMethod-a
+Description: "0..1, if Design.sampling.method == '034'"
+Severity: #error
+Expression: "extension.extension.where(url='method').valueCoding.where(code = '034').exists() implies extension.extension.where(url='probabilityMethod').exists()"
+
+Invariant: probabilityMethod-b
+Description: "0..0, if Design.sampling.method != '034'"
+Severity: #error
+Expression: "extension.extension.where(url='method').valueCoding.where(code = '034').exists().not() implies extension.extension.where(url='probabilityMethod').exists().not()"
+
+Invariant: nonProbabilityMethod-a
+Description: "0..1, if Design.sampling.method == 'C127781'"
+Severity: #error
+Expression: "extension.extension.where(url='method').valueCoding.where(code = 'C127781').exists() implies extension.extension.where(url='nonProbabilityMethod').exists()"
+
+Invariant: nonProbabilityMethod-b
+Description: "0..0, if Design.sampling.method != 'C127781'"
+Severity: #error
+Expression: "extension.extension.where(url='method').valueCoding.where(code = 'C127781').exists().not() implies extension.extension.where(url='nonProbabilityMethod').exists().not()"
+
+Invariant: biosamples-a
+Description: "0..*, if Design.dataSource.general == 'C70699'"
+Severity: #error
+Expression: "extension.extension.where(url='general').valueCoding.where(code = 'C70699').exists() implies extension.extension.where(url='biosamples').exists()"
+
+Invariant: biosamples-b
+Description: "0..0, if Design.dataSource.general != 'C70699'"
+Severity: #error
+Expression: "extension.extension.where(url='general').valueCoding.where(code = 'C70699').exists().not() implies extension.extension.where(url='biosamples').exists().not()"
+
+Invariant: imaging-a
+Description: "0..*, if Design.dataSource.general == '031'"
+Severity: #error
+Expression: "extension.extension.where(url='general').valueCoding.where(code = '031').exists() implies extension.extension.where(url='imaging').exists()"
+
+Invariant: imaging-b
+Description: "0..0, if Design.dataSource.general != '031'"
+Severity: #error
+Expression: "extension.extension.where(url='general').valueCoding.where(code = '031').exists().not() implies extension.extension.where(url='imaging').exists().not()"
+
+Invariant: omics-a
+Description: "0..*, if Design.dataSource.general == '033'"
+Severity: #error
+Expression: "extension.extension.where(url='general').valueCoding.where(code = '033').exists() implies extension.extension.where(url='omics').exists()"
+
+Invariant: omics-b
+Description: "0..0, if Design.dataSource.general != '033'"
+Severity: #error
+Expression: "extension.extension.where(url='general').valueCoding.where(code = '033').exists().not() implies extension.extension.where(url='omics').exists().not()"
 
 // Needs to be tested
 Invariant: study-stageStopped-a

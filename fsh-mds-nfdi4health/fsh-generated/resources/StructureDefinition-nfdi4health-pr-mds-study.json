@@ -144,6 +144,76 @@
             "human": "Cardinality: 0..0, if Resource.provenance.dataSource == '06'",
             "expression": "Composition.extension.where(url='https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-provenance-data-source').valueCoding.where(code='06').exists() implies extension.extension.where(url='recruitmentStatusRegister').exists().not()",
             "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "probabilityMethod-a",
+            "severity": "error",
+            "human": "0..1, if Design.sampling.method == '034'",
+            "expression": "extension.extension.where(url='method').valueCoding.where(code = '034').exists() implies extension.extension.where(url='probabilityMethod').exists()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "probabilityMethod-b",
+            "severity": "error",
+            "human": "0..0, if Design.sampling.method != '034'",
+            "expression": "extension.extension.where(url='method').valueCoding.where(code = '034').exists().not() implies extension.extension.where(url='probabilityMethod').exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "nonProbabilityMethod-a",
+            "severity": "error",
+            "human": "0..1, if Design.sampling.method == 'C127781'",
+            "expression": "extension.extension.where(url='method').valueCoding.where(code = 'C127781').exists() implies extension.extension.where(url='nonProbabilityMethod').exists()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "nonProbabilityMethod-b",
+            "severity": "error",
+            "human": "0..0, if Design.sampling.method != 'C127781'",
+            "expression": "extension.extension.where(url='method').valueCoding.where(code = 'C127781').exists().not() implies extension.extension.where(url='nonProbabilityMethod').exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "biosamples-a",
+            "severity": "error",
+            "human": "0..*, if Design.dataSource.general == 'C70699'",
+            "expression": "extension.extension.where(url='general').valueCoding.where(code = 'C70699').exists() implies extension.extension.where(url='biosamples').exists()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "biosamples-b",
+            "severity": "error",
+            "human": "0..0, if Design.dataSource.general != 'C70699'",
+            "expression": "extension.extension.where(url='general').valueCoding.where(code = 'C70699').exists().not() implies extension.extension.where(url='biosamples').exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "imaging-a",
+            "severity": "error",
+            "human": "0..*, if Design.dataSource.general == '031'",
+            "expression": "extension.extension.where(url='general').valueCoding.where(code = '031').exists() implies extension.extension.where(url='imaging').exists()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "imaging-b",
+            "severity": "error",
+            "human": "0..0, if Design.dataSource.general != '031'",
+            "expression": "extension.extension.where(url='general').valueCoding.where(code = '031').exists().not() implies extension.extension.where(url='imaging').exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "omics-a",
+            "severity": "error",
+            "human": "0..*, if Design.dataSource.general == '033'",
+            "expression": "extension.extension.where(url='general').valueCoding.where(code = '033').exists() implies extension.extension.where(url='omics').exists()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "omics-b",
+            "severity": "error",
+            "human": "0..0, if Design.dataSource.general != '033'",
+            "expression": "extension.extension.where(url='general').valueCoding.where(code = '033').exists().not() implies extension.extension.where(url='omics').exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
           }
         ],
         "mapping": [
@@ -959,7 +1029,50 @@
       {
         "id": "ResearchStudy.arm",
         "path": "ResearchStudy.arm",
-        "max": "0"
+        "short": "Arms of the [RESOURCE]",
+        "definition": "Description: Group of items providing information about the arms of the [RESOURCE].",
+        "comment": "0..*, if Resource.classification.type == ('Study' OR 'Substudy') AND Design.primaryDesign == 'Interventional'; otherwise 0..0"
+      },
+      {
+        "id": "ResearchStudy.arm.name",
+        "path": "ResearchStudy.arm.name",
+        "short": "Name of the arm",
+        "definition": "Short name used to identify the arm.",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.arms"
+          }
+        ]
+      },
+      {
+        "id": "ResearchStudy.arm.type",
+        "path": "ResearchStudy.arm.type",
+        "short": "Role of the arm",
+        "definition": "Role of the given arm in the [RESOURCE].",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-arm-group-type-nci"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.arms.type"
+          }
+        ]
+      },
+      {
+        "id": "ResearchStudy.arm.description",
+        "path": "ResearchStudy.arm.description",
+        "short": "Additional information about the arm",
+        "definition": "Additional descriptive information about the given arm.",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.arms.type"
+          }
+        ]
       },
       {
         "id": "ResearchStudy.objective.name",

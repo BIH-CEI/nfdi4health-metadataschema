@@ -105,6 +105,7 @@
         "sliceName": "probabilityMethod",
         "short": "Specific type of probability sampling",
         "definition": " Specific type of the probability sampling method applied for the selection of [RESOURCE] participants.",
+        "comment": " 0..1, if Design.sampling.method == 'Probability'; otherwise 0..0",
         "min": 0,
         "max": "1",
         "mapping": [
@@ -144,6 +145,7 @@
         "sliceName": "nonProbabilityMethod",
         "short": "Specific type of non-probability sampling",
         "definition": "Specific type of the non-probability sampling method applied for the selection of [RESOURCE] participants.",
+        "comment": " 0..1, if Design.sampling.method == 'Non-probability'; otherwise 0..0",
         "min": 0,
         "max": "1",
         "mapping": [

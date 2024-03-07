@@ -43,36 +43,22 @@
   "differential": {
     "element": [
       {
-        "id": "Location.extension",
-        "path": "Location.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "rules": "open"
-        }
-      },
-      {
-        "id": "Location.extension:centers",
-        "path": "Location.extension",
-        "sliceName": "centers",
-        "min": 0,
-        "max": "1",
-        "type": [
+        "id": "Location",
+        "path": "Location",
+        "constraint": [
           {
-            "code": "Extension",
-            "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-centers"
-            ]
-          }
-        ],
-        "mapping": [
+            "key": "centers-a",
+            "severity": "error",
+            "human": "Cardinality: 0..1, if Design.centers == '255206009'",
+            "expression": "type.where(code = '255206009').exists() implies description.exists()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-centers"
+          },
           {
-            "identity": "NFDI4Health",
-            "map": "Design.centers"
+            "key": "centers-b",
+            "severity": "error",
+            "human": "Cardinality: 0..0, if Design.centers != '255206009'",
+            "expression": "type.where(code = '084').exists() implies description.exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-centers"
           }
         ]
       },
@@ -85,6 +71,24 @@
           {
             "identity": "NFDI4Health",
             "map": "Design.centersNumber"
+          }
+        ]
+      },
+      {
+        "id": "Location.type",
+        "path": "Location.type",
+        "short": "Mono- or multicentric?",
+        "definition": "Specification whether the [RESOURCE] is conducted at only one or at more than one [RESOURCE] center.",
+        "comment": "0..1, if Resource.classification.type == ('C63536' OR 'C198230'); otherwise 0..0",
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-centers-snomedct-local"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.centers"
           }
         ]
       }

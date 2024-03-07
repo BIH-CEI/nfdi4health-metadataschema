@@ -1,6 +1,6 @@
 {
   "resourceType": "Location",
-  "id": "InstanceOfLocationMono",
+  "id": "InstanceOfLocationMulti",
   "meta": {
     "profile": [
       "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-centers"
@@ -10,11 +10,12 @@
     {
       "coding": [
         {
-          "code": "084",
-          "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
-          "display": "Monocentric"
+          "code": "255206009",
+          "system": "http://snomed.info/sct",
+          "display": "Multicentric (qualifier value)"
         }
       ]
     }
-  ]
+  ],
+  "description": "2"
 }

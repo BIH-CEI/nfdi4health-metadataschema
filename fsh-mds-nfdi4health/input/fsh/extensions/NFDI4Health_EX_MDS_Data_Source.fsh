@@ -13,9 +13,7 @@ Description: "Extension informing about data sources from which data are generat
 * . 0..1
 * . ^short = "Data sources of the [RESOURCE]"
 * . ^definition = "Group of items providing information about data sources from which the data of the [RESOURCE] are generated or extracted."
-* extension ^slicing.discriminator.type = #value
-* extension ^slicing.discriminator.path = "url"
-* extension ^slicing.rules = #open
+
 * extension contains
     general 0..* and
     biosamples 0..* and
@@ -33,7 +31,7 @@ Description: "Extension informing about data sources from which data are generat
 * extension[general].valueCoding ^binding.description = "Value set defining codes to specify the general data sources."
 * extension[biosamples] ^short = "Biosamples collected"
 * extension[biosamples] ^definition = "Specification of biosamples collected in the [RESOURCE]."
-* extension[biosamples] ^comment = "Short input help: Select all that apply."
+* extension[biosamples] ^comment = "Short input help: Select all that apply. Cardinality 0..*, if Design.dataSource.general == 'Biological samples'; otherwise 0..0"
 * extension[biosamples].value[x] 1..1   
 * extension[biosamples].value[x] only Coding
 * extension[biosamples].valueCoding.code 1..1
@@ -42,7 +40,7 @@ Description: "Extension informing about data sources from which data are generat
 * extension[biosamples].valueCoding ^binding.description = "Value set defining codes to specify a biosample data source."
 * extension[imaging] ^short = "Imaging data collected"
 * extension[imaging] ^definition = "Specification of imaging data collected in the [RESOURCE]."
-* extension[imaging] ^comment = "Short input help: Select all that apply."
+* extension[imaging] ^comment = "Short input help: Select all that apply. Cardinality 0..*, if Design.dataSource.general == 'Imaging data'; otherwise 0..0"
 * extension[imaging].value[x] 1..1
 * extension[imaging].value[x] only Coding
 * extension[imaging].valueCoding.code 1..1
@@ -67,9 +65,14 @@ Mapping: NFDI4Health-Data-Source-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Data_Source
-* -> "1.17.14 Design.dataSource"
-* extension[general] -> "1.17.14.1 Design.dataSource.general"
-* extension[biosamples] -> "1.17.14.2 Design.dataSource.biosamples"
-* extension[imaging] -> "1.17.14.3 Design.dataSource.imaging"
-* extension[omics] -> "1.17.14.4 Design.dataSource.omics"
-* extension[description] -> "1.17.14.5 Design.dataSource.description"
+* -> "Design.dataSource"
+* extension[general] -> "Design.dataSource.general"
+* extension[biosamples] -> "Design.dataSource.biosamples"
+* extension[imaging] -> "Design.dataSource.imaging"
+* extension[omics] -> "Design.dataSource.omics"
+* extension[description] -> "Design.dataSource.description"
+
+
+
+
+

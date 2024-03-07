@@ -173,6 +173,14 @@
       },
       {
         "reference": {
+          "reference": "Location/InstanceOfLocationMulti"
+        },
+        "name": "Instance of Multicentric Study",
+        "description": "Example for multicentric study",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-centers"
+      },
+      {
+        "reference": {
           "reference": "Practitioner/InstanceOfPractitionerNinaKirchhof"
         },
         "name": "Instance Of NFDI4Health_PR_MDS_Practitioner for Nina Kirchhof",
@@ -401,14 +409,6 @@
         },
         "name": "NFDI4Health EX MDS Biospecimen",
         "description": "Extension indicating whether samples of biomaterial from participants are retained in a biorepository, and providing additional information on these biosamples.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/nfdi4health-ex-mds-centers"
-        },
-        "name": "NFDI4Health EX MDS Centers",
-        "description": "Extension informing about the number of centers.",
         "exampleBoolean": false
       },
       {

@@ -128,6 +128,14 @@
     "endLine": 7
   },
   {
+    "outputFile": "Location-InstanceOfLocationMulti.json",
+    "fshName": "InstanceOfLocationMulti",
+    "fshType": "Instance",
+    "fshFile": "examples/InstanceOfLocationMulti.fsh",
+    "startLine": 1,
+    "endLine": 8
+  },
+  {
     "outputFile": "Organization-InstanceOfAffiliationUMG.json",
     "fshName": "InstanceOfAffiliationUMG",
     "fshType": "Instance",
@@ -357,7 +365,7 @@
     "fshType": "Instance",
     "fshFile": "examples/InstanceOfStudy_nonInterventional_SHIP.fsh",
     "startLine": 1,
-    "endLine": 83
+    "endLine": 77
   },
   {
     "outputFile": "ResearchStudy-InstanceOfStudySPOVID.json",
@@ -382,14 +390,6 @@
     "fshFile": "extensions/NFDI4Health_EX_MDS_Study_Biospecimen.fsh",
     "startLine": 3,
     "endLine": 39
-  },
-  {
-    "outputFile": "StructureDefinition-nfdi4health-ex-mds-centers.json",
-    "fshName": "NFDI4Health_EX_MDS_Centers",
-    "fshType": "Extension",
-    "fshFile": "extensions/NFDI4Health_EX_MDS_Centers.fsh",
-    "startLine": 3,
-    "endLine": 22
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-chronic-diseases.json",
@@ -421,7 +421,7 @@
     "fshType": "Extension",
     "fshFile": "extensions/NFDI4Health_EX_MDS_Data_Source.fsh",
     "startLine": 1,
-    "endLine": 64
+    "endLine": 62
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-descriptions.json",
@@ -717,7 +717,7 @@
     "fshType": "Extension",
     "fshFile": "extensions/NFDI4Health_EX_MDS_Study_Sampling.fsh",
     "startLine": 1,
-    "endLine": 36
+    "endLine": 37
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-study-target-followup-duration.json",
@@ -748,8 +748,8 @@
     "fshName": "NFDI4Health_EX_MDS_Subject",
     "fshType": "Extension",
     "fshFile": "extensions/NFDI4Health_EX_MDS_Subject.fsh",
-    "startLine": 3,
-    "endLine": 24
+    "startLine": 1,
+    "endLine": 22
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-time-perspectives.json",
@@ -837,7 +837,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/NFDI4Health_PR_MDS_Centers.fsh",
     "startLine": 1,
-    "endLine": 20
+    "endLine": 22
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-pr-mds-composition.json",
@@ -949,7 +949,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/NFDI4Health_PR_MDS_Study.fsh",
     "startLine": 1,
-    "endLine": 158
+    "endLine": 176
   },
   {
     "outputFile": "ValueSet-nfdi4health-vs-mds-cd-common-chronic-disease-name-sct-local.json",

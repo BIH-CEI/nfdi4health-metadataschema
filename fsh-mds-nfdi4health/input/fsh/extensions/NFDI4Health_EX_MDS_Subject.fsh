@@ -1,5 +1,3 @@
-Alias: $nfdi4health-vs-mds-study-subject-snomedct = https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-subject-snomedct
-
 Extension: NFDI4Health_EX_MDS_Subject
 Id: nfdi4health-ex-mds-subject
 Title: "NFDI4Health EX MDS Subject"
@@ -20,11 +18,11 @@ Description: "Extension informing about the subject of a resource."
 * value[x] only Coding
 * valueCoding.code 1..1
 * valueCoding.system 1..1
-* valueCoding from $nfdi4health-vs-mds-study-subject-snomedct (required)
+* valueCoding from NFDI4Health_VS_MDS_Study_Subject_SNOMEDCT (required)
 * valueCoding ^binding.description = "Value set defining codes for sujects in a resource."
 
 Mapping: NFDI4Health-Subject-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Subject
-* -> "1.17.12 Design.subject"
+* -> "Design.subject"
