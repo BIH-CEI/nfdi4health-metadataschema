@@ -147,58 +147,6 @@
         }
       ],
       "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-sampling"
-    },
-    {
-      "extension": [
-        {
-          "url": "name",
-          "valueString": "Physical training group"
-        },
-        {
-          "url": "type",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "code": "C174267",
-                "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
-                "display": "Active Comparator Arm"
-              }
-            ]
-          }
-        },
-        {
-          "url": "description",
-          "valueString": "Patients receive an individually tailored training program to improve physical endurance safely and effectively."
-        },
-        {
-          "url": "intendedExposure",
-          "valueReference": {
-            "reference": "EvidenceVariable/InstanceOfEvidenceVariableSPOVID"
-          }
-        }
-      ],
-      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-comparison-group-backport-r5"
-    },
-    {
-      "extension": [
-        {
-          "url": "name",
-          "valueString": "Control group"
-        },
-        {
-          "url": "type",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "code": "C174270",
-                "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
-                "display": "No Intervention Arm"
-              }
-            ]
-          }
-        }
-      ],
-      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-comparison-group-backport-r5"
     }
   ],
   "category": [
@@ -334,6 +282,33 @@
     },
     {
       "reference": "Group/InstanceOfGroupActualSPOVID"
+    }
+  ],
+  "arm": [
+    {
+      "name": "Physical training group",
+      "type": {
+        "coding": [
+          {
+            "code": "C174267",
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "display": "Active Comparator Arm"
+          }
+        ]
+      },
+      "description": "Patients receive an individually tailored training program to improve physical endurance safely and effectively."
+    },
+    {
+      "name": "Control group",
+      "type": {
+        "coding": [
+          {
+            "code": "C174270",
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "display": "No Intervention Arm"
+          }
+        ]
+      }
     }
   ],
   "relatedArtifact": [

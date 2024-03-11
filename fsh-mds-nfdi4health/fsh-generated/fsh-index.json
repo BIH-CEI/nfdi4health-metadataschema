@@ -29,7 +29,7 @@
     "fshType": "CodeSystem",
     "fshFile": "codesystems/cs-remaining-concepts.fsh",
     "startLine": 1,
-    "endLine": 204
+    "endLine": 208
   },
   {
     "outputFile": "CodeSystem-nfdi4health-cs-mds-study-status.json",
@@ -373,15 +373,15 @@
     "fshType": "Instance",
     "fshFile": "examples/InstanceOfStudy_interventional_SPOVID.fsh",
     "startLine": 1,
-    "endLine": 82
+    "endLine": 90
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-assessments.json",
     "fshName": "NFDI4Health_EX_MDS_Assessments",
     "fshType": "Extension",
     "fshFile": "extensions/NFDI4Health_EX_MDS_Assessments.fsh",
-    "startLine": 3,
-    "endLine": 24
+    "startLine": 1,
+    "endLine": 22
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-biospecimen.json",
@@ -413,7 +413,7 @@
     "fshType": "Extension",
     "fshFile": "extensions/NFDI4Health_EX_MDS_Data_Sharing_Plan.fsh",
     "startLine": 5,
-    "endLine": 79
+    "endLine": 77
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-data-source.json",
@@ -949,7 +949,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/NFDI4Health_PR_MDS_Study.fsh",
     "startLine": 1,
-    "endLine": 176
+    "endLine": 177
   },
   {
     "outputFile": "ValueSet-nfdi4health-vs-mds-cd-common-chronic-disease-name-sct-local.json",

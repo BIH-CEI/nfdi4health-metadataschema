@@ -53,7 +53,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.26 Design.dataSharingPlan"
+            "map": "Design.dataSharingPlan"
           }
         ]
       },
@@ -74,7 +74,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.26.1 Design.dataSharingPlan.generally"
+            "map": "Design.dataSharingPlan.generally"
           }
         ]
       },
@@ -125,7 +125,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.26.2 Design.dataSharingPlan.supportingInformation"
+            "map": "Design.dataSharingPlan.supportingInformation"
           }
         ]
       },
@@ -175,7 +175,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.26.3 Design.dataSharingPlan.timeFrame"
+            "map": "Design.dataSharingPlan.timeFrame"
           }
         ]
       },
@@ -210,7 +210,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.26.4 Design.dataSharingPlan.accessCriteria"
+            "map": "Design.dataSharingPlan.accessCriteria"
           }
         ]
       },
@@ -245,7 +245,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.26.5 Design.dataSharingPlan.description"
+            "map": "Design.dataSharingPlan.description"
           }
         ]
       },
@@ -279,7 +279,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.26.6 Design.dataSharingPlan.datashield"
+            "map": "Design.dataSharingPlan.datashield"
           }
         ]
       },
@@ -329,7 +329,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.26.7 Design.dataSharingPlan.requestData"
+            "map": "Design.dataSharingPlan.requestData"
           }
         ]
       },
@@ -363,7 +363,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.26.8 Design.dataSharingPlan.url"
+            "map": "Design.dataSharingPlan.url"
           }
         ]
       },
@@ -398,7 +398,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.26.9 Design.dataSharingPlan.recordLinkage"
+            "map": "Design.dataSharingPlan.recordLinkage"
           }
         ]
       },

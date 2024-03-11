@@ -52,7 +52,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.25 Design.assessments"
+            "map": "Design.assessments"
           }
         ]
       },

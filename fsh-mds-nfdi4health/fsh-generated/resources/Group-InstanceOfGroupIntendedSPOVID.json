@@ -12,9 +12,9 @@
       "code": {
         "coding": [
           {
-            "code": "C17357",
-            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
-            "display": "Gender (Organism Attribute)"
+            "code": "263495000",
+            "system": "http://snomed.info/sct",
+            "display": "Gender (observable entity)"
           }
         ]
       },
@@ -33,9 +33,9 @@
       "code": {
         "coding": [
           {
-            "code": "C17357",
-            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
-            "display": "Gender (Organism Attribute)"
+            "code": "263495000",
+            "system": "http://snomed.info/sct",
+            "display": "Gender (observable entity)"
           }
         ]
       },
@@ -54,9 +54,9 @@
       "code": {
         "coding": [
           {
-            "code": "C17357",
-            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
-            "display": "Gender (Organism Attribute)"
+            "code": "263495000",
+            "system": "http://snomed.info/sct",
+            "display": "Gender (observable entity)"
           }
         ]
       },

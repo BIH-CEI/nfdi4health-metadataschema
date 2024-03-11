@@ -214,6 +214,20 @@
             "human": "0..0, if Design.dataSource.general != '033'",
             "expression": "extension.extension.where(url='general').valueCoding.where(code = '033').exists().not() implies extension.extension.where(url='omics').exists().not()",
             "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "arms-a",
+            "severity": "error",
+            "human": "Cardinality: 0..*, if Design.primaryDesign == 'C98388''",
+            "expression": "category.coding.where(code = 'C98388').exists() implies arm.exists()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "arms-b",
+            "severity": "error",
+            "human": "Cardinality: 0..0, if Design.primaryDesign != 'C98388'",
+            "expression": "category.coding.where(code = 'C98388').exists().not() implies arm.exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
           }
         ],
         "mapping": [
@@ -1022,7 +1036,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.24 Design.comment"
+            "map": "Design.comment"
           }
         ]
       },
@@ -1083,7 +1097,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.18 Design.hypotheses"
+            "map": "sDesign.hypotheses"
           }
         ]
       }

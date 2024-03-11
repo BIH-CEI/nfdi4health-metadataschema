@@ -71,12 +71,20 @@ Usage: #example
 
 
 /// Arms or groups/corhorts of the study /// Interventions/exposures of the study
-* extension[comparisonGroup][0].extension[name].valueString = "Physical training group"
-* extension[comparisonGroup][=].extension[type].valueCodeableConcept = $NCI#C174267 "Active Comparator Arm"
-* extension[comparisonGroup][=].extension[description].valueString = "Patients receive an individually tailored training program to improve physical endurance safely and effectively."
-* extension[comparisonGroup][=].extension[intendedExposure].valueReference = Reference(InstanceOfEvidenceVariableSPOVID)
-* extension[comparisonGroup][+].extension[name].valueString = "Control group"
-* extension[comparisonGroup][=].extension[type].valueCodeableConcept = $NCI#C174270 "No Intervention Arm"
+* arm[0].name = "Physical training group"
+* arm[=].type = $NCI#C174267 "Active Comparator Arm"
+* arm[=].description = "Patients receive an individually tailored training program to improve physical endurance safely and effectively."
+* arm[+].name = "Control group"
+* arm[=].type = $NCI#C174270 "No Intervention Arm"
+
+//* extension[comparisonGroup][0].extension[name].valueString = "Physical training group"
+//* extension[comparisonGroup][=].extension[type].valueCodeableConcept = $NCI#C174267 "Active Comparator Arm"
+//* extension[comparisonGroup][=].extension[description].valueString = "Patients receive an individually tailored training program to improve physical endurance safely and effectively."
+//* extension[comparisonGroup][=].extension[intendedExposure].valueReference = Reference(InstanceOfEvidenceVariableSPOVID)
+//* extension[comparisonGroup][+].extension[name].valueString = "Control group"
+//* extension[comparisonGroup][=].extension[type].valueCodeableConcept = $NCI#C174270 "No Intervention Arm"
+
+
 
 // Related resources
 * relatedArtifact = InstanceOfRelatedArtifact

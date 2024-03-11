@@ -783,6 +783,14 @@
     {
       "code": "188",
       "display": "Reliability reference"
+    },
+    {
+      "code": "189",
+      "display": "Planned Minimum Age of Subjects"
+    },
+    {
+      "code": "190",
+      "display": "Planned Maximum Age of Subjects"
     }
   ],
   "version": "0.9",
@@ -798,5 +806,5 @@
       ]
     }
   ],
-  "count": 191
+  "count": 193
 }

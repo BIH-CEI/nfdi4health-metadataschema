@@ -12,9 +12,9 @@
       "code": {
         "coding": [
           {
-            "code": "C49693",
-            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
-            "display": "Planned Minimum Age of Subjects (Group Attribute)"
+            "code": "189",
+            "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+            "display": "Planned Minimum Age of Subjects"
           }
         ]
       },
@@ -30,9 +30,9 @@
       "code": {
         "coding": [
           {
-            "code": "C49694",
-            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
-            "display": "Planned Maximum Age of Subjects (Group Attribute)"
+            "code": "190",
+            "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+            "display": "Planned Maximum Age of Subjects"
           }
         ]
       },
@@ -48,9 +48,9 @@
       "code": {
         "coding": [
           {
-            "code": "C17357",
-            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
-            "display": "Gender (Organism Attribute)"
+            "code": "263495000",
+            "system": "http://snomed.info/sct",
+            "display": "Gender (observable entity)"
           }
         ]
       },
@@ -58,7 +58,6 @@
         "coding": [
           {
             "code": "248153007",
-            "system": "http://snomed.info/sct",
             "display": "Male (finding)"
           }
         ]
@@ -69,9 +68,9 @@
       "code": {
         "coding": [
           {
-            "code": "C17357",
-            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
-            "display": "Gender (Organism Attribute)"
+            "code": "263495000",
+            "system": "http://snomed.info/sct",
+            "display": "Gender (observable entity)"
           }
         ]
       },
@@ -79,7 +78,6 @@
         "coding": [
           {
             "code": "248152002",
-            "system": "http://snomed.info/sct",
             "display": "Female (finding)"
           }
         ]
@@ -90,9 +88,9 @@
       "code": {
         "coding": [
           {
-            "code": "C17357",
-            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
-            "display": "Gender (Organism Attribute)"
+            "code": "263495000",
+            "system": "http://snomed.info/sct",
+            "display": "Gender (observable entity)"
           }
         ]
       },
@@ -100,7 +98,6 @@
         "coding": [
           {
             "code": "105",
-            "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
             "display": "Diverse"
           }
         ]

@@ -61,11 +61,11 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.21 Design.interventions"
+            "map": "Design.interventions"
           },
           {
             "identity": "NFDI4Health",
-            "map": "1.17.22 Design.exposures"
+            "map": "Design.exposures"
           }
         ]
       },
@@ -79,11 +79,11 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.21.1 Design.interventions.name"
+            "map": "Design.interventions.name"
           },
           {
             "identity": "NFDI4Health",
-            "map": "1.17.22.1 Design.exposures.name"
+            "map": "Design.exposures.name"
           }
         ]
       },
@@ -95,11 +95,11 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.21.3\tDesign.interventions.description"
+            "map": "Design.interventions.description"
           },
           {
             "identity": "NFDI4Health",
-            "map": "1.17.22.3\tDesign.exposures.description"
+            "map": "Design.exposures.description"
           }
         ]
       },
@@ -138,11 +138,11 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.21.2 Design.interventions.type"
+            "map": "Design.interventions.type"
           },
           {
             "identity": "NFDI4Health",
-            "map": "1.17.22.2 Design.exposures.type"
+            "map": "Design.exposures.type"
           }
         ]
       }

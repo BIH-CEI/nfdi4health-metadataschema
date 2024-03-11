@@ -17,9 +17,7 @@ Description: "Extension providing information about the data sharing strategy of
 * . 1..1
 * . ^short = "Data sharing strategy of the [RESOURCE]"
 * . ^definition = "Group of items providing information about the data sharing strategy of the [RESOURCE]."
-* extension ^slicing.discriminator.type = #value
-* extension ^slicing.discriminator.path = "url"
-* extension ^slicing.rules = #open
+
 * extension contains
     generally 1..1 and
     supportingInformation 0..* and
@@ -82,13 +80,13 @@ Mapping: NFDI4Health-Data-Sharing-Plan-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Data_Sharing_Plan
-* -> "1.17.26 Design.dataSharingPlan"
-* extension[generally] -> "1.17.26.1 Design.dataSharingPlan.generally"
-* extension[supportingInformation] -> "1.17.26.2 Design.dataSharingPlan.supportingInformation"
-* extension[timeFrame] -> "1.17.26.3 Design.dataSharingPlan.timeFrame"
-* extension[accessCriteria] -> "1.17.26.4 Design.dataSharingPlan.accessCriteria"
-* extension[description] -> "1.17.26.5 Design.dataSharingPlan.description"
-* extension[datashield] -> "1.17.26.6 Design.dataSharingPlan.datashield"
-* extension[requestData] -> "1.17.26.7 Design.dataSharingPlan.requestData"
-* extension[url] -> "1.17.26.8 Design.dataSharingPlan.url"
-* extension[recordLinkage] -> "1.17.26.9 Design.dataSharingPlan.recordLinkage"
+* -> "Design.dataSharingPlan"
+* extension[generally] -> "Design.dataSharingPlan.generally"
+* extension[supportingInformation] -> "Design.dataSharingPlan.supportingInformation"
+* extension[timeFrame] -> "Design.dataSharingPlan.timeFrame"
+* extension[accessCriteria] -> "Design.dataSharingPlan.accessCriteria"
+* extension[description] -> "Design.dataSharingPlan.description"
+* extension[datashield] -> "Design.dataSharingPlan.datashield"
+* extension[requestData] -> "Design.dataSharingPlan.requestData"
+* extension[url] -> "Design.dataSharingPlan.url"
+* extension[recordLinkage] -> "Design.dataSharingPlan.recordLinkage"
