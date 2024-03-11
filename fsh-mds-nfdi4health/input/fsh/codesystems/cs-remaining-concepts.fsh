@@ -202,3 +202,7 @@ Description: "Code system defining remaining concepts without mapping to concept
 * #186 "Method to estimate portion size"
 * #187 "Validity reference"
 * #188 "Reliability reference"
+
+// Slices Intended Group
+* #189 "Planned Minimum Age of Subjects"
+* #190 "Planned Maximum Age of Subjects"

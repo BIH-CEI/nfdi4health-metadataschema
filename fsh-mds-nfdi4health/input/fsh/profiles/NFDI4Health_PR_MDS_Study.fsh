@@ -22,6 +22,7 @@ Description: "Group of items applicable only to studies, substudies, registries,
 * obeys biosamples-a and biosamples-b
 * obeys imaging-a and imaging-b
 * obeys omics-a and omics-b
+* obeys arms-a and arms-b
 
 // Extensions
 * extension contains
@@ -206,8 +207,8 @@ Source: NFDI4Health_PR_MDS_Study
 * period.end -> "Design.administrativeInformation.endDate"
 * reasonStopped.text -> "Design.administrativeInformation.reasonStopped"
 * reasonStopped.coding -> "Design.administrativeInformation.stageStopped"
-* note.text -> "1.17.24 Design.comment"
-* objective.name -> "1.17.18 Design.hypotheses"
+* note.text -> "Design.comment"
+* objective.name -> "sDesign.hypotheses"
 * enrollment -> "Design.population.obtainedSampleSize"
 * arm.name -> "Design.arms"
 * arm.type -> "Design.arms.type"
@@ -314,6 +315,18 @@ Invariant: omics-b
 Description: "0..0, if Design.dataSource.general != '033'"
 Severity: #error
 Expression: "extension.extension.where(url='general').valueCoding.where(code = '033').exists().not() implies extension.extension.where(url='omics').exists().not()"
+
+Invariant: arms-a
+Description: "Cardinality: 0..*, if Design.primaryDesign == 'C98388''"
+Severity: #error
+Expression: "category.coding.where(code = 'C98388').exists() implies arm.exists()"
+
+Invariant: arms-b
+Description: "Cardinality: 0..0, if Design.primaryDesign != 'C98388'"
+Severity: #error
+Expression: "category.coding.where(code = 'C98388').exists().not() implies arm.exists().not()"
+
+
 
 // Needs to be tested
 Invariant: study-stageStopped-a

@@ -27,7 +27,7 @@ Description: "Information about the eligibility criteria in a study."
     gender 0..*
 * characteristic[eligibleMinimumAge] ^short = "Eligibility criteria: Minimum age"
 * characteristic[eligibleMinimumAge] ^definition = "Group of items providing information about the minimum eligible age of [RESOURCE] participants."
-* characteristic[eligibleMinimumAge].code = $NCI#C49693 "Planned Minimum Age of Subjects (Group Attribute)" (exactly)
+* characteristic[eligibleMinimumAge].code = $Remaining#189 "Planned Minimum Age of Subjects" (exactly)
 * characteristic[eligibleMinimumAge].value[x] only Quantity
 * characteristic[eligibleMinimumAge].valueQuantity.value 1..
 * characteristic[eligibleMinimumAge].valueQuantity.value ^short = "Minimum eligible age"
@@ -39,7 +39,7 @@ Description: "Information about the eligibility criteria in a study."
 * characteristic[eligibleMinimumAge].valueQuantity.code ^definition = "Unit of measurement used to describe the minimum eligible age."
 * characteristic[eligibleMaximumAge] ^short = "Eligibility criteria: Maximum age"
 * characteristic[eligibleMaximumAge] ^definition = "Group of items providing information about the maximum eligible age of [RESOURCE] participants."
-* characteristic[eligibleMaximumAge].code = $NCI#C49694 "Planned Maximum Age of Subjects (Group Attribute)" (exactly)
+* characteristic[eligibleMaximumAge].code = $Remaining#190 "Planned Maximum Age of Subjects" (exactly)
 * characteristic[eligibleMaximumAge].value[x] only Quantity
 * characteristic[eligibleMaximumAge].valueQuantity.value 1..
 * characteristic[eligibleMaximumAge].valueQuantity.value ^short = "Maximum eligible age"
@@ -52,7 +52,7 @@ Description: "Information about the eligibility criteria in a study."
 * characteristic[gender] ^short = "Eligible gender"
 * characteristic[gender] ^definition = "Gender of potential participants eligible to participate in the [RESOURCE]."
 * characteristic[gender] ^comment = "Short input help: Select all that apply. If no gender was explicitly excluded in the [RESOURCE], 'Male', 'Female', and 'Diverse' should be selected."
-* characteristic[gender].code = $NCI#C17357 "Gender (Organism Attribute)" (exactly)
+* characteristic[gender].code = $SCT#263495000 "Gender (observable entity)" (exactly)
 * characteristic[gender].value[x] only CodeableConcept
 * characteristic[gender].valueCodeableConcept from NFDI4Health_VS_MDS_Study_Eligibility_Gender_SNOMEDCT_Local (required)
 * characteristic[gender].valueCodeableConcept ^binding.description = "The gender of potential participants eligible to participate in the study."
