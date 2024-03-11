@@ -47,8 +47,8 @@ Mapping: NFDI4Health-OutcomeMeasure-Backport-R5-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_OutcomeMeasure_Backport_R5
-* -> "1.17.23 Design.outcomes"
-* extension[name] -> "1.17.23.1	Design.outcomes.title"
-* extension[type] -> "1.17.23.3	Design.outcomes.type"
-* extension[description] -> "1.17.23.2 Design.outcomes.description"
-* extension[timeFrame] -> "1.17.23.4 Design.outcomes.timeFrame"
+* -> "Design.outcomes"
+* extension[name] -> "Design.outcomes.title"
+* extension[type] -> "Design.outcomes.type"
+* extension[description] -> "Design.outcomes.description"
+* extension[timeFrame] -> "Design.outcomes.timeFrame"
