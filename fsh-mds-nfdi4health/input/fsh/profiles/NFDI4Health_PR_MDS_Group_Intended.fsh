@@ -24,7 +24,9 @@ Description: "Information about the eligibility criteria in a study."
 * characteristic contains
     eligibleMinimumAge 0..1 and
     eligibleMaximumAge 0..1 and
-    gender 0..*
+    gender 0..* and
+    inclusionCriteria 0..1 and
+    exclusionCriteria 0..1
 * characteristic[eligibleMinimumAge] ^short = "Eligibility criteria: Minimum age"
 * characteristic[eligibleMinimumAge] ^definition = "Group of items providing information about the minimum eligible age of [RESOURCE] participants."
 * characteristic[eligibleMinimumAge].code = $Remaining#189 "Planned Minimum Age of Subjects" (exactly)
@@ -54,8 +56,23 @@ Description: "Information about the eligibility criteria in a study."
 * characteristic[gender] ^comment = "Short input help: Select all that apply. If no gender was explicitly excluded in the [RESOURCE], 'Male', 'Female', and 'Diverse' should be selected."
 * characteristic[gender].code = $SCT#263495000 "Gender (observable entity)" (exactly)
 * characteristic[gender].value[x] only CodeableConcept
-* characteristic[gender].valueCodeableConcept from NFDI4Health_VS_MDS_Study_Eligibility_Gender_SNOMEDCT_Local (required)
-* characteristic[gender].valueCodeableConcept ^binding.description = "The gender of potential participants eligible to participate in the study."
+* characteristic[gender].valueCodeableConcept.coding from NFDI4Health_VS_MDS_Study_Eligibility_Gender_SNOMEDCT_Local (required)
+* characteristic[gender].valueCodeableConcept.coding ^binding.description = "The gender of potential participants eligible to participate in the study."
+// Exclusion Criteria as suggested in Zulip
+* characteristic[inclusionCriteria] ^short = "Inclusion criteria"
+* characteristic[inclusionCriteria] ^definition = "Inclusion criteria for participation in the [RESOURCE]."
+* characteristic[inclusionCriteria] ^comment = "Short input help: If possible, use an enumerated or bulleted list for each criterion, starting with '-' and finishing with ';'."
+* characteristic[inclusionCriteria].code = $SCT#55919000 "Including (qualifier value)" (exactly)
+* characteristic[inclusionCriteria].value[x] only CodeableConcept
+* characteristic[inclusionCriteria].valueCodeableConcept.text 1..1 
+* characteristic[inclusionCriteria][=].exclude = false
+* characteristic[exclusionCriteria] ^short = "Exclusion criteria"
+* characteristic[exclusionCriteria] ^definition = "Exclusion criteria for participation in the [RESOURCE]."
+* characteristic[exclusionCriteria] ^comment = "Short input help: If possible, use an enumerated or bulleted list for each criterion, starting with '-' and finishing with ';'."
+* characteristic[exclusionCriteria].code = $SCT#77765009 "Exclude (qualifier value)" (exactly)
+* characteristic[exclusionCriteria].value[x] only CodeableConcept
+* characteristic[exclusionCriteria].valueCodeableConcept.text 1..1 
+* characteristic[exclusionCriteria][=].exclude = true
 
 
 Mapping: NFDI4Health-Group-Intended-to-FHIR
@@ -71,3 +88,5 @@ Source: NFDI4Health_PR_MDS_Group_Intended
 * characteristic[eligibleMaximumAge].valueQuantity.value -> "Design.eligibilityCriteria.ageMax.number"
 * characteristic[eligibleMaximumAge].valueQuantity.code -> "Design.eligibilityCriteria.ageMax.timeUnit"
 * characteristic[gender] -> "Design.eligibilityCriteria.genders"
+* characteristic[inclusionCriteria].valueCodeableConcept.text -> "Design.eligibilityCriteria.inclusionCriteria"
+* characteristic[exclusionCriteria].valueCodeableConcept.text -> "Design.eligibilityCriteria.exclusionCriteria"

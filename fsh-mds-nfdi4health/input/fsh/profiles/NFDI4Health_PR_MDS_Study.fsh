@@ -32,8 +32,6 @@ Description: "Group of items applicable only to studies, substudies, registries,
     NFDI4Health_EX_MDS_Study_Admin_Info named administrativeInformation 0..1 and
     NFDI4Health_EX_MDS_Subject named subject 1..1 and
     NFDI4Health_EX_MDS_Data_Source named dataSource 0..1 and
-    NFDI4Health_EX_MDS_Eligibility_Criteria_Inclusion_Criteria named inclusionCriteria 0..1 and
-    NFDI4Health_EX_MDS_Eligibility_Criteria_Exclusion_Criteria named exclusionCriteria 0..1 and
     NFDI4Health_EX_MDS_Study_Comparison_Group_Backport_R5 named comparisonGroup 0..* and
     NFDI4Health_EX_MDS_OutcomeMeasure_Backport_R5 named outcomes 0..* and
     NFDI4Health_EX_MDS_Assessments named assessments 0..* and

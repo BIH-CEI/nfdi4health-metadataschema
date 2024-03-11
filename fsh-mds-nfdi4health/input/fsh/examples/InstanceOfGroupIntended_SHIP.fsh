@@ -11,9 +11,11 @@ Description: "Example data of eligibility information from the SHIP Trend study 
 * characteristic[eligibleMaximumAge].valueQuantity = $UCUM#a "year"
 * characteristic[eligibleMaximumAge].valueQuantity.value = 79
 * characteristic[eligibleMaximumAge].exclude = false
-* characteristic[gender][0].valueCodeableConcept = $SCT#248153007 "Male (finding)"
+* characteristic[gender][0].valueCodeableConcept.coding = $SCT#248153007 "Male (finding)"
 * characteristic[gender][=].exclude = false
-* characteristic[gender][+].valueCodeableConcept = $SCT#248152002 "Female (finding)"
+* characteristic[gender][+].valueCodeableConcept.coding = $SCT#248152002 "Female (finding)"
 * characteristic[gender][=].exclude = false
-* characteristic[gender][+].valueCodeableConcept = $Remaining#105 "Diverse"
+* characteristic[gender][+].valueCodeableConcept.coding = $Remaining#105 "Diverse"
 * characteristic[gender][=].exclude = false
+* characteristic[inclusionCriteria].valueCodeableConcept.text = "-meeting the age range -first place of residence in the target region Pomerania (Vorpommern / West Pomerania)"
+* characteristic[exclusionCriteria].valueCodeableConcept.text = "-persons not being able to understand German"

@@ -66,8 +66,7 @@ Usage: #example
 
 /// Eligibility criteria for study participants
 * enrollment[0] = Reference(InstanceOfGroupIntendedSHIP)
-* extension[inclusionCriteria].valueString = "-meeting the age range -first place of residence in the target region Pomerania (Vorpommern / West Pomerania)"
-* extension[exclusionCriteria].valueString = "-persons not being able to understand German"
+
 /// Study Population
 * site = Reference(InstanceOfLocationMono)
 * enrollment[+] = Reference(InstanceOfGroupActualSHIP)
