@@ -14,8 +14,8 @@
 [InstanceOfEvidenceVariableSPOVID]: EvidenceVariable-InstanceOfEvidenceVariableSPOVID.html
 [InstanceOfGroupActualSHIP]: Group-InstanceOfGroupActualSHIP.html
 [InstanceOfGroupActualSPOVID]: Group-InstanceOfGroupActualSPOVID.html
-[InstanceOfGroupIntendedSHIP]: Group-InstanceOfGroupIntendedSHIP.html
-[InstanceOfGroupIntendedSPOVID]: Group-InstanceOfGroupIntendedSPOVID.html
+[InstanceOfGroupEligibilitySHIP]: Group-InstanceOfGroupEligibilitySHIP.html
+[InstanceOfGroupEligibilitySPOVID]: Group-InstanceOfGroupEligibilitySPOVID.html
 [InstanceOfLocationMono]: Location-InstanceOfLocationMono.html
 [InstanceOfLocationMulti]: Location-InstanceOfLocationMulti.html
 [InstanceOfPractitionerNinaKirchhof]: Practitioner-InstanceOfPractitionerNinaKirchhof.html
@@ -53,8 +53,6 @@
 [NFDI4Health_EX_MDS_Data_Source]: StructureDefinition-nfdi4health-ex-mds-data-source.html
 [NFDI4Health_EX_MDS_Descriptions]: StructureDefinition-nfdi4health-ex-mds-descriptions.html
 [NFDI4Health_EX_MDS_Document_Use_Rights]: StructureDefinition-nfdi4health-ex-mds-document-use-rights.html
-[NFDI4Health_EX_MDS_Eligibility_Criteria_Exclusion_Criteria]: StructureDefinition-nfdi4health-ex-mds-eligibility-criteria-exclusion-criteria.html
-[NFDI4Health_EX_MDS_Eligibility_Criteria_Inclusion_Criteria]: StructureDefinition-nfdi4health-ex-mds-eligibility-criteria-inclusion-criteria.html
 [NFDI4Health_EX_MDS_Format]: StructureDefinition-nfdi4health-ex-mds-format.html
 [NFDI4Health_EX_MDS_Identifier_Assignment_Date]: StructureDefinition-nfdi4health-ex-mds-identifier-assignment-date.html
 [NFDI4Health_EX_MDS_Keywords]: StructureDefinition-nfdi4health-ex-mds-keywords.html
@@ -69,6 +67,7 @@
 [NFDI4Health_EX_MDS_Outcomes]: StructureDefinition-nfdi4health-ex-mds-outcomes.html
 [NFDI4Health_EX_MDS_Provenance_Data_Source]: StructureDefinition-nfdi4health-ex-mds-provenance-data-source.html
 [NFDI4Health_EX_MDS_Record_Linkage]: StructureDefinition-nfdi4health-ex-mds-record-linkage.html
+[NFDI4Health_EX_MDS_Recruitment_Backport_R5]: StructureDefinition-nfdi4health-ex-mds-recruitment-backport-r5.html
 [NFDI4Health_EX_MDS_Related_Artifact_Identifier_Date]: StructureDefinition-nfdi4health-ex-mds-related-artifact-identifier-date.html
 [NFDI4Health_EX_MDS_Related_Artifact_NFDI]: StructureDefinition-nfdi4health-ex-mds-related-artifact-nfdi.html
 [NFDI4Health_EX_MDS_Related_Artifact_NFDI_Identifier]: StructureDefinition-nfdi4health-ex-mds-related-artifact-nfdi-identifier.html
@@ -111,10 +110,10 @@
 [NFDI4Health_PR_MDS_Centers]: StructureDefinition-nfdi4health-pr-mds-centers.html
 [NFDI4Health_PR_MDS_Composition]: StructureDefinition-nfdi4health-pr-mds-composition.html
 [NFDI4Health_PR_MDS_Document]: StructureDefinition-nfdi4health-pr-mds-document.html
-[NFDI4Health_PR_MDS_Evidence_Variable_Intervention_Exposure]: StructureDefinition-nfdi4health-pr-mds-evidence-variable-intervention-exposure.html
+[NFDI4Health_PR_MDS_Evidence_Variable_Intervention]: StructureDefinition-nfdi4health-pr-mds-evidence-variable-intervention.html
+[NFDI4Health_PR_MDS_Evidence_Variable_Exposure]: StructureDefinition-nfdi4health-pr-mds-evidence-variable-exposure.html
 [NFDI4Health_PR_MDS_Group_Actual]: StructureDefinition-nfdi4health-pr-mds-group-actual.html
-[NFDI4Health_PR_MDS_Group_Intended]: StructureDefinition-nfdi4health-pr-mds-group-intended.html
-[NFDI4Health_PR_MDS_EvidenceVariable_Chronic_Diseases]: StructureDefinition-nfdi4health-pr-mds-evidence-variable-chronic-disease.html
+[NFDI4Health_PR_MDS_Group_Eligibility]: StructureDefinition-nfdi4health-pr-mds-group-eligibility.html
 [NFDI4Health_PR_MDS_Observation_Nutritional_Epidemiology]: StructureDefinition-nfdi4health-pr-mds-observation-nutritional-epidemiology.html
 [NFDI4Health_PR_MDS_Organization]: StructureDefinition-nfdi4health-pr-mds-organization.html
 [NFDI4Health_PR_MDS_Practitioner]: StructureDefinition-nfdi4health-pr-mds-practitioner.html
@@ -159,10 +158,11 @@
 [NFDI4Health_VS_MDS_Study_Data_Sources_Omics_NCI]: ValueSet-nfdi4health-vs-mds-study-data-sources-omics-nci.html
 [NFDI4Health_VS_MDS_Study_Eligibility_Gender_SNOMEDCT_Local]: ValueSet-nfdi4health-vs-mds-study-eligibility-gender-snomedct-local.html
 [NFDI4Health_VS_MDS_Study_Ethics_Committee_Approval_NCI_Local]: ValueSet-nfdi4health-vs-mds-study-ethics-committee-approval-nci-local.html
+[NFDI4Health_VS_MDS_Study_Exposure_Type_NCI]: ValueSet-nfdi4health-vs-mds-study-exposure-type-nci.html
 [NFDI4Health_VS_MDS_Study_Group_Characteristics_NCI]: ValueSet-nfdi4health-vs-mds-study-group-characteristics-nci.html
 [NFDI4Health_VS_MDS_Study_Groups_Of_Diseases_Generally_Conditions_ICD]: ValueSet-nfdi4health-vs-mds-study-diseases-generally-conditions-icd.html
 [NFDI4Health_VS_MDS_Study_Groups_Of_Diseases_Generally_ICD10_SCT]: ValueSet-nfdi4health-vs-mds-study-diseases-generally-icd-sct.html
-[NFDI4Health_VS_MDS_Study_Intervention_Or_Exposure_Type_NCI]: ValueSet-nfdi4health-vs-mds-study-intervention-or-exposure-type-nci.html
+[NFDI4Health_VS_MDS_Study_Intervention_Type_NCI]: ValueSet-nfdi4health-vs-mds-study-intervention-type-nci.html
 [NFDI4Health_VS_MDS_Study_Masking_Roles_NCI_Local]: ValueSet-nfdi4health-vs-mds-study-masking-roles-nci-local.html
 [NFDI4Health_VS_MDS_Study_Outcome_Type_NCI]: ValueSet-nfdi4health-vs-mds-study-outcome-type-nci.html
 [NFDI4Health_VS_MDS_Study_Overall_Status_NCI_Local]: ValueSet-nfdi4health-vs-mds-study-overall-status-nci-local.html

@@ -52,7 +52,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.23 Design.outcomes"
+            "map": "Design.outcomes"
           }
         ]
       },
@@ -70,7 +70,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.23.1\tDesign.outcomes.title"
+            "map": "Design.outcomes.title"
           }
         ]
       },
@@ -105,7 +105,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.23.3\tDesign.outcomes.type"
+            "map": "Design.outcomes.type"
           }
         ]
       },
@@ -158,7 +158,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.23.2 Design.outcomes.description"
+            "map": "Design.outcomes.description"
           }
         ]
       },
@@ -204,7 +204,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.23.4 Design.outcomes.timeFrame"
+            "map": "Design.outcomes.timeFrame"
           }
         ]
       },

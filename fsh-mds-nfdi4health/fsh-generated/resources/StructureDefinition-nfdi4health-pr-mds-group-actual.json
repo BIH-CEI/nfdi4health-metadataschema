@@ -100,9 +100,6 @@
       {
         "id": "Group.quantity",
         "path": "Group.quantity",
-        "short": "Obtained sample size",
-        "definition": "Obtained number of observational units for the whole [RESOURCE] (e.g. obtained number of [RESOURCE] participants at all sites of the [RESOURCE]).",
-        "comment": "Additional information: The value is only available after the end of recruitment.",
         "mapping": [
           {
             "identity": "NFDI4Health",

@@ -1,6 +1,6 @@
 {
   "resourceType": "Group",
-  "id": "InstanceOfGroupIntendedSHIP",
+  "id": "InstanceOfGroupEligibilitySHIP",
   "meta": {
     "profile": [
       "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-group-intended"
@@ -58,6 +58,7 @@
         "coding": [
           {
             "code": "248153007",
+            "system": "http://snomed.info/sct",
             "display": "Male (finding)"
           }
         ]
@@ -78,6 +79,7 @@
         "coding": [
           {
             "code": "248152002",
+            "system": "http://snomed.info/sct",
             "display": "Female (finding)"
           }
         ]
@@ -98,11 +100,42 @@
         "coding": [
           {
             "code": "105",
+            "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
             "display": "Diverse"
           }
         ]
       },
       "exclude": false
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "55919000",
+            "system": "http://snomed.info/sct",
+            "display": "Including (qualifier value)"
+          }
+        ]
+      },
+      "exclude": false,
+      "valueCodeableConcept": {
+        "text": "-meeting the age range -first place of residence in the target region Pomerania (Vorpommern / West Pomerania)"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "77765009",
+            "system": "http://snomed.info/sct",
+            "display": "Exclude (qualifier value)"
+          }
+        ]
+      },
+      "exclude": true,
+      "valueCodeableConcept": {
+        "text": "-persons not being able to understand German"
+      }
     }
   ],
   "type": "person"

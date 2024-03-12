@@ -1,7 +1,7 @@
-Profile: NFDI4Health_PR_MDS_Group_Intended
+Profile: NFDI4Health_PR_MDS_Group_Eligibility
 Parent: Group
-Id: nfdi4health-pr-mds-group-intended
-Title: "NFDI4Health PR MDS Group Intended"
+Id: nfdi4health-pr-mds-group-eligibility
+Title: "NFDI4Health PR MDS Group Eligibility"
 Description: "Information about the eligibility criteria in a study."
 * ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-group-intended"
 * ^version = "0.9"
@@ -13,8 +13,6 @@ Description: "Information about the eligibility criteria in a study."
 * . ^definition = "Group of items providing information about eligibility criteria for [RESOURCE] participants."
 * . 0..1
 * actual = false (exactly)
-* quantity ^short = "Target sample size"
-* quantity ^definition = "Intended number of observational units for the whole [RESOURCE] (e.g. intended number of [RESOURCE] participants at all sites of the [RESOURCE])."
 * characteristic ..*
 * characteristic ^slicing.discriminator.type = #value
 * characteristic ^slicing.discriminator.path = "code"
@@ -65,22 +63,21 @@ Description: "Information about the eligibility criteria in a study."
 * characteristic[inclusionCriteria].code = $SCT#55919000 "Including (qualifier value)" (exactly)
 * characteristic[inclusionCriteria].value[x] only CodeableConcept
 * characteristic[inclusionCriteria].valueCodeableConcept.text 1..1 
-* characteristic[inclusionCriteria][=].exclude = false
+* characteristic[inclusionCriteria].exclude = false
 * characteristic[exclusionCriteria] ^short = "Exclusion criteria"
 * characteristic[exclusionCriteria] ^definition = "Exclusion criteria for participation in the [RESOURCE]."
 * characteristic[exclusionCriteria] ^comment = "Short input help: If possible, use an enumerated or bulleted list for each criterion, starting with '-' and finishing with ';'."
 * characteristic[exclusionCriteria].code = $SCT#77765009 "Exclude (qualifier value)" (exactly)
 * characteristic[exclusionCriteria].value[x] only CodeableConcept
 * characteristic[exclusionCriteria].valueCodeableConcept.text 1..1 
-* characteristic[exclusionCriteria][=].exclude = true
+* characteristic[exclusionCriteria].exclude = true
 
 
-Mapping: NFDI4Health-Group-Intended-to-FHIR
+Mapping: NFDI4Health-Group-Eligibility-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
-Source: NFDI4Health_PR_MDS_Group_Intended
+Source: NFDI4Health_PR_MDS_Group_Eligibility
 * -> "Design.eligibilityCriteria"
-* quantity -> "Design.population.targetSampleSize"
 * characteristic[eligibleMinimumAge] -> "Design.eligibilityCriteria.ageMin"
 * characteristic[eligibleMinimumAge].valueQuantity.value -> "Design.eligibilityCriteria.ageMin.number"
 * characteristic[eligibleMinimumAge].valueQuantity.code -> "Design.eligibilityCriteria.ageMin.timeUnit"

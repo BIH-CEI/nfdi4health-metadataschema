@@ -278,7 +278,7 @@
   },
   "enrollment": [
     {
-      "reference": "Group/InstanceOfGroupIntendedSPOVID"
+      "reference": "InstanceOfGroupIntendedSPOVID"
     },
     {
       "reference": "Group/InstanceOfGroupActualSPOVID"

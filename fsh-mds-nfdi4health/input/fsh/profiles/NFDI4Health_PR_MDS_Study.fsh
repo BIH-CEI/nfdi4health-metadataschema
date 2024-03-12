@@ -32,6 +32,7 @@ Description: "Group of items applicable only to studies, substudies, registries,
     NFDI4Health_EX_MDS_Study_Admin_Info named administrativeInformation 0..1 and
     NFDI4Health_EX_MDS_Subject named subject 1..1 and
     NFDI4Health_EX_MDS_Data_Source named dataSource 0..1 and
+    NFDI4Health_EX_MDS_Recruitment_Backport_R5 named recruitment 0..1 and
     NFDI4Health_EX_MDS_Study_Comparison_Group_Backport_R5 named comparisonGroup 0..* and
     NFDI4Health_EX_MDS_OutcomeMeasure_Backport_R5 named outcomes 0..* and
     NFDI4Health_EX_MDS_Assessments named assessments 0..* and
@@ -131,10 +132,6 @@ Description: "Group of items applicable only to studies, substudies, registries,
 * keyword.text ^comment = "Additional information: The use of terms from established classifications/vocabularies (e.g. SNOMED CT, MeSH, UMLS) is preferred. However, also self-assigned keywords are allowed. | Short input help: Preferably, use terms from SNOMED CT or MESH."
 * keyword.text ^example[0].label = "Keyword label"
 * keyword.text ^example[=].valueString = "SARS-CoV-2"
-* enrollment 1..2
-* enrollment only Reference(NFDI4Health_PR_MDS_Group_Intended or NFDI4Health_PR_MDS_Group_Actual)
-//* enrollment ^short = "Eligibility criteria for study participants"
-//* enrollment ^definition = "Group of items providing information about eligibility criteria for study participants."
 * period.start ^short = "Start date"
 * period.start ^definition = "Start date of data collection for the [RESOURCE]."
 * period.start ^comment = "Additional information: Preferred date format: DD.MM.YYYY. | Short input help: In case of a planned [RESOURCE], enter the intended start date. In case of an ongoing [RESOURCE], enter the actual start date."
@@ -207,7 +204,6 @@ Source: NFDI4Health_PR_MDS_Study
 * reasonStopped.coding -> "Design.administrativeInformation.stageStopped"
 * note.text -> "Design.comment"
 * objective.name -> "sDesign.hypotheses"
-* enrollment -> "Design.population.obtainedSampleSize"
 * arm.name -> "Design.arms"
 * arm.type -> "Design.arms.type"
 * arm.description -> "Design.arms.type"

@@ -14,9 +14,7 @@ Description: "Information about the actual study population."
     NFDI4Health_EX_MDS_Study_Population_Description named populationDescription 0..1 and
     NFDI4Health_EX_MDS_Study_Population_Location named populationLocation 1..1
 * actual = true (exactly)
-* quantity ^short = "Obtained sample size"
-* quantity ^definition = "Obtained number of observational units for the whole [RESOURCE] (e.g. obtained number of [RESOURCE] participants at all sites of the [RESOURCE])."
-* quantity ^comment = "Additional information: The value is only available after the end of recruitment."
+
 
 
 Mapping: NFDI4Health-Group-Actual-to-FHIR

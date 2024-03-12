@@ -1,5 +1,5 @@
 Instance: InstanceOfEvidenceVariableSPOVID
-InstanceOf: NFDI4Health_PR_MDS_Evidence_Variable_Intervention_Exposure
+InstanceOf: NFDI4Health_PR_MDS_Evidence_Variable_Intervention
 Usage: #example
 Title: "Instance Of an Intervention Evidence Variable for SPOVID"
 Description: "Example data representing an intervention in the SPOVID study - Sport & Long-COVID-Syndrome"

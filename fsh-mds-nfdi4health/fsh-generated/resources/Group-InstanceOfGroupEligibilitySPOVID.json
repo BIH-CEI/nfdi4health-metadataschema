@@ -1,6 +1,6 @@
 {
   "resourceType": "Group",
-  "id": "InstanceOfGroupIntendedSPOVID",
+  "id": "InstanceOfGroupEligibilitySPOVID",
   "meta": {
     "profile": [
       "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-group-intended"

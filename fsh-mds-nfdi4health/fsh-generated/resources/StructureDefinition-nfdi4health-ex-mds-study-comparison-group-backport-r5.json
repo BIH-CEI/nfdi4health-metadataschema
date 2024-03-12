@@ -52,11 +52,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.19 Design.arms"
-          },
-          {
-            "identity": "NFDI4Health",
-            "map": "1.17.20 Design.groups"
+            "map": "Design.groups"
           }
         ]
       },
@@ -96,17 +92,7 @@
         "path": "Extension.extension",
         "sliceName": "name",
         "min": 1,
-        "max": "1",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "1.17.19.1\tDesign.arms.label"
-          },
-          {
-            "identity": "NFDI4Health",
-            "map": "1.17.20.1\tDesign.groups.label"
-          }
-        ]
+        "max": "1"
       },
       {
         "id": "Extension.extension:name.extension",
@@ -121,9 +107,9 @@
       {
         "id": "Extension.extension:name.value[x]",
         "path": "Extension.extension.value[x]",
-        "short": "For 1.17.19.1 Design.arms.label: Name of the arm | For 1.17.20.1 Design.groups.label: Name of the group",
-        "definition": "For 1.17.19.1 Design.arms.label: Short name used to identify the arm. | For 1.17.20.1 Design.groups.label: Short name used to identify the group.",
-        "comment": "Additional information: For 1.17.19.1 Design.arms.label: 'Arm' means a pre-specified group or subgroup of participants in the [RESOURCE] assigned to receive specific intervention(s) (or no intervention) according to a protocol. | For 1.17.20.1 Design.groups.label: 'Group' means a predefined group (cohort) of participants to be studied.",
+        "short": "Name of the group",
+        "definition": "Short name used to identify the group.",
+        "comment": "'Group' means a predefined group (cohort) of participants to be studied.",
         "type": [
           {
             "code": "string"
@@ -134,17 +120,8 @@
         "id": "Extension.extension:type",
         "path": "Extension.extension",
         "sliceName": "type",
-        "short": "Role of the arm",
-        "definition": "Role of the given arm in the [RESOURCE].",
-        "comment": "Short input help: Select one value from the list.",
         "min": 0,
-        "max": "1",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "1.17.19.2\tDesign.arms.type"
-          }
-        ]
+        "max": "1"
       },
       {
         "id": "Extension.extension:type.extension",
@@ -163,22 +140,7 @@
           {
             "code": "CodeableConcept"
           }
-        ],
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-arm-group-type-nci",
-          "description": "Value set defining codes to specify the role of an arm or group/cohort in a [RESOURCE]."
-        }
-      },
-      {
-        "id": "Extension.extension:type.value[x].coding.system",
-        "path": "Extension.extension.value[x].coding.system",
-        "min": 1
-      },
-      {
-        "id": "Extension.extension:type.value[x].coding.code",
-        "path": "Extension.extension.value[x].coding.code",
-        "min": 1
+        ]
       },
       {
         "id": "Extension.extension:description",
@@ -189,11 +151,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.19.3 Design.arms.description"
-          },
-          {
-            "identity": "NFDI4Health",
-            "map": "1.17.20.2 Design.groups.description"
+            "map": "Design.groups.description"
           }
         ]
       },
@@ -210,9 +168,9 @@
       {
         "id": "Extension.extension:description.value[x]",
         "path": "Extension.extension.value[x]",
-        "short": "For 1.17.19.3 Design.arms.description: Additional information about the arm | For 1.17.20.2 Design.groups.description: Additional information about the group",
-        "definition": "For 1.17.19.3 Design.arms.description: Additional descriptive information about the given arm. | For 1.17.20.2 Design.groups.description: Additional descriptive information about the given group.",
-        "comment": "Additional information: For 1.17.19.3 Design.arms.description: If needed, additional descriptive information (including which interventions are administered in each arm) to differentiate each arm from other arms in the [RESOURCE]. | For 1.17.20.2 Design.groups.description: Explanation of the nature of the [RESOURCE] group (for example, participants with and without a condition, participants with and without an exposure, etc.).",
+        "short": "Additional information about the group",
+        "definition": "Additional descriptive information about the given group.",
+        "comment": "Explanation of the nature of the [RESOURCE] group (for example, participants with and without a condition, participants with and without an exposure, etc.).",
         "type": [
           {
             "code": "string"
@@ -231,11 +189,11 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.21 Design.interventions"
+            "map": "Design.interventions"
           },
           {
             "identity": "NFDI4Health",
-            "map": "1.17.22 Design.exposures"
+            "map": "Design.exposures"
           }
         ]
       },
@@ -256,7 +214,8 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-evidence-variable-intervention-exposure"
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-evidence-variable-intervention",
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-evidence-variable-exposure"
             ]
           }
         ]

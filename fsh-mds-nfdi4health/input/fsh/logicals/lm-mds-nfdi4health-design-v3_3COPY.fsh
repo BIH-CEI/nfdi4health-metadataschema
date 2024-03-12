@@ -218,7 +218,7 @@ Description: "NFDI4Health Logical Model MDS Module Design V3.3"
 
 * Design.interventions.type	0..1 Coding "Type of the intervention" "General type of the given intervention."
 * Design.interventions.type	^comment = "Source of the property and/or allowed values: CT.gov [2]"
-* Design.interventions.type from NFDI4Health_VS_MDS_Study_Intervention_Or_Exposure_Type_NCI (required)
+* Design.interventions.type from NFDI4Health_VS_MDS_Study_Intervention_Type_NCI (required)
 
 * Design.interventions.description 0..1 string "Additional information about the intervention" "If needed, additional descriptive information about the given intervention."
 * Design.interventions.description ^comment = "Source of the property and/or allowed values: CT.gov [2]"
@@ -234,7 +234,7 @@ Description: "NFDI4Health Logical Model MDS Module Design V3.3"
 
 * Design.exposures.type 0..1 Coding "Type of the exposure" "General type of the given exposure."
 * Design.exposures.type ^comment = "Source of the property and/or allowed values: CT.gov [2]"
-* Design.exposures.type from NFDI4Health_VS_MDS_Study_Intervention_Or_Exposure_Type_NCI (required)
+* Design.exposures.type from NFDI4Health_VS_MDS_Study_Exposure_Type_NCI (required)
 
 * Design.exposures.description 0..1 string "Additional information about the exposure"	"If needed, additional descriptive information about the given exposure."
 * Design.exposures.description ^comment = "Source of the property and/or allowed values: CT.gov [2]"

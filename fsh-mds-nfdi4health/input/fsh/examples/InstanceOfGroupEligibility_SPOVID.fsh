@@ -1,5 +1,5 @@
-Instance: InstanceOfGroupIntendedSPOVID
-InstanceOf: NFDI4Health_PR_MDS_Group_Intended
+Instance: InstanceOfGroupEligibilitySPOVID
+InstanceOf: NFDI4Health_PR_MDS_Group_Eligibility
 Usage: #example
 Title: "Instance Of Group Intended for SPOVID"
 Description: "Example data of eligibility information from the SPOVID study - Sport & Long-COVID-Syndrom"

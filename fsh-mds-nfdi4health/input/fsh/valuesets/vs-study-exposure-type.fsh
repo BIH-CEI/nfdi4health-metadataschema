@@ -1,8 +1,8 @@
-ValueSet: NFDI4Health_VS_MDS_Study_Intervention_Or_Exposure_Type_NCI
-Id: nfdi4health-vs-mds-study-intervention-or-exposure-type-nci
-Title: "NFDI4Health VS MDS Study Intervention Or Exposure Type [NCI]"
-Description: "Value set defining codes to specify the general type of the given intervention or exposure in the study."
-* ^url = "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-intervention-or-exposure-type-nci"
+ValueSet: NFDI4Health_VS_MDS_Study_Exposure_Type_NCI
+Id: nfdi4health-vs-mds-study-exposure-type-nci
+Title: "NFDI4Health VS MDS Study Exposure Type [NCI]"
+Description: "Value set defining codes to specify the general type of the givenexposure in the study."
+* ^url = "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-exposure-type-nci"
 * ^status = #draft
 * ^version = "0.9"
 * ^experimental = true

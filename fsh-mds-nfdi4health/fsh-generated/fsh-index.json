@@ -104,18 +104,18 @@
     "endLine": 11
   },
   {
-    "outputFile": "Group-InstanceOfGroupIntendedSHIP.json",
-    "fshName": "InstanceOfGroupIntendedSHIP",
+    "outputFile": "Group-InstanceOfGroupEligibilitySHIP.json",
+    "fshName": "InstanceOfGroupEligibilitySHIP",
     "fshType": "Instance",
-    "fshFile": "examples/InstanceOfGroupIntended_SHIP.fsh",
+    "fshFile": "examples/InstanceOfGroupEligibility_SHIP.fsh",
     "startLine": 1,
-    "endLine": 19
+    "endLine": 21
   },
   {
-    "outputFile": "Group-InstanceOfGroupIntendedSPOVID.json",
-    "fshName": "InstanceOfGroupIntendedSPOVID",
+    "outputFile": "Group-InstanceOfGroupEligibilitySPOVID.json",
+    "fshName": "InstanceOfGroupEligibilitySPOVID",
     "fshType": "Instance",
-    "fshFile": "examples/InstanceOfGroupIntended_SPOVID.fsh",
+    "fshFile": "examples/InstanceOfGroupEligibility_SPOVID.fsh",
     "startLine": 1,
     "endLine": 14
   },
@@ -365,7 +365,7 @@
     "fshType": "Instance",
     "fshFile": "examples/InstanceOfStudy_nonInterventional_SHIP.fsh",
     "startLine": 1,
-    "endLine": 77
+    "endLine": 76
   },
   {
     "outputFile": "ResearchStudy-InstanceOfStudySPOVID.json",
@@ -438,22 +438,6 @@
     "fshFile": "extensions/NFDI4Health_EX_MDS_Document_Use_Rights.fsh",
     "startLine": 1,
     "endLine": 26
-  },
-  {
-    "outputFile": "StructureDefinition-nfdi4health-ex-mds-eligibility-criteria-exclusion-criteria.json",
-    "fshName": "NFDI4Health_EX_MDS_Eligibility_Criteria_Exclusion_Criteria",
-    "fshType": "Extension",
-    "fshFile": "extensions/NFDI4Health_EX_MDS_Eligibility_Criteria_Exclusion_Criteria.fsh",
-    "startLine": 1,
-    "endLine": 18
-  },
-  {
-    "outputFile": "StructureDefinition-nfdi4health-ex-mds-eligibility-criteria-inclusion-criteria.json",
-    "fshName": "NFDI4Health_EX_MDS_Eligibility_Criteria_Inclusion_Criteria",
-    "fshType": "Extension",
-    "fshFile": "extensions/NFDI4Health_EX_MDS_Eligibility_Criteria_Inclusion_Criteria.fsh",
-    "startLine": 1,
-    "endLine": 18
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-execution-language.json",
@@ -576,6 +560,14 @@
     "endLine": 55
   },
   {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-recruitment-backport-r5.json",
+    "fshName": "NFDI4Health_EX_MDS_Recruitment_Backport_R5",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Study_Recruitment.fsh",
+    "startLine": 3,
+    "endLine": 35
+  },
+  {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-related-artifact-identifier-date.json",
     "fshName": "NFDI4Health_EX_MDS_Related_Artifact_Identifier_Date",
     "fshType": "Extension",
@@ -669,7 +661,7 @@
     "fshType": "Extension",
     "fshFile": "extensions/NFDI4Health_EX_MDS_Study_Comparison_Group_BackportR5.fsh",
     "startLine": 3,
-    "endLine": 47
+    "endLine": 40
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-study-comparison-group.json",
@@ -856,20 +848,20 @@
     "endLine": 121
   },
   {
-    "outputFile": "StructureDefinition-nfdi4health-pr-mds-evidence-variable-chronic-disease.json",
-    "fshName": "NFDI4Health_PR_MDS_EvidenceVariable_Chronic_Diseases",
+    "outputFile": "StructureDefinition-nfdi4health-pr-mds-evidence-variable-exposure.json",
+    "fshName": "NFDI4Health_PR_MDS_Evidence_Variable_Exposure",
     "fshType": "Profile",
-    "fshFile": "profiles/NFDI4Health_PR_MDS_Observation_Chronic_Diseases.fsh",
-    "startLine": 1,
-    "endLine": 13
-  },
-  {
-    "outputFile": "StructureDefinition-nfdi4health-pr-mds-evidence-variable-intervention-exposure.json",
-    "fshName": "NFDI4Health_PR_MDS_Evidence_Variable_Intervention_Exposure",
-    "fshType": "Profile",
-    "fshFile": "profiles/NFDI4Health_PR_MDS_Evidence_Variable_Intervention_Exposure.fsh",
+    "fshFile": "profiles/NFDI4Health_PR_MDS_Evidence_Variable_Exposure.fsh",
     "startLine": 1,
     "endLine": 25
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-pr-mds-evidence-variable-intervention.json",
+    "fshName": "NFDI4Health_PR_MDS_Evidence_Variable_Intervention",
+    "fshType": "Profile",
+    "fshFile": "profiles/NFDI4Health_PR_MDS_Evidence_Variable_Intervention.fsh",
+    "startLine": 1,
+    "endLine": 27
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-pr-mds-group-actual.json",
@@ -877,15 +869,15 @@
     "fshType": "Profile",
     "fshFile": "profiles/NFDI4Health_PR_MDS_Group_Actual.fsh",
     "startLine": 1,
-    "endLine": 19
+    "endLine": 16
   },
   {
-    "outputFile": "StructureDefinition-nfdi4health-pr-mds-group-intended.json",
-    "fshName": "NFDI4Health_PR_MDS_Group_Intended",
+    "outputFile": "StructureDefinition-nfdi4health-pr-mds-group-eligibility.json",
+    "fshName": "NFDI4Health_PR_MDS_Group_Eligibility",
     "fshType": "Profile",
     "fshFile": "profiles/NFDI4Health_PR_MDS_Group_Intended.fsh",
     "startLine": 1,
-    "endLine": 58
+    "endLine": 73
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-pr-mds-observation-nutritional-epidemiology.json",
@@ -949,7 +941,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/NFDI4Health_PR_MDS_Study.fsh",
     "startLine": 1,
-    "endLine": 177
+    "endLine": 172
   },
   {
     "outputFile": "ValueSet-nfdi4health-vs-mds-cd-common-chronic-disease-name-sct-local.json",
@@ -1296,6 +1288,14 @@
     "endLine": 20
   },
   {
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-exposure-type-nci.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Exposure_Type_NCI",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/vs-study-exposure-type.fsh",
+    "startLine": 1,
+    "endLine": 23
+  },
+  {
     "outputFile": "ValueSet-nfdi4health-vs-mds-study-group-characteristics-nci.json",
     "fshName": "NFDI4Health_VS_MDS_Study_Group_Characteristics_NCI",
     "fshType": "ValueSet",
@@ -1304,10 +1304,10 @@
     "endLine": 15
   },
   {
-    "outputFile": "ValueSet-nfdi4health-vs-mds-study-intervention-or-exposure-type-nci.json",
-    "fshName": "NFDI4Health_VS_MDS_Study_Intervention_Or_Exposure_Type_NCI",
+    "outputFile": "ValueSet-nfdi4health-vs-mds-study-intervention-type-nci.json",
+    "fshName": "NFDI4Health_VS_MDS_Study_Intervention_Type_NCI",
     "fshType": "ValueSet",
-    "fshFile": "valuesets/vs-study-intervention-exposure-type.fsh",
+    "fshFile": "valuesets/vs-study-intervention-typ.fsh",
     "startLine": 1,
     "endLine": 23
   },

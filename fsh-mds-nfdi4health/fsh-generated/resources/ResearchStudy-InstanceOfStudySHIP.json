@@ -286,14 +286,6 @@
         "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
         "display": "Vital Status"
       }
-    },
-    {
-      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-eligibility-criteria-inclusion-criteria",
-      "valueString": "-meeting the age range -first place of residence in the target region Pomerania (Vorpommern / West Pomerania)"
-    },
-    {
-      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-eligibility-criteria-exclusion-criteria",
-      "valueString": "-persons not being able to understand German"
     }
   ],
   "category": [
@@ -354,7 +346,7 @@
   ],
   "enrollment": [
     {
-      "reference": "Group/InstanceOfGroupIntendedSHIP"
+      "reference": "InstanceOfGroupIntendedSHIP"
     },
     {
       "reference": "Group/InstanceOfGroupActualSHIP"

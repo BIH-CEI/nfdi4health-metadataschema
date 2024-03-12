@@ -1,5 +1,5 @@
-Instance: InstanceOfGroupIntendedSHIP
-InstanceOf: NFDI4Health_PR_MDS_Group_Intended
+Instance: InstanceOfGroupEligibilitySHIP
+InstanceOf: NFDI4Health_PR_MDS_Group_Eligibility
 Usage: #example
 Title: "Instance Of Group Intended for SHIP Trend"
 Description: "Example data of eligibility information from the SHIP Trend study - Study of Health in Pomerania Trend"

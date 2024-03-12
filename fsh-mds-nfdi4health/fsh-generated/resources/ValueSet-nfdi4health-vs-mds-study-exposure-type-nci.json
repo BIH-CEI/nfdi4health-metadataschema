@@ -1,0 +1,75 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "NFDI4Health_VS_MDS_Study_Exposure_Type_NCI",
+  "id": "nfdi4health-vs-mds-study-exposure-type-nci",
+  "title": "NFDI4Health VS MDS Study Exposure Type [NCI]",
+  "description": "Value set defining codes to specify the general type of the givenexposure in the study.",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-exposure-type-nci",
+  "version": "0.9",
+  "experimental": true,
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "concept": [
+          {
+            "code": "C62103",
+            "display": "Device"
+          },
+          {
+            "code": "C79751",
+            "display": "Procedure"
+          },
+          {
+            "code": "C61398",
+            "display": "Radiation Exposure"
+          },
+          {
+            "code": "C181743",
+            "display": "Behavioral Counseling"
+          },
+          {
+            "code": "C17938",
+            "display": "Genetic"
+          },
+          {
+            "code": "C1505",
+            "display": "Dietary Supplement"
+          },
+          {
+            "code": "C54696",
+            "display": "Combination Product"
+          },
+          {
+            "code": "C17454",
+            "display": "Diagnostic Test"
+          },
+          {
+            "code": "C17649",
+            "display": "Other"
+          },
+          {
+            "code": "C923",
+            "display": "Vaccine"
+          },
+          {
+            "code": "C1909",
+            "display": "Pharmacologic Substance"
+          }
+        ]
+      }
+    ]
+  }
+}

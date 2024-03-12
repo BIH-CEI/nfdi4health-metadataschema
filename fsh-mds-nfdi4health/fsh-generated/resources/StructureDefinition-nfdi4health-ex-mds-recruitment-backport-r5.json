@@ -1,0 +1,218 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "nfdi4health-ex-mds-recruitment-backport-r5",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-recruitment-backport-r5",
+  "version": "0.9",
+  "name": "NFDI4Health_EX_MDS_Recruitment_Backport_R5",
+  "title": "NFDI4Health EX MDS Recruitment Backport R5",
+  "status": "draft",
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "description": "Extension providing information about recruitment and eligibility criteria.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "NFDI4Health",
+      "name": "NFDI4Health to FHIR Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ResearchStudy"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Outcome measures in the [RESOURCE]",
+        "definition": "Group of items providing information about recruitment and eligibility criteria.",
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:targetNumber",
+        "path": "Extension.extension",
+        "sliceName": "targetNumber",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.population.targetSampleSize"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:targetNumber.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:targetNumber.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "targetNumber"
+      },
+      {
+        "id": "Extension.extension:targetNumber.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Target sample size",
+        "definition": "Intended number of observational units for the whole [RESOURCE] (e.g. intended number of [RESOURCE] participants at all sites of the [RESOURCE]).",
+        "type": [
+          {
+            "code": "unsignedInt"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:actualNumber",
+        "path": "Extension.extension",
+        "sliceName": "actualNumber",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.population.obtainedSampleSize\t"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:actualNumber.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:actualNumber.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "actualNumber"
+      },
+      {
+        "id": "Extension.extension:actualNumber.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Obtained sample size",
+        "definition": "Obtained number of observational units for the whole [RESOURCE] (e.g. obtained number of [RESOURCE] participants at all sites of the [RESOURCE]).",
+        "comment": "Additional information: The value is only available after the end of recruitment.",
+        "type": [
+          {
+            "code": "unsignedInt"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:eligibility",
+        "path": "Extension.extension",
+        "sliceName": "eligibility",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.eligibilityCriteria"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:eligibility.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:eligibility.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "eligibility"
+      },
+      {
+        "id": "Extension.extension:eligibility.value[x]",
+        "path": "Extension.extension.value[x]",
+        "definition": "Information about the eligibility criteria in a study.",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-group-intended"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:actualGroup",
+        "path": "Extension.extension",
+        "sliceName": "actualGroup",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.population.description"
+          },
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.population.coverage"
+          },
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.population.countries"
+          },
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.population.region"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:actualGroup.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:actualGroup.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "actualGroup"
+      },
+      {
+        "id": "Extension.extension:actualGroup.value[x]",
+        "path": "Extension.extension.value[x]",
+        "definition": "Further Information about the population in a study.",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-group-actual"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-recruitment-backport-r5"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

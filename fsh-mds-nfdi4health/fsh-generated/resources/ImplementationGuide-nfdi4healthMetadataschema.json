@@ -129,7 +129,7 @@
         },
         "name": "Instance Of an Intervention Evidence Variable for SPOVID",
         "description": "Example data representing an intervention in the SPOVID study - Sport & Long-COVID-Syndrome",
-        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-evidence-variable-intervention-exposure"
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-evidence-variable-intervention"
       },
       {
         "reference": {
@@ -149,7 +149,7 @@
       },
       {
         "reference": {
-          "reference": "Group/InstanceOfGroupIntendedSHIP"
+          "reference": "Group/InstanceOfGroupEligibilitySHIP"
         },
         "name": "Instance Of Group Intended for SHIP Trend",
         "description": "Example data of eligibility information from the SHIP Trend study - Study of Health in Pomerania Trend",
@@ -157,7 +157,7 @@
       },
       {
         "reference": {
-          "reference": "Group/InstanceOfGroupIntendedSPOVID"
+          "reference": "Group/InstanceOfGroupEligibilitySPOVID"
         },
         "name": "Instance Of Group Intended for SPOVID",
         "description": "Example data of eligibility information from the SPOVID study - Sport & Long-COVID-Syndrom",
@@ -461,22 +461,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nfdi4health-ex-mds-eligibility-criteria-exclusion-criteria"
-        },
-        "name": "NFDI4Health EX MDS Eligibility Criteria Exclusion Criteria",
-        "description": "Extension informing about the exclusion criteria.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/nfdi4health-ex-mds-eligibility-criteria-inclusion-criteria"
-        },
-        "name": "NFDI4Health EX MDS Eligibility Criteria Inclusion Criteria",
-        "description": "Extension informing about the inclusion criteria.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/nfdi4health-ex-mds-format"
         },
         "name": "NFDI4Health EX MDS Format",
@@ -585,6 +569,14 @@
         },
         "name": "NFDI4Health EX MDS Record Linkage",
         "description": "Group of items providing information on record linkage.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-recruitment-backport-r5"
+        },
+        "name": "NFDI4Health EX MDS Recruitment Backport R5",
+        "description": "Extension providing information about recruitment and eligibility criteria.",
         "exampleBoolean": false
       },
       {
@@ -923,10 +915,18 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nfdi4health-pr-mds-evidence-variable-intervention-exposure"
+          "reference": "StructureDefinition/nfdi4health-pr-mds-evidence-variable-intervention"
+        },
+        "name": "NFDI4Health PR MDS Evidence Variable Intervention",
+        "description": "Information about the intervention or in a study.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-pr-mds-evidence-variable-exposure"
         },
         "name": "NFDI4Health PR MDS Evidence Variable Intervention Exposure",
-        "description": "Information about the intervention or exposure in a study.",
+        "description": "Information about the exposure in a study.",
         "exampleBoolean": false
       },
       {
@@ -939,18 +939,10 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nfdi4health-pr-mds-group-intended"
+          "reference": "StructureDefinition/nfdi4health-pr-mds-group-eligibility"
         },
-        "name": "NFDI4Health PR MDS Group Intended",
+        "name": "NFDI4Health PR MDS Group Eligibility",
         "description": "Information about the eligibility criteria in a study.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/nfdi4health-pr-mds-evidence-variable-chronic-disease"
-        },
-        "name": "NFDI4Health PR MDS Module Chronic Diseases",
-        "description": "Profile to collect information about a diet assessment used for nutritional epidemiology research.",
         "exampleBoolean": false
       },
       {
@@ -1306,6 +1298,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-exposure-type-nci"
+        },
+        "name": "NFDI4Health VS MDS Study Exposure Type [NCI]",
+        "description": "Value set defining codes to specify the general type of the givenexposure in the study.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/nfdi4health-vs-mds-study-group-characteristics-nci"
         },
         "name": "NFDI4Health VS MDS Study Group Characteristics [NCI]",
@@ -1330,10 +1330,10 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/nfdi4health-vs-mds-study-intervention-or-exposure-type-nci"
+          "reference": "ValueSet/nfdi4health-vs-mds-study-intervention-type-nci"
         },
-        "name": "NFDI4Health VS MDS Study Intervention Or Exposure Type [NCI]",
-        "description": "Value set defining codes to specify the general type of the given intervention or exposure in the study.",
+        "name": "NFDI4Health VS MDS Study Intervention Type [NCI]",
+        "description": "Value set defining codes to specify the general type of the given intervention in the study.",
         "exampleBoolean": false
       },
       {
