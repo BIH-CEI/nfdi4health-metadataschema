@@ -16,7 +16,6 @@ Description: "Value set defining codes from ICD-10 to specify groups of diseases
 * $ICD10#XVII "Congenital malformations, deformations and chromosomal abnormalities"
 * $ICD10#XVI "Certain conditions originating in the perinatal period"
 * $ICD10#XV "Pregnancy, childbirth and the puerperium"
-* $ICD10#G47.2 "Disorders of the sleep-wake schedule"
 * $ICD10#XIV "Diseases of the genitourinary system"
 * $ICD10#XVIII "Symptoms, signs and abnormal clinical and laboratory findings, not elsewhere classified"
 * $ICD10#XIX "Injury, poisoning and certain other consequences of external causes"
@@ -35,4 +34,3 @@ Description: "Value set defining codes from ICD-10 to specify groups of diseases
 * $SCT#261665006 "Unknown"
 * $SCT#385432009 "Not applicable"
 * $SCT#74964007 "Other"
-* $SCT#231532002 "Sexual disorder"
