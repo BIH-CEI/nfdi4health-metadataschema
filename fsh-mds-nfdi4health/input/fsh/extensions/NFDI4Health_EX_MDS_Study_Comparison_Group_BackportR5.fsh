@@ -44,7 +44,7 @@ Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Study_Comparison_Group_Backport_R5
 * -> "Design.groups" 
-
+* extension[name] -> "Design.groups.name"
 * extension[description] -> "Design.groups.description"
 * extension[intendedExposure] -> "Design.interventions"
 * extension[intendedExposure] -> "Design.exposures"

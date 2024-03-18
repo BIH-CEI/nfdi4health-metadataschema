@@ -47,6 +47,9 @@ Usage: #example
 * extension[studyInterventional].extension[offLabelUse].valueCoding = $SCT#385432009 "Not applicable (qualifier value)"
 * extension[sampling].extension[method].valueCoding = $NCI#C127781 "Non-Probability Sampling Method"
 * extension[sampling].extension[nonProbabilityMethod].valueCoding = $NCI#C53204 "Convenience Sampling"
+* extension[comparisonGroup].extension[intendedExposure].valueReference = Reference(InstanceOfEvidenceVariableSPOVID)
+* extension[outcomes].extension[name].valueString = "test"
+* extension[outcomes].extension[type].valueCodeableConcept = $NCI#C98772 "Primary Outcome Measure"
 
 /// Information about data sharing
 * extension[dataSharingPlan].extension[generally].valueCoding = $NCI#C150084 "Undecided (Intellectual Product)"
@@ -80,7 +83,6 @@ Usage: #example
 //* extension[comparisonGroup][0].extension[name].valueString = "Physical training group"
 //* extension[comparisonGroup][=].extension[type].valueCodeableConcept = $NCI#C174267 "Active Comparator Arm"
 //* extension[comparisonGroup][=].extension[description].valueString = "Patients receive an individually tailored training program to improve physical endurance safely and effectively."
-//* extension[comparisonGroup][=].extension[intendedExposure].valueReference = Reference(InstanceOfEvidenceVariableSPOVID)
 //* extension[comparisonGroup][+].extension[name].valueString = "Control group"
 //* extension[comparisonGroup][=].extension[type].valueCodeableConcept = $NCI#C174270 "No Intervention Arm"
 

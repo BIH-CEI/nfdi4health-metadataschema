@@ -23,6 +23,10 @@ Description: "Group of items applicable only to studies, substudies, registries,
 * obeys imaging-a and imaging-b
 * obeys omics-a and omics-b
 * obeys arms-a and arms-b
+* obeys interventions and exposures
+* obeys supportingInformation-a and supportingInformation-b
+* obeys timeFrame-a and timeFrame-b
+* obeys accessCriteria-a and accessCriteria-b
 
 // Extensions
 * extension contains
@@ -37,11 +41,8 @@ Description: "Group of items applicable only to studies, substudies, registries,
     NFDI4Health_EX_MDS_OutcomeMeasure_Backport_R5 named outcomes 0..* and
     NFDI4Health_EX_MDS_Assessments named assessments 0..* and
     NFDI4Health_EX_MDS_Data_Sharing_Plan named dataSharingPlan 1..1 and
-    NFDI4Health_EX_MDS_Study_Target_Followup_Duration named targetFollowupDuration 0..1 and
-    NFDI4Health_EX_MDS_Biospecimen named biospecimen 0..1 and
-    NFDI4Health_EX_MDS_Study_Masking named masking 0..1 and
-    NFDI4Health_EX_MDS_Study_Interventional named studyInterventional 0..1 and
-    NFDI4Health_EX_MDS_Time_Perspectives named timePerspectives 0..* and
+    NFDI4Health_EX_MDS_Study_Non_Interventional named nonInterventional 0..1 and
+    NFDI4Health_EX_MDS_Study_Interventional named interventional 0..1 and
     NFDI4Health_EX_MDS_Groups_Of_Diseases named groupsOfDiseases 1..1 and
     NFDI4Health_EX_MDS_Study_Sampling named sampling 0..1
 
@@ -194,16 +195,16 @@ Source: NFDI4Health_PR_MDS_Study
 * relatedArtifact -> "1.13 Resource.ids"
 * relatedArtifact -> "1.14 Resource.idsNfdi4health"
 * relatedArtifact -> "1.9 Resource.webpage"
-* keyword -> "1.6 Resource.keywords"
-* keyword.coding.system -> "1.6.2 Resource.keywords.code"
-* keyword.text -> "1.6.1 Resource.keywords.label"
+* keyword -> "Resource.keywords"
+* keyword.coding.system -> "Resource.keywords.code"
+* keyword.text -> "Resource.keywords.label"
 * extension[descriptions] -> "Resource.descriptions"
 * period.start -> "Design.administrativeInformation.startDate"
 * period.end -> "Design.administrativeInformation.endDate"
 * reasonStopped.text -> "Design.administrativeInformation.reasonStopped"
 * reasonStopped.coding -> "Design.administrativeInformation.stageStopped"
 * note.text -> "Design.comment"
-* objective.name -> "sDesign.hypotheses"
+* objective.name -> "Design.hypotheses"
 * arm.name -> "Design.arms"
 * arm.type -> "Design.arms.type"
 * arm.description -> "Design.arms.type"
@@ -320,9 +321,73 @@ Description: "Cardinality: 0..0, if Design.primaryDesign != 'C98388'"
 Severity: #error
 Expression: "category.coding.where(code = 'C98388').exists().not() implies arm.exists().not()"
 
-
-
 // Needs to be tested
+Invariant: interventions
+Description: "Cardinality: 0..*, if Design.primaryDesign == 'C98388'"
+Severity: #error
+Expression: "category.coding.where(code = 'C98388').exists() implies extension.extension.where(url='intendedExposure').valueReference.contains('NFDI4Health_PR_MDS_Evidence_Variable_Intervention')"
+
+Invariant: exposures
+Description: "Cardinality: 0..*, if Design.primaryDesign == 'C142615'"
+Severity: #error
+Expression: "category.coding.where(code = 'C142615').exists().not() implies extension.extension.where(url='intendedExposure').valueReference.contains('NFDI4Health_PR_MDS_Evidence_Variable_Exposure')"
+
+
+Invariant: supportingInformation-a
+Description: "Cardinality: 0..*, if Design.dataSharingPlan.generally == 'C49488'"
+Severity: #error
+Expression: "extension.extension.where(url='generally').where(code = 'C49488').exists() implies extension.extension.where(url='supportingInformation').exists()"
+
+Invariant: supportingInformation-b
+Description: "Cardinality: 0..0, if Design.dataSharingPlan.generally != 'C49488'"
+Severity: #error
+Expression: "extension.extension.where(url='generally').where(code = 'C49488').exists().not() implies extension.extension.where(url='supportingInformation').exists().not()"
+
+Invariant: timeFrame-a
+Description: "Cardinality: 0..*, if Design.dataSharingPlan.generally == 'C49488'"
+Severity: #error
+Expression: "extension.extension.where(url='generally').where(code = 'C49488').exists() implies extension.extension.where(url='timeFrame').exists()"
+
+Invariant: timeFrame-b
+Description: "Cardinality: 0..0, if Design.dataSharingPlan.generally != 'C49488'"
+Severity: #error
+Expression: "extension.extension.where(url='generally').where(code = 'C49488').exists().not() implies extension.extension.where(url='timeFrame').exists().not()"
+
+Invariant: accessCriteria-a
+Description: "Cardinality: 0..*, if Design.dataSharingPlan.generally == 'C49488'"
+Severity: #error
+Expression: "extension.extension.where(url='generally').where(code = 'C49488').exists() implies extension.extension.where(url='accessCriteria').exists()"
+
+Invariant: accessCriteriarame-b
+Description: "Cardinality: 0..0, if Design.dataSharingPlan.generally != 'C49488'"
+Severity: #error
+Expression: "extension.extension.where(url='generally').where(code = 'C49488').exists().not() implies extension.extension.where(url='accessCriteria').exists().not()"
+
+
+
+Invariant: masking-roles-a
+Description: "Cardinality: 0..*, if Design.interventional.masking.general == true"
+Severity: #error
+Expression: "extension.extension.extenswion.where(url='general').where(value='true') implies extension.extension.extenswion.where(url='roles').exists()"
+
+Invariant: masking-roles-b
+Description: "Cardinality: 0..*, if Design.interventional.masking.general == false"
+Severity: #error
+Expression: "extension.extension.extenswion.where(url='general').where(value='false') implies extension.extension.extenswion.where(url='roles').exists().not()"
+
+
+Invariant: masking-description-a
+Description: "Cardinality: 0..*, if Design.interventional.masking.general == true"
+Severity: #error
+Expression: "extension.extension.extenswion.where(url='general').where(value='true') implies extension.extension.extenswion.where(url='description').exists()"
+
+Invariant: masking-description-b
+Description: "Cardinality: 0..*, if Design.interventional.masking.general == false"
+Severity: #error
+Expression: "extension.extension.extenswion.where(url='general').where(value='false') implies extension.extension.extenswion.where(url='description').exists().not()"
+
+
+
 Invariant: study-stageStopped-a
 Description: "Cardinality: 0..1, if Design.administrativeInformation.status == ('06' OR '07')"
 Severity: #error
@@ -349,8 +414,10 @@ Description: "Cardinality: 0..1, if Resource.provenance.dataSource != '06'"
 Severity: #error
 Expression: "Composition.extension.where(url='https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-provenance-data-source').valueCoding.where(code='06').exists().not() implies extension.extension.where(url='recruitmentStatusRegister').exists()"
 
-
 Invariant: study-recruitmentStatusRegister-b
 Description: "Cardinality: 0..0, if Resource.provenance.dataSource == '06'"
 Severity: #error
 Expression: "Composition.extension.where(url='https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-provenance-data-source').valueCoding.where(code='06').exists() implies extension.extension.where(url='recruitmentStatusRegister').exists().not()"
+
+
+

@@ -21,7 +21,7 @@ Description: "Extension providing information about outcome measure(s)."
 * extension ^slicing.rules = #open
 * extension contains
     name 1..1 and
-    type 0..1 and
+    type 1..1 and
     description 0..1 and
     reference 0..1 and
     timeFrame 0..1 
@@ -52,3 +52,13 @@ Source: NFDI4Health_EX_MDS_OutcomeMeasure_Backport_R5
 * extension[type] -> "Design.outcomes.type"
 * extension[description] -> "Design.outcomes.description"
 * extension[timeFrame] -> "Design.outcomes.timeFrame"
+
+// Invariant: outcome-type-a
+// Description: "Cardinality: 1..1, if (Design.outcomes.title != Null OR Design.outcomes.description != Null)" // title 1..1 therefore condition was ignored and type set to 1..1
+//Severity: #error
+//Expression: "extension.where(url = 'description').exists() implies extension.where(url='type').exists()"
+
+//Invariant: outcome-type-b
+//Description: "Cardinality: 0..0, if (Design.outcomes.title == Null OR Design.outcomes.description == Null)"  // title 1..1 therefore first part of condition ignored
+//Severity: #error
+//Expression: "extension.where(url = 'description').exists().not() implies extension.where(url='type').exists().not()"

@@ -13,9 +13,6 @@ Description: "Extension informing about the target follow-up duration of a study
 * . 0..1
 * . ^short = "Target follow-up duration of the [RESOURCE]"
 * . ^definition = "If applicable, anticipated time period over which each participant would be followed."
-* extension ^slicing.discriminator.type = #value
-* extension ^slicing.discriminator.path = "url"
-* extension ^slicing.rules = #open
 * extension contains
     number 1..1 and
     frequency 0..1
@@ -38,7 +35,7 @@ Mapping: NFDI4Health-Study-Target-Followup-Duration-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Study_Target_Followup_Duration
-* -> "1.17.27.2 Design.nonInterventional.targetFollowUpDuration"
-* extension[number].valueQuantity.value -> "1.17.27.2.1 Design.nonInterventional.targetFollowUpDuration.number"
-* extension[number].valueQuantity.code -> "1.17.27.2.2 Design.nonInterventional.targetFollowUpDuration.timeUnit"
-* extension[frequency].valueInteger -> "1.17.27.2.3	Design.nonInterventional.targetFollowUpDuration.frequency"
+* -> "Design.nonInterventional.targetFollowUpDuration"
+* extension[number].valueQuantity.value -> "Design.nonInterventional.targetFollowUpDuration.number"
+* extension[number].valueQuantity.code -> "Design.nonInterventional.targetFollowUpDuration.timeUnit"
+* extension[frequency].valueInteger -> "Design.nonInterventional.targetFollowUpDuration.frequency"
