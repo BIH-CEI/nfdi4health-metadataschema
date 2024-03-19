@@ -71,21 +71,6 @@
         ]
       },
       {
-        "id": "Extension.extension:offLabelUse",
-        "path": "Extension.extension",
-        "sliceName": "offLabelUse",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-off-label-use"
-            ]
-          }
-        ]
-      },
-      {
         "id": "Extension.extension:allocation",
         "path": "Extension.extension",
         "sliceName": "allocation",
@@ -123,6 +108,46 @@
           "strength": "required",
           "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-allocation-nci",
           "description": "Value set defining codes to specify the subject allocation in a (sub-)study in a ResearchStudy resource."
+        }
+      },
+      {
+        "id": "Extension.extension:offLabelUse",
+        "path": "Extension.extension",
+        "sliceName": "offLabelUse",
+        "short": "Off-label use of a drug product",
+        "definition": "Unapproved (off-label) use of a drug product.",
+        "comment": "Short input help: Select 'Yes' or 'No' only for a drug [RESOURCE] and 'Not applicable' for any other [RESOURCE].",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.interventional.offLabelUse"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:offLabelUse.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:offLabelUse.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "offLabelUse"
+      },
+      {
+        "id": "Extension.extension:offLabelUse.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-yes-no-not-applicable-snomedct",
+          "description": "Value set used to respond to questions that can be answered Yes, No, or Not Applicable."
         }
       },
       {

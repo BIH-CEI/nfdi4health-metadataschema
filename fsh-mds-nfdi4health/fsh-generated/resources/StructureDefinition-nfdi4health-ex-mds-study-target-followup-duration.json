@@ -52,7 +52,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.27.2 Design.nonInterventional.targetFollowUpDuration"
+            "map": "Design.nonInterventional.targetFollowUpDuration"
           }
         ]
       },
@@ -97,7 +97,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.27.2.1 Design.nonInterventional.targetFollowUpDuration.number"
+            "map": "Design.nonInterventional.targetFollowUpDuration.number"
           }
         ]
       },
@@ -119,7 +119,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.27.2.2 Design.nonInterventional.targetFollowUpDuration.timeUnit"
+            "map": "Design.nonInterventional.targetFollowUpDuration.timeUnit"
           }
         ]
       },
@@ -154,7 +154,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.17.27.2.3\tDesign.nonInterventional.targetFollowUpDuration.frequency"
+            "map": "Design.nonInterventional.targetFollowUpDuration.frequency"
           }
         ]
       },

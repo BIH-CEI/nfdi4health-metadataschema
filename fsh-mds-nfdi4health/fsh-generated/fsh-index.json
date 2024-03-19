@@ -373,7 +373,7 @@
     "fshType": "Instance",
     "fshFile": "examples/InstanceOfStudy_interventional_SPOVID.fsh",
     "startLine": 1,
-    "endLine": 90
+    "endLine": 92
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-assessments.json",
@@ -382,14 +382,6 @@
     "fshFile": "extensions/NFDI4Health_EX_MDS_Assessments.fsh",
     "startLine": 1,
     "endLine": 22
-  },
-  {
-    "outputFile": "StructureDefinition-nfdi4health-ex-mds-biospecimen.json",
-    "fshName": "NFDI4Health_EX_MDS_Biospecimen",
-    "fshType": "Extension",
-    "fshFile": "extensions/NFDI4Health_EX_MDS_Study_Biospecimen.fsh",
-    "startLine": 3,
-    "endLine": 39
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-chronic-diseases.json",
@@ -518,14 +510,6 @@
     "fshFile": "extensions/NFDI4Health_EX_MDS_Nutritional_Data.fsh",
     "startLine": 1,
     "endLine": 18
-  },
-  {
-    "outputFile": "StructureDefinition-nfdi4health-ex-mds-off-label-use.json",
-    "fshName": "NFDI4Health_EX_MDS_Off_Label_Use",
-    "fshType": "Extension",
-    "fshFile": "extensions/NFDI4Health_EX_MDS_Off_Label_Use.fsh",
-    "startLine": 3,
-    "endLine": 24
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-outcomemeasure-backport-r5.json",
@@ -664,20 +648,12 @@
     "endLine": 40
   },
   {
-    "outputFile": "StructureDefinition-nfdi4health-ex-mds-study-comparison-group.json",
-    "fshName": "NFDI4Health_EX_MDS_Study_Comparison_Group",
-    "fshType": "Extension",
-    "fshFile": "extensions/NFDI4Health_EX_MDS_Study_Comparison_Group.fsh",
-    "startLine": 3,
-    "endLine": 50
-  },
-  {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-study-interventional.json",
     "fshName": "NFDI4Health_EX_MDS_Study_Interventional",
     "fshType": "Extension",
     "fshFile": "extensions/NFDI4Health_EX_MDS_Study_Interventional.fsh",
     "startLine": 1,
-    "endLine": 27
+    "endLine": 33
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-study-masking.json",
@@ -686,6 +662,14 @@
     "fshFile": "extensions/NFDI4Health_EX_MDS_Study_Masking.fsh",
     "startLine": 1,
     "endLine": 38
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-study-non-interventional.json",
+    "fshName": "NFDI4Health_EX_MDS_Study_Non_Interventional",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Study_Non_Interventional.fsh",
+    "startLine": 1,
+    "endLine": 39
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-study-population-description.json",
@@ -717,15 +701,7 @@
     "fshType": "Extension",
     "fshFile": "extensions/NFDI4Health_EX_MDS_Study_Target_Followup_Duration.fsh",
     "startLine": 1,
-    "endLine": 35
-  },
-  {
-    "outputFile": "StructureDefinition-nfdi4health-ex-mds-study-time-perspectives.json",
-    "fshName": "NFDI4Health_EX_MDS_Study_Time_Perspectives",
-    "fshType": "Extension",
-    "fshFile": "extensions/NFDI4Health_EX_MDS_Study-Time-Perspectives.fsh",
-    "startLine": 3,
-    "endLine": 24
+    "endLine": 32
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-study-type.json",
@@ -742,14 +718,6 @@
     "fshFile": "extensions/NFDI4Health_EX_MDS_Subject.fsh",
     "startLine": 1,
     "endLine": 22
-  },
-  {
-    "outputFile": "StructureDefinition-nfdi4health-ex-mds-time-perspectives.json",
-    "fshName": "NFDI4Health_EX_MDS_Time_Perspectives",
-    "fshType": "Extension",
-    "fshFile": "extensions/NFDI4Health_EX_MDS_Time_Perspectives.fsh",
-    "startLine": 1,
-    "endLine": 20
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-uri.json",
@@ -941,7 +909,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/NFDI4Health_PR_MDS_Study.fsh",
     "startLine": 1,
-    "endLine": 172
+    "endLine": 179
   },
   {
     "outputFile": "ValueSet-nfdi4health-vs-mds-cd-common-chronic-disease-name-sct-local.json",
@@ -1261,7 +1229,7 @@
     "fshType": "ValueSet",
     "fshFile": "valuesets/vs-study-groups-of-diseases-generally-icd10.fsh",
     "startLine": 1,
-    "endLine": 38
+    "endLine": 36
   },
   {
     "outputFile": "ValueSet-nfdi4health-vs-mds-study-ds-biosamples-sct-nci.json",

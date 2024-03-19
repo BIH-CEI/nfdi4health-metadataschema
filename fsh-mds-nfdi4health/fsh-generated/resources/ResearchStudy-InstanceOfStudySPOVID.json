@@ -108,16 +108,16 @@
     {
       "extension": [
         {
-          "url": "general",
-          "valueBoolean": false
-        }
-      ],
-      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-masking"
-    },
-    {
-      "extension": [
+          "extension": [
+            {
+              "url": "general",
+              "valueBoolean": false
+            }
+          ],
+          "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-masking"
+        },
         {
-          "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-off-label-use",
+          "url": "offLabelUse",
           "valueCoding": {
             "code": "385432009",
             "system": "http://snomed.info/sct",
@@ -147,6 +147,41 @@
         }
       ],
       "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-sampling"
+    },
+    {
+      "extension": [
+        {
+          "url": "intendedExposure",
+          "valueReference": {
+            "reference": "EvidenceVariable/InstanceOfEvidenceVariableSPOVID"
+          }
+        },
+        {
+          "url": "name"
+        }
+      ],
+      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-comparison-group-backport-r5"
+    },
+    {
+      "extension": [
+        {
+          "url": "name",
+          "valueString": "test"
+        },
+        {
+          "url": "type",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "C98772",
+                "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+                "display": "Primary Outcome Measure"
+              }
+            ]
+          }
+        }
+      ],
+      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-outcomemeasure-backport-r5"
     }
   ],
   "category": [

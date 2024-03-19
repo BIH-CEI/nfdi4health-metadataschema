@@ -48,9 +48,9 @@ Usage: #example
 * primaryPurposeType.coding = $NCI#C17649 "Other"
 * objective.name = "There is no single set of research questions underlying the study."
 * note.text = "The content of different SHIP data collections are described separately."
-* extension[timePerspectives].valueCoding = $NCI#C53312 "Retrospective Study"
-* extension[biospecimen].extension[retention].valueCoding = $NCI#C127777 "Retained Specimens Contain DNA"
-* extension[biospecimen].extension[description].valueString = "Whole blood; Saliva"
+* extension[nonInterventional].extension[timePerspectives].valueCoding = $NCI#C53312 "Retrospective Study"
+* extension[nonInterventional].extension[biospecimenRetention].valueCoding = $NCI#C127777 "Retained Specimens Contain DNA"
+* extension[nonInterventional].extension[biospecimenDescription].valueString = "Whole blood; Saliva"
 * extension[mortalityData].valueCoding = $NCI#C25717 "Vital Status"
 
 /// Information about data sharing

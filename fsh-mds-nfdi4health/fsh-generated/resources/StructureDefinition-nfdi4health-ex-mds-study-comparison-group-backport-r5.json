@@ -92,7 +92,13 @@
         "path": "Extension.extension",
         "sliceName": "name",
         "min": 1,
-        "max": "1"
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.groups.name"
+          }
+        ]
       },
       {
         "id": "Extension.extension:name.extension",

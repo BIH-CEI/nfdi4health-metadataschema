@@ -43,8 +43,8 @@ Usage: #example
 * extension[subject].valueCoding = $SCT#125676002 "Person (person)"
 * extension[dataSource].extension[general][0].valueCoding = $Remaining#029 "Cognitive measurements"
 * extension[dataSource].extension[general][+].valueCoding = $Remaining#032 "Physiological/Biochemical measurements"
-* extension[masking].extension[general].valueBoolean = false
-* extension[studyInterventional].extension[offLabelUse].valueCoding = $SCT#385432009 "Not applicable (qualifier value)"
+* extension[interventional].extension[masking].extension[general].valueBoolean = false
+* extension[interventional].extension[offLabelUse].valueCoding = $SCT#385432009 "Not applicable (qualifier value)"
 * extension[sampling].extension[method].valueCoding = $NCI#C127781 "Non-Probability Sampling Method"
 * extension[sampling].extension[nonProbabilityMethod].valueCoding = $NCI#C53204 "Convenience Sampling"
 * extension[comparisonGroup].extension[intendedExposure].valueReference = Reference(InstanceOfEvidenceVariableSPOVID)

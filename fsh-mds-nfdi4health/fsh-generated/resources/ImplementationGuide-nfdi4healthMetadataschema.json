@@ -405,14 +405,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nfdi4health-ex-mds-biospecimen"
-        },
-        "name": "NFDI4Health EX MDS Biospecimen",
-        "description": "Extension indicating whether samples of biomaterial from participants are retained in a biorepository, and providing additional information on these biosamples.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/nfdi4health-ex-mds-chronic-diseases"
         },
         "name": "NFDI4Health EX MDS Chronic Diseases",
@@ -529,14 +521,6 @@
         },
         "name": "NFDI4Health EX MDS nutritional data",
         "description": "Extension indicating whether the [RESOURCE] collects nutritional data.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/nfdi4health-ex-mds-off-label-use"
-        },
-        "name": "NFDI4Health EX MDS Off Label Use",
-        "description": "Extension informing the unapproved (off-label) use of a drug product in a resource.",
         "exampleBoolean": false
       },
       {
@@ -661,14 +645,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nfdi4health-ex-mds-study-comparison-group"
-        },
-        "name": "NFDI4Health EX MDS Study Comparison Group",
-        "description": "Extension providing information about the arm(s)/group(s)/cohort(s) and intervention(s)/exposure(s) in a study.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/nfdi4health-ex-mds-study-comparison-group-backport-r5"
         },
         "name": "NFDI4Health EX MDS Study Comparison Group Backport R5",
@@ -689,6 +665,14 @@
         },
         "name": "NFDI4Health EX MDS Study Masking",
         "description": "Group of items providing information about the masking of intervention(s) assignment",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-study-non-interventional"
+        },
+        "name": "NFDI4Health EX MDS Study Non Interventional",
+        "description": "Group of items providing information about non interventional studys",
         "exampleBoolean": false
       },
       {
@@ -725,14 +709,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nfdi4health-ex-mds-study-time-perspectives"
-        },
-        "name": "NFDI4Health EX MDS Study Time Perspectives",
-        "description": "Extension informing about the temporal design of a study.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/nfdi4health-ex-mds-groups-of-diseases"
         },
         "name": "NFDI4Health EX MDS Study Type",
@@ -753,14 +729,6 @@
         },
         "name": "NFDI4Health EX MDS Subject",
         "description": "Extension informing about the subject of a resource.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/nfdi4health-ex-mds-time-perspectives"
-        },
-        "name": "NFDI4Health EX MDS Time Perspectives",
-        "description": "Group of items providing information about the temporal design of a non-interventional study",
         "exampleBoolean": false
       },
       {

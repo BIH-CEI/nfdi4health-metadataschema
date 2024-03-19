@@ -255,17 +255,17 @@
       "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-data-source"
     },
     {
-      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-time-perspectives",
-      "valueCoding": {
-        "code": "C53312",
-        "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
-        "display": "Retrospective Study"
-      }
-    },
-    {
       "extension": [
         {
-          "url": "retention",
+          "url": "timePerspectives",
+          "valueCoding": {
+            "code": "C53312",
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "display": "Retrospective Study"
+          }
+        },
+        {
+          "url": "biospecimenRetention",
           "valueCoding": {
             "code": "C127777",
             "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
@@ -273,11 +273,11 @@
           }
         },
         {
-          "url": "description",
+          "url": "biospecimenDescription",
           "valueString": "Whole blood; Saliva"
         }
       ],
-      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-biospecimen"
+      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-non-interventional"
     },
     {
       "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-mortality-data",

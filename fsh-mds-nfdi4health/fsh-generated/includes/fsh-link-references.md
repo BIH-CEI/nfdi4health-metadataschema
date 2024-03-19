@@ -46,7 +46,6 @@
 [NFDI4Health_VS_MDS_CD_DataCollected_NCI]: ValueSet-nfdi4health-vs-mds-cd-datacollected-nci.html
 [NFDI4Health_VS_MDS_CD_Information_Sources_NCI_Local]: ValueSet-nfdi4health-vs-mds-cd-information-sources-nci-local.html
 [NFDI4Health_EX_MDS_Assessments]: StructureDefinition-nfdi4health-ex-mds-assessments.html
-[NFDI4Health_EX_MDS_Biospecimen]: StructureDefinition-nfdi4health-ex-mds-biospecimen.html
 [NFDI4Health_EX_MDS_Chronic_Diseases]: StructureDefinition-nfdi4health-ex-mds-chronic-diseases.html
 [NFDI4Health_EX_MDS_Copyright_Label_And_Link]: StructureDefinition-nfdi4health-ex-mds-copyright-label-and-link.html
 [NFDI4Health_EX_MDS_Data_Sharing_Plan]: StructureDefinition-nfdi4health-ex-mds-data-sharing-plan.html
@@ -62,7 +61,6 @@
 [NFDI4Health_EX_MDS_Mortality_Data]: StructureDefinition-nfdi4health-ex-mds-mortality-data.html
 [NFDI4Health_EX_MDS_Name_Type]: StructureDefinition-nfdi4health-ex-mds-name-type.html
 [NFDI4Health_EX_MDS_Nutritional_Data]: StructureDefinition-nfdi4health-ex-mds-nutritional-data.html
-[NFDI4Health_EX_MDS_Off_Label_Use]: StructureDefinition-nfdi4health-ex-mds-off-label-use.html
 [NFDI4Health_EX_MDS_OutcomeMeasure_Backport_R5]: StructureDefinition-nfdi4health-ex-mds-outcomemeasure-backport-r5.html
 [NFDI4Health_EX_MDS_Outcomes]: StructureDefinition-nfdi4health-ex-mds-outcomes.html
 [NFDI4Health_EX_MDS_Provenance_Data_Source]: StructureDefinition-nfdi4health-ex-mds-provenance-data-source.html
@@ -78,19 +76,17 @@
 [NFDI4Health_EX_MDS_Related_Artifact_Scheme]: StructureDefinition-nfdi4health-ex-mds-related-artifact-nfdi-scheme.html
 [NFDI4Health_EX_MDS_Resource_Type_General]: StructureDefinition-nfdi4health-ex-mds-resource-type-general.html
 [NFDI4Health_EX_MDS_Study_Admin_Info]: StructureDefinition-nfdi4health-ex-mds-study-admin-info.html
-[NFDI4Health_EX_MDS_Study_Comparison_Group]: StructureDefinition-nfdi4health-ex-mds-study-comparison-group.html
 [NFDI4Health_EX_MDS_Study_Comparison_Group_Backport_R5]: StructureDefinition-nfdi4health-ex-mds-study-comparison-group-backport-r5.html
 [NFDI4Health_EX_MDS_Study_Interventional]: StructureDefinition-nfdi4health-ex-mds-study-interventional.html
 [NFDI4Health_EX_MDS_Study_Masking]: StructureDefinition-nfdi4health-ex-mds-study-masking.html
+[NFDI4Health_EX_MDS_Study_Non_Interventional]: StructureDefinition-nfdi4health-ex-mds-study-non-interventional.html
 [NFDI4Health_EX_MDS_Study_Population_Description]: StructureDefinition-nfdi4health-ex-mds-study-population-description.html
 [NFDI4Health_EX_MDS_Study_Population_Location]: StructureDefinition-nfdi4health-ex-mds-study-population-location.html
 [NFDI4Health_EX_MDS_Study_Sampling]: StructureDefinition-nfdi4health-ex-mds-study-sampling.html
 [NFDI4Health_EX_MDS_Study_Target_Followup_Duration]: StructureDefinition-nfdi4health-ex-mds-study-target-followup-duration.html
-[NFDI4Health_EX_MDS_Study_Time_Perspectives]: StructureDefinition-nfdi4health-ex-mds-study-time-perspectives.html
 [NFDI4Health_EX_MDS_Groups_Of_Diseases]: StructureDefinition-nfdi4health-ex-mds-groups-of-diseases.html
 [NFDI4Health_EX_MDS_Study_Type]: StructureDefinition-nfdi4health-ex-mds-study-type.html
 [NFDI4Health_EX_MDS_Subject]: StructureDefinition-nfdi4health-ex-mds-subject.html
-[NFDI4Health_EX_MDS_Time_Perspectives]: StructureDefinition-nfdi4health-ex-mds-time-perspectives.html
 [NFDI4Health_EX_MDS_URI]: StructureDefinition-nfdi4health-ex-mds-uri.html
 [NFDI4Health_EX_MDS_Use_Rights_Confirmations]: StructureDefinition-nfdi4health-ex-mds-use-rights-confirmations.html
 [NFDI4Health_EX_MDS_Version]: StructureDefinition-nfdi4health-ex-mds-version.html

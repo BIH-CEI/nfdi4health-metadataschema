@@ -49,10 +49,6 @@
             "display": "Pregnancy, childbirth and the puerperium"
           },
           {
-            "code": "G47.2",
-            "display": "Disorders of the sleep-wake schedule"
-          },
-          {
             "code": "XIV",
             "display": "Diseases of the genitourinary system"
           },
@@ -128,10 +124,6 @@
           {
             "code": "74964007",
             "display": "Other"
-          },
-          {
-            "code": "231532002",
-            "display": "Sexual disorder"
           }
         ]
       }

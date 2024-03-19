@@ -62,28 +62,28 @@
         "path": "ResearchStudy",
         "constraint": [
           {
-            "key": "study-interventional-a",
+            "key": "category-interventional-a",
             "severity": "error",
             "human": "Cardinality: 1..*, if Design.primaryDesign == 'C98388'",
             "expression": "category.coding.where(code = 'C98388').exists() implies category.extension.extension.where(url='interventional').exists()",
             "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
           },
           {
-            "key": "study-interventional-b",
+            "key": "category-interventional-b",
             "severity": "error",
             "human": "Cardinality: 0..0, if Design.primaryDesign != 'C98388'",
             "expression": "category.coding.where(code = 'C98388').exists().not() implies category.extension.extension.where(url='interventional').exists().not()",
             "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
           },
           {
-            "key": "study-nonInterventional-a",
+            "key": "category-nonInterventional-a",
             "severity": "error",
             "human": "Cardinality: 1..*, if Design.primaryDesign == 'C142615''",
             "expression": "category.coding.where(code = 'C142615').exists() implies category.extension.extension.where(url='nonInterventional').exists()",
             "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
           },
           {
-            "key": "study-nonInterventional-b",
+            "key": "category-nonInterventional-b",
             "severity": "error",
             "human": "Cardinality: 0..0, if Design.primaryDesign != 'C142615'",
             "expression": "category.coding.where(code = 'C142615').exists().not() implies category.extension.extension.where(url='nonInterventional').exists().not()",
@@ -227,6 +227,146 @@
             "severity": "error",
             "human": "Cardinality: 0..0, if Design.primaryDesign != 'C98388'",
             "expression": "category.coding.where(code = 'C98388').exists().not() implies arm.exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "interventions",
+            "severity": "error",
+            "human": "Cardinality: 0..*, if Design.primaryDesign == 'C98388'",
+            "expression": "category.coding.where(code = 'C98388').exists() implies extension.extension.where(url='intendedExposure').valueReference.contains('NFDI4Health_PR_MDS_Evidence_Variable_Intervention')",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "exposures",
+            "severity": "error",
+            "human": "Cardinality: 0..*, if Design.primaryDesign == 'C142615'",
+            "expression": "category.coding.where(code = 'C142615').exists().not() implies extension.extension.where(url='intendedExposure').valueReference.contains('NFDI4Health_PR_MDS_Evidence_Variable_Exposure')",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "supportingInformation-a",
+            "severity": "error",
+            "human": "Cardinality: 0..*, if Design.dataSharingPlan.generally == 'C49488'",
+            "expression": "extension.extension.where(url='generally').where(code = 'C49488').exists() implies extension.extension.where(url='supportingInformation').exists()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "supportingInformation-b",
+            "severity": "error",
+            "human": "Cardinality: 0..0, if Design.dataSharingPlan.generally != 'C49488'",
+            "expression": "extension.extension.where(url='generally').where(code = 'C49488').exists().not() implies extension.extension.where(url='supportingInformation').exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "timeFrame-a",
+            "severity": "error",
+            "human": "Cardinality: 0..*, if Design.dataSharingPlan.generally == 'C49488'",
+            "expression": "extension.extension.where(url='generally').where(code = 'C49488').exists() implies extension.extension.where(url='timeFrame').exists()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "timeFrame-b",
+            "severity": "error",
+            "human": "Cardinality: 0..0, if Design.dataSharingPlan.generally != 'C49488'",
+            "expression": "extension.extension.where(url='generally').where(code = 'C49488').exists().not() implies extension.extension.where(url='timeFrame').exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "accessCriteria-a",
+            "severity": "error",
+            "human": "Cardinality: 0..*, if Design.dataSharingPlan.generally == 'C49488'",
+            "expression": "extension.extension.where(url='generally').where(code = 'C49488').exists() implies extension.extension.where(url='accessCriteria').exists()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "accessCriteria-b",
+            "severity": "error",
+            "human": "Cardinality: 0..0, if Design.dataSharingPlan.generally != 'C49488'",
+            "expression": "extension.extension.where(url='generally').where(code = 'C49488').exists().not() implies extension.extension.where(url='accessCriteria').exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "masking-roles-a",
+            "severity": "error",
+            "human": "Cardinality: 0..*, if Design.interventional.masking.general == true",
+            "expression": "extension.extension.extenswion.where(url='general').where(value='true') implies extension.extension.extenswion.where(url='roles').exists()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "masking-roles-b",
+            "severity": "error",
+            "human": "Cardinality: 0..*, if Design.interventional.masking.general == false",
+            "expression": "extension.extension.extenswion.where(url='general').where(value='false') implies extension.extension.extenswion.where(url='roles').exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "masking-description-a",
+            "severity": "error",
+            "human": "Cardinality: 0..*, if Design.interventional.masking.general == true",
+            "expression": "extension.extension.extenswion.where(url='general').where(value='true') implies extension.extension.extenswion.where(url='description').exists()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "masking-description-b",
+            "severity": "error",
+            "human": "Cardinality: 0..*, if Design.interventional.masking.general == false",
+            "expression": "extension.extension.extenswion.where(url='general').where(value='false') implies extension.extension.extenswion.where(url='description').exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "interventional-a",
+            "severity": "error",
+            "human": "Cardinality: 0..1, Design.primaryDesign == 'Interventional'",
+            "expression": "category.coding.where(code = 'C98388').exists() implies extension.where(url='nonInterventional').exists()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "interventional-a",
+            "severity": "error",
+            "human": "Cardinality: 0..1, Design.primaryDesign == 'Interventional'",
+            "expression": "category.coding.where(code = 'C98388').exists() implies extension.where(url='nonInterventional').exists()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "nonInterventional-a",
+            "severity": "error",
+            "human": "Cardinality: 0..1, Design.primaryDesign == 'Non-interventional'",
+            "expression": "category.coding.where(code = 'C142615').exists() implies extension.where(url='nonInterventional').exists()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "nonInterventional-b",
+            "severity": "error",
+            "human": "Cardinality: 0..0, Design.primaryDesign != 'Non-interventional'",
+            "expression": "category.coding.where(code = 'C142615').exists().not() implies extension.where(url='nonInterventional').exists.not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "study-stageStopped-a",
+            "severity": "error",
+            "human": "Cardinality: 0..1, if Design.administrativeInformation.status == ('06' OR '07')",
+            "expression": "extension.extension.where(url='status').valueCoding.where(code = '06' or code = '07').exists() implies reasonStopped.coding.exists()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "study-stageStopped-b",
+            "severity": "error",
+            "human": "Cardinality: 0..0, if Design.administrativeInformation.status != ('06' OR '07')",
+            "expression": "extension.extension.where(url='status').valueCoding.where(code = '06' or code = '07').exists().not() implies reasonStopped.coding.exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "study-reasonStopped-a",
+            "severity": "error",
+            "human": "Cardinality: 0..1, if Design.administrativeInformation.status == ('06' OR '07')",
+            "expression": "extension.extension.where(url='status').valueCoding.where(code = '06' or code = '07').exists() implies reasonStopped.text.exists()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "study-reasonStopped-b",
+            "severity": "error",
+            "human": "Cardinality: 0..0, if Design.administrativeInformation.status != ('06' OR '07')",
+            "expression": "extension.extension.where(url='status').valueCoding.where(code = '06' or code = '07').exists().not() implies reasonStopped.text.exists().not()",
             "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
           }
         ],
@@ -424,54 +564,24 @@
         ]
       },
       {
-        "id": "ResearchStudy.extension:targetFollowupDuration",
+        "id": "ResearchStudy.extension:nonInterventional",
         "path": "ResearchStudy.extension",
-        "sliceName": "targetFollowupDuration",
+        "sliceName": "nonInterventional",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-target-followup-duration"
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-non-interventional"
             ]
           }
         ]
       },
       {
-        "id": "ResearchStudy.extension:biospecimen",
+        "id": "ResearchStudy.extension:interventional",
         "path": "ResearchStudy.extension",
-        "sliceName": "biospecimen",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-biospecimen"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.extension:masking",
-        "path": "ResearchStudy.extension",
-        "sliceName": "masking",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-masking"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.extension:studyInterventional",
-        "path": "ResearchStudy.extension",
-        "sliceName": "studyInterventional",
+        "sliceName": "interventional",
         "min": 0,
         "max": "1",
         "type": [
@@ -479,21 +589,6 @@
             "code": "Extension",
             "profile": [
               "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-interventional"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.extension:timePerspectives",
-        "path": "ResearchStudy.extension",
-        "sliceName": "timePerspectives",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-time-perspectives"
             ]
           }
         ]
@@ -867,7 +962,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.6 Resource.keywords"
+            "map": "Resource.keywords"
           }
         ]
       },
@@ -892,7 +987,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.6.2 Resource.keywords.code"
+            "map": "Resource.keywords.code"
           }
         ]
       },
@@ -912,7 +1007,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.6.1 Resource.keywords.label"
+            "map": "Resource.keywords.label"
           }
         ]
       },
@@ -1061,7 +1156,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "sDesign.hypotheses"
+            "map": "Design.hypotheses"
           }
         ]
       }

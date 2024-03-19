@@ -1,0 +1,206 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "nfdi4health-ex-mds-study-non-interventional",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-non-interventional",
+  "name": "NFDI4Health_EX_MDS_Study_Non_Interventional",
+  "title": "NFDI4Health EX MDS Study Non Interventional",
+  "status": "draft",
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "description": "Group of items providing information about non interventional studys",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "NFDI4Health",
+      "name": "NFDI4Health to FHIR Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ResearchStudy"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Non-interventional aspects of the [RESOURCE]",
+        "definition": "Group of items providing information about specific non-interventional aspects of the [RESOURCE].",
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.nonInterventional"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:timePerspectives",
+        "path": "Extension.extension",
+        "sliceName": "timePerspectives",
+        "short": "Temporal design of the study",
+        "definition": "Temporal design of the study, i.e. the  relationship of observation period to time of participant enrollment.",
+        "comment": "Is it a retrospective, prospective or cross-sectional study?",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.nonInterventional.timePerspectives"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:timePerspectives.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:timePerspectives.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "timePerspectives"
+      },
+      {
+        "id": "Extension.extension:timePerspectives.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-time-perspectives-nci",
+          "description": "Value set defining codes to specify the time perspective of a study in a ResearchStudy resource."
+        }
+      },
+      {
+        "id": "Extension.extension:targetFollowUpDuration",
+        "path": "Extension.extension",
+        "sliceName": "targetFollowUpDuration",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-target-followup-duration"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:biospecimenRetention",
+        "path": "Extension.extension",
+        "sliceName": "biospecimenRetention",
+        "short": "Biosamples retained in a biorepository",
+        "definition": "Indication whether samples of biomaterials from participants of the [RESOURCE] are retained in a biorepository.",
+        "comment": "Short input help: Select all that apply.",
+        "min": 0,
+        "max": "*",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.nonInterventional.biospecimenRetention"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:biospecimenRetention.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:biospecimenRetention.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "biospecimenRetention"
+      },
+      {
+        "id": "Extension.extension:biospecimenRetention.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-biospecimen-retention-nci",
+          "description": "Value set defining codes to specify which biosamples are retained in a biorepository."
+        }
+      },
+      {
+        "id": "Extension.extension:biospecimenDescription",
+        "path": "Extension.extension",
+        "sliceName": "biospecimenDescription",
+        "short": "Specific types of retained biosamples",
+        "definition": "Additional information about retained biosamples, i.e. an indication of the specific types of retained biospecimens (e.g. blood, serum, urine, etc.).",
+        "comment": "You can provide here specific types of retained biosamples (e.g. blood, serum, urine, etc.).",
+        "min": 0,
+        "max": "1",
+        "example": [
+          {
+            "label": "Example of a specific type of a retained biosample",
+            "valueString": "blood"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.nonInterventional.biospecimenDescription"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:biospecimenDescription.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:biospecimenDescription.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "biospecimenDescription"
+      },
+      {
+        "id": "Extension.extension:biospecimenDescription.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-non-interventional"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}
