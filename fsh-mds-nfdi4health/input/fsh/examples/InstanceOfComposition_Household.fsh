@@ -8,7 +8,7 @@ Usage: #example
 * status = #final // mandatory in FHIR, no information in MDS
 * date = "2024"
 * type = $Remaining#021 "Other study document"
-* category = $NCI#C25704 "Text"
+* category = $Remaining#052 "Data Paper"
 * subject = Reference(InstanceOfDocumentHouseholdTransmissionInvestigationForC19)
 
 // Title and Acronyms

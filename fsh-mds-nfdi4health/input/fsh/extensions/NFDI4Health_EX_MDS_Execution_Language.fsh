@@ -8,12 +8,8 @@ Description: "Extension provinding information about the language the [RESOURCE]
 * ^publisher = "NFDI4Health"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
-* ^context[0].type = #element
-* ^context[=].expression = "ResearchStudy"
-* ^context[+].type = #element
-* ^context[=].expression = "Questionnaire"
-* ^context[+].type = #element
-* ^context[=].expression = "DocumentReference"
+* ^context.type = #element
+* ^context.expression = "Composition"
 * . 0..*
 * . ^short = "Language(s) of the [RESOURCE]"
 * . ^definition = "Language(s) in which the [RESOURCE] is conducted/provided."

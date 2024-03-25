@@ -7,14 +7,14 @@ Usage: #example
 * status = #active // mandatory in FHIR ; made up as no information in MDS
 
 ///English description
-* extension[descriptions].extension[value].valueString = "This is a data dictionary for the 'Household transmission investigation protocol for coronavirus disease 2019 (COVID-19)'. This data dictionary is prepared for upload into OPAL/MICA applications of the OBiBa (Open Source Software for BioBanks) software suite. The variables are annotated with metadata using the variable classification taxonomy developed by Maelstrom Research. Further information about format and applications can be found in Doiron et al. (2017; https://doi.org/10.1093/ije/dyx180)."
+* extension[descriptions].extension[value].valueString = "This is a data dictionary for the 'Household transmission investigation protocol for coronavirus disease 2019 (COVID-19)'. This data dictionary is prepared for upload into OPAL/MICA applications of the OBiBa (Open Source Software for BioBanks) software suite. The variables are annotated with metadata using the variable classification taxonomy developed by Maelstrom Research. Further information about format and applications can be found in Doiron et al."
 * extension[descriptions].extension[language].valueCodeableConcept = $ISOLanguage#en "English"
 
 ///Details
-* extension[keywords][+].valueCodeableConcept.text = "COVID-19"
-* extension[keywords][=].valueCodeableConcept.coding.system = "https://id.nlm.nih.gov/mesh/D000086382.html"
+* extension[keywords][0].valueCodeableConcept.text = "COVID-19"
+* extension[keywords][=].valueCodeableConcept.coding.system = "https://id.nlm.nih.gov/mesh/D000086382"
 * extension[keywords][+].valueCodeableConcept.text = "Dictionary"
-* extension[keywords][=].valueCodeableConcept.coding.system  = "https://id.nlm.nih.gov/mesh/T049210.html"
+* extension[keywords][=].valueCodeableConcept.coding.system  = "https://id.nlm.nih.gov/mesh/T049210"
 * language = #en "English"
 
 //* extension[webpage].valueUrl = "https://mica.covid19.studyhub.nfdi4health.de/dataset/whoncov-hhtransmission"

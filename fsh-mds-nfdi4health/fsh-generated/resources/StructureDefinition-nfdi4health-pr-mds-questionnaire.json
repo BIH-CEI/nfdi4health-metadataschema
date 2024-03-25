@@ -118,21 +118,6 @@
         ]
       },
       {
-        "id": "Questionnaire.extension:executionlLanguage",
-        "path": "Questionnaire.extension",
-        "sliceName": "executionlLanguage",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-execution-language"
-            ]
-          }
-        ]
-      },
-      {
         "id": "Questionnaire.extension:relatedResources",
         "path": "Questionnaire.extension",
         "sliceName": "relatedResources",

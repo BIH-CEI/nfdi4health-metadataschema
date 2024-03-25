@@ -19,6 +19,6 @@ Description: "Language of an element."
 
 * value[x] 1..
 * value[x] only CodeableConcept
-* valueCodeableConcept from nfdi4health-vs-mds-languages-iso (required)
+* valueCodeableConcept from NFDI4Health_VS_MDS_Languages_ISO (required)
 * valueCodeableConcept.coding.code 1..1
 * valueCodeableConcept.coding.system 1..1

@@ -1,0 +1,591 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "nfdi4health-pr-mds-registry",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-registry",
+  "version": "0.9",
+  "name": "NFDI4Health_PR_MDS_Registry",
+  "title": "NFDI4Health PR MDS Registry",
+  "status": "draft",
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "description": "Group of items applicable only to registries.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "objimpl",
+      "uri": "http://hl7.org/fhir/object-implementation",
+      "name": "Object Implementation Information"
+    },
+    {
+      "identity": "NFDI4Health",
+      "name": "NFDI4Health to FHIR Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Library",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Library",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Library",
+        "path": "Library",
+        "constraint": [
+          {
+            "key": "biosamples-a",
+            "severity": "error",
+            "human": "0..*, if Design.dataSource.general == 'C70699'",
+            "expression": "extension.extension.where(url='general').valueCoding.where(code = 'C70699').exists() implies extension.extension.where(url='biosamples').exists()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-registry"
+          },
+          {
+            "key": "biosamples-b",
+            "severity": "error",
+            "human": "0..0, if Design.dataSource.general != 'C70699'",
+            "expression": "extension.extension.where(url='general').valueCoding.where(code = 'C70699').exists().not() implies extension.extension.where(url='biosamples').exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-registry"
+          },
+          {
+            "key": "imaging-a",
+            "severity": "error",
+            "human": "0..*, if Design.dataSource.general == '031'",
+            "expression": "extension.extension.where(url='general').valueCoding.where(code = '031').exists() implies extension.extension.where(url='imaging').exists()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-registry"
+          },
+          {
+            "key": "imaging-b",
+            "severity": "error",
+            "human": "0..0, if Design.dataSource.general != '031'",
+            "expression": "extension.extension.where(url='general').valueCoding.where(code = '031').exists().not() implies extension.extension.where(url='imaging').exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-registry"
+          },
+          {
+            "key": "omics-a",
+            "severity": "error",
+            "human": "0..*, if Design.dataSource.general == '033'",
+            "expression": "extension.extension.where(url='general').valueCoding.where(code = '033').exists() implies extension.extension.where(url='omics').exists()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-registry"
+          },
+          {
+            "key": "omics-b",
+            "severity": "error",
+            "human": "0..0, if Design.dataSource.general != '033'",
+            "expression": "extension.extension.where(url='general').valueCoding.where(code = '033').exists().not() implies extension.extension.where(url='omics').exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-registry"
+          },
+          {
+            "key": "supportingInformation-a",
+            "severity": "error",
+            "human": "Cardinality: 0..*, if Design.dataSharingPlan.generally == 'C49488'",
+            "expression": "extension.extension.where(url='generally').where(code = 'C49488').exists() implies extension.extension.where(url='supportingInformation').exists()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-registry"
+          },
+          {
+            "key": "supportingInformation-b",
+            "severity": "error",
+            "human": "Cardinality: 0..0, if Design.dataSharingPlan.generally != 'C49488'",
+            "expression": "extension.extension.where(url='generally').where(code = 'C49488').exists().not() implies extension.extension.where(url='supportingInformation').exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-registry"
+          },
+          {
+            "key": "timeFrame-a",
+            "severity": "error",
+            "human": "Cardinality: 0..*, if Design.dataSharingPlan.generally == 'C49488'",
+            "expression": "extension.extension.where(url='generally').where(code = 'C49488').exists() implies extension.extension.where(url='timeFrame').exists()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-registry"
+          },
+          {
+            "key": "timeFrame-b",
+            "severity": "error",
+            "human": "Cardinality: 0..0, if Design.dataSharingPlan.generally != 'C49488'",
+            "expression": "extension.extension.where(url='generally').where(code = 'C49488').exists().not() implies extension.extension.where(url='timeFrame').exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-registry"
+          },
+          {
+            "key": "accessCriteria-a",
+            "severity": "error",
+            "human": "Cardinality: 0..*, if Design.dataSharingPlan.generally == 'C49488'",
+            "expression": "extension.extension.where(url='generally').where(code = 'C49488').exists() implies extension.extension.where(url='accessCriteria').exists()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-registry"
+          },
+          {
+            "key": "accessCriteria-b",
+            "severity": "error",
+            "human": "Cardinality: 0..0, if Design.dataSharingPlan.generally != 'C49488'",
+            "expression": "extension.extension.where(url='generally').where(code = 'C49488').exists().not() implies extension.extension.where(url='accessCriteria').exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-registry"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design"
+          }
+        ]
+      },
+      {
+        "id": "Library.extension",
+        "path": "Library.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 4
+      },
+      {
+        "id": "Library.extension:groupsOfDiseases",
+        "path": "Library.extension",
+        "sliceName": "groupsOfDiseases",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-groups-of-diseases"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.groupsOfDiseases"
+          }
+        ]
+      },
+      {
+        "id": "Library.extension:ethicsCommitteeApproval",
+        "path": "Library.extension",
+        "sliceName": "ethicsCommitteeApproval",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-library-ethics-approval"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Library.extension:keywords",
+        "path": "Library.extension",
+        "sliceName": "keywords",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-keywords"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Library.extension:descriptions",
+        "path": "Library.extension",
+        "sliceName": "descriptions",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-descriptions"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Resource.descriptions"
+          }
+        ]
+      },
+      {
+        "id": "Library.extension:dataSource",
+        "path": "Library.extension",
+        "sliceName": "dataSource",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-data-source"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Library.extension:outcomes",
+        "path": "Library.extension",
+        "sliceName": "outcomes",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-outcomemeasure-backport-r5"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Library.extension:assessments",
+        "path": "Library.extension",
+        "sliceName": "assessments",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-assessments"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Library.extension:dataSharingPlan",
+        "path": "Library.extension",
+        "sliceName": "dataSharingPlan",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-data-sharing-plan"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Library.extension:dataProviders",
+        "path": "Library.extension",
+        "sliceName": "dataProviders",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-library-data-providers"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Library.extension:dataProvidersNumber",
+        "path": "Library.extension",
+        "sliceName": "dataProvidersNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-library-data-providers-number"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Library.extension:population",
+        "path": "Library.extension",
+        "sliceName": "population",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-library-population"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Library.identifier",
+        "path": "Library.identifier",
+        "short": "Alternative identifiers",
+        "definition": "Group of items providing information about identifiers (IDs) assigned to the given [RESOURCE] by another registering systems, e.g. a registry of clinical trials or a data repository.",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Resource.idsAlternative"
+          }
+        ]
+      },
+      {
+        "id": "Library.identifier.type",
+        "path": "Library.identifier.type",
+        "short": "Type of the registry",
+        "definition": "Type/name of the system where the given [RESOURCE] is already registered.",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-id-type-nci-local",
+          "description": "Value set defining codes to specify the type of a resource identifier."
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Resource.idsAlternative.scheme"
+          }
+        ]
+      },
+      {
+        "id": "Library.identifier.value",
+        "path": "Library.identifier.value",
+        "definition": "Identifier",
+        "min": 1,
+        "example": [
+          {
+            "label": "Identifier (ID) assigned to the given [RESOURCE] by another registering system, e.g. by a registry of clinical trials or a data repository.",
+            "valueString": "ISRCTN91495258"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Resource.idsAlternative.identifier"
+          }
+        ]
+      },
+      {
+        "id": "Library.status",
+        "path": "Library.status",
+        "comment": "The item does not exist in NFDI4Health' MDS. Fixed to 'active' for all studies.",
+        "fixedCode": "active"
+      },
+      {
+        "id": "Library.subject[x]",
+        "path": "Library.subject[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Library.subject[x]:subjectCodeableConcept",
+        "path": "Library.subject[x]",
+        "sliceName": "subjectCodeableConcept",
+        "short": "Primary subject",
+        "definition": "The primary subject addressed by the [RESOURCE], i.e. a person, an animal or other subject types.",
+        "comment": "Short input help: Select one value from the list.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-subject-snomedct",
+          "description": "Value set defining codes for sujects in a resource."
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.subject"
+          }
+        ]
+      },
+      {
+        "id": "Library.subject[x]:subjectReference",
+        "path": "Library.subject[x]",
+        "sliceName": "subjectReference",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-group-intended"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.eligibilityCriteria"
+          }
+        ]
+      },
+      {
+        "id": "Library.description",
+        "path": "Library.description",
+        "short": "Additional information about the [RESOURCE]",
+        "definition": "Any additional information about specific aspects of the [RESOURCE] that could not be captured by other fields..",
+        "comment": "Short input help: You can provide here specific aspects of the [RESOURCE] that could not be captured by other fields.",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.comment"
+          }
+        ]
+      },
+      {
+        "id": "Library.effectivePeriod",
+        "path": "Library.effectivePeriod",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.administrativeInformation.startDate"
+          },
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.administrativeInformation.endDate"
+          }
+        ]
+      },
+      {
+        "id": "Library.effectivePeriod.start",
+        "path": "Library.effectivePeriod.start",
+        "short": "Start date",
+        "definition": "Start date of data collection for the [RESOURCE].",
+        "comment": "Additional information: Preferred date format: DD.MM.YYYY. | Short input help: In case of a planned [RESOURCE], enter the intended start date. In case of an ongoing [RESOURCE], enter the actual start date."
+      },
+      {
+        "id": "Library.effectivePeriod.end",
+        "path": "Library.effectivePeriod.end",
+        "short": "End date",
+        "definition": "In case of a [RESOURCE] with patients or other participants, it is the date when the last participant is examined or receives an intervention, or the date of the last participant's last visit.",
+        "comment": "Additional information: Preferred date format: DD.MM.YYYY. | Short input help: In case of a planned or ongoing [RESOURCE], enter the intended end date. In case of a completed [RESOURCE], enter the actual end date."
+      },
+      {
+        "id": "Library.topic",
+        "path": "Library.topic",
+        "short": "Primary focus of the [RESOURCE]",
+        "definition": "Group of items providing information about the focus of the [RESOURCE] (e.g. medication, food, therapy, device, etc.).",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.focus"
+          }
+        ]
+      },
+      {
+        "id": "Library.topic.extension:uri",
+        "path": "Library.topic.extension",
+        "sliceName": "uri",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-uri"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.focus.code"
+          }
+        ]
+      },
+      {
+        "id": "Library.topic.coding",
+        "path": "Library.topic.coding",
+        "short": "Terminology/classification",
+        "definition": "Terminology/classification used for the focus area.",
+        "comment": "Short Input Help: If used, name of the terminology/classification.",
+        "min": 1,
+        "max": "1",
+        "example": [
+          {
+            "label": "Example of a terminology/classification",
+            "valueCode": "C49469"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-conditions-classification-nci-local"
+        }
+      },
+      {
+        "id": "Library.topic.coding.code",
+        "path": "Library.topic.coding.code",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.focus.classification"
+          }
+        ]
+      },
+      {
+        "id": "Library.topic.text",
+        "path": "Library.topic.text",
+        "short": "Focus area",
+        "definition": "Focus area of the [RESOURCE] (e.g. medication, food, therapy, device, etc.).",
+        "comment": "Additional Information: The use of terms from established terminologies/classifications (e.g. SNOMED CT, ICD, etc.) is preferred. However, also self-assigned terms are allowed. | Short input help: Preferably, use terms from SNOMED CT (https://browser.ihtsdotools.org).",
+        "min": 1,
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.focus.label"
+          }
+        ]
+      },
+      {
+        "id": "Library.relatedArtifact",
+        "path": "Library.relatedArtifact",
+        "max": "1",
+        "type": [
+          {
+            "code": "RelatedArtifact",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-related-artifact-resource"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

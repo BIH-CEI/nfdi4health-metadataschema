@@ -19,9 +19,9 @@ Usage: #example
 
 /// Details
 * extension[keywords][0].valueCodeableConcept.text = "COVID-19"
-* extension[keywords][=].valueCodeableConcept.coding.system = "https://id.nlm.nih.gov/mesh/D000086382.html"
+* extension[keywords][=].valueCodeableConcept.coding.system = "https://id.nlm.nih.gov/mesh/D000086382"
 * extension[keywords][+].valueCodeableConcept.text = "Questionnaire"
-* extension[keywords][=].valueCodeableConcept.coding.system = "https://id.nlm.nih.gov/mesh/T000997092.html"
+* extension[keywords][=].valueCodeableConcept.coding.system = "https://id.nlm.nih.gov/mesh/T000997092"
 * content.format.display = "PDF"
 * extension[useRights].extension[copyrightLabelAndLink].extension[label].valueCoding = $SCT#74964007 "Other"
 * extension[useRights].extension[useRightsDescription].valueString = " This document is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 IGO (CC BY-NC-SA 3.0 IGO) License. To view a copy of the license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/igo/legalcode."

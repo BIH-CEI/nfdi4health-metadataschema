@@ -168,21 +168,6 @@
         ]
       },
       {
-        "id": "DocumentReference.extension:executionLanguage",
-        "path": "DocumentReference.extension",
-        "sliceName": "executionLanguage",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-execution-language"
-            ]
-          }
-        ]
-      },
-      {
         "id": "DocumentReference.identifier",
         "path": "DocumentReference.identifier",
         "slicing": {

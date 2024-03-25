@@ -13,7 +13,7 @@
       "extension": [
         {
           "url": "value",
-          "valueString": "This is a data dictionary for the 'Household transmission investigation protocol for coronavirus disease 2019 (COVID-19)'. This data dictionary is prepared for upload into OPAL/MICA applications of the OBiBa (Open Source Software for BioBanks) software suite. The variables are annotated with metadata using the variable classification taxonomy developed by Maelstrom Research. Further information about format and applications can be found in Doiron et al. (2017; https://doi.org/10.1093/ije/dyx180)."
+          "valueString": "This is a data dictionary for the 'Household transmission investigation protocol for coronavirus disease 2019 (COVID-19)'. This data dictionary is prepared for upload into OPAL/MICA applications of the OBiBa (Open Source Software for BioBanks) software suite. The variables are annotated with metadata using the variable classification taxonomy developed by Maelstrom Research. Further information about format and applications can be found in Doiron et al."
         },
         {
           "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language",
@@ -35,7 +35,7 @@
         "text": "COVID-19",
         "coding": [
           {
-            "system": "https://id.nlm.nih.gov/mesh/D000086382.html"
+            "system": "https://id.nlm.nih.gov/mesh/D000086382"
           }
         ]
       }
@@ -46,7 +46,7 @@
         "text": "Dictionary",
         "coding": [
           {
-            "system": "https://id.nlm.nih.gov/mesh/T049210.html"
+            "system": "https://id.nlm.nih.gov/mesh/T049210"
           }
         ]
       }

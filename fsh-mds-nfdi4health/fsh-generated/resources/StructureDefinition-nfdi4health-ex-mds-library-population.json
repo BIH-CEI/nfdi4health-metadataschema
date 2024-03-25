@@ -1,0 +1,139 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "nfdi4health-ex-mds-library-population",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-library-population",
+  "name": "NFDI4Health_EX_MDS_Library_Population",
+  "title": "NFDI4Health EX MDS Library Population",
+  "status": "draft",
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "description": "Group of items providing information about the Population of a Registry",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "NFDI4Health",
+      "name": "NFDI4Health to FHIR Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Library"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Population of the [RESOURCE]",
+        "definition": "Group of items providing information about the population of the [RESOURCE].",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.population"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:populationDescription",
+        "path": "Extension.extension",
+        "sliceName": "populationDescription",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-population-description"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:populationLocation",
+        "path": "Extension.extension",
+        "sliceName": "populationLocation",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-population-location"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:obtainedSampleSize",
+        "path": "Extension.extension",
+        "sliceName": "obtainedSampleSize",
+        "short": "Obtained sample size",
+        "definition": "Obtained number of observational units for the whole [RESOURCE] (e.g. obtained number of [RESOURCE] participants at all sites of the [RESOURCE]).",
+        "comment": "The value is only available after the end of recruitment",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.population.obtainedSampleSize"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:obtainedSampleSize.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:obtainedSampleSize.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "obtainedSampleSize"
+      },
+      {
+        "id": "Extension.extension:obtainedSampleSize.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-library-population"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

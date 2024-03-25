@@ -97,6 +97,10 @@
           {
             "identity": "NFDI4Health",
             "map": "Design.groups.name"
+          },
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.arms"
           }
         ]
       },
@@ -113,9 +117,9 @@
       {
         "id": "Extension.extension:name.value[x]",
         "path": "Extension.extension.value[x]",
-        "short": "Name of the group",
-        "definition": "Short name used to identify the group.",
-        "comment": "'Group' means a predefined group (cohort) of participants to be studied.",
+        "short": "Name of the group | Name of the arm",
+        "definition": "Short name used to identify the group. | Short name used to identify the arm.",
+        "comment": "'Group' means a predefined group (cohort) of participants to be studied. | 0..*, if Resource.classification.type == ('Study' OR 'Substudy') AND Design.primaryDesign == 'Interventional'; otherwise 0..0",
         "type": [
           {
             "code": "string"
@@ -127,7 +131,13 @@
         "path": "Extension.extension",
         "sliceName": "type",
         "min": 0,
-        "max": "1"
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.arms.type"
+          }
+        ]
       },
       {
         "id": "Extension.extension:type.extension",
@@ -142,11 +152,17 @@
       {
         "id": "Extension.extension:type.value[x]",
         "path": "Extension.extension.value[x]",
+        "short": "Role of the arm",
+        "definition": "Role of the given arm in the [RESOURCE].",
         "type": [
           {
             "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-arm-group-type-nci"
+        }
       },
       {
         "id": "Extension.extension:description",
@@ -158,6 +174,10 @@
           {
             "identity": "NFDI4Health",
             "map": "Design.groups.description"
+          },
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.arms.description"
           }
         ]
       },
@@ -174,8 +194,8 @@
       {
         "id": "Extension.extension:description.value[x]",
         "path": "Extension.extension.value[x]",
-        "short": "Additional information about the group",
-        "definition": "Additional descriptive information about the given group.",
+        "short": "Additional information about the group | Additional information about the arm",
+        "definition": "Additional descriptive information about the given group. | Additional descriptive information about the given arm.",
         "comment": "Explanation of the nature of the [RESOURCE] group (for example, participants with and without a condition, participants with and without an exposure, etc.).",
         "type": [
           {
@@ -231,7 +251,13 @@
         "path": "Extension.extension",
         "sliceName": "observedGroup",
         "min": 0,
-        "max": "1"
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.groups.label"
+          }
+        ]
       },
       {
         "id": "Extension.extension:observedGroup.extension",

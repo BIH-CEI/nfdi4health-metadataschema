@@ -16,8 +16,7 @@ Description: "Profile to collect information about documents related to german c
     NFDI4Health_EX_MDS_Keywords named keywords 0..* and
     NFDI4Health_EX_MDS_Descriptions named descriptions 1..* and
     NFDI4Health_EX_MDS_Document_Use_Rights named useRights 0..1 and 
-    NFDI4Health_EX_MDS_Related named relatedResources 0..1 and
-    NFDI4Health_EX_MDS_Execution_Language named executionLanguage 0..*
+    NFDI4Health_EX_MDS_Related named relatedResources 0..1
 * identifier ^short = "Alternative identifiers"
 * identifier ^definition = "Group of items providing information about identifiers (IDs) assigned to the given resource by another registering systems, e.g. a register of clinical trials or a data repository."
 * identifier ^comment = "Short input help: If the [RESOURCE] is registered in other systems (e.g. a register of clinical trials or a data repository), you can provide corresponding identifier(s) here."

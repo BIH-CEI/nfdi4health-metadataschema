@@ -12,6 +12,8 @@ Description: "Extension storing keyword(s) describing a resource."
 * ^context[=].expression = "Questionnaire"
 * ^context[+].type = #element
 * ^context[=].expression = "DocumentReference"
+* ^context[+].type = #element
+* ^context[=].expression = "Library"
 * . ^short = "Keyword(s) describing the [RESOURCE]"
 * . ^definition = "Group of items providing information about keywords describing the [RESOURCE]."
 * . ^comment = "Additional information: The findability of the [RESOURCE] can be significantly increased if proper keywords are stated."

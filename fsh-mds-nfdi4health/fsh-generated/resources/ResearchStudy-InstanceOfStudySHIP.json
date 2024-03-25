@@ -30,6 +30,35 @@
       ]
     },
     {
+      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-admin-info",
+      "extension": [
+        {
+          "url": "status",
+          "valueCoding": {
+            "code": "04",
+            "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-mds-study-status",
+            "display": "Ongoing (III): Recruitment completed, but data collection ongoing"
+          }
+        },
+        {
+          "url": "ethicsCommiteeApproval",
+          "valueCoding": {
+            "code": "C25425",
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "display": "Approval"
+          }
+        },
+        {
+          "url": "statusEnrollingByInvitation",
+          "valueCoding": {
+            "code": "373066001",
+            "system": "http://snomed.info/sct",
+            "display": "Yes (qualifier value)"
+          }
+        }
+      ]
+    },
+    {
       "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-subject",
       "valueCoding": {
         "code": "125676002",
@@ -94,35 +123,6 @@
           }
         }
       ]
-    },
-    {
-      "extension": [
-        {
-          "url": "ethicsCommiteeApproval",
-          "valueCoding": {
-            "code": "C25425",
-            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
-            "display": "Approval"
-          }
-        },
-        {
-          "url": "status",
-          "valueCoding": {
-            "code": "04",
-            "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-mds-study-status",
-            "display": "Ongoing (III): Recruitment completed, but data collection ongoing"
-          }
-        },
-        {
-          "url": "statusEnrollingByInvitation",
-          "valueCoding": {
-            "code": "373066001",
-            "system": "http://snomed.info/sct",
-            "display": "Yes (qualifier value)"
-          }
-        }
-      ],
-      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-admin-info"
     },
     {
       "extension": [

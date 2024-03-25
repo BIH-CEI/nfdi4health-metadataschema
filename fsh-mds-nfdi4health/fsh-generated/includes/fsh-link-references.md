@@ -55,9 +55,13 @@
 [NFDI4Health_EX_MDS_Format]: StructureDefinition-nfdi4health-ex-mds-format.html
 [NFDI4Health_EX_MDS_Identifier_Assignment_Date]: StructureDefinition-nfdi4health-ex-mds-identifier-assignment-date.html
 [NFDI4Health_EX_MDS_Keywords]: StructureDefinition-nfdi4health-ex-mds-keywords.html
-[NFDI4Health_EX_MDS_Label]: StructureDefinition-nfdi4health-ex-mds-label.html
-[NFDI4Health_EX_MDS_Language]: StructureDefinition-nfdi4health-ex-mds-language.html
+[NFDI4Health_EX_MDS_Label_Backport_R5]: StructureDefinition-nfdi4health-ex-mds-label-backport-r5.html
 [NFDI4Health_EX_MDS_Execution_Language]: StructureDefinition-nfdi4health-ex-mds-execution-language.html
+[NFDI4Health_EX_MDS_Language]: StructureDefinition-nfdi4health-ex-mds-language.html
+[NFDI4Health_EX_MDS_Library_Data_Providers]: StructureDefinition-nfdi4health-ex-mds-library-data-providers.html
+[NFDI4Health_EX_MDS_Library_Data_Providers_Number]: StructureDefinition-nfdi4health-ex-mds-library-data-providers-number.html
+[NFDI4Health_EX_MDS_Library_Ethics_Approval]: StructureDefinition-nfdi4health-ex-mds-library-ethics-approval.html
+[NFDI4Health_EX_MDS_Library_Population]: StructureDefinition-nfdi4health-ex-mds-library-population.html
 [NFDI4Health_EX_MDS_Mortality_Data]: StructureDefinition-nfdi4health-ex-mds-mortality-data.html
 [NFDI4Health_EX_MDS_Name_Type]: StructureDefinition-nfdi4health-ex-mds-name-type.html
 [NFDI4Health_EX_MDS_Nutritional_Data]: StructureDefinition-nfdi4health-ex-mds-nutritional-data.html
@@ -94,7 +98,6 @@
 [NFDI4Health_LM_Metadataschema_EOCD]: StructureDefinition-nfdi4health-lm-metadataschema-eocd.html
 [NFDI4Health_LM_MDS_Design]: StructureDefinition-nfdi4health-lm-mds-design.html
 [NFDI4Health_LM_Metadataschema_NE]: StructureDefinition-nfdi4health-lm-metadataschema-ne.html
-[InstanceOfChronicDiseaseModule]: Questionnaire-InstanceOfChronicDiseaseModule.html
 [InstanceOfNutritionalEpidemiologyModule]: Questionnaire-InstanceOfNutritionalEpidemiologyModule.html
 [InstanceOfRecordLinkage]: Questionnaire-InstanceOfRecordLinkage.html
 [NFDI4Health_VS_MDS_NE_Device_NCI_SNOMEDCT_Local]: ValueSet-nfdi4health-vs-mds-ne-device-nci-snomedct-local.html
@@ -104,6 +107,8 @@
 [NFDI4Health_VS_MDS_NE_Reference_Period_Unit_UCUM]: ValueSet-nfdi4health-vs-mds-ne-reference-period-unit-ucum.html
 [NFDI4Health_PR_MDS_Affiliation]: StructureDefinition-nfdi4health-pr-mds-affiliation.html
 [NFDI4Health_PR_MDS_Centers]: StructureDefinition-nfdi4health-pr-mds-centers.html
+[NFDI4Health_PR_MDS_Chronic_Diseases]: StructureDefinition-nfdi4health-pr-mds-chronic-diseases.html
+[NFDI4Health_PR_MDS_Conditions]: StructureDefinition-nfdi4health-pr-mds-conditions.html
 [NFDI4Health_PR_MDS_Composition]: StructureDefinition-nfdi4health-pr-mds-composition.html
 [NFDI4Health_PR_MDS_Document]: StructureDefinition-nfdi4health-pr-mds-document.html
 [NFDI4Health_PR_MDS_Evidence_Variable_Intervention]: StructureDefinition-nfdi4health-pr-mds-evidence-variable-intervention.html
@@ -116,6 +121,7 @@
 [NFDI4Health_PR_MDS_Practitioner_Role]: StructureDefinition-nfdi4health-pr-mds-practitioner-role.html
 [NFDI4Health_PR_MDS_Provenance]: StructureDefinition-nfdi4health-pr-mds-provenance.html
 [NFDI4Health_PR_MDS_Questionnaire]: StructureDefinition-nfdi4health-pr-mds-questionnaire.html
+[NFDI4Health_PR_MDS_Registry]: StructureDefinition-nfdi4health-pr-mds-registry.html
 [NFDI4Health_PR_MDS_Related_Artifact_Resource]: StructureDefinition-nfdi4health-pr-mds-related-artifact-resource.html
 [NFDI4Health_PR_MDS_Study]: StructureDefinition-nfdi4health-pr-mds-study.html
 [2.16.840.1.113883.3.1937.777.64.4.6--20231207000000]: Questionnaire-2.16.840.1.113883.3.1937.777.64.4.6--20231207000000.html

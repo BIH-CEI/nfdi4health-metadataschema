@@ -7,8 +7,10 @@ Description: "Group of items providing information about the groups of diseases 
 * ^publisher = "NFDI4Health"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
-* ^context.type = #element
-* ^context.expression = "ResearchStudy"
+* ^context[0].type = #element
+* ^context[=].expression = "ResearchStudy"
+* ^context[+].type = #element
+* ^context[=].expression = "Library"
 * . 0..1
 * . ^short = "Groups of diseases or conditions"
 * . ^definition = "Description: Group of items providing information about groups of diseases or conditions on which the data were collected in the [RESOURCE]."

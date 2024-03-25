@@ -17,12 +17,13 @@ Description: "Profile intended to capture information on the core information of
 * extension contains 
     NFDI4Health_EX_MDS_Provenance_Data_Source named provenanceDataSource 1..1 and
     NFDI4Health_EX_MDS_Chronic_Diseases named chronicDiseases 0..1 and
+    NFDI4Health_EX_MDS_Execution_Language named executionLanguage 0..* and
     NFDI4Health_EX_MDS_Nutritional_Data named nutritionalData 0..1
 * title 1..
 * title ^short = "Title/name"
 * title ^definition = "Scientific unabbreviated title or name of the resource."
 * title ^comment = "Additional Information: If no official title/name has been defined yet, please provide a title/name that is suitable for public display. | Short Input Help: Please provide at least one title/name of the resource. If the original title is not in English, please also provide an English translation of the original title."
-* title.extension contains NFDI4Health_EX_MDS_Label named label 1..*
+* title.extension contains NFDI4Health_EX_MDS_Label_Backport_R5 named label 1..*
 * identifier.value 1..1
 * identifier ^short = "ID of the [RESOURCE]"
 * identifier ^definition = "Unique identifier of the resource used for identification within the NFDI4Health."

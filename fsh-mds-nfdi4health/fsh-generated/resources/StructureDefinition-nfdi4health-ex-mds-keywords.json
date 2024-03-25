@@ -40,6 +40,10 @@
     {
       "type": "element",
       "expression": "DocumentReference"
+    },
+    {
+      "type": "element",
+      "expression": "Library"
     }
   ],
   "type": "Extension",

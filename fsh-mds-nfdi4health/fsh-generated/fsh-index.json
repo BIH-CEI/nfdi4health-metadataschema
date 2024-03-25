@@ -328,14 +328,6 @@
     "endLine": 135
   },
   {
-    "outputFile": "Questionnaire-InstanceOfChronicDiseaseModule.json",
-    "fshName": "InstanceOfChronicDiseaseModule",
-    "fshType": "Instance",
-    "fshFile": "examples/InstanceofModuleChronicDiseases.fsh",
-    "startLine": 1,
-    "endLine": 26
-  },
-  {
     "outputFile": "Questionnaire-InstanceOfNutritionalEpidemiologyModule.json",
     "fshName": "InstanceOfNutritionalEpidemiologyModule",
     "fshType": "Instance",
@@ -381,7 +373,7 @@
     "fshType": "Extension",
     "fshFile": "extensions/NFDI4Health_EX_MDS_Assessments.fsh",
     "startLine": 1,
-    "endLine": 22
+    "endLine": 24
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-chronic-diseases.json",
@@ -405,7 +397,7 @@
     "fshType": "Extension",
     "fshFile": "extensions/NFDI4Health_EX_MDS_Data_Sharing_Plan.fsh",
     "startLine": 5,
-    "endLine": 77
+    "endLine": 79
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-data-source.json",
@@ -413,7 +405,7 @@
     "fshType": "Extension",
     "fshFile": "extensions/NFDI4Health_EX_MDS_Data_Source.fsh",
     "startLine": 1,
-    "endLine": 62
+    "endLine": 64
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-descriptions.json",
@@ -437,7 +429,7 @@
     "fshType": "Extension",
     "fshFile": "extensions/NFDI4Health_EX_MDS_Execution_Language.fsh",
     "startLine": 1,
-    "endLine": 23
+    "endLine": 19
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-format.json",
@@ -453,7 +445,7 @@
     "fshType": "Extension",
     "fshFile": "extensions/NFDI4Health_EX_MDS_Groups_Of_Diseases.fsh",
     "startLine": 1,
-    "endLine": 30
+    "endLine": 32
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-identifier-assignment-date.json",
@@ -469,15 +461,15 @@
     "fshType": "Extension",
     "fshFile": "extensions/NFDI4Health_EX_MDS_Keywords.fsh",
     "startLine": 1,
-    "endLine": 21
+    "endLine": 23
   },
   {
-    "outputFile": "StructureDefinition-nfdi4health-ex-mds-label.json",
-    "fshName": "NFDI4Health_EX_MDS_Label",
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-label-backport-r5.json",
+    "fshName": "NFDI4Health_EX_MDS_Label_Backport_R5",
     "fshType": "Extension",
-    "fshFile": "extensions/NFDI4Health_EX_MDS_Label.fsh",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Label_Backport_R5.fsh",
     "startLine": 1,
-    "endLine": 40
+    "endLine": 37
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-language.json",
@@ -486,6 +478,38 @@
     "fshFile": "extensions/NFDI4Health_EX_MDS_Language.fsh",
     "startLine": 1,
     "endLine": 24
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-library-data-providers-number.json",
+    "fshName": "NFDI4Health_EX_MDS_Library_Data_Providers_Number",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Library_Data_Providers_Number.fsh",
+    "startLine": 1,
+    "endLine": 18
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-library-data-providers.json",
+    "fshName": "NFDI4Health_EX_MDS_Library_Data_Providers",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Library_Data_Providers.fsh",
+    "startLine": 1,
+    "endLine": 18
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-library-ethics-approval.json",
+    "fshName": "NFDI4Health_EX_MDS_Library_Ethics_Approval",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Library_Ethics_Approval.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-library-population.json",
+    "fshName": "NFDI4Health_EX_MDS_Library_Population",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Library_Population.fsh",
+    "startLine": 1,
+    "endLine": 21
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-mortality-data.json",
@@ -517,7 +541,7 @@
     "fshType": "Extension",
     "fshFile": "extensions/NFDI4Health_EX_MDS_Outcomes_Backport_R5.fsh",
     "startLine": 3,
-    "endLine": 44
+    "endLine": 43
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-outcomes.json",
@@ -635,7 +659,7 @@
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-study-admin-info.json",
     "fshName": "NFDI4Health_EX_MDS_Study_Admin_Info",
     "fshType": "Extension",
-    "fshFile": "extensions/NFDI4Health_EX_MDS_Admin_Info.fsh",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Study_Admin_Info.fsh",
     "startLine": 1,
     "endLine": 62
   },
@@ -645,7 +669,7 @@
     "fshType": "Extension",
     "fshFile": "extensions/NFDI4Health_EX_MDS_Study_Comparison_Group_BackportR5.fsh",
     "startLine": 3,
-    "endLine": 40
+    "endLine": 43
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-study-interventional.json",
@@ -800,12 +824,28 @@
     "endLine": 22
   },
   {
+    "outputFile": "StructureDefinition-nfdi4health-pr-mds-chronic-diseases.json",
+    "fshName": "NFDI4Health_PR_MDS_Chronic_Diseases",
+    "fshType": "Profile",
+    "fshFile": "profiles/NFDI4Health_PR_MDS_Chronic_Diseases.fsh",
+    "startLine": 1,
+    "endLine": 34
+  },
+  {
     "outputFile": "StructureDefinition-nfdi4health-pr-mds-composition.json",
     "fshName": "NFDI4Health_PR_MDS_Composition",
     "fshType": "Profile",
     "fshFile": "profiles/NFDI4Health_PR_MDS_Composition.fsh",
     "startLine": 1,
-    "endLine": 64
+    "endLine": 65
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-pr-mds-conditions.json",
+    "fshName": "NFDI4Health_PR_MDS_Conditions",
+    "fshType": "Profile",
+    "fshFile": "profiles/NFDI4Health_PR_MDS_Conditions.fsh",
+    "startLine": 1,
+    "endLine": 26
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-pr-mds-document.json",
@@ -813,7 +853,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/NFDI4Health_PR_MDS_Document.fsh",
     "startLine": 1,
-    "endLine": 121
+    "endLine": 120
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-pr-mds-evidence-variable-exposure.json",
@@ -893,7 +933,15 @@
     "fshType": "Profile",
     "fshFile": "profiles/NFDI4Health_PR_MDS_Questionnaire.fsh",
     "startLine": 1,
-    "endLine": 112
+    "endLine": 111
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-pr-mds-registry.json",
+    "fshName": "NFDI4Health_PR_MDS_Registry",
+    "fshType": "Profile",
+    "fshFile": "profiles/NFDI4Health_PR_MDS_Registry.fsh",
+    "startLine": 1,
+    "endLine": 84
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-pr-mds-related-artifact-resource.json",
@@ -909,7 +957,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/NFDI4Health_PR_MDS_Study.fsh",
     "startLine": 1,
-    "endLine": 179
+    "endLine": 165
   },
   {
     "outputFile": "ValueSet-nfdi4health-vs-mds-cd-common-chronic-disease-name-sct-local.json",

@@ -36,6 +36,10 @@
     {
       "type": "element",
       "expression": "ResearchStudy"
+    },
+    {
+      "type": "element",
+      "expression": "Library"
     }
   ],
   "type": "Extension",

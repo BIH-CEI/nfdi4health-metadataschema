@@ -25,13 +25,16 @@ Description: "Extension providing information about the arm(s)/group(s)/cohort(s
     observedGroup 0..1
 * extension[linkId].value[x] only id
 * extension[name].value[x] only string
-* extension[name].valueString ^short = "Name of the group"
-* extension[name].valueString ^definition = "Short name used to identify the group."
-* extension[name].valueString ^comment = "'Group' means a predefined group (cohort) of participants to be studied."
+* extension[name].valueString ^short = "Name of the group | Name of the arm"
+* extension[name].valueString ^definition = "Short name used to identify the group. | Short name used to identify the arm."
+* extension[name].valueString ^comment = "'Group' means a predefined group (cohort) of participants to be studied. | 0..*, if Resource.classification.type == ('Study' OR 'Substudy') AND Design.primaryDesign == 'Interventional'; otherwise 0..0"
 * extension[type].value[x] only CodeableConcept
+* extension[type].valueCodeableConcept ^short = "Role of the arm"
+* extension[type].valueCodeableConcept ^definition = "Role of the given arm in the [RESOURCE]."
+* extension[type].valueCodeableConcept from NFDI4Health_VS_MDS_Study_Arm_Group_Type_NCI (required)
 * extension[description].value[x] only string
-* extension[description].valueString ^short = "Additional information about the group"
-* extension[description].valueString ^definition = "Additional descriptive information about the given group."
+* extension[description].valueString ^short = "Additional information about the group | Additional information about the arm"
+* extension[description].valueString ^definition = "Additional descriptive information about the given group. | Additional descriptive information about the given arm."
 * extension[description].valueString ^comment = "Explanation of the nature of the [RESOURCE] group (for example, participants with and without a condition, participants with and without an exposure, etc.)."
 * extension[intendedExposure].value[x] only Reference(NFDI4Health_PR_MDS_Evidence_Variable_Intervention or NFDI4Health_PR_MDS_Evidence_Variable_Exposure)
 * extension[intendedExposure] ^short = "For 1.17.21	Design.interventions: Interventions of the [RESOURCE] | For 1.17.22	Design.exposures: Exposures of the [RESOURCE]"
@@ -39,12 +42,19 @@ Description: "Extension providing information about the arm(s)/group(s)/cohort(s
 * extension[intendedExposure] ^comment = "Additional information: For 1.17.21 Design.interventions: Specification of the intervention(s) associated with each arm. | For 1.17.22 Design.exposures: Specification of the exposure(s) associated with each group."
 * extension[observedGroup].value[x] only Reference(Group)
 
+
+
+
 Mapping: NFDI4Health-Study-Comparison-Group-Backport-R5-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Study_Comparison_Group_Backport_R5
 * -> "Design.groups" 
 * extension[name] -> "Design.groups.name"
+* extension[name] -> "Design.arms"
 * extension[description] -> "Design.groups.description"
+* extension[description] -> "Design.arms.description"
+* extension[type] -> "Design.arms.type"
 * extension[intendedExposure] -> "Design.interventions"
 * extension[intendedExposure] -> "Design.exposures"
+* extension[observedGroup] -> "Design.groups.label"

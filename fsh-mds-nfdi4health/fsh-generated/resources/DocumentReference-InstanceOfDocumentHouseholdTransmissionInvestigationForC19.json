@@ -34,7 +34,7 @@
         "text": "COVID-19",
         "coding": [
           {
-            "system": "https://id.nlm.nih.gov/mesh/D000086382.html"
+            "system": "https://id.nlm.nih.gov/mesh/D000086382"
           }
         ]
       }
@@ -45,7 +45,7 @@
         "text": "Questionnaire",
         "coding": [
           {
-            "system": "https://id.nlm.nih.gov/mesh/T000997092.html"
+            "system": "https://id.nlm.nih.gov/mesh/T000997092"
           }
         ]
       }

@@ -477,10 +477,18 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nfdi4health-ex-mds-label"
+          "reference": "StructureDefinition/nfdi4health-ex-mds-label-backport-r5"
         },
-        "name": "NFDI4Health EX MDS Label",
+        "name": "NFDI4Health EX MDS Label Backport R5",
         "description": "Extension covering information about additional title(s), name(s) and acronym(s) of a resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-execution-language"
+        },
+        "name": "NFDI4Health EX MDS Language",
+        "description": "Extension provinding information about the language the [RESOURCE] is conducted/provided.",
         "exampleBoolean": false
       },
       {
@@ -493,10 +501,34 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nfdi4health-ex-mds-execution-language"
+          "reference": "StructureDefinition/nfdi4health-ex-mds-library-data-providers"
         },
-        "name": "NFDI4Health EX MDS Language",
-        "description": "Extension provinding information about the language the [RESOURCE] is conducted/provided.",
+        "name": "NFDI4Health EX MDS Library Data Providers",
+        "description": "Extension informing about data providers of a regisrtry.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-library-data-providers-number"
+        },
+        "name": "NFDI4Health EX MDS Library Data Providers Number",
+        "description": "Extension informing about number of data providers of a regisrtry.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-library-ethics-approval"
+        },
+        "name": "NFDI4Health EX MDS Library Ethics Committee Approval",
+        "description": "Extension informing about ethics committee approval of a regisrtry.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-library-population"
+        },
+        "name": "NFDI4Health EX MDS Library Population",
+        "description": "Group of items providing information about the Population of a Registry",
         "exampleBoolean": false
       },
       {
@@ -789,13 +821,6 @@
       },
       {
         "reference": {
-          "reference": "Questionnaire/InstanceOfChronicDiseaseModule"
-        },
-        "name": "NFDI4Health Module Epidemiology of Chronic Diseases Metadataschema (UC 5.2) V3",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
           "reference": "Questionnaire/InstanceOfNutritionalEpidemiologyModule"
         },
         "name": "NFDI4Health Module Nutritional Epidemiology Metadataschema (Use Case 5.1) V3",
@@ -863,6 +888,22 @@
         },
         "name": "NFDI4Health PR MDS Centers",
         "description": "Profile intended to capture information on the number of centers invovled in a study.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-pr-mds-chronic-diseases"
+        },
+        "name": "NFDI4Health PR MDS Centers",
+        "description": "Profile intended to capture information on chronic disease data collected in the [RESOURCE].",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-pr-mds-conditions"
+        },
+        "name": "NFDI4Health PR MDS Centers",
+        "description": "Profile intended to capture information on conditions for a Registry.",
         "exampleBoolean": false
       },
       {
@@ -963,6 +1004,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/nfdi4health-pr-mds-registry"
+        },
+        "name": "NFDI4Health PR MDS Registry",
+        "description": "Group of items applicable only to registries.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/nfdi4health-pr-mds-related-artifact-resource"
         },
         "name": "NFDI4Health PR MDS Related Artifact Resource",
@@ -974,7 +1023,7 @@
           "reference": "StructureDefinition/nfdi4health-pr-mds-study"
         },
         "name": "NFDI4Health PR MDS Study",
-        "description": "Group of items applicable only to studies, substudies, registries, and secondary data sources.",
+        "description": "Group of items applicable only to studies, substudies.",
         "exampleBoolean": false
       },
       {

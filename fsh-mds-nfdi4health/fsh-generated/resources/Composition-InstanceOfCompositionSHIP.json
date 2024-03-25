@@ -59,12 +59,8 @@
   "_title": {
     "extension": [
       {
-        "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-label",
+        "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.label",
         "extension": [
-          {
-            "url": "value",
-            "valueString": "Study of Health in Pomerania - TREND"
-          },
           {
             "url": "type",
             "valueCoding": {
@@ -72,6 +68,10 @@
               "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-label",
               "display": "Primary Title"
             }
+          },
+          {
+            "url": "value",
+            "valueString": "Study of Health in Pomerania - TREND"
           },
           {
             "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language",
@@ -114,7 +114,7 @@
             }
           }
         ],
-        "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-label"
+        "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.label"
       }
     ]
   }

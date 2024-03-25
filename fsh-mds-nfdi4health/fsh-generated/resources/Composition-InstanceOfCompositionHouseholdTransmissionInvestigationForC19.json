@@ -65,7 +65,7 @@
       },
       "entry": [
         {
-          "reference": "Questionnaire/InstanceOfChronicDiseaseModule"
+          "reference": "InstanceOfChronicDiseaseModule"
         }
       ]
     },
@@ -103,9 +103,9 @@
     {
       "coding": [
         {
-          "code": "C25704",
-          "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
-          "display": "Text"
+          "code": "052",
+          "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+          "display": "Data Paper"
         }
       ]
     }
@@ -116,12 +116,8 @@
   "_title": {
     "extension": [
       {
-        "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-label",
+        "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.label",
         "extension": [
-          {
-            "url": "value",
-            "valueString": "Household transmission investigation protocol for coronavirus disease 2019 (COVID-19)"
-          },
           {
             "url": "type",
             "valueCoding": {
@@ -129,6 +125,10 @@
               "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-label",
               "display": "Primary Title"
             }
+          },
+          {
+            "url": "value",
+            "valueString": "Household transmission investigation protocol for coronavirus disease 2019 (COVID-19)"
           },
           {
             "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language",
@@ -171,7 +171,7 @@
             }
           }
         ],
-        "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-label"
+        "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.label"
       }
     ]
   }

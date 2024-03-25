@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "description": "Group of items applicable only to studies, substudies, registries, and secondary data sources.",
+  "description": "Group of items applicable only to studies, substudies.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -216,20 +216,6 @@
             "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
           },
           {
-            "key": "arms-a",
-            "severity": "error",
-            "human": "Cardinality: 0..*, if Design.primaryDesign == 'C98388''",
-            "expression": "category.coding.where(code = 'C98388').exists() implies arm.exists()",
-            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
-          },
-          {
-            "key": "arms-b",
-            "severity": "error",
-            "human": "Cardinality: 0..0, if Design.primaryDesign != 'C98388'",
-            "expression": "category.coding.where(code = 'C98388').exists().not() implies arm.exists().not()",
-            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
-          },
-          {
             "key": "interventions",
             "severity": "error",
             "human": "Cardinality: 0..*, if Design.primaryDesign == 'C98388'",
@@ -390,7 +376,7 @@
           "ordered": false,
           "rules": "open"
         },
-        "min": 4
+        "min": 5
       },
       {
         "id": "ResearchStudy.extension:executionLanguage",
@@ -447,7 +433,7 @@
         "id": "ResearchStudy.extension:administrativeInformation",
         "path": "ResearchStudy.extension",
         "sliceName": "administrativeInformation",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -1096,54 +1082,6 @@
           {
             "identity": "NFDI4Health",
             "map": "Design.comment"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.arm",
-        "path": "ResearchStudy.arm",
-        "short": "Arms of the [RESOURCE]",
-        "definition": "Description: Group of items providing information about the arms of the [RESOURCE].",
-        "comment": "0..*, if Resource.classification.type == ('Study' OR 'Substudy') AND Design.primaryDesign == 'Interventional'; otherwise 0..0"
-      },
-      {
-        "id": "ResearchStudy.arm.name",
-        "path": "ResearchStudy.arm.name",
-        "short": "Name of the arm",
-        "definition": "Short name used to identify the arm.",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "Design.arms"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.arm.type",
-        "path": "ResearchStudy.arm.type",
-        "short": "Role of the arm",
-        "definition": "Role of the given arm in the [RESOURCE].",
-        "min": 1,
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-arm-group-type-nci"
-        },
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "Design.arms.type"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.arm.description",
-        "path": "ResearchStudy.arm.description",
-        "short": "Additional information about the arm",
-        "definition": "Additional descriptive information about the given arm.",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "Design.arms.type"
           }
         ]
       },

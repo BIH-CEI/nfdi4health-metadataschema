@@ -15,7 +15,6 @@ Description: "Profile collecting information on questionnaires within NFDI4Healt
 * extension contains
     NFDI4Health_EX_MDS_Format named format 0..1 and
     NFDI4Health_EX_MDS_Descriptions named descriptions 1..1 and
-    NFDI4Health_EX_MDS_Execution_Language named executionlLanguage 0..* and
     NFDI4Health_EX_MDS_Related named relatedResources 0..1 and
     NFDI4Health_EX_MDS_Keywords named keywords 0..*
 * identifier ^slicing.discriminator.type = #value

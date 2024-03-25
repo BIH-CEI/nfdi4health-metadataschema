@@ -1,10 +1,10 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "nfdi4health-ex-mds-label",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-label",
+  "id": "nfdi4health-ex-mds-label-backport-r5",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.label",
   "version": "0.9",
-  "name": "NFDI4Health_EX_MDS_Label",
-  "title": "NFDI4Health EX MDS Label",
+  "name": "NFDI4Health_EX_MDS_Label_Backport_R5",
+  "title": "NFDI4Health EX MDS Label Backport R5",
   "status": "draft",
   "publisher": "NFDI4Health",
   "contact": [
@@ -78,6 +78,40 @@
         "min": 3
       },
       {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension",
+        "sliceName": "type",
+        "short": "Kind of name.",
+        "definition": "Kind of name.",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:type.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:type.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:type.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-label-type-local",
+          "description": "Value set used to express the reason and specific aspect for the variant title, such as language and specific language."
+        }
+      },
+      {
         "id": "Extension.extension:value",
         "path": "Extension.extension",
         "sliceName": "value",
@@ -117,45 +151,9 @@
         ]
       },
       {
-        "id": "Extension.extension:type",
-        "path": "Extension.extension",
-        "sliceName": "type",
-        "short": "Kind of name.",
-        "definition": "Kind of name.",
-        "min": 1,
-        "max": "1"
-      },
-      {
-        "id": "Extension.extension:type.extension",
-        "path": "Extension.extension.extension",
-        "max": "0"
-      },
-      {
-        "id": "Extension.extension:type.url",
-        "path": "Extension.extension.url",
-        "fixedUri": "type"
-      },
-      {
-        "id": "Extension.extension:type.value[x]",
-        "path": "Extension.extension.value[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "Coding"
-          }
-        ],
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-label-type-local",
-          "description": "Value set used to express the reason and specific aspect for the variant title, such as language and specific language."
-        }
-      },
-      {
         "id": "Extension.extension:language",
         "path": "Extension.extension",
         "sliceName": "language",
-        "short": "Language of the additional title(s)/name(s) or acronym(s)",
-        "definition": "Language of the additional title(s)/name(s) or acronym(s)",
         "min": 1,
         "max": "1",
         "type": [
@@ -180,7 +178,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-label"
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.label"
       },
       {
         "id": "Extension.value[x]",

@@ -8,8 +8,10 @@ Description: "Extension providing information about assessments/measurements inc
 * ^publisher = "NFDI4Health"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
-* ^context.type = #element
-* ^context.expression = "ResearchStudy"
+* ^context[0].type = #element
+* ^context[=].expression = "ResearchStudy"
+* ^context[+].type = #element
+* ^context[=].expression = "Library"
 * . 0..*
 * . ^short = "Additional assessments/measurements in the [RESOURCE]"
 * . ^definition = "Any additional assessments/measurements included in the [RESOURCE]."

@@ -10,15 +10,14 @@ Description: "Extension providing information about outcome measure(s)."
 * ^publisher = "NFDI4Health"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
-* ^context.type = #element
-* ^context.expression = "ResearchStudy"
+* ^context[0].type = #element
+* ^context[=].expression = "ResearchStudy"
+* ^context[+].type = #element
+* ^context[=].expression = "Library"
 * . 0..*
 * . ^short = "Outcome measures in the [RESOURCE]"
 * . ^definition = "Group of items providing information about outcome measures."
 * . ^comment = "Additional information: The items are optional, especially for non-interventional studies. [Backport Extension from R5: ResearchStudy.outcomeMeasure; Please note that some cardinalities have been adapted and some of the elements are not relevant for NFDI4Health. We changed the DataType from description to string and added an element to capture the time frame.]"
-* extension ^slicing.discriminator.type = #value
-* extension ^slicing.discriminator.path = "url"
-* extension ^slicing.rules = #open
 * extension contains
     name 1..1 and
     type 1..1 and

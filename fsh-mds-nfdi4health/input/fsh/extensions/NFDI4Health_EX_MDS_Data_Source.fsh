@@ -8,8 +8,10 @@ Description: "Extension informing about data sources from which data are generat
 * ^publisher = "NFDI4Health"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
-* ^context.type = #element
-* ^context.expression = "ResearchStudy"
+* ^context[0].type = #element
+* ^context[=].expression = "ResearchStudy"
+* ^context[+].type = #element
+* ^context[=].expression = "Library"
 * . 0..1
 * . ^short = "Data sources of the [RESOURCE]"
 * . ^definition = "Group of items providing information about data sources from which the data of the [RESOURCE] are generated or extracted."

@@ -1,10 +1,10 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "nfdi4health-ex-mds-execution-language",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-execution-language",
+  "id": "nfdi4health-ex-mds-library-data-providers-number",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-library-data-providers-number",
   "version": "0.9",
-  "name": "NFDI4Health_EX_MDS_Execution_Language",
-  "title": "NFDI4Health EX MDS Language",
+  "name": "NFDI4Health_EX_MDS_Library_Data_Providers_Number",
+  "title": "NFDI4Health EX MDS Library Data Providers Number",
   "status": "draft",
   "publisher": "NFDI4Health",
   "contact": [
@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "description": "Extension provinding information about the language the [RESOURCE] is conducted/provided.",
+  "description": "Extension informing about number of data providers of a regisrtry.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -35,7 +35,7 @@
   "context": [
     {
       "type": "element",
-      "expression": "Composition"
+      "expression": "Library"
     }
   ],
   "type": "Extension",
@@ -46,12 +46,13 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Language(s) of the [RESOURCE]",
-        "definition": "Language(s) in which the [RESOURCE] is conducted/provided.",
+        "short": "Number of data providers",
+        "definition": "Number of data providers involved in the [RESOURCE].",
+        "max": "1",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "Resource.languages"
+            "map": "Design.dataProviders"
           }
         ]
       },
@@ -63,38 +64,20 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-execution-language"
+        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-library-data-providers-number"
       },
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
-        "id": "Extension.value[x]:valueCode",
-        "path": "Extension.value[x]",
-        "sliceName": "valueCode",
-        "short": "A human language.",
-        "definition": "A human language.",
-        "min": 0,
-        "max": "1",
+        "min": 1,
         "type": [
           {
-            "code": "code"
+            "code": "Coding"
           }
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-languages-iso"
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-providers-local"
         }
       }
     ]

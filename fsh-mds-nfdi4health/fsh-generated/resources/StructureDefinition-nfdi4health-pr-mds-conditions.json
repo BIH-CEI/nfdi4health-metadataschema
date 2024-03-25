@@ -1,0 +1,148 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "nfdi4health-pr-mds-conditions",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-conditions",
+  "version": "0.9",
+  "name": "NFDI4Health_PR_MDS_Conditions",
+  "title": "NFDI4Health PR MDS Centers",
+  "status": "draft",
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "description": "Profile intended to capture information on conditions for a Registry.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
+    },
+    {
+      "identity": "NFDI4Health",
+      "name": "NFDI4Health to FHIR Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Condition",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Condition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Condition.code",
+        "path": "Condition.code",
+        "short": "Primary health condition[conditions](s) or disease(s) considered in the [RESOURCE]",
+        "definition": "Group of items providing information about primary health condition[conditions](s) or disease(s) considered in the [RESOURCE].",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.conditions"
+          }
+        ]
+      },
+      {
+        "id": "Condition.code.extension:uri",
+        "path": "Condition.code.extension",
+        "sliceName": "uri",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-uri"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.conditions.code"
+          }
+        ]
+      },
+      {
+        "id": "Condition.code.coding.code",
+        "path": "Condition.code.coding.code",
+        "short": "Terminology/classification",
+        "definition": "Terminology/classification used for the health condition[conditions] or disease.",
+        "comment": "Short Input Help: If used, name of the terminology/classification.",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-conditions-classification-nci-local"
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.conditions.classification"
+          }
+        ]
+      },
+      {
+        "id": "Condition.code.text",
+        "path": "Condition.code.text",
+        "short": "Primary health condition[conditions] or disease name",
+        "definition": "Name of primary health condition[conditions] or disease considered in the [RESOURCE].",
+        "comment": "Additional information: The use of terms from established terminologies/classifications (e.g. SNOMED CT, ICD, etc.) is preferred. However, also self-assigned terms are allowed. |Short Input Help: Preferably, use terms from SNOMED CT (https://browser.ihtsdotools.org).",
+        "min": 1,
+        "example": [
+          {
+            "label": "Example of a primary health condition name"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.conditions.label"
+          }
+        ]
+      },
+      {
+        "id": "Condition.subject",
+        "path": "Condition.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-group-actual"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

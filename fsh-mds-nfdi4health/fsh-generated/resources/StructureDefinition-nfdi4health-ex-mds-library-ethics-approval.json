@@ -1,10 +1,10 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "nfdi4health-ex-mds-execution-language",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-execution-language",
+  "id": "nfdi4health-ex-mds-library-ethics-approval",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-library-ethics-approval",
   "version": "0.9",
-  "name": "NFDI4Health_EX_MDS_Execution_Language",
-  "title": "NFDI4Health EX MDS Language",
+  "name": "NFDI4Health_EX_MDS_Library_Ethics_Approval",
+  "title": "NFDI4Health EX MDS Library Ethics Committee Approval",
   "status": "draft",
   "publisher": "NFDI4Health",
   "contact": [
@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "description": "Extension provinding information about the language the [RESOURCE] is conducted/provided.",
+  "description": "Extension informing about ethics committee approval of a regisrtry.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -35,7 +35,7 @@
   "context": [
     {
       "type": "element",
-      "expression": "Composition"
+      "expression": "Library"
     }
   ],
   "type": "Extension",
@@ -46,12 +46,13 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Language(s) of the [RESOURCE]",
-        "definition": "Language(s) in which the [RESOURCE] is conducted/provided.",
+        "short": "Status of the ethics committee approval",
+        "definition": "Status of the study approval from the (leading) ethics committee",
+        "max": "1",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "Resource.languages"
+            "map": "Design.administrativeInformation.ethicsCommitteeApproval"
           }
         ]
       },
@@ -63,38 +64,21 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-execution-language"
+        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-library-ethics-approval"
       },
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
-        "id": "Extension.value[x]:valueCode",
-        "path": "Extension.value[x]",
-        "sliceName": "valueCode",
-        "short": "A human language.",
-        "definition": "A human language.",
-        "min": 0,
-        "max": "1",
+        "min": 1,
         "type": [
           {
-            "code": "code"
+            "code": "Coding"
           }
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-languages-iso"
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-ethics-committee-approval-nci-local",
+          "description": "Value set defining codes to specify the status of the study ethics committee approval."
         }
       }
     ]

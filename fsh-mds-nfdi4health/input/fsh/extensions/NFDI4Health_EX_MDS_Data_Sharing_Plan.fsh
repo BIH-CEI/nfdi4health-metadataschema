@@ -12,8 +12,10 @@ Description: "Extension providing information about the data sharing strategy of
 * ^publisher = "NFDI4Health"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
-* ^context.type = #element
-* ^context.expression = "ResearchStudy"
+* ^context[0].type = #element
+* ^context[=].expression = "ResearchStudy"
+* ^context[+].type = #element
+* ^context[=].expression = "Library"
 * . 1..1
 * . ^short = "Data sharing strategy of the [RESOURCE]"
 * . ^definition = "Group of items providing information about the data sharing strategy of the [RESOURCE]."
