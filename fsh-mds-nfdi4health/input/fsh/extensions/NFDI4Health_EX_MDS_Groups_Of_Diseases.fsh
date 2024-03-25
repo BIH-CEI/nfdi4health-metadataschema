@@ -14,9 +14,6 @@ Description: "Group of items providing information about the groups of diseases 
 * . 0..1
 * . ^short = "Groups of diseases or conditions"
 * . ^definition = "Description: Group of items providing information about groups of diseases or conditions on which the data were collected in the [RESOURCE]."
-* extension ^slicing.discriminator.type = #value
-* extension ^slicing.discriminator.path = "url"
-* extension ^slicing.rules = #open
 * extension contains
     generally 1..* and
     conditions 0..*
