@@ -1,0 +1,128 @@
+{
+  "resourceType": "Composition",
+  "id": "InstanceOfCompositionRegistryHKR",
+  "meta": {
+    "profile": [
+      "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-composition"
+    ]
+  },
+  "status": "final",
+  "extension": [
+    {
+      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-provenance-data-source",
+      "valueCoding": {
+        "code": "06",
+        "display": "Manually collected"
+      }
+    },
+    {
+      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-chronic-diseases",
+      "valueBoolean": false
+    },
+    {
+      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-nutritional-data",
+      "valueBoolean": false
+    }
+  ],
+  "author": [
+    {
+      "extension": [
+        {
+          "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-name-type",
+          "valueCoding": {
+            "code": "385437003",
+            "system": "http://snomed.info/sct",
+            "display": "Institution"
+          }
+        }
+      ],
+      "reference": "Organization/InstanceOfOrganizationCreatorWHO"
+    },
+    {
+      "extension": [
+        {
+          "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-name-type",
+          "valueCoding": {
+            "code": "125676002",
+            "system": "http://snomed.info/sct",
+            "display": "Person"
+          }
+        }
+      ],
+      "reference": "PractitionerRole/InstanceOfPractitionerRoleNinaKirchhof"
+    }
+  ],
+  "identifier": {
+    "value": "2654"
+  },
+  "date": "2024",
+  "type": {
+    "coding": [
+      {
+        "code": "C61393",
+        "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "display": "Registry"
+      }
+    ]
+  },
+  "_title": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.label",
+        "extension": [
+          {
+            "url": "type",
+            "valueCoding": {
+              "code": "01",
+              "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-label",
+              "display": "Primary Title"
+            }
+          },
+          {
+            "url": "value",
+            "valueString": "DE (German) Hamburgisches Krebsregister"
+          },
+          {
+            "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "de",
+                  "system": "http://terminology.hl7.org/CodeSystem/iso639-1"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "value",
+            "valueString": "HCR"
+          },
+          {
+            "url": "type",
+            "valueCoding": {
+              "code": "07",
+              "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-label",
+              "display": "Acronym"
+            }
+          },
+          {
+            "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "en",
+                  "system": "http://terminology.hl7.org/CodeSystem/iso639-1"
+                }
+              ]
+            }
+          }
+        ],
+        "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.label"
+      }
+    ]
+  }
+}

@@ -32,6 +32,7 @@ Description: "Group of items applicable only to studies, substudies."
 * obeys nonInterventional-a and nonInterventional-b
 * obeys study-stageStopped-a and study-stageStopped-b
 * obeys study-reasonStopped-a and study-reasonStopped-b
+* obeys recordLinkage-a and recordLinkage-b
 
 // Extensions
 * extension contains
@@ -49,7 +50,8 @@ Description: "Group of items applicable only to studies, substudies."
     NFDI4Health_EX_MDS_Study_Non_Interventional named nonInterventional 0..1 and
     NFDI4Health_EX_MDS_Study_Interventional named interventional 0..1 and
     NFDI4Health_EX_MDS_Groups_Of_Diseases named groupsOfDiseases 1..1 and
-    NFDI4Health_EX_MDS_Study_Sampling named sampling 0..1
+    NFDI4Health_EX_MDS_Study_Sampling named sampling 0..1 and
+    NFDI4Health_EX_MDS_Record_Linkage named recordLinkage 0..1
 
 // Elements
 * identifier 0..* 
@@ -406,6 +408,16 @@ Invariant: study-reasonStopped-b
 Description: "Cardinality: 0..0, if Design.administrativeInformation.status != ('06' OR '07')"
 Severity: #error
 Expression: "extension.extension.where(url='status').valueCoding.where(code = '06' or code = '07').exists().not() implies reasonStopped.text.exists().not()"
+
+Invariant: recordLinkage-a
+Description: "Cardinality: 1..1, if Design.dataSharingPlan.recordLinkage == 'Yes'"
+Severity: #error
+Expression: "extension.extension.where(url='recordLinkage').where(value='true') implies extension.where(url='recordLinkage').exists()"
+
+Invariant: recordLinkage-b
+Description: "Cardinality: 0..0, if Design.dataSharingPlan.recordLinkage == 'No'"
+Severity: #error
+Expression: "extension.extension.where(url='recordLinkage').where(value='false') implies extension.where(url='recordLinkage').exists().not()"
 
 // Can NOT be tested but needs example data with recruitmentStatusRegister
 Invariant: study-recruitmentStatusRegister-a

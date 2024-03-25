@@ -43,9 +43,17 @@
     "outputFile": "Composition-InstanceOfCompositionHouseholdTransmissionInvestigationForC19.json",
     "fshName": "InstanceOfCompositionHouseholdTransmissionInvestigationForC19",
     "fshType": "Instance",
-    "fshFile": "examples/InstanceOfComposition_Household.fsh",
+    "fshFile": "examples/InstanceOfComposition_DocumentHousehold.fsh",
     "startLine": 1,
     "endLine": 35
+  },
+  {
+    "outputFile": "Composition-InstanceOfCompositionRegistryHKR.json",
+    "fshName": "InstanceOfCompositionRegistryHKR",
+    "fshType": "Instance",
+    "fshFile": "examples/InstanceOfComposition_Registry.fsh",
+    "startLine": 1,
+    "endLine": 30
   },
   {
     "outputFile": "Composition-InstanceOfCompositionSHIP.json",
@@ -118,6 +126,14 @@
     "fshFile": "examples/InstanceOfGroupEligibility_SPOVID.fsh",
     "startLine": 1,
     "endLine": 14
+  },
+  {
+    "outputFile": "Library-InstanceOfLibraryHKR.json",
+    "fshName": "InstanceOfLibraryHKR",
+    "fshType": "Instance",
+    "fshFile": "examples/InstanceOfRegistryHKR.fsh",
+    "startLine": 1,
+    "endLine": 69
   },
   {
     "outputFile": "Location-InstanceOfLocationMono.json",
@@ -445,7 +461,7 @@
     "fshType": "Extension",
     "fshFile": "extensions/NFDI4Health_EX_MDS_Groups_Of_Diseases.fsh",
     "startLine": 1,
-    "endLine": 32
+    "endLine": 29
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-identifier-assignment-date.json",
@@ -565,7 +581,7 @@
     "fshType": "Extension",
     "fshFile": "extensions/NFDI4Health_EX_MDS_Record_Linkage.fsh",
     "startLine": 1,
-    "endLine": 55
+    "endLine": 57
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-recruitment-backport-r5.json",
@@ -941,7 +957,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/NFDI4Health_PR_MDS_Registry.fsh",
     "startLine": 1,
-    "endLine": 84
+    "endLine": 87
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-pr-mds-related-artifact-resource.json",
@@ -957,7 +973,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/NFDI4Health_PR_MDS_Study.fsh",
     "startLine": 1,
-    "endLine": 165
+    "endLine": 167
   },
   {
     "outputFile": "ValueSet-nfdi4health-vs-mds-cd-common-chronic-disease-name-sct-local.json",

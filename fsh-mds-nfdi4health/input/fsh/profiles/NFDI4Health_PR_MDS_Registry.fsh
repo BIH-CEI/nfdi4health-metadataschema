@@ -17,6 +17,8 @@ Description: "Group of items applicable only to registries."
 * obeys supportingInformation-a and supportingInformation-b
 * obeys timeFrame-a and timeFrame-b
 * obeys accessCriteria-a and accessCriteria-b
+* obeys recordLinkage-a and recordLinkage-b
+
 
 // Extensions
 * extension contains
@@ -30,7 +32,8 @@ Description: "Group of items applicable only to registries."
     NFDI4Health_EX_MDS_Data_Sharing_Plan named dataSharingPlan 1..1 and
     NFDI4Health_EX_MDS_Library_Data_Providers named dataProviders 0..1 and
     NFDI4Health_EX_MDS_Library_Data_Providers_Number named dataProvidersNumber 0..1 and
-    NFDI4Health_EX_MDS_Library_Population named population 1..1
+    NFDI4Health_EX_MDS_Library_Population named population 1..1 and
+    NFDI4Health_EX_MDS_Record_Linkage named recordLinkage 0..1
 
 
 // Elements

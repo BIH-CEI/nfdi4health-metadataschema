@@ -10,6 +10,8 @@ Description: "Group of items providing information on record linkage."
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 * ^context[0].type = #element
 * ^context[=].expression = "ResearchStudy"
+* ^context[0].type = #element
+* ^context[=].expression = "Library"
 * . 0..1
 * . ^short = "Information about record linkage for the [RESOURCE]"
 * . ^definition = "Group of items providing information on record linkage."

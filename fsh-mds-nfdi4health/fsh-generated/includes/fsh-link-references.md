@@ -6,6 +6,7 @@
 [OrganizationPublicExample]: Organization-OrganizationPublicExample.html
 [InstanceOfProvenance]: Provenance-InstanceOfProvenance.html
 [InstanceOfQuestionnaireWHOHouseholdTransmission]: Questionnaire-InstanceOfQuestionnaireWHOHouseholdTransmission.html
+[InstanceOfCompositionRegistryHKR]: Composition-InstanceOfCompositionRegistryHKR.html
 [InstanceOfCompositionHouseholdTransmissionInvestigationForC19]: Composition-InstanceOfCompositionHouseholdTransmissionInvestigationForC19.html
 [InstanceOfCompositionWHOHouseholdTransmission]: Composition-InstanceOfCompositionWHOHouseholdTransmission.html
 [InstanceOfCompositionSHIP]: Composition-InstanceOfCompositionSHIP.html
@@ -35,6 +36,7 @@
 [InstanceOfPractitionerKathleenMerikangas]: Practitioner-InstanceOfPractitionerKathleenMerikangas.html
 [InstanceOfProvenanceAutomaticallyUploadedFromCTgov]: Provenance-InstanceOfProvenanceAutomaticallyUploadedFromCTgov.html
 [InstanceOfProvenanceManuallyCollectedSHIPTrend]: Provenance-InstanceOfProvenanceManuallyCollectedSHIPTrend.html
+[InstanceOfLibraryHKR]: Library-InstanceOfLibraryHKR.html
 [InstanceOfStudySHIP]: ResearchStudy-InstanceOfStudySHIP.html
 [InstanceOfStudySPOVID]: ResearchStudy-InstanceOfStudySPOVID.html
 [NFDI4Health_VS_MDS_CD_CommonChronicDiseaseName_SCT_Local]: ValueSet-nfdi4health-vs-mds-cd-common-chronic-disease-name-sct-local.html

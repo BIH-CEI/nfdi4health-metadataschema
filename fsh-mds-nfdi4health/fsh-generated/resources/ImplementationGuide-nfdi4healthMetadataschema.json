@@ -89,6 +89,13 @@
       },
       {
         "reference": {
+          "reference": "Composition/InstanceOfCompositionRegistryHKR"
+        },
+        "name": "Example of the PR MDS Composition - Hamburg Cancer Registry",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-composition"
+      },
+      {
+        "reference": {
           "reference": "Composition/InstanceOfCompositionHouseholdTransmissionInvestigationForC19"
         },
         "name": "Example of the PR MDS Composition - Household Transmission Investigation Protocol for Coronavirus Disease 2019 (COVID-19)",
@@ -314,6 +321,14 @@
         "name": "Instance Of Provenance Manually Collected (SHIP Trend)",
         "description": "Example of the NFDI4Health PR MDS Provenance profile for a resource manually collected - in this case: SHIP Trend",
         "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-provenance"
+      },
+      {
+        "reference": {
+          "reference": "Library/InstanceOfLibraryHKR"
+        },
+        "name": "Instance of Registry HCR",
+        "description": "Example data from the HCR Registry",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-registry"
       },
       {
         "reference": {

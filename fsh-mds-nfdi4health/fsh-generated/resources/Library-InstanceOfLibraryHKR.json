@@ -1,0 +1,285 @@
+{
+  "resourceType": "Library",
+  "id": "InstanceOfLibraryHKR",
+  "meta": {
+    "profile": [
+      "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-registry"
+    ]
+  },
+  "status": "active",
+  "extension": [
+    {
+      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-groups-of-diseases",
+      "extension": [
+        {
+          "url": "generally",
+          "valueCoding": {
+            "code": "74964007",
+            "system": "http://snomed.info/sct",
+            "display": "Other"
+          }
+        }
+      ]
+    },
+    {
+      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-descriptions",
+      "extension": [
+        {
+          "url": "value",
+          "valueString": "EN (English) The Hamburg Cancer Registry (HCR) is an integrated clinical-epidemiological cancer registry for Hamburg as a place of residence and treatment. Our goal is to improve the quality of oncological care by providing a neutral data basis on cancer incidence and contributing to transparency. The Hamburg Cancer Registry is mandated under state and federal law to continuously and comprehensively record and process information on the diagnosis, therapy and course of all cancer patients treated in Hamburg, to make this information available for scientific research, and to evaluate and publish the results."
+        },
+        {
+          "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "en",
+                "system": "http://terminology.hl7.org/CodeSystem/iso639-1",
+                "display": "English"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-data-sharing-plan",
+      "extension": [
+        {
+          "url": "generally",
+          "valueCoding": {
+            "code": "373066001",
+            "system": "http://snomed.info/sct",
+            "display": "Yes (qualifier value)"
+          }
+        },
+        {
+          "url": "description",
+          "valueString": "SHIP also shares biomaterials."
+        },
+        {
+          "url": "supportingInformation",
+          "valueCoding": {
+            "code": "009",
+            "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+            "display": "Data dictionary"
+          }
+        },
+        {
+          "url": "timeFrame",
+          "valueString": "As long as permitted by law."
+        },
+        {
+          "url": "accessCriteria",
+          "valueString": "Data must only be used for health research purposes. Data access requests will be processed by the board of the Research Network Community Medicine on a monthly basis."
+        },
+        {
+          "url": "url",
+          "valueUrl": "https://www.fvcm.med.uni-greifswald.de/"
+        },
+        {
+          "url": "datashield",
+          "valueCoding": {
+            "code": "373066001",
+            "system": "http://snomed.info/sct",
+            "display": "Yes (qualifier value)"
+          }
+        }
+      ]
+    },
+    {
+      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-library-ethics-approval",
+      "valueCoding": {
+        "code": "C48660",
+        "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "display": "Not Applicable"
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "general",
+          "valueCoding": {
+            "code": "029",
+            "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+            "display": "Cognitive measurements"
+          }
+        },
+        {
+          "url": "general",
+          "valueCoding": {
+            "code": "031",
+            "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+            "display": "Imaging data"
+          }
+        },
+        {
+          "url": "general",
+          "valueCoding": {
+            "code": "032",
+            "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+            "display": "Physiological/Biochemical measurements"
+          }
+        },
+        {
+          "url": "general",
+          "valueCoding": {
+            "code": "033",
+            "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+            "display": "Omics technology"
+          }
+        },
+        {
+          "url": "general",
+          "valueCoding": {
+            "code": "C17649",
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "display": "Other"
+          }
+        },
+        {
+          "url": "general",
+          "valueCoding": {
+            "code": "028",
+            "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+            "display": "Administrative databases"
+          }
+        },
+        {
+          "url": "imaging",
+          "valueCoding": {
+            "code": "C115503",
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "display": "Ultrasound Study File (Manufactured Object)"
+          }
+        },
+        {
+          "url": "imaging",
+          "valueCoding": {
+            "code": "C115501",
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "display": "Magnetic Resonance Imaging Study File (Manufactured Object)"
+          }
+        },
+        {
+          "url": "imaging",
+          "valueCoding": {
+            "code": "C115545",
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "display": "Medical Imaging File Not Otherwise Specified (Intellectual Product)"
+          }
+        },
+        {
+          "url": "omics",
+          "valueCoding": {
+            "code": "C84343",
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "display": "Genomics"
+          }
+        },
+        {
+          "url": "omics",
+          "valueCoding": {
+            "code": "C49019",
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "display": "Metabolomics"
+          }
+        },
+        {
+          "url": "omics",
+          "valueCoding": {
+            "code": "C153189",
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "display": "Transcriptomics"
+          }
+        },
+        {
+          "url": "omics",
+          "valueCoding": {
+            "code": "C20085",
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "display": "Proteomics"
+          }
+        }
+      ],
+      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-data-source"
+    }
+  ],
+  "effectivePeriod": {
+    "start": "1990-01-01"
+  },
+  "subjectCodeableConcept": {
+    "coding": [
+      {
+        "code": "125676002",
+        "system": "http://snomed.info/sct",
+        "display": "Person (person)"
+      }
+    ]
+  },
+  "relatedArtifact": [
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "valueIdentifier": {
+                "type": {
+                  "coding": [
+                    {
+                      "code": "104",
+                      "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+                      "display": "NFDI4Health"
+                    }
+                  ]
+                },
+                "system": "https://csh.nfdi4health.de/resource/",
+                "value": "122"
+              },
+              "url": "identifier"
+            },
+            {
+              "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related-artifact-reltype-nfdi-resource",
+              "valueCoding": {
+                "code": "075",
+                "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+                "display": "A is source of B"
+              }
+            }
+          ],
+          "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related-artifact-nfdi"
+        },
+        {
+          "extension": [
+            {
+              "url": "identifier",
+              "valueIdentifier": {
+                "value": "WHO/2019-nCoV/HHtransmission/2020.4",
+                "type": {
+                  "coding": [
+                    {
+                      "code": "C17649",
+                      "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+                      "display": "Other"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related-artifact-reltype-non-nfdi-resource",
+              "valueCoding": {
+                "code": "072",
+                "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+                "display": "A is identical to B"
+              }
+            }
+          ],
+          "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related-artifact-non-nfdi"
+        }
+      ],
+      "type": "documentation",
+      "url": "www.nfdi4health.de"
+    }
+  ]
+}
