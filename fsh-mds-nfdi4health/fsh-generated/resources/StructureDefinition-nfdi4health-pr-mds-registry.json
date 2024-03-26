@@ -102,42 +102,42 @@
             "key": "supportingInformation-a",
             "severity": "error",
             "human": "Cardinality: 0..*, if Design.dataSharingPlan.generally == '373066001'",
-            "expression": "extension.extension.where(url='generally').where(code = '373066001').exists() implies extension.extension.where(url='supportingInformation').exists()",
+            "expression": "extension.extension.where(url='generally').valueCoding.where(code = '373066001').exists() implies extension.extension.where(url='supportingInformation').exists()",
             "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-registry"
           },
           {
             "key": "supportingInformation-b",
             "severity": "error",
             "human": "Cardinality: 0..0, if Design.dataSharingPlan.generally != '373066001'",
-            "expression": "extension.extension.where(url='generally').where(code = '373066001').exists().not() implies extension.extension.where(url='supportingInformation').exists().not()",
+            "expression": "extension.extension.where(url='generally').valueCoding.where(code = '373066001').exists().not() implies extension.extension.where(url='supportingInformation').exists().not()",
             "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-registry"
           },
           {
             "key": "timeFrame-a",
             "severity": "error",
             "human": "Cardinality: 0..*, if Design.dataSharingPlan.generally == '373066001'",
-            "expression": "extension.extension.where(url='generally').where(code = '373066001').exists() implies extension.extension.where(url='timeFrame').exists()",
+            "expression": "extension.extension.where(url='generally').valueCoding.where(code = '373066001').exists() implies extension.extension.where(url='timeFrame').exists()",
             "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-registry"
           },
           {
             "key": "timeFrame-b",
             "severity": "error",
             "human": "Cardinality: 0..0, if Design.dataSharingPlan.generally != '373066001'",
-            "expression": "extension.extension.where(url='generally').where(code = '373066001').exists().not() implies extension.extension.where(url='timeFrame').exists().not()",
+            "expression": "extension.extension.where(url='generally').valueCoding.where(code = '373066001').exists().not() implies extension.extension.where(url='timeFrame').exists().not()",
             "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-registry"
           },
           {
             "key": "accessCriteria-a",
             "severity": "error",
             "human": "Cardinality: 0..*, if Design.dataSharingPlan.generally == '373066001'",
-            "expression": "extension.extension.where(url='generally').where(code = '373066001').exists() implies extension.extension.where(url='accessCriteria').exists()",
+            "expression": "extension.extension.where(url='generally').valueCoding.where(code = '373066001').exists() implies extension.extension.where(url='accessCriteria').exists()",
             "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-registry"
           },
           {
             "key": "accessCriteria-b",
             "severity": "error",
             "human": "Cardinality: 0..0, if Design.dataSharingPlan.generally != '373066001'",
-            "expression": "extension.extension.where(url='generally').where(code = '373066001').exists().not() implies extension.extension.where(url='accessCriteria').exists().not()",
+            "expression": "extension.extension.where(url='generally').valueCoding.where(code = '373066001').exists().not() implies extension.extension.where(url='accessCriteria').exists().not()",
             "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-registry"
           },
           {

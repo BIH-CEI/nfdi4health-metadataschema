@@ -34,8 +34,7 @@
   "abstract": false,
   "context": [
     {
-      "type": "element",
-      "expression": "Element"
+      "type": "element"
     }
   ],
   "type": "Extension",

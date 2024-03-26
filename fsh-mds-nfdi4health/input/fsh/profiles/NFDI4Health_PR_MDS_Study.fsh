@@ -303,6 +303,76 @@ Description: "0..0, if Design.dataSource.general != '033'"
 Severity: #error
 Expression: "extension.extension.where(url='general').valueCoding.where(code = '033').exists().not() implies extension.extension.where(url='omics').exists().not()"
 
+Invariant: supportingInformation-a
+Description: "Cardinality: 0..*, if Design.dataSharingPlan.generally == '373066001'"
+Severity: #error
+Expression: "extension.extension.where(url='generally').valueCoding.where(code = '373066001').exists() implies extension.extension.where(url='supportingInformation').exists()"
+
+Invariant: supportingInformation-b
+Description: "Cardinality: 0..0, if Design.dataSharingPlan.generally != '373066001'"
+Severity: #error
+Expression: "extension.extension.where(url='generally').valueCoding.where(code = '373066001').exists().not() implies extension.extension.where(url='supportingInformation').exists().not()"
+
+Invariant: timeFrame-a
+Description: "Cardinality: 0..*, if Design.dataSharingPlan.generally == '373066001'"
+Severity: #error
+Expression: "extension.extension.where(url='generally').valueCoding.where(code = '373066001').exists() implies extension.extension.where(url='timeFrame').exists()"
+
+Invariant: timeFrame-b
+Description: "Cardinality: 0..0, if Design.dataSharingPlan.generally != '373066001'"
+Severity: #error
+Expression: "extension.extension.where(url='generally').valueCoding.where(code = '373066001').exists().not() implies extension.extension.where(url='timeFrame').exists().not()"
+
+Invariant: accessCriteria-a
+Description: "Cardinality: 0..*, if Design.dataSharingPlan.generally == '373066001'"
+Severity: #error
+Expression: "extension.extension.where(url='generally').valueCoding.where(code = '373066001').exists() implies extension.extension.where(url='accessCriteria').exists()"
+
+Invariant: accessCriteria-b
+Description: "Cardinality: 0..0, if Design.dataSharingPlan.generally != '373066001'"
+Severity: #error
+Expression: "extension.extension.where(url='generally').valueCoding.where(code = '373066001').exists().not() implies extension.extension.where(url='accessCriteria').exists().not()"
+
+Invariant: masking-roles-a
+Description: "Cardinality: 0..*, if Design.interventional.masking.general == true"
+Severity: #error
+Expression: "extension.extension.extension.where(url='general').where(value=true).exists() implies extension.extension.extension.where(url='roles').exists()"
+
+Invariant: masking-roles-b
+Description: "Cardinality: 0..*, if Design.interventional.masking.general == false"
+Severity: #error
+Expression: "extension.extension.extension.where(url='general').where(value=true).exists().not() implies extension.extension.extension.where(url='roles').exists().not()"
+
+Invariant: masking-description-a
+Description: "Cardinality: 0..*, if Design.interventional.masking.general == true"
+Severity: #error
+Expression: "extension.extension.extension.where(url='general').where(value=true).exists() implies extension.extension.extension.where(url='description').exists()"
+
+Invariant: masking-description-b
+Description: "Cardinality: 0..*, if Design.interventional.masking.general == false"
+Severity: #error
+Expression: "extension.extension.extension.where(url='general').where(value=true).exists().not() implies extension.extension.extension.where(url='description').exists().not()"
+
+Invariant: interventional-a
+Description: "Cardinality: 0..1, Design.primaryDesign == 'Interventional'"
+Severity: #error
+Expression: "category.coding.where(code = 'C98388').exists() implies extension.where(url='https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-interventional').exists()"
+
+Invariant: interventional-b
+Description: "Cardinality: 0..0, Design.primaryDesign != 'Interventional'"
+Severity: #error
+Expression: "category.coding.where(code = 'C98388').exists().not() implies extension.where(url='https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-interventional').exists().not()"
+
+Invariant: nonInterventional-a
+Description: "Cardinality: 0..1, Design.primaryDesign == 'Non-interventional'"
+Severity: #error
+Expression: "category.coding.where(code = 'C142615').exists() implies extension.where(url='https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-non-interventional').exists()"
+
+Invariant: nonInterventional-b
+Description: "Cardinality: 0..0, Design.primaryDesign != 'Non-interventional'"
+Severity: #error
+Expression: "category.coding.where(code = 'C142615').exists().not() implies extension.where(url='https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-non-interventional').exists().not()"
+
 
 // Needs to be tested
 Invariant: interventions
@@ -316,78 +386,6 @@ Severity: #error
 Expression: "category.coding.where(code = 'C142615').exists().not() implies extension.extension.where(url='intendedExposure').valueReference.contains('NFDI4Health_PR_MDS_Evidence_Variable_Exposure')"
 
 
-Invariant: supportingInformation-a
-Description: "Cardinality: 0..*, if Design.dataSharingPlan.generally == '373066001'"
-Severity: #error
-Expression: "extension.extension.where(url='generally').where(code = '373066001').exists() implies extension.extension.where(url='supportingInformation').exists()"
-
-Invariant: supportingInformation-b
-Description: "Cardinality: 0..0, if Design.dataSharingPlan.generally != '373066001'"
-Severity: #error
-Expression: "extension.extension.where(url='generally').where(code = '373066001').exists().not() implies extension.extension.where(url='supportingInformation').exists().not()"
-
-Invariant: timeFrame-a
-Description: "Cardinality: 0..*, if Design.dataSharingPlan.generally == '373066001'"
-Severity: #error
-Expression: "extension.extension.where(url='generally').where(code = '373066001').exists() implies extension.extension.where(url='timeFrame').exists()"
-
-Invariant: timeFrame-b
-Description: "Cardinality: 0..0, if Design.dataSharingPlan.generally != '373066001'"
-Severity: #error
-Expression: "extension.extension.where(url='generally').where(code = '373066001').exists().not() implies extension.extension.where(url='timeFrame').exists().not()"
-
-Invariant: accessCriteria-a
-Description: "Cardinality: 0..*, if Design.dataSharingPlan.generally == '373066001'"
-Severity: #error
-Expression: "extension.extension.where(url='generally').where(code = '373066001').exists() implies extension.extension.where(url='accessCriteria').exists()"
-
-Invariant: accessCriteria-b
-Description: "Cardinality: 0..0, if Design.dataSharingPlan.generally != '373066001'"
-Severity: #error
-Expression: "extension.extension.where(url='generally').where(code = '373066001').exists().not() implies extension.extension.where(url='accessCriteria').exists().not()"
-
-
-
-Invariant: masking-roles-a
-Description: "Cardinality: 0..*, if Design.interventional.masking.general == true"
-Severity: #error
-Expression: "extension.extension.extenswion.where(url='general').where(value='true') implies extension.extension.extenswion.where(url='roles').exists()"
-
-Invariant: masking-roles-b
-Description: "Cardinality: 0..*, if Design.interventional.masking.general == false"
-Severity: #error
-Expression: "extension.extension.extenswion.where(url='general').where(value='false') implies extension.extension.extenswion.where(url='roles').exists().not()"
-
-
-Invariant: masking-description-a
-Description: "Cardinality: 0..*, if Design.interventional.masking.general == true"
-Severity: #error
-Expression: "extension.extension.extenswion.where(url='general').where(value='true') implies extension.extension.extenswion.where(url='description').exists()"
-
-Invariant: masking-description-b
-Description: "Cardinality: 0..*, if Design.interventional.masking.general == false"
-Severity: #error
-Expression: "extension.extension.extenswion.where(url='general').where(value='false') implies extension.extension.extenswion.where(url='description').exists().not()"
-
-Invariant: nonInterventional-a
-Description: "Cardinality: 0..1, Design.primaryDesign == 'Non-interventional'"
-Severity: #error
-Expression: "category.coding.where(code = 'C142615').exists() implies extension.where(url='nonInterventional').exists()"
-
-Invariant: nonInterventional-b
-Description: "Cardinality: 0..0, Design.primaryDesign != 'Non-interventional'"
-Severity: #error
-Expression: "category.coding.where(code = 'C142615').exists().not() implies extension.where(url='nonInterventional').exists.not()"
-
-Invariant: interventional-a
-Description: "Cardinality: 0..1, Design.primaryDesign == 'Interventional'"
-Severity: #error
-Expression: "category.coding.where(code = 'C98388').exists() implies extension.where(url='nonInterventional').exists()"
-
-Invariant: interventional-b
-Description: "Cardinality: 0..0, Design.primaryDesign != 'Interventional'"
-Severity: #error
-Expression: "category.coding.where(code = 'C98388').exists().not() implies extension.where(url='nonInterventional').exists.not()"
 
 Invariant: study-stageStopped-a
 Description: "Cardinality: 0..1, if Design.administrativeInformation.status == ('06' OR '07')"
