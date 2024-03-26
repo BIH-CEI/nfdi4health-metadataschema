@@ -10,8 +10,8 @@ Description: "Group of items providing further information about the organisatio
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 * . ^short = "Details about the contributing organisation(s)/institution(s)/group(s) | Organisation(s) associated with the contributor"
-* . ^definition = "For 1.10.2 Resource.contributors.organisational: Group of items providing information about group(s) of persons, institution(s) or organisation(s) contributing to the [RESOURCE]. | For 1.10.6 Resource.contributors.affiliation: Group of items providing further information about the organisation(s) associated with the contributor."
-* . ^comment = "For 1.10.2 Resource.contributors.organisational: Additional information: Group of items applicable only when providing organisational, institutional or group names."
+* . ^definition = "Resource.contributors.organisational: Group of items providing information about group(s) of persons, institution(s) or organisation(s) contributing to the [RESOURCE]. | Resource.contributors.affiliation: Group of items providing further information about the organisation(s) associated with the contributor."
+* . ^comment = "Resource.contributors.organisational: Additional information: Group of items applicable only when providing organisational, institutional or group names."
 
 * identifier ^short = "Digital identifier(s)"
 * identifier ^definition = "Group of items providing information about identifiers of the organisation."
