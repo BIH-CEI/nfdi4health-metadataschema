@@ -52,40 +52,6 @@
       "reference": "PractitionerRole/InstanceOfPractitionerRoleNinaKirchhof"
     }
   ],
-  "section": [
-    {
-      "code": {
-        "coding": [
-          {
-            "code": "C165593",
-            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
-            "display": "Chronic Disease"
-          }
-        ]
-      },
-      "entry": [
-        {
-          "reference": "InstanceOfChronicDiseaseModule"
-        }
-      ]
-    },
-    {
-      "code": {
-        "coding": [
-          {
-            "code": "C16927",
-            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
-            "display": "Nutritional Science"
-          }
-        ]
-      },
-      "entry": [
-        {
-          "reference": "Questionnaire/InstanceOfNutritionalEpidemiologyModule"
-        }
-      ]
-    }
-  ],
   "identifier": {
     "value": "97"
   },

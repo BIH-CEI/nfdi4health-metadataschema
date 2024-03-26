@@ -31,5 +31,3 @@ Usage: #example
 * extension[nutritionalData].valueBoolean = true
 
 // Sections
-* section[chronicDiseases].entry = Reference(InstanceOfChronicDiseaseModule)
-* section[nutritionalData].entry = Reference(InstanceOfNutritionalEpidemiologyModule)

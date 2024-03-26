@@ -45,7 +45,7 @@
     "fshType": "Instance",
     "fshFile": "examples/InstanceOfComposition_DocumentHousehold.fsh",
     "startLine": 1,
-    "endLine": 35
+    "endLine": 31
   },
   {
     "outputFile": "Composition-InstanceOfCompositionRegistryHKR.json",
@@ -344,36 +344,12 @@
     "endLine": 10
   },
   {
-    "outputFile": "Questionnaire-2.16.840.1.113883.3.1937.777.64.4.6--20231207000000.json",
-    "fshName": "2.16.840.1.113883.3.1937.777.64.4.6--20231207000000",
-    "fshType": "Instance",
-    "fshFile": "examples/InstanceOfModuleRecordLinkage_generated.fsh",
-    "startLine": 4,
-    "endLine": 135
-  },
-  {
-    "outputFile": "Questionnaire-InstanceOfNutritionalEpidemiologyModule.json",
-    "fshName": "InstanceOfNutritionalEpidemiologyModule",
-    "fshType": "Instance",
-    "fshFile": "examples/InstanceOfModuleNutritionalEpidemiology.fsh",
-    "startLine": 1,
-    "endLine": 71
-  },
-  {
     "outputFile": "Questionnaire-InstanceOfQuestionnaireWHOHouseholdTransmission.json",
     "fshName": "InstanceOfQuestionnaireWHOHouseholdTransmission",
     "fshType": "Instance",
     "fshFile": "examples/InstanceOfQuestionnaireWHOHouseholdTransmission.fsh",
     "startLine": 1,
     "endLine": 26
-  },
-  {
-    "outputFile": "Questionnaire-InstanceOfRecordLinkage.json",
-    "fshName": "InstanceOfRecordLinkage",
-    "fshType": "Instance",
-    "fshFile": "examples/InstanceOfModuleRecordLinkage.fsh",
-    "startLine": 1,
-    "endLine": 48
   },
   {
     "outputFile": "ResearchStudy-InstanceOfStudySHIP.json",

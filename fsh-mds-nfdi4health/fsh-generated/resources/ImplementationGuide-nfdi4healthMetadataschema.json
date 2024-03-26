@@ -844,21 +844,6 @@
       },
       {
         "reference": {
-          "reference": "Questionnaire/InstanceOfNutritionalEpidemiologyModule"
-        },
-        "name": "NFDI4Health Module Nutritional Epidemiology Metadataschema (Use Case 5.1) V3",
-        "description": "Group of items providing information on diet assessment.\n\n**Additional information: **Filtering condition to decide if all following questions will be asked.",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Questionnaire/InstanceOfRecordLinkage"
-        },
-        "name": "NFDI4Health Module Record Linkage Metadataschema (UC 5.3) V3.3",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
           "reference": "ValueSet/nfdi4health-vs-mds-ne-device-nci-snomedct-local"
         },
         "name": "NFDI4Health NE Device [NCI, SNOMED CT, Local]",
@@ -1048,13 +1033,6 @@
         "name": "NFDI4Health PR MDS Study",
         "description": "Group of items applicable only to studies, substudies.",
         "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "Questionnaire/2.16.840.1.113883.3.1937.777.64.4.6--20231207000000"
-        },
-        "name": "NFDI4Health Resource",
-        "exampleBoolean": true
       },
       {
         "reference": {

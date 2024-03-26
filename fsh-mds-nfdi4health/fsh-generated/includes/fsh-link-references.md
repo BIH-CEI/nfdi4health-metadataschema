@@ -101,8 +101,6 @@
 [NFDI4Health_LM_Metadataschema_EOCD]: StructureDefinition-nfdi4health-lm-metadataschema-eocd.html
 [NFDI4Health_LM_MDS_Design]: StructureDefinition-nfdi4health-lm-mds-design.html
 [NFDI4Health_LM_Metadataschema_NE]: StructureDefinition-nfdi4health-lm-metadataschema-ne.html
-[InstanceOfNutritionalEpidemiologyModule]: Questionnaire-InstanceOfNutritionalEpidemiologyModule.html
-[InstanceOfRecordLinkage]: Questionnaire-InstanceOfRecordLinkage.html
 [NFDI4Health_VS_MDS_NE_Device_NCI_SNOMEDCT_Local]: ValueSet-nfdi4health-vs-mds-ne-device-nci-snomedct-local.html
 [NFDI4Health_VS_MDS_NE_Instrument_NCI_Local]: ValueSet-nfdi4health-vs-mds-ne-instrument-snomedct-nci-local.html
 [NFDI4Health_VS_MDS_NE_Mode_NCI_MSH_Local]: ValueSet-nfdi4health-vs-mds-ne-mode-nci-msh-local.html
@@ -127,7 +125,6 @@
 [NFDI4Health_PR_MDS_Registry]: StructureDefinition-nfdi4health-pr-mds-registry.html
 [NFDI4Health_PR_MDS_Related_Artifact_Resource]: StructureDefinition-nfdi4health-pr-mds-related-artifact-resource.html
 [NFDI4Health_PR_MDS_Study]: StructureDefinition-nfdi4health-pr-mds-study.html
-[2.16.840.1.113883.3.1937.777.64.4.6--20231207000000]: Questionnaire-2.16.840.1.113883.3.1937.777.64.4.6--20231207000000.html
 [NFDI4Health_VS_MDS_Countries_ISO]: ValueSet-nfdi4health-vs-mds-countries-iso.html
 [NFDI4Health_VS_MDS_ID_TYPE_NCI_Local]: ValueSet-nfdi4health-vs-mds-id-type-nci-local.html
 [NFDI4Health_VS_MDS_Identifier_Type_Related_Artifact_NCI_Local]: ValueSet-nfdi4health-vs-mds-identifier-type-related-artifact-nci-local.html
