@@ -8,10 +8,10 @@ Description: "Extension providing a description of the study population descript
 * ^publisher = "NFDI4Health"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
-* ^context.type = #element
-* ^context.expression = "Group"
-* ^context.type = #element
-* ^context.expression = "Library"
+* ^context[+].type = #element
+* ^context[=].expression = "Group"
+* ^context[+].type = #element
+* ^context[=].expression = "Library.extension"
 * . 0..1
 * . ^short = "Population description"
 * . ^definition = "Additional descriptive information providing more details about the population of the [RESOURCE]."

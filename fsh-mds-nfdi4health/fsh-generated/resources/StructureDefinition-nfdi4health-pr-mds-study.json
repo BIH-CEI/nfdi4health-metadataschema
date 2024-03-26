@@ -93,14 +93,14 @@
             "key": "study-mortalityData-a",
             "severity": "error",
             "human": "Cardinality: 0..1, if Design.studyType.nonInterventional == ('C15273' OR 'C15208' OR '004' OR 'D015331' OR '005' OR 'C53311'))",
-            "expression": "category.extension.extension.where(url='nonInterventional').valueCoding.where(code = 'C15273' | 'C15208' | '004' | 'D015331' | '005' | 'C53311').exists() implies extension.where(url='https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-mortality-data').exists()",
+            "expression": "category.extension.extension.where(url='nonInterventional').valueCoding.where(code = 'C15273' or code = 'C15208' or code =  '004' or code =  'D015331' or code =  '005' or code =  'C53311').exists() implies extension.where(url='https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-mortality-data').exists()",
             "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
           },
           {
             "key": "study-mortalityData-b",
             "severity": "error",
             "human": "Cardinality: 0..0, if Design.studyType.nonInterventional != ('C15273' OR 'C15208' OR '004' OR 'D015331' OR '005' OR 'C53311'))",
-            "expression": "category.extension.extension.where(url='nonInterventional').valueCoding.where(code = 'C15273' | 'C15208' | '004' | 'D015331' | '005' | 'C53311').exists().not() implies extension.where(url='https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-mortality-data').exists().not()",
+            "expression": "category.extension.extension.where(url='nonInterventional').valueCoding.where(code = 'C15273' or code = 'C15208' or code = '004' or 'D015331' or code = '005' or code = 'C53311').exists().not() implies extension.where(url='https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-mortality-data').exists().not()",
             "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
           },
           {
@@ -114,7 +114,7 @@
             "key": "study-statusWhenIntervention-b",
             "severity": "error",
             "human": "Cardinality: 0..1, if Design.administrativeInformation.status == ('01' OR '02' OR '03' OR '04' OR '05')",
-            "expression": "extension.extension.where(url='status').valueCoding.where(code = '01' or code = '02' or code =  '03' or code = '04' or code = '05').exists() implies extension.extension.where(url='statusWhenIntervention').exists()",
+            "expression": "extension.extension.where(url='status').valueCoding.where(code = '01' or code = '02' or code =  '03' or code = '04' or code = '05').exists() implies extension.extension.where(url='statusWhenIntervention').exists().not()",
             "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
           },
           {
@@ -213,20 +213,6 @@
             "severity": "error",
             "human": "0..0, if Design.dataSource.general != '033'",
             "expression": "extension.extension.where(url='general').valueCoding.where(code = '033').exists().not() implies extension.extension.where(url='omics').exists().not()",
-            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
-          },
-          {
-            "key": "interventions",
-            "severity": "error",
-            "human": "Cardinality: 0..*, if Design.primaryDesign == 'C98388'",
-            "expression": "category.coding.where(code = 'C98388').exists() implies extension.extension.where(url='intendedExposure').valueReference.contains('NFDI4Health_PR_MDS_Evidence_Variable_Intervention')",
-            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
-          },
-          {
-            "key": "exposures",
-            "severity": "error",
-            "human": "Cardinality: 0..*, if Design.primaryDesign == 'C142615'",
-            "expression": "category.coding.where(code = 'C142615').exists().not() implies extension.extension.where(url='intendedExposure').valueReference.contains('NFDI4Health_PR_MDS_Evidence_Variable_Exposure')",
             "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
           },
           {
@@ -359,14 +345,28 @@
             "key": "recordLinkage-a",
             "severity": "error",
             "human": "Cardinality: 1..1, if Design.dataSharingPlan.recordLinkage == 'Yes'",
-            "expression": "extension.extension.where(url='recordLinkage').where(value='true') implies extension.where(url='recordLinkage').exists()",
+            "expression": "extension.extension.where(url='recordLinkage').where(value=true).exists()  implies extension.where(url='https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-record-linkage').exists()",
             "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
           },
           {
             "key": "recordLinkage-b",
             "severity": "error",
             "human": "Cardinality: 0..0, if Design.dataSharingPlan.recordLinkage == 'No'",
-            "expression": "extension.extension.where(url='recordLinkage').where(value='false') implies extension.where(url='recordLinkage').exists().not()",
+            "expression": "extension.extension.where(url='recordLinkage').where(value=false).exists() implies extension.where(url='https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-record-linkage').exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "legalBasisDetails-a",
+            "severity": "error",
+            "human": "Cardinality: 1..1, if RecordLinkage.legalBasis == 'True'",
+            "expression": "extension.extension.where(url='legalBasis').where(value=true).exists() implies extension.extension.where(url='legalBasisDetails').exists()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
+          },
+          {
+            "key": "legalBasisDetails-b",
+            "severity": "error",
+            "human": "Cardinality: 0..0, if RecordLinkage.legalBasis == 'False'",
+            "expression": "extension.extension.where(url='legalBasis').where(value=false).exists() implies extension.extension.where(url='legalBasisDetails').exists().not()",
             "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
           }
         ],
@@ -957,15 +957,15 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.13 Resource.ids"
+            "map": "Resource.ids"
           },
           {
             "identity": "NFDI4Health",
-            "map": "1.14 Resource.idsNfdi4health"
+            "map": "Resource.idsNfdi4health"
           },
           {
             "identity": "NFDI4Health",
-            "map": "1.9 Resource.webpage"
+            "map": "Resource.webpage"
           }
         ]
       },

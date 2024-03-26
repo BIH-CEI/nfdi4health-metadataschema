@@ -72,6 +72,5 @@
       "exclude": false
     }
   ],
-  "type": "person",
-  "quantity": 60
+  "type": "person"
 }

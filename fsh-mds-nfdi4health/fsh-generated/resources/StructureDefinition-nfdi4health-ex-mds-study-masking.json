@@ -34,7 +34,7 @@
   "context": [
     {
       "type": "element",
-      "expression": "ResearchStudy"
+      "expression": "ResearchStudy.extension"
     }
   ],
   "type": "Extension",

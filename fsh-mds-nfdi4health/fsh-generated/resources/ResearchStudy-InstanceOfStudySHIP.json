@@ -108,6 +108,10 @@
             "system": "http://snomed.info/sct",
             "display": "Yes (qualifier value)"
           }
+        },
+        {
+          "url": "recordLinkage",
+          "valueBoolean": true
         }
       ]
     },
@@ -286,6 +290,40 @@
         "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
         "display": "Vital Status"
       }
+    },
+    {
+      "extension": [
+        {
+          "url": "legalBasis",
+          "valueBoolean": true
+        },
+        {
+          "url": "legalBasisDetails",
+          "valueString": "This is a test for testing FHIR Paths"
+        }
+      ],
+      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-record-linkage"
+    },
+    {
+      "extension": [
+        {
+          "url": "targetNumber",
+          "valueUnsignedInt": 4420
+        },
+        {
+          "url": "eligibility",
+          "valueReference": {
+            "reference": "Group/InstanceOfGroupEligibilitySHIP"
+          }
+        },
+        {
+          "url": "actualGroup",
+          "valueReference": {
+            "reference": "Group/InstanceOfGroupActualSHIP"
+          }
+        }
+      ],
+      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-recruitment-backport-r5"
     }
   ],
   "category": [
@@ -342,14 +380,6 @@
   "note": [
     {
       "text": "The content of different SHIP data collections are described separately."
-    }
-  ],
-  "enrollment": [
-    {
-      "reference": "InstanceOfGroupIntendedSHIP"
-    },
-    {
-      "reference": "Group/InstanceOfGroupActualSHIP"
     }
   ],
   "site": [

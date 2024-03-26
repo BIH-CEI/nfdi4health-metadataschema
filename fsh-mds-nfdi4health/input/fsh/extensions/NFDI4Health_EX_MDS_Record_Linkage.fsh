@@ -10,15 +10,12 @@ Description: "Group of items providing information on record linkage."
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 * ^context[0].type = #element
 * ^context[=].expression = "ResearchStudy"
-* ^context[0].type = #element
+* ^context[+].type = #element
 * ^context[=].expression = "Library"
 * . 0..1
 * . ^short = "Information about record linkage for the [RESOURCE]"
 * . ^definition = "Group of items providing information on record linkage."
 * . ^comment = "Applies only if 1.17.26.9 Design.dataSharingPlan.recordLinkage has been answered with Yes"
-* extension ^slicing.discriminator.type = #value
-* extension ^slicing.discriminator.path = "url"
-* extension ^slicing.rules = #open
 * extension contains
     legalBasis 0..1 and
     legalBasisDetails 0..1 and
@@ -61,11 +58,11 @@ Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Record_Linkage
 * -> "RL1 RecordLinkage"
-* extension[legalBasis] -> "RL1.1 RecordLinkage.legalBasis"
-* extension[legalBasisDetails] -> "RL1.2 RecordLinkage.legalBasisDetails"
-* extension[informedConsent] -> "RL1.3 RecordLinkage.informedConsent"
-* extension[responsibleInstitutions] -> "RL1.4 RecordLinkage.responsibleInstitutions"
-* extension[additionalCosts] -> "RL1.5 RecordLinkage.additionalCosts"
-* extension[identifiers].valueIdentifier.value -> "RL1.6 RecordLinkage.identifiers"
-* extension[furtherDetails] -> "RL1.7 RecordLinkage.furtherDetails"
-* extension[exampleResources] -> "RL1.8 RecordLinkage.exampleResources"
+* extension[legalBasis] -> "RecordLinkage.legalBasis"
+* extension[legalBasisDetails] -> "RecordLinkage.legalBasisDetails"
+* extension[informedConsent] -> "RecordLinkage.informedConsent"
+* extension[responsibleInstitutions] -> "RecordLinkage.responsibleInstitutions"
+* extension[additionalCosts] -> "RecordLinkage.additionalCosts"
+* extension[identifiers].valueIdentifier.value -> "RecordLinkage.identifiers"
+* extension[furtherDetails] -> "RecordLinkage.furtherDetails"
+* extension[exampleResources] -> "RecordLinkage.exampleResources"

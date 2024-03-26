@@ -9,7 +9,6 @@ Description: "Group of items applicable only to studies, substudies."
 * ^publisher = "NFDI4Health"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
-//* language 1..
 
 // Invariants
 * obeys category-interventional-a and category-interventional-b
@@ -22,7 +21,6 @@ Description: "Group of items applicable only to studies, substudies."
 * obeys biosamples-a and biosamples-b
 * obeys imaging-a and imaging-b
 * obeys omics-a and omics-b
-* obeys interventions and exposures
 * obeys supportingInformation-a and supportingInformation-b
 * obeys timeFrame-a and timeFrame-b
 * obeys accessCriteria-a and accessCriteria-b
@@ -33,6 +31,7 @@ Description: "Group of items applicable only to studies, substudies."
 * obeys study-stageStopped-a and study-stageStopped-b
 * obeys study-reasonStopped-a and study-reasonStopped-b
 * obeys recordLinkage-a and recordLinkage-b
+* obeys legalBasisDetails-a and legalBasisDetails-b
 
 // Extensions
 * extension contains
@@ -186,9 +185,9 @@ Source: NFDI4Health_PR_MDS_Study
 * focus.coding.extension[uri] -> "Design.focus.code"
 * focus.coding.system -> "Design.focus.classification"
 * focus.coding.display -> "Design.focus.label"
-* relatedArtifact -> "1.13 Resource.ids"
-* relatedArtifact -> "1.14 Resource.idsNfdi4health"
-* relatedArtifact -> "1.9 Resource.webpage"
+* relatedArtifact -> "Resource.ids"
+* relatedArtifact -> "Resource.idsNfdi4health"
+* relatedArtifact -> "Resource.webpage"
 * keyword -> "Resource.keywords"
 * keyword.coding.system -> "Resource.keywords.code"
 * keyword.text -> "Resource.keywords.label"
@@ -225,12 +224,12 @@ Expression: "category.coding.where(code = 'C142615').exists().not() implies cate
 Invariant: study-mortalityData-a
 Description: "Cardinality: 0..1, if Design.studyType.nonInterventional == ('C15273' OR 'C15208' OR '004' OR 'D015331' OR '005' OR 'C53311'))"
 Severity: #error
-Expression: "category.extension.extension.where(url='nonInterventional').valueCoding.where(code = 'C15273' | 'C15208' | '004' | 'D015331' | '005' | 'C53311').exists() implies extension.where(url='https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-mortality-data').exists()"
+Expression: "category.extension.extension.where(url='nonInterventional').valueCoding.where(code = 'C15273' or code = 'C15208' or code =  '004' or code =  'D015331' or code =  '005' or code =  'C53311').exists() implies extension.where(url='https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-mortality-data').exists()"
 
 Invariant: study-mortalityData-b
 Description: "Cardinality: 0..0, if Design.studyType.nonInterventional != ('C15273' OR 'C15208' OR '004' OR 'D015331' OR '005' OR 'C53311'))"
 Severity: #error
-Expression: "category.extension.extension.where(url='nonInterventional').valueCoding.where(code = 'C15273' | 'C15208' | '004' | 'D015331' | '005' | 'C53311').exists().not() implies extension.where(url='https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-mortality-data').exists().not()"
+Expression: "category.extension.extension.where(url='nonInterventional').valueCoding.where(code = 'C15273' or code = 'C15208' or code = '004' or 'D015331' or code = '005' or code = 'C53311').exists().not() implies extension.where(url='https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-mortality-data').exists().not()"
 
 Invariant: study-statusWhenIntervention-a
 Description: "Cardinality: 0..1, if Design.primaryDesign == 'C98388'"
@@ -240,7 +239,7 @@ Expression: "category.coding.where(code = 'C98388').exists() implies extension.e
 Invariant: study-statusWhenIntervention-b
 Description: "Cardinality: 0..1, if Design.administrativeInformation.status == ('01' OR '02' OR '03' OR '04' OR '05')"
 Severity: #error
-Expression: "extension.extension.where(url='status').valueCoding.where(code = '01' or code = '02' or code =  '03' or code = '04' or code = '05').exists() implies extension.extension.where(url='statusWhenIntervention').exists()"
+Expression: "extension.extension.where(url='status').valueCoding.where(code = '01' or code = '02' or code =  '03' or code = '04' or code = '05').exists() implies extension.extension.where(url='statusWhenIntervention').exists().not()"
 
 Invariant: study-statusWhenIntervention-c
 Description: "Cardinality: 0..0, if Design.primaryDesign != 'C98388'"
@@ -373,20 +372,6 @@ Description: "Cardinality: 0..0, Design.primaryDesign != 'Non-interventional'"
 Severity: #error
 Expression: "category.coding.where(code = 'C142615').exists().not() implies extension.where(url='https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-non-interventional').exists().not()"
 
-
-// Needs to be tested
-Invariant: interventions
-Description: "Cardinality: 0..*, if Design.primaryDesign == 'C98388'"
-Severity: #error
-Expression: "category.coding.where(code = 'C98388').exists() implies extension.extension.where(url='intendedExposure').valueReference.contains('NFDI4Health_PR_MDS_Evidence_Variable_Intervention')"
-
-Invariant: exposures
-Description: "Cardinality: 0..*, if Design.primaryDesign == 'C142615'"
-Severity: #error
-Expression: "category.coding.where(code = 'C142615').exists().not() implies extension.extension.where(url='intendedExposure').valueReference.contains('NFDI4Health_PR_MDS_Evidence_Variable_Exposure')"
-
-
-
 Invariant: study-stageStopped-a
 Description: "Cardinality: 0..1, if Design.administrativeInformation.status == ('06' OR '07')"
 Severity: #error
@@ -410,12 +395,22 @@ Expression: "extension.extension.where(url='status').valueCoding.where(code = '0
 Invariant: recordLinkage-a
 Description: "Cardinality: 1..1, if Design.dataSharingPlan.recordLinkage == 'Yes'"
 Severity: #error
-Expression: "extension.extension.where(url='recordLinkage').where(value='true') implies extension.where(url='recordLinkage').exists()"
+Expression: "extension.extension.where(url='recordLinkage').where(value=true).exists()  implies extension.where(url='https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-record-linkage').exists()"
 
 Invariant: recordLinkage-b
 Description: "Cardinality: 0..0, if Design.dataSharingPlan.recordLinkage == 'No'"
 Severity: #error
-Expression: "extension.extension.where(url='recordLinkage').where(value='false') implies extension.where(url='recordLinkage').exists().not()"
+Expression: "extension.extension.where(url='recordLinkage').where(value=false).exists() implies extension.where(url='https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-record-linkage').exists().not()"
+
+Invariant: legalBasisDetails-a
+Description: "Cardinality: 1..1, if RecordLinkage.legalBasis == 'True'"
+Severity: #error
+Expression: "extension.extension.where(url='legalBasis').where(value=true).exists() implies extension.extension.where(url='legalBasisDetails').exists()"
+
+Invariant: legalBasisDetails-b
+Description: "Cardinality: 0..0, if RecordLinkage.legalBasis == 'False'"
+Severity: #error
+Expression: "extension.extension.where(url='legalBasis').where(value=false).exists() implies extension.extension.where(url='legalBasisDetails').exists().not()"
 
 // Can NOT be tested but needs example data with recruitmentStatusRegister
 Invariant: study-recruitmentStatusRegister-a

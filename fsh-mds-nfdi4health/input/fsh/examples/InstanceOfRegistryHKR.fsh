@@ -35,6 +35,9 @@ Usage: #example
 * extension[dataSharingPlan].extension[url].valueUrl = "https://www.hamburg.de/krebsregister/10765432/publikationen-datennutzung/#anker_4"
 * extension[dataSharingPlan].extension[datashield].valueCoding = $SCT#373067005 "No (qualifier value)"
 * extension[dataSharingPlan].extension[recordLinkage].valueBoolean = true
+* extension[recordLinkage].extension[legalBasis].valueBoolean = false
+
+
 /// Eligibility criteria for study participants
 * subjectReference = Reference(InstanceOfGroupEligibilityHKR)
 

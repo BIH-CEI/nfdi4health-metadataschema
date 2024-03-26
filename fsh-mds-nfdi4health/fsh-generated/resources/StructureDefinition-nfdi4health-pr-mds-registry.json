@@ -144,14 +144,28 @@
             "key": "recordLinkage-a",
             "severity": "error",
             "human": "Cardinality: 1..1, if Design.dataSharingPlan.recordLinkage == 'Yes'",
-            "expression": "extension.extension.where(url='recordLinkage').where(value='true') implies extension.where(url='recordLinkage').exists()",
+            "expression": "extension.extension.where(url='recordLinkage').where(value=true).exists()  implies extension.where(url='https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-record-linkage').exists()",
             "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-registry"
           },
           {
             "key": "recordLinkage-b",
             "severity": "error",
             "human": "Cardinality: 0..0, if Design.dataSharingPlan.recordLinkage == 'No'",
-            "expression": "extension.extension.where(url='recordLinkage').where(value='false') implies extension.where(url='recordLinkage').exists().not()",
+            "expression": "extension.extension.where(url='recordLinkage').where(value=false).exists() implies extension.where(url='https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-record-linkage').exists().not()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-registry"
+          },
+          {
+            "key": "legalBasisDetails-a",
+            "severity": "error",
+            "human": "Cardinality: 1..1, if RecordLinkage.legalBasis == 'True'",
+            "expression": "extension.extension.where(url='legalBasis').where(value=true).exists() implies extension.extension.where(url='legalBasisDetails').exists()",
+            "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-registry"
+          },
+          {
+            "key": "legalBasisDetails-b",
+            "severity": "error",
+            "human": "Cardinality: 0..0, if RecordLinkage.legalBasis == 'False'",
+            "expression": "extension.extension.where(url='legalBasis').where(value=false).exists() implies extension.extension.where(url='legalBasisDetails').exists().not()",
             "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-registry"
           }
         ],

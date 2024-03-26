@@ -8,8 +8,10 @@ Description: "Extension defining an URI"
 * ^publisher = "NFDI4Health"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
-* ^context.type = #element
-* ^context.expression = "Coding"
+* ^context[0].type = #element
+* ^context[=].expression = "Coding"
+* ^context[+].type = #element
+* ^context[=].expression = "CodeableConcept"
 * url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-uri" (exactly)
 * value[x] 1..
 * value[x] only uri

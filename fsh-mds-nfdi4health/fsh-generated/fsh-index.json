@@ -101,7 +101,7 @@
     "fshType": "Instance",
     "fshFile": "examples/InstanceOfGroupActual_SHIP.fsh",
     "startLine": 1,
-    "endLine": 11
+    "endLine": 10
   },
   {
     "outputFile": "Group-InstanceOfGroupActualSPOVID.json",
@@ -133,7 +133,7 @@
     "fshType": "Instance",
     "fshFile": "examples/InstanceOfGroupEligibility_SPOVID.fsh",
     "startLine": 1,
-    "endLine": 14
+    "endLine": 13
   },
   {
     "outputFile": "Library-InstanceOfLibraryHKR.json",
@@ -141,7 +141,7 @@
     "fshType": "Instance",
     "fshFile": "examples/InstanceOfRegistryHKR.fsh",
     "startLine": 1,
-    "endLine": 48
+    "endLine": 51
   },
   {
     "outputFile": "Location-InstanceOfLocationMono.json",
@@ -381,7 +381,7 @@
     "fshType": "Instance",
     "fshFile": "examples/InstanceOfStudy_nonInterventional_SHIP.fsh",
     "startLine": 1,
-    "endLine": 76
+    "endLine": 82
   },
   {
     "outputFile": "ResearchStudy-InstanceOfStudySPOVID.json",
@@ -389,7 +389,7 @@
     "fshType": "Instance",
     "fshFile": "examples/InstanceOfStudy_interventional_SPOVID.fsh",
     "startLine": 1,
-    "endLine": 92
+    "endLine": 94
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-assessments.json",
@@ -589,7 +589,7 @@
     "fshType": "Extension",
     "fshFile": "extensions/NFDI4Health_EX_MDS_Record_Linkage.fsh",
     "startLine": 1,
-    "endLine": 57
+    "endLine": 54
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-recruitment-backport-r5.json",
@@ -773,7 +773,7 @@
     "fshType": "Extension",
     "fshFile": "extensions/NFDI4Health_EX_MDS_URI.fsh",
     "startLine": 1,
-    "endLine": 21
+    "endLine": 23
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-use-rights-confirmations.json",
@@ -965,7 +965,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/NFDI4Health_PR_MDS_Registry.fsh",
     "startLine": 1,
-    "endLine": 81
+    "endLine": 82
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-pr-mds-related-artifact-resource.json",
@@ -981,7 +981,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/NFDI4Health_PR_MDS_Study.fsh",
     "startLine": 1,
-    "endLine": 167
+    "endLine": 166
   },
   {
     "outputFile": "ValueSet-nfdi4health-vs-mds-cd-common-chronic-disease-name-sct-local.json",

@@ -53,7 +53,7 @@ Usage: #example
 * extension[nonInterventional].extension[biospecimenDescription].valueString = "Whole blood; Saliva"
 * extension[mortalityData].valueCoding = $NCI#C25717 "Vital Status"
 
-/// Information about data sharing
+/// Information about data sharing and record linkage
 * extension[dataSharingPlan].extension[generally].valueCoding = $SCT#373066001 "Yes (qualifier value)"
 * extension[dataSharingPlan].extension[description].valueString = "SHIP also shares biomaterials."
 * extension[dataSharingPlan].extension[supportingInformation].valueCoding = $Remaining#009 "Data dictionary" 
@@ -61,15 +61,21 @@ Usage: #example
 * extension[dataSharingPlan].extension[accessCriteria].valueString = "Data must only be used for health research purposes. Data access requests will be processed by the board of the Research Network Community Medicine on a monthly basis."
 * extension[dataSharingPlan].extension[url].valueUrl = "https://www.fvcm.med.uni-greifswald.de/"
 * extension[dataSharingPlan].extension[datashield].valueCoding = $SCT#373066001 "Yes (qualifier value)"
+* extension[dataSharingPlan].extension[recordLinkage].valueBoolean = true
+* extension[recordLinkage].extension[legalBasis].valueBoolean = true
+* extension[recordLinkage].extension[legalBasisDetails].valueString = "This is a test for testing FHIR Paths"
 
 /// Primary health condition(s), disease(s) or focus of the study - modelling must be changed because not possible to have "other vocabulary" or "freetext" as system
 
-/// Eligibility criteria for study participants
-* enrollment[0] = Reference(InstanceOfGroupIntendedSHIP)
+/// Recruitment
+* extension[recruitment].extension[targetNumber].valueUnsignedInt = 4420
+* extension[recruitment].extension[eligibility].valueReference = Reference(InstanceOfGroupEligibilitySHIP)
+* extension[recruitment].extension[actualGroup].valueReference = Reference(InstanceOfGroupActualSHIP)
+
 
 /// Study Population
 * site = Reference(InstanceOfLocationMono)
-* enrollment[+] = Reference(InstanceOfGroupActualSHIP)
+
 
 
 // Related resources

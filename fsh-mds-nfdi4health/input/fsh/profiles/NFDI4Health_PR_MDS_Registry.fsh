@@ -18,6 +18,7 @@ Description: "Group of items applicable only to registries."
 * obeys timeFrame-a and timeFrame-b
 * obeys accessCriteria-a and accessCriteria-b
 * obeys recordLinkage-a and recordLinkage-b
+* obeys legalBasisDetails-a and legalBasisDetails-b
 
 
 // Extensions

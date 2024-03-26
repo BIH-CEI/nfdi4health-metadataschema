@@ -35,7 +35,11 @@
   "context": [
     {
       "type": "element",
-      "expression": "Library"
+      "expression": "Group"
+    },
+    {
+      "type": "element",
+      "expression": "Library.extension"
     }
   ],
   "type": "Extension",

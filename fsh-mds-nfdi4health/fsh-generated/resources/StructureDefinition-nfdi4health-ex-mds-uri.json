@@ -32,6 +32,10 @@
     {
       "type": "element",
       "expression": "Coding"
+    },
+    {
+      "type": "element",
+      "expression": "CodeableConcept"
     }
   ],
   "type": "Extension",

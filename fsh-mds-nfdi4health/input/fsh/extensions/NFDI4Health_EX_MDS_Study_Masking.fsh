@@ -8,7 +8,7 @@ Description: "Group of items providing information about the masking of interven
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 * ^context.type = #element
-* ^context.expression = "ResearchStudy"
+* ^context.expression = "ResearchStudy.extension"
 * . 0..1
 * . ^short = "Masking of intervention(s) assignment"
 * . ^definition = "Group of items providing information about the masking of intervention(s) assignment"
