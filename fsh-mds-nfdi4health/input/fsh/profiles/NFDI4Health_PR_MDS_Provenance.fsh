@@ -13,7 +13,7 @@ Description: "Profile to collect information how data was collected - manually v
 * . ^definition = "Group of items providing information about provenance aspects of the data entry on this portal."
 * meta.versionId ^short = "Version number"
 * meta.versionId ^definition = "Version number of the [RESOURCE] within the portal/system"
-* target only Reference(NFDI4Health_PR_MDS_Questionnaire or NFDI4Health_PR_MDS_Document or NFDI4Health_PR_MDS_Study)
+* target only Reference(NFDI4Health_PR_MDS_Questionnaire or NFDI4Health_PR_MDS_Document or NFDI4Health_PR_MDS_Study or NFDI4Health_PR_MDS_Registry)
 * target ^definition = "The Reference(s) that were generated or updated by the activity described in this resource. A provenance can point to more than one target if multiple resources were created/updated by the same activity."
 * recorded ^short = "Last verified on | First submitted on | First posted/published on | Last update submitted on | Last update posted/published on"
 * recorded ^definition = "For verification date: Date on which the responsible party last verified the information about the [RESOURCE], even if no additional or updated information is being submitted. | For first submission date: Date when the [RESOURCE] was first submitted for publication. | For first posted date: Date when the [RESOURCE] was first posted/published. | For last update submission date: Date when the last update of the [RESOURCE] was submitted for publication. | For last update posted date: Date when the last update of the [RESOURCE] was posted/published."
@@ -22,7 +22,7 @@ Description: "Profile to collect information how data was collected - manually v
 * activity ^binding.description = "Value set defining codes for activity types."
 * agent ^short = "Last verified by [USER] | First submitted by [USER] | First posted/published by [USER] | Last updated submitted by [USER] | Last update posted/published by [USER]"
 * agent ^definition = "For verification user: User who last verified the information about the [RESOURCE]. | For first submission user: User who first submitted the [RESOURCE] for publication. | For first posted user: User who first posted/published the [RESOURCE]. | For last update submission user: User who submitted the last update of the [RESOURCE]. | For last update posted user: User who posted/published the last update of the [RESOURCE]."
-* agent.who only Reference(NFDI4Health_PR_MDS_Practitioner or NFDI4Health_PR_MDS_Practitioner_Role or NFDI4Health_PR_MDS_Organization or NFDI4Health_PR_MDS_Registry)
+* agent.who only Reference(NFDI4Health_PR_MDS_Practitioner or NFDI4Health_PR_MDS_Practitioner_Role or NFDI4Health_PR_MDS_Organization)
 
 Mapping: NFDI4Health-Provenance-to-FHIR
 Id: NFDI4Health

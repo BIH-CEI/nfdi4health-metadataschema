@@ -14,9 +14,9 @@
         {
           "url": "generally",
           "valueCoding": {
-            "code": "74964007",
-            "system": "http://snomed.info/sct",
-            "display": "Other"
+            "code": "II",
+            "system": "http://hl7.org/fhir/sid/icd-10",
+            "display": "Neoplasms"
           }
         }
       ]
@@ -26,16 +26,16 @@
       "extension": [
         {
           "url": "value",
-          "valueString": "EN (English) The Hamburg Cancer Registry (HCR) is an integrated clinical-epidemiological cancer registry for Hamburg as a place of residence and treatment. Our goal is to improve the quality of oncological care by providing a neutral data basis on cancer incidence and contributing to transparency. The Hamburg Cancer Registry is mandated under state and federal law to continuously and comprehensively record and process information on the diagnosis, therapy and course of all cancer patients treated in Hamburg, to make this information available for scientific research, and to evaluate and publish the results."
+          "valueString": "Das Hamburgische Krebsregister (HKR) ist ein integriertes klinisch-epidemiologisches Krebsregister für den Wohn- und Behandlungsort Hamburg. Unser Ziel ist es, die Qualität der onkologischen Versorgung zu verbessern, indem wir eine neutrale Datengrundlage zum Krebsgeschehen bereitstellen und zur Transparenz beitragen. Das Hamburgische Krebsregister hat den landes- und bundesrechtlich definierten Auftrag, kontinuierlich und flächendeckend Angaben zu Diagnose, Therapie und Verlauf von allen in Hamburg behandelten Krebspatientinnen und -patienten zu erfassen, zu verarbeiten, für die wissenschaftliche Forschung zur Verfügung zu stellen und auszuwerten sowie die Ergebnisse zu veröffentlichen."
         },
         {
           "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-language",
           "valueCodeableConcept": {
             "coding": [
               {
-                "code": "en",
+                "code": "de",
                 "system": "http://terminology.hl7.org/CodeSystem/iso639-1",
-                "display": "English"
+                "display": "German"
               }
             ]
           }
@@ -55,7 +55,7 @@
         },
         {
           "url": "description",
-          "valueString": "SHIP also shares biomaterials."
+          "valueString": "Data may be provided according to §§ 7, 8, 8a and 9 Hamburg Cancer Registry Law"
         },
         {
           "url": "supportingInformation",
@@ -67,23 +67,56 @@
         },
         {
           "url": "timeFrame",
-          "valueString": "As long as permitted by law."
+          "valueString": "continuously"
         },
         {
           "url": "accessCriteria",
-          "valueString": "Data must only be used for health research purposes. Data access requests will be processed by the board of the Research Network Community Medicine on a monthly basis."
+          "valueString": "Data may be provided according to §§ 7, 8, 8a and 9 Hamburg Cancer Registry Law"
         },
         {
           "url": "url",
-          "valueUrl": "https://www.fvcm.med.uni-greifswald.de/"
+          "valueUrl": "https://www.hamburg.de/krebsregister/10765432/publikationen-datennutzung/#anker_4"
         },
         {
           "url": "datashield",
           "valueCoding": {
-            "code": "373066001",
+            "code": "373067005",
             "system": "http://snomed.info/sct",
-            "display": "Yes (qualifier value)"
+            "display": "No (qualifier value)"
           }
+        }
+      ]
+    },
+    {
+      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-library-population",
+      "extension": [
+        {
+          "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-population-location",
+          "extension": [
+            {
+              "url": "countries",
+              "valueCoding": {
+                "code": "DEU",
+                "system": "urn:iso:std:iso:3166"
+              }
+            },
+            {
+              "url": "coverage",
+              "valueCoding": {
+                "code": "C25643",
+                "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+                "display": "Regional"
+              }
+            },
+            {
+              "url": "region",
+              "valueString": "1.8 million residents plus nonresident patients being treated in Hamburg"
+            }
+          ]
+        },
+        {
+          "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-population-description",
+          "valueString": "1.8 million residents plus nonresident patients being treated in Hamburg"
         }
       ]
     },
@@ -100,33 +133,9 @@
         {
           "url": "general",
           "valueCoding": {
-            "code": "029",
+            "code": "028",
             "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
-            "display": "Cognitive measurements"
-          }
-        },
-        {
-          "url": "general",
-          "valueCoding": {
-            "code": "031",
-            "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
-            "display": "Imaging data"
-          }
-        },
-        {
-          "url": "general",
-          "valueCoding": {
-            "code": "032",
-            "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
-            "display": "Physiological/Biochemical measurements"
-          }
-        },
-        {
-          "url": "general",
-          "valueCoding": {
-            "code": "033",
-            "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
-            "display": "Omics technology"
+            "display": "Administrative databases"
           }
         },
         {
@@ -138,73 +147,20 @@
           }
         },
         {
-          "url": "general",
-          "valueCoding": {
-            "code": "028",
-            "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
-            "display": "Administrative databases"
-          }
-        },
-        {
-          "url": "imaging",
-          "valueCoding": {
-            "code": "C115503",
-            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
-            "display": "Ultrasound Study File (Manufactured Object)"
-          }
-        },
-        {
-          "url": "imaging",
-          "valueCoding": {
-            "code": "C115501",
-            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
-            "display": "Magnetic Resonance Imaging Study File (Manufactured Object)"
-          }
-        },
-        {
-          "url": "imaging",
-          "valueCoding": {
-            "code": "C115545",
-            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
-            "display": "Medical Imaging File Not Otherwise Specified (Intellectual Product)"
-          }
-        },
-        {
-          "url": "omics",
-          "valueCoding": {
-            "code": "C84343",
-            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
-            "display": "Genomics"
-          }
-        },
-        {
-          "url": "omics",
-          "valueCoding": {
-            "code": "C49019",
-            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
-            "display": "Metabolomics"
-          }
-        },
-        {
-          "url": "omics",
-          "valueCoding": {
-            "code": "C153189",
-            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
-            "display": "Transcriptomics"
-          }
-        },
-        {
-          "url": "omics",
-          "valueCoding": {
-            "code": "C20085",
-            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
-            "display": "Proteomics"
-          }
+          "url": "description",
+          "valueString": "All hospitals, medical practices and other physician-managed oncological care facilities in Hamburg transmit information to the HCR based on their statutory reporting obligation and the uniform national data set for the following reporting occasions: diagnosis and histological confirmation, start and end of therapeutic measures as well as therapy-relevant changes in the disease status, i.e. progression events such as progression and relapse, and death."
         }
       ],
       "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-data-source"
     }
   ],
+  "type": {
+    "coding": [
+      {
+        "code": "asset-collection"
+      }
+    ]
+  },
   "effectivePeriod": {
     "start": "1990-01-01"
   },
@@ -217,9 +173,8 @@
       }
     ]
   },
-  "description": "The content of different SHIP data collections are described separately.",
   "subjectReference": {
-    "reference": "InstanceOfGroupIntendedSHIP"
+    "reference": "Group/InstanceOfGroupEligibilityHKR"
   },
   "relatedArtifact": [
     {

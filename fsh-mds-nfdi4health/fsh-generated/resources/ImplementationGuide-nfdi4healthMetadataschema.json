@@ -156,6 +156,14 @@
       },
       {
         "reference": {
+          "reference": "Group/InstanceOfGroupEligibilityHKR"
+        },
+        "name": "Instance Of Group Intended for HCR",
+        "description": "Example data of eligibility information from the HCR - Hamburg Cancer Registry",
+        "exampleCanonical": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-group-intended"
+      },
+      {
+        "reference": {
           "reference": "Group/InstanceOfGroupEligibilitySHIP"
         },
         "name": "Instance Of Group Intended for SHIP Trend",

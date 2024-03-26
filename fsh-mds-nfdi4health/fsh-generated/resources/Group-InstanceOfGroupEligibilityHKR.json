@@ -1,0 +1,91 @@
+{
+  "resourceType": "Group",
+  "id": "InstanceOfGroupEligibilityHKR",
+  "meta": {
+    "profile": [
+      "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-group-intended"
+    ]
+  },
+  "actual": false,
+  "characteristic": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "263495000",
+            "system": "http://snomed.info/sct",
+            "display": "Gender (observable entity)"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "248153007",
+            "system": "http://snomed.info/sct",
+            "display": "Male (finding)"
+          }
+        ]
+      },
+      "exclude": false
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "263495000",
+            "system": "http://snomed.info/sct",
+            "display": "Gender (observable entity)"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "248152002",
+            "system": "http://snomed.info/sct",
+            "display": "Female (finding)"
+          }
+        ]
+      },
+      "exclude": false
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "263495000",
+            "system": "http://snomed.info/sct",
+            "display": "Gender (observable entity)"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "105",
+            "system": "https://www.nfdi4health.de/fhir/metadataschema/CodeSystem/nfdi4health-cs-remaining-concepts",
+            "display": "Diverse"
+          }
+        ]
+      },
+      "exclude": false
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "55919000",
+            "system": "http://snomed.info/sct",
+            "display": "Including (qualifier value)"
+          }
+        ]
+      },
+      "exclude": false,
+      "valueCodeableConcept": {
+        "text": "Neoplasms in persons being resident or treated in Hamburg according to the following list https://www.hamburg.de/contentblob/13525374/a6a00d4f19c573688d42994b8e491f3a/data/icd-10-codes.pdf"
+      }
+    }
+  ],
+  "type": "person"
+}

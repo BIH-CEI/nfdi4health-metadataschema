@@ -15,6 +15,7 @@
 [InstanceOfEvidenceVariableSPOVID]: EvidenceVariable-InstanceOfEvidenceVariableSPOVID.html
 [InstanceOfGroupActualSHIP]: Group-InstanceOfGroupActualSHIP.html
 [InstanceOfGroupActualSPOVID]: Group-InstanceOfGroupActualSPOVID.html
+[InstanceOfGroupEligibilityHKR]: Group-InstanceOfGroupEligibilityHKR.html
 [InstanceOfGroupEligibilitySHIP]: Group-InstanceOfGroupEligibilitySHIP.html
 [InstanceOfGroupEligibilitySPOVID]: Group-InstanceOfGroupEligibilitySPOVID.html
 [InstanceOfLocationMono]: Location-InstanceOfLocationMono.html

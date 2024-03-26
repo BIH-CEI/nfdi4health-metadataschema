@@ -4,7 +4,7 @@ Title: "Instance of Registry HCR"
 Description: "Example data from the HCR Registry"
 Usage: #example
 
-
+* type = #asset-collection
 ///English description of the cancer registry
 * extension[descriptions].extension[value].valueString = "The Hamburg Cancer Registry (HCR) is an integrated clinical-epidemiological cancer registry for Hamburg as a place of residence and treatment. Our goal is to improve the quality of oncological care by providing a neutral data basis on cancer incidence and contributing to transparency. The Hamburg Cancer Registry is mandated under state and federal law to continuously and comprehensively record and process information on the diagnosis, therapy and course of all cancer patients treated in Hamburg, to make this information available for scientific research, and to evaluate and publish the results."
 * extension[descriptions].extension[language].valueCodeableConcept = $ISOLanguage#en "English"
@@ -24,7 +24,6 @@ Usage: #example
 * extension[dataSource].extension[general][+].valueCoding = $NCI#C17649 "Other"
 * extension[dataSource].extension[description].valueString = "All hospitals, medical practices and other physician-managed oncological care facilities in Hamburg transmit information to the HCR based on their statutory reporting obligation and the uniform national data set for the following reporting occasions: diagnosis and histological confirmation, start and end of therapeutic measures as well as therapy-relevant changes in the disease status, i.e. progression events such as progression and relapse, and death."
 
-* extension[mortalityData].valueCoding = $NCI#C81239 "Cause of Death"
 
 /// Information about data sharing
 * extension[dataSharingPlan].extension[generally].valueCoding = $SCT#373066001 "Yes (qualifier value)"
@@ -39,8 +38,10 @@ Usage: #example
 * subjectReference = Reference(InstanceOfGroupEligibilityHKR)
 
 /// Study Population
-* extension¢[population].extension[populationLocation].extension[populationDescription].valueString = "1.8 million residents plus nonresident patients being treated in Hamburg"
-
+* extension[population].extension[populationDescription].valueString = "1.8 million residents plus nonresident patients being treated in Hamburg"
+* extension[population].extension[populationLocation].extension[coverage].valueCoding = $NCI#C25643 "Regional"
+* extension[population].extension[populationLocation].extension[countries].valueCoding = $iso3166#DEU
+* extension[population].extension[populationLocation].extension[region].valueString = "1.8 million residents plus nonresident patients being treated in Hamburg"
 
 // Related resources
 * relatedArtifact = InstanceOfRelatedArtifact
