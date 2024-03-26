@@ -22,7 +22,7 @@ Description: "Profile to collect information how data was collected - manually v
 * activity ^binding.description = "Value set defining codes for activity types."
 * agent ^short = "Last verified by [USER] | First submitted by [USER] | First posted/published by [USER] | Last updated submitted by [USER] | Last update posted/published by [USER]"
 * agent ^definition = "For verification user: User who last verified the information about the [RESOURCE]. | For first submission user: User who first submitted the [RESOURCE] for publication. | For first posted user: User who first posted/published the [RESOURCE]. | For last update submission user: User who submitted the last update of the [RESOURCE]. | For last update posted user: User who posted/published the last update of the [RESOURCE]."
-* agent.who only Reference(NFDI4Health_PR_MDS_Practitioner or NFDI4Health_PR_MDS_Practitioner_Role or NFDI4Health_PR_MDS_Organization)
+* agent.who only Reference(NFDI4Health_PR_MDS_Practitioner or NFDI4Health_PR_MDS_Practitioner_Role or NFDI4Health_PR_MDS_Organization or NFDI4Health_PR_MDS_Registry)
 
 Mapping: NFDI4Health-Provenance-to-FHIR
 Id: NFDI4Health

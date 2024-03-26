@@ -160,7 +160,6 @@ Description: "Group of items applicable only to studies, substudies."
 * note.text ^short = "Additional information about the [RESOURCE]"
 * note.text ^definition = "Any additional information about specific aspects of the [RESOURCE] that could not be captured by other fields.."
 * note.text ^comment = "Short input help: You can provide here specific aspects of the [RESOURCE] that could not be captured by other fields."
-
 * objective ..*
 * objective.name 1..
 * objective.name ^short = "Research questions/hypotheses"

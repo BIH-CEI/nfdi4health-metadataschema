@@ -4,7 +4,7 @@
   "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-evidence-variable-exposure",
   "version": "0.9",
   "name": "NFDI4Health_PR_MDS_Evidence_Variable_Exposure",
-  "title": "NFDI4Health PR MDS Evidence Variable Intervention Exposure",
+  "title": "NFDI4Health PR MDS Evidence Variable Exposure",
   "status": "draft",
   "publisher": "NFDI4Health",
   "contact": [

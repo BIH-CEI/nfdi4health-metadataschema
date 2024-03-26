@@ -1,15 +1,15 @@
-Extension: NFDI4Health_EX_MDS_OutcomeMeasure_Backport_R5
-Id: nfdi4health-ex-mds-outcomemeasure-backport-r5
-Title: "NFDI4Health EX MDS Outcome Measure Backport R5"
+Extension: NFDI4Health_EX_MDS_Library_Outcomes
+Id: nfdi4health-ex-mds-library-outcomes
+Title: "NFDI4Health EX MDS Outcome Measure based on R5"
 Description: "Extension providing information about outcome measure(s)."
-* ^url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.outcomeMeasure"
+* ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-library-outcomes"
 * ^version = "0.9"
 * ^status = #draft
 * ^publisher = "NFDI4Health"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
-* ^context.type = #element
-* ^context.expression = "ResearchStudy"
+* ^context[+].type = #element
+* ^context[=].expression = "Library"
 * . 0..*
 * . ^short = "Outcome measures in the [RESOURCE]"
 * . ^definition = "Group of items providing information about outcome measures."
@@ -38,22 +38,13 @@ Description: "Extension providing information about outcome measure(s)."
 * extension[timeFrame].valueString ^short = "Time point(s) of assessment"
 * extension[timeFrame].valueString ^definition = "Description of the time point(s) at which the measurement for the outcome is assessed, e.g. the specific duration of time over which each participant is assessed."
 
-Mapping: NFDI4Health-OutcomeMeasure-Backport-R5-to-FHIR
+
+Mapping: NFDI4Health-Library-Outcomes-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
-Source: NFDI4Health_EX_MDS_OutcomeMeasure_Backport_R5
+Source: NFDI4Health_EX_MDS_Library_Outcomes
 * -> "Design.outcomes"
 * extension[name] -> "Design.outcomes.title"
 * extension[type] -> "Design.outcomes.type"
 * extension[description] -> "Design.outcomes.description"
 * extension[timeFrame] -> "Design.outcomes.timeFrame"
-
-// Invariant: outcome-type-a
-// Description: "Cardinality: 1..1, if (Design.outcomes.title != Null OR Design.outcomes.description != Null)" // title 1..1 therefore condition was ignored and type set to 1..1
-//Severity: #error
-//Expression: "extension.where(url = 'description').exists() implies extension.where(url='type').exists()"
-
-//Invariant: outcome-type-b
-//Description: "Cardinality: 0..0, if (Design.outcomes.title == Null OR Design.outcomes.description == Null)"  // title 1..1 therefore first part of condition ignored
-//Severity: #error
-//Expression: "extension.where(url = 'description').exists().not() implies extension.where(url='type').exists().not()"

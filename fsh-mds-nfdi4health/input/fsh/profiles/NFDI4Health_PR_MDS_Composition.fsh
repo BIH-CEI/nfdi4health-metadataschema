@@ -23,7 +23,7 @@ Description: "Profile intended to capture information on the core information of
 * title ^short = "Title/name"
 * title ^definition = "Scientific unabbreviated title or name of the resource."
 * title ^comment = "Additional Information: If no official title/name has been defined yet, please provide a title/name that is suitable for public display. | Short Input Help: Please provide at least one title/name of the resource. If the original title is not in English, please also provide an English translation of the original title."
-* title.extension contains NFDI4Health_EX_MDS_Label_Backport_R5 named label 1..*
+* title.extension contains NFDI4Health_EX_MDS_Label named label 1..*
 * identifier.value 1..1
 * identifier ^short = "ID of the [RESOURCE]"
 * identifier ^definition = "Unique identifier of the resource used for identification within the NFDI4Health."
@@ -43,7 +43,7 @@ Description: "Profile intended to capture information on the core information of
     NFDI4Health_EX_MDS_Name_Type named nameType 1..1
 * author only Reference(NFDI4Health_PR_MDS_Practitioner_Role or NFDI4Health_PR_MDS_Organization)
 * subject 1..1 
-* subject only Reference(NFDI4Health_PR_MDS_Document or NFDI4Health_PR_MDS_Questionnaire or NFDI4Health_PR_MDS_Study)
+* subject only Reference(NFDI4Health_PR_MDS_Document or NFDI4Health_PR_MDS_Questionnaire or NFDI4Health_PR_MDS_Study or NFDI4Health_PR_MDS_Registry)
 * subject ^comment = "1..1, if Resource.classification.type == ('Study' OR 'Substudy' OR 'Registry' OR 'Secondary data source'); otherwise 0..0"
 * section ^slicing.discriminator.type = #value
 * section ^slicing.discriminator.path = "code"

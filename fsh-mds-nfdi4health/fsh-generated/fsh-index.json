@@ -480,12 +480,12 @@
     "endLine": 23
   },
   {
-    "outputFile": "StructureDefinition-nfdi4health-ex-mds-label-backport-r5.json",
-    "fshName": "NFDI4Health_EX_MDS_Label_Backport_R5",
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-label.json",
+    "fshName": "NFDI4Health_EX_MDS_Label",
     "fshType": "Extension",
-    "fshFile": "extensions/NFDI4Health_EX_MDS_Label_Backport_R5.fsh",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Label.fsh",
     "startLine": 1,
-    "endLine": 37
+    "endLine": 31
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-language.json",
@@ -518,6 +518,14 @@
     "fshFile": "extensions/NFDI4Health_EX_MDS_Library_Ethics_Approval.fsh",
     "startLine": 1,
     "endLine": 19
+  },
+  {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-library-outcomes.json",
+    "fshName": "NFDI4Health_EX_MDS_Library_Outcomes",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Library_Outcomes.fsh",
+    "startLine": 1,
+    "endLine": 39
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-library-population.json",
@@ -556,16 +564,8 @@
     "fshName": "NFDI4Health_EX_MDS_OutcomeMeasure_Backport_R5",
     "fshType": "Extension",
     "fshFile": "extensions/NFDI4Health_EX_MDS_Outcomes_Backport_R5.fsh",
-    "startLine": 3,
-    "endLine": 43
-  },
-  {
-    "outputFile": "StructureDefinition-nfdi4health-ex-mds-outcomes.json",
-    "fshName": "NFDI4Health_EX_MDS_Outcomes",
-    "fshType": "Extension",
-    "fshFile": "extensions/NFDI4Health_EX_MDS_Outcomes.fsh",
     "startLine": 1,
-    "endLine": 42
+    "endLine": 39
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-provenance-data-source.json",
@@ -869,7 +869,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/NFDI4Health_PR_MDS_Document.fsh",
     "startLine": 1,
-    "endLine": 120
+    "endLine": 117
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-pr-mds-evidence-variable-exposure.json",
@@ -973,7 +973,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/NFDI4Health_PR_MDS_Study.fsh",
     "startLine": 1,
-    "endLine": 167
+    "endLine": 166
   },
   {
     "outputFile": "ValueSet-nfdi4health-vs-mds-cd-common-chronic-disease-name-sct-local.json",

@@ -1,7 +1,7 @@
 Profile: NFDI4Health_PR_MDS_Evidence_Variable_Exposure
 Parent: EvidenceVariable
 Id: nfdi4health-pr-mds-evidence-variable-exposure
-Title: "NFDI4Health PR MDS Evidence Variable Intervention Exposure"
+Title: "NFDI4Health PR MDS Evidence Variable Exposure"
 Description: "Information about the exposure in a study."
 * ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-evidence-variable-exposure"
 * ^version = "0.9"

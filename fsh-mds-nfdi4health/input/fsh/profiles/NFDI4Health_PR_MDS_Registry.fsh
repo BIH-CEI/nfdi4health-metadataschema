@@ -27,7 +27,7 @@ Description: "Group of items applicable only to registries."
     NFDI4Health_EX_MDS_Keywords named keywords 0..* and
     NFDI4Health_EX_MDS_Descriptions named descriptions 1..1 and
     NFDI4Health_EX_MDS_Data_Source named dataSource 0..1 and
-    NFDI4Health_EX_MDS_OutcomeMeasure_Backport_R5 named outcomes 0..* and
+    NFDI4Health_EX_MDS_Library_Outcomes named outcomes 0..* and
     NFDI4Health_EX_MDS_Assessments named assessments 0..* and
     NFDI4Health_EX_MDS_Data_Sharing_Plan named dataSharingPlan 1..1 and
     NFDI4Health_EX_MDS_Library_Data_Providers named dataProviders 0..1 and

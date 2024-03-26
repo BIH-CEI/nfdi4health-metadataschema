@@ -492,9 +492,9 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nfdi4health-ex-mds-label-backport-r5"
+          "reference": "StructureDefinition/nfdi4health-ex-mds-label"
         },
-        "name": "NFDI4Health EX MDS Label Backport R5",
+        "name": "NFDI4Health EX MDS Label",
         "description": "Extension covering information about additional title(s), name(s) and acronym(s) of a resource.",
         "exampleBoolean": false
       },
@@ -580,9 +580,9 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nfdi4health-ex-mds-outcomes"
+          "reference": "StructureDefinition/nfdi4health-ex-mds-library-outcomes"
         },
-        "name": "NFDI4Health EX MDS Outcomes",
+        "name": "NFDI4Health EX MDS Outcome Measure based on R5",
         "description": "Extension providing information about outcome measure(s).",
         "exampleBoolean": false
       },
@@ -939,18 +939,18 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nfdi4health-pr-mds-evidence-variable-intervention"
+          "reference": "StructureDefinition/nfdi4health-pr-mds-evidence-variable-exposure"
         },
-        "name": "NFDI4Health PR MDS Evidence Variable Intervention",
-        "description": "Information about the intervention or in a study.",
+        "name": "NFDI4Health PR MDS Evidence Variable Exposure",
+        "description": "Information about the exposure in a study.",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nfdi4health-pr-mds-evidence-variable-exposure"
+          "reference": "StructureDefinition/nfdi4health-pr-mds-evidence-variable-intervention"
         },
-        "name": "NFDI4Health PR MDS Evidence Variable Intervention Exposure",
-        "description": "Information about the exposure in a study.",
+        "name": "NFDI4Health PR MDS Evidence Variable Intervention",
+        "description": "Information about the intervention or in a study.",
         "exampleBoolean": false
       },
       {

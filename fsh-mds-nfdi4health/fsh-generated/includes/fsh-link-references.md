@@ -57,7 +57,7 @@
 [NFDI4Health_EX_MDS_Format]: StructureDefinition-nfdi4health-ex-mds-format.html
 [NFDI4Health_EX_MDS_Identifier_Assignment_Date]: StructureDefinition-nfdi4health-ex-mds-identifier-assignment-date.html
 [NFDI4Health_EX_MDS_Keywords]: StructureDefinition-nfdi4health-ex-mds-keywords.html
-[NFDI4Health_EX_MDS_Label_Backport_R5]: StructureDefinition-nfdi4health-ex-mds-label-backport-r5.html
+[NFDI4Health_EX_MDS_Label]: StructureDefinition-nfdi4health-ex-mds-label.html
 [NFDI4Health_EX_MDS_Execution_Language]: StructureDefinition-nfdi4health-ex-mds-execution-language.html
 [NFDI4Health_EX_MDS_Language]: StructureDefinition-nfdi4health-ex-mds-language.html
 [NFDI4Health_EX_MDS_Library_Data_Providers]: StructureDefinition-nfdi4health-ex-mds-library-data-providers.html
@@ -68,7 +68,7 @@
 [NFDI4Health_EX_MDS_Name_Type]: StructureDefinition-nfdi4health-ex-mds-name-type.html
 [NFDI4Health_EX_MDS_Nutritional_Data]: StructureDefinition-nfdi4health-ex-mds-nutritional-data.html
 [NFDI4Health_EX_MDS_OutcomeMeasure_Backport_R5]: StructureDefinition-nfdi4health-ex-mds-outcomemeasure-backport-r5.html
-[NFDI4Health_EX_MDS_Outcomes]: StructureDefinition-nfdi4health-ex-mds-outcomes.html
+[NFDI4Health_EX_MDS_Library_Outcomes]: StructureDefinition-nfdi4health-ex-mds-library-outcomes.html
 [NFDI4Health_EX_MDS_Provenance_Data_Source]: StructureDefinition-nfdi4health-ex-mds-provenance-data-source.html
 [NFDI4Health_EX_MDS_Record_Linkage]: StructureDefinition-nfdi4health-ex-mds-record-linkage.html
 [NFDI4Health_EX_MDS_Recruitment_Backport_R5]: StructureDefinition-nfdi4health-ex-mds-recruitment-backport-r5.html
@@ -113,8 +113,8 @@
 [NFDI4Health_PR_MDS_Conditions]: StructureDefinition-nfdi4health-pr-mds-conditions.html
 [NFDI4Health_PR_MDS_Composition]: StructureDefinition-nfdi4health-pr-mds-composition.html
 [NFDI4Health_PR_MDS_Document]: StructureDefinition-nfdi4health-pr-mds-document.html
-[NFDI4Health_PR_MDS_Evidence_Variable_Intervention]: StructureDefinition-nfdi4health-pr-mds-evidence-variable-intervention.html
 [NFDI4Health_PR_MDS_Evidence_Variable_Exposure]: StructureDefinition-nfdi4health-pr-mds-evidence-variable-exposure.html
+[NFDI4Health_PR_MDS_Evidence_Variable_Intervention]: StructureDefinition-nfdi4health-pr-mds-evidence-variable-intervention.html
 [NFDI4Health_PR_MDS_Group_Actual]: StructureDefinition-nfdi4health-pr-mds-group-actual.html
 [NFDI4Health_PR_MDS_Group_Eligibility]: StructureDefinition-nfdi4health-pr-mds-group-eligibility.html
 [NFDI4Health_PR_MDS_Observation_Nutritional_Epidemiology]: StructureDefinition-nfdi4health-pr-mds-observation-nutritional-epidemiology.html

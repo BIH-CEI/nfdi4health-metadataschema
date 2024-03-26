@@ -77,6 +77,7 @@
               "path": "url"
             }
           ],
+          "ordered": false,
           "rules": "open"
         },
         "min": 1

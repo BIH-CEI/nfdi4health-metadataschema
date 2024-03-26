@@ -217,6 +217,10 @@
       }
     ]
   },
+  "description": "The content of different SHIP data collections are described separately.",
+  "subjectReference": {
+    "reference": "InstanceOfGroupIntendedSHIP"
+  },
   "relatedArtifact": [
     {
       "extension": [

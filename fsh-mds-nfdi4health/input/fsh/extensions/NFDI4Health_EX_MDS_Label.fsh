@@ -1,21 +1,15 @@
-Extension: NFDI4Health_EX_MDS_Label_Backport_R5
-Id: nfdi4health-ex-mds-label-backport-r5
-Title: "NFDI4Health EX MDS Label Backport R5"
+Extension: NFDI4Health_EX_MDS_Label
+Id: nfdi4health-ex-mds-label
+Title: "NFDI4Health EX MDS Label"
 Description: "Extension covering information about additional title(s), name(s) and acronym(s) of a resource."
-* ^url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.label"
+* ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-label"
 * ^version = "0.9"
 * ^status = #draft
 * ^publisher = "NFDI4Health"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
-* ^context[0].type = #element
-* ^context[=].expression = "ResearchStudy.title"
-* ^context[+].type = #element
-* ^context[=].expression = "Questionnaire.title"
-* ^context[+].type = #element
-* ^context[=].expression = "DocumentReference.content"
-* ^context[+].type = #element
-* ^context[=].expression = "Composition.title"
+* ^context.type = #element
+* ^context.expression = "Composition.title"
 * . ^short = "Title(s)/name(s) or acronym(s) of the [RESOURCE]"
 * . ^definition = "Group of items providing information about title(s)/name(s) or acronym(s) of the resource."
 * . ^comment = "Based on ResearchStudy.label (R5), with an extension for language."
@@ -36,12 +30,12 @@ Description: "Extension covering information about additional title(s), name(s) 
 * extension[value].value[x] 1..
 * extension[value].value[x] only string
 
-Mapping: NFDI4Health-for-NFDI4Health_EX_MDS_Label_Backport_R5
+Mapping: NFDI4Health-for-NFDI4Health_EX_MDS_Label
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
-Source: NFDI4Health_EX_MDS_Label_Backport_R5
-* -> "1.3 Resource.titles"
-* -> "1.4 Resource.acronyms"
+Source: NFDI4Health_EX_MDS_Label
+* -> "Resource.titles"
+* -> "Resource.acronyms"
 * extension[value].value[x] -> "Resource.titles.text"
 * extension[value].value[x] -> "Resource.acronyms.text"
 * extension[language] -> "Resource.titles.language" 

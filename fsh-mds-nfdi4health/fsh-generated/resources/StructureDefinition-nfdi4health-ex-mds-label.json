@@ -1,10 +1,10 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "nfdi4health-ex-mds-label-backport-r5",
-  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.label",
+  "id": "nfdi4health-ex-mds-label",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-label",
   "version": "0.9",
-  "name": "NFDI4Health_EX_MDS_Label_Backport_R5",
-  "title": "NFDI4Health EX MDS Label Backport R5",
+  "name": "NFDI4Health_EX_MDS_Label",
+  "title": "NFDI4Health EX MDS Label",
   "status": "draft",
   "publisher": "NFDI4Health",
   "contact": [
@@ -35,18 +35,6 @@
   "context": [
     {
       "type": "element",
-      "expression": "ResearchStudy.title"
-    },
-    {
-      "type": "element",
-      "expression": "Questionnaire.title"
-    },
-    {
-      "type": "element",
-      "expression": "DocumentReference.content"
-    },
-    {
-      "type": "element",
       "expression": "Composition.title"
     }
   ],
@@ -64,11 +52,11 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.3 Resource.titles"
+            "map": "Resource.titles"
           },
           {
             "identity": "NFDI4Health",
-            "map": "1.4 Resource.acronyms"
+            "map": "Resource.acronyms"
           }
         ]
       },
@@ -178,7 +166,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.label"
+        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-label"
       },
       {
         "id": "Extension.value[x]",

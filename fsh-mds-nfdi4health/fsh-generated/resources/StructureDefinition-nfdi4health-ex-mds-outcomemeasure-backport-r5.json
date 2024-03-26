@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "nfdi4health-ex-mds-outcomemeasure-backport-r5",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-outcomemeasure-backport-r5",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.outcomeMeasure",
   "version": "0.9",
   "name": "NFDI4Health_EX_MDS_OutcomeMeasure_Backport_R5",
   "title": "NFDI4Health EX MDS Outcome Measure Backport R5",
@@ -36,10 +36,6 @@
     {
       "type": "element",
       "expression": "ResearchStudy"
-    },
-    {
-      "type": "element",
-      "expression": "Library"
     }
   ],
   "type": "Extension",
@@ -236,7 +232,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-outcomemeasure-backport-r5"
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.outcomeMeasure"
       },
       {
         "id": "Extension.value[x]",

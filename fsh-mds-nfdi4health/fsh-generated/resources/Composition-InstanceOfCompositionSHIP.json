@@ -59,7 +59,7 @@
   "_title": {
     "extension": [
       {
-        "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.label",
+        "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-label",
         "extension": [
           {
             "url": "type",
@@ -114,7 +114,7 @@
             }
           }
         ],
-        "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.label"
+        "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-label"
       }
     ]
   }
