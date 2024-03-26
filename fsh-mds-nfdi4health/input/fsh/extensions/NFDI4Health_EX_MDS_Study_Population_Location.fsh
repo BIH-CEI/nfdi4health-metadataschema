@@ -10,6 +10,8 @@ Description: "Extension providing info of the study population Location."
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 * ^context.type = #element
 * ^context.expression = "Group"
+* ^context.type = #element
+* ^context.expression = "Library"
 
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"

@@ -14,6 +14,8 @@ Description: "Group of items providing information about the description(s) of t
 * ^context[=].expression = "Questionnaire"
 * ^context[+].type = #element
 * ^context[=].expression = "DocumentReference"
+* ^context[+].type = #element
+* ^context[=].expression = "Library"
 * . ^short = "Descriptions of the [RESOURCE]"
 * . ^definition = "Group of items providing information about the description(s) of the [RESOURCE]."
 * extension ^slicing.discriminator.type = #value

@@ -18,8 +18,9 @@ Usage: #example
 * effectivePeriod.start = 1990-01-01 //original format needed to be converted
 
 /// Registry Design Details
-* subjectCodeableConcept = $SCT#125676002 "Person (person)"
-* extension[groupsOfDiseases].extension[generally].valueCoding  = $ICD10#II  "Neoplasms"
+
+* extension[subject].valueCoding = $SCT#125676002 "Person (person)"
+* extension[groupsOfDiseases].extension[generally].valueCoding  = $ICD10#II "Neoplasms"
 * extension[dataSource].extension[general][0].valueCoding = $Remaining#028 "Administrative databases"
 * extension[dataSource].extension[general][+].valueCoding = $NCI#C17649 "Other"
 * extension[dataSource].extension[description].valueString = "All hospitals, medical practices and other physician-managed oncological care facilities in Hamburg transmit information to the HCR based on their statutory reporting obligation and the uniform national data set for the following reporting occasions: diagnosis and histological confirmation, start and end of therapeutic measures as well as therapy-relevant changes in the disease status, i.e. progression events such as progression and relapse, and death."
@@ -33,7 +34,7 @@ Usage: #example
 * extension[dataSharingPlan].extension[accessCriteria].valueString = "Data may be provided according to §§ 7, 8, 8a and 9 Hamburg Cancer Registry Law"
 * extension[dataSharingPlan].extension[url].valueUrl = "https://www.hamburg.de/krebsregister/10765432/publikationen-datennutzung/#anker_4"
 * extension[dataSharingPlan].extension[datashield].valueCoding = $SCT#373067005 "No (qualifier value)"
-
+* extension[dataSharingPlan].extension[recordLinkage].valueBoolean = true
 /// Eligibility criteria for study participants
 * subjectReference = Reference(InstanceOfGroupEligibilityHKR)
 

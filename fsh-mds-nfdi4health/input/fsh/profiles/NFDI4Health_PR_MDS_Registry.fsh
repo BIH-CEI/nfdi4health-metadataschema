@@ -27,6 +27,7 @@ Description: "Group of items applicable only to registries."
     NFDI4Health_EX_MDS_Keywords named keywords 0..* and
     NFDI4Health_EX_MDS_Descriptions named descriptions 1..1 and
     NFDI4Health_EX_MDS_Data_Source named dataSource 0..1 and
+    NFDI4Health_EX_MDS_Subject named subject 1..1 and
     NFDI4Health_EX_MDS_Library_Outcomes named outcomes 0..* and
     NFDI4Health_EX_MDS_Assessments named assessments 0..* and
     NFDI4Health_EX_MDS_Data_Sharing_Plan named dataSharingPlan 1..1 and
@@ -75,13 +76,6 @@ Description: "Group of items applicable only to registries."
 * description ^short = "Additional information about the [RESOURCE]"
 * description ^definition = "Any additional information about specific aspects of the [RESOURCE] that could not be captured by other fields.."
 * description ^comment = "Short input help: You can provide here specific aspects of the [RESOURCE] that could not be captured by other fields."
-* subjectCodeableConcept 1..1
-* subjectCodeableConcept ^short = "Primary subject"
-* subjectCodeableConcept ^definition = "The primary subject addressed by the [RESOURCE], i.e. a person, an animal or other subject types."
-* subjectCodeableConcept ^comment = "Short input help: Select one value from the list."
-* subjectCodeableConcept from NFDI4Health_VS_MDS_Study_Subject_SNOMEDCT (required)
-* subjectCodeableConcept ^binding.description = "Value set defining codes for sujects in a resource."
-* subjectReference 0..1 
 * subjectReference only Reference(NFDI4Health_PR_MDS_Group_Eligibility)
 * relatedArtifact ..1
 * relatedArtifact only NFDI4Health_PR_MDS_Related_Artifact_Resource

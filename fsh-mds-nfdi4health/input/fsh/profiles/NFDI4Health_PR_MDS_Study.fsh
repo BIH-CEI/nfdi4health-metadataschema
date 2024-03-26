@@ -103,6 +103,7 @@ Description: "Group of items applicable only to studies, substudies."
 * condition.text ^definition = "Name of primary health condition[conditions] or disease considered in the [RESOURCE]."
 * condition.text ^comment = "Additional information: The use of terms from established terminologies/classifications (e.g. SNOMED CT, ICD, etc.) is preferred. However, also self-assigned terms are allowed. |Short Input Help: Preferably, use terms from SNOMED CT (https://browser.ihtsdotools.org)."
 * condition.text ^example.label = "Example of a primary health condition name"
+* condition.text ^example.valueString = "Hier Beispiel einfügen" //TODO
 * condition.extension contains
     NFDI4Health_EX_MDS_URI named uri 0..1
 * focus ^short = "Primary focus of the [RESOURCE]"
@@ -316,34 +317,34 @@ Expression: "category.coding.where(code = 'C142615').exists().not() implies exte
 
 
 Invariant: supportingInformation-a
-Description: "Cardinality: 0..*, if Design.dataSharingPlan.generally == 'C49488'"
+Description: "Cardinality: 0..*, if Design.dataSharingPlan.generally == '373066001'"
 Severity: #error
-Expression: "extension.extension.where(url='generally').where(code = 'C49488').exists() implies extension.extension.where(url='supportingInformation').exists()"
+Expression: "extension.extension.where(url='generally').where(code = '373066001').exists() implies extension.extension.where(url='supportingInformation').exists()"
 
 Invariant: supportingInformation-b
-Description: "Cardinality: 0..0, if Design.dataSharingPlan.generally != 'C49488'"
+Description: "Cardinality: 0..0, if Design.dataSharingPlan.generally != '373066001'"
 Severity: #error
-Expression: "extension.extension.where(url='generally').where(code = 'C49488').exists().not() implies extension.extension.where(url='supportingInformation').exists().not()"
+Expression: "extension.extension.where(url='generally').where(code = '373066001').exists().not() implies extension.extension.where(url='supportingInformation').exists().not()"
 
 Invariant: timeFrame-a
-Description: "Cardinality: 0..*, if Design.dataSharingPlan.generally == 'C49488'"
+Description: "Cardinality: 0..*, if Design.dataSharingPlan.generally == '373066001'"
 Severity: #error
-Expression: "extension.extension.where(url='generally').where(code = 'C49488').exists() implies extension.extension.where(url='timeFrame').exists()"
+Expression: "extension.extension.where(url='generally').where(code = '373066001').exists() implies extension.extension.where(url='timeFrame').exists()"
 
 Invariant: timeFrame-b
-Description: "Cardinality: 0..0, if Design.dataSharingPlan.generally != 'C49488'"
+Description: "Cardinality: 0..0, if Design.dataSharingPlan.generally != '373066001'"
 Severity: #error
-Expression: "extension.extension.where(url='generally').where(code = 'C49488').exists().not() implies extension.extension.where(url='timeFrame').exists().not()"
+Expression: "extension.extension.where(url='generally').where(code = '373066001').exists().not() implies extension.extension.where(url='timeFrame').exists().not()"
 
 Invariant: accessCriteria-a
-Description: "Cardinality: 0..*, if Design.dataSharingPlan.generally == 'C49488'"
+Description: "Cardinality: 0..*, if Design.dataSharingPlan.generally == '373066001'"
 Severity: #error
-Expression: "extension.extension.where(url='generally').where(code = 'C49488').exists() implies extension.extension.where(url='accessCriteria').exists()"
+Expression: "extension.extension.where(url='generally').where(code = '373066001').exists() implies extension.extension.where(url='accessCriteria').exists()"
 
 Invariant: accessCriteria-b
-Description: "Cardinality: 0..0, if Design.dataSharingPlan.generally != 'C49488'"
+Description: "Cardinality: 0..0, if Design.dataSharingPlan.generally != '373066001'"
 Severity: #error
-Expression: "extension.extension.where(url='generally').where(code = 'C49488').exists().not() implies extension.extension.where(url='accessCriteria').exists().not()"
+Expression: "extension.extension.where(url='generally').where(code = '373066001').exists().not() implies extension.extension.where(url='accessCriteria').exists().not()"
 
 
 

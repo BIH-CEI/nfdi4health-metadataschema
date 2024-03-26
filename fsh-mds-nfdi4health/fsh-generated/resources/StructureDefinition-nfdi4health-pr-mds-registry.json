@@ -101,43 +101,43 @@
           {
             "key": "supportingInformation-a",
             "severity": "error",
-            "human": "Cardinality: 0..*, if Design.dataSharingPlan.generally == 'C49488'",
-            "expression": "extension.extension.where(url='generally').where(code = 'C49488').exists() implies extension.extension.where(url='supportingInformation').exists()",
+            "human": "Cardinality: 0..*, if Design.dataSharingPlan.generally == '373066001'",
+            "expression": "extension.extension.where(url='generally').where(code = '373066001').exists() implies extension.extension.where(url='supportingInformation').exists()",
             "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-registry"
           },
           {
             "key": "supportingInformation-b",
             "severity": "error",
-            "human": "Cardinality: 0..0, if Design.dataSharingPlan.generally != 'C49488'",
-            "expression": "extension.extension.where(url='generally').where(code = 'C49488').exists().not() implies extension.extension.where(url='supportingInformation').exists().not()",
+            "human": "Cardinality: 0..0, if Design.dataSharingPlan.generally != '373066001'",
+            "expression": "extension.extension.where(url='generally').where(code = '373066001').exists().not() implies extension.extension.where(url='supportingInformation').exists().not()",
             "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-registry"
           },
           {
             "key": "timeFrame-a",
             "severity": "error",
-            "human": "Cardinality: 0..*, if Design.dataSharingPlan.generally == 'C49488'",
-            "expression": "extension.extension.where(url='generally').where(code = 'C49488').exists() implies extension.extension.where(url='timeFrame').exists()",
+            "human": "Cardinality: 0..*, if Design.dataSharingPlan.generally == '373066001'",
+            "expression": "extension.extension.where(url='generally').where(code = '373066001').exists() implies extension.extension.where(url='timeFrame').exists()",
             "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-registry"
           },
           {
             "key": "timeFrame-b",
             "severity": "error",
-            "human": "Cardinality: 0..0, if Design.dataSharingPlan.generally != 'C49488'",
-            "expression": "extension.extension.where(url='generally').where(code = 'C49488').exists().not() implies extension.extension.where(url='timeFrame').exists().not()",
+            "human": "Cardinality: 0..0, if Design.dataSharingPlan.generally != '373066001'",
+            "expression": "extension.extension.where(url='generally').where(code = '373066001').exists().not() implies extension.extension.where(url='timeFrame').exists().not()",
             "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-registry"
           },
           {
             "key": "accessCriteria-a",
             "severity": "error",
-            "human": "Cardinality: 0..*, if Design.dataSharingPlan.generally == 'C49488'",
-            "expression": "extension.extension.where(url='generally').where(code = 'C49488').exists() implies extension.extension.where(url='accessCriteria').exists()",
+            "human": "Cardinality: 0..*, if Design.dataSharingPlan.generally == '373066001'",
+            "expression": "extension.extension.where(url='generally').where(code = '373066001').exists() implies extension.extension.where(url='accessCriteria').exists()",
             "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-registry"
           },
           {
             "key": "accessCriteria-b",
             "severity": "error",
-            "human": "Cardinality: 0..0, if Design.dataSharingPlan.generally != 'C49488'",
-            "expression": "extension.extension.where(url='generally').where(code = 'C49488').exists().not() implies extension.extension.where(url='accessCriteria').exists().not()",
+            "human": "Cardinality: 0..0, if Design.dataSharingPlan.generally != '373066001'",
+            "expression": "extension.extension.where(url='generally').where(code = '373066001').exists().not() implies extension.extension.where(url='accessCriteria').exists().not()",
             "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-registry"
           },
           {
@@ -175,7 +175,7 @@
           "ordered": false,
           "rules": "open"
         },
-        "min": 4
+        "min": 5
       },
       {
         "id": "Library.extension:groupsOfDiseases",
@@ -260,6 +260,21 @@
             "code": "Extension",
             "profile": [
               "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-data-source"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Library.extension:subject",
+        "path": "Library.extension",
+        "sliceName": "subject",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-subject"
             ]
           }
         ]
@@ -435,34 +450,7 @@
           ],
           "ordered": false,
           "rules": "open"
-        },
-        "min": 1
-      },
-      {
-        "id": "Library.subject[x]:subjectCodeableConcept",
-        "path": "Library.subject[x]",
-        "sliceName": "subjectCodeableConcept",
-        "short": "Primary subject",
-        "definition": "The primary subject addressed by the [RESOURCE], i.e. a person, an animal or other subject types.",
-        "comment": "Short input help: Select one value from the list.",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-subject-snomedct",
-          "description": "Value set defining codes for sujects in a resource."
-        },
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "Design.subject"
-          }
-        ]
+        }
       },
       {
         "id": "Library.subject[x]:subjectReference",
@@ -482,6 +470,24 @@
           {
             "identity": "NFDI4Health",
             "map": "Design.eligibilityCriteria"
+          }
+        ]
+      },
+      {
+        "id": "Library.subject[x]:subjectCodeableConcept",
+        "path": "Library.subject[x]",
+        "sliceName": "subjectCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.subject"
           }
         ]
       },

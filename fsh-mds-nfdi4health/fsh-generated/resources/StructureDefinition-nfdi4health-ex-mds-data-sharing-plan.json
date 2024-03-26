@@ -154,7 +154,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sharing-plan-sup-inf-umls-local",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-data-sharing-plan-sup-inf-nci-local",
           "description": "Value set defining codes to specify if the DataSHIELD/Opal infrastructure is available."
         }
       },
@@ -276,7 +276,7 @@
         "id": "Extension.extension:datashield",
         "path": "Extension.extension",
         "sliceName": "datashield",
-        "short": "DataSHIELD/Opal infrastructure available?",
+        "short": "DataSHIELD/Opal infrastructure available?",
         "definition": "Indication whether the DataSHIELD/Opal infrastructure is available.",
         "min": 0,
         "max": "1",

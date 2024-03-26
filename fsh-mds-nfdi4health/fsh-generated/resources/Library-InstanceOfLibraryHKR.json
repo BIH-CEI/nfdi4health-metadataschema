@@ -43,6 +43,14 @@
       ]
     },
     {
+      "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-subject",
+      "valueCoding": {
+        "code": "125676002",
+        "system": "http://snomed.info/sct",
+        "display": "Person (person)"
+      }
+    },
+    {
       "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-data-sharing-plan",
       "extension": [
         {
@@ -84,6 +92,10 @@
             "system": "http://snomed.info/sct",
             "display": "No (qualifier value)"
           }
+        },
+        {
+          "url": "recordLinkage",
+          "valueBoolean": true
         }
       ]
     },
@@ -163,15 +175,6 @@
   },
   "effectivePeriod": {
     "start": "1990-01-01"
-  },
-  "subjectCodeableConcept": {
-    "coding": [
-      {
-        "code": "125676002",
-        "system": "http://snomed.info/sct",
-        "display": "Person (person)"
-      }
-    ]
   },
   "subjectReference": {
     "reference": "Group/InstanceOfGroupEligibilityHKR"

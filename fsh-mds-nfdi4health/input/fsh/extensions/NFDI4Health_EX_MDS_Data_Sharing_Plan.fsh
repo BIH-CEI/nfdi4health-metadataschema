@@ -37,7 +37,7 @@ Description: "Extension providing information about the data sharing strategy of
 * extension[generally].value[x] only Coding
 * extension[generally].valueCoding.code 1..1
 * extension[generally].valueCoding.system 1..1
-* extension[generally].valueCoding from $nfdi4health-vs-mds-yes-no-undecided-snomedct-nci (required)
+* extension[generally].valueCoding from NFDI4Health_VS_MDS_Yes_No_Undecided_SNOMEDCT_NCI (required)
 * extension[generally].valueCoding ^binding.description = "Value set used to respond to questions that can be answered Yes, No, or Undecided"
 * extension[supportingInformation] ^short = "Supporting documents available in addition to the data"
 * extension[supportingInformation] ^definition = "Supporting information/documents which will be made available in addition to the data collected in the [RESOURCE]."
@@ -46,7 +46,7 @@ Description: "Extension providing information about the data sharing strategy of
 * extension[supportingInformation].value[x] only Coding
 * extension[supportingInformation].valueCoding.code 1..1
 * extension[supportingInformation].valueCoding.system 1..1 
-* extension[supportingInformation].valueCoding from $nfdi4health-vs-mds-study-data-sharing-plan-sup-inf-umls-local (required)
+* extension[supportingInformation].valueCoding from NFDI4Health_VS_MDS_Study_Data_Sharing_Plan_Supporting_Information_NCI_Local (required)
 * extension[supportingInformation].valueCoding ^binding.description = "Value set defining codes to specify if the DataSHIELD/Opal infrastructure is available."
 * extension[timeFrame] ^short = "When and for how long will the data be available?"
 * extension[timeFrame] ^definition = "Indication of the time period for which the data and, if applicable, supporting documents will be made available."
@@ -59,13 +59,13 @@ Description: "Extension providing information about the data sharing strategy of
 * extension[description] ^definition = "Additional descriptive information providing more details about data sharing, e.g. indication of which data in particular will be shared or why the data will not be shared or why it is not yet decided."
 * extension[description] ^comment = "Short input help: Please indicate here which data in particular will be shared, or the reasons why it will not be shared or it is not yet decided."
 * extension[description].value[x] only string
-* extension[datashield] ^short = "DataSHIELD/Opal infrastructure available?"
+* extension[datashield] ^short = "DataSHIELD/Opal infrastructure available?"
 * extension[datashield] ^definition = "Indication whether the DataSHIELD/Opal infrastructure is available."
 * extension[datashield].value[x] 1..1
 * extension[datashield].value[x] only Coding
 * extension[datashield].valueCoding.code 1..1
 * extension[datashield].valueCoding.system 1..1
-* extension[datashield].valueCoding from $nfdi4health-vs-mds-study-data-sharing-plan-ds-sct-nci (required)
+* extension[datashield].valueCoding from NFDI4Health_VS_MDS_Study_Data_Sharing_Plan_Datashield_SCT_NCI (required)
 * extension[datashield].valueCoding ^binding.description = "Value set defining codes to specify if the DataSHIELD/Opal infrastructure is available."
 * extension[requestData] ^short = "Link to data request application"
 * extension[requestData] ^definition = "If existing, a link to the web page where the data request form and/or information on data reuse can be found."
