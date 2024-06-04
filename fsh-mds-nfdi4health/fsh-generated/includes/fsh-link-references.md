@@ -109,8 +109,8 @@
 [NFDI4Health_PR_MDS_Affiliation]: StructureDefinition-nfdi4health-pr-mds-affiliation.html
 [NFDI4Health_PR_MDS_Centers]: StructureDefinition-nfdi4health-pr-mds-centers.html
 [NFDI4Health_PR_MDS_Chronic_Diseases]: StructureDefinition-nfdi4health-pr-mds-chronic-diseases.html
-[NFDI4Health_PR_MDS_Conditions]: StructureDefinition-nfdi4health-pr-mds-conditions.html
 [NFDI4Health_PR_MDS_Composition]: StructureDefinition-nfdi4health-pr-mds-composition.html
+[NFDI4Health_PR_MDS_Conditions]: StructureDefinition-nfdi4health-pr-mds-conditions.html
 [NFDI4Health_PR_MDS_Document]: StructureDefinition-nfdi4health-pr-mds-document.html
 [NFDI4Health_PR_MDS_Evidence_Variable_Exposure]: StructureDefinition-nfdi4health-pr-mds-evidence-variable-exposure.html
 [NFDI4Health_PR_MDS_Evidence_Variable_Intervention]: StructureDefinition-nfdi4health-pr-mds-evidence-variable-intervention.html

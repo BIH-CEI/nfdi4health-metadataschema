@@ -1,7 +1,7 @@
 Profile: NFDI4Health_PR_MDS_Conditions
 Parent: Condition
 Id: nfdi4health-pr-mds-conditions
-Title: "NFDI4Health PR MDS Centers"
+Title: "NFDI4Health PR MDS Conditions"
 Description: "Profile intended to capture information on conditions for a Registry."
 * ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-conditions"
 * ^version = "0.9"

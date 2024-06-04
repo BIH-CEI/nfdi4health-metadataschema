@@ -902,16 +902,8 @@
         "reference": {
           "reference": "StructureDefinition/nfdi4health-pr-mds-chronic-diseases"
         },
-        "name": "NFDI4Health PR MDS Centers",
+        "name": "NFDI4Health PR MDS Chronic Conditions",
         "description": "Profile intended to capture information on chronic disease data collected in the [RESOURCE].",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/nfdi4health-pr-mds-conditions"
-        },
-        "name": "NFDI4Health PR MDS Centers",
-        "description": "Profile intended to capture information on conditions for a Registry.",
         "exampleBoolean": false
       },
       {
@@ -920,6 +912,14 @@
         },
         "name": "NFDI4Health PR MDS Composition",
         "description": "Profile intended to capture information on the core information of resources.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-pr-mds-conditions"
+        },
+        "name": "NFDI4Health PR MDS Conditions",
+        "description": "Profile intended to capture information on conditions for a Registry.",
         "exampleBoolean": false
       },
       {

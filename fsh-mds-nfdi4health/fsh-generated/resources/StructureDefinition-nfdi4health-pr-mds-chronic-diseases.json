@@ -4,7 +4,7 @@
   "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-chronic-diseases",
   "version": "0.9",
   "name": "NFDI4Health_PR_MDS_Chronic_Diseases",
-  "title": "NFDI4Health PR MDS Centers",
+  "title": "NFDI4Health PR MDS Chronic Conditions",
   "status": "draft",
   "publisher": "NFDI4Health",
   "contact": [

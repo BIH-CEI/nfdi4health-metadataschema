@@ -4,7 +4,7 @@
   "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-conditions",
   "version": "0.9",
   "name": "NFDI4Health_PR_MDS_Conditions",
-  "title": "NFDI4Health PR MDS Centers",
+  "title": "NFDI4Health PR MDS Conditions",
   "status": "draft",
   "publisher": "NFDI4Health",
   "contact": [

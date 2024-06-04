@@ -1,7 +1,7 @@
 Profile: NFDI4Health_PR_MDS_Chronic_Diseases
 Parent: Condition
 Id: nfdi4health-pr-mds-chronic-diseases
-Title: "NFDI4Health PR MDS Centers"
+Title: "NFDI4Health PR MDS Chronic Conditions"
 Description: "Profile intended to capture information on chronic disease data collected in the [RESOURCE]."
 * ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-chronic-diseases"
 * ^version = "0.9"
