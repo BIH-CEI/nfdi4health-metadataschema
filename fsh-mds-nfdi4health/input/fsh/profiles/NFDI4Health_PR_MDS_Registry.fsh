@@ -77,7 +77,7 @@ Description: "Group of items applicable only to registries."
 * description ^short = "Additional information about the [RESOURCE]"
 * description ^definition = "Any additional information about specific aspects of the [RESOURCE] that could not be captured by other fields.."
 * description ^comment = "Short input help: You can provide here specific aspects of the [RESOURCE] that could not be captured by other fields."
-* subjectReference only Reference(NFDI4Health_PR_MDS_Group_Eligibility)
+* subjectReference only Reference(NFDI4Health_PR_MDS_Group_Eligibility or NFDI4Health_PR_MDS_Group_Actual)
 * relatedArtifact ..1
 * relatedArtifact only NFDI4Health_PR_MDS_Related_Artifact_Resource
 

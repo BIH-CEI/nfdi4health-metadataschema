@@ -37,9 +37,9 @@ Description: "Extension providing information about the arm(s)/group(s)/cohort(s
 * extension[description].valueString ^definition = "Additional descriptive information about the given group. | Additional descriptive information about the given arm."
 * extension[description].valueString ^comment = "Explanation of the nature of the [RESOURCE] group (for example, participants with and without a condition, participants with and without an exposure, etc.)."
 * extension[intendedExposure].value[x] only Reference(NFDI4Health_PR_MDS_Evidence_Variable_Intervention or NFDI4Health_PR_MDS_Evidence_Variable_Exposure)
-* extension[intendedExposure] ^short = "For 1.17.21	Design.interventions: Interventions of the [RESOURCE] | For 1.17.22	Design.exposures: Exposures of the [RESOURCE]"
-* extension[intendedExposure] ^definition = "For 1.17.21 Design.interventions: Group of items providing information about the interventions of the [RESOURCE]. | For 1.17.22 Design.exposures: Group of items providing information about the exposures of the [RESOURCE]."
-* extension[intendedExposure] ^comment = "Additional information: For 1.17.21 Design.interventions: Specification of the intervention(s) associated with each arm. | For 1.17.22 Design.exposures: Specification of the exposure(s) associated with each group."
+* extension[intendedExposure] ^short = "For Design.interventions: Interventions of the [RESOURCE] | For Design.exposures: Exposures of the [RESOURCE]"
+* extension[intendedExposure] ^definition = "For Design.interventions: Group of items providing information about the interventions of the [RESOURCE]. | For Design.exposures: Group of items providing information about the exposures of the [RESOURCE]."
+* extension[intendedExposure] ^comment = "Additional information: For Design.interventions: Specification of the intervention(s) associated with each arm. | For Design.exposures: Specification of the exposure(s) associated with each group."
 * extension[observedGroup].value[x] only Reference(Group)
 
 
