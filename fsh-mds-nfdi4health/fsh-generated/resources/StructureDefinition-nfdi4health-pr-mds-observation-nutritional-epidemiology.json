@@ -151,7 +151,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "NE1.1 DietAssessment.instrument"
+            "map": "DietAssessment.instrument"
           }
         ]
       },
@@ -189,7 +189,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "NE1.2 DietAssessment.ffqItemsNumber"
+            "map": "DietAssessment.ffqItemsNumber"
           }
         ]
       },
@@ -232,7 +232,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "NE1.3 DietAssessment.mode"
+            "map": "DietAssessment.mode"
           }
         ]
       },
@@ -275,7 +275,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "NE1.4 DietAssessment.device"
+            "map": "DietAssessment.device"
           }
         ]
       },
@@ -291,7 +291,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "NE1.5 DietAssessment.portionSizeEstimation"
+            "map": "DietAssessment.portionSizeEstimation"
           }
         ]
       },
@@ -361,7 +361,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "NE1.6 DietAssessment.referencePeriodUnit"
+            "map": "DietAssessment.referencePeriodUnit"
           }
         ]
       },
@@ -399,7 +399,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "NE1.7 DietAssessment.referencePeriodNumber"
+            "map": "DietAssessment.referencePeriodNumber"
           }
         ]
       },
@@ -437,7 +437,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "NE1.8 DietAssessment.repeat"
+            "map": "DietAssessment.repeat"
           }
         ]
       },
@@ -475,7 +475,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "NE1.9 DietAssessment.repeatFrequency"
+            "map": "DietAssessment.repeatFrequency"
           }
         ]
       },
@@ -513,7 +513,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "NE1.10 DietAssessment.validity"
+            "map": "DietAssessment.validity"
           }
         ]
       },
@@ -551,7 +551,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "NE1.11 DietAssessment.validityReference"
+            "map": "DietAssessment.validityReference"
           }
         ]
       },
@@ -589,7 +589,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "NE1.12 DietAssessment.reliability"
+            "map": "DietAssessment.reliability"
           }
         ]
       },
@@ -627,7 +627,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "NE1.13 DietAssessment.reliabilityReference"
+            "map": "DietAssessment.reliabilityReference"
           }
         ]
       },
@@ -665,7 +665,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "NE1.14 DietAssessment.dietarySupplements"
+            "map": "DietAssessment.dietarySupplements"
           }
         ]
       }

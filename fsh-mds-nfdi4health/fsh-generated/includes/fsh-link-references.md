@@ -11,7 +11,6 @@
 [InstanceOfCompositionWHOHouseholdTransmission]: Composition-InstanceOfCompositionWHOHouseholdTransmission.html
 [InstanceOfCompositionSHIP]: Composition-InstanceOfCompositionSHIP.html
 [InstanceOfCompositionSPOVID]: Composition-InstanceOfCompositionSPOVID.html
-[NFDI4Health_LM_Metadataschema_RecordLinkage]: StructureDefinition-nfdi4health-lm-metadatenschema-recordlinkage.html
 [InstanceOfEvidenceVariableSPOVID]: EvidenceVariable-InstanceOfEvidenceVariableSPOVID.html
 [InstanceOfGroupActualSHIP]: Group-InstanceOfGroupActualSHIP.html
 [InstanceOfGroupActualSPOVID]: Group-InstanceOfGroupActualSPOVID.html
@@ -100,7 +99,8 @@
 [NFDI4Health_LM_MDS_Core]: StructureDefinition-nfdi4health-lm-mds-core.html
 [NFDI4Health_LM_Metadataschema_EOCD]: StructureDefinition-nfdi4health-lm-metadataschema-eocd.html
 [NFDI4Health_LM_MDS_Design]: StructureDefinition-nfdi4health-lm-mds-design.html
-[NFDI4Health_LM_Metadataschema_NE]: StructureDefinition-nfdi4health-lm-metadataschema-ne.html
+[Module_Nutritional_Epidemiology]: StructureDefinition-nfdi4health-lm-metadataschema-ne.html
+[NFDI4Health_LM_Metadataschema_RecordLinkage]: StructureDefinition-nfdi4health-lm-metadatenschema-recordlinkage.html
 [NFDI4Health_VS_MDS_NE_Device_NCI_SNOMEDCT_Local]: ValueSet-nfdi4health-vs-mds-ne-device-nci-snomedct-local.html
 [NFDI4Health_VS_MDS_NE_Instrument_NCI_Local]: ValueSet-nfdi4health-vs-mds-ne-instrument-snomedct-nci-local.html
 [NFDI4Health_VS_MDS_NE_Mode_NCI_MSH_Local]: ValueSet-nfdi4health-vs-mds-ne-mode-nci-msh-local.html

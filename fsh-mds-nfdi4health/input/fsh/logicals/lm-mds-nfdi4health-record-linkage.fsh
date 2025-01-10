@@ -3,14 +3,11 @@ Parent: Element
 Id: nfdi4health-lm-metadatenschema-recordlinkage
 Title: "NFDI4Health LM Record Linkage Module"
 Description: "Group of items providing information on record linkage."
-
 * ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-recordlinkage"
 * ^publisher = "NFDI4Health"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
-
-* RecordLinkage ^short = "RecordLinkage"
-* RecordLinkage ^definition = "Information about record linkage for the [RESOURCE]"
+* RecordLinkage 0..1 BackboneElement "RecordLinkage" "Information about record linkage for the [RESOURCE]"
 * RecordLinkage ^comment = "<p><strong>Cardinality:</strong> 1..1, if Design.dataSharingPlan.recordLinkage == 'Yes'; otherwise 0.. 0</p>"
 * RecordLinkage ^requirements = "Group of items providing information on record linkage."
 * RecordLinkage ^base.path = "RecordLinkage"

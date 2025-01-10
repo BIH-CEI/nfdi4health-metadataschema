@@ -793,11 +793,11 @@
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-lm-metadataschema-ne.json",
-    "fshName": "NFDI4Health_LM_Metadataschema_NE",
+    "fshName": "Module_Nutritional_Epidemiology",
     "fshType": "Logical",
-    "fshFile": "logicals/lm-mds-nfdi4health-nutritional-epidemiology.fsh",
+    "fshFile": "logicals/lm-mds-nfdi4health-nutritional-epidemiology_3_3_1.fsh",
     "startLine": 1,
-    "endLine": 44
+    "endLine": 109
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-lm-metadatenschema-recordlinkage.json",
@@ -805,7 +805,7 @@
     "fshType": "Logical",
     "fshFile": "logicals/lm-mds-nfdi4health-record-linkage.fsh",
     "startLine": 1,
-    "endLine": 29
+    "endLine": 63
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-pr-mds-affiliation.json",

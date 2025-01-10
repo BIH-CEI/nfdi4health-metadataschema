@@ -1,5 +1,5 @@
 Logical: Module_Nutritional_Epidemiology
-Parent: $Element
+Parent: Element
 Id: nfdi4health-lm-metadataschema-ne
 Title: "NFDI4Health LM Nutritional Epidemiology Module"
 Description: "NFDI4Health Nutritional Epidemiology Module"
@@ -7,8 +7,7 @@ Description: "NFDI4Health Nutritional Epidemiology Module"
 * ^publisher = "NFDI4Health"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
-* DietAssessment ^short = "DietAssessment"
-* DietAssessment ^definition = "Diet assessment information collected in the [RESOURCE]"
+* DietAssessment 0..* BackboneElement "DietAssessment" "Diet assessment information collected in the [RESOURCE]"
 * DietAssessment ^comment = "<p><strong>Cardinality:</strong> 1..*, if Resource.nutritionalData == 'Yes'; otherwise 0.. 0</p>"
 * DietAssessment ^requirements = "**Description: **Group of items providing information on diet assessment."
 * DietAssessment ^base.path = "DietAssessment"

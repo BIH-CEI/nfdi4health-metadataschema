@@ -207,9 +207,9 @@
         "id": "Extension.extension:intendedExposure",
         "path": "Extension.extension",
         "sliceName": "intendedExposure",
-        "short": "For 1.17.21\tDesign.interventions: Interventions of the [RESOURCE] | For 1.17.22\tDesign.exposures: Exposures of the [RESOURCE]",
-        "definition": "For 1.17.21 Design.interventions: Group of items providing information about the interventions of the [RESOURCE]. | For 1.17.22 Design.exposures: Group of items providing information about the exposures of the [RESOURCE].",
-        "comment": "Additional information: For 1.17.21 Design.interventions: Specification of the intervention(s) associated with each arm. | For 1.17.22 Design.exposures: Specification of the exposure(s) associated with each group.",
+        "short": "For Design.interventions: Interventions of the [RESOURCE] | For Design.exposures: Exposures of the [RESOURCE]",
+        "definition": "For Design.interventions: Group of items providing information about the interventions of the [RESOURCE]. | For Design.exposures: Group of items providing information about the exposures of the [RESOURCE].",
+        "comment": "Additional information: For Design.interventions: Specification of the intervention(s) associated with each arm. | For Design.exposures: Specification of the exposure(s) associated with each group.",
         "min": 0,
         "max": "*",
         "mapping": [

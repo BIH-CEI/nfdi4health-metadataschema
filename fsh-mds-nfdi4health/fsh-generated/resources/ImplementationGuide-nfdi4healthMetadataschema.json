@@ -124,14 +124,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nfdi4health-lm-metadatenschema-recordlinkage"
-        },
-        "name": "Information about record linkage for the [RESOURCE]",
-        "description": "Group of items providing information on record linkage.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "EvidenceVariable/InstanceOfEvidenceVariableSPOVID"
         },
         "name": "Instance Of an Intervention Evidence Variable for SPOVID",
@@ -838,8 +830,16 @@
         "reference": {
           "reference": "StructureDefinition/nfdi4health-lm-metadataschema-ne"
         },
-        "name": "NFDI4Health LM Nutritional Epidemiology Metadataschema (UC 5.1)",
-        "description": "NFDI4Health LogicalModel Nutritional Epidemiology Metadataschema (Use Case 5.1) V3.3",
+        "name": "NFDI4Health LM Nutritional Epidemiology Module",
+        "description": "NFDI4Health Nutritional Epidemiology Module",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-lm-metadatenschema-recordlinkage"
+        },
+        "name": "NFDI4Health LM Record Linkage Module",
+        "description": "Group of items providing information on record linkage.",
         "exampleBoolean": false
       },
       {
