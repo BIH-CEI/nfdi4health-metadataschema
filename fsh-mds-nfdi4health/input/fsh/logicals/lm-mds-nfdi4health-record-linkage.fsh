@@ -1,7 +1,7 @@
 Logical: NFDI4Health_LM_Metadataschema_RecordLinkage
 Parent: Element
 Id: nfdi4health-lm-metadatenschema-recordlinkage
-Title: "Information about record linkage for the [RESOURCE]"
+Title: "NFDI4Health LM Record Linkage Module"
 Description: "Group of items providing information on record linkage."
 
 * ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-recordlinkage"
@@ -9,24 +9,58 @@ Description: "Group of items providing information on record linkage."
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 
-* RecordLinkage 0..1 BackboneElement "Information about record linkage for the [RESOURCE]" "Group of items providing information on record linkage."
-* RecordLinkage ^comment = "Cardinality: 1..1, if Design.dataSharingPlan.recordLinkage == 'Yes'; otherwise 0..0 / Source of the property and/or allowed values: NFDI4Health UC 5.3 requirements"
-* RecordLinkage.legalBasis 0..1 boolean "Legal regulation/permission for record linkage" "Indication whether there are specific regulations/permissions for record linkage."
-* RecordLinkage.legalBasis ^comment = "Additional information: Whether any specific legal regulations/permissions exist (e.g. for social data, for cancer registry data, hospital data, etc.). / Source of the property and/or allowed values: NFDI4Health UC 5.3 requirements"
-* RecordLinkage.legalBasisDetails 0..1 string "Specific legal basis allowing record linkage" "Information specifying which specific legal basis allows for record linkage."
-* RecordLinkage.legalBasisDetails ^comment = "Cardinality: 1..1, if RecordLinkage.legalBasis == 'Yes'; otherwise 0..0 / Additional information:If existing, any specific legal regulations/permissions (e.g. for social data, for cancer registry data, hospital data, etc.). / Source of the property and/or allowed values: NFDI4Health UC 5.3 requirements"
-* RecordLinkage.informedConsent 0..1 boolean "Informed consent for record linkage" "Indication whether an informed consent that allows record linkage has been obtained."
-* RecordLinkage.informedConsent ^comment = "Source of the property and/or allowed values: NFDI4Health UC 5.3 requirements"
-* RecordLinkage.responsibleInstitutions 0..* string "Responsible authorities" "Institutions and authorities that must agree to the record linkage."
-* RecordLinkage.responsibleInstitutions ^comment = "Source of the property and/or allowed values: NFDI4Health UC 5.3 requirements"
-* RecordLinkage.additionalCosts 0..1 boolean "Additional costs for record linkage" "Indication whether there are additional costs for record linkage."
-* RecordLinkage.additionalCosts ^comment = "Source of the property and/or allowed values: NFDI4Health UC 5.3 requirements"
-* RecordLinkage.identifiers 0..* string "Identifiers for record linkage" "Identifiers that can be used for record linkage (e.g. names, date of birth, zip code, insurance number or control number as in cancer registries)."
-* RecordLinkage.identifiers ^comment = "Source of the property and/or allowed values: NFDI4Health UC 5.3 requirements"
-* RecordLinkage.furtherDetails 0..1 string "Further details important for conducting record linkage" "Additional important details for conducting record linkage."
-* RecordLinkage.furtherDetails ^comment = "Source of the property and/or allowed values: NFDI4Health UC 5.3 requirements"
-* RecordLinkage.exampleResources 0..* string "Record linkage example resources" "DOIs of additional related resources specific to record linkage (e.g., publications)."
-* RecordLinkage.exampleResources ^comment = "Short Input Help: Please do not repeat those already entered in the section 'Related resources'. / Source of the property and/or allowed values: NFDI4Health UC 5.3 requirements"
-
-
-
+* RecordLinkage ^short = "RecordLinkage"
+* RecordLinkage ^definition = "Information about record linkage for the [RESOURCE]"
+* RecordLinkage ^comment = "<p><strong>Cardinality:</strong> 1..1, if Design.dataSharingPlan.recordLinkage == 'Yes'; otherwise 0.. 0</p>"
+* RecordLinkage ^requirements = "Group of items providing information on record linkage."
+* RecordLinkage ^base.path = "RecordLinkage"
+* RecordLinkage ^base.min = 0
+* RecordLinkage ^base.max = "*"
+* RecordLinkage.legalBasis 0..* boolean "legalBasis" "Legal regulation/permission for record linkage"
+* RecordLinkage.legalBasis ^comment = "<p><strong>Additional information:</strong> Whether any specific legal regulations/permissions exist (e.g. for social data, for cancer registry data, hospital data, etc.).</p>"
+* RecordLinkage.legalBasis ^requirements = "Indication whether there are specific regulations/permissions for record linkage."
+* RecordLinkage.legalBasis ^base.path = "RecordLinkage.legalBasis"
+* RecordLinkage.legalBasis ^base.min = 0
+* RecordLinkage.legalBasis ^base.max = "*"
+* RecordLinkage.legalBasisDetails 0..* string "legalBasisDetails" "Specific legal basis allowing record linkage"
+* RecordLinkage.legalBasisDetails ^comment = "<p><strong>Additional information:</strong> If existing, any specific legal regulations/permissions (e.g. for social data, for cancer registry data, hospital data, etc.).</p>"
+* RecordLinkage.legalBasisDetails ^requirements = "Information specifying which specific legal basis allows for record linkage."
+* RecordLinkage.legalBasisDetails ^base.path = "RecordLinkage.legalBasisDetails"
+* RecordLinkage.legalBasisDetails ^base.min = 0
+* RecordLinkage.legalBasisDetails ^base.max = "*"
+* RecordLinkage.informedConsent 0..* boolean "informedConsent" "Informed consent for record linkage obtained?"
+* RecordLinkage.informedConsent ^comment = "<p><strong>Cardinality:</strong> 0..1</p>"
+* RecordLinkage.informedConsent ^requirements = "Indication whether an informed consent that allows record linkage has been obtained."
+* RecordLinkage.informedConsent ^base.path = "RecordLinkage.informedConsent"
+* RecordLinkage.informedConsent ^base.min = 0
+* RecordLinkage.informedConsent ^base.max = "*"
+* RecordLinkage.responsibleInstitutions 0..* string "responsibleInstitutions" "Responsible authorities"
+* RecordLinkage.responsibleInstitutions ^comment = "<p><strong>Cardinality:</strong> 0..*</p>"
+* RecordLinkage.responsibleInstitutions ^requirements = "Institutions and authorities that must agree to the record linkage."
+* RecordLinkage.responsibleInstitutions ^base.path = "RecordLinkage.responsibleInstitutions"
+* RecordLinkage.responsibleInstitutions ^base.min = 0
+* RecordLinkage.responsibleInstitutions ^base.max = "*"
+* RecordLinkage.additionalCosts 0..* boolean "additionalCosts" "Additional costs for record linkage"
+* RecordLinkage.additionalCosts ^comment = "<p><strong>Cardinality:</strong> 0..1</p>"
+* RecordLinkage.additionalCosts ^requirements = "Indication whether there are additional costs for record linkage."
+* RecordLinkage.additionalCosts ^base.path = "RecordLinkage.additionalCosts"
+* RecordLinkage.additionalCosts ^base.min = 0
+* RecordLinkage.additionalCosts ^base.max = "*"
+* RecordLinkage.identifiers 0..* string "identifiers" "Identifiers for record linkage"
+* RecordLinkage.identifiers ^comment = "<p><strong>Cardinality:</strong> 0..*</p>"
+* RecordLinkage.identifiers ^requirements = "Identifiers that can be used for record linkage (e.g. names, date of birth, zip code, insurance number or control number as in cancer registries)."
+* RecordLinkage.identifiers ^base.path = "RecordLinkage.identifiers"
+* RecordLinkage.identifiers ^base.min = 0
+* RecordLinkage.identifiers ^base.max = "*"
+* RecordLinkage.furtherDetails 0..* string "furtherDetails" "Further details important for conducting record linkage"
+* RecordLinkage.furtherDetails ^comment = "<p><strong>Cardinality:</strong> 0..1</p>"
+* RecordLinkage.furtherDetails ^requirements = "Additional important details for conducting record linkage."
+* RecordLinkage.furtherDetails ^base.path = "RecordLinkage.furtherDetails"
+* RecordLinkage.furtherDetails ^base.min = 0
+* RecordLinkage.furtherDetails ^base.max = "*"
+* RecordLinkage.exampleResources 0..* string "exampleResources" "Record linkage example resources"
+* RecordLinkage.exampleResources ^comment = "<p><strong>Cardinality:</strong> 0..*</p>"
+* RecordLinkage.exampleResources ^requirements = "DOIs of additional related resources specific to record linkage (e.g., publications)."
+* RecordLinkage.exampleResources ^base.path = "RecordLinkage.exampleResources"
+* RecordLinkage.exampleResources ^base.min = 0
+* RecordLinkage.exampleResources ^base.max = "*"
