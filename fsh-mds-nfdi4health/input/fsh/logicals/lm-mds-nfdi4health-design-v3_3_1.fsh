@@ -128,7 +128,7 @@ Description: "NFDI4Health Logical Model Module Design V3.3.1"
 * Design.groupsOfDiseases.conditions ^base.max = "*"
 * Design.groupsOfDiseases.conditions ^binding.description = "NFDI4Health_VS_MDS_Study_Groups_Of_Diseases_Generally_Conditions_ICD10"
 * Design.mortalityData 0..* CodeableConcept "mortalityData" "Mortality data collected?"
-* Design.mortalityData from https://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.64.11.13--20230828212720 (required)
+* Design.mortalityData from NFDI4Health_VS_MDS_Mortality_Data_NCI (required)
 * Design.mortalityData ^comment = "Cardinality: 0..1, if (Resource.classification.type == ('Study' OR 'Substudy') AND Design.studyType.nonInterventional == ('Longitudinal' OR 'Cohort' OR 'Case-cohort' OR 'Birth cohort' OR 'Trend' OR 'Panel')) OR Resource.classification.type == ('Registry' OR 'Secondary data source'); otherwise\n                            0..0"
 * Design.mortalityData ^requirements = "Indication whether mortality data are collected in the [RESOURCE]."
 * Design.mortalityData ^base.path = "Design.mortalityData"
@@ -158,14 +158,14 @@ Description: "NFDI4Health Logical Model Module Design V3.3.1"
 * Design.administrativeInformation.status ^base.max = "*"
 * Design.administrativeInformation.status ^binding.description = "NFDI4Health_VS_MDS_Study_Overall_Status_NCI_Local"
 * Design.administrativeInformation.statusWhenIntervention 0..* CodeableConcept "statusWhenIntervention" "Is the intervention ongoing or completed?"
-* Design.administrativeInformation.statusWhenIntervention from https://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.64.11.43--20230905193949 (required)
+* Design.administrativeInformation.statusWhenIntervention from NFDI4Health_VS_MDS_Study_Status_When_Intervention_Local (required)
 * Design.administrativeInformation.statusWhenIntervention ^comment = "Cardinality: 0..1, if Resource.classification.type == ('Study' OR 'Substudy') AND Design.primaryDesign == 'Interventional' AND Design.administrativeInformation.status == ('At the planning stage' OR 'Ongoing (I): Recruitment ongoing, but data collection not yet started' OR 'Ongoing (II):\n                                Recruitment and data collection ongoing' OR 'Ongoing (III): Recruitment completed, but data collection ongoing' OR 'Ongoing (IV): Recruitment and data collection completed, but data quality management ongoing'); otherwise 0..0"
 * Design.administrativeInformation.statusWhenIntervention ^base.path = "Design.administrativeInformation.statusWhenIntervention"
 * Design.administrativeInformation.statusWhenIntervention ^base.min = 0
 * Design.administrativeInformation.statusWhenIntervention ^base.max = "*"
 * Design.administrativeInformation.statusWhenIntervention ^binding.description = "NFDI4Health_VS_MDS_Study_Status_When_Intervention_Local"
 * Design.administrativeInformation.stageStopped 0..* CodeableConcept "stageStopped" "Stopping stage"
-* Design.administrativeInformation.stageStopped from https://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.64.11.44--20230905200219 (required)
+* Design.administrativeInformation.stageStopped from NFDI4Health_VS_MDS_Study_Status_Halted_Stage_Local (required)
 * Design.administrativeInformation.stageStopped ^comment = "Cardinality: 0..1, if Resource.classification.type == ('Study' OR 'Substudy') AND Design.administrativeInformation.status == ('Suspended: Recruitment, data collection, or data quality management, halted, but potentially will resume' OR 'Terminated: Recruitment, data collection, data and\n                                quality management halted prematurely and will not resume'); otherwise 0..0"
 * Design.administrativeInformation.stageStopped ^requirements = "Specification of the stage at which the [RESOURCE] was prematurely stopped."
 * Design.administrativeInformation.stageStopped ^base.path = "Design.administrativeInformation.stageStopped"
@@ -181,7 +181,7 @@ Description: "NFDI4Health Logical Model Module Design V3.3.1"
 * Design.administrativeInformation.reasonStopped ^example.label = "example 1"
 * Design.administrativeInformation.reasonStopped ^example.valueString = "accrual goal met"
 * Design.administrativeInformation.statusEnrollingByInvitation 0..* CodeableConcept "statusEnrollingByInvitation" "Participants enrolled by invitation?"
-* Design.administrativeInformation.statusEnrollingByInvitation from https://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.64.11.16--20230828215728 (required)
+* Design.administrativeInformation.statusEnrollingByInvitation from NFDI4Health_VS_MDS_Yes_No_Not_Applicable_SNOMEDCT (required)
 * Design.administrativeInformation.statusEnrollingByInvitation ^comment = "Cardinality: 0..1, if Resource.classification.type == ('Study' OR 'Substudy'); otherwise 0..0"
 * Design.administrativeInformation.statusEnrollingByInvitation ^requirements = "Specification whether participants are selected from a predetermined population."
 * Design.administrativeInformation.statusEnrollingByInvitation ^base.path = "Design.administrativeInformation.statusEnrollingByInvitation"
@@ -209,7 +209,7 @@ Description: "NFDI4Health Logical Model Module Design V3.3.1"
 * Design.administrativeInformation.endDate ^base.min = 0
 * Design.administrativeInformation.endDate ^base.max = "*"
 * Design.centers 0..* CodeableConcept "centers" "Mono- or multicentric?"
-* Design.centers from https://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.64.11.19--20230828231507 (required)
+* Design.centers from NFDI4Health_VS_MDS_Study_Centers_SNOMEDCT_Local (required)
 * Design.centers ^comment = "Cardinality: 0..1, if Resource.classification.type == ('Study' OR 'Substudy'); otherwise 0..0"
 * Design.centers ^requirements = "Specification whether the data are collected at only one or at more than one study center."
 * Design.centers ^base.path = "Design.centers"
@@ -237,7 +237,7 @@ Description: "NFDI4Health Logical Model Module Design V3.3.1"
 * Design.dataProvidersNumber ^base.min = 0
 * Design.dataProvidersNumber ^base.max = "*"
 * Design.subject 0..* CodeableConcept "subject" "Primary subject"
-* Design.subject from https://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.64.11.20--20230828231811 (required)
+* Design.subject from NFDI4Health_VS_MDS_Study_Subject_SNOMEDCT (required)
 * Design.subject ^comment = "Cardinality: 1..1"
 * Design.subject ^requirements = "The primary subject addressed by the [RESOURCE], for example persons, animals or other subject types."
 * Design.subject ^base.path = "Design.subject"
@@ -373,7 +373,7 @@ Description: "NFDI4Health Logical Model Module Design V3.3.1"
 * Design.eligibilityCriteria.ageMax.timeUnit ^base.max = "*"
 * Design.eligibilityCriteria.ageMax.timeUnit ^binding.description = "NFDI4Health_VS_MDS_Time_Units_UCUM_LOINC"
 * Design.eligibilityCriteria.genders 0..* CodeableConcept "genders" "Eligible gender"
-* Design.eligibilityCriteria.genders from https://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.64.11.29--20230829143527 (required)
+* Design.eligibilityCriteria.genders from NFDI4Health_VS_MDS_Study_Eligibility_Gender_SNOMEDCT_Local (required)
 * Design.eligibilityCriteria.genders ^comment = "Cardinality: 0..*"
 * Design.eligibilityCriteria.genders ^requirements = "Gender of potential participants eligible to participate in the [RESOURCE]."
 * Design.eligibilityCriteria.genders ^base.path = "Design.eligibilityCriteria.genders"
@@ -403,7 +403,7 @@ Description: "NFDI4Health Logical Model Module Design V3.3.1"
 * Design.population ^base.min = 0
 * Design.population ^base.max = "*"
 * Design.population.coverage 0..* CodeableConcept "coverage" "Coverage"
-* Design.population.coverage from https://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.64.11.131--20240301145848 (required)
+* Design.population.coverage from NFDI4Health_VS_MDS_Population_Coverage_NCI (required)
 * Design.population.coverage ^comment = "Cardinality: 0..1"
 * Design.population.coverage ^requirements = "Specification of the recruitment area of the [RESOURCE]."
 * Design.population.coverage ^base.path = "Design.population.coverage"
@@ -411,7 +411,7 @@ Description: "NFDI4Health Logical Model Module Design V3.3.1"
 * Design.population.coverage ^base.max = "*"
 * Design.population.coverage ^binding.description = "NFDI4Health_VS_MDS_Population_Coverage_NCI"
 * Design.population.countries 0..* CodeableConcept "countries" "Countries"
-* Design.population.countries from https://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.64.11.18--20230828230948 (required)
+* Design.population.countries from http://hl7.org/fhir/ValueSet/country(required)
 * Design.population.countries ^comment = "Cardinality: 1..*"
 * Design.population.countries ^requirements = "Country or countries where the [RESOURCE] takes place."
 * Design.population.countries ^base.path = "Design.population.countries"
@@ -773,7 +773,7 @@ Description: "NFDI4Health Logical Model Module Design V3.3.1"
 * Design.interventional.allocation ^base.max = "*"
 * Design.interventional.allocation ^binding.description = "NFDI4Health_VS_MDS_Study_Allocation_NCI"
 * Design.interventional.offLabelUse 0..* CodeableConcept "offLabelUse" "Off-label use of a drug product"
-* Design.interventional.offLabelUse from https://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.64.11.16--20230828215728 (required)
+* Design.interventional.offLabelUse from NFDI4Health_VS_MDS_Yes_No_Not_Applicable_SNOMEDCT (required)
 * Design.interventional.offLabelUse ^comment = "Cardinality: 0..1"
 * Design.interventional.offLabelUse ^requirements = "**Description: **Unapproved (off-label) use of a drug product."
 * Design.interventional.offLabelUse ^base.path = "Design.interventional.offLabelUse"

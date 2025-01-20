@@ -209,7 +209,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.64.11.52--20231009122430",
+          "valueSet": "http://terminology.hl7.org/CodeSystem/iso639-1",
           "description": "ISO 639-1"
         }
       },
@@ -274,7 +274,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.64.11.52--20231009122430",
+          "valueSet": "http://terminology.hl7.org/CodeSystem/iso639-1",
           "description": "ISO 639-1"
         }
       },
@@ -339,7 +339,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.64.11.52--20231009122430",
+          "valueSet": "http://terminology.hl7.org/CodeSystem/iso639-1",
           "description": "ISO 639-1"
         }
       },
@@ -436,7 +436,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.64.11.52--20231009122430",
+          "valueSet": "http://terminology.hl7.org/CodeSystem/iso639-1",
           "description": "ISO 639-1"
         }
       },
@@ -1008,7 +1008,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.64.11.48--20230922140754",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-role-name-identifier-scheme-local",
           "description": "NFDI4Health_VS_MDS_Role_Name_Identifier_Scheme_Local"
         }
       },
@@ -1226,7 +1226,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.64.11.49--20231004075824",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-role-affiliation-identifier-scheme-local",
           "description": "NFDI4Health_VS_MDS_Role_Affiliation_Identifier_Scheme_Local"
         }
       },
@@ -1431,7 +1431,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.64.11.6--20230825102630",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-relation-type-ids-local",
           "description": "NFDI4Health_VS_MDS_Relation_Type_Ids_Local"
         }
       },
@@ -1562,7 +1562,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.64.11.6--20230825102630",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-relation-type-ids-local",
           "description": "NFDI4Health_VS_MDS_Relation_Type_Ids_Local"
         }
       },
@@ -1647,7 +1647,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.64.11.45--20230905201454",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-provenance-data-source-local",
           "description": "NFDI4Health_VS_MDS_Provenance_Data_Source_Local"
         }
       },

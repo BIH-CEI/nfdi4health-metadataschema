@@ -447,7 +447,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.64.11.13--20230828212720",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-mortality-data-nci",
           "description": "NFDI4Health_VS_MDS_Mortality_Data_NCI"
         }
       },
@@ -541,7 +541,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.64.11.43--20230905193949",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-status-when-intervention-local",
           "description": "NFDI4Health_VS_MDS_Study_Status_When_Intervention_Local"
         }
       },
@@ -566,7 +566,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.64.11.44--20230905200219",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-status-halted-stage-local",
           "description": "NFDI4Health_VS_MDS_Study_Status_Halted_Stage_Local"
         }
       },
@@ -617,7 +617,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.64.11.16--20230828215728",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-yes-no-not-applicable-snomedct",
           "description": "NFDI4Health_VS_MDS_Yes_No_Not_Applicable_SNOMEDCT"
         }
       },
@@ -707,7 +707,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.64.11.19--20230828231507",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-centers-snomedct-local",
           "description": "NFDI4Health_VS_MDS_Study_Centers_SNOMEDCT_Local"
         }
       },
@@ -797,7 +797,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.64.11.20--20230828231811",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-subject-snomedct",
           "description": "NFDI4Health_VS_MDS_Study_Subject_SNOMEDCT"
         }
       },
@@ -1232,7 +1232,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.64.11.29--20230829143527",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-eligibility-gender-snomedct-local",
           "description": "NFDI4Health_VS_MDS_Study_Eligibility_Gender_SNOMEDCT_Local"
         }
       },
@@ -1329,7 +1329,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.64.11.131--20240301145848",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-population-coverage-nci",
           "description": "NFDI4Health_VS_MDS_Population_Coverage_NCI"
         }
       },
@@ -1354,7 +1354,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.64.11.18--20230828230948",
+          "valueSet": "http://hl7.org/fhir/ValueSet/country(required)",
           "description": "http://hl7.org/fhir/ValueSet/country"
         }
       },
@@ -2535,7 +2535,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.64.11.16--20230828215728",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-yes-no-not-applicable-snomedct",
           "description": "NFDI4Health_VS_MDS_Yes_No_Not_Applicable_SNOMEDCT"
         }
       }
