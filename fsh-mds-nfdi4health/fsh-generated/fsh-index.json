@@ -773,7 +773,7 @@
     "fshType": "Logical",
     "fshFile": "logicals/lm-mds-nfdi4health-core-v3_3.fsh",
     "startLine": 1,
-    "endLine": 232
+    "endLine": 573
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-lm-mds-design.json",
