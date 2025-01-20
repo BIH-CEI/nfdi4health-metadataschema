@@ -1,11 +1,11 @@
 {
   "resourceType": "ValueSet",
   "status": "draft",
-  "name": "NFDI4Health_VS_MDS_NE_Reference_Period_Unit_UCUM",
-  "id": "nfdi4health-vs-mds-ne-reference-period-unit-ucum",
-  "title": "NFDI4Health NE Portion Size [UCUM]",
+  "name": "NFDI4Health_VS_MDS_NE_Reference_Period_Unit_SNOMEDCT",
+  "id": "nfdi4health-vs-mds-ne-reference-period-unit-snomedct",
+  "title": "NFDI4Health NE Portion Size [SNOMED CT]",
   "description": "Value Set to define the reference period unit used within Diet Assessment",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-ne-reference-period-unit-ucum",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-ne-reference-period-unit-sct",
   "version": "0.9",
   "experimental": true,
   "publisher": "NFDI4Health",
@@ -22,23 +22,23 @@
   "compose": {
     "include": [
       {
-        "system": "http://unitsofmeasure.org",
+        "system": "http://snomed.info/sct",
         "concept": [
           {
-            "code": "a",
+            "code": "258703001",
+            "display": "day"
+          },
+          {
+            "code": "258707000",
             "display": "year"
           },
           {
-            "code": "mo",
+            "code": "258706009",
             "display": "month"
           },
           {
-            "code": "we",
+            "code": "258705008",
             "display": "week"
-          },
-          {
-            "code": "d",
-            "display": "day"
           }
         ]
       }

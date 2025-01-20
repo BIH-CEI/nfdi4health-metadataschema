@@ -149,8 +149,8 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.64.11.62--20231011114917",
-          "description": "NFDI4Health_VS_MDS_NE_Device_NCI_SNOMEDCT_Local "
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-ne-device-nci-snomedct-local",
+          "description": "NFDI4Health_VS_MDS_NE_Device_NCI_SNOMEDCT_Local"
         }
       },
       {
@@ -174,7 +174,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.64.11.61--20231011103811",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-ne-portion-size-snomedct-local",
           "description": "NFDI4Health_VS_MDS_NE_Portion_Size_SNOMEDCT_Local"
         }
       },
@@ -199,7 +199,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.64.11.57--20231010130019",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-ne-reference-period-unit-sct",
           "description": "NFDI4Health_VS_MDS_NE_Reference_Period_Unit_SNOMEDCT"
         }
       },

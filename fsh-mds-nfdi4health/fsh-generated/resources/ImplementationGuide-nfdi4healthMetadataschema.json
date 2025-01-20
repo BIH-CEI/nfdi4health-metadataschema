@@ -876,9 +876,9 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/nfdi4health-vs-mds-ne-reference-period-unit-ucum"
+          "reference": "ValueSet/nfdi4health-vs-mds-ne-reference-period-unit-snomedct"
         },
-        "name": "NFDI4Health NE Portion Size [UCUM]",
+        "name": "NFDI4Health NE Portion Size [SNOMED CT]",
         "description": "Value Set to define the reference period unit used within Diet Assessment",
         "exampleBoolean": false
       },

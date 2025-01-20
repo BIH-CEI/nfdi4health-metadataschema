@@ -71,7 +71,7 @@ Description: "Profile to collect information about a diet assessment used for nu
 * component[referencePeriodUnit].code = $SCT#258695005 "Unit of time (qualifier value)"
 * component[referencePeriodUnit].value[x] 1..1
 * component[referencePeriodUnit].value[x] only CodeableConcept
-* component[referencePeriodUnit].valueCodeableConcept from NFDI4Health_VS_MDS_NE_Reference_Period_Unit_UCUM (required)
+* component[referencePeriodUnit].valueCodeableConcept from NFDI4Health_VS_MDS_NE_Reference_Period_Unit_SNOMEDCT (required)
 * component[referencePeriodNumber] ^short = "Numerical value of reference period units"
 * component[referencePeriodNumber] ^definition = "Indication of the number of reference period units assessed."
 * component[referencePeriodNumber].code = $NCI#C49637 "Reference Period (Temporal Concept)"

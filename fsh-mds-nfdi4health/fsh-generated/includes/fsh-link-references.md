@@ -105,7 +105,7 @@
 [NFDI4Health_VS_MDS_NE_Instrument_NCI_Local]: ValueSet-nfdi4health-vs-mds-ne-instrument-snomedct-nci-local.html
 [NFDI4Health_VS_MDS_NE_Mode_NCI_MSH_Local]: ValueSet-nfdi4health-vs-mds-ne-mode-nci-msh-local.html
 [NFDI4Health_VS_MDS_NE_Portion_Size_SNOMEDCT_Local]: ValueSet-nfdi4health-vs-mds-ne-portion-size-snomedct-local.html
-[NFDI4Health_VS_MDS_NE_Reference_Period_Unit_UCUM]: ValueSet-nfdi4health-vs-mds-ne-reference-period-unit-ucum.html
+[NFDI4Health_VS_MDS_NE_Reference_Period_Unit_SNOMEDCT]: ValueSet-nfdi4health-vs-mds-ne-reference-period-unit-snomedct.html
 [NFDI4Health_PR_MDS_Affiliation]: StructureDefinition-nfdi4health-pr-mds-affiliation.html
 [NFDI4Health_PR_MDS_Centers]: StructureDefinition-nfdi4health-pr-mds-centers.html
 [NFDI4Health_PR_MDS_Chronic_Diseases]: StructureDefinition-nfdi4health-pr-mds-chronic-diseases.html

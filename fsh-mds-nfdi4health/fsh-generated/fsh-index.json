@@ -1064,8 +1064,8 @@
     "endLine": 17
   },
   {
-    "outputFile": "ValueSet-nfdi4health-vs-mds-ne-reference-period-unit-ucum.json",
-    "fshName": "NFDI4Health_VS_MDS_NE_Reference_Period_Unit_UCUM",
+    "outputFile": "ValueSet-nfdi4health-vs-mds-ne-reference-period-unit-snomedct.json",
+    "fshName": "NFDI4Health_VS_MDS_NE_Reference_Period_Unit_SNOMEDCT",
     "fshType": "ValueSet",
     "fshFile": "valuesets/vs-ne-referenceperiodunit.fsh",
     "startLine": 1,

@@ -36,15 +36,15 @@ Description: "NFDI4Health Nutritional Epidemiology Module"
 * DietAssessment.mode ^base.max = "*"
 * DietAssessment.mode ^binding.description = "NFDI4Health_VS_MDS_NE_Mode_NCI_MSH_Local"
 * DietAssessment.device 0..* CodeableConcept "device" "Devices used to apply the dietary assessment instrument"
-* DietAssessment.device from https://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.64.11.62--20231011114917 (required)
+* DietAssessment.device from NFDI4Health_VS_MDS_NE_Device_NCI_SNOMEDCT_Local (required)
 * DietAssessment.device ^comment = "Cardinality: 1..*"
 * DietAssessment.device ^requirements = "Specification of device(s) used to apply the dietary assessment instrument to participants."
 * DietAssessment.device ^base.path = "DietAssessment.device"
 * DietAssessment.device ^base.min = 0
 * DietAssessment.device ^base.max = "*"
-* DietAssessment.device ^binding.description = "NFDI4Health_VS_MDS_NE_Device_NCI_SNOMEDCT_Local "
+* DietAssessment.device ^binding.description = "NFDI4Health_VS_MDS_NE_Device_NCI_SNOMEDCT_Local"
 * DietAssessment.portionSizeEstimation 0..* CodeableConcept "portionSizeEstimation" "How was the portion size estimated?"
-* DietAssessment.portionSizeEstimation from https://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.64.11.61--20231011103811 (required)
+* DietAssessment.portionSizeEstimation from NFDI4Health_VS_MDS_NE_Portion_Size_SNOMEDCT_Local (required)
 * DietAssessment.portionSizeEstimation ^comment = "Cardinality: 1..*"
 * DietAssessment.portionSizeEstimation ^requirements = "Specification of how the portion size was inquired in the dietary assessment instrument."
 * DietAssessment.portionSizeEstimation ^base.path = "DietAssessment.portionSizeEstimation"
@@ -52,7 +52,7 @@ Description: "NFDI4Health Nutritional Epidemiology Module"
 * DietAssessment.portionSizeEstimation ^base.max = "*"
 * DietAssessment.portionSizeEstimation ^binding.description = "NFDI4Health_VS_MDS_NE_Portion_Size_SNOMEDCT_Local"
 * DietAssessment.referencePeriodUnit 0..* CodeableConcept "referencePeriodUnit" "Reference period unit"
-* DietAssessment.referencePeriodUnit from https://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.64.11.57--20231010130019 (required)
+* DietAssessment.referencePeriodUnit from NFDI4Health_VS_MDS_NE_Reference_Period_Unit_SNOMEDCT (required)
 * DietAssessment.referencePeriodUnit ^comment = "Cardinality: 1..1"
 * DietAssessment.referencePeriodUnit ^requirements = "Indication of the reference period the dietary assessment instrument refers to (e.g. 24-h recall refers to the previous day)"
 * DietAssessment.referencePeriodUnit ^base.path = "DietAssessment.referencePeriodUnit"
