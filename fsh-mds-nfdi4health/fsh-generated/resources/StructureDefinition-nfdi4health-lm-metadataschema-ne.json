@@ -3,7 +3,7 @@
   "id": "nfdi4health-lm-metadataschema-ne",
   "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-ne",
   "name": "Module_Nutritional_Epidemiology",
-  "title": "NFDI4Health LM Nutritional Epidemiology Module",
+  "title": "NFDI4Health LM Module Nutritional Epidemiology V 3.3.1",
   "status": "draft",
   "publisher": "NFDI4Health",
   "contact": [
@@ -35,7 +35,7 @@
       {
         "id": "nfdi4health-lm-metadataschema-ne",
         "path": "nfdi4health-lm-metadataschema-ne",
-        "short": "NFDI4Health LM Nutritional Epidemiology Module",
+        "short": "NFDI4Health LM Module Nutritional Epidemiology V 3.3.1",
         "definition": "NFDI4Health Nutritional Epidemiology Module"
       },
       {

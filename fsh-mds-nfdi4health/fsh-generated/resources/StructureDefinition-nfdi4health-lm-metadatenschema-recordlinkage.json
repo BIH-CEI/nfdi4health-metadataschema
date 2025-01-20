@@ -3,7 +3,7 @@
   "id": "nfdi4health-lm-metadatenschema-recordlinkage",
   "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-recordlinkage",
   "name": "NFDI4Health_LM_Metadataschema_RecordLinkage",
-  "title": "NFDI4Health LM Record Linkage Module",
+  "title": "NFDI4Health LM Module Record Linkage V 3.3.1",
   "status": "draft",
   "publisher": "NFDI4Health",
   "contact": [
@@ -35,7 +35,7 @@
       {
         "id": "nfdi4health-lm-metadataschema-recordlinkage",
         "path": "nfdi4health-lm-metadataschema-recordlinkage",
-        "short": "NFDI4Health LM Record Linkage Module",
+        "short": "NFDI4Health LM Module Record Linkage V 3.3.1",
         "definition": "Group of items providing information on record linkage."
       },
       {

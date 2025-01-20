@@ -771,7 +771,7 @@
     "outputFile": "StructureDefinition-nfdi4health-lm-mds-core.json",
     "fshName": "NFDI4Health_LM_MDS_Core",
     "fshType": "Logical",
-    "fshFile": "logicals/lm-mds-nfdi4health-core-v3_3.fsh",
+    "fshFile": "logicals/lm-mds-nfdi4health-core-v3_3_1.fsh",
     "startLine": 1,
     "endLine": 573
   },
@@ -781,7 +781,7 @@
     "fshType": "Logical",
     "fshFile": "logicals/lm-mds-nfdi4health-design-v3_3COPY.fsh",
     "startLine": 1,
-    "endLine": 329
+    "endLine": 782
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-lm-metadataschema-eocd.json",

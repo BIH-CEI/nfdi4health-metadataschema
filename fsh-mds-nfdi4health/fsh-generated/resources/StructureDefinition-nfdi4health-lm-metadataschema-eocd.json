@@ -3,7 +3,7 @@
   "id": "nfdi4health-lm-metadataschema-eocd",
   "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-eocd",
   "name": "NFDI4Health_LM_Metadataschema_EOCD",
-  "title": "NFDI4Health LM Epidemiology of Chronic Diseases Metadataschema",
+  "title": "NFDI4Health LM Module Epidemiology of Chronic Diseases V 3.3",
   "status": "draft",
   "publisher": "NFDI4Health",
   "contact": [
@@ -35,7 +35,7 @@
       {
         "id": "nfdi4health-lm-metadataschema-eocd",
         "path": "nfdi4health-lm-metadataschema-eocd",
-        "short": "NFDI4Health LM Epidemiology of Chronic Diseases Metadataschema",
+        "short": "NFDI4Health LM Module Epidemiology of Chronic Diseases V 3.3",
         "definition": "NFDI4Health Logical Model of MDS Module Epidemiology of Chronic Diseases"
       },
       {

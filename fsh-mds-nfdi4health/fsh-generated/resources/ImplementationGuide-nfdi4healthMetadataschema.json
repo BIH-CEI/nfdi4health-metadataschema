@@ -807,30 +807,30 @@
           "reference": "StructureDefinition/nfdi4health-lm-mds-core"
         },
         "name": "NFDI4Health LM Core Metadataschema",
-        "description": "NFDI4Health Logical Model Core Metadataschema",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/nfdi4health-lm-metadataschema-eocd"
-        },
-        "name": "NFDI4Health LM Epidemiology of Chronic Diseases Metadataschema",
-        "description": "NFDI4Health Logical Model of MDS Module Epidemiology of Chronic Diseases",
+        "description": "NFDI4Health Logical Model Core V 3.3.1",
         "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/nfdi4health-lm-mds-design"
         },
-        "name": "NFDI4Health LM MDS Module Design",
-        "description": "NFDI4Health Logical Model MDS Module Design V3.3",
+        "name": "NFDI4Health LM MDS Module Design V 3.3.1",
+        "description": "NFDI4Health Logical Model Module Design V3.3.1",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-lm-metadataschema-eocd"
+        },
+        "name": "NFDI4Health LM Module Epidemiology of Chronic Diseases V 3.3",
+        "description": "NFDI4Health Logical Model of MDS Module Epidemiology of Chronic Diseases",
         "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/nfdi4health-lm-metadataschema-ne"
         },
-        "name": "NFDI4Health LM Nutritional Epidemiology Module",
+        "name": "NFDI4Health LM Module Nutritional Epidemiology V 3.3.1",
         "description": "NFDI4Health Nutritional Epidemiology Module",
         "exampleBoolean": false
       },
@@ -838,7 +838,7 @@
         "reference": {
           "reference": "StructureDefinition/nfdi4health-lm-metadatenschema-recordlinkage"
         },
-        "name": "NFDI4Health LM Record Linkage Module",
+        "name": "NFDI4Health LM Module Record Linkage V 3.3.1",
         "description": "Group of items providing information on record linkage.",
         "exampleBoolean": false
       },

@@ -1,7 +1,7 @@
 Logical: Module_Nutritional_Epidemiology
 Parent: Element
 Id: nfdi4health-lm-metadataschema-ne
-Title: "NFDI4Health LM Nutritional Epidemiology Module"
+Title: "NFDI4Health LM Module Nutritional Epidemiology V 3.3.1"
 Description: "NFDI4Health Nutritional Epidemiology Module"
 * ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-ne"
 * ^publisher = "NFDI4Health"
