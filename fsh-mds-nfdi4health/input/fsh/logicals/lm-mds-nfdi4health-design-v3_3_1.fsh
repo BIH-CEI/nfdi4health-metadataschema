@@ -1,8 +1,8 @@
 Logical: NFDI4Health_LM_MDS_Design
 Parent: Element
 Id: nfdi4health-lm-mds-design
-Title: "NFDI4Health Module Design V 3.3.1"
-Description: "NFDI4Health Logical Model of Module Design"
+Title: "NFDI4Health Module Design"
+Description: "NFDI4Health Logical Model of Module Design V3.3.1"
 * ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-mds-design"
 * ^publisher = "NFDI4Health"
 * ^contact.telecom.system = #url

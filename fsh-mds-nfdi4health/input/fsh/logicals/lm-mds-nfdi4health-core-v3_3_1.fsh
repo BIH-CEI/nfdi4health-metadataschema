@@ -1,8 +1,8 @@
 Logical: NFDI4Health_LM_MDS_Core
 Parent: Element
 Id: nfdi4health-lm-mds-core
-Title: "NFDI4Health Core Metadataschema V 3.3.1"
-Description: "NFDI4Health Logical Model of Core"
+Title: "NFDI4Health Core Metadataschema"
+Description: "NFDI4Health Logical Model of Core V3.3.1"
 * ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-mds-core"
 * ^publisher = "NFDI4Health"
 * ^contact.telecom.system = #url
