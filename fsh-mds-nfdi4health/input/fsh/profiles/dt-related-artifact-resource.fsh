@@ -21,7 +21,7 @@ Description: "Profile of a RelatedArtifact intended to capture information about
 * extension contains 
     $RelatedNFDI named NFDI4HealthResource 0..* and
     $RelatedNonNFDI named nonNFDI4HealthResource 0..*
-* url ^short = "Web page of the [RESOURCE]"
+* url ^short = "Web page"
 * url ^definition = "If existing, a link to the web page directly relevant to the [RESOURCE]."
 * url ^comment = "Additional information: Other web pages related to the [RESOURCE] can additionally be entered in the section 'Related resources'."
 

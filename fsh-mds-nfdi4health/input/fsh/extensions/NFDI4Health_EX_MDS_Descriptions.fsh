@@ -16,7 +16,7 @@ Description: "Group of items providing information about the description(s) of t
 * ^context[=].expression = "DocumentReference"
 * ^context[+].type = #element
 * ^context[=].expression = "Library"
-* . ^short = "Descriptions of the [RESOURCE]"
+* . ^short = "Descriptions"
 * . ^definition = "Group of items providing information about the description(s) of the [RESOURCE]."
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"

@@ -11,12 +11,13 @@ Description: "Extension provinding information about the language the [RESOURCE]
 * ^context.type = #element
 * ^context.expression = "Composition"
 * . 0..*
-* . ^short = "Language(s) of the [RESOURCE]"
+* . ^short = "Languages"
 * . ^definition = "Language(s) in which the [RESOURCE] is conducted/provided."
 
 * valueCode from nfdi4health-vs-mds-languages-iso (required)
 * valueCode ^short = "A human language."
 * valueCode ^definition = "A human language."
+* valueCode^comment = "Select all that apply."
 
 Mapping: NFDI4Health-Execution-Language-to-FHIR
 Id: NFDI4Health

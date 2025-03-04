@@ -103,9 +103,9 @@ Description: "Profile to collect information about documents related to german c
 * content.extension ^min = 0
 * content.extension contains NFDI4Health_EX_MDS_Version named version 0..1
 * content.attachment.language 0..1
-* content.attachment.language ^short = "Language(s) of the [RESOURCE]"
-* content.attachment.language ^definition = "Language(s) in which a study/substudy is conducted, or a language in which a study document is composed."
-* content.attachment.language ^comment = "Short input help: Select all that apply."
+* content.attachment.language ^short = "Languages"
+* content.attachment.language ^definition = "Language(s) in which the [RESOURCE] is conducted/provided."
+* content.attachment.language ^comment = "Select all that apply."
 * content.format 0..1
 * content.format ^short = "Format"
 * content.format ^definition = "If applicable, the file format of the [RESOURCE] (e.g., XML, PDF, XLSX, etc.)."
@@ -159,7 +159,7 @@ Source: NFDI4Health_PR_MDS_Document
 * identifier[Other].value -> "Resource.idsAlternative.identifier"
 * extension[descriptions] -> "Resource.descriptions"
 * content.extension[version] -> "Resource.nonStudyDetails.version"
-* content.attachment.language -> "1.8 Resource.languages"
+* content.attachment.language -> "Resource.languages"
 * content.format -> "Resource.nonStudyDetails.format"
 * extension[relatedResources] -> "Resource.ids"
 * extension[relatedResources] -> "Resource.idsNfdi4health"

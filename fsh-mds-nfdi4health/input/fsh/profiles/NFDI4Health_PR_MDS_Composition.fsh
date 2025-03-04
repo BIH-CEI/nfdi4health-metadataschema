@@ -20,18 +20,19 @@ Description: "Profile intended to capture information on the core information of
     NFDI4Health_EX_MDS_Execution_Language named executionLanguage 0..* and
     NFDI4Health_EX_MDS_Nutritional_Data named nutritionalData 0..1
 * title 1..
-* title ^short = "Title/name"
-* title ^definition = "Scientific unabbreviated title or name of the resource."
-* title ^comment = "Additional Information: If no official title/name has been defined yet, please provide a title/name that is suitable for public display. | Short Input Help: Please provide at least one title/name of the resource. If the original title is not in English, please also provide an English translation of the original title."
+* title ^short = "Title(s)/name(s) or acronym(s) of the [RESOURCE]"
+* title ^definition = "Group of items providing information about title(s)/name(s) or acronym(s) of the resource."
+* title ^comment = "Based on ResearchStudy.label (R5), with an extension for language."
 * title.extension contains NFDI4Health_EX_MDS_Label named label 1..*
 * identifier.value 1..1
-* identifier ^short = "ID of the [RESOURCE]"
+* identifier ^short = "Identifier"
 * identifier ^definition = "Unique identifier of the resource used for identification within the NFDI4Health."
+* identifier ^comment = "Additional information: The identifier is assigned automatically."
 * status = #final (exactly)
 * type 1..1
 * type from NFDI4Health_VS_MDS_Resource_Type_NCI_Local (required)
-* type ^short = "Resource classification"
-* type ^definition = "Group of items providing information about the classification of the resource within the predefined categories."
+* type ^short = "type" "type of the resource"
+* type ^definition = "A term describing the resource."
 * category 0..1
 * category ^short = "In what form is the [RESOURCE] available?"
 * category ^definition = "Specific information about the form in which the [RESOURCE] is available."
@@ -124,7 +125,7 @@ Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_PR_MDS_Composition
 * identifier.value -> "Resource.identifier"
 * type -> "Resource.classification.type"
-* category -> "Resource.classificiation.typeGeneral"
+* category -> "Resource.classification.typeGeneral"
 * author -> "Resource.contributors"
 * author.extension[nameType] -> "Resource.contributors.nameType"
 * author -> "Resource.contributors"
@@ -135,6 +136,9 @@ Source: NFDI4Health_PR_MDS_Composition
 * extension[provenanceDataSource] -> "Resource.provenance.dataSource"
 * section[nutritionalData] ->  "DietAssessment"
 * section[chronicDiseases] -> "ChronicDiseasesEpidemiology"
+
+
+
 
 
 

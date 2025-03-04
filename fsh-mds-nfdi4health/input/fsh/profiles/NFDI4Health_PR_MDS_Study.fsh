@@ -35,7 +35,6 @@ Description: "Group of items applicable only to studies, substudies."
 
 // Extensions
 * extension contains
-    NFDI4Health_EX_MDS_Execution_Language named executionLanguage 0..* and
     NFDI4Health_EX_MDS_Descriptions named descriptions 1..1 and
     NFDI4Health_EX_MDS_Mortality_Data named mortalityData 0..1 and
     NFDI4Health_EX_MDS_Study_Admin_Info named administrativeInformation 1..1 and
