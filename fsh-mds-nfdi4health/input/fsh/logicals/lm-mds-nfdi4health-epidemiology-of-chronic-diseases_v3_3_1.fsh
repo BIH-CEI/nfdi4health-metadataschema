@@ -3,7 +3,7 @@ Parent: Element
 Id: nfdi4health-lm-mds-eocd
 Title: "NFDI4Health Module Epidemiology of Chronic Diseases"
 Description: "NFDI4Health Logical Model of Module Epidemiology of Chronic Diseases V3.3.1"
-* ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-eocd"
+* ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-mds-eocd"
 * ^publisher = "NFDI4Health"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
