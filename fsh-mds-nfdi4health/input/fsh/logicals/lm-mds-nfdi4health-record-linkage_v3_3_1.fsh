@@ -3,7 +3,7 @@ Parent: Element
 Id: nfdi4health-lm-metadatenschema-recordlinkage
 Title: "NFDI4Health Module Record Linkage"
 Description: "NFDI4Health Logical Module of Module Record Linkage V3.3.1"
-* ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-recordlinkage"
+* ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-mds-rl"
 * ^publisher = "NFDI4Health"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
