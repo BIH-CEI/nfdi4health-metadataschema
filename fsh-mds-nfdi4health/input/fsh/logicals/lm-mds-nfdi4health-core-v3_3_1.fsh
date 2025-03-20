@@ -21,7 +21,7 @@ Description: "NFDI4Health Logical Model of Core V3.3.1"
 * Resource.classification.type ^comment = "Additional information: The selected resource type determines which information will be asked next."
 * Resource.classification.type ^requirements = "A term describing the resource."
 * Resource.classification.typeGeneral 0..1 CodeableConcept "typeGeneral" "In what form is the [RESOURCE] available?"
-* Resource.classification.typeGeneral from "NFDI4Health_VS_MDS_Resource_Type_General_NCI_MSH_Local" (required)
+* Resource.classification.typeGeneral from NFDI4Health_VS_MDS_Resource_Type_General_NCI_MSH_Local (required)
 * Resource.classification.typeGeneral ^comment = "Additional information: If the [RESOURCE] consists primarily of words for reading and is not covered by another textual resource type in this list, 'Text' should be used instead of 'Other'."
 * Resource.classification.typeGeneral ^requirements = "Specific information about the form in which the [RESOURCE] is available."
 * Resource.titles 1..* BackboneElement "titles" "Titles/names"
@@ -31,7 +31,7 @@ Description: "NFDI4Health Logical Model of Core V3.3.1"
 * Resource.titles.text ^comment = "Additional information: If no official title/name has been defined yet, a title/name that is suitable for public display should be used."
 * Resource.titles.text ^requirements = "Scientific unabbreviated title or name of the [RESOURCE]."
 * Resource.titles.language 1..1 CodeableConcept "language" "Language of the title/name"
-* Resource.titles.language from ISO 639-1 (required)
+* Resource.titles.language from NFDI4Health_VS_MDS_Languages_ISO (required)
 * Resource.titles.language ^comment = "Cardinality: 1..1"
 * Resource.titles.language ^requirements = "Language in which the title/name is provided."
 * Resource.acronyms 0..* BackboneElement "acronyms" "Acronyms"
@@ -41,7 +41,7 @@ Description: "NFDI4Health Logical Model of Core V3.3.1"
 * Resource.acronyms.text ^comment = "Additional information: The field refers primarily to resources which have an acronym."
 * Resource.acronyms.text ^requirements = "If existing, acronym(s) of the [RESOURCE]."
 * Resource.acronyms.language 1..1 CodeableConcept "language" "Language of the acronym"
-* Resource.acronyms.language from ISO 639-1 (required)
+* Resource.acronyms.language from NFDI4Health_VS_MDS_Languages_ISO (required)
 * Resource.acronyms.language ^comment = "Cardinality: 1..1"
 * Resource.acronyms.language ^requirements = "Language in which the acronym is provided."
 * Resource.descriptions 1..* BackboneElement "descriptions" "Descriptions"
@@ -51,7 +51,7 @@ Description: "NFDI4Health Logical Model of Core V3.3.1"
 * Resource.descriptions.text ^comment = "Cardinality: 1..1"
 * Resource.descriptions.text ^requirements = "Short plain text summary of the [RESOURCE]."
 * Resource.descriptions.language 1..1 CodeableConcept "language" "Language of the description"
-* Resource.descriptions.language from ISO 639-1 (required)
+* Resource.descriptions.language from NFDI4Health_VS_MDS_Languages_ISO (required)
 * Resource.descriptions.language ^comment = "Cardinality: 1..1"
 * Resource.descriptions.language ^requirements = "Language in which the description text is provided."
 * Resource.keywords 0..* BackboneElement "keywords" "Keywords"
@@ -61,6 +61,6 @@ Description: "NFDI4Health Logical Model of Core V3.3.1"
 * Resource.keywords.label ^comment = "Additional information: The use of terms from established classifications/vocabularies (e.g. SNOMED CT, MeSH, UMLS) is preferred. However, also self-assigned keywords are allowed."
 * Resource.keywords.label ^requirements = "Keyword(s) describing the [RESOURCE]."
 * Resource.languages 0..* CodeableConcept "languages" "Languages"
-* Resource.languages from ISO 639-1 (required)
+* Resource.languages from NFDI4Health_VS_MDS_Languages_ISO (required)
 * Resource.languages ^comment = "Cardinality: 0..*"
 * Resource.languages ^requirements = "Language(s) in which the [RESOURCE] is conducted/provided."

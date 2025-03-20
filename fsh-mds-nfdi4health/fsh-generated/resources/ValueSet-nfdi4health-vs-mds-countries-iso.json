@@ -3,8 +3,8 @@
   "status": "draft",
   "name": "NFDI4Health_VS_MDS_Countries_ISO",
   "id": "nfdi4health-vs-mds-countries-iso",
-  "title": "NFDI4Health VS MDS Countries [ISO]",
-  "description": "Value set defining codes countries where the study takes place.",
+  "title": "NFDI4Health VS MDS Countries [ISO] 2-letter codes",
+  "description": "This value set defines the ISO 3166 Part 1 2-letter codes.",
   "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-countries-iso",
   "version": "0.9",
   "experimental": true,
@@ -22,7 +22,7 @@
   "compose": {
     "include": [
       {
-        "system": "urn:iso:std:iso:3166"
+        "system": "http://hl7.org/fhir/ValueSet/iso3166-1-2"
       }
     ]
   }

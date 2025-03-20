@@ -777,13 +777,13 @@
       {
         "id": "DocumentReference.content.attachment.language",
         "path": "DocumentReference.content.attachment.language",
-        "short": "Language(s) of the [RESOURCE]",
-        "definition": "Language(s) in which a study/substudy is conducted, or a language in which a study document is composed.",
-        "comment": "Short input help: Select all that apply.",
+        "short": "Languages",
+        "definition": "Language(s) in which the [RESOURCE] is conducted/provided.",
+        "comment": "Select all that apply.",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.8 Resource.languages"
+            "map": "Resource.languages"
           }
         ]
       },

@@ -3,7 +3,7 @@
   "id": "nfdi4health-lm-mds-design",
   "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-mds-design",
   "name": "NFDI4Health_LM_MDS_Design",
-  "title": "NFDI4Health LM MDS Module Design V 3.3.1",
+  "title": "NFDI4Health Module Design",
   "status": "draft",
   "publisher": "NFDI4Health",
   "contact": [
@@ -16,7 +16,7 @@
       ]
     }
   ],
-  "description": "NFDI4Health Logical Model Module Design V3.3.1",
+  "description": "NFDI4Health Logical Model of Module Design V3.3.1",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -35,8 +35,8 @@
       {
         "id": "nfdi4health-lm-mds-design",
         "path": "nfdi4health-lm-mds-design",
-        "short": "NFDI4Health LM MDS Module Design V 3.3.1",
-        "definition": "NFDI4Health Logical Model Module Design V3.3.1"
+        "short": "NFDI4Health Module Design",
+        "definition": "NFDI4Health Logical Model of Module Design V3.3.1"
       },
       {
         "id": "nfdi4health-lm-mds-design.Design",

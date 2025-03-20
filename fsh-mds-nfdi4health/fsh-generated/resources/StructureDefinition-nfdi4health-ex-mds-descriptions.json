@@ -58,7 +58,7 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Descriptions of the [RESOURCE]",
+        "short": "Descriptions",
         "definition": "Group of items providing information about the description(s) of the [RESOURCE].",
         "mapping": [
           {

@@ -17,7 +17,7 @@ Description: "Extension provinding information about the language the [RESOURCE]
 * valueCode from nfdi4health-vs-mds-languages-iso (required)
 * valueCode ^short = "A human language."
 * valueCode ^definition = "A human language."
-* valueCode^comment = "Select all that apply."
+* valueCode ^comment = "Select all that apply."
 
 Mapping: NFDI4Health-Execution-Language-to-FHIR
 Id: NFDI4Health

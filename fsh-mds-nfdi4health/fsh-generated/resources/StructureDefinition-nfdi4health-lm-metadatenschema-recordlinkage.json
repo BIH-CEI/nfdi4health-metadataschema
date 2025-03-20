@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
   "id": "nfdi4health-lm-metadatenschema-recordlinkage",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-recordlinkage",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-mds-rl",
   "name": "NFDI4Health_LM_Metadataschema_RecordLinkage",
-  "title": "NFDI4Health LM Module Record Linkage V 3.3.1",
+  "title": "NFDI4Health Module Record Linkage",
   "status": "draft",
   "publisher": "NFDI4Health",
   "contact": [
@@ -16,7 +16,7 @@
       ]
     }
   ],
-  "description": "Group of items providing information on record linkage.",
+  "description": "NFDI4Health Logical Module of Module Record Linkage V3.3.1",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -27,20 +27,20 @@
   ],
   "kind": "logical",
   "abstract": false,
-  "type": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-recordlinkage",
+  "type": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-mds-rl",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
   "derivation": "specialization",
   "differential": {
     "element": [
       {
-        "id": "nfdi4health-lm-metadataschema-recordlinkage",
-        "path": "nfdi4health-lm-metadataschema-recordlinkage",
-        "short": "NFDI4Health LM Module Record Linkage V 3.3.1",
-        "definition": "Group of items providing information on record linkage."
+        "id": "nfdi4health-lm-mds-rl",
+        "path": "nfdi4health-lm-mds-rl",
+        "short": "NFDI4Health Module Record Linkage",
+        "definition": "NFDI4Health Logical Module of Module Record Linkage V3.3.1"
       },
       {
-        "id": "nfdi4health-lm-metadataschema-recordlinkage.RecordLinkage",
-        "path": "nfdi4health-lm-metadataschema-recordlinkage.RecordLinkage",
+        "id": "nfdi4health-lm-mds-rl.RecordLinkage",
+        "path": "nfdi4health-lm-mds-rl.RecordLinkage",
         "short": "RecordLinkage",
         "definition": "Information about record linkage for the [RESOURCE]",
         "comment": "Cardinality: 1..1, if Design.dataSharingPlan.recordLinkage == 'Yes'; otherwise 0.. 0",
@@ -59,8 +59,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-recordlinkage.RecordLinkage.legalBasis",
-        "path": "nfdi4health-lm-metadataschema-recordlinkage.RecordLinkage.legalBasis",
+        "id": "nfdi4health-lm-mds-rl.RecordLinkage.legalBasis",
+        "path": "nfdi4health-lm-mds-rl.RecordLinkage.legalBasis",
         "short": "legalBasis",
         "definition": "Legal regulation/permission for record linkage",
         "comment": "Additional information: Whether any specific legal regulations/permissions exist (e.g. for social data, for cancer registry data, hospital data, etc.).",
@@ -79,8 +79,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-recordlinkage.RecordLinkage.legalBasisDetails",
-        "path": "nfdi4health-lm-metadataschema-recordlinkage.RecordLinkage.legalBasisDetails",
+        "id": "nfdi4health-lm-mds-rl.RecordLinkage.legalBasisDetails",
+        "path": "nfdi4health-lm-mds-rl.RecordLinkage.legalBasisDetails",
         "short": "legalBasisDetails",
         "definition": "Specific legal basis allowing record linkage",
         "comment": "Additional information: If existing, any specific legal regulations/permissions (e.g. for social data, for cancer registry data, hospital data, etc.).",
@@ -99,8 +99,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-recordlinkage.RecordLinkage.informedConsent",
-        "path": "nfdi4health-lm-metadataschema-recordlinkage.RecordLinkage.informedConsent",
+        "id": "nfdi4health-lm-mds-rl.RecordLinkage.informedConsent",
+        "path": "nfdi4health-lm-mds-rl.RecordLinkage.informedConsent",
         "short": "informedConsent",
         "definition": "Informed consent for record linkage obtained?",
         "comment": "Cardinality: 0..1",
@@ -119,8 +119,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-recordlinkage.RecordLinkage.responsibleInstitutions",
-        "path": "nfdi4health-lm-metadataschema-recordlinkage.RecordLinkage.responsibleInstitutions",
+        "id": "nfdi4health-lm-mds-rl.RecordLinkage.responsibleInstitutions",
+        "path": "nfdi4health-lm-mds-rl.RecordLinkage.responsibleInstitutions",
         "short": "responsibleInstitutions",
         "definition": "Responsible authorities",
         "comment": "Cardinality: 0..*",
@@ -139,8 +139,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-recordlinkage.RecordLinkage.additionalCosts",
-        "path": "nfdi4health-lm-metadataschema-recordlinkage.RecordLinkage.additionalCosts",
+        "id": "nfdi4health-lm-mds-rl.RecordLinkage.additionalCosts",
+        "path": "nfdi4health-lm-mds-rl.RecordLinkage.additionalCosts",
         "short": "additionalCosts",
         "definition": "Additional costs for record linkage",
         "comment": "Cardinality: 0..1",
@@ -159,8 +159,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-recordlinkage.RecordLinkage.identifiers",
-        "path": "nfdi4health-lm-metadataschema-recordlinkage.RecordLinkage.identifiers",
+        "id": "nfdi4health-lm-mds-rl.RecordLinkage.identifiers",
+        "path": "nfdi4health-lm-mds-rl.RecordLinkage.identifiers",
         "short": "identifiers",
         "definition": "Identifiers for record linkage",
         "comment": "Cardinality: 0..*",
@@ -179,8 +179,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-recordlinkage.RecordLinkage.furtherDetails",
-        "path": "nfdi4health-lm-metadataschema-recordlinkage.RecordLinkage.furtherDetails",
+        "id": "nfdi4health-lm-mds-rl.RecordLinkage.furtherDetails",
+        "path": "nfdi4health-lm-mds-rl.RecordLinkage.furtherDetails",
         "short": "furtherDetails",
         "definition": "Further details important for conducting record linkage",
         "comment": "Cardinality: 0..1",
@@ -199,8 +199,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-recordlinkage.RecordLinkage.exampleResources",
-        "path": "nfdi4health-lm-metadataschema-recordlinkage.RecordLinkage.exampleResources",
+        "id": "nfdi4health-lm-mds-rl.RecordLinkage.exampleResources",
+        "path": "nfdi4health-lm-mds-rl.RecordLinkage.exampleResources",
         "short": "exampleResources",
         "definition": "Record linkage example resources",
         "comment": "Cardinality: 0..*",

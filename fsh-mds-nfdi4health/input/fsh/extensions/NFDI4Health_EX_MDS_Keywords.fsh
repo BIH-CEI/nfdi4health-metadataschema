@@ -19,12 +19,13 @@ Description: "Extension storing keyword(s) describing a resource."
 * . ^comment = "Additional information: The findability of the [RESOURCE] can be significantly increased if proper keywords are stated."
 * . 0..*
 * value[x] only CodeableConcept
-* valueCodeableConcept.coding.system 1..1 ^short "Code of the keyword"
-* valueCodeableConcept.coding.system ^requirement "If known, you can provide the code of the keyword in the classification/vocabulary used."
+* valueCodeableConcept.coding.system 1..1 
+* valueCodeableConcept.coding.system ^short = "Code of the keyword"
+* valueCodeableConcept.coding.system ^comment =  "If known, you can provide the code of the keyword in the classification/vocabulary used."
 * valueCodeableConcept.text 1..1 
-* valueCodeableConcept.text ^short Keyword
-* valueCodeableConcept.text ^definition "Keyword(s) describing the [RESOURCE]."
-* valueCodeableConcept.text ^comment "The use of terms from established classifications/vocabularies (e.g. SNOMED CT, MeSH, UMLS) is preferred. However, also self-assigned keywords are allowed. Preferably, use terms from SNOMED CT or MESH."
+* valueCodeableConcept.text ^short = "Keyword"
+* valueCodeableConcept.text ^definition = "Keyword(s) describing the [RESOURCE]."
+* valueCodeableConcept.text ^comment = "The use of terms from established classifications/vocabularies (e.g. SNOMED CT, MeSH, UMLS) is preferred. However, also self-assigned keywords are allowed. Preferably, use terms from SNOMED CT or MESH."
 
 
 

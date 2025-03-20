@@ -54,7 +54,7 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Keyword(s) describing the [RESOURCE]",
+        "short": "Keywords",
         "definition": "Group of items providing information about keywords describing the [RESOURCE].",
         "comment": "Additional information: The findability of the [RESOURCE] can be significantly increased if proper keywords are stated.",
         "mapping": [
@@ -86,6 +86,8 @@
       {
         "id": "Extension.value[x].coding.system",
         "path": "Extension.value[x].coding.system",
+        "short": "Code of the keyword",
+        "comment": "If known, you can provide the code of the keyword in the classification/vocabulary used.",
         "min": 1,
         "mapping": [
           {
@@ -97,6 +99,9 @@
       {
         "id": "Extension.value[x].text",
         "path": "Extension.value[x].text",
+        "short": "Keyword",
+        "definition": "Keyword(s) describing the [RESOURCE].",
+        "comment": "The use of terms from established classifications/vocabularies (e.g. SNOMED CT, MeSH, UMLS) is preferred. However, also self-assigned keywords are allowed. Preferably, use terms from SNOMED CT or MESH.",
         "min": 1,
         "mapping": [
           {

@@ -31,7 +31,7 @@ Description: "Profile intended to capture information on the core information of
 * status = #final (exactly)
 * type 1..1
 * type from NFDI4Health_VS_MDS_Resource_Type_NCI_Local (required)
-* type ^short = "type" "type of the resource"
+* type ^short = "type of the resource"
 * type ^definition = "A term describing the resource."
 * category 0..1
 * category ^short = "In what form is the [RESOURCE] available?"

@@ -40,6 +40,7 @@
 [InstanceOfStudySHIP]: ResearchStudy-InstanceOfStudySHIP.html
 [InstanceOfStudySPOVID]: ResearchStudy-InstanceOfStudySPOVID.html
 [NFDI4Health_VS_MDS_CD_CommonChronicDiseaseName_SCT_Local]: ValueSet-nfdi4health-vs-mds-cd-common-chronic-disease-name-sct-local.html
+[NFDI4Health_LM_MDS_Core]: StructureDefinition-nfdi4health-lm-mds-core.html
 [nfdi4health-cps-mds-capability-statement]: CapabilityStatement-nfdi4health-cps-mds-capability-statement.html
 [NFDI4Health_CS_MDS_Label_FHIR]: CodeSystem-nfdi4health-cs-mds-label-fhir.html
 [NFDI4Health_CS_MDS_Provenance_Data_Source]: CodeSystem-nfdi4health-cs-mds-provenance-data-source.html
@@ -96,9 +97,8 @@
 [NFDI4Health_EX_MDS_URI]: StructureDefinition-nfdi4health-ex-mds-uri.html
 [NFDI4Health_EX_MDS_Use_Rights_Confirmations]: StructureDefinition-nfdi4health-ex-mds-use-rights-confirmations.html
 [NFDI4Health_EX_MDS_Version]: StructureDefinition-nfdi4health-ex-mds-version.html
-[NFDI4Health_LM_MDS_Core]: StructureDefinition-nfdi4health-lm-mds-core.html
 [NFDI4Health_LM_MDS_Design]: StructureDefinition-nfdi4health-lm-mds-design.html
-[NFDI4Health_LM_Metadataschema_EOCD]: StructureDefinition-nfdi4health-lm-metadataschema-eocd.html
+[NFDI4Health_LM_MDS_EOCD]: StructureDefinition-nfdi4health-lm-mds-eocd.html
 [Module_Nutritional_Epidemiology]: StructureDefinition-nfdi4health-lm-metadataschema-ne.html
 [NFDI4Health_LM_Metadataschema_RecordLinkage]: StructureDefinition-nfdi4health-lm-metadatenschema-recordlinkage.html
 [NFDI4Health_VS_MDS_NE_Device_NCI_SNOMEDCT_Local]: ValueSet-nfdi4health-vs-mds-ne-device-nci-snomedct-local.html

@@ -356,6 +356,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/nfdi4health-lm-mds-core"
+        },
+        "name": "NFDI4Health Core Metadataschema",
+        "description": "NFDI4Health Logical Model of Core V3.3.1",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CapabilityStatement/nfdi4health-cps-mds-capability-statement"
         },
         "name": "Nfdi4Health CPS MDS Capability Statment",
@@ -804,42 +812,34 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nfdi4health-lm-mds-core"
-        },
-        "name": "NFDI4Health LM Core Metadataschema",
-        "description": "NFDI4Health Logical Model Core V 3.3.1",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/nfdi4health-lm-mds-design"
         },
-        "name": "NFDI4Health LM MDS Module Design V 3.3.1",
-        "description": "NFDI4Health Logical Model Module Design V3.3.1",
+        "name": "NFDI4Health Module Design",
+        "description": "NFDI4Health Logical Model of Module Design V3.3.1",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nfdi4health-lm-metadataschema-eocd"
+          "reference": "StructureDefinition/nfdi4health-lm-mds-eocd"
         },
-        "name": "NFDI4Health LM Module Epidemiology of Chronic Diseases V 3.3",
-        "description": "NFDI4Health Logical Model of MDS Module Epidemiology of Chronic Diseases",
+        "name": "NFDI4Health Module Epidemiology of Chronic Diseases",
+        "description": "NFDI4Health Logical Model of Module Epidemiology of Chronic Diseases V3.3.1",
         "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/nfdi4health-lm-metadataschema-ne"
         },
-        "name": "NFDI4Health LM Module Nutritional Epidemiology V 3.3.1",
-        "description": "NFDI4Health Nutritional Epidemiology Module",
+        "name": "NFDI4Health Module Nutritional Epidemiology",
+        "description": "NFDI4Health Logical Module of Module Nutritional Epidemiology V3.3.1",
         "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/nfdi4health-lm-metadatenschema-recordlinkage"
         },
-        "name": "NFDI4Health LM Module Record Linkage V 3.3.1",
-        "description": "Group of items providing information on record linkage.",
+        "name": "NFDI4Health Module Record Linkage",
+        "description": "NFDI4Health Logical Module of Module Record Linkage V3.3.1",
         "exampleBoolean": false
       },
       {
@@ -1038,8 +1038,8 @@
         "reference": {
           "reference": "ValueSet/nfdi4health-vs-mds-countries-iso"
         },
-        "name": "NFDI4Health VS MDS Countries [ISO]",
-        "description": "Value set defining codes countries where the study takes place.",
+        "name": "NFDI4Health VS MDS Countries [ISO] 2-letter codes",
+        "description": "This value set defines the ISO 3166 Part 1 2-letter codes.",
         "exampleBoolean": false
       },
       {

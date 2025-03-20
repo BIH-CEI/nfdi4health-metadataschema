@@ -46,7 +46,7 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Language(s) of the [RESOURCE]",
+        "short": "Languages",
         "definition": "Language(s) in which the [RESOURCE] is conducted/provided.",
         "mapping": [
           {
@@ -85,6 +85,7 @@
         "sliceName": "valueCode",
         "short": "A human language.",
         "definition": "A human language.",
+        "comment": "Select all that apply.",
         "min": 0,
         "max": "1",
         "type": [

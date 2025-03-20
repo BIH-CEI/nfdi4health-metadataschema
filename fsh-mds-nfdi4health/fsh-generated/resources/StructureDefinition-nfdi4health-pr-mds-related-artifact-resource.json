@@ -89,7 +89,7 @@
       {
         "id": "RelatedArtifact.url",
         "path": "RelatedArtifact.url",
-        "short": "Web page of the [RESOURCE]",
+        "short": "Web page",
         "definition": "If existing, a link to the web page directly relevant to the [RESOURCE].",
         "comment": "Additional information: Other web pages related to the [RESOURCE] can additionally be entered in the section 'Related resources'.",
         "mapping": [

@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
   "id": "nfdi4health-lm-metadataschema-ne",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-ne",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-mds-ne",
   "name": "Module_Nutritional_Epidemiology",
-  "title": "NFDI4Health LM Module Nutritional Epidemiology V 3.3.1",
+  "title": "NFDI4Health Module Nutritional Epidemiology",
   "status": "draft",
   "publisher": "NFDI4Health",
   "contact": [
@@ -16,7 +16,7 @@
       ]
     }
   ],
-  "description": "NFDI4Health Nutritional Epidemiology Module",
+  "description": "NFDI4Health Logical Module of Module Nutritional Epidemiology V3.3.1",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -27,20 +27,20 @@
   ],
   "kind": "logical",
   "abstract": false,
-  "type": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-metadataschema-ne",
+  "type": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-mds-ne",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
   "derivation": "specialization",
   "differential": {
     "element": [
       {
-        "id": "nfdi4health-lm-metadataschema-ne",
-        "path": "nfdi4health-lm-metadataschema-ne",
-        "short": "NFDI4Health LM Module Nutritional Epidemiology V 3.3.1",
-        "definition": "NFDI4Health Nutritional Epidemiology Module"
+        "id": "nfdi4health-lm-mds-ne",
+        "path": "nfdi4health-lm-mds-ne",
+        "short": "NFDI4Health Module Nutritional Epidemiology",
+        "definition": "NFDI4Health Logical Module of Module Nutritional Epidemiology V3.3.1"
       },
       {
-        "id": "nfdi4health-lm-metadataschema-ne.DietAssessment",
-        "path": "nfdi4health-lm-metadataschema-ne.DietAssessment",
+        "id": "nfdi4health-lm-mds-ne.DietAssessment",
+        "path": "nfdi4health-lm-mds-ne.DietAssessment",
         "short": "DietAssessment",
         "definition": "Diet assessment information collected in the [RESOURCE]",
         "comment": "Cardinality: 1..*, if Resource.nutritionalData == 'Yes'; otherwise 0.. 0",
@@ -59,8 +59,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-ne.DietAssessment.instrument",
-        "path": "nfdi4health-lm-metadataschema-ne.DietAssessment.instrument",
+        "id": "nfdi4health-lm-mds-ne.DietAssessment.instrument",
+        "path": "nfdi4health-lm-mds-ne.DietAssessment.instrument",
         "short": "instrument",
         "definition": "Dietary assessment instrument used",
         "comment": "Cardinality: 1..1",
@@ -84,8 +84,8 @@
         }
       },
       {
-        "id": "nfdi4health-lm-metadataschema-ne.DietAssessment.ffqItemsNumber",
-        "path": "nfdi4health-lm-metadataschema-ne.DietAssessment.ffqItemsNumber",
+        "id": "nfdi4health-lm-mds-ne.DietAssessment.ffqItemsNumber",
+        "path": "nfdi4health-lm-mds-ne.DietAssessment.ffqItemsNumber",
         "short": "ffqItemsNumber",
         "definition": "Number of items in the food frequency questionnaire (FFQ)",
         "comment": "Cardinality: 1..1, if DietAssessment.instrument == 'Food frequency questionnaire (FFQ)'; otherwise 0.. 0",
@@ -104,8 +104,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-ne.DietAssessment.mode",
-        "path": "nfdi4health-lm-metadataschema-ne.DietAssessment.mode",
+        "id": "nfdi4health-lm-mds-ne.DietAssessment.mode",
+        "path": "nfdi4health-lm-mds-ne.DietAssessment.mode",
         "short": "mode",
         "definition": "Modes used to apply the dietary assessment instrument",
         "comment": "Cardinality: 1..*",
@@ -129,8 +129,8 @@
         }
       },
       {
-        "id": "nfdi4health-lm-metadataschema-ne.DietAssessment.device",
-        "path": "nfdi4health-lm-metadataschema-ne.DietAssessment.device",
+        "id": "nfdi4health-lm-mds-ne.DietAssessment.device",
+        "path": "nfdi4health-lm-mds-ne.DietAssessment.device",
         "short": "device",
         "definition": "Devices used to apply the dietary assessment instrument",
         "comment": "Cardinality: 1..*",
@@ -154,8 +154,8 @@
         }
       },
       {
-        "id": "nfdi4health-lm-metadataschema-ne.DietAssessment.portionSizeEstimation",
-        "path": "nfdi4health-lm-metadataschema-ne.DietAssessment.portionSizeEstimation",
+        "id": "nfdi4health-lm-mds-ne.DietAssessment.portionSizeEstimation",
+        "path": "nfdi4health-lm-mds-ne.DietAssessment.portionSizeEstimation",
         "short": "portionSizeEstimation",
         "definition": "How was the portion size estimated?",
         "comment": "Cardinality: 1..*",
@@ -179,8 +179,8 @@
         }
       },
       {
-        "id": "nfdi4health-lm-metadataschema-ne.DietAssessment.referencePeriodUnit",
-        "path": "nfdi4health-lm-metadataschema-ne.DietAssessment.referencePeriodUnit",
+        "id": "nfdi4health-lm-mds-ne.DietAssessment.referencePeriodUnit",
+        "path": "nfdi4health-lm-mds-ne.DietAssessment.referencePeriodUnit",
         "short": "referencePeriodUnit",
         "definition": "Reference period unit",
         "comment": "Cardinality: 1..1",
@@ -204,8 +204,8 @@
         }
       },
       {
-        "id": "nfdi4health-lm-metadataschema-ne.DietAssessment.referencePeriodNumber",
-        "path": "nfdi4health-lm-metadataschema-ne.DietAssessment.referencePeriodNumber",
+        "id": "nfdi4health-lm-mds-ne.DietAssessment.referencePeriodNumber",
+        "path": "nfdi4health-lm-mds-ne.DietAssessment.referencePeriodNumber",
         "short": "referencePeriodNumber",
         "definition": "Number of reference period units",
         "comment": "Cardinality: 1..1",
@@ -224,8 +224,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-ne.DietAssessment.repeat",
-        "path": "nfdi4health-lm-metadataschema-ne.DietAssessment.repeat",
+        "id": "nfdi4health-lm-mds-ne.DietAssessment.repeat",
+        "path": "nfdi4health-lm-mds-ne.DietAssessment.repeat",
         "short": "repeat",
         "definition": "Instrument applied repeatedly?",
         "comment": "Cardinality: 1..1",
@@ -244,8 +244,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-ne.DietAssessment.repeatFrequency",
-        "path": "nfdi4health-lm-metadataschema-ne.DietAssessment.repeatFrequency",
+        "id": "nfdi4health-lm-mds-ne.DietAssessment.repeatFrequency",
+        "path": "nfdi4health-lm-mds-ne.DietAssessment.repeatFrequency",
         "short": "repeatFrequency",
         "definition": "Frequency of instrument application",
         "comment": "Cardinality: 1..1, if DietAssessment.repeat == 'Yes'; otherwise 0.. 0",
@@ -264,8 +264,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-ne.DietAssessment.validity",
-        "path": "nfdi4health-lm-metadataschema-ne.DietAssessment.validity",
+        "id": "nfdi4health-lm-mds-ne.DietAssessment.validity",
+        "path": "nfdi4health-lm-mds-ne.DietAssessment.validity",
         "short": "validity",
         "definition": "Instrument validated?",
         "comment": "Cardinality: 1..1",
@@ -284,8 +284,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-ne.DietAssessment.validityReference",
-        "path": "nfdi4health-lm-metadataschema-ne.DietAssessment.validityReference",
+        "id": "nfdi4health-lm-mds-ne.DietAssessment.validityReference",
+        "path": "nfdi4health-lm-mds-ne.DietAssessment.validityReference",
         "short": "validityReference",
         "definition": "Reference describing the validation",
         "comment": "Cardinality: 1..1, if DietAssessment.validity == 'Yes'; otherwise 0.. 0",
@@ -304,8 +304,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-ne.DietAssessment.reliability",
-        "path": "nfdi4health-lm-metadataschema-ne.DietAssessment.reliability",
+        "id": "nfdi4health-lm-mds-ne.DietAssessment.reliability",
+        "path": "nfdi4health-lm-mds-ne.DietAssessment.reliability",
         "short": "reliability",
         "definition": "Instrument described according to reliability?",
         "comment": "Cardinality: 1..1",
@@ -324,8 +324,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-ne.DietAssessment.reliabilityReference",
-        "path": "nfdi4health-lm-metadataschema-ne.DietAssessment.reliabilityReference",
+        "id": "nfdi4health-lm-mds-ne.DietAssessment.reliabilityReference",
+        "path": "nfdi4health-lm-mds-ne.DietAssessment.reliabilityReference",
         "short": "reliabilityReference",
         "definition": "Reference describing reliability measures",
         "comment": "Cardinality: 1..1, if DietAssessment.reliability == 'Yes'; otherwise 0.. 0",
@@ -344,8 +344,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-metadataschema-ne.DietAssessment.dietarySupplements",
-        "path": "nfdi4health-lm-metadataschema-ne.DietAssessment.dietarySupplements",
+        "id": "nfdi4health-lm-mds-ne.DietAssessment.dietarySupplements",
+        "path": "nfdi4health-lm-mds-ne.DietAssessment.dietarySupplements",
         "short": "dietarySupplements",
         "definition": "Dietary supplements inquired?",
         "comment": "Cardinality: 1..1",

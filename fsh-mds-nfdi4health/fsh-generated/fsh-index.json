@@ -429,7 +429,7 @@
     "fshType": "Extension",
     "fshFile": "extensions/NFDI4Health_EX_MDS_Execution_Language.fsh",
     "startLine": 1,
-    "endLine": 19
+    "endLine": 20
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-format.json",
@@ -461,7 +461,7 @@
     "fshType": "Extension",
     "fshFile": "extensions/NFDI4Health_EX_MDS_Keywords.fsh",
     "startLine": 1,
-    "endLine": 23
+    "endLine": 28
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-label.json",
@@ -773,7 +773,7 @@
     "fshType": "Logical",
     "fshFile": "logicals/lm-mds-nfdi4health-core-v3_3_1.fsh",
     "startLine": 1,
-    "endLine": 573
+    "endLine": 66
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-lm-mds-design.json",
@@ -784,12 +784,12 @@
     "endLine": 782
   },
   {
-    "outputFile": "StructureDefinition-nfdi4health-lm-metadataschema-eocd.json",
-    "fshName": "NFDI4Health_LM_Metadataschema_EOCD",
+    "outputFile": "StructureDefinition-nfdi4health-lm-mds-eocd.json",
+    "fshName": "NFDI4Health_LM_MDS_EOCD",
     "fshType": "Logical",
-    "fshFile": "logicals/lm-mds-nfdi4health-epidemiology-of-chronic-diseases.fsh",
+    "fshFile": "logicals/lm-mds-nfdi4health-epidemiology-of-chronic-diseases_v3_3_1.fsh",
     "startLine": 1,
-    "endLine": 22
+    "endLine": 46
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-lm-metadataschema-ne.json",
@@ -837,7 +837,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/NFDI4Health_PR_MDS_Composition.fsh",
     "startLine": 1,
-    "endLine": 65
+    "endLine": 66
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-pr-mds-conditions.json",
@@ -957,7 +957,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/NFDI4Health_PR_MDS_Study.fsh",
     "startLine": 1,
-    "endLine": 166
+    "endLine": 165
   },
   {
     "outputFile": "ValueSet-nfdi4health-vs-mds-cd-common-chronic-disease-name-sct-local.json",

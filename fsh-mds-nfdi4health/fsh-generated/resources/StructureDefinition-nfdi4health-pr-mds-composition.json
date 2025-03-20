@@ -229,8 +229,9 @@
       {
         "id": "Composition.identifier",
         "path": "Composition.identifier",
-        "short": "ID of the [RESOURCE]",
-        "definition": "Unique identifier of the resource used for identification within the NFDI4Health."
+        "short": "Identifier",
+        "definition": "Unique identifier of the resource used for identification within the NFDI4Health.",
+        "comment": "Additional information: The identifier is assigned automatically."
       },
       {
         "id": "Composition.identifier.value",
@@ -251,8 +252,8 @@
       {
         "id": "Composition.type",
         "path": "Composition.type",
-        "short": "Resource classification",
-        "definition": "Group of items providing information about the classification of the resource within the predefined categories.",
+        "short": "type of the resource",
+        "definition": "A term describing the resource.",
         "binding": {
           "strength": "required",
           "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-resource-type-nci-local"
@@ -278,7 +279,7 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "Resource.classificiation.typeGeneral"
+            "map": "Resource.classification.typeGeneral"
           }
         ]
       },
@@ -353,9 +354,9 @@
       {
         "id": "Composition.title",
         "path": "Composition.title",
-        "short": "Title/name",
-        "definition": "Scientific unabbreviated title or name of the resource.",
-        "comment": "Additional Information: If no official title/name has been defined yet, please provide a title/name that is suitable for public display. | Short Input Help: Please provide at least one title/name of the resource. If the original title is not in English, please also provide an English translation of the original title.",
+        "short": "Title(s)/name(s) or acronym(s) of the [RESOURCE]",
+        "definition": "Group of items providing information about title(s)/name(s) or acronym(s) of the resource.",
+        "comment": "Based on ResearchStudy.label (R5), with an extension for language.",
         "mapping": [
           {
             "identity": "NFDI4Health",

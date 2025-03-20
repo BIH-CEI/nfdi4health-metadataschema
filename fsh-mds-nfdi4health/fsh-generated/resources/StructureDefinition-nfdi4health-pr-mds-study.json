@@ -393,21 +393,6 @@
         "min": 5
       },
       {
-        "id": "ResearchStudy.extension:executionLanguage",
-        "path": "ResearchStudy.extension",
-        "sliceName": "executionLanguage",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-execution-language"
-            ]
-          }
-        ]
-      },
-      {
         "id": "ResearchStudy.extension:descriptions",
         "path": "ResearchStudy.extension",
         "sliceName": "descriptions",
