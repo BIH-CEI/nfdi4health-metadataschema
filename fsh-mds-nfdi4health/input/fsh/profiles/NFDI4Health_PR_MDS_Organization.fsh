@@ -9,12 +9,12 @@ Description: "Profile to collect information on organizations/institutions havin
 * ^publisher = "NFDI4Health"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
-* . ^short = "Details about the contributing organisation(s)/institution(s)/group(s) | Organisation(s) associated with the contributor"
-* . ^definition = "For 1.10.2 Resource.contributors.organisational: Group of items providing information about group(s) of persons, institution(s) or organisation(s) contributing to the [RESOURCE]. | For 1.10.6 Resource.contributors.affiliation: Group of items providing further information about the organisation(s) associated with the contributor."
-* . ^comment = "For 1.10.2 Resource.contributors.organisational: Additional information: Group of items applicable only when providing organisational, institutional or group names."
+* . ^short = "Details about the contributing organisation(s)/institution(s)/group(s)"
+* . ^definition = "Group of items providing information about group(s) of persons, institution(s) or organisation(s) contributing to the [RESOURCE]."
+* . ^comment = "Additional information: Group of items applicable only when providing organisational, institutional or group names."
 
 
-* identifier ^short = "Funding identifier(s)"
+* identifier ^short = "Funding identifiers"
 * identifier ^definition = "Identifier(s) assigned by a funder to the [RESOURCE]."
 * identifier.value 1..1
 * name 1..
@@ -46,7 +46,7 @@ Description: "Profile to collect information on organizations/institutions havin
 * type 1..1
 * type from NFDI4Health_VS_MDS_Organisational_Roles_NCI_Local (required)
 * type ^short = "Contributor type"
-* type ^definition = "Contributor type an organisation, institution or group fulfills. For example, this can be a sponsor of the study or a group of authors of the document."
+* type ^definition = "The type of role that an organization, institution, or group of persons fulfills as a contributor. For example, this could include being a sponsor of the study or a group of authors of the document."
 * type ^comment = "Short input help: Which contributor type does the organisation, institution or group fulfill? Select one value from the list."
 * partOf ^short = "Organisation(s) associated with the contributor"
 * partOf ^definition = "Group of items providing further information about the organisation(s) associated with the contributor."
@@ -57,7 +57,6 @@ Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_PR_MDS_Organization
 * -> "Resource.contributors.organisational"
-* -> "Resource.contributors.affiliation"
 * identifier.value -> "Resource.contributors.organisational.fundingIds"
 * name -> "Resource.contributors.organisational.name"
 * telecom[email] -> "Resource.contributors.email"

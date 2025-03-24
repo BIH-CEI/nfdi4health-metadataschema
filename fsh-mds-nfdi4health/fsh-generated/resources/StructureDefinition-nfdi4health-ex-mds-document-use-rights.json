@@ -46,7 +46,7 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "(Re-)use rights",
+        "short": "Use rights",
         "definition": "Group of items providing information about the rights to (re-)use the [RESOURCE].",
         "max": "1",
         "mapping": [

@@ -104,6 +104,7 @@
         "path": "Extension.extension",
         "sliceName": "link",
         "short": "URL of the license",
+        "definition": "Link to a web page that contains detailed information about the selected license.",
         "min": 0,
         "max": "1",
         "mapping": [

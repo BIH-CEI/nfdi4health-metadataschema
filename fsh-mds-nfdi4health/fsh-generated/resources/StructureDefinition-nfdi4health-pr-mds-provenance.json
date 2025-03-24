@@ -73,7 +73,7 @@
         "id": "Provenance.meta.versionId",
         "path": "Provenance.meta.versionId",
         "short": "Version number",
-        "definition": "Version number of the [RESOURCE] within the portal/system",
+        "definition": "Version number of the [RESOURCE] within this portal",
         "mapping": [
           {
             "identity": "NFDI4Health",
@@ -171,7 +171,6 @@
             "code": "Reference",
             "targetProfile": [
               "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner",
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner-role",
               "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-organization"
             ]
           }

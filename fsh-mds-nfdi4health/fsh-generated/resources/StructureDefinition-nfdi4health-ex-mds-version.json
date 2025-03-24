@@ -46,12 +46,12 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Version]",
+        "short": "Version",
         "definition": "If applicable, the version number of the [RESOURCE].",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.9.1 Resource.nonStudyDetails.version"
+            "map": "Resource.nonStudyDetails.version"
           }
         ]
       },

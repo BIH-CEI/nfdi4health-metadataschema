@@ -22,6 +22,7 @@ Description: "Extension providing information about the license applying to the 
 * extension[label] ^definition = "License defining the rights to (re-)use the [RESOURCE]."
 * extension[label] ^comment = "Short input help: Select one value from the list. If 'Other' is selected, please provide an explanation of the (re-)use terms and conditions in the field 'Additional information about use rights'."
 * extension[link] ^short = "URL of the license"
+* extension[link] ^definition = "Link to a web page that contains detailed information about the selected license."
 * extension[link].value[x] only url
 
 Mapping: NFDI4Health-Copyright-Label-And-Link-to-FHIR

@@ -11,7 +11,7 @@ Description: "Extension providing information about the rights to (re-)use the [
 * ^context.type = #element
 * ^context.expression = "DocumentReference"
 * . 0..1
-* . ^short = "(Re-)use rights"
+* . ^short = "Use rights"
 * . ^definition = "Group of items providing information about the rights to (re-)use the [RESOURCE]."
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"

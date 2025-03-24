@@ -55,24 +55,20 @@
       {
         "id": "Organization",
         "path": "Organization",
-        "short": "Details about the contributing organisation(s)/institution(s)/group(s) | Organisation(s) associated with the contributor",
-        "definition": "For 1.10.2 Resource.contributors.organisational: Group of items providing information about group(s) of persons, institution(s) or organisation(s) contributing to the [RESOURCE]. | For 1.10.6 Resource.contributors.affiliation: Group of items providing further information about the organisation(s) associated with the contributor.",
-        "comment": "For 1.10.2 Resource.contributors.organisational: Additional information: Group of items applicable only when providing organisational, institutional or group names.",
+        "short": "Details about the contributing organisation(s)/institution(s)/group(s)",
+        "definition": "Group of items providing information about group(s) of persons, institution(s) or organisation(s) contributing to the [RESOURCE].",
+        "comment": "Additional information: Group of items applicable only when providing organisational, institutional or group names.",
         "mapping": [
           {
             "identity": "NFDI4Health",
             "map": "Resource.contributors.organisational"
-          },
-          {
-            "identity": "NFDI4Health",
-            "map": "Resource.contributors.affiliation"
           }
         ]
       },
       {
         "id": "Organization.identifier",
         "path": "Organization.identifier",
-        "short": "Funding identifier(s)",
+        "short": "Funding identifiers",
         "definition": "Identifier(s) assigned by a funder to the [RESOURCE]."
       },
       {
@@ -90,7 +86,7 @@
         "id": "Organization.type",
         "path": "Organization.type",
         "short": "Contributor type",
-        "definition": "Contributor type an organisation, institution or group fulfills. For example, this can be a sponsor of the study or a group of authors of the document.",
+        "definition": "The type of role that an organization, institution, or group of persons fulfills as a contributor. For example, this could include being a sponsor of the study or a group of authors of the document.",
         "comment": "Short input help: Which contributor type does the organisation, institution or group fulfill? Select one value from the list.",
         "min": 1,
         "max": "1",

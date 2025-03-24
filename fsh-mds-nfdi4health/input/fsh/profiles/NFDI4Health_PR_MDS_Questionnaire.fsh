@@ -36,7 +36,7 @@ Description: "Profile collecting information on questionnaires within NFDI4Healt
 * identifier[DRKS].type = $Remaining#098 "DRKS" (exactly)
 * identifier[DRKS].system 1..
 * identifier[DRKS].system = "https://www.drks.de" (exactly)
-* identifier[DRKS].system ^definition = "Name of the system where the given resource is already registered. Fixed to DRKS."
+* identifier[DRKS].system ^definition = "Type/name of the system where the given [RESOURCE] is already registered. Fixed to DRKS."
 * identifier[DRKS].value 1..
 * identifier[DRKS].value ^definition = "Identifier (ID) assigned to the given resource by DRKS."
 * identifier[DRKS].value ^example[0].label = "DRKS Identifier"
@@ -45,7 +45,7 @@ Description: "Profile collecting information on questionnaires within NFDI4Healt
 * identifier[NCT].type = $NCI#C172240 "Clinicaltrials.gov Identifier" (exactly)
 * identifier[NCT].system 1..
 * identifier[NCT].system = "https://www.clinicaltrials.gov/" (exactly)
-* identifier[NCT].system ^definition = "Name of the system where the given resource is already registered. Fixed to NCT (CT.gov)."
+* identifier[NCT].system ^definition = "Type/name of the system where the given [RESOURCE] is already registered. Fixed to NCT (CT.gov)."
 * identifier[NCT].type
 * identifier[NCT].value 1..
 * identifier[NCT].value ^definition = "Identifier (ID) assigned to the given resource by ClinicalTrials.gov."
@@ -55,55 +55,54 @@ Description: "Profile collecting information on questionnaires within NFDI4Healt
 * identifier[ISRCTN].type = $Remaining#099 "ISRCTN" (exactly)
 * identifier[ISRCTN].system 1..
 * identifier[ISRCTN].system = "https://www.isrctn.com/" (exactly)
-* identifier[ISRCTN].system ^definition = "Name of the system where the given resource is already registered. Fixed to ISRCTN."
+* identifier[ISRCTN].system ^definition = "Type/name of the system where the given [RESOURCE] is already registered. Fixed to ISRCTN."
 * identifier[ISRCTN].value 1..
 * identifier[ISRCTN].value ^definition = "Identifier (ID) assigned to the given resource by ISRCTN."
 * identifier[EudraCT] ^definition = "Group of items providing information about identifiers (IDs) assigned to the given resource by another registering systems, e.g. a register of clinical trials or a data repository."
 * identifier[EudraCT].type = $NCI#C132782 "European Union Drug Regulating Authorities Clinical Trials Database" (exactly)
 * identifier[EudraCT].system 1..
 * identifier[EudraCT].system = "https://eudract.ema.europa.eu/results-web/index.xhtml" (exactly)
-* identifier[EudraCT].system ^definition = "Name of the system where the given resource is already registered. Fixed to EudraCT."
+* identifier[EudraCT].system ^definition = "Type/name of the system where the given [RESOURCE] is already registered. Fixed to EudraCT."
 * identifier[EudraCT].value 1..
 * identifier[EUDAMED] ^definition = "Group of items providing information about identifiers (IDs) assigned to the given resource by another registering systems, e.g. a register of clinical trials or a data repository."
 * identifier[EUDAMED].type = $Remaining#100 "EUDAMED" (exactly)
 * identifier[EUDAMED].system 1..
 * identifier[EUDAMED].system = "https://ec.europa.eu/tools/eudamed/#/screen/home" (exactly)
-* identifier[EUDAMED].system ^definition = "Name of the system where the given resource is already registered. Fixed to EUDAMED."
+* identifier[EUDAMED].system ^definition = "Type/name of the system where the given [RESOURCE] is already registered. Fixed to EUDAMED."
 * identifier[EUDAMED].value 1..
 * identifier[EUDAMED].value ^definition = "Identifier (ID) assigned to the given resource by EUDAMED."
 * identifier[UTN] ^definition = "Group of items providing information about identifiers (IDs) assigned to the given resource by another registering systems, e.g. a register of clinical trials or a data repository."
 * identifier[UTN].type = $Remaining#101 "UTN" (exactly)
 * identifier[UTN].system 1..
 * identifier[UTN].system = "https://trialsearch.who.int/utn.aspx" (exactly)
-* identifier[UTN].system ^definition = "Name of the system where the given resource is already registered. Fixed to UTN (WHO)."
+* identifier[UTN].system ^definition = "Type/name of the system where the given [RESOURCE] is already registered. Fixed to UTN (WHO)."
 * identifier[UTN].value 1..
 * identifier[KonsortSWD] ^definition = "Group of items providing information about identifiers (IDs) assigned to the given resource by another registering systems, e.g. a register of clinical trials or a data repository."
 * identifier[KonsortSWD].type = $Remaining#102 "KonsortSWD" (exactly)
 * identifier[KonsortSWD].system 1..
 * identifier[KonsortSWD].system = "https://www.konsortswd.de/" (exactly)
-* identifier[KonsortSWD].system ^definition = "Name of the system where the given resource is already registered. Fixed to KonsortSWD."
+* identifier[KonsortSWD].system ^definition = "Type/name of the system where the given [RESOURCE] is already registered. Fixed to KonsortSWD."
 * identifier[KonsortSWD].value 1..
 * identifier[KonsortSWD].value ^definition = "Identifier (ID) assigned to the given resource by KonsortSWD."
 * identifier[MDMPortal] ^definition = "Group of items providing information about identifiers (IDs) assigned to the given resource by another registering systems, e.g. a register of clinical trials or a data repository."
 * identifier[MDMPortal].type = $Remaining#103 "MDM Portal" (exactly)
 * identifier[MDMPortal].system 1..
 * identifier[MDMPortal].system = "https://www.mdm-portal.de/" (exactly)
-* identifier[MDMPortal].system ^definition = "Name of the system where the given resource is already registered. Fixed to MDM Portal."
+* identifier[MDMPortal].system ^definition = "Type/name of the system where the given [RESOURCE] is already registered. Fixed to MDM Portal."
 * identifier[MDMPortal].value 1..
 * identifier[MDMPortal].value ^definition = "Identifier (ID) assigned to the given resource by MDM Portal."
 * identifier[Other] ^short = "Identifier"
 * identifier[Other] ^definition = "Identifier (ID) assigned to the given resource by another registering system, e.g. by a register of clinical trials or a data repository."
 * identifier[Other].type = $NCI#C17649 "Other" (exactly)
-* identifier[Other].system ^definition = "Type/name of the system where the given resource is already registered."
+* identifier[Other].system ^definition = "Type/Type/name of the system where the given [RESOURCE] is already registered."
 * identifier[Other].value 1..
 * identifier[Other].value ^definition = "Identifier (ID) assigned to the given resource by another registering system, e.g. by a register of clinical trials or a data repository."
 * version ^short = "Version"
 * version ^definition = "If applicable, the version number of the [RESOURCE]."
 * status = #active (exactly)
 * status ^comment = "The item does not exist in NFDI4Health' MDS. Fixed to 'active' for all studies."
-* copyright ^short = "(Re-)use rights"
+* copyright ^short = "Use rights"
 * copyright ^definition = "Group of items providing information about the rights to (re-)use the [RESOURCE]."
-* copyright ^comment = "Additional information about use rights"
 * copyright.extension ^slicing.discriminator.type = #value
 * copyright.extension ^slicing.discriminator.path = "url"
 * copyright.extension ^slicing.rules = #open
@@ -158,9 +157,9 @@ Source: NFDI4Health_PR_MDS_Questionnaire
 * copyright.extension[NFDI4Health_EX_MDS_Copyright_Label_And_Link] -> "Resource.nonStudyDetails.useRights.label"
 * copyright.extension[NFDI4Health_EX_MDS_Copyright_Label_And_Link] -> "Resource.nonStudyDetails.useRights.link"
 * copyright.extension[useRightsConfirmations] -> "Resource.nonStudyDetails.useRights.useRightsConfirmations"
-* extension[relatedResources] -> "1.12 Resource.ids"
-* extension[relatedResources] -> "1.13 Resource.idsNfdi4health"
-* extension[relatedResources] -> "1.8 Resource.webpage"
+* extension[relatedResources] -> "Resource.ids"
+* extension[relatedResources] -> "Resource.idsNfdi4health"
+* extension[relatedResources] -> "Resource.webpage"
 * extension[format] -> "Resource.nonStudyDetails.format"
 * extension[descriptions] -> "Resource.descriptions"
 

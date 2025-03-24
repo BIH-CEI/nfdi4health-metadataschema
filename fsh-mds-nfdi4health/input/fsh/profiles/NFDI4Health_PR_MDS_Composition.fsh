@@ -52,13 +52,13 @@ Description: "Profile intended to capture information on the core information of
 * section contains
     nutritionalData 0..* and
     chronicDiseases 0..*
-* section[nutritionalData] ^short = "Group of items providing information on diet assessment."
-* section[nutritionalData] ^definition = "Specification of the dietary assessment instrument used in the [RESOURCE]."
+* section[nutritionalData] ^short = "Nutritional data collected?"
+* section[nutritionalData] ^definition = "Indication whether the [RESOURCE] collects nutritional data."
 * section[nutritionalData] ^comment = "1..*, if Resource.nutritionalData == 'Yes'; otherwise 0.. 0"
 * section[nutritionalData].code = $NCI#C16927 "Nutritional Science"
 * section[nutritionalData].entry 1..1
 * section[nutritionalData].entry only Reference(NFDI4Health_PR_MDS_Observation_Nutritional_Epidemiology)
-* section[chronicDiseases] ^short = "Includes chronic diseases?"
+* section[chronicDiseases] ^short = "Chronic diseases included?"
 * section[chronicDiseases] ^definition = "Indication whether the [RESOURCE] addresses chronic diseases."
 * section[chronicDiseases] ^comment = "Cardinality: 1..*, if Resource.chronicDiseases == 'Yes' AND Resource.classification.type == ('Study protocol' OR 'Informed consent form' OR 'Patient information sheet' OR 'Manual of operations (SOPs)' OR 'Statistical analysis plan' OR 'Data management plan' OR 'Case report form' OR 'Interview scheme and themes' OR 'Observation guide' OR 'Discussion guide' OR 'Participant tasks' OR 'Other study document' OR 'Other'); otherwise 0..0 / Source of the property and/or allowed values: NFDI4Health UC 5.2 requirements"
 * section[chronicDiseases].code = $NCI#C165593 "Chronic Disease"
@@ -136,6 +136,7 @@ Source: NFDI4Health_PR_MDS_Composition
 * extension[provenanceDataSource] -> "Resource.provenance.dataSource"
 * section[nutritionalData] ->  "DietAssessment"
 * section[chronicDiseases] -> "ChronicDiseasesEpidemiology"
+* extension[executionLanguage] -> "Resource.languages"
 
 
 

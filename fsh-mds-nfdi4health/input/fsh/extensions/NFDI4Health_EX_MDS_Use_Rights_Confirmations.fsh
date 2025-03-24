@@ -35,7 +35,7 @@ Description: "Extension providing information about licensing, if a Creative Com
 * extension[confirmationIrrevocability] ^comment = "Additional information: The [RESOURCE] can be licensed using a CC-license only if it is free of the third-party rights."
 * extension[confirmationIrrevocability].value[x] only boolean
 * extension[supportByLicensing] ^short = "Do you confirm that the authors of the [RESOURCE] allow NFDI4Health to license the document?"
-* extension[supportByLicensing] ^definition = "Confirmation that NFDI4Health is allowed to license the document, i.e. to mark the [RESOURCE] with the license information."
+* extension[supportByLicensing] ^definition = "Confirmation that NFDI4Health is allowed to license the document, i.e. to add the license information such as a license button and a statement that your material is licensed under a Creative Commons license to the [RESOURCE]."
 * extension[supportByLicensing].value[x] only boolean
 
 Mapping: NFDI4Health-Use-Rights-to-FHIR

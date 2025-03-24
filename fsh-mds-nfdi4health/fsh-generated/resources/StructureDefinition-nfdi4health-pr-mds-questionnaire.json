@@ -134,15 +134,15 @@
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "1.12 Resource.ids"
+            "map": "Resource.ids"
           },
           {
             "identity": "NFDI4Health",
-            "map": "1.13 Resource.idsNfdi4health"
+            "map": "Resource.idsNfdi4health"
           },
           {
             "identity": "NFDI4Health",
-            "map": "1.8 Resource.webpage"
+            "map": "Resource.webpage"
           }
         ]
       },
@@ -226,7 +226,7 @@
       {
         "id": "Questionnaire.identifier:DRKS.system",
         "path": "Questionnaire.identifier.system",
-        "definition": "Name of the system where the given resource is already registered. Fixed to DRKS.",
+        "definition": "Type/name of the system where the given [RESOURCE] is already registered. Fixed to DRKS.",
         "min": 1,
         "fixedUri": "https://www.drks.de",
         "mapping": [
@@ -292,7 +292,7 @@
       {
         "id": "Questionnaire.identifier:NCT.system",
         "path": "Questionnaire.identifier.system",
-        "definition": "Name of the system where the given resource is already registered. Fixed to NCT (CT.gov).",
+        "definition": "Type/name of the system where the given [RESOURCE] is already registered. Fixed to NCT (CT.gov).",
         "min": 1,
         "fixedUri": "https://www.clinicaltrials.gov/",
         "mapping": [
@@ -358,7 +358,7 @@
       {
         "id": "Questionnaire.identifier:ISRCTN.system",
         "path": "Questionnaire.identifier.system",
-        "definition": "Name of the system where the given resource is already registered. Fixed to ISRCTN.",
+        "definition": "Type/name of the system where the given [RESOURCE] is already registered. Fixed to ISRCTN.",
         "min": 1,
         "fixedUri": "https://www.isrctn.com/",
         "mapping": [
@@ -418,7 +418,7 @@
       {
         "id": "Questionnaire.identifier:EudraCT.system",
         "path": "Questionnaire.identifier.system",
-        "definition": "Name of the system where the given resource is already registered. Fixed to EudraCT.",
+        "definition": "Type/name of the system where the given [RESOURCE] is already registered. Fixed to EudraCT.",
         "min": 1,
         "fixedUri": "https://eudract.ema.europa.eu/results-web/index.xhtml",
         "mapping": [
@@ -477,7 +477,7 @@
       {
         "id": "Questionnaire.identifier:EUDAMED.system",
         "path": "Questionnaire.identifier.system",
-        "definition": "Name of the system where the given resource is already registered. Fixed to EUDAMED.",
+        "definition": "Type/name of the system where the given [RESOURCE] is already registered. Fixed to EUDAMED.",
         "min": 1,
         "fixedUri": "https://ec.europa.eu/tools/eudamed/#/screen/home",
         "mapping": [
@@ -537,7 +537,7 @@
       {
         "id": "Questionnaire.identifier:UTN.system",
         "path": "Questionnaire.identifier.system",
-        "definition": "Name of the system where the given resource is already registered. Fixed to UTN (WHO).",
+        "definition": "Type/name of the system where the given [RESOURCE] is already registered. Fixed to UTN (WHO).",
         "min": 1,
         "fixedUri": "https://trialsearch.who.int/utn.aspx",
         "mapping": [
@@ -596,7 +596,7 @@
       {
         "id": "Questionnaire.identifier:KonsortSWD.system",
         "path": "Questionnaire.identifier.system",
-        "definition": "Name of the system where the given resource is already registered. Fixed to KonsortSWD.",
+        "definition": "Type/name of the system where the given [RESOURCE] is already registered. Fixed to KonsortSWD.",
         "min": 1,
         "fixedUri": "https://www.konsortswd.de/",
         "mapping": [
@@ -656,7 +656,7 @@
       {
         "id": "Questionnaire.identifier:MDMPortal.system",
         "path": "Questionnaire.identifier.system",
-        "definition": "Name of the system where the given resource is already registered. Fixed to MDM Portal.",
+        "definition": "Type/name of the system where the given [RESOURCE] is already registered. Fixed to MDM Portal.",
         "min": 1,
         "fixedUri": "https://www.mdm-portal.de/",
         "mapping": [
@@ -717,7 +717,7 @@
       {
         "id": "Questionnaire.identifier:Other.system",
         "path": "Questionnaire.identifier.system",
-        "definition": "Type/name of the system where the given resource is already registered.",
+        "definition": "Type/Type/name of the system where the given [RESOURCE] is already registered.",
         "mapping": [
           {
             "identity": "NFDI4Health",
@@ -759,9 +759,8 @@
       {
         "id": "Questionnaire.copyright",
         "path": "Questionnaire.copyright",
-        "short": "(Re-)use rights",
+        "short": "Use rights",
         "definition": "Group of items providing information about the rights to (re-)use the [RESOURCE].",
-        "comment": "Additional information about use rights",
         "mapping": [
           {
             "identity": "NFDI4Health",

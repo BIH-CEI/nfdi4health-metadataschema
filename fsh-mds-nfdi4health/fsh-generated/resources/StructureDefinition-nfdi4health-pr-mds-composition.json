@@ -203,6 +203,12 @@
               "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-execution-language"
             ]
           }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Resource.languages"
+          }
         ]
       },
       {
@@ -415,8 +421,8 @@
         "id": "Composition.section:nutritionalData",
         "path": "Composition.section",
         "sliceName": "nutritionalData",
-        "short": "Group of items providing information on diet assessment.",
-        "definition": "Specification of the dietary assessment instrument used in the [RESOURCE].",
+        "short": "Nutritional data collected?",
+        "definition": "Indication whether the [RESOURCE] collects nutritional data.",
         "comment": "1..*, if Resource.nutritionalData == 'Yes'; otherwise 0.. 0",
         "min": 0,
         "max": "*",
@@ -459,7 +465,7 @@
         "id": "Composition.section:chronicDiseases",
         "path": "Composition.section",
         "sliceName": "chronicDiseases",
-        "short": "Includes chronic diseases?",
+        "short": "Chronic diseases included?",
         "definition": "Indication whether the [RESOURCE] addresses chronic diseases.",
         "comment": "Cardinality: 1..*, if Resource.chronicDiseases == 'Yes' AND Resource.classification.type == ('Study protocol' OR 'Informed consent form' OR 'Patient information sheet' OR 'Manual of operations (SOPs)' OR 'Statistical analysis plan' OR 'Data management plan' OR 'Case report form' OR 'Interview scheme and themes' OR 'Observation guide' OR 'Discussion guide' OR 'Participant tasks' OR 'Other study document' OR 'Other'); otherwise 0..0 / Source of the property and/or allowed values: NFDI4Health UC 5.2 requirements",
         "min": 0,

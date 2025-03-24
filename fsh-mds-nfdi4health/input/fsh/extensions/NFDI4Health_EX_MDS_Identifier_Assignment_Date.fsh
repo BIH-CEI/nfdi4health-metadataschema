@@ -11,7 +11,7 @@ Description: "Extension to store the date when an identifier was assigned."
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 * ^context.type = #element
 * . 0..1
-* . ^short = "Date of ID assignment"
+* . ^short = "Date of identifier assignment"
 * . ^definition = "Date when the identifier of the related resource was assigned."
 * . ^comment = "Additional information: Preferred date format: DD.MM.YYYY"
 * value[x] only date

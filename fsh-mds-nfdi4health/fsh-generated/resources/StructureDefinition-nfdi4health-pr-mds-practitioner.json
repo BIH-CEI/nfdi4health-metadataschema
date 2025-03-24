@@ -68,7 +68,7 @@
       {
         "id": "Practitioner.identifier",
         "path": "Practitioner.identifier",
-        "short": "Digital identifier(s)",
+        "short": "Digital identifiers",
         "definition": "Group of items providing information about digital identifiers of the person.",
         "mapping": [
           {
@@ -138,7 +138,7 @@
       {
         "id": "Practitioner.name.family",
         "path": "Practitioner.name.family",
-        "short": "Family name(s)",
+        "short": "Family name",
         "definition": "Family name(s) of the person",
         "min": 1,
         "mapping": [

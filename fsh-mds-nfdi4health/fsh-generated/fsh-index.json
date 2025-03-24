@@ -389,7 +389,7 @@
     "fshType": "Extension",
     "fshFile": "extensions/NFDI4Health_EX_MDS_Copyright_Label.fsh",
     "startLine": 1,
-    "endLine": 25
+    "endLine": 26
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-data-sharing-plan.json",
@@ -813,7 +813,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/NFDI4Health_PR_MDS_Affiliation.fsh",
     "startLine": 1,
-    "endLine": 50
+    "endLine": 49
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-pr-mds-centers.json",
@@ -933,7 +933,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/NFDI4Health_PR_MDS_Questionnaire.fsh",
     "startLine": 1,
-    "endLine": 111
+    "endLine": 110
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-pr-mds-registry.json",

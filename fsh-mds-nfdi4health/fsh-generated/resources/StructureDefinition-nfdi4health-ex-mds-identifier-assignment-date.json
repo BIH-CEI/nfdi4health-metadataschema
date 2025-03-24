@@ -45,7 +45,7 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Date of ID assignment",
+        "short": "Date of identifier assignment",
         "definition": "Date when the identifier of the related resource was assigned.",
         "comment": "Additional information: Preferred date format: DD.MM.YYYY",
         "max": "1",

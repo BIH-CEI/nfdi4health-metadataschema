@@ -11,13 +11,13 @@ Description: "Profile to collect information about the contact information and a
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 
 * practitioner 0..1
-* practitioner only Reference(Practitioner or NFDI4Health_PR_MDS_Practitioner)
+* practitioner only Reference(NFDI4Health_PR_MDS_Practitioner)
 * organization only Reference(NFDI4Health_PR_MDS_Affiliation)
 * organization ^short = "Organisation(s) associated with the contributor"
 * organization ^definition = "Group of items providing further information about the organisation(s) associated with the contributor."
 * code 1..1 
 * code ^short = "Contributor type"
-* code ^definition = "Contributor type a person fulfills. For example, this can be a principal investigator of a study or an author of a document."
+* code ^definition = "The type of role that a person fulfills as a contributor. For example, this could include being a principal investigator of the study or an author of the document."
 * code from NFDI4Health_VS_MDS_Personal_Roles_NCI_Local (required)
 * telecom 0..*
 * telecom ^slicing.discriminator.type = #value

@@ -15,7 +15,7 @@ Description: "Extension providing information about the source of information of
 * ^context[+].type = #element
 * ^context[=].expression = "Composition"
 * . 1..1
-* . ^short = "Source of information about the [RESOURCE]"
+* . ^short = "Source of information"
 * . ^definition = "Source of information about the [RESOURCE] and the way it was uploaded/collected."
 * value[x] 1..1
 * value[x] only Coding

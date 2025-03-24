@@ -69,7 +69,6 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Practitioner",
               "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-practitioner"
             ]
           }
@@ -99,7 +98,7 @@
         "id": "PractitionerRole.code",
         "path": "PractitionerRole.code",
         "short": "Contributor type",
-        "definition": "Contributor type a person fulfills. For example, this can be a principal investigator of a study or an author of a document.",
+        "definition": "The type of role that a person fulfills as a contributor. For example, this could include being a principal investigator of the study or an author of the document.",
         "min": 1,
         "max": "1",
         "binding": {

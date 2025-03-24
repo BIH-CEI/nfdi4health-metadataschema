@@ -12,7 +12,7 @@ Description: "Profile to collect information about persons having roles."
 * . ^short = "Details about the contributing person(s)"
 * . ^definition = "Group of items providing information about person(s) contributing to the [RESOURCE]."
 * . ^comment = "Additional information: Group of items applicable only when providing person names."
-* identifier ^short = "Digital identifier(s)"
+* identifier ^short = "Digital identifiers"
 * identifier ^definition = "Group of items providing information about digital identifiers of the person."
 * identifier.type 1..
 * identifier.type ^short = "Scheme"
@@ -30,7 +30,7 @@ Description: "Profile to collect information about persons having roles."
 * identifier.value ^example.valueString = "0000-0003-1379-7023"
 * name 1..1
 * name.family 1..
-* name.family ^short = "Family name(s)"
+* name.family ^short = "Family name"
 * name.family ^definition = "Family name(s) of the person"
 * name.given 1..1
 * name.given ^short = "Given name"

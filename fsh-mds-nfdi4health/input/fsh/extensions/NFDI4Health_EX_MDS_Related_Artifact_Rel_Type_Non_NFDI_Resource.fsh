@@ -13,7 +13,7 @@ Description: "Extension providing information about the relation type of this re
 * ^context.type = #element
 * ^context.expression = "RelatedArtifact.extension"
 * . 0..*
-* . ^short = "Relationship between this [RESOURCE] (A) and the related resource (B)"
+* . ^short = "Relationship between the resources"
 * . ^definition = "Relationship between the [RESOURCE] being registered (A) and the related resource (B)."
 * . ^comment = "Short input help: Select one value from the list."
 * . ^example.label = "General"

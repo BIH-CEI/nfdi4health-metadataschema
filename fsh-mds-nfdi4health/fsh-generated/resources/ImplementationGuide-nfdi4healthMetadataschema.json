@@ -887,7 +887,7 @@
           "reference": "StructureDefinition/nfdi4health-pr-mds-affiliation"
         },
         "name": "NFDI4Health PR MDS Affiliation",
-        "description": "Group of items providing further information about the organisation(s) associated with the contributor.",
+        "description": "Group of items providing further information about the affiliated organisation(s) associated with the contributor.",
         "exampleBoolean": false
       },
       {

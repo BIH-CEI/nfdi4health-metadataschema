@@ -48,7 +48,7 @@
         "path": "Extension",
         "short": "In what form is the [RESOURCE] available? | Type of the related resource",
         "definition": "For Resource.classification.typeGeneral: Specific information about the form in which the [RESOURCE] is available. / For Resource.ids.typeGeneral: Type of the related resource, e.g. journal article, dataset, text, etc.",
-        "comment": "Additional Information: For Resource.classification.typeGeneral: If the [RESOURCE] consists primarily of words for reading and is not covered by another textual resource type in this list, 'Text' should be used instead of 'Other'. | Short Input Help: For Resource.classification.typeGeneral: You can select 'Text' for most of the study documents, e.g. for questionnaires, informed consent forms, case report forms, etc. / For 1.12.4 Resource.ids.typeGeneral: Select one value from the list",
+        "comment": "Additional Information: For Resource.classification.typeGeneral: If the [RESOURCE] consists primarily of words for reading and is not covered by another textual resource type in this list, 'Text' should be used instead of 'Other'. | Short Input Help: For Resource.classification.typeGeneral: You can select 'Text' for most of the study documents, e.g. for questionnaires, informed consent forms, case report forms, etc. / For Resource.ids.typeGeneral: Select one value from the list",
         "max": "1",
         "example": [
           {
