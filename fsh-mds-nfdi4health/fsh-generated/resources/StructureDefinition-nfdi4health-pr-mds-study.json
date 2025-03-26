@@ -748,9 +748,7 @@
       {
         "id": "ResearchStudy.category",
         "path": "ResearchStudy.category",
-        "short": "Is it an interventional or non-interventional [RESOURCE]?",
-        "definition": "Non-interventional design refers to a [RESOURCE] that does not aim to alter its outcomes of interest. Interventional design refers to a [RESOURCE] that aims to alter its outcomes of interest.",
-        "comment": "Short input help: Select between non-interventional and interventional design for the given [RESOURCE].",
+        "short": "Is the study design non-interventional or interventional?",
         "min": 1,
         "max": "1",
         "binding": {
@@ -798,16 +796,21 @@
         ]
       },
       {
-        "id": "ResearchStudy.focus.coding.extension:uri",
+        "id": "ResearchStudy.focus.coding.extension",
         "path": "ResearchStudy.focus.coding.extension",
-        "sliceName": "uri",
-        "min": 0,
+        "min": 1
+      },
+      {
+        "id": "ResearchStudy.focus.coding.extension:codeableConcept",
+        "path": "ResearchStudy.focus.coding.extension",
+        "sliceName": "codeableConcept",
+        "min": 1,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-uri"
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-codeableconcept"
             ]
           }
         ],
@@ -815,27 +818,7 @@
           {
             "identity": "NFDI4Health",
             "map": "Design.focus.code"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.focus.coding.system",
-        "path": "ResearchStudy.focus.coding.system",
-        "short": "Terminology/classification",
-        "definition": "Terminology/classification used for the focus area.",
-        "comment": "Short Input Help: If used, name of the terminology/classification.",
-        "min": 1,
-        "example": [
-          {
-            "label": "Example of a terminology/classification",
-            "valueCode": "C49469"
-          }
-        ],
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-conditions-classification-nci-local"
-        },
-        "mapping": [
+          },
           {
             "identity": "NFDI4Health",
             "map": "Design.focus.classification"
@@ -843,8 +826,8 @@
         ]
       },
       {
-        "id": "ResearchStudy.focus.coding.display",
-        "path": "ResearchStudy.focus.coding.display",
+        "id": "ResearchStudy.focus.text",
+        "path": "ResearchStudy.focus.text",
         "short": "Focus area",
         "definition": "Focus area of the [RESOURCE] (e.g. medication, food, therapy, device, etc.).",
         "comment": "Additional Information: The use of terms from established terminologies/classifications (e.g. SNOMED CT, ICD, etc.) is preferred. However, also self-assigned terms are allowed. | Short input help: Preferably, use terms from SNOMED CT (https://browser.ihtsdotools.org).",
@@ -859,8 +842,8 @@
       {
         "id": "ResearchStudy.condition",
         "path": "ResearchStudy.condition",
-        "short": "Primary health condition[conditions](s) or disease(s) considered in the [RESOURCE]",
-        "definition": "Group of items providing information about primary health condition[conditions](s) or disease(s) considered in the [RESOURCE].",
+        "short": "Primary health conditions or diseases considered in the [RESOURCE]",
+        "definition": "Group of items providing information about primary health conditions or diseases considered in the [RESOURCE].",
         "mapping": [
           {
             "identity": "NFDI4Health",
@@ -869,16 +852,21 @@
         ]
       },
       {
-        "id": "ResearchStudy.condition.extension:uri",
-        "path": "ResearchStudy.condition.extension",
-        "sliceName": "uri",
-        "min": 0,
+        "id": "ResearchStudy.condition.coding.extension",
+        "path": "ResearchStudy.condition.coding.extension",
+        "min": 1
+      },
+      {
+        "id": "ResearchStudy.condition.coding.extension:codeableConcept",
+        "path": "ResearchStudy.condition.coding.extension",
+        "sliceName": "codeableConcept",
+        "min": 1,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-uri"
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-codeableconcept"
             ]
           }
         ],
@@ -886,21 +874,7 @@
           {
             "identity": "NFDI4Health",
             "map": "Design.conditions.code"
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.condition.coding.code",
-        "path": "ResearchStudy.condition.coding.code",
-        "short": "Terminology/classification",
-        "definition": "Terminology/classification used for the health condition[conditions] or disease.",
-        "comment": "Short Input Help: If used, name of the terminology/classification.",
-        "min": 1,
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-conditions-classification-nci-local"
-        },
-        "mapping": [
+          },
           {
             "identity": "NFDI4Health",
             "map": "Design.conditions.classification"
@@ -910,14 +884,14 @@
       {
         "id": "ResearchStudy.condition.text",
         "path": "ResearchStudy.condition.text",
-        "short": "Primary health condition[conditions] or disease name",
-        "definition": "Name of primary health condition[conditions] or disease considered in the [RESOURCE].",
-        "comment": "Additional information: The use of terms from established terminologies/classifications (e.g. SNOMED CT, ICD, etc.) is preferred. However, also self-assigned terms are allowed. |Short Input Help: Preferably, use terms from SNOMED CT (https://browser.ihtsdotools.org).",
+        "short": "Health condition or disease",
+        "definition": "The disease, disorder, syndrome, illness, or injury that is being studied. Conditions may also include other health-related issues, such as lifespan, quality of life, and health risks.",
+        "comment": "Preferably, use terms from terminologies such as SNOMED CT.",
         "min": 1,
         "example": [
           {
-            "label": "Example of a primary health condition name",
-            "valueString": "Hier Beispiel einfügen"
+            "label": "Example of a health condition",
+            "valueString": "SARS-CoV-2"
           }
         ],
         "mapping": [
@@ -957,7 +931,7 @@
       {
         "id": "ResearchStudy.keyword",
         "path": "ResearchStudy.keyword",
-        "short": "Keyword(s) describing the [RESOURCE]",
+        "short": "Keywords",
         "definition": "Group of items providing information about keywords describing the [RESOURCE].",
         "comment": "Additional information: The findability of the [RESOURCE] can be significantly increased if proper keywords are stated.",
         "mapping": [
@@ -968,21 +942,31 @@
         ]
       },
       {
-        "id": "ResearchStudy.keyword.coding",
-        "path": "ResearchStudy.keyword.coding",
-        "max": "1"
+        "id": "ResearchStudy.keyword.coding.code.extension",
+        "path": "ResearchStudy.keyword.coding.code.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
       },
       {
-        "id": "ResearchStudy.keyword.coding.system",
-        "path": "ResearchStudy.keyword.coding.system",
-        "short": "Code of the keyword",
-        "definition": "If known, the code of the keyword in a classification/vocabulary.",
-        "comment": "Short input help: If found, the code from the classification/vocabulary used.",
-        "min": 1,
-        "example": [
+        "id": "ResearchStudy.keyword.coding.code.extension:code",
+        "path": "ResearchStudy.keyword.coding.code.extension",
+        "sliceName": "code",
+        "min": 0,
+        "max": "1",
+        "type": [
           {
-            "label": "Hier Beschreibung einfügen",
-            "valueUri": "http://id.nlm.nih.gov/mesh/D000086402"
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-code"
+            ]
           }
         ],
         "mapping": [

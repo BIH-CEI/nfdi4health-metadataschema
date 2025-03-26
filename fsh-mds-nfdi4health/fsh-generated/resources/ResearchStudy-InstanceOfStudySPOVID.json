@@ -271,29 +271,27 @@
   ],
   "condition": [
     {
-      "extension": [
-        {
-          "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-uri",
-          "valueUri": "http://snomed.info/id/840539006"
-        }
-      ],
       "coding": [
         {
-          "code": "C49469"
-        }
-      ],
-      "text": "COVID-19"
-    },
-    {
-      "extension": [
-        {
-          "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-uri",
-          "valueUri": "http://snomed.info/id/739122008"
-        }
-      ],
-      "coding": [
-        {
-          "code": "C49469"
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "classification",
+                  "valueCoding": {
+                    "code": "C49469",
+                    "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+                    "display": "Systematized Nomenclature of Medicine Clinical Terms"
+                  }
+                },
+                {
+                  "url": "code",
+                  "valueUri": "http://snomed.info/id/739122008"
+                }
+              ],
+              "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-codeableconcept"
+            }
+          ]
         }
       ],
       "text": "Cardiac physiological function"

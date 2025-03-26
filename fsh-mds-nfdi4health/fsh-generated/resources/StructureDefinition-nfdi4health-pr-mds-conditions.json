@@ -65,8 +65,8 @@
       {
         "id": "Condition.code",
         "path": "Condition.code",
-        "short": "Primary health condition[conditions](s) or disease(s) considered in the [RESOURCE]",
-        "definition": "Group of items providing information about primary health condition[conditions](s) or disease(s) considered in the [RESOURCE].",
+        "short": "Primary health conditions or diseases considered in the [RESOURCE]",
+        "definition": "Group of items providing information about primary health conditions or diseases considered in the [RESOURCE].",
         "mapping": [
           {
             "identity": "NFDI4Health",
@@ -75,16 +75,21 @@
         ]
       },
       {
-        "id": "Condition.code.extension:uri",
-        "path": "Condition.code.extension",
-        "sliceName": "uri",
-        "min": 0,
+        "id": "Condition.code.coding.extension",
+        "path": "Condition.code.coding.extension",
+        "min": 1
+      },
+      {
+        "id": "Condition.code.coding.extension:codeableConcept",
+        "path": "Condition.code.coding.extension",
+        "sliceName": "codeableConcept",
+        "min": 1,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-uri"
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-codeableconcept"
             ]
           }
         ],
@@ -98,13 +103,6 @@
       {
         "id": "Condition.code.coding.code",
         "path": "Condition.code.coding.code",
-        "short": "Terminology/classification",
-        "definition": "Terminology/classification used for the health condition[conditions] or disease.",
-        "comment": "Short Input Help: If used, name of the terminology/classification.",
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-conditions-classification-nci-local"
-        },
         "mapping": [
           {
             "identity": "NFDI4Health",
@@ -115,13 +113,14 @@
       {
         "id": "Condition.code.text",
         "path": "Condition.code.text",
-        "short": "Primary health condition[conditions] or disease name",
-        "definition": "Name of primary health condition[conditions] or disease considered in the [RESOURCE].",
-        "comment": "Additional information: The use of terms from established terminologies/classifications (e.g. SNOMED CT, ICD, etc.) is preferred. However, also self-assigned terms are allowed. |Short Input Help: Preferably, use terms from SNOMED CT (https://browser.ihtsdotools.org).",
+        "short": "Health condition or disease",
+        "definition": "The disease, disorder, syndrome, illness, or injury that is being studied. Conditions may also include other health-related issues, such as lifespan, quality of life, and health risks.",
+        "comment": "Preferably, use terms from terminologies such as SNOMED CT.",
         "min": 1,
         "example": [
           {
-            "label": "Example of a primary health condition name"
+            "label": "Example of a health condition",
+            "valueString": "SARS-CoV-2"
           }
         ],
         "mapping": [

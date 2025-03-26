@@ -1,10 +1,10 @@
 {
   "resourceType": "StructureDefinition",
   "id": "nfdi4health-ex-mds-uri",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-uri",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-codeableconcept",
   "version": "0.9",
-  "name": "NFDI4Health_EX_MDS_URI",
-  "title": "NFDI4Health EX MDS URI",
+  "name": "NFDI4Health_EX_MDS_CodeableConcept",
+  "title": "NFDI4Health EX MDS CodeableConcept",
   "status": "draft",
   "publisher": "NFDI4Health",
   "contact": [
@@ -17,13 +17,17 @@
       ]
     }
   ],
-  "description": "Extension defining an URI",
+  "description": "Extension defining the NFDI4Health representation of CodeableConcept",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
       "identity": "rim",
       "uri": "http://hl7.org/v3",
       "name": "RIM Mapping"
+    },
+    {
+      "identity": "NFDI4Health",
+      "name": "NFDI4Health to FHIR Mapping"
     }
   ],
   "kind": "complex-type",
@@ -32,10 +36,6 @@
     {
       "type": "element",
       "expression": "Coding"
-    },
-    {
-      "type": "element",
-      "expression": "CodeableConcept"
     }
   ],
   "type": "Extension",
@@ -46,35 +46,117 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Code of the health condition[conditions] or disease",
-        "definition": "Code of the health condition[conditions] or disease in the terminology/classification used.",
-        "comment": "Short input help: If known, you can provide the code from the terminology/classification used.",
-        "example": [
-          {
-            "label": "Example of an URI for a SNOMED CT concept.",
-            "valueUri": "http://snomed.info/id/840533007"
-          }
-        ]
+        "short": "NFDI4Health Codeable Concept",
+        "definition": "NFDI4Health Representation of Codeable Concept."
       },
       {
         "id": "Extension.extension",
         "path": "Extension.extension",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:classification",
+        "path": "Extension.extension",
+        "sliceName": "classification",
+        "short": "Terminology/classification",
+        "definition": "Terminology/classification used for the focus area or condition.",
+        "comment": "Short Input Help: If used, name of the terminology/classification.",
+        "min": 1,
+        "max": "1",
+        "example": [
+          {
+            "label": "Example of a terminology/classification",
+            "valueCode": "C49469"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.focus.classification"
+          },
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.conditions.classification"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:classification.extension",
+        "path": "Extension.extension.extension",
         "max": "0"
       },
       {
-        "id": "Extension.url",
-        "path": "Extension.url",
-        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-uri"
+        "id": "Extension.extension:classification.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "classification"
       },
       {
-        "id": "Extension.value[x]",
-        "path": "Extension.value[x]",
-        "min": 1,
+        "id": "Extension.extension:classification.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-conditions-classification-nci-local"
+        }
+      },
+      {
+        "id": "Extension.extension:code",
+        "path": "Extension.extension",
+        "sliceName": "code",
+        "short": "Code",
+        "definition": "Code of the health condition or focus of the [RESOURCE] in the terminology/classification.",
+        "comment": "Short input help: If known, you can provide the code from the terminology/classification used.",
+        "min": 0,
+        "max": "1",
+        "example": [
+          {
+            "label": "Example of a URI for a SNOMED CT concept.",
+            "valueUri": "http://snomed.info/id/840533007"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.focus.code"
+          },
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.conditions.code"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:code.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:code.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:code.value[x]",
+        "path": "Extension.extension.value[x]",
         "type": [
           {
             "code": "uri"
           }
         ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-codeableconcept"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
       }
     ]
   }

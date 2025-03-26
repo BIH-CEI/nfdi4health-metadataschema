@@ -53,20 +53,16 @@ Description: "Group of items applicable only to registries."
 * identifier.value ^example[=].valueString = "ISRCTN91495258"
 * status = #active (exactly)
 * status ^comment = "The item does not exist in NFDI4Health' MDS. Fixed to 'active' for all studies."
+
 * topic ^short = "Primary focus of the [RESOURCE]"
 * topic ^definition = "Group of items providing information about the focus of the [RESOURCE] (e.g. medication, food, therapy, device, etc.)."
-* topic.coding ^short = "Terminology/classification"
-* topic.coding ^definition = "Terminology/classification used for the focus area."
-* topic.coding ^comment = "Short Input Help: If used, name of the terminology/classification."
-* topic.coding 1..1
-* topic.coding ^example.label = "Example of a terminology/classification"
-* topic.coding ^example.valueCode = $NCI#C49469
-* topic.coding from NFDI4Health_VS_MDS_Study_Conditions_Classification_NCI_Local (required)
 * topic.text 1..
 * topic.text ^short = "Focus area"
 * topic.text ^definition = "Focus area of the [RESOURCE] (e.g. medication, food, therapy, device, etc.)."
 * topic.text ^comment = "Additional Information: The use of terms from established terminologies/classifications (e.g. SNOMED CT, ICD, etc.) is preferred. However, also self-assigned terms are allowed. | Short input help: Preferably, use terms from SNOMED CT (https://browser.ihtsdotools.org)."
-* topic.extension contains NFDI4Health_EX_MDS_URI named uri 0..1
+* topic.coding.extension contains
+    NFDI4Health_EX_MDS_CodeableConcept named codeableConcept 1..1
+
 * effectivePeriod.start ^short = "Start date"
 * effectivePeriod.start ^definition = "Start date of data collection for the [RESOURCE]."
 * effectivePeriod.start ^comment = "Additional information: Preferred date format: DD.MM.YYYY. | Short input help: In case of a planned [RESOURCE], enter the intended start date. In case of an ongoing [RESOURCE], enter the actual start date."
@@ -92,8 +88,8 @@ Source: NFDI4Health_PR_MDS_Registry
 * identifier.value -> "Resource.idsAlternative.identifier"
 * extension[groupsOfDiseases] -> "Design.groupsOfDiseases"
 * topic -> "Design.focus"
-* topic.extension[uri] -> "Design.focus.code"
-* topic.coding.code -> "Design.focus.classification"
+* topic.coding.extension[codeableConcept] -> "Design.focus.code"
+* topic.coding.extension[codeableConcept] -> "Design.focus.classification"
 * topic.text -> "Design.focus.label"
 * extension[descriptions] -> "Resource.descriptions"
 * effectivePeriod -> "Design.administrativeInformation.startDate"

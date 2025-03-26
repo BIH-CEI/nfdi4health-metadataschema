@@ -384,6 +384,14 @@
     "endLine": 18
   },
   {
+    "outputFile": "StructureDefinition-nfdi4health-ex-mds-code.json",
+    "fshName": "NFDI4Health_EX_MDS_Code",
+    "fshType": "Extension",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_Code.fsh",
+    "startLine": 1,
+    "endLine": 22
+  },
+  {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-copyright-label-and-link.json",
     "fshName": "NFDI4Health_EX_MDS_Copyright_Label_And_Link",
     "fshType": "Extension",
@@ -733,7 +741,7 @@
     "fshType": "Extension",
     "fshFile": "extensions/NFDI4Health_EX_Study_StudyType.fsh",
     "startLine": 1,
-    "endLine": 30
+    "endLine": 31
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-subject.json",
@@ -745,11 +753,11 @@
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-uri.json",
-    "fshName": "NFDI4Health_EX_MDS_URI",
+    "fshName": "NFDI4Health_EX_MDS_CodeableConcept",
     "fshType": "Extension",
-    "fshFile": "extensions/NFDI4Health_EX_MDS_URI.fsh",
+    "fshFile": "extensions/NFDI4Health_EX_MDS_CodeableConceptI.fsh",
     "startLine": 1,
-    "endLine": 23
+    "endLine": 35
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-use-rights-confirmations.json",
@@ -845,7 +853,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/NFDI4Health_PR_MDS_Conditions.fsh",
     "startLine": 1,
-    "endLine": 26
+    "endLine": 25
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-pr-mds-document.json",
@@ -941,7 +949,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/NFDI4Health_PR_MDS_Registry.fsh",
     "startLine": 1,
-    "endLine": 82
+    "endLine": 78
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-pr-mds-related-artifact-resource.json",
@@ -957,7 +965,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/NFDI4Health_PR_MDS_Study.fsh",
     "startLine": 1,
-    "endLine": 165
+    "endLine": 150
   },
   {
     "outputFile": "ValueSet-nfdi4health-vs-mds-cd-common-chronic-disease-name-sct-local.json",

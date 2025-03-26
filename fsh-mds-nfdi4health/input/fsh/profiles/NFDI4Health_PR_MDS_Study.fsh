@@ -83,62 +83,47 @@ Description: "Group of items applicable only to studies, substudies."
 * phase.coding.code 1..
 * category 1..1 // Cardinality: 1..1, if Resource.classification.type == ('Study' OR 'Substudy'); otherwise 0..0
 * category from NFDI4Health_VS_MDS_Study_Primary_Design_NCI (required)
-* category ^short = "Is it an interventional or non-interventional [RESOURCE]?"
-* category ^definition = "Non-interventional design refers to a [RESOURCE] that does not aim to alter its outcomes of interest. Interventional design refers to a [RESOURCE] that aims to alter its outcomes of interest."
-* category ^comment = "Short input help: Select between non-interventional and interventional design for the given [RESOURCE]."
+* category ^short = "Is the study design non-interventional or interventional?"
 * category ^binding.description = "Value set defining codes for primary designs of (sub-)studies in a ResearchStudy resource."
 * category.extension contains 
     NFDI4Health_EX_MDS_Study_Type named studyType 1..1 // Cardinality: 1..1, if Resource.classification.type == ('Study' OR 'Substudy'); otherwise 0..0
-* condition ^short = "Primary health condition[conditions](s) or disease(s) considered in the [RESOURCE]"
-* condition ^definition = "Group of items providing information about primary health condition[conditions](s) or disease(s) considered in the [RESOURCE]."
-* condition.coding.code 1..1
-* condition.coding.code ^short = "Terminology/classification"
-* condition.coding.code ^definition = "Terminology/classification used for the health condition[conditions] or disease."
-* condition.coding.code ^comment = "Short Input Help: If used, name of the terminology/classification."
-* condition.coding.code from NFDI4Health_VS_MDS_Study_Conditions_Classification_NCI_Local (required)
+
+* condition ^short = "Primary health conditions or diseases considered in the [RESOURCE]"
+* condition ^definition = "Group of items providing information about primary health conditions or diseases considered in the [RESOURCE]."
 * condition.text 1..1
-* condition.text ^short = "Primary health condition[conditions] or disease name"
-* condition.text ^definition = "Name of primary health condition[conditions] or disease considered in the [RESOURCE]."
-* condition.text ^comment = "Additional information: The use of terms from established terminologies/classifications (e.g. SNOMED CT, ICD, etc.) is preferred. However, also self-assigned terms are allowed. |Short Input Help: Preferably, use terms from SNOMED CT (https://browser.ihtsdotools.org)."
-* condition.text ^example.label = "Example of a primary health condition name"
-* condition.text ^example.valueString = "Hier Beispiel einfügen" //TODO
-* condition.extension contains
-    NFDI4Health_EX_MDS_URI named uri 0..1
+* condition.text ^short = "Health condition or disease"
+* condition.text ^definition = "The disease, disorder, syndrome, illness, or injury that is being studied. Conditions may also include other health-related issues, such as lifespan, quality of life, and health risks."
+* condition.text ^comment = "Preferably, use terms from terminologies such as SNOMED CT."
+* condition.text ^example.label = "Example of a health condition"
+* condition.text ^example.valueString = "SARS-CoV-2"
+* condition.coding.extension contains
+    NFDI4Health_EX_MDS_CodeableConcept named codeableConcept 1..1
+
 * focus ^short = "Primary focus of the [RESOURCE]"
 * focus ^definition = "Group of items providing information about the focus of the [RESOURCE] (e.g. medication, food, therapy, device, etc.)."
-* focus.coding.extension ^slicing.discriminator.type = #value
-* focus.coding.extension ^slicing.discriminator.path = "url"
-* focus.coding.extension ^slicing.rules = #open
-* focus.coding.extension contains NFDI4Health_EX_MDS_URI named uri 0..1
-* focus.coding.system ^short = "Terminology/classification"
-* focus.coding.system ^definition = "Terminology/classification used for the focus area."
-* focus.coding.system ^comment = "Short Input Help: If used, name of the terminology/classification."
-* focus.coding.system 1..1
-* focus.coding.system ^example.label = "Example of a terminology/classification"
-* focus.coding.system ^example.valueCode = $NCI#C49469
-* focus.coding.system from NFDI4Health_VS_MDS_Study_Conditions_Classification_NCI_Local (required)
-* focus.coding.display 1..
-* focus.coding.display ^short = "Focus area"
-* focus.coding.display ^definition = "Focus area of the [RESOURCE] (e.g. medication, food, therapy, device, etc.)."
-* focus.coding.display ^comment = "Additional Information: The use of terms from established terminologies/classifications (e.g. SNOMED CT, ICD, etc.) is preferred. However, also self-assigned terms are allowed. | Short input help: Preferably, use terms from SNOMED CT (https://browser.ihtsdotools.org)."
+* focus.text 1..
+* focus.text ^short = "Focus area"
+* focus.text ^definition = "Focus area of the [RESOURCE] (e.g. medication, food, therapy, device, etc.)."
+* focus.text ^comment = "Additional Information: The use of terms from established terminologies/classifications (e.g. SNOMED CT, ICD, etc.) is preferred. However, also self-assigned terms are allowed. | Short input help: Preferably, use terms from SNOMED CT (https://browser.ihtsdotools.org)."
+* focus.coding.extension contains
+    NFDI4Health_EX_MDS_CodeableConcept named codeableConcept 1..1
+
 * relatedArtifact ..1
 * relatedArtifact only NFDI4Health_PR_MDS_Related_Artifact_Resource
-* keyword ^short = "Keyword(s) describing the [RESOURCE]"
+
+
+* keyword ^short = "Keywords"
 * keyword ^definition = "Group of items providing information about keywords describing the [RESOURCE]."
 * keyword ^comment = "Additional information: The findability of the [RESOURCE] can be significantly increased if proper keywords are stated."
-* keyword.coding ..1
-* keyword.coding.system 1..1
-* keyword.coding.system ^short = "Code of the keyword"
-* keyword.coding.system ^definition = "If known, the code of the keyword in a classification/vocabulary."
-* keyword.coding.system ^comment = "Short input help: If found, the code from the classification/vocabulary used."
-* keyword.coding.system ^example.label = "Hier Beschreibung einfügen" //TODO
-* keyword.coding.system ^example.valueUri = http://id.nlm.nih.gov/mesh/D000086402
+* keyword.coding.code.extension contains
+    NFDI4Health_EX_MDS_Code named code 0..1
 * keyword.text 1..1 
 * keyword.text ^short = "label"
 * keyword.text ^definition = "Keyword(s) describing the [RESOURCE]."
 * keyword.text ^comment = "Additional information: The use of terms from established classifications/vocabularies (e.g. SNOMED CT, MeSH, UMLS) is preferred. However, also self-assigned keywords are allowed. | Short input help: Preferably, use terms from SNOMED CT or MESH."
 * keyword.text ^example[0].label = "Keyword label"
 * keyword.text ^example[=].valueString = "SARS-CoV-2"
+
 * period.start ^short = "Start date"
 * period.start ^definition = "Start date of data collection for the [RESOURCE]."
 * period.start ^comment = "Additional information: Preferred date format: DD.MM.YYYY. | Short input help: In case of a planned [RESOURCE], enter the intended start date. In case of an ongoing [RESOURCE], enter the actual start date."
@@ -176,19 +161,19 @@ Source: NFDI4Health_PR_MDS_Study
 * phase -> "Design.interventional.phase"
 * category -> "Design.primaryDesign"
 * condition -> "Design.conditions"
-* condition.extension[uri] -> "Design.conditions.code"
+* condition.coding.extension[codeableConcept] -> "Design.conditions.code"
+* condition.coding.extension[codeableConcept] -> "Design.conditions.classification"
 * extension[groupsOfDiseases] -> "Design.groupsOfDiseases"
-* condition.coding.code -> "Design.conditions.classification"
-* condition..text -> "Design.conditions.label"
+* condition.text -> "Design.conditions.label"
 * focus -> "Design.focus"
-* focus.coding.extension[uri] -> "Design.focus.code"
-* focus.coding.system -> "Design.focus.classification"
-* focus.coding.display -> "Design.focus.label"
+* focus.coding.extension[codeableConcept] -> "Design.focus.code"
+* focus.coding.extension[codeableConcept] -> "Design.focus.classification"
+* focus.text -> "Design.focus.label"
 * relatedArtifact -> "Resource.ids"
 * relatedArtifact -> "Resource.idsNfdi4health"
 * relatedArtifact -> "Resource.webpage"
 * keyword -> "Resource.keywords"
-* keyword.coding.system -> "Resource.keywords.code"
+* keyword.coding.code.extension[code] -> "Resource.keywords.code"
 * keyword.text -> "Resource.keywords.label"
 * extension[descriptions] -> "Resource.descriptions"
 * period.start -> "Design.administrativeInformation.startDate"

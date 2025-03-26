@@ -55,13 +55,13 @@ Usage: #example
 * extension[dataSharingPlan].extension[generally].valueCoding = $NCI#C150084 "Undecided (Intellectual Product)"
 
 /// Primary health condition(s), disease(s) or focus of the study - modelling must be changed because not possible to have "other vocabulary" or "freetext" as system
-* condition[0].coding.code = $NCI#C49469 "Systematized Nomenclature of Medicine Clinical Terms"
+* condition.coding.extension[codeableConcept].extension[classification].valueCoding = $NCI#C49469 "Systematized Nomenclature of Medicine Clinical Terms"
 * condition[=].text = "COVID-19"
-* condition[=].extension[uri].valueUri = "http://snomed.info/id/840539006"
+* condition.coding.extension[codeableConcept].extension[code].valueUri = "http://snomed.info/id/840539006"
 
-* condition[+].coding.code = $NCI#C49469 "Systematized Nomenclature of Medicine Clinical Terms"
+* condition.coding.extension[codeableConcept].extension[classification].valueCoding = $NCI#C49469 "Systematized Nomenclature of Medicine Clinical Terms"
 * condition[=].text = "Cardiac physiological function"
-* condition[=].extension[uri].valueUri = "http://snomed.info/id/739122008"
+* condition.coding.extension[codeableConcept].extension[code].valueUri = "http://snomed.info/id/739122008"
 
 * extension[groupsOfDiseases].extension[generally].valueCoding = $ICD10#I "Certain infectious and parasitic diseases"
 

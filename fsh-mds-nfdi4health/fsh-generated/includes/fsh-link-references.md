@@ -50,6 +50,8 @@
 [NFDI4Health_VS_MDS_CD_Information_Sources_NCI_Local]: ValueSet-nfdi4health-vs-mds-cd-information-sources-nci-local.html
 [NFDI4Health_EX_MDS_Assessments]: StructureDefinition-nfdi4health-ex-mds-assessments.html
 [NFDI4Health_EX_MDS_Chronic_Diseases]: StructureDefinition-nfdi4health-ex-mds-chronic-diseases.html
+[NFDI4Health_EX_MDS_Code]: StructureDefinition-nfdi4health-ex-mds-code.html
+[NFDI4Health_EX_MDS_CodeableConcept]: StructureDefinition-nfdi4health-ex-mds-uri.html
 [NFDI4Health_EX_MDS_Copyright_Label_And_Link]: StructureDefinition-nfdi4health-ex-mds-copyright-label-and-link.html
 [NFDI4Health_EX_MDS_Data_Sharing_Plan]: StructureDefinition-nfdi4health-ex-mds-data-sharing-plan.html
 [NFDI4Health_EX_MDS_Data_Source]: StructureDefinition-nfdi4health-ex-mds-data-source.html
@@ -94,7 +96,6 @@
 [NFDI4Health_EX_MDS_Groups_Of_Diseases]: StructureDefinition-nfdi4health-ex-mds-groups-of-diseases.html
 [NFDI4Health_EX_MDS_Study_Type]: StructureDefinition-nfdi4health-ex-mds-study-type.html
 [NFDI4Health_EX_MDS_Subject]: StructureDefinition-nfdi4health-ex-mds-subject.html
-[NFDI4Health_EX_MDS_URI]: StructureDefinition-nfdi4health-ex-mds-uri.html
 [NFDI4Health_EX_MDS_Use_Rights_Confirmations]: StructureDefinition-nfdi4health-ex-mds-use-rights-confirmations.html
 [NFDI4Health_EX_MDS_Version]: StructureDefinition-nfdi4health-ex-mds-version.html
 [NFDI4Health_LM_MDS_Design]: StructureDefinition-nfdi4health-lm-mds-design.html

@@ -45,8 +45,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Specification of the type of the [RESOURCE]",
-        "definition": "Group of items providing information about the type of the [RESOURCE].",
+        "short": "Information on specific study design",
+        "definition": "Group of items providing information about the study design.",
         "max": "1",
         "mapping": [
           {
@@ -59,8 +59,8 @@
         "id": "Extension.extension:interventional",
         "path": "Extension.extension",
         "sliceName": "interventional",
-        "short": "Interventional [RESOURCE] type",
-        "definition": "The strategy for assigning interventions to participants.",
+        "short": "Interventional study model",
+        "definition": "The strategy for assigning interventions to participants. | Short inout help: Select all that apply. If 'Other' is selected, please specify the type of the [RESOURCE] in the field 'Additional information about the [RESOURCE]'.",
         "comment": "Cardinality: 1..*, if Design.primaryDesign == 'C98388'; otherwise 0..0",
         "min": 0,
         "max": "*",
@@ -99,9 +99,9 @@
         "id": "Extension.extension:nonInterventional",
         "path": "Extension.extension",
         "sliceName": "nonInterventional",
-        "short": "Non-interventional [RESOURCE] type",
+        "short": "Non-interventional study model",
         "definition": "The primary strategy for participant identification and follow-up.",
-        "comment": "Cardinality: 1..*, if Design.primaryDesign == 'C142615'; otherwise 0..0",
+        "comment": "Cardinality: 1..*, if Design.primaryDesign == 'C142615'; otherwise 0..0 | Short input help: Select all that apply. If 'Other' is selected, please specify the type of the [RESOURCE] in the field 'Additional information about the [RESOURCE].",
         "min": 0,
         "max": "*",
         "mapping": [

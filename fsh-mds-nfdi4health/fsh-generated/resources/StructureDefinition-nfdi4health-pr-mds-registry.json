@@ -560,16 +560,21 @@
         ]
       },
       {
-        "id": "Library.topic.extension:uri",
-        "path": "Library.topic.extension",
-        "sliceName": "uri",
-        "min": 0,
+        "id": "Library.topic.coding.extension",
+        "path": "Library.topic.coding.extension",
+        "min": 1
+      },
+      {
+        "id": "Library.topic.coding.extension:codeableConcept",
+        "path": "Library.topic.coding.extension",
+        "sliceName": "codeableConcept",
+        "min": 1,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-uri"
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-codeableconcept"
             ]
           }
         ],
@@ -577,32 +582,7 @@
           {
             "identity": "NFDI4Health",
             "map": "Design.focus.code"
-          }
-        ]
-      },
-      {
-        "id": "Library.topic.coding",
-        "path": "Library.topic.coding",
-        "short": "Terminology/classification",
-        "definition": "Terminology/classification used for the focus area.",
-        "comment": "Short Input Help: If used, name of the terminology/classification.",
-        "min": 1,
-        "max": "1",
-        "example": [
-          {
-            "label": "Example of a terminology/classification",
-            "valueCode": "C49469"
-          }
-        ],
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-conditions-classification-nci-local"
-        }
-      },
-      {
-        "id": "Library.topic.coding.code",
-        "path": "Library.topic.coding.code",
-        "mapping": [
+          },
           {
             "identity": "NFDI4Health",
             "map": "Design.focus.classification"
