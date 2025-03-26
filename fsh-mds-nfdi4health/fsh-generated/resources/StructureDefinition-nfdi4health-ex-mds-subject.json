@@ -51,7 +51,7 @@
         "id": "Extension",
         "path": "Extension",
         "short": "Primary subject ",
-        "definition": "The primary subject addressed by the [RESOURCE], i.e. a person, an animal or other subject types.",
+        "definition": "The primary subject addressed by the [RESOURCE], for example persons, animals or other subject types.",
         "comment": "Short input help: Select one value from the list.",
         "min": 1,
         "max": "1",

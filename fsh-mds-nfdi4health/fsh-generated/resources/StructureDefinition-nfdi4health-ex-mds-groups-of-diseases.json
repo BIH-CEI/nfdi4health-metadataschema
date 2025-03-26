@@ -69,7 +69,7 @@
         "path": "Extension.extension",
         "sliceName": "generally",
         "short": "Which groups of diseases or conditions were the data collected on?",
-        "definition": "General groups of diseases or conditions on which the data were collected in the [RESOURCE].",
+        "definition": "General groups of diseases or conditions on which the data were collected.",
         "min": 1,
         "max": "*",
         "mapping": [

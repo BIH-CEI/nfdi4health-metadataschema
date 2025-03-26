@@ -11,7 +11,7 @@ Description: "Extension covering information about the collection of mortality d
 * ^context.type = #element
 * ^context.expression = "ResearchStudy"
 * . 0..1
-* . ^short = "Collects mortality data?"
+* . ^short = "Mortality data collected?"
 * . ^definition = "Indication whether mortality data are collected in the [RESOURCE]."
 * . ^comment = "Cardinality: 0..1, if (Resource.classification.type == ('Study' OR 'Substudy') AND Design.studyType.nonInterventional == ('Longitudinal' OR 'Cohort' OR 'Case-cohort' OR 'Birth cohort' OR 'Trend' OR 'Panel')) OR Resource.classification.type == ('Registry' OR 'Secondary data source'); otherwise 0..0
                 Cardinality: 0..1, if (Resource.classification.type == ('C63536' OR 'C198230') AND Design.studyType.nonInterventional == ('C15273' OR 'C15208' OR '004' OR 'D015331' OR '005' OR 'C53311')) OR Resource.classification.type == ('C61393' OR '178'); otherwise 0..0"

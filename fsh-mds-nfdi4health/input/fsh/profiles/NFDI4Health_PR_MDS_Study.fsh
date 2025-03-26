@@ -66,21 +66,16 @@ Description: "Group of items applicable only to studies, substudies."
 * identifier.value ^example[=].valueString = "ISRCTN91495258"
 * status = #active (exactly)
 * status ^comment = "The item does not exist in NFDI4Health' MDS. Fixed to 'active' for all studies."
-* primaryPurposeType from NFDI4Health_VS_MDS_Study_Primary_Purpose_HL7_NCI (required)
-* primaryPurposeType ^short = "Primary purpose of the [RESOURCE]"
-* primaryPurposeType ^definition = "Specification of the main purpose of the [RESOURCE]."
-* primaryPurposeType ^comment = "Additional Information: The field is defined foremost for interventional studies. For non-interventional studies, this field may not be applicable as diverse purposes may be pursued without being able to specify a primary one. In this case, the option 'Not applicable' can be selected. | Short Input Help: Foremost for interventional studies, please specify the primary purpose why the [RESOURCE] was conducted. For non-interventional studies, this field may be 'Not applicable' as multiple purposes may be defined as primary ones."
-* primaryPurposeType ^binding.description = "Value set defining codes to specify the primary purpose of a (sub-)study in a ResearchStudy resource."
-* primaryPurposeType.coding 1..1
-* primaryPurposeType.coding.system 1..
-* primaryPurposeType.coding.code 1..
-* phase from NFDI4Health_VS_MDS_Study_Phase_NCI (required)
-* phase ^short = "Numerical phase"
-* phase ^definition = "If applicable, numerical phase of the [RESOURCE]."
-* phase ^comment = "Short input help: Select one value from the list."
-* phase ^binding.description = "Value set defining codes to specify the phase of a (sub-)study in a ResearchStudy resource."
-* phase.coding.system 1..
-* phase.coding.code 1..
+* primaryPurposeType.coding from NFDI4Health_VS_MDS_Study_Primary_Purpose_HL7_NCI (required)
+* primaryPurposeType.coding  ^short = "Primary purpose of the [RESOURCE]"
+* primaryPurposeType.coding  ^definition = "Specification of the main purpose of the [RESOURCE]."
+* primaryPurposeType.coding  ^comment = "Additional Information: The field is defined foremost for interventional studies. For non-interventional studies, this field may not be applicable as diverse purposes may be pursued without being able to specify a primary one. In this case, the option 'Not applicable' can be selected. | Short Input Help: Foremost for interventional studies, please specify the primary purpose why the [RESOURCE] was conducted. For non-interventional studies, this field may be 'Not applicable' as multiple purposes may be defined as primary ones."
+* primaryPurposeType.coding  ^binding.description = "Value set defining codes to specify the primary purpose of a (sub-)study in a ResearchStudy resource."
+* phase.coding from NFDI4Health_VS_MDS_Study_Phase_NCI (required)
+* phase.coding ^short = "Numerical phase"
+* phase.coding ^definition = "If applicable, numerical phase of the [RESOURCE]."
+* phase.coding ^comment = "Short input help: Select one value from the list."
+* phase.coding ^binding.description = "Value set defining codes to specify the phase of a (sub-)study in a ResearchStudy resource."
 * category 1..1 // Cardinality: 1..1, if Resource.classification.type == ('Study' OR 'Substudy'); otherwise 0..0
 * category from NFDI4Health_VS_MDS_Study_Primary_Design_NCI (required)
 * category ^short = "Is the study design non-interventional or interventional?"
@@ -125,10 +120,10 @@ Description: "Group of items applicable only to studies, substudies."
 * keyword.text ^example[=].valueString = "SARS-CoV-2"
 
 * period.start ^short = "Start date"
-* period.start ^definition = "Start date of data collection for the [RESOURCE]."
+* period.start ^definition = "In case of a planned [RESOURCE], enter the intended start date. In case of an ongoing [RESOURCE], enter the actual start date."
 * period.start ^comment = "Additional information: Preferred date format: DD.MM.YYYY. | Short input help: In case of a planned [RESOURCE], enter the intended start date. In case of an ongoing [RESOURCE], enter the actual start date."
 * period.end ^short = "End date"
-* period.end ^definition = "In case of a [RESOURCE] with patients or other participants, it is the date when the last participant is examined or receives an intervention, or the date of the last participant's last visit."
+* period.end ^definition = "In case of a planned or ongoing [RESOURCE], enter the intended end date. In case of a completed [RESOURCE], enter the actual end date. In case of a [RESOURCE] with patients or other participants, it is the date when the last participant is examined or receives an intervention, or the date of the last participant’s last visit."
 * period.end ^comment = "Additional information: Preferred date format: DD.MM.YYYY. | Short input help: In case of a planned or ongoing [RESOURCE], enter the intended end date. In case of a completed [RESOURCE], enter the actual end date."
 * site 0..1
 * site only Reference(NFDI4Health_PR_MDS_Centers)
@@ -138,7 +133,7 @@ Description: "Group of items applicable only to studies, substudies."
 * reasonStopped.coding 0..1
 * reasonStopped.coding from NFDI4Health_VS_MDS_Study_Status_Halted_Stage_Local (required)
 * reasonStopped.text ^short = "Stopping reason"
-* reasonStopped.text ^definition = "Specification of the reason(s) why the [RESOURCE] was prematurely stopped."
+* reasonStopped.text ^definition = "Specification of the reasons why the [RESOURCE] was prematurely stopped, for example due to toxicity, closed due to lack of study progress, temporarily closed per study design."
 * reasonStopped.text ^comment = "Cardinality: 0..1, if Resource.classification.type == ('Study' OR 'Substudy') AND Design.administrativeInformation.status == ('Suspended: Recruitment, data collection, or data quality management, halted, but potentially will resume' OR 'Terminated: Recruitment, data collection, data and quality management halted prematurely and will not resume'); otherwise 0..0 / Short Input Help: You can provide reasons such as closed due to toxicity, closed due to lack of [RESOURCE] progress, temporarily-closed per [RESOURCE] design, etc. / Source of the property and/or allowed values: CT.gov [2], DRKS [3]"
 * note ..1
 * note.text ^short = "Additional information about the [RESOURCE]"

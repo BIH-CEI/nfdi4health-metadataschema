@@ -19,18 +19,18 @@ Description: "Group of items providing information about the sampling methohd"
     probabilityMethod 0..1 and
     nonProbabilityMethod 0..1
 * extension[method] ^short = "Applied sampling method"
-* extension[method] ^definition = "Type of the sampling method applied for the selection of [RESOURCE] participants."
+* extension[method] ^definition = "Type of the sampling method applied for the selection of participants."
 * extension[method].value[x] only Coding
 * extension[method].valueCoding from NFDI4Health_VS_MDS_Study_Sampling_Method_NCI_Local (required)
 * extension[method].valueCoding ^binding.description = "Value set defining codes to specify types of sampling methods."
 * extension[probabilityMethod] ^short = "Specific type of probability sampling"
-* extension[probabilityMethod] ^definition = " Specific type of the probability sampling method applied for the selection of [RESOURCE] participants."
+* extension[probabilityMethod] ^definition = "Specific type of the probability sampling method applied for the selection of participants."
 * extension[probabilityMethod] ^comment = " 0..1, if Design.sampling.method == 'Probability'; otherwise 0..0"
 * extension[probabilityMethod].value[x] only Coding
 * extension[probabilityMethod].valueCoding from NFDI4Health_VS_MDS_Study_Sampling_Probability_Method_NCI_Local (required)
 * extension[probabilityMethod].valueCoding ^binding.description = "Value set defining codes to specify types of probability sampling methods."
 * extension[nonProbabilityMethod] ^short = "Specific type of non-probability sampling"
-* extension[nonProbabilityMethod] ^definition = "Specific type of the non-probability sampling method applied for the selection of [RESOURCE] participants."
+* extension[nonProbabilityMethod] ^definition = "Specific type of the non-probability sampling method applied for the selection of participants."
 * extension[nonProbabilityMethod] ^comment = " 0..1, if Design.sampling.method == 'Non-probability'; otherwise 0..0"
 * extension[nonProbabilityMethod].value[x] only Coding
 * extension[nonProbabilityMethod].valueCoding from NFDI4Health_VS_MDS_Study_Sampling_Method_Non_Probability_NCI_Local (required)

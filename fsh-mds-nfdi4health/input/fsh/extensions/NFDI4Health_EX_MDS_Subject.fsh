@@ -14,7 +14,7 @@ Description: "Extension informing about the subject of a resource."
 * ^context[=].expression = "Library"
 * . 1..1
 * . ^short = "Primary subject "
-* . ^definition = "The primary subject addressed by the [RESOURCE], i.e. a person, an animal or other subject types."
+* . ^definition = "The primary subject addressed by the [RESOURCE], for example persons, animals or other subject types."
 * . ^comment = "Short input help: Select one value from the list."
 * value[x] 1..1
 * value[x] only Coding

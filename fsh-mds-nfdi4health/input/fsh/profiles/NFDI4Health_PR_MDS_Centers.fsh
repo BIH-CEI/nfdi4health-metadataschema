@@ -14,12 +14,12 @@ Description: "Profile intended to capture information on the number of centers i
 
 * type 0..1
 * type ^short = "Mono- or multicentric?"
-* type ^definition = "Specification whether the [RESOURCE] is conducted at only one or at more than one [RESOURCE] center."
+* type ^definition = "Specification whether the data are collected at only one or at more than one study center.	"
 * type ^comment = "0..1, if Resource.classification.type == ('C63536' OR 'C198230'); otherwise 0..0"
 * type from NFDI4Health_VS_MDS_Study_Centers_SNOMEDCT_Local (required)
 * description 0..1
 * description ^short = "Number of centers" 
-* description ^definition = "Number of centers involved in the [RESOURCE]."
+* description ^definition = "Number of study centers involved in data collection."
 
 
 

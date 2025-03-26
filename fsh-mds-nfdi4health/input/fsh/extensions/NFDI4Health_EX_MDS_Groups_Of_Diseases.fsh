@@ -18,7 +18,7 @@ Description: "Group of items providing information about the groups of diseases 
     generally 1..* and
     conditions 0..*
 * extension[generally] ^short = "Which groups of diseases or conditions were the data collected on?"
-* extension[generally] ^definition = "General groups of diseases or conditions on which the data were collected in the [RESOURCE]."
+* extension[generally] ^definition = "General groups of diseases or conditions on which the data were collected."
 * extension[generally].value[x] only Coding
 * extension[generally].valueCoding from NFDI4Health_VS_MDS_Study_Groups_Of_Diseases_Generally_ICD10_SCT (required)
 * extension[generally].valueCoding ^binding.description = "Value set defining codes from ICD-10 to specify groups of diseases or conditions on which the data were collected in the study."
