@@ -210,7 +210,7 @@
         "path": "nfdi4health-lm-mds-ne.DietAssessment.validityReference",
         "short": "validityReference",
         "definition": "Reference describing the validation",
-        "comment": "<p><strong>Cardinality:</strong> 1..1, if DietAssessment.validity == 'Yes'; otherwise 0.. 0</p>\n* 1..1M 1..1, if DietAssessment.validity == \"Yes\"\n* 0..0NP 0..0, if DietAssessment.validity == \"No\"",
+        "comment": "\n* 1..1, if DietAssessment.validity == \"Yes\"\n* 0..0, if DietAssessment.validity == \"No\"",
         "requirements": "Indication of the reference describing the validation. Publications that describe the validation of an instrument. Ideally, this should include studies that have undergone a peer-review process. Code or documentation that has not been peer-reviewed would not be considered sufficient in this                         context.",
         "min": 0,
         "max": "1",
