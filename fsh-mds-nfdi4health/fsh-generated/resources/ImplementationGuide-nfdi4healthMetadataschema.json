@@ -820,14 +820,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nfdi4health-lm-mds-design"
-        },
-        "name": "NFDI4Health Module Design",
-        "description": "NFDI4Health Logical Model of Module Design V3.3.1",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/nfdi4health-lm-mds-eocd"
         },
         "name": "NFDI4Health Module Epidemiology of Chronic Diseases",

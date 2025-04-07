@@ -784,14 +784,6 @@
     "endLine": 296
   },
   {
-    "outputFile": "StructureDefinition-nfdi4health-lm-mds-design.json",
-    "fshName": "NFDI4Health_LM_MDS_Design",
-    "fshType": "Logical",
-    "fshFile": "logicals/lm-mds-nfdi4health-design-v3_3_1.fsh",
-    "startLine": 1,
-    "endLine": 782
-  },
-  {
     "outputFile": "StructureDefinition-nfdi4health-lm-mds-eocd.json",
     "fshName": "NFDI4Health_LM_MDS_EOCD",
     "fshType": "Logical",

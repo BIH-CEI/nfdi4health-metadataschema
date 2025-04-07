@@ -98,7 +98,6 @@
 [NFDI4Health_EX_MDS_Subject]: StructureDefinition-nfdi4health-ex-mds-subject.html
 [NFDI4Health_EX_MDS_Use_Rights_Confirmations]: StructureDefinition-nfdi4health-ex-mds-use-rights-confirmations.html
 [NFDI4Health_EX_MDS_Version]: StructureDefinition-nfdi4health-ex-mds-version.html
-[NFDI4Health_LM_MDS_Design]: StructureDefinition-nfdi4health-lm-mds-design.html
 [NFDI4Health_LM_MDS_EOCD]: StructureDefinition-nfdi4health-lm-mds-eocd.html
 [Module_Nutritional_Epidemiology]: StructureDefinition-nfdi4health-lm-metadataschema-ne.html
 [NFDI4Health_LM_Metadataschema_RecordLinkage]: StructureDefinition-nfdi4health-lm-metadatenschema-recordlinkage.html
