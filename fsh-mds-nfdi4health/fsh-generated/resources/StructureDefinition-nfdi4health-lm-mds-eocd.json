@@ -43,7 +43,7 @@
         "path": "nfdi4health-lm-mds-eocd.ChronicDiseasesEpidemiology",
         "short": "Chronic disease data collected in the [RESOURCE]",
         "definition": "Group of items providing information on chronic disease data collection.",
-        "comment": "Cardinality: 1..*, if Resource.chronicDiseases == 'Yes' AND Resource.classification.type == ('Study protocol' OR 'Informed consent form' OR 'Patient information sheet' OR 'Manual of operations (SOPs)' OR 'Statistical analysis plan' OR 'Data management plan' OR 'Case report form' OR 'Interview scheme\n                        and themes' OR 'Observation guide' OR 'Discussion guide' OR 'Participant tasks' OR 'Other study document' OR 'Other'); otherwise 0.. 0</p>\n* 1..* 1..*, if Resource.chronicDiseases == \"Yes\" AND Resource.classification.type == (\"Study protocol\" OR \"Informed consent form\" OR \"Patient information sheet\" OR \"Manual of operations (SOPs)\" OR \"Statistical analysis plan\" OR \"Data\n                                    management plan\" OR \"Case report form\" OR \"Interview scheme and themes\" OR \"Observation guide\" OR \"Discussion guide\" OR \"Participant tasks\" OR \"Other study document\" OR \"Other\")\n* 0..0 0..0, if Resource.chronicDiseases != \"Yes\" OR Resource.classification.type != (\"Study protocol\" OR \"Informed consent form\" OR \"Patient information sheet\" OR \"Manual of operations (SOPs)\" OR \"Statistical analysis plan\" OR \"Data\n                                    management plan\" OR \"Case report form\" OR \"Interview scheme and themes\" OR \"Observation guide\" OR \"Discussion guide\" OR \"Participant tasks\" OR \"Other study document\" OR \"Other\")",
+        "comment": "1..*, if Resource.chronicDiseases == \"Yes\" AND Resource.classification.type == (\"Study protocol\" OR \"Informed consent form\" OR \"Patient information sheet\" OR \"Manual of operations (SOPs)\" OR \"Statistical analysis plan\" OR \"Data\n                                    management plan\" OR \"Case report form\" OR \"Interview scheme and themes\" OR \"Observation guide\" OR \"Discussion guide\" OR \"Participant tasks\" OR \"Other study document\" OR \"Other\")\n* 0..0, if Resource.chronicDiseases != \"Yes\" OR Resource.classification.type != (\"Study protocol\" OR \"Informed consent form\" OR \"Patient information sheet\" OR \"Manual of operations (SOPs)\" OR \"Statistical analysis plan\" OR \"Data\n                                    management plan\" OR \"Case report form\" OR \"Interview scheme and themes\" OR \"Observation guide\" OR \"Discussion guide\" OR \"Participant tasks\" OR \"Other study document\" OR \"Other\")",
         "min": 0,
         "max": "*",
         "type": [
@@ -75,7 +75,6 @@
         "path": "nfdi4health-lm-mds-eocd.ChronicDiseasesEpidemiology.dataCollected",
         "short": "Specification of the type of data collected.",
         "definition": "Specification of the type of data collected.",
-        "comment": "Cardinality: 1..1",
         "min": 1,
         "max": "1",
         "type": [
@@ -111,7 +110,6 @@
         "path": "nfdi4health-lm-mds-eocd.ChronicDiseasesEpidemiology.outcomesVerificationMethods",
         "short": "Methods of verification differ by study. All the details per outcome are not needed here but rather an explanation of how outcomes were verified in general.",
         "definition": "Methods of verification differ by study. All the details per outcome are not needed here but rather an explanation of how outcomes were verified in general.",
-        "comment": "Cardinality: 0..*",
         "min": 0,
         "max": "*",
         "type": [

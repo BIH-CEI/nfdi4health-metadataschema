@@ -789,7 +789,7 @@
     "fshType": "Logical",
     "fshFile": "logicals/lm-mds-nfdi4health-epidemiology-of-chronic-diseases_v3_3_1.fsh",
     "startLine": 1,
-    "endLine": 23
+    "endLine": 21
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-lm-metadataschema-ne.json",
