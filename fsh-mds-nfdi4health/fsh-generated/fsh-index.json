@@ -805,7 +805,7 @@
     "fshType": "Logical",
     "fshFile": "logicals/lm-mds-nfdi4health-record-linkage_v3_3_1.fsh",
     "startLine": 1,
-    "endLine": 28
+    "endLine": 39
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-pr-mds-affiliation.json",

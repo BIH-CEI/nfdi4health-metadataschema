@@ -44,6 +44,7 @@
         "short": "Information about record linkage for the [RESOURCE]",
         "definition": "Group of items providing information on record linkage.",
         "comment": "\n* 1..1, if Design.dataSharingPlan.recordLinkage == \"Yes\"\n* 0..0, if Design.dataSharingPlan.recordLinkage == \"No\"",
+        "requirements": "Group of items providing information on record linkage.",
         "min": 0,
         "max": "1",
         "type": [
@@ -55,9 +56,10 @@
       {
         "id": "nfdi4health-lm-mds-rl.RecordLinkage.legalBasis",
         "path": "nfdi4health-lm-mds-rl.RecordLinkage.legalBasis",
-        "short": "Indication whether there are specific regulations/permissions for record linkage.",
-        "definition": "Indication whether there are specific regulations/permissions for record linkage.",
-        "comment": "Additional information: Whether any specific legal regulations/permissions exist (e.g. for social data, for cancer registry data, hospital data, etc.).",
+        "short": "legalBasis",
+        "definition": "Legal regulation/permission for record linkage",
+        "comment": "Additional information: Whether any specific legal regulations/permissions exist (e.g. for social data, for cancer registry data, hospital data, etc.).</p>",
+        "requirements": "Indication whether there are specific regulations/permissions for record linkage.",
         "min": 0,
         "max": "1",
         "type": [
@@ -69,9 +71,10 @@
       {
         "id": "nfdi4health-lm-mds-rl.RecordLinkage.legalBasisDetails",
         "path": "nfdi4health-lm-mds-rl.RecordLinkage.legalBasisDetails",
-        "short": "Information specifying which specific legal basis allows for record linkage.",
-        "definition": "Information specifying which specific legal basis allows for record linkage.",
-        "comment": "Additional information: If existing, any specific legal regulations/permissions (e.g. for social data, for cancer registry data, hospital data, etc.).\n* 1..1 1..1, if RecordLinkage.legalBasis == \"Yes\"\n* 0..0 0..0, if RecordLinkage.legalBasis == \"No\"",
+        "short": "legalBasisDetails",
+        "definition": "Specific legal basis allowing record linkage",
+        "comment": "Additional information: If existing, any specific legal regulations/permissions (e.g. for social data, for cancer registry data, hospital data, etc.).</p>\n* 1..1M 1..1, if RecordLinkage.legalBasis == \"Yes\"\n* 0..0NP 0..0, if RecordLinkage.legalBasis == \"No\"",
+        "requirements": "Information specifying which specific legal basis allows for record linkage.",
         "min": 0,
         "max": "1",
         "type": [
@@ -83,9 +86,9 @@
       {
         "id": "nfdi4health-lm-mds-rl.RecordLinkage.informedConsent",
         "path": "nfdi4health-lm-mds-rl.RecordLinkage.informedConsent",
-        "short": "Indication whether an informed consent that allows record linkage has been obtained.",
-        "definition": "Indication whether an informed consent that allows record linkage has been obtained.",
-        "comment": "Cardinality: 0..1",
+        "short": "informedConsent",
+        "definition": "Informed consent for record linkage obtained?",
+        "requirements": "Indication whether an informed consent that allows record linkage has been obtained.",
         "min": 0,
         "max": "1",
         "type": [
@@ -97,9 +100,9 @@
       {
         "id": "nfdi4health-lm-mds-rl.RecordLinkage.responsibleInstitutions",
         "path": "nfdi4health-lm-mds-rl.RecordLinkage.responsibleInstitutions",
-        "short": "Institutions and authorities that must agree to the record linkage.",
-        "definition": "Institutions and authorities that must agree to the record linkage.",
-        "comment": "Cardinality: 0..*",
+        "short": "responsibleInstitutions",
+        "definition": "Responsible authorities",
+        "requirements": "Institutions and authorities that must agree to the record linkage.",
         "min": 0,
         "max": "*",
         "type": [
@@ -111,9 +114,9 @@
       {
         "id": "nfdi4health-lm-mds-rl.RecordLinkage.additionalCosts",
         "path": "nfdi4health-lm-mds-rl.RecordLinkage.additionalCosts",
-        "short": "Indication whether there are additional costs for record linkage.",
-        "definition": "Indication whether there are additional costs for record linkage.",
-        "comment": "Cardinality: 0..1",
+        "short": "additionalCosts",
+        "definition": "Additional costs for record linkage",
+        "requirements": "Indication whether there are additional costs for record linkage.",
         "min": 0,
         "max": "1",
         "type": [
@@ -125,9 +128,9 @@
       {
         "id": "nfdi4health-lm-mds-rl.RecordLinkage.identifiers",
         "path": "nfdi4health-lm-mds-rl.RecordLinkage.identifiers",
-        "short": "Identifiers that can be used for record linkage (e.g. names, date of birth, zip code, insurance number or control number as in cancer registries).",
-        "definition": "Identifiers that can be used for record linkage (e.g. names, date of birth, zip code, insurance number or control number as in cancer registries).",
-        "comment": "Cardinality: 0..*",
+        "short": "identifiers",
+        "definition": "Identifiers for record linkage",
+        "requirements": "Identifiers that can be used for record linkage (e.g. names, date of birth, zip code, insurance number or control number as in cancer registries).",
         "min": 0,
         "max": "*",
         "type": [
@@ -139,9 +142,9 @@
       {
         "id": "nfdi4health-lm-mds-rl.RecordLinkage.furtherDetails",
         "path": "nfdi4health-lm-mds-rl.RecordLinkage.furtherDetails",
-        "short": "Additional important details for conducting record linkage.",
-        "definition": "Additional important details for conducting record linkage.",
-        "comment": "Cardinality: 0..1",
+        "short": "furtherDetails",
+        "definition": "Further details important for conducting record linkage",
+        "requirements": "Additional important details for conducting record linkage.",
         "min": 0,
         "max": "1",
         "type": [
@@ -153,9 +156,9 @@
       {
         "id": "nfdi4health-lm-mds-rl.RecordLinkage.exampleResources",
         "path": "nfdi4health-lm-mds-rl.RecordLinkage.exampleResources",
-        "short": "DOIs of additional related resources specific to record linkage (e.g., publications).",
-        "definition": "DOIs of additional related resources specific to record linkage (e.g., publications).",
-        "comment": "\"Cardinality*",
+        "short": "exampleResources",
+        "definition": "Record linkage example resources",
+        "requirements": "DOIs of additional related resources specific to record linkage (e.g., publications).",
         "min": 0,
         "max": "*",
         "type": [
