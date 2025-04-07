@@ -41,17 +41,11 @@
       {
         "id": "nfdi4health-lm-mds-eocd.ChronicDiseasesEpidemiology",
         "path": "nfdi4health-lm-mds-eocd.ChronicDiseasesEpidemiology",
-        "short": "Chronic disease data collected in the [RESOURCE]",
-        "definition": "Chronic disease data collected in the [RESOURCE]",
-        "comment": "Cardinality:</strong> 1..*, if Resource.chronicDiseases == 'Yes' AND Resource.classification.type == ('Study protocol' OR 'Informed consent form' OR 'Patient information sheet' OR 'Manual of operations (SOPs)' OR 'Statistical analysis plan' OR 'Data management plan' OR 'Case report form' OR 'Interview scheme\n                        and themes' OR 'Observation guide' OR 'Discussion guide' OR 'Participant tasks' OR 'Other study document' OR 'Other'); otherwise 0.. 0",
-        "requirements": "Group of items providing information on chronic disease data collection.",
+        "short": "Chronic disease data collected in the Group of items providing information on chronic disease data collection.",
+        "definition": "Chronic disease data collected in the Group of items providing information on chronic disease data collection.",
+        "comment": "Cardinality: 1..*, if Resource.chronicDiseases == 'Yes' AND Resource.classification.type == ('Study protocol' OR 'Informed consent form' OR 'Patient information sheet' OR 'Manual of operations (SOPs)' OR 'Statistical analysis plan' OR 'Data management plan' OR 'Case report form' OR 'Interview scheme and themes' OR 'Observation guide' OR 'Discussion guide' OR 'Participant tasks' OR 'Other study document' OR 'Other'); otherwise 0.. 0",
         "min": 0,
         "max": "*",
-        "base": {
-          "path": "ChronicDiseasesEpidemiology",
-          "min": 0,
-          "max": "*"
-        },
         "type": [
           {
             "code": "BackboneElement"
@@ -61,17 +55,11 @@
       {
         "id": "nfdi4health-lm-mds-eocd.ChronicDiseasesEpidemiology.commonChronicDiseaseName",
         "path": "nfdi4health-lm-mds-eocd.ChronicDiseasesEpidemiology.commonChronicDiseaseName",
-        "short": "commonChronicDiseaseName",
-        "definition": "Common chronic diseases on which data were collected",
-        "comment": "Additional information: </strong>The values originate from the following sources: 1) 10 types of cancer with the highest incidence in Germany, by gender, based on 2017/2018 German cancer registry data (RKI, Zentrum für Krebsregisterdaten, https://www.krebsdaten.de/); 2) 10 cardiovascular diseases with\n                            highest mortality in Germany in 2020 (www.destatis.de). <br/>All values follow the classifiction system ICD-10 (WHO's International Statistical Classification of Diseases and Related Health Problems, 10th Revision (ICD-10), https://icd.who.int/en).",
-        "requirements": "Specification of the common chronic diseases on which data were collected in the [RESOURCE].",
+        "short": "Common chronic diseases on which data were collected",
+        "definition": "Specification of the common chronic diseases on which data were collected in the Group of items providing information on chronic disease data collection.",
+        "comment": "Additional information: The values originate from the following sources: 1) 10 types of cancer with the highest incidence in Germany, by gender, based on 2017/2018 German cancer registry data (RKI, Zentrum für Krebsregisterdaten, https://www.krebsdaten.de/); 2) 10 cardiovascular diseases with highest mortality in Germany in 2020 (www.destatis.de). <br/>All values follow the classifiction system ICD-10 (WHO's International Statistical Classification of Diseases and Related Health Problems, 10th Revision (ICD-10), https://icd.who.int/en).",
         "min": 0,
         "max": "*",
-        "base": {
-          "path": "ChronicDiseasesEpidemiology.commonChronicDiseaseName",
-          "min": 0,
-          "max": "*"
-        },
         "type": [
           {
             "code": "CodeableConcept"
@@ -79,24 +67,17 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-cd-common-chronic-disease-name-sct-local",
-          "description": "NFDI4Health_VS_MDS_CD_CommonChronicDiseaseName_SCT_Local"
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-cd-common-chronic-disease-name-sct-local"
         }
       },
       {
         "id": "nfdi4health-lm-mds-eocd.ChronicDiseasesEpidemiology.dataCollected",
         "path": "nfdi4health-lm-mds-eocd.ChronicDiseasesEpidemiology.dataCollected",
-        "short": "dataCollected",
-        "definition": "Type of data collected",
-        "comment": "Cardinality:1..1",
-        "requirements": "Specification of the type of data collected.",
+        "short": "Type of data collected",
+        "definition": "Specification of the type of data collected.",
+        "comment": "Cardinality: 1..1",
         "min": 0,
         "max": "*",
-        "base": {
-          "path": "ChronicDiseasesEpidemiology.dataCollected",
-          "min": 0,
-          "max": "*"
-        },
         "type": [
           {
             "code": "CodeableConcept"
@@ -104,24 +85,17 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-cd-datacollected-nci",
-          "description": "NFDI4Health_VS_MDS_CD_DataCollected_NCI"
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-cd-datacollected-nci"
         }
       },
       {
         "id": "nfdi4health-lm-mds-eocd.ChronicDiseasesEpidemiology.informationSources",
         "path": "nfdi4health-lm-mds-eocd.ChronicDiseasesEpidemiology.informationSources",
-        "short": "informationSources",
-        "definition": "From which sources were data generated/extracted?",
-        "comment": "Additional information: </strong>Treat prevalent and incident diseases separately (selected values should be specific for prevalent diseases and then separately incident diseases).",
-        "requirements": "Specification of the source(s) from which information was generated/extracted.",
+        "short": "From which sources were data generated/extracted?",
+        "definition": "Specification of the source(s) from which information was generated/extracted.",
+        "comment": "Additional information: Treat prevalent and incident diseases separately (selected values should be specific for prevalent diseases and then separately incident diseases).",
         "min": 0,
         "max": "*",
-        "base": {
-          "path": "ChronicDiseasesEpidemiology.informationSources",
-          "min": 0,
-          "max": "*"
-        },
         "type": [
           {
             "code": "CodeableConcept"
@@ -129,24 +103,17 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-cd-information-sources-nci-local",
-          "description": "NFDI4Health_VS_MDS_CD_Information_Sources_NCI_Local"
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-cd-information-sources-nci-local"
         }
       },
       {
         "id": "nfdi4health-lm-mds-eocd.ChronicDiseasesEpidemiology.outcomesVerificationMethods",
         "path": "nfdi4health-lm-mds-eocd.ChronicDiseasesEpidemiology.outcomesVerificationMethods",
-        "short": "outcomesVerificationMethods",
-        "definition": "How were outcomes generally verified?",
-        "comment": "Cardinality:0..*",
-        "requirements": "Methods of verification differ by study. All the details per outcome are not needed here but rather an explanation of how outcomes were verified in general.",
+        "short": "How were outcomes generally verified?",
+        "definition": "Methods of verification differ by study. All the details per outcome are not needed here but rather an explanation of how outcomes were verified in general.",
+        "comment": "Cardinality: 0..*",
         "min": 0,
         "max": "*",
-        "base": {
-          "path": "ChronicDiseasesEpidemiology.outcomesVerificationMethods",
-          "min": 0,
-          "max": "*"
-        },
         "type": [
           {
             "code": "string"
