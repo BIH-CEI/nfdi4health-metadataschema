@@ -55,7 +55,7 @@
       {
         "id": "EvidenceVariable",
         "path": "EvidenceVariable",
-        "short": "Design.exposures: Exposures of the [RESOURCE]",
+        "short": "Exposures",
         "definition": "Group of items providing information about the exposures of the [RESOURCE].",
         "comment": "Specification of the exposure(s) associated with each group.",
         "mapping": [
@@ -109,8 +109,8 @@
         "id": "EvidenceVariable.characteristic.definition[x]:definitionCodeableConcept",
         "path": "EvidenceVariable.characteristic.definition[x]",
         "sliceName": "definitionCodeableConcept",
-        "short": "Design.exposures.type: Type of the exposure",
-        "definition": "Design.exposures.type: General type of the given exposure.",
+        "short": "Type of the exposure",
+        "definition": "General type of the given exposure.",
         "min": 1,
         "max": "1",
         "type": [

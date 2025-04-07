@@ -10,10 +10,8 @@ Description: "Information about the intervention or in a study."
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 * . ^short = "Interventions of the [RESOURCE]"
-* . ^definition = "
-Group of items providing information about the interventions of the [RESOURCE]."
-* . ^comment = "Additional information: 
-Specification of the intervention(s) associated with each arm."
+* . ^definition = "Group of items providing information about the interventions of the [RESOURCE]."
+* . ^comment = "Additional information: Specification of the intervention(s) associated with each arm."
 * title 1..
 * title ^short = "Name of the intervention"
 * title ^definition = "A short descriptive name of the intervention."

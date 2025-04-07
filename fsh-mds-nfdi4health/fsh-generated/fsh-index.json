@@ -805,7 +805,7 @@
     "fshType": "Logical",
     "fshFile": "logicals/lm-mds-nfdi4health-nutritional-epidemiology_v3_3_1.fsh",
     "startLine": 1,
-    "endLine": 109
+    "endLine": 45
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-lm-metadatenschema-recordlinkage.json",
@@ -877,7 +877,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/NFDI4Health_PR_MDS_Evidence_Variable_Intervention.fsh",
     "startLine": 1,
-    "endLine": 27
+    "endLine": 25
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-pr-mds-group-actual.json",
@@ -965,7 +965,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/NFDI4Health_PR_MDS_Study.fsh",
     "startLine": 1,
-    "endLine": 147
+    "endLine": 145
   },
   {
     "outputFile": "ValueSet-nfdi4health-vs-mds-cd-common-chronic-disease-name-sct-local.json",

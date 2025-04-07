@@ -72,15 +72,15 @@
           ],
           "rules": "open"
         },
-        "short": "Eligibility criteria for study participants",
-        "definition": "Group of items providing information about eligibility criteria for study participants."
+        "short": "Eligibility criteria",
+        "definition": "Group of items providing information about eligibility criteria for participants."
       },
       {
         "id": "Group.characteristic:eligibleMinimumAge",
         "path": "Group.characteristic",
         "sliceName": "eligibleMinimumAge",
         "short": "Eligibility criteria: Minimum age",
-        "definition": "Group of items providing information about the minimum eligible age of [RESOURCE] participants.",
+        "definition": "Group of items providing information about the minimum eligible age of participants.\t",
         "min": 0,
         "max": "1",
         "mapping": [

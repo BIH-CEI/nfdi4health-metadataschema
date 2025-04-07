@@ -25,14 +25,14 @@ Description: "Extension providing info of the study population Location."
 * extension[coverage] ^comment = "Short input help: Select one value from the list."
 * extension[coverage].value[x] only Coding
 * extension[coverage].valueCoding from NFDI4Health_VS_MDS_Population_Coverage_NCI (required)
-* extension[countries] ^short = "Country(ies)"
+* extension[countries] ^short = "Countries"
 * extension[countries] ^definition = "Country or countries where the [RESOURCE] takes place."
 * extension[countries] ^comment = "Short input help: Select all that apply."
 * extension[countries].value[x] only Coding
 * extension[countries].valueCoding from NFDI4Health_VS_MDS_Countries_ISO (required)
 * extension[countries] ^binding.description = "Value set including the country names from the ISO 3166-1 list"
-* extension[region] ^short = "Region(s) and/or city(ies)"
-* extension[region] ^definition = "If applicable, region(s) and/or city(ies) within a country where the [RESOURCE] takes place."
+* extension[region] ^short = "Regions and/or cities"
+* extension[region] ^definition = "If applicable, regions and/or cities within a country where the [RESOURCE] takes place."
 * extension[region].value[x] only string
 
 

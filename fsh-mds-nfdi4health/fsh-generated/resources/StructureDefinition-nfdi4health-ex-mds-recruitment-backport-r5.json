@@ -145,7 +145,7 @@
       {
         "id": "Extension.extension:eligibility.value[x]",
         "path": "Extension.extension.value[x]",
-        "definition": "Information about the eligibility criteria in a study.",
+        "definition": "Group of items providing information about eligibility criteria for participants.",
         "type": [
           {
             "code": "Reference",

@@ -56,8 +56,8 @@
         "id": "EvidenceVariable",
         "path": "EvidenceVariable",
         "short": "Interventions of the [RESOURCE]",
-        "definition": "\nGroup of items providing information about the interventions of the [RESOURCE].",
-        "comment": "Additional information: \nSpecification of the intervention(s) associated with each arm.",
+        "definition": "Group of items providing information about the interventions of the [RESOURCE].",
+        "comment": "Additional information: Specification of the intervention(s) associated with each arm.",
         "mapping": [
           {
             "identity": "NFDI4Health",

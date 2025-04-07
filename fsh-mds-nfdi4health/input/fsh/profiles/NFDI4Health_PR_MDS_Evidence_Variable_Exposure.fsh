@@ -9,7 +9,7 @@ Description: "Information about the exposure in a study."
 * ^publisher = "NFDI4Health"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
-* . ^short = "Design.exposures: Exposures of the [RESOURCE]"
+* . ^short = "Exposures"
 * . ^definition = "Group of items providing information about the exposures of the [RESOURCE]."
 * . ^comment = "Specification of the exposure(s) associated with each group."
 * title 1..
@@ -21,8 +21,8 @@ Description: "Information about the exposure in a study."
 * characteristic.definitionCodeableConcept 1..1
 * characteristic.definitionCodeableConcept from NFDI4Health_VS_MDS_Study_Exposure_Type_NCI (required)
 * characteristic.definitionCodeableConcept ^binding.description = "Value set defining codes to specify the general type of the given intervention/exposure in the study."
-* characteristic.definitionCodeableConcept ^short = "Design.exposures.type: Type of the exposure"
-* characteristic.definitionCodeableConcept ^definition = "Design.exposures.type: General type of the given exposure."
+* characteristic.definitionCodeableConcept ^short = "Type of the exposure"
+* characteristic.definitionCodeableConcept ^definition = "General type of the given exposure."
 
 Mapping: NFDI4Health-Evidence-Variable-Exposure-to-FHIR
 Id: NFDI4Health

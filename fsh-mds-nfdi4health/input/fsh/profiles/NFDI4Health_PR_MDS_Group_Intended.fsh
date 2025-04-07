@@ -17,8 +17,8 @@ Description: "Information about the eligibility criteria in a study."
 * characteristic ^slicing.discriminator.type = #value
 * characteristic ^slicing.discriminator.path = "code"
 * characteristic ^slicing.rules = #open
-* characteristic ^short = "Eligibility criteria for study participants"
-* characteristic ^definition = "Group of items providing information about eligibility criteria for study participants."
+* characteristic ^short = "Eligibility criteria"
+* characteristic ^definition = "Group of items providing information about eligibility criteria for participants."
 * characteristic contains
     eligibleMinimumAge 0..1 and
     eligibleMaximumAge 0..1 and
@@ -26,7 +26,7 @@ Description: "Information about the eligibility criteria in a study."
     inclusionCriteria 0..1 and
     exclusionCriteria 0..1
 * characteristic[eligibleMinimumAge] ^short = "Eligibility criteria: Minimum age"
-* characteristic[eligibleMinimumAge] ^definition = "Group of items providing information about the minimum eligible age of [RESOURCE] participants."
+* characteristic[eligibleMinimumAge] ^definition = "Group of items providing information about the minimum eligible age of participants.	"
 * characteristic[eligibleMinimumAge].code = $Remaining#189 "Planned Minimum Age of Subjects" (exactly)
 * characteristic[eligibleMinimumAge].value[x] only Quantity
 * characteristic[eligibleMinimumAge].valueQuantity.value 1..

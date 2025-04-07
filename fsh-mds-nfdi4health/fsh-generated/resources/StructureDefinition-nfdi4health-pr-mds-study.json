@@ -708,14 +708,6 @@
       {
         "id": "ResearchStudy.phase",
         "path": "ResearchStudy.phase",
-        "short": "Numerical phase",
-        "definition": "If applicable, numerical phase of the [RESOURCE].",
-        "comment": "Short input help: Select one value from the list.",
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-phase-nci",
-          "description": "Value set defining codes to specify the phase of a (sub-)study in a ResearchStudy resource."
-        },
         "mapping": [
           {
             "identity": "NFDI4Health",
@@ -724,14 +716,16 @@
         ]
       },
       {
-        "id": "ResearchStudy.phase.coding.system",
-        "path": "ResearchStudy.phase.coding.system",
-        "min": 1
-      },
-      {
-        "id": "ResearchStudy.phase.coding.code",
-        "path": "ResearchStudy.phase.coding.code",
-        "min": 1
+        "id": "ResearchStudy.phase.coding",
+        "path": "ResearchStudy.phase.coding",
+        "short": "Numerical phase",
+        "definition": "If applicable, numerical phase of the [RESOURCE].",
+        "comment": "Short input help: Select one value from the list.",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-phase-nci",
+          "description": "Value set defining codes to specify the phase of a (sub-)study in a ResearchStudy resource."
+        }
       },
       {
         "id": "ResearchStudy.category",

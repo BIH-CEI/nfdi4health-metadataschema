@@ -30,7 +30,7 @@ Description: "Extension providing information about recruitment and eligibility 
 * extension[actualNumber].valueUnsignedInt ^definition = "Obtained number of observational units for the whole [RESOURCE] (e.g. obtained number of [RESOURCE] participants at all sites of the [RESOURCE])."
 * extension[actualNumber].valueUnsignedInt ^comment = "Additional information: The value is only available after the end of recruitment."
 * extension[eligibility].value[x] only Reference(NFDI4Health_PR_MDS_Group_Eligibility)
-* extension[eligibility].valueReference ^definition = "Information about the eligibility criteria in a study."
+* extension[eligibility].valueReference ^definition = "Group of items providing information about eligibility criteria for participants."
 * extension[actualGroup].value[x] only Reference(NFDI4Health_PR_MDS_Group_Actual)
 * extension[actualGroup].valueReference ^definition = "Further Information about the population in a study."
 

@@ -46,7 +46,7 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Outcome measures in the [RESOURCE]",
+        "short": "Outcome measures",
         "definition": "Group of items providing information about outcome measures.",
         "comment": "Additional information: The items are optional, especially for non-interventional studies. [Backport Extension from R5: ResearchStudy.outcomeMeasure; Please note that some cardinalities have been adapted and some of the elements are not relevant for NFDI4Health. We changed the DataType from description to string and added an element to capture the time frame.]",
         "mapping": [
