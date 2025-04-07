@@ -41,9 +41,10 @@
       {
         "id": "nfdi4health-lm-mds-ne.DietAssessment",
         "path": "nfdi4health-lm-mds-ne.DietAssessment",
-        "short": "DietAssessment",
-        "definition": "roup of items providing information on diet assessment.",
-        "comment": "Cardinality:</strong> 1..*, if Resource.nutritionalData == 'Yes'; otherwise 0.. 0",
+        "short": "Diet assessment information collected in the [RESOURCE]",
+        "definition": "Group of i providing information on diet assessment.",
+        "comment": "\n* 1..*, if Resource.nutritionalData == \"Yes\"\n* 0..0, if Resource.nutritionalData == \"No\"",
+        "requirements": "**Description: **Group of i providing information on diet assessment.",
         "min": 0,
         "max": "*",
         "type": [
@@ -57,9 +58,8 @@
         "path": "nfdi4health-lm-mds-ne.DietAssessment.instrument",
         "short": "Dietary assessment instrument used",
         "definition": "Specification of the dietary assessment instrument like food record or diet history.",
-        "comment": "Cardinality: 1..1",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "CodeableConcept"
@@ -71,13 +71,13 @@
         }
       },
       {
-        "id": "nfdi4health-lm-mds-ne.DietAssessment.ffqItemsNumber",
-        "path": "nfdi4health-lm-mds-ne.DietAssessment.ffqItemsNumber",
+        "id": "nfdi4health-lm-mds-ne.DietAssessment.ffqINumber",
+        "path": "nfdi4health-lm-mds-ne.DietAssessment.ffqINumber",
         "short": "Number of items in the food frequency questionnaire (FFQ)",
         "definition": "The number of items inquired by the food frequency questionnaire (FFQ). A food frequency questionnaire (FFQ) consists of a finite list of foods and beverages with response categories to indicate usual frequency of consumption over the time period queried.",
-        "comment": "Cardinality:</strong> 1..1, if DietAssessment.instrument == 'Food frequency questionnaire (FFQ)'; otherwise 0.. 0",
+        "comment": "\n* 1..1, if DietAssessment.instrument == \"Food frequency questionnaire (FFQ)\"\n* 0..0, if DietAssessment.instrument != \"Food frequency questionnaire (FFQ)\"",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "Quantity"
@@ -89,8 +89,7 @@
         "path": "nfdi4health-lm-mds-ne.DietAssessment.mode",
         "short": "Modes used to apply the dietary assessment instrument",
         "definition": "How the dietary assessment instrument was applied.",
-        "comment": "Cardinality: 1..*",
-        "min": 0,
+        "min": 1,
         "max": "*",
         "type": [
           {
@@ -107,8 +106,7 @@
         "path": "nfdi4health-lm-mds-ne.DietAssessment.device",
         "short": "Devices used to apply the dietary assessment instrument",
         "definition": "Specification of device(s) used to apply the dietary assessment instrument to participants.",
-        "comment": "Cardinality: 1..*",
-        "min": 0,
+        "min": 1,
         "max": "*",
         "type": [
           {
@@ -125,8 +123,7 @@
         "path": "nfdi4health-lm-mds-ne.DietAssessment.portionSizeEstimation",
         "short": "How was the portion size estimated?",
         "definition": "Specification of how the portion size was inquired in the dietary assessment instrument.",
-        "comment": "Cardinality: 1..*",
-        "min": 0,
+        "min": 1,
         "max": "*",
         "type": [
           {
@@ -143,8 +140,7 @@
         "path": "nfdi4health-lm-mds-ne.DietAssessment.referencePeriodUnit",
         "short": "Reference period unit",
         "definition": "Indication of the reference period the dietary assessment instrument refers to (e.g. 24-h recall refers to the previous day)",
-        "comment": "Cardinality:</strong> 1..1",
-        "min": 0,
+        "min": 1,
         "max": "*",
         "type": [
           {
@@ -161,9 +157,8 @@
         "path": "nfdi4health-lm-mds-ne.DietAssessment.referencePeriodNumber",
         "short": "Number of reference period units",
         "definition": "Numerical value of reference period units.",
-        "comment": "Cardinality:</strong> 1..1",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Quantity"
@@ -175,9 +170,8 @@
         "path": "nfdi4health-lm-mds-ne.DietAssessment.repeat",
         "short": "Instrument applied repeatedly?",
         "definition": "Indication whether the same instrument was applied repeatedly.",
-        "comment": "Cardinality: 1..1",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "boolean"
@@ -189,9 +183,9 @@
         "path": "nfdi4health-lm-mds-ne.DietAssessment.repeatFrequency",
         "short": "Frequency of instrument application",
         "definition": "Indication of how often the dietary assessment instrument was repeatedly applied.",
-        "comment": "Cardinality: 1..1, if DietAssessment.repeat == 'Yes'; otherwise 0.. 0",
+        "comment": "\n* 1..1, if DietAssessment.repeat == \"Yes\"\n* 0..0, if DietAssessment.repeat == \"No\"",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "Quantity"
@@ -202,10 +196,9 @@
         "id": "nfdi4health-lm-mds-ne.DietAssessment.validity",
         "path": "nfdi4health-lm-mds-ne.DietAssessment.validity",
         "short": "Instrument validated?",
-        "definition": "Indication whether the dietary assessment instrument was validated. Validity refers to whether an instrument accurately measures what it is intended to measure. This is typically assessed by comparison to a gold standard using methods like correlations or Bland-Altman plots. It indicates how suitable the instrument is for its purpose and whether it can be applied to other populations beyond the original study.",
-        "comment": "Cardinality: 1..1",
-        "min": 0,
-        "max": "*",
+        "definition": "Indication whether the dietary assessment instrument was validated. Validity refers to whether an instrument accurately measures what it is intended to measure. This is typically assessed by comparison to a gold standard using methods like correlations or Bland-Altman plots. It indicates how suitable the                             instrument is for its purpose and whether it can be applied to other populations beyond the original study.",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "boolean"
@@ -215,11 +208,12 @@
       {
         "id": "nfdi4health-lm-mds-ne.DietAssessment.validityReference",
         "path": "nfdi4health-lm-mds-ne.DietAssessment.validityReference",
-        "short": "Reference describing the validation",
-        "definition": "Indication of the reference describing the validation. Publications that describe the validation of an instrument. Ideally, this should include studies that have undergone a peer-review process. Code or documentation that has not been peer-reviewed would not be considered sufficient in this context.",
-        "comment": "Cardinality: 1..1, if DietAssessment.validity == 'Yes'; otherwise 0.. 0",
+        "short": "validityReference",
+        "definition": "Reference describing the validation",
+        "comment": "<p><strong>Cardinality:</strong> 1..1, if DietAssessment.validity == 'Yes'; otherwise 0.. 0</p>\n* 1..1M 1..1, if DietAssessment.validity == \"Yes\"\n* 0..0NP 0..0, if DietAssessment.validity == \"No\"",
+        "requirements": "Indication of the reference describing the validation. Publications that describe the validation of an instrument. Ideally, this should include studies that have undergone a peer-review process. Code or documentation that has not been peer-reviewed would not be considered sufficient in this                         context.",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "string"
@@ -231,9 +225,8 @@
         "path": "nfdi4health-lm-mds-ne.DietAssessment.reliability",
         "short": "Instrument described according to reliability?",
         "definition": "Indication whether the dietary assessment instrument was described according to its reliability. Reliability reflects how consistently an instrument produces the same results across repeated uses. This is critical for longitudinal studies using the same tools over time.",
-        "comment": "Cardinality: 1..1",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "boolean"
@@ -245,9 +238,9 @@
         "path": "nfdi4health-lm-mds-ne.DietAssessment.reliabilityReference",
         "short": "Reference describing reliability measures",
         "definition": "Indication of the reference describing the reliability measures.",
-        "comment": "Cardinality: 1..1, if DietAssessment.reliability == 'Yes'; otherwise 0.. 0",
+        "comment": "\n* 1..1, if DietAssessment.reliability == \"Yes\"\n* 0..0, if DietAssessment.reliability == \"No\"",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "string"
@@ -259,9 +252,8 @@
         "path": "nfdi4health-lm-mds-ne.DietAssessment.dietarySupplements",
         "short": "Dietary supplements inquired?",
         "definition": "Indication whether the dietary assessment instrument inquires information about dietary supplements.",
-        "comment": "Cardinality: 1..1",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "boolean"

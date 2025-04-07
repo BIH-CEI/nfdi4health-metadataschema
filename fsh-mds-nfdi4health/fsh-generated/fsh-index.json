@@ -797,7 +797,7 @@
     "fshType": "Logical",
     "fshFile": "logicals/lm-mds-nfdi4health-nutritional-epidemiology_v3_3_1.fsh",
     "startLine": 1,
-    "endLine": 45
+    "endLine": 53
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-lm-metadatenschema-recordlinkage.json",
