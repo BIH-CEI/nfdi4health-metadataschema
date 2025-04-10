@@ -41,7 +41,6 @@
 [InstanceOfStudySPOVID]: ResearchStudy-InstanceOfStudySPOVID.html
 [NFDI4Health_VS_MDS_CD_CommonChronicDiseaseName_SCT_Local]: ValueSet-nfdi4health-vs-mds-cd-common-chronic-disease-name-sct-local.html
 [NFDI4Health_LM_MDS_Core]: StructureDefinition-nfdi4health-lm-mds-core.html
-[NFDI4Health_LM_MDS_Core_Test]: StructureDefinition-nfdi4health-lm-mds-core-test.html
 [nfdi4health-cps-mds-capability-statement]: CapabilityStatement-nfdi4health-cps-mds-capability-statement.html
 [NFDI4Health_CS_MDS_Label_FHIR]: CodeSystem-nfdi4health-cs-mds-label-fhir.html
 [NFDI4Health_CS_MDS_Provenance_Data_Source]: CodeSystem-nfdi4health-cs-mds-provenance-data-source.html
