@@ -1,0 +1,190 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "nfdi4health-lm-mds-core-test",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-mds-core-test",
+  "name": "NFDI4Health_LM_MDS_Core_Test",
+  "title": "NFDI4Health Core Metadataschema Test",
+  "status": "draft",
+  "publisher": "NFDI4Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nfdi4health.de"
+        }
+      ]
+    }
+  ],
+  "description": "NFDI4Health Logical Model of Core V3.3.1 test",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/LogicalModel/nfdi4health-lm-mds-core-test",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "nfdi4health-lm-mds-core-test",
+        "path": "nfdi4health-lm-mds-core-test",
+        "short": "NFDI4Health Core Metadataschema Test",
+        "definition": "NFDI4Health Logical Model of Core V3.3.1 test"
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource",
+        "path": "nfdi4health-lm-mds-core-test.Resource",
+        "short": "Resource",
+        "definition": "Group of items providing information about a resource. Resources can be, for example, files or parts of them (e.g. datasets or study documents such as study protocols or questionnaires) or also studies or substudies.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.identifier",
+        "path": "nfdi4health-lm-mds-core-test.Resource.identifier",
+        "short": "identifier",
+        "definition": "Unique identifier of the resource used for identification within the NFDI4Health.",
+        "comment": "Additional information: The identifier is assigned automatically.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.classification",
+        "path": "nfdi4health-lm-mds-core-test.Resource.classification",
+        "short": "Resource classification",
+        "definition": "Group of items providing information about the classification of the resource within the predefined categories.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.classification.type",
+        "path": "nfdi4health-lm-mds-core-test.Resource.classification.type",
+        "short": "Type of the resource",
+        "definition": "A term describing the resource.",
+        "comment": "Additional information: The selected resource type determines which information will be asked next.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-resource-type-nci-local"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.classification.typeGeneral",
+        "path": "nfdi4health-lm-mds-core-test.Resource.classification.typeGeneral",
+        "short": "In what form is the [RESOURCE] available?",
+        "definition": "Specific information about the form in which the [RESOURCE] is available.",
+        "comment": "Additional information: If the [RESOURCE] consists primarily of words for reading and is not covered by another textual resource type in this list, 'Text' should be used instead of 'Other'.\n* 1..1, if Resource.classification.type != (\"Study\" OR \"Substudy\" OR \"Dataset\" OR \"Registry\" OR \"Secondary data source\")\n* 0..0, if Resource.classification.type == (\"Study\" OR \"Substudy\" OR \"Dataset\" OR \"Registry\" OR \"Secondary data source\")",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-resource-type-general-nci-msh-local"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.titles",
+        "path": "nfdi4health-lm-mds-core-test.Resource.titles",
+        "short": "Titles/names",
+        "definition": "Group of items providing information about title(s)/name(s) of the [RESOURCE].",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.titles.text",
+        "path": "nfdi4health-lm-mds-core-test.Resource.titles.text",
+        "short": "Title/name",
+        "definition": "Scientific unabbreviated title or name of the [RESOURCE].",
+        "comment": "Additional information: If no official title/name has been defined yet, a title/name that is suitable for public display should be used.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.titles.language",
+        "path": "nfdi4health-lm-mds-core-test.Resource.titles.language",
+        "short": "Language of the title/name",
+        "definition": "Language in which the title/name is provided.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-languages-iso"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.acronyms",
+        "path": "nfdi4health-lm-mds-core-test.Resource.acronyms",
+        "short": "Acronyms",
+        "definition": "Group of items providing information about acronym(s) or alternative short title(s)/name(s) of the [RESOURCE].",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.acronyms.text",
+        "path": "nfdi4health-lm-mds-core-test.Resource.acronyms.text",
+        "short": "Acronym",
+        "definition": "If existing, acronym(s) of the [RESOURCE].",
+        "comment": "Additional information: The field refers primarily to resources which have an acronym.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      }
+    ]
+  }
+}

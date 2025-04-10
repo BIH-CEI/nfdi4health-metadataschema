@@ -364,6 +364,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/nfdi4health-lm-mds-core-test"
+        },
+        "name": "NFDI4Health Core Metadataschema Test",
+        "description": "NFDI4Health Logical Model of Core V3.3.1 test",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CapabilityStatement/nfdi4health-cps-mds-capability-statement"
         },
         "name": "Nfdi4Health CPS MDS Capability Statment",

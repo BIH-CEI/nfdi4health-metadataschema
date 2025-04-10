@@ -776,6 +776,14 @@
     "endLine": 17
   },
   {
+    "outputFile": "StructureDefinition-nfdi4health-lm-mds-core-test.json",
+    "fshName": "NFDI4Health_LM_MDS_Core_Test",
+    "fshType": "Logical",
+    "fshFile": "logicals/core.fsh",
+    "startLine": 1,
+    "endLine": 41
+  },
+  {
     "outputFile": "StructureDefinition-nfdi4health-lm-mds-core.json",
     "fshName": "NFDI4Health_LM_MDS_Core",
     "fshType": "Logical",
