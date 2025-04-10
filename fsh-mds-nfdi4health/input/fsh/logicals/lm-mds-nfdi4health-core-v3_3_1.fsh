@@ -77,7 +77,7 @@ Description: "NFDI4Health Logical Model of Core V3.3.1"
 * Resource.webpage ^definition = "If existing, a link to the web page directly relevant to the [RESOURCE]."
 
 * Resource.nonStudyDetails 0..1 BackboneElement "Further details"
-* Resource.nonStudyDetails ^comment = "Cardinality: \n* 1..1, if Resource.classification.type != (\"Study\" OR \"Substudy\" OR \"Registry\" OR \"Secondary data source\")\n* 0..0NP 0..0, if Resource.classification.type == (\"Study\" OR \"Substudy\" OR \"Registry\" OR \"Secondary data source\")"
+* Resource.nonStudyDetails ^comment = "Cardinality: \n* 1..1, if Resource.classification.type != (\"Study\" OR \"Substudy\" OR \"Registry\" OR \"Secondary data source\")\n* 0..0, if Resource.classification.type == (\"Study\" OR \"Substudy\" OR \"Registry\" OR \"Secondary data source\")"
 * Resource.nonStudyDetails ^definition = "Group of items providing further detailed information about the [RESOURCE]. It is applicable only to resource types other than a study, a substudy, a dataset, a registry, or a secondary data source."
 
 * Resource.nonStudyDetails.version 0..1 string "Version"

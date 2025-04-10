@@ -334,7 +334,7 @@
         "path": "nfdi4health-lm-mds-core.Resource.nonStudyDetails",
         "short": "Further details",
         "definition": "Group of items providing further detailed information about the [RESOURCE]. It is applicable only to resource types other than a study, a substudy, a dataset, a registry, or a secondary data source.",
-        "comment": "Cardinality: \n* 1..1, if Resource.classification.type != (\"Study\" OR \"Substudy\" OR \"Registry\" OR \"Secondary data source\")\n* 0..0NP 0..0, if Resource.classification.type == (\"Study\" OR \"Substudy\" OR \"Registry\" OR \"Secondary data source\")",
+        "comment": "Cardinality: \n* 1..1, if Resource.classification.type != (\"Study\" OR \"Substudy\" OR \"Registry\" OR \"Secondary data source\")\n* 0..0, if Resource.classification.type == (\"Study\" OR \"Substudy\" OR \"Registry\" OR \"Secondary data source\")",
         "min": 0,
         "max": "1",
         "type": [
