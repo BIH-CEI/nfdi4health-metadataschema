@@ -184,6 +184,1153 @@
             "code": "string"
           }
         ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.acronyms.language",
+        "path": "nfdi4health-lm-mds-core-test.Resource.acronyms.language",
+        "short": "Language of the acronym",
+        "definition": "Language in which the acronym is provided.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-languages-iso"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.descriptions",
+        "path": "nfdi4health-lm-mds-core-test.Resource.descriptions",
+        "short": "Descriptions",
+        "definition": "Group of items providing information about the description(s) of the [RESOURCE].",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.descriptions.text",
+        "path": "nfdi4health-lm-mds-core-test.Resource.descriptions.text",
+        "short": "Description",
+        "definition": "Short plain text summary of the [RESOURCE].",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.descriptions.language",
+        "path": "nfdi4health-lm-mds-core-test.Resource.descriptions.language",
+        "short": "Language of the description",
+        "definition": "Language in which the description text is provided.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-languages-iso"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.keywords",
+        "path": "nfdi4health-lm-mds-core-test.Resource.keywords",
+        "short": "Keywords",
+        "definition": "Group of items providing information about keywords describing the [RESOURCE].",
+        "comment": "Additional information: The findability of the [RESOURCE] can be significantly increased if proper keywords are stated.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.keywords.label",
+        "path": "nfdi4health-lm-mds-core-test.Resource.keywords.label",
+        "short": "Keyword",
+        "definition": "Keyword(s) describing the [RESOURCE].",
+        "comment": "Additional information: The use of terms from established classifications/vocabularies (e.g. SNOMED CT, MeSH, UMLS) is preferred. However, also self-assigned keywords are allowed.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "example": [
+          {
+            "label": "example",
+            "valueString": "SARS-CoV-2"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.keywords.code",
+        "path": "nfdi4health-lm-mds-core-test.Resource.keywords.code",
+        "short": "Code of the keyword",
+        "definition": "If known, the code of the keyword in the classification/vocabulary used.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "example": [
+          {
+            "label": "example",
+            "valueString": "http://id.nlm.nih.gov/mesh/D000086402"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.languages",
+        "path": "nfdi4health-lm-mds-core-test.Resource.languages",
+        "short": "Languages",
+        "definition": "Language(s) in which the [RESOURCE] is conducted/provided.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-languages-iso"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.webpage",
+        "path": "nfdi4health-lm-mds-core-test.Resource.webpage",
+        "short": "Web page",
+        "definition": "If existing, a link to the web page directly relevant to the [RESOURCE].",
+        "comment": "Additional information: Other web pages related to the [RESOURCE] can additionally be entered in the section 'Related resources'.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.nonStudyDetails",
+        "path": "nfdi4health-lm-mds-core-test.Resource.nonStudyDetails",
+        "short": "Further details",
+        "definition": "Group of items providing further detailed information about the [RESOURCE]. It is applicable only to resource types other than a study, a substudy, a dataset, a registry, or a secondary data source.",
+        "comment": "Cardinality: \n* 1..1, if Resource.classification.type != (\"Study\" OR \"Substudy\" OR \"Registry\" OR \"Secondary data source\")\n* 0..0NP 0..0, if Resource.classification.type == (\"Study\" OR \"Substudy\" OR \"Registry\" OR \"Secondary data source\")",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.nonStudyDetails.version",
+        "path": "nfdi4health-lm-mds-core-test.Resource.nonStudyDetails.version",
+        "short": "Version",
+        "definition": "If applicable, the version number of the [RESOURCE].",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.nonStudyDetails.format",
+        "path": "nfdi4health-lm-mds-core-test.Resource.nonStudyDetails.format",
+        "short": "Format",
+        "definition": "If applicable, the file format of the [RESOURCE] (e.g., XML, PDF, XLSX, etc.).",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "example": [
+          {
+            "label": "example",
+            "valueString": "PDF"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.nonStudyDetails.useRights",
+        "path": "nfdi4health-lm-mds-core-test.Resource.nonStudyDetails.useRights",
+        "short": "Use rights",
+        "definition": "Group of items providing information about the rights to (re-)use the [RESOURCE].",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.nonStudyDetails.useRights.label",
+        "path": "nfdi4health-lm-mds-core-test.Resource.nonStudyDetails.useRights.label",
+        "short": "License",
+        "definition": "License defining the rights to (re-)use the [RESOURCE].",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-use-rights-label-spdx-smomed-local"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.nonStudyDetails.useRights.link",
+        "path": "nfdi4health-lm-mds-core-test.Resource.nonStudyDetails.useRights.link",
+        "short": "URL of the license",
+        "definition": "Link to a web page that contains detailed information about the selected license.",
+        "comment": "Cardinality: \n* 0..1, if Resource.nonStudyDetails.useRights.label == \"Other\"\n* 0..0, if Resource.nonStudyDetails.useRights.label != \"Other\"",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.nonStudyDetails.useRights.confirmations",
+        "path": "nfdi4health-lm-mds-core-test.Resource.nonStudyDetails.useRights.confirmations",
+        "short": "Licensing confirmations",
+        "definition": "Group of items applicable only if a Creative Commons (CC) license is selected.",
+        "comment": "Additional information: In order to successfully publish the [RESOURCE] under the respective license, all four questions ought to be confirmed.Cardinality: \n* 1..1, if Resource.nonStudyDetails.useRights.label != (\"CC0 1.0 (Creative Commons Zero v1.0 Universal)\" OR \"All rights reserved\" OR \"Other\" OR \"Not applicable\" OR \"Unknown\")\n* 0..0, if Resource.nonStudyDetails.useRights.label == (\"CC0 1.0 (Creative Commons Zero v1.0 Universal)\" OR \"All rights reserved\" OR \"Other\" OR \"Not applicable\" OR \"Unknown\")",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.nonStudyDetails.useRights.confirmations.authority",
+        "path": "nfdi4health-lm-mds-core-test.Resource.nonStudyDetails.useRights.confirmations.authority",
+        "short": "Do you confirm that the authors of the [RESOURCE] have authority to license it?",
+        "definition": "Confirmation that the authors of the [RESOURCE] have authority to license it.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.nonStudyDetails.useRights.confirmations.terms",
+        "path": "nfdi4health-lm-mds-core-test.Resource.nonStudyDetails.useRights.confirmations.terms",
+        "short": "Do you confirm that the authors of the [RESOURCE] have read and understood the terms of the chosen license?",
+        "definition": "Confirmation that the authors of the [RESOURCE] have read and understood the terms of the chosen license.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.nonStudyDetails.useRights.confirmations.irrevocability",
+        "path": "nfdi4health-lm-mds-core-test.Resource.nonStudyDetails.useRights.confirmations.irrevocability",
+        "short": "Do you confirm that the authors of the [RESOURCE] understand that Creative Commons licensing is irrevocable?",
+        "definition": "Confirmation that the authors of the [RESOURCE] understand that Creative Commons (CC) licensing is not revocable.",
+        "comment": "Additional information: The [RESOURCE] can be licensed using a CC-license only if it is free of the third-party rights.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.nonStudyDetails.useRights.confirmations.supportByLicensing",
+        "path": "nfdi4health-lm-mds-core-test.Resource.nonStudyDetails.useRights.confirmations.supportByLicensing",
+        "short": "Do you confirm that the authors of the [RESOURCE] allow NFDI4Health to license the document?",
+        "definition": "Confirmation that NFDI4Health is allowed to license the document, i.e. to add the license information such as a license button and a statement that your material is licensed under a Creative Commons license to the [RESOURCE].",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.nonStudyDetails.useRights.description",
+        "path": "nfdi4health-lm-mds-core-test.Resource.nonStudyDetails.useRights.description",
+        "short": "Additional information about use rights",
+        "definition": "Any additional descriptive information explaining terms and conditions to (re-)use the [RESOURCE].",
+        "comment": "Additional information: If 'Other' is selected in the field 'License', the preferred license or terms and conditions for (re-)use should be specified here.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.contributors",
+        "path": "nfdi4health-lm-mds-core-test.Resource.contributors",
+        "short": "Contributors",
+        "definition": "Group of items providing information about person(s), group(s) of persons or institution(s)/organisation(s) contributing to the [RESOURCE].",
+        "comment": "Additional information: For each [RESOURCE], there may be multiple contributors, but at least one person, group of persons or institution/organisation must be specified.",
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Resource.contributors",
+          "min": 1,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.contributors.nameType",
+        "path": "nfdi4health-lm-mds-core-test.Resource.contributors.nameType",
+        "short": "Is it a personal or organisational contribution?",
+        "definition": "Indication whether the contribution was made by person(s) or organisation(s)/institution(s)/group(s).",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-role-name-type-snomed"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.contributors.organisational",
+        "path": "nfdi4health-lm-mds-core-test.Resource.contributors.organisational",
+        "short": "Details about the contributing organisations/institutions/groups",
+        "definition": "Group of items providing information about organisation(s), institution(s) or group(s) of persons contributing to the [RESOURCE].",
+        "comment": "Additional information: Group of items applicable only when providing organisational, institutional or group names.\n* 1..1, if Resource.contributors.nameType == \"Organisational\"\n* 0..0, if Resource.contributors.nameType != \"Organisational\"",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.contributors.organisational.type",
+        "path": "nfdi4health-lm-mds-core-test.Resource.contributors.organisational.type",
+        "short": "Contributor type",
+        "definition": "The type of role that an organization, institution, or group of persons fulfills as a contributor. For example, this could include being a sponsor of the study or a group of authors of the document.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-organisational-roles-nci-local"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.contributors.organisational.fundingIds",
+        "path": "nfdi4health-lm-mds-core-test.Resource.contributors.organisational.fundingIds",
+        "short": "Funding identifiers",
+        "definition": "Identifier(s) assigned by a funder to the [RESOURCE].",
+        "comment": "Cardinality: \n* 0..*, if Resource.contributors.organisational.type == (\"Funder (public)\" OR \"Funder (private)\") \n* 0..0, if Resource.contributors.organisational.type != (\"Funder (public)\" OR \"Funder (private)\")",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.contributors.organisational.name",
+        "path": "nfdi4health-lm-mds-core-test.Resource.contributors.organisational.name",
+        "short": "Name of the organisation/institution/group",
+        "definition": "Name of the contributing organisation, institution or group.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.contributors.personal",
+        "path": "nfdi4health-lm-mds-core-test.Resource.contributors.personal",
+        "short": "Details about the contributing persons",
+        "definition": "Group of items providing information about person(s) contributing to the [RESOURCE].",
+        "comment": "Additional information: Group of items applicable only when providing person names.\n* 1..1, if Resource.contributors.nameType == \"Personal\"\n* 0..0, if Resource.contributors.nameType != \"Personal\"",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.contributors.personal.type",
+        "path": "nfdi4health-lm-mds-core-test.Resource.contributors.personal.type",
+        "short": "Contributor type",
+        "definition": "The type of role that a person fulfills as a contributor. For example, this could include being a principal investigator of the study or an author of the document.",
+        "comment": "(1) A person taking responsibility for and initiating a study; (2) An individual, organization, group or other legal person taking responsibility for securing the arrangements to initiate and/or manage a study (including arrangements to ensure that the study design meets appropriate standards and to ensure appropriate conduct and reporting). In commercial\n                                        trials, the primary sponsor is normally the main applicant for regulatory authorization to begin the study. It may or may not be the main funder [CT.gov (<a href=\"https://prsinfo.clinicaltrials.gov/definitions.html\" rel=\"noopener noreferrer nofollow\">https://prsinfo.clinicaltrials.gov/definitions.html</a>, <a href=\"https://www.clinicaltrials.gov/ct2/about-studies/glossary\" rel=\"noopener noreferrer nofollow\">https://www.clinicaltrials.gov/ct2/about-studies/glossary</a>), NCI (GitHub - NCI-Thesaurus/thesaurus-obo-edition: OBO Library edition of NCIt)].",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-personal-roles-nci-local"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.contributors.personal.givenName",
+        "path": "nfdi4health-lm-mds-core-test.Resource.contributors.personal.givenName",
+        "short": "Given name",
+        "definition": "Given name of the person.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.contributors.personal.familyName",
+        "path": "nfdi4health-lm-mds-core-test.Resource.contributors.personal.familyName",
+        "short": "Family name",
+        "definition": "Family name(s) of the person.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.contributors.personal.identifiers",
+        "path": "nfdi4health-lm-mds-core-test.Resource.contributors.personal.identifiers",
+        "short": "Digital identifiers",
+        "definition": "Group of items providing information about digital identifiers of the person.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.contributors.personal.identifiers.identifier",
+        "path": "nfdi4health-lm-mds-core-test.Resource.contributors.personal.identifiers.identifier",
+        "short": "Identifier",
+        "definition": "Digital identifier according to a specific scheme that uniquely identifies the person.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "example": [
+          {
+            "label": "example",
+            "valueString": "0000-0003-1379-7023"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.contributors.personal.identifiers.scheme",
+        "path": "nfdi4health-lm-mds-core-test.Resource.contributors.personal.identifiers.scheme",
+        "short": "Scheme",
+        "definition": "Type of the identifier scheme.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "example": [
+          {
+            "label": "example",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "urn:oid:2.16.840.1.113883.3.1937.777.64.5.1",
+                  "code": "080",
+                  "display": "ORCID"
+                }
+              ],
+              "text": "ORCID"
+            }
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-role-name-identifier-scheme-local"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.contributors.email",
+        "path": "nfdi4health-lm-mds-core-test.Resource.contributors.email",
+        "short": "Email address",
+        "definition": "Email address of the person, organisation, institution or group of persons.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.contributors.phone",
+        "path": "nfdi4health-lm-mds-core-test.Resource.contributors.phone",
+        "short": "Phone number",
+        "definition": "Phone number of the person, organisation, institution or group of persons.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "example": [
+          {
+            "label": "example",
+            "valueString": "+49 (0)153 1112233"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.contributors.affiliations",
+        "path": "nfdi4health-lm-mds-core-test.Resource.contributors.affiliations",
+        "short": "Organisations associated with the contributor",
+        "definition": "Group of items providing further information about the organisation(s) associated with the contributor.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.contributors.affiliations.name",
+        "path": "nfdi4health-lm-mds-core-test.Resource.contributors.affiliations.name",
+        "short": "Name",
+        "definition": "Name of the organisation associated with the contributor.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.contributors.affiliations.address",
+        "path": "nfdi4health-lm-mds-core-test.Resource.contributors.affiliations.address",
+        "short": "Address",
+        "definition": "Address of the organisation associated with the contributor.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "example": [
+          {
+            "label": "example",
+            "valueString": "Gleueler Straße 60, 50931, Cologne, Germany"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.contributors.affiliations.webpage",
+        "path": "nfdi4health-lm-mds-core-test.Resource.contributors.affiliations.webpage",
+        "short": "Web page",
+        "definition": "Web page of the organisation associated with the contributor.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.contributors.affiliations.identifiers",
+        "path": "nfdi4health-lm-mds-core-test.Resource.contributors.affiliations.identifiers",
+        "short": "Digital identifiers",
+        "definition": "Group of items providing information about digital identifiers of the organisation associated with the contributor.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.contributors.affiliations.identifiers.identifier",
+        "path": "nfdi4health-lm-mds-core-test.Resource.contributors.affiliations.identifiers.identifier",
+        "short": "Identifier",
+        "definition": "Digital identifier according to a specific scheme that uniquely identifies the organisation.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "example": [
+          {
+            "label": "example",
+            "valueString": "0259fwx54"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.contributors.affiliations.identifiers.scheme",
+        "path": "nfdi4health-lm-mds-core-test.Resource.contributors.affiliations.identifiers.scheme",
+        "short": "Scheme",
+        "definition": "Type of the identifier scheme.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "example": [
+          {
+            "label": "example",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "urn:oid:2.16.840.1.113883.3.1937.777.64.5.1",
+                  "code": "081",
+                  "display": "ROR"
+                }
+              ],
+              "text": "ROR"
+            }
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-role-affiliation-identifier-scheme-local"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.idsAlternative",
+        "path": "nfdi4health-lm-mds-core-test.Resource.idsAlternative",
+        "short": "Alternative identifiers",
+        "definition": "Group of items providing information about identifiers (IDs) assigned to the given [RESOURCE] by another registering systems, e.g. a registry of clinical trials or a data repository.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.idsAlternative.schemes",
+        "path": "nfdi4health-lm-mds-core-test.Resource.idsAlternative.schemes",
+        "short": "Type of the registry",
+        "definition": "Type/name of the system where the given [RESOURCE] is already registered.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "example": [
+          {
+            "label": "example",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "urn:oid:2.16.840.1.113883.3.1937.777.64.5.1",
+                  "code": "098",
+                  "display": "DRKS"
+                }
+              ],
+              "text": "DRKS"
+            }
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-id-type-nci-local"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.idsAlternative.identifier",
+        "path": "nfdi4health-lm-mds-core-test.Resource.idsAlternative.identifier",
+        "short": "Identifier",
+        "definition": "Identifier assigned to the given [RESOURCE] by another registering system, e.g. by a registry of clinical trials or a data repository.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "example": [
+          {
+            "label": "example",
+            "valueString": "ISRCTN91495258"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.ids",
+        "path": "nfdi4health-lm-mds-core-test.Resource.ids",
+        "short": "Related resources",
+        "definition": "Group of items providing information about the resources related to the given [RESOURCE] and their identifiers (IDs), e.g. DOIs of publications, datasets, study documents or links to web pages.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.ids.identifier",
+        "path": "nfdi4health-lm-mds-core-test.Resource.ids.identifier",
+        "short": "Identifier of the related resource",
+        "definition": "Identifier related to, or associated with, the [RESOURCE] being registered. These can be identifiers of related publications, datasets, study documents, links to web pages, etc.",
+        "comment": "Additional information: a) Publications like journal articles usually have a DOI, e.g. 10.3238/arztebl.2020.0861.<br/>b) A link (URL) starting with 'http(s)://' to a web page with any additional information can also be provided.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "example": [
+          {
+            "label": "example",
+            "valueString": "10.4126/FRL01-006431467"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.ids.schemes",
+        "path": "nfdi4health-lm-mds-core-test.Resource.ids.schemes",
+        "short": "Type of the identifier",
+        "definition": "Type of the identifier of the related resource.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "example": [
+          {
+            "label": "example",
+            "valueCodeableConcept": {
+              "text": "DOI"
+            }
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-identifier-type-related-artifact-nci-local"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.ids.relationType",
+        "path": "nfdi4health-lm-mds-core-test.Resource.ids.relationType",
+        "short": "Relationship between the resources",
+        "definition": "Relationship between the [RESOURCE] being registered (A) and the related resource (B).",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "example": [
+          {
+            "label": "example",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "urn:oid:2.16.840.1.113883.3.1937.777.64.5.1",
+                  "code": "065",
+                  "display": "A is part of B"
+                }
+              ],
+              "text": "A is part of B"
+            }
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-relation-type-ids-local"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.ids.typeGeneral",
+        "path": "nfdi4health-lm-mds-core-test.Resource.ids.typeGeneral",
+        "short": "Type of the related resource",
+        "definition": "Type/form of the related resource, e.g. journal article, dataset, text, etc.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "example": [
+          {
+            "label": "example",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "urn:oid:2.16.840.1.113883.3.26.1.1",
+                  "code": "C25704",
+                  "display": "Text"
+                }
+              ],
+              "text": "Text"
+            }
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-resource-type-general-nci-msh-local"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.idsNfdi4health",
+        "path": "nfdi4health-lm-mds-core-test.Resource.idsNfdi4health",
+        "short": "Related resources registered on this portal",
+        "definition": "Group of items providing information about related resources (e.g. studies, study documents, etc.) registered on this portal.",
+        "comment": "Additional information: Does the [RESOURCE] have any related resources registered on this portal?",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.idsNfdi4health.identifiers",
+        "path": "nfdi4health-lm-mds-core-test.Resource.idsNfdi4health.identifiers",
+        "short": "Identifier of the related resource",
+        "definition": "Identifier of the related resource assigned on this portal.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "example": [
+          {
+            "label": "example",
+            "valueString": "39"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.idsNfdi4health.date",
+        "path": "nfdi4health-lm-mds-core-test.Resource.idsNfdi4health.date",
+        "short": "Date of identifier assignment",
+        "definition": "Date when the identifier of the related resource was assigned.",
+        "comment": "Additional information: Preferred date format: DD.MM.YYYY.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Resource.idsNfdi4health.date",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.idsNfdi4health.relationType",
+        "path": "nfdi4health-lm-mds-core-test.Resource.idsNfdi4health.relationType",
+        "short": "Relationship between the resources",
+        "definition": "Relationship between the [RESOURCE] being registered (A) and the related resource (B).",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-relation-type-ids-local"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.nutritionalData",
+        "path": "nfdi4health-lm-mds-core-test.Resource.nutritionalData",
+        "short": "Nutritional data collected?",
+        "definition": "Indication whether the [RESOURCE] collects nutritional data.",
+        "comment": "Cardinality: \n* 1..1, if Resource.classification.type == (\"Study\" OR \"Substudy\") AND Resource.provenance.dataSource == \"Manually collected\"\n* 0..0, if Resource.classification.type != (\"Study\" OR \"Substudy\") OR Resource.provenance.dataSource != \"Manually collected\"",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.chronicDiseases",
+        "path": "nfdi4health-lm-mds-core-test.Resource.chronicDiseases",
+        "short": "chronicDiseases",
+        "definition": "Indication whether the [RESOURCE] addresses chronic diseases.",
+        "comment": "Cardinality: 1..1, if Resource.provenance.dataSource == 'Manually collected'; otherwise 0..0\n* 1..1M 1..1, if Resource.provenance.dataSource == \"Manually collected\"\n* 0..0NP 0..0, if Resource.provenance.dataSource != \"Manually collected\"",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.provenance",
+        "path": "nfdi4health-lm-mds-core-test.Resource.provenance",
+        "short": "Provenance aspects of data entry",
+        "definition": "Group of items providing information about provenance aspects of the data entry on this portal.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.provenance.dataSource",
+        "path": "nfdi4health-lm-mds-core-test.Resource.provenance.dataSource",
+        "short": "dataSource",
+        "definition": "Source of information about the [RESOURCE] and the way it was uploaded/collected.",
+        "comment": "Cardinality: \n* 0..0 if Resource.classification.type == ('C63536' OR 'C198230' OR 'C61393' OR '178')\n* 0..0 if Resource.classification.type != ('C63536' OR 'C198230' OR 'C61393' OR '178')",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-provenance-data-source-local"
+        }
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.provenance.verificationDate",
+        "path": "nfdi4health-lm-mds-core-test.Resource.provenance.verificationDate",
+        "short": "Last verified on",
+        "definition": "Date on which the responsible party last verified the information about the [RESOURCE], even if no additional or updated information is being submitted.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.provenance.verificationUser",
+        "path": "nfdi4health-lm-mds-core-test.Resource.provenance.verificationUser",
+        "short": "verificationUser",
+        "definition": "User who last verified the information about the [RESOURCE].",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Resource.provenance.verificationUser",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.provenance.firstSubmittedDate",
+        "path": "nfdi4health-lm-mds-core-test.Resource.provenance.firstSubmittedDate",
+        "short": "First submitted on",
+        "definition": "Date when the [RESOURCE] was first submitted for publication.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.provenance.firstSubmittedUser",
+        "path": "nfdi4health-lm-mds-core-test.Resource.provenance.firstSubmittedUser",
+        "short": "First submitted by",
+        "definition": "User who first submitted the [RESOURCE] for publication.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.provenance.firstPostedDate",
+        "path": "nfdi4health-lm-mds-core-test.Resource.provenance.firstPostedDate",
+        "short": "First posted/published on",
+        "definition": "Date when the [RESOURCE] was first posted/published.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.provenance.firstPostedUser",
+        "path": "nfdi4health-lm-mds-core-test.Resource.provenance.firstPostedUser",
+        "short": "First posted/published by",
+        "definition": "User who first posted/published the [RESOURCE].",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.provenance.lastUpdateSubmittedDate",
+        "path": "nfdi4health-lm-mds-core-test.Resource.provenance.lastUpdateSubmittedDate",
+        "short": "Last update submitted on",
+        "definition": "Date when the last update of the [RESOURCE] was submitted for publication.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.provenance.lastUpdateSubmittedUser",
+        "path": "nfdi4health-lm-mds-core-test.Resource.provenance.lastUpdateSubmittedUser",
+        "short": "Last updated submitted by",
+        "definition": "User who submitted the last update of the [RESOURCE].",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.provenance.lastUpdatePostedDate",
+        "path": "nfdi4health-lm-mds-core-test.Resource.provenance.lastUpdatePostedDate",
+        "short": "Last update posted/published on",
+        "definition": "Date when the last update of the [RESOURCE] was posted/published.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.provenance.lastUpdatePostedUser",
+        "path": "nfdi4health-lm-mds-core-test.Resource.provenance.lastUpdatePostedUser",
+        "short": "Last update posted/published by",
+        "definition": "User who posted/published the last update of the [RESOURCE].",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core-test.Resource.provenance.resourceVersion",
+        "path": "nfdi4health-lm-mds-core-test.Resource.provenance.resourceVersion",
+        "short": "Version number",
+        "definition": "Version number of the [RESOURCE] within this portal.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
       }
     ]
   }
