@@ -113,6 +113,13 @@ Description: "NFDI4Health Logical Model of Core V3.3.1"
 * Resource.contributors.organisational.type from NFDI4Health_VS_MDS_Organisational_Roles_NCI_Local (required)
 * Resource.contributors.organisational.type ^comment = "Cardinality: 1..1"
 
+* Resource.contributors.organisational.fundingIds 0..* string "Funding identifiers" "Identifier(s) assigned by a funder to the [RESOURCE]."
+* Resource.contributors.organisational.fundingIds ^comment = "Cardinality: 0..*, if Resource.contributors.organisational.type == ('Funder (public)' OR 'Funder (private)'); otherwise 0..0" 
+* Resource.contributors.organisational.fundingIds ^requirements = "If available, you can enter funding identifiers."
+
+* Resource.contributors.organisational.name 1..1 string "Name of the organisation/institution/group" "Name of the contributing organisation, institution or group."
+* Resource.contributors.organisational.name ^requirements = "An organisational name can be used to denote an organisation, institution or research group."
+
 * Resource.contributors.personal 0..1 BackboneElement "Group of items providing information about person(s) contributing to the [RESOURCE]." "Details about the contributing persons"
 * Resource.contributors.personal ^comment = "Additional information: Group of items applicable only when providing person names."
 
@@ -258,7 +265,7 @@ Description: "NFDI4Health Logical Model of Core V3.3.1"
 * Resource.provenance 1..1 BackboneElement "Provenance aspects of data entry"
 * Resource.provenance ^comment = "Cardinality: 1..1"
 
-* Resource.provenance.dataSource 1..1 CodeableConcept "Source of information"
+* Resource.provenance.dataSource 0..1 CodeableConcept "Source of information"
 * Resource.provenance.dataSource from NFDI4Health_VS_MDS_Provenance_Data_Source_Local (required)
 * Resource.provenance.dataSource ^comment = "1..1, if Resource.classification.type == ('C63536' OR 'C198230' OR 'C61393' OR '178'); otherwise 0..0"
 

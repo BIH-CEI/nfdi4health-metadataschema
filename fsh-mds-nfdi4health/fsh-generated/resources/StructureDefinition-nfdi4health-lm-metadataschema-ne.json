@@ -42,7 +42,7 @@
         "id": "nfdi4health-lm-mds-ne.DietAssessment",
         "path": "nfdi4health-lm-mds-ne.DietAssessment",
         "short": "Diet assessment information collected in the [RESOURCE]",
-        "definition": "Group of i providing information on diet assessment.",
+        "definition": "Group of items providing information on diet assessment.",
         "comment": "\n* 1..*, if Resource.nutritionalData == \"Yes\"\n* 0..0, if Resource.nutritionalData == \"No\"",
         "requirements": "**Description: **Group of i providing information on diet assessment.",
         "min": 0,
@@ -71,8 +71,8 @@
         }
       },
       {
-        "id": "nfdi4health-lm-mds-ne.DietAssessment.ffqINumber",
-        "path": "nfdi4health-lm-mds-ne.DietAssessment.ffqINumber",
+        "id": "nfdi4health-lm-mds-ne.DietAssessment.ffqItemsNumber",
+        "path": "nfdi4health-lm-mds-ne.DietAssessment.ffqItemsNumber",
         "short": "Number of items in the food frequency questionnaire (FFQ)",
         "definition": "The number of items inquired by the food frequency questionnaire (FFQ). A food frequency questionnaire (FFQ) consists of a finite list of foods and beverages with response categories to indicate usual frequency of consumption over the time period queried.",
         "comment": "\n* 1..1, if DietAssessment.instrument == \"Food frequency questionnaire (FFQ)\"\n* 0..0, if DietAssessment.instrument != \"Food frequency questionnaire (FFQ)\"",
@@ -141,7 +141,7 @@
         "short": "Reference period unit",
         "definition": "Indication of the reference period the dietary assessment instrument refers to (e.g. 24-h recall refers to the previous day)",
         "min": 1,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "CodeableConcept"

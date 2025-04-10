@@ -565,6 +565,35 @@
         }
       },
       {
+        "id": "nfdi4health-lm-mds-core.Resource.contributors.organisational.fundingIds",
+        "path": "nfdi4health-lm-mds-core.Resource.contributors.organisational.fundingIds",
+        "short": "Funding identifiers",
+        "definition": "Identifier(s) assigned by a funder to the [RESOURCE].",
+        "comment": "Cardinality: 0..*, if Resource.contributors.organisational.type == ('Funder (public)' OR 'Funder (private)'); otherwise 0..0",
+        "requirements": "If available, you can enter funding identifiers.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "nfdi4health-lm-mds-core.Resource.contributors.organisational.name",
+        "path": "nfdi4health-lm-mds-core.Resource.contributors.organisational.name",
+        "short": "Name of the organisation/institution/group",
+        "definition": "Name of the contributing organisation, institution or group.",
+        "requirements": "An organisational name can be used to denote an organisation, institution or research group.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
         "id": "nfdi4health-lm-mds-core.Resource.contributors.personal",
         "path": "nfdi4health-lm-mds-core.Resource.contributors.personal",
         "short": "Group of items providing information about person(s) contributing to the [RESOURCE].",
@@ -1166,7 +1195,7 @@
         "short": "Source of information",
         "definition": "Source of information",
         "comment": "1..1, if Resource.classification.type == ('C63536' OR 'C198230' OR 'C61393' OR '178'); otherwise 0..0",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "type": [
           {
