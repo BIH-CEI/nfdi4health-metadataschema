@@ -784,6 +784,14 @@
     "endLine": 334
   },
   {
+    "outputFile": "StructureDefinition-nfdi4health-lm-mds-design.json",
+    "fshName": "NFDI4Health_LM_MDS_Design",
+    "fshType": "Logical",
+    "fshFile": "logicals/lm-mds-nfdi4health-design-v3_3_1.fsh",
+    "startLine": 1,
+    "endLine": 463
+  },
+  {
     "outputFile": "StructureDefinition-nfdi4health-lm-mds-eocd.json",
     "fshName": "NFDI4Health_LM_MDS_EOCD",
     "fshType": "Logical",
@@ -797,7 +805,7 @@
     "fshType": "Logical",
     "fshFile": "logicals/lm-mds-nfdi4health-nutritional-epidemiology_v3_3_1.fsh",
     "startLine": 1,
-    "endLine": 53
+    "endLine": 52
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-lm-metadatenschema-recordlinkage.json",
@@ -1160,8 +1168,8 @@
     "endLine": 16
   },
   {
-    "outputFile": "ValueSet-nfdi4health-vs-mds-role-name-type-snomedct.json",
-    "fshName": "NFDI4Health_VS_MDS_Role_Name_Type_SNOMEDCT",
+    "outputFile": "ValueSet-nfdi4health-vs-mds-role-name-type-snomed.json",
+    "fshName": "NFDI4Health_VS_MDS_Role_Name_Type_SNOMED",
     "fshType": "ValueSet",
     "fshFile": "valuesets/vs-role-name-type.fsh",
     "startLine": 1,
@@ -1488,8 +1496,8 @@
     "endLine": 15
   },
   {
-    "outputFile": "ValueSet-nfdi4health-vs-mds-yes-no-undecided-snomedct-nci.json",
-    "fshName": "NFDI4Health_VS_MDS_Yes_No_Undecided_SNOMEDCT_NCI",
+    "outputFile": "ValueSet-nfdi4health-vs-mds-yes-no-undecided-nci.json",
+    "fshName": "NFDI4Health_VS_MDS_Yes_No_Undecided_NCI",
     "fshType": "ValueSet",
     "fshFile": "valuesets/vs-yes-no-undecided.fsh",
     "startLine": 1,

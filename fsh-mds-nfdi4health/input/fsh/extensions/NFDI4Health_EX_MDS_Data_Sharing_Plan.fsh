@@ -37,7 +37,7 @@ Description: "Extension providing information about the data sharing strategy of
 * extension[generally].value[x] only Coding
 * extension[generally].valueCoding.code 1..1
 * extension[generally].valueCoding.system 1..1
-* extension[generally].valueCoding from NFDI4Health_VS_MDS_Yes_No_Undecided_SNOMEDCT_NCI (required)
+* extension[generally].valueCoding from NFDI4Health_VS_MDS_Yes_No_Undecided_NCI (required)
 * extension[generally].valueCoding ^binding.description = "Value set used to respond to questions that can be answered Yes, No, or Undecided"
 * extension[supportingInformation] ^short = "Supporting documents available in addition to the data"
 * extension[supportingInformation] ^definition = "Supporting information/documents which will be made available in addition to the data collected in the [RESOURCE]."

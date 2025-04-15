@@ -98,6 +98,7 @@
 [NFDI4Health_EX_MDS_Subject]: StructureDefinition-nfdi4health-ex-mds-subject.html
 [NFDI4Health_EX_MDS_Use_Rights_Confirmations]: StructureDefinition-nfdi4health-ex-mds-use-rights-confirmations.html
 [NFDI4Health_EX_MDS_Version]: StructureDefinition-nfdi4health-ex-mds-version.html
+[NFDI4Health_LM_MDS_Design]: StructureDefinition-nfdi4health-lm-mds-design.html
 [NFDI4Health_LM_MDS_EOCD]: StructureDefinition-nfdi4health-lm-mds-eocd.html
 [Module_Nutritional_Epidemiology]: StructureDefinition-nfdi4health-lm-metadataschema-ne.html
 [NFDI4Health_LM_Metadataschema_RecordLinkage]: StructureDefinition-nfdi4health-lm-metadatenschema-recordlinkage.html
@@ -144,7 +145,7 @@
 [NFDI4Health_VS_MDS_Resource_Type_NCI_Local]: ValueSet-nfdi4health-vs-mds-resource-type-nci-local.html
 [NFDI4Health_VS_MDS_Role_Affiliation_Identifier_Scheme_Local]: ValueSet-nfdi4health-vs-mds-role-affiliation-identifier-scheme-local.html
 [NFDI4Health_VS_MDS_Role_Name_Identifier_Scheme_Local]: ValueSet-nfdi4health-vs-mds-role-name-identifier-scheme-local.html
-[NFDI4Health_VS_MDS_Role_Name_Type_SNOMEDCT]: ValueSet-nfdi4health-vs-mds-role-name-type-snomedct.html
+[NFDI4Health_VS_MDS_Role_Name_Type_SNOMED]: ValueSet-nfdi4health-vs-mds-role-name-type-snomed.html
 [NFDI4Health_VS_MDS_Study_Allocation_NCI]: ValueSet-nfdi4health-vs-mds-study-allocation-nci.html
 [NFDI4Health_VS_MDS_Study_Arm_Group_Type_NCI]: ValueSet-nfdi4health-vs-mds-study-arm-group-type-nci.html
 [NFDI4Health_VS_MDS_Study_Assessments_SCT_NCI]: ValueSet-nfdi4health-vs-mds-study-assessments-sct-nci.html
@@ -183,5 +184,5 @@
 [NFDI4Health_VS_MDS_Study_Type_Non_Interventional_NCI_MSH_Local]: ValueSet-nfdi4health-vs-mds-study-type-non-interventional-nci-msh-local.html
 [NFDI4Health_VS_MDS_Use_Rights_Label_SPDX_SNOMED_Local]: ValueSet-nfdi4health-vs-mds-use-rights-label-spdx-snomed-local.html
 [NFDI4Health_VS_MDS_Yes_No_Not_Applicable_SNOMEDCT]: ValueSet-nfdi4health-vs-mds-yes-no-not-applicable-snomedct.html
-[NFDI4Health_VS_MDS_Yes_No_Undecided_SNOMEDCT_NCI]: ValueSet-nfdi4health-vs-mds-yes-no-undecided-snomedct-nci.html
+[NFDI4Health_VS_MDS_Yes_No_Undecided_NCI]: ValueSet-nfdi4health-vs-mds-yes-no-undecided-nci.html
 [NFDI4Health_EX_MDS_Related]: StructureDefinition-nfdi4health-ex-mds-related.html

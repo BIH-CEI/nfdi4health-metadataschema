@@ -18,7 +18,7 @@ Description: "Group of items providing information about person(s), group(s) of 
 * value[x] 1..1
 * value[x] only Coding
 * valueCoding
-* valueCoding from NFDI4Health_VS_MDS_Role_Name_Type_SNOMEDCT (required)
+* valueCoding from NFDI4Health_VS_MDS_Role_Name_Type_SNOMED (required)
 
 
 Mapping: NFDI4Health-Name-Type-to-FHIR

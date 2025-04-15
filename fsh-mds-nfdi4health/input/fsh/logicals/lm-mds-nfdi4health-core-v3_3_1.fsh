@@ -126,7 +126,7 @@ Description: "NFDI4Health Logical Model of Core V3.3.1"
 * Resource.contributors ^base.path = "Resource.contributors"
 
 * Resource.contributors.nameType 1..1 CodeableConcept "Is it a personal or organisational contribution?"
-* Resource.contributors.nameType from NFDI4Health_VS_MDS_Role_Name_Type_SNOMEDCT (required)
+* Resource.contributors.nameType from NFDI4Health_VS_MDS_Role_Name_Type_SNOMED (required)
 * Resource.contributors.nameType ^definition = "Indication whether the contribution was made by person(s) or organisation(s)/institution(s)/group(s)."
 
 * Resource.contributors.organisational 0..1 BackboneElement "Details about the contributing organisations/institutions/groups"

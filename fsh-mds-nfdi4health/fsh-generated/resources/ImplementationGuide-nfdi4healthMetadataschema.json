@@ -820,6 +820,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/nfdi4health-lm-mds-design"
+        },
+        "name": "NFDI4Health Module Design",
+        "description": "NFDI4Health Logical Model of Module Design V3.3.1",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/nfdi4health-lm-mds-eocd"
         },
         "name": "NFDI4Health Module Epidemiology of Chronic Diseases",
@@ -1188,9 +1196,9 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/nfdi4health-vs-mds-role-name-type-snomedct"
+          "reference": "ValueSet/nfdi4health-vs-mds-role-name-type-snomed"
         },
-        "name": "NFDI4Health VS MDS Role Name Type [SNOMED CT]",
+        "name": "NFDI4Health VS MDS Role Name Type [SNOMED]",
         "description": "Value set defining codes to specify role types.",
         "exampleBoolean": false
       },
@@ -1500,9 +1508,9 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/nfdi4health-vs-mds-yes-no-undecided-snomedct-nci"
+          "reference": "ValueSet/nfdi4health-vs-mds-yes-no-undecided-nci"
         },
-        "name": "NFDI4Health VS MDS Yes, No, Undecided [SNOMED CT, NCI]",
+        "name": "NFDI4Health VS MDS Yes, No, Undecided [ NCI]",
         "description": "Value set used to respond to questions that can be answered Yes, No, or Undecided",
         "exampleBoolean": false
       },
