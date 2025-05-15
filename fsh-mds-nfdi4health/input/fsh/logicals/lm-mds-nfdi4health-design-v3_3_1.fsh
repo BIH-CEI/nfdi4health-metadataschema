@@ -22,12 +22,12 @@ Description: "NFDI4Health Logical Model of Module Design V3.3.1"
 
 * Design.studyType.interventional 0..* CodeableConcept "Interventional study model"
 * Design.studyType.interventional from NFDI4Health_VS_MDS_Study_Type_Interventional_NCI (required)
-* Design.studyType.interventional ^comment = "Cardinality: \n* 1..*M 1..*, if Design.primaryDesign == \"Interventional\"\n* 0..0, if Design.primaryDesign != \"Interventional\""
+* Design.studyType.interventional ^comment = "Cardinality: \n* 1..*, if Design.primaryDesign == \"Interventional\"\n* 0..0, if Design.primaryDesign != \"Interventional\""
 * Design.studyType.interventional ^definition = "The strategy for assigning interventions to participants."
 
 * Design.studyType.nonInterventional 0..* CodeableConcept "Non-interventional study model"
 * Design.studyType.nonInterventional from NFDI4Health_VS_MDS_Study_Type_Non_Interventional_NCI_MSH_Local (required)
-* Design.studyType.nonInterventional ^comment = "Cardinality: \n* 1..*M 1..*, if Design.primaryDesign == \"Non-interventional\"\n* 0..0, if Design.primaryDesign != \"Non-interventional\""
+* Design.studyType.nonInterventional ^comment = "Cardinality: \n* 1..*, if Design.primaryDesign == \"Non-interventional\"\n* 0..0, if Design.primaryDesign != \"Non-interventional\""
 * Design.studyType.nonInterventional ^definition = "The primary strategy for participant identification and follow-up."
 
 * Design.conditions 0..* BackboneElement "Primary health conditions or diseases considered in the [RESOURCE]"
@@ -88,7 +88,7 @@ Description: "NFDI4Health Logical Model of Module Design V3.3.1"
 * Design.mortalityData ^comment = "Cardinality: \n* 0..1, if (Resource.classification.type == (\"Study\" OR \"Substudy\") AND Design.studyType.nonInterventional == (\"Longitudinal\" OR \"Cohort\" OR \"Case-cohort\" OR \"Birth cohort\" OR \"Trend\" OR \"Panel\")) OR Resource.classification.type == (\"Registry\" OR\n                                    \"Secondary data source\")\n* 0..0, if Resource.classification.type != (\"Registry\" OR \"Secondary data source\") AND Design.studyType.nonInterventional != (\"Longitudinal\" OR \"Cohort\" OR \"Case-cohort\" OR \"Birth cohort\" OR \"Trend\" OR \"Panel\")"
 * Design.mortalityData ^definition = "Indication whether mortality data are collected in the [RESOURCE]."
 
-* Design.administrativeInformation 0..1 BackboneElement "administrativeInformation" "Administrative information"
+* Design.administrativeInformation 0..1 BackboneElement "Administrative information"
 * Design.administrativeInformation ^comment = "Cardinality: \n*  1..1, if Resource.classification.type == (\"Study\" OR \"Substudy\")\n* 0..1, if Resource.classification.type != (\"Study\" OR \"Substudy\")"
 * Design.administrativeInformation ^definition = "Group of items providing administrative information about the [RESOURCE]."
 
@@ -139,14 +139,14 @@ Description: "NFDI4Health Logical Model of Module Design V3.3.1"
 * Design.centers ^comment = "Cardinality: \n* 0..1, if Resource.classification.type == (\"Study\" OR \"Substudy\")\n* 0..0, if Resource.classification.type != (\"Study\" OR \"Substudy\")"
 * Design.centers ^definition = "Specification whether the data are collected at only one or at more than one study center."
 
-* Design.centersNumbers 0..1 Quantity "Number of centers"
-* Design.centersNumbers ^comment = "Cardinality: \n* 0..1, if Resource.classification.type == (\"Study\" OR \"Substudy\") AND Design.centers == \"Multicentric\"\n* 0..0, if Resource.classification.type != (\"Study\" OR \"Substudy\") OR Design.centers != \"Multicentric\""
-* Design.centersNumbers ^definition = "Number of study centers involved in data collection."
+* Design.centersNumber 0..1 Quantity "Number of centers"
+* Design.centersNumber ^comment = "Cardinality: \n* 0..1, if Resource.classification.type == (\"Study\" OR \"Substudy\") AND Design.centers == \"Multicentric\"\n* 0..0, if Resource.classification.type != (\"Study\" OR \"Substudy\") OR Design.centers != \"Multicentric\""
+* Design.centersNumber ^definition = "Number of study centers involved in data collection."
 
-* Design.dataProviderss 0..1 CodeableConcept "One or more data providers?"
-* Design.dataProviderss from NFDI4Health_VS_MDS_Study_Data_Providers_Local (required)
-* Design.dataProviderss ^comment = "Cardinality: \n* 0..1, if Resource.classification.type == (\"Registry\" OR \"Secondary data source\")\n* 0..0, if Resource.classification.type != (\"Registry\" OR \"Secondary data source\")"
-* Design.dataProviderss ^definition = "Specification whether the [RESOURCE] involves only one or more than one data provider."
+* Design.dataProviders 0..1 CodeableConcept "One or more data providers?"
+* Design.dataProviders from NFDI4Health_VS_MDS_Study_Data_Providers_Local (required)
+* Design.dataProviders ^comment = "Cardinality: \n* 0..1, if Resource.classification.type == (\"Registry\" OR \"Secondary data source\")\n* 0..0, if Resource.classification.type != (\"Registry\" OR \"Secondary data source\")"
+* Design.dataProviders ^definition = "Specification whether the [RESOURCE] involves only one or more than one data provider."
 
 * Design.dataProvidersNumbers 0..1 Quantity "Number of data providers"
 * Design.dataProvidersNumbers ^comment = "Cardinality: \n* 0..1, if Resource.classification.type == (\"Registry\" OR \"Secondary data source\") AND Design.dataProviders == \"Several data providers\"\n* 0..0, if Resource.classification.type != (\"Registry\" OR \"Secondary data source\") OR Design.dataProviders != \"Several data providers\""
@@ -160,31 +160,31 @@ Description: "NFDI4Health Logical Model of Module Design V3.3.1"
 * Design.sampling ^comment = "Cardinality: \n* 0..1, if Resource.classification.type == (\"Study\" OR \"Substudy\")\n* 0..0, if Resource.classification.type != (\"Study\" OR \"Substudy\")"
 * Design.sampling ^definition = "Group of items providing information about the applied sampling method."
 
-* Design.sampling.methods 1..1  CodeableConcept "Applied sampling method"
-* Design.sampling.methods from NFDI4Health_VS_MDS_Study_Sampling_Method_NCI_Local (required)
-* Design.sampling.methods ^definition = "Type of the sampling method applied for the selection of participants."
+* Design.sampling.method 1..1  CodeableConcept "Applied sampling method"
+* Design.sampling.method from NFDI4Health_VS_MDS_Study_Sampling_Method_NCI_Local (required)
+* Design.sampling.method ^definition = "Type of the sampling method applied for the selection of participants."
 
-* Design.sampling.probabilityMethods 0..1 CodeableConcept "probabilityMethod" "Specific type of probability sampling"
-* Design.sampling.probabilityMethods from NFDI4Health_VS_MDS_Study_Sampling_Probability_Method_NCI_Local (required)
-* Design.sampling.probabilityMethods ^comment = "Cardinality: \n* 0..1, if Design.sampling.method == \"Probability\"\n* 0..0, if Design.sampling.method != \"Probability\""
-* Design.sampling.probabilityMethods ^definition = "Specific type of the probability sampling method applied for the selection of participants."
+* Design.sampling.probabilityMethod 0..1 CodeableConcept "Specific type of probability sampling"
+* Design.sampling.probabilityMethod from NFDI4Health_VS_MDS_Study_Sampling_Probability_Method_NCI_Local (required)
+* Design.sampling.probabilityMethod ^comment = "Cardinality: \n* 0..1, if Design.sampling.method == \"Probability\"\n* 0..0, if Design.sampling.method != \"Probability\""
+* Design.sampling.probabilityMethod ^definition = "Specific type of the probability sampling method applied for the selection of participants."
 
-* Design.sampling.nonProbabilityMethods 0..1 CodeableConcept "Specific type of non-probability sampling"
-* Design.sampling.nonProbabilityMethods from NFDI4Health_VS_MDS_Study_Sampling_Method_Non_Probability_NCI_Local (required)
-* Design.sampling.nonProbabilityMethods ^comment = "Cardinality: \n* 0..1, if Design.sampling.method == \"Non-probability\"\n* 0..0, if Design.sampling.method != \"Non-probability\""
-* Design.sampling.nonProbabilityMethods ^definition = "Specific type of the non-probability sampling method applied for the selection of participants."
+* Design.sampling.nonProbabilityMethod 0..1 CodeableConcept "Specific type of non-probability sampling"
+* Design.sampling.nonProbabilityMethod from NFDI4Health_VS_MDS_Study_Sampling_Method_Non_Probability_NCI_Local (required)
+* Design.sampling.nonProbabilityMethod ^comment = "Cardinality: \n* 0..1, if Design.sampling.method == \"Non-probability\"\n* 0..0, if Design.sampling.method != \"Non-probability\""
+* Design.sampling.nonProbabilityMethod ^definition = "Specific type of the non-probability sampling method applied for the selection of participants."
 
 * Design.dataSource 0..1 BackboneElement "Data sources of the [RESOURCE]"
 * Design.dataSource ^definition = "Group of items providing information about data sources from which the data of the [RESOURCE] are generated or extracted."
 
-* Design.dataSource.generals 0..* CodeableConcept "Types of data sources"
-* Design.dataSource.generals from NFDI4Health_VS_MDS_Study_Data_Sources_General_NCI_Local (required)
-* Design.dataSource.generals ^definition = "Different types of data sources from which the data of the [RESOURCE] are generated or extracted."
+* Design.dataSource.general 0..* CodeableConcept "Types of data sources"
+* Design.dataSource.general from NFDI4Health_VS_MDS_Study_Data_Sources_General_NCI_Local (required)
+* Design.dataSource.general ^definition = "Different types of data sources from which the data of the [RESOURCE] are generated or extracted."
 
-* Design.dataSource.biosampless 0..* CodeableConcept "Biosamples collected"
-* Design.dataSource.biosampless from NFDI4Health_VS_MDS_Study_DS_Biosamples_SCT_NCI (required)
-* Design.dataSource.biosampless ^comment = "Cardinality: \n* 0..*, if Design.dataSource.general == \"Biological samples\"\n* 0..0, if Design.dataSource.general != \"Biological samples\""
-* Design.dataSource.biosampless ^definition = "Specification of biosamples collected in the [RESOURCE]."
+* Design.dataSource.biosamples 0..* CodeableConcept "Biosamples collected"
+* Design.dataSource.biosamples from NFDI4Health_VS_MDS_Study_DS_Biosamples_SCT_NCI (required)
+* Design.dataSource.biosamples ^comment = "Cardinality: \n* 0..*, if Design.dataSource.general == \"Biological samples\"\n* 0..0, if Design.dataSource.general != \"Biological samples\""
+* Design.dataSource.biosamples ^definition = "Specification of biosamples collected in the [RESOURCE]."
 
 * Design.dataSource.imaging 0..* CodeableConcept "Imaging data collected"
 * Design.dataSource.imaging from NFDI4Health_VS_MDS_Study_Data_Sources_Imaging_NCI (required)
@@ -228,7 +228,7 @@ Description: "NFDI4Health Logical Model of Module Design V3.3.1"
 
 * Design.eligibilityCriteria.ageMax.timeUnit 1..1 CodeableConcept "Unit of age"
 * Design.eligibilityCriteria.ageMax.timeUnit from NFDI4Health_VS_MDS_Time_Units_UCUM_LOINC (required)
-* Design.eligibilityCriteria.ageMax.timeUnit ^definition = "**Description: **Unit of measurement used to describe the maximum eligible age."
+* Design.eligibilityCriteria.ageMax.timeUnit ^definition = "Unit of measurement used to describe the maximum eligible age."
 
 * Design.eligibilityCriteria.genders 0..* CodeableConcept "Eligible gender"
 * Design.eligibilityCriteria.genders from NFDI4Health_VS_MDS_Study_Eligibility_Gender_SNOMEDCT_Local (required)
@@ -330,7 +330,7 @@ Description: "NFDI4Health Logical Model of Module Design V3.3.1"
 * Design.exposures.type from NFDI4Health_VS_MDS_Study_Exposure_Type_NCI (required)
 * Design.exposures.type ^definition = "General type of the given exposure."
 
-* Design.exposures.description 0..1 string "description" "Additional information about the exposure"
+* Design.exposures.description 0..1 string "Additional information about the exposure"
 * Design.exposures.description ^definition = "If needed, additional descriptive information about the given exposure."
 
 * Design.exposures.groupsLabel 0..* string "Name(s) of the group(s) associated with the given exposure"
@@ -355,7 +355,7 @@ Description: "NFDI4Health Logical Model of Module Design V3.3.1"
 * Design.outcomes.timeFrame 0..1 string "Time point(s) of assessment"
 * Design.outcomes.timeFrame ^definition = "Description of the time point(s) at which the measurement for the outcome is assessed, for example the specific duration of time over which each participant is assessed."
 
-* Design.comment 0..1 string "comment" "Additional information about the [RESOURCE]"
+* Design.comment 0..1 string "Additional information about the [RESOURCE]"
 * Design.comment ^definition = "Any additional information about specific aspects of the [RESOURCE] that could not be captured by other fields."
 
 * Design.assessments 0..* CodeableConcept "Additional assessments and measurements"
@@ -365,7 +365,7 @@ Description: "NFDI4Health Logical Model of Module Design V3.3.1"
 * Design.dataSharingPlan 1..1 BackboneElement "Data sharing"
 * Design.dataSharingPlan ^definition = "Group of items providing information regarding the sharing of data by the [RESOURCE]."
 
-* Design.dataSharingPlan.generally 1..1 CodeableConcept "generally" "Is it planned to share the data?"
+* Design.dataSharingPlan.generally 1..1 CodeableConcept "Is it planned to share the data?"
 * Design.dataSharingPlan.generally from NFDI4Health_VS_MDS_Yes_No_Undecided_NCI (required)
 * Design.dataSharingPlan.generally ^definition = "Indication whether there is a plan to make data collected in the [RESOURCE] available. In case of a [RESOURCE] with patients or other individuals, this refers to individual participant data (IPD)."
 
@@ -403,10 +403,10 @@ Description: "NFDI4Health Logical Model of Module Design V3.3.1"
 * Design.nonInterventional ^comment = "Additional information: Group of items applicable only to non-interventional resources.\n* 0..1, if (Resource.classification.type == (\"Study\" OR \"Substudy\") AND Design.primaryDesign == \"Non-interventional\") OR Resource.classification.type == (\"Registry\" OR \"Secondary data source\")\n* 0..0, if Resource.classification.type != (\"Registry\" OR \"Secondary data source\") AND Design.primaryDesign != \"Non-interventional\""
 * Design.nonInterventional ^definition = "Group of items providing information about specific non-interventional aspects of the [RESOURCE]."
 
-* Design.nonInterventional.timePerspectivess 0..* CodeableConcept "Temporal design"
-* Design.nonInterventional.timePerspectivess from NFDI4Health_VS_MDS_Study_Time_Perspectives_NCI (required)
-* Design.nonInterventional.timePerspectivess ^comment = "Cardinality: 0..*, if Resource.classification.type == ('Study' OR 'Substudy'); otherwise 0..0\n* 0..*, if Resource.classification.type == (\"Study\" OR \"Substudy\")\n* 0..0, if Resource.classification.type != (\"Study\" OR \"Substudy\")"
-* Design.nonInterventional.timePerspectivess ^definition = "Temporal design of the study, i.e. the observation period in relation to the time of participant enrollment."
+* Design.nonInterventional.timePerspectives 0..* CodeableConcept "Temporal design"
+* Design.nonInterventional.timePerspectives from NFDI4Health_VS_MDS_Study_Time_Perspectives_NCI (required)
+* Design.nonInterventional.timePerspectives ^comment = "Cardinality: 0..*, if Resource.classification.type == ('Study' OR 'Substudy'); otherwise 0..0\n* 0..*, if Resource.classification.type == (\"Study\" OR \"Substudy\")\n* 0..0, if Resource.classification.type != (\"Study\" OR \"Substudy\")"
+* Design.nonInterventional.timePerspectives ^definition = "Temporal design of the study, i.e. the observation period in relation to the time of participant enrollment."
 
 * Design.nonInterventional.targetFollowUpDuration 0..1 BackboneElement "Target follow-up duration"
 * Design.nonInterventional.targetFollowUpDuration ^definition = "If applicable, anticipated time period over which each participant would be followed."
@@ -421,7 +421,7 @@ Description: "NFDI4Health Logical Model of Module Design V3.3.1"
 * Design.nonInterventional.targetFollowUpDuration.frequency 0..1 Quantity "Number of follow-ups conducted"
 * Design.nonInterventional.targetFollowUpDuration.frequency ^definition = "The number of follow-ups conducted within the specified duration."
 
-* Design.nonInterventional.biospecimenRetention 0..* CodeableConcept "biospecimenRetention" "Biosamples retained in a biorepository"
+* Design.nonInterventional.biospecimenRetention 0..* CodeableConcept "Biosamples retained in a biorepository"
 * Design.nonInterventional.biospecimenRetention from NFDI4Health_VS_MDS_Study_Biospecimen_Retention_NCI (required)
 * Design.nonInterventional.biospecimenRetention ^definition = "Indication whether samples of biomaterials from participants are retained in a biorepository."
 

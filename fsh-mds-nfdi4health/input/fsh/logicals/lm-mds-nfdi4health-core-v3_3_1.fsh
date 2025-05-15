@@ -209,11 +209,6 @@ Description: "NFDI4Health Logical Model of Core V3.3.1"
 * Resource.contributors.affiliations.identifiers.scheme 1..1 CodeableConcept "Scheme"
 * Resource.contributors.affiliations.identifiers.scheme from NFDI4Health_VS_MDS_Role_Affiliation_Identifier_Scheme_Local (required)
 * Resource.contributors.affiliations.identifiers.scheme ^definition = "Type of the identifier scheme."
-* Resource.contributors.affiliations.identifiers.scheme ^example.label = "example"
-* Resource.contributors.affiliations.identifiers.scheme ^example.valueCodeableConcept.coding.system = "urn:oid:2.16.840.1.113883.3.1937.777.64.5.1"
-* Resource.contributors.affiliations.identifiers.scheme ^example.valueCodeableConcept.coding.code = #081
-* Resource.contributors.affiliations.identifiers.scheme ^example.valueCodeableConcept.coding.display = "ROR"
-* Resource.contributors.affiliations.identifiers.scheme ^example.valueCodeableConcept.text = "ROR"
 
 * Resource.idsAlternative 0..* BackboneElement "Alternative identifiers"
 * Resource.idsAlternative ^definition = "Group of items providing information about identifiers (IDs) assigned to the given [RESOURCE] by another registering systems, e.g. a registry of clinical trials or a data repository."
@@ -221,11 +216,6 @@ Description: "NFDI4Health Logical Model of Core V3.3.1"
 * Resource.idsAlternative.schemes 1..1 CodeableConcept "Type of the registry"
 * Resource.idsAlternative.schemes from NFDI4Health_VS_MDS_ID_TYPE_NCI_Local (required)
 * Resource.idsAlternative.schemes ^definition = "Type/name of the system where the given [RESOURCE] is already registered."
-* Resource.idsAlternative.schemes ^example.label = "example"
-* Resource.idsAlternative.schemes ^example.valueCodeableConcept.coding.system = "urn:oid:2.16.840.1.113883.3.1937.777.64.5.1"
-* Resource.idsAlternative.schemes ^example.valueCodeableConcept.coding.code = #098
-* Resource.idsAlternative.schemes ^example.valueCodeableConcept.coding.display = "DRKS"
-* Resource.idsAlternative.schemes ^example.valueCodeableConcept.text = "DRKS"
 
 * Resource.idsAlternative.identifier 1..1 string "Identifier"
 * Resource.idsAlternative.identifier ^definition = "Identifier assigned to the given [RESOURCE] by another registering system, e.g. by a registry of clinical trials or a data repository."
@@ -236,7 +226,7 @@ Description: "NFDI4Health Logical Model of Core V3.3.1"
 * Resource.ids ^definition = "Group of items providing information about the resources related to the given [RESOURCE] and their identifiers (IDs), e.g. DOIs of publications, datasets, study documents or links to web pages."
 
 * Resource.ids.identifier 1..1 string "Identifier of the related resource"
-* Resource.ids.identifier ^comment = "Additional information: a) Publications like journal articles usually have a DOI, e.g. 10.3238/arztebl.2020.0861.<br/>b) A link (URL) starting with 'http(s)://' to a web page with any additional information can also be provided."
+* Resource.ids.identifier ^comment = "Additional information: a) Publications like journal articles usually have a DOI, e.g. 10.3238/arztebl.2020.0861. b) A link (URL) starting with 'http(s)://' to a web page with any additional information can also be provided."
 * Resource.ids.identifier ^definition = "Identifier related to, or associated with, the [RESOURCE] being registered. These can be identifiers of related publications, datasets, study documents, links to web pages, etc."
 * Resource.ids.identifier ^example.label = "example"
 * Resource.ids.identifier ^example.valueString = "10.4126/FRL01-006431467"
@@ -259,11 +249,6 @@ Description: "NFDI4Health Logical Model of Core V3.3.1"
 * Resource.ids.typeGeneral 0..1 CodeableConcept "Type of the related resource"
 * Resource.ids.typeGeneral from NFDI4Health_VS_MDS_Resource_Type_General_NCI_MSH_Local (required)
 * Resource.ids.typeGeneral ^definition = "Type/form of the related resource, e.g. journal article, dataset, text, etc."
-* Resource.ids.typeGeneral ^example.label = "example"
-* Resource.ids.typeGeneral ^example.valueCodeableConcept.coding.system = "urn:oid:2.16.840.1.113883.3.26.1.1"
-* Resource.ids.typeGeneral ^example.valueCodeableConcept.coding.code = #C25704
-* Resource.ids.typeGeneral ^example.valueCodeableConcept.coding.display = "Text"
-* Resource.ids.typeGeneral ^example.valueCodeableConcept.text = "Text"
 
 * Resource.idsNfdi4health 0..* BackboneElement "Related resources registered on this portal"
 * Resource.idsNfdi4health ^comment = "Additional information: Does the [RESOURCE] have any related resources registered on this portal?"
@@ -287,22 +272,21 @@ Description: "NFDI4Health Logical Model of Core V3.3.1"
 * Resource.nutritionalData ^comment = "Cardinality: \n* 1..1, if Resource.classification.type == (\"Study\" OR \"Substudy\") AND Resource.provenance.dataSource == \"Manually collected\"\n* 0..0, if Resource.classification.type != (\"Study\" OR \"Substudy\") OR Resource.provenance.dataSource != \"Manually collected\""
 * Resource.nutritionalData ^definition = "Indication whether the [RESOURCE] collects nutritional data."
 
-* Resource.chronicDiseases 0..1 boolean "chronicDiseases" "Chronic diseases included?"
-* Resource.chronicDiseases ^comment = "Cardinality: 1..1, if Resource.provenance.dataSource == 'Manually collected'; otherwise 0..0\n* 1..1M 1..1, if Resource.provenance.dataSource == \"Manually collected\"\n* 0..0NP 0..0, if Resource.provenance.dataSource != \"Manually collected\""
+* Resource.chronicDiseases 0..1 boolean "Chronic diseases included?"
+* Resource.chronicDiseases ^comment = "Cardinality: \n* 1..1, if Resource.provenance.dataSource == \"Manually collected\"\n* 0..0, if Resource.provenance.dataSource != \"Manually collected\""
 * Resource.chronicDiseases ^definition = "Indication whether the [RESOURCE] addresses chronic diseases."
 
 * Resource.provenance 1..1 BackboneElement "Provenance aspects of data entry"
 * Resource.provenance ^definition = "Group of items providing information about provenance aspects of the data entry on this portal."
 
-* Resource.provenance.dataSource 1..1 CodeableConcept "dataSource" "Source of information"
+* Resource.provenance.dataSource 1..1 CodeableConcept "Source of information"
 * Resource.provenance.dataSource from NFDI4Health_VS_MDS_Provenance_Data_Source_Local (required)
-* Resource.provenance.dataSource ^comment = "Cardinality: \n* 0..0 if Resource.classification.type == ('C63536' OR 'C198230' OR 'C61393' OR '178')\n* 0..0 if Resource.classification.type != ('C63536' OR 'C198230' OR 'C61393' OR '178')"
 * Resource.provenance.dataSource ^definition = "Source of information about the [RESOURCE] and the way it was uploaded/collected."
 
 * Resource.provenance.verificationDate 0..1 date "Last verified on"
 * Resource.provenance.verificationDate ^definition = "Date on which the responsible party last verified the information about the [RESOURCE], even if no additional or updated information is being submitted."
 
-* Resource.provenance.verificationUser 0..1 CodeableConcept "verificationUser" "Last verified by"
+* Resource.provenance.verificationUser 0..1 CodeableConcept "Last verified by"
 * Resource.provenance.verificationUser ^definition = "User who last verified the information about the [RESOURCE]."
 * Resource.provenance.verificationUser ^base.path = "Resource.provenance.verificationUser"
 

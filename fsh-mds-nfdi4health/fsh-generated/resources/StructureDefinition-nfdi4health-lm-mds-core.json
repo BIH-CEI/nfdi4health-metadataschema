@@ -850,21 +850,6 @@
             "code": "CodeableConcept"
           }
         ],
-        "example": [
-          {
-            "label": "example",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "system": "urn:oid:2.16.840.1.113883.3.1937.777.64.5.1",
-                  "code": "081",
-                  "display": "ROR"
-                }
-              ],
-              "text": "ROR"
-            }
-          }
-        ],
         "binding": {
           "strength": "required",
           "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-role-affiliation-identifier-scheme-local"
@@ -893,21 +878,6 @@
         "type": [
           {
             "code": "CodeableConcept"
-          }
-        ],
-        "example": [
-          {
-            "label": "example",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "system": "urn:oid:2.16.840.1.113883.3.1937.777.64.5.1",
-                  "code": "098",
-                  "display": "DRKS"
-                }
-              ],
-              "text": "DRKS"
-            }
           }
         ],
         "binding": {
@@ -952,7 +922,7 @@
         "path": "nfdi4health-lm-mds-core.Resource.ids.identifier",
         "short": "Identifier of the related resource",
         "definition": "Identifier related to, or associated with, the [RESOURCE] being registered. These can be identifiers of related publications, datasets, study documents, links to web pages, etc.",
-        "comment": "Additional information: a) Publications like journal articles usually have a DOI, e.g. 10.3238/arztebl.2020.0861.<br/>b) A link (URL) starting with 'http(s)://' to a web page with any additional information can also be provided.",
+        "comment": "Additional information: a) Publications like journal articles usually have a DOI, e.g. 10.3238/arztebl.2020.0861. b) A link (URL) starting with 'http(s)://' to a web page with any additional information can also be provided.",
         "min": 1,
         "max": "1",
         "type": [
@@ -1034,21 +1004,6 @@
         "type": [
           {
             "code": "CodeableConcept"
-          }
-        ],
-        "example": [
-          {
-            "label": "example",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "system": "urn:oid:2.16.840.1.113883.3.26.1.1",
-                  "code": "C25704",
-                  "display": "Text"
-                }
-              ],
-              "text": "Text"
-            }
           }
         ],
         "binding": {
@@ -1142,9 +1097,9 @@
       {
         "id": "nfdi4health-lm-mds-core.Resource.chronicDiseases",
         "path": "nfdi4health-lm-mds-core.Resource.chronicDiseases",
-        "short": "chronicDiseases",
+        "short": "Chronic diseases included?",
         "definition": "Indication whether the [RESOURCE] addresses chronic diseases.",
-        "comment": "Cardinality: 1..1, if Resource.provenance.dataSource == 'Manually collected'; otherwise 0..0\n* 1..1M 1..1, if Resource.provenance.dataSource == \"Manually collected\"\n* 0..0NP 0..0, if Resource.provenance.dataSource != \"Manually collected\"",
+        "comment": "Cardinality: \n* 1..1, if Resource.provenance.dataSource == \"Manually collected\"\n* 0..0, if Resource.provenance.dataSource != \"Manually collected\"",
         "min": 0,
         "max": "1",
         "type": [
@@ -1169,9 +1124,8 @@
       {
         "id": "nfdi4health-lm-mds-core.Resource.provenance.dataSource",
         "path": "nfdi4health-lm-mds-core.Resource.provenance.dataSource",
-        "short": "dataSource",
+        "short": "Source of information",
         "definition": "Source of information about the [RESOURCE] and the way it was uploaded/collected.",
-        "comment": "Cardinality: \n* 0..0 if Resource.classification.type == ('C63536' OR 'C198230' OR 'C61393' OR '178')\n* 0..0 if Resource.classification.type != ('C63536' OR 'C198230' OR 'C61393' OR '178')",
         "min": 1,
         "max": "1",
         "type": [
@@ -1200,7 +1154,7 @@
       {
         "id": "nfdi4health-lm-mds-core.Resource.provenance.verificationUser",
         "path": "nfdi4health-lm-mds-core.Resource.provenance.verificationUser",
-        "short": "verificationUser",
+        "short": "Last verified by",
         "definition": "User who last verified the information about the [RESOURCE].",
         "min": 0,
         "max": "1",

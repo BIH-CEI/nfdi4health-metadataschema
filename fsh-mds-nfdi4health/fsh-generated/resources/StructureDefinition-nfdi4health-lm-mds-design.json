@@ -89,7 +89,7 @@
         "path": "nfdi4health-lm-mds-design.Design.studyType.interventional",
         "short": "Interventional study model",
         "definition": "The strategy for assigning interventions to participants.",
-        "comment": "Cardinality: \n* 1..*M 1..*, if Design.primaryDesign == \"Interventional\"\n* 0..0, if Design.primaryDesign != \"Interventional\"",
+        "comment": "Cardinality: \n* 1..*, if Design.primaryDesign == \"Interventional\"\n* 0..0, if Design.primaryDesign != \"Interventional\"",
         "min": 0,
         "max": "*",
         "type": [
@@ -107,7 +107,7 @@
         "path": "nfdi4health-lm-mds-design.Design.studyType.nonInterventional",
         "short": "Non-interventional study model",
         "definition": "The primary strategy for participant identification and follow-up.",
-        "comment": "Cardinality: \n* 1..*M 1..*, if Design.primaryDesign == \"Non-interventional\"\n* 0..0, if Design.primaryDesign != \"Non-interventional\"",
+        "comment": "Cardinality: \n* 1..*, if Design.primaryDesign == \"Non-interventional\"\n* 0..0, if Design.primaryDesign != \"Non-interventional\"",
         "min": 0,
         "max": "*",
         "type": [
@@ -348,7 +348,7 @@
       {
         "id": "nfdi4health-lm-mds-design.Design.administrativeInformation",
         "path": "nfdi4health-lm-mds-design.Design.administrativeInformation",
-        "short": "administrativeInformation",
+        "short": "Administrative information",
         "definition": "Group of items providing administrative information about the [RESOURCE].",
         "comment": "Cardinality: \n*  1..1, if Resource.classification.type == (\"Study\" OR \"Substudy\")\n* 0..1, if Resource.classification.type != (\"Study\" OR \"Substudy\")",
         "min": 0,
@@ -533,8 +533,8 @@
         }
       },
       {
-        "id": "nfdi4health-lm-mds-design.Design.centersNumbers",
-        "path": "nfdi4health-lm-mds-design.Design.centersNumbers",
+        "id": "nfdi4health-lm-mds-design.Design.centersNumber",
+        "path": "nfdi4health-lm-mds-design.Design.centersNumber",
         "short": "Number of centers",
         "definition": "Number of study centers involved in data collection.",
         "comment": "Cardinality: \n* 0..1, if Resource.classification.type == (\"Study\" OR \"Substudy\") AND Design.centers == \"Multicentric\"\n* 0..0, if Resource.classification.type != (\"Study\" OR \"Substudy\") OR Design.centers != \"Multicentric\"",
@@ -547,8 +547,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-mds-design.Design.dataProviderss",
-        "path": "nfdi4health-lm-mds-design.Design.dataProviderss",
+        "id": "nfdi4health-lm-mds-design.Design.dataProviders",
+        "path": "nfdi4health-lm-mds-design.Design.dataProviders",
         "short": "One or more data providers?",
         "definition": "Specification whether the [RESOURCE] involves only one or more than one data provider.",
         "comment": "Cardinality: \n* 0..1, if Resource.classification.type == (\"Registry\" OR \"Secondary data source\")\n* 0..0, if Resource.classification.type != (\"Registry\" OR \"Secondary data source\")",
@@ -610,8 +610,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-mds-design.Design.sampling.methods",
-        "path": "nfdi4health-lm-mds-design.Design.sampling.methods",
+        "id": "nfdi4health-lm-mds-design.Design.sampling.method",
+        "path": "nfdi4health-lm-mds-design.Design.sampling.method",
         "short": "Applied sampling method",
         "definition": "Type of the sampling method applied for the selection of participants.",
         "min": 1,
@@ -627,9 +627,9 @@
         }
       },
       {
-        "id": "nfdi4health-lm-mds-design.Design.sampling.probabilityMethods",
-        "path": "nfdi4health-lm-mds-design.Design.sampling.probabilityMethods",
-        "short": "probabilityMethod",
+        "id": "nfdi4health-lm-mds-design.Design.sampling.probabilityMethod",
+        "path": "nfdi4health-lm-mds-design.Design.sampling.probabilityMethod",
+        "short": "Specific type of probability sampling",
         "definition": "Specific type of the probability sampling method applied for the selection of participants.",
         "comment": "Cardinality: \n* 0..1, if Design.sampling.method == \"Probability\"\n* 0..0, if Design.sampling.method != \"Probability\"",
         "min": 0,
@@ -645,8 +645,8 @@
         }
       },
       {
-        "id": "nfdi4health-lm-mds-design.Design.sampling.nonProbabilityMethods",
-        "path": "nfdi4health-lm-mds-design.Design.sampling.nonProbabilityMethods",
+        "id": "nfdi4health-lm-mds-design.Design.sampling.nonProbabilityMethod",
+        "path": "nfdi4health-lm-mds-design.Design.sampling.nonProbabilityMethod",
         "short": "Specific type of non-probability sampling",
         "definition": "Specific type of the non-probability sampling method applied for the selection of participants.",
         "comment": "Cardinality: \n* 0..1, if Design.sampling.method == \"Non-probability\"\n* 0..0, if Design.sampling.method != \"Non-probability\"",
@@ -676,8 +676,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-mds-design.Design.dataSource.generals",
-        "path": "nfdi4health-lm-mds-design.Design.dataSource.generals",
+        "id": "nfdi4health-lm-mds-design.Design.dataSource.general",
+        "path": "nfdi4health-lm-mds-design.Design.dataSource.general",
         "short": "Types of data sources",
         "definition": "Different types of data sources from which the data of the [RESOURCE] are generated or extracted.",
         "min": 0,
@@ -693,8 +693,8 @@
         }
       },
       {
-        "id": "nfdi4health-lm-mds-design.Design.dataSource.biosampless",
-        "path": "nfdi4health-lm-mds-design.Design.dataSource.biosampless",
+        "id": "nfdi4health-lm-mds-design.Design.dataSource.biosamples",
+        "path": "nfdi4health-lm-mds-design.Design.dataSource.biosamples",
         "short": "Biosamples collected",
         "definition": "Specification of biosamples collected in the [RESOURCE].",
         "comment": "Cardinality: \n* 0..*, if Design.dataSource.general == \"Biological samples\"\n* 0..0, if Design.dataSource.general != \"Biological samples\"",
@@ -870,7 +870,7 @@
         "id": "nfdi4health-lm-mds-design.Design.eligibilityCriteria.ageMax.timeUnit",
         "path": "nfdi4health-lm-mds-design.Design.eligibilityCriteria.ageMax.timeUnit",
         "short": "Unit of age",
-        "definition": "**Description: **Unit of measurement used to describe the maximum eligible age.",
+        "definition": "Unit of measurement used to describe the maximum eligible age.",
         "min": 1,
         "max": "1",
         "type": [
@@ -1272,7 +1272,7 @@
       {
         "id": "nfdi4health-lm-mds-design.Design.exposures.description",
         "path": "nfdi4health-lm-mds-design.Design.exposures.description",
-        "short": "description",
+        "short": "Additional information about the exposure",
         "definition": "If needed, additional descriptive information about the given exposure.",
         "min": 0,
         "max": "1",
@@ -1370,7 +1370,7 @@
       {
         "id": "nfdi4health-lm-mds-design.Design.comment",
         "path": "nfdi4health-lm-mds-design.Design.comment",
-        "short": "comment",
+        "short": "Additional information about the [RESOURCE]",
         "definition": "Any additional information about specific aspects of the [RESOURCE] that could not be captured by other fields.",
         "min": 0,
         "max": "1",
@@ -1413,7 +1413,7 @@
       {
         "id": "nfdi4health-lm-mds-design.Design.dataSharingPlan.generally",
         "path": "nfdi4health-lm-mds-design.Design.dataSharingPlan.generally",
-        "short": "generally",
+        "short": "Is it planned to share the data?",
         "definition": "Indication whether there is a plan to make data collected in the [RESOURCE] available. In case of a [RESOURCE] with patients or other individuals, this refers to individual participant data (IPD).",
         "min": 1,
         "max": "1",
@@ -1558,8 +1558,8 @@
         ]
       },
       {
-        "id": "nfdi4health-lm-mds-design.Design.nonInterventional.timePerspectivess",
-        "path": "nfdi4health-lm-mds-design.Design.nonInterventional.timePerspectivess",
+        "id": "nfdi4health-lm-mds-design.Design.nonInterventional.timePerspectives",
+        "path": "nfdi4health-lm-mds-design.Design.nonInterventional.timePerspectives",
         "short": "Temporal design",
         "definition": "Temporal design of the study, i.e. the observation period in relation to the time of participant enrollment.",
         "comment": "Cardinality: 0..*, if Resource.classification.type == ('Study' OR 'Substudy'); otherwise 0..0\n* 0..*, if Resource.classification.type == (\"Study\" OR \"Substudy\")\n* 0..0, if Resource.classification.type != (\"Study\" OR \"Substudy\")",
@@ -1634,7 +1634,7 @@
       {
         "id": "nfdi4health-lm-mds-design.Design.nonInterventional.biospecimenRetention",
         "path": "nfdi4health-lm-mds-design.Design.nonInterventional.biospecimenRetention",
-        "short": "biospecimenRetention",
+        "short": "Biosamples retained in a biorepository",
         "definition": "Indication whether samples of biomaterials from participants are retained in a biorepository.",
         "min": 0,
         "max": "*",
