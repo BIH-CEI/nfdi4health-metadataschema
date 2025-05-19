@@ -11,7 +11,7 @@ Description: "Extension informing about the target follow-up duration of a study
 * ^context.type = #element
 * ^context.expression = "ResearchStudy"
 * . 0..1
-* . ^short = "Target follow-up duration of the [RESOURCE]"
+* . ^short = "Target follow-up duration"
 * . ^definition = "If applicable, anticipated time period over which each participant would be followed."
 * extension contains
     number 1..1 and

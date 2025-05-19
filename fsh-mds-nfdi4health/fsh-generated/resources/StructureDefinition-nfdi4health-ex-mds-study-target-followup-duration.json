@@ -46,7 +46,7 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Target follow-up duration of the [RESOURCE]",
+        "short": "Target follow-up duration",
         "definition": "If applicable, anticipated time period over which each participant would be followed.",
         "max": "1",
         "mapping": [

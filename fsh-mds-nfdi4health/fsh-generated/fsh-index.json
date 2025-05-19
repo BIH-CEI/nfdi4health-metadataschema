@@ -837,7 +837,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/NFDI4Health_PR_MDS_Chronic_Diseases.fsh",
     "startLine": 1,
-    "endLine": 34
+    "endLine": 38
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-pr-mds-composition.json",

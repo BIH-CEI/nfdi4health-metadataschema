@@ -30,7 +30,7 @@ Description: "Group of items providing information about interventional studys"
 * extension[offLabelUse].valueCoding ^binding.description = "Value set used to respond to questions that can be answered Yes, No, or Not Applicable."
 * extension[offLabelUse] ^short = "Off-label use of a drug product"
 * extension[offLabelUse] ^definition = "Unapproved (off-label) use of a drug product."
-* extension[offLabelUse] ^comment = "Short input help: Select 'Yes' or 'No' only for a drug [RESOURCE] and 'Not applicable' for any other [RESOURCE]."
+* extension[offLabelUse] ^comment = "Short input help: Select 'Yes' or 'No' only for a drug study and 'Not applicable' otherwise."
 
 Mapping: NFDI4Health-Study-International-to-FHIR
 Id: NFDI4Health

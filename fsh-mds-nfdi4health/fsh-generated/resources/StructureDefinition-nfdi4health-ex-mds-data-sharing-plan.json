@@ -50,8 +50,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Data sharing strategy of the [RESOURCE]",
-        "definition": "Group of items providing information about the data sharing strategy of the [RESOURCE].",
+        "short": "Data sharing",
+        "definition": "Group of items providing information regarding the sharing of data by the [RESOURCE].",
         "min": 1,
         "max": "1",
         "mapping": [

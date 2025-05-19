@@ -21,12 +21,12 @@ Description: "Group of items providing information about non interventional stud
 
 * extension[timePerspectives].value[x] only Coding
 * extension[timePerspectives].valueCoding from NFDI4Health_VS_MDS_Study_Time_Perspectives_NCI (required)
-* extension[timePerspectives] ^short = "Temporal design of the study"
-* extension[timePerspectives] ^definition = "Temporal design of the study, i.e. the  relationship of observation period to time of participant enrollment."
+* extension[timePerspectives] ^short = "Temporal design"
+* extension[timePerspectives] ^definition = "Temporal design of the study, i.e. the  observation period to time of participant enrollment."
 * extension[timePerspectives] ^comment = "Is it a retrospective, prospective or cross-sectional study?"
 * extension[timePerspectives].valueCoding ^binding.description = "Value set defining codes to specify the time perspective of a study in a ResearchStudy resource."
 * extension[biospecimenRetention] ^short = "Biosamples retained in a biorepository"
-* extension[biospecimenRetention] ^definition = "Indication whether samples of biomaterials from participants of the [RESOURCE] are retained in a biorepository."
+* extension[biospecimenRetention] ^definition = "Indication whether samples of biomaterials from participants are retained in a biorepository."
 * extension[biospecimenRetention] ^comment = "Short input help: Select all that apply."
 * extension[biospecimenRetention].value[x] only Coding
 * extension[biospecimenRetention].valueCoding from NFDI4Health_VS_MDS_Study_Biospecimen_Retention_NCI (required)

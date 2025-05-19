@@ -13,7 +13,7 @@ Description: "Extension providing information about assessments/measurements inc
 * ^context[+].type = #element
 * ^context[=].expression = "Library"
 * . 0..*
-* . ^short = "Additional assessments/measurements in the [RESOURCE]"
+* . ^short = "Additional assessments and measurements"
 * . ^definition = "Any additional assessments/measurements included in the [RESOURCE]."
 * . ^comment = "Select all that apply."
 * value[x] 1..1

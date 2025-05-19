@@ -17,8 +17,8 @@ Description: "Extension providing information about the data sharing strategy of
 * ^context[+].type = #element
 * ^context[=].expression = "Library"
 * . 1..1
-* . ^short = "Data sharing strategy of the [RESOURCE]"
-* . ^definition = "Group of items providing information about the data sharing strategy of the [RESOURCE]."
+* . ^short = "Data sharing"
+* . ^definition = "Group of items providing information regarding the sharing of data by the [RESOURCE]."
 
 * extension contains
     generally 1..1 and

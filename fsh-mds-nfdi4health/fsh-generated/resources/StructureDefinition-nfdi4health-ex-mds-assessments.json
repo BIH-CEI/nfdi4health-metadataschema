@@ -50,7 +50,7 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Additional assessments/measurements in the [RESOURCE]",
+        "short": "Additional assessments and measurements",
         "definition": "Any additional assessments/measurements included in the [RESOURCE].",
         "comment": "Select all that apply.",
         "mapping": [
