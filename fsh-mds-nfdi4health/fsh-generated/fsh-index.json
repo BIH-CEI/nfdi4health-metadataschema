@@ -461,7 +461,7 @@
     "fshType": "Extension",
     "fshFile": "extensions/NFDI4Health_EX_MDS_Identifier_Assignment_Date.fsh",
     "startLine": 1,
-    "endLine": 18
+    "endLine": 21
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-keywords.json",
@@ -557,7 +557,7 @@
     "fshType": "Extension",
     "fshFile": "extensions/NFDI4Health_EX_MDS_Outcomes_Backport_R5.fsh",
     "startLine": 1,
-    "endLine": 39
+    "endLine": 41
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-provenance-data-source.json",
@@ -628,8 +628,8 @@
     "fshName": "NFDI4Health_EX_MDS_Related_Artifact_Non_NFDI",
     "fshType": "Extension",
     "fshFile": "extensions/NFDI4Health_EX_MDS_RelatedArtifact_Non_NFDI.fsh",
-    "startLine": 4,
-    "endLine": 36
+    "startLine": 1,
+    "endLine": 33
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-related-artifact-reltype-nfdi-resource.json",
@@ -637,7 +637,7 @@
     "fshType": "Extension",
     "fshFile": "extensions/NFDI4Health_EX_MDS_Related_Artifact_Rel_Type_NFDI4_Resource.fsh",
     "startLine": 1,
-    "endLine": 21
+    "endLine": 22
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-related-artifact-reltype-non-nfdi-resource.json",
@@ -717,7 +717,7 @@
     "fshType": "Extension",
     "fshFile": "extensions/NFDI4Health_EX_MDS_Study_Population_Location.fsh",
     "startLine": 1,
-    "endLine": 36
+    "endLine": 35
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-study-sampling.json",
@@ -956,8 +956,8 @@
     "fshName": "NFDI4Health_PR_MDS_Related_Artifact_Resource",
     "fshType": "Profile",
     "fshFile": "profiles/dt-related-artifact-resource.fsh",
-    "startLine": 4,
-    "endLine": 26
+    "startLine": 1,
+    "endLine": 23
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-pr-mds-study.json",

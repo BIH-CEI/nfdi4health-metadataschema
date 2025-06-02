@@ -34,7 +34,8 @@
   "abstract": false,
   "context": [
     {
-      "type": "element"
+      "type": "element",
+      "expression": "RelatedArtifact.extension"
     }
   ],
   "type": "Extension",

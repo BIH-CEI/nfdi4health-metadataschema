@@ -27,7 +27,7 @@ Usage: #example
 
 // Extensions
 * extension[provenanceDataSource].valueCoding = #06 "Manually collected"
-* extension[chronicDiseases].valueBoolean = true
-* extension[nutritionalData].valueBoolean = true
+* extension[chronicDiseases].valueBoolean = false
+* extension[nutritionalData].valueBoolean = false
 
 // Sections

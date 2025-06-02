@@ -92,8 +92,8 @@
           {
             "key": "core-3a",
             "severity": "error",
-            "human": "When Composition.type = 'C63536' or 'C198230' or 'C61393' or '178' then subject only Reference (NFDI4Health_PR_MDS_Study)",
-            "expression": "type.coding.where(code = 'C63536'or code = 'C61393' or code = 'C198230' or code = '178').exists() implies subject.reference.contains('ResearchStudy')",
+            "human": "When Composition.type = 'C63536' or 'C198230' or '178' then subject only Reference (NFDI4Health_PR_MDS_Study)",
+            "expression": "type.coding.where(code = 'C63536' or code = 'C198230' or code = '178').exists() implies subject.reference.contains('ResearchStudy')",
             "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-composition"
           },
           {

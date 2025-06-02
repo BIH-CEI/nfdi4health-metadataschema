@@ -51,21 +51,7 @@
         "id": "Extension",
         "path": "Extension",
         "short": "NFDI4Health EX MDS Study Population Location",
-        "definition": "Extension providing info of the study population Location.",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "Design.population.coverage"
-          },
-          {
-            "identity": "NFDI4Health",
-            "map": "Design.population.countries"
-          },
-          {
-            "identity": "NFDI4Health",
-            "map": "Design.population.region"
-          }
-        ]
+        "definition": "Extension providing info of the study population Location."
       },
       {
         "id": "Extension.extension",
@@ -80,7 +66,13 @@
         "definition": "Specification of the recruitment area of the [RESOURCE].",
         "comment": "Short input help: Select one value from the list.",
         "min": 0,
-        "max": "1"
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.population.coverage"
+          }
+        ]
       },
       {
         "id": "Extension.extension:coverage.extension",
@@ -114,9 +106,12 @@
         "comment": "Short input help: Select all that apply.",
         "min": 1,
         "max": "*",
-        "binding": {
-          "description": "Value set including the country names from the ISO 3166-1 list"
-        }
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.population.countries"
+          }
+        ]
       },
       {
         "id": "Extension.extension:countries.extension",
@@ -148,7 +143,13 @@
         "short": "Regions and/or cities",
         "definition": "If applicable, regions and/or cities within a country where the [RESOURCE] takes place.",
         "min": 0,
-        "max": "1"
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "Design.population.region"
+          }
+        ]
       },
       {
         "id": "Extension.extension:region.extension",

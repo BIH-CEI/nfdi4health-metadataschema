@@ -10,6 +10,9 @@ Description: "Extension to store the date when an identifier was assigned."
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 * ^context.type = #element
+* ^context.expression = "RelatedArtifact.extension"
+
+
 * . 0..1
 * . ^short = "Date of identifier assignment"
 * . ^definition = "Date when the identifier of the related resource was assigned."

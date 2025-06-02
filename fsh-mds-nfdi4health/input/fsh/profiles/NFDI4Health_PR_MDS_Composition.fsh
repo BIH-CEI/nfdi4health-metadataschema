@@ -88,9 +88,9 @@ Severity: #error
 Expression: "author.where(extension('https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-name-type').value as Coding).where(code = '385437003').exists() implies $this.reference.contains('Organization')"
 
 Invariant: core-3a
-Description: "When Composition.type = 'C63536' or 'C198230' or 'C61393' or '178' then subject only Reference (NFDI4Health_PR_MDS_Study)"
+Description: "When Composition.type = 'C63536' or 'C198230' or '178' then subject only Reference (NFDI4Health_PR_MDS_Study)"
 Severity: #error
-Expression: "type.coding.where(code = 'C63536'or code = 'C61393' or code = 'C198230' or code = '178').exists() implies subject.reference.contains('ResearchStudy')"
+Expression: "type.coding.where(code = 'C63536' or code = 'C198230' or code = '178').exists() implies subject.reference.contains('ResearchStudy')"
 
 Invariant: core-3b
 Description: "When Composition.type = 009, C16468 , C15518, C115779, C115761, C115756, 011, 016, '017', '018', '021' then subject only Reference (NFDI4Health_PR_MDS_Document)"
@@ -101,6 +101,11 @@ Invariant: core-3c
 Description: "When Composition.type = 'C17048' or 'C40988' then subject only Reference (Profile: NFDI4Health_PR_MDS_Questionnaire)"
 Severity: #error
 Expression: "type.coding.where(code = 'C17048' or code = 'C40988').exists() implies subject.reference.contains('Questionnaire')"
+
+Invariant: core-3d
+Description: "When Composition.type = 'C61393' then subject only Reference (NFDI4Health_PR_MDS_Registry)"
+Severity: #error
+Expression: "type.coding.where(code = 'C61393').exists() implies subject.reference.contains('Library')"
 
 Invariant: core-4a
 Description: "1..*, if Resource.chronicDiseases == 'True' AND Resource.classification.type == ('C93381' OR 'C16468' OR 'C15518' OR 'C115779' OR 'C115761' OR 'C115756' OR 'C40988' OR  '016' OR '017' OR '018' OR '019' OR '021' OR 'C17649'); otherwise 0.. 0"

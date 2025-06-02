@@ -30,7 +30,6 @@ Description: "Extension providing info of the study population Location."
 * extension[countries] ^comment = "Short input help: Select all that apply."
 * extension[countries].value[x] only Coding
 * extension[countries].valueCoding from NFDI4Health_VS_MDS_Countries_ISO (required)
-* extension[countries] ^binding.description = "Value set including the country names from the ISO 3166-1 list"
 * extension[region] ^short = "Regions and/or cities"
 * extension[region] ^definition = "If applicable, regions and/or cities within a country where the [RESOURCE] takes place."
 * extension[region].value[x] only string
@@ -40,6 +39,6 @@ Mapping: NFDI4Health-Study-Population-Location-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Study_Population_Location
-*  -> "Design.population.coverage"
-*  -> "Design.population.countries"
-* -> "Design.population.region"
+* extension[coverage] -> "Design.population.coverage"
+* extension[countries] -> "Design.population.countries"
+* extension[region] -> "Design.population.region"

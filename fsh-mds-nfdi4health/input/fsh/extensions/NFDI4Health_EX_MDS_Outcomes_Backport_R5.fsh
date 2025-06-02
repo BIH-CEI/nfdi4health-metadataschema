@@ -2,7 +2,7 @@ Extension: NFDI4Health_EX_MDS_OutcomeMeasure_Backport_R5
 Id: nfdi4health-ex-mds-outcomemeasure-backport-r5
 Title: "NFDI4Health EX MDS Outcome Measure Backport R5"
 Description: "Extension providing information about outcome measure(s)."
-* ^url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.outcomeMeasure"
+* ^url = "https://www.nfdi4health.de/fhir/StructureDefinition/nfdi4health-ex-mds-outcomemeasure-backport-r5"
 * ^version = "0.9"
 * ^status = #draft
 * ^publisher = "NFDI4Health"
@@ -10,6 +10,8 @@ Description: "Extension providing information about outcome measure(s)."
 * ^contact.telecom.value = "https://www.nfdi4health.de"
 * ^context.type = #element
 * ^context.expression = "ResearchStudy"
+
+
 * . 0..*
 * . ^short = "Outcome measures"
 * . ^definition = "Group of items providing information about outcome measures."

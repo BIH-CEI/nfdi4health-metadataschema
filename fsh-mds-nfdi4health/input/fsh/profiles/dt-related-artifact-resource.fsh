@@ -1,6 +1,3 @@
-Alias: $RelatedNonNFDI = https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related-artifact-non-nfdi
-Alias: $RelatedNFDI = https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related-artifact-nfdi
-
 Profile: NFDI4Health_PR_MDS_Related_Artifact_Resource
 Parent: RelatedArtifact
 Id: nfdi4health-pr-mds-related-artifact-resource
@@ -19,8 +16,8 @@ Description: "Profile of a RelatedArtifact intended to capture information about
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
 * extension contains 
-    $RelatedNFDI named NFDI4HealthResource 0..* and
-    $RelatedNonNFDI named nonNFDI4HealthResource 0..*
+    NFDI4Health_EX_MDS_Related_Artifact_NFDI named NFDI4HealthResource 0..* and
+    NFDI4Health_EX_MDS_Related_Artifact_Non_NFDI named nonNFDI4HealthResource 0..*
 * url ^short = "Web page"
 * url ^definition = "If existing, a link to the web page directly relevant to the [RESOURCE]."
 * url ^comment = "Additional information: Other web pages related to the [RESOURCE] can additionally be entered in the section 'Related resources'."

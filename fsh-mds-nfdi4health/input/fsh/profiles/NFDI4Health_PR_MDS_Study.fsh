@@ -26,7 +26,7 @@ Description: "Group of items applicable only to studies, substudies."
 * obeys accessCriteria-a and accessCriteria-b
 * obeys masking-roles-a and masking-roles-b
 * obeys masking-description-a and masking-description-b
-* obeys interventional-a and interventional-a
+* obeys interventional-a and interventional-b
 * obeys nonInterventional-a and nonInterventional-b
 * obeys study-stageStopped-a and study-stageStopped-b
 * obeys study-reasonStopped-a and study-reasonStopped-b

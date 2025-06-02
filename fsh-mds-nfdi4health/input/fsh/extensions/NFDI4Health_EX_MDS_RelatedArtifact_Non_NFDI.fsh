@@ -1,6 +1,3 @@
-Alias: $NonNFDI4HealthRelType = https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-related-artifact-reltype-non-nfdi-resource
-Alias: $ResourceTypeGeneral = https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-resource-type-general
-
 Extension: NFDI4Health_EX_MDS_Related_Artifact_Non_NFDI
 Id: nfdi4health-ex-mds-related-artifact-non-nfdi
 Title: "NFDI4Health EX MDS Related Artifact Non NFDI"
@@ -20,8 +17,8 @@ Description: "RelatedArtifact intended to capture information about Resources ot
 * extension ^slicing.rules = #open
 * extension contains 
     identifier 1..1 and
-    $NonNFDI4HealthRelType named relationType 1..1 and
-    $ResourceTypeGeneral named resourceTypeGeneral 0..1 
+    NFDI4Health_EX_MDS_Related_Artifact_Rel_Type_Non_NFDI_Resource named relationType 1..1 and
+    NFDI4Health_EX_MDS_Resource_Type_General named resourceTypeGeneral 0..1 
 * extension[identifier].value[x] only Identifier
 * extension[identifier].valueIdentifier.value ^short = "Identifier of the related resource"
 * extension[identifier].valueIdentifier.value ^definition = "Identifier (ID) related to, or associated with, the [RESOURCE] being registered. These can be IDs of related publications, datasets, study documents, web pages, etc."

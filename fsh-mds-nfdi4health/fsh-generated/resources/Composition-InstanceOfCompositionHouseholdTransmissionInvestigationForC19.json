@@ -17,11 +17,11 @@
     },
     {
       "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-chronic-diseases",
-      "valueBoolean": true
+      "valueBoolean": false
     },
     {
       "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-nutritional-data",
-      "valueBoolean": true
+      "valueBoolean": false
     }
   ],
   "author": [
