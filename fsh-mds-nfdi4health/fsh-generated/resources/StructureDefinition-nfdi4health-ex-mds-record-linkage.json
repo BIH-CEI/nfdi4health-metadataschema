@@ -2,10 +2,11 @@
   "resourceType": "StructureDefinition",
   "id": "nfdi4health-ex-mds-record-linkage",
   "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-record-linkage",
-  "version": "0.9",
+  "version": "1.0.0",
   "name": "NFDI4Health_EX_MDS_Record_Linkage",
   "title": "NFDI4Health EX MDS Record Linkage",
   "status": "draft",
+  "date": "2024-12-06",
   "publisher": "NFDI4Health",
   "contact": [
     {
@@ -17,7 +18,7 @@
       ]
     }
   ],
-  "description": "Group of items providing information on record linkage.",
+  "description": "Group of items providing information on record linkage. Based on NFDI4Health Record Linkage Module schema version 3.3.1.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -26,8 +27,8 @@
       "name": "RIM Mapping"
     },
     {
-      "identity": "NFDI4Health",
-      "name": "NFDI4Health to FHIR Mapping"
+      "identity": "NFDI4Health-MDS-RecordLinkage-v3-3-1",
+      "name": "NFDI4Health MDS Record Linkage (Schema 3.3.1) to FHIR Mapping"
     }
   ],
   "kind": "complex-type",
@@ -51,12 +52,12 @@
         "id": "Extension",
         "path": "Extension",
         "short": "Information about record linkage for the [RESOURCE]",
-        "definition": "Group of items providing information on record linkage.",
-        "comment": "Applies only if 1.17.26.9 Design.dataSharingPlan.recordLinkage has been answered with Yes",
+        "definition": "Group of items providing information on record linkage. (Source: MDS v3.3.1)",
+        "comment": "Applies only if Design.dataSharingPlan.recordLinkage has been answered with Yes/True (as per source XML condition for the RecordLinkage group).",
         "max": "1",
         "mapping": [
           {
-            "identity": "NFDI4Health",
+            "identity": "NFDI4Health-MDS-RecordLinkage-v3-3-1",
             "map": "RL1 RecordLinkage"
           }
         ]
@@ -67,15 +68,9 @@
         "sliceName": "legalBasis",
         "short": "Legal regulation/permission for record linkage",
         "definition": "Indication whether there are specific regulations/permissions for record linkage.",
-        "comment": "Additional Information: Whether any specific legal regulations/permissions exist (e.g. for social data, for cancer registry data, hospital data, etc.).",
+        "comment": "Additional Information: Whether any specific legal regulations/permissions exist (e.g. for social data, for cancer registry data, hospital data, etc.). (Source: XML RecordLinkage.legalBasis)",
         "min": 0,
-        "max": "1",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "RecordLinkage.legalBasis"
-          }
-        ]
+        "max": "1"
       },
       {
         "id": "Extension.extension:legalBasis.extension",
@@ -94,6 +89,12 @@
           {
             "code": "boolean"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-MDS-RecordLinkage-v3-3-1",
+            "map": "RecordLinkage.legalBasis (XML nfdhtfcov19-dataelement-123)"
+          }
         ]
       },
       {
@@ -102,15 +103,9 @@
         "sliceName": "legalBasisDetails",
         "short": "Specific legal basis allowing record linkage",
         "definition": "Information specifying which specific legal basis allows for record linkage.",
-        "comment": "Additional Information: If existing, any specific legal regulations/permissions (e.g. for social data, for cancer registry data, hospital data, etc.).",
+        "comment": "Additional Information: If existing, any specific legal regulations/permissions (e.g. for social data, for cancer registry data, hospital data, etc.). Cardinality in source XML: 1..1 if RecordLinkage.legalBasis is 'True'/'Yes'; otherwise 0..0. (Source: XML RecordLinkage.legalBasisDetails)",
         "min": 0,
-        "max": "1",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "RecordLinkage.legalBasisDetails"
-          }
-        ]
+        "max": "1"
       },
       {
         "id": "Extension.extension:legalBasisDetails.extension",
@@ -129,22 +124,22 @@
           {
             "code": "string"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-MDS-RecordLinkage-v3-3-1",
+            "map": "RecordLinkage.legalBasisDetails (XML nfdhtfcov19-dataelement-125)"
+          }
         ]
       },
       {
         "id": "Extension.extension:informedConsent",
         "path": "Extension.extension",
         "sliceName": "informedConsent",
-        "short": "Informed consent for record linkage",
+        "short": "Informed consent for record linkage obtained?",
         "definition": "Indication whether an informed consent that allows record linkage has been obtained.",
         "min": 0,
-        "max": "1",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "RecordLinkage.informedConsent"
-          }
-        ]
+        "max": "1"
       },
       {
         "id": "Extension.extension:informedConsent.extension",
@@ -163,6 +158,12 @@
           {
             "code": "boolean"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-MDS-RecordLinkage-v3-3-1",
+            "map": "RecordLinkage.informedConsent (XML nfdhtfcov19-dataelement-126)"
+          }
         ]
       },
       {
@@ -172,13 +173,7 @@
         "short": "Responsible authorities",
         "definition": "Institutions and authorities that must agree to the record linkage.",
         "min": 0,
-        "max": "*",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "RecordLinkage.responsibleInstitutions"
-          }
-        ]
+        "max": "*"
       },
       {
         "id": "Extension.extension:responsibleInstitutions.extension",
@@ -197,6 +192,12 @@
           {
             "code": "string"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-MDS-RecordLinkage-v3-3-1",
+            "map": "RecordLinkage.responsibleInstitutions (XML nfdhtfcov19-dataelement-127)"
+          }
         ]
       },
       {
@@ -206,13 +207,7 @@
         "short": "Additional costs for record linkage",
         "definition": "Indication whether there are additional costs for record linkage.",
         "min": 0,
-        "max": "1",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "RecordLinkage.additionalCosts"
-          }
-        ]
+        "max": "1"
       },
       {
         "id": "Extension.extension:additionalCosts.extension",
@@ -230,6 +225,12 @@
         "type": [
           {
             "code": "boolean"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-MDS-RecordLinkage-v3-3-1",
+            "map": "RecordLinkage.additionalCosts (XML nfdhtfcov19-dataelement-128)"
           }
         ]
       },
@@ -257,19 +258,19 @@
           {
             "code": "Identifier"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-MDS-RecordLinkage-v3-3-1",
+            "map": "RecordLinkage.identifiers (XML nfdhtfcov19-dataelement-129)"
+          }
         ]
       },
       {
         "id": "Extension.extension:identifiers.value[x].value",
         "path": "Extension.extension.value[x].value",
         "short": "Identifiers for record linkage",
-        "definition": "Identifiers that can be used for record linkage (e.g. names, date of birth, zip code, insurance number or control number as in cancer registries).",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "RecordLinkage.identifiers"
-          }
-        ]
+        "definition": "Identifiers that can be used for record linkage (e.g. names, date of birth, zip code, insurance number or control number as in cancer registries)."
       },
       {
         "id": "Extension.extension:furtherDetails",
@@ -278,13 +279,7 @@
         "short": "Further details important for conducting record linkage",
         "definition": "Additional important details for conducting record linkage.",
         "min": 0,
-        "max": "1",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "RecordLinkage.furtherDetails"
-          }
-        ]
+        "max": "1"
       },
       {
         "id": "Extension.extension:furtherDetails.extension",
@@ -303,6 +298,12 @@
           {
             "code": "string"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-MDS-RecordLinkage-v3-3-1",
+            "map": "RecordLinkage.furtherDetails (XML nfdhtfcov19-dataelement-130)"
+          }
         ]
       },
       {
@@ -313,13 +314,7 @@
         "definition": "DOIs of additional related resources specific to record linkage (e.g., publications).",
         "comment": "Short Input Help: Please do not repeat those already entered in the section 'Related resources'.",
         "min": 0,
-        "max": "*",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "RecordLinkage.exampleResources"
-          }
-        ]
+        "max": "*"
       },
       {
         "id": "Extension.extension:exampleResources.extension",
@@ -337,6 +332,12 @@
         "type": [
           {
             "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "NFDI4Health-MDS-RecordLinkage-v3-3-1",
+            "map": "RecordLinkage.exampleResources (XML nfdhtfcov19-dataelement-131)"
           }
         ]
       },

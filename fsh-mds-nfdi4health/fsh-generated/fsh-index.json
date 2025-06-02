@@ -573,7 +573,7 @@
     "fshType": "Extension",
     "fshFile": "extensions/NFDI4Health_EX_MDS_Record_Linkage.fsh",
     "startLine": 1,
-    "endLine": 54
+    "endLine": 64
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-recruitment-backport-r5.json",
@@ -901,7 +901,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/NFDI4Health_PR_MDS_Observation_Nutritional_Epidemiology.fsh",
     "startLine": 1,
-    "endLine": 114
+    "endLine": 129
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-pr-mds-organization.json",

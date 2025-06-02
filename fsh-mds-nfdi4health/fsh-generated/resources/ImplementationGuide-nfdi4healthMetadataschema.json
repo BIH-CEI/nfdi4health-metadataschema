@@ -623,7 +623,7 @@
           "reference": "StructureDefinition/nfdi4health-ex-mds-record-linkage"
         },
         "name": "NFDI4Health EX MDS Record Linkage",
-        "description": "Group of items providing information on record linkage.",
+        "description": "Group of items providing information on record linkage. Based on NFDI4Health Record Linkage Module schema version 3.3.1.",
         "exampleBoolean": false
       },
       {
@@ -975,7 +975,7 @@
           "reference": "StructureDefinition/nfdi4health-pr-mds-observation-nutritional-epidemiology"
         },
         "name": "NFDI4Health PR MDS Observation Nutritional Epidemiology",
-        "description": "Profile to collect information about a diet assessment used for nutritional epidemiology research.",
+        "description": "NFDI4Health Nutritional Epidemiology Module",
         "exampleBoolean": false
       },
       {

@@ -2,10 +2,11 @@
   "resourceType": "StructureDefinition",
   "id": "nfdi4health-pr-mds-observation-nutritional-epidemiology",
   "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-observation-nutritional-epidemiology",
-  "version": "0.9",
+  "version": "1.0",
   "name": "NFDI4Health_PR_MDS_Observation_Nutritional_Epidemiology",
   "title": "NFDI4Health PR MDS Observation Nutritional Epidemiology",
   "status": "draft",
+  "date": "2024-12-06",
   "publisher": "NFDI4Health",
   "contact": [
     {
@@ -17,7 +18,7 @@
       ]
     }
   ],
-  "description": "Profile to collect information about a diet assessment used for nutritional epidemiology research.",
+  "description": "NFDI4Health Nutritional Epidemiology Module",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -117,7 +118,7 @@
         "path": "Observation.component",
         "sliceName": "instrument",
         "short": "Dietary assessment instrument used",
-        "definition": "Specification of the dietary assessment instrument used in the [RESOURCE].",
+        "definition": "Specification of the dietary assessment instrument like food record or diet history.",
         "comment": "Select one value from the list.",
         "min": 1,
         "max": "1"
@@ -159,8 +160,8 @@
         "id": "Observation.component:ffqItemsNumber",
         "path": "Observation.component",
         "sliceName": "ffqItemsNumber",
-        "short": "Number of items in FFQ",
-        "definition": "The number of items inquired by the food frequency questionnaire (FFQ).",
+        "short": "Number of items in the food frequency questionnaire (FFQ)",
+        "definition": "The number of items inquired by the food frequency questionnaire (FFQ). A food frequency questionnaire (FFQ) consists of a finite list of foods and beverages with response categories to indicate usual frequency of consumption over the time period queried.",
         "min": 0,
         "max": "1"
       },
@@ -197,8 +198,8 @@
         "id": "Observation.component:mode",
         "path": "Observation.component",
         "sliceName": "mode",
-        "short": "Mode(s) used to apply the dietary assessment instrument",
-        "definition": "Specification of how the dietary assessment instrument was applied to participants of the [RESOURCE].",
+        "short": "Modes used to apply the dietary assessment instrument",
+        "definition": "How the dietary assessment instrument was applied.",
         "comment": "Select all that apply.",
         "min": 1,
         "max": "*"
@@ -240,8 +241,8 @@
         "id": "Observation.component:device",
         "path": "Observation.component",
         "sliceName": "device",
-        "short": "Device(s) used to apply the dietary assessment instrument",
-        "definition": "Specification of device(s) used to apply the dietary assessment instrument to participants of the [RESOURCE].",
+        "short": "Devices used to apply the dietary assessment instrument",
+        "definition": "Specification of device(s) used to apply the dietary assessment instrument to participants.",
         "comment": "Select all that apply.",
         "min": 1,
         "max": "*"
@@ -283,17 +284,11 @@
         "id": "Observation.component:portionSizeEstimation",
         "path": "Observation.component",
         "sliceName": "portionSizeEstimation",
-        "short": "Portion size estimated by:",
-        "definition": "Specification of how the portion size is inquired in the dietary assessment instrument.",
+        "short": "How was the portion size estimated?",
+        "definition": "Specification of how the portion size was inquired in the dietary assessment instrument.",
         "comment": "Select all that apply.",
         "min": 1,
-        "max": "*",
-        "mapping": [
-          {
-            "identity": "NFDI4Health",
-            "map": "DietAssessment.portionSizeEstimation"
-          }
-        ]
+        "max": "*"
       },
       {
         "id": "Observation.component:portionSizeEstimation.code",
@@ -320,15 +315,21 @@
         "binding": {
           "strength": "required",
           "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-ne-portion-size-snomedct-local"
-        }
+        },
+        "mapping": [
+          {
+            "identity": "NFDI4Health",
+            "map": "DietAssessment.portionSizeEstimation"
+          }
+        ]
       },
       {
         "id": "Observation.component:referencePeriodUnit",
         "path": "Observation.component",
         "sliceName": "referencePeriodUnit",
         "short": "Reference period unit",
-        "definition": "Indication of the reference period the dietary assessment instrument refers to (e.g. 24-h recall refers to the previous day).",
-        "comment": "Select one value from the list.",
+        "definition": "Indication of the reference period the dietary assessment instrument refers to (e.g. 24-h recall refers to the previous day)",
+        "comment": "Select all that apply.",
         "min": 1,
         "max": "1"
       },
@@ -369,8 +370,8 @@
         "id": "Observation.component:referencePeriodNumber",
         "path": "Observation.component",
         "sliceName": "referencePeriodNumber",
-        "short": "Numerical value of reference period units",
-        "definition": "Indication of the number of reference period units assessed.",
+        "short": "Number of reference period units",
+        "definition": "Numerical value of reference period units.",
         "min": 1,
         "max": "1"
       },
@@ -484,7 +485,7 @@
         "path": "Observation.component",
         "sliceName": "validity",
         "short": "Instrument validated?",
-        "definition": "Indication whether the dietary assessment instrument was validated.",
+        "definition": "Indication whether the dietary assessment instrument was validated. Validity refers to whether an instrument accurately measures what it is intended to measure. This is typically assessed by comparison to a gold standard using methods like correlations or Bland-Altman plots. It indicates how suitable the instrument is for its purpose and whether it can be applied to other populations beyond the original study.",
         "min": 1,
         "max": "1"
       },
@@ -522,7 +523,7 @@
         "path": "Observation.component",
         "sliceName": "validityReference",
         "short": "Reference describing the validation",
-        "definition": "Indication of the reference describing the validation.",
+        "definition": "Indication of the reference describing the validation. Publications that describe the validation of an instrument. Ideally, this should include studies that have undergone a peer-review process. Code or documentation that has not been peer-reviewed would not be considered sufficient in this context.",
         "min": 0,
         "max": "1"
       },
@@ -560,7 +561,7 @@
         "path": "Observation.component",
         "sliceName": "reliability",
         "short": "Instrument described according to reliability?",
-        "definition": "Indication whether the dietary assessment instrument was described according to its reliability.",
+        "definition": "Indication whether the dietary assessment instrument was described according to its reliability. Reliability reflects how consistently an instrument produces the same results across repeated uses. This is critical for longitudinal studies using the same tools over time.",
         "min": 1,
         "max": "1"
       },
