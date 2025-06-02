@@ -2,7 +2,7 @@ Instance: nfdi4health-cps-mds-capability-statement
 InstanceOf: CapabilityStatement
 Usage: #definition
 * url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-cps-mds-capability-statement"
-* version = "0.9"
+* version = "0.9.1"
 * status = #draft
 * publisher = "NFDI4Health"
 * contact.telecom.system = #url

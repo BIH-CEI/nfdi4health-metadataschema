@@ -293,10 +293,10 @@
             "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
           },
           {
-            "key": "interventional-a",
+            "key": "interventional-b",
             "severity": "error",
-            "human": "Cardinality: 0..1, Design.primaryDesign == 'Interventional'",
-            "expression": "category.coding.where(code = 'C98388').exists() implies extension.where(url='https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-interventional').exists()",
+            "human": "Cardinality: 0..0, Design.primaryDesign != 'Interventional'",
+            "expression": "category.coding.where(code = 'C98388').exists().not() implies extension.where(url='https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-study-interventional').exists().not()",
             "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
           },
           {
