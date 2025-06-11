@@ -54,12 +54,14 @@
         "id": "Extension.extension:modality",
         "path": "Extension.extension",
         "sliceName": "modality",
+        "short": "Body parts examined",
+        "definition": "Modalities used in the study, using DICOM modality codes.",
         "min": 1,
         "max": "*",
         "mapping": [
           {
             "identity": "NFDI4Health",
-            "map": "Design.imaging.modalities"
+            "map": "Design.imaging.modality"
           }
         ]
       },
@@ -76,33 +78,14 @@
       {
         "id": "Extension.extension:modality.value[x]",
         "path": "Extension.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
-        "id": "Extension.extension:modality.value[x]:valueCodeableConcept",
-        "path": "Extension.extension.value[x]",
-        "sliceName": "valueCodeableConcept",
-        "short": "Imaging modalities (e.g. CT, MR, SR)",
-        "definition": "Modalities used in the study, using DICOM modality codes.",
-        "min": 0,
-        "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "Coding"
           }
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-modality"
+          "valueSet": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-body-structures"
         }
       },
       {

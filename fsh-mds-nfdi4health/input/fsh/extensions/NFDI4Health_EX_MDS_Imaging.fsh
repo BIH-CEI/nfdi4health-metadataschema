@@ -15,18 +15,20 @@ Description: "Information about imaging data (modalities and body parts examined
     modality 1..* and
     bodyPart 1..*
 
-* extension[modality].valueCodeableConcept from NFDI4Health_VS_MDS__Study_Modality (required)
-* extension[modality].valueCodeableConcept ^short = "Imaging modalities (e.g. CT, MR, SR)"
-* extension[modality].valueCodeableConcept ^definition = "Modalities used in the study, using DICOM modality codes."
+* extension[modality] ^short = "Imaging modalities (DICOM)"
+* extension[modality] ^definition = "Modalities used in the study, using DICOM modality codes."
+* extension[modality].value[x] only Coding
+* extension[modality].valueCoding from NFDI4Health_VS_MDS__Study_Modality (required)
 
-* extension[bodyPart].valueCodeableConcept from NFDI4Health_VS_MDS_Study_Body_Structures (required)
-* extension[bodyPart].valueCodeableConcept ^short = "Body parts examined"
-* extension[bodyPart].valueCodeableConcept ^definition = "Body parts examined in the imaging data, coded with SNOMED CT body structure codes."
+* extension[bodyPart] ^short = "Body parts examined"
+* extension[bodyPart] ^definition = "Information which body parts are imaged within the [RESOURCE]."
+* extension[bodyPart].value[x] only Coding
+* extension[bodyPart].valueCoding from NFDI4Health_VS_MDS_Study_Body_Structures (required)
 
 Mapping: NFDI4Health-Imaging-to-FHIR
 Id: NFDI4Health
 Title: "NFDI4Health to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Imaging
 * -> "Design.imaging"
-* extension[modality] -> "Design.imaging.modalities"
+* extension[modality] -> "Design.imaging.modality"
 * extension[bodyPart] -> "Design.imaging.bodyPart"

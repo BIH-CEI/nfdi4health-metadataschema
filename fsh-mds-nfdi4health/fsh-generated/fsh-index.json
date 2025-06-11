@@ -469,7 +469,7 @@
     "fshType": "Extension",
     "fshFile": "extensions/NFDI4Health_EX_MDS_Imaging.fsh",
     "startLine": 1,
-    "endLine": 24
+    "endLine": 30
   },
   {
     "outputFile": "StructureDefinition-nfdi4health-ex-mds-keywords.json",
