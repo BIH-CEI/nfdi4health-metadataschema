@@ -191,14 +191,14 @@
             "key": "imaging-a",
             "severity": "error",
             "human": "0..*, if Design.dataSource.general == '031'",
-            "expression": "extension.extension.where(url='general').valueCoding.where(code = '031').exists() implies extension.extension.where(url='imaging').exists()",
+            "expression": "extension.extension.where(url='general').valueCoding.where(code = '031').exists() implies extension.where(url='https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-radiomics').exists()",
             "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
           },
           {
             "key": "imaging-b",
             "severity": "error",
             "human": "0..0, if Design.dataSource.general != '031'",
-            "expression": "extension.extension.where(url='general').valueCoding.where(code = '031').exists().not() implies extension.extension.where(url='imaging').exists().not()",
+            "expression": "extension.extension.where(url='general').valueCoding.where(code = '031').exists().not() implies extension.where(url='https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-radiomics').exists().not()",
             "source": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-pr-mds-study"
           },
           {
@@ -625,6 +625,21 @@
             "code": "Extension",
             "profile": [
               "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-record-linkage"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ResearchStudy.extension:imaging",
+        "path": "ResearchStudy.extension",
+        "sliceName": "imaging",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-radiomics"
             ]
           }
         ]

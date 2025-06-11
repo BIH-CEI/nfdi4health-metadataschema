@@ -33,6 +33,14 @@
     "resource": [
       {
         "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-body-structures"
+        },
+        "name": "Body Structures",
+        "description": "SNOMED CT body structures examined in imaging studies.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "DocumentReference/InstanceOfDocumentHouseholdTransmissionInvestigationForC19"
         },
         "name": "Example of the NFDI4Health PR MDS Document - Household Transmission Investigation Protocol for Coronavirus Disease 2019 (COVID-19)",
@@ -348,6 +356,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/nfdi4health-vs-mds-study-modality"
+        },
+        "name": "Modality (CID 33)",
+        "description": "Transitive closure of CID 33 Modality from the DICOM Controlled Terminology.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/nfdi4health-vs-mds-cd-common-chronic-disease-name-sct-local"
         },
         "name": "NFDI4Health CD Common Chronic Disease Name [SNOMED CT, Local]",
@@ -616,6 +632,14 @@
         },
         "name": "NFDI4Health EX MDS Provenance Data Source",
         "description": "Extension providing information about the source of information of the resource and the way it was uploaded/collected.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nfdi4health-ex-mds-imaging"
+        },
+        "name": "NFDI4Health EX MDS Radiomics",
+        "description": "Information about imaging data (modalities and body parts examined) in studies that use imaging as a data source.",
         "exampleBoolean": false
       },
       {

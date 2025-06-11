@@ -66,7 +66,7 @@ Description: "Group of items providing information on record linkage. Based on N
 
 Mapping: NFDI4Health-Record-Linkage-to-FHIR
 Id: NFDI4Health-MDS-RecordLinkage-v3-3-1
-Title: "NFDI4Health MDS Record Linkage (Schema 3.3.1) to FHIR Mapping" // Updated Title
+Title: "NFDI4Health MDS Record Linkage (Schema 3.3.1) to FHIR Mapping"
 Source: NFDI4Health_EX_MDS_Record_Linkage
 * -> "RL1 RecordLinkage"
 * extension[legalBasis].valueBoolean -> "RecordLinkage.legalBasis (XML nfdhtfcov19-dataelement-123)"

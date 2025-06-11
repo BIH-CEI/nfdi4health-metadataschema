@@ -49,7 +49,8 @@ Description: "Group of items applicable only to studies, substudies."
     NFDI4Health_EX_MDS_Study_Interventional named interventional 0..1 and
     NFDI4Health_EX_MDS_Groups_Of_Diseases named groupsOfDiseases 1..1 and
     NFDI4Health_EX_MDS_Study_Sampling named sampling 0..1 and
-    NFDI4Health_EX_MDS_Record_Linkage named recordLinkage 0..1
+    NFDI4Health_EX_MDS_Record_Linkage named recordLinkage 0..1 and
+    NFDI4Health_EX_MDS_Imaging named imaging 0..1
 
 // Elements
 * identifier 0..* 
@@ -264,12 +265,12 @@ Expression: "extension.extension.where(url='general').valueCoding.where(code = '
 Invariant: imaging-a
 Description: "0..*, if Design.dataSource.general == '031'"
 Severity: #error
-Expression: "extension.extension.where(url='general').valueCoding.where(code = '031').exists() implies extension.extension.where(url='imaging').exists()"
+Expression: "extension.extension.where(url='general').valueCoding.where(code = '031').exists() implies extension.where(url='https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-radiomics').exists()"
 
 Invariant: imaging-b
 Description: "0..0, if Design.dataSource.general != '031'"
 Severity: #error
-Expression: "extension.extension.where(url='general').valueCoding.where(code = '031').exists().not() implies extension.extension.where(url='imaging').exists().not()"
+Expression: "extension.extension.where(url='general').valueCoding.where(code = '031').exists().not() implies extension.where(url='https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-radiomics').exists().not()"
 
 Invariant: omics-a
 Description: "0..*, if Design.dataSource.general == '033'"

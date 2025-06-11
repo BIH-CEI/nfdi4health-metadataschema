@@ -2,7 +2,7 @@
   "resourceType": "CapabilityStatement",
   "id": "nfdi4health-cps-mds-capability-statement",
   "url": "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-cps-mds-capability-statement",
-  "version": "0.9",
+  "version": "0.9.1",
   "status": "draft",
   "publisher": "NFDI4Health",
   "contact": [
