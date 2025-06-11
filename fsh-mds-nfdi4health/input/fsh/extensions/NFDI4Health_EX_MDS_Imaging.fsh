@@ -1,15 +1,13 @@
 Extension: NFDI4Health_EX_MDS_Imaging
 Id: nfdi4health-ex-mds-imaging
-Title: "NFDI4Health EX MDS Radiomics"
+Title: "NFDI4Health EX MDS Imaging"
 Description: "Information about imaging data (modalities and body parts examined) in studies that use imaging as a data source."
-* ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-radiomics"
+* ^url = "https://www.nfdi4health.de/fhir/metadataschema/StructureDefinition/nfdi4health-ex-mds-imaging"
 * ^status = #draft
 * ^version = "0.1"
 * ^context[0].type = #element
 * ^context[0].expression = "ResearchStudy"
-* . ^short = "Information about imaging data for the [RESOURCE]"
-* . ^definition = "Group of items providing information on imaging data."
-* . ^comment = "1..1, if Design.dataSource.general == 'Imaging data'; otherwise 0..0"
+* ^description = "Group of items providing information on imaging data in studies."
 
 * extension contains
     modality 1..* and
@@ -18,7 +16,7 @@ Description: "Information about imaging data (modalities and body parts examined
 * extension[modality] ^short = "Imaging modalities (DICOM)"
 * extension[modality] ^definition = "Modalities used in the study, using DICOM modality codes."
 * extension[modality].value[x] only Coding
-* extension[modality].valueCoding from NFDI4Health_VS_MDS__Study_Modality (required)
+* extension[modality].valueCoding from NFDI4Health_VS_MDS_Study_Modality (required)
 
 * extension[bodyPart] ^short = "Body parts examined"
 * extension[bodyPart] ^definition = "Information which body parts are imaged within the [RESOURCE]."

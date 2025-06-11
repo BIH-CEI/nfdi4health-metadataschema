@@ -1,11 +1,11 @@
 {
   "resourceType": "ValueSet",
   "status": "active",
-  "name": "NFDI4Health_VS_MDS__Study_Modality",
+  "name": "NFDI4Health_VS_MDS_Study_Modality",
   "id": "nfdi4health-vs-mds-study-modality",
   "title": "Modality (CID 33)",
   "description": "Transitive closure of CID 33 Modality from the DICOM Controlled Terminology.",
-  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-modality",
+  "url": "https://www.nfdi4health.de/fhir/metadataschema/ValueSet/nfdi4health-vs-mds-study-modality",
   "version": "2024.2.20240331",
   "publisher": "NFDI4Health",
   "contact": [

@@ -40,7 +40,7 @@
 [InstanceOfLibraryHKR]: Library-InstanceOfLibraryHKR.html
 [InstanceOfStudySHIP]: ResearchStudy-InstanceOfStudySHIP.html
 [InstanceOfStudySPOVID]: ResearchStudy-InstanceOfStudySPOVID.html
-[NFDI4Health_VS_MDS__Study_Modality]: ValueSet-nfdi4health-vs-mds-study-modality.html
+[NFDI4Health_VS_MDS_Study_Modality]: ValueSet-nfdi4health-vs-mds-study-modality.html
 [NFDI4Health_VS_MDS_CD_CommonChronicDiseaseName_SCT_Local]: ValueSet-nfdi4health-vs-mds-cd-common-chronic-disease-name-sct-local.html
 [NFDI4Health_LM_MDS_Core]: StructureDefinition-nfdi4health-lm-mds-core.html
 [nfdi4health-cps-mds-capability-statement]: CapabilityStatement-nfdi4health-cps-mds-capability-statement.html
@@ -61,6 +61,7 @@
 [NFDI4Health_EX_MDS_Document_Use_Rights]: StructureDefinition-nfdi4health-ex-mds-document-use-rights.html
 [NFDI4Health_EX_MDS_Format]: StructureDefinition-nfdi4health-ex-mds-format.html
 [NFDI4Health_EX_MDS_Identifier_Assignment_Date]: StructureDefinition-nfdi4health-ex-mds-identifier-assignment-date.html
+[NFDI4Health_EX_MDS_Imaging]: StructureDefinition-nfdi4health-ex-mds-imaging.html
 [NFDI4Health_EX_MDS_Keywords]: StructureDefinition-nfdi4health-ex-mds-keywords.html
 [NFDI4Health_EX_MDS_Label]: StructureDefinition-nfdi4health-ex-mds-label.html
 [NFDI4Health_EX_MDS_Execution_Language]: StructureDefinition-nfdi4health-ex-mds-execution-language.html
@@ -75,7 +76,6 @@
 [NFDI4Health_EX_MDS_OutcomeMeasure_Backport_R5]: StructureDefinition-nfdi4health-ex-mds-outcomemeasure-backport-r5.html
 [NFDI4Health_EX_MDS_Library_Outcomes]: StructureDefinition-nfdi4health-ex-mds-library-outcomes.html
 [NFDI4Health_EX_MDS_Provenance_Data_Source]: StructureDefinition-nfdi4health-ex-mds-provenance-data-source.html
-[NFDI4Health_EX_MDS_Imaging]: StructureDefinition-nfdi4health-ex-mds-imaging.html
 [NFDI4Health_EX_MDS_Record_Linkage]: StructureDefinition-nfdi4health-ex-mds-record-linkage.html
 [NFDI4Health_EX_MDS_Recruitment_Backport_R5]: StructureDefinition-nfdi4health-ex-mds-recruitment-backport-r5.html
 [NFDI4Health_EX_MDS_Related_Artifact_Identifier_Date]: StructureDefinition-nfdi4health-ex-mds-related-artifact-identifier-date.html
